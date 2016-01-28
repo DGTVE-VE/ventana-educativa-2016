@@ -2,7 +2,7 @@
 
     <div class="navbar-header">
         <div class="navbar-header"><a class="navbar-brand" href="#">Logo Ventana</a></div>
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#nav-primary">
             <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
@@ -10,7 +10,7 @@
         </button>
     </div>
 
-    <div class="collapse navbar-collapse pull-right">
+    <div class="collapse navbar-collapse pull-right" id="nav-primary">
         <ul class="nav navbar-nav">
       
             <form class="navbar-form col-md-5" role="search">

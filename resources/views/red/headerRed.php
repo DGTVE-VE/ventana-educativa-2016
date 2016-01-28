@@ -1,7 +1,7 @@
 <div class="navbar navbar-static-top" role="navigation">	
     <div class="navbar-header">
         <div class="navbar-header"><a class="navbar-brand" href="#">Logo Red Mesoamericana</a></div>
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#nav-secundary">
             <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
@@ -9,7 +9,7 @@
         </button>
     </div>
 
-    <div class="collapse navbar-collapse">
+    <div class="collapse navbar-collapse" id="nav-secundary">
 
         <ul class="nav navbar-nav pull-right">
             <li class="dropdown">
