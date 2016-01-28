@@ -1,19 +1,19 @@
-<nav class="navbar navbar-default" role="navigation">
-    <!-- Brand and toggle get grouped for better mobile display -->
+<div class="navbar navbar-fixed-top" role="navigation">	
+
     <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <div class="navbar-header"><a class="navbar-brand" href="#">Logo Ventana</a></div>
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
             <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="#">Logo Ventana</a>
     </div>
 
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-        <div class="col-sm-3 col-md-3 ">
-            <form class="navbar-form" role="search">
+    <div class="collapse navbar-collapse pull-right">
+        <ul class="nav navbar-nav">
+      
+            <form class="navbar-form col-md-5" role="search">
                 <div class="input-group">
                     <input type="text" class="form-control" placeholder="Buscar" name="q">
                     <div class="input-group-btn">
@@ -21,11 +21,10 @@
                     </div>
                 </div>
             </form>
-        </div>
-        <ul class="nav navbar-nav navbar-right">                     
+
             <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><b>Entrar</b> <span class="caret"></span></a>
-                <ul id="login-dp" class="dropdown-menu">
+                <ul id="login-dp" class="dropdown-menu pull-left">
                     <li>
                         <div class="row">
                             <div class="col-md-12">
@@ -48,7 +47,6 @@
                                     </div>
                                 </form>
                             </div>
-
                         </div>
                     </li>
                 </ul>
@@ -57,8 +55,7 @@
                 <button type="button dropdown-toggle" data-toggle="dropdown" class="btn btn-default btn-lg">
                     <span class="glyphicon glyphicon glyphicon-th"></span>
                 </button>                            
-                    <!--<a href="#" class="dropdown-toggle" data-toggle="dropdown"><b>Entrar</b> <span class="caret"></span></a>-->
-                <ul id="apps" class="dropdown-menu">
+                <ul class="dropdown-menu pull-left">
                     <li>
                         <div class="row">
                             <div class="col-md-12">
@@ -66,17 +63,12 @@
                                     <li><a href="{{URL::to('indexRed')}}">Red Mesoamericana</a></li>
                                     <li><a href="{{URL::to('indexVod')}}">VOD</a></li>
                                     <li><a href="{{URL::to('indexDocentes')}}">Docentes</a></li>
-                                    <!--<a href="#" class="btn btn-lg"><i class="glyphicon glyphicon-facetime-video">   Red Mesoamericana</i></a>-->
-<!--                                    <a href="#" class="btn btn-lg"><i class="glyphicon glyphicon-calendar">  Videos Bajo Demanda</i></a>
-                                    <a href="#" class="btn btn-lg"><i class="glyphicon glyphicon-list-alt">  Docentes</i></a>
-                                    <a href="#" class="btn btn-lg"><i class="glyphicon glyphicon-random">  Telesecundaria</i></a>                                                -->
                                 </div>
                             </div>
-
                         </div>
                     </li>
                 </ul>
-            </li>                        
-        </ul>    
-    </div><!-- /.navbar-collapse -->
-</nav>
+            </li> 
+        </ul>
+    </div>    
+</div>

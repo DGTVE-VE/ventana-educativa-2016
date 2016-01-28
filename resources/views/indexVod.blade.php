@@ -1,7 +1,7 @@
 @section('title')
     VOD
 @stop
-@extends('app')
+@extends('home')
 
 @section('content')
 <div><h1>VOD</h1></div>

@@ -25,18 +25,19 @@ and open the template in the editor.
         <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-         
-        
+
+
         <!-- Estilo Header del Home-->
         <link rel="stylesheet" href="{{ URL::asset('css/estiloBase.css') }}">
         <!--Estilo Red Mesoamericana-->
         <link rel="stylesheet" href="{{ URL::asset('css/animate.css') }}">
         <link rel="stylesheet" href="{{ URL::asset('css/estiloRed.css') }}">
-        
+
         <style>
             *{
                 /*border: 2px dashed red;*/
             }
+  
         </style>
     </head>
     <body>
@@ -46,4 +47,3 @@ and open the template in the editor.
         </div>
     </body>
 </html>
-
