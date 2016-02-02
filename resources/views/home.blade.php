@@ -13,7 +13,7 @@ and open the template in the editor.
         <meta name="author" content="Ecosistema Digital de Aprendizaje (DGTVE)">
         <meta http-equiv="X-UA-Compatible" content="IE=Edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
-
+		<link href="css/principal.css" rel="stylesheet">
 
         <!-- Latest compiled and minified CSS -->
         <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
@@ -25,7 +25,7 @@ and open the template in the editor.
         <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-
+		
 
         <!-- Estilo Header del Home-->
         <link rel="stylesheet" href="{{ URL::asset('css/estiloBase.css') }}">
@@ -34,16 +34,24 @@ and open the template in the editor.
         <link rel="stylesheet" href="{{ URL::asset('css/estiloRed.css') }}">
 
         <style>
-            *{
-                /*border: 2px dashed red;*/
-            }
+			.affix {
+				top: 0;
+				width: 100%;
+			}
+
+			.affix + .container-fluid {
+				padding-top: 70px;
+			}
   
         </style>
     </head>
-    <body>
+    <body id="pag_principal">
         <header> @include('layout/header') </header>
-        <div class="container">
-            @yield('content')
+		<div class="container-fluid" data-spy="affix" data-offset-top="130" style="z-index:2">
+			@yield('menu')
+		</div>
+        <div class="container-fluid">
+            @yield('cuerpo')
         </div>
     </body>
 </html>

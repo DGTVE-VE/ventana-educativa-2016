@@ -1,3 +1,7 @@
 @extends('home')
-
-@include('red.headerRed')
+@section('menu')
+	@include('red.headerRed')
+@endsection
+@section('cuerpo')
+	@include('red.cuerpoRed')
+@endsection
