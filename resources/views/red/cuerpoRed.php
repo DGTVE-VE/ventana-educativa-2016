@@ -1,4 +1,4 @@
-		<!--div class="container-fluid"-->
+Ôªø		<!--div class="container-fluid"-->
 			<!--div class="row fondo_Obscuro">
 				<div class="encabezado">
 				</div>
@@ -36,7 +36,7 @@
 							</div>
 							<div class="item">
 								<center>
-								<img class="img-responsive" src="http://placehold.it/1600x650" alt="...">
+								<img class="img-responsive" src="imagenes\red\1600-x-650.jpg" alt="...">
 								<div class="carousel-caption">
 									<h3>Tercera Imagen</h3>
 									<p>Desripcion de seccion</p>
@@ -178,7 +178,7 @@
 						<img class="img-responsive img-rounded" src="http://placehold.it/400x300" alt="...">
 						<div class="caption">
 							<h3>Primer Encuentro de Innovacion y Tecnologia Educativa</h3>
-							<p>Resumen de descripciÛn</p>
+							<p>Resumen de descripci√≥n</p>
 							<p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
 						</div>
 					</div>
@@ -188,7 +188,7 @@
 						<img class="img-responsive img-rounded" src="http://placehold.it/400x300" alt="...">
 						<div class="caption">
 							<h3>Ventana Educativa</h3>
-							<p>Resumen de descripciÛn</p>
+							<p>Resumen de descripci√≥n</p>
 							<p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
 						</div>
 					</div>
@@ -198,7 +198,7 @@
 						<img class="img-responsive img-rounded" src="http://placehold.it/400x300" alt="...">
 						<div class="caption">
 							<h3>Ecosistema Digital de Aprendizaje</h3>
-							<p>Resumen de descripciÛn</p>
+							<p>Resumen de descripci√≥n</p>
 							<p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
 						</div>
 					</div>
@@ -216,7 +216,7 @@
 			</div>
 			<div class="row fondo_Claro">
 				<div class="col-md-12 text-center">
-					<h2> Modelo de Usabilidad PedagÛgica de las TIC</h2>
+					<h2> Modelo de Usabilidad Pedag√≥gica de las TIC</h2>
 				</div>
 				<div class="col-md-12">
 					<center>
@@ -250,7 +250,7 @@
 							</div>
 							<div class="item">
 								<center>
-									<h3>Saberes digitales b·sicos</h3>
+									<h3>Saberes digitales b√°sicos</h3>
 									<h4>Desripcion de seccion Desripcion de seccion Desripcion de seccion Desripcion de seccion Desripcion de seccion</h4>
 									<h4><small>Comentario</small></h4>
 								</center>
@@ -259,7 +259,7 @@
 								<center>
 								<!--img class="img-responsive" src="http://placehold.it/900x300" alt="...">
 								<div class="carousel-caption"-->
-									<h3>DisposiciÛn y expectativas docentes</h3>
+									<h3>Disposici√≥n y expectativas docentes</h3>
 									<h4>Desripcion de seccion Desripcion de seccion Desripcion de seccion Desripcion de seccion Desripcion de seccion</h4>
 									<h4><small>Comentario</small></h4>
 								<!--/div-->
@@ -269,7 +269,7 @@
 								<center>
 								<!--img class="img-responsive" src="http://placehold.it/900x300" alt="...">
 								<div class="carousel-caption"-->
-									<h3>ApropiaciÛn e incorporaciÛn educativa</h3>
+									<h3>Apropiaci√≥n e incorporaci√≥n educativa</h3>
 									<h4>Desripcion de seccion Desripcion de seccion Desripcion de seccion Desripcion de seccion Desripcion de seccion</h4>
 									<h4><small>Comentario</small></h4>
 								<!--/div-->
@@ -333,7 +333,7 @@
 											<img class="img-responsive img-rounded" src="http://placehold.it/100x100" alt="...">
 											<div class="caption">
 												<h4>Nombre Colaborador</h4>
-												<p>Resumen de descripciÛn</p>
+												<p>Resumen de descripci√≥n</p>
 												<button type="button" class="btn btn-link">Blog</button>
 											</div>
 										</div>
@@ -343,7 +343,7 @@
 											<img class="img-responsive img-rounded" src="http://placehold.it/100x100" alt="...">
 											<div class="caption">
 												<h4>Nombre Colaborador</h4>
-												<p>Resumen de descripciÛn</p>
+												<p>Resumen de descripci√≥n</p>
 												<button type="button" class="btn btn-link">Blog</button>
 											</div>
 										</div>
@@ -353,7 +353,7 @@
 											<img class="img-responsive img-rounded" src="http://placehold.it/100x100" alt="...">
 											<div class="caption">
 												<h4>Nombre Colaborador</h4>
-												<p>Resumen de descripciÛn</p>
+												<p>Resumen de descripci√≥n</p>
 												<button type="button" class="btn btn-link">Blog</button>
 											</div>
 										</div>
@@ -363,7 +363,7 @@
 											<img class="img-responsive img-rounded" src="http://placehold.it/100x100" alt="...">
 											<div class="caption">
 												<h4>Nombre Colaborador</h4>
-												<p>Resumen de descripciÛn</p>
+												<p>Resumen de descripci√≥n</p>
 												<button type="button" class="btn btn-link">Blog</button>
 											</div>
 										</div>
@@ -377,7 +377,7 @@
 											<img class="img-responsive img-rounded" src="http://placehold.it/100x100" alt="...">
 											<div class="caption">
 												<h4>Nombre Colaborador</h4>
-												<p>Resumen de descripciÛn</p>
+												<p>Resumen de descripci√≥n</p>
 												<button type="button" class="btn btn-link">Blog</button>
 											</div>
 										</div>
@@ -387,7 +387,7 @@
 											<img class="img-responsive img-rounded" src="http://placehold.it/100x100" alt="...">
 											<div class="caption">
 												<h4>Nombre Colaborador</h4>
-												<p>Resumen de descripciÛn</p>
+												<p>Resumen de descripci√≥n</p>
 												<button type="button" class="btn btn-link">Blog</button>
 											</div>
 										</div>
@@ -397,7 +397,7 @@
 											<img class="img-responsive img-rounded" src="http://placehold.it/100x100" alt="...">
 											<div class="caption">
 												<h4>Nombre Colaborador</h4>
-												<p>Resumen de descripciÛn</p>
+												<p>Resumen de descripci√≥n</p>
 												<button type="button" class="btn btn-link">Blog</button>
 											</div>
 										</div>
@@ -407,7 +407,7 @@
 											<img class="img-responsive img-rounded" src="http://placehold.it/100x100" alt="...">
 											<div class="caption">
 												<h4>Nombre Colaborador</h4>
-												<p>Resumen de descripciÛn</p>
+												<p>Resumen de descripci√≥n</p>
 												<button type="button" class="btn btn-link">Blog</button>
 											</div>
 										</div>
@@ -421,7 +421,7 @@
 											<img class="img-responsive img-rounded" src="http://placehold.it/100x100" alt="...">
 											<div class="caption">
 												<h4>Nombre Colaborador</h4>
-												<p>Resumen de descripciÛn</p>
+												<p>Resumen de descripci√≥n</p>
 												<button type="button" class="btn btn-link">Blog</button>
 											</div>
 										</div>
@@ -431,7 +431,7 @@
 											<img class="img-responsive img-rounded" src="http://placehold.it/100x100" alt="...">
 											<div class="caption">
 												<h4>Nombre Colaborador</h4>
-												<p>Resumen de descripciÛn</p>
+												<p>Resumen de descripci√≥n</p>
 												<button type="button" class="btn btn-link">Blog</button>
 											</div>
 										</div>
@@ -441,7 +441,7 @@
 											<img class="img-responsive img-rounded" src="http://placehold.it/100x100" alt="...">
 											<div class="caption">
 												<h4>Nombre Colaborador</h4>
-												<p>Resumen de descripciÛn</p>
+												<p>Resumen de descripci√≥n</p>
 												<button type="button" class="btn btn-link">Blog</button>
 											</div>
 										</div>
@@ -451,7 +451,7 @@
 											<img class="img-responsive img-rounded" src="http://placehold.it/100x100" alt="...">
 											<div class="caption">
 												<h4>Nombre Colaborador</h4>
-												<p>Resumen de descripciÛn</p>
+												<p>Resumen de descripci√≥n</p>
 												<button type="button" class="btn btn-link">Blog</button>
 											</div>
 										</div>
@@ -465,7 +465,7 @@
 											<img class="img-responsive img-rounded" src="http://placehold.it/100x100" alt="...">
 											<div class="caption">
 												<h4>Nombre Colaborador</h4>
-												<p>Resumen de descripciÛn</p>
+												<p>Resumen de descripci√≥n</p>
 												<button type="button" class="btn btn-link">Blog</button>
 											</div>
 										</div>
@@ -475,7 +475,7 @@
 											<img class="img-responsive img-rounded" src="http://placehold.it/100x100" alt="...">
 											<div class="caption">
 												<h4>Nombre Colaborador</h4>
-												<p>Resumen de descripciÛn</p>
+												<p>Resumen de descripci√≥n</p>
 												<button type="button" class="btn btn-link">Blog</button>
 											</div>
 										</div>
@@ -485,7 +485,7 @@
 											<img class="img-responsive img-rounded" src="http://placehold.it/100x100" alt="...">
 											<div class="caption">
 												<h4>Nombre Colaborador</h4>
-												<p>Resumen de descripciÛn</p>
+												<p>Resumen de descripci√≥n</p>
 												<button type="button" class="btn btn-link">Blog</button>
 											</div>
 										</div>
@@ -495,7 +495,7 @@
 											<img class="img-responsive img-rounded" src="http://placehold.it/100x100" alt="...">
 											<div class="caption">
 												<h4>Nombre Colaborador</h4>
-												<p>Resumen de descripciÛn</p>
+												<p>Resumen de descripci√≥n</p>
 												<button type="button" class="btn btn-link">Blog</button>
 											</div>
 										</div>
@@ -527,7 +527,7 @@
 			</div>
 			<div class="row fondo_Claro">
 				<div class="col-md-12 text-center">
-					<h2> TÌtulo de la secciÛn </h2>
+					<h2> T√≠tulo de la secci√≥n </h2>
 				</div>
 				<div class="col-md-12">
 					<center>
@@ -543,22 +543,22 @@
 				<div class="col-md-6 col-md-offset-4">
 					<ul class="nav nav-pills navs-justified">
 						<li class="active"><a data-toggle="pill" href="#home">Retos Regionales</a></li>
-						<li><a data-toggle="pill" href="#menu2">Sitios de InterÈs</a></li>
+						<li><a data-toggle="pill" href="#menu2">Sitios de Inter√©s</a></li>
 						<li><a data-toggle="pill" href="#menu3">Anexo X</a></li>
 					</ul>
 					<div class="tab-content">
 
 						<div id="home" class="tab-pane fade in active">
 							<h3>Retos Regionales</h3>
-							<p>Dar a los usuarios nuevas capacidades de elecciÛn y posibilidad de participar activamente en la creaciÛn de contenido,
-								con la finalidad de consolidar una economÌa digital.</p>
-							<p>Aplicar polÌticas digitales, junto con la formulaciÛn de estrategias mesoamericanas y de polÌticas de alcance sectorial,
-								que permitan proyectar los objetivos de desarrollo, aplicaciÛn y adopciÛn de tecnologÌa en campos como la educaciÛn</p>
+							<p>Dar a los usuarios nuevas capacidades de elecci√≥n y posibilidad de participar activamente en la creaci√≥n de contenido,
+								con la finalidad de consolidar una econom√≠a digital.</p>
+							<p>Aplicar pol√≠ticas digitales, junto con la formulaci√≥n de estrategias mesoamericanas y de pol√≠ticas de alcance sectorial,
+								que permitan proyectar los objetivos de desarrollo, aplicaci√≥n y adopci√≥n de tecnolog√≠a en campos como la educaci√≥n</p>
 							<p>Generar mecanismos de confianza y seguridad para los consumidores en los medios digitales, tales como, privacidad, 
-								protecciÛn de datos y protecciÛn al consumidor</p>
-							<p>Disminuir las brechas de acceso, usabilidad y apropiaciÛn de las tecnologÌas digitales en todos los sectores de la regiÛn</p>
-							<p>Fortalecer una gobernanza regional, en la que los organismos reguladores presten atenciÛn a los espacios y promover la 
-								participaciÛn de los actores involucrados.</p>
+								protecci√≥n de datos y protecci√≥n al consumidor</p>
+							<p>Disminuir las brechas de acceso, usabilidad y apropiaci√≥n de las tecnolog√≠as digitales en todos los sectores de la regi√≥n</p>
+							<p>Fortalecer una gobernanza regional, en la que los organismos reguladores presten atenci√≥n a los espacios y promover la 
+								participaci√≥n de los actores involucrados.</p>
 						</div>
 						<div id="menu2" class="tab-pane fade">
 							<h3>Menu 2</h3>
@@ -575,7 +575,7 @@
 					<p>Retos Regionales</p>
 				</div>
 				<div class="col-md-4">
-					<p>Sitios de InterÈs</p>
+					<p>Sitios de Inter√©s</p>
 				</div>
 				<div class="col-md-4">
 					<p>Anexo X</p>
@@ -596,8 +596,8 @@
 				</a><br><br>
 				<p><a href="http://www.w3schools.com" data-toggle="tooltip" title="Home">home</a>
 					| <a href="http://www.w3schools.com" data-toggle="tooltip" title="Acerca de">Acerca de</a>
-					| <a href="http://www.w3schools.com" data-toggle="tooltip" title="TÈrminos de referencia">TÈrminos de Referencia</a>
-					| <a href="http://www.w3schools.com" data-toggle="tooltip" title="PolÌticas de Privacidad">PolÌticas de Privacidad</a>
+					| <a href="http://www.w3schools.com" data-toggle="tooltip" title="T√©rminos de referencia">T√©rminos de Referencia</a>
+					| <a href="http://www.w3schools.com" data-toggle="tooltip" title="Pol√≠ticas de Privacidad">Pol√≠ticas de Privacidad</a>
 				</p>
 				</div>
 			</div>

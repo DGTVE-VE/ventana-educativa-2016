@@ -1,3 +1,29 @@
+		// -------------------------------------------------- Inicio de avance de barra			
+			//var barraAvance = document.getElementById("avanceSlider");
+			//barraAvance.style.width = "30%";
+
+			var maxprogress = 100;
+			var actualprogress = 0;
+			var itv = 0;
+			function prog(){
+				if(actualprogress >= maxprogress){
+					clearInterval(itv);   	
+					return;
+				}	
+				//var progressnum = document.getElementById("progressnum");
+				var indicador = document.getElementById("indicador");
+				actualprogress += 1;	
+				indicador.style.width=actualprogress + "%";
+				//progressnum.innerHTML = (maxprogress - actualprogress) + " MS Faltantes";
+			}
+			function reiniciaBarra(){
+				var indicador = document.getElementById("indicador");
+				indicador.style.width= "0%";
+				actualprogress=0;
+				clearInterval(itv);
+			}
+			itv = setInterval(prog,50);
+
 		$(document).ready(function(){
 			
 		//--------------------------------------------------Agrega efecto de velocidad lenta al subir al inicio de la página
@@ -38,29 +64,3 @@
 			});
 			
 		})
-
-		// -------------------------------------------------- Inicio de avance de barra			
-			//var barraAvance = document.getElementById("avanceSlider");
-			//barraAvance.style.width = "30%";
-
-			var maxprogress = 100;
-			var actualprogress = 0;
-			var itv = 0;
-			function prog(){
-				if(actualprogress >= maxprogress){
-					clearInterval(itv);   	
-					return;
-				}	
-				//var progressnum = document.getElementById("progressnum");
-				var indicador = document.getElementById("indicador");
-				actualprogress += 1;	
-				indicador.style.width=actualprogress + "%";
-				//progressnum.innerHTML = (maxprogress - actualprogress) + " MS Faltantes";
-			}
-		function reiniciaBarra(){
-			var indicador = document.getElementById("indicador");
-			indicador.style.width= "0%";
-			actualprogress=0;
-			clearInterval(itv);
-		}
-			itv = setInterval(prog,50);
