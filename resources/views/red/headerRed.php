@@ -1,4 +1,4 @@
-<div class="navbar navbar-static-top" role="navigation">	
+<div class="navbar navbar-default" role="navigation">	<!--navbar-static-top-->
     <div class="navbar-header">
         <div class="navbar-header"><a class="navbar-brand" href="#">Logo Red Mesoamericana</a></div>
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -10,7 +10,6 @@
     </div>
 
     <div class="collapse navbar-collapse">
-
         <ul class="nav navbar-nav pull-right">
             <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Objetivos <b class="caret"></b></a>

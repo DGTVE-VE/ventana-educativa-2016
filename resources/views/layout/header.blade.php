@@ -1,4 +1,4 @@
-<div class="navbar navbar-fixed-top" role="navigation">	
+<div class="navbar"> <!-- navbar-fixed-top role="navigation"-->
 
     <div class="navbar-header">
         <div class="navbar-header"><a class="navbar-brand" href="#">Logo Ventana</a></div>
