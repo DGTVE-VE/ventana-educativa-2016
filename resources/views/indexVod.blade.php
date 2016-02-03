@@ -1,8 +1,9 @@
 @section('title')
-    VOD
+VOD
 @stop
 @extends('home')
-
-@section('content')
-<div><h1>VOD</h1></div>
-@stop
+@section('cuerpo')
+<div>
+    <h1>VOD</h1>
+</div>
+@endsection

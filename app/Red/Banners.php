@@ -1,0 +1,12 @@
+<?php
+
+namespace App\Red;
+
+use Illuminate\Database\Eloquent\Model;
+
+class Banners extends Model
+{
+    
+    protected $fillable = array('url_archivo', 'activo');
+    protected $guarded = array('id_banner', 'fecha_creacion','fecha_eliminacion');
+}
