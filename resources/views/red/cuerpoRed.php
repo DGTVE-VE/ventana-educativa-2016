@@ -18,7 +18,7 @@
 						<div class="carousel-inner" role="listbox">
 							<div class="item active">
 								<center>
-								<img class="img-responsive" src="imagenes/red/1600-x-650.jpg" alt="..."> <!--http://172.16.101.33/ventana-educativa-2016/public/-->
+								<img class="img-responsive" src="http://placehold.it/1600x600" alt="..."> <!--http://172.16.101.33/ventana-educativa-2016/public/-->
 								<div class="carousel-caption">
 									<h3>Primera Imagen</h3>
 									<p>Desripcion de seccion</p>
@@ -27,7 +27,7 @@
 							</div>
 							<div class="item">
 								<center>
-								<img class="img-responsive" src="http://placehold.it/1600x650" alt="...">
+								<img class="img-responsive" src="http://placehold.it/1600x600" alt="..."> <!--imagenes/red/1600-x-650.jpg-->
 								<div class="carousel-caption">
 									<h3>Segunda Imagen</h3>
 									<p>Desripcion de seccion</p>
@@ -36,7 +36,7 @@
 							</div>
 							<div class="item">
 								<center>
-								<img class="img-responsive" src="imagenes/red/1600-x-650.jpg" alt="...">
+								<img class="img-responsive" src="http://placehold.it/1600x600" alt="...">
 								<div class="carousel-caption">
 									<h3>Tercera Imagen</h3>
 									<p>Desripcion de seccion</p>

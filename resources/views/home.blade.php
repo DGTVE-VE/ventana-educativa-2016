@@ -41,7 +41,7 @@ and open the template in the editor.
 			}
 
 			.affix + .container-fluid {
-				padding-top: 70px;
+				padding-top: 50px;
 			}
 			body{
 				font-family: 'Oxygen', sans-serif;
