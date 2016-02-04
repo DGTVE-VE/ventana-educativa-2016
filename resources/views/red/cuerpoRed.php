@@ -3,8 +3,8 @@
 				<div class="encabezado">
 				</div>
 			</div-->
-			<div class="row fondo_Obscuro">
-				<div class="col-md-12">
+			<div class="row fondo_Obscuro" style="margin:0px;">
+				<div class="col-md-12"  style="padding:0px;">
 					<div id="carousel-2" class="carousel slide" data-ride="carousel">
 						<!-- Indicators -->
 						<ol class="carousel-indicators">
@@ -15,10 +15,10 @@
 						</ol>
 
 						<!-- Wrapper for slides -->
-						<div class="carousel-inner" role="listbox">
+						<div class="carousel-inner" role="listbox" style="margin:0px;">
 							<div class="item active">
 								<center>
-								<img class="img-responsive" src="http://placehold.it/1600x600" alt="..."> <!--http://172.16.101.33/ventana-educativa-2016/public/-->
+								<img class="img-responsive" src="http://placehold.it/1600x500" alt="..."> <!--http://172.16.101.33/ventana-educativa-2016/public/-->
 								<div class="carousel-caption">
 									<h3>Primera Imagen</h3>
 									<p>Desripcion de seccion</p>
@@ -27,7 +27,7 @@
 							</div>
 							<div class="item">
 								<center>
-								<img class="img-responsive" src="http://placehold.it/1600x600" alt="..."> <!--imagenes/red/1600-x-650.jpg-->
+								<img class="img-responsive" src="http://placehold.it/1600x500" alt="..."> <!--imagenes/red/1600-x-650.jpg-->
 								<div class="carousel-caption">
 									<h3>Segunda Imagen</h3>
 									<p>Desripcion de seccion</p>
@@ -36,7 +36,7 @@
 							</div>
 							<div class="item">
 								<center>
-								<img class="img-responsive" src="http://placehold.it/1600x600" alt="...">
+								<img class="img-responsive" src="http://placehold.it/1600x500" alt="...">
 								<div class="carousel-caption">
 									<h3>Tercera Imagen</h3>
 									<p>Desripcion de seccion</p>
@@ -45,7 +45,7 @@
 							</div>
 							<div class="item">
 								<center>
-								<img class="img-responsive" src="http://placehold.it/1600x650" alt="...">
+								<img class="img-responsive" src="http://placehold.it/1600x500" alt="...">
 								<div class="carousel-caption">
 									<h3>Cuarta Imagen</h3>
 									<p>Desripcion de seccion</p>
@@ -71,8 +71,8 @@
 						<!--/div-->
 					</div>
 				</div>
-				<div class="col-xs-12 col-sm-12 col-md-12 progress-container">
-					<div class="progress progress-striped active">
+				<div class="col-xs-12 col-sm-12 col-md-12 progress-container" style="padding:0px;">
+					<div class="progress progress-striped active"  style="margin:0px;">
 						<div id="indicador" class="progress-bar progress-bar-success"></div>
 					</div>
 				</div>
@@ -81,25 +81,26 @@
 				<div class="division">
 				</div>
 			</div-->
-			<div class="row fondo_Claro">
+			<!--div class="row fondo_Claro">
 				<div class="division">
 				</div>
-			</div>
-			<div class="row fondo_Claro">
-				<div class="col-md-12 text-center">
-					<h2> Areas Tematicas</h2>
+			</div-->
+			<div class="row fondo_Obscuro">
+				<div class="col-md-12 text-center text-uppercase">
+					<h2> Áreas Tematicas</h2>
 				</div>
-				<div class="col-md-12">
+				<!--div class="col-md-12">
 					<center>
 						<img alt="icono" class="img-responsive" src="http://placehold.it/100x20"/>
 					</center>
-				</div>
+				</div-->
+
+			</div>
+			<div class="row fondo_Claro">
 				<div class="col-md-12">
 					<div class="division">
 					</div>
 				</div>
-			</div>
-			<div class="row fondo_Claro">
 				<div class=" col-sm-2 col-md-1 col-md-offset-2">
 					<img class="img-responsive" alt="imagen fija" src="http://placehold.it/150x150"/>
 				</div>
@@ -154,25 +155,25 @@
 					</div>
 				</div>
 			</div>
-			<div class="row fondo_Obscuro">
+			<!--div class="row fondo_Obscuro">
 				<div class="division">
 				</div>
-			</div>
+			</div-->
 			<div class="row fondo_Obscuro">
-				<div class="col-md-12 text-center">
-					<h2> Proyectos Recientes</h2>
+				<div class="col-md-12 text-center text-uppercase">
+					<h2> Proyectos </h2>
 				</div>
-				<div class="col-md-12">
+				<!--div class="col-md-12">
 					<center>
 						<img alt="icono" class="img-responsive" src="http://placehold.it/100x20"/>
 					</center>
-				</div>
+				</div-->
+			</div>
+			<div class="row fondo_Claro">
 				<div class="col-md-12">
 					<div class="division">
 					</div>
 				</div>
-			</div>
-			<div class="row fondo_Obscuro">
 				<div class="col-sm-6 col-md-2 col-md-offset-3">
 					<div class="thumbnail homologa">
 						<img class="img-responsive img-rounded" src="http://placehold.it/400x300" alt="...">
@@ -203,32 +204,33 @@
 						</div>
 					</div>
 				</div>
+				<div class="col-md-12">
+					<div class="division">
+					</div>
+				</div>
 			</div>
-			<div class="row fondo_Obscuro">
+			<!--div class="row fondo_Obscuro">
 				<div class="division">
 				</div>
 			</div>
 			<div class="row fondo_Claro">
-				<div class="col-md-12">
-					<div class="division">
-					</div>
-				</div>
-			</div>
-			<div class="row fondo_Claro">
-				<div class="col-md-12 text-center">
+
+			</div-->
+			<div class="row fondo_Obscuro">
+				<div class="col-md-12 text-center text-uppercase">
 					<h2> Modelo de Usabilidad Pedagógica de las TIC</h2>
 				</div>
-				<div class="col-md-12">
+				<!--div class="col-md-12">
 					<center>
 						<img alt="icono" class="img-responsive" src="http://placehold.it/100x20"/>
 					</center>
-				</div>
+				</div-->
+			</div>
+			<div class="row fondo_Claro">
 				<div class="col-md-12">
 					<div class="division">
 					</div>
 				</div>
-			</div>
-			<div class="row fondo_Claro">
 				<div class="col-md-10 col-md-offset-1">
 					<div id="carousel-1" class="carousel slide" data-ride="carousel">
 						<!-- Indicators -->
@@ -295,25 +297,25 @@
 					</div>
 				</div>
 			</div>
-			<div class="row fondo_Obscuro">
+			<!--div class="row fondo_Obscuro">
 				<div class="division">
 				</div>
-			</div>
+			</div-->
 			<div class="row fondo_Obscuro">
-				<div class="col-md-12 text-center">
+				<div class="col-md-12 text-center text-uppercase">
 					<h2> Colaboradores </h2>
 				</div>
-				<div class="col-md-12">
+				<!--div class="col-md-12">
 					<center>
 						<img alt="icono" class="img-responsive" src="http://placehold.it/100x20"/>
 					</center>
-				</div>
+				</div-->
+			</div>
+			<div class="row fondo_Claro">
 				<div class="col-md-12">
 					<div class="division">
 					</div>
 				</div>
-			</div>
-			<div class="row fondo_Obscuro">
 				<div class="col-md-10 col-md-offset-1">
 					<div id="carousel-3" class="carousel slide" data-ride="carousel">
 						<!-- Indicators -->
@@ -515,31 +517,26 @@
 						  </a>
 					</div>
 				</div>
-
+			</div>
+			<div class="row fondo_Claro">
+				<div class="division">
+				</div>
 			</div>
 			<div class="row fondo_Obscuro">
-				<div class="division">
-				</div>
-			</div>
-			<div class="row fondo_Claro">
-				<div class="division">
-				</div>
-			</div>
-			<div class="row fondo_Claro">
-				<div class="col-md-12 text-center">
+				<div class="col-md-12 text-center text-uppercase">
 					<h2> Título de la sección </h2>
 				</div>
-				<div class="col-md-12">
+				<!--div class="col-md-12">
 					<center>
 						<img alt="icono" class="img-responsive" src="http://placehold.it/100x20"/>
 					</center>
-				</div>
+				</div-->
+			</div>
+			<div class="row fondo_Claro text-justify">
 				<div class="col-md-12">
 					<div class="division">
 					</div>
 				</div>
-			</div>
-			<div class="row fondo_Claro text-justify">
 				<div class="col-md-3 col-md-offset-1">
 					<h3>Retos Regionales</h3>
 					<p>Dar a los usuarios nuevas capacidades de elección y posibilidad de participar activamente en la creación de contenido,

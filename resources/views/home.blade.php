@@ -37,7 +37,7 @@ and open the template in the editor.
         <style>
 			.affix {
 				top: 0;
-				width: 95%;
+				width: 100%;
 			}
 
 			.affix + .container-fluid {
@@ -48,12 +48,12 @@ and open the template in the editor.
 			}
         </style>
     </head>
-    <body id="pag_principal">
+    <body id="pag_principal" style="padding:0px;">
         <header> @include('layout/header') </header>
-		<div class="container-fluid" data-spy="affix" data-offset-top="130" style="z-index:2">
+		<div class="container-fluid" data-spy="affix" data-offset-top="80" style="z-index:2; padding:0px;">
 			@yield('menu')
 		</div>
-        <div class="container-fluid">
+        <div class="container-fluid" style="padding:0px;">
             @yield('cuerpo')
         </div>
     </body>

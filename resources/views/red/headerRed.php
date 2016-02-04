@@ -1,6 +1,6 @@
-<div class="navbar navbar-default" role="navigation">	<!--navbar-static-top-->
+<div class="navbar navbar-default" role="navigation" style="height:110px; margin:0px; margin:0px;">	<!--navbar-static-top-->
     <div class="navbar-header">
-        <div class="navbar-header"><a class="navbar-brand" href="#">Logo Red Mesoamericana</a></div>
+        <div class="navbar-header"  style="padding:0px;"><a class="navbar-brand" href="#"><img class="img-responsive" src="http://placehold.it/250x80" alt="..."></a></div><!--Logo Red Mesoamericana-->
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
             <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar"></span>

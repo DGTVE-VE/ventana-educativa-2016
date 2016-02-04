@@ -1,7 +1,7 @@
-<div class="navbar navbar-inverse" role="navigation" > <!-- navbar-fixed-top style="width:99%"-->
+<div class="navbar navbar-inverse" role="navigation" style="height:80px; margin:0px;"> <!-- navbar-fixed-top style="width:99%"-->
 
     <div class="navbar-header">
-        <div class="navbar-header"><a class="navbar-brand" href="#">Logo Ventana</a></div>
+        <div class="navbar-header"><a class="navbar-brand" href="#"><img class="img-responsive" src="http://placehold.it/120x50" alt="..."></a></div><!--logo ventana-->
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
             <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar"></span>
