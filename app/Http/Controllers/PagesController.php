@@ -24,20 +24,8 @@ class PagesController extends Controller {
         return view('indexDocentes');
     }
     
-    public function colaboradores(){
-        $colaboradores = \App\Red\Colaboradores::all ();      
-        return view('viewTable')->with("colaboradores", $colaboradores);
+    public function viewTable(){
+        $proyectos = \App\Red\Proyectos::all ();      
+        return view('viewTable')->with("proyectos", $proyectos);
     }
-    
-    public function proyectos(){
-        $proyectos = \App\Red\Proyectos::all();
-        return view('viewTable')->with('proyectos',$proyectos);
-    }
-            
-    public function banner(){
-        $banners = \App\Red\Banners::all();
-        return view('viewTable')->with('banners',$banners);
-    }
-    
-    
 }
