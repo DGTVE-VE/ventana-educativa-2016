@@ -87,7 +87,7 @@
 			</div-->
 			<div class="row fondo_Obscuro">
 				<div class="col-md-12 text-center text-uppercase">
-					<h2> Áreas Tematicas</h2>
+					<h2> Áreas Temáticas</h2>
 				</div>
 				<!--div class="col-md-12">
 					<center>
