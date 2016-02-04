@@ -3,6 +3,6 @@
 @stop
 @extends('home')
 
-@section('content')
+@section('cuerpo')
 <div><h1>VOD</h1></div>
 @stop

@@ -18,7 +18,7 @@
 						<div class="carousel-inner" role="listbox">
 							<div class="item active">
 								<center>
-								<img class="img-responsive" src="imagenes\red\1600-x-650.jpg" alt="..."> <!--imagenes\red\1600-x-650.jpg-->
+								<img class="img-responsive" src="imagenes/red/1600-x-650.jpg" alt="..."> <!--http://172.16.101.33/ventana-educativa-2016/public/-->
 								<div class="carousel-caption">
 									<h3>Primera Imagen</h3>
 									<p>Desripcion de seccion</p>
@@ -36,7 +36,7 @@
 							</div>
 							<div class="item">
 								<center>
-								<img class="img-responsive" src="imagenes\red\1600-x-650.jpg" alt="...">
+								<img class="img-responsive" src="imagenes/red/1600-x-650.jpg" alt="...">
 								<div class="carousel-caption">
 									<h3>Tercera Imagen</h3>
 									<p>Desripcion de seccion</p>
@@ -55,25 +55,25 @@
 						  </div>
 
 						  <!-- Controls -->
-						  <a class="left carousel-control" href="#carousel-2" role="button" data-slide="prev">
+						  <a class="left carousel-control" href="#carousel-2" role="button" data-slide="prev" onclick="reiniciaBarra()">
 							<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
 							<span class="sr-only">Previous</span>
 						  </a>
-						  <a class="right carousel-control" href="#carousel-2" role="button" data-slide="next">
+						  <a class="right carousel-control" href="#carousel-2" role="button" data-slide="next" onclick="reiniciaBarra()">
 							<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
 							<span class="sr-only">Next</span>
 						  </a>
 					</div>
-					
-					<div class="col-xs-12 col-sm-12 progress-container">
-						<div class="progress progress-striped active">
-							<div id="indicador" class="progress-bar progress-bar-success"  onclick="alert('Mensaje')"></div>
-						</div>
-					</div>
+				
 					<!--div class="progress">
 						<div id="avanceSlider" class="progress-bar active" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 0%;">
 							<!--span class="sr-only">70% Complete</span-->
 						<!--/div-->
+					</div>
+				</div>
+				<div class="col-xs-12 col-sm-12 col-md-12 progress-container">
+					<div class="progress progress-striped active">
+						<div id="indicador" class="progress-bar progress-bar-success"></div>
 					</div>
 				</div>
 			</div>
@@ -539,38 +539,35 @@
 					</div>
 				</div>
 			</div>
-			<div class="row fondo_Claro">
-				<div class="col-md-6 col-md-offset-4">
-					<ul class="nav nav-pills navs-justified">
-						<li class="active"><a data-toggle="pill" href="#home">Retos Regionales</a></li>
-						<li><a data-toggle="pill" href="#menu2">Sitios de Interés</a></li>
-						<li><a data-toggle="pill" href="#menu3">Anexo X</a></li>
-					</ul>
-					<div class="tab-content">
-
-						<div id="home" class="tab-pane fade in active">
-							<h3>Retos Regionales</h3>
-							<p>Dar a los usuarios nuevas capacidades de elección y posibilidad de participar activamente en la creación de contenido,
-								con la finalidad de consolidar una economía digital.</p>
-							<p>Aplicar políticas digitales, junto con la formulación de estrategias mesoamericanas y de políticas de alcance sectorial,
-								que permitan proyectar los objetivos de desarrollo, aplicación y adopción de tecnología en campos como la educación</p>
-							<p>Generar mecanismos de confianza y seguridad para los consumidores en los medios digitales, tales como, privacidad, 
-								protección de datos y protección al consumidor</p>
-							<p>Disminuir las brechas de acceso, usabilidad y apropiación de las tecnologías digitales en todos los sectores de la región</p>
-							<p>Fortalecer una gobernanza regional, en la que los organismos reguladores presten atención a los espacios y promover la 
-								participación de los actores involucrados.</p>
-						</div>
-						<div id="menu2" class="tab-pane fade">
-							<h3>Menu 2</h3>
-							<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
-						</div>
-						<div id="menu3" class="tab-pane fade">
-							<h3>Menu 3</h3>
-							<p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-						</div>
-					</div>
+			<div class="row fondo_Claro text-justify">
+				<div class="col-md-3 col-md-offset-1">
+					<h3>Retos Regionales</h3>
+					<p>Dar a los usuarios nuevas capacidades de elección y posibilidad de participar activamente en la creación de contenido,
+						con la finalidad de consolidar una economía digital.</p>
+					<p>Aplicar políticas digitales, junto con la formulación de estrategias mesoamericanas y de políticas de alcance sectorial,
+						que permitan proyectar los objetivos de desarrollo, aplicación y adopción de tecnología en campos como la educación</p>
+					<p>Generar mecanismos de confianza y seguridad para los consumidores en los medios digitales, tales como, privacidad, 
+						protección de datos y protección al consumidor</p>
+					<p>Disminuir las brechas de acceso, usabilidad y apropiación de las tecnologías digitales en todos los sectores de la región</p>
+					<p>Fortalecer una gobernanza regional, en la que los organismos reguladores presten atención a los espacios y promover la 
+						participación de los actores involucrados.</p>
 				</div>
-				
+				<div class="col-md-4">
+					<h3>Sitios de Interés</h3>
+					<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+				</div>
+				<div class="col-md-3">
+					<h3>Anexo X</h3>
+					<p>Dar a los usuarios nuevas capacidades de elección y posibilidad de participar activamente en la creación de contenido,
+						con la finalidad de consolidar una economía digital.</p>
+					<p>Aplicar políticas digitales, junto con la formulación de estrategias mesoamericanas y de políticas de alcance sectorial,
+						que permitan proyectar los objetivos de desarrollo, aplicación y adopción de tecnología en campos como la educación</p>
+					<p>Generar mecanismos de confianza y seguridad para los consumidores en los medios digitales, tales como, privacidad, 
+						protección de datos y protección al consumidor</p>
+					<p>Disminuir las brechas de acceso, usabilidad y apropiación de las tecnologías digitales en todos los sectores de la región</p>
+					<p>Fortalecer una gobernanza regional, en la que los organismos reguladores presten atención a los espacios y promover la 
+						participación de los actores involucrados.</p>
+				</div>
 				<!--div class="col-md-4">
 					<p>Retos Regionales</p>
 				</div>
