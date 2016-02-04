@@ -13,7 +13,7 @@ and open the template in the editor.
         <meta name="author" content="Ecosistema Digital de Aprendizaje (DGTVE)">
         <meta http-equiv="X-UA-Compatible" content="IE=Edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
-		<link href="css/principal.css" rel="stylesheet">
+		<link rel="stylesheet" href="css/principal.css">
 
         <!-- Latest compiled and minified CSS -->
         <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
@@ -48,12 +48,12 @@ and open the template in the editor.
 			}
         </style>
     </head>
-    <body id="pag_principal" style="padding:0px;">
+    <body id="pag_principal" style="padding:0px; overflow-x:hidden;">
         <header> @include('layout/header') </header>
 		<div class="container-fluid" data-spy="affix" data-offset-top="80" style="z-index:2; padding:0px;">
 			@yield('menu')
 		</div>
-        <div class="container-fluid" style="padding:0px;">
+        <div class="container-fluid" style="padding:0px; margin-top:-20px;">
             @yield('cuerpo')
         </div>
     </body>

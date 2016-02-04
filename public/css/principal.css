@@ -1,8 +1,10 @@
 			.fondo_Obscuro{
 				background-color:#555;
+				margin:0px;
 			}
 			.fondo_Claro{
 				background-color:white;
+				margin:0px;
 			}
 			.division{
 				height:60px;
@@ -26,9 +28,10 @@
 				color:gray;
 				line-height:2;
 			}
-			.carousel-indicators li {
-				/*border-color: #f4511e;*/
-				border-color:   #555555;
+			.carousel-indicators li{
+				border-color:gray;
+				opacity:0.5;
+				z-index:-1;
 			}
 			.item h4 {
 				font-size: 19px;
@@ -39,6 +42,7 @@
 			}
 			
 			.progress-bar {
-    -webkit-transition: none !important;
-    transition: none !important;
-}
+				-webkit-transition: none !important;
+				transition: none !important;
+			}
+			

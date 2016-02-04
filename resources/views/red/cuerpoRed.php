@@ -4,11 +4,11 @@
 				</div>
 			</div-->
 			<div class="row fondo_Obscuro" style="margin:0px;">
-				<div class="col-md-12"  style="padding:0px;">
+				<div class="col-md-12" style="padding:0px;">
 					<div id="carousel-2" class="carousel slide" data-ride="carousel">
 						<!-- Indicators -->
 						<ol class="carousel-indicators">
-							<li data-target="#carousel-2" data-slide-to="0" class="active"></li>
+							<li data-target="#carousel-2" data-slide-to="0" class="active" ></li>
 							<li data-target="#carousel-2" data-slide-to="1"></li>
 							<li data-target="#carousel-2" data-slide-to="2"></li>
 							<li data-target="#carousel-2" data-slide-to="3"></li>
@@ -174,33 +174,33 @@
 					<div class="division">
 					</div>
 				</div>
-				<div class="col-sm-6 col-md-2 col-md-offset-3">
-					<div class="thumbnail homologa">
-						<img class="img-responsive img-rounded" src="http://placehold.it/400x300" alt="...">
+				<div class="col-sm-6 col-md-3 col-md-offset-2">
+					<div class="thumbnail"> <!--homologa-->
+						<img class="img-responsive img-rounded" src="http://placehold.it/350x350" alt="...">
 						<div class="caption">
 							<h3>Primer Encuentro de Innovacion y Tecnologia Educativa</h3>
 							<p>Resumen de descripción</p>
-							<p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+							<!--p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p-->
 						</div>
 					</div>
 				</div>
-				<div class="col-sm-6 col-md-2">
-					<div class="thumbnail homologa">
-						<img class="img-responsive img-rounded" src="http://placehold.it/400x300" alt="...">
+				<div class="col-sm-6 col-md-3">
+					<div class="thumbnail"> <!-- homologa-->
+						<img class="img-responsive img-rounded" src="http://placehold.it/350x350" alt="...">
 						<div class="caption">
-							<h3>Ventana Educativa</h3>
+							<h3>Ventana <br> Educativa</h3>
 							<p>Resumen de descripción</p>
-							<p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+							<!--p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p-->
 						</div>
 					</div>
 				</div>
-				<div class="col-sm-6 col-md-2">
-					<div class="thumbnail homologa">
-						<img class="img-responsive img-rounded" src="http://placehold.it/400x300" alt="...">
+				<div class="col-sm-6 col-md-3">
+					<div class="thumbnail"><!--homologa-->
+						<img class="img-responsive img-rounded" src="http://placehold.it/350x350" alt="...">
 						<div class="caption">
 							<h3>Ecosistema Digital de Aprendizaje</h3>
 							<p>Resumen de descripción</p>
-							<p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+							<!--p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p-->
 						</div>
 					</div>
 				</div>
@@ -332,7 +332,7 @@
 								<div class="row">
 									<div class="col-xs-6 col-sm-6 col-md-2 col-md-offset-2">
 										<div class="thumbnail">
-											<img class="img-responsive img-rounded" src="http://placehold.it/100x100" alt="...">
+											<img class="img-responsive img-rounded" src="http://placehold.it/150x200" alt="...">
 											<div class="caption">
 												<h4>Nombre Colaborador</h4>
 												<p>Resumen de descripción</p>
@@ -342,7 +342,7 @@
 									</div>
 									<div class="col-xs-6 col-sm-6 col-md-2">
 										<div class="thumbnail">
-											<img class="img-responsive img-rounded" src="http://placehold.it/100x100" alt="...">
+											<img class="img-responsive img-rounded" src="http://placehold.it/150x200" alt="...">
 											<div class="caption">
 												<h4>Nombre Colaborador</h4>
 												<p>Resumen de descripción</p>
@@ -352,7 +352,7 @@
 									</div>
 									<div class="col-xs-6 col-sm-6 col-md-2">
 										<div class="thumbnail">
-											<img class="img-responsive img-rounded" src="http://placehold.it/100x100" alt="...">
+											<img class="img-responsive img-rounded" src="http://placehold.it/150x200" alt="...">
 											<div class="caption">
 												<h4>Nombre Colaborador</h4>
 												<p>Resumen de descripción</p>
@@ -362,7 +362,7 @@
 									</div>
 									<div class="col-xs-6 col-sm-6 col-md-2">
 										<div class="thumbnail">
-											<img class="img-responsive img-rounded" src="http://placehold.it/100x100" alt="...">
+											<img class="img-responsive img-rounded" src="http://placehold.it/150x200" alt="...">
 											<div class="caption">
 												<h4>Nombre Colaborador</h4>
 												<p>Resumen de descripción</p>
@@ -376,7 +376,7 @@
 								<div class="row">
 									<div class="col-xs-6 col-sm-6 col-md-2 col-md-offset-2">
 										<div class="thumbnail">
-											<img class="img-responsive img-rounded" src="http://placehold.it/100x100" alt="...">
+											<img class="img-responsive img-rounded" src="http://placehold.it/150x200" alt="...">
 											<div class="caption">
 												<h4>Nombre Colaborador</h4>
 												<p>Resumen de descripción</p>
@@ -386,7 +386,7 @@
 									</div>
 									<div class="col-xs-6 col-sm-6 col-md-2">
 										<div class="thumbnail">
-											<img class="img-responsive img-rounded" src="http://placehold.it/100x100" alt="...">
+											<img class="img-responsive img-rounded" src="http://placehold.it/150x200" alt="...">
 											<div class="caption">
 												<h4>Nombre Colaborador</h4>
 												<p>Resumen de descripción</p>
@@ -396,7 +396,7 @@
 									</div>
 									<div class="col-xs-6 col-sm-6 col-md-2">
 										<div class="thumbnail">
-											<img class="img-responsive img-rounded" src="http://placehold.it/100x100" alt="...">
+											<img class="img-responsive img-rounded" src="http://placehold.it/150x200" alt="...">
 											<div class="caption">
 												<h4>Nombre Colaborador</h4>
 												<p>Resumen de descripción</p>
@@ -406,7 +406,7 @@
 									</div>
 									<div class="col-xs-6 col-sm-6 col-md-2">
 										<div class="thumbnail">
-											<img class="img-responsive img-rounded" src="http://placehold.it/100x100" alt="...">
+											<img class="img-responsive img-rounded" src="http://placehold.it/150x200" alt="...">
 											<div class="caption">
 												<h4>Nombre Colaborador</h4>
 												<p>Resumen de descripción</p>
@@ -420,7 +420,7 @@
 								<div class="row">
 									<div class="col-xs-6 col-sm-6 col-md-2 col-md-offset-2">
 										<div class="thumbnail">
-											<img class="img-responsive img-rounded" src="http://placehold.it/100x100" alt="...">
+											<img class="img-responsive img-rounded" src="http://placehold.it/150x200" alt="...">
 											<div class="caption">
 												<h4>Nombre Colaborador</h4>
 												<p>Resumen de descripción</p>
@@ -430,7 +430,7 @@
 									</div>
 									<div class="col-xs-6 col-sm-6 col-md-2">
 										<div class="thumbnail">
-											<img class="img-responsive img-rounded" src="http://placehold.it/100x100" alt="...">
+											<img class="img-responsive img-rounded" src="http://placehold.it/150x200" alt="...">
 											<div class="caption">
 												<h4>Nombre Colaborador</h4>
 												<p>Resumen de descripción</p>
@@ -440,7 +440,7 @@
 									</div>
 									<div class="col-xs-6 col-sm-6 col-md-2">
 										<div class="thumbnail">
-											<img class="img-responsive img-rounded" src="http://placehold.it/100x100" alt="...">
+											<img class="img-responsive img-rounded" src="http://placehold.it/150x200" alt="...">
 											<div class="caption">
 												<h4>Nombre Colaborador</h4>
 												<p>Resumen de descripción</p>
@@ -450,7 +450,7 @@
 									</div>
 									<div class="col-xs-6 col-sm-6 col-md-2">
 										<div class="thumbnail">
-											<img class="img-responsive img-rounded" src="http://placehold.it/100x100" alt="...">
+											<img class="img-responsive img-rounded" src="http://placehold.it/150x200" alt="...">
 											<div class="caption">
 												<h4>Nombre Colaborador</h4>
 												<p>Resumen de descripción</p>
@@ -464,7 +464,7 @@
 								<div class="row">
 									<div class="col-xs-6 col-sm-6 col-md-2 col-md-offset-2">
 										<div class="thumbnail">
-											<img class="img-responsive img-rounded" src="http://placehold.it/100x100" alt="...">
+											<img class="img-responsive img-rounded" src="http://placehold.it/150x200" alt="...">
 											<div class="caption">
 												<h4>Nombre Colaborador</h4>
 												<p>Resumen de descripción</p>
@@ -474,7 +474,7 @@
 									</div>
 									<div class="col-xs-6 col-sm-6 col-md-2">
 										<div class="thumbnail">
-											<img class="img-responsive img-rounded" src="http://placehold.it/100x100" alt="...">
+											<img class="img-responsive img-rounded" src="http://placehold.it/150x200" alt="...">
 											<div class="caption">
 												<h4>Nombre Colaborador</h4>
 												<p>Resumen de descripción</p>
@@ -484,7 +484,7 @@
 									</div>
 									<div class="col-xs-6 col-sm-6 col-md-2">
 										<div class="thumbnail">
-											<img class="img-responsive img-rounded" src="http://placehold.it/100x100" alt="...">
+											<img class="img-responsive img-rounded" src="http://placehold.it/150x200" alt="...">
 											<div class="caption">
 												<h4>Nombre Colaborador</h4>
 												<p>Resumen de descripción</p>
@@ -494,7 +494,7 @@
 									</div>
 									<div class="col-xs-6 col-sm-6 col-md-2">
 										<div class="thumbnail">
-											<img class="img-responsive img-rounded" src="http://placehold.it/100x100" alt="...">
+											<img class="img-responsive img-rounded" src="http://placehold.it/150x200" alt="...">
 											<div class="caption">
 												<h4>Nombre Colaborador</h4>
 												<p>Resumen de descripción</p>
@@ -584,17 +584,21 @@
 				</div>
 			</div>
 			<div class="row fondo_Obscuro">
-				<div class="col-md-12 text-center">
-				<a class="up-arrow" href="#pag_principal" data-toggle="tooltip" title="TO TOP">
-					<span class="glyphicon glyphicon-chevron-up"></span>
-				</a><br><br>
-				<p><a href="http://www.w3schools.com" data-toggle="tooltip" title="Home">home</a>
-					| <a href="http://www.w3schools.com" data-toggle="tooltip" title="Acerca de">Acerca de</a>
-					| <a href="http://www.w3schools.com" data-toggle="tooltip" title="Términos de referencia">Términos de Referencia</a>
-					| <a href="http://www.w3schools.com" data-toggle="tooltip" title="Políticas de Privacidad">Políticas de Privacidad</a>
-				</p>
+				<div class="col-md-1 col-md-offset-10 text-center" style="background:black;">
+					<br>
+					<a class="nav up-arrow" href="#pag_principal" data-toggle="tooltip" title="TO TOP">
+						<span class="glyphicon glyphicon-triangle-top"></span>
+					</a>
+					<br>
 				</div>
-			</div>
+				<div class="col-md-12 text-center">
+					<p><a href="http://www.w3schools.com" data-toggle="tooltip" title="Home">home</a>
+						| <a href="http://www.w3schools.com" data-toggle="tooltip" title="Acerca de">Acerca de</a>
+						| <a href="http://www.w3schools.com" data-toggle="tooltip" title="Términos de referencia">Términos de Referencia</a>
+						| <a href="http://www.w3schools.com" data-toggle="tooltip" title="Políticas de Privacidad">Políticas de Privacidad</a>
+					</p>
+				</div>
+			</div>	
 			<div class="row fondo_Obscuro">
 				<div class="division">
 				</div>
