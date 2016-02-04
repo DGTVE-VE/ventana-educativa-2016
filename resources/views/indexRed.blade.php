@@ -1,3 +1,6 @@
+@section('title')
+    Red Mesoamericana
+@stop
 @extends('home')
 @section('menu')
 	@include('red.headerRed')

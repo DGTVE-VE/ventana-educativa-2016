@@ -3,6 +3,6 @@
 @stop
 @extends('home')
 
-@section('content')
+@section('cuerpo')
 <div><h1>Docentes</h1></div>
 @stop

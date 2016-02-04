@@ -33,16 +33,19 @@ and open the template in the editor.
         <link rel="stylesheet" href="{{ URL::asset('css/animate.css') }}">
         <link rel="stylesheet" href="{{ URL::asset('css/estiloRed.css') }}">
 
+		<link href='https://fonts.googleapis.com/css?family=Oxygen:400,700,300' rel='stylesheet' type='text/css'>
         <style>
 			.affix {
 				top: 0;
-				width: 100%;
+				width: 95%;
 			}
 
 			.affix + .container-fluid {
-				padding-top: 70px;
+				padding-top: 50px;
 			}
-  
+			body{
+				font-family: 'Oxygen', sans-serif;
+			}
         </style>
     </head>
     <body id="pag_principal">
