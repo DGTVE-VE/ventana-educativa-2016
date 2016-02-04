@@ -8,5 +8,5 @@ class Banners extends Model
 {
     
     protected $fillable = array('url_archivo', 'activo');
-    protected $guarded = array('id_banner', 'fecha_creacion','fecha_eliminacion');
+    protected $guarded = array('id_banner');
 }

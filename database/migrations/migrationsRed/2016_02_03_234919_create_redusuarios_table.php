@@ -14,16 +14,14 @@ class CreateRedusuariosTable extends Migration
     {
         Schema::create('redusuarios', function (Blueprint $table) {
             $table->increments('id_usuario');
-            $table->string('nombre',150);
-            $table->string('correo',150);
-            $table->string('pais',50);
+            $table->string('nombre',100);
+            $table->string('correo',40);
+            $table->string('pais',20);
             $table->string('localidad',50);
-            $table->string('sexo',10);
+            $table->string('sexo',15);
             $table->date('nacimiento');
-            $table->string('ocupacion',100);
-            $table->string('grado_estudios',50);
-            $table->int('id_contenido',5);
-            $table->date('fecha_activacion');
+            $table->string('ocupacion',25);
+            $table->string('grado_estudios',25);            
             $table->timestamps();
         });
     }

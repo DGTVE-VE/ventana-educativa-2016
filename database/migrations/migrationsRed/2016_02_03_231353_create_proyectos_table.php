@@ -16,10 +16,9 @@ class CreateProyectosTable extends Migration
             $table->increments('id_proyectos');
             $table->string('titulo',150);
             $table->string('descripcion',500);
-            $table->string('thumbnail',50);
-            $table->date('fecha_creacion');
+            $table->string('thumbnail',150);
             $table->boolean('activo');
-            $table->string('liga',50);
+            $atble->string('liga',150);
             $table->timestamps();
         });
     }
