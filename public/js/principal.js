@@ -27,7 +27,7 @@
 		$(document).ready(function(){
 			
 		//--------------------------------------------------Agrega efecto de velocidad lenta al subir al inicio de la página
-		/*	// Initialize Tooltip
+			/*// Initialize Tooltip
 			$('[data-toggle="tooltip"]').tooltip(); 
 
 			// Add smooth scrolling to all links in navbar + footer link
@@ -63,4 +63,5 @@
 				itv = setInterval(prog,50);
 			});
 			
+			$('[data-toggle="popover"]').popover();
 		})

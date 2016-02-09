@@ -1,6 +1,8 @@
 			.fondo_Obscuro{
 				background-color:#555;
 				margin:0px;
+				color:white;
+				
 			}
 			.fondo_Claro{
 				background-color:white;
@@ -15,16 +17,8 @@
 			.homologa{
 				height:450px;
 			}
-			h1, h2{
-				font-family: 'Montserrat', sans-serif;
-				color:gray;
-			}
-			h4{
-				font-family: 'Roboto Slab', serif;
-				color:gray;
-			}
 			.separa_Linea{
-				font-family: 'Merriweather', serif;
+				/*font-family: 'Merriweather', serif;*/
 				color:gray;
 				line-height:2;
 			}
@@ -46,3 +40,19 @@
 				transition: none !important;
 			}
 			
+			.imgTabla{
+				width: 140px;
+			}
+			.txtTabla{
+				width: 350px;
+			}
+			
+			ul.bajaHorizontal{
+				position:relative;
+				top:30px;
+			}
+			
+			.subeHorizontal{
+				position:relative;
+				top:-5px;
+			}

@@ -24,8 +24,12 @@ and open the template in the editor.
         <!-- Latest compiled JavaScript -->
         <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 		
+		<!-- efecto barra desplazamiento horizontal -->
+		<link rel="stylesheet" href="malihu-custom-scrollbar-plugin-master/jquery.mCustomScrollbar.css">
+        <script src="malihu-custom-scrollbar-plugin-master/jquery.mCustomScrollbar.concat.min.js"></script>
+		<script src="malihu-custom-scrollbar-plugin-master/usarCustomScrollbar.js"></script>
 
         <!-- Estilo Header del Home-->
         <link rel="stylesheet" href="{{ URL::asset('css/estiloBase.css') }}">
@@ -48,7 +52,7 @@ and open the template in the editor.
 			}
         </style>
     </head>
-    <body id="pag_principal" style="padding:0px; overflow-x:hidden;">
+    <body id="pag_principal" style="padding:0px; overflow-x:hidden">
         <header> @include('layout/header') </header>
 		<div class="container-fluid" data-spy="affix" data-offset-top="80" style="z-index:2; padding:0px;">
 			@yield('menu')
