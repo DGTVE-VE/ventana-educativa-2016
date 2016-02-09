@@ -63,5 +63,5 @@
 				itv = setInterval(prog,50);
 			});
 			
-			$('[data-toggle="popover"]').popover();
+			$('[data-toggle="popover"]').popover({html:true});
 		})

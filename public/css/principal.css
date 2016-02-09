@@ -1,11 +1,23 @@
 			.fondo_Obscuro{
-				background-color:#555;
+				background-color:#424242;
+				margin:0px;
+				color:white;
+				
+			}
+			.fondo_footer1{
+				background-color:#2C2C2C;
+				margin:0px;
+				color:white;
+				
+			}
+			.fondo_footer2{
+				background-color:#292929;
 				margin:0px;
 				color:white;
 				
 			}
 			.fondo_Claro{
-				background-color:white;
+				background-color:#F5F5F5;
 				margin:0px;
 			}
 			.division{
@@ -55,4 +67,7 @@
 			.subeHorizontal{
 				position:relative;
 				top:-5px;
+			}
+			.popover{
+				width: 300px;
 			}
