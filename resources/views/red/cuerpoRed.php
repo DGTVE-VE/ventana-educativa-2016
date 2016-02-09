@@ -566,7 +566,7 @@
 				<div class="col-md-2">
 					<h4 class="text-uppercase">Colaboradores</h4>
 					<br>
-					<img class="img-responsive img-rounded" src="imagenes/red/LogoRed/amexid.png"/>
+					<img class="img-responsive img-rounded" src="imagenes/red/footer/amexid.png"/>
 					<br>
 					<h4>CECC/SICA</h4>
 					<h4>CSUCA</h4>
@@ -587,7 +587,7 @@
 						</tr>
 						<tr>
 							<td>
-								<img class="img-responsive img-rounded" style="float:left; width:30px; height:30px;" src="imagenes/red/footer/telefono.png"/>
+								<img class="img-responsive img-rounded" style="float:left; width:20px; height:20px;" src="imagenes/red/footer/telefono.png"/>
 							</td>
 							<td>
 								<p>(55) 3601 8100 <br>
