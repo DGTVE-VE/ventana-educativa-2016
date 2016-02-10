@@ -71,3 +71,23 @@
 			.popover{
 				width: 300px;
 			}
+			.marcoMorado{
+				width:376px; 
+				height:371px; 
+				background-image:url(../imagenes/red/proyectos/cuadro-morado-primer-encuentro.jpg);
+			}
+			.imgAbajo10{
+				padding-top:10px;
+			}
+			
+			.imgAbajo30{
+				padding-top:30px;
+			}
+			
+			.centraCont{
+				margin:0 auto;
+			}
+			.imgTecho{
+				display:flex; 
+				align-content:flex-start;
+			}

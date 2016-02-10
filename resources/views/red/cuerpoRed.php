@@ -1,4 +1,4 @@
-﻿			<div class="row fondo_Obscuro" style="margin:0px;">
+﻿			<div class="row fondo_Obscuro">
 				<div class="col-md-12" style="padding:0px;">
 					<div id="carousel-2" class="carousel slide" data-ride="carousel">
 						<!-- Indicators -->
@@ -15,8 +15,6 @@
 								<center>
 								<img class="img-responsive" src="imagenes/red/Banners/1.jpg" alt="..."/> <!--http://172.16.101.33/ventana-educativa-2016/public/-->
 								<div class="carousel-caption">
-									<!--h3>Primera Imagen</h3>
-									<p>Desripcion de seccion</p-->
 								</div>
 								</center>
 							</div>
@@ -24,8 +22,6 @@
 								<center>
 								<img class="img-responsive" src="imagenes/red/Banners/2.jpg" alt="..."/> <!--imagenes/red/1600-x-650.jpg-->
 								<div class="carousel-caption">
-									<!--h3>Segunda Imagen</h3>
-									<p>Desripcion de seccion</p-->
 								</div>
 								</center>
 							</div>
@@ -33,8 +29,6 @@
 								<center>
 								<img class="img-responsive" src="imagenes/red/Banners/banner-3.jpg" alt="..."/> <!--http://placehold.it/1600x500-->
 								<div class="carousel-caption">
-									<h3>Tercera Imagen</h3>
-									<p>Desripcion de seccion</p>
 								</div>
 								</center>
 							</div>
@@ -42,8 +36,6 @@
 								<center>
 								<img class="img-responsive" src="imagenes/red/Banners/banner-4.jpg" alt="..."/>
 								<div class="carousel-caption">
-									<h3>Cuarta Imagen</h3>
-									<p>Desripcion de seccion</p>
 								</div>
 								</center>
 							</div>
@@ -61,12 +53,13 @@
 					</div>
 				</div>
 			</div>
-			<div class="col-xs-12 col-sm-12 col-md-12 progress-container" style="padding:0px;">
-				<div class="progress active"  style="margin:0px;">
-					<div id="indicador" class="progress-bar"></div>
+			<div class="row fondo_Claro">
+				<div class="col-xs-12 col-sm-12 col-md-12 progress-container" style="padding:0px;">
+					<div class="progress active"  style="margin:0px;">
+						<div id="indicador" class="progress-bar"></div>
+					</div>
 				</div>
 			</div>
-			<!--/div-->
 			<div class="row fondo_Obscuro">
 				<div class="col-md-12 text-center text-uppercase">
 					<h2> Áreas Temáticas</h2>
@@ -92,7 +85,6 @@
 							<td class="imgTabla">
 									<img class="img-responsive" alt="imagen fija" src="imagenes/red/areasTematicas/RedesConocimiento.png"/></td>
 							<td class="txtTabla"><h3><strong>Redes de conocimiento y aprendizaje</strong></h3>
-								<!--p class="separa_Linea">Parrafo Parrafo Parrafo Parrafo Parrafo Parrafo Parrafo Parrafo Parrafo Parrafo Parrafo Parrafo Parrafo</p-->
 							</td>
 						</tr>
 					</table>
@@ -110,7 +102,6 @@
 						<tr>
 							<td class="imgTabla"><img class="img-responsive" alt="imagen fija" src="imagenes/red/areasTematicas/ambientesEducativos.png"/></td>
 							<td class="txtTabla"><h3><strong>Modelos y ambientes educativos</strong></h3>
-								<!--p class="separa_Linea">Parrafo Parrafo Parrafo Parrafo Parrafo Parrafo Parrafo Parrafo Parrafo Parrafo Parrafo Parrafo Parrafo</p-->
 							</td>
 						</tr>
 					</table>
@@ -131,7 +122,6 @@
 						<tr>
 							<td class="imgTabla"><img class="img-responsive" alt="imagen fija" src="imagenes/red/areasTematicas/Gestioncalidad.png"/></td>
 							<td class="txtTabla"><h3><strong>Gestion y calidad de programas educativos</strong></h3>
-								<!--p class="separa_Linea">Parrafo Parrafo Parrafo Parrafo Parrafo Parrafo Parrafo Parrafo Parrafo Parrafo Parrafo Parrafo Parrafo</p-->
 							</td>
 						</tr>
 					</table>
@@ -158,7 +148,6 @@
 						<tr>
 							<td class="imgTabla"><img class="img-responsive" alt="imagen fija" src="imagenes/red/areasTematicas/Multimedia.png"/></td>
 							<td class="txtTabla"><h3><strong>Multimedia y desarrollo educativo</strong></h3>
-								<!--p class="separa_Linea">Parrafo Parrafo Parrafo Parrafo Parrafo Parrafo Parrafo Parrafo Parrafo Parrafo Parrafo Parrafo Parrafo</p-->
 							</td>
 						</tr>
 					</table>
@@ -181,7 +170,6 @@
 						<tr>
 							<td class="imgTabla"><img class="img-responsive" alt="imagen fija" src="imagenes/red/areasTematicas/PoliticaEducativa.png"/></td>
 							<td class="txtTabla"><h3><strong>Politica Educativa y cambio social</strong></h3>
-								<!--p class="separa_Linea">Parrafo Parrafo Parrafo Parrafo Parrafo Parrafo Parrafo Parrafo Parrafo Parrafo Parrafo Parrafo Parrafo</p-->
 							</td>
 						</tr>
 					</table>
@@ -193,57 +181,57 @@
 					</div>
 				</div>
 			</div>
-			<!--div class="row fondo_Obscuro">
-				<div class="division">
-				</div>
-			</div-->
 			<div class="row fondo_Obscuro">
 				<div class="col-md-12 text-center text-uppercase">
 					<h2> Proyectos </h2>
 				</div>
-				<!--div class="col-md-12">
-					<center>
-						<img alt="icono" class="img-responsive" src="http://placehold.it/100x20"/>
-					</center>
-				</div-->
 			</div>
-			<div class="row fondo_Claro text-center">
+			<div class="row fondo_Claro text-center" style="background-image:url(imagenes/red/proyectos/fondo-proyectos.jpg);">
 				<div class="col-md-12">
 					<div class="division">
 					</div>
 				</div>
 				<div class="col-sm-6 col-md-4">
-					<div class="thumbnail"> <!--homologa-->
-						<img class="img-responsive img-rounded" src="imagenes/red/proyectos/primerEncuentro.jpg" alt="..."/> <!--http://placehold.it/250x250-->
+				<center>
+					<div class="thumbnail marcoMorado"> <!--homologa-->
+						<a href="#">
+							<img class="img-responsive img-rounded" style="padding-top:10px;" src="imagenes/red/proyectos/primerEncuentro.jpg" alt="..."/> <!--http://placehold.it/250x250-->
+						</a>
 						<div class="caption">
-							<h3>Primer Encuentro de Innovacion y Tecnologia Educativa</h3>
-							<!--p>Resumen de descripción</p-->
-							<!--p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p-->
 						</div>
 					</div>
+				</center>
 				</div>
 				<div class="col-sm-6 col-md-4">
-					<div class="thumbnail"> <!-- homologa-->
-						<img class="img-responsive img-rounded" src="imagenes/red/proyectos/ventanaEducativa.jpg" alt="..."/>
+				<center>
+					<div class="thumbnail marcoMorado"> <!-- 376x371-->
+						<a href="#">
+							<img class="img-responsive img-rounded imgAbajo10" src="imagenes/red/proyectos/ventanaEducativa.jpg" alt="..."/>
+						</a>
 						<div class="caption">
-							<h3>Ventana <br> Educativa</h3>
-							<!--p>Resumen de descripción</p-->
-							<!--p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p-->
 						</div>
 					</div>
+				</center>
 				</div>
 				<div class="col-sm-6 col-md-4">
-					<div class="thumbnail"><!--homologa-->
-						<img class="img-responsive img-rounded" src="imagenes/red/proyectos/ecosistema.jpg" alt="..."/>
+				<center>
+					<div class="thumbnail marcoMorado"><!--homologa-->
+						<a href="#">
+							<img class="img-responsive img-rounded imgAbajo10"src="imagenes/red/proyectos/ecosistema.jpg" alt="..."/>
+						</a>
 						<div class="caption">
-							<h3>Ecosistema Digital <br> de Aprendizaje</h3>
-							<!--p>Resumen de descripción</p-->
-							<!--p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p-->
 						</div>
 					</div>
+				</center>
+				</div>
+				<div class="col-sm-12 col-md-12">
+					<center>
+						<a href="#"> <img class="img-responsive img-rounded imgAbajo30" src="imagenes/red/proyectos/boton-ver-todos.png" alt="..."/></a>
+					</center>
 				</div>
 				<div class="col-md-12">
 					<div class="division">
+						<!--	***********************************************		-->
 					</div>
 				</div>
 			</div>
@@ -252,7 +240,7 @@
 					<h2> Modelo de Usabilidad Pedagógica de las TIC</h2>
 				</div>
 			</div>
-			<div class="row fondo_Claro" style="background-image:url(http://placehold.it/1600x500);">
+			<div class="row fondo_Claro">
 				<div class="col-md-12">
 					<div class="division">
 						<!--	***********************************************		-->
@@ -509,13 +497,9 @@
 			</div>
 			<div class="row fondo_Claro">
 				<div class="division">
+				
 				</div>
 			</div>
-			<!--div class="row fondo_Obscuro">
-				<div class="col-md-12 text-center text-uppercase titulo" style="color:white;">
-					<h2> Título de la sección </h2>
-				</div>
-			</div-->
 			<div class="row fondo_Claro text-justify">
 				<div class="col-md-12">
 					<div class="division">
@@ -542,9 +526,9 @@
 					<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
 				</div>
 				<div class="col-md-3">
-					<h3>Facebook</h3>
+					<img class="img-responsive img-rounded" style="width:150px; height:48px;" src="imagenes/red/Logotipos/facebook.png" alt="..."/>
 					<div>Contenido Facebook.</div>
-					<h3>Twitter</h3>
+					<img class="img-responsive img-rounded" style="width:150px; height:48px;" src="imagenes/red/Logotipos/twitter.png" alt="..."/>
 					<div>Contenido Twitter.</div>
 				</div>
 			</div>
@@ -566,7 +550,7 @@
 				<div class="col-md-2">
 					<h4 class="text-uppercase">Colaboradores</h4>
 					<br>
-					<img class="img-responsive img-rounded" src="imagenes/red/footer/amexid.png"/>
+						<img class="img-responsive img-rounded" style="width:150px; height:50px;" src="imagenes/red/footer/amexid.png"/>
 					<br>
 					<h4>CECC/SICA</h4>
 					<h4>CSUCA</h4>
@@ -576,8 +560,8 @@
 					<h4 class="text-uppercase">Contáctanos</h4>
 					<table>
 						<tr>
-							<td>
-								<img class="img-rounded" style="float:left; width:30px; height:40px;" src="imagenes/red/footer/localizacion.png"/>
+							<td class="imgTecho">
+								<img class="img-rounded" style="align:flex-start; width:14px; height:20px;" src="imagenes/red/footer/localizacion.png"/>
 							</td>
 							<td>
 								<p>Av. Circunvalación s/n, esquina Tabiqueros,<br>
@@ -586,8 +570,8 @@
 							</td>
 						</tr>
 						<tr>
-							<td>
-								<img class="img-responsive img-rounded" style="float:left; width:20px; height:20px;" src="imagenes/red/footer/telefono.png"/>
+							<td class="imgTecho">
+								<img class="img-responsive img-rounded" style="align:flex-start; width:20px; height:20px;" src="imagenes/red/footer/telefono.png"/>
 							</td>
 							<td>
 								<p>(55) 3601 8100 <br>
@@ -597,8 +581,8 @@
 							</td>
 						</tr>
 						<tr>
-							<td>
-								<img class="img-responsive img-rounded" style="float:left; width:30px; height:40px;" src="imagenes/red/footer/mail.png"/>
+							<td class="imgTecho">
+								<img class="img-responsive img-rounded" style="width:20px; height:20px;" src="imagenes/red/footer/mail.png"/>
 							</td>
 							<td>
 								<p> contacto@redmesoamericana.com</p>
