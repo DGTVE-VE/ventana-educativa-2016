@@ -82,6 +82,7 @@
 							</ul>
 							">
 						<tr>
+							<td style="padding-left:60px;"><p> </p></td>
 							<td class="imgTabla">
 									<img class="img-responsive" alt="imagen fija" src="imagenes/red/areasTematicas/RedesConocimiento.png"/></td>
 							<td class="txtTabla"><h3><strong>Redes de conocimiento y aprendizaje</strong></h3>
@@ -100,6 +101,7 @@
 							</ul>
 							">
 						<tr>
+							<td style="padding-left:60px;"><p> </p></td>
 							<td class="imgTabla"><img class="img-responsive" alt="imagen fija" src="imagenes/red/areasTematicas/ambientesEducativos.png"/></td>
 							<td class="txtTabla"><h3><strong>Modelos y ambientes educativos</strong></h3>
 							</td>
@@ -120,6 +122,7 @@
 							</ul>
 							">
 						<tr>
+							<td style="padding-left:60px;"><p> </p></td>
 							<td class="imgTabla"><img class="img-responsive" alt="imagen fija" src="imagenes/red/areasTematicas/Gestioncalidad.png"/></td>
 							<td class="txtTabla"><h3><strong>Gestion y calidad de programas educativos</strong></h3>
 							</td>
