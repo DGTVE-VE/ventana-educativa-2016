@@ -35,3 +35,7 @@
 					<div>Contenido Twitter.</div>
 				</div>
 			</div>
+			<div class="row fondo_Claro">
+				<div class="division">
+				</div>
+			</div>
