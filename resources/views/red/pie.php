@@ -74,7 +74,7 @@
 					<form class="form-inline">
 						<div class="form-group">
 							<input type="email" class="form-control" id="correoElectronico" placeholder="direccion@servidor.com">
-							<button type="submit" class="btn btn-default"> Envía </button>
+							<button type="submit" class="btn btn-primary"><span class="glyphicon glyphicon-send"></span></button>
 						</div>
 					</form>
 				</div>
@@ -89,8 +89,8 @@
 				<div class="col-md-1 text-center">
 					<br>
 					<a class="nav up-arrow" href="#pag_principal" data-toggle="tooltip" title="ARRIBA">
-						<img class="img-responsive img-rounded" src="http://placehold.it/50x50" alt="..."/>
-						<!--span class="glyphicon glyphicon-triangle-top"></span-->
+						<!--img class="img-responsive img-rounded" src="http://placehold.it/50x50" alt="..."/-->
+						<span class="glyphicon glyphicon-menu-up" style="border-style:solid; border-width: 1px; padding:15px;"></span>
 					</a>
 					<br>
 				</div>
