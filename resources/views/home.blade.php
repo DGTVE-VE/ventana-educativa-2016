@@ -50,6 +50,8 @@ and open the template in the editor.
 			body{
 				font-family: 'Oxygen', sans-serif;
 			}
+                        
+                        
         </style>
     </head>
     <body id="pag_principal" style="padding:0px; overflow-x:hidden">

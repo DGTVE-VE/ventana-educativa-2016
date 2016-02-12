@@ -28,4 +28,8 @@ class PagesController extends Controller {
         $proyectos = \App\Red\Proyectos::all ();      
         return view('viewTable')->with("proyectos", $proyectos);
     }
+    
+//    public function integrantesSlider() {
+//        return view('integrantesSlider');
+//    }
 }
