@@ -1,8 +1,4 @@
-﻿			<div class="row fondo_Claro">
-				<div class="division">
-				</div>
-			</div>
-			<!--div class="row fondo_Obscuro">
+﻿			<!--div class="row fondo_Obscuro">
 				<div class="division">
 				</div>
 			</div-->

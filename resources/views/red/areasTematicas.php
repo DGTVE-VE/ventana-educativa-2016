@@ -8,7 +8,7 @@
 					<div class="division">
 					</div>
 				</div>
-				<div class="col-sm-6 col-md-4">
+				<div class="col-sm-6 col-md-3 col-md-offset-1">
 					<table title="Redes de conocimiento y aprendizaje" data-toggle="popover" data-placement="right" data-trigger="hover" 
 							data-content="Proponer modelos educativos acordes con los problemas y planteamientos teóricos, tales como: 
 							la teoría de las organizaciones para conformar comunidades educativas virtuales, representación y creación 
@@ -20,15 +20,14 @@
 							</ul>
 							">
 						<tr>
-							<td style="padding-left:60px;"><p> </p></td>
 							<td class="imgTabla">
-									<img class="img-responsive" alt="imagen fija" src="imagenes/red/areasTematicas/RedesConocimiento.png"/></td>
-							<td class="txtTabla"><h3><strong>Redes de conocimiento y aprendizaje</strong></h3>
+									<img alt="imagen fija" src="imagenes/red/areasTematicas/RedesConocimiento.png"/></td>
+							<td class="txtTabla"><h3><strong>Redes de <br> conocimiento y <br> aprendizaje</strong></h3>
 							</td>
 						</tr>
 					</table>
 				</div>
-				<div class="col-sm-6 col-md-4">
+				<div class="col-sm-6 col-md-3">
 					<table class="popover-inner" title="Modelos y ambientes educativos" data-toggle="popover" data-placement="bottom" data-trigger="hover" 
 							data-content="Esta área abarca las fases de investigación, fundamentación, desarrollo y evaluación de los 
 							modelos y ambientes educativos, basados en tecnologías de información y comunicación.<br><br>
@@ -39,14 +38,13 @@
 							</ul>
 							">
 						<tr>
-							<td style="padding-left:60px;"><p> </p></td>
-							<td class="imgTabla"><img class="img-responsive" alt="imagen fija" src="imagenes/red/areasTematicas/ambientesEducativos.png"/></td>
-							<td class="txtTabla"><h3><strong>Modelos y ambientes educativos</strong></h3>
+							<td class="imgTabla"><img alt="imagen fija" src="imagenes/red/areasTematicas/ambientesEducativos.png"/></td>
+							<td class="txtTabla"><h3><strong>Modelos y <br> ambientes <br> educativos</strong></h3>
 							</td>
 						</tr>
 					</table>
 				</div>
-				<div class="col-sm-6 col-md-4">
+				<div class="col-sm-6 col-md-3">
 					<table title="Gestion y calidad de programas educativos" data-toggle="popover" data-placement="left" data-trigger="hover" 
 							data-content="Sus propósitos son el estudio y comparación de modelos de gestión institucional para el uso de las Tecnologías 
 							de la Información y Comunicación (TIC) en el sistema, así como para generar criterios e indicadores basados en la recuperación 
@@ -60,9 +58,8 @@
 							</ul>
 							">
 						<tr>
-							<td style="padding-left:60px;"><p> </p></td>
-							<td class="imgTabla"><img class="img-responsive" alt="imagen fija" src="imagenes/red/areasTematicas/Gestioncalidad.png"/></td>
-							<td class="txtTabla"><h3><strong>Gestion y calidad de programas educativos</strong></h3>
+							<td class="imgTabla"><img alt="imagen fija" src="imagenes/red/areasTematicas/Gestioncalidad.png"/></td>
+							<td class="txtTabla"><h3><strong>Gestion y calidad <br> de programas <br> educativos</strong></h3>
 							</td>
 						</tr>
 					</table>
@@ -87,8 +84,8 @@
 							</ul>
 							">
 						<tr>
-							<td class="imgTabla"><img class="img-responsive" alt="imagen fija" src="imagenes/red/areasTematicas/Multimedia.png"/></td>
-							<td class="txtTabla"><h3><strong>Multimedia y desarrollo educativo</strong></h3>
+							<td class="imgTabla"><img alt="imagen fija" src="imagenes/red/areasTematicas/Multimedia.png"/></td>
+							<td class="txtTabla"><h3><strong>Multimedia y <br> desarrollo educativo</strong></h3>
 							</td>
 						</tr>
 					</table>
@@ -109,8 +106,8 @@
 							</ul>
 							">
 						<tr>
-							<td class="imgTabla"><img class="img-responsive" alt="imagen fija" src="imagenes/red/areasTematicas/PoliticaEducativa.png"/></td>
-							<td class="txtTabla"><h3><strong>Politica Educativa y cambio social</strong></h3>
+							<td class="imgTabla"><img alt="imagen fija" src="imagenes/red/areasTematicas/PoliticaEducativa.png"/></td>
+							<td class="txtTabla"><h3><strong>Politica Educativa y <br> cambio social</strong></h3>
 							</td>
 						</tr>
 					</table>

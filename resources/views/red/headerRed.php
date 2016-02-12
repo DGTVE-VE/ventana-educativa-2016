@@ -15,15 +15,15 @@
             <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Objetivos <!--b class="caret"></b--></a>
                 <ul class="dropdown-menu">
-                    <li><button type="button" class="btn btn-link" data-toggle="modal" data-target="#ObjGeneral">General</button></li>
-                    <!--li><button type="button" class="btn btn-link" title="Objetivo General" data-toggle="popover" data-placement="bottom" data-trigger="hover" 
+                    <!--li><button type="button" class="btn btn-link" data-toggle="modal" data-target="#ObjGeneral">General</button></li--> <!--title="Objetivo General"-->
+                    <li><button type="button" class="btn btn-link" data-toggle="popover" data-placement="bottom" data-trigger="hover" 
 								data-content="Integrar un espacio permanente de investigación y tecnología educativa de la mano de un equipo de colaboradores 
 								multidisciplinarios en la región mesoamericana. Destinado  a la generación y difusión de metodologías, proyectos 
 								y modelos que impulsen el desarrollo y uso de herramientas tecnológicas empleadas en la educación básica.">
 								General
-					</button></li-->
-                    <li><button type="button" class="btn btn-link" data-toggle="modal" data-target="#ObjEspecificos">Especificos</button></li>
-                    <!--li><button type="button" class="btn btn-link" title="Objetivo General" data-toggle="popover" data-placement="bottom" data-trigger="hover" 
+					</button></li>
+                    <!--li><button type="button" class="btn btn-link" data-toggle="modal" data-target="#ObjEspecificos">Especificos</button></li--> <!--title="Objetivos especificos"-->
+                    <li><button type="button" class="btn btn-link" data-toggle="popover" data-placement="bottom" data-trigger="hover" 
 								html="true" data-content="<ul>
 			<li> Impulsar una comunidad destinada a la investigación </li>
 			<li>Conformar un espacio de análisis y generación de proyectos de investigación aplicada</li>
@@ -35,7 +35,7 @@
 			<li>Coordinar el trabajo docente con un enfoque interdisciplinar de forma que su estructura, recursos  y funciones apoyen la consecución de los objetivos</li>
 			<li>Fomentar el desarrollo de habilidades digitales y la profesionalización docente en la región</li>
 		</ul>"
-					>Especificos</button></li-->
+					>Especificos</button></li>
                 </ul>
             </li>
             <li><a href="#">eventos</a></li>

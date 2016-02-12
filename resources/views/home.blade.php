@@ -56,7 +56,7 @@ and open the template in the editor.
 		<div class="container-fluid" data-spy="affix" data-offset-top="80" style="z-index:2; padding:0px;">
 			@yield('menu')
 		</div>
-        <div class="container-fluid" style="padding:0px; margin-top:-20px;">
+        <div class="container-fluid">
             @yield('cuerpo')
         </div>
     </body>
