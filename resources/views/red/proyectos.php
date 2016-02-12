@@ -10,7 +10,7 @@
 				</div>
 				<div class="col-sm-6 col-md-4">
 				<center>
-					<div class="thumbnail marcoMorado"> <!--homologa-->
+					<div class="thumbnail marcoMorado1"> <!--homologa-->
 						<a href="#">
 							<img class="img-responsive img-rounded" style="padding-top:10px;" src="imagenes/red/proyectos/primerEncuentro.jpg" alt="..."/> <!--http://placehold.it/250x250-->
 						</a>
@@ -21,7 +21,7 @@
 				</div>
 				<div class="col-sm-6 col-md-4">
 				<center>
-					<div class="thumbnail marcoMorado"> <!-- 376x371-->
+					<div class="thumbnail marcoMorado2"> <!-- 376x371-->
 						<a href="#">
 							<img class="img-responsive img-rounded imgAbajo10" src="imagenes/red/proyectos/ventanaEducativa.jpg" alt="..."/>
 						</a>
@@ -32,7 +32,7 @@
 				</div>
 				<div class="col-sm-6 col-md-4">
 				<center>
-					<div class="thumbnail marcoMorado"><!--homologa-->
+					<div class="thumbnail marcoMorado3"><!--homologa-->
 						<a href="#">
 							<img class="img-responsive img-rounded imgAbajo10"src="imagenes/red/proyectos/ecosistema.jpg" alt="..."/>
 						</a>
@@ -41,7 +41,7 @@
 					</div>
 				</center>
 				</div>
-				<div class="col-sm-12 col-md-12">
+				<div class="col-sm-12 col-md-2 col-md-offset-5">
 					<center>
 						<a href="#"> <img class="img-responsive img-rounded imgAbajo30" src="imagenes/red/proyectos/boton-ver-todos.png" alt="..."/></a>
 					</center>

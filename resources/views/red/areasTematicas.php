@@ -20,7 +20,6 @@
 							</ul>
 							">
 						<tr>
-							<!--td style="padding-left:60px;"><p> </p></td-->
 							<td class="imgTabla">
 									<img alt="imagen fija" src="imagenes/red/areasTematicas/RedesConocimiento.png"/></td>
 							<td class="txtTabla"><h3><strong>Redes de <br> conocimiento y <br> aprendizaje</strong></h3>
@@ -39,7 +38,6 @@
 							</ul>
 							">
 						<tr>
-							<td style="padding-left:60px;"><p> </p></td>
 							<td class="imgTabla"><img alt="imagen fija" src="imagenes/red/areasTematicas/ambientesEducativos.png"/></td>
 							<td class="txtTabla"><h3><strong>Modelos y <br> ambientes <br> educativos</strong></h3>
 							</td>
@@ -60,7 +58,6 @@
 							</ul>
 							">
 						<tr>
-							<td style="padding-left:60px;"><p> </p></td>
 							<td class="imgTabla"><img alt="imagen fija" src="imagenes/red/areasTematicas/Gestioncalidad.png"/></td>
 							<td class="txtTabla"><h3><strong>Gestion y calidad <br> de programas <br> educativos</strong></h3>
 							</td>

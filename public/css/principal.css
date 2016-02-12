@@ -71,10 +71,20 @@
 			.popover{
 				width: 300px;
 			}
-			.marcoMorado{
+			.marcoMorado1{
 				width:376px; 
 				height:371px; 
 				background-image:url(../imagenes/red/proyectos/cuadro-morado-primer-encuentro.jpg);
+			}
+			.marcoMorado2{
+				width:376px; 
+				height:371px; 
+				background-image:url(../imagenes/red/proyectos/cuadro-morado-ventana.jpg);
+			}
+			.marcoMorado3{
+				width:376px; 
+				height:371px; 
+				background-image:url(../imagenes/red/proyectos/cuadro-morado-ecosistema.jpg);
 			}
 			.imgAbajo10{
 				padding-top:10px;
