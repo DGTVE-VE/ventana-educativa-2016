@@ -39,7 +39,7 @@
                 </ul>
             </li>
             <li><a href="#">eventos</a></li>
-            <li><a href="#">publicaciones</a></li>
+            <li><a href="indexPublicaciones">publicaciones</a></li>
             <li><a href="#">contacto</a></li>
         </ul>
     </div>

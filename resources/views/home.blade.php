@@ -37,10 +37,16 @@ and open the template in the editor.
         <link rel="stylesheet" href="{{ URL::asset('css/animate.css') }}">
         <link rel="stylesheet" href="{{ URL::asset('css/estiloRed.css') }}">
 
+
         <link href='https://fonts.googleapis.com/css?family=Oxygen:400,700,300' rel='stylesheet' type='text/css'>
         <!--Estilo para full slider de integrantes-->
         <link rel="stylesheet" href="{{ URL::asset('css/red/estiloIntegrantes.css') }}">
         <script src="/public/red/bootstrap-modal-carousel.min.js"></script>        
+
+
+		<link rel="stylesheet" href="css/red/ihover.css">  
+        <link rel="stylesheet" href="css/red/animate.css">
+
         <style>
             .affix {
                 top: 0;
