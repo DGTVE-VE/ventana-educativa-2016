@@ -42,7 +42,7 @@ and open the template in the editor.
 		<link rel="stylesheet" href="css/red/ihover.css">  
         <link rel="stylesheet" href="css/red/animate.css">
         <style>
-			.affix {
+			/*.affix {
 				top: 0;
 				width: 100%;
 			}
@@ -52,14 +52,14 @@ and open the template in the editor.
 			}
 			body{
 				font-family: 'Oxygen', sans-serif;
-			}
+			}*/
                         
                         
         </style>
     </head>
     <body id="pag_principal" style="padding:0px; overflow-x:hidden">
 
-		<div class="container-fluid" data-spy="affix" data-offset-top="80" style="z-index:2; padding:0px;">
+		<div class="container-fluid" style="z-index:2; padding:0px;"> <!--data-spy="affix" data-offset-top="80"-->
 			@yield('menu')
 		</div>
         <div class="container-fluid">

@@ -30,7 +30,7 @@
 			elems.each(function(){
 				var self = $(this);
 				$(this).fadeOut();
-			}
+			})
 		//--------------------------------------------------Agrega efecto de velocidad lenta al subir al inicio de la página
 			/*// Initialize Tooltip
 			$('[data-toggle="tooltip"]').tooltip(); 

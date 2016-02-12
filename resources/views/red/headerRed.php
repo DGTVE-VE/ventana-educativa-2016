@@ -1,6 +1,6 @@
-<div class="navbar navbar-default" role="navigation" style="height:110px; margin:0px; margin:0px;">	<!--navbar-static-top-->
+<div class="navbar navbar-default navbar-fixed-top" role="navigation" style="height:110px; margin:0px;">	<!--navbar-static-top-->
     <div class="navbar-header">
-        <div class="navbar-header"  style="padding:0px;"><a class="navbar-brand" href="#"><img class="img-responsive" src="imagenes/red/LogoRed/RedMesoamericana.png" alt="..."></a></div><!--Logo Red Mesoamericana-->
+        <div class="navbar-header"  style="padding:0px;"><a class="navbar-brand" href="indexRed"><img class="img-responsive" src="imagenes/red/LogoRed/RedMesoamericana.png" alt="..."></a></div><!--Logo Red Mesoamericana-->
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".js-navbar-collapse">
             <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar"></span>
@@ -25,21 +25,21 @@
                     <!--li><button type="button" class="btn btn-link" data-toggle="modal" data-target="#ObjEspecificos">Especificos</button></li--> <!--title="Objetivos especificos"-->
                     <li><button type="button" class="btn btn-link" data-toggle="popover" data-placement="bottom" data-trigger="hover" 
 								html="true" data-content="<ul>
-			<li> Impulsar una comunidad destinada a la investigación </li>
-			<li>Conformar un espacio de análisis y generación de proyectos de investigación aplicada</li>
-			<li>Compartir experiencias docentes entre los miembros de la red</li>
-			<li>Participar en una enseñanza orientada al aprendizaje del alumno y su mejora</li>
-			<li>Ser un espacio para el desarrollo y el enriquecimiento profesional de sus miembros</li>
-			<li>Apoyar la investigación sobre la enseñanza y el aprendizaje</li>
-			<li>Conformar comunidades activas de aprendizaje</li>
-			<li>Coordinar el trabajo docente con un enfoque interdisciplinar de forma que su estructura, recursos  y funciones apoyen la consecución de los objetivos</li>
-			<li>Fomentar el desarrollo de habilidades digitales y la profesionalización docente en la región</li>
-		</ul>"
-					>Especificos</button></li>
+									<li> Impulsar una comunidad destinada a la investigación </li>
+									<li>Conformar un espacio de análisis y generación de proyectos de investigación aplicada</li>
+									<li>Compartir experiencias docentes entre los miembros de la red</li>
+									<li>Participar en una enseñanza orientada al aprendizaje del alumno y su mejora</li>
+									<li>Ser un espacio para el desarrollo y el enriquecimiento profesional de sus miembros</li>
+									<li>Apoyar la investigación sobre la enseñanza y el aprendizaje</li>
+									<li>Conformar comunidades activas de aprendizaje</li>
+									<li>Coordinar el trabajo docente con un enfoque interdisciplinar de forma que su estructura, recursos  y funciones apoyen la consecución de los objetivos</li>
+									<li>Fomentar el desarrollo de habilidades digitales y la profesionalización docente en la región</li>
+								</ul>"
+						>Especificos</button></li>
                 </ul>
             </li>
             <li><a href="#">eventos</a></li>
-            <li><a href="indexPublicaciones">publicaciones</a></li>
+            <li><a href="publicaciones">publicaciones</a></li>
             <li><a href="#">contacto</a></li>
         </ul>
     </div>

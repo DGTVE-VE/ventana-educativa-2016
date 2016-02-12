@@ -13,7 +13,7 @@
 				</div>
 				<div class="col-sm-3 col-md-4"><!-- style="background-image:url(imagenes/red/ModeloUsabilidad/aros-modelo-de-usabilidad.png); background-repeat:no-repeat; height:500px;">-->
 					<img class="estoy-visible" alt="..." src="imagenes/red/ModeloUsabilidad/aros-modelo-de-usabilidad.png">
-
+<!--slideInLeft animated-->
 					<img id="imgFuncionalidad" alt="..." src="imagenes/red/ModeloUsabilidad/funcionalidadEdu.png" onmouseenter="imgResalta('funcionalidad')" onmouseleave="imgNormal('funcionalidad')" style="position:absolute; left:190px; top:62px;">
 					<img alt="..." src="imagenes/red/ModeloUsabilidad/texto-lapiz-engrane.png" style="position:absolute; left:-205px; top:0px;">
 					

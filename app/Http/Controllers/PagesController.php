@@ -24,7 +24,7 @@ class PagesController extends Controller {
         return view('indexDocentes');
     }
     
-    public function indexPublicaciones() {
+    public function publicaciones() {
         return view('indexPublicaciones');
     }
 	
