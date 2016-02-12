@@ -27,17 +27,16 @@ and open the template in the editor.
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 		
 		<!-- efecto barra desplazamiento horizontal -->
-		<link rel="stylesheet" href="malihu-custom-scrollbar-plugin-master/jquery.mCustomScrollbar.css">
-        <script src="malihu-custom-scrollbar-plugin-master/jquery.mCustomScrollbar.concat.min.js"></script>
-		<script src="malihu-custom-scrollbar-plugin-master/usarCustomScrollbar.js"></script>
+                <link rel="stylesheet" href="malihu-custom-scrollbar-plugin-master/jquery.mCustomScrollbar.css">
+                <script src="malihu-custom-scrollbar-plugin-master/jquery.mCustomScrollbar.concat.min.js"></script>
+                <script src="malihu-custom-scrollbar-plugin-master/usarCustomScrollbar.js"></script>
 
         <!-- Estilo Header del Home-->
         <link rel="stylesheet" href="{{ URL::asset('css/estiloBase.css') }}">
         <!--Estilo Red Mesoamericana-->
         <link rel="stylesheet" href="{{ URL::asset('css/animate.css') }}">
         <link rel="stylesheet" href="{{ URL::asset('css/estiloRed.css') }}">
-
-		<link href='https://fonts.googleapis.com/css?family=Oxygen:400,700,300' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Oxygen:400,700,300' rel='stylesheet' type='text/css'>
         <style>
 			.affix {
 				top: 0;
@@ -53,7 +52,7 @@ and open the template in the editor.
         </style>
     </head>
     <body id="pag_principal" style="padding:0px; overflow-x:hidden">
-        <header> @include('layout/header') </header>
+        <!--<header> @include('layout/header') </header>-->
 		<div class="container-fluid" data-spy="affix" data-offset-top="80" style="z-index:2; padding:0px;">
 			@yield('menu')
 		</div>
