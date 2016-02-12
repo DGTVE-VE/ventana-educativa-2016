@@ -38,6 +38,9 @@ and open the template in the editor.
         <link rel="stylesheet" href="{{ URL::asset('css/estiloRed.css') }}">
 
 		<link href='https://fonts.googleapis.com/css?family=Oxygen:400,700,300' rel='stylesheet' type='text/css'>
+		
+		<link rel="stylesheet" href="css/red/ihover.css">  
+        <link rel="stylesheet" href="css/red/animate.css">
         <style>
 			.affix {
 				top: 0;
