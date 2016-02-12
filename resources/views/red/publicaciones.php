@@ -22,7 +22,7 @@
 
     </head>
     <body-->
-        <div class="container">
+<div class="container" style="margin-top: 50px;">
             <div class="col-md-12 colorPleca"><h4 class="colorPlecaTexto">Publicaciones</h4></div>
             <div class="row"> <!--row inicial -->
                 <div class="col-md-12">

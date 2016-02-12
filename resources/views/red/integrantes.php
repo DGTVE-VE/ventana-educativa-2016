@@ -24,34 +24,34 @@
     </div>
 </div>
 
-
+<!--
 <div id="carruselIntegrantes" class="carousel slide carousel-fit" data-ride="carousel">
-  <!-- Wrapper for slides -->
+   Wrapper for slides 
   <div class="carousel-inner">
     <div class="item active">
       <img data-src="holder.js/900x500/auto/#777:#555/text:First slide" alt="First slide">
       <div class="carousel-caption">
-        <h3>First slide label</h3>
-        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+        <h3>...</h3>
+        <p>...</p>
       </div>
     </div>
     <div class="item">
       <img data-src="holder.js/750x400/auto/#666:#444/text:Second slide" alt="Second slide">
       <div class="carousel-caption">
-        <h3>Second slide label</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <h3>...</h3>
+        <p>.....</p>
       </div>
     </div>
     <div class="item">
       <img data-src="holder.js/600x300/auto/#555:#333/text:Third slide" alt="Third slide">
       <div class="carousel-caption">
-        <h3>Third slide label</h3>
-        <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+        <h3>...</h3>
+        <p>.....</p>
       </div>
     </div>
-  </div>
+  </div>-->
 
-<div class="modal fade modal-fullscreen force-fullscreen" id="modalIntegrantes" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+<!--<div class="modal fade modal-fullscreen force-fullscreen" id="modalIntegrantes" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
@@ -59,13 +59,13 @@
           <span class="glyphicon glyphicon-remove"></span>
           <span>Cerrar</span>
         </button>
-        <h4 class="modal-title">Modal title</h4>
+        <h4 class="modal-title">Título</h4>
       </div>
       <div class="modal-body">
-        <p>One fine body…</p>
+        <p>…</p>
       </div>
       <div class="modal-footer">
-        <!-- Controls -->
+         Controls 
         <a class="left carousel-control" href="#carruselIntegrantes" data-slide="prev">
           <span class="glyphicon glyphicon-chevron-left"></span>
         </a>
@@ -73,9 +73,9 @@
           <span class="glyphicon glyphicon-chevron-right"></span>
         </a>
       </div>
-    </div><!-- /.modal-content -->
-  </div><!-- /.modal-dialog -->
-</div><!-- /.modal -->
+    </div> /.modal-content 
+  </div> /.modal-dialog 
+</div> /.modal -->
 
 <script>
     function saleMouse(){
