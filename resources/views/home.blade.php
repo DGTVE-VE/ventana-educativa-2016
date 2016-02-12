@@ -53,7 +53,7 @@ and open the template in the editor.
         </style>
     </head>
     <body id="pag_principal" style="padding:0px; overflow-x:hidden">
-        <header> @include('layout/header') </header>
+
 		<div class="container-fluid" data-spy="affix" data-offset-top="80" style="z-index:2; padding:0px;">
 			@yield('menu')
 		</div>
