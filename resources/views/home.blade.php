@@ -13,7 +13,7 @@ and open the template in the editor.
         <meta name="author" content="Ecosistema Digital de Aprendizaje (DGTVE)">
         <meta http-equiv="X-UA-Compatible" content="IE=Edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
-		<link rel="stylesheet" href="css/principal.css">
+        <link rel="stylesheet" href="css/principal.css">
 
         <!-- Latest compiled and minified CSS -->
         <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
@@ -24,12 +24,12 @@ and open the template in the editor.
         <!-- Latest compiled JavaScript -->
         <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-		
-		<!-- efecto barra desplazamiento horizontal -->
-		<link rel="stylesheet" href="malihu-custom-scrollbar-plugin-master/jquery.mCustomScrollbar.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+        <!-- efecto barra desplazamiento horizontal -->
+        <link rel="stylesheet" href="malihu-custom-scrollbar-plugin-master/jquery.mCustomScrollbar.css">
         <script src="malihu-custom-scrollbar-plugin-master/jquery.mCustomScrollbar.concat.min.js"></script>
-		<script src="malihu-custom-scrollbar-plugin-master/usarCustomScrollbar.js"></script>
+        <script src="malihu-custom-scrollbar-plugin-master/usarCustomScrollbar.js"></script>
 
         <!-- Estilo Header del Home-->
         <link rel="stylesheet" href="{{ URL::asset('css/estiloBase.css') }}">
@@ -37,28 +37,31 @@ and open the template in the editor.
         <link rel="stylesheet" href="{{ URL::asset('css/animate.css') }}">
         <link rel="stylesheet" href="{{ URL::asset('css/estiloRed.css') }}">
 
-		<link href='https://fonts.googleapis.com/css?family=Oxygen:400,700,300' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Oxygen:400,700,300' rel='stylesheet' type='text/css'>
+        <!--Estilo para full slider de integrantes-->
+        <link rel="stylesheet" href="{{ URL::asset('css/red/estiloIntegrantes.css') }}">
+        <script src="/public/red/bootstrap-modal-carousel.min.js"></script>        
         <style>
-			.affix {
-				top: 0;
-				width: 100%;
-			}
+            .affix {
+                top: 0;
+                width: 100%;
+            }
 
-			.affix + .container-fluid {
-				padding-top: 50px;
-			}
-			body{
-				font-family: 'Oxygen', sans-serif;
-			}
-                        
-                        
+            .affix + .container-fluid {
+                padding-top: 50px;
+            }
+            body{
+                font-family: 'Oxygen', sans-serif;
+            }
+
+
         </style>
     </head>
     <body id="pag_principal" style="padding:0px; overflow-x:hidden">
 
-		<div class="container-fluid" data-spy="affix" data-offset-top="80" style="z-index:2; padding:0px;">
-			@yield('menu')
-		</div>
+        <div class="container-fluid" data-spy="affix" data-offset-top="80" style="z-index:2; padding:0px;">
+            @yield('menu')
+        </div>
         <div class="container-fluid">
             @yield('cuerpo')
         </div>

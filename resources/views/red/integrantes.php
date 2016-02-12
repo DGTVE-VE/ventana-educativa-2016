@@ -5,7 +5,7 @@
             <h2> Nuestros integrantes </h2>
         </div>
     </div>
-    <div class="col-md-12">
+    <div class="col-md-6">
         <img name="imagenMapa_n"  src="imagenes/red/integrantes/gris.png"  border="5px" id="imagenMapa" class="mapaCentroAmerica img-responsive" usemap="#mapa_n" alt="" />
         <map name="mapa_n" id="mapa">         
             <area alt="Colombia" onmouseover="document.getElementById('imagenMapa').src = 'imagenes/red/integrantes/colombia.png';" onmouseout="saleMouse();" href="#" shape="poly" coords="331,279,347,261,347,226,377,187,394,230,434,238,431,274,414,279,413,321,381,380,318,330"/>
@@ -19,10 +19,13 @@
             <area alt="Panama" onmouseover="document.getElementById('imagenMapa').src = 'imagenes/red/integrantes/panama.png';" onmouseout="saleMouse();" href="#" shape="poly" coords="309,223,311,207,346,201,348,212,360,212,348,228,326,231"/>
         </map>
     </div>
+    <div class="col-md-6">
+        <button type="button" class="btn btn-lg btn-link center-block" style="	margin-top: 150px;" data-toggle="modal" data-target="#modalIntegrantes" data-local="#carruselIntegrantes">Ver más</button>
+    </div>
 </div>
-<!--<button type="button" class="btn" data-toggle="modal" data-target="#myModal" data-local="#myCarousel">Demo</button>-->
 
-<div id="myCarousel" class="carousel slide carousel-fit" data-ride="carousel">
+
+<div id="carruselIntegrantes" class="carousel slide carousel-fit" data-ride="carousel">
   <!-- Wrapper for slides -->
   <div class="carousel-inner">
     <div class="item active">
@@ -47,15 +50,14 @@
       </div>
     </div>
   </div>
-</div>
 
-<div class="modal fade modal-fullscreen force-fullscreen" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+<div class="modal fade modal-fullscreen force-fullscreen" id="modalIntegrantes" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
         <button class="btn btn-danger pull-right" type="button" data-dismiss="modal" aria-hidden="true">
           <span class="glyphicon glyphicon-remove"></span>
-          <span>Close</span>
+          <span>Cerrar</span>
         </button>
         <h4 class="modal-title">Modal title</h4>
       </div>
@@ -64,17 +66,16 @@
       </div>
       <div class="modal-footer">
         <!-- Controls -->
-        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+        <a class="left carousel-control" href="#carruselIntegrantes" data-slide="prev">
           <span class="glyphicon glyphicon-chevron-left"></span>
         </a>
-        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+        <a class="right carousel-control" href="#carruselIntegrantes" data-slide="next">
           <span class="glyphicon glyphicon-chevron-right"></span>
         </a>
       </div>
     </div><!-- /.modal-content -->
   </div><!-- /.modal-dialog -->
 </div><!-- /.modal -->
-
 
 <script>
     function saleMouse(){
