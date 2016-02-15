@@ -8,7 +8,7 @@
     <div class="col-md-6">
         <img name="imagenMapa_n"  src="imagenes/red/integrantes/gris.png"  border="5px" id="imagenMapa" class="mapaCentroAmerica img-responsive" usemap="#mapa_n" alt="" />
         <map name="mapa_n" id="mapa">         
-            <area alt="Colombia" onmouseover="document.getElementById('imagenMapa').src = 'imagenes/red/integrantes/colombia.png';" onmouseout="saleMouse();" href="#" shape="poly" coords="331,279,347,261,347,226,377,187,394,230,434,238,431,274,414,279,413,321,381,380,318,330"/>
+            <area alt="Colombia" onmouseover="document.getElementById('imagenMapa').src = 'imagenes/red/integrantes/colombia.png';" onmouseout="saleMouse();" href="integrantesmodal" shape="poly" coords="331,279,347,261,347,226,377,187,394,230,434,238,431,274,414,279,413,321,381,380,318,330"/>
             <area alt="Costa Rica" onmouseover="document.getElementById('imagenMapa').src = 'imagenes/red/integrantes/costarica.png';" onmouseout="saleMouse();" href="#" shape="poly" coords="265,192,290,182,308,208,307,223,291,216"/>
             <area alt="Dominicana" onmouseover="document.getElementById('imagenMapa').src = 'imagenes/red/integrantes/dominicana.png';" onmouseout="saleMouse();" href="#" shape="poly" coords="379,130,389,111,414,114,433,130"/>
             <area alt="El Salvador" onmouseover="document.getElementById('imagenMapa').src = 'imagenes/red/integrantes/salvador.png';" onmouseout="saleMouse();" href="#" shape="poly" coords="237,173,243,155,254,183"/>
@@ -19,62 +19,6 @@
             <area alt="Panama" onmouseover="document.getElementById('imagenMapa').src = 'imagenes/red/integrantes/panama.png';" onmouseout="saleMouse();" href="#" shape="poly" coords="309,223,311,207,346,201,348,212,360,212,348,228,326,231"/>
         </map>
     </div>
-    <div class="col-md-6">
-       <button type="button" class="btn" data-toggle="modal" data-target="#myModal" data-local="#myCarousel">Demo</button> 
-    </div>
-   
-
-<div id="myCarousel" class="carousel slide carousel-fit" data-ride="carousel">
-  <!-- Wrapper for slides -->
-  <div class="carousel-inner">
-    <div class="item active">
-      <img data-src="holder.js/900x500/auto/#777:#555/text:First slide" alt="First slide">
-      <div class="carousel-caption">
-        <h3>First slide label</h3>
-        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-      </div>
-    </div>
-    <div class="item">
-      <img data-src="holder.js/750x400/auto/#666:#444/text:Second slide" alt="Second slide">
-      <div class="carousel-caption">
-        <h3>Second slide label</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-      </div>
-    </div>
-    <div class="item">
-      <img data-src="holder.js/600x300/auto/#555:#333/text:Third slide" alt="Third slide">
-      <div class="carousel-caption">
-        <h3>Third slide label</h3>
-        <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-      </div>
-    </div>
-  </div>
-
-<div class="modal fade modal-fullscreen force-fullscreen" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button class="btn btn-danger pull-right" type="button" data-dismiss="modal" aria-hidden="true">
-          <span class="glyphicon glyphicon-remove"></span>
-          <span>Close</span>
-        </button>
-        <h4 class="modal-title">Modal title</h4>
-      </div>
-      <div class="modal-body">
-        <p>One fine body…</p>
-      </div>
-      <div class="modal-footer">
-        <!-- Controls -->
-        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-          <span class="glyphicon glyphicon-chevron-left"></span>
-        </a>
-        <a class="right carousel-control" href="#myCarousel" data-slide="next">
-          <span class="glyphicon glyphicon-chevron-right"></span>
-        </a>
-      </div>
-    </div><!-- /.modal-content -->
-  </div><!-- /.modal-dialog -->
-</div><!-- /.modal -->
 </div>
 <script>
     function saleMouse(){

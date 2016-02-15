@@ -34,14 +34,15 @@ and open the template in the editor.
         <!-- Estilo Header del Home-->
         <link rel="stylesheet" href="{{ URL::asset('css/estiloBase.css') }}">
         <!--Estilo Red Mesoamericana-->
-        <link rel="stylesheet" href="{{ URL::asset('css/animate.css') }}">
         <link rel="stylesheet" href="{{ URL::asset('css/estiloRed.css') }}">
 
         <link href='https://fonts.googleapis.com/css?family=Oxygen:400,700,300' rel='stylesheet' type='text/css'>
 
         <link rel="stylesheet" href="css/red/ihover.css">  
         <link rel="stylesheet" href="css/red/animate.css">
+        
     <style>
+        
         /*.affix {
                 top: 0;
                 width: 100%;
@@ -63,6 +64,7 @@ and open the template in the editor.
     </div>
     <div class="container-fluid">
         @yield('cuerpo')
+        @yield('cuerpo2')
     </div>
 </body>
 </html>

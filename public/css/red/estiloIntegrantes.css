@@ -8,7 +8,7 @@ and open the template in the editor.
     Author     : SMARTINEZ
 */
   .modal.modal-fullscreen .modal-content {
-    background: rgba(0, 0, 0, .5);
+    background: rgba(0, 0, 0, .2);
   }
   .modal.modal-fullscreen .modal-header {
     border: 0;
@@ -17,12 +17,12 @@ and open the template in the editor.
   .modal.modal-fullscreen .modal-footer {
     border-color: rgba(0, 0, 0, .5);
   }
-  #modalIntegrantes .carousel-caption {
+  #myModal .carousel-caption {
     background-color: rgba(0, 0, 0, .5);
     bottom: -100%;
     -webkit-transition: bottom 1s;
     transition: bottom 1s;
   }
-  #modalIntegrantes .item.active >.carousel-caption {
+  #myModal .item.active >.carousel-caption {
     bottom: 0;
   }
