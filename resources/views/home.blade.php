@@ -36,35 +36,35 @@ and open the template in the editor.
         <!--Estilo Red Mesoamericana-->
         <link rel="stylesheet" href="{{ URL::asset('css/estiloRed.css') }}">
 
+		<!--	-------------------------- Fuentes de google fonts ------------------------------------		-->
         <link href='https://fonts.googleapis.com/css?family=Oxygen:400,700,300' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Exo:400,600,300,700'rel='stylesheet' type='text/css'>
 
         <link rel="stylesheet" href="css/red/ihover.css">  
         <link rel="stylesheet" href="css/red/animate.css">
         
-    <style>
-        
-        /*.affix {
-                top: 0;
-                width: 100%;
-        }
+		<style>
+			/*.affix {
+					top: 0;
+					width: 100%;
+			}
 
-        .affix + .container-fluid {
-                padding-top: 50px;
-        }
-        body{
-                font-family: 'Oxygen', sans-serif;
-        }*/
-
-
-    </style>
-</head>
-<body id="pag_principal" style="padding:0px; overflow-x:hidden">
-    <div class="container-fluid" style="z-index:2; padding:0px;"> <!--data-spy="affix" data-offset-top="80"-->
-        @yield('menu')
-    </div>
-    <div class="container-fluid">
-        @yield('cuerpo')
-        @yield('cuerpo2')
-    </div>
-</body>
+			.affix + .container-fluid {
+					padding-top: 50px;
+			}*/
+			body{
+				font-family: 'Oxygen', sans-serif;
+				
+			}
+		</style>
+	</head>
+	<body id="pag_principal" style="padding:0px; overflow-x:hidden">
+		<div class="container-fluid" style="z-index:2; padding:0px;"> <!--data-spy="affix" data-offset-top="80"-->
+			@yield('menu')
+		</div>
+		<div class="container-fluid">
+			@yield('cuerpo')
+		</div>
+		<script src="js/principal.js"></script>
+	</body>
 </html>

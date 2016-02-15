@@ -10,7 +10,7 @@
 				</div>
 				<div class="col-sm-6 col-md-4">
 				<center>
-					<div class="thumbnail marcoMorado1"> <!--homologa-->
+					<div class="thumbnail marcoMorado1">
 						<a href="#">
 							<img class="img-responsive img-rounded" style="padding-top:10px;" src="imagenes/red/proyectos/primerEncuentro.jpg" alt="..."/> <!--http://placehold.it/250x250-->
 						</a>
@@ -32,7 +32,7 @@
 				</div>
 				<div class="col-sm-6 col-md-4">
 				<center>
-					<div class="thumbnail marcoMorado3"><!--homologa-->
+					<div class="thumbnail marcoMorado3">
 						<a href="#">
 							<img class="img-responsive img-rounded imgAbajo10"src="imagenes/red/proyectos/ecosistema.jpg" alt="..."/>
 						</a>

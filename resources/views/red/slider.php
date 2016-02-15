@@ -1,4 +1,4 @@
-			<div class="row fondo_Obscuro">
+			<div class="row fondo_Obscuro" style="margin-top:110px;">
 				<div class="col-md-12" style="padding:0px;">
 					<div id="carousel-2" class="carousel slide" data-ride="carousel">
 						<!-- Indicators -->
@@ -55,7 +55,7 @@
 			</div>
 			<div class="row fondo_Claro">
 				<div class="col-xs-12 col-sm-12 col-md-12 progress-container" style="padding:0px;">
-					<div class="progress active"  style="margin:0px;">
+					<div class="progress active" style="margin:0px; opacity:0.8; height:8px;">
 						<div id="indicador" class="progress-bar"></div>
 					</div>
 				</div>
