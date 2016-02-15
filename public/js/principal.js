@@ -23,6 +23,61 @@
 				clearInterval(itv);
 			}
 			itv = setInterval(prog,50);
+			
+				function imgResalta(seccion){
+					switch(seccion){
+						case 'twetter':
+							document.getElementById("imgIconoTwetter").src ="imagenes/red/footer/icono-twetter-B.png";
+							break;
+						case 'facebook':
+							document.getElementById("imgIconoFacebook").src ="imagenes/red/footer/icono-face-B.png";
+							break;
+						case 'youtube':
+							document.getElementById("imgIconoYoutube").src ="imagenes/red/footer/icono-youtube-B.png";
+							break;
+						case 'funcionalidad':
+							document.getElementById("imgFuncionalidad").src ="imagenes/red/ModeloUsabilidad/funcionalidadEduOver.png";
+							break;
+						case 'expectativas':
+							document.getElementById("imgExpectativas").src ="imagenes/red/ModeloUsabilidad/disposicionExpectativasOver.png";
+							break;
+						case 'saberesDig':
+							document.getElementById("imgSaberesDig").src ="imagenes/red/ModeloUsabilidad/saberesDigitalesOver.png";
+							break;
+						case 'apropiacion':
+							document.getElementById("imgApropiacion").src ="imagenes/red/ModeloUsabilidad/apropiacionIncorporacionEduOver.png";
+							break;
+						default:
+							break;
+					}
+				}
+				function imgNormal(seccion){
+					switch(seccion){
+						case 'twetter':
+							document.getElementById("imgIconoTwetter").src ="imagenes/red/footer/icono-twetter-A.png";
+							break;
+						case 'facebook':
+							document.getElementById("imgIconoFacebook").src ="imagenes/red/footer/icono-face-A.png";
+							break;
+						case 'youtube':
+							document.getElementById("imgIconoYoutube").src ="imagenes/red/footer/icono-youtube-A.png";
+							break;
+						case 'funcionalidad':
+							document.getElementById("imgFuncionalidad").src ="imagenes/red/ModeloUsabilidad/funcionalidadEdu.png";
+							break;
+						case 'expectativas':
+							document.getElementById("imgExpectativas").src ="imagenes/red/ModeloUsabilidad/disposicionExpectativas.png";
+							break;
+						case 'saberesDig':
+							document.getElementById("imgSaberesDig").src ="imagenes/red/ModeloUsabilidad/saberesDigitales.png";
+							break;
+						case 'apropiacion':
+							document.getElementById("imgApropiacion").src ="imagenes/red/ModeloUsabilidad/apropiacionIncorporacionEdu.png";
+							break;
+						default:
+							break;
+					}
+				}
 
 		$(document).ready(function(){
 			
