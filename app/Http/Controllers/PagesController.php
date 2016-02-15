@@ -27,9 +27,6 @@ class PagesController extends Controller {
     public function publicaciones() {
         return view('indexPublicaciones');
     }
-    public function integrantesporpais() {
-        return view('integrantesporpais');
-    }
     public function viewTable() {
         $proyectos = \App\Red\Proyectos::all();
         return view('viewTable')->with("proyectos", $proyectos);

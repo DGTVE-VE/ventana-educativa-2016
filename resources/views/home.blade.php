@@ -41,6 +41,7 @@ and open the template in the editor.
         <link rel="stylesheet" href="css/red/ihover.css">  
         <link rel="stylesheet" href="css/red/animate.css">
         
+         <link rel="stylesheet" href="css/red/full-slider.css">  
     <style>
         
         /*.affix {
