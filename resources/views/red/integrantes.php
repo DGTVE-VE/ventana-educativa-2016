@@ -20,63 +20,62 @@
         </map>
     </div>
     <div class="col-md-6">
-        <button type="button" class="btn btn-lg btn-link center-block" style="	margin-top: 150px;" data-toggle="modal" data-target="#modalIntegrantes" data-local="#carruselIntegrantes">Ver más</button>
+       <button type="button" class="btn" data-toggle="modal" data-target="#myModal" data-local="#myCarousel">Demo</button> 
     </div>
-</div>
+   
 
-<!--
-<div id="carruselIntegrantes" class="carousel slide carousel-fit" data-ride="carousel">
-   Wrapper for slides 
+<div id="myCarousel" class="carousel slide carousel-fit" data-ride="carousel">
+  <!-- Wrapper for slides -->
   <div class="carousel-inner">
     <div class="item active">
       <img data-src="holder.js/900x500/auto/#777:#555/text:First slide" alt="First slide">
       <div class="carousel-caption">
-        <h3>...</h3>
-        <p>...</p>
+        <h3>First slide label</h3>
+        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
       </div>
     </div>
     <div class="item">
       <img data-src="holder.js/750x400/auto/#666:#444/text:Second slide" alt="Second slide">
       <div class="carousel-caption">
-        <h3>...</h3>
-        <p>.....</p>
+        <h3>Second slide label</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
       </div>
     </div>
     <div class="item">
       <img data-src="holder.js/600x300/auto/#555:#333/text:Third slide" alt="Third slide">
       <div class="carousel-caption">
-        <h3>...</h3>
-        <p>.....</p>
+        <h3>Third slide label</h3>
+        <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
       </div>
     </div>
-  </div>-->
+  </div>
 
-<!--<div class="modal fade modal-fullscreen force-fullscreen" id="modalIntegrantes" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+<div class="modal fade modal-fullscreen force-fullscreen" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
         <button class="btn btn-danger pull-right" type="button" data-dismiss="modal" aria-hidden="true">
           <span class="glyphicon glyphicon-remove"></span>
-          <span>Cerrar</span>
+          <span>Close</span>
         </button>
-        <h4 class="modal-title">Título</h4>
+        <h4 class="modal-title">Modal title</h4>
       </div>
       <div class="modal-body">
-        <p>…</p>
+        <p>One fine body…</p>
       </div>
       <div class="modal-footer">
-         Controls 
-        <a class="left carousel-control" href="#carruselIntegrantes" data-slide="prev">
+        <!-- Controls -->
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
           <span class="glyphicon glyphicon-chevron-left"></span>
         </a>
-        <a class="right carousel-control" href="#carruselIntegrantes" data-slide="next">
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
           <span class="glyphicon glyphicon-chevron-right"></span>
         </a>
       </div>
-    </div> /.modal-content 
-  </div> /.modal-dialog 
-</div> /.modal -->
-
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+</div>
 <script>
     function saleMouse(){
         document.getElementById('imagenMapa').src = 'imagenes/red/integrantes/gris.png';    
