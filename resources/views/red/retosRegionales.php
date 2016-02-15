@@ -1,9 +1,9 @@
-﻿			<div class="row fondo_Claro">
+﻿			<!--div class="row fondo_Claro">
 				<div class="division">
 				
 				</div>
-			</div>
-			<div class="row fondo_Claro text-justify">
+			</div-->
+			<div class="row fondo_Claro text-justify" style="margin-top:-20px;">
 				<div class="col-md-12">
 					<div class="division">
 					</div>

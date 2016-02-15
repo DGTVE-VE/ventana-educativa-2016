@@ -64,6 +64,7 @@ and open the template in the editor.
 		</div>
         <div class="container-fluid">
             @yield('cuerpo')
+			@yield('cuerpo2')
         </div>
     </body>
 </html>

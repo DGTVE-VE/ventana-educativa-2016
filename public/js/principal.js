@@ -26,17 +26,12 @@
 
 		$(document).ready(function(){
 			
-			var elems = $('.estoy-visible');    //elementos que quiero saber si estan en el área visible
-			elems.each(function(){
-				var self = $(this);
-				//$(this).fadeOut();
-			})
 		//--------------------------------------------------Agrega efecto de velocidad lenta al subir al inicio de la página
-			/*// Initialize Tooltip
+			// Initialize Tooltip
 			$('[data-toggle="tooltip"]').tooltip(); 
 
 			// Add smooth scrolling to all links in navbar + footer link
-			$(".navbar a, footer a[href='#pag_principal']").on('click', function(event) {
+			/*$(".navbar a, footer a[href='#pag_principal']").on('click', function(event) {
 
 				// Prevent default anchor click behavior
 				event.preventDefault();
@@ -54,7 +49,7 @@
 				window.location.hash = hash;
 				});
 			});*/
-			
+
 			//-------------------------    Reiniciar barra animada de carousel   ----------------------------
 			$("#carousel-2").on('slide.bs.carousel', function () {
 				reiniciaBarra();

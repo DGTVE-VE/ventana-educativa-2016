@@ -1,8 +1,4 @@
-﻿			<!--div class="row fondo_Obscuro">
-				<div class="division">
-				</div>
-			</div-->
-			<div class="row fondo_footer1">
+﻿			<div class="row fondo_footer1" style="margin-top:-20px;">
 				<div class="division">
 				</div>
 				<div class="col-md-2 col-md-offset-1">
@@ -52,12 +48,12 @@
 						</tr>
 					</table>
 				</div>
-				<div class="col-md-3">
+				<div class="col-md-4">
 					<h4 class="text-uppercase">Tags</h4><br>
-					<p>Investigación Colaboración Mesoamérica<br>
-					tecnología Educación Matemáticas Español<br>
-					Indicadores educativos Metodologías pedagógicas
-					Docentes procesos formativos pedagogía digital</p>
+					<p>Investigación <strong class="lead">Colaboración </strong> Mesoamérica<br>
+					<strong class="lead">Tecnología</strong> Educación Matemáticas <strong class="lead">Español</strong><br>
+					Indicadores educativos <strong class="lead">Metodologías pedagógicas</strong><br>
+					Docentes <strong class="lead">Procesos formativos</strong> Pedagogía digital</p>
 					<br>
 					<h4	class="text-uppercase">newsletter</h4>
 				</div>
