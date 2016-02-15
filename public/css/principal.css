@@ -1,7 +1,8 @@
 			.fondo_Obscuro{
 				background-color:#424242;
-				margin:0px;
 				color:white;
+				font-family: 'Exo', sans-serif;
+				height:40px;
 				
 			}
 			.fondo_footer1{
@@ -100,4 +101,8 @@
 			.imgTecho{
 				display:flex; 
 				align-content:flex-start;
+			}
+			h2{
+				position:relative;
+				top:-15px;
 			}
