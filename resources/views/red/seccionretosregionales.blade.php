@@ -5,16 +5,16 @@
 				</div>
 				<div class="col-md-4 col-md-offset-1">
 					<h3>Retos Regionales</h3>
-					<div id="carouselRetos" class="carousel slide" data-ride="carousel"> <!-- -->
+					<div id="carouselRetos" class="carousel slide" data-ride="carousel"> <!-- background-color:#E5E5E5; -->
 					  <!-- Indicators -->
-					  <ol class="carousel-indicators" style="background-color:#E5E5E5;">
-						<li data-target="#carouselRetos" data-slide-to="0" class="active"></li>
-						<li data-target="#carouselRetos" data-slide-to="1"></li>
-						<li data-target="#carouselRetos" data-slide-to="2"></li>
-						<li data-target="#carouselRetos" data-slide-to="3"></li>
-						<li data-target="#carouselRetos" data-slide-to="4"></li>
-						<li data-target="#carouselRetos" data-slide-to="5"></li>
-						<li data-target="#carouselRetos" data-slide-to="6"></li>
+					  <ol class="carousel-indicators" style="position: relative; top: 400px; left:200px;">
+						<li style="border-color:black;" data-target="#carouselRetos" data-slide-to="0" class="active"></li>
+						<li style="border-color:black;" data-target="#carouselRetos" data-slide-to="1"></li>
+						<li style="border-color:black;" data-target="#carouselRetos" data-slide-to="2"></li>
+						<li style="border-color:black;" data-target="#carouselRetos" data-slide-to="3"></li>
+						<li style="border-color:black;" data-target="#carouselRetos" data-slide-to="4"></li>
+						<li style="border-color:black;" data-target="#carouselRetos" data-slide-to="5"></li>
+						<li style="border-color:black;" data-target="#carouselRetos" data-slide-to="6"></li>
 					  </ol>
 
 					  <!-- Wrapper for slides -->
