@@ -46,7 +46,6 @@ and open the template in the editor.
         <!--<link rel="stylesheet" href="css/red/full-slider.css">-->  
 
         <style>
-
             /*.affix {
                     top: 0;
                     width: 100%;
@@ -54,16 +53,9 @@ and open the template in the editor.
     
             .affix + .container-fluid {
                     padding-top: 50px;
-            }
-            body{
-                    font-family: 'Oxygen', sans-serif;
             }*/
-
-
-    </style>
             body{
-                font-family: 'Oxygen', sans-serif;
-
+				font-family: 'Oxygen', sans-serif;
             }
         </style>
     </head>

@@ -15,16 +15,16 @@
 					<img class="estoy-visible slideInLeft" alt="..." src="imagenes/red/ModeloUsabilidad/aros-modelo-de-usabilidad.png">
 <!--slideInLeft animated-->
 					<img id="imgFuncionalidad" class="estoy-visible slideInRight" alt="..." src="imagenes/red/ModeloUsabilidad/funcionalidadEdu.png" style="position:absolute; left:190px; top:62px;" onmouseenter="imgResalta('funcionalidad')" onmouseleave="imgNormal('funcionalidad')">
-					<img alt="..." src="imagenes/red/ModeloUsabilidad/texto-lapiz-engrane.png" style="position:absolute; left:-205px; top:0px;">
+					<img id="txtFuncionalidad" alt="..." src="imagenes/red/ModeloUsabilidad/texto-lapiz-engrane.png" style="position:absolute; left:-205px; top:0px;">
 					
 					<img id="imgExpectativas" class="estoy-visible slideInRight" alt="..." src="imagenes/red/ModeloUsabilidad/disposicionExpectativas.png" style="position:absolute; left:78px; top:172px;" onmouseenter="imgResalta('expectativas')" onmouseleave="imgNormal('expectativas')">
-					<img alt="..." src="imagenes/red/ModeloUsabilidad/texto-profesor.png" style="position:absolute; left:-280px; top:122px;">
+					<img id="txtExpectativas" alt="..." src="imagenes/red/ModeloUsabilidad/texto-profesor.png" style="position:absolute; left:-280px; top:122px;">
 					
-					<img id="imgSaberesDig" class="estoy-visible slideInRight" alt="..." src="imagenes/red/ModeloUsabilidad/saberesDigitales.png" onmouseenter="imgResalta('saberesDig')" onmouseleave="imgNormal('saberesDig')" style="position:absolute; left:301px; top:173px;">
-					<img alt="..." src="imagenes/red/ModeloUsabilidad/texto-cerebro.png" style="position:absolute; left:400px; top:180px;">
+					<img id="imgSaberesDig" class="estoy-visible slideInRight" alt="..." src="imagenes/red/ModeloUsabilidad/saberesDigitales.png" style="position:absolute; left:301px; top:173px;" onmouseenter="imgResalta('saberesDig')" onmouseleave="imgNormal('saberesDig')">
+					<img id="txtSaberesDig" alt="..." src="imagenes/red/ModeloUsabilidad/texto-cerebro.png" style="position:absolute; left:400px; top:180px;">
 
-					<img id="imgApropiacion" class="estoy-visible slideInRight" alt="..." src="imagenes/red/ModeloUsabilidad/apropiacionIncorporacionEdu.png" onmouseenter="imgResalta('apropiacion')" onmouseleave="imgNormal('apropiacion')" style="position:absolute; left:189px; top:283px;">
-					<img alt="..." src="imagenes/red/ModeloUsabilidad/texto-pizarron.png" style="position:absolute; left:300px; top:350px;">
+					<img id="imgApropiacion" class="estoy-visible slideInRight" alt="..." src="imagenes/red/ModeloUsabilidad/apropiacionIncorporacionEdu.png" style="position:absolute; left:189px; top:283px;" onmouseenter="imgResalta('apropiacion')" onmouseleave="imgNormal('apropiacion')">
+					<img id="txtApropiacion" alt="..." src="imagenes/red/ModeloUsabilidad/texto-pizarron.png" style="position:absolute; left:300px; top:350px;">
 				</div>
 				<div class="col-sm-3 col-md-4">
 				
@@ -59,8 +59,8 @@
                 });
                 
                 //obtenemos las dimensiones de cada elemento y su posicion
-                var self_w = self.outerWidth(); //ancho exterior
-                var self_h = self.outerHeight(); //alto exterior
+                var self_w = self.outerWidth()/2; //ancho exterior
+                var self_h = self.outerHeight()/2; //alto exterior
                 var self_l = self.offset().left; //coordenada izquierda
                 var self_t = self.offset().top; //coordenada arriba
                 
