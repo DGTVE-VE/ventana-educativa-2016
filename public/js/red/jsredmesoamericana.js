@@ -63,6 +63,21 @@
 							document.getElementById("txtApropiacion").style.left ="300px";
 							document.getElementById("txtApropiacion").style.top ="345px";
 							break;
+						case 'RedesConocimiento':
+							document.getElementById("imgRedesConocimiento").src ="imagenes/red/areasTematicas/RedesConocimientoOver.png";
+							break;
+						case 'AmbientesEducativos':
+							document.getElementById("imgAmbientesEducativos").src ="imagenes/red/areasTematicas/ambientesEducativosOver.png";
+							break;
+						case 'Gestioncalidad':
+							document.getElementById("imgGestioncalidad").src ="imagenes/red/areasTematicas/GestioncalidadOver.png";
+							break;
+						case 'Multimedia':
+							document.getElementById("imgMultimedia").src ="imagenes/red/areasTematicas/MultimediaOver.png";
+							break;
+						case 'PoliticaEducativa':
+							document.getElementById("imgPoliticaEducativa").src ="imagenes/red/areasTematicas/PoliticaEducativaOver.png";
+							break;
 						default:
 							break;
 					}
@@ -105,6 +120,21 @@
 							document.getElementById("txtApropiacion").style.height ="91px";
 							document.getElementById("txtApropiacion").style.left ="300px";
 							document.getElementById("txtApropiacion").style.top ="350px";
+							break;
+						case 'RedesConocimiento':
+							document.getElementById("imgRedesConocimiento").src ="imagenes/red/areasTematicas/RedesConocimiento.png";
+							break;
+						case 'AmbientesEducativos':
+							document.getElementById("imgAmbientesEducativos").src ="imagenes/red/areasTematicas/ambientesEducativos.png";
+							break;
+						case 'Gestioncalidad':
+							document.getElementById("imgGestioncalidad").src ="imagenes/red/areasTematicas/Gestioncalidad.png";
+							break;
+						case 'Multimedia':
+							document.getElementById("imgMultimedia").src ="imagenes/red/areasTematicas/Multimedia.png";
+							break;
+						case 'PoliticaEducativa':
+							document.getElementById("imgPoliticaEducativa").src ="imagenes/red/areasTematicas/PoliticaEducativa.png";
 							break;
 						default:
 							break;
