@@ -72,6 +72,7 @@
 			.popover{
 				width: 300px;
 			}
+			/*----------------------	Proyectos	-------------------------------*/
 			.marcoMorado1{
 				width:376px; 
 				height:371px; 
@@ -106,6 +107,18 @@
 				position:relative;
 				top:-15px;
 			}
-			.textoSombra{
-				text-shadow:2px 2px 1px #000;
+			
+			/*----------------------	retos regionales		---------------------------------*/
+			.txtCarouselAbajo{
+				position:relative; 
+				top:10px;
+				left:0px; 
+				/*text-shadow:2px 2px 1px #000;*/
+				color:black;
+				width:400px;
+			}
+			
+			.imgIconosRetos{
+				width:400px;
+				height:400px;
 			}
