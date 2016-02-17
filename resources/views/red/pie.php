@@ -6,7 +6,7 @@
 				<div class="division">
 				</div>
 				<div class="col-md-2 col-md-offset-1">
-					<img class="img-responsive img-rounded" src="imagenes/red/LogoRed/logoNegativo.png" alt="..."/>
+					<img class="img-responsive img-rounded" src="imagenes/red/LogoRed/logoNegativo.png" width="120" height="120" alt="..."/>
 					<br>
 				</div>
 				<div class="col-md-2">

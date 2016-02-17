@@ -11,18 +11,18 @@
 
     <div class="collapse navbar-collapse js-navbar-collapse">
         <ul class="nav navbar-nav navbar-right text-uppercase bajaHorizontal">
-		    <li><a href="#">nosotros</a></li>
-            <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Objetivos <!--b class="caret"></b--></a>
+		    <li><a href="#">INICIO</a></li>
+                <!-- <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Objetivos b class="caret"></b</a>
                 <ul class="dropdown-menu">
-                    <!--li><button type="button" class="btn btn-link" data-toggle="modal" data-target="#ObjGeneral">General</button></li--> <!--title="Objetivo General"-->
+                    li><button type="button" class="btn btn-link" data-toggle="modal" data-target="#ObjGeneral">General</button></li title="Objetivo General"
                     <li><button type="button" class="btn btn-link" data-toggle="popover" data-placement="bottom" data-trigger="hover" 
 								data-content="Integrar un espacio permanente de investigación y tecnología educativa de la mano de un equipo de colaboradores 
 								multidisciplinarios en la región mesoamericana. Destinado  a la generación y difusión de metodologías, proyectos 
 								y modelos que impulsen el desarrollo y uso de herramientas tecnológicas empleadas en la educación básica.">
 								General
 					</button></li>
-                    <!--li><button type="button" class="btn btn-link" data-toggle="modal" data-target="#ObjEspecificos">Especificos</button></li--> <!--title="Objetivos especificos"-->
+                    li><button type="button" class="btn btn-link" data-toggle="modal" data-target="#ObjEspecificos">Especificos</button></li title="Objetivos especificos"
                     <li><button type="button" class="btn btn-link" data-toggle="popover" data-placement="bottom" data-trigger="hover" 
 								html="true" data-content="<ul>
 									<li> Impulsar una comunidad destinada a la investigación </li>
@@ -37,10 +37,11 @@
 								</ul>"
 						>Especificos</button></li>
                 </ul>
-            </li>
-            <li><a href="#">eventos</a></li>
-            <li><a href="publicaciones">publicaciones</a></li>
-            <li><a href="#">contacto</a></li>
+            </li>-->
+                <li><a href="quienesSomos">¿QUIÉNES SOMOS?</a></li>
+            <li><a href="#">EVENTOS</a></li>
+            <li><a href="publicaciones">PUBLICACIONES</a></li>
+            <li><a href="#">CONTACTO</a></li>
         </ul>
     </div>
 </div>

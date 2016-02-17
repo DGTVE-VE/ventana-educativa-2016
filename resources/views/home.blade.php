@@ -42,6 +42,8 @@ and open the template in the editor.
 		<link rel="stylesheet" href="css/red/ihover.css">  
         <link rel="stylesheet" href="css/red/animate.css">
         <style>
+            
+
 			/*.affix {
 				top: 0;
 				width: 100%;
