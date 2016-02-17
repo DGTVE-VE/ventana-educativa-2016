@@ -25,11 +25,11 @@ class PagesController extends Controller {
     }
 
     public function publicaciones() {
-        return view('indexPublicaciones');
+        return view('red/paginapublicaciones');
     }
 ////
     public function quienesSomos() {
-        return view('indexQuienesSomos');
+        return view('red/paginaquienessomos');
     }
 	
     public function viewTable(){

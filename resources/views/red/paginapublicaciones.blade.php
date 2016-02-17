@@ -1,28 +1,12 @@
-<!--DOCTYPE html>
-<html>
-    <head>
-        <title>Tabs to Collapse</title>
-        <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
-        <script src="//code.jquery.com/jquery.min.js"></script>
-        <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-        <meta charset="utf-8">
-        <link rel="stylesheet" href="red/ihover.css">  
-        <link rel="stylesheet" href="red/animate.css">
-        <style>
-
-            .colorPleca{
-                background-color: #424242;
-            }
-            .colorPlecaTexto{
-                color: #ffffff;
-            }
-            /**{border: 2px solid red;}*/
-
-        </style>
-
-    </head>
-    <body-->
-<div class="container" style="margin-top: 53px;">
+@section('title')
+    Publicaciones
+@stop
+@extends('home')
+@section('menu')
+	@include('red.headerRed')
+@endsection
+@section('cuerpo')
+	<div class="container" style="margin-top: 53px;">
             <div class="col-md-12 colorPleca"><h4 class="colorPlecaTexto">Publicaciones</h4></div>
             <div class="row"> <!--row inicial -->
                 <div class="col-md-12">
@@ -763,8 +747,6 @@
             </div> <!--row inicial -->
             <!--</div>/.row -->
         </div><!--/.container -->
-        <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-        <!-- LINK TO YOUR LOCAL COPY OF THIS SCRIPT, THIS IS A DEMO ONLY -->
-        <script src="//raw.githubusercontent.com/flatlogic/bootstrap-tabcollapse/master/bootstrap-tabcollapse.js"></script>  
-    <!--/body>
-</html-->
+                     
+        @include('red.pie')
+@stop
