@@ -3,7 +3,7 @@
 @stop
 @extends('home')
 @section('menu')
-	@include('red.headerRed')
+	@include('red.seccionheader')
 @endsection
 @section('cuerpo')
 	<div class="container" style="margin-top: 53px;">
@@ -748,5 +748,5 @@
             <!--</div>/.row -->
         </div><!--/.container -->
                      
-        @include('red.pie')
+        @include('red.seccionpie')
 @stop
