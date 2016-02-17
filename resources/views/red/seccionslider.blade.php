@@ -1,5 +1,5 @@
 			<div class="row fondo_Obscuro" style="margin-top:110px;">
-				<div class="col-md-12" style="padding:0px;">
+				<div class="col-xs-12 col-sm-12 col-md-12" style="padding:0px;">
 					<div id="carousel-2" class="carousel slide" data-ride="carousel">
 						<!-- Indicators -->
 						<ol class="carousel-indicators">

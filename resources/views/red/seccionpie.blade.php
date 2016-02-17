@@ -1,11 +1,15 @@
 ﻿			<div class="row fondo_footer1" style="margin-top:-20px;">
 				<div class="division">
 				</div>
-				<div class="col-md-2 col-md-offset-1">
+				<div class="col-sm-6 col-md-2 col-md-offset-1">
 					<img class="img-responsive img-rounded" src="imagenes/red/LogoRed/logoNegativo.png" width="120" height="120" alt="..."/>
 					<br>
+					<img id="imgIconoTwetter" class="img-responsive img-rounded" style="float:left; width:40px; height:40px;" src="imagenes/red/footer/icono-twetter-A.png" onmouseenter="imgResalta('twetter')" onmouseleave="imgNormal('twetter')"/>
+					<img id="imgIconoFacebook" class="img-responsive img-rounded" style="float:left; width:40px; height:40px;" src="imagenes/red/footer/icono-face-A.png" onmouseenter="imgResalta('facebook')" onmouseleave="imgNormal('facebook')"/>
+					<img id="imgIconoYoutube" class="img-responsive img-rounded" style="float:left; width:40px; height:40px;" src="imagenes/red/footer/icono-youtube-A.png" onmouseenter="imgResalta('youtube')" onmouseleave="imgNormal('youtube')"/>
+					<br>
 				</div>
-				<div class="col-md-2">
+				<div class="col-sm-6 col-md-2">
 					<h4 class="text-uppercase">Colaboradores</h4>
 					<br>
 						<img class="img-responsive img-rounded" style="width:150px; height:50px;" src="imagenes/red/footer/amexid.png"/>
@@ -14,7 +18,7 @@
 					<h4>CSUCA</h4>
 					<h4>TELEVISIÓN EDUCATIVA</h4>
 				</div>
-				<div class="col-md-3">
+				<div class="col-sm-12 col-md-3">
 					<h4 class="text-uppercase">Contáctanos</h4>
 					<table>
 						<tr>
@@ -48,7 +52,7 @@
 						</tr>
 					</table>
 				</div>
-				<div class="col-md-4">
+				<div class="col-sm-3 col-md-4">
 					<h4 class="text-uppercase">Tags</h4><br>
 					<p>Investigación <strong class="lead">Colaboración </strong> Mesoamérica<br>
 					<strong class="lead">Tecnología</strong> Educación Matemáticas <strong class="lead">Español</strong><br>
@@ -56,17 +60,6 @@
 					Docentes <strong class="lead">Procesos formativos</strong> Pedagogía digital</p>
 					<br>
 					<h4	class="text-uppercase">newsletter</h4>
-				</div>
-			</div>
-			<div class="row fondo_footer1">
-				<div class="col-md-3 col-md-offset-1">
-					<img id="imgIconoTwetter" class="img-responsive img-rounded" style="float:left; width:60px; height:60px;" src="imagenes/red/footer/icono-twetter-A.png" onmouseenter="imgResalta('twetter')" onmouseleave="imgNormal('twetter')"/>
-					<img id="imgIconoFacebook" class="img-responsive img-rounded" style="float:left; width:60px; height:60px;" src="imagenes/red/footer/icono-face-A.png" onmouseenter="imgResalta('facebook')" onmouseleave="imgNormal('facebook')"/>
-					<img id="imgIconoYoutube" class="img-responsive img-rounded" style="float:left; width:60px; height:60px;" src="imagenes/red/footer/icono-youtube-A.png" onmouseenter="imgResalta('youtube')" onmouseleave="imgNormal('youtube')"/>
-				</div>
-				<div class="col-md-4">
-				</div>
-				<div class="col-md-3">
 					<form class="form-inline">
 						<div class="form-group">
 							<input type="email" class="form-control" id="correoElectronico" placeholder="direccion@servidor.com">

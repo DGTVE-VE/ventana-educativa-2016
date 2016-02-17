@@ -20,8 +20,9 @@
 							</ul>
 							"--> 
 						<tr>
-							<td class="imgTabla">
-									<img id="imgRedesConocimiento" alt="imagen fija" src="imagenes/red/areasTematicas/RedesConocimiento.png" onmouseenter="imgResalta('RedesConocimiento')" onmouseleave="imgNormal('RedesConocimiento')"/></td>
+							<td class="imgTabla"><a href="#">
+								<img id="imgRedesConocimiento" alt="imagen fija" src="imagenes/red/areasTematicas/RedesConocimiento.png" onmouseenter="imgResalta('RedesConocimiento')" onmouseleave="imgNormal('RedesConocimiento')"/></td>
+								</a>
 							<td class="txtTabla"><h3><strong>Redes de <br> conocimiento y <br> aprendizaje</strong></h3>
 							</td>
 						</tr>
@@ -38,7 +39,9 @@
 							</ul>
 							"-->
 						<tr>
-							<td class="imgTabla"><img id="imgAmbientesEducativos" alt="imagen fija" src="imagenes/red/areasTematicas/ambientesEducativos.png" onmouseenter="imgResalta('AmbientesEducativos')" onmouseleave="imgNormal('AmbientesEducativos')"/></td>
+							<td class="imgTabla"><a href="#">
+								<img href="#" id="imgAmbientesEducativos" alt="imagen fija" src="imagenes/red/areasTematicas/ambientesEducativos.png" onmouseenter="imgResalta('AmbientesEducativos')" onmouseleave="imgNormal('AmbientesEducativos')"/></td>
+								</a>
 							<td class="txtTabla"><h3><strong>Modelos y <br> ambientes <br> educativos</strong></h3>
 							</td>
 						</tr>
@@ -58,7 +61,9 @@
 							</ul>
 							"-->
 						<tr>
-							<td class="imgTabla"><img id="imgGestioncalidad" alt="imagen fija" src="imagenes/red/areasTematicas/Gestioncalidad.png" onmouseenter="imgResalta('Gestioncalidad')" onmouseleave="imgNormal('Gestioncalidad')"/></td>
+							<td class="imgTabla"><a href="#">
+								<img href="#" id="imgGestioncalidad" alt="imagen fija" src="imagenes/red/areasTematicas/Gestioncalidad.png" onmouseenter="imgResalta('Gestioncalidad')" onmouseleave="imgNormal('Gestioncalidad')"/></td>
+								</a>
 							<td class="txtTabla"><h3><strong>Gestion y calidad <br> de programas <br> educativos</strong></h3>
 							</td>
 						</tr>
@@ -84,7 +89,9 @@
 							</ul>
 							"-->
 						<tr>
-							<td class="imgTabla"><img id="imgMultimedia" alt="imagen fija" src="imagenes/red/areasTematicas/Multimedia.png" onmouseenter="imgResalta('Multimedia')" onmouseleave="imgNormal('Multimedia')"/></td>
+							<td class="imgTabla"><a href="#">
+								<img href="#" id="imgMultimedia" alt="imagen fija" src="imagenes/red/areasTematicas/Multimedia.png" onmouseenter="imgResalta('Multimedia')" onmouseleave="imgNormal('Multimedia')"/></td>
+								</a>
 							<td class="txtTabla"><h3><strong>Multimedia y <br> desarrollo educativo</strong></h3>
 							</td>
 						</tr>
@@ -106,7 +113,9 @@
 							</ul>
 							"-->
 						<tr>
-							<td class="imgTabla"><img id="imgPoliticaEducativa" alt="imagen fija" src="imagenes/red/areasTematicas/PoliticaEducativa.png" onmouseenter="imgResalta('PoliticaEducativa')" onmouseleave="imgNormal('PoliticaEducativa')"/></td>
+							<td class="imgTabla"><a href="#">
+								<img href="#" id="imgPoliticaEducativa" alt="imagen fija" src="imagenes/red/areasTematicas/PoliticaEducativa.png" onmouseenter="imgResalta('PoliticaEducativa')" onmouseleave="imgNormal('PoliticaEducativa')"/></td>
+								</a>
 							<td class="txtTabla"><h3><strong>Politica Educativa y <br> cambio social</strong></h3>
 							</td>
 						</tr>
