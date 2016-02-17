@@ -1,8 +1,4 @@
-﻿			<!--div class="row fondo_Obscuro">
-				<div class="division">
-				</div>
-			</div-->
-			<div class="row fondo_footer1">
+﻿			<div class="row fondo_footer1" style="margin-top:-20px;">
 				<div class="division">
 				</div>
 				<div class="col-md-2 col-md-offset-1">
@@ -52,21 +48,21 @@
 						</tr>
 					</table>
 				</div>
-				<div class="col-md-3">
+				<div class="col-md-4">
 					<h4 class="text-uppercase">Tags</h4><br>
-					<p>Investigación Colaboración Mesoamérica<br>
-					tecnología Educación Matemáticas Español<br>
-					Indicadores educativos Metodologías pedagógicas
-					Docentes procesos formativos pedagogía digital</p>
+					<p>Investigación <strong class="lead">Colaboración </strong> Mesoamérica<br>
+					<strong class="lead">Tecnología</strong> Educación Matemáticas <strong class="lead">Español</strong><br>
+					Indicadores educativos <strong class="lead">Metodologías pedagógicas</strong><br>
+					Docentes <strong class="lead">Procesos formativos</strong> Pedagogía digital</p>
 					<br>
 					<h4	class="text-uppercase">newsletter</h4>
 				</div>
 			</div>
 			<div class="row fondo_footer1">
 				<div class="col-md-3 col-md-offset-1">
-					<img class="img-responsive img-rounded" style="float:left;" src="http://placehold.it/60x60"/>
-					<img class="img-responsive img-rounded" style="float:left;" src="http://placehold.it/60x60"/>
-					<img class="img-responsive img-rounded" style="float:left;" src="http://placehold.it/60x60"/>
+					<img id="imgIconoTwetter" class="img-responsive img-rounded" style="float:left; width:60px; height:60px;" src="imagenes/red/footer/icono-twetter-A.png" onmouseenter="imgResalta('twetter')" onmouseleave="imgNormal('twetter')"/>
+					<img id="imgIconoFacebook" class="img-responsive img-rounded" style="float:left; width:60px; height:60px;" src="imagenes/red/footer/icono-face-A.png" onmouseenter="imgResalta('facebook')" onmouseleave="imgNormal('facebook')"/>
+					<img id="imgIconoYoutube" class="img-responsive img-rounded" style="float:left; width:60px; height:60px;" src="imagenes/red/footer/icono-youtube-A.png" onmouseenter="imgResalta('youtube')" onmouseleave="imgNormal('youtube')"/>
 				</div>
 				<div class="col-md-4">
 				</div>
@@ -89,10 +85,9 @@
 				<div class="col-md-1 text-center">
 					<br>
 					<a class="nav up-arrow" href="#pag_principal" data-toggle="tooltip" title="ARRIBA">
-						<!--img class="img-responsive img-rounded" src="http://placehold.it/50x50" alt="..."/-->
-						<span class="glyphicon glyphicon-menu-up" style="border-style:solid; border-width: 1px; padding:15px;"></span>
+						<img class="img-responsive img-rounded" src="imagenes/red/footer/flecha-arriba.png" alt="..." style="width:62px; height:60px;"/>
+						<!--span class="glyphicon glyphicon-menu-up" style="border-style:solid; border-width: 1px; padding:15px;"></span-->
 					</a>
 					<br>
 				</div>
 			</div>	
-			<script src="js/principal.js"></script>

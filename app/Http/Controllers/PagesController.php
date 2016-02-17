@@ -16,26 +16,26 @@ class PagesController extends Controller {
         return view('indexRed');
     }
 
-    public function indexVod() { 
+    public function indexVod() {
         return view('indexVod');
     }
 
     public function indexDocentes() {
         return view('indexDocentes');
     }
-    
+
     public function publicaciones() {
         return view('indexPublicaciones');
     }
+////
     public function quienesSomos() {
         return view('indexQuienesSomos');
     }
 	
     public function viewTable(){
         $proyectos = \App\Red\Proyectos::all ();      
-        return view('viewTable')->with("proyectos", $proyectos);
     }
-    
+
 //    public function integrantesSlider() {
 //        return view('integrantesSlider');
 //    }

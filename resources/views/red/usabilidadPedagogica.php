@@ -1,9 +1,9 @@
-﻿			<div class="row fondo_Obscuro">
+﻿			<div class="row fondo_Obscuro" style="margin-top:-20px;">
 				<div class="col-md-12 text-center text-uppercase">
 					<h2> Modelo de Usabilidad Pedagógica de las TIC</h2>
 				</div>
 			</div>
-			<div class="row fondo_Claro">
+			<div class="row fondo_Claro" style="height:600px;">
 				<div class="col-md-12">
 					<div class="division">
 						<!--	***********************************************		-->
@@ -12,19 +12,19 @@
 				<div class="col-sm-3 col-md-4">
 				</div>
 				<div class="col-sm-3 col-md-4"><!-- style="background-image:url(imagenes/red/ModeloUsabilidad/aros-modelo-de-usabilidad.png); background-repeat:no-repeat; height:500px;">-->
-					<img class="estoy-visible" alt="..." src="imagenes/red/ModeloUsabilidad/aros-modelo-de-usabilidad.png">
+					<img class="estoy-visible slideInLeft" alt="..." src="imagenes/red/ModeloUsabilidad/aros-modelo-de-usabilidad.png">
 <!--slideInLeft animated-->
-					<img id="imgFuncionalidad" alt="..." src="imagenes/red/ModeloUsabilidad/funcionalidadEdu.png" onmouseenter="imgResalta('funcionalidad')" onmouseleave="imgNormal('funcionalidad')" style="position:absolute; left:190px; top:62px;">
-					<img alt="..." src="imagenes/red/ModeloUsabilidad/texto-lapiz-engrane.png" style="position:absolute; left:-205px; top:0px;">
+					<img id="imgFuncionalidad" class="estoy-visible slideInRight" alt="..." src="imagenes/red/ModeloUsabilidad/funcionalidadEdu.png" style="position:absolute; left:190px; top:62px;" onmouseenter="imgResalta('funcionalidad')" onmouseleave="imgNormal('funcionalidad')">
+					<img id="txtFuncionalidad" alt="..." src="imagenes/red/ModeloUsabilidad/texto-lapiz-engrane.png" style="position:absolute; left:-205px; top:0px;">
 					
-					<img id="imgExpectativas" alt="..." src="imagenes/red/ModeloUsabilidad/disposicionExpectativas.png" onmouseenter="imgResalta('expectativas')" onmouseleave="imgNormal('expectativas')" style="position:absolute; left:78px; top:172px;">
-					<img alt="..." src="imagenes/red/ModeloUsabilidad/texto-profesor.png" style="position:absolute; left:-280px; top:122px;">
+					<img id="imgExpectativas" class="estoy-visible slideInRight" alt="..." src="imagenes/red/ModeloUsabilidad/disposicionExpectativas.png" style="position:absolute; left:78px; top:172px;" onmouseenter="imgResalta('expectativas')" onmouseleave="imgNormal('expectativas')">
+					<img id="txtExpectativas" alt="..." src="imagenes/red/ModeloUsabilidad/texto-profesor.png" style="position:absolute; left:-280px; top:122px;">
 					
-					<img id="imgSaberesDig" alt="..." src="imagenes/red/ModeloUsabilidad/saberesDigitales.png" onmouseenter="imgResalta('saberesDig')" onmouseleave="imgNormal('saberesDig')" style="position:absolute; left:301px; top:173px;">
-					<img alt="..." src="imagenes/red/ModeloUsabilidad/texto-cerebro.png" style="position:absolute; left:400px; top:180px;">
+					<img id="imgSaberesDig" class="estoy-visible slideInRight" alt="..." src="imagenes/red/ModeloUsabilidad/saberesDigitales.png" style="position:absolute; left:301px; top:173px;" onmouseenter="imgResalta('saberesDig')" onmouseleave="imgNormal('saberesDig')">
+					<img id="txtSaberesDig" alt="..." src="imagenes/red/ModeloUsabilidad/texto-cerebro.png" style="position:absolute; left:400px; top:180px;">
 
-					<img id="imgApropiacion" alt="..." src="imagenes/red/ModeloUsabilidad/apropiacionIncorporacionEdu.png" onmouseenter="imgResalta('apropiacion')" onmouseleave="imgNormal('apropiacion')" style="position:absolute; left:189px; top:283px;">
-					<img alt="..." src="imagenes/red/ModeloUsabilidad/texto-pizarron.png" style="position:absolute; left:300px; top:350px;">
+					<img id="imgApropiacion" class="estoy-visible slideInRight" alt="..." src="imagenes/red/ModeloUsabilidad/apropiacionIncorporacionEdu.png" style="position:absolute; left:189px; top:283px;" onmouseenter="imgResalta('apropiacion')" onmouseleave="imgNormal('apropiacion')">
+					<img id="txtApropiacion" alt="..." src="imagenes/red/ModeloUsabilidad/texto-pizarron.png" style="position:absolute; left:300px; top:350px;">
 				</div>
 				<div class="col-sm-3 col-md-4">
 				
@@ -36,63 +36,31 @@
 				</div>
 			</div>
 			<script>
-				function imgResalta(seccion){
-					switch(seccion){
-						case 'funcionalidad':
-							document.getElementById("imgFuncionalidad").src ="imagenes/red/ModeloUsabilidad/funcionalidadEduOver.png"
-							break;
-						case 'expectativas':
-							document.getElementById("imgExpectativas").src ="imagenes/red/ModeloUsabilidad/disposicionExpectativasOver.png"
-							break;
-						case 'saberesDig':
-							document.getElementById("imgSaberesDig").src ="imagenes/red/ModeloUsabilidad/saberesDigitalesOver.png"
-							break;
-						case 'apropiacion':
-							document.getElementById("imgApropiacion").src ="imagenes/red/ModeloUsabilidad/apropiacionIncorporacionEduOver.png"
-							break;
-						default:
-							break;
-					}
-				}
-				function imgNormal(seccion){
-					switch(seccion){
-						case 'funcionalidad':
-							document.getElementById("imgFuncionalidad").src ="imagenes/red/ModeloUsabilidad/funcionalidadEdu.png"
-							break;
-						case 'expectativas':
-							document.getElementById("imgExpectativas").src ="imagenes/red/ModeloUsabilidad/disposicionExpectativas.png"
-							break;
-						case 'saberesDig':
-							document.getElementById("imgSaberesDig").src ="imagenes/red/ModeloUsabilidad/saberesDigitales.png"
-							break;
-						case 'apropiacion':
-							document.getElementById("imgApropiacion").src ="imagenes/red/ModeloUsabilidad/apropiacionIncorporacionEdu.png"
-							break;
-						default:
-							break;
-					}
-				}
 
+				/*		*************		Agregar animación de entrada a imagenes 	*********************	*/
         $(function(){
             var elems = $('.estoy-visible');    //elementos que quiero saber si estan en el área visible
             var winW = $(window).width();       //dimensiones de la ventana
             var winH = $(window).height();      //dimensiones de la ventana
             elems.each(function(){
                 var self = $(this);
+				$(this).fadeOut();
                 self.on('esta/visible',function(){
                     //evento personalizado que crearemos mas abajo, se dispara cuando el elemento está visible
                     //lo que ponemos aca es lo que queremos hacer si el elemento aparece en pantalla
                     $(this).fadeIn();
+					$(this).addClass("animated");
                 });
                 self.on('esta/invisible',function(){
                     //evento personalizado que crearemos mas abajo, se dispara cuando el elemento está FUERA del area visible
                     //lo que ponemos aca es lo que queremos hacer si el elemento DESAPARECE de la pantalla
-                    //$(this).fadeOut();
+                    $(this).fadeOut();
+					$(this).removeClass("animated");
                 });
                 
                 //obtenemos las dimensiones de cada elemento y su posicion
-                var self_w = self.outerWidth(); //ancho exterior
-                var self_h = self.outerHeight(); //alto exterior
+                var self_w = self.outerWidth()/2; //ancho exterior
+                var self_h = self.outerHeight()/2; //alto exterior
                 var self_l = self.offset().left; //coordenada izquierda
                 var self_t = self.offset().top; //coordenada arriba
                 
@@ -111,6 +79,6 @@
                     }
                 });
             });
-        });
+        })
    
 			</script>
