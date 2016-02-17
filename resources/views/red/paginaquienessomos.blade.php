@@ -3,7 +3,7 @@
 @stop
 @extends('home')
 @section('menu')
-	@include('red.headerRed')
+	@include('red.seccionheader')
 @endsection
 @section('cuerpo')
 	
@@ -15,7 +15,7 @@
                 </div>
             </div>   
         </div>
-        @include('red.pie')
+        @include('red.seccionpie')
 @stop
 
 

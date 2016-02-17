@@ -38,7 +38,7 @@
 						>Especificos</button></li>
                 </ul>
             </li>-->
-                <li><a href="quienessomos">¿QUIÉNES SOMOS?</a></li>
+                <li><a href="quienesSomos">¿QUIÉNES SOMOS?</a></li>
             <li><a href="#">EVENTOS</a></li>
             <li><a href="publicaciones">PUBLICACIONES</a></li>
             <li><a href="#">CONTACTO</a></li>

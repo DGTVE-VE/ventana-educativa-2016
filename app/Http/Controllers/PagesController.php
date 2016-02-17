@@ -31,6 +31,9 @@ class PagesController extends Controller {
     public function quienesSomos() {
         return view('red/paginaquienessomos');
     }
+     public function prueba() {
+        return view('red/paginaprueba');
+    }
 	
     public function viewTable(){
         $proyectos = \App\Red\Proyectos::all ();      
