@@ -59,12 +59,6 @@
 			.txtTabla{
 				width: 350px;
 			}
-			
-			ul.bajaHorizontal{
-				position:relative;
-				top:30px;
-			}
-			
 			.subeHorizontal{
 				position:relative;
 				top:-5px;
@@ -72,7 +66,12 @@
 			.popover{
 				width: 300px;
 			}
-			/*----------------------	Proyectos	-------------------------------*/
+						/*----------------------	Header	-------------------------------*/			
+			ul.bajaHorizontal{
+				position:relative;
+				top:15px;
+			}
+						/*----------------------	Proyectos	-------------------------------*/
 			.marcoMorado1{
 				width:376px; 
 				height:371px; 
