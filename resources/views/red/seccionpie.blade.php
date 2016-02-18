@@ -78,8 +78,8 @@
 					</div>
 					<div class="col-xs-3 col-sm-6 col-md-1 text-center">
 						<br>
-						<a class="nav up-arrow" href="#pag_principal" data-toggle="tooltip" title="ARRIBA">
-							<img class="img-responsive img-rounded  footer" src="imagenes/red/footer/flecha-arriba.png" alt="..." style="width:42px; height:40px;"/>
+						<a id="top-link-block" data-spy="affix" data-offset-top="300" class="nav up-arrow" href="#pag_principal" data-toggle="tooltip" title="ARRIBA">
+							<img class="img-responsive img-rounded footer" src="imagenes/red/footer/flecha-arriba.png" alt="..." style="width:42px; height:40px;"/>
 							<!--span class="glyphicon glyphicon-menu-up" style="border-style:solid; border-width: 1px; padding:15px;"></span-->
 						</a>
 						<br>

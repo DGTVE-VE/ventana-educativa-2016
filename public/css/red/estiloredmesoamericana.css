@@ -1,20 +1,30 @@
+			h2{
+				position:relative;
+				top:-15px;
+			}
+			.carousel-indicators li{
+				border-color:black;
+				opacity:0.7;
+				z-index:-1;
+			}
+			.item h4 {
+				font-size: 19px;
+				line-height: 1.375em;
+				font-weight: 400;
+				font-style: italic;
+				margin: 50px 0;
+			}
+						/*-------------------------------------	Header	-------------------------------------------*/			
+			ul.bajaHorizontal{
+				position:relative;
+				top:15px;
+			}
+						/*------------------------------------			-------------------------------------------*/
 			.fondo_Obscuro{
 				background-color:#424242;
 				color:white;
 				font-family: 'Exo', sans-serif;
 				height:40px;
-				
-			}
-			.fondo_footer1{
-				background-color:#2C2C2C;
-				margin:0px;
-				color:white;
-				
-			}
-			.fondo_footer2{
-				background-color:#292929;
-				margin:0px;
-				color:white;
 				
 			}
 			.fondo_Claro{
@@ -35,19 +45,7 @@
 				color:gray;
 				line-height:2;
 			}
-			.carousel-indicators li{
-				border-color:black;
-				opacity:0.7;
-				z-index:-1;
-			}
-			.item h4 {
-				font-size: 19px;
-				line-height: 1.375em;
-				font-weight: 400;
-				font-style: italic;
-				margin: 50px 0;
-			}
-			
+
 			.progress-bar {
 				-webkit-transition: none !important;
 				transition: none !important;
@@ -66,12 +64,8 @@
 			.popover{
 				width: 300px;
 			}
-						/*----------------------	Header	-------------------------------*/			
-			ul.bajaHorizontal{
-				position:relative;
-				top:15px;
-			}
-						/*----------------------	Proyectos	-------------------------------*/
+
+						/*---------------------------------------------	Proyectos	------------------------------------------*/
 			.marcoMorado1{
 				width:376px; 
 				height:371px; 
@@ -98,16 +92,33 @@
 			.centraCont{
 				margin:0 auto;
 			}
+			/*------------------------------------------------	Pie		----------------------------------------------------------*/
 			.imgTecho{
 				display:flex; 
 				align-content:flex-start;
 			}
-			h2{
-				position:relative;
-				top:-15px;
+			.fondo_footer1{
+				background-color:#2C2C2C;
+				margin:0px;
+				color:white;
+				
 			}
-			
-			/*----------------------	retos regionales		---------------------------------*/
+			.fondo_footer2{
+				background-color:#292929;
+				margin:0px;
+				color:white;
+			}
+			#top-link-block.affix-top {
+				position: absolute; /* allows it to "slide" up into view */
+				bottom: -82px; /* negative of the offset - height of link element */
+				left: 10px; /* padding from the left side of the window */
+			}
+			#top-link-block.affix {
+				position: fixed; /* keeps it on the bottom once in view */
+				bottom: 18px; /* height of link element */
+				/*left: 10px; /* padding from the left side of the window */
+			}
+			/*----------------------------------------------	retos regionales		----------------------------------------------------*/
 			.txtCarouselAbajo{
 				position:relative; 
 				top:10px;
