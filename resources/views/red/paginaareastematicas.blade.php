@@ -8,26 +8,31 @@ Publicaciones
 @endsection
 @section('cuerpo')
 
-<div class="container">                    
+<div class="container"> 
     <div class="row" style="margin-top: 10%; background-image: url'';" >        
+        <div class="row fondo_Obscuro">
+            <div class="col-md-12 text-center text-uppercase">
+                <h2> Áreas Temáticas</h2>
+            </div>
+        </div>
         <div class="col-md-1"></div>
         <div class="col-md-10">
-            <table class="table table-bordered list-group">
+            <table class="table table-responsive">
                 <tr>
                     <td><img src="imagenes/red/areasTematicas/redesdeconocimientoyaprendizaje-blanco.png"></td> 
-                    <a name="modelos"></a>
-                    <td>
+                <a name="modelos"></a>
+                <td>
+                    <ul>
+                        <li class="list-group-item-heading list-unstyled"><h3>Redes de conocimiento y aprendizaje</h3></li>
+                        <p>Proponer modelos educativos acordes con los problemas y planteamientos teóricos, tales como: la teoría de las organizaciones para conformar comunidades educativas virtuales, representación y creación de conocimiento distribuido, aprendizaje colaborativo, redes de repositorios de conocimiento y de objetos de aprendizaje.</p>
+                        <p>Se identifican las siguientes líneas:</p>
                         <ul>
-                            <li class="list-group-item-heading list-unstyled"><h3>Redes de conocimiento y aprendizaje</h3></li>
-                            <p>Proponer modelos educativos acordes con los problemas y planteamientos teóricos, tales como: la teoría de las organizaciones para conformar comunidades educativas virtuales, representación y creación de conocimiento distribuido, aprendizaje colaborativo, redes de repositorios de conocimiento y de objetos de aprendizaje.</p>
-                            <p>Se identifican las siguientes líneas:</p>
-                            <ul>
-                                <li class="list-unstyled"><span class="glyphicon glyphicon-globe"></span>Redes sociales para la educación. </li>
-                                <li class="list-unstyled"><span class="glyphicon glyphicon-globe"></span>El docente como generador del cambio: la educación digital y los retos en la región mesoamericana.</li>
-                            </ul>
+                            <li class="list-unstyled"><span class="glyphicon glyphicon-globe"></span>Redes sociales para la educación. </li>
+                            <li class="list-unstyled"><span class="glyphicon glyphicon-globe"></span>El docente como generador del cambio: la educación digital y los retos en la región mesoamericana.</li>
                         </ul>
-                        <a name="gestion"></a>
-                    </td>
+                    </ul>
+                    <a name="gestion"></a>
+                </td>
                 </tr>
                 <tr>
                     <td><img src="imagenes/red/areasTematicas/modelosyambienteseducativos-blanco.png"></td>
