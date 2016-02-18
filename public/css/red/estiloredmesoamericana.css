@@ -217,10 +217,7 @@ ul.bajaHorizontal{
     position:relative; 
     top:10px;
     left:0px; 
-    /*text-shadow:2px 2px 1px #000;*/
     color:black;
-    width:400px;
-    height:125px;
     font-family: 'Oxygen', sans-serif;
     font-weight:bold;
     font-size:14px;
