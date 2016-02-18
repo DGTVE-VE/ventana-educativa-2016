@@ -8,15 +8,15 @@
     <div class="col-md-6">
         <img name="imagenMapa_n"  src="imagenes/red/integrantes/gris.png"  border="5px" id="imagenMapa" class="mapaCentroAmerica img-responsive" usemap="#mapa_n" alt="" />
         <map name="mapa_n" id="mapa">         
-            <area alt="Colombia" onmouseover="document.getElementById('imagenMapa').src = 'imagenes/red/integrantes/colombia.png';" onmouseout="saleMouse();" href="#modalColombia" data-keyboard="true" data-toggle="modal" shape="poly" coords="331,279,347,261,347,226,377,187,394,230,434,238,431,274,414,279,413,321,381,380,318,330"/>
-            <area alt="Costa Rica" onmouseover="document.getElementById('imagenMapa').src = 'imagenes/red/integrantes/costarica.png';" onmouseout="saleMouse();" href="#modalCostarica" shape="poly" data-toggle="modal" coords="265,192,290,182,308,208,307,223,291,216"/>
-            <area alt="Dominicana" onmouseover="document.getElementById('imagenMapa').src = 'imagenes/red/integrantes/dominicana.png';" onmouseout="saleMouse();" href="#modalDominicana" shape="poly" data-toggle="modal" coords="379,130,389,111,414,114,433,130"/>
-            <area alt="El Salvador" onmouseover="document.getElementById('imagenMapa').src = 'imagenes/red/integrantes/salvador.png';" onmouseout="saleMouse();" href="#modalSalvador" shape="poly" data-toggle="modal" coords="237,173,243,155,254,183"/>
-            <area alt="Guatemala" onmouseover="document.getElementById('imagenMapa').src = 'imagenes/red/integrantes/guatemala.png';" onmouseout="saleMouse();" href="#modalGuatemala" shape="poly" data-toggle="modal" coords="214,162,240,128,249,143,237,173"/>
-            <area alt="Honduras" onmouseover="document.getElementById('imagenMapa').src = 'imagenes/red/integrantes/honduras.png';" onmouseout="saleMouse();" href="#modalHonduras" shape="poly" data-toggle="modal" coords="242,156,247,142,290,146,253,183"/>
-            <area alt="México" onmouseover="document.getElementById('imagenMapa').src = 'imagenes/red/integrantes/mexico.png';" onmouseout="saleMouse();" href="#modalMexico" data-toggle="modal" shape="poly" coords="126,131,187,124,225,112,227,94,262,100,216,162,160,147"/>
-            <area alt="Nicaragua" onmouseover="document.getElementById('imagenMapa').src = 'imagenes/red/integrantes/nicaragua.png';" onmouseout="saleMouse();" href="#modalNicaragua" shape="poly" data-toggle="modal" coords="254,182,292,145,291,181,267,194"/>
-            <area alt="Panama" onmouseover="document.getElementById('imagenMapa').src = 'imagenes/red/integrantes/panama.png';" onmouseout="saleMouse();" href="#modalPanama" shape="poly" data-toggle="modal" coords="309,223,311,207,346,201,348,212,360,212,348,228,326,231"/>
+            <area alt="Colombia" onmouseover="document.getElementById('imagenMapa').src = 'imagenes/red/integrantes/colombia.png';" onmouseout="saleMouseInte();" href="#modalColombia" data-keyboard="true" data-toggle="modal" shape="poly" coords="331,279,347,261,347,226,377,187,394,230,434,238,431,274,414,279,413,321,381,380,318,330"/>
+            <area alt="Costa Rica" onmouseover="document.getElementById('imagenMapa').src = 'imagenes/red/integrantes/costarica.png';" onmouseout="saleMouseInte();" href="#modalCostarica" shape="poly" data-toggle="modal" coords="265,192,290,182,308,208,307,223,291,216"/>
+            <area alt="Dominicana" onmouseover="document.getElementById('imagenMapa').src = 'imagenes/red/integrantes/dominicana.png';" onmouseout="saleMouseInte();" href="#modalDominicana" shape="poly" data-toggle="modal" coords="379,130,389,111,414,114,433,130"/>
+            <area alt="El Salvador" onmouseover="document.getElementById('imagenMapa').src = 'imagenes/red/integrantes/salvador.png';" onmouseout="saleMouseInte();" href="#modalSalvador" shape="poly" data-toggle="modal" coords="237,173,243,155,254,183"/>
+            <area alt="Guatemala" onmouseover="document.getElementById('imagenMapa').src = 'imagenes/red/integrantes/guatemala.png';" onmouseout="saleMouseInte();" href="#modalGuatemala" shape="poly" data-toggle="modal" coords="214,162,240,128,249,143,237,173"/>
+            <area alt="Honduras" onmouseover="document.getElementById('imagenMapa').src = 'imagenes/red/integrantes/honduras.png';" onmouseout="saleMouseInte();" href="#modalHonduras" shape="poly" data-toggle="modal" coords="242,156,247,142,290,146,253,183"/>
+            <area alt="México" onmouseover="document.getElementById('imagenMapa').src = 'imagenes/red/integrantes/mexico.png';" onmouseout="saleMouseInte();" href="#modalMexico" data-toggle="modal" shape="poly" coords="126,131,187,124,225,112,227,94,262,100,216,162,160,147"/>
+            <area alt="Nicaragua" onmouseover="document.getElementById('imagenMapa').src = 'imagenes/red/integrantes/nicaragua.png';" onmouseout="saleMouseInte();" href="#modalNicaragua" shape="poly" data-toggle="modal" coords="254,182,292,145,291,181,267,194"/>
+            <area alt="Panama" onmouseover="document.getElementById('imagenMapa').src = 'imagenes/red/integrantes/panama.png';" onmouseout="saleMouseInte();" href="#modalPanama" shape="poly" data-toggle="modal" coords="309,223,311,207,346,201,348,212,360,212,348,228,326,231"/>
         </map>
     </div>
 </div>
@@ -32,7 +32,7 @@
             </div>
             <div class="modal-body">
                 
-                <div id="sliderint" class="carousel slide col-xs-12 col-md-4 col-lg-4" data-ride="carousel" data-interval="3000">
+                <div id="sliderinte" class="carousel slide col-xs-12 col-md-4 col-lg-4" data-ride="carousel" data-interval="3000">
                     <ol class="carousel-indicators indicadorInt">
                         <li data-target="#slider" data-slide-to="0" class="active"></li>
                         <li data-target="#slider" data-slide-to="1" class=""></li>
@@ -97,10 +97,10 @@
 <!--fin modal-->
 
 <script>
-    function saleMouse() {
+    function saleMouseInte() {
         document.getElementById('imagenMapa').src = 'imagenes/red/integrantes/gris.png';
     }
-    $("#sliderint").on('slide.bs.carousel', function (evt) {
+    $("#sliderinte").on('slide.bs.carousel', function (evt) {
 
         var step = $(evt.relatedTarget).index();
 
