@@ -1,4 +1,4 @@
-            <div class="row fondo_Obscuro" style="margin-top:-20px;">
+<div class="row fondo_Obscuro">
     <div class="col-md-12 text-center text-uppercase">
         <h2> Áreas Temáticas</h2>
     </div>
