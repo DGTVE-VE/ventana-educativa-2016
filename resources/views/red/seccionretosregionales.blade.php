@@ -83,7 +83,7 @@
 					<div id="carouselSitioInteres" class="carousel slide" data-ride="carousel">
 					  <!-- Indicators -->
 					  <ol class="carousel-indicators">
-						<li data-target="#carouselSitioInteres" data-slide-to="0" class="active"></li>
+						<li style="border-color:black;" data-target="#carouselSitioInteres" data-slide-to="0" class="active"></li>
 					  </ol>
 
 					  <!-- Wrapper for slides -->

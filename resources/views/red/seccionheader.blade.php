@@ -1,6 +1,6 @@
-<div class="navbar navbar-default navbar-fixed-top" role="navigation" style="height:110px; margin:0px;">	<!--navbar-static-top-->
+<div class="navbar navbar-default navbar-fixed-top" role="navigation" style="height:80px;">	<!--navbar-static-top-->
     <div class="navbar-header">
-        <div class="navbar-header"  style="padding:0px;"><a class="navbar-brand" href="indexRed"><img class="img-responsive" src="imagenes/red/LogoRed/RedMesoamericana.png" alt="Logo Red Mesoamericana"></a></div>
+        <div class="navbar-header"><a class="navbar-brand" href="indexRed"><img class="img-responsive subeHorizontal" style="width:200px; height:64px;" src="imagenes/red/LogoRed/RedMesoamericana.png" alt="Logo Red Mesoamericana"></a></div>
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".js-navbar-collapse">
             <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar"></span>

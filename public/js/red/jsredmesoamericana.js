@@ -141,7 +141,15 @@ function imgNormal(seccion) {
     }
 }
 
+<<<<<<< HEAD
 $(document).ready(function () {
+||||||| merged common ancestors
+			// Add smooth scrolling to all links in navbar + footer link
+			$(".navbar a, footer a[href='#pag_principal']").on('click', function(event) {
+=======
+			// Add smooth scrolling to all links in navbar + footer link
+			$("footer a[href='#pag_principal']").on('click', function(event) {
+>>>>>>> ed37711f9125fce9da7a1efe197ddae94a0a5829
 
     //--------------------------------------------------Agrega efecto de velocidad lenta al subir al inicio de la página
     // Initialize Tooltip
