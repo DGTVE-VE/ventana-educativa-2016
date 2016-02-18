@@ -3,7 +3,7 @@
 					<div class="division">
 					</div>
 				</div>
-				<div class="col-md-4 col-md-offset-1">
+				<div class="col-sm- 6 col-md-6 col-lg-4 col-lg-offset-1">
 					<h3>Retos Regionales</h3>
 					<div id="carouselRetos" class="carousel slide" data-ride="carousel"> <!-- background-color:#E5E5E5; -->
 					  <!-- Indicators -->
@@ -78,12 +78,12 @@
 					  </a-->
 					</div>
 				</div>
-				<div class="col-md-3">
+				<div class="col-sm-6 col-md-6 col-lg-3">
 					<h3>Sitios de Interés</h3>
 					<div id="carouselSitioInteres" class="carousel slide" data-ride="carousel">
 					  <!-- Indicators -->
 					  <ol class="carousel-indicators">
-						<li data-target="#carouselSitioInteres" data-slide-to="0" class="active"></li>
+						<li style="border-color:black;" data-target="#carouselSitioInteres" data-slide-to="0" class="active"></li>
 					  </ol>
 
 					  <!-- Wrapper for slides -->
@@ -139,7 +139,7 @@
 					  </a-->
 					</div>
 				</div>
-				<div class="col-md-3">
+				<div class="col-sm-6 col-md-6 col-lg-3">
 					<h3>Redes Sociales</h3>
 					<img class="img-responsive img-rounded" style="width:150px; height:48px;" src="imagenes/red/Logotipos/facebook.png" alt="..."/>
 					<div>Contenido Facebook.</div>
