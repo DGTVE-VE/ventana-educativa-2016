@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 	/* -------------------------------------------------------			Inicio de avance de barra				--------------------------*/
 			//var barraAvance = document.getElementById("avanceSlider");
 			//barraAvance.style.width = "30%";
@@ -144,32 +143,31 @@
 
 		$(document).ready(function(){
 			
-	/*--------------------------------------------------		Agrega efecto de velocidad lenta al subir al inicio de la página		-------------*/
+		/*----------------------------------------------	Agrega efecto de velocidad lenta al subir al inicio de la página	-------------------*/
 			// Initialize Tooltip
 			$('[data-toggle="tooltip"]').tooltip(); 
 
 			// Add smooth scrolling to all links in navbar + footer link
 			$("footer a[href='#pag_principal']").on('click', function(event) {
 
+				// Prevent default anchor click behavior
+				event.preventDefault();
 
-        // Prevent default anchor click behavior
-        event.preventDefault();
-       
-	   // Store hash
-        var hash = this.hash;
+				// Store hash
+				var hash = this.hash;
 
-        // Using jQuery's animate() method to add smooth page scroll
-        // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
-        $('html, body').animate({
-            scrollTop: $(hash).offset().top
-        }, 900, function () {
+				// Using jQuery's animate() method to add smooth page scroll
+				// The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+				$('html, body').animate({
+					scrollTop: $(hash).offset().top
+				}, 900, function(){
+   
+				// Add hash (#) to URL when done scrolling (default click behavior)
+				window.location.hash = hash;
+				});
+			});
 
-            // Add hash (#) to URL when done scrolling (default click behavior)
-            window.location.hash = hash;
-        });
-    });
-
-	/*---------------------------------------------    	Reiniciar barra animada de carousel   ------------------------------------------------------*/
+		/*  -------------------------------------    Reiniciar barra animada de carousel   -----------------------------------------------*/
 			$("#carousel-2").on('slide.bs.carousel', function () {
 				reiniciaBarra();
 				itv = 0;
@@ -184,7 +182,6 @@
 			
 			$('[data-toggle="popover"]').popover({html:true});
 		})
-		
 	/*	---------------------------------------	Sección Usabilidad. Agregar animación de entrada a imagenes 	--------------------------------*/
         $(function(){
             var elems = $('.estoy-visible');    //elementos que quiero saber si estan en el área visible
