@@ -148,7 +148,7 @@
 			$('[data-toggle="tooltip"]').tooltip(); 
 
 			// Add smooth scrolling to all links in navbar + footer link
-			/*$(".navbar a, footer a[href='#pag_principal']").on('click', function(event) {
+			$(".navbar a, footer a[href='#pag_principal']").on('click', function(event) {
 
 				// Prevent default anchor click behavior
 				event.preventDefault();
@@ -165,7 +165,7 @@
 				// Add hash (#) to URL when done scrolling (default click behavior)
 				window.location.hash = hash;
 				});
-			});*/
+			});
 
 			//-------------------------    Reiniciar barra animada de carousel   ----------------------------
 			$("#carousel-2").on('slide.bs.carousel', function () {

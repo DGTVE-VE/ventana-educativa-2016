@@ -68,19 +68,21 @@
 					</form>
 				</div>
 			</div>
-			<div class="row fondo_footer2">
-				<div class="col-md-10 col-md-offset-1">
-					<br>
-					<p>Proyecto alineado al Programa Mesoamericano de Cooperación 2015 - 2016. <br>
-					Desarrollado por Dirección General de Televisión Educativa.
-					</p>
-				</div>
-				<div class="col-md-1 text-center">
-					<br>
-					<a class="nav up-arrow" href="#pag_principal" data-toggle="tooltip" title="ARRIBA">
-						<img class="img-responsive img-rounded" src="imagenes/red/footer/flecha-arriba.png" alt="..." style="width:62px; height:60px;"/>
-						<!--span class="glyphicon glyphicon-menu-up" style="border-style:solid; border-width: 1px; padding:15px;"></span-->
-					</a>
-					<br>
-				</div>
-			</div>	
+			<footer>
+				<div class="row fondo_footer2">
+					<div class="col-xs-9 col-sm-6 col-md-10 col-md-offset-1">
+						<br>
+						<p>Proyecto alineado al Programa Mesoamericano de Cooperación 2015 - 2016. <br>
+						Desarrollado por Dirección General de Televisión Educativa.
+						</p>
+					</div>
+					<div class="col-xs-3 col-sm-6 col-md-1 text-center">
+						<br>
+						<a class="nav up-arrow" href="#pag_principal" data-toggle="tooltip" title="ARRIBA">
+							<img class="img-responsive img-rounded  footer" src="imagenes/red/footer/flecha-arriba.png" alt="..." style="width:42px; height:40px;"/>
+							<!--span class="glyphicon glyphicon-menu-up" style="border-style:solid; border-width: 1px; padding:15px;"></span-->
+						</a>
+						<br>
+					</div>
+				</div>	
+			</footer>
