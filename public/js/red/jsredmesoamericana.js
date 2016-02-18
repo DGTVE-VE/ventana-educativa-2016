@@ -1,4 +1,4 @@
-		// -------------------------------------------------- Inicio de avance de barra			
+	/* -------------------------------------------------------			Inicio de avance de barra				--------------------------*/
 			//var barraAvance = document.getElementById("avanceSlider");
 			//barraAvance.style.width = "30%";
 
@@ -23,7 +23,7 @@
 				clearInterval(itv);
 			}
 			itv = setInterval(prog,50);
-			
+	/* --------------------------------------------			 Cambio de imagen para resaltar en evento hover			--------------------------*/
 				function imgResalta(seccion){
 					switch(seccion){
 						case 'twetter':
@@ -143,7 +143,7 @@
 
 		$(document).ready(function(){
 			
-		//--------------------------------------------------Agrega efecto de velocidad lenta al subir al inicio de la página
+	/*--------------------------------------------------		Agrega efecto de velocidad lenta al subir al inicio de la página		-------------*/
 			// Initialize Tooltip
 			$('[data-toggle="tooltip"]').tooltip(); 
 
@@ -167,7 +167,7 @@
 				});
 			});
 
-			//-------------------------    Reiniciar barra animada de carousel   ----------------------------
+	/*---------------------------------------------    	Reiniciar barra animada de carousel   ------------------------------------------------------*/
 			$("#carousel-2").on('slide.bs.carousel', function () {
 				reiniciaBarra();
 				itv = 0;
@@ -182,3 +182,47 @@
 			
 			$('[data-toggle="popover"]').popover({html:true});
 		})
+		
+	/*	---------------------------------------	Sección Usabilidad. Agregar animación de entrada a imagenes 	--------------------------------*/
+        $(function(){
+            var elems = $('.estoy-visible');    //elementos que quiero saber si estan en el área visible
+            var winW = $(window).width();       //dimensiones de la ventana
+            var winH = $(window).height();      //dimensiones de la ventana
+            elems.each(function(){
+                var self = $(this);
+				$(this).fadeOut();
+                self.on('esta/visible',function(){
+                    //evento personalizado que crearemos mas abajo, se dispara cuando el elemento está visible
+                    //lo que ponemos aca es lo que queremos hacer si el elemento aparece en pantalla
+                    $(this).fadeIn();
+					$(this).addClass("animated");
+                });
+                self.on('esta/invisible',function(){
+                    //evento personalizado que crearemos mas abajo, se dispara cuando el elemento está FUERA del area visible
+                    //lo que ponemos aca es lo que queremos hacer si el elemento DESAPARECE de la pantalla
+                    //$(this).fadeOut();
+					$(this).removeClass("animated");
+                });
+                
+                //obtenemos las dimensiones de cada elemento y su posicion
+                var self_w = self.outerWidth()/2; //ancho exterior
+                var self_h = self.outerHeight()/2; //alto exterior
+                var self_l = self.offset().left; //coordenada izquierda
+                var self_t = self.offset().top; //coordenada arriba
+                
+                //asignamos un evento a window.scroll(), para cuando se haga scroll
+                //esta parte del script es algo inefectiva. No es bueno si son muchos los elementos a verificar.
+                $(window).scroll(function(){
+                    var scroll_h = this.pageXOffset;
+                    var scroll_v = this.pageYOffset;
+                    //acá verificamos si el elemento está COMPLETAMENTE dentro de las dimensiones de la ventana
+                    if( (self_w + self_l - scroll_h) <= winW && (self_l) >= scroll_h &&
+                        (self_h + self_t - scroll_v) <= winH && (self_t) >= scroll_v ){
+                        self.trigger('esta/visible');
+                    }
+                    else{
+                        self.trigger('esta/invisible');
+                    }
+                });
+            });
+        })
