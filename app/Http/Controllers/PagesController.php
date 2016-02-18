@@ -27,16 +27,26 @@ class PagesController extends Controller {
     public function publicaciones() {
         return view('red/paginapublicaciones');
     }
+
 ////
     public function quienesSomos() {
         return view('red/paginaquienessomos');
     }
-     public function prueba() {
+
+    public function prueba() {
         return view('red/paginaprueba');
     }
-	
-    public function viewTable(){
-        $proyectos = \App\Red\Proyectos::all ();      
+
+    public function proyectos() {
+        return view('red/paginaproyectos');
+    }
+
+    public function areastematicas() {
+        return view('red/paginaareastematicas');
+    }
+
+    public function viewTable() {
+        $proyectos = \App\Red\Proyectos::all();
     }
 
 //    public function integrantesSlider() {

@@ -7,10 +7,6 @@ Route::get('viewTable','PagesController@viewTable');
 ////////////////
 Route::get('publicaciones','PagesController@publicaciones');
 Route::get('quienesSomos','PagesController@quienesSomos');
-//Route::get('integrantesSlider', function ()
-//{
-//return View::make('red/integrantesSlider');
-//});
-/////////////
+Route::get('areastematicas','PagesController@areastematicas');
+Route::get('proyectos','PagesController@proyectos');
 
-/////////////////
