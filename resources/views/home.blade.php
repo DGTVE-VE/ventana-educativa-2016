@@ -14,8 +14,9 @@ and open the template in the editor.
         <meta http-equiv="X-UA-Compatible" content="IE=Edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
         <link rel="stylesheet" href="css/red/estiloredmesoamericana.css">
-        
-         <link rel="stylesheet" href="css/red/estiloRed3.css"> <!-- Estilo para   -->
+
+        <link rel="stylesheet" href="css/red/estilored2.css">
+>>>>>>> ed6224b69b17fc6550d8e487dedf6343bcbeba52
 
         <!-- Latest compiled and minified CSS -->
         <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
