@@ -48,7 +48,9 @@ class PagesController extends Controller {
     public function viewTable() {
         $proyectos = \App\Red\Proyectos::all();
     }
-
+    public function contacto() {
+        return view('red/paginacontacto');
+    }
 //    public function integrantesSlider() {
 //        return view('integrantesSlider');
 //    }

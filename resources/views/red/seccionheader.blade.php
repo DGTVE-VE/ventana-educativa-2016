@@ -15,7 +15,7 @@
             <li><a href="quienesSomos">¿QUIÉNES SOMOS?</a></li>
             <li><a href="#">EVENTOS</a></li>
             <li><a href="publicaciones">PUBLICACIONES</a></li>
-            <li><a href="#">CONTACTO</a></li>
+            <li><a href="contacto">CONTACTO</a></li>
         </ul>
     </div>
 </div>
