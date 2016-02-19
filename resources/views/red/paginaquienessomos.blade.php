@@ -1,22 +1,23 @@
 @section('title')
-    Quienes Somos
+Quienes Somos
 @stop
 @extends('home')
 @section('menu')
-	@include('red.seccionheader')
+@include('red.seccionheader')
 @endsection
-@section('cuerpo')
-	
-        <div class="container" style="margin-top: 80px; ">
-            <div class="row" style="background:url(ventanaquienessomos2.jpg) no-repeat; background-size: cover;">
-                <div class="col-md-12 thumbnail item square animated bounceIn" >
-                        <!--<img src="http://placehold.it/1600x900" alt="">-->
-                        <img class="img-responsive" src="imagenes/red/quienesSomos/ventanaquienessomos2.jpg" alt="">
-                </div>
-            </div>   
+<div class="backpaquienes"> 
+    <div class="row" style="margin-top: 5%;" >        
+        <div class="row fondo_Obscuro">
+            <div class="col-md-12 text-center text-uppercase">
+                <h2> Quienes Somos</h2>
+            </div>
         </div>
-
-        @include('red.seccionpie')
-@stop
+        <div class="col-md-2"></div>
+        <div class="col-md-8 animated bounceIn imgquienes" >
+        </div>
+        <div class="col-md-2"></div>
+    </div>
+</div>
+@include('red.seccionpie')
 
 

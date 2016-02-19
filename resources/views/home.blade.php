@@ -16,6 +16,7 @@ and open the template in the editor.
         <link rel="stylesheet" href="css/red/estiloredmesoamericana.css">
 
         <link rel="stylesheet" href="css/red/estilored2.css">
+        <link rel="stylesheet" href="css/red/estilored3.css">
 
 
         <!-- Latest compiled and minified CSS -->
@@ -46,11 +47,12 @@ and open the template in the editor.
         <link rel="stylesheet" href="css/red/ihover.css">  
         <link rel="stylesheet" href="css/red/animate.css">
 
-        
+
 
         <!--<link rel="stylesheet" href="css/red/full-slider.css">-->  
 
         <style>
+            /**{border: 2px solid red;}*/
             /*.affix {
                     top: 0;
                     width: 100%;
@@ -60,7 +62,7 @@ and open the template in the editor.
                     padding-top: 50px;
             }*/
             body{
-				font-family: 'Oxygen', sans-serif;
+                font-family: 'Oxygen', sans-serif;
             }
         </style>
     </head>
