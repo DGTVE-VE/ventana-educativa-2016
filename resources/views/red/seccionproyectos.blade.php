@@ -11,7 +11,7 @@
 				<div class="col-sm-6 col-md-4">
 				<center>
 					<div class="thumbnail marcoMorado1">
-						<a href="#">
+						<a href="">
 							<img class="img-responsive img-rounded" style="padding-top:10px;" src="imagenes/red/proyectos/primerEncuentro.jpg" alt="..."/> <!--http://placehold.it/250x250-->
 						</a>
 						<div class="caption">
@@ -22,7 +22,7 @@
 				<div class="col-sm-6 col-md-4">
 				<center>
 					<div class="thumbnail marcoMorado2"> <!-- 376x371-->
-						<a href="#">
+						<a href="proyectos">
 							<img class="img-responsive img-rounded imgAbajo10" src="imagenes/red/proyectos/ventanaEducativa.jpg" alt="..."/>
 						</a>
 						<div class="caption">
