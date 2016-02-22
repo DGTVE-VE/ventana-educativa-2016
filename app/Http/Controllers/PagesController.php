@@ -51,6 +51,9 @@ class PagesController extends Controller {
     public function contacto() {
         return view('red/paginacontacto');
     }
+        public function formBanner() {
+        return view('red/formbanner');
+    }
 //    public function integrantesSlider() {
 //        return view('integrantesSlider');
 //    }

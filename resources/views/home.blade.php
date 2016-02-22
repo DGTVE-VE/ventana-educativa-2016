@@ -17,6 +17,7 @@ and open the template in the editor.
 
         <link rel="stylesheet" href="css/red/estilored2.css">
         <link rel="stylesheet" href="css/red/estilored3.css">
+        <link rel="stylesheet" href="css/red/bootstrap-social.css">
 
 
         <!-- Latest compiled and minified CSS -->

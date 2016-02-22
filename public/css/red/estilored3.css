@@ -38,11 +38,11 @@ and open the template in the editor.
     background-size: cover;
 }
 .imgquienes{
-    width: 90%;
+/*    width: 90%;
     height: 90%;
-    background: url(../../imagenes/red/quienesSomos/textoquienessomos.png) no-repeat center; 
+    background: url(../../imagenes/red/quienesSomos/textoquienessomoschico.png) no-repeat center; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    background-size: cover;
+    background-size: cover;*/
 }

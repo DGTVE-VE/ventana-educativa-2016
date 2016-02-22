@@ -10,4 +10,5 @@ Route::get('quienesSomos','PagesController@quienesSomos');
 Route::get('areastematicas','PagesController@areastematicas');
 Route::get('proyectos','PagesController@proyectos');
 Route::get('contacto','PagesController@contacto');
+Route::get('formBanner','PagesController@formBanner');
 
