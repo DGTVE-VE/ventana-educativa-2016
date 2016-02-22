@@ -42,7 +42,7 @@
                         <li data-target="#slider" data-slide-to="1" class=""></li>
                         <li data-target="#slider" data-slide-to="2" class=""></li>
                     </ol>
-                    <div class="carousel-inner innerInt">
+                    <div class="carousel-inner innerInt col-xs-3 col-md-3 col-lg-3">
                         <div class="item active">
                             <img alt="First slide" src="imagenes/red/integrantes/GIBZKARODRIGUEZ.png">   
                         </div>
@@ -55,7 +55,7 @@
                     </div>
                 </div>
 
-                <div id="slider_captions" class="col-xs-12 col-md-8 col-lg-8 capInt">
+                <div id="slider_captions" class="col-xs-9 col-md-9 col-lg-9" style="width: 65%; height: 300px; border:2px solid yellow;">
                     <div>
                         <div id="caption-0" class="carousel-caption captionint">
                             <h2>Title 3</h2>
@@ -102,7 +102,6 @@
 
 <script>
     function saleMouseInte() {
-//        nombrepais = ;
         document.getElementById('nombrepais').innerHTML = '';
         document.getElementById('imagenMapa').src = 'imagenes/red/integrantes/gris.png';
     }
