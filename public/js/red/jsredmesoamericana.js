@@ -37,31 +37,20 @@
 							break;
 						case 'funcionalidad':
 							document.getElementById("imgFuncionalidad").src ="imagenes/red/ModeloUsabilidad/funcionalidadEduOver.png";
-							document.getElementById("txtFuncionalidad").style.weigth ="550px";
-							document.getElementById("txtFuncionalidad").style.height ="165px";
-							document.getElementById("txtFuncionalidad").style.left ="-360px";
-							document.getElementById("txtFuncionalidad").style.top ="-50px";
+							document.getElementById("txtFuncionalidad").style.font ="bold 16px Oxygen, sans-serif";
 							break;
 						case 'expectativas':
 							document.getElementById("imgExpectativas").src ="imagenes/red/ModeloUsabilidad/disposicionExpectativasOver.png";
-							document.getElementById("txtExpectativas").style.weigth ="550px";
-							document.getElementById("txtExpectativas").style.height ="116px";
-							document.getElementById("txtExpectativas").style.left ="-410px";
-							document.getElementById("txtExpectativas").style.top ="105px";
+							document.getElementById("txtExpectativas").style.font ="bold 16px Oxygen, sans-serif";
+							/*document.getElementById("txtExpectativas").style.width ="bold 16px Oxygen, sans-serif";*/
 							break;
 						case 'saberesDig':
 							document.getElementById("imgSaberesDig").src ="imagenes/red/ModeloUsabilidad/saberesDigitalesOver.png";
-							document.getElementById("txtSaberesDig").style.weigth ="500px";
-							document.getElementById("txtSaberesDig").style.height ="176px";
-							document.getElementById("txtSaberesDig").style.left ="400px";
-							document.getElementById("txtSaberesDig").style.top ="155px";
+							document.getElementById("txtSaberesDig").style.font ="bold 16px Oxygen, sans-serif";
 							break;
 						case 'apropiacion':
 							document.getElementById("imgApropiacion").src ="imagenes/red/ModeloUsabilidad/apropiacionIncorporacionEduOver.png";
-							document.getElementById("txtApropiacion").style.weigth ="500px";
-							document.getElementById("txtApropiacion").style.height ="122px";
-							document.getElementById("txtApropiacion").style.left ="300px";
-							document.getElementById("txtApropiacion").style.top ="345px";
+							document.getElementById("txtApropiacion").style.font ="bold 16px Oxygen, sans-serif";
 							break;
 						case 'RedesConocimiento':
 							document.getElementById("imgRedesConocimiento").src ="imagenes/red/areasTematicas/RedesConocimientoOver.png";
@@ -95,31 +84,19 @@
 							break;
 						case 'funcionalidad':
 							document.getElementById("imgFuncionalidad").src ="imagenes/red/ModeloUsabilidad/funcionalidadEdu.png";
-							document.getElementById("txtFuncionalidad").style.weigth ="397px";
-							document.getElementById("txtFuncionalidad").style.height ="119px";
-							document.getElementById("txtFuncionalidad").style.left ="-205px";
-							document.getElementById("txtFuncionalidad").style.top ="0px";
+							document.getElementById("txtFuncionalidad").style.font ="normal 14px Oxygen, sans-serif";
 							break;
 						case 'expectativas':
 							document.getElementById("imgExpectativas").src ="imagenes/red/ModeloUsabilidad/disposicionExpectativas.png";
-							document.getElementById("txtExpectativas").style.weigth ="421px";
-							document.getElementById("txtExpectativas").style.height ="89px";
-							document.getElementById("txtExpectativas").style.left ="-280px";
-							document.getElementById("txtExpectativas").style.top ="122px";
+							document.getElementById("txtExpectativas").style.font ="normal 14px Oxygen, sans-serif";
 							break;
 						case 'saberesDig':
 							document.getElementById("imgSaberesDig").src ="imagenes/red/ModeloUsabilidad/saberesDigitales.png";
-							document.getElementById("txtSaberesDig").style.weigth ="386px";
-							document.getElementById("txtSaberesDig").style.height ="136px";
-							document.getElementById("txtSaberesDig").style.left ="400px";
-							document.getElementById("txtSaberesDig").style.top ="180px";
+							document.getElementById("txtSaberesDig").style.font ="normal 14px Oxygen, sans-serif";
 							break;
 						case 'apropiacion':
 							document.getElementById("imgApropiacion").src ="imagenes/red/ModeloUsabilidad/apropiacionIncorporacionEdu.png";
-							document.getElementById("txtApropiacion").style.weigth ="374px";
-							document.getElementById("txtApropiacion").style.height ="91px";
-							document.getElementById("txtApropiacion").style.left ="300px";
-							document.getElementById("txtApropiacion").style.top ="350px";
+							document.getElementById("txtApropiacion").style.font ="normal 14px Oxygen, sans-serif";
 							break;
 						case 'RedesConocimiento':
 							document.getElementById("imgRedesConocimiento").src ="imagenes/red/areasTematicas/RedesConocimiento.png";
