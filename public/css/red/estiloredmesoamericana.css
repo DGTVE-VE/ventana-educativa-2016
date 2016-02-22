@@ -9,11 +9,12 @@
 }
 
 .modal-fullscreen {
-    /*  background: transparent;*/
-    background-color:black;
-    opacity:0.2;
-    width: 90%;
-    height: 90%;
+      /*background: transparent;*/
+    /*background-color:black;*/
+    opacity:80% !important;
+    filter:  alpha(opacity=80); 
+    width: 100%;
+    height: 100%;
 }
 .modal-fullscreen .modal-content {
     background: transparent;

@@ -8,16 +8,20 @@
     <div class="col-md-6">
         <img name="imagenMapa_n"  src="imagenes/red/integrantes/gris.png"  border="5px" id="imagenMapa" class="mapaCentroAmerica img-responsive" usemap="#mapa_n" alt="" />
         <map name="mapa_n" id="mapa">         
-            <area alt="Colombia" onmouseover="document.getElementById('imagenMapa').src = 'imagenes/red/integrantes/colombia.png';" onmouseout="saleMouseInte();" href="#modalColombia" data-keyboard="true" data-toggle="modal" shape="poly" coords="331,279,347,261,347,226,377,187,394,230,434,238,431,274,414,279,413,321,381,380,318,330"/>
-            <area alt="Costa Rica" onmouseover="document.getElementById('imagenMapa').src = 'imagenes/red/integrantes/costarica.png';" onmouseout="saleMouseInte();" href="#modalCostarica" shape="poly" data-toggle="modal" coords="265,192,290,182,308,208,307,223,291,216"/>
-            <area alt="Dominicana" onmouseover="document.getElementById('imagenMapa').src = 'imagenes/red/integrantes/dominicana.png';" onmouseout="saleMouseInte();" href="#modalDominicana" shape="poly" data-toggle="modal" coords="379,130,389,111,414,114,433,130"/>
-            <area alt="El Salvador" onmouseover="document.getElementById('imagenMapa').src = 'imagenes/red/integrantes/salvador.png';" onmouseout="saleMouseInte();" href="#modalSalvador" shape="poly" data-toggle="modal" coords="237,173,243,155,254,183"/>
-            <area alt="Guatemala" onmouseover="document.getElementById('imagenMapa').src = 'imagenes/red/integrantes/guatemala.png';" onmouseout="saleMouseInte();" href="#modalGuatemala" shape="poly" data-toggle="modal" coords="214,162,240,128,249,143,237,173"/>
-            <area alt="Honduras" onmouseover="document.getElementById('imagenMapa').src = 'imagenes/red/integrantes/honduras.png';" onmouseout="saleMouseInte();" href="#modalHonduras" shape="poly" data-toggle="modal" coords="242,156,247,142,290,146,253,183"/>
-            <area alt="México" onmouseover="document.getElementById('imagenMapa').src = 'imagenes/red/integrantes/mexico.png';" onmouseout="saleMouseInte();" href="#modalMexico" data-toggle="modal" shape="poly" coords="126,131,187,124,225,112,227,94,262,100,216,162,160,147"/>
-            <area alt="Nicaragua" onmouseover="document.getElementById('imagenMapa').src = 'imagenes/red/integrantes/nicaragua.png';" onmouseout="saleMouseInte();" href="#modalNicaragua" shape="poly" data-toggle="modal" coords="254,182,292,145,291,181,267,194"/>
-            <area alt="Panama" onmouseover="document.getElementById('imagenMapa').src = 'imagenes/red/integrantes/panama.png';" onmouseout="saleMouseInte();" href="#modalPanama" shape="poly" data-toggle="modal" coords="309,223,311,207,346,201,348,212,360,212,348,228,326,231"/>
+            <area alt="Colombia" onmouseover="entraPais(1)" onmouseout="saleMouseInte();" href="#modalColombia" data-keyboard="true" data-toggle="modal" shape="poly" coords="330,279,347,262,347,226,378,187,394,230,433,238,431,274,414,279,414,319,366,292"/>
+            <area alt="Costa Rica" onmouseover="entraPais(2)" onmouseout="saleMouseInte();" href="#modalCostarica" shape="poly" data-toggle="modal" coords="265,192,290,182,308,208,307,223,291,216"/>
+            <area alt="Dominicana" onmouseover="entraPais(3)" onmouseout="saleMouseInte();" href="#modalDominicana" shape="poly" data-toggle="modal" coords="379,130,389,111,414,114,433,130"/>
+            <area alt="El Salvador" onmouseover="entraPais(4)" onmouseout="saleMouseInte();" href="#modalSalvador" shape="poly" data-toggle="modal" coords="237,173,243,155,254,183"/>
+            <area alt="Guatemala" onmouseover="entraPais(5)" onmouseout="saleMouseInte();" href="#modalGuatemala" shape="poly" data-toggle="modal" coords="214,162,240,128,249,143,237,173"/>
+            <area alt="Honduras" onmouseover="entraPais(6)" onmouseout="saleMouseInte();" href="#modalHonduras" shape="poly" data-toggle="modal" coords="242,156,247,142,290,146,253,183"/>
+            <area alt="México" onmouseover="entraPais(7)" onmouseout="saleMouseInte();" href="#modalMexico" data-toggle="modal" shape="poly" coords="90,98,162,90,188,123,225,111,228,93,262,100,216,162,159,145,127,131,97,121"/>
+            <area alt="Nicaragua" onmouseover="entraPais(8)" onmouseout="saleMouseInte();" href="#modalNicaragua" shape="poly" data-toggle="modal" coords="254,182,292,145,291,181,267,194"/>
+            <area alt="Panama" onmouseover="entraPais(9)" onmouseout="saleMouseInte();" href="#modalPanama" shape="poly" data-toggle="modal" coords="309,223,311,207,346,201,348,212,360,212,348,228,326,231"/>
         </map>
+    </div>
+    <div class="col-md-6 text-center" style="margin-top: 10%;">
+        <h2 id="nombrepais"></h2>
+        <h4 class="">Selecciona un país para ver más...</h4>
     </div>
 </div>
 <!-- Modal -->
@@ -31,7 +35,7 @@
                 <button type="button" class="close closeInt" data-dismiss="modal" aria-hidden="true">×</button>
             </div>
             <div class="modal-body">
-                
+
                 <div id="sliderinte" class="carousel slide col-xs-12 col-md-4 col-lg-4" data-ride="carousel" data-interval="3000">
                     <ol class="carousel-indicators indicadorInt">
                         <li data-target="#slider" data-slide-to="0" class="active"></li>
@@ -80,13 +84,13 @@
                     </div>
                 </div>
             </div>
-                            <!-- Controls -->
-                <a class="left carousel-control controlInt" href="#sliderint" data-slide="prev">
-                    <span class="glyphicon glyphicon-chevron-left"></span>
-                </a>
-                <a class="right carousel-control controlInt" href="#sliderint" data-slide="next">
-                    <span class="glyphicon glyphicon-chevron-right"></span>
-                </a>
+            <!-- Controls -->
+            <a class="left carousel-control controlInt" href="#sliderint" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+            </a>
+            <a class="right carousel-control controlInt" href="#sliderint" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+            </a>
             <!--      <div class="modal-footer">
                     <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                   </div>-->
@@ -98,7 +102,49 @@
 
 <script>
     function saleMouseInte() {
+//        nombrepais = ;
+        document.getElementById('nombrepais').innerHTML = '';
         document.getElementById('imagenMapa').src = 'imagenes/red/integrantes/gris.png';
+    }
+    function entraPais(v) {
+        nombrepais = document.getElementById('nombrepais');
+        if (v === 1) {
+            document.getElementById('imagenMapa').src = 'imagenes/red/integrantes/colombia.png';
+            nombrepais = document.getElementById('nombrepais');
+            nombrepais.innerHTML = 'Colombia';
+        }
+        if (v === 2) {
+            document.getElementById('imagenMapa').src = 'imagenes/red/integrantes/costarica.png';
+            nombrepais.innerHTML = 'Costa Rica';
+        }
+        if (v === 3) {
+            document.getElementById('imagenMapa').src = 'imagenes/red/integrantes/dominicana.png';
+            nombrepais.innerHTML = 'República Dominicana';
+        }
+        if (v === 4) {
+            document.getElementById('imagenMapa').src = 'imagenes/red/integrantes/elsalvador.png';
+            nombrepais.innerHTML = 'El Salvador';
+        }
+        if (v === 5) {
+            document.getElementById('imagenMapa').src = 'imagenes/red/integrantes/guatemala.png';
+            nombrepais.innerHTML = 'Guatemala';
+        }
+        if (v === 6) {
+            document.getElementById('imagenMapa').src = 'imagenes/red/integrantes/honduras.png';
+            nombrepais.innerHTML = 'Honduras';
+        }
+        if (v === 7) {
+            document.getElementById('imagenMapa').src = 'imagenes/red/integrantes/mexico.png';
+            nombrepais.innerHTML = 'México';
+        }
+        if (v === 8) {
+            document.getElementById('imagenMapa').src = 'imagenes/red/integrantes/nicaragua.png';
+            nombrepais.innerHTML = 'Nicaragua';
+        }
+        if (v === 9) {
+            document.getElementById('imagenMapa').src = 'imagenes/red/integrantes/panama.png';
+            nombrepais.innerHTML = 'Panamá';
+        }
     }
     $("#sliderinte").on('slide.bs.carousel', function (evt) {
 
@@ -109,8 +155,8 @@
         });
 
     });
-    
-    $(document).ready(function(e) {
-    $('img[usemap]').rwdImageMaps();
-});
+
+    $(document).ready(function (e) {
+        $('img[usemap]').rwdImageMaps();
+    });
 </script>

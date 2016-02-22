@@ -1,28 +1,3 @@
-	/* -------------------------------------------------------			Inicio de avance de barra				--------------------------*/
-			//var barraAvance = document.getElementById("avanceSlider");
-			//barraAvance.style.width = "30%";
-
-			var maxprogress = 100;
-			var actualprogress = 0;
-			var itv = 0;
-			function prog(){
-				if(actualprogress >= maxprogress){
-					clearInterval(itv);   	
-					return;
-				}	
-				//var progressnum = document.getElementById("progressnum");
-				var indicador = document.getElementById("indicador");
-				actualprogress += 1;	
-				indicador.style.width=actualprogress + "%";
-				//progressnum.innerHTML = (maxprogress - actualprogress) + " MS Faltantes";
-			}
-			function reiniciaBarra(){
-				var indicador = document.getElementById("indicador");
-				indicador.style.width= "0%";
-				actualprogress=0;
-				clearInterval(itv);
-			}
-			itv = setInterval(prog,50);
 	/* --------------------------------------------			 Cambio de imagen para resaltar en evento hover			--------------------------*/
 				function imgResalta(seccion){
 					switch(seccion){
@@ -144,21 +119,10 @@
 				});
 			});
 
-		/*  -------------------------------------    Reiniciar barra animada de carousel   -----------------------------------------------*/
-			$("#carousel-2").on('slide.bs.carousel', function () {
-				reiniciaBarra();
-				itv = 0;
-				itv = setInterval(prog,50);
-			});
-			$("#carousel-2").mouseover(function(){
-				reiniciaBarra();
-			});
-			$("#carousel-2").mouseout(function(){
-				itv = setInterval(prog,50);
-			});
-			
+		/*  -------------------------------------    Permitir elementos HTML en elementos POPOVER  -----------------------------------------------*/
 			$('[data-toggle="popover"]').popover({html:true});
 		})
+		
 	/*	---------------------------------------	Sección Usabilidad. Agregar animación de entrada a imagenes 	--------------------------------*/
         $(function(){
             var elems = $('.estoy-visible');    //elementos que quiero saber si estan en el área visible

@@ -1,4 +1,4 @@
-<div class="row fondo_Obscuro">
+<div class="row fondo_Obscuro" style="margin-top:-1px;">
     <div class="col-md-12 text-center text-uppercase">
         <h2> Áreas Temáticas</h2>
     </div>
@@ -8,7 +8,7 @@
         <div class="division">
         </div>
     </div>
-    <div class="col-sm-6 col-md-3 col-md-offset-1">
+    <div class="col-sm-6 col-md-3 col-md-offset-2">
         <div class="table-responsive">
             <table>
                 <tr>
@@ -53,7 +53,7 @@
     </div>
 </div>
 <div class="row fondo_Claro">
-    <div class="col-sm-6 col-md-4 col-md-offset-2">
+    <div class="col-sm-6 col-md-4 col-md-offset-3">
         <div class="table-responsive">
             <table>
                 <tr>

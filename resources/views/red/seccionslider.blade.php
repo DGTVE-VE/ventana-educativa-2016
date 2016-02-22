@@ -54,9 +54,10 @@
 				</div>
 			</div>
 			<div class="row fondo_Claro">
-				<div class="col-xs-12 col-sm-12 col-md-12 progress-container" style="padding:0px;">
-					<div class="progress active" style="margin:0px; opacity:0.8; height:8px;">
+				<!--div class="col-xs-12 col-sm-12 col-md-12 progress-container" style="height: 0px; padding:0px;"-->
+				<div class="col-xs-12 col-sm-12 col-md-12" style="height: 0px;">
+					<!--div class="progress active" style="margin:0px; opacity:0.8; height:8px;">
 						<div id="indicador" class="progress-bar"></div>
-					</div>
+					</div-->
 				</div>
 			</div>
