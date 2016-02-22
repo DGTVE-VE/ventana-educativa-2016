@@ -13,13 +13,12 @@ Quienes Somos
             </div>
         </div>
         <div class="col-md-1"></div>
-
         <div class="col-md-10 animated bounceIn" >
             <img src="imagenes/red/quienesSomos/textoquienessomoschico.png" class="img-responsive">
         </div>
-
         <div class="col-md-1"></div>
     </div>
+    </br></br>
 </div>
 @include('red.seccionpie')
 

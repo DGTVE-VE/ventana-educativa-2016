@@ -30,15 +30,15 @@ Proyectos
                             <div class="carousel-inner">
 
                                 <div class="active item" data-slide-number="0">
-                                    <img src="http://placehold.it/1170x350">
+                                    <img src="http://placehold.it/1170x450">
                                     <!--<img class="img-responsive"src="foto-ventana-educativa.jpg" ></div>-->
                                 </div>
                                 <div class="item" data-slide-number="1">
-                                    <img src="http://placehold.it/1170x350">
+                                    <img src="http://placehold.it/1170x450">
                                 </div>
 
                                 <div class="item" data-slide-number="2">
-                                    <img src="http://placehold.it/1170x350">
+                                    <img src="http://placehold.it/1170x450">
                                 </div>
                             </div><!-- Carousel nav -->
                             <a  data-slide="prev" href="#myCarouselProyecto" class="left carousel-control circuloFlecha" >‹</a>
@@ -126,6 +126,7 @@ Proyectos
                 </button>
 
             </div><!--/row1-->
+            </br></br>
         </div>
     </div>
 </div>

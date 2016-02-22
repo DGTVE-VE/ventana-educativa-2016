@@ -62,6 +62,7 @@ Publicaciones
             </div>
             <br>
             <div><button class="btn btn-info">Enviar</button></div>
+            </br></br>
         </div>
     </div>
     <div class="col-md-1"></div>
