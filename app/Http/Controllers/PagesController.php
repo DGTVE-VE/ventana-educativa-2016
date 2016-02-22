@@ -48,12 +48,31 @@ class PagesController extends Controller {
     public function viewTable() {
         $proyectos = \App\Red\Proyectos::all();
     }
+
     public function contacto() {
         return view('red/paginacontacto');
     }
-        public function formBanner() {
-        return view('red/formbanner');
+
+    public function frmbanner() {
+        return view('red/frmbanner');
     }
+
+    public function frmcolaboradores() {
+        return view('red/frmcolaboradores');
+    }
+
+    public function frmproyectos() {
+        return view('red/frmproyectos');
+    }
+
+    public function frmpublicaciones() {
+        return view('red/frmpublicaciones');
+    }
+
+    public function usuarios() {
+        return view('red/frmusuarios');
+    }
+
 //    public function integrantesSlider() {
 //        return view('integrantesSlider');
 //    }
