@@ -6,10 +6,8 @@ Publicaciones
 <a name="redesconocimiento"></a>
 @include('red.seccionheader')
 @endsection
-@section('cuerpo')
-
-<div class="container"> 
-    <div class="row" style="margin-top: 10%; background-image: url'';" >        
+<div class="backpareatema"> 
+    <div class="row" style="margin-top: 5%;" >        
         <div class="row fondo_Obscuro">
             <div class="col-md-12 text-center text-uppercase">
                 <h2> Áreas Temáticas</h2>
@@ -105,4 +103,3 @@ Publicaciones
         <div class="col-md-1"></div>
     </div>
 </div>
-@stop

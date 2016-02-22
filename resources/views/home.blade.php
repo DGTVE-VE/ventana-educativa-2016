@@ -15,6 +15,10 @@ and open the template in the editor.
         <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
         <link rel="stylesheet" href="css/red/estiloredmesoamericana.css">
 
+        <link rel="stylesheet" href="css/red/estilored2.css">
+        <link rel="stylesheet" href="css/red/estilored3.css">
+
+
         <!-- Latest compiled and minified CSS -->
         <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 
@@ -43,7 +47,7 @@ and open the template in the editor.
         <link rel="stylesheet" href="css/red/ihover.css">  
         <link rel="stylesheet" href="css/red/animate.css">
 
-        
+
 
         <!--<link rel="stylesheet" href="css/red/full-slider.css">-->  
 
