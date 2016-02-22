@@ -10,7 +10,7 @@ Proyectos
 <div class="row" style="margin-top: 5%;" >        
     <div class="row fondo_Obscuro">
         <div class="col-md-12 text-center text-uppercase">
-            <h2>Publicaciones</h2>
+            <h2>Proyectos</h2>
         </div>
     </div>
 <link rel="stylesheet" href="css/red/estiloRed3.css">
@@ -50,7 +50,7 @@ Proyectos
 
                     <div id="slide-content" style="display: none;">
                         <div  id="slide-content-0">
-                            <h2>Proyecto </h2>
+                            <h2>Tema 1 </h2>
                             <p style="text-align: justify;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
                                 Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
                                 when an unknown printer took a galley of type and scrambled it to make a type
@@ -72,7 +72,8 @@ Proyectos
                         </div>
 
                         <div id="slide-content-1">
-                            <h2>Ecosistema</h2>
+                            <h2>Tema 2</h2>
+                            <a name="tema1"></a>
                             <p style="text-align: justify;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
                                 Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
                                 when an unknown printer took a galley of type and scrambled it to make a type
@@ -94,7 +95,8 @@ Proyectos
                         </div>
 
                         <div id="slide-content-2">
-                            <h2>Primer Encuentro</h2>
+                            <h2>Tema 3</h2>
+                            <a name="tema1"></a>
                             <p style="text-align: justify;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
                                 Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
                                 when an unknown printer took a galley of type and scrambled it to make a type

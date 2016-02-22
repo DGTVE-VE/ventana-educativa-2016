@@ -8,10 +8,35 @@ and open the template in the editor.
     Author     : SMARTINEZ
 */
 
- .backpareatema{
-   background: url(../../imagenes/red/areasTematicas/backareastematicas.jpg) no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
- }
+.backpareatema{
+    background: url(../../imagenes/red/areasTematicas/backareastematicas.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.textoContacto{
+    background-color:#424242;
+    color:white;
+    font-family: 'Exo', sans-serif;
+    font-size: 20px;
+}
+
+.shareContacto{
+    color: white;
+}
+
+.btnShare{
+    background-color: #737373;
+    height: 20px;
+    width: 30px;
+    color: white;
+    margin-top: 5%;
+    padding-top: 1%;
+}
+
+
+
+
+

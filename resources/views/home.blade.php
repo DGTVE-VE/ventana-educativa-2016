@@ -17,6 +17,7 @@ and open the template in the editor.
 
         <link rel="stylesheet" href="css/red/estilored2.css">
         <link rel="stylesheet" href="css/red/estilored3.css">
+        <link rel="stylesheet" href="css/red/bootstrap-social.css">
 
 
         <!-- Latest compiled and minified CSS -->
@@ -51,20 +52,6 @@ and open the template in the editor.
 
         <!--<link rel="stylesheet" href="css/red/full-slider.css">-->  
 
-        <style>
-            /**{border: 2px solid red;}*/
-            /*.affix {
-                    top: 0;
-                    width: 100%;
-            }
-    
-            .affix + .container-fluid {
-                    padding-top: 50px;
-            }*/
-            body{
-                font-family: 'Oxygen', sans-serif;
-            }
-        </style>
     </head>
     <body id="pag_principal" style="padding:0px; overflow-x:hidden">
         <div class="container-fluid" style="z-index:2; padding:0px;"> <!--data-spy="affix" data-offset-top="80"-->

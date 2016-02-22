@@ -9,7 +9,7 @@
 					<img id="imgIconoYoutube" class="img-responsive img-rounded" style="float:left; width:40px; height:40px;" src="imagenes/red/footer/icono-youtube-A.png" onmouseenter="imgResalta('youtube')" onmouseleave="imgNormal('youtube')"/>
 					<br>
 				</div>
-				<div class="col-sm-6 col-md-2">
+				<div class="col-xs-12 col-sm-6 col-md-2">
 					<h4 class="text-uppercase">Colaboradores</h4>
 					<br>
 						<img class="img-responsive img-rounded" style="width:150px; height:50px;" src="imagenes/red/footer/amexid.png"/>
