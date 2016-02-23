@@ -73,12 +73,6 @@ class PagesController extends Controller {
         return view('red/frmusuarios');
     }
 
-<<<<<<< HEAD
-    public function modalintegrantes() {
-        return view('red/modalintegrantes');
-    }
-||||||| merged common ancestors
-=======
     public function guardaCorreoNewsLetter() {
 
         $news = new \App\Red\News();
@@ -117,7 +111,6 @@ class PagesController extends Controller {
         mail($mail, $título, $mensaje, $cabeceras);
     }
 
->>>>>>> f01c3369aaa120ad1fdb59a732bb9ba6627f3a54
 //    public function integrantesSlider() {
 //        return view('integrantesSlider');
 //    }
