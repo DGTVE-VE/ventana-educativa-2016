@@ -86,35 +86,38 @@ class PagesController extends Controller {
 
     private function sendConfirmMail($mail) {
         
-        $título = 'Recordatorio de cumpleaños para Agosto';
-        $mensaje = '
+        $título = 'Activa tu cuenta de la red mesoamericana';
+        $mensaje = "
                     <html>
                     <head>
-                      <title>Recordatorio de cumpleaños para Agosto</title>
+                      <title>Activa tu cuenta de la red mesoamericana</title>
+                      <style>
+                      .button {
+                        font: bold 11px Arial;
+                        text-decoration: none;
+                        background-color: #EEEEEE;
+                        color: #333333;
+                        padding: 2px 6px 2px 6px;
+                        border-top: 1px solid #CCCCCC;
+                        border-right: 1px solid #333333;
+                        border-bottom: 1px solid #333333;
+                        border-left: 1px solid #CCCCCC;
+                      }
+                      </style>
                     </head>
                     <body>
-                      <p>¡Estos son los cumpleaños para Agosto!</p>
-                      <table>
-                        <tr>
-                          <th>Quien</th><th>Día</th><th>Mes</th><th>Año</th>
-                        </tr>
-                        <tr>
-                          <td>Joe</td><td>3</td><td>Agosto</td><td>1970</td>
-                        </tr>
-                        <tr>
-                          <td>Sally</td><td>17</td><td>Agosto</td><td>1973</td>
-                        </tr>
-                      </table>
+                      <a href='http://ventana.televisioneducativa.gob.mx/public/indexRed?correo=$mail'>
+                          Activa tu cuenta
+                      </a>
                     </body>
                     </html>
-                    ';
+                    ";
 
 // Para enviar un correo HTML, debe establecerse la cabecera Content-type
         $cabeceras = 'MIME-Version: 1.0' . "\r\n";
         $cabeceras .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
 
-// Cabeceras adicionales
-        $cabeceras .= 'To: Israel  <j.israel.toledo@gmail.com.com>' . "\r\n";
+// Cabeceras adicionales        
         $cabeceras .= 'From: Recordatorio <ventana@televisioneducativa.gob.mx>' . "\r\n";        
 
 // Enviarlo
