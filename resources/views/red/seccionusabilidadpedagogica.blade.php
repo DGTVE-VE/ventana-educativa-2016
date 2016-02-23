@@ -25,22 +25,22 @@
 						<!--p>Análisis de la disposición y expectativas docentes para la implementación de la tecnología como parte de las actividades educativas.</p-->
 					</div>
 				<!--	-------------------------------		Elementos para resolución media - grande	--------------------------	-->
-					<div  class="hidden-xs hidden-sm" id="txtFuncionalidad">
-						<img class="estoy-visible slideInLeft " alt="" src="imagenes/red/ModeloUsabilidad/texto1-01.png" style="width:300px; height:58px;">
+					<div  class="hidden-xs hidden-sm">
+						<img id="txtFuncionalidad" class="estoy-visible slideInLeft " alt="" src="imagenes/red/ModeloUsabilidad/texto1-01.png" style="width:270px; height:52px; position:absolute; top:-20px; left:140px;">
 						<!--p>A partir de criterios de usabilidad pedagógica evaluar los recursos y herramientas tecnologicas que se implementen como apoyo al aprendizaje de los estudiantes.</p-->
 					</div>
-					<div class="hidden-xs hidden-sm" id="txtExpectativas" style="position:relative; top:300px;">
-						<img class="estoy-visible slideInLeft " alt="" src="imagenes/red/ModeloUsabilidad/texto2-01.png" style="width:300px; height:71px;">
+					<div class="hidden-xs hidden-sm">
+						<img id="txtExpectativas" class="estoy-visible slideInLeft " alt="" src="imagenes/red/ModeloUsabilidad/texto2-01.png" style="width:300px; height:71px; position:absolute; top:150px; left:20px;">
 						<!--p>Análisis de la disposición y expectativas docentes para la implementación de la tecnología como parte de las actividades educativas.</p-->
 					</div>
 				</div>
 				<div class="col-xs-3 col-sm-8 col-md-5 col-lg-5"><!-- style="background-image:url(imagenes/red/ModeloUsabilidad/aros-modelo-de-usabilidad.png); background-repeat:no-repeat; height:500px;">-->
 							<!-- ------------------------------------		Resolucion XS		------------------------------------------------- -->
-					<img class="img-responsive visible-xs-block" alt="..." src="imagenes/red/ModeloUsabilidad/funcionalidadEdu.png" style="weight: 70px; height:70px;" onmouseenter="imgResalta('funcionalidad')" onmouseleave="imgNormal('funcionalidad')"> <!--  -->
-					<img class="img-responsive visible-xs-block" alt="..." src="imagenes/red/ModeloUsabilidad/disposicionExpectativas.png" style="weight: 70px; height:70px;" onmouseenter="imgResalta('expectativas')" onmouseleave="imgNormal('expectativas')">
-					<img class="img-responsive visible-xs-block" alt="..." src="imagenes/red/ModeloUsabilidad/saberesDigitales.png" style="weight: 70px; height:70px;" onmouseenter="imgResalta('saberesDig')" onmouseleave="imgNormal('saberesDig')">
-					<img class="img-responsive visible-xs-block" alt="..." src="imagenes/red/ModeloUsabilidad/apropiacionIncorporacionEdu.png" style="weight: 70px; height:70px;" onmouseenter="imgResalta('apropiacion')" onmouseleave="imgNormal('apropiacion')">
-					
+					<img id="imgFuncionalidadXS" class="img-responsive visible-xs-block" alt="..." src="imagenes/red/ModeloUsabilidad/funcionalidadEdu.png" style="weight: 70px; height:70px;" onmouseenter="imgResalta('funcionalidadXS')" onmouseleave="imgNormal('funcionalidadXS')"> <!--  -->
+					<img id="imgExpectativasXS" class="img-responsive visible-xs-block" alt="..." src="imagenes/red/ModeloUsabilidad/disposicionExpectativas.png" style="weight: 70px; height:70px;" onmouseenter="imgResalta('expectativasXS')" onmouseleave="imgNormal('expectativasXS')">
+					<img id="imgSaberesDigXS" class="img-responsive visible-xs-block" alt="..." src="imagenes/red/ModeloUsabilidad/saberesDigitales.png" style="weight: 70px; height:70px;" onmouseenter="imgResalta('saberesDigXS')" onmouseleave="imgNormal('saberesDigXS')">
+					<img id="imgApropiacionXS" class="img-responsive visible-xs-block" alt="..." src="imagenes/red/ModeloUsabilidad/apropiacionIncorporacionEdu.png" style="weight: 70px; height:70px;" onmouseenter="imgResalta('apropiacionXS')" onmouseleave="imgNormal('apropiacionXS')">
+							<!-- ------------------------------------		Resolucion Mediana - Grande		------------------------------------------------- -->
 					<img class="img-responsive hidden-xs" alt="..." src="imagenes/red/ModeloUsabilidad/aros-modelo-de-usabilidad.png" style="float:left">
 					<img id="imgFuncionalidad" class="img-responsive hidden-xs" alt="..." src="imagenes/red/ModeloUsabilidad/funcionalidadEdu.png" style="position:absolute; left:190px; top:62px;" onmouseenter="imgResalta('funcionalidad')" onmouseleave="imgNormal('funcionalidad')"> <!--  -->
 					<img id="imgExpectativas" class="img-responsive hidden-xs" alt="..." src="imagenes/red/ModeloUsabilidad/disposicionExpectativas.png" style="position:absolute; left:78px; top:172px;" onmouseenter="imgResalta('expectativas')" onmouseleave="imgNormal('expectativas')">
@@ -60,13 +60,13 @@
 						<img class="estoy-visible slideInLeft img-responsive" alt="" src="imagenes/red/ModeloUsabilidad/nodo4-01.png">
 					</div>
 							<!-- ------------------------------------		Lineas resolucion grande		------------------------------------------------- -->
-					<div class="hidden-xs hidden-sm text-justify" style="font-size:6px; width:150px; position:absolute; top:-10px; left:40px;">
+					<div class="hidden-xs hidden-sm text-justify" style="font-size:6px; width:140px; position:absolute; top:-10px; left:50px;">
 						<img class="estoy-visible slideInLeft img-responsive" alt="" src="imagenes/red/ModeloUsabilidad/nodo1-01.png">
 					</div>
-					<div class="hidden-xs hidden-sm text-justify" style="font-size:6px; width:170px; position:absolute; top:190px; left:-90px;">
+					<div class="hidden-xs hidden-sm text-justify" style="font-size:6px; width:170px; position:absolute; top:130px; left:-50px;">
 						<img class="estoy-visible slideInLeft img-responsive" alt="" src="imagenes/red/ModeloUsabilidad/nodo2-01.png" style="float:left;">
 					</div>
-					<div class="hidden-xs hidden-sm text-justify" style="font-size:6px; width:170px; position:absolute; top:150px; left:410px;">
+					<div class="hidden-xs hidden-sm text-justify" style="font-size:6px; width:150px; position:absolute; top:195px; left:390px;">
 						<img class="estoy-visible slideInLeft img-responsive" alt="" src="imagenes/red/ModeloUsabilidad/nodo3-01.png" style="float:left;">
 					</div>
 					<div class="hidden-xs hidden-sm text-justify" style="font-size:6px; width:170px; position:absolute; top:360px; left:300px;">
@@ -101,13 +101,13 @@
 						<!--p>Diseño del proceso de apropiación e incorporación de la tecnología como parte del contexto educativo del docente.</p-->
 					</div>
 				<!--	-------------------------------		Elementos para resolución media - grande	--------------------------	-->
-					<div class="hidden-xs hidden-sm text-justify" id="txtSaberesDig" style="position:relative; top:-0px; left:-80px;">
-						<img class="estoy-visible slideInRight" alt="" src="imagenes/red/ModeloUsabilidad/texto4-01.png" style="width:300px; height:64px;">
-						<!--p>Diseño del proceso de apropiación e incorporación de la tecnología como parte del contexto educativo del docente.</p-->
-					</div>
-					<div class="hidden-xs hidden-sm text-justify" id="txtApropiacion" style="position:relative; top:300px; left:-80px;">
-						<img class="estoy-visible slideInRight" alt="" src="imagenes/red/ModeloUsabilidad/texto3-01.png" style="width:300px; height:56px;">
+					<div class="hidden-xs hidden-sm text-justify">
+						<img id="txtSaberesDig" class="estoy-visible slideInRight" alt="" src="imagenes/red/ModeloUsabilidad/texto3-01.png" style="width:300px; height:56px; position:absolute; top:180px; left:-100px;">
 						<!--p>Formación y/o actualización de docentes de acuerdo con los saberes digitales básicos propuestos (pertinencia y cultura digital, saberes informáticos, informacionales y de comunicación, diseño de recursos).</p-->
+					</div>
+					<div class="hidden-xs hidden-sm text-justify">
+						<img id="txtApropiacion" class="estoy-visible slideInRight" alt="" src="imagenes/red/ModeloUsabilidad/texto4-01.png" style="width:270px; height:58px; position:absolute; top:380px; left:-170px;">
+						<!--p>Diseño del proceso de apropiación e incorporación de la tecnología como parte del contexto educativo del docente.</p-->
 					</div>
 				</div>
 				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">

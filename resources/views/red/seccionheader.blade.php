@@ -14,11 +14,11 @@
     </div>
 
     <div class="collapse navbar-collapse js-navbar-collapse">
-        <ul class="nav navbar-nav navbar-right bajaHorizontal">
-            <li class="text-uppercase"><a href="indexRed">INICIO</a></li>
-            <li class="text-uppercase"><a href="quienesSomos">¿QUIÉNES SOMOS?</a></li>
+        <ul class="nav navbar-nav navbar-right text-uppercase">
+            <li class="bajaHorizontal"><a href="indexRed">INICIO</a></li>
+            <li class="bajaHorizontal"><a href="quienesSomos">¿QUIÉNES SOMOS?</a></li>
             <li class="dropdown menu-large">
-                <a href="#" class="dropdown-toggle text-uppercase" data-toggle="dropdown">Eventos <b class="caret"></b></a>				
+                <a href="#" class="dropdown-toggle bajaHorizontal" data-toggle="dropdown">Eventos <b class="caret"></b></a>				
                 <ul class="dropdown-menu yamm-fw">
                     <li class="col-md-12">
                         <ul>
@@ -71,8 +71,8 @@
                 </ul>
 
             </li>
-            <li  class="text-uppercase"><a href="publicaciones">PUBLICACIONES</a></li>
-            <li  class="text-uppercase"><a href="contacto">CONTACTO</a></li>
+            <li class="bajaHorizontal"><a href="publicaciones">PUBLICACIONES</a></li>
+            <li class="bajaHorizontal"><a href="contacto">CONTACTO</a></li>
         </ul>
     </div>
 </div>
