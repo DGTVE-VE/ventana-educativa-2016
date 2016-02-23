@@ -91,23 +91,10 @@ class PagesController extends Controller {
                     <html>
                     <head>
                       <title>Activa tu cuenta de la red mesoamericana</title>
-                      <style>
-                      .button {
-                        font: bold 11px Arial;
-                        text-decoration: none;
-                        background-color: #EEEEEE;
-                        color: #333333;
-                        padding: 2px 6px 2px 6px;
-                        border-top: 1px solid #CCCCCC;
-                        border-right: 1px solid #333333;
-                        border-bottom: 1px solid #333333;
-                        border-left: 1px solid #CCCCCC;
-                      }
-                      </style>
                     </head>
                     <body>
-                      <a class='button' href='http://ventana.televisioneducativa.gob.mx/public/indexRed?correo=$mail'>
-                          Activa tu cuenta
+                      <a  href='http://ventana.televisioneducativa.gob.mx/public/indexRed?correo=$mail'>
+                         <button type='button'> Activa tu cuenta</button>
                       </a>
                     </body>
                     </html>
