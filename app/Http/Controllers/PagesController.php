@@ -76,20 +76,17 @@ class PagesController extends Controller {
     public function guardaCorreoNewsLetter() {
 
         $news = new \App\Red\News();
-        $news->correo = filter_input(INPUT_POST, 'correo_newsletter');
+        $correo = filter_input(INPUT_POST, 'correo_newsletter');
+        $news->correo = 
         $news->hash = md5(date('Y/m/d H:i:s'));
         $news->save();
-        $this->sendConfirmMail();
+        $this->sendConfirmMail($correo);
         print 'guardado';
     }
 
-    private function sendConfirmMail() {
-        // Varios destinatarios
-        $para = 'aidan@example.com' . ', '; // atención a la coma
-        $para .= 'wez@example.com';
-
+    private function sendConfirmMail($mail) {
+        
         $título = 'Recordatorio de cumpleaños para Agosto';
-
         $mensaje = '
                     <html>
                     <head>
@@ -121,7 +118,7 @@ class PagesController extends Controller {
         $cabeceras .= 'From: Recordatorio <ventana@televisioneducativa.gob.mx>' . "\r\n";        
 
 // Enviarlo
-        mail($para, $título, $mensaje, $cabeceras);
+        mail($mail, $título, $mensaje, $cabeceras);
     }
 
 //    public function integrantesSlider() {
