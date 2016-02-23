@@ -106,7 +106,7 @@ class PagesController extends Controller {
                       </style>
                     </head>
                     <body>
-                      <a href='http://ventana.televisioneducativa.gob.mx/public/indexRed?correo=$mail'>
+                      <a class='button' href='http://ventana.televisioneducativa.gob.mx/public/indexRed?correo=$mail'>
                           Activa tu cuenta
                       </a>
                     </body>
