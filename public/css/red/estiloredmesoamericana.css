@@ -9,11 +9,9 @@
 }
 
 .modal-fullscreen {
-    /*  background: transparent;*/
-    background-color:black;
-    opacity:0.2;
-    width: 90%;
-    height: 90%;
+    width: 100%;
+    height: 100%;
+     background: rgba(0, 0, 0, 0.7);
 }
 .modal-fullscreen .modal-content {
     background: transparent;
@@ -53,14 +51,17 @@
     }
 
 }
+.capModalColaborador{
+    width: 40%; 
+    height: 450px; 
+    border:2px solid yellow;
+}
+
 
 .captionint {
     position: absolute;
-    top: 20%;
-    text-align: left;
-    left: inherit;
-    right: inherit;
-    width: 280px;
+    top: 35%;
+    width: 100%;
     color:#000;
 }
 
@@ -78,20 +79,15 @@
 }
 
 .innerInt {
-    margin-bottom:30%;
-    margin-left: 40%;
-    margin-top: 15%;
+    /*margin-bottom:30%;*/
+/*    margin-left: 40%;
+    margin-top: 45%;*/
 }
 
 .controlInt{
     margin-top:20%;
     /*margin-left: 40%;*/
 }
-
-.capInt{
-    /*margin-left: -20%;*/
-}
-
 *{
 	font-family: 'Oxygen', sans-serif;
 }
@@ -233,3 +229,10 @@ ul.bajaHorizontal{
     width:400px;
     height:400px;
 }
+.txtAreasTematicas{
+    color:white;
+    font-family: 'Oxygen', sans-serif;
+    font-size:14px;
+}
+
+

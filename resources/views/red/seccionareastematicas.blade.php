@@ -13,7 +13,7 @@
             <table>
                 <tr>
                     <td class="imgTabla"><a href="areastematicas#redesconocimiento">
-                        <img id="imgRedesConocimiento" alt="imagen fija" src="imagenes/red/areasTematicas/RedesConocimiento.png" onmouseenter="imgResalta('RedesConocimiento')" onmouseleave="imgNormal('RedesConocimiento')"/></td>
+                        <img href="#" id="imgRedesConocimiento" alt="imagen fija" src="imagenes/red/areasTematicas/RedesConocimiento.png" onmouseenter="imgResalta('RedesConocimiento')" onmouseleave="imgNormal('RedesConocimiento')"/></td>
                     </a>
                     <td class="txtTabla"><h3><strong>Redes de <br> conocimiento y <br> aprendizaje</strong></h3>
                     </td>

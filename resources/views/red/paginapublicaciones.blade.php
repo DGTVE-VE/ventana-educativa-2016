@@ -355,7 +355,9 @@ Publicaciones
                     <div class="col-md-1"></div>
                 </div> <!--row inicial -->
                 <!--</div>/.row -->
+                
             </div><!--/.container -->
+            </br></br>
         </div>
     </div>
 </div>
