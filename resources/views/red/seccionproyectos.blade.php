@@ -10,19 +10,19 @@
 				</div>
 				<div class="col-sm-6 col-md-4">
 						<a href="proyectos#tema1">
-							<img class="img-responsive img-rounded" style="padding-top:10px;" src="imagenes/red/proyectos/proyectos-01.png" alt="..."/> <!--http://placehold.it/250x250-->
+							<img class="img-responsive img-rounded" style="padding-top:10px;" src="imagenes/red/proyectos/proyectos-01.jpg" alt="..."/> <!--http://placehold.it/250x250-->
 						</a>
 				</div>
 				<div class="col-sm-6 col-md-4">
 						<a href="proyectos#tema2">
-							<img class="img-responsive img-rounded imgAbajo10" src="imagenes/red/proyectos/proyectos-03.png" alt="..."/>
+							<img class="img-responsive img-rounded imgAbajo10" src="imagenes/red/proyectos/proyectos-03.jpg" alt="..."/>
 						</a>
 				</div>
 				<div class="col-sm-6 col-md-4 marcoMorado3">
 				<!--center class="marcoMorado3">
 					<div class="thumbnail marcoMorado3"-->
 						<a href="proyectos#tema3" class="marcoMorado3">
-							<img class="img-responsive img-rounded imgAbajo10 marcoMorado3"src="imagenes/red/proyectos/proyectos-02.png" alt="..."/>
+							<img class="img-responsive img-rounded imgAbajo10 marcoMorado3"src="imagenes/red/proyectos/proyectos-02.jpg" alt="..."/>
 						</a>
 						<!--div class="caption">
 						</div>
