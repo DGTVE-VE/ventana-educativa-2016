@@ -36,13 +36,14 @@
             </div>
             <div class="modal-body">
 
-                <div id="sliderinte" class="carousel slide col-xs-12 col-md-4 col-lg-4" data-ride="carousel" data-interval="3000">
+                <div id="sliderinte" class="carousel slide col-xs-12 col-md-12 col-lg-12" data-ride="carousel" data-interval="3000">
                     <ol class="carousel-indicators indicadorInt">
                         <li data-target="#slider" data-slide-to="0" class="active"></li>
                         <li data-target="#slider" data-slide-to="1" class=""></li>
                         <li data-target="#slider" data-slide-to="2" class=""></li>
                     </ol>
-                    <div class="carousel-inner innerInt col-xs-3 col-md-3 col-lg-3">
+
+                    <div class="carousel-inner innerInt col-xs-12 col-md-3 col-lg-12">
                         <div class="item active">
                             <img alt="First slide" src="imagenes/red/integrantes/GIBZKARODRIGUEZ.png">   
                         </div>
@@ -53,47 +54,47 @@
                             <img alt="Third slide" src="imagenes/red/integrantes/GIBZKARODRIGUEZ.png">
                         </div>
                     </div>
-                </div>
 
-                <div id="slider_captions" class="col-xs-9 col-md-9 col-lg-9" style="width: 65%; height: 300px; border:2px solid yellow;">
-                    <div>
-                        <div id="caption-0" class="carousel-caption captionint">
-                            <h2>Title 3</h2>
-                            <h3>Title 3</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam, enim. A sint repudiandae tempora, nulla aliquam</p>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam, enim. A sint repudiandae tempora, nulla aliquam</p>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam, enim. A sint repudiandae tempora, nulla aliquam</p>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam, enim. A sint repudiandae tempora, nulla aliquam</p>
-                        </div>
-                        <div id="caption-1" class="carousel-caption captionint">
-                            <h2>Title 3</h2>
-                            <h3>Title 3</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam, enim. A sint repudiandae tempora, nulla aliquam</p>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam, enim. A sint repudiandae tempora, nulla aliquam</p>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam, enim. A sint repudiandae tempora, nulla aliquam</p>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam, enim. A sint repudiandae tempora, nulla aliquam</p>
-                        </div>
-                        <div id="caption-2" class="carousel-caption captionint">
-                            <h2>Title 3</h2>
-                            <h3>Title 3</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam, enim. A sint repudiandae tempora, nulla aliquam</p>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam, enim. A sint repudiandae tempora, nulla aliquam</p>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam, enim. A sint repudiandae tempora, nulla aliquam</p>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam, enim. A sint repudiandae tempora, nulla aliquam</p>
+                    <div id="slider_captions" class="col-xs-9 col-md-9 col-lg-9 captionContent">
+                        <div>
+                            <div id="caption-0" class="carousel-caption captionint">
+                                <h2>Title 1</h2>
+                                <h3>Title 1</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam, enim. A sint repudiandae tempora, nulla aliquam</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam, enim. A sint repudiandae tempora, nulla aliquam</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam, enim. A sint repudiandae tempora, nulla aliquam</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam, enim. A sint repudiandae tempora, nulla aliquam</p>
+                            </div>
+                            <div id="caption-1" class="carousel-caption captionint">
+                                <h2>Title 2</h2>
+                                <h3>Title 2</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam, enim. A sint repudiandae tempora, nulla aliquam</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam, enim. A sint repudiandae tempora, nulla aliquam</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam, enim. A sint repudiandae tempora, nulla aliquam</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam, enim. A sint repudiandae tempora, nulla aliquam</p>
+                            </div>
+                            <div id="caption-2" class="carousel-caption captionint">
+                                <h2>Title 3</h2>
+                                <h3>Title 3</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam, enim. A sint repudiandae tempora, nulla aliquam</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam, enim. A sint repudiandae tempora, nulla aliquam</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam, enim. A sint repudiandae tempora, nulla aliquam</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam, enim. A sint repudiandae tempora, nulla aliquam</p>
+                            </div>
                         </div>
                     </div>
+                    <!-- Controls -->
+                    <div class="controlsInstegrantes col-md-12">
+                        <a class="left carousel-control controlInt" href="#sliderint" data-slide="prev">
+                            <span class="glyphicon glyphicon-chevron-left"></span>
+                        </a>
+                        <a class="right carousel-control controlInt" href="#sliderint" data-slide="next">
+                            <span class="glyphicon glyphicon-chevron-right"></span>
+                        </a>
+                    </div>
+
                 </div>
             </div>
-            <!-- Controls -->
-            <a class="left carousel-control controlInt" href="#sliderint" data-slide="prev">
-                <span class="glyphicon glyphicon-chevron-left"></span>
-            </a>
-            <a class="right carousel-control controlInt" href="#sliderint" data-slide="next">
-                <span class="glyphicon glyphicon-chevron-right"></span>
-            </a>
-            <!--      <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                  </div>-->
         </div>
 
     </div>
