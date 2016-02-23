@@ -66,7 +66,7 @@ Quienes Somos
                 <p style="text-align: justify;">- Crear aportes científicos que favorezcan a nuevas metodologías y tendencias para el proceso de
                 enseñanza y aprendizaje.</p>
                 <p style="text-align: justify;">- Proveer al docente de recursos que le permitan articular desde su labor, la configuración de la
-                comunidad escolar(alumno-profesor-padre de familia).</p>
+                comunidad escolar (alumno-profesor-padre de familia).</p>
                 <p style="text-align: justify;">- Ser un espacio que permita compartir experiencias y puntos en común entre los miembros de la Red.</p>
                 
             </div>
