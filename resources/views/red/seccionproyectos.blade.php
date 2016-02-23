@@ -1,6 +1,6 @@
 ﻿<div class="row fondo_Obscuro" style="margin-top:-20px;">
 				<div class="col-md-12 text-center text-uppercase">
-					<h2> Proyectos </h2>
+					<p class="pleca"> Proyectos </p>
 				</div>
 			</div>
 			<div class="row fondo_Claro text-center" style="background-image:url(imagenes/red/proyectos/fondo-proyectos.jpg);">
