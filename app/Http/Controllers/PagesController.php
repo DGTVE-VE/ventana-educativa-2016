@@ -73,6 +73,9 @@ class PagesController extends Controller {
         return view('red/frmusuarios');
     }
 
+    public function modalintegrantes() {
+        return view('red/modalintegrantes');
+    }
 //    public function integrantesSlider() {
 //        return view('integrantesSlider');
 //    }

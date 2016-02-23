@@ -1,20 +1,20 @@
 /*modal integrantes*/
+.modal-titleInt{
+    color: white;
+}
 .closeInt{
-    color: #fff !important; 
-    font-size: 20px;
-    opacity: 1 !important;
-}
-.textoModalIntegrante{
-    color: white;    
+   position:static;
+   top:-2px;
+   right:-21px;
+   color:yellow !important;
 }
 
-.indicadorInt {
-   top: 450px !important;
-   left: 50% !important;
-}
-
-.captionint:not(#caption-0) {
-    display: none;
+.carousel-captionInt{
+    position:relative !important;
+    right:1% !important;;
+    left:1% !important;
+    padding-top:0px !important;;
+    padding-bottom:0px !important;;
 }
 .modal-fullscreen {
     width: 100%;
@@ -34,8 +34,6 @@
     opacity: .97;
     filter: alpha(opacity=97);
 }
-
-/* .modal-fullscreen size: we use Bootstrap media query breakpoints */
 
 .modal-fullscreen .modal-dialog {
     margin: 0;
@@ -57,45 +55,6 @@
     .modal-fullscreen .modal-dialog {
         width: 1170px;
     }
-
-}
-
-.controlInt{
-    margin-top: 20%;
-}
-.carousel-indicators l0 {
-    border-color:#fff;
-    background-color: #fff;
-}
-
-.innerInt {
-    margin-left: 5%;
-    margin-top: 15%;
-}
-
-.captionContent{
-    margin-top:15%;
-    margin-left: 10%;
-}
-*{
-	font-family: 'Oxygen', sans-serif;
-}
-
-h2{
-    position:relative;
-    top:-15px;
-}
-.carousel-indicators li{
-    border-color:black;
-    opacity:0.7;
-    z-index:-1;
-}
-.item h4 {
-    font-size: 19px;
-    line-height: 1.375em;
-    font-weight: 400;
-    font-style: italic;
-    margin: 50px 0;
 }
 /*-------------------------------------	Header	-------------------------------------------*/			
 ul.bajaHorizontal{
