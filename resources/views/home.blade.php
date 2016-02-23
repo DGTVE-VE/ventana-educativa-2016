@@ -32,9 +32,9 @@ and open the template in the editor.
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
         <!-- efecto barra desplazamiento horizontal -->
-        <link rel="stylesheet" href="malihu-custom-scrollbar-plugin-master/jquery.mCustomScrollbar.css">
+        <!--link rel="stylesheet" href="malihu-custom-scrollbar-plugin-master/jquery.mCustomScrollbar.css">
         <script src="malihu-custom-scrollbar-plugin-master/jquery.mCustomScrollbar.concat.min.js"></script>
-        <script src="malihu-custom-scrollbar-plugin-master/usarCustomScrollbar.js"></script>
+        <script src="malihu-custom-scrollbar-plugin-master/usarCustomScrollbar.js"></script-->
 
         <!-- Estilo Header del Home-->
         <link rel="stylesheet" href="{{ URL::asset('css/estiloBase.css') }}">

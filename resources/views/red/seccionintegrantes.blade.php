@@ -1,4 +1,3 @@
-
 <div class="row" style="background-image: url('imagenes/red/integrantes/gradiente.jpg');">
     <div class="col-md-12 fondo_Obscuro">
         <div class="col-md-12 text-center text-uppercase">
@@ -8,14 +7,14 @@
     <div class="col-md-6">
         <img name="imagenMapa_n"  src="imagenes/red/integrantes/gris.png"  border="5px" id="imagenMapa" class="mapaCentroAmerica img-responsive" usemap="#mapa_n" alt="" />
         <map name="mapa_n" id="mapa">         
-            <area alt="Colombia" onmouseover="entraPais(1)" onmouseout="saleMouseInte();" href="#modalColombia" data-keyboard="true" data-toggle="modal" shape="poly" coords="330,279,347,262,347,226,378,187,394,230,433,238,431,274,414,279,414,319,366,292"/>
-            <area alt="Costa Rica" onmouseover="entraPais(2)" onmouseout="saleMouseInte();" href="#modalCostarica" shape="poly" data-toggle="modal" coords="265,192,290,182,308,208,307,223,291,216"/>
+            <area alt="Colombia" onmouseover="entraPais(1)" onmouseout="saleMouseInte();" href="#" data-keyboard="true" data-toggle="modal" shape="poly" coords="330,279,347,262,347,226,378,187,394,230,433,238,431,274,414,279,414,319,366,292"/>
+            <area alt="Costa Rica" onmouseover="entraPais(2)" onmouseout="saleMouseInte();" href="#modalCostaRica" shape="poly" data-toggle="modal" coords="265,192,290,182,308,208,307,223,291,216"/>
             <area alt="Dominicana" onmouseover="entraPais(3)" onmouseout="saleMouseInte();" href="#modalDominicana" shape="poly" data-toggle="modal" coords="379,130,389,111,414,114,433,130"/>
-            <area alt="El Salvador" onmouseover="entraPais(4)" onmouseout="saleMouseInte();" href="#modalSalvador" shape="poly" data-toggle="modal" coords="237,173,243,155,254,183"/>
+            <area alt="El Salvador" onmouseover="entraPais(4)" onmouseout="saleMouseInte();" href="#" shape="poly" data-toggle="modal" coords="237,173,243,155,254,183"/>
             <area alt="Guatemala" onmouseover="entraPais(5)" onmouseout="saleMouseInte();" href="#modalGuatemala" shape="poly" data-toggle="modal" coords="214,162,240,128,249,143,237,173"/>
-            <area alt="Honduras" onmouseover="entraPais(6)" onmouseout="saleMouseInte();" href="#modalHonduras" shape="poly" data-toggle="modal" coords="242,156,247,142,290,146,253,183"/>
+            <area alt="Honduras" onmouseover="entraPais(6)" onmouseout="saleMouseInte();" href="#" shape="poly" data-toggle="modal" coords="242,156,247,142,290,146,253,183"/>
             <area alt="México" onmouseover="entraPais(7)" onmouseout="saleMouseInte();" href="#modalMexico" data-toggle="modal" shape="poly" coords="90,98,162,90,188,123,225,111,228,93,262,100,216,162,159,145,127,131,97,121"/>
-            <area alt="Nicaragua" onmouseover="entraPais(8)" onmouseout="saleMouseInte();" href="#modalNicaragua" shape="poly" data-toggle="modal" coords="254,182,292,145,291,181,267,194"/>
+            <area alt="Nicaragua" onmouseover="entraPais(8)" onmouseout="saleMouseInte();" href="#" shape="poly" data-toggle="modal" coords="254,182,292,145,291,181,267,194"/>
             <area alt="Panama" onmouseover="entraPais(9)" onmouseout="saleMouseInte();" href="#modalPanama" shape="poly" data-toggle="modal" coords="309,223,311,207,346,201,348,212,360,212,348,228,326,231"/>
         </map>
     </div>
@@ -24,85 +23,375 @@
         <h4 class="">Selecciona un país para ver más...</h4>
     </div>
 </div>
-<!-- Modal -->
+<!-- Modal México-->
 <div id="modalMexico" class="modal modal-fullscreen fade centraCont" tabindex="-1" role="dialog">
     <div class="modal-dialog">
         <!-- Modal content-->
         <div class="modal-content">
             <div class="modal-header">
-                <h4 class="modal-title textoModalIntegrante text-center">Colaborador de la Red Mesoamericana en México</h4>
-                <!--<img  src="imagenes/red/integrantes/tache.png"/>-->
-                <button type="button" class="close closeInt" data-dismiss="modal" aria-hidden="true">×</button>
+                <h3 class="modal-title modal-titleInt text-center">Colaborador de la Red Mesoamericana en México</h3>
+                <button type="button" class="close closeInt" data-dismiss="modal" aria-hidden="true">X</button>
             </div>
             <div class="modal-body">
-
-                <div id="sliderinte" class="carousel slide col-xs-12 col-md-4 col-lg-4" data-ride="carousel" data-interval="3000">
-                    <ol class="carousel-indicators indicadorInt">
-                        <li data-target="#slider" data-slide-to="0" class="active"></li>
-                        <li data-target="#slider" data-slide-to="1" class=""></li>
-                        <li data-target="#slider" data-slide-to="2" class=""></li>
+                <div id="carouselMexico" class="carousel slide" data-ride="carousel">
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators" style="top:150%;">
+                        <li data-target="#carouselMexico" data-slide-to="0" class="active"></li>
                     </ol>
-                    <div class="carousel-inner innerInt">
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner carousel-innerInt">
                         <div class="item active">
-                            <img alt="First slide" src="imagenes/red/integrantes/GIBZKARODRIGUEZ.png">   
-                        </div>
-                        <div class="item">
-                            <img alt="Second slide" src="imagenes/red/integrantes/anaguilma.png">  
-                        </div>
-                        <div class="item">
-                            <img alt="Third slide" src="imagenes/red/integrantes/GIBZKARODRIGUEZ.png">
+                            <div class="col-md-12 text-center">
+                                <img  src="imagenes/red/integrantes/fotos/mexico/RubenEdel.png" alt="...">
+                            </div>
+                            <div class="col-md-12 carousel-caption carousel-captionInt">
+                                <h3>EDEL NAVARRO, RUBÉN</h3>
+                                <h4>Universidad Veracruzana. <br>Investigador de tiempo completo.</h4>
+                                <p class="text-justify">Investigador del Consejo Nacional de Ciencia y Tecnología (CONACyT) de México durante los 
+                                    últimos 12 años. Desde 2007 forma parte del Comité de Asesores de la Abraham S. Fischler 
+                                    College of Education de la Nova Southeastern University de la Florida, USA. Su línea de 
+                                    investigación sobre las TIC en la Educación le ha permitido publicar más de 50 artículos científicos, 
+                                    su inclusión en el Top-2000 del Ranking de Científicos de Instituciones Mexicanas por el Consejo 
+                                    Superior de Investigaciones Científicas de España, y de participar como ponente en Latinoamérica 
+                                    y Estados Unidos. Es autor de varios libros y obras electrónicas publicados en España, Colombia, 
+                                    Argentina, Chile y México. Actualmente dirige el Centro de Innovación, Desarrollo e Investigación 
+                                    Educativa en la Universidad Veracruzana.</p>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <div id="slider_captions" class="col-xs-12 col-md-8 col-lg-8 capInt">
-                    <div>
-                        <div id="caption-0" class="carousel-caption captionint">
-                            <h2>Title 3</h2>
-                            <h3>Title 3</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam, enim. A sint repudiandae tempora, nulla aliquam</p>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam, enim. A sint repudiandae tempora, nulla aliquam</p>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam, enim. A sint repudiandae tempora, nulla aliquam</p>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam, enim. A sint repudiandae tempora, nulla aliquam</p>
-                        </div>
-                        <div id="caption-1" class="carousel-caption captionint">
-                            <h2>Title 3</h2>
-                            <h3>Title 3</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam, enim. A sint repudiandae tempora, nulla aliquam</p>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam, enim. A sint repudiandae tempora, nulla aliquam</p>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam, enim. A sint repudiandae tempora, nulla aliquam</p>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam, enim. A sint repudiandae tempora, nulla aliquam</p>
-                        </div>
-                        <div id="caption-2" class="carousel-caption captionint">
-                            <h2>Title 3</h2>
-                            <h3>Title 3</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam, enim. A sint repudiandae tempora, nulla aliquam</p>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam, enim. A sint repudiandae tempora, nulla aliquam</p>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam, enim. A sint repudiandae tempora, nulla aliquam</p>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam, enim. A sint repudiandae tempora, nulla aliquam</p>
-                        </div>
-                    </div>
+                    <!-- Controls -->
+                    <a class="left carousel-control" href="#carouselMexico" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left"></span>
+                    </a>
+                    <a class="right carousel-control" href="#carouselMexico" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right"></span>
+                    </a>
                 </div>
+                <!--                <div id="slidermexico" class="carousel slide col-xs-12 col-md-12 col-lg-12" data-ride="carousel"  data-interval="false" data-pause="hover">
+                                    <ol class="carousel-indicators indicadorInt">
+                                        <li data-target="#slidermexico" data-slide-to="0" class="active"></li>
+                                    </ol>
+                                    <div class="carousel-inner innerInt col-xs-12 col-md-2 col-lg-12">
+                                        <div class="item active">
+                                            <img src="imagenes/red/integrantes/fotos/mexico/RubenEdel.png">   
+                                        </div>
+                                    </div>
+                
+                                    <div id="slider_captions" class="col-xs-10 col-md-10 col-lg-10 captionContent">
+                                        <div id="caption-0" class="carousel-caption captionint">
+                                            <h3>EDEL NAVARRO, RUBÉN</h3>
+                                            <h4>Universidad Veracruzana. <br>Investigador de tiempo completo.</h4>
+                                            <p class="text-justify">Investigador del Consejo Nacional de Ciencia y Tecnología (CONACyT) de México durante los 
+                                                últimos 12 años. Desde 2007 forma parte del Comité de Asesores de la Abraham S. Fischler 
+                                                College of Education de la Nova Southeastern University de la Florida, USA. Su línea de 
+                                                investigación sobre las TIC en la Educación le ha permitido publicar más de 50 artículos científicos, 
+                                                su inclusión en el Top-2000 del Ranking de Científicos de Instituciones Mexicanas por el Consejo 
+                                                Superior de Investigaciones Científicas de España, y de participar como ponente en Latinoamérica 
+                                                y Estados Unidos. Es autor de varios libros y obras electrónicas publicados en España, Colombia, 
+                                                Argentina, Chile y México. Actualmente dirige el Centro de Innovación, Desarrollo e Investigación 
+                                                Educativa en la Universidad Veracruzana.</p>
+                                        </div>                         
+                                    </div>
+                                     Controls 
+                                    <div class="controlsInstegrantes col-md-12">
+                                        <a class="left carousel-control" href="#slidermexico" data-slide="prev">
+                                            <span class="glyphicon glyphicon-chevron-left"></span>
+                                        </a>
+                                        <a class="right carousel-control" href="#slidermexico" data-slide="next">
+                                            <span class="glyphicon glyphicon-chevron-right"></span>
+                                        </a>
+                                    </div>
+                
+                                </div>-->
             </div>
-            <!-- Controls -->
-            <a class="left carousel-control controlInt" href="#sliderint" data-slide="prev">
-                <span class="glyphicon glyphicon-chevron-left"></span>
-            </a>
-            <a class="right carousel-control controlInt" href="#sliderint" data-slide="next">
-                <span class="glyphicon glyphicon-chevron-right"></span>
-            </a>
-            <!--      <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                  </div>-->
         </div>
 
     </div>
 </div>
-<!--fin modal-->
+<!--fin modal México-->
+<!-- Modal Costa Rica-->
+<div id="modalCostaRica" class="modal modal-fullscreen fade centraCont" tabindex="-1" role="dialog">
+    <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title textoModalIntegrante text-center">Colaborador de la Red Mesoamericana en Costa Rica</h4>
+                <button type="button" class="close closeInt" data-dismiss="modal" aria-hidden="true">X</button>
+            </div>
+            <div class="modal-body">
 
+                <div id="sliderinte" class="carousel slide col-xs-12 col-md-12 col-lg-12" data-ride="carousel" data-interval="1000">
+                    <ol class="carousel-indicators indicadorInt">
+                        <li data-target="#caption-0" data-slide-to="0" class="active"></li>
+                        <li data-target="#caption-1" data-slide-to="1" class=""></li>
+                        <li data-target="#caption-2" data-slide-to="2" class=""></li>
+                        <li data-target="#caption-3" data-slide-to="3" class=""></li>
+                    </ol>
+
+                    <div class="carousel-inner innerInt col-xs-12 col-md-3 col-lg-12">
+                        <div class="item active">
+                            <img src="imagenes/red/integrantes/fotos/costarica/AnaGuilma.png">   
+                        </div>
+                        <div class="item">
+                            <img src="imagenes/red/integrantes/fotos/costarica/AnnyGonzalez.png">  
+                        </div>
+                        <div class="item">
+                            <img src="imagenes/red/integrantes/fotos/costarica/LiliamCorrales.png">
+                        </div>
+                        <div class="item">
+                            <img src="imagenes/red/integrantes/fotos/costarica/RandallCastro.png">
+                        </div>                        
+                    </div>
+
+                    <div id="slider_captions" class="col-xs-9 col-md-9 col-lg-9 captionContent">
+                        <div>
+                            <div id="caption-0" class="carousel-caption captionint">
+                                <h2>Ana Gilma Guevara Bello</h2>
+                                <h3>Ministerio de Educación Pública de Costa Rica<br>
+                                    Dirección Regional de Educación Zona Norte Norte Asesora Regional de Español</h3>
+                                <p>Licenciada en Ciencias de la Educación con énfasis en Docencia para ejercer la 
+                                    Enseñanza del Castellano y la Literatura. Labora en el área educativa desde hace 13 
+                                    años. Ha sido Profesora de Español en diferentes centros educativos. Actualmente, es 
+                                    Asesora Regional de Español en la Dirección Regional de Educación Zona Norte.</p>
+                            </div>
+                            <div id="caption-1" class="carousel-caption captionint">
+                                <h2>Anny González Gairaud </h2>
+                                <h3>Coordinación Educativa y Cultural Centroamericana (CECC/SICA) Coordinadora de Proyectos</h3>
+                                <p>Máster en Informática Educativa y Administración Educativa, Posgrado en Desarrollo Cognitivo en Ambientes Informáticos. Ha laborado en el área educativa como docente de Educación Primaria, Asesora Nacional y Jefatura del Ministerio de Educación de Costa Rica por más de 35 años. Diseñadora y ejecutora de Proyectos Educativos con Tecnología, Educación Popular Legal, Transformación de Bibliotecas escolares en Centros de Recursos para el Aprendizaje. Coordinadora del Proyecto Constitución nuestra: “Así como la Entendemos". Profesora Universitaria en Informática Educativa. Literatura Infantil Bilingüe, en la Universidad de LaSalle y Pepperdine California.<br> 
+                                    Actualmente se desempeña como Coordinadora de Proyectos Educativos de la CECC/SICA.
+                                </p>
+                            </div>
+                            <div id="caption-2" class="carousel-caption captionint">
+                                <h2>Lilliam Corrales Torres</h2>
+                                <h3>Ministerio de Educación Pública - Costa Rica, Dirección Regional Educativa Coto <br>
+                                    Asesora Pedagógica de Español</h3>
+                                <p>Licenciada en educación con énfasis en I y II ciclos.  Licenciada en docencia.  Licenciada en 
+                                    educación con énfasis en Español.  Máster en administración educativa. <br>
+                                    Ha laborado en el sistema educativo público desde el año 2002; desempeñando el puesto de 
+                                    docente en educación primaria, profesora de español en educación secundaria. En el sistema 
+                                    educativo privado como profesora universitaria en diversas casas de enseñanza del país.</p>
+                            </div>
+                            <div id="caption-3" class="carousel-caption captionint">
+                                <h2>Rándall Castro Madrigal</h2>
+                                <h3>Asesor Regional de Español – Costa Rica – Ministerio de Educación Pública (MEP)</h3>
+                                <p>Licenciado en Docencia con énfasis en Español, Bachiller en Castellano y Literatura y Bachiller en La
+                                    Enseñanza de la Educación Primaria con énfasis en Español. Posee estudios básicos en informática y 
+                                    administración educativa. Labora desde hace 15 años para el Ministerio de Educación Publica de Costa 
+                                    Rica y en los Colegios: Nocturno de Palmares y Técnico Agropecuario de Piedades Sur, Colegio Diurno de 
+                                    Candelaria. De igual manera, en los programas: Nuevas Oportunidades para Adolescentes, Educación de 
+                                    adultos en Palmares, Telesecundaria La Gata y Liceo Rural La Gata. Además laboró para instituciones 
+                                    privadas tanto en educación secundaria como universitaria. Ha publicado dos artículos para la revista 
+                                    digital CONEXIONES del MEP y más de 20 artículos en el boletín Rincón Filológico, del cual es editor. 
+                                    Actualmente es asesor regional de Español en la Dirección Regional de Educación de Sarapiquí.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Controls -->
+                    <div class="controlsInstegrantes col-md-12">
+                        <a class="left carousel-control controlInt" href="#sliderint" data-slide="prev">
+                            <span class="glyphicon glyphicon-chevron-left"></span>
+                        </a>
+                        <a class="right carousel-control controlInt" href="#sliderint" data-slide="next">
+                            <span class="glyphicon glyphicon-chevron-right"></span>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<!--fin modal costa rica-->
+<!-- Modal Republica Dominicana-->
+<div id="modalDominicana" class="modal modal-fullscreen fade centraCont" tabindex="-1" role="dialog">
+    <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title textoModalIntegrante text-center">Colaborador de la Red Mesoamericana en México</h4>
+                <button type="button" class="close closeInt" data-dismiss="modal" aria-hidden="true">X</button>
+            </div>
+            <div class="modal-body">
+
+                <div id="sliderinte" class="carousel slide col-xs-12 col-md-12 col-lg-12" data-ride="carousel" data-interval="1000">
+                    <ol class="carousel-indicators indicadorInt">
+                        <li data-target="#slider" data-slide-to="0" class="active"></li>
+                        <li data-target="#slider" data-slide-to="1" class=""></li>
+                    </ol>
+
+                    <div class="carousel-inner innerInt col-xs-12 col-md-3 col-lg-12">
+                        <div class="item active">
+                            <img alt="First slide" src="imagenes/red/integrantes/fotos/republicadominicana/EuniceImperio.png">   
+                        </div>
+                        <div class="item">
+                            <img alt="Second slide" src="imagenes/red/integrantes/fotos/republicadominicana/RafaelDavidFranciscoVentura.png">  
+                        </div>
+                    </div>
+
+                    <div id="slider_captions" class="col-xs-9 col-md-9 col-lg-9 captionContent">
+                        <div>
+                            <div id="caption-0" class="carousel-caption captionint">
+                                <h2>Eunice Imperio Vicioso Melo</h2>
+                                <h3>Instituto Superior de Formación Docente Salomé Ureña <br>Recinto Félix Evaristo Mejía</h3>
+                                <p>Licenciada en Educación mención Filosofía y Letras. Labora en el ámbito educativo desde hace 
+                                    35 años. Ha obtenido grados de: maestría en Lingüística aplicada a la enseñanza del Español; 
+                                    maestría en Formación Inicial para el Cambio en la Práctica Pedagógica (Universidad de 
+                                    Barcelona -ISFODOSU). Se desempeña como profesora en el área de Lengua Española en el 
+                                    recinto Félix Evaristo Mejía, así como en la Escuela de Letras de la Universidad Autónoma de 
+                                    Santo Domingo, en las cátedras de Teoría Literaria y Letras Básicas. Ha participado en la 
+                                    planificación y facilitación del diplomado “Aprendiendo y construyendo procesos de 
+                                    alfabetización para la vida”.  En convenio con el Centro Cultural Poveda (CCP) y el Ministerio 
+                                    de Educación (MINERD). Además ha colaborado en la revisión y  elaboración de los nuevos 
+                                    planes de estudios para las carreras de Lic. En Educación Básica y Educación Inicial en el 
+                                    Instituto Salomé Ureña. En la actualidad es la coordinadora de la cátedra de Letras Básicas en 
+                                    la Universidad Autónoma de Santo Domingo.</p>
+                            </div>
+                            <div id="caption-1" class="carousel-caption captionint">
+                                <h2>Rafael David Francisco Ventura, M. A.</h2>
+                                <h3>Instituto Superior de Formación Docente Salome Ureña (ISFODOSU) Santo 
+                                    Domingo R. D.  Profesor de Matemática.</h3>
+                                <p>Licenciado en Ciencias Física y Matemática en la Universidad O & M de 
+                                    Santo Domingo, con maestría en matemática pura en la universidad 
+                                    Tecnológica de Santiago UTESA y maestría en Formador de Formadores 
+                                    de la universidad de Barcelona España. Profesor de grado, de postgrados 
+                                    y coordinador del área de matemática del ISFODOSU. Experto en 
+                                    aplicación de la TICs en la enseñanza aprendizaje de la matemática.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Controls -->
+                    <div class="controlsInstegrantes col-md-12">
+                        <a class="left carousel-control controlInt" href="#sliderint" data-slide="prev">
+                            <span class="glyphicon glyphicon-chevron-left"></span>
+                        </a>
+                        <a class="right carousel-control controlInt" href="#sliderint" data-slide="next">
+                            <span class="glyphicon glyphicon-chevron-right"></span>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<!--fin modal domionicana-->
+<!-- Modal Guatemala-->
+<div id="modalguatemala" class="modal modal-fullscreen fade centraCont" tabindex="-1" role="dialog">
+    <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title textoModalIntegrante text-center">Colaborador de la Red Mesoamericana en México</h4>
+                <button type="button" class="close closeInt" data-dismiss="modal" aria-hidden="true">X</button>
+            </div>
+            <div class="modal-body">
+
+                <div id="sliderinte" class="carousel slide col-xs-12 col-md-12 col-lg-12" data-ride="carousel" data-interval="1000">
+                    <ol class="carousel-indicators indicadorInt">
+                        <li data-target="#slider" data-slide-to="0" class="active"></li>
+                    </ol>
+
+                    <div class="carousel-inner innerInt col-xs-12 col-md-3 col-lg-12">
+                        <div class="item active">
+                            <img alt="First slide" src="imagenes/red/integrantes/fotos/guatemala/CarlotaCalito.png">   
+                        </div>
+                    </div>
+
+                    <div id="slider_captions" class="col-xs-9 col-md-9 col-lg-9 captionContent">
+                        <div>
+                            <div id="caption-0" class="carousel-caption captionint">
+                                <h2>Carlota Calito de Alfaro</h2>
+                                <h3>Ministerio de Educación de Guatemala<br>
+                                    Profesional Técnico de la Dirección General de Gestión de Calidad Educativa</h3>
+                                <p>Licenciada en Pedagogía con orientación en Administración y Evaluación Educativa.  Labora en el 
+                                    área educativa desde hace 35 años.  Ha sido docente y bibliotecaria. Participó en el proceso de 
+                                    Transformación Curricular en el Marco de la Reforma Educativa en su país, especialmente en los 
+                                    niveles inicial y preprimario; posee un post grado en Educación Infantil otorgado por el Instituto 
+                                    Pedagógico Latinoamericano y Caribeño de la ciudad de la Habana, Cuba.  Se ha especializado en 
+                                    el proceso de adquisición y  desarrollo de las competencias lectoras.  Por diez años se desempeñó 
+                                    en el departamento de los niveles de educación inicial y preprimaria, en la Dirección de Gestión de 
+                                    Calidad Educativa.  Actualmente, es Jefe del Departamento del Nivel de Educación Primaria y 
+                                    coordina la Comisión Ejecutiva del Programa Nacional de Lectura.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Controls -->
+                    <div class="controlsInstegrantes col-md-12">
+                        <a class="left carousel-control controlInt" href="#sliderint" data-slide="prev">
+                            <span class="glyphicon glyphicon-chevron-left"></span>
+                        </a>
+                        <a class="right carousel-control controlInt" href="#sliderint" data-slide="next">
+                            <span class="glyphicon glyphicon-chevron-right"></span>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<!--fin modal Guatemala-->
+<!-- Modal Panama-->
+<div id="modalPanama" class="modal modal-fullscreen fade centraCont" tabindex="-1" role="dialog">
+    <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title textoModalIntegrante text-center">Colaborador de la Red Mesoamericana en Panáma</h4>
+                <button type="button" class="close closeInt" data-dismiss="modal" aria-hidden="true">X</button>
+            </div>
+            <div class="modal-body">
+
+                <div id="sliderinte" class="carousel slide col-xs-12 col-md-12 col-lg-12" data-ride="carousel" data-interval="1000">
+                    <ol class="carousel-indicators indicadorInt">
+                        <li data-target="#slider" data-slide-to="0" class="active"></li>
+                    </ol>
+
+                    <div class="carousel-inner innerInt col-xs-12 col-md-3 col-lg-12">
+                        <div class="item active">
+                            <img alt="First slide" src="imagenes/red/integrantes/GIBZKARODRIGUEZ.png">   
+                        </div>
+                    </div>
+
+                    <div id="slider_captions" class="col-xs-9 col-md-9 col-lg-9 captionContent">
+                        <div>
+                            <div id="caption-0" class="carousel-caption captionint">
+                                <h2>GIBZKA RODRIGUEZ DE VERNIER</h2>
+                                <h3>Ministerio de Educación de Panamá<br>
+                                    Supervisora Nacional de Matemáticas</h3>
+                                <p>Licenciada y Profesora en Matemáticas. Maestría en Ciencias con  Especialización en Matemática
+                                    Educativa y  Maestría en Desarrollo de Sistemas Educativos con Especialización en Supervisión y 
+                                    Currículum. Con más de 35 años al servicio de la Educación como: Profesora del Nivel Secundario, 
+                                    Subdirectora de Colegio de Educación Media,  Directora General de Educación, Directora Regional 
+                                    de Educación, Representante de la Olimpiada Nacional de Matemática a nivel de Primaria y 
+                                    Secundaria y  Coordinadora de diferentes  cursos y seminarios. Actualmente labora en la Dirección 
+                                    Nacional de Educación Media Académica, como Supervisora Nacional de Matemáticas.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Controls -->
+                    <div class="controlsInstegrantes col-md-12">
+                        <a class="left carousel-control controlInt" href="#sliderint" data-slide="prev">
+                            <span class="glyphicon glyphicon-chevron-left"></span>
+                        </a>
+                        <a class="right carousel-control controlInt" href="#sliderint" data-slide="next">
+                            <span class="glyphicon glyphicon-chevron-right"></span>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<!--fin modal Panama-->
 <script>
     function saleMouseInte() {
-//        nombrepais = ;
         document.getElementById('nombrepais').innerHTML = '';
         document.getElementById('imagenMapa').src = 'imagenes/red/integrantes/gris.png';
     }

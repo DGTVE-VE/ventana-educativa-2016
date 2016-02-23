@@ -20,4 +20,6 @@ Route::get('frmcolaboradores','PagesController@frmcolaboradores');
 Route::get('frmproyectos','PagesController@frmproyectos');
 Route::get('frmpublicaciones','PagesController@frmpublicaciones');
 Route::get('usuarios','PagesController@usuarios');
+Route::post('guardaCorreoNewsLetter', 'PagesController@guardaCorreoNewsLetter');
+
 

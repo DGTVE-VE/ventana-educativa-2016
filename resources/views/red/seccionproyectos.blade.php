@@ -9,37 +9,25 @@
 					</div>
 				</div>
 				<div class="col-sm-6 col-md-4">
-				<center>
-					<div class="thumbnail marcoMorado1">
-						<a href="proyectos#tema1">
-							<img class="img-responsive img-rounded" style="padding-top:10px;" src="imagenes/red/proyectos/primerEncuentro.jpg" alt="..."/> <!--http://placehold.it/250x250-->
+						<a href="proyectos#0">
+							<img class="img-responsive img-rounded" style="padding-top:10px;" src="imagenes/red/proyectos/proyectos-01.jpg" alt="..."/> <!--http://placehold.it/250x250-->
 						</a>
-						<div class="caption">
-						</div>
-					</div>
-				</center>
 				</div>
 				<div class="col-sm-6 col-md-4">
-				<center>
-					<div class="thumbnail marcoMorado2"> <!-- 376x371-->
-						<a href="proyectos#tema2">
-							<img class="img-responsive img-rounded imgAbajo10" src="imagenes/red/proyectos/ventanaEducativa.jpg" alt="..."/>
+						<a href="proyectos#1">
+							<img class="img-responsive img-rounded imgAbajo10" src="imagenes/red/proyectos/proyectos-03.jpg" alt="..."/>
 						</a>
-						<div class="caption">
-						</div>
-					</div>
-				</center>
 				</div>
-				<div class="col-sm-6 col-md-4">
-				<center>
-					<div class="thumbnail marcoMorado3">
-						<a href="proyectos#tema3">
-							<img class="img-responsive img-rounded imgAbajo10"src="imagenes/red/proyectos/ecosistema.jpg" alt="..."/>
+				<div class="col-sm-6 col-md-4 marcoMorado3">
+				<!--center class="marcoMorado3">
+					<div class="thumbnail marcoMorado3"-->
+						<a href="proyectos#2" class="marcoMorado3">
+							<img class="img-responsive img-rounded imgAbajo10 marcoMorado3"src="imagenes/red/proyectos/proyectos-02.jpg" alt="..."/>
 						</a>
-						<div class="caption">
+						<!--div class="caption">
 						</div>
 					</div>
-				</center>
+				</center-->
 				</div>
 				<div class="col-sm-12 col-md-2 col-md-offset-5">
 <!--					<center>

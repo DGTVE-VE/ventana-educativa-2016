@@ -108,8 +108,9 @@ Proyectos
 </div>
 
 <script>
-    jQuery(document).ready(function ($) {
 
+    jQuery(document).ready(function ($) {
+		
         $('#myCarouselProyecto').carousel({
             interval: 5000
         });
@@ -130,7 +131,27 @@ Proyectos
             var id = $('.item.active').data('slide-number');
             $('#carousel-text').html($('#slide-content-' + id).html());
         });
-    });
+		
+//Obtener texto de dirección
+		var URL = document.location.hash;
+		var proyecto = URL.substr(URL.indexOf("#")+1,1);
+		
+//Elegir diapositiva de carousel dependiendo opción recibida
+		switch(proyecto){
+			case '0':
+				$('#myCarouselProyecto').carousel(0);
+				break;
+			case '1':
+				$('#myCarouselProyecto').carousel(1);
+				break;
+			case '2':
+				$('#myCarouselProyecto').carousel(2);
+				break;
+			default:
+				$('#myCarouselProyecto').carousel(0);
+				break;
+		}	
+    })	
 </script>
 
 @include('red.seccionpie')

@@ -1,20 +1,25 @@
 /*modal integrantes*/
-.closeInt{
-    color: #fff !important; 
-    font-size: 20px;
-    opacity: 1 !important;
+.modal-titleInt{
+    color: white;
 }
-.textoModalIntegrante{
-    color: white;    
+.closeInt{
+   position:static;
+   top:-2px;
+   right:-21px;
+   color:yellow !important;
 }
 
+.carousel-captionInt{
+    position:relative !important;
+    right:1% !important;;
+    left:1% !important;
+    padding-top:0px !important;;
+    padding-bottom:0px !important;;
+}
 .modal-fullscreen {
-      /*background: transparent;*/
-    /*background-color:black;*/
-    opacity:80% !important;
-    filter:  alpha(opacity=80); 
     width: 100%;
     height: 100%;
+     background: rgba(0, 0, 0, 0.7);
 }
 .modal-fullscreen .modal-content {
     background: transparent;
@@ -29,8 +34,6 @@
     opacity: .97;
     filter: alpha(opacity=97);
 }
-
-/* .modal-fullscreen size: we use Bootstrap media query breakpoints */
 
 .modal-fullscreen .modal-dialog {
     margin: 0;
@@ -52,71 +55,12 @@
     .modal-fullscreen .modal-dialog {
         width: 1170px;
     }
-
-}
-
-.captionint {
-    position: absolute;
-    top: 20%;
-    text-align: left;
-    left: inherit;
-    right: inherit;
-    width: 280px;
-    color:#000;
-}
-
-.captionint:not(#caption-0) {
-    display: none;
-}
-
-.indicadorInt {
-    bottom:-100px;
-}
-
-.carousel-indicators l0 {
-    border-color:#fff;
-    background-color: #fff;
-}
-
-.innerInt {
-    margin-bottom:30%;
-    margin-left: 40%;
-    margin-top: 15%;
-}
-
-.controlInt{
-    margin-top:20%;
-    /*margin-left: 40%;*/
-}
-
-.capInt{
-    /*margin-left: -20%;*/
-}
-
-*{
-	font-family: 'Oxygen', sans-serif;
-}
-
-h2{
-    position:relative;
-    top:-15px;
-}
-.carousel-indicators li{
-    border-color:black;
-    opacity:0.7;
-    z-index:-1;
-}
-.item h4 {
-    font-size: 19px;
-    line-height: 1.375em;
-    font-weight: 400;
-    font-style: italic;
-    margin: 50px 0;
 }
 /*-------------------------------------	Header	-------------------------------------------*/			
-ul.bajaHorizontal{
+.bajaHorizontal{
     position:relative;
     top:15px;
+	font-family: 'Exo', sans-serif;
 }
 /*------------------------------------			-------------------------------------------*/
 .fondo_Obscuro{
@@ -166,21 +110,24 @@ ul.bajaHorizontal{
 
 /*---------------------------------------------	Proyectos	------------------------------------------*/
 .marcoMorado1{
-    width:376px;
+    /*width:376px;
     height:371px;
     background-image:url(../../imagenes/red/proyectos/cuadro-morado-primer-encuentro.jpg);
-	background-repeat:no-repeat;
+	background-repeat:no-repeat;*/
+	background-color:transparent;
 }
 .marcoMorado2{
-    width:376px;
+    /*width:376px;
     height:371px; 
     background-image:url(../../imagenes/red/proyectos/cuadro-morado-ventana.jpg);
-	background-repeat:no-repeat;
+	background-repeat:no-repeat;*/
+	background-color:transparent;
 }
 .marcoMorado3{
-    width:376px; 
+    /*width:376px; 
     height:371px; 
-    background-image:url(../../imagenes/red/proyectos/cuadro-morado-ecosistema.jpg);
+    background-image:url(../../imagenes/red/proyectos/cuadro-morado-ecosistema.jpg);*/
+	background-color:transparent;
 }
 .imgAbajo10{
     padding-top:10px;
