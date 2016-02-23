@@ -1,6 +1,6 @@
 ﻿			<div class="row fondo_Obscuro" style="margin-top:-20px;">
 				<div class="col-md-12 text-center text-uppercase">
-					<h2> Modelo de Usabilidad Pedagógica de las TIC</h2>
+					<p class="pleca"> Modelo de Usabilidad Pedagógica de las TIC</p>
 				</div>
 			</div>
 			<div class="row fondo_Claro" ><!--style="height:600px;"-->

@@ -1,6 +1,6 @@
 <div class="row fondo_Obscuro" style="margin-top:-1px;">
     <div class="col-md-12 text-center text-uppercase">
-        <h2> Áreas Temáticas</h2>
+        <p class="pleca"> Áreas Temáticas</p>
     </div>
 </div>
 <div class="row fondo_Claro">

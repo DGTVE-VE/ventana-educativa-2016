@@ -60,6 +60,7 @@
 					  </a-->
 					</div>
 				</div>
+
 				<div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
 					<h3>Sitios de Interés</h3>
 					<div id="carouselSitioInteres" class="carousel slide" data-ride="carousel">
@@ -123,9 +124,10 @@
 					  </a-->
 					</div>
 				</div>
+
 				<div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
 					<h3>Redes Sociales</h3>
-					<img class="img-responsive img-rounded" style="width:150px; height:48px;" src="imagenes/red/Logotipos/facebook.png" alt="..."/>
+                                        <img class="img-responsive img-rounded" style="width:150px; height:48px;" src="imagenes/red/Logotipos/facebook.png" alt="..."/>
 					<div>Contenido Facebook.</div>
 					<img class="img-responsive img-rounded" style="width:150px; height:48px;" src="imagenes/red/Logotipos/twitter.png" alt="..."/>
 					<div>Contenido Twitter.</div>

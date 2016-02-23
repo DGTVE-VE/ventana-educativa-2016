@@ -26,7 +26,7 @@ Publicaciones
                         <p>Se identifican las siguientes líneas:</p>
                         <ul>
                             <li class="list-unstyled"><span class="glyphicon glyphicon-globe"></span>Redes sociales para la educación. </li>
-                            <li class="list-unstyled"><span class="glyphicon glyphicon-globe"></span>El docente como generador del cambio: la educación digital y los retos en la región mesoamericana.</li>
+                            <li class="list-unstyled"><span class="glyphicon glyphicon-globe"></span>El docente como generador del cambio: la educación digital y los retos en la región mesoamericana.</li>-->
                         </ul>
                     </ul>
                     <a name="gestion"></a>
@@ -44,7 +44,7 @@ Publicaciones
                                 <li class="list-unstyled"><span class="glyphicon glyphicon-pencil"></span>Diseño y desarrollo de sistemas educativos innovadores.</li>
                             </ul>
                         </ul>
-                        
+
                     </td>
                 </tr>
                 <tr>
@@ -96,7 +96,7 @@ Publicaciones
                                 <li class="list-unstyled"><span class="glyphicon glyphicon-education"></span>Análisis de costo beneficios y oportunidades de acceso para la educación mediada por tecnología.</li>
                             </ul>
                         </ul> 
-                        
+
                     </td>
                 </tr>
             </table>

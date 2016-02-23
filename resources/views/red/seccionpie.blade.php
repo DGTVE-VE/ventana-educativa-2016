@@ -2,7 +2,7 @@
 				<div class="division">
 				</div>
 				<div class="col-sm-6 col-md-2 col-md-offset-1">
-					<img class="img-responsive img-rounded" src="imagenes/red/LogoRed/logoNegativo.png" width="120" height="120" alt="..."/>
+					<img class="img-responsive img-rounded" src="imagenes/red/LogoRed/logoNegativo.png" width="160" height="160" alt="..."/>
 					<br>
 					<img id="imgIconoTwetter" class="img-responsive img-rounded" style="float:left; width:40px; height:40px;" src="imagenes/red/footer/icono-twetter-A.png" onmouseenter="imgResalta('twetter')" onmouseleave="imgNormal('twetter')"/>
 					<img id="imgIconoFacebook" class="img-responsive img-rounded" style="float:left; width:40px; height:40px;" src="imagenes/red/footer/icono-face-A.png" onmouseenter="imgResalta('facebook')" onmouseleave="imgNormal('facebook')"/>
