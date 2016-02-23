@@ -9,8 +9,8 @@ Publicaciones
 <div class="row" style="margin-top: 5%;" >        
     <div class="col-md-offset-1"><h3>PONTE EN CONTACTO</h3></div>
     <div class="col-md-12 textoContacto">        
-        <h4 class="col-md-11 text-uppercase">Dirección General de Televisión Educativa</h4>
-        <div class="col-md-1">
+        <h4 class="col-md-12 text-uppercase">Dirección General de Televisión Educativa</h4>
+<!--        <div class="col-md-1">
             <ul class="nav navbar-nav navbar-right">
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-share-alt shareContacto"></i></b></a>
@@ -23,7 +23,7 @@ Publicaciones
                 </li>
             </ul>
 
-        </div>
+        </div>-->
     </div>
     <div class="col-md-12">
         <script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script>
