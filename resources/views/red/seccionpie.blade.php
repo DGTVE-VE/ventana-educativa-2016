@@ -60,9 +60,9 @@
 					Docentes <strong class="lead">Procesos formativos</strong> Pedagogía digital</p>
 					<br>
 					<h4	class="text-uppercase">newsletter</h4>
-					<form class="form-inline">
+					<form class="form-inline" action="guardaCorreoNewsLetter" method="POST">
 						<div class="form-group">
-							<input type="email" class="form-control" id="correoElectronico" placeholder="direccion@servidor.com">
+							<input type="email" name="correo_newsletter" class="form-control" id="correoElectronico" placeholder="direccion@servidor.com">
 							<button type="submit" class="btn btn-primary"><span class="glyphicon glyphicon-send"></span></button>
 						</div>
 					</form>

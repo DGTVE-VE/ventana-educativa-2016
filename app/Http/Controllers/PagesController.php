@@ -73,6 +73,57 @@ class PagesController extends Controller {
         return view('red/frmusuarios');
     }
 
+    public function guardaCorreoNewsLetter() {
+
+        $news = new \App\Red\News();
+        $news->correo = filter_input(INPUT_POST, 'correo_newsletter');
+        $news->hash = md5(date('Y/m/d H:i:s'));
+        $news->save();
+        $this->sendConfirmMail();
+        print 'guardado';
+    }
+
+    private function sendConfirmMail() {
+        // Varios destinatarios
+        $para = 'aidan@example.com' . ', '; // atención a la coma
+        $para .= 'wez@example.com';
+
+        $título = 'Recordatorio de cumpleaños para Agosto';
+
+        $mensaje = '
+                    <html>
+                    <head>
+                      <title>Recordatorio de cumpleaños para Agosto</title>
+                    </head>
+                    <body>
+                      <p>¡Estos son los cumpleaños para Agosto!</p>
+                      <table>
+                        <tr>
+                          <th>Quien</th><th>Día</th><th>Mes</th><th>Año</th>
+                        </tr>
+                        <tr>
+                          <td>Joe</td><td>3</td><td>Agosto</td><td>1970</td>
+                        </tr>
+                        <tr>
+                          <td>Sally</td><td>17</td><td>Agosto</td><td>1973</td>
+                        </tr>
+                      </table>
+                    </body>
+                    </html>
+                    ';
+
+// Para enviar un correo HTML, debe establecerse la cabecera Content-type
+        $cabeceras = 'MIME-Version: 1.0' . "\r\n";
+        $cabeceras .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
+
+// Cabeceras adicionales
+        $cabeceras .= 'To: Israel  <j.israel.toledo@gmail.com.com>' . "\r\n";
+        $cabeceras .= 'From: Recordatorio <ventana@televisioneducativa.gob.mx>' . "\r\n";        
+
+// Enviarlo
+        mail($para, $título, $mensaje, $cabeceras);
+    }
+
 //    public function integrantesSlider() {
 //        return view('integrantesSlider');
 //    }
