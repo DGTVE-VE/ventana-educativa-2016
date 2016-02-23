@@ -22,8 +22,8 @@
 					<h4 class="text-uppercase">Contáctanos</h4>
 					<table>
 						<tr>
-							<td class="imgTecho">
-								<img class="img-rounded" style="align:flex-start; width:14px; height:20px;" src="imagenes/red/footer/localizacion.png"/>
+							<td class="imgTecho" style="padding:5px;">
+								<img class="img-responsive" style="align:flex-start; width:14px; height:20px;" src="imagenes/red/footer/localizacion.png"/>
 							</td>
 							<td>
 								<p>Av. Circunvalación s/n, esquina Tabiqueros,<br>
@@ -32,8 +32,8 @@
 							</td>
 						</tr>
 						<tr>
-							<td class="imgTecho">
-								<img class="img-responsive img-rounded" style="align:flex-start; width:20px; height:20px;" src="imagenes/red/footer/telefono.png"/>
+							<td class="imgTecho" style="padding:5px;">
+								<img class="img-responsive" style="align:flex-start; width:20px; height:20px;" src="imagenes/red/footer/telefono.png"/>
 							</td>
 							<td>
 								<p>(55) 3601 8100 <br>
@@ -43,8 +43,8 @@
 							</td>
 						</tr>
 						<tr>
-							<td class="imgTecho">
-								<img class="img-responsive img-rounded" style="width:20px; height:20px;" src="imagenes/red/footer/mail.png"/>
+							<td class="imgTecho" style="padding:5px;">
+								<img class="img-responsive" style="width:20px; height:20px;" src="imagenes/red/footer/mail.png"/>
 							</td>
 							<td>
 								<p> contacto@redmesoamericana.com</p>
