@@ -22,3 +22,4 @@ Route::get('frmpublicaciones','PagesController@frmpublicaciones');
 Route::get('usuarios','PagesController@usuarios');
 Route::post('guardaCorreoNewsLetter', 'PagesController@guardaCorreoNewsLetter');
 Route::get('activaCorreo/{correo}/{hash}', 'PagesController@activaCorreoNews');
+Route::post('guardaContacto', 'PagesController@guardaContacto');

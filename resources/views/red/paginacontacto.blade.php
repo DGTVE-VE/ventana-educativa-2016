@@ -1,11 +1,12 @@
 @section('title')
-Publicaciones
+Contacto
 @stop
 @extends('home')
 @section('menu')
 <a name="redesconocimiento"></a>
 @include('red.seccionheader')
 @endsection
+@section('cuerpo')
 <div class="row" style="margin-top: 5%;" >        
     <div class="col-md-12"><hr></div>    
     <div class="col-md-12 textoContacto">        
@@ -43,43 +44,35 @@ Publicaciones
     <div class="panel-body col-md-12">
         <div class="row col-sm-5 col-md-offset-4">
             <div><h4>Envíanos tus dudas, comentarios o sugerencias.</h4></div>
-            <div class="input-group">
-                <span class="input-group-addon" id="basic-addon1"><span class="glyphicon glyphicon-user"></span></span>
-                <input type="text" class="form-control" placeholder="Nombre (requerido)" aria-describedby="basic-addon1">
-            </div>
-            <br>
-            <div class="input-group">
-                <span class="input-group-addon" id="basic-addon1">@</span>
-                <input type="text" class="form-control" placeholder="Correo (requerido)" aria-describedby="basic-addon2">
-            </div>
-            <br>
-            <div class="input-group">
-                <span class="input-group-addon" id="basic-addon1"><span class="glyphicon glyphicon-envelope"></span></span>
-                <input type="text" class="form-control" placeholder="Asunto" aria-describedby="basic-addon3">
-            </div>
-            <br>
-            <div class="input-group">
-                <span class="input-group-addon" id="basic-addon1"><span class="glyphicon glyphicon-align-justify"></span></span>
-                <textarea class="form-control" rows="5" aria-describedby="basic-addon4"></textarea>
-            </div>
-            <br>
-            <div><button class="btn btn-info">Enviar</button></div>
-            </br></br>
+            <form action="guardaContacto" method="post">
+                <div class="input-group">
+                    <span class="input-group-addon" id="basic-addon1"><span class="glyphicon glyphicon-user"></span></span>
+                    <input type="text" class="form-control" name="nombre_contacto" placeholder="Nombre (requerido)" aria-describedby="basic-addon1">
+                </div>
+                <br>
+                <div class="input-group">
+                    <span class="input-group-addon" id="basic-addon1">@</span>
+                    <input type="text" class="form-control" name="correo" placeholder="Correo (requerido)" aria-describedby="basic-addon2">
+                </div>
+                <br>
+                <div class="input-group">
+                    <span class="input-group-addon" id="basic-addon1"><span class="glyphicon glyphicon-envelope"></span></span>
+                    <input type="text" class="form-control" name="asunto" placeholder="Asunto" aria-describedby="basic-addon3">
+                </div>
+                <br>
+                <div class="input-group">
+                    <span class="input-group-addon" id="basic-addon1"><span class="glyphicon glyphicon-align-justify"></span></span>
+                    <textarea class="form-control" rows="5" name="mensaje" aria-describedby="basic-addon4"></textarea>
+                </div>
+                <br>
+                <div><button class="btn btn-info" type="submit">Enviar</button></div>
+                </br></br>
+            </form>
         </div>
+
     </div>
-    <!--    <div class="col-md-3">
-            <br><br><br>
-            <address>
-                <strong>Dirección</strong><br>
-                Av. Circunvalación s/n, esquina Tabiqueros,<br>
-                Col. Morelos, Del. Venustiano Carranza.<br>
-                C.P. 15270, Ciudad de México.
-                <abbr title="Telefono">P:</abbr> (123) 456-7890
-            </address>
-        </div>-->
     <div class="col-md-2"></div>
 </div>
-@include('red.seccionpie')
 <script type='text/javascript'>
     function init_map() {
         var myOptions = {zoom: 10, center: new google.maps.LatLng(19.4462044, -99.1195181), mapTypeId: google.maps.MapTypeId.ROADMAP};
@@ -94,3 +87,6 @@ Publicaciones
     }
     google.maps.event.addDomListener(window, 'load', init_map);
 </script>
+
+@include('red.seccionpie')
+@stop
