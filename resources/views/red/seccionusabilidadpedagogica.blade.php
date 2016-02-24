@@ -41,13 +41,13 @@
 				</div>
 				<div class="col-xs-3 col-sm-8 col-md-5 col-lg-5"><!-- style="background-image:url(imagenes/red/ModeloUsabilidad/aros-modelo-de-usabilidad.png); background-repeat:no-repeat; height:500px;">-->
 							<!-- ------------------------------------		Resolucion XS		------------------------------------------------- -->
-					<br>
+					<br class="visible-xs-block">
 					<img id="imgFuncionalidadXS" class="img-responsive visible-xs-block" alt="..." src="imagenes/red/ModeloUsabilidad/funcionalidadEdu.png" style="weight: 70px; height:70px;" onmouseenter="imgResalta('funcionalidadXS')" onmouseleave="imgNormal('funcionalidadXS')"> <!--  -->
-					<br><br>
+					<br class="visible-xs-block"><br class="visible-xs-block">
 					<img id="imgExpectativasXS" class="img-responsive visible-xs-block" alt="..." src="imagenes/red/ModeloUsabilidad/disposicionExpectativas.png" style="weight: 70px; height:70px;" onmouseenter="imgResalta('expectativasXS')" onmouseleave="imgNormal('expectativasXS')">
-					<br><br>
+					<br class="visible-xs-block"><br class="visible-xs-block">
 					<img id="imgSaberesDigXS" class="img-responsive visible-xs-block" alt="..." src="imagenes/red/ModeloUsabilidad/saberesDigitales.png" style="weight: 70px; height:70px;" onmouseenter="imgResalta('saberesDigXS')" onmouseleave="imgNormal('saberesDigXS')">
-					<br><br>
+					<br class="visible-xs-block"><br class="visible-xs-block">
 					<img id="imgApropiacionXS" class="img-responsive visible-xs-block" alt="..." src="imagenes/red/ModeloUsabilidad/apropiacionIncorporacionEdu.png" style="weight: 70px; height:70px;" onmouseenter="imgResalta('apropiacionXS')" onmouseleave="imgNormal('apropiacionXS')">
 							<!-- ------------------------------------		Resolucion Mediana - Grande		------------------------------------------------- -->
 					<img class="img-responsive hidden-xs" alt="..." src="imagenes/red/ModeloUsabilidad/aros-modelo-de-usabilidad.png" style="float:left">
