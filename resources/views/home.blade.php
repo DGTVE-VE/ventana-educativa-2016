@@ -14,7 +14,7 @@ and open the template in the editor.
         <meta http-equiv="X-UA-Compatible" content="IE=Edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
         <link rel="stylesheet" href="css/red/estiloredmesoamericana.css">
-
+        <link rel="shortcut icon" href="{{ asset('favicon.ico') }}" >
         <link rel="stylesheet" href="css/red/estilored2.css">
         <link rel="stylesheet" href="css/red/estilored3.css">
         <link rel="stylesheet" href="css/red/bootstrap-social.css">
@@ -54,6 +54,16 @@ and open the template in the editor.
 
     </head>
     <body id="pag_principal" style="padding:0px; overflow-x:hidden">
+        <div id="fb-root"></div>
+        <script>(function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id))
+                return;
+            js = d.createElement(s);
+            js.id = id;
+            js.src = "//connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v2.5&appId=876445959080347";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script>
         <div class="container-fluid" style="z-index:2; padding:0px;"> <!--data-spy="affix" data-offset-top="80"-->
             @yield('menu')
         </div>
