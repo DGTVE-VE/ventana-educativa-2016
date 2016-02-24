@@ -6,6 +6,7 @@ Publicaciones
 <a name="redesconocimiento"></a>
 @include('red.seccionheader')
 @endsection
+@section('cuerpo')
 <div class="row" style="margin-top: 5%;" >        
     <div class="col-md-12"><hr></div>    
     <div class="col-md-12 textoContacto">        
@@ -79,7 +80,6 @@ Publicaciones
         </div>-->
     <div class="col-md-2"></div>
 </div>
-@include('red.seccionpie')
 <script type='text/javascript'>
     function init_map() {
         var myOptions = {zoom: 10, center: new google.maps.LatLng(19.4462044, -99.1195181), mapTypeId: google.maps.MapTypeId.ROADMAP};
@@ -94,3 +94,6 @@ Publicaciones
     }
     google.maps.event.addDomListener(window, 'load', init_map);
 </script>
+
+@include('red.seccionpie')
+@stop
