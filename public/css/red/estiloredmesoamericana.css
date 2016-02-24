@@ -7,7 +7,14 @@
 .textoModalIntegrante{
     color: white;    
 }
-
+.carousel-captionInt{
+    position:relative !important;
+    right:1% !important;;
+    left:1% !important;
+    padding-top:0px !important;;
+    padding-bottom:0px !important;;
+}
+.modal-titleInt{color: white;}
 .indicadorInt {
    top: 450px !important;
    left: 50% !important;
