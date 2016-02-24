@@ -47,22 +47,22 @@ Contacto
             <form action="guardaContacto" method="post">
                 <div class="input-group">
                     <span class="input-group-addon" id="basic-addon1"><span class="glyphicon glyphicon-user"></span></span>
-                    <input type="text" class="form-control" name="nombre_contacto" placeholder="Nombre (requerido)" aria-describedby="basic-addon1">
+                    <input type="text" class="form-control" name="nombre_contacto" required placeholder="Nombre (requerido)" aria-describedby="basic-addon1">
                 </div>
                 <br>
                 <div class="input-group">
                     <span class="input-group-addon" id="basic-addon1">@</span>
-                    <input type="text" class="form-control" name="correo" placeholder="Correo (requerido)" aria-describedby="basic-addon2">
+                    <input type="text" class="form-control" required name="correo" placeholder="Correo (requerido)" aria-describedby="basic-addon2">
                 </div>
                 <br>
                 <div class="input-group">
                     <span class="input-group-addon" id="basic-addon1"><span class="glyphicon glyphicon-envelope"></span></span>
-                    <input type="text" class="form-control" name="asunto" placeholder="Asunto" aria-describedby="basic-addon3">
+                    <input type="text" class="form-control" required name="asunto" placeholder="Asunto" aria-describedby="basic-addon3">
                 </div>
                 <br>
                 <div class="input-group">
                     <span class="input-group-addon" id="basic-addon1"><span class="glyphicon glyphicon-align-justify"></span></span>
-                    <textarea class="form-control" rows="5" name="mensaje" aria-describedby="basic-addon4"></textarea>
+                    <textarea class="form-control" rows="5" required name="mensaje" aria-describedby="basic-addon4"></textarea>
                 </div>
                 <br>
                 <div><button class="btn btn-info" type="submit">Enviar</button></div>
