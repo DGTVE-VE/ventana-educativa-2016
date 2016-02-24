@@ -88,9 +88,11 @@ class PagesController extends Controller {
         $news = \App\Red\News::where('correo', '=', $correo)->first();
 
         if ($news->hash == $hash) {
-            print 'iguales';
+            $news->validado = 1;
+            $news->save();
+            print 'Correo validado';
         } else {
-            print 'diferentes';
+            return redirect('home');
         }
     }
 
@@ -131,7 +133,7 @@ class PagesController extends Controller {
         $contacto->correo = filter_input(INPUT_POST, 'correo');
         $contacto->asunto = filter_input(INPUT_POST, 'asunto');
         $contacto->mensaje = filter_input(INPUT_POST, 'mensaje');
-        $contacto->save();  
+        $contacto->save();
         return view('red/paginacontacto');
     }
 
