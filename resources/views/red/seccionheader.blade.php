@@ -1,4 +1,4 @@
-<div class="navbar navbar-default navbar-fixed-top" role="navigation" style="height:80px;">	<!--navbar-static-top-->
+<div class="navbar yamm navbar-default navbar-fixed-top" role="navigation" style="height:80px;">	<!--navbar-static-top-->
     <div class="navbar-header">
         <div class="navbar-header">
             <a class="navbar-brand" href="indexRed">
@@ -13,8 +13,8 @@
         </button>
     </div>
 
-    <div class="collapse navbar-collapse js-navbar-collapse" style="padding-right:20px;">
-        <ul class="nav navbar-nav navbar-right text-uppercase">
+    <div class="collapse navbar-collapse js-navbar-collapse">
+        <ul class="nav navbar-nav navbar-right text-uppercase" style="padding-right:20px;">
             <li class="bajaHorizontal"><a href="indexRed">INICIO</a></li>
             <li class="bajaHorizontal"><a href="quienesSomos">¿QUIÉNES SOMOS?</a></li>
             <li class="dropdown menu-large">
