@@ -14,7 +14,7 @@ and open the template in the editor.
         <meta http-equiv="X-UA-Compatible" content="IE=Edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
         <link rel="stylesheet" href="css/red/estiloredmesoamericana.css">
-
+        <link rel="shortcut icon" href="{{ asset('favicon.ico') }}" >
         <link rel="stylesheet" href="css/red/estilored2.css">
         <link rel="stylesheet" href="css/red/estilored3.css">
         <link rel="stylesheet" href="css/red/bootstrap-social.css">

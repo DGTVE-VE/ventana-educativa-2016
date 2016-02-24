@@ -184,6 +184,12 @@
 
 		/*  -------------------------------------    Permitir elementos HTML en elementos POPOVER  -----------------------------------------------*/
 			$('[data-toggle="popover"]').popover({html:true});
+		
+		/*  -------------------------------------    Activar efecto parallax en scroll   -----------------------------------------------*/
+			$(window).bind('scroll',function(e){
+				parallaxScroll();
+			});
+		/*-----------------------------------------------------------------------------------------------------------------------------------------------*/
 		})
 		
 	/*	---------------------------------------	Sección Usabilidad. Agregar animación de entrada a imagenes 	--------------------------------*/
@@ -229,6 +235,11 @@
                 });
             });
         })
+		
+		function parallaxScroll(){
+			var scrolled = $(window).scrollTop();
+			$('#parallax-fondoProyectos').css('top',(0-(scrolled*0.3))+'px');
+		}
 
 		/*
 * rwdImageMaps jQuery plugin v1.5

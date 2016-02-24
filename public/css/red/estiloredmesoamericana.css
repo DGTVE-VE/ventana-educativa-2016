@@ -123,6 +123,9 @@
     background-color:#F5F5F5;
     margin:0px;
 }
+.fondo_Transparente{
+    background-color:transparent;
+}
 .division{
     height:60px;
 }
@@ -235,5 +238,16 @@
     font-family: 'Oxygen', sans-serif;
     font-size:14px;
 }
-
-
+#parallax-fondoProyectos{
+	position:fixed;
+	top:100;
+	left:50%;
+	margin-left:-800px;
+	z-index:-1;
+}
+#fondo-proyectos{
+	position:absolute;
+	top:300px;
+	left:0px;
+	height:1000px;
+}
