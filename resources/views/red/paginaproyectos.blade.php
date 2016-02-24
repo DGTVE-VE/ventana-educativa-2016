@@ -10,7 +10,7 @@ Proyectos
 <div class="row" style="margin-top: 5%;" >        
     <div class="row fondo_Obscuro">
         <div class="col-md-12 text-center text-uppercase">
-            <h2>Proyectos</h2>
+            <p class="pleca">Proyectos</p>
         </div>
     </div>
     <link rel="stylesheet" href="css/red/estiloRed3.css">

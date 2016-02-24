@@ -9,7 +9,7 @@ Quienes Somos
     <div class="row" style="margin-top: 5%;" >        
         <div class="row fondo_Obscuro">
             <div class="col-md-12 text-center text-uppercase">
-                <h2> Quiénes Somos</h2>
+                <p class="pleca">Quiénes Somos</p>
             </div>
         </div>
         <div class="row txtQuienesSomos">
