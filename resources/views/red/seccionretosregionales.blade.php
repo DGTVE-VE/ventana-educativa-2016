@@ -128,9 +128,9 @@
 				<div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
 					<h3>Redes Sociales</h3>
                                         <img class="img-responsive img-rounded" style="width:150px; height:48px;" src="imagenes/red/Logotipos/facebook.png" alt="..."/>
-					<div>Contenido Facebook.</div>
+                                        <div style="border: 2px solid red; width: 350px; height: 230px;">Contenido Facebook.</div>
 					<img class="img-responsive img-rounded" style="width:150px; height:48px;" src="imagenes/red/Logotipos/twitter.png" alt="..."/>
-					<div>Contenido Twitter.</div>
+					<div style="border: 2px solid red; width: 350px; height: 230px;">Contenido Twitter.</div>
 				</div>
 			</div>
 			<div class="row fondo_Claro">

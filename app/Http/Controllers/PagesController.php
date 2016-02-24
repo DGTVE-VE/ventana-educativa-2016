@@ -75,27 +75,27 @@ class PagesController extends Controller {
 
     public function guardaCorreoNewsLetter() {
 
-        $news = new \App\Red\News();        
+        $news = new \App\Red\News();
         $news->correo = filter_input(INPUT_POST, 'correo_newsletter');
         $news->hash = md5(date('Y/m/d H:i:s'));
         $news->save();
         $this->sendConfirmMail($news->correo, $news->hash);
         print 'guardado';
     }
-    
-    public function activaCorreoNews (Request $request, $correo, $hash){
-        
+
+    public function activaCorreoNews(Request $request, $correo, $hash) {
+
         $news = \App\Red\News::where('correo', '=', $correo)->first();
-        
-        if ($news->hash == $hash){
+
+        if ($news->hash == $hash) {
             print 'iguales';
-        }else{
+        } else {
             print 'diferentes';
         }
     }
 
     private function sendConfirmMail($mail, $hash) {
-        
+
         $título = 'Activa tu cuenta de la red mesoamericana';
         $mensaje = "
                     <html>
@@ -115,7 +115,7 @@ class PagesController extends Controller {
         $cabeceras .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
 
 // Cabeceras adicionales        
-        $cabeceras .= 'From: Recordatorio <ventana@televisioneducativa.gob.mx>' . "\r\n";        
+        $cabeceras .= 'From: Recordatorio <ventana@televisioneducativa.gob.mx>' . "\r\n";
 
 // Enviarlo
         mail($mail, $título, $mensaje, $cabeceras);
@@ -124,4 +124,15 @@ class PagesController extends Controller {
 //    public function integrantesSlider() {
 //        return view('integrantesSlider');
 //    }
+
+    public function guardaContacto() {
+        $contacto = new \App\Red\Contacto();
+        $contacto->nombre_contacto = filter_input(INPUT_POST, 'nombre_contacto');
+        $contacto->correo = filter_input(INPUT_POST, 'correo');
+        $contacto->asunto = filter_input(INPUT_POST, 'asunto');
+        $contacto->mensaje = filter_input(INPUT_POST, 'mensaje');
+        $contacto->save();  
+        return view('red/paginacontacto');
+    }
+
 }
