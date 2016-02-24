@@ -29,7 +29,7 @@ Publicaciones
                 <li><a href="#tab-7" role="tab" data-toggle="tab">COSTA RICA</a></li>
                 <li><a href="#panama" role="tab" data-toggle="tab">PANAMÁ</a></li>
                 <li><a href="#tab-9" role="tab" data-toggle="tab">COLOMBIA</a></li>
-                <li><a href="#repdominicana" role="tab" data-toggle="tab">REP.DOMINICANA</a></li>
+                <li><a href="#repdominicana" role="tab" data-toggle="tab">REP. DOMINICANA</a></li>
 
             </ul><!--/.nav-tabs.sidebar-tabs -->
             <!-- Tab panes -->
@@ -37,6 +37,7 @@ Publicaciones
                 <div class="tab-pane active" id="todos">
                     <div class="col-md-12"> <!-- div de imagenes y texto -->
                         <div class="row">
+                            </br>
                             <div class="col-md-4"> <!--imagen1 -->
                                 <div class="portfolio-item ih-item square colored effect8 animated bounceIn">
                                     <a href="#">
@@ -50,7 +51,7 @@ Publicaciones
                                     </a>
                                 </div>                                    
                             </div> <!-- cierra imagen1 -->                              
-
+                            
                             <div class="col-md-4 "><!--imagen2 -->
                                 <div class="portfolio-item ih-item square colored effect8 animated bounceIn">
                                     <a href="#">
@@ -64,7 +65,7 @@ Publicaciones
                                     </a>
                                 </div>
                             </div> <!-- cierra imagen2 -->     
-
+                            
                             <div class="col-md-4"> <!--imagen3 -->
                                 <div class=" portfolio-item ih-item square colored effect8 animated bounceIn">
                                     <a href="#">
@@ -242,9 +243,10 @@ Publicaciones
                 <div class="tab-pane active" id="mexico">
                     <div class="col-md-12"> <!-- div de imagenes y texto -->
                         <div class="row">
+                            </br>
                             <div class="col-md-4"> <!--imagen1 -->
                                 <div class="portfolio-item ih-item square colored effect8 animated bounceIn">
-                                    <a href="#">
+                                    <a href="publicacionesRed/mexico/cienciastecnologiasculturas.pdf"  target="_blank">
                                         <img class="img-responsive" src="publicacionesRed/mexico/imagenesthumbnails/mexico01.jpg" alt="">
 <!--                                        <div class="mask1"></div>
                                         <div class="mask2"></div>
@@ -252,34 +254,35 @@ Publicaciones
                                             <h3>Título</h3>
                                             <p>Descripción</p>
                                         </div>-->
+                                        
                                     </a>
                                 </div>                                    
                             </div> <!-- cierra imagen1 -->                              
-
+                            
                             <div class="col-md-4 "><!--imagen2 -->
                                 <div class="portfolio-item ih-item square colored effect8 animated bounceIn">
-                                    <a href="#">
+                                    <a href="publicacionesRed/mexico/forointerregionalinvestigacionsobreeva.pdf" target="_blank">
                                         <img class="img-responsive" src="publicacionesRed/mexico/imagenesthumbnails/mexico02.jpg" alt="">
-                                        <div class="mask1"></div>
+<!--                                        <div class="mask1"></div>
                                         <div class="mask2"></div>
                                         <div class="info ">
                                             <h3>Título</h3>
                                             <p>Descripción</p>
-                                        </div>
+                                        </div>-->
                                     </a>
                                 </div>
                             </div> <!-- cierra imagen2 -->     
-
+                            
                             <div class="col-md-4"> <!--imagen3 -->
-                                <div class=" portfolio-item ih-item square colored effect8 animated bounceIn">
-                                    <a href="#">
+                                <div class=" portfolio-item ih-item square colored effect8 animated bounceIn" >
+                                    <a href="publicacionesRed/mexico/modelostecnoeducativos.pdf" target="_blank">
                                         <img class="img-responsive" src="publicacionesRed/mexico/imagenesthumbnails/mexico03.jpg" alt="">
-                                        <div class="mask1"></div>
+<!--                                        <div class="mask1"></div>
                                         <div class="mask2"></div>
                                         <div class="info ">
                                             <h3>Título</h3>
                                             <p>Descripción</p>
-                                        </div>
+                                        </div>-->
                                     </a>
                                 </div>
                             </div> <!-- cierra imagen3 -->     
@@ -310,7 +313,7 @@ Publicaciones
                                         <td class="">Título: Foro Interregional de investigación sobre EVA</td>
                                     </tr>
                                     <tr>
-                                        <td>Autor: Rubén Edel Navarro, Manuel Juarez Pacheco, Yadira Navarro Rangel, María Soledad Ramírez Montoya:</td>
+                                        <td><p style="text-align: justify;">Autor: Rubén Edel Navarro, Manuel Juarez Pacheco, Yadira Navarro Rangel, María Soledad Ramírez Montoya </p></td>
                                     </tr>
                                     <tr>
                                         <td>Categoría: Redes Academicas y Tecnologicas</td>
@@ -344,28 +347,28 @@ Publicaciones
                         <div class="row">
                             <div class="col-md-4"> <!--imagen1 -->
                                 <div class="portfolio-item ih-item square colored effect8 animated bounceIn">
-                                    <a href="#">
+                                    <a href="publicacionesRed/mexico/territorioseducación.pdf" target="_blank">
                                         <img class="img-responsive" src="publicacionesRed/mexico/imagenesthumbnails/mexico04.jpg" alt="">
-                                        <div class="mask1"></div>
+<!--                                        <div class="mask1"></div>
                                         <div class="mask2"></div>
                                         <div class="info ">
                                             <h3>Título</h3>
                                             <p>Descripción</p>
-                                        </div>
+                                        </div>-->
                                     </a>
                                 </div>                                    
                             </div> <!-- cierra imagen1 -->                              
 
                             <div class="col-md-4 "><!--imagen2 -->
                                 <div class="portfolio-item ih-item square colored effect8 animated bounceIn">
-                                    <a href="#">
+                                    <a href="publicacionesRed/mexico/usabilidadpedagogicatic.pdf" target="_blank">
                                         <img class="img-responsive" src="publicacionesRed/mexico/imagenesthumbnails/mexico05.jpg" alt="">
-                                        <div class="mask1"></div>
+<!--                                        <div class="mask1"></div>
                                         <div class="mask2"></div>
                                         <div class="info ">
                                             <h3>Título</h3>
                                             <p>Descripción</p>
-                                        </div>
+                                        </div>-->
                                     </a>
                                 </div>
                             </div> <!-- cierra imagen2 -->     
@@ -391,7 +394,7 @@ Publicaciones
                                         <td class="">Título: Territorios de la Educación</td>
                                     </tr>
                                     <tr>
-                                        <td>Autor: Genaro Aguirre Aguilar, Rubén Edel Navarro</td>
+                                        <td><p style="text-align: justify;">Autor: Genaro Aguirre Aguilar, Rubén Edel Navarro</p></td>
                                     </tr>
                                     <tr>
                                         <td>Categoría: Ambientes Educativos</td>
@@ -408,7 +411,7 @@ Publicaciones
                                         <td class="">Título: Usabilidad Pedagogica de las TIC</td>
                                     </tr>
                                     <tr>
-                                        <td>Autor: Brenda Luz Colorado Aguilar,Rubén Edel Navarro</td>
+                                        <td><p style="text-align: justify;">Autor: Brenda Luz Colorado Aguilar,Rubén Edel Navarro</p></td>
                                     </tr>
                                     <tr>
                                         <td>Categoría: Tecnologías de la Información y Comunicación</td>
@@ -448,30 +451,31 @@ Publicaciones
                 <div class="tab-pane active" id="guatemala">
                     <div class="col-md-12"> <!-- div de imagenes y texto -->
                         <div class="row">
+                            </br>
                             <div class="col-md-4"> <!--imagen1 -->
                                 <div class="portfolio-item ih-item square colored effect8 animated bounceIn">
-                                    <a href="#">
-                                        <img class="img-responsive" src="http://placehold.it/350x200" alt="">
-                                        <div class="mask1"></div>
+                                    <a href="publicacionesRed/guatemala/contemosjuntosprogramanacionalmatematica.pdf" target="_blank">
+                                        <img class="img-responsive" src="publicacionesRed/guatemala/imagenesthumbnails/guatemala01.jpg" alt="">
+<!--                                        <div class="mask1"></div>
                                         <div class="mask2"></div>
                                         <div class="info ">
                                             <h3>Título</h3>
                                             <p>Descripción</p>
-                                        </div>
+                                        </div>-->
                                     </a>
                                 </div>                                    
                             </div> <!-- cierra imagen1 -->                              
 
                             <div class="col-md-4 "><!--imagen2 -->
                                 <div class="portfolio-item ih-item square colored effect8 animated bounceIn">
-                                    <a href="#">
-                                        <img class="img-responsive" src="http://placehold.it/350x200" alt="">
-                                        <div class="mask1"></div>
+                                    <a href="publicacionesRed/guatemala/enseñanzaaprendizajelectura.pdf" target="_blank">
+                                        <img class="img-responsive" src="publicacionesRed/guatemala/imagenesthumbnails/guatemala02.jpg" alt="">
+<!--                                        <div class="mask1"></div>
                                         <div class="mask2"></div>
                                         <div class="info ">
                                             <h3>Título</h3>
                                             <p>Descripción</p>
-                                        </div>
+                                        </div>-->
                                     </a>
                                 </div>
                             </div> <!-- cierra imagen2 -->     
@@ -528,16 +532,17 @@ Publicaciones
                 <div class="tab-pane active" id="elsalvador">
                     <div class="col-md-12"> <!-- div de imagenes y texto -->
                         <div class="row">
+                            </br>
                             <div class="col-md-4"> <!--imagen1 -->
                                 <div class="portfolio-item ih-item square colored effect8 animated bounceIn">
-                                    <a href="#">
-                                        <img class="img-responsive" src="http://placehold.it/350x200" alt="">
-                                        <div class="mask1"></div>
+                                    <a href="publicacionesRed/elSalvador/enseñanzaaprendizajelectura.pdf" target="_blank">
+                                        <img class="img-responsive" src="publicacionesRed/elSalvador/imagenesthumbnails/elsalvador01.jpg" alt="">
+<!--                                        <div class="mask1"></div>
                                         <div class="mask2"></div>
                                         <div class="info ">
                                             <h3>Título</h3>
                                             <p>Descripción</p>
-                                        </div>
+                                        </div>-->
                                     </a>
                                 </div>                                    
                             </div> <!-- cierra imagen1 -->                              
@@ -608,30 +613,31 @@ Publicaciones
                 <div class="tab-pane active" id="honduras">
                     <div class="col-md-12"> <!-- div de imagenes y texto -->
                         <div class="row">
+                            </br>
                             <div class="col-md-4"> <!--imagen1 -->
                                 <div class="portfolio-item ih-item square colored effect8 animated bounceIn">
-                                    <a href="#">
-                                        <img class="img-responsive" src="http://placehold.it/350x200" alt="">
-                                        <div class="mask1"></div>
+                                    <a href="publicacionesRed/Honduras/expresioncomprensionlectora.pdf" target="_blank">
+                                        <img class="img-responsive" src="publicacionesRed/Honduras/imagenesthumbnails/honduras01.jpg" alt="">
+<!--                                        <div class="mask1"></div>
                                         <div class="mask2"></div>
                                         <div class="info ">
                                             <h3>Título</h3>
                                             <p>Descripción</p>
-                                        </div>
+                                        </div>-->
                                     </a>
                                 </div>                                    
                             </div> <!-- cierra imagen1 -->                              
 
                             <div class="col-md-4 "><!--imagen2 -->
                                 <div class="portfolio-item ih-item square colored effect8 animated bounceIn">
-                                    <a href="#">
-                                        <img class="img-responsive" src="http://placehold.it/350x200" alt="">
-                                        <div class="mask1"></div>
+                                    <a href="publicacionesRed/Honduras/enseñanzaaprendizajematematicas.pdf" target="_blank">
+                                        <img class="img-responsive" src="publicacionesRed/Honduras/imagenesthumbnails/honduras02.jpg" alt="">
+<!--                                        <div class="mask1"></div>
                                         <div class="mask2"></div>
                                         <div class="info ">
                                             <h3>Título</h3>
                                             <p>Descripción</p>
-                                        </div>
+                                        </div>-->
                                     </a>
                                 </div>
                             </div> <!-- cierra imagen2 -->     
@@ -695,16 +701,17 @@ Publicaciones
                 <div class="tab-pane active" id="panama">
                     <div class="col-md-12"> <!-- div de imagenes y texto -->
                         <div class="row">
+                            </br>
                             <div class="col-md-4"> <!--imagen1 -->
                                 <div class="portfolio-item ih-item square colored effect8 animated bounceIn">
-                                    <a href="#">
-                                        <img class="img-responsive" src="http://placehold.it/350x200" alt="">
-                                        <div class="mask1"></div>
+                                    <a href="publicacionesRed/panama/españolmatematica.pdf" target="_blank">
+                                        <img class="img-responsive" src="publicacionesRed/panama/imagenesthumbnails/panama01.jpg" alt="">
+<!--                                        <div class="mask1"></div>
                                         <div class="mask2"></div>
                                         <div class="info ">
                                             <h3>Título</h3>
                                             <p>Descripción</p>
-                                        </div>
+                                        </div>-->
                                     </a>
                                 </div>                                    
                             </div> <!-- cierra imagen1 -->                              
@@ -779,30 +786,31 @@ Publicaciones
                 <div class="tab-pane active" id="repdominicana">
                     <div class="col-md-12"> <!-- div de imagenes y texto -->
                         <div class="row">
+                            </br>
                             <div class="col-md-4"> <!--imagen1 -->
                                 <div class="portfolio-item ih-item square colored effect8 animated bounceIn">
                                     <a href="#">
                                         <img class="img-responsive" src="http://placehold.it/350x200" alt="">
-                                        <div class="mask1"></div>
+<!--                                        <div class="mask1"></div>
                                         <div class="mask2"></div>
                                         <div class="info ">
                                             <h3>Título</h3>
                                             <p>Descripción</p>
-                                        </div>
+                                        </div>-->
                                     </a>
                                 </div>                                    
                             </div> <!-- cierra imagen1 -->                              
-
+                            
                             <div class="col-md-4 "><!--imagen2 -->
                                 <div class="portfolio-item ih-item square colored effect8 animated bounceIn">
                                     <a href="#">
                                         <img class="img-responsive" src="http://placehold.it/350x200" alt="">
-                                        <div class="mask1"></div>
+<!--                                        <div class="mask1"></div>
                                         <div class="mask2"></div>
                                         <div class="info ">
                                             <h3>Título</h3>
                                             <p>Descripción</p>
-                                        </div>
+                                        </div>-->
                                     </a>
                                 </div>
                             </div> <!-- cierra imagen2 -->     
