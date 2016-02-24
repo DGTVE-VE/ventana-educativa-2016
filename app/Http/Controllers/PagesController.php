@@ -75,16 +75,26 @@ class PagesController extends Controller {
 
     public function guardaCorreoNewsLetter() {
 
-        $news = new \App\Red\News();
-        $correo = filter_input(INPUT_POST, 'correo_newsletter');
-        $news->correo = 
+        $news = new \App\Red\News();        
+        $news->correo = filter_input(INPUT_POST, 'correo_newsletter');
         $news->hash = md5(date('Y/m/d H:i:s'));
         $news->save();
-        $this->sendConfirmMail($correo);
+        $this->sendConfirmMail($news->correo, $news->hash);
         print 'guardado';
     }
+    
+    public function activaCorreoNews (Request $request, $correo, $hash){
+        
+        $news = \App\Red\News::where('correo', '=', $correo)->first();
+        
+        if ($news->hash == $hash){
+            print 'iguales';
+        }else{
+            print 'diferentes';
+        }
+    }
 
-    private function sendConfirmMail($mail) {
+    private function sendConfirmMail($mail, $hash) {
         
         $título = 'Activa tu cuenta de la red mesoamericana';
         $mensaje = "

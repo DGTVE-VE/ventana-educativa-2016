@@ -7,23 +7,23 @@ Publicaciones
 @include('red.seccionheader')
 @endsection
 <div class="row" style="margin-top: 5%;" >        
-    <div class="col-md-offset-1"><h3>PONTE EN CONTACTO</h3></div>
+    <div class="col-md-12"><hr></div>    
     <div class="col-md-12 textoContacto">        
-        <h4 class="col-md-11 text-uppercase">Dirección General de Televisión Educativa</h4>
-        <div class="col-md-1">
-            <ul class="nav navbar-nav navbar-right">
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-share-alt shareContacto"></i></b></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="#"><span class="fa fa-google-plus btnShare text-center"></span>     Compartir por Google+</a></li>
-                        <li><a href="#"><span class="fa fa-facebook btnShare text-center"></span>      Compartir por Facebook</a></li>
-                        <li><a href="#"><span class="fa fa-twitter btnShare text-center"></span>     Compartir por Twitter</a></li>
-                        <li><a href="#"><span class="fa fa-envelope btnShare text-center"></span>     Compartir por correo eletrónico</a></li>
+        <h4 class="col-md-12 text-uppercase">Dirección General de Televisión Educativa</h4>
+        <!--        <div class="col-md-1">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-share-alt shareContacto"></i></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#"><span class="fa fa-google-plus btnShare text-center"></span>     Compartir por Google+</a></li>
+                                <li><a href="#"><span class="fa fa-facebook btnShare text-center"></span>      Compartir por Facebook</a></li>
+                                <li><a href="#"><span class="fa fa-twitter btnShare text-center"></span>     Compartir por Twitter</a></li>
+                                <li><a href="#"><span class="fa fa-envelope btnShare text-center"></span>     Compartir por correo eletrónico</a></li>
+                            </ul>
+                        </li>
                     </ul>
-                </li>
-            </ul>
-
-        </div>
+        
+                </div>-->
     </div>
     <div class="col-md-12">
         <script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script>
@@ -35,11 +35,13 @@ Publicaciones
             </div>
             <style>#gmap_canvas img{max-width:none!important;background:none!important}</style>
         </div>
+        <hr><br>
     </div>
-    <div class="col-md-12"><br><hr></div>    
-    <div class="col-md-1"></div>
-    <div class="panel-body col-sm-5">
-        <div class="row">
+
+    <div class="col-md-12 text-center"><h3>PONTE EN CONTACTO</h3></div>
+    <hr>    
+    <div class="panel-body col-md-12">
+        <div class="row col-sm-5 col-md-offset-4">
             <div><h4>Envíanos tus dudas, comentarios o sugerencias.</h4></div>
             <div class="input-group">
                 <span class="input-group-addon" id="basic-addon1"><span class="glyphicon glyphicon-user"></span></span>
@@ -65,17 +67,16 @@ Publicaciones
             </br></br>
         </div>
     </div>
-    <div class="col-md-1"></div>
-    <div class="col-md-3">
-        <br><br><br>
-        <address>
-            <strong>Dirección</strong><br>
-            Av. Circunvalación s/n, esquina Tabiqueros,<br>
-            Col. Morelos, Del. Venustiano Carranza.<br>
-            C.P. 15270, Ciudad de México.
-            <!--<abbr title="Telefono">P:</abbr> (123) 456-7890-->
-        </address>
-    </div>
+    <!--    <div class="col-md-3">
+            <br><br><br>
+            <address>
+                <strong>Dirección</strong><br>
+                Av. Circunvalación s/n, esquina Tabiqueros,<br>
+                Col. Morelos, Del. Venustiano Carranza.<br>
+                C.P. 15270, Ciudad de México.
+                <abbr title="Telefono">P:</abbr> (123) 456-7890
+            </address>
+        </div>-->
     <div class="col-md-2"></div>
 </div>
 @include('red.seccionpie')
