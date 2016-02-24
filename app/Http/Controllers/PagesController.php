@@ -88,9 +88,11 @@ class PagesController extends Controller {
         $news = \App\Red\News::where('correo', '=', $correo)->first();
         
         if ($news->hash == $hash){
-            print 'iguales';
+            $news->validado = 1;
+            $news->save ();
+            print 'Correo validado';
         }else{
-            print 'diferentes';
+            return redirect ('home');
         }
     }
 
