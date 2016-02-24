@@ -27,16 +27,16 @@ Proyectos
 
                         <div class="active item" data-slide-number="0">
                             <!--<img src="imagenes/red/proyectos/imagentextoproyectos1.png">-->
-                            <img src="http://placehold.it/1000x620">
+                            <img src="http://placehold.it/1000x400">
                         </div>
                         <div class="item" data-slide-number="1">
                             <!--<img src="imagenes/red/proyectos/imagentextoproyectos2.png">-->
-                            <img src="http://placehold.it/1000x620">
+                            <img src="http://placehold.it/1000x400">
                         </div>
 
                         <div class="item" data-slide-number="2">
                             <!--<img src="imagenes/red/proyectos/imagentextoproyectos3.png">-->
-                            <img src="http://placehold.it/1000x620">
+                            <img src="http://placehold.it/1000x400">
                         </div>
                     </div><!-- Carousel nav -->
 
