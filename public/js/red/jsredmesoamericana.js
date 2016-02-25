@@ -239,6 +239,10 @@
 		/*  -------------------------------------    Activar efecto parallax en scroll   -----------------------------------------------*/
 		function parallaxScroll(){
 			var scrolled = $(window).scrollTop();
+			$('#parallaxcarouselSliderHome').css('top',(0+(scrolled*0.5))+'px');
+			$('#parallaxcarouselSliderHome1').css('top',(0+(scrolled*0.5))+'px');
+			$('#parallaxcarouselSliderHome2').css('top',(0+(scrolled*0.5))+'px');
+			$('#parallaxcarouselSliderHome3').css('top',(0+(scrolled*0.5))+'px');
 			$('#parallax-fondoProyectos').css('top',(0-(scrolled*0.3))+'px');
 		}
 
