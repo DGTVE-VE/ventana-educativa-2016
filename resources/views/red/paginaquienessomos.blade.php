@@ -11,10 +11,11 @@ Quienes Somos
         <div class="row" style="margin-top: 5%;" >        
             <div class="row fondo_Obscuro">
                 <div class="col-md-12 text-center text-uppercase">
-                    <p class="pleca">Quiénes Somos</p>
+                    <p class="pleca">¿Quiénes Somos?</p>
                 </div>
             </div>
             <div class="row txtQuienesSomos">
+                </br>
                 <div class="col-md-1"></div>
                 <div class="col-md-5">
                     <h4>¿QUIÉNES SOMOS?</h4>
