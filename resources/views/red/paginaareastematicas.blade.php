@@ -25,7 +25,7 @@ Publicaciones
                         <p style="text-align: justify;">Proponer modelos educativos acordes con los problemas y planteamientos teóricos, tales como: la teoría de las organizaciones para conformar comunidades educativas virtuales, representación y creación de conocimiento distribuido, aprendizaje colaborativo, redes de repositorios de conocimiento y de objetos de aprendizaje.</p>
                         <p>Se identifican las siguientes líneas:</p>
                         <ul>
-                            <li class="list-unstyled"><span class="glyphicon glyphicon-globe"></span>Redes sociales para la educación. </li>
+                            <li class="list-unstyled"><span class="fa fa-circle-o"></span>Redes sociales para la educación. </li>
                             <li class="list-unstyled"><span class="glyphicon glyphicon-globe"></span>El docente como generador del cambio: la educación digital y los retos en la región mesoamericana.</li>-->
                         </ul>
                     </ul>

@@ -34,66 +34,70 @@ Publicaciones
             </ul><!--/.nav-tabs.sidebar-tabs -->
             <!-- Tab panes -->
             <div class="tab-content "> <!-- Tab content 1 -->
-                <div class="tab-pane active" id="todos">
+                <div class="tab-pane active " id="todos" >
                     <div class="col-md-12"> <!-- div de imagenes y texto -->
-                        <div class="row">
+                        <div class="row"> <!-- Row 1 de imagenes -->
                             </br>
-                            <div class="col-md-4"> <!--imagen1 -->
+                          <div class="col-md-4"> <!--imagen1 -->
                                 <div class="portfolio-item ih-item square colored effect8 animated bounceIn">
-                                    <a href="#">
-                                        <img class="img-responsive" src="http://placehold.it/350x200" alt="">
-                                        <div class="mask1"></div>
+                                    <a href="publicacionesRed/mexico/cienciastecnologiasculturas.pdf"  target="_blank">
+                                        <img class="img-responsive" src="publicacionesRed/mexico/imagenesthumbnails/mexico01.jpg" alt="">
+<!--                                        <div class="mask1"></div>
                                         <div class="mask2"></div>
                                         <div class="info ">
                                             <h3>Título</h3>
                                             <p>Descripción</p>
-                                        </div>
+                                        </div>-->
+                                        
                                     </a>
                                 </div>                                    
                             </div> <!-- cierra imagen1 -->                              
                             
                             <div class="col-md-4 "><!--imagen2 -->
                                 <div class="portfolio-item ih-item square colored effect8 animated bounceIn">
-                                    <a href="#">
-                                        <img class="img-responsive" src="http://placehold.it/350x200" alt="">
-                                        <div class="mask1"></div>
+                                    <a href="publicacionesRed/mexico/forointerregionalinvestigacionsobreeva.pdf" target="_blank">
+                                        <img class="img-responsive" src="publicacionesRed/mexico/imagenesthumbnails/mexico02.jpg" alt="">
+<!--                                        <div class="mask1"></div>
                                         <div class="mask2"></div>
                                         <div class="info ">
                                             <h3>Título</h3>
                                             <p>Descripción</p>
-                                        </div>
+                                        </div>-->
                                     </a>
                                 </div>
                             </div> <!-- cierra imagen2 -->     
                             
                             <div class="col-md-4"> <!--imagen3 -->
-                                <div class=" portfolio-item ih-item square colored effect8 animated bounceIn">
-                                    <a href="#">
-                                        <img class="img-responsive" src="http://placehold.it/350x200" alt="">
-                                        <div class="mask1"></div>
+                                <div class=" portfolio-item ih-item square colored effect8 animated bounceIn" >
+                                    <a href="publicacionesRed/mexico/modelostecnoeducativos.pdf" target="_blank">
+                                        <img class="img-responsive" src="publicacionesRed/mexico/imagenesthumbnails/mexico03.jpg" alt="">
+<!--                                        <div class="mask1"></div>
                                         <div class="mask2"></div>
                                         <div class="info ">
                                             <h3>Título</h3>
                                             <p>Descripción</p>
-                                        </div>
+                                        </div>-->
                                     </a>
                                 </div>
                             </div> <!-- cierra imagen3 -->     
-                        </div>
-                        <div class="row">
-                            <div class="col-md-3">  <!-- table 1-->      
+                        </div> <!-- Cierra Row 1 de imagenes  -->
+                        
+                        <div class="row"> <!-- Row 1 de texto-->
+                          <div class="col-md-3">  <!-- table 1-->      
                                 <table class="table ">
                                     <tr>
-                                        <td class="">Título</td>
+                                        <td class="">Título: Ciencias, tecnologías y culturas</td>
                                     </tr>
                                     <tr>
-                                        <td>Autor:</td>
+                                        <td>Autor: Silvia Fridman, Rubén Edel Navarro</td>
                                     </tr>
                                     <tr>
-                                        <td>Categoría:</td>
+                                        <td>Categoría: Educación y nuevas tecnologías</td>
                                     </tr>
                                     <tr>
-                                        <td><a href="#">Material de descarga</a></td>
+                                        <td><a href="publicacionesRed/mexico/cienciastecnologiasculturas.pdf" download="cienciasTecnologiasCulturas.pdf">Material de descarga</a></td>
+                                        <!--<a href="imagenes/red/publicaciones/mexico/cienciastecnologiasculturas.pdf">Material de descarga</a></td>-->
+
                                     </tr>
                                 </table>
                             </div> <!-- cierra tab1 -->     
@@ -101,16 +105,16 @@ Publicaciones
                             <div class="col-md-3">  <!-- table 2-->      
                                 <table class="table ">
                                     <tr>
-                                        <td class="">Título</td>
+                                        <td class="">Título: Foro Interregional de investigación sobre EVA</td>
                                     </tr>
                                     <tr>
-                                        <td>Autor:</td>
+                                        <td><p style="text-align: justify;">Autor: Rubén Edel Navarro, Manuel Juarez Pacheco, Yadira Navarro Rangel, María Soledad Ramírez Montoya </p></td>
                                     </tr>
                                     <tr>
-                                        <td>Categoría:</td>
+                                        <td>Categoría: Redes Academicas y Tecnologicas</td>
                                     </tr>
                                     <tr>
-                                        <td><a href="#">Material de descarga</a></td>
+                                        <td><a href="publicacionesRed/mexico/forointerregionalinvestigacionsobreeva.pdf" download="foroInterregionalInvestigacionSobreEVA.pdf">Material de descarga</a></td>
                                     </tr>
                                 </table>
                             </div> <!-- cierra tab1 -->     
@@ -118,80 +122,69 @@ Publicaciones
                             <div class="col-md-3">  <!-- table 3-->      
                                 <table class="table ">
                                     <tr>
-                                        <td class="">Título</td>
+                                        <td class="">Título: Los modelos TecnoEducativos</td>
                                     </tr>
                                     <tr>
-                                        <td>Autor:</td>
+                                        <td>Autor: Ismael Esquivel Gómez</td>
                                     </tr>
                                     <tr>
-                                        <td>Categoría:</td>
+                                        <td>Categoría: Aprendizaje del siglo XXI</td>
                                     </tr>
                                     <tr>
-                                        <td><a href="#">Material de descarga</a></td>
+                                        <td><a href="publicacionesRed/mexico/modelostecnoeducativos.pdf" download="modelosTecnoEducativos.pdf">Material de descarga</a></td>
                                     </tr>
                                 </table>
                             </div> <!-- cierra tab1 -->     
                             <div class="col-md-1"></div><!-- cierra table 3 -->
-                        </div>
+                    </div> <!-- Cierra Row 1 de texto -->
 
                         <!--Row 2 -->  
-                        <div class="row">
-                            <div class="col-md-4"> <!--imagen1 -->
+                        <div class="row"> <!-- Row 2 de imagenes -->
+                          <div class="col-md-4"> <!--imagen1 -->
                                 <div class="portfolio-item ih-item square colored effect8 animated bounceIn">
-                                    <a href="#">
-                                        <img class="img-responsive" src="http://placehold.it/350x200" alt="">
-                                        <div class="mask1"></div>
+                                    <a href="publicacionesRed/mexico/territorioseducación.pdf" target="_blank">
+                                        <img class="img-responsive" src="publicacionesRed/mexico/imagenesthumbnails/mexico04.jpg" alt="">
+<!--                                        <div class="mask1"></div>
                                         <div class="mask2"></div>
                                         <div class="info ">
                                             <h3>Título</h3>
                                             <p>Descripción</p>
-                                        </div>
+                                        </div>-->
                                     </a>
                                 </div>                                    
                             </div> <!-- cierra imagen1 -->                              
 
                             <div class="col-md-4 "><!--imagen2 -->
                                 <div class="portfolio-item ih-item square colored effect8 animated bounceIn">
-                                    <a href="#">
-                                        <img class="img-responsive" src="http://placehold.it/350x200" alt="">
-                                        <div class="mask1"></div>
+                                    <a href="publicacionesRed/mexico/usabilidadpedagogicatic.pdf" target="_blank">
+                                        <img class="img-responsive" src="publicacionesRed/mexico/imagenesthumbnails/mexico05.jpg" alt="">
+<!--                                        <div class="mask1"></div>
                                         <div class="mask2"></div>
                                         <div class="info ">
                                             <h3>Título</h3>
                                             <p>Descripción</p>
-                                        </div>
+                                        </div>-->
                                     </a>
                                 </div>
-                            </div> <!-- cierra imagen2 -->     
-
-                            <div class="col-md-4"> <!--imagen3 -->
-                                <div class=" portfolio-item ih-item square colored effect8 animated bounceIn">
-                                    <a href="#">
-                                        <img class="img-responsive" src="http://placehold.it/350x200" alt="">
-                                        <div class="mask1"></div>
-                                        <div class="mask2"></div>
-                                        <div class="info ">
-                                            <h3>Título</h3>
-                                            <p>Descripción</p>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div> <!-- cierra imagen3 -->     
-                        </div>
-                        <div class="row">
+                            </div> <!-- cierra imagen2 -->            
+                        </div> <!-- Cierra Row 2 de imagenes -->
+                        
+                        
+                        
+                        <div class="row"> <!-- Row 2 de texto -->
                             <div class="col-md-3">  <!-- table 1-->      
                                 <table class="table ">
                                     <tr>
-                                        <td class="">Título</td>
+                                        <td class="">Título: Territorios de la Educación</td>
                                     </tr>
                                     <tr>
-                                        <td>Autor:</td>
+                                        <td><p style="text-align: justify;">Autor: Genaro Aguirre Aguilar, Rubén Edel Navarro</p></td>
                                     </tr>
                                     <tr>
-                                        <td>Categoría:</td>
+                                        <td>Categoría: Ambientes Educativos</td>
                                     </tr>
                                     <tr>
-                                        <td><a href="#">Material de descarga</a></td>
+                                        <td><a href="publicacionesRed/mexico/territorioseducación.pdf" download="territoriosEducación.pdf">Material de descarga</a></td>
                                     </tr>
                                 </table>
                             </div> <!-- cierra tab1 -->     
@@ -199,38 +192,21 @@ Publicaciones
                             <div class="col-md-3">  <!-- table 2-->      
                                 <table class="table ">
                                     <tr>
-                                        <td class="">Título</td>
+                                        <td class="">Título: Usabilidad Pedagogica de las TIC</td>
                                     </tr>
                                     <tr>
-                                        <td>Autor:</td>
+                                        <td><p style="text-align: justify;">Autor: Brenda Luz Colorado Aguilar,Rubén Edel Navarro</p></td>
                                     </tr>
                                     <tr>
-                                        <td>Categoría:</td>
+                                        <td>Categoría: Tecnologías de la Información y Comunicación</td>
                                     </tr>
                                     <tr>
-                                        <td><a href="#">Material de descarga</a></td>
+                                        <td><a href="publicacionesRed/mexico/usabilidadpedagogicatic.pdf" download="usabilidadPedagogicaTIC.pdf">Material de descarga</a></td>
                                     </tr>
                                 </table>
                             </div> <!-- cierra tab1 -->     
                             <div class="col-md-1"></div> <!-- cierra table 2 -->
-                            <div class="col-md-3">  <!-- table 3-->      
-                                <table class="table ">
-                                    <tr>
-                                        <td class="">Título</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Autor:</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Categoría:</td>
-                                    </tr>
-                                    <tr>
-                                        <td><a href="#">Material de descarga</a></td>
-                                    </tr>
-                                </table>
-                            </div> <!-- cierra tab1 -->     
-                            <div class="col-md-1"></div>
-                        </div> <!-- cierra Row  -->
+                        </div> <!-- cierra Row 2 de texto  -->
 
                         <hr>
                     </div>
@@ -291,13 +267,13 @@ Publicaciones
                             <div class="col-md-3">  <!-- table 1-->      
                                 <table class="table ">
                                     <tr>
-                                        <td class="">Título: Ciencias, tecnologías y culturas</td>
+                                        <td class=""><p style="text-align: justify;">Título: Ciencias, tecnologías y culturas</p></td>
                                     </tr>
                                     <tr>
-                                        <td>Autor: Silvia Fridman, Rubén Edel Navarro</td>
+                                        <td><p style="text-align: justify;">Autor: Silvia Fridman, Rubén Edel Navarro</p></td>
                                     </tr>
                                     <tr>
-                                        <td>Categoría: Educación y nuevas tecnologías</td>
+                                        <td><p style="text-align: justify;">Categoría: Educación y nuevas tecnologías</p></td>
                                     </tr>
                                     <tr>
                                         <td><a href="publicacionesRed/mexico/cienciastecnologiasculturas.pdf" download="cienciasTecnologiasCulturas.pdf">Material de descarga</a></td>
@@ -310,13 +286,13 @@ Publicaciones
                             <div class="col-md-3">  <!-- table 2-->      
                                 <table class="table ">
                                     <tr>
-                                        <td class="">Título: Foro Interregional de investigación sobre EVA</td>
+                                        <td class=""><p style="text-align: justify;">Título: Foro Interregional de investigación sobre EVA</p></td>
                                     </tr>
                                     <tr>
                                         <td><p style="text-align: justify;">Autor: Rubén Edel Navarro, Manuel Juarez Pacheco, Yadira Navarro Rangel, María Soledad Ramírez Montoya </p></td>
                                     </tr>
                                     <tr>
-                                        <td>Categoría: Redes Academicas y Tecnologicas</td>
+                                        <td><p style="text-align: justify;">Categoría: Redes Academicas y Tecnologicas</p></td>
                                     </tr>
                                     <tr>
                                         <td><a href="publicacionesRed/mexico/forointerregionalinvestigacionsobreeva.pdf" download="foroInterregionalInvestigacionSobreEVA.pdf">Material de descarga</a></td>
@@ -373,31 +349,18 @@ Publicaciones
                                 </div>
                             </div> <!-- cierra imagen2 -->     
 
-                            <!--                            <div class="col-md-4"> imagen3 
-                                                            <div class=" portfolio-item ih-item square colored effect8 animated bounceIn">
-                                                                <a href="#">
-                                                                    <img class="img-responsive" src="http://placehold.it/350x200" alt="">
-                                                                    <div class="mask1"></div>
-                                                                    <div class="mask2"></div>
-                                                                    <div class="info ">
-                                                                        <h3>Título</h3>
-                                                                        <p>Descripción</p>
-                                                                    </div>
-                                                                </a>
-                                                            </div>
-                                                        </div>  cierra imagen3      -->
                         </div>
                         <div class="row">
                             <div class="col-md-3">  <!-- table 1-->      
                                 <table class="table ">
                                     <tr>
-                                        <td class="">Título: Territorios de la Educación</td>
+                                        <td class=""><p style="text-align: justify;">Título: Territorios de la Educación</p></td>
                                     </tr>
                                     <tr>
                                         <td><p style="text-align: justify;">Autor: Genaro Aguirre Aguilar, Rubén Edel Navarro</p></td>
                                     </tr>
                                     <tr>
-                                        <td>Categoría: Ambientes Educativos</td>
+                                        <td><p style="text-align: justify;">Categoría: Ambientes Educativos</p></td>
                                     </tr>
                                     <tr>
                                         <td><a href="publicacionesRed/mexico/territorioseducación.pdf" download="territoriosEducación.pdf">Material de descarga</a></td>
@@ -408,13 +371,13 @@ Publicaciones
                             <div class="col-md-3">  <!-- table 2-->      
                                 <table class="table ">
                                     <tr>
-                                        <td class="">Título: Usabilidad Pedagogica de las TIC</td>
+                                        <td class=""><p style="text-align: justify;">Título: Usabilidad Pedagogica de las TIC</p></td>
                                     </tr>
                                     <tr>
                                         <td><p style="text-align: justify;">Autor: Brenda Luz Colorado Aguilar,Rubén Edel Navarro</p></td>
                                     </tr>
                                     <tr>
-                                        <td>Categoría: Tecnologías de la Información y Comunicación</td>
+                                        <td><p style="text-align: justify;">Categoría: Tecnologías de la Información y Comunicación</p></td>
                                     </tr>
                                     <tr>
                                         <td><a href="publicacionesRed/mexico/usabilidadpedagogicatic.pdf" download="usabilidadPedagogicaTIC.pdf">Material de descarga</a></td>
@@ -422,24 +385,7 @@ Publicaciones
                                 </table>
                             </div> <!-- cierra tab1 -->     
                             <div class="col-md-1"></div> <!-- cierra table 2 -->
-                            <!--                            <div class="col-md-3">   table 3      
-                                                            <table class="table ">
-                                                                <tr>
-                                                                    <td class="">Título: Usabilidad Pedagogica de las TIC</td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td>Autor: Brenda Luz Colorado Aguilar,Rubén Edel Navarro</td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td>Categoría: Tecnologías de la Información y Comunicación</td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td><a href="publicacionesRed/mexico/usabilidadpedagogicatic.pdf" download="usabilidadPedagogicaTIC.pdf">Material de descarga</a></td>
-                                                                </tr>
-                                                            </table>
-                                                        </div>  cierra tab1      
-                                                        <div class="col-md-1"></div>-->
-                        </div> <!-- cierra Row  -->
+                           </div> <!-- cierra Row  -->
 
                         <hr>
                     </div>
@@ -486,13 +432,13 @@ Publicaciones
                             <div class="col-md-3">  <!-- table 1-->      
                                 <table class="table ">
                                     <tr>
-                                        <td class="">Título: Contemos Juntos_Programa Nacional de Matemática</td>
+                                        <td class=""><p style="text-align: justify;">Título: Contemos Juntos_Programa Nacional de Matemática</p></td>
                                     </tr>
                                     <tr>
-                                        <td>Autor: Ministerio de Educación Guatemala</td>
+                                        <td><p style="text-align: justify;">Autor: Ministerio de Educación Guatemala</p></td>
                                     </tr>
                                     <tr>
-                                        <td>Categoría: Matemática</td>
+                                        <td><p style="text-align: justify;">Categoría: Matemática</p></td>
                                     </tr>
                                     <tr>
                                         <td><a href="publicacionesRed/guatemala/contemosjuntosprogramanacionalmatematica.pdf" download="contemosJuntosProgramanacioNacionalMatematica.pdf">Material de descarga</a></td>
@@ -504,13 +450,13 @@ Publicaciones
                             <div class="col-md-3">  <!-- table 2-->      
                                 <table class="table ">
                                     <tr>
-                                        <td class="">Título: Enseñanza - aprendizaje de la lectura</td>
+                                        <td class=""><p style="text-align: justify;">Título: Enseñanza - aprendizaje de la lectura</p></td>
                                     </tr>
                                     <tr>
-                                        <td>Autor: Ministerio de Educación Guatemala</td>
+                                        <td><p style="text-align: justify;">Autor: Ministerio de Educación Guatemala</p></td>
                                     </tr>
                                     <tr>
-                                        <td>Categoría: Español</td>
+                                        <td><p style="text-align: justify;">Categoría: Español</p></td>
                                     </tr>
                                     <tr>
                                         <td><a href="publicacionesRed/guatemala/enseñanzaaprendizajelectura.pdf" download="enseñanzaAprendizajeLectura.pdf">Material de descarga</a></td>
@@ -547,33 +493,18 @@ Publicaciones
                                 </div>                                    
                             </div> <!-- cierra imagen1 -->                              
 
-                            <!--                            <div class="col-md-4 ">imagen2 
-                                                            <div class="portfolio-item ih-item square colored effect8 animated bounceIn">
-                                                                <a href="#">
-                                                                    <img class="img-responsive" src="http://placehold.it/350x200" alt="">
-                                                                    <div class="mask1"></div>
-                                                                    <div class="mask2"></div>
-                                                                    <div class="info ">
-                                                                        <h3>Título</h3>
-                                                                        <p>Descripción</p>
-                                                                    </div>
-                                                                </a>
-                                                            </div>
-                                                        </div>  cierra imagen2      -->
-
-
-                        </div>
+                         </div>
                         <div class="row">
                             <div class="col-md-3">  <!-- table 1-->      
                                 <table class="table ">
                                     <tr>
-                                        <td class="">Título: Enseñanza - Aprendizaje de la Lectura</td>
+                                        <td class=""><p style="text-align: justify;">Título: Enseñanza - Aprendizaje de la Lectura</p></td>
                                     </tr>
                                     <tr>
-                                        <td>Autor: Ministerio de Educación El Salvador</td>
+                                        <td><p style="text-align: justify;">Autor: Ministerio de Educación El Salvador</p></td>
                                     </tr>
                                     <tr>
-                                        <td>Categoría: Español</td>
+                                        <td><p style="text-align: justify;">Categoría: Español</p></td>
                                     </tr>
                                     <tr>
                                         <td><a href="publicacionesRed/elSalvador/enseñanzaaprendizajelectura.pdf" download="enseñanzaAprendizajeLectura.pdf">Material de descarga</a></td>
@@ -582,24 +513,6 @@ Publicaciones
                                 </table>
                             </div> <!-- cierra tab1 -->     
                             <div class="col-md-1"></div>
-                            <!--                            <div class="col-md-3">   table 2      
-                                                            <table class="table ">
-                                                                <tr>
-                                                                    <td class="">Título: Enseñanza - aprendizaje de la lectura</td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td>Autor: Ministerio de Educación Guatemala</td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td>Categoría: Español</td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td><a href="publicacionesRed/guatemala/enseñanzaaprendizajelectura.pdf" download="enseñanzaAprendizajeLectura.pdf">Material de descarga</a></td>
-                                                                </tr>
-                                                            </table>
-                                                        </div>  cierra tab1      
-                                                        <div class="col-md-1"></div>  cierra table 2 -->
-
                         </div>
 
                         <hr>
@@ -648,13 +561,13 @@ Publicaciones
                             <div class="col-md-3">  <!-- table 1-->      
                                 <table class="table ">
                                     <tr>
-                                        <td class="">Título: Expresión y comprensión lectora</td>
+                                        <td class=""><p style="text-align: justify;">Título: Expresión y comprensión lectora</p></td>
                                     </tr>
                                     <tr>
-                                        <td>Autor: Gladis O. Galindo</td>
+                                        <td><p style="text-align: justify;">Autor: Gladis O. Galindo</p></td>
                                     </tr>
                                     <tr>
-                                        <td>Categoría: Español</td>
+                                        <td><p style="text-align: justify;">Categoría: Español</p></td>
                                     </tr>
                                     <tr>
                                         <td><a href="publicacionesRed/Honduras/expresioncomprensionlectora.pdf" download="expresionComprensionLectora.pdf">Material de descarga</a></td>
@@ -666,13 +579,13 @@ Publicaciones
                             <div class="col-md-3">  <!-- table 2-->      
                                 <table class="table ">
                                     <tr>
-                                        <td class="">Título: Enseñanza - aprendizaje de la matemática</td>
+                                        <td class=""><p style="text-align: justify;">Título: Enseñanza - aprendizaje de la matemática</p></td>
                                     </tr>
                                     <tr>
-                                        <td>Autor: Honduras</td>
+                                        <td><p style="text-align: justify;">Autor: Honduras</p></td>
                                     </tr>
                                     <tr>
-                                        <td>Categoría: Matemáticas</td>
+                                        <td><p style="text-align: justify;">Categoría: Matemáticas</p></td>
                                     </tr>
                                     <tr>
                                         <td><a href="publicacionesRed/Honduras/enseñanzaaprendizajematematicas.pdf" download="enseñanzaAprendizajeMatemáticas.pdf">Material de descarga</a></td>
@@ -715,34 +628,19 @@ Publicaciones
                                     </a>
                                 </div>                                    
                             </div> <!-- cierra imagen1 -->                              
-
-                            <!--                            <div class="col-md-4 ">imagen2 
-                                                            <div class="portfolio-item ih-item square colored effect8 animated bounceIn">
-                                                                <a href="#">
-                                                                    <img class="img-responsive" src="http://placehold.it/350x200" alt="">
-                                                                    <div class="mask1"></div>
-                                                                    <div class="mask2"></div>
-                                                                    <div class="info ">
-                                                                        <h3>Título</h3>
-                                                                        <p>Descripción</p>
-                                                                    </div>
-                                                                </a>
-                                                            </div>
-                                                        </div>  cierra imagen2      -->
-
-
+                           
                         </div>
                         <div class="row">
                             <div class="col-md-3">  <!-- table 1-->      
                                 <table class="table ">
                                     <tr>
-                                        <td class="">Título: Español y matemática</td>
+                                        <td class=""><p style="text-align: justify;">Título: Español y matemática</p></td>
                                     </tr>
                                     <tr>
-                                        <td>Autor: Gibzka de vernier, Mariela M. de Quezada</td>
+                                        <td><p style="text-align: justify;">Autor: Gibzka de vernier, Mariela M. de Quezada</p></td>
                                     </tr>
                                     <tr>
-                                        <td>Categoría: Educación Básica</td>
+                                        <td><p style="text-align: justify;">Categoría: Educación Básica</p></td>
                                     </tr>
                                     <tr>
                                         <td><a href="publicacionesRed/panama/españolmatematica.pdf" download="españolMatematica.pdf">Material de descarga</a></td>
@@ -751,23 +649,6 @@ Publicaciones
                                 </table>
                             </div> <!-- cierra tab1 -->     
                             <div class="col-md-1"></div>
-                            <!--                            <div class="col-md-3">   table 2      
-                                                            <table class="table ">
-                                                                <tr>
-                                                                    <td class="">Título: Enseñanza - aprendizaje de la lectura</td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td>Autor: Ministerio de Educación Guatemala</td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td>Categoría: Español</td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td><a href="publicacionesRed/guatemala/enseñanzaaprendizajelectura.pdf" download="enseñanzaAprendizajeLectura.pdf">Material de descarga</a></td>
-                                                                </tr>
-                                                            </table>
-                                                        </div>  cierra tab1      
-                                                        <div class="col-md-1"></div>  cierra table 2 -->
 
                         </div>
 
@@ -777,8 +658,8 @@ Publicaciones
                 <!----------- ****** Termina Opción Panamá ****** ----->    
 
 
-                <!----------- ******  Opción Rep. Dominicana ****** ----->  
-                <!----------- ****** Termina Opción Panamá ****** ----->    
+                <!----------- ******  Opción Colombia ****** ----->  
+                <!----------- ****** Termina Opción Colombia ****** ----->    
 
 
                 <!----------- ******  Opción Rep. Dominicana ****** ----->    
@@ -789,8 +670,8 @@ Publicaciones
                             </br>
                             <div class="col-md-4"> <!--imagen1 -->
                                 <div class="portfolio-item ih-item square colored effect8 animated bounceIn">
-                                    <a href="#">
-                                        <img class="img-responsive" src="http://placehold.it/350x200" alt="">
+                                    <a href="publicacionesRed/repDominicana/compresionlectora.pdf" target="_blank">
+                                        <img class="img-responsive" src="publicacionesRed/repDominicana/imagenesthumbnails/repdominicana01.jpg" alt="">
 <!--                                        <div class="mask1"></div>
                                         <div class="mask2"></div>
                                         <div class="info ">
@@ -803,8 +684,8 @@ Publicaciones
                             
                             <div class="col-md-4 "><!--imagen2 -->
                                 <div class="portfolio-item ih-item square colored effect8 animated bounceIn">
-                                    <a href="#">
-                                        <img class="img-responsive" src="http://placehold.it/350x200" alt="">
+                                    <a href="publicacionesRed/repDominicana/enseñanzaaprendizajematematica.pdf" target="_blank">
+                                        <img class="img-responsive" src="publicacionesRed/repDominicana/imagenesthumbnails/repdominicana02.jpg" alt="">
 <!--                                        <div class="mask1"></div>
                                         <div class="mask2"></div>
                                         <div class="info ">
@@ -821,13 +702,13 @@ Publicaciones
                             <div class="col-md-3">  <!-- table 1-->      
                                 <table class="table ">
                                     <tr>
-                                        <td class="">Título: Comprensión lectora</td>
+                                        <td class=""><p style="text-align: justify;">Título: Comprensión lectora</p></td>
                                     </tr>
                                     <tr>
-                                        <td>Autor: Ma. Eunice I. Vicioso</td>
+                                        <td><p style="text-align: justify;">Autor: Ma. Eunice I. Vicioso</p></td>
                                     </tr>
                                     <tr>
-                                        <td>Categoría: Español</td>
+                                        <td><p style="text-align: justify;">Categoría: Español</p></td>
                                     </tr>
                                     <tr>
                                         <td><a href="publicacionesRed/repDominicana/compresionlectora.pdf" download="compresionLectora.pdf">Material de descarga</a></td>
@@ -860,39 +741,7 @@ Publicaciones
                     </div>
                 </div><!-- div tab pane Rep. Dominicana -->
                 <!----------- ****** Termina Opción Rep. dominicana ****** ----->    
-
-
-
-
-                <!--                            <div class="tab-pane" id="tab-6">
-                                                <p>Nicaragua</p>
-                                            </div>/.tab-pane de tab6
-                
-                                            <div class="tab-pane" id="tab-7">
-                                                <p>Costa Rica</p>
-                                            </div>/.tab-pane de tab7
-                
-                                            <div class="tab-pane" id="tab-8">
-                                                <p>Panamá</p>
-                                            </div>/.tab-pane de tab9
-                
-                                            <div class="tab-pane" id="tab-9">
-                                                <p>Colombia</p>
-                                            </div>/.tab-pane de tab9
-                
-                                            <div class="tab-pane" id="tab-10">
-                                                <p>Rep. Dom.</p>
-                                            </div>/.tab-pane de tab10-->
-
-
-
-
-
-
-
-
-
-
+  
             </div> <!-- cierra div tab content 1 -->
             <div class="col-md-1"></div>
         </div> 
