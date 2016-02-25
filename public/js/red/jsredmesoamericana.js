@@ -236,6 +236,7 @@
             });
         })
 		
+		/*  -------------------------------------    Activar efecto parallax en scroll   -----------------------------------------------*/
 		function parallaxScroll(){
 			var scrolled = $(window).scrollTop();
 			$('#parallax-fondoProyectos').css('top',(0-(scrolled*0.3))+'px');

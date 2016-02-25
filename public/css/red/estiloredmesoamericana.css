@@ -136,7 +136,6 @@
     height:450px;
 }
 .separa_Linea{
-    /*font-family: 'Merriweather', serif;*/
     color:gray;
     line-height:2;
 }
@@ -161,26 +160,6 @@
 }
 
 /*---------------------------------------------	Proyectos	------------------------------------------*/
-.marcoMorado1{
-    /*width:376px;
-    height:371px;
-    background-image:url(../../imagenes/red/proyectos/cuadro-morado-primer-encuentro.jpg);
-	background-repeat:no-repeat;*/
-	background-color:transparent;
-}
-.marcoMorado2{
-    /*width:376px;
-    height:371px; 
-    background-image:url(../../imagenes/red/proyectos/cuadro-morado-ventana.jpg);
-	background-repeat:no-repeat;*/
-	background-color:transparent;
-}
-.marcoMorado3{
-    /*width:376px; 
-    height:371px; 
-    background-image:url(../../imagenes/red/proyectos/cuadro-morado-ecosistema.jpg);*/
-	background-color:transparent;
-}
 .imgAbajo10{
     padding-top:10px;
 }
@@ -191,6 +170,19 @@
 
 .centraCont{
     margin:0 auto;
+}
+#parallax-fondoProyectos{
+	position:fixed;
+	top:100;
+	left:50%;
+	margin-left:-800px;
+	z-index:-1;
+}
+#fondo-proyectos{
+	position:absolute;
+	top:300px;
+	left:0px;
+	height:1000px;
 }
 /*------------------------------------------------	Pie		----------------------------------------------------------*/
 .imgTecho{
@@ -237,17 +229,4 @@
     color:white;
     font-family: 'Oxygen', sans-serif;
     font-size:14px;
-}
-#parallax-fondoProyectos{
-	position:fixed;
-	top:100;
-	left:50%;
-	margin-left:-800px;
-	z-index:-1;
-}
-#fondo-proyectos{
-	position:absolute;
-	top:300px;
-	left:0px;
-	height:1000px;
 }
