@@ -5,6 +5,7 @@ Quienes Somos
 @section('menu')
 @include('red.seccionheader')
 @endsection
+@section('cuerpo')
 <div class="backpaquienes"> 
     <div class="row" style="margin-top: 5%;" >        
         <div class="row fondo_Obscuro">
@@ -76,5 +77,6 @@ Quienes Somos
     </br></br>
 </div>
 @include('red.seccionpie')
+@stop
 
 

@@ -3,9 +3,9 @@ Publicaciones
 @stop
 @extends('home')
 @section('menu')
-<!--<a name="redesconocimiento"></a>-->
 @include('red.seccionheader')
 @endsection
+@section('cuerpo')
 <div class="backpareatema"> 
     <div class="row" style="margin-top: 5%;" >        
         <div class="row fondo_Obscuro">
@@ -106,3 +106,4 @@ Publicaciones
     </br>
 </div>
 @include('red.seccionpie')
+@stop
