@@ -2,7 +2,7 @@
     <div class="navbar-header">
         <div class="navbar-header">
             <a class="navbar-brand" href="indexRed">
-                <img class="img-responsive subeHorizontal" style="width:200px; height:64px;" src="imagenes/red/LogoRed/RedMesoamericana.png" alt="Logo Red Mesoamericana">
+                <img class="img-responsive subeHorizontal" src="imagenes/red/LogoRed/logoredmesoamericana.png" alt="Logo Red Mesoamericana">
             </a>
         </div>
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".js-navbar-collapse">

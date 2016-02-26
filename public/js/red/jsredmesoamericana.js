@@ -65,7 +65,7 @@
 							document.getElementById("imgAmbientesEducativos").src ="imagenes/red/areasTematicas/ambientesEducativosOver.png";
 							break;
 						case 'Gestioncalidad':
-							document.getElementById("imgGestioncalidad").src ="imagenes/red/areasTematicas/GestioncalidadOver.png";
+							document.getElementById("imgGestioncalidad").src ="imagenes/red/areasTematicas/GestionCalidadOver.png";
 							break;
 						case 'Multimedia':
 							document.getElementById("imgMultimedia").src ="imagenes/red/areasTematicas/MultimediaOver.png";
