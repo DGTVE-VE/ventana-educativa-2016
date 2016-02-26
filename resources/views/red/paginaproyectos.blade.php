@@ -91,7 +91,7 @@ Proyectos
                         versions of Lorem Ipsum.
 
                     </p>
-                    <p class="sub-text">October 24 2014 - <a href="#">Continuar leyendo</a></p>
+                    <!--<p class="sub-text">October 24 2014 - <a href="#">Continuar leyendo</a></p>-->
                 </div>
 
             </div>

@@ -128,9 +128,9 @@
     <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
         <h3>Redes Sociales</h3>
         <img class="img-responsive img-rounded" style="width:150px; height:48px;" src="imagenes/red/Logotipos/facebook.png" alt="..."/>
-        <div>Contenido Facebook.</div>
+        <!--<div>Contenido Facebook.</div>-->
         <div><div class="fb-page" data-href="https://www.facebook.com/Red-Mesoamericana-de-Investigaci&#xf3;n-y-Tecnolog&#xed;a-Educat&#xed;va-930360840393101/" data-tabs="timeline" data-width="350" data-height="230" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"></div></div>      
-        <div>Contenido Twitter.</div>
+        <!--<div>Contenido Twitter.</div>-->
         <div><a class="twitter-timeline" href="https://twitter.com/Red_Mesoamerica" data-widget-id="702586618901757952">Tweets por el @Red_Mesoamerica.</a>
             <script>!function(d, s, id){var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location)?'http':'https'; if (!d.getElementById(id)){js = d.createElement(s); js.id = id; js.src = p + "://platform.twitter.com/widgets.js"; fjs.parentNode.insertBefore(js, fjs); }}(document, "script", "twitter-wjs");</script></div>
     </div>
