@@ -243,7 +243,8 @@
 			$('#parallaxcarouselSliderHome1').css('top',(0+(scrolled*0.5))+'px');
 			$('#parallaxcarouselSliderHome2').css('top',(0+(scrolled*0.5))+'px');
 			$('#parallaxcarouselSliderHome3').css('top',(0+(scrolled*0.5))+'px');
-			$('#parallax-fondoProyectos').css('top',(0-(scrolled*0.3))+'px');
+			$('#parallax-fondoProyectos').css('top',(0-(scrolled*0.55))+'px');
+			$('#parallax-fondoIntegrantes').css('top',(0-(scrolled*0.55))+'px');
 		}
 
 		/*
