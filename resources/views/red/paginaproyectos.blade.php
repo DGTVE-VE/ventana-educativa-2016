@@ -27,17 +27,17 @@ Proyectos
 
                         <div class="active item" data-slide-number="0">
                             <!--<img src="imagenes/red/proyectos/imagentextoproyectos1.png">-->
-                            <img src="http://placehold.it/1000x400">
+                            <img src="imagenes/red/proyectos/bannersProyectos/1erencuentro.jpg">
                         </div>
                         <div class="item" data-slide-number="1">
                             <!--<img src="imagenes/red/proyectos/imagentextoproyectos2.png">-->
-                            <img src="http://placehold.it/1000x400">
+                            <img src="imagenes/red/proyectos/bannersProyectos/ventanaeducativa.jpg">
                         </div>
 
-                        <div class="item" data-slide-number="2">
-                            <!--<img src="imagenes/red/proyectos/imagentextoproyectos3.png">-->
+<!--                        <div class="item" data-slide-number="2">
+                            <img src="imagenes/red/proyectos/imagentextoproyectos3.png">
                             <img src="http://placehold.it/1000x400">
-                        </div>
+                        </div>-->
                     </div><!-- Carousel nav -->
 
                 </div>
@@ -47,6 +47,8 @@ Proyectos
             </div>
             <div class="col-md-1"></div>
         </div>
+        
+        <!-- Slide-content de Textos -->
         <div class="row">
             <div class="col-md-2"></div>
             <div class="col-md-8" id="carousel-text"></div>
@@ -83,7 +85,7 @@ Proyectos
                    <!--<p class="sub-text">October 24 2014 - <a href="#">Continuar leyendo</a></p>-->
                 </div>
 
-                <div id="slide-content-2">
+<!--                <div id="slide-content-2">
                     <h2>Tema 3</h2>
                     <a name="tema1"></a>
                     <p style="text-align: justify;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
@@ -96,13 +98,13 @@ Proyectos
                         versions of Lorem Ipsum.
 
                     </p>
-                   <!--<p class="sub-text">October 24 2014 - <a href="#">Continuar leyendo</a></p>-->
-                </div>
+                   <p class="sub-text">October 24 2014 - <a href="#">Continuar leyendo</a></p>
+                </div>-->
 
             </div>
             <div class="col-md-2"></div>
         </div> 
- 
+        <!-- Slide-content de Textos -->
         </br></br>
     </div>
 </div>
