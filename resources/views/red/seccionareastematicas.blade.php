@@ -15,7 +15,7 @@
                     <td class="imgTabla"><a href="areastematicas#redesconocimiento">
                         <img href="#" id="imgRedesConocimiento" alt="imagen fija" src="imagenes/red/areasTematicas/RedesConocimiento.png" onmouseenter="imgResalta('RedesConocimiento')" onmouseleave="imgNormal('RedesConocimiento')"/></td>
                     </a>
-                    <td class="txtTabla"><h3><strong>Redes de <br> conocimiento y <br> aprendizaje</strong></h3>
+                    <td class="txtTabla"><h3><strong>Redes de <br> Conocimiento y <br> Aprendizaje</strong></h3>
                     </td>
                 </tr>
             </table>
@@ -28,7 +28,7 @@
                     <td class="imgTabla"><a href="areastematicas#modelos">
                         <img href="#" id="imgAmbientesEducativos" alt="imagen fija" src="imagenes/red/areasTematicas/ambientesEducativos.png" onmouseenter="imgResalta('AmbientesEducativos')" onmouseleave="imgNormal('AmbientesEducativos')"/></td>
                     </a>
-                    <td class="txtTabla"><h3><strong>Modelos y <br> ambientes <br> educativos</strong></h3>
+                    <td class="txtTabla"><h3><strong>Modelos y <br> Ambientes <br> Educativos</strong></h3>
                     </td>
                 </tr>
             </table>
@@ -41,7 +41,7 @@
                     <td class="imgTabla"><a href="areastematicas#gestion">
                         <img id="imgGestioncalidad" alt="imagen fija" src="imagenes/red/areasTematicas/Gestioncalidad.png" onmouseenter="imgResalta('Gestioncalidad')" onmouseleave="imgNormal('Gestioncalidad')"/></td>
                     </a>
-                    <td class="txtTabla"><h3><strong>Gestion y calidad <br> de programas <br> educativos</strong></h3>
+                    <td class="txtTabla"><h3><strong>Gestion y Calidad <br> de Programas <br> Educativos</strong></h3>
                     </td>
                 </tr>
             </table>
@@ -60,7 +60,7 @@
                     <td class="imgTabla"><a href="areastematicas#multimedia">
                         <img href="#" id="imgMultimedia" alt="imagen fija" src="imagenes/red/areasTematicas/Multimedia.png" onmouseenter="imgResalta('Multimedia')" onmouseleave="imgNormal('Multimedia')"/></td>
                     </a>
-                    <td class="txtTabla"><h3><strong>Multimedia y <br> desarrollo educativo</strong></h3>
+                    <td class="txtTabla"><h3><strong>Multimedia y <br> Desarrollo Educativo</strong></h3>
                     </td>
                 </tr>
             </table>
@@ -73,7 +73,7 @@
                     <td class="imgTabla"><a href="areastematicas#politica">
                         <img id="imgPoliticaEducativa" alt="imagen fija" src="imagenes/red/areasTematicas/PoliticaEducativa.png" onmouseenter="imgResalta('PoliticaEducativa')" onmouseleave="imgNormal('PoliticaEducativa')"/></td>
                     </a>
-                    <td class="txtTabla"><h3><strong>Politica Educativa y <br> cambio social</strong></h3>
+                    <td class="txtTabla"><h3><strong>Politica Educativa y <br> Cambio Social</strong></h3>
                     </td>
                 </tr>
             </table>
