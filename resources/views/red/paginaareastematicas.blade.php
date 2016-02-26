@@ -24,7 +24,7 @@ Publicaciones
 
                         <td>
                             <ul class="txtAreasTematicas">
-                                <li class="list-group-item-heading list-unstyled"><h3>Redes de conocimiento y aprendizaje</h3></li>
+                                <li class="list-group-item-heading list-unstyled"><h3>Redes de Conocimiento y Aprendizaje</h3></li>
                                 <p style="text-align: justify;">Proponer modelos educativos acordes con los problemas y planteamientos teóricos, tales como: la teoría de las organizaciones para conformar comunidades educativas virtuales, representación y creación de conocimiento distribuido, aprendizaje colaborativo, redes de repositorios de conocimiento y de objetos de aprendizaje.</p>
                                 <p>Se identifican las siguientes líneas:</p>
                                 <a name="modelos"></a>
@@ -39,7 +39,7 @@ Publicaciones
                         <td></br><img src="imagenes/red/areasTematicas/modelosyambienteseducativos-blanco.png"></td>
                         <td>
                             <ul class="txtAreasTematicas">                            
-                                <li class="ist-group-item-heading list-unstyled"><h3>Modelos y ambientes educativos</h3></li>
+                                <li class="ist-group-item-heading list-unstyled"><h3>Modelos y Ambientes Educativos</h3></li>
                                 <p style="text-align: justify;">Esta área abarca las fases de investigación, fundamentación, desarrollo y evaluación de los modelos y ambientes educativos, basados en tecnologías de información y comunicación.</p>
                                 <p>Se identifican las siguientes líneas:</p>
                                 <a name="gestion"></a>  
@@ -55,7 +55,7 @@ Publicaciones
                         <td></br><img src="imagenes/red/areasTematicas/gestionycalidaddeprogramaseducativos-blanco.png"></td>
                         <td>
                             <ul  class="txtAreasTematicas">
-                                <li class="ist-group-item-heading list-unstyled"><h3>Gestión y calidad de programas educativos</h3></li>
+                                <li class="ist-group-item-heading list-unstyled"><h3>Gestión y Calidad de Programas Educativos</h3></li>
                                 <p style="text-align: justify;">Sus propósitos son el estudio y comparación de modelos de gestión institucional para el uso de las Tecnologías de la Información y Comunicación (TIC) en el sistema, así como para generar criterios e indicadores basados en la recuperación y documentación de buenas prácticas internacionales y regionales. De igual manera, identificar las problemáticas de los procesos de gestión y aseguramiento de la calidad.</p>
                                 <p>Se identifican las siguientes líneas:</p>
                                 <a name="multimedia"></a>  
@@ -89,7 +89,7 @@ Publicaciones
                         <td></br><img src="imagenes/red/areasTematicas/politicaeducativaycambiosocial-blanco.png"></td>
                         <td>
                             <ul  class="txtAreasTematicas">
-                                <li class="ist-group-item-heading list-unstyled"><h3>Política Educativa y cambio social</h3></li>
+                                <li class="ist-group-item-heading list-unstyled"><h3>Política Educativa y Cambio Social</h3></li>
                                 <p style="text-align: justify;">Analizar la convergencia y articulación de las políticas públicas orientadas a la inserción de Tecnologías de la Información y Comunicación (TIC) en la educación básica, en los ámbitos internacional, nacional e institucional.</p>
                                 <p>En esta línea se incluyen proyectos específicos relacionados con:</p>
                                 <ul>
