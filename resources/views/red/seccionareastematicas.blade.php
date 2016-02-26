@@ -39,7 +39,7 @@
             <table>
                 <tr>
                     <td class="imgTabla"><a href="areastematicas#gestion">
-                        <img id="imgGestioncalidad" alt="imagen fija" src="imagenes/red/areasTematicas/Gestioncalidad.png" onmouseenter="imgResalta('Gestioncalidad')" onmouseleave="imgNormal('Gestioncalidad')"/></td>
+                        <img id="imgGestioncalidad" alt="imagen fija" src="imagenes/red/areasTematicas/GestionCalidad.png" onmouseenter="imgResalta('Gestioncalidad')" onmouseleave="imgNormal('Gestioncalidad')"/></td>
                     </a>
                     <td class="txtTabla"><h3><strong>Gestion y Calidad <br> de Programas <br> Educativos</strong></h3>
                     </td>
