@@ -7,7 +7,7 @@ Proyectos
 @endsection
 @section('cuerpo')
 
-<div class="row" style="margin-top: 5%;" >        
+<div class="row" style="margin-top: 5%;">        
     <div class="row fondo_Obscuro">
         <div class="col-md-12 text-center text-uppercase">
             <p class="pleca">Proyectos</p>
@@ -15,7 +15,7 @@ Proyectos
     </div>
     <link rel="stylesheet" href="css/red/estiloRed3.css">
     <!-- Carousel -->
-    <div class="container ">
+    <div class="container">
 
         <div class="row">
             <div class="col-md-1"></div>
@@ -24,7 +24,6 @@ Proyectos
 
                     <!-- Carousel items -->
                     <div class="carousel-inner">
-
                         <div class="active item" data-slide-number="0">
                             <!--<img src="imagenes/red/proyectos/imagentextoproyectos1.png">-->
                             <img src="imagenes/red/proyectos/bannersProyectos/1erencuentro.jpg">
@@ -34,10 +33,10 @@ Proyectos
                             <img src="imagenes/red/proyectos/bannersProyectos/ventanaeducativa.jpg">
                         </div>
 
-<!--                        <div class="item" data-slide-number="2">
-                            <img src="imagenes/red/proyectos/imagentextoproyectos3.png">
-                            <img src="http://placehold.it/1000x400">
-                        </div>-->
+                        <div class="item" data-slide-number="2">
+                            <img src="imagenes/red/proyectos/bannersProyectos/pedagogiadigital.jpg">
+                            <!--<img src="http://placehold.it/1000x400">-->
+                        </div>
                     </div><!-- Carousel nav -->
 
                 </div>
@@ -85,7 +84,7 @@ Proyectos
                    <!--<p class="sub-text">October 24 2014 - <a href="#">Continuar leyendo</a></p>-->
                 </div>
 
-<!--                <div id="slide-content-2">
+                <div id="slide-content-2">
                     <h2>Tema 3</h2>
                     <a name="tema1"></a>
                     <p style="text-align: justify;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
@@ -99,7 +98,7 @@ Proyectos
 
                     </p>
                    <p class="sub-text">October 24 2014 - <a href="#">Continuar leyendo</a></p>
-                </div>-->
+                </div>
 
             </div>
             <div class="col-md-2"></div>
