@@ -26,11 +26,6 @@
             <img class="img-responsive img-rounded imgAbajo10" src="imagenes/red/proyectos/proyectos-02.jpg" alt="http://placehold.it/250x250"/>
         </a>
     </div>
-    <!--div class="col-sm-12 col-md-2 col-md-offset-5">
-            <center>
-                    <a href="#"> <img class="img-responsive img-rounded imgAbajo30" src="imagenes/red/proyectos/boton-ver-todos.png" alt="..."/></a>
-            </center>
-    </div-->
     <div class="col-md-12">
         <div class="division">
             <!--	***********************************************		-->

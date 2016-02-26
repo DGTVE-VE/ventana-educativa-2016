@@ -13,7 +13,6 @@ Publicaciones
             <div class="row fondo_Obscuro">
                 <div class="col-md-12 text-center text-uppercase">
                     <p class="pleca"> Áreas Temáticas</p>
-
                 </div>
             </div>
             <div class="col-md-2"></div>
@@ -21,7 +20,6 @@ Publicaciones
                 <table class="table table-responsive" style="margin-top: 5%;">
                     <tr>
                         <td></br><img src="imagenes/red/areasTematicas/redesdeconocimientoyaprendizaje-blanco.png"></td> 
-
                         <td>
                             <ul class="txtAreasTematicas">
                                 <li class="list-group-item-heading list-unstyled"><h3>Redes de Conocimiento y Aprendizaje</h3></li>
@@ -102,7 +100,6 @@ Publicaciones
                                     <li class=" list-unstyled"><span class="fa fa-puzzle-piece"></span> Análisis de costo beneficios y oportunidades de acceso para la educación mediada por tecnología.</li>
                                 </ul>
                             </ul> 
-
                         </td>
                     </tr>
                 </table>
