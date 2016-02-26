@@ -2,11 +2,11 @@
     <div class="division">
     </div>
     <div class="col-sm-6 col-md-2 col-md-offset-1">
-        <img class="img-responsive img-rounded" src="imagenes/red/LogoRed/logoNegativo.png" width="160" height="160" alt="..."/>
+        <img class="img-responsive" src="imagenes/red/LogoRed/logoNegativo.png" width="155" height="155" alt="..."/>
         <br>
-        <img id="imgIconoTwetter" class="img-responsive img-rounded" style="float:left; width:40px; height:40px;" src="imagenes/red/footer/icono-twetter-A.png" onmouseenter="imgResalta('twetter')" onmouseleave="imgNormal('twetter')"/>
-        <img id="imgIconoFacebook" class="img-responsive img-rounded" style="float:left; width:40px; height:40px;" src="imagenes/red/footer/icono-face-A.png" onmouseenter="imgResalta('facebook')" onmouseleave="imgNormal('facebook')"/>
-        <img id="imgIconoYoutube" class="img-responsive img-rounded" style="float:left; width:40px; height:40px;" src="imagenes/red/footer/icono-youtube-A.png" onmouseenter="imgResalta('youtube')" onmouseleave="imgNormal('youtube')"/>
+        <img id="imgIconoTwetter" class="img-responsive img-rounded" style="float:left; width:50px; height:50px;" src="imagenes/red/footer/icono-twetter-A.png" onmouseenter="imgResalta('twetter')" onmouseleave="imgNormal('twetter')"/>
+        <img id="imgIconoFacebook" class="img-responsive img-rounded" style="float:left; width:50px; height:50px;" src="imagenes/red/footer/icono-face-A.png" onmouseenter="imgResalta('facebook')" onmouseleave="imgNormal('facebook')"/>
+        <img id="imgIconoYoutube" class="img-responsive img-rounded" style="float:left; width:50px; height:50px;" src="imagenes/red/footer/icono-youtube-A.png" onmouseenter="imgResalta('youtube')" onmouseleave="imgNormal('youtube')"/>
         <br>
     </div>
     <div class="col-xs-12 col-sm-6 col-md-2">
