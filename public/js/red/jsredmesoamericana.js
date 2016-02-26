@@ -143,7 +143,7 @@
 							document.getElementById("imgAmbientesEducativos").src ="imagenes/red/areasTematicas/ambientesEducativos.png";
 							break;
 						case 'Gestioncalidad':
-							document.getElementById("imgGestioncalidad").src ="imagenes/red/areasTematicas/Gestioncalidad.png";
+							document.getElementById("imgGestioncalidad").src ="imagenes/red/areasTematicas/GestionCalidad.png";
 							break;
 						case 'Multimedia':
 							document.getElementById("imgMultimedia").src ="imagenes/red/areasTematicas/Multimedia.png";
