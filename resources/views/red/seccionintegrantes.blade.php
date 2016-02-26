@@ -1,30 +1,30 @@
 <div class="row"> <!--style="background-image: url('imagenes/red/integrantes/gradiente.jpg');"-->
-	<div id="parallax-fondoIntegrantes">
-		<img id="fondo-integrantes" src="imagenes/red/integrantes/gradiente.jpg"/>
-	</div>
-		<div class="col-md-12 fondo_Obscuro">
-			<div class="col-md-12 text-center text-uppercase">
-				<p class="pleca"> Nuestros integrantes </p>
-			</div>
-		</div>
-		<div class="col-md-6">
-			<img name="imagenMapa_n"  src="imagenes/red/integrantes/gris.png"  border="5px" id="imagenMapa" class="mapaCentroAmerica img-responsive" usemap="#mapa_n" alt="" />
-			<map name="mapa_n" id="mapa">         
-				<area alt="Colombia" onmouseover="entraPais(1)" onmouseout="saleMouseInte();" href="#" data-keyboard="true" data-toggle="modal" shape="poly" coords="330,279,347,262,347,226,378,187,394,230,433,238,431,274,414,279,414,319,366,292"/>
-				<area alt="Costa Rica" onmouseover="entraPais(2)" onmouseout="saleMouseInte();" href="#modalCostaRica" shape="poly" data-toggle="modal" coords="265,192,290,182,308,208,307,223,291,216"/>
-				<area alt="Dominicana" onmouseover="entraPais(3)" onmouseout="saleMouseInte();" href="#modalRepublicaDominicana" shape="poly" data-toggle="modal" coords="379,130,389,111,414,114,433,130"/>
-				<area alt="El Salvador" onmouseover="entraPais(4)" onmouseout="saleMouseInte();" href="#" shape="poly" data-toggle="modal" coords="237,173,243,155,254,183"/>
-				<area alt="Guatemala" onmouseover="entraPais(5)" onmouseout="saleMouseInte();" href="#modalGuatemala" shape="poly" data-toggle="modal" coords="214,162,240,128,249,143,237,173"/>
-				<area alt="Honduras" onmouseover="entraPais(6)" onmouseout="saleMouseInte();" href="#" shape="poly" data-toggle="modal" coords="242,156,247,142,290,146,253,183"/>
-				<area alt="México" onmouseover="entraPais(7)" onmouseout="saleMouseInte();" href="#modalMexico" data-toggle="modal" shape="poly" coords="90,98,162,90,188,123,225,111,228,93,262,100,216,162,159,145,127,131,97,121"/>
-				<area alt="Nicaragua" onmouseover="entraPais(8)" onmouseout="saleMouseInte();" href="#" shape="poly" data-toggle="modal" coords="254,182,292,145,291,181,267,194"/>
-				<area alt="Panama" onmouseover="entraPais(9)" onmouseout="saleMouseInte();" href="#modalPanama" shape="poly" data-toggle="modal" coords="309,223,311,207,346,201,348,212,360,212,348,228,326,231"/>
-			</map>
-		</div>
-		<div class="col-md-6 text-center" style="margin-top: 10%;">
-			<h2 id="nombrepais"></h2>
-			<h4 class="">Selecciona un país para ver más...</h4>
-		</div>
+    <div id="parallax-fondoIntegrantes">
+        <img id="fondo-integrantes" src="imagenes/red/integrantes/gradiente.jpg"/>
+    </div>
+    <div class="col-md-12 fondo_Obscuro">
+        <div class="col-md-12 text-center text-uppercase">
+            <p class="pleca"> Nuestros integrantes </p>
+        </div>
+    </div>
+    <div class="col-md-6">
+        <img name="imagenMapa_n"  src="imagenes/red/integrantes/gris.png"  border="5px" id="imagenMapa" class="mapaCentroAmerica img-responsive" usemap="#mapa_n" alt="" />
+        <map name="mapa_n" id="mapa">         
+            <area alt="Colombia" onmouseover="entraPais(1)" onmouseout="saleMouseInte();" href="#" data-keyboard="true" data-toggle="modal" shape="poly" coords="330,279,347,262,347,226,378,187,394,230,433,238,431,274,414,279,414,319,366,292"/>
+            <area alt="Costa Rica" onmouseover="entraPais(2)" onmouseout="saleMouseInte();" href="#modalCostaRica" shape="poly" data-toggle="modal" coords="265,192,290,182,308,208,307,223,291,216"/>
+            <area alt="Dominicana" onmouseover="entraPais(3)" onmouseout="saleMouseInte();" href="#modalRepublicaDominicana" shape="poly" data-toggle="modal" coords="379,130,389,111,414,114,433,130"/>
+            <area alt="El Salvador" onmouseover="entraPais(4)" onmouseout="saleMouseInte();" href="#" shape="poly" data-toggle="modal" coords="237,173,243,155,254,183"/>
+            <area alt="Guatemala" onmouseover="entraPais(5)" onmouseout="saleMouseInte();" href="#modalGuatemala" shape="poly" data-toggle="modal" coords="214,162,240,128,249,143,237,173"/>
+            <area alt="Honduras" onmouseover="entraPais(6)" onmouseout="saleMouseInte();" href="#" shape="poly" data-toggle="modal" coords="242,156,247,142,290,146,253,183"/>
+            <area alt="México" onmouseover="entraPais(7)" onmouseout="saleMouseInte();" href="#modalMexico" data-toggle="modal" shape="poly" coords="90,98,162,90,188,123,225,111,228,93,262,100,216,162,159,145,127,131,97,121"/>
+            <area alt="Nicaragua" onmouseover="entraPais(8)" onmouseout="saleMouseInte();" href="#" shape="poly" data-toggle="modal" coords="254,182,292,145,291,181,267,194"/>
+            <area alt="Panama" onmouseover="entraPais(9)" onmouseout="saleMouseInte();" href="#modalPanama" shape="poly" data-toggle="modal" coords="309,223,311,207,346,201,348,212,360,212,348,228,326,231"/>
+        </map>
+    </div>
+    <div class="col-md-6 text-center" style="margin-top: 10%;">
+        <h2 id="nombrepais"></h2>
+        <h4 class="">Selecciona un país para ver más...</h4>
+    </div>
 </div>
 <!-- Modal México-->
 <div id="modalMexico" class="modal modal-fullscreen fade centraCont" tabindex="-1" role="dialog">
@@ -106,11 +106,19 @@
                             </div>
                             <div class="col-md-12 carousel-caption carousel-captionInt">
                                 <h3>Ana Gilma Guevara Bello</h3>
-                                <h4>Ministerio de Educación Pública de Costa Rica<br>Dirección Regional de Educación Zona Norte Norte<br>Asesora Regional de Español<br></h4>
-                                <p class="text-justify">Licenciada en Ciencias de la Educación con énfasis en Docencia para ejercer la 
-                                    Enseñanza del Castellano y la Literatura. Labora en el área educativa desde hace 13 
-                                    años. Ha sido Profesora de Español en diferentes centros educativos. Actualmente, es 
-                                    Asesora Regional de Español en la Dirección Regional de Educación Zona Norte.</p>
+                                <h4>Asesora Regional de Español</br>
+                                    Ministerio de Educación Pública de Costa Rica </h4>
+                                <!--<br>Dirección Regional de Educación Zona Norte Norte<br>Asesora Regional de Español<br></h4>-->
+                                <div class="Row">
+                                    <div class="col-md-1"</div>
+                                    <div class="col-md-10">
+                                        <p class="text-justify">Licenciada en Ciencias de la Educación con énfasis en Docencia para ejercer la 
+                                            Enseñanza del Castellano y la Literatura. Labora en el área educativa desde hace 13 
+                                            años. Ha sido Profesora de Español en diferentes centros educativos. Actualmente, es 
+                                            Asesora Regional de Español en la Dirección Regional de Educación Zona Norte.</p>
+                                    </div> 
+                                    <div class="col-md-1"</div>
+                                </div>
                             </div>
                         </div>
                         <!--Colaborador 2-->
