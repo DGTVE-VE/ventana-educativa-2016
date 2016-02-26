@@ -281,8 +281,8 @@ Publicaciones
                             </br>
                             <div class="col-md-4"> <!--imagen1 -->
                                 <div class="portfolio-item ih-item square colored effect8 animated bounceIn">
-                                    <a href="publicacionesRed/elSalvador/enseñanzaaprendizajelectura.pdf" target="_blank">
-                                        <img class="img-responsive" src="publicacionesRed/elSalvador/imagenesthumbnails/elsalvador01.jpg" alt="">
+                                    <a href="publicacionesRed/elsalvador/enseñanzaaprendizajelectura.pdf" target="_blank">
+                                        <img class="img-responsive" src="publicacionesRed/elsalvador/imagenesthumbnails/elsalvador01.jpg" alt="">
                                         <!--                                        <div class="mask1"></div>
                                                                                 <div class="mask2"></div>
                                                                                 <div class="info ">
@@ -307,7 +307,7 @@ Publicaciones
                                         <td><p style="text-align: justify;">Categoría: Español</p></td>
                                     </tr>
                                     <tr>
-                                        <td><a href="publicacionesRed/elSalvador/enseñanzaaprendizajelectura.pdf" download="enseñanzaAprendizajeLectura.pdf">Material de descarga</a></td>
+                                        <td><a href="publicacionesRed/elsalvador/enseñanzaaprendizajelectura.pdf" download="enseñanzaAprendizajeLectura.pdf">Material de descarga</a></td>
 
                                     </tr>
                                 </table>
@@ -321,8 +321,8 @@ Publicaciones
                             </br>
                             <div class="col-md-4"> <!--imagen1 -->
                                 <div class="portfolio-item ih-item square colored effect8 animated bounceIn">
-                                    <a href="publicacionesRed/Honduras/expresioncomprensionlectora.pdf" target="_blank">
-                                        <img class="img-responsive" src="publicacionesRed/Honduras/imagenesthumbnails/honduras01.jpg" alt="">
+                                    <a href="publicacionesRed/honduras/expresioncomprensionlectora.pdf" target="_blank">
+                                        <img class="img-responsive" src="publicacionesRed/honduras/imagenesthumbnails/honduras01.jpg" alt="">
                                         <!--                                        <div class="mask1"></div>
                                                                                 <div class="mask2"></div>
                                                                                 <div class="info ">
@@ -335,8 +335,8 @@ Publicaciones
 
                             <div class="col-md-4 "><!--imagen2 -->
                                 <div class="portfolio-item ih-item square colored effect8 animated bounceIn">
-                                    <a href="publicacionesRed/Honduras/enseñanzaaprendizajematematicas.pdf" target="_blank">
-                                        <img class="img-responsive" src="publicacionesRed/Honduras/imagenesthumbnails/honduras02.jpg" alt="">
+                                    <a href="publicacionesRed/honduras/enseñanzaaprendizajematematicas.pdf" target="_blank">
+                                        <img class="img-responsive" src="publicacionesRed/honduras/imagenesthumbnails/honduras02.jpg" alt="">
                                         <!--                                        <div class="mask1"></div>
                                                                                 <div class="mask2"></div>
                                                                                 <div class="info ">
@@ -362,7 +362,7 @@ Publicaciones
                                         <td><p style="text-align: justify;">Categoría: Español</p></td>
                                     </tr>
                                     <tr>
-                                        <td><a href="publicacionesRed/Honduras/expresioncomprensionlectora.pdf" download="expresionComprensionLectora.pdf">Material de descarga</a></td>
+                                        <td><a href="publicacionesRed/honduras/expresioncomprensionlectora.pdf" download="expresionComprensionLectora.pdf">Material de descarga</a></td>
 
                                     </tr>
                                 </table>
@@ -380,7 +380,7 @@ Publicaciones
                                         <td><p style="text-align: justify;">Categoría: Matemáticas</p></td>
                                     </tr>
                                     <tr>
-                                        <td><a href="publicacionesRed/Honduras/enseñanzaaprendizajematematicas.pdf" download="enseñanzaAprendizajeMatemáticas.pdf">Material de descarga</a></td>
+                                        <td><a href="publicacionesRed/honduras/enseñanzaaprendizajematematicas.pdf" download="enseñanzaAprendizajeMatemáticas.pdf">Material de descarga</a></td>
                                     </tr>
                                 </table>
                             </div> <!-- cierra tab1 -->     
@@ -450,8 +450,8 @@ Publicaciones
                             </br>
                             <div class="col-md-4"> <!--imagen1 -->
                                 <div class="portfolio-item ih-item square colored effect8 animated bounceIn">
-                                    <a href="publicacionesRed/repDominicana/compresionlectora.pdf" target="_blank">
-                                        <img class="img-responsive" src="publicacionesRed/repDominicana/imagenesthumbnails/repdominicana01.jpg" alt="">
+                                    <a href="publicacionesRed/repdominicana/compresionlectora.pdf" target="_blank">
+                                        <img class="img-responsive" src="publicacionesRed/repdominicana/imagenesthumbnails/repdominicana01.jpg" alt="">
                                         <!--                                        <div class="mask1"></div>
                                                                                 <div class="mask2"></div>
                                                                                 <div class="info ">
@@ -464,8 +464,8 @@ Publicaciones
 
                             <div class="col-md-4 "><!--imagen2 -->
                                 <div class="portfolio-item ih-item square colored effect8 animated bounceIn">
-                                    <a href="publicacionesRed/repDominicana/enseñanzaaprendizajematematica.pdf" target="_blank">
-                                        <img class="img-responsive" src="publicacionesRed/repDominicana/imagenesthumbnails/repdominicana02.jpg" alt="">
+                                    <a href="publicacionesRed/repdominicana/enseñanzaaprendizajematematica.pdf" target="_blank">
+                                        <img class="img-responsive" src="publicacionesRed/repdominicana/imagenesthumbnails/repdominicana02.jpg" alt="">
                                         <!--                                        <div class="mask1"></div>
                                                                                 <div class="mask2"></div>
                                                                                 <div class="info ">
@@ -491,7 +491,7 @@ Publicaciones
                                         <td><p style="text-align: justify;">Categoría: Español</p></td>
                                     </tr>
                                     <tr>
-                                        <td><a href="publicacionesRed/repDominicana/compresionlectora.pdf" download="compresionLectora.pdf">Material de descarga</a></td>
+                                        <td><a href="publicacionesRed/repdominicana/compresionlectora.pdf" download="compresionLectora.pdf">Material de descarga</a></td>
 
                                     </tr>
                                 </table>
@@ -509,7 +509,7 @@ Publicaciones
                                         <td>Categoría: Matemática</td>
                                     </tr>
                                     <tr>
-                                        <td><a href="publicacionesRed/repDominicana/enseñanzaaprendizajematematica.pdf" download="enseñanzaAprendizajeMatemáticas.pdf">Material de descarga</a></td>
+                                        <td><a href="publicacionesRed/repdominicana/enseñanzaaprendizajematematica.pdf" download="enseñanzaAprendizajeMatemáticas.pdf">Material de descarga</a></td>
                                     </tr>
                                 </table>
                             </div> <!-- cierra tab1 -->     
@@ -778,8 +778,8 @@ Publicaciones
                             </br>
                             <div class="col-md-4"> <!--imagen1 -->
                                 <div class="portfolio-item ih-item square colored effect8 animated bounceIn">
-                                    <a href="publicacionesRed/elSalvador/enseñanzaaprendizajelectura.pdf" target="_blank">
-                                        <img class="img-responsive" src="publicacionesRed/elSalvador/imagenesthumbnails/elsalvador01.jpg" alt="">
+                                    <a href="publicacionesRed/elsalvador/enseñanzaaprendizajelectura.pdf" target="_blank">
+                                        <img class="img-responsive" src="publicacionesRed/elsalvador/imagenesthumbnails/elsalvador01.jpg" alt="">
                                         <!--                                        <div class="mask1"></div>
                                                                                 <div class="mask2"></div>
                                                                                 <div class="info ">
@@ -804,7 +804,7 @@ Publicaciones
                                         <td><p style="text-align: justify;">Categoría: Español</p></td>
                                     </tr>
                                     <tr>
-                                        <td><a href="publicacionesRed/elSalvador/enseñanzaaprendizajelectura.pdf" download="enseñanzaAprendizajeLectura.pdf">Material de descarga</a></td>
+                                        <td><a href="publicacionesRed/elsalvador/enseñanzaaprendizajelectura.pdf" download="enseñanzaAprendizajeLectura.pdf">Material de descarga</a></td>
 
                                     </tr>
                                 </table>
@@ -820,8 +820,8 @@ Publicaciones
                             </br>
                             <div class="col-md-4"> <!--imagen1 -->
                                 <div class="portfolio-item ih-item square colored effect8 animated bounceIn">
-                                    <a href="publicacionesRed/Honduras/expresioncomprensionlectora.pdf" target="_blank">
-                                        <img class="img-responsive" src="publicacionesRed/Honduras/imagenesthumbnails/honduras01.jpg" alt="">
+                                    <a href="publicacionesRed/honduras/expresioncomprensionlectora.pdf" target="_blank">
+                                        <img class="img-responsive" src="publicacionesRed/honduras/imagenesthumbnails/honduras01.jpg" alt="">
                                         <!--                                        <div class="mask1"></div>
                                                                                 <div class="mask2"></div>
                                                                                 <div class="info ">
@@ -834,8 +834,8 @@ Publicaciones
 
                             <div class="col-md-4 "><!--imagen2 -->
                                 <div class="portfolio-item ih-item square colored effect8 animated bounceIn">
-                                    <a href="publicacionesRed/Honduras/enseñanzaaprendizajematematicas.pdf" target="_blank">
-                                        <img class="img-responsive" src="publicacionesRed/Honduras/imagenesthumbnails/honduras02.jpg" alt="">
+                                    <a href="publicacionesRed/honduras/enseñanzaaprendizajematematicas.pdf" target="_blank">
+                                        <img class="img-responsive" src="publicacionesRed/honduras/imagenesthumbnails/honduras02.jpg" alt="">
                                         <!--                                        <div class="mask1"></div>
                                                                                 <div class="mask2"></div>
                                                                                 <div class="info ">
@@ -861,7 +861,7 @@ Publicaciones
                                         <td><p style="text-align: justify;">Categoría: Español</p></td>
                                     </tr>
                                     <tr>
-                                        <td><a href="publicacionesRed/Honduras/expresioncomprensionlectora.pdf" download="expresionComprensionLectora.pdf">Material de descarga</a></td>
+                                        <td><a href="publicacionesRed/honduras/expresioncomprensionlectora.pdf" download="expresionComprensionLectora.pdf">Material de descarga</a></td>
 
                                     </tr>
                                 </table>
@@ -879,7 +879,7 @@ Publicaciones
                                         <td><p style="text-align: justify;">Categoría: Matemáticas</p></td>
                                     </tr>
                                     <tr>
-                                        <td><a href="publicacionesRed/Honduras/enseñanzaaprendizajematematicas.pdf" download="enseñanzaAprendizajeMatemáticas.pdf">Material de descarga</a></td>
+                                        <td><a href="publicacionesRed/honduras/enseñanzaaprendizajematematicas.pdf" download="enseñanzaAprendizajeMatemáticas.pdf">Material de descarga</a></td>
                                     </tr>
                                 </table>
                             </div> <!-- cierra tab1 -->     
@@ -950,8 +950,8 @@ Publicaciones
                             </br>
                             <div class="col-md-4"> <!--imagen1 -->
                                 <div class="portfolio-item ih-item square colored effect8 animated bounceIn">
-                                    <a href="publicacionesRed/repDominicana/compresionlectora.pdf" target="_blank">
-                                        <img class="img-responsive" src="publicacionesRed/repDominicana/imagenesthumbnails/repdominicana01.jpg" alt="">
+                                    <a href="publicacionesRed/repdominicana/compresionlectora.pdf" target="_blank">
+                                        <img class="img-responsive" src="publicacionesRed/repdominicana/imagenesthumbnails/repdominicana01.jpg" alt="">
                                         <!--                                        <div class="mask1"></div>
                                                                                 <div class="mask2"></div>
                                                                                 <div class="info ">
@@ -964,8 +964,8 @@ Publicaciones
 
                             <div class="col-md-4 "><!--imagen2 -->
                                 <div class="portfolio-item ih-item square colored effect8 animated bounceIn">
-                                    <a href="publicacionesRed/repDominicana/enseñanzaaprendizajematematica.pdf" target="_blank">
-                                        <img class="img-responsive" src="publicacionesRed/repDominicana/imagenesthumbnails/repdominicana02.jpg" alt="">
+                                    <a href="publicacionesRed/repdominicana/enseñanzaaprendizajematematica.pdf" target="_blank">
+                                        <img class="img-responsive" src="publicacionesRed/repdominicana/imagenesthumbnails/repdominicana02.jpg" alt="">
                                         <!--                                        <div class="mask1"></div>
                                                                                 <div class="mask2"></div>
                                                                                 <div class="info ">
@@ -991,7 +991,7 @@ Publicaciones
                                         <td><p style="text-align: justify;">Categoría: Español</p></td>
                                     </tr>
                                     <tr>
-                                        <td><a href="publicacionesRed/repDominicana/compresionlectora.pdf" download="compresionLectora.pdf">Material de descarga</a></td>
+                                        <td><a href="publicacionesRed/repdominicana/compresionlectora.pdf" download="compresionLectora.pdf">Material de descarga</a></td>
 
                                     </tr>
                                 </table>
@@ -1009,7 +1009,7 @@ Publicaciones
                                         <td>Categoría: Matemática</td>
                                     </tr>
                                     <tr>
-                                        <td><a href="publicacionesRed/repDominicana/enseñanzaaprendizajematematica.pdf" download="enseñanzaAprendizajeMatemáticas.pdf">Material de descarga</a></td>
+                                        <td><a href="publicacionesRed/repdominicana/enseñanzaaprendizajematematica.pdf" download="enseñanzaAprendizajeMatemáticas.pdf">Material de descarga</a></td>
                                     </tr>
                                 </table>
                             </div> <!-- cierra tab1 -->     
