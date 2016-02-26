@@ -23,8 +23,6 @@
             <br>
             <img class="img-responsive text-center" src="imagenes/red/footer/tve.png"/>
         </div>
-        
-        
     </div>
     <div class="col-sm-12 col-md-3">
         <h4 class="text-uppercase">Contáctanos</h4>

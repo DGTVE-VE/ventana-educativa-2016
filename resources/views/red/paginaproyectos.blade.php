@@ -7,7 +7,7 @@ Proyectos
 @endsection
 @section('cuerpo')
 
-<div class="row" style="margin-top: 5%;" >        
+<div class="row" style="margin-top: 5%;">        
     <div class="row fondo_Obscuro">
         <div class="col-md-12 text-center text-uppercase">
             <p class="pleca">Proyectos</p>
@@ -15,8 +15,7 @@ Proyectos
     </div>
     <link rel="stylesheet" href="css/red/estiloRed3.css">
     <!-- Carousel -->
-    <div class="container ">
-
+    <div class="container">
         <div class="row">
             <div class="col-md-1"></div>
             <div class="col-md-10" id="carousel-bounding-box">
@@ -24,30 +23,24 @@ Proyectos
 
                     <!-- Carousel items -->
                     <div class="carousel-inner">
-
                         <div class="active item" data-slide-number="0">
-                            <!--<img src="imagenes/red/proyectos/imagentextoproyectos1.png">-->
                             <img src="imagenes/red/proyectos/bannersProyectos/1erencuentro.jpg">
                         </div>
                         <div class="item" data-slide-number="1">
-                            <!--<img src="imagenes/red/proyectos/imagentextoproyectos2.png">-->
                             <img src="imagenes/red/proyectos/bannersProyectos/ventanaeducativa.jpg">
                         </div>
 
-<!--                        <div class="item" data-slide-number="2">
-                            <img src="imagenes/red/proyectos/imagentextoproyectos3.png">
-                            <img src="http://placehold.it/1000x400">
-                        </div>-->
+                        <div class="item" data-slide-number="2">
+                            <img src="imagenes/red/proyectos/bannersProyectos/pedagogiadigital.jpg">
+                        </div>
                     </div><!-- Carousel nav -->
-
                 </div>
                 <a  data-slide="prev" href="#myCarouselProyecto" class="left carousel-control circuloFlecha" >‹</a>
                 <a data-slide="next" href="#myCarouselProyecto" class="right carousel-control circuloFlecha controlDerechoCarousel">›</a>
-
             </div>
             <div class="col-md-1"></div>
         </div>
-        
+
         <!-- Slide-content de Textos -->
         <div class="row">
             <div class="col-md-2"></div>
@@ -85,7 +78,7 @@ Proyectos
                    <!--<p class="sub-text">October 24 2014 - <a href="#">Continuar leyendo</a></p>-->
                 </div>
 
-<!--                <div id="slide-content-2">
+                <div id="slide-content-2">
                     <h2>Tema 3</h2>
                     <a name="tema1"></a>
                     <p style="text-align: justify;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
@@ -98,8 +91,8 @@ Proyectos
                         versions of Lorem Ipsum.
 
                     </p>
-                   <p class="sub-text">October 24 2014 - <a href="#">Continuar leyendo</a></p>
-                </div>-->
+                    <p class="sub-text">October 24 2014 - <a href="#">Continuar leyendo</a></p>
+                </div>
 
             </div>
             <div class="col-md-2"></div>
@@ -112,7 +105,7 @@ Proyectos
 <script>
 
     jQuery(document).ready(function ($) {
-		
+
         $('#myCarouselProyecto').carousel({
             interval: 5000
         });
@@ -133,27 +126,27 @@ Proyectos
             var id = $('.item.active').data('slide-number');
             $('#carousel-text').html($('#slide-content-' + id).html());
         });
-		
+
 //Obtener texto de dirección
-		var URL = document.location.hash;
-		var proyecto = URL.substr(URL.indexOf("#")+1,1);
-		
+        var URL = document.location.hash;
+        var proyecto = URL.substr(URL.indexOf("#") + 1, 1);
+
 //Elegir diapositiva de carousel dependiendo opción recibida
-		switch(proyecto){
-			case '0':
-				$('#myCarouselProyecto').carousel(0);
-				break;
-			case '1':
-				$('#myCarouselProyecto').carousel(1);
-				break;
-			case '2':
-				$('#myCarouselProyecto').carousel(2);
-				break;
-			default:
-				$('#myCarouselProyecto').carousel(0);
-				break;
-		}	
-    })	
+        switch (proyecto) {
+            case '0':
+                $('#myCarouselProyecto').carousel(0);
+                break;
+            case '1':
+                $('#myCarouselProyecto').carousel(1);
+                break;
+            case '2':
+                $('#myCarouselProyecto').carousel(2);
+                break;
+            default:
+                $('#myCarouselProyecto').carousel(0);
+                break;
+        }
+    })
 </script>
 
 @include('red.seccionpie')
