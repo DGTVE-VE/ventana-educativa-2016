@@ -37,9 +37,9 @@ and open the template in the editor.
         <script src="malihu-custom-scrollbar-plugin-master/usarCustomScrollbar.js"></script-->
 
         <!-- Estilo Header del Home-->
-        <link rel="stylesheet" href="{{ URL::asset('css/estiloBase.css') }}">
-        <!--Estilo Red Mesoamericana-->
-        <link rel="stylesheet" href="{{ URL::asset('css/estiloRed.css') }}">
+<!--        <link rel="stylesheet" href="{{ URL::asset('css/estiloBase.css') }}">
+        Estilo Red Mesoamericana
+        <link rel="stylesheet" href="{{ URL::asset('css/estiloRed.css') }}">-->
 
         <!--	-------------------------- Fuentes de google fonts ------------------------------------		-->
         <link href='https://fonts.googleapis.com/css?family=Oxygen:400,700,300' rel='stylesheet' type='text/css'>
