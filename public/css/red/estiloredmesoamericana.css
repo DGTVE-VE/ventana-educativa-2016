@@ -113,6 +113,7 @@
 	left:0;
 	margin-left:0px;
 	z-index:-1;
+	width:100%;
 }
 .imgSliderHome{
 	position:relative;
@@ -122,6 +123,7 @@
 	/*width:1600;
 	height:650;*/
 }
+
 /*------------------------------------			-------------------------------------------*/
 .pleca{
     position:relative;

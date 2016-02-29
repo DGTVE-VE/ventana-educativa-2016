@@ -1,5 +1,6 @@
 			<div class="row fondo_transparente"><!-- style="margin-top:80px;"-->
 				<div class="col-xs-12 col-sm-12 col-md-12" style="padding:0px;">
+					<img class="img-responsive" src="http://placehold.it/1600x720" alt="..." style="position: relative; top:0px; z-index:-4; float:left;"/>
 					<div id="carouselSliderHome" class="carousel slide" data-ride="carousel">
 					<!-- Indicators -->
 						<ol class="carousel-indicators">
@@ -10,8 +11,7 @@
 						</ol>
 
 						<!-- Wrapper for slides -->
-						<!--img class="img-responsive" src="imagenes/red/Banners/imgTransparente.jpg" alt="..." style="z-index:-2; float:left;"/-->
-						<div class="carousel-inner" role="listbox" style="margin:0px; height:720px;">
+						<div class="carousel-inner" role="listbox" style="margin:0px;"> <!-- height:720px;-->
 							<div class="item active">
 								<div id="parallaxcarouselSliderHome" class="parallaxcarouselSliderHome">
 									<img id="imgSliderHome" class="img-responsive imgSliderHome" src="imagenes/red/Banners/1.jpg" alt="..."/>
@@ -44,6 +44,7 @@
 							<span class="sr-only">Next</span>
 						  </a>
 					</div>
+
 				</div>
 			</div>
 			<div class="row fondo_Claro">
