@@ -135,7 +135,7 @@ class PagesController extends Controller {
         $contacto->asunto = filter_input(INPUT_POST, 'asunto');
         $contacto->mensaje = filter_input(INPUT_POST, 'mensaje');
         $contacto->save();
-        return view('red/paginacontacto');
+        return redirect('contacto');
     }
 
     public function testMail ($correo, $hash){

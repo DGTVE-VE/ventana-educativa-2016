@@ -70,7 +70,7 @@
             </ol-->
 
             <!-- Wrapper for slides -->
-            <div class="carousel-inner" role="listbox">
+            <div class="carousel-inner fondoBlacoSitiosinteres" role="listbox">
                 <div class="item active">
                     <div class="table-responsive">
                         <table>

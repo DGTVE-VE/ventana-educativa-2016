@@ -15,7 +15,7 @@ Quienes Somos
                 </div>
             </div>
             <div class="row txtQuienesSomos">
-                </br>
+                <br>
                 <div class="col-md-1"></div>
                 <div class="col-md-5">
                     <h4>¿QUIÉNES SOMOS?</h4>
@@ -33,14 +33,14 @@ Quienes Somos
                         renovación del papel docente, así como la identificación de mecanismos orientados a nuevas
                         metodologías y modelos pedagógicos, que permitan ofrecer una calidad educativa en la región
                         mesoamericana.
-                    </p></br>
+                    </p><br>
                     <h4>MISIÓN</h4>
                     <p style="text-align: justify;">
                         Integrar una red de expertos acádemicos e investigadores que analicen, propongan y compartan
                         aspectos revelantes para la generación de una educación básica de calidad e inclusiva en la región
                         mesoamericana, a través de investigación, expeiencias, modelos pedagógicos y nuevas metodologías 
                         que contribuyan a la mejora del nivel del desarrollo humano de la sociedad ante el escenario global.
-                    </p></br>
+                    </p><br>
                     <h4>VISIÓN</h4>
                     <p style="text-align: justify;">
                         Ser la primera Red Mesoamericana de Investigación y Tecnología Educativa reconocida a nivel
@@ -89,7 +89,7 @@ Quienes Somos
                 <div class="col-md-1"></div>
             </div> <!-- row de texto -->
         </div>
-        </br></br>
+        <br><br>
     </div>
 </div>
 @include('red.seccionpie')

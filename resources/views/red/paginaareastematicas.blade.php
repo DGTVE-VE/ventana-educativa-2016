@@ -106,7 +106,7 @@ Publicaciones
             </div>
             <div class="col-md-2"></div>
         </div>
-        </br>
+        <br>
     </div>
 </div>
 @include('red.seccionpie')

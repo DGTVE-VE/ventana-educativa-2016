@@ -23,7 +23,7 @@
                     <li class="col-md-12">
                         <ul>
                             <li class="dropdown-header text-center"><h3>INNTEDU 2016</h3></li>
-                            <div class="col-md-2"><img class="image-responsive thumbnail" src="imagenes/red/eventos/logoinntedu.jpg"></div>
+                            <div class="col-md-2"><img class="image-responsive" src="imagenes/red/eventos/logoinntedu.jpg"></div>
                             <div class="col-md-4">
                                 <h4 class="text-uppercase text-center">Descripción</h4>
                                 <p class="text-justify">El Primer Encuentro Internacional de Innovación y Tecnología para la Educación se realizará los próximos 11, 12 y 13 de octubre, en las instalaciones de Centro Nacional de la Artes de la Ciudad de México. </p>

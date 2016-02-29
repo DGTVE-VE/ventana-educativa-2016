@@ -73,7 +73,7 @@
                     <td class="imgTabla"><a href="areastematicas#politica">
                         <img id="imgPoliticaEducativa" alt="imagen fija" src="imagenes/red/areasTematicas/PoliticaEducativa.png" onmouseenter="imgResalta('PoliticaEducativa')" onmouseleave="imgNormal('PoliticaEducativa')"/></td>
                     </a>
-                    <td class="txtTabla"><h3><strong>Política educativa y <br> Cambio Social</strong></h3>
+                    <td class="txtTabla"><h3><strong>Política Educativa y <br> Cambio Social</strong></h3>
                     </td>
                 </tr>
             </table>

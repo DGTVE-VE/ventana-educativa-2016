@@ -32,7 +32,7 @@
         <!-- Modal content-->
         <div class="modal-content">
             <div class="modal-header">
-                <h3 class="modal-title modal-titleInt text-center">Colaborador de la Red Mesoamericana en México</h3>
+                <h3 class="modal-title modal-titleInt text-center">México</h3>
                 <button type="button" class="close closeInt" data-dismiss="modal" aria-hidden="true">X</button>
             </div>
             <div class="modal-body">
@@ -48,17 +48,24 @@
                                 <img  src="imagenes/red/integrantes/fotos/mexico/RubenEdel.png" alt="...">
                             </div>
                             <div class="col-md-12 carousel-caption carousel-captionInt">
-                                <h3>EDEL NAVARRO, RUBÉN</h3>
-                                <h4>Universidad Veracruzana. <br>Investigador de tiempo completo.</h4>
-                                <p class="text-justify">Investigador del Consejo Nacional de Ciencia y Tecnología (CONACyT) de México durante los 
-                                    últimos 12 años. Desde 2007 forma parte del Comité de Asesores de la Abraham S. Fischler 
-                                    College of Education de la Nova Southeastern University de la Florida, USA. Su línea de 
-                                    investigación sobre las TIC en la Educación le ha permitido publicar más de 50 artículos científicos, 
-                                    su inclusión en el Top-2000 del Ranking de Científicos de Instituciones Mexicanas por el Consejo 
-                                    Superior de Investigaciones Científicas de España, y de participar como ponente en Latinoamérica 
-                                    y Estados Unidos. Es autor de varios libros y obras electrónicas publicados en España, Colombia, 
-                                    Argentina, Chile y México. Actualmente dirige el Centro de Innovación, Desarrollo e Investigación 
-                                    Educativa en la Universidad Veracruzana.</p>
+                                <h3>Rubén Edel Navarro</h3>
+                                <h4>Investigador de tiempo completo</br>
+                                    Universidad Veracruzana</h4>
+                                <div class="row">
+                                    <div class="col-md-1"></div>
+                                    <div class="col-md-10">
+                                        <p class="text-justify">Investigador del Consejo Nacional de Ciencia y Tecnología (CONACyT) de México durante los 
+                                            últimos 12 años. Desde 2007 forma parte del Comité de Asesores de la Abraham S. Fischler 
+                                            College of Education de la Nova Southeastern University de la Florida, USA. Su línea de 
+                                            investigación sobre las TIC en la Educación le ha permitido publicar más de 50 artículos científicos, 
+                                            su inclusión en el Top-2000 del Ranking de Científicos de Instituciones Mexicanas por el Consejo 
+                                            Superior de Investigaciones Científicas de España, y de participar como ponente en Latinoamérica 
+                                            y Estados Unidos. Es autor de varios libros y obras electrónicas publicados en España, Colombia, 
+                                            Argentina, Chile y México. Actualmente dirige el Centro de Innovación, Desarrollo e Investigación 
+                                            Educativa en la Universidad Veracruzana.</p>
+                                    </div>
+                                    <div class="col-md-1"></div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -82,7 +89,7 @@
         <!-- Modal content-->
         <div class="modal-content">
             <div class="modal-header">
-                <h3 class="modal-title modal-titleInt text-center">Colaborador de la Red Mesoamericana en Costa Rica</h3>
+                <h3 class="modal-title modal-titleInt text-center">Costa Rica</h3>
                 <button type="button" class="close closeInt" data-dismiss="modal" aria-hidden="true">X</button>
             </div>
             <div class="modal-body">
@@ -109,17 +116,18 @@
                                 <h4>Asesora Regional de Español</br>
                                     Ministerio de Educación Pública de Costa Rica </h4>
                                 <!--<br>Dirección Regional de Educación Zona Norte Norte<br>Asesora Regional de Español<br></h4>-->
-                                <div class="Row">
-                                    <div class="col-md-1"</div>
+                                <div class="row">
+                                    <div class="col-md-1"></div>
                                     <div class="col-md-10">
                                         <p class="text-justify">Licenciada en Ciencias de la Educación con énfasis en Docencia para ejercer la 
                                             Enseñanza del Castellano y la Literatura. Labora en el área educativa desde hace 13 
                                             años. Ha sido Profesora de Español en diferentes centros educativos. Actualmente, es 
                                             Asesora Regional de Español en la Dirección Regional de Educación Zona Norte.</p>
                                     </div> 
-                                    <div class="col-md-1"</div>
+                                    <div class="col-md-1"></div>
                                 </div>
                             </div>
+
                         </div>
                         <!--Colaborador 2-->
                         <div class="item">
@@ -128,12 +136,18 @@
                             </div>
                             <div class="col-md-12 carousel-caption carousel-captionInt">
                                 <h3>Anny González Gairaud </h3>
-                                <h4>Coordinación Educativa y Cultural Centroamericana (CECC/SICA) <br>
-                                    Coordinadora de Proyectos
+                                <h4>Coordinadora de Proyectos</br>
+                                    Coordinación Educativa y Cultural Centroamericana (CECC/SICA)                                  
                                 </h4>
-                                <p class="text-justify">Máster en Informática Educativa y Administración Educativa, Posgrado en Desarrollo Cognitivo en Ambientes Informáticos. Ha laborado en el área educativa como docente de Educación Primaria, Asesora Nacional y Jefatura del Ministerio de Educación de Costa Rica por más de 35 años. Diseñadora y ejecutora de Proyectos Educativos con Tecnología, Educación Popular Legal, Transformación de Bibliotecas escolares en Centros de Recursos para el Aprendizaje. Coordinadora del Proyecto Constitución nuestra: “Así como la Entendemos". Profesora Universitaria en Informática Educativa. Literatura Infantil Bilingüe, en la Universidad de LaSalle y Pepperdine California. <br>
-                                    Actualmente se desempeña como Coordinadora de Proyectos Educativos de la CECC/SICA.
-                                </p>
+                                <div class="row">
+                                    <div class="col-md-1"></div>
+                                    <div class="col-md-10">
+                                        <p class="text-justify">Máster en Informática Educativa y Administración Educativa, Posgrado en Desarrollo Cognitivo en Ambientes Informáticos. Ha laborado en el área educativa como docente de Educación Primaria, Asesora Nacional y Jefatura del Ministerio de Educación de Costa Rica por más de 35 años. Diseñadora y ejecutora de Proyectos Educativos con Tecnología, Educación Popular Legal, Transformación de Bibliotecas escolares en Centros de Recursos para el Aprendizaje. Coordinadora del Proyecto Constitución nuestra: “Así como la Entendemos". Profesora Universitaria en Informática Educativa. Literatura Infantil Bilingüe, en la Universidad de LaSalle y Pepperdine California. <br>
+                                            Actualmente se desempeña como Coordinadora de Proyectos Educativos de la CECC/SICA.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-1"></div>
+                                </div>      
                             </div>
                         </div>
                         <!--Colaborador 3-->
@@ -143,14 +157,20 @@
                             </div>
                             <div class="col-md-12 carousel-caption carousel-captionInt">
                                 <h3>Lilliam Corrales Torres</h3>
-                                <h4>Ministerio de Educación Pública - Costa Rica,<br> Dirección Regional Educativa Coto<br>
-                                    Asesora Pedagógica de Español
+                                <h4>Asesora Pedagógica de Español </br>
+                                    Ministerio de Educación Pública - Costa Rica                              
                                 </h4>
-                                <p class="text-justify">Licenciada en educación con énfasis en I y II ciclos.  Licenciada en docencia.  Licenciada en 
-                                    educación con énfasis en Español.  Máster en administración educativa. <br>
-                                    Ha laborado en el sistema educativo público desde el año 2002; desempeñando el puesto de 
-                                    docente en educación primaria, profesora de español en educación secundaria. En el sistema 
-                                    educativo privado como profesora universitaria en diversas casas de enseñanza del país.</p>
+                                <div class="row">
+                                    <div class="col-md-1"></div>
+                                    <div class="col-md-10">
+                                        <p class="text-justify">Licenciada en educación con énfasis en I y II ciclos.  Licenciada en docencia.  Licenciada en 
+                                            educación con énfasis en Español.  Máster en administración educativa. <br>
+                                            Ha laborado en el sistema educativo público desde el año 2002; desempeñando el puesto de 
+                                            docente en educación primaria, profesora de español en educación secundaria. En el sistema 
+                                            educativo privado como profesora universitaria en diversas casas de enseñanza del país.</p>
+                                    </div>
+                                    <div class="col-md-1"></div>
+                                </div>
                             </div>
                         </div>
                         <!--Colaborador 4-->                        
@@ -160,17 +180,24 @@
                             </div>
                             <div class="col-md-12 carousel-caption carousel-captionInt">
                                 <h3>Rándall Castro Madrigal</h3>
-                                <h4>Asesor Regional de Español – Costa Rica – Ministerio de Educación Pública (MEP)
+                                <h4>Asesor Regional de Español - Costa Rica</br>
+                                    Ministerio de Educación Pública (MEP)
                                 </h4>
-                                <p class="text-justify">Licenciado en Docencia con énfasis en Español, Bachiller en Castellano y Literatura y Bachiller en La
-                                    Enseñanza de la Educación Primaria con énfasis en Español. Posee estudios básicos en informática y 
-                                    administración educativa. Labora desde hace 15 años para el Ministerio de Educación Publica de Costa 
-                                    Rica y en los Colegios: Nocturno de Palmares y Técnico Agropecuario de Piedades Sur, Colegio Diurno de 
-                                    Candelaria. De igual manera, en los programas: Nuevas Oportunidades para Adolescentes, Educación de 
-                                    adultos en Palmares, Telesecundaria La Gata y Liceo Rural La Gata. Además laboró para instituciones 
-                                    privadas tanto en educación secundaria como universitaria. Ha publicado dos artículos para la revista 
-                                    digital CONEXIONES del MEP y más de 20 artículos en el boletín Rincón Filológico, del cual es editor. 
-                                    Actualmente es asesor regional de Español en la Dirección Regional de Educación de Sarapiquí.</p>
+                                <div class="row">
+                                    <div class="col-md-1"></div>
+                                    <div class="col-md-10">
+                                        <p class="text-justify">Licenciado en Docencia con énfasis en Español, Bachiller en Castellano y Literatura y Bachiller en La
+                                            Enseñanza de la Educación Primaria con énfasis en Español. Posee estudios básicos en informática y 
+                                            administración educativa. Labora desde hace 15 años para el Ministerio de Educación Publica de Costa 
+                                            Rica y en los Colegios: Nocturno de Palmares y Técnico Agropecuario de Piedades Sur, Colegio Diurno de 
+                                            Candelaria. De igual manera, en los programas: Nuevas Oportunidades para Adolescentes, Educación de 
+                                            adultos en Palmares, Telesecundaria La Gata y Liceo Rural La Gata. Además laboró para instituciones 
+                                            privadas tanto en educación secundaria como universitaria. Ha publicado dos artículos para la revista 
+                                            digital CONEXIONES del MEP y más de 20 artículos en el boletín Rincón Filológico, del cual es editor. 
+                                            Actualmente es asesor regional de Español en la Dirección Regional de Educación de Sarapiquí.</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-1"></div>
                             </div>
                         </div>
                         <!--Colaborador 5-->                        
@@ -180,9 +207,16 @@
                             </div>
                             <div class="col-md-12 carousel-caption carousel-captionInt">
                                 <h3>Alejandra Sánchez Flores</h3>
-                                <h4>Coordinación Educativa y Cultural Centroamericana CECC/SICA</h4>
-                                <p class="text-justify">Ingenirera en informática. Labora para la CECC/SICA como Encargada de Tecnología y Comunicación. 
-                                    Actualemte cursa Licenciatura en Ingeniería Informática con énfasis en Administración de Proyectos.</p>
+                                <h4>Encargada de Tecnología y Comunicación</br>
+                                    Coordinación Educativa y Cultural Centroamericana CECC/SICA</h4>
+                                <div class="row">
+                                    <div class="col-md-1"></div>
+                                    <div class="col-md-10">
+                                        <p class="text-justify">Ingenirera en informática. Labora para la CECC/SICA como Encargada de Tecnología y Comunicación. 
+                                            Actualemte cursa Licenciatura en Ingeniería Informática con énfasis en Administración de Proyectos.</p>
+                                    </div>
+                                    <div class="col-md-1"></div>
+                                </div>
                             </div>
                         </div>
                         <!--Colaborador 6-->                        
@@ -192,21 +226,26 @@
                             </div>
                             <div class="col-md-12 carousel-caption carousel-captionInt">
                                 <h3>Elizabeth Figueroa Fallas</h3>
-                                <h4>Ministerio de Educación Pública de Costa Rica<br>
-                                    Dirección de Desarrollo Curricular. <br>
-                                    Asesora Nacional de Matemática, Departamento de Primero y Segundo Ciclos.
+                                <h4>Asesora Nacional de Matemática, Departamento de Primero y Segundo Ciclos </br>
+                                    Ministerio de Educación Pública de Costa Rica
                                 </h4>
-                                <p class="text-justify">Licenciada en Ciencias de la Educación con Énfasis en la Enseñanza de la Matemática. Maestría en Administración Educativa y en Educación. Labora en el Ministerio de Educación Pública desde el 2001 y en la Dirección de Desarrollo Curricular desde 2012.</p>
-                            </div>
-                        </div>                        
+                                <div class="row">
+                                    <div class="col-md-1"></div>
+                                    <div class="col-md-10">
+                                        <p class="text-justify">Licenciada en Ciencias de la Educación con Énfasis en la Enseñanza de la Matemática. Maestría en Administración Educativa y en Educación. Labora en el Ministerio de Educación Pública desde el 2001 y en la Dirección de Desarrollo Curricular desde 2012.</p>
+                                    </div>
+                                    <div class="col-md-1"></div>
+                                </div>
+                            </div>                        
+                        </div>
+                        <!-- Controls -->
+                        <a class="left carousel-control" href="#carouselCostaRica" data-slide="prev">
+                            <span class="glyphicon glyphicon-chevron-left"></span>
+                        </a>
+                        <a class="right carousel-control" href="#carouselCostaRica" data-slide="next">
+                            <span class="glyphicon glyphicon-chevron-right"></span>
+                        </a>
                     </div>
-                    <!-- Controls -->
-                    <a class="left carousel-control" href="#carouselCostaRica" data-slide="prev">
-                        <span class="glyphicon glyphicon-chevron-left"></span>
-                    </a>
-                    <a class="right carousel-control" href="#carouselCostaRica" data-slide="next">
-                        <span class="glyphicon glyphicon-chevron-right"></span>
-                    </a>
                 </div>
             </div>
         </div>
@@ -220,7 +259,7 @@
         <!-- Modal content-->
         <div class="modal-content">
             <div class="modal-header">
-                <h3 class="modal-title modal-titleInt text-center">Colaborador de la Red Mesoamericana en República Dominicana</h3>
+                <h3 class="modal-title modal-titleInt text-center">República Dominicana</h3>
                 <button type="button" class="close closeInt" data-dismiss="modal" aria-hidden="true">X</button>
             </div>
             <div class="modal-body">
@@ -239,21 +278,27 @@
                             </div>
                             <div class="col-md-12 carousel-caption carousel-captionInt">
                                 <h3>Eunice Imperio Vicioso Melo</h3>
-                                <h4>Instituto Superior de Formación Docente Salomé Ureña<br>
-                                    República Dominicana<br>
-                                    Recinto Félix Evaristo Mejía</h4>
-                                <p class="text-justify">Licenciada en Educación mención Filosofía y Letras. Labora en el ámbito educativo desde hace 
-                                    35 años. Ha obtenido grados de: maestría en Lingüística aplicada a la enseñanza del Español; 
-                                    maestría en Formación Inicial para el Cambio en la Práctica Pedagógica (Universidad de 
-                                    Barcelona -ISFODOSU). Se desempeña como profesora en el área de Lengua Española en el 
-                                    recinto Félix Evaristo Mejía, así como en la Escuela de Letras de la Universidad Autónoma de 
-                                    Santo Domingo, en las cátedras de Teoría Literaria y Letras Básicas. Ha participado en la 
-                                    planificación y facilitación del diplomado “Aprendiendo y construyendo procesos de 
-                                    alfabetización para la vida”.  En convenio con el Centro Cultural Poveda (CCP) y el Ministerio 
-                                    de Educación (MINERD). Además ha colaborado en la revisión y  elaboración de los nuevos 
-                                    planes de estudios para las carreras de Lic. En Educación Básica y Educación Inicial en el 
-                                    Instituto Salomé Ureña. En la actualidad es la coordinadora de la cátedra de Letras Básicas en 
-                                    la Universidad Autónoma de Santo Domingo.</p>
+                                <h4>Profesora en el Área de Lengua Española</br>
+                                    Instituto Superior de Formación Docente Salomé Ureña<br>
+                                </h4>
+                                <div class="row">
+                                    <div class="col-md-1"></div>
+                                    <div class="col-md-10">
+                                        <p class="text-justify">Licenciada en Educación mención Filosofía y Letras. Labora en el ámbito educativo desde hace 
+                                            35 años. Ha obtenido grados de: maestría en Lingüística aplicada a la enseñanza del Español; 
+                                            maestría en Formación Inicial para el Cambio en la Práctica Pedagógica (Universidad de 
+                                            Barcelona -ISFODOSU). Se desempeña como profesora en el área de Lengua Española en el 
+                                            recinto Félix Evaristo Mejía, así como en la Escuela de Letras de la Universidad Autónoma de 
+                                            Santo Domingo, en las cátedras de Teoría Literaria y Letras Básicas. Ha participado en la 
+                                            planificación y facilitación del diplomado “Aprendiendo y construyendo procesos de 
+                                            alfabetización para la vida”.  En convenio con el Centro Cultural Poveda (CCP) y el Ministerio 
+                                            de Educación (MINERD). Además ha colaborado en la revisión y  elaboración de los nuevos 
+                                            planes de estudios para las carreras de Lic. En Educación Básica y Educación Inicial en el 
+                                            Instituto Salomé Ureña. En la actualidad es la coordinadora de la cátedra de Letras Básicas en 
+                                            la Universidad Autónoma de Santo Domingo.</p>
+                                    </div>
+                                    <div class="col-md-1"></div>
+                                </div>
                             </div>
                         </div>
                         <!--Colaborador 2-->
@@ -263,15 +308,22 @@
                             </div>
                             <div class="col-md-12 carousel-caption carousel-captionInt">
                                 <h3>Rafael David Francisco Ventura, M. A.</h3>
-                                <h4>Instituto Superior de Formación Docente Salome Ureña (ISFODOSU) Santo
-                                    Domingo R. D.  Profesor de Matemática.</h4>
-                                <p class="text-justify">Licenciado en Ciencias Física y Matemática en la Universidad O & M de 
-                                    Santo Domingo, con maestría en matemática pura en la universidad 
-                                    Tecnológica de Santiago UTESA y maestría en Formador de Formadores 
-                                    de la universidad de Barcelona España. Profesor de grado, de postgrados 
-                                    y coordinador del área de matemática del ISFODOSU. Experto en 
-                                    aplicación de la TICs en la enseñanza aprendizaje de la matemática.</p>
-                            </div>
+                                <h4>Profesor de Matemática </br>
+                                    Instituto Superior de Formación Docente Salome Ureña (ISFODOSU) Santo
+                                    Domingo</h4>
+                                <div class="row">
+                                    <div class="col-md-1"></div>
+                                    <div class="col-md-10">
+                                        <p class="text-justify">Licenciado en Ciencias Física y Matemática en la Universidad O & M de 
+                                            Santo Domingo, con maestría en matemática pura en la universidad 
+                                            Tecnológica de Santiago UTESA y maestría en Formador de Formadores 
+                                            de la universidad de Barcelona España. Profesor de grado, de postgrados 
+                                            y coordinador del área de matemática del ISFODOSU. Experto en 
+                                            aplicación de la TICs en la enseñanza aprendizaje de la matemática.</p>
+                                    </div>
+                                    <div class="col-md-1"></div>
+                                </div>
+                            </div> 
                         </div>                        
                     </div>
                     <!-- Controls -->
@@ -294,7 +346,7 @@
         <!-- Modal content-->
         <div class="modal-content">
             <div class="modal-header">
-                <h3 class="modal-title modal-titleInt text-center">Colaborador de la Red Mesoamericana en México</h3>
+                <h3 class="modal-title modal-titleInt text-center">Panamá</h3>
                 <button type="button" class="close closeInt" data-dismiss="modal" aria-hidden="true">X</button>
             </div>
             <div class="modal-body">
@@ -310,16 +362,23 @@
                                 <img  src="imagenes/red/integrantes/fotos/panama/IbzkaRodríguez.png" alt="...">
                             </div>
                             <div class="col-md-12 carousel-caption carousel-captionInt">
-                                <h3>GIBZKA RODRIGUEZ DE VERNIER</h3>
-                                <h4>Ministerio de Educación de Panamá<br>
-                                    Supervisora Nacional de Matemáticas</h4>
-                                <p class="text-justify">Licenciada y Profesora en Matemáticas. Maestría en Ciencias con  Especialización en Matemática
-                                    Educativa y  Maestría en Desarrollo de Sistemas Educativos con Especialización en Supervisión y 
-                                    Currículum. Con más de 35 años al servicio de la Educación como: Profesora del Nivel Secundario, 
-                                    Subdirectora de Colegio de Educación Media,  Directora General de Educación, Directora Regional 
-                                    de Educación, Representante de la Olimpiada Nacional de Matemática a nivel de Primaria y 
-                                    Secundaria y  Coordinadora de diferentes  cursos y seminarios. Actualmente labora en la Dirección 
-                                    Nacional de Educación Media Académica, como Supervisora Nacional de Matemáticas.</p>
+                                <h3>Gibzka Rodríguez de Vernier</h3>
+                                <h4>Supervisora Nacional de Matemáticas <br>
+                                    Ministerio de Educación de Panamá
+                                </h4>
+                                <div class="row">
+                                    <div class="col-md-1"></div>
+                                    <div class="col-md-10">
+                                        <p class="text-justify">Licenciada y Profesora en Matemáticas. Maestría en Ciencias con  Especialización en Matemática
+                                            Educativa y  Maestría en Desarrollo de Sistemas Educativos con Especialización en Supervisión y 
+                                            Currículum. Con más de 35 años al servicio de la Educación como: Profesora del Nivel Secundario, 
+                                            Subdirectora de Colegio de Educación Media,  Directora General de Educación, Directora Regional 
+                                            de Educación, Representante de la Olimpiada Nacional de Matemática a nivel de Primaria y 
+                                            Secundaria y  Coordinadora de diferentes  cursos y seminarios. Actualmente labora en la Dirección 
+                                            Nacional de Educación Media Académica, como Supervisora Nacional de Matemáticas.</p>
+                                    </div>
+                                    <div class="col-md-1"></div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -343,7 +402,7 @@
         <!-- Modal content-->
         <div class="modal-content">
             <div class="modal-header">
-                <h3 class="modal-title modal-titleInt text-center">Colaborador de la Red Mesoamericana en México</h3>
+                <h3 class="modal-title modal-titleInt text-center">Guatemala</h3>
                 <button type="button" class="close closeInt" data-dismiss="modal" aria-hidden="true">X</button>
             </div>
             <div class="modal-body">
@@ -360,17 +419,24 @@
                             </div>
                             <div class="col-md-12 carousel-caption carousel-captionInt">
                                 <h3>Carlota Calito de Alfaro</h3>
-                                <h4>Ministerio de Educación de Guatemala<br>
-                                    Profesional Técnico de la Dirección General de Gestión de Calidad Educativa</h4>
-                                <p class="text-justify">Licenciada en Pedagogía con orientación en Administración y Evaluación Educativa.  Labora en el 
-                                    área educativa desde hace 35 años.  Ha sido docente y bibliotecaria. Participó en el proceso de 
-                                    Transformación Curricular en el Marco de la Reforma Educativa en su país, especialmente en los 
-                                    niveles inicial y preprimario; posee un post grado en Educación Infantil otorgado por el Instituto 
-                                    Pedagógico Latinoamericano y Caribeño de la ciudad de la Habana, Cuba.  Se ha especializado en 
-                                    el proceso de adquisición y  desarrollo de las competencias lectoras.  Por diez años se desempeñó 
-                                    en el departamento de los niveles de educación inicial y preprimaria, en la Dirección de Gestión de 
-                                    Calidad Educativa.  Actualmente, es Jefe del Departamento del Nivel de Educación Primaria y 
-                                    coordina la Comisión Ejecutiva del Programa Nacional de Lectura.</p>
+                                <h4>Profesional Técnico de la Dirección General de Gestión de Calidad Educativa<br>
+                                    Ministerio de Educación de Guatemala
+                                </h4>
+                                <div class="row">
+                                    <div class="col-md-1"></div>
+                                    <div class="col-md-10">
+                                        <p class="text-justify">Licenciada en Pedagogía con orientación en Administración y Evaluación Educativa.  Labora en el 
+                                            área educativa desde hace 35 años.  Ha sido docente y bibliotecaria. Participó en el proceso de 
+                                            Transformación Curricular en el Marco de la Reforma Educativa en su país, especialmente en los 
+                                            niveles inicial y preprimario; posee un post grado en Educación Infantil otorgado por el Instituto 
+                                            Pedagógico Latinoamericano y Caribeño de la ciudad de la Habana, Cuba.  Se ha especializado en 
+                                            el proceso de adquisición y  desarrollo de las competencias lectoras.  Por diez años se desempeñó 
+                                            en el departamento de los niveles de educación inicial y preprimaria, en la Dirección de Gestión de 
+                                            Calidad Educativa.  Actualmente, es Jefe del Departamento del Nivel de Educación Primaria y 
+                                            coordina la Comisión Ejecutiva del Programa Nacional de Lectura.</p>
+                                    </div>
+                                    <div class="col-md-1"></div>
+                                </div>
                             </div>
                         </div>
                     </div>

@@ -98,7 +98,7 @@ Proyectos
             <div class="col-md-2"></div>
         </div> 
         <!-- Slide-content de Textos -->
-        </br></br>
+        <br><br>
     </div>
 </div>
 
