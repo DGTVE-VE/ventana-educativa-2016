@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use Mail;
 use Illuminate\Http\Request;
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
@@ -80,6 +80,7 @@ class PagesController extends Controller {
         $news->hash = md5(date('Y/m/d H:i:s'));
         $news->save();
         $this->sendConfirmMail($news->correo, $news->hash);
+        $this->testMail($news->correo, $news->hash);
         print 'guardado';
     }
 
@@ -137,4 +138,11 @@ class PagesController extends Controller {
         return view('red/paginacontacto');
     }
 
+    public function testMail ($correo, $hash){
+        Mail::send('red.mailActivacion', ['correo'=>$correo, 'hash'=>$hash], function ($m)  {
+            $m->from('redmite@televisioneducativa.gob.mx', 'Red Mesoamericana');
+            $m->to("j.israel.toledo@gmail.com", "Israel Toledo")->subject('Activación de correo!');
+        });
+        print 'correo enviado';
+    }
 }
