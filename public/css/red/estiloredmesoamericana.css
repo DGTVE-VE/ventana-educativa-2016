@@ -106,23 +106,6 @@
     top:15px;
 	font-family: 'Exo', sans-serif;
 }
-/*------------------------------------		Sección Slider  	-------------------------------------------*/
-.parallaxcarouselSliderHome{
-	position:fixed;
-	top:0;
-	left:0;
-	margin-left:0px;
-	z-index:-1;
-	width:100%;
-}
-.imgSliderHome{
-	position:relative;
-	top:80px;
-	left:0px;
-	z-index:-1;
-	/*width:1600;
-	height:650;*/
-}
 
 /*------------------------------------			-------------------------------------------*/
 .pleca{
@@ -247,17 +230,4 @@
     color:white;
     font-family: 'Oxygen', sans-serif;
     font-size:14px;
-}
-/*----------------------------------------------	Sección integrantes		----------------------------------------------------*/
-#parallax-fondoIntegrantes{
-	position:fixed;
-	top:0;
-	left:50%;
-	margin-left:-800px;
-	z-index:-3;
-}
-#fondo-integrantes{
-	position:absolute;
-	top:1300px;
-	left:0px;
 }

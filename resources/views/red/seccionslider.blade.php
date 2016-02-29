@@ -1,6 +1,5 @@
-			<div class="row fondo_transparente"><!-- style="margin-top:80px;"-->
+			<div class="row fondo_transparente" style="margin-top:80px;">
 				<div class="col-xs-12 col-sm-12 col-md-12" style="padding:0px;">
-					<img class="img-responsive" src="http://placehold.it/1600x720" alt="..." style="position: relative; top:0px; z-index:-4; float:left;"/>
 					<div id="carouselSliderHome" class="carousel slide" data-ride="carousel">
 					<!-- Indicators -->
 						<ol class="carousel-indicators">
@@ -11,26 +10,18 @@
 						</ol>
 
 						<!-- Wrapper for slides -->
-						<div class="carousel-inner" role="listbox" style="margin:0px;"> <!-- height:720px;-->
+						<div class="carousel-inner" role="listbox" style="margin:0px;">
 							<div class="item active">
-								<div id="parallaxcarouselSliderHome" class="parallaxcarouselSliderHome">
-									<img id="imgSliderHome" class="img-responsive imgSliderHome" src="imagenes/red/Banners/1.jpg" alt="..."/>
-								</div>
+								<img id="imgSliderHome" class="img-responsive imgSliderHome" src="imagenes/red/Banners/1.jpg" alt="..."/>
 							</div>
 							<div class="item">
-								<div id="parallaxcarouselSliderHome1" class="parallaxcarouselSliderHome">
-									<img id="imgSliderHome2" class="img-responsive imgSliderHome" src="imagenes/red/Banners/2.jpg" alt="imagenes/red/1600-x-650.jpg"/>
-								</div>
+								<img id="imgSliderHome2" class="img-responsive imgSliderHome" src="imagenes/red/Banners/2.jpg" alt="imagenes/red/1600-x-650.jpg"/>
 							</div>
 							<div class="item">
-								<div id="parallaxcarouselSliderHome2" class="parallaxcarouselSliderHome">
-									<img id="imgSliderHome3" class="img-responsive imgSliderHome" src="imagenes/red/Banners/banner-3.jpg" alt="http://placehold.it/1600x500"/>
-								</div>
+								<img id="imgSliderHome3" class="img-responsive imgSliderHome" src="imagenes/red/Banners/banner-3.jpg" alt="http://placehold.it/1600x500"/>
 							</div>
 							<div class="item">
-								<div id="parallaxcarouselSliderHome3" class="parallaxcarouselSliderHome">
-									<img id="imgSliderHome4" class="img-responsive imgSliderHome" src="imagenes/red/Banners/banner-4.jpg" alt="..."/>
-								</div>
+								<img id="imgSliderHome4" class="img-responsive imgSliderHome" src="imagenes/red/Banners/banner-4.jpg" alt="..."/>
 							</div>
 						</div>
 

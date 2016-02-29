@@ -3,10 +3,7 @@
         <p class="pleca"> Proyectos </p>
     </div>
 </div>
-<div class="row fondo_Transparente text-center">
-    <div id="parallax-fondoProyectos">
-        <img id="fondo-proyectos" src="imagenes/red/proyectos/fondo-proyectos.jpg"/>
-    </div>
+<div class="row fondo_Transparente text-center" style="background-image: url('imagenes/red/proyectos/fondo-proyectos.jpg')">
     <div class="col-md-12">
         <div class="division">
         </div>

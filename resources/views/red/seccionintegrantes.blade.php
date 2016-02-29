@@ -1,7 +1,4 @@
-<div class="row"> <!--style="background-image: url('imagenes/red/integrantes/gradiente.jpg');"-->
-    <div id="parallax-fondoIntegrantes">
-        <img id="fondo-integrantes" src="imagenes/red/integrantes/gradiente.jpg"/>
-    </div>
+<div class="row" style="background-image: url('imagenes/red/integrantes/gradiente.jpg');">
     <div class="col-md-12 fondo_Obscuro">
         <div class="col-md-12 text-center text-uppercase">
             <p class="pleca"> Nuestros integrantes </p>
