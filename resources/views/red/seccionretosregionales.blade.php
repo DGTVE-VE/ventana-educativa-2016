@@ -1,9 +1,9 @@
-﻿			<div class="row fondo_Claro text-justify" style="margin-top:-20px;">
+﻿<div class="row fondo_Claro text-justify" style="margin-top:-20px;">
     <div class="col-md-12">
         <div class="division">
         </div>
     </div>
-    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 col-lg-offset-1">
+    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4" style="padding-left:5%;">
         <h3>Retos Regionales</h3>
         <div id="carouselRetos" class="carousel slide" data-ride="carousel"> <!-- background-color:#E5E5E5; -->
             <!-- Indicators -->
@@ -61,18 +61,19 @@
         </div>
     </div>
 
-    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4" style="padding-left:3%; padding-right:5%;">
         <h3>Sitios de Interés</h3>
-        <div id="carouselSitioInteres" class="carousel slide" data-ride="carousel">
+        <div id="carouselSitioInteres" class="carousel slide" data-ride="carousel" style="background-color:white; position: relative; top:25px;">
             <!-- Indicators -->
             <!--ol class="carousel-indicators">
                   <li style="border-color:black;" data-target="#carouselSitioInteres" data-slide-to="0" class="active"></li>
             </ol-->
 
             <!-- Wrapper for slides -->
-            <div class="carousel-inner fondoBlacoSitiosinteres" role="listbox">
+			<center>
+            <div class="carousel-inner " role="listbox"> <!--fondoBlacoSitiosinteres-->
                 <div class="item active">
-                    <div class="table-responsive">
+                    <div class="table-responsive"> 
                         <table>
                             <tr>
                                 <td style="padding: 10px;">
@@ -112,7 +113,7 @@
                   </div>
                 </div-->
             </div>
-
+			</center>
             <!-- Controls -->
             <!--a class=" " style="font-size:30px; position:relative; left:120px;" href="#carouselSitioInteres" role="button" data-slide="prev">
                   <span class="glyphicon glyphicon-chevron-up" aria-hidden="true"></span>
@@ -125,7 +126,7 @@
         </div>
     </div>
 
-    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4" style="padding-right:8%;">
         <h3>Redes Sociales</h3>
         <img class="img-responsive img-rounded" style="width:150px; height:48px;" src="imagenes/red/Logotipos/facebook.png" alt="..."/>
         <!--<div>Contenido Facebook.</div>-->
