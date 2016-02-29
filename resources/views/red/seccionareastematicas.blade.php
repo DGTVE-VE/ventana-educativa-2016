@@ -41,7 +41,7 @@
                     <td class="imgTabla"><a href="areastematicas#gestion">
                         <img id="imgGestioncalidad" alt="imagen fija" src="imagenes/red/areasTematicas/GestionCalidad.png" onmouseenter="imgResalta('Gestioncalidad')" onmouseleave="imgNormal('Gestioncalidad')"/></td>
                     </a>
-                    <td class="txtTabla"><h3><strong>Gestion y Calidad <br> de Programas <br> Educativos</strong></h3>
+                    <td class="txtTabla"><h3><strong>Gestión y Calidad <br> de Programas <br> Educativos</strong></h3>
                     </td>
                 </tr>
             </table>
@@ -73,7 +73,7 @@
                     <td class="imgTabla"><a href="areastematicas#politica">
                         <img id="imgPoliticaEducativa" alt="imagen fija" src="imagenes/red/areasTematicas/PoliticaEducativa.png" onmouseenter="imgResalta('PoliticaEducativa')" onmouseleave="imgNormal('PoliticaEducativa')"/></td>
                     </a>
-                    <td class="txtTabla"><h3><strong>Politica Educativa y <br> Cambio Social</strong></h3>
+                    <td class="txtTabla"><h3><strong>Política Educativa y <br> Cambio Social</strong></h3>
                     </td>
                 </tr>
             </table>

@@ -24,14 +24,14 @@ Proyectos
                     <!-- Carousel items -->
                     <div class="carousel-inner">
                         <div class="active item" data-slide-number="0">
-                            <img src="imagenes/red/proyectos/bannersProyectos/1erencuentro.jpg">
+                            <img src="imagenes/red/proyectos/bannersproyectos/1erencuentro.jpg">
                         </div>
                         <div class="item" data-slide-number="1">
-                            <img src="imagenes/red/proyectos/bannersProyectos/ventanaeducativa.jpg">
+                            <img src="imagenes/red/proyectos/bannersproyectos/ventanaeducativa.jpg">
                         </div>
 
                         <div class="item" data-slide-number="2">
-                            <img src="imagenes/red/proyectos/bannersProyectos/pedagogiadigital.jpg">
+                            <img src="imagenes/red/proyectos/bannersproyectos/pedagogiadigital.jpg">
                         </div>
                     </div><!-- Carousel nav -->
                 </div>
@@ -91,14 +91,14 @@ Proyectos
                         versions of Lorem Ipsum.
 
                     </p>
-                    <p class="sub-text">October 24 2014 - <a href="#">Continuar leyendo</a></p>
+                    <!--<p class="sub-text">October 24 2014 - <a href="#">Continuar leyendo</a></p>-->
                 </div>
 
             </div>
             <div class="col-md-2"></div>
         </div> 
         <!-- Slide-content de Textos -->
-        </br></br>
+        <br><br>
     </div>
 </div>
 
