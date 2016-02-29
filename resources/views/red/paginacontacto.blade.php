@@ -52,7 +52,7 @@ Contacto
                 <br>
                 <div class="input-group">
                     <span class="input-group-addon" id="basic-addon1">@</span>
-                    <input type="text" class="form-control" required name="correo" placeholder="Correo (requerido)" aria-describedby="basic-addon2">
+                    <input type="email" class="form-control" required name="correo" placeholder="Correo (requerido)" aria-describedby="basic-addon2">
                 </div>
                 <br>
                 <div class="input-group">
