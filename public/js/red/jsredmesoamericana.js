@@ -239,14 +239,23 @@
 		/*  -------------------------------------    Activar efecto parallax en scroll   -----------------------------------------------*/
 		function parallaxScroll(){
 			var scrolled = $(window).scrollTop();
-			$('#parallaxcarouselSliderHome').css('top',(0+(scrolled*0.5))+'px');
-			$('#parallaxcarouselSliderHome1').css('top',(0+(scrolled*0.5))+'px');
-			$('#parallaxcarouselSliderHome2').css('top',(0+(scrolled*0.5))+'px');
-			$('#parallaxcarouselSliderHome3').css('top',(0+(scrolled*0.5))+'px');
+			if(is_chrome){
+				$('#parallaxcarouselSliderHome').css('top',(0+(scrolled*0.7))+'px');
+				$('#parallaxcarouselSliderHome1').css('top',(0+(scrolled*0.7))+'px');
+				$('#parallaxcarouselSliderHome2').css('top',(0+(scrolled*0.7))+'px');
+				$('#parallaxcarouselSliderHome3').css('top',(0+(scrolled*0.7))+'px');
+			}
+			else{
+				$('#parallaxcarouselSliderHome').css('top',(0-(scrolled*0.7))+'px');
+				$('#parallaxcarouselSliderHome1').css('top',(0-(scrolled*0.7))+'px');
+				$('#parallaxcarouselSliderHome2').css('top',(0-(scrolled*0.7))+'px');
+				$('#parallaxcarouselSliderHome3').css('top',(0-(scrolled*0.7))+'px');
+			}
 			$('#parallax-fondoProyectos').css('top',(0-(scrolled*0.55))+'px');
 			$('#parallax-fondoIntegrantes').css('top',(0-(scrolled*0.55))+'px');
 		}
-
+		/*  -------------------------------------    Detectar si navegador es chrome   -----------------------------------------------*/
+				var is_chrome = navigator.userAgent.toLowerCase().indexOf('chrome') > -1;
 		/*
 * rwdImageMaps jQuery plugin v1.5
 *
