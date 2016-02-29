@@ -50,7 +50,7 @@
 					<br class="visible-xs-block"><br class="visible-xs-block">
 					<img id="imgApropiacionXS" class="img-responsive visible-xs-block" alt="..." src="imagenes/red/ModeloUsabilidad/apropiacionIncorporacionEdu.png" style="weight: 70px; height:70px;" onmouseenter="imgResalta('apropiacionXS')" onmouseleave="imgNormal('apropiacionXS')">
 							<!-- ------------------------------------		Resolucion Mediana - Grande		------------------------------------------------- -->
-					<img class="img-responsive hidden-xs" alt="..." src="imagenes/red/ModeloUsabilidad/aros-modelo-de-usabilidad.png" style="float:left">
+					<img class="img-responsive hidden-xs" alt="..." src="imagenes/red/ModeloUsabilidad/anillos-modelo-usabilidad.png" style="float:left">
 					<img id="imgFuncionalidad" class="img-responsive hidden-xs" alt="..." src="imagenes/red/ModeloUsabilidad/funcionalidadEdu.png" style="position:absolute; left:190px; top:62px;" onmouseenter="imgResalta('funcionalidad')" onmouseleave="imgNormal('funcionalidad')"> <!--  -->
 					<img id="imgExpectativas" class="img-responsive hidden-xs" alt="..." src="imagenes/red/ModeloUsabilidad/disposicionExpectativas.png" style="position:absolute; left:78px; top:172px;" onmouseenter="imgResalta('expectativas')" onmouseleave="imgNormal('expectativas')">
 					<img id="imgSaberesDig" class="img-responsive hidden-xs" alt="..." src="imagenes/red/ModeloUsabilidad/saberesDigitales.png" style="position:absolute; left:301px; top:173px;" onmouseenter="imgResalta('saberesDig')" onmouseleave="imgNormal('saberesDig')">

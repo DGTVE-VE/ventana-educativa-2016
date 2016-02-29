@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use Mail;
 use Illuminate\Http\Request;
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
@@ -79,7 +79,8 @@ class PagesController extends Controller {
         $news->correo = filter_input(INPUT_POST, 'correo_newsletter');
         $news->hash = md5(date('Y/m/d H:i:s'));
         $news->save();
-        $this->sendConfirmMail($news->correo, $news->hash);
+        
+        $this->enviaCorreoActivacion($news->correo, $news->hash);
         print 'guardado';
     }
 
@@ -96,36 +97,7 @@ class PagesController extends Controller {
         }
     }
 
-    private function sendConfirmMail($mail, $hash) {
-
-        $título = 'Activa tu cuenta de la red mesoamericana';
-        $mensaje = "
-                    <html>
-                    <head>
-                      <title>Activa tu cuenta de la red mesoamericana</title>
-                    </head>
-                    <body>
-                      <a  href='http://ventana.televisioneducativa.gob.mx/public/indexRed?correo=$mail'>
-                         <button type='button'> Activa tu cuenta</button>
-                      </a>
-                    </body>
-                    </html>
-                    ";
-
-// Para enviar un correo HTML, debe establecerse la cabecera Content-type
-        $cabeceras = 'MIME-Version: 1.0' . "\r\n";
-        $cabeceras .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
-
-// Cabeceras adicionales        
-        $cabeceras .= 'From: Recordatorio <ventana@televisioneducativa.gob.mx>' . "\r\n";
-
-// Enviarlo
-        mail($mail, $título, $mensaje, $cabeceras);
-    }
-
-//    public function integrantesSlider() {
-//        return view('integrantesSlider');
-//    }
+   
 
     public function guardaContacto() {
         $contacto = new \App\Red\Contacto();
@@ -134,7 +106,14 @@ class PagesController extends Controller {
         $contacto->asunto = filter_input(INPUT_POST, 'asunto');
         $contacto->mensaje = filter_input(INPUT_POST, 'mensaje');
         $contacto->save();
-        return view('red/paginacontacto');
+        return redirect('contacto');
     }
 
+    public function enviaCorreoActivacion ($correo, $hash){
+        Mail::send('red.mailActivacion', ['correo'=>$correo, 'hash'=>$hash], function ($m) use ($correo)  {
+            $m->from('redmite@televisioneducativa.gob.mx', 'Red Mesoamericana');
+            $m->to($correo)->subject('Activación de correo!');
+        });
+        print 'correo enviado';
+    }
 }

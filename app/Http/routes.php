@@ -1,6 +1,7 @@
 <?php
 /*Vistas principales*/
 Route::get('/','PagesController@indexRed');
+Route::get('testCorreo','PagesController@testMail');
 Route::get('home', 'PagesController@home');
 Route::get('indexRed','PagesController@indexRed');
 Route::get('indexVod','PagesController@indexVod');
