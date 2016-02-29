@@ -63,7 +63,7 @@
 
     <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4" style="padding-left:3%; padding-right:5%;">
         <h3>Sitios de Interés</h3>
-        <div id="carouselSitioInteres" class="carousel slide" data-ride="carousel" style="background-color:white; position: relative; top:25px;">
+        <div id="carouselSitioInteres" class="carousel slide" data-ride="carousel" style="background-color:white; position: relative; top:30px;">
             <!-- Indicators -->
             <!--ol class="carousel-indicators">
                   <li style="border-color:black;" data-target="#carouselSitioInteres" data-slide-to="0" class="active"></li>
@@ -99,6 +99,9 @@
                                     <img class="img-responsive img-rounded centraCont" style="width:150px; height:127px; " src="imagenes/red/sitiosInteres/2.png" alt="UPN"/>
                                 </td>
                             </tr>
+							<tr>
+							<td style="padding:13%;"></td>
+							</tr>
                         </table>
                         <!--div class="carousel-caption" style="color:black;">
                               Ser un espacio mesoamericano que permita compartir las experiencias, conocimientos y perspectivas entre los miembros de la Red.
@@ -132,6 +135,7 @@
         <!--<div>Contenido Facebook.</div>-->
         <div><div class="fb-page" data-href="https://www.facebook.com/Red-Mesoamericana-de-Investigaci&#xf3;n-y-Tecnolog&#xed;a-Educat&#xed;va-930360840393101/" data-tabs="timeline" data-width="350" data-height="230" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"></div></div>      
         <!--<div>Contenido Twitter.</div>-->
+		<br>
         <div><a class="twitter-timeline" href="https://twitter.com/Red_Mesoamerica" data-widget-id="702586618901757952">Tweets por el @Red_Mesoamerica.</a>
             <script>!function(d, s, id){var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location)?'http':'https'; if (!d.getElementById(id)){js = d.createElement(s); js.id = id; js.src = p + "://platform.twitter.com/widgets.js"; fjs.parentNode.insertBefore(js, fjs); }}(document, "script", "twitter-wjs");</script></div>
     </div>
