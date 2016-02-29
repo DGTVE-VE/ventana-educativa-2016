@@ -32,7 +32,7 @@
         <!-- Modal content-->
         <div class="modal-content">
             <div class="modal-header">
-                <h3 class="modal-title modal-titleInt text-center">México</h3>
+                <!--<h3 class="modal-title modal-titleInt text-center">México</h3>-->
                 <button type="button" class="close closeInt" data-dismiss="modal" aria-hidden="true">X</button>
             </div>
             <div class="modal-body">
@@ -89,7 +89,7 @@
         <!-- Modal content-->
         <div class="modal-content">
             <div class="modal-header">
-                <h3 class="modal-title modal-titleInt text-center">Costa Rica</h3>
+                <!--<h3 class="modal-title modal-titleInt text-center">Costa Rica</h3>-->
                 <button type="button" class="close closeInt" data-dismiss="modal" aria-hidden="true">X</button>
             </div>
             <div class="modal-body">
@@ -259,7 +259,7 @@
         <!-- Modal content-->
         <div class="modal-content">
             <div class="modal-header">
-                <h3 class="modal-title modal-titleInt text-center">República Dominicana</h3>
+                <!--<h3 class="modal-title modal-titleInt text-center">República Dominicana</h3>-->
                 <button type="button" class="close closeInt" data-dismiss="modal" aria-hidden="true">X</button>
             </div>
             <div class="modal-body">
@@ -346,7 +346,7 @@
         <!-- Modal content-->
         <div class="modal-content">
             <div class="modal-header">
-                <h3 class="modal-title modal-titleInt text-center">Panamá</h3>
+                <!--<h3 class="modal-title modal-titleInt text-center">Panamá</h3>-->
                 <button type="button" class="close closeInt" data-dismiss="modal" aria-hidden="true">X</button>
             </div>
             <div class="modal-body">
@@ -402,7 +402,7 @@
         <!-- Modal content-->
         <div class="modal-content">
             <div class="modal-header">
-                <h3 class="modal-title modal-titleInt text-center">Guatemala</h3>
+                <!--<h3 class="modal-title modal-titleInt text-center">Guatemala</h3>-->
                 <button type="button" class="close closeInt" data-dismiss="modal" aria-hidden="true">X</button>
             </div>
             <div class="modal-body">

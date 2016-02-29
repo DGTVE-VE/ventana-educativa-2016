@@ -21,7 +21,7 @@
         </div>
         <div class="col-md-12">
             <br>
-            <img class="img-responsive text-center" src="imagenes/red/footer/tve.png"/>
+            <img class="img-responsive text-center" style="width: 150px; height: 50px;"  src="imagenes/red/footer/tve.png"/>
         </div>
     </div>
     <div class="col-sm-12 col-md-3">
