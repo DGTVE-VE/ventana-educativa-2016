@@ -72,6 +72,10 @@ class PagesController extends Controller {
     public function usuarios() {
         return view('red/frmusuarios');
     }
+    
+    public function correoValidado() {
+        return view('red/correoValidado');
+    }
 
     public function guardaCorreoNewsLetter() {
 
@@ -81,7 +85,7 @@ class PagesController extends Controller {
         $news->save();
         
         $this->enviaCorreoActivacion($news->correo, $news->hash);
-        print 'guardado';
+         return redirect('indexRed');
     }
 
     public function activaCorreoNews(Request $request, $correo, $hash) {
@@ -93,7 +97,7 @@ class PagesController extends Controller {
             $news->save();
             print 'Correo validado';
         } else {
-            return redirect('home');
+            return redirect('correoValidado');
         }
     }
 
@@ -114,6 +118,6 @@ class PagesController extends Controller {
             $m->from('redmite@televisioneducativa.gob.mx', 'Red Mesoamericana');
             $m->to($correo)->subject('Activación de correo!');
         });
-        print 'correo enviado';
+        return redirect('home');
     }
 }
