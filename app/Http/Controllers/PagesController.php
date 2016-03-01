@@ -92,6 +92,7 @@ class PagesController extends Controller {
 
         $news = \App\Red\News::where('correo', '=', $correo)->first();
 
+        var_dump ($news);
         if ($news->hash == $hash) {
             $news->validado = 1;
             $news->save();            
