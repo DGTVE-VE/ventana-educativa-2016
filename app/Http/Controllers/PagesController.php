@@ -118,6 +118,6 @@ class PagesController extends Controller {
             $m->from('redmite@televisioneducativa.gob.mx', 'Red Mesoamericana');
             $m->to($correo)->subject('Activación de correo!');
         });
-        return redirect('home');
+        return redirect('correoValidado');
     }
 }
