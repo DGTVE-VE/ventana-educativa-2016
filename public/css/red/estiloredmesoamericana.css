@@ -105,7 +105,10 @@
     background-color:#F5F5F5;
 	font-family: 'Exo', sans-serif;
 }
-
+.subeHorizontal{
+    position:relative;
+    top:-5px;
+}
 /*------------------------------------			-------------------------------------------*/
 .pleca{
     position:relative;
@@ -132,17 +135,9 @@
 .encabezado{
     height:150px;
 }
-.homologa{
-    height:450px;
-}
 .separa_Linea{
     color:gray;
     line-height:2;
-}
-
-.progress-bar {
-    -webkit-transition: none !important;
-    transition: none !important;
 }
 
 .imgTabla{
@@ -151,10 +146,7 @@
 .txtTabla{
     width: 350px;
 }
-.subeHorizontal{
-    position:relative;
-    top:-5px;
-}
+
 .popover{
     width: 300px;
 }
