@@ -7,10 +7,13 @@ Contacto
 @include('red.seccionheader')
 @endsection
 @section('cuerpo')
-<div class="row" style="margin-top: 5%;" >        
-    <div class="col-md-12"><hr></div>    
-    <div class="col-md-12 textoContacto">        
-        <h4 class="col-md-12 text-uppercase">Dirección General de Televisión Educativa</h4>
+<div class="row" style="margin-top:55px;" >
+	<div class="col-xs-12 col-sm-12 col-md-12">
+		<div class="division textoContacto">
+		<h4 class="text-uppercase"><br>Dirección General de <br class="visible-xs-inline"> Televisión Educativa</h4>
+		</div>
+	</div>
+    <!--div class="col-md-12 ">        
         <!--        <div class="col-md-1">
                     <ul class="nav navbar-nav navbar-right">
                         <li class="dropdown">
@@ -25,7 +28,7 @@ Contacto
                     </ul>
         
                 </div>-->
-    </div>
+    <!--/div-->
     <div class="col-md-12">
         <script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script>
         <div style='overflow:hidden;height:450px;width:100%;'>
