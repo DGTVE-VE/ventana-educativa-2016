@@ -16,10 +16,10 @@
             <br>
         </div>
         <div class="col-xs-6 col-sm-3 col-md-6">
-            <img src="imagenes/red/footer/ceccsica.png" style="width: 70px; height: 93px;"/>
+            <img src="imagenes/red/footer/ceccsica.png" style="width: 60px; height: 79px;"/>
 		</div>
         <div class="col-xs-6 col-sm-3 col-md-6">
-            <img src="imagenes/red/footer/csuca.png" style="width: 85px; height: 85px;"/>
+            <img src="imagenes/red/footer/csuca.png" style="width: 75px; height: 75px;"/>
         </div>
         <div class="col-xs-12 col-sm-12 col-sm-12 col-md-12">
 			<br>
