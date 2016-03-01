@@ -102,7 +102,7 @@
 }
 /*-------------------------------------	Header	-------------------------------------------*/			
 .fondoMenu{
-    background-color:#F5F5F5;
+    background-color:#F9F9F9;
 	font-family: 'Exo', sans-serif;
 }
 .subeHorizontal{
@@ -132,14 +132,6 @@
 .division{
     height:60px;
 }
-.encabezado{
-    height:150px;
-}
-.separa_Linea{
-    color:gray;
-    line-height:2;
-}
-
 .imgTabla{
     width: 140px;
 }
@@ -162,19 +154,6 @@
 
 .centraCont{
     margin:0 auto;
-}
-#parallax-fondoProyectos{
-	position:fixed;
-	top:0;
-	left:50%;
-	margin-left:-800px;
-	z-index:-2;
-}
-#fondo-proyectos{
-	position:absolute;
-	top:680px;
-	left:0px;
-	height:660px;
 }
 /*------------------------------------------------	Pie		----------------------------------------------------------*/
 .imgTecho{
