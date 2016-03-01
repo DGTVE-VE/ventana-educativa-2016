@@ -3,7 +3,7 @@
     <body>
         Para activar tu cuenta da click en el siguiente enlace:<br>
         <a href="http://redmite.televisioneducativa.gob.mx/activaCorreo/{{$correo}}/{{$hash}}"> 
-            <img src="public/imagenes/red/footer/confirmacioncorreo.jpg">
+            <img src="imagenes/red/footer/confirmacioncorreo.jpg">
          </a>        
     </body>
 </html>

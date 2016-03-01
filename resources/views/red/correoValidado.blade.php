@@ -7,7 +7,7 @@ Correo Validado
 @endsection
 @section('cuerpo')
 <div class="row">
-    <img src="public/imagenes/red/footer/activacionexitosa.jpg">
+    <img src="imagenes/red/footer/activacionexitosa.jpg">
 </div>
 @include('red.seccionpie')
 @stop
