@@ -63,7 +63,7 @@
 
     <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4" style="padding-left:3%; padding-right:5%;">
         <h3>Sitios de Interés</h3>
-        <div id="carouselSitioInteres" class="carousel slide" data-ride="carousel" style="background-color:white; position: relative; top:30px;">
+        <div id="carouselSitioInteres" class="carousel slide" data-ride="carousel" style="background-color:white; position: relative; top:0px;">
             <!-- Indicators -->
             <!--ol class="carousel-indicators">
                   <li style="border-color:black;" data-target="#carouselSitioInteres" data-slide-to="0" class="active"></li>
@@ -89,8 +89,11 @@
                             </tr>
                             <tr>
                                 <td style="padding: 10px;">
+									<a href="http://www.televisioneducativa.gob.mx">
+										<img class="img-responsive img-rounded centraCont" style="width:130px; height:42px;" src="imagenes/red/sitiosInteres/logo_tve.png" alt="TV Educativa"/>
+									</a>
 									<a href="http://www.normalsuperior.com.mx/ens1/files/default/default.asp">
-										<img class="img-responsive img-rounded centraCont" style="width:150px; height:86px;" src="imagenes/red/sitiosInteres/4.png" alt="ENS"/>
+										<img class="img-responsive img-rounded centraCont" style="width:150px; height:86px; position:relative; top:30px;" src="imagenes/red/sitiosInteres/4.png" alt="ENS"/>
 									</a>
                                 </td>
                                 <td style="padding: 10px;">

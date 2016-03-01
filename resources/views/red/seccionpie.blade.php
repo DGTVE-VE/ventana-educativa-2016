@@ -11,18 +11,19 @@
     </div>
     <div class="col-xs-6 col-sm-6 col-md-2">
         <h4 class="text-uppercase">Colaboradores</h4>
-        <div class="col-md-12">
+        <div class="col-xs-12 col-sm-12 col-md-12">
             <img class="img-responsive text-center" style="width: 150px; height: 50px;" src="imagenes/red/footer/amexid.png"/>
             <br>
         </div>
-        <div class="col-md-12">
-            <img class="img-responsive col-md-7 text-center" src="imagenes/red/footer/ceccsica.png" style="width: 90px; height: 50px;"/>
-			<br class="visible-xs-block visible-sm-block">
-            <img class="img-responsive col-md-5 text-center" src="imagenes/red/footer/csuca.png" style="width: 100px; height: 70px;"/>
+        <div class="col-xs-6 col-sm-3 col-md-6">
+            <img src="imagenes/red/footer/ceccsica.png" style="width: 70px; height: 93px;"/>
+		</div>
+        <div class="col-xs-6 col-sm-3 col-md-6">
+            <img src="imagenes/red/footer/csuca.png" style="width: 85px; height: 85px;"/>
         </div>
-        <div class="col-md-12">
-            <br>
-            <img class="img-responsive text-center" style="width: 150px; height: 50px;"  src="imagenes/red/footer/tve.png"/>
+        <div class="col-xs-12 col-sm-12 col-sm-12 col-md-12">
+			<br>
+            <img class="img-responsive" style="width: 150px; height: 50px;"  src="imagenes/red/footer/tve.png"/>
         </div>
     </div>
     <div class="col-xs-12 col-sm-12 col-md-3">
