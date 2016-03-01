@@ -91,8 +91,7 @@ class PagesController extends Controller {
     public function activaCorreoNews(Request $request, $correo, $hash) {
 
         $news = \App\Red\News::where('correo', '=', $correo)->first();
-
-        var_dump ($news);
+        
         if ($news->hash == $hash) {
             $news->validado = 1;
             $news->save();            
