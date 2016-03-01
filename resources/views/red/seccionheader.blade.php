@@ -1,5 +1,5 @@
-<div class="navbar yamm navbar-default navbar-fixed-top" role="navigation" style="height:80px;">
-	<div class="container">
+<nav class="navbar yamm navbar-default navbar-fixed-top" role="navigation" style="height:80px;">
+	<div class="container-fluid">
 		<div class="navbar-header">
 			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".js-navbar-collapse">
 				<span class="sr-only">Toggle navigation</span>
@@ -8,16 +8,16 @@
 				<span class="icon-bar"></span>
 			</button>
 			<a class="navbar-brand" href="indexRed">
-				<img class="img-responsive subeHorizontal" src="imagenes/red/LogoRed/logoredmesoamericana.png" alt="Logo Red Mesoamericana">
+				<img class="img-responsive subeHorizontal" src="imagenes/red/LogoRed/logoredmesoamericana.png" alt="Logo Red Mesoamericana"/>
 			</a>
 		</div>
 
 		<div class="collapse navbar-collapse js-navbar-collapse">
-			<ul class="nav navbar-nav navbar-right"> <!-- style="padding-right:20px;"-->
-				<li class="text-uppercase"><a href="indexRed">INICIO</a></li>
-				<li class="text-uppercase"><a href="quienesSomos">¿QUIÉNES SOMOS?</a></li>
+			<ul class="nav navbar-nav navbar-right">
+				<li class="text-uppercase fondoMenu"><a href="indexRed">INICIO</a></li>
+				<li class="text-uppercase fondoMenu"><a href="quienesSomos">¿QUIÉNES SOMOS?</a></li>
 				<li class="dropdown menu-large">
-					<a href="#" class="dropdown-toggle text-uppercase" data-toggle="dropdown">Eventos <b class="caret"></b></a>				
+					<a href="#" class="dropdown-toggle text-uppercase fondoMenu" data-toggle="dropdown">Eventos <b class="caret"></b></a>				
 					<ul class="dropdown-menu yamm-fw">
 						<li class="col-md-12">
 							<ul>
@@ -68,9 +68,9 @@
 					</ul>
 
 				</li>
-				<li class="text-uppercase"><a href="publicaciones">PUBLICACIONES</a></li>
-				<li class="text-uppercase"><a href="contacto">CONTACTO</a></li>
+				<li class="text-uppercase fondoMenu"><a href="publicaciones">PUBLICACIONES</a></li>
+				<li class="text-uppercase fondoMenu"><a href="contacto">CONTACTO</a></li>
 			</ul>
 		</div>
 	</div>
-</div>
+</nav>

@@ -101,9 +101,8 @@
     margin: 50px 0;
 }
 /*-------------------------------------	Header	-------------------------------------------*/			
-.bajaHorizontal{
-    position:relative;
-    top:15px;
+.fondoMenu{
+    background-color:#F5F5F5;
 	font-family: 'Exo', sans-serif;
 }
 
