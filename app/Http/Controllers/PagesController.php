@@ -97,7 +97,7 @@ class PagesController extends Controller {
             $news->save();
             return redirect('correoValidado');
         } else {
-            return redirect('home');
+            print 'error';
         }
     }
 
