@@ -91,13 +91,13 @@ class PagesController extends Controller {
     public function activaCorreoNews(Request $request, $correo, $hash) {
 
         $news = \App\Red\News::where('correo', '=', $correo)->first();
-
+        
         if ($news->hash == $hash) {
             $news->validado = 1;
-            $news->save();
+            $news->save();            
             return redirect('correoValidado');
         } else {
-            return redirect('home');
+            print 'error';
         }
     }
 

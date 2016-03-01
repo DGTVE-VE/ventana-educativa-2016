@@ -53,7 +53,8 @@ and open the template in the editor.
         <!--<link rel="stylesheet" href="css/red/full-slider.css">-->  
 
     </head>
-    <body id="pag_principal" style="padding:0px; overflow-x:hidden">
+    <body id="pag_principal" style="padding:0px; overflow-x:hidden">        
+        @include('googleAnalytics')
         <div id="fb-root"></div>
         <script>(function (d, s, id) {
             var js, fjs = d.getElementsByTagName(s)[0];
