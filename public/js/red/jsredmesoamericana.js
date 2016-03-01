@@ -14,25 +14,25 @@
 							document.getElementById("imgFuncionalidad").src ="imagenes/red/ModeloUsabilidad/funcionalidadEduOver.png";
 							document.getElementById("txtFuncionalidad").style.width ="320px";
 							document.getElementById("txtFuncionalidad").style.height ="70px";
-							document.getElementById("txtFuncionalidad").style.left ="100px";
+							document.getElementById("txtFuncionalidad").style.left ="-280px";
 							break;
 						case 'expectativas':
 							document.getElementById("imgExpectativas").src ="imagenes/red/ModeloUsabilidad/disposicionExpectativasOver.png";
 							document.getElementById("txtExpectativas").style.width ="340px";
 							document.getElementById("txtExpectativas").style.height ="91px";
-							document.getElementById("txtExpectativas").style.left ="-10px";
+							document.getElementById("txtExpectativas").style.left ="-390px";
 							break;
 						case 'saberesDig':
 							document.getElementById("imgSaberesDig").src ="imagenes/red/ModeloUsabilidad/saberesDigitalesOver.png";
 							document.getElementById("txtSaberesDig").style.width ="330px";
 							document.getElementById("txtSaberesDig").style.height ="75px";
-							document.getElementById("txtSaberesDig").style.left ="-110px";
+							/*document.getElementById("txtSaberesDig").style.left ="560px";*/
 							break;
 						case 'apropiacion':
 							document.getElementById("imgApropiacion").src ="imagenes/red/ModeloUsabilidad/apropiacionIncorporacionEduOver.png";
 							document.getElementById("txtApropiacion").style.width ="310px";
 							document.getElementById("txtApropiacion").style.height ="85px";
-							document.getElementById("txtApropiacion").style.left ="-170px";
+							/*document.getElementById("txtApropiacion").style.left ="520px";*/
 							break;
 						case 'funcionalidadXS':
 							document.getElementById("imgFuncionalidadXS").src ="imagenes/red/ModeloUsabilidad/funcionalidadEduOver.png";
@@ -92,25 +92,25 @@
 							document.getElementById("imgFuncionalidad").src ="imagenes/red/ModeloUsabilidad/funcionalidadEdu.png";
 							document.getElementById("txtFuncionalidad").style.width ="270px";
 							document.getElementById("txtFuncionalidad").style.height ="52px";
-							document.getElementById("txtFuncionalidad").style.left ="140px";
+							document.getElementById("txtFuncionalidad").style.left ="-240px";
 							break;
 						case 'expectativas':
 							document.getElementById("imgExpectativas").src ="imagenes/red/ModeloUsabilidad/disposicionExpectativas.png";
 							document.getElementById("txtExpectativas").style.width ="300px";
 							document.getElementById("txtExpectativas").style.height ="71px";
-							document.getElementById("txtExpectativas").style.left ="20px";
+							document.getElementById("txtExpectativas").style.left ="-360px";
 							break;
 						case 'saberesDig':
 							document.getElementById("imgSaberesDig").src ="imagenes/red/ModeloUsabilidad/saberesDigitales.png";
 							document.getElementById("txtSaberesDig").style.width ="300px";
 							document.getElementById("txtSaberesDig").style.height ="56px";
-							document.getElementById("txtSaberesDig").style.left ="-100px";
+							document.getElementById("txtSaberesDig").style.left ="540px";
 							break;
 						case 'apropiacion':
 							document.getElementById("imgApropiacion").src ="imagenes/red/ModeloUsabilidad/apropiacionIncorporacionEdu.png";
 							document.getElementById("txtApropiacion").style.width ="270px";
 							document.getElementById("txtApropiacion").style.height ="58px";
-							document.getElementById("txtApropiacion").style.left ="-170px";
+							document.getElementById("txtApropiacion").style.left ="500px";
 							break;
 						case 'funcionalidadXS':
 							document.getElementById("imgFuncionalidadXS").src ="imagenes/red/ModeloUsabilidad/funcionalidadEdu.png";

@@ -1,4 +1,4 @@
-<div class="navbar yamm navbar-default navbar-fixed-top" role="navigation" style="height:80px;">	<!--navbar-static-top-->
+<div class="navbar yamm navbar-default navbar-fixed-top" role="navigation" style="height:80px;">
     <div class="navbar-header">
         <div class="navbar-header">
             <a class="navbar-brand" href="indexRed">
@@ -13,12 +13,12 @@
         </button>
     </div>
 
-    <div class="collapse navbar-collapse js-navbar-collapse">
-        <ul class="nav navbar-nav navbar-right" style="padding-right:20px;">
-            <li class="bajaHorizontal text-uppercase"><a href="indexRed">INICIO</a></li>
-            <li class="bajaHorizontal text-uppercase"><a href="quienesSomos">¿QUIÉNES SOMOS?</a></li>
+    <div class="collapse navbar-collapse js-navbar-collapse navbar-right">
+        <ul class="nav navbar-nav" style="padding-right:20px;">
+            <li class="nav bajaHorizontal text-uppercase"><a href="indexRed">INICIO</a></li>
+            <li class="nav bajaHorizontal text-uppercase"><a href="quienesSomos">¿QUIÉNES SOMOS?</a></li>
             <li class="dropdown menu-large">
-                <a href="#" class="dropdown-toggle bajaHorizontal text-uppercase" data-toggle="dropdown">Eventos <b class="caret"></b></a>				
+                <a href="#" class="nav dropdown-toggle bajaHorizontal text-uppercase" data-toggle="dropdown">Eventos <b class="caret"></b></a>				
                 <ul class="dropdown-menu yamm-fw">
                     <li class="col-md-12">
                         <ul>
@@ -71,8 +71,8 @@
                 </ul>
 
             </li>
-            <li class="bajaHorizontal text-uppercase"><a href="publicaciones">PUBLICACIONES</a></li>
-            <li class="bajaHorizontal text-uppercase"><a href="contacto">CONTACTO</a></li>
+            <li class="nav bajaHorizontal text-uppercase"><a href="publicaciones">PUBLICACIONES</a></li>
+            <li class="nav bajaHorizontal text-uppercase"><a href="contacto">CONTACTO</a></li>
         </ul>
     </div>
 </div>
