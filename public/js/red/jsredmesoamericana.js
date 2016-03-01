@@ -218,8 +218,8 @@
                 });
                 
                 //obtenemos las dimensiones de cada elemento y su posicion
-                var self_w = self.outerWidth()/2; //ancho exterior
-                var self_h = self.outerHeight()/2; //alto exterior
+                var self_w = self.outerWidth()/10; //ancho exterior
+                var self_h = self.outerHeight()/10; //alto exterior
                 var self_l = self.offset().left; //coordenada izquierda
                 var self_t = self.offset().top; //coordenada arriba
                 

@@ -7,7 +7,7 @@
         <h3>Retos Regionales</h3>
         <div id="carouselRetos" class="carousel slide" data-ride="carousel"> <!-- background-color:#E5E5E5; -->
             <!-- Indicators -->
-            <ol class="carousel-indicators" style="position: relative; top: 400px; left:200px;">
+            <ol class="carousel-indicators" style="position: absolute; top: 75%; left:50%;">
                 <li style="border-color:black;" data-target="#carouselRetos" data-slide-to="0" class="active"></li>
                 <li style="border-color:black;" data-target="#carouselRetos" data-slide-to="1"></li>
                 <li style="border-color:black;" data-target="#carouselRetos" data-slide-to="2"></li>
@@ -77,26 +77,38 @@
                         <table>
                             <tr>
                                 <td style="padding: 10px;">
-                                    <img class="img-responsive img-rounded centraCont" style="width:150px; height:96px;" src="imagenes/red/sitiosInteres/1.png" alt="CIDIE"/>
+                                    <a  href="http://www.uv.mx/veracruz/cidie/">
+										<img class="img-responsive img-rounded centraCont" style="width:150px; height:96px;" src="imagenes/red/sitiosInteres/1.png" alt="CIDIE"/>
+									</a>
                                 </td>
                                 <td style="padding: 10px;">
-                                    <img class="img-responsive img-rounded centraCont" style="width:100px; height:124px;" src="imagenes/red/sitiosInteres/3.jpg" alt="CINVESTAV"/>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td style="padding: 10px;">
-                                    <img class="img-responsive img-rounded centraCont" style="width:150px; height:86px;" src="imagenes/red/sitiosInteres/4.png" alt="ENS"/>
-                                </td>
-                                <td style="padding: 10px;">
-                                    <img class="img-responsive img-rounded centraCont" style="width:100px; height:124px;" src="imagenes/red/sitiosInteres/5.png" alt="RID"/>
+									<a href="http://www.cinvestav.mx/">
+										<img class="img-responsive img-rounded centraCont" style="width:100px; height:124px;" src="imagenes/red/sitiosInteres/3.jpg" alt="CINVESTAV"/>
+									</a>
                                 </td>
                             </tr>
                             <tr>
                                 <td style="padding: 10px;">
-                                    <img class="img-responsive img-rounded centraCont" style="width:150px; height:67px;" src="imagenes/red/sitiosInteres/LogoCeducar.jpg" alt="CEDUCAR"/>
+									<a href="http://www.normalsuperior.com.mx/ens1/files/default/default.asp">
+										<img class="img-responsive img-rounded centraCont" style="width:150px; height:86px;" src="imagenes/red/sitiosInteres/4.png" alt="ENS"/>
+									</a>
                                 </td>
                                 <td style="padding: 10px;">
-                                    <img class="img-responsive img-rounded centraCont" style="width:150px; height:127px; " src="imagenes/red/sitiosInteres/2.png" alt="UPN"/>
+									<a href="http://formacionib.ning.com/">
+										<img class="img-responsive img-rounded centraCont" style="width:100px; height:124px;" src="imagenes/red/sitiosInteres/5.png" alt="RID"/>
+									</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="padding: 10px;">
+									<a href="http://ceducar.info/ceducar/">
+										<img class="img-responsive img-rounded centraCont" style="width:150px; height:67px;" src="imagenes/red/sitiosInteres/LogoCeducar.jpg" alt="CEDUCAR"/>
+									</a>
+                                </td>
+                                <td style="padding: 10px;">
+									<a  href="http://www.upn.mx/">
+										<img class="img-responsive img-rounded centraCont" style="width:150px; height:127px; " src="imagenes/red/sitiosInteres/2.png" alt="UPN"/>
+									</a>
                                 </td>
                             </tr>
 							<tr>
