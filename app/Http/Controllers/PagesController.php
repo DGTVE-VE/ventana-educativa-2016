@@ -94,9 +94,8 @@ class PagesController extends Controller {
 
         if ($news->hash == $hash) {
             $news->validado = 1;
-            $news->save();
-            print 'llego aqui';
-//            return redirect('correoValidado');
+            $news->save();            
+            return redirect('correoValidado');
         } else {
             print 'error';
         }
