@@ -161,7 +161,16 @@ and open the template in the editor.
 {
     font-size: 87px;
 }
-.selectColor{color: #000;}
+
+select {
+/*    background: yellow !important;*/
+    color:#000;
+    text-shadow:0 1px 0 rgba(0, 0, 0, 0.4);
+}
+option:not(:checked) {
+    background-color: #FFF;
+}
+
 .login {
 	margin-top: 5px !important;
 	padding: 5px;
