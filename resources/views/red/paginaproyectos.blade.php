@@ -135,7 +135,7 @@ Proyectos
     jQuery(document).ready(function ($) {
 
         $('#myCarouselProyecto').carousel({
-            interval: 5000
+            interval: 13000
         });
 
         $('#carousel-text').html($('#slide-content-0').html());

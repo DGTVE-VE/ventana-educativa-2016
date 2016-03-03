@@ -1,4 +1,4 @@
-﻿			<div class="row fondo_footer1" style="margin-top:-20px;">
+﻿<div class="row fondo_footer1" style="margin-top:-20px;">
     <div class="division">
     </div>
     <div class="col-sm-6 col-md-2 col-md-offset-1">
@@ -75,6 +75,7 @@
     </div>
 </div>
 <footer>
+    <div class="row">Colaboradores</div>
     <div class="row fondo_footer2">
         <div class="col-xs-9 col-sm-6 col-md-10 col-md-offset-1">
             <br>

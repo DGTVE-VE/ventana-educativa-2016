@@ -60,17 +60,7 @@ Quienes Somos
                     </P><br>
 
                     <h4>OBJETIVOS ESPECÍFICOS</h4>
-<!--                    <p style="text-align: justify;">- Impulsar la primera red mesoamericana de especialistas en la educación para el fortalecimiento 
-                        de los procesos de enseñanza y aprendizaje.
-                    </p>-->
-<!--                                        <P style="text-align: justify;">- Fomentar el desarrollo de habilidades digitales para el docente ante la era digital.</p>
-                                        <p style="text-align: justify;">- Impulsar a través de este espacio la profesionalización, actualización e innovación del docente
-                                            ante el nuevo contexto tecnológico. </p>
-                                        <p style="text-align: justify;">- Crear aportes científicos que favorezcan a nuevas metodologías y tendencias para el proceso de
-                                            enseñanza y aprendizaje.</p>
-                                        <p style="text-align: justify;">- Proveer al docente de recursos que le permitan articular desde su labor, la configuración de la
-                                            comunidad escolar (alumno-profesor-padre de familia).</p>
-                                        <p style="text-align: justify;">- Ser un espacio que permita compartir experiencias y puntos en común entre los miembros de la Red.</p>-->
+
                     <ul>
                         <li class=" list-unstyled"><span class="fa fa-minus" style="text-align: justify;"></span> Impulsar la primera red mesoamericana de especialistas en la educación para el fortalecimiento 
                                 de los procesos de enseñanza y aprendizaje.</li>
@@ -84,7 +74,6 @@ Quienes Somos
                         <li class=" list-unstyled"><span class="fa fa-minus" style="text-align: justify;"></span> Ser un espacio que permita compartir experiencias y puntos en común entre los miembros de la Red.</li>
                         
                     </ul>
-
                 </div>
                 <div class="col-md-1"></div>
             </div> <!-- row de texto -->
