@@ -1,9 +1,9 @@
-@section('title')
+@section('titleRedmite')
 Registro de Usuarios
 @stop
-@extends('home')
-@section('menu')
-@include('red.seccionheader')
+@extends('indexRed')
+@section('menuRedmite')
+@include('viewRed.seccionheader')
 @endsection  
 <div class="row" style="margin-top: 6%;">
     <div class="col-md-4 col-md-offset-4">
@@ -43,4 +43,4 @@ Registro de Usuarios
         </div>
     </div>
 </div>
-@include('red.seccionpie')
+@include('viewRed.seccionpie')

@@ -7,14 +7,14 @@
 				<span class="icon-bar"></span>
 				<span class="icon-bar"></span>
 			</button>
-			<a class="navbar-brand" href="indexRed">
+			<a class="navbar-brand" href="redmite">
 				<img class="img-responsive subeHorizontal" src="imagenes/red/LogoRed/logoredmesoamericana.png" alt="Logo Red Mesoamericana"/>
 			</a>
 		</div>
 
 		<div class="collapse navbar-collapse js-navbar-collapse">
 			<ul class="nav navbar-nav navbar-right">
-				<li class="text-uppercase fondoMenu"><a href="indexRed">INICIO</a></li>
+				<li class="text-uppercase fondoMenu"><a href="redmite">INICIO</a></li>
 				<li class="text-uppercase fondoMenu"><a href="quienesSomos">¿QUIÉNES SOMOS?</a></li>
 				<li class="dropdown menu-large">
 					<a href="#" class="dropdown-toggle text-uppercase fondoMenu" data-toggle="dropdown">Eventos <b class="caret"></b></a>				

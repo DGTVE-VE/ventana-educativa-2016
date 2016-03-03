@@ -1,11 +1,11 @@
-@section('title')
+@section('titleRedmite')
 Publicaciones
 @stop
-@extends('home')
-@section('menu')
-@include('red.seccionheader')
+@extends('indexRed')
+@section('menuRedmite')
+@include('viewRed.seccionheader')
 @endsection
-@section('cuerpo')
+@section('cuerpoRedmite')
 <a name="redesconocimiento"></a>
 <div class="row backpareatema">
     <div class=""> 
@@ -109,5 +109,5 @@ Publicaciones
         <br>
     </div>
 </div>
-@include('red.seccionpie')
+@include('viewRed.seccionpie')
 @stop

@@ -1,12 +1,12 @@
-@section('title')
+@section('titleRedmite')
 Contacto
 @stop
-@extends('home')
-@section('menu')
+@extends('indexRed')
+@section('menuRedmite')
 <a name="redesconocimiento"></a>
-@include('red.seccionheader')
+@include('viewRed.seccionheader')
 @endsection
-@section('cuerpo')
+@section('cuerpoRedmite')
 <div class="row" style="margin-top:55px;" >
 	<div class="col-xs-12 col-sm-12 col-md-12">
 		<div class="division textoContacto">
@@ -91,5 +91,5 @@ Contacto
     google.maps.event.addDomListener(window, 'load', init_map);
 </script>
 
-@include('red.seccionpie')
+@include('viewRed.seccionpie')
 @stop
