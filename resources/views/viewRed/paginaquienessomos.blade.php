@@ -1,11 +1,11 @@
-@section('title')
+@section('titleRedmite')
 Quienes Somos
 @stop
-@extends('home')
-@section('menu')
-@include('red.seccionheader')
+@extends('indexRed')
+@section('menuRedmite')
+@include('viewRed.seccionheader')
 @endsection
-@section('cuerpo')
+@section('cuerpoRedmite')
 <div class=" row backpaquienes">
     <div class=""> 
         <div class="row" style="margin-top: 5%;" >        
@@ -81,7 +81,7 @@ Quienes Somos
         <br><br>
     </div>
 </div>
-@include('red.seccionpie')
+@include('viewRed.seccionpie')
 @stop
 
 

@@ -1,11 +1,11 @@
-@section('title')
+@section('titleRedmite')
 Proyectos
 @stop
-@extends('home')
-@section('menu')
-@include('red.seccionheader')
+@extends('indexRed')
+@section('menuRedmite')
+@include('viewRed.seccionheader')
 @endsection
-@section('cuerpo')
+@section('cuerpoRedmite')
 
 <div class="row" style="margin-top: 5%;">        
     <div class="row fondo_Obscuro">
@@ -135,7 +135,7 @@ Proyectos
     jQuery(document).ready(function ($) {
 
         $('#myCarouselProyecto').carousel({
-            interval: 13000
+            interval: false
         });
 
         $('#carousel-text').html($('#slide-content-0').html());
@@ -177,5 +177,5 @@ Proyectos
     })
 </script>
 
-@include('red.seccionpie')
+@include('viewRed.seccionpie')
 @stop

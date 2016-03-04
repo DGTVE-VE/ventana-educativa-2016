@@ -1,27 +1,33 @@
 <?php
-/*Vistas principales*/
-Route::get('/','PagesController@indexRed');
-Route::get('testCorreo','PagesController@testMail');
-Route::get('home', 'PagesController@home');
-Route::get('indexRed','PagesController@indexRed');
-Route::get('indexVod','PagesController@indexVod');
-Route::get('indexDocentes','PagesController@indexDocentes');
-//Route::get('viewTable','PagesController@viewTable');
+/****************************REDMITE***********************/
+/*Vistas principales REDMITE*/
+Route::get('/','RedmiteController@redmite');
+Route::get('testCorreo','RedmiteController@testMail');
+Route::get('redmite','RedmiteController@redmite');
+
+/*Vistas de páginas secundarias REDMITE*/
+Route::get('publicaciones','RedmiteController@publicaciones');
+Route::get('quienesSomos','RedmiteController@quienesSomos');
+Route::get('areastematicas','RedmiteController@areastematicas');
+Route::get('proyectos','RedmiteController@proyectos');
+Route::get('contacto','RedmiteController@contacto');
+Route::get('correoValidado','RedmiteController@correoValidado');
+
+/*Vistas de administración Formularios REDMITE*/
+Route::get('frmbanner','RedmiteController@frmbanner');
+Route::get('frmcolaboradores','RedmiteController@frmcolaboradores');
+Route::get('frmproyectos','RedmiteController@frmproyectos');
+Route::get('frmpublicaciones','RedmiteController@frmpublicaciones');
+Route::get('usuarios','RedmiteController@usuarios');
+Route::post('guardaCorreoNewsLetter', 'RedmiteController@guardaCorreoNewsLetter');
+Route::get('activaCorreo/{correo}/{hash}', 'RedmiteController@activaCorreoNews');
+Route::post('guardaContacto', 'RedmiteController@guardaContacto');
+
+/****************************REDMITE***********************/
 
 
-/*Vistas de páginas secundarias*/
-Route::get('publicaciones','PagesController@publicaciones');
-Route::get('quienesSomos','PagesController@quienesSomos');
-Route::get('areastematicas','PagesController@areastematicas');
-Route::get('proyectos','PagesController@proyectos');
-Route::get('contacto','PagesController@contacto');
 
-/*Vistas de administración Formularios*/
-Route::get('frmbanner','PagesController@frmbanner');
-Route::get('frmcolaboradores','PagesController@frmcolaboradores');
-Route::get('frmproyectos','PagesController@frmproyectos');
-Route::get('frmpublicaciones','PagesController@frmpublicaciones');
-Route::get('usuarios','PagesController@usuarios');
-Route::post('guardaCorreoNewsLetter', 'PagesController@guardaCorreoNewsLetter');
-Route::get('activaCorreo/{correo}/{hash}', 'PagesController@activaCorreoNews');
-Route::post('guardaContacto', 'PagesController@guardaContacto');
+/****************************HOME VENTANA***********************/
+//Route::get('/','VentanaController@ventana');
+Route::get('ventana_educativa','VentanaController@ventana_educativa');
+/****************************HOME VENTANA***********************/

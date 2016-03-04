@@ -1,76 +1,63 @@
 <?php
 
 namespace App\Http\Controllers;
+
 use Mail;
 use Illuminate\Http\Request;
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 
-class PagesController extends Controller {
+class RedmiteController extends Controller {
 
-    public function home() {
-        return view('home');
+    public function redmite() {
+        return view('viewRed/redmite');
     }
-
-    public function indexRed() {
-        return view('indexRed');
-    }
-
-    public function indexVod() {
-        return view('indexVod');
-    }
-
-    public function indexDocentes() {
-        return view('indexDocentes');
-    }
-
     public function publicaciones() {
-        return view('red/paginapublicaciones');
+        return view('viewRed/paginapublicaciones');
     }
 
-////
     public function quienesSomos() {
-        return view('red/paginaquienessomos');
+        return view('viewRed/paginaquienessomos');
     }
 
     public function prueba() {
-        return view('red/paginaprueba');
+        return view('viewRed/paginaprueba');
     }
 
     public function proyectos() {
-        return view('red/paginaproyectos');
+        return view('viewRed/paginaproyectos');
     }
 
     public function areastematicas() {
-        return view('red/paginaareastematicas');
-    }
-
-    public function viewTable() {
-        $proyectos = \App\Red\Proyectos::all();
+        return view('viewRed/paginaareastematicas');
     }
 
     public function contacto() {
-        return view('red/paginacontacto');
+        return view('viewRed/paginacontacto');
     }
 
     public function frmbanner() {
-        return view('red/frmbanner');
+        return view('viewRed/frmbanner');
     }
 
     public function frmcolaboradores() {
-        return view('red/frmcolaboradores');
+        return view('viewRed/frmcolaboradores');
     }
 
     public function frmproyectos() {
-        return view('red/frmproyectos');
+        return view('viewRed/frmproyectos');
     }
 
     public function frmpublicaciones() {
-        return view('red/frmpublicaciones');
+        return view('viewRed/frmpublicaciones');
     }
 
     public function usuarios() {
-        return view('red/frmusuarios');
+        return view('viewRed/frmusuarios');
+    }
+
+    public function correoValidado() {
+        return view('viewRed/correoValidado');
     }
 
     public function guardaCorreoNewsLetter() {
@@ -79,9 +66,9 @@ class PagesController extends Controller {
         $news->correo = filter_input(INPUT_POST, 'correo_newsletter');
         $news->hash = md5(date('Y/m/d H:i:s'));
         $news->save();
-        
+
         $this->enviaCorreoActivacion($news->correo, $news->hash);
-        print 'guardado';
+        return redirect('redmite');
     }
 
     public function activaCorreoNews(Request $request, $correo, $hash) {
@@ -91,13 +78,11 @@ class PagesController extends Controller {
         if ($news->hash == $hash) {
             $news->validado = 1;
             $news->save();
-            print 'Correo validado';
+            return redirect('correoValidado');
         } else {
-            return redirect('home');
+            print 'error';
         }
     }
-
-   
 
     public function guardaContacto() {
         $contacto = new \App\Red\Contacto();
@@ -109,11 +94,12 @@ class PagesController extends Controller {
         return redirect('contacto');
     }
 
-    public function enviaCorreoActivacion ($correo, $hash){
-        Mail::send('red.mailActivacion', ['correo'=>$correo, 'hash'=>$hash], function ($m) use ($correo)  {
+    public function enviaCorreoActivacion($correo, $hash) {
+        Mail::send('viewRed.mailActivacion', ['correo' => $correo, 'hash' => $hash], function ($m) use ($correo) {
             $m->from('redmite@televisioneducativa.gob.mx', 'Red Mesoamericana');
             $m->to($correo)->subject('Activación de correo!');
         });
-        print 'correo enviado';
+        return redirect('correoValidado');
     }
+
 }

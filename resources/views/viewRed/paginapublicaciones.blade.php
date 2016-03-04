@@ -1,11 +1,11 @@
-@section('title')
+@section('titleRedmite')
 Publicaciones
 @stop
-@extends('home')
-@section('menu')
-@include('red.seccionheader')
+@extends('indexRed')
+@section('menuRedmite')
+@include('viewRed.seccionheader')
 @endsection
-@section('cuerpo')
+@section('cuerpoRedmite')
 <div class="row" style="margin-top: 5%;" >  <!--row inicial -->       
     <div class="col-md-12 fondo_Obscuro text-center text-uppercase">
         <p class="pleca">Publicaciones</p>
@@ -1053,5 +1053,5 @@ Publicaciones
     <div class="col-md-1"></div>
 </div>
 
-@include('red.seccionpie')
+@include('viewRed.seccionpie')
 @stop
