@@ -6,7 +6,7 @@
         <br>
         <img id="imgIconoTwetter" class="img-responsive img-rounded" style="float:left; width:50px; height:50px;" src="imagenes/red/footer/icono-twetter-A.png" onmouseenter="imgResalta('twetter')" onmouseleave="imgNormal('twetter')"/>
         <img id="imgIconoFacebook" class="img-responsive img-rounded" style="float:left; width:50px; height:50px;" src="imagenes/red/footer/icono-face-A.png" onmouseenter="imgResalta('facebook')" onmouseleave="imgNormal('facebook')"/>
-        <img id="imgIconoYoutube" class="img-responsive img-rounded" style="float:left; width:50px; height:50px;" src="imagenes/red/footer/icono-youtube-A.png" onmouseenter="imgResalta('youtube')" onmouseleave="imgNormal('youtube')"/>
+        <!--<img id="imgIconoYoutube" class="img-responsive img-rounded" style="float:left; width:50px; height:50px;" src="imagenes/red/footer/icono-youtube-A.png" onmouseenter="imgResalta('youtube')" onmouseleave="imgNormal('youtube')"/>-->
         <br>
     </div>
     <div class="col-xs-6 col-sm-6 col-md-2 col-lg-2">
@@ -17,12 +17,12 @@
         </div>
         <div class="col-xs-6 col-sm-3 col-md-6 col-lg-6">
             <img src="imagenes/red/footer/ceccsica.png" style="width: 60px; height: 79px;"/>
-		</div>
+        </div>
         <div class="col-xs-6 col-sm-3 col-md-6 col-lg-6">
             <img src="imagenes/red/footer/csuca.png" style="width: 75px; height: 75px;"/>
         </div>
         <div class="col-xs-12 col-sm-12 col-sm-12 col-md-12 col-lg-12">
-			<br>
+            <br>
             <img class="img-responsive" style="width: 150px; height: 50px;"  src="imagenes/red/footer/tve.png"/>
         </div>
     </div>
@@ -66,18 +66,18 @@
             <strong class="lead">Tecnología</strong> Educación Matemáticas <strong class="lead">Español</strong><br>
             Indicadores educativos <strong class="lead">Metodologías pedagógicas</strong><br>
             Docentes <strong class="lead">Procesos formativos</strong> Pedagogía digital</p>
-		<br>
-        <h4	class="text-uppercase">newsletter</h4>
+        <br>
+        <h4>Mantente informado. Suscríbete.</h4>
         <form class="form-inline" action="guardaCorreoNewsLetter" method="POST">
-            <div class="form-group">
-                <input type="email" name="correo_newsletter" class="form-control" id="correoElectronico" placeholder="direccion@servidor.com"  style="width:180px">
+            <div class="form-group col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <input type="email" name="correo_newsletter" class="form-control" id="correoElectronico" placeholder="direccion@servidor.com"  style="width:80%">
                 <button type="submit" class="btn btn-primary"><span class="glyphicon glyphicon-send"></span></button>
             </div>
         </form>
     </div>
 </div>
 <footer>
-        <div class="row fondo_footer2">
+    <div class="row fondo_footer2">
         <div class="col-xs-9 col-sm-6 col-md-10 col-md-offset-1">
             <br>
             <p>Proyecto alineado al Programa Mesoamericano de Cooperación 2015 - 2016. <br>
