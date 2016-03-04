@@ -19,38 +19,39 @@ and open the template in the editor.
         <!-- Latest compiled and minified CSS -->
         <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+        <!--	-------------------------- Fuentes de google fonts ------------------------------------		-->
+        <link href='https://fonts.googleapis.com/css?family=Ubuntu:400,300,500,700' rel='stylesheet' type='text/css'>
+
+        <link rel="stylesheet" href="css/red/ihover.css">  
+        <link rel="stylesheet" href="css/red/animate.css">
+
+
+        <link rel="stylesheet" href="css/ventana/estiloventana2.css">  
+        
+        <!--CDN FormHelpers-->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-formhelpers/2.3.0/css/bootstrap-formhelpers.css" rel="stylesheet"/>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-formhelpers/2.3.0/css/bootstrap-formhelpers.min.css" rel="stylesheet"/>
+        <!--fin FormHelpers -->
+    </head>
+    <body>        
+        <header>
+            @yield('menuVentana')
+        </header>
+        <div class="container-fluid">
+            @yield('cuerpoVentana')
+        </div>
         <!-- jQuery library -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 
         <!-- Latest compiled JavaScript -->
         <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-
-        <!--	-------------------------- Fuentes de google fonts ------------------------------------		-->
-        <link href='https://fonts.googleapis.com/css?family=Ubuntu:400,300,500,700' rel='stylesheet' type='text/css'>
-        
-        <link rel="stylesheet" href="css/red/ihover.css">  
-        <link rel="stylesheet" href="css/red/animate.css">
-        
-        
-        <link rel="stylesheet" href="css/ventana/estiloventana2.css">  
-        
-        <!--CDN FormHelpers-->
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-formhelpers/2.3.0/css/bootstrap-formhelpers.css" rel="stylesheet"/>
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-formhelpers/2.3.0/css/bootstrap-formhelpers.min.css" rel="stylesheet"/>
-<!--        <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-formhelpers/2.3.0/img/bootstrap-formhelpers-countries.flags.png"/>
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-formhelpers/2.3.0/img/bootstrap-formhelpers-googlefonts.png"/>-->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-formhelpers/2.3.0/js/bootstrap-formhelpers.js" type="text/javascript"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-formhelpers/2.3.0/js/bootstrap-formhelpers.min.js" type="text/javascript"></script>
-        <!--fin FormHelpers -->
-    </head>
-    <body>        
-        <header>
-        @yield('menuVentana')
-        </header>
-        <div class="container-fluid">
-            @yield('cuerpoVentana')
-        </div>
+
+        
     </body>
 </html>
+

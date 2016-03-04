@@ -8,15 +8,18 @@ and open the template in the editor.
     Author     : SMARTINEZ
 */
 *{
-    /*border: 2px solid blue;*/
-    background: url(../../imagenes/ventana/background/back2.jpg) no-repeat center center fixed; 
+
+}
+
+body{
+    background: url(../../imagenes/ventana/background/BackgroundDefault.jpg) no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    color: white;
+    height: 100%;
+    width: 100%;
 }
-
 .navbarHome li { color: #000 }
 
 .fotoUsuario{
@@ -32,117 +35,106 @@ and open the template in the editor.
 }
 .iconoApps{
     width: 40px;
-    height: 30px;
-    /*margin-top: 20%;*/
+    height: 30px;    
 }
-
 .menuVentana{
-    width: 250px;
+    background-color: transparent;
+    background: transparent;
+    border-color: transparent;
+    border-bottom: 1px solid white;     
+
 }
 
-.logoVentana {
-    /*margin-left: -100%;*/
-    margin-top: -10%;
-    width: 100% \9; /*Force IE10 and below to size SVG images correctly*/
-    max-width: 100%;
-}
-
-@media (max-width:480px) { 
-    .logoVentana {
-        width: 70% \9; /*Force IE10 and below to size SVG images correctly*/
-        max-width: 70% !important;
-    }
-}
-
-@media (max-width:400px) { 
-    .logoVentana {
-        width: 75% \9; /*Force IE10 and below to size SVG images correctly*/
-        max-width: 75%;
-    }
-}
-
-@media (max-width:385px) { 
-    .logoVentana {
-        width: 70% \9; /*Force IE10 and below to size SVG images correctly*/
-        max-width: 70%;
-    }
-}
-
-@media (max-width:345px) { 
-    .logoVentana {
-        width: 65% \9; /*Force IE10 and below to size SVG images correctly*/
-        max-width: 65%;
-    }
-}
-
-@media (max-width:335px) { 
-    .logoVentana {
-        width: 60% \9; /*Force IE10 and below to size SVG images correctly*/
-        max-width: 60%;
-    }
-}
-
-@media (max-width:325px) { 
-    .logoVentana {
-        width: 55% \9; /*Force IE10 and below to size SVG images correctly*/
-        max-width: 55%;
-    }
-}
-
-@media (max-width:315px) { 
-    .logoVentana {
-        width: 50% \9; /*Force IE10 and below to size SVG images correctly*/
-        max-width: 50%;
-    }
-}
-
-
-
-
-
-
-
+.menuVentanaApps li > a:hover { background: transparent !important; }
 
 
 /*Modal registra usuario*/
-/* Credit to bootsnipp.com for the css for the color graph */
-.colorgraph {
-  height: 5px;
-  border-top: 0;
-  background: #c4e17f;
-  border-radius: 5px;
-  background-image: -webkit-linear-gradient(left, #c4e17f, #c4e17f 12.5%, #f7fdca 12.5%, #f7fdca 25%, #fecf71 25%, #fecf71 37.5%, #f0776c 37.5%, #f0776c 50%, #db9dbe 50%, #db9dbe 62.5%, #c49cde 62.5%, #c49cde 75%, #669ae1 75%, #669ae1 87.5%, #62c2e4 87.5%, #62c2e4);
-  background-image: -moz-linear-gradient(left, #c4e17f, #c4e17f 12.5%, #f7fdca 12.5%, #f7fdca 25%, #fecf71 25%, #fecf71 37.5%, #f0776c 37.5%, #f0776c 50%, #db9dbe 50%, #db9dbe 62.5%, #c49cde 62.5%, #c49cde 75%, #669ae1 75%, #669ae1 87.5%, #62c2e4 87.5%, #62c2e4);
-  background-image: -o-linear-gradient(left, #c4e17f, #c4e17f 12.5%, #f7fdca 12.5%, #f7fdca 25%, #fecf71 25%, #fecf71 37.5%, #f0776c 37.5%, #f0776c 50%, #db9dbe 50%, #db9dbe 62.5%, #c49cde 62.5%, #c49cde 75%, #669ae1 75%, #669ae1 87.5%, #62c2e4 87.5%, #62c2e4);
-  background-image: linear-gradient(to right, #c4e17f, #c4e17f 12.5%, #f7fdca 12.5%, #f7fdca 25%, #fecf71 25%, #fecf71 37.5%, #f0776c 37.5%, #f0776c 50%, #db9dbe 50%, #db9dbe 62.5%, #c49cde 62.5%, #c49cde 75%, #669ae1 75%, #669ae1 87.5%, #62c2e4 87.5%, #62c2e4);
+body.modal-open, 
+.modal-open .navbar-fixed-top, 
+.modal-open .navbar-fixed-bottom {
+    margin-right: 0;
 }
-/*body{
-    padding: 50px;
-}*/
-.modal-dialog {
-    width: 350px;
-}
-.modal-footer {
-    height: 70px;
-    margin: 0;
-}
-.modal-footer .btn {
-    font-weight: bold;
-}
-.modal-footer .progress {
-    display: none;
-    height: 32px;
-    margin: 0;
-}
-/*.input-group-addon {
-    color: #fff;
-    background: #3276B1;
-}*/
 
+.modal {
+    left: 50%;
+    bottom: auto;
+    right: auto;
+    z-index: 1050;
+    padding: 0;
+    width: 500px;
+    margin-left: -250px;
+    background-color: #ffffff;
+    border: 1px solid #999999;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 6px;
+    -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
+    background-clip: padding-box;
+
+}
+
+.modal.container {
+    max-width: none;
+}
+
+.modal-backdrop {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1040;
+}
 /* fin Modal registra usuario*/
 
 /*Ventana logueo*/
-.navbar-login
+.btn-login {
+    background-color: #17a91c;
+    outline: none;
+    color: #fff;
+    font-size: 14px;
+    height: auto;
+    font-weight: normal;
+    padding: 14px 0;
+    text-transform: uppercase;
+    border-color: #17a91c;
+}
+.btn-login:hover,
+.btn-login:focus {
+    color: #fff;
+    background-color: #14671A;
+    border-color: #14671A;
+}
+
+.forgot-password {
+    text-decoration: underline;
+    color: #888;
+}
+.forgot-password:hover,
+.forgot-password:focus {
+    text-decoration: underline;
+    color: #666;
+}
+
+.btn-register {
+    background-color: #1CB94E;
+    outline: none;
+    color: #fff;
+    font-size: 14px;
+    height: auto;
+    font-weight: normal;
+    padding: 14px 0;
+    text-transform: uppercase;
+    border-color: #1CB94A;
+}
+.btn-register:hover,
+.btn-register:focus {
+    color: #fff;
+    background-color: #1CA347;
+    border-color: #1CA347;
+}
+/*
+*/.navbar-login
 {
     width: 300px;
     padding: 10px;
@@ -157,69 +149,12 @@ and open the template in the editor.
     margin-left: 5%;
 }
 
-.icon-size
-{
-    font-size: 87px;
+.fondoRegistro{
+    background: rgba(0, 0, 0, .2) !important; 
+    margin-top: 11% !important;
 }
-
-select {
-/*    background: yellow !important;*/
-    color:#000;
-    text-shadow:0 1px 0 rgba(0, 0, 0, 0.4);
-}
-option:not(:checked) {
-    background-color: #FFF;
-}
-
-.login {
-	margin-top: 5px !important;
-	padding: 5px;
-	width: auto;
-	min-width: 320px;
-	max-width: 400px;
-	height: 230px;
-	background-color: #f3f3f3;
-	margin:0 auto;
-	border-radius: 10px;
-	border: 1px solid #c5c5c5;
-        text-align: center;
-}
-.login-inner {
-	margin:0 auto;
-	max-width: 380px;
-	width: auto;
-}
-.login>h4 {
-	font-size: 20px;
-	margin-left: 5px;
-	font-weight: 600;
-}
-.email {
-	margin-bottom: 5px;
-}
-.password {
-	margin-bottom: 5px;
-}
-.submit {
-	margin-top: 5px;
-}
-.forgot {
-	min-width:50px;
-	width: 49%;
-	float: right;
-	margin-top: 20px;
-}
-.register {
-	width: 50%;
-	float: left;
-	margin-top: 20px;
-}
-@media (max-width: 320px) {
-	.forgot {
-		font-size: 9px;
-		font-weight: 700;
-		padding: 8px;
-	}
+.menuVentanaApps{
+     background: rgba(0, 0, 0, .2) !important; 
 }
 /*Fin Ventana logueo*/
 
