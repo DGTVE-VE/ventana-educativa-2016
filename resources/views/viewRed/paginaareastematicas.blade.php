@@ -18,8 +18,7 @@ Publicaciones
 		<img src="imagenes/red/areasTematicas/redesdeconocimientoyaprendizaje-blanco.png" style="position:absolute;">
 	</div>
 	<div class="col-xs-8 col-sm-7 col-md-7 col-lg-7">
-		<h3>Redes de Conocimiento y Aprendizaje</h3>
-		<br>
+		<h3>Redes de Conocimiento y Aprendizaje</h3><br><br>
 	</div>
 	<div class="col-sm-12 col-md-12 col-lg-12">
 	</div>
@@ -41,7 +40,7 @@ Publicaciones
 		<img src="imagenes/red/areasTematicas/redesdeconocimientoyaprendizaje-blanco.png" style="position:absolute;">
 	</div>
 	<div class="col-xs-8 col-sm-7 col-md-7 col-lg-7">
-		<h3>Modelos y Ambientes Educativos</h3>
+		<h3>Modelos y Ambientes Educativos</h3><br><br>
 		<br>
 	</div>
 	<div class="col-sm-12 col-md-12 col-lg-12">
@@ -64,7 +63,7 @@ Publicaciones
 		<img src="imagenes/red/areasTematicas/redesdeconocimientoyaprendizaje-blanco.png" style="position:absolute;">
 	</div>
 	<div class="col-xs-8 col-sm-7 col-md-7 col-lg-7">
-		<h3>Gestión y Calidad de Programas Educativos</h3>
+		<h3>Gestión y Calidad de Programas Educativos</h3><br><br>
 		<br>
 	</div>
 	<div class="col-sm-12 col-md-12 col-lg-12">
@@ -88,7 +87,7 @@ Publicaciones
 		<img src="imagenes/red/areasTematicas/redesdeconocimientoyaprendizaje-blanco.png" style="position:absolute;">
 	</div>
 	<div class="col-xs-8 col-sm-7 col-md-7 col-lg-7">
-		<h3>Multimedia y Desarrollo Educativo</h3>
+		<h3>Multimedia y Desarrollo Educativo</h3><br><br>
 		<br>
 	</div>
 	<div class="col-sm-12 col-md-12 col-lg-12">
@@ -112,7 +111,7 @@ Publicaciones
 		<img src="imagenes/red/areasTematicas/redesdeconocimientoyaprendizaje-blanco.png" style="position:absolute;">
 	</div>
 	<div class="col-xs-8 col-sm-7 col-md-7 col-lg-7">
-		<h3>Política Educativa y Cambio Social</h3>
+		<h3>Política Educativa y Cambio Social</h3><br><br>
 		<br>
 	</div>
 	<div class="col-sm-12 col-md-12 col-lg-12">
