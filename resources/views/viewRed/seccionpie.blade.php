@@ -52,7 +52,7 @@
             </tr>
             <tr>
                 <td class="imgTecho" style="padding:5px;">
-                    <img class="img-responsive" style="width:20px; height:20px;" src="imagenes/red/footer/mail.png"/>
+                    <img class="img-responsive" style="width:20px; height:15px;" src="imagenes/red/footer/mail.png"/>
                 </td>
                 <td>
                     <p> contacto@redmesoamericana.com</p>

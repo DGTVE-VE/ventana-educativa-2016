@@ -43,13 +43,13 @@
 									<table>
 										<tr>
 											<td><span class="fa fa-map-marker text-center"></span></td>
-											<td class="text-justify">Av. Circunvalación s/n, esquina Tabiqueros,
+											<td style="padding-left:3%;" class="text-justify">Av. Circunvalación s/n, esquina Tabiqueros,
 												Col. Morelos, Del. Venustiano Carranza.
 												C.P. 15270, Ciudad de México.</td>
 										</tr>
 										<tr>
 											<td><span class="fa fa-phone text-center"></span></td>
-											<td>
+											<td style="padding-left:3%;">
 												<p>(55) 3601 8100 <br>
 													01 800 2284 883 <br>
 													01 866 5729 837
@@ -58,7 +58,7 @@
 										</tr>
 										<tr>
 											<td><span class="fa fa-envelope text-center"></span></td>
-											<td>contacto@redmesoamericana.com</td>
+											<td style="padding-left:3%;">contacto@redmesoamericana.com</td>
 										</tr>
 									</table>
 								</div>                  
