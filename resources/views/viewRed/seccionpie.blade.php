@@ -77,8 +77,7 @@
     </div>
 </div>
 <footer>
-    <div class="row">Colaboradores</div>
-    <div class="row fondo_footer2">
+        <div class="row fondo_footer2">
         <div class="col-xs-9 col-sm-6 col-md-10 col-md-offset-1">
             <br>
             <p>Proyecto alineado al Programa Mesoamericano de Cooperación 2015 - 2016. <br>
