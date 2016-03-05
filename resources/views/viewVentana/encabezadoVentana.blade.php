@@ -21,12 +21,12 @@
                         <li class="panel-body">
                             <div class="row">
                                 <div class="col-lg-12">
-                                    <form id="login-form" action="#" method="post" role="form" style="display: block;">
+                                    <form id="login-form" action="entraUsuario" method="post" role="form" style="display: block;">
                                         <div class="form-group">
-                                            <input type="text" name=""  tabindex="1" class="form-control" placeholder="Usuario" value="">
+                                            <input type="text" name="name"  tabindex="1" class="form-control" placeholder="Usuario" value="">
                                         </div>
                                         <div class="form-group">
-                                            <input type="password" name=""  tabindex="2" class="form-control" placeholder="Contraseña">
+                                            <input type="password" name="email"  tabindex="2" class="form-control" placeholder="Contraseña">
                                         </div>
                                         <div class="form-group text-center">
                                             <input type="checkbox" tabindex="3" class="" name="remember" id="remember">
@@ -99,40 +99,36 @@
     </div>
     <div class="modal-body" data-focus-on="input:first">
         <div class="row-fluid">
-            <form role="form">
+            <form role="form" action="registraUsuario">
                 <div class="form-group col-md-12 span12">
                     <label for="nombre">Nombre Completo:</label>
-                    <input type="text" name="nombre" id="nombre" class="form-control input-lg" placeholder="Nombre Completo">
+                    <input type="text" name="name" id="nombre" class="form-control input-lg" placeholder="Nombre Completo">
                 </div>
                 <div class="form-group col-md-12 span12">
                     <label for="correo">Correo Electrónico:</label>
-                    <input type="email" name="correoUsu" class="form-control input-lg" placeholder="Correo Electrónico">
+                    <input type="email" name="email" class="form-control input-lg" placeholder="Correo Electrónico">
                 </div>
                 <div class="form-group col-md-6 span12">
                     <label for="contraseña">Contraseña:</label>
-                    <input type="password" name="passwordUsu" class="form-control input-lg" placeholder="Contraseña">
+                    <input type="password" name="password" class="form-control input-lg" placeholder="Contraseña">
                 </div>     
                 <div class="form-group col-md-6 span12">
                     <label for="contraseñarep">Repetir Contraseña:</label>
-                    <input type="password" name="passwordUsu" class="form-control input-lg" placeholder="Contraseña">
+                    <input type="password" name="repeat_password" class="form-control input-lg" placeholder="Contraseña">
                 </div>
                 <div class="form-group col-md-12 span12">
                     <label for="genero">Genero:</label>
                     <div class="radio">
-                        <label class="checkbox-inline"><input type="radio" name="optradio">Mujer</label>
-                        <label class="checkbox-inline"><input type="radio" name="optradio">Hombre</label>
+                        <label class="checkbox-inline"><input type="radio" name="genero">Mujer</label>
+                        <label class="checkbox-inline"><input type="radio" name="genero">Hombre</label>
                     </div>
                 </div>
 
                 <div class="form-group col-md-6 span12">
                     <label for="intereses">Interes Educativo:</label>
-                    <select class="form-control" name="intereses">
-                        <option>Español</option>
-                        <option>Matemáticas</option>
-                        <option>Ciencias</option>
-                        <option>Audiovisual</option>
-                        <option>Juegos Educativos</option>
-                    </select>
+                    <div class="form-group">
+             
+                    </div>
                 </div>
                 <div class="form-group col-md-6">
                     <label for="nacimiento">Fecha de Nacimiento:</label>
@@ -142,11 +138,11 @@
 
                 <div class="form-group col-md-6">
                     <label for="pais">País:</label>
-                    <select id="countries_states1" class="form-control bfh-countries" data-country="MX"></select>
+                    <select id="countries_states1" name="pais"  class="form-control bfh-countries" data-country="MX"></select>
                 </div>
                 <div class="form-group col-md-6">
                     <label for="ciudad">Ciudad:</label>
-                    <select class="input-medium bfh-states form-control" data-country="countries_states1"></select>
+                    <select name="ciudad" class="input-medium bfh-states form-control" data-country="countries_states1"></select>
                 </div>
             </form>
         </div>
