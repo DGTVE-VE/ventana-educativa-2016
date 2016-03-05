@@ -12,7 +12,7 @@ Publicaciones
 		<p class="pleca"> Áreas Temáticas</p>
 	</div>
 </div>
-<div class="row backpareatema txtAreasTematicas" style="padding-top:50px;">
+<div class="row backpareatema txtAreasTematicas" style="padding-top:50px; padding-bottom:25px; border-top:solid 1px white;">
 	<div class="col-sm-1 col-md-1 col-lg-1"></div>
 	<div class="col-xs-4 col-sm-2 col-md-2 col-lg-2">
 		<img src="imagenes/red/areasTematicas/redesdeconocimientoyaprendizaje-blanco.png" style="position:absolute;">
@@ -34,7 +34,7 @@ Publicaciones
 		</ul>
 	</div>
 </div>
-<div class="row backpareatema txtAreasTematicas" style="padding-top:50px;">
+<div class="row backpareatema txtAreasTematicas" style="padding-top:25px; padding-bottom:25px; border-top:solid 1px white;">
 	<div class="col-sm-1 col-md-1 col-lg-1"></div>
 	<div class="col-xs-4 col-sm-2 col-md-2 col-lg-2">
 		<img src="imagenes/red/areasTematicas/redesdeconocimientoyaprendizaje-blanco.png" style="position:absolute;">
@@ -57,7 +57,7 @@ Publicaciones
 		</ul>
 	</div>
 </div>
-<div class="row backpareatema txtAreasTematicas" style="padding-top:50px;">
+<div class="row backpareatema txtAreasTematicas" style="padding-top:25px; padding-bottom:25px; border-top:solid 1px white;">
 	<div class="col-sm-1 col-md-1 col-lg-1"></div>
 	<div class="col-xs-4 col-sm-2 col-md-2 col-lg-2">
 		<img src="imagenes/red/areasTematicas/redesdeconocimientoyaprendizaje-blanco.png" style="position:absolute;">
@@ -81,7 +81,7 @@ Publicaciones
 		</ul>
 	</div>
 </div>
-<div class="row backpareatema txtAreasTematicas" style="padding-top:50px;">
+<div class="row backpareatema txtAreasTematicas" style="padding-top:25px; padding-bottom:25px; border-top:solid 1px white;">
 	<div class="col-sm-1 col-md-1 col-lg-1"></div>
 	<div class="col-xs-4 col-sm-2 col-md-2 col-lg-2">
 		<img src="imagenes/red/areasTematicas/redesdeconocimientoyaprendizaje-blanco.png" style="position:absolute;">
@@ -105,7 +105,7 @@ Publicaciones
 		</ul>
 	</div>
 </div>
-<div class="row backpareatema txtAreasTematicas" style="padding-top:50px; padding-bottom:50px;">
+<div class="row backpareatema txtAreasTematicas" style="padding-top:25px; padding-bottom:50px; border-top:solid 1px white;">
 	<div class="col-sm-1 col-md-1 col-lg-1"></div>
 	<div class="col-xs-4 col-sm-2 col-md-2 col-lg-2">
 		<img src="imagenes/red/areasTematicas/redesdeconocimientoyaprendizaje-blanco.png" style="position:absolute;">
