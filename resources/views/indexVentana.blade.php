@@ -29,6 +29,7 @@ and open the template in the editor.
 
 
         <link rel="stylesheet" href="css/ventana/estiloventana2.css">  
+        <link rel="stylesheet" href="css/ventana/estiloventana3.css"> 
         
         <!--CDN FormHelpers-->
         <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-formhelpers/2.3.0/css/bootstrap-formhelpers.css" rel="stylesheet"/>
