@@ -34,14 +34,6 @@ and open the template in the editor.
         <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-formhelpers/2.3.0/css/bootstrap-formhelpers.css" rel="stylesheet"/>
         <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-formhelpers/2.3.0/css/bootstrap-formhelpers.min.css" rel="stylesheet"/>
         <!--fin FormHelpers -->
-    </head>
-    <body>        
-        <header>
-            @yield('menuVentana')
-        </header>
-        <div class="container-fluid">
-            @yield('cuerpoVentana')
-        </div>
         <!-- jQuery library -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 
@@ -50,6 +42,15 @@ and open the template in the editor.
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-formhelpers/2.3.0/js/bootstrap-formhelpers.js" type="text/javascript"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-formhelpers/2.3.0/js/bootstrap-formhelpers.min.js" type="text/javascript"></script>
+    </head>
+    <body>        
+        <header>
+            @yield('menuVentana')
+        </header>
+        <div class="container-fluid">
+            @yield('cuerpoVentana')
+        </div>
+
 
         
     </body>
