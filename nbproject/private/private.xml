@@ -3,33 +3,19 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
+            <file>file:/C:/xampp/htdocs/ventanaEducativa/public/css/red/estilored2.css</file>
+            <file>file:/C:/xampp/htdocs/ventanaEducativa/resources/views/viewRed/paginaproyectos.blade.php</file>
             <file>file:/C:/xampp/htdocs/ventanaEducativa/public/css/red/estiloBase.css</file>
-            <file>file:/C:/xampp/htdocs/ventanaEducativa/resources/views/red/seccionpie.blade.php</file>
-            <file>file:/C:/xampp/htdocs/ventanaEducativa/resources/views/red/seccionusabilidadpedagogica.blade.php</file>
-            <file>file:/C:/xampp/htdocs/ventanaEducativa/resources/views/red/seccionareastematicas.blade.php</file>
+            <file>file:/C:/xampp/htdocs/ventanaEducativa/resources/views/viewRed/seccionheader.blade.php</file>
             <file>file:/C:/xampp/htdocs/ventanaEducativa/resources/views/indexDocentes.blade.php</file>
             <file>file:/C:/xampp/htdocs/ventanaEducativa/app/Http/routes.php</file>
-            <file>file:/C:/xampp/htdocs/ventanaEducativa/resources/views/red/frmpublicaciones.blade.php</file>
-            <file>file:/C:/xampp/htdocs/ventanaEducativa/resources/views/red/paginaareastematicas.blade.php</file>
-            <file>file:/C:/xampp/htdocs/ventanaEducativa/resources/views/red/seccionheader.blade.php</file>
-            <file>file:/C:/xampp/htdocs/ventanaEducativa/resources/views/red/paginacontacto.blade.php</file>
+            <file>file:/C:/xampp/htdocs/ventanaEducativa/resources/views/viewRed/seccionintegrantes.blade.php</file>
+            <file>file:/C:/xampp/htdocs/ventanaEducativa/resources/views/viewRed/seccionpie.blade.php</file>
             <file>file:/C:/xampp/htdocs/ventanaEducativa/public/css/red/estiloIntegrantes.css</file>
             <file>file:/C:/xampp/htdocs/ventanaEducativa/public/css/red/estiloredmesoamericana.css</file>
-            <file>file:/C:/xampp/htdocs/ventanaEducativa/resources/views/red/seccionintegrantes.blade.php</file>
-            <file>file:/C:/xampp/htdocs/ventanaEducativa/resources/views/red/seccionretosregionales.blade.php</file>
-            <file>file:/C:/xampp/htdocs/ventanaEducativa/resources/views/red/paginaproyectos.blade.php</file>
-            <file>file:/C:/xampp/htdocs/ventanaEducativa/public/css/red/estilored2.css</file>
-            <file>file:/C:/xampp/htdocs/ventanaEducativa/resources/views/red/paginapublicaciones.blade.php</file>
-            <file>file:/C:/xampp/htdocs/ventanaEducativa/resources/views/red/frmusuarios.blade.php</file>
-            <file>file:/C:/xampp/htdocs/ventanaEducativa/resources/views/red/paginaquienessomos.blade.php</file>
-            <file>file:/C:/xampp/htdocs/ventanaEducativa/app/Http/Controllers/PagesController.php</file>
-            <file>file:/C:/xampp/htdocs/ventanaEducativa/resources/views/red/seccionproyectos.blade.php</file>
-            <file>file:/C:/xampp/htdocs/ventanaEducativa/resources/views/red/frmproyectos.blade.php</file>
-            <file>file:/C:/xampp/htdocs/ventanaEducativa/resources/views/home.blade.php</file>
             <file>file:/C:/xampp/htdocs/ventanaEducativa/public/imagenes/red/Banners/1600-x-650.jpg</file>
-            <file>file:/C:/xampp/htdocs/ventanaEducativa/resources/views/red/modalintegrantes.blade.php</file>
-            <file>file:/C:/xampp/htdocs/ventanaEducativa/resources/views/red/frmcolaboradores.blade.php</file>
             <file>file:/C:/xampp/htdocs/ventanaEducativa/app/Http/Controllers/Controller.php</file>
+            <file>file:/C:/xampp/htdocs/ventanaEducativa/resources/views/viewRed/paginapublicaciones.blade.php</file>
             <file>file:/C:/xampp/htdocs/ventanaEducativa/public/imagenes/red/Banners/1.jpg</file>
             <file>file:/C:/xampp/htdocs/ventanaEducativa/public/css/red/estilored3.css</file>
         </group>

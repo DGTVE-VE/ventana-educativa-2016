@@ -6,8 +6,8 @@ Publicaciones
 @include('viewRed.seccionheader')
 @endsection
 @section('cuerpoRedmite')
-<div class="row" style="margin-top: 5%;" >  <!--row inicial -->       
-    <div class="col-md-12 fondo_Obscuro text-center text-uppercase">
+<div class="row responsive" style="margin-top: 5%;" >  <!--row inicial -->       
+    <div class="col-md-12 fondo_Obscuro text-center text-uppercase responsive">
         <p class="pleca">Publicaciones</p>
     </div>
     <br>
