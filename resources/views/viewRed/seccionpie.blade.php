@@ -4,8 +4,12 @@
     <div class="col-xs-6 col-sm-6 col-md-2 col-md-offset-1 col-lg-2 col-lg-offset-1">
         <img class="img-responsive" src="imagenes/red/LogoRed/logoNegativo.png" width="155" height="155" alt="..."/>
         <br>
-        <img id="imgIconoTwetter" class="img-responsive img-rounded" style="float:left; width:50px; height:50px;" src="imagenes/red/footer/icono-twetter-A.png" onmouseenter="imgResalta('twetter')" onmouseleave="imgNormal('twetter')"/>
-        <img id="imgIconoFacebook" class="img-responsive img-rounded" style="float:left; width:50px; height:50px;" src="imagenes/red/footer/icono-face-A.png" onmouseenter="imgResalta('facebook')" onmouseleave="imgNormal('facebook')"/>
+        <a href="https://twitter.com/Red_Mesoamerica" target="_blank">
+			<img id="imgIconoTwetter" class="img-responsive img-rounded" style="float:left; width:50px; height:50px;  position: relative; left:15px;" src="imagenes/red/footer/icono-twetter-A.png" onmouseenter="imgResalta('twetter')" onmouseleave="imgNormal('twetter')"/>
+		</a>
+        <a href="https://www.facebook.com/Red-Mesoamericana-de-Investigaci%C3%B3n-y-Tecnolog%C3%ADa-Educat%C3%ADva-930360840393101/" target="_blank">
+			<img id="imgIconoFacebook" class="img-responsive img-rounded" style="float:left; width:50px; height:50px; position: relative; left:35px;" src="imagenes/red/footer/icono-face-A.png" onmouseenter="imgResalta('facebook')" onmouseleave="imgNormal('facebook')"/>
+		</a>
         <!--<img id="imgIconoYoutube" class="img-responsive img-rounded" style="float:left; width:50px; height:50px;" src="imagenes/red/footer/icono-youtube-A.png" onmouseenter="imgResalta('youtube')" onmouseleave="imgNormal('youtube')"/>-->
         <br>
     </div>

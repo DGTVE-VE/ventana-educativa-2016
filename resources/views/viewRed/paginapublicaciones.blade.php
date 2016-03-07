@@ -7,7 +7,7 @@ Publicaciones
 @endsection
 @section('cuerpoRedmite')
 
-<div class="row" style="margin-top: 5%;" >  <!--row inicial -->       
+<div class="row" style="margin-top: 80px;">  <!--row inicial -->       
     <div class="col-md-12 fondo_Obscuro text-center text-uppercase">
         <p class="pleca">Publicaciones</p>
     </div>
