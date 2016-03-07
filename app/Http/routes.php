@@ -30,4 +30,6 @@ Route::post('guardaContacto', 'RedmiteController@guardaContacto');
 /****************************HOME VENTANA***********************/
 //Route::get('/','VentanaController@ventana');
 Route::get('ventana_educativa','VentanaController@ventana_educativa');
+
+
 /****************************HOME VENTANA***********************/

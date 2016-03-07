@@ -6,5 +6,4 @@
 	@include('viewVentana.encabezadoVentana')
 @endsection
 @section('cuerpoVentana')
-	
 @endsection
