@@ -6,11 +6,12 @@ use Illuminate\Http\Request;
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 use App\Intereses_educativos;
+
 class VentanaController extends Controller {
 
     public function ventana_educativa() {
-        $interes_educativo = Intereses_educativos::lists('interes_educativo','id');
-        return view('viewVentana/ventana-educativa',compact('interes_educativo'));
+        $interes_educativo = Intereses_educativos::lists('interes_educativo', 'id');
+        return view('viewVentana/ventana-educativa', compact('interes_educativo'));
     }
 
     public function registraUsuario() {
@@ -24,12 +25,21 @@ class VentanaController extends Controller {
         $users->pais = filter_input(INPUT_POST, 'pais');
         $users->intereses_edu = filter_input(INPUT_POST, 'intereses_edu');
         $users->save();
-        return redirect('ventana_educativa');
+//        return redirect('ventana_educativa');
     }
 
+    public function store() {
+        $input = Input::all();
 
-    public function interes_opcion() {
-        return array('' => 'Selecciona Interes') + \App\Intereses_educativos::lists('id', 'interes_educativo');
+        if (!$this->user->fill($input)->isValid()) {
+            return Redirect::back()->withInput()->withErrors($this->user->errors);
+        }
+
+        //if the user input is  valid then save it and assign associated role
+        $this->user->save();
+        $this->user->assignRole(Input::get('role'));
+
+        return Redirect::to('/user')->with('flash_message', 'User added to the database!');
     }
 
 }

@@ -114,7 +114,7 @@
                 </div>     
                 <div class="form-group col-md-6 span12">
                     <label for="contraseñarep">Repetir Contraseña:</label>
-                    <input type="password" name="repeat_password" class="form-control input-lg" placeholder="Contraseña">
+                    <input type="password" name="password_confirmation" class="form-control input-lg" placeholder="Contraseña">
                 </div>
                 <div class="form-group col-md-12 span12">
                     <label for="genero">Genero:</label>
@@ -142,11 +142,11 @@
                     <label for="ciudad">Ciudad:</label>
                     <select name="ciudad" class="input-medium bfh-states form-control" data-country="countries_states1"></select>
                 </div>
+                <div class="modal-footer">
+                    <button type="button" data-dismiss="modal" class="btn">Cancelar</button>
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+                </div>
             </form>
         </div>
-    </div>
-    <div class="modal-footer">
-        <button type="button" data-dismiss="modal" class="btn">Cancelar</button>
-        <button type="button" class="btn btn-primary">Enviar</button>
     </div>
 </div>
