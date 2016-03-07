@@ -126,9 +126,7 @@
 
                 <div class="form-group col-md-6 span12">
                     <label for="intereses">Interes Educativo:</label>
-                    <div class="form-group">
-             
-                    </div>
+                    {!! Form::select('intereses_edu',$interes_educativo, null, array('class'=>'form-control input-lg'));!!} 
                 </div>
                 <div class="form-group col-md-6">
                     <label for="nacimiento">Fecha de Nacimiento:</label>
