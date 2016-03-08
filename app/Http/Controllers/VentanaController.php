@@ -29,4 +29,8 @@ class VentanaController extends Controller {
         $users->save();
 //        return redirect('ventana_educativa');
     }
+    
+    public function presentacion() {
+        return view('viewVentana/presentacionVentana');
+    }
 }

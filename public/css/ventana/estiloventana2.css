@@ -29,10 +29,11 @@ body{
     border: 2px solid white;
     width: 30px;
     height: 30px;
-    margin-top: 5%;
+    color: white;
     font-weight: bold;
-    font-size: 20px;
+        font-size: 20px;
 }
+
 .iconoApps{
     width: 40px;
     height: 30px;    
@@ -115,11 +116,51 @@ body{
     margin-top: 11% !important;
 }
 .menuVentanaApps{
-     background: rgba(0, 0, 0, .2) !important; 
+    background: rgba(0, 0, 0, .2) !important; 
 }
 /*Fin Ventana logueo*/
 
 /*calendario de ventana modal de registro*/
 .clsDatePicker{
     z-index: 100000 !important;
+}
+
+/*body {
+    padding-top:50px;
+}*/
+#presentacion {
+    margin-top: 5%;
+    padding:5px;
+    background: transparent !important;
+    width: 100%;
+}
+#presentacion .carousel-inner .item img{
+    height:650px;
+    width: 100%;
+}
+
+.carousel-control {
+    color:#fff;
+    top:44%;
+    background:transparent;
+    bottom:auto;
+    padding-top:8px;
+    width:36px;
+    border-radius:50%;
+    height:36px;
+    opacity:1;
+}
+.carousel-control.left, .carousel-control.right {
+    background-image:none !important;
+}
+.carousel-control.right,
+.carousel-control .glyphicon-chevron-right {
+    left:auto;
+    right:-10%;
+    font-size: 60px;
+}
+.carousel-control.left {
+    right:auto;
+    left:-10%;
+    font-size: 60px;
 }

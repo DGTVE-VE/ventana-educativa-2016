@@ -10,12 +10,34 @@
         </div>
         <div class="collapse navbar-collapse">
             <ul class="nav navbar-nav navbar-right">
-
-                <li class="fotoUsuario text-center" style="color: #FFF;">R</li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle iconoAppsImg" data-toggle="dropdown">
+                        <img class="iconoApps" src="imagenes/ventana/encabezado/iconoApps.png">
+                    </a>
+                    <ul class="dropdown-menu image-responsive menuVentanaApps">
+                        <li class="text-center">
+                            <a class="" href="#">
+                                <img src="imagenes/ventana/encabezado/logoventana.png" height="50" width="150">
+                            </a>
+                        </li>
+                        <hr>
+                        <li class="text-center">
+                            <a class="" href="redmite">
+                                <img src="imagenes/red/LogoRed/logoredmesoamericana.png" height="50" width="150">
+                            </a>
+                        </li>
+                        <hr>
+                        <li class="text-center">
+                            <a class="" href="#">
+                                <img src="imagenes/ventana/encabezado/mx.png" height="50" width="150">
+                            </a>
+                        </li>
+                        <hr>
+                    </ul>
+                </li>
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                        <strong style="color: #FFF;">Usuario</strong>
-                        <span class="glyphicon glyphicon-chevron-down" style="color: #FFF;"></span>
+                        <div class="fotoUsuario text-center">R</div>
                     </a>
                     <ul class="dropdown-menu fondoRegistro">
                         <li class="panel-body">
@@ -59,31 +81,7 @@
                         </li>
                     </ul>
                 </li>
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle iconoAppsImg" data-toggle="dropdown">
-                        <img class="iconoApps" src="imagenes/ventana/encabezado/iconoApps.png">
-                    </a>
-                    <ul class="dropdown-menu image-responsive menuVentanaApps">
-                        <li class="text-center">
-                            <a class="" href="#">
-                                <img src="imagenes/ventana/encabezado/logoventana.png" height="50" width="150">
-                            </a>
-                        </li>
-                        <hr>
-                        <li class="text-center">
-                            <a class="" href="redmite">
-                                <img src="imagenes/red/LogoRed/logoredmesoamericana.png" height="50" width="150">
-                            </a>
-                        </li>
-                        <hr>
-                        <li class="text-center">
-                            <a class="" href="#">
-                                <img src="imagenes/ventana/encabezado/mx.png" height="50" width="150">
-                            </a>
-                        </li>
-                        <hr>
-                    </ul>
-                </li>
+
             </ul>
         </div>
     </div>
@@ -126,7 +124,7 @@
 
                             <div class="form-group col-md-6">
                                 <label for="intereses">Interes Educativo:</label>
-                                {!! Form::select('intereses_edu',$interes_educativo, null, array('class'=>'form-control input-lg'));!!} 
+
                             </div>
                             <div class="form-group col-md-6">
                                 <label for="nacimiento">Fecha de Nacimiento:</label>
