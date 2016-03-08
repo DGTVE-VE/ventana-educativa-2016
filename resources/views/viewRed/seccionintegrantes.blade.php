@@ -12,7 +12,7 @@
             <area alt="Dominicana" onmouseover="entraPais(3)" onmouseout="saleMouseInte();" href="#modalRepublicaDominicana" shape="poly" data-toggle="modal" coords="379,130,389,111,414,114,433,130"/>
             <area alt="El Salvador" onmouseover="entraPais(4)" onmouseout="saleMouseInte();" href="#" shape="poly" data-toggle="modal" coords="237,173,243,155,254,183"/>
             <area alt="Guatemala" onmouseover="entraPais(5)" onmouseout="saleMouseInte();" href="#modalGuatemala" shape="poly" data-toggle="modal" coords="214,162,240,128,249,143,237,173"/>
-            <area alt="Honduras" onmouseover="entraPais(6)" onmouseout="saleMouseInte();" href="#" shape="poly" data-toggle="modal" coords="242,156,247,142,290,146,253,183"/>
+            <area alt="Honduras" onmouseover="entraPais(6)" onmouseout="saleMouseInte();" href="#modalHonduras" shape="poly" data-toggle="modal" coords="242,156,247,142,290,146,253,183"/>
             <area alt="México" onmouseover="entraPais(7)" onmouseout="saleMouseInte();" href="#modalMexico" data-toggle="modal" shape="poly" coords="90,98,162,90,188,123,225,111,228,93,262,100,216,162,159,145,127,131,97,121"/>
             <area alt="Nicaragua" onmouseover="entraPais(8)" onmouseout="saleMouseInte();" href="#" shape="poly" data-toggle="modal" coords="254,182,292,145,291,181,267,194"/>
             <area alt="Panama" onmouseover="entraPais(9)" onmouseout="saleMouseInte();" href="#modalPanama" shape="poly" data-toggle="modal" coords="309,223,311,207,346,201,348,212,360,212,348,228,326,231"/>
@@ -37,16 +37,19 @@
                     <!-- Indicators -->
                     <ol class="carousel-indicators" style="top:120%;">
                         <li data-target="#carouselMexico" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselMexico" data-slide-to="1" class="active"></li>
+                        <li data-target="#carouselMexico" data-slide-to="2" class="active"></li>
                     </ol>
                     <!-- Wrapper for slides -->
                     <div class="carousel-inner carousel-innerInt">
+                        <!-- Integrante 1 -->
                         <div class="item active">
                             <div class="col-md-12 text-center">
                                 <img  src="imagenes/red/integrantes/fotos/mexico/RubenEdel.png" alt="...">
                             </div>
                             <div class="col-md-12 carousel-caption carousel-captionInt">
                                 <h3>Rubén Edel Navarro</h3>
-                                <h4>Investigador de tiempo completo</br>
+                                <h4>Investigador de tiempo completo<br>
                                     Universidad Veracruzana</h4>
                                 <div class="row">
                                     <div class="col-md-1"></div>
@@ -60,6 +63,64 @@
                                             y Estados Unidos. Es autor de varios libros y obras electrónicas publicados en España, Colombia, 
                                             Argentina, Chile y México. Actualmente dirige el Centro de Innovación, Desarrollo e Investigación 
                                             Educativa en la Universidad Veracruzana.</p>
+                                    </div>
+                                    <div class="col-md-1"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Integrante 2 -->
+                        <div class="item ">
+                            <div class="col-md-12 text-center">
+                                <img  src="imagenes/red/integrantes/fotos/mexico/ImeldaGarcia.png" alt="...">
+                            </div>
+                            <div class="col-md-12 carousel-caption carousel-captionInt">
+                                <h3>Imelda García López</h3>
+                                <h4>Asesora técnico pedagógico<br>
+                                    Secretaría de Educación de Veracruz (SEV)</h4>
+                                <div class="row">
+                                    <div class="col-md-1"></div>
+                                    <div class="col-md-10">
+                                        <p class="text-justify">Asesora técnico pedagógico de la Secretaría de Educación de Veracruz (SEV) 
+                                            y profesora de asignatura de la Universidad Veracruzana. Miembro de la Red Temática, Reto 3. Tecnologías 
+                                            de Información y Comunicación del Consejo Nacional de Ciencia y Tecnología (CONACYT), experiencia en 
+                                            impartición de cursos en el nivel de licenciatura, maestría y doctorado en ambientes presenciales y virtuales.
+                                            Como parte de su línea de investigación sobre la educación mediada por las TIC, ha publicado el libro 
+                                            Usabilidad pedagógica de las TIC, artículos científicos y participado como ponente en congresos nacionales 
+                                            e internacionales. Forma parte del equipo internacional de entrenadores profesionales del software de análisis 
+                                            de datos cualitativos: MAXQDA.</p>
+                                    </div>
+                                    <div class="col-md-1"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Integrante 3 -->
+                        <div class="item ">
+                            <div class="col-md-12 text-center">
+                                <img  src="imagenes/red/integrantes/fotos/mexico/RamonaImelda.png" alt="...">
+                            </div>
+                            <div class="col-md-12 carousel-caption carousel-captionInt">
+                                <h3>Ramona Imelda García López</h3>
+                                <h4>profesora investigadora titular C<br>
+                                    Departamento de Educación</h4>
+                                <div class="row">
+                                    <div class="col-md-1"></div>
+                                    <div class="col-md-10">
+                                        <p class="text-justify">Licenciada en Ciencias de la Educación y Maestra en Docencia
+                                            e Investigación Educativa por el Instituto Tecnológico de Sonora; Doctora en Educación 
+                                            con especialidad en Tecnología Instruccional y Educación a Distancia por la Nova 
+                                            Southeastern University de Miami, Florida. Ha impartido clases desde nivel preescolar
+                                            hasta doctorado desde 1992 a la fecha; en el Instituto Tecnológico de Sonora ha sido 
+                                            Coordinadora de las Carreras de Licenciado en Ciencias de la Educación y Profesional 
+                                            Asociado en Desarrollo Infantil; Jefa del Departamento de Psicología y Educación, 
+                                            Directora Académica de la Unidad Guaymas, Coordinadora de Gestión del Conocimiento. 
+                                            Actualmente, profesora investigadora titular C del Departamento de Educación, responsable 
+                                            del Doctorado en Sistemas y Ambientes Educativos. Líder de la Línea de Investigación del 
+                                            Cuerpo Académico de Tecnología Educativa en la Sociedad del Conocimiento. Ha participado 
+                                            en Congresos nacionales e internacionales con ponencias y conferencias relacionadas con 
+                                            la tecnología educativa y la gestión del conocimiento; ha publicado en distintas revistas 
+                                            nacionales e internacionales, así como coautora de algunos capítulos de libros. 
+                                            Ha participado en distintos proyectos de investigación, tanto como responsable como 
+                                            colaboradora, a nivel institucional e interinstitucional.</p>
                                     </div>
                                     <div class="col-md-1"></div>
                                 </div>
@@ -99,6 +160,11 @@
                         <li data-target="#carouselCostaRica" data-slide-to="3"></li>
                         <li data-target="#carouselCostaRica" data-slide-to="4"></li>
                         <li data-target="#carouselCostaRica" data-slide-to="5"></li>
+                        <li data-target="#carouselCostaRica" data-slide-to="6"></li>
+                        <li data-target="#carouselCostaRica" data-slide-to="7"></li>
+                        <li data-target="#carouselCostaRica" data-slide-to="8"></li>
+                        <li data-target="#carouselCostaRica" data-slide-to="9"></li>
+                        <li data-target="#carouselCostaRica" data-slide-to="10"></li>
 
                     </ol>
                     <!-- Wrapper for slides -->
@@ -204,7 +270,7 @@
                             </div>
                             <div class="col-md-12 carousel-caption carousel-captionInt">
                                 <h3>Alejandra Sánchez Flores</h3>
-                                <h4>Encargada de Tecnología y Comunicación</br>
+                                <h4>Encargada de Tecnología y Comunicación<br>
                                     Coordinación Educativa y Cultural Centroamericana CECC/SICA</h4>
                                 <div class="row">
                                     <div class="col-md-1"></div>
@@ -230,6 +296,130 @@
                                     <div class="col-md-1"></div>
                                     <div class="col-md-10">
                                         <p class="text-justify">Licenciada en Ciencias de la Educación con Énfasis en la Enseñanza de la Matemática. Maestría en Administración Educativa y en Educación. Labora en el Ministerio de Educación Pública desde el 2001 y en la Dirección de Desarrollo Curricular desde 2012.</p>
+                                    </div>
+                                    <div class="col-md-1"></div>
+                                </div>
+                            </div>                        
+                        </div>
+
+                        <!--Colaborador 7-->                        
+                        <div class="item">
+                            <div class="col-md-12 text-center">
+                                <img  src="imagenes/red/integrantes/fotos/costarica/JavierFranciscoBarquero.jpg" alt="...">
+                            </div>
+                            <div class="col-md-12 carousel-caption carousel-captionInt">
+                                <h3>Javier Francisco Barquero Rodríguez</h3>
+                                <h4>Asesor pedagógico de matemática<br>
+                                    Dirección Regional de Puriscal
+                                </h4>
+                                <div class="row">
+                                    <div class="col-md-1"></div>
+                                    <div class="col-md-10">
+                                        <p class="text-justify">Licenciado en la enseñanza de la matemática de la Universidad de Costa Rica;
+                                            desde 1993, asesor pedagógico de matemática en la Dirección Regional de Puriscal, tanto a nivel 
+                                            de primaría como de secundaria. Ha trabajado en la Universidad de Costa Rica y en la Universidad 
+                                            Estatal a Distancia impartiendo cursos de servicio de la escuela de matemática, así como cursos 
+                                            de formación para futuros docentes de primaria. Ponente en Festival de Matemática Internacional 
+                                            organizado en Costa Rica.</p>
+                                    </div>
+                                    <div class="col-md-1"></div>
+                                </div>
+                            </div>                        
+                        </div>
+
+                        <!--Colaborador 8-->                        
+                        <div class="item">
+                            <div class="col-md-12 text-center">
+                                <img  src="imagenes/red/integrantes/fotos/costarica/HermesMena.png" alt="...">
+                            </div>
+                            <div class="col-md-12 carousel-caption carousel-captionInt">
+                                <h3>Hermes Mena Picado</h3>
+                                <h4>Asesor Regional de Matemática</br>
+                                    Ministerio de Educación Pública
+                                </h4>
+                                <div class="row">
+                                    <div class="col-md-1"></div>
+                                    <div class="col-md-10">
+                                        <p class="text-justify">Licenciado en Ciencias de la Educación con Énfasis en la Enseñanza de la Matemática, 
+                                            con Maestría en Didáctica de la Matemática para Educación Primaria. Docente de educación 
+                                            secundaria y universitaria,actualmente se desempeña como Asesor Regional de Matemática en la 
+                                            Dirección Regional Educativa de Aguirre.</p>
+                                    </div>
+                                    <div class="col-md-1"></div>
+                                </div>
+                            </div>                        
+                        </div>
+
+                        <!--Colaborador 9-->                        
+                        <div class="item">
+                            <div class="col-md-12 text-center">
+                                <img  src="imagenes/red/integrantes/fotos/costarica/XiniaLizethZuñiga.png" alt="...">
+                            </div>
+                            <div class="col-md-12 carousel-caption carousel-captionInt">
+                                <h3>Xinia Lizeth Zúñiga Esquivel</h3>
+                                <h4>Asesora de Matemáticas<br>
+                                    Ministerio de Educación Pública de Costa Rica
+                                </h4>
+                                <div class="row">
+                                    <div class="col-md-1"></div>
+                                    <div class="col-md-10">
+                                        <p class="text-justify">Licenciada en enseñanza de la Matemática, Master en enseñanza de la Matemática en I y 
+                                            II ciclo, Licenciada en docencia con énfasis en Enseñanza de la Matemática.  Ha sido 
+                                            docente de matemática en educación secundaria.  Actualmente trabaja con docentes de 
+                                            Matemáticas de Educación Primaria y Educación Secundaria.</p>
+                                    </div>
+                                    <div class="col-md-1"></div>
+                                </div>
+                            </div>                        
+                        </div>
+
+                        <!--Colaborador 10-->                        
+                        <div class="item">
+                            <div class="col-md-12 text-center">
+                                <img  src="imagenes/red/integrantes/fotos/costarica/RichardNavarro.png" alt="...">
+                            </div>
+                            <div class="col-md-12 carousel-caption carousel-captionInt">
+                                <h3>Richard Navarro Garro</h3>
+                                <h4>Asesor nacional de Español<br>
+                                    Ministerio de Educación Pública, Costa Rica.
+                                </h4>
+                                <div class="row">
+                                    <div class="col-md-1"></div>
+                                    <div class="col-md-10">
+                                        <p class="text-justify">Doctorado en ciencias de la educación con énfasis en Investigación
+                                            Educativa.  Licenciado en ciencias de la educación con énfasis en I y 
+                                            II Ciclos y énfasis en la enseñanza del Español. Licenciado y máster 
+                                            en Administración Educativa. Labora en el área de educación desde 
+                                            hace 15 años.  Ha sido docente de educación primaria, profesor de 
+                                            Español para secundaria, administrador educativo y profesor 
+                                            universitario.  Actualmente se desempeña como asesor nacional de 
+                                            Español en el Departamento de Primero y Segundo Ciclos de la 
+                                            Dirección de Desarrollo Curricular del MEP.</p>
+                                    </div>
+                                    <div class="col-md-1"></div>
+                                </div>
+                            </div>                        
+                        </div>
+
+                        <!--Colaborador 11-->                        
+                        <div class="item">
+                            <div class="col-md-12 text-center">
+                                <img  src="imagenes/red/integrantes/fotos/costarica/YorlenyRocioRojas.png" alt="...">
+                            </div>
+                            <div class="col-md-12 carousel-caption carousel-captionInt">
+                                <h3>Yorleny Rocío Rojas Jiménez</h3>
+                                <h4>Asesora Pedagógica de Matemática<br>
+                                    Ministerio de Educación Pública de Costa Rica
+                                </h4>
+                                <div class="row">
+                                    <div class="col-md-1"></div>
+                                    <div class="col-md-10">
+                                        <p class="text-justify">Bachiller y Licenciada en la Enseñanza de la Matemática en Secundaria. Bachiller
+                                            y Licenciada en Ciencias de la Educación con énfasis en I y II Ciclos, Primaria. 
+                                            Licenciada en Ciencias de la Educación con énfasis en Docencia. Licenciada en 
+                                            Ciencias de la Educación con énfasis en Administración Educativa. UNED 
+                                            (Universidad Estatal a Distancia de Costa Rica). Docente en el área de matemática
+                                            en primaria y universidad. Actualmente,sesora pedagógica en matemática.</p>
                                     </div>
                                     <div class="col-md-1"></div>
                                 </div>
@@ -351,9 +541,11 @@
                     <!-- Indicators -->
                     <ol class="carousel-indicators" style="top:120%;">
                         <li data-target="#carouselPanama" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselPanama" data-slide-to="1" class="active"></li>
                     </ol>
                     <!-- Wrapper for slides -->
                     <div class="carousel-inner carousel-innerInt">
+                        <!-- Colaborador 1 -->
                         <div class="item active">
                             <div class="col-md-12 text-center">
                                 <img  src="imagenes/red/integrantes/fotos/panama/IbzkaRodríguez.png" alt="...">
@@ -378,6 +570,32 @@
                                 </div>
                             </div>
                         </div>
+                        <!-- Colaborador 2 -->
+                        <div class="item ">
+                            <div class="col-md-12 text-center">
+                                <img  src="imagenes/red/integrantes/fotos/panama/MarielaMendoza.png" alt="...">
+                            </div>
+                            <div class="col-md-12 carousel-caption carousel-captionInt">
+                                <h3>Mariela Mendoza de Quezada</h3>
+                                <h4>Supervisora Nacional de Español de Educación Básica General<br>
+                                    Ministerio de Educación (MEDUCA)
+                                </h4>
+                                <div class="row">
+                                    <div class="col-md-1"></div>
+                                    <div class="col-md-10">
+                                        <p class="text-justify">Licenciada y Profesora en Educación con Especialización en Español con Maestría en 
+                                            Investigación y Evaluación Educativa, Doctorado en Educación con Especialización en 
+                                            Investigación, Labora en el área educativa desde hace cuarenta años. Ha sido Maestra de 
+                                            Educación Primaria, Profesora de Educación Secundaria y Docente Universitaria de Pregrado y 
+                                            Maestría. Capacitadora Nacional en diferentes campos educativos. Autora de diversos 
+                                            proyectos nacionales e internacionales. Autora de poesías, ensayos y artículos educativos. 
+                                            Actualmente es Supervisora Nacional de Español de Educación Básica General.</p>
+                                    </div>
+                                    <div class="col-md-1"></div>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
                     <!-- Controls -->
                     <a class="left carousel-control" href="#carouselPanama" data-slide="prev">
@@ -450,6 +668,67 @@
     </div>
 </div>
 <!--fin modal Guatemala-->
+
+<!-- Modal Honduras-->
+<div id="modalHonduras" class="modal modal-fullscreen fade centraCont" tabindex="-1" role="dialog">
+    <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <!--<h3 class="modal-title modal-titleInt text-center">Guatemala</h3>-->
+                <button type="button" class="close closeInt" data-dismiss="modal" aria-hidden="true">X</button>
+            </div>
+            <div class="modal-body">
+                <div id="carouselHonduras" class="carousel slide" data-ride="carousel">
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators" style="top:120%;">
+                        <li data-target="#carouselGuatemala" data-slide-to="0" class="active"></li>
+                    </ol>
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner carousel-innerInt">
+                        <div class="item active">
+                            <div class="col-md-12 text-center">
+                                <img  src="imagenes/red/integrantes/fotos/honduras/GladisOndinaGalindo.png" alt="...">
+                            </div>
+                            <div class="col-md-12 carousel-caption carousel-captionInt">
+                                <h3>Gladis Ondina Galindo Velásquez</h3>
+                                <h4>Docente formador en el área de Español<br>
+                                    Secretaría de Educación de Honduras
+                                </h4>
+                                <div class="row">
+                                    <div class="col-md-1"></div>
+                                    <div class="col-md-10">
+                                        <p class="text-justify">Licenciada en Educación Básica, colaboro con la Secretaría de Educación 
+                                            de Honduras en las  áreas de  español y matemática. Labora en el Sistema Educativo Nacional 
+                                            desde hace 32 años como docente en servicio, atendiendo el sexto grado en el Centro de 
+                                            Educación Básico “Jorge J. Larach". Coordinadora Pedagógica del segundo ciclo, orientando al 
+                                            personal docente en las dificultades que presentan. Capacitadora de la cooperativa de maestros 
+                                            COACEHL en Honduras, sobre los diferentes enfoques, técnicas motivacionales y de conocimiento 
+                                            aplicados en el Currículo Nacional Básico para brindar una educación de calidad y  obtener 
+                                            del docente un cambio de actitud y mejores prácticas educativas. Autora de los  Textos del área 
+                                            de comunicación en los campo de  Español “Aprende con éxito”  y  Educación Artística, “El Monarca”  
+                                            de primero a sexto grado.</p>
+                                    </div>
+                                    <div class="col-md-1"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Controls -->
+                    <a class="left carousel-control" href="#carouselGuatemala" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left"></span>
+                    </a>
+                    <a class="right carousel-control" href="#carouselGuatemala" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right"></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--fin modal Honduras-->
+
+
 
 <script>
     function saleMouseInte() {
