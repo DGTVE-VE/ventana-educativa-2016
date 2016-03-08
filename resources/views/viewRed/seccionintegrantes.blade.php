@@ -71,10 +71,10 @@
                         <!-- Integrante 2 -->
                         <div class="item ">
                             <div class="col-md-12 text-center">
-                                <img  src="imagenes/red/integrantes/fotos/mexico/ImeldaGarcia.png" alt="...">
+                                <img  src="imagenes/red/integrantes/fotos/mexico/BrendaLuzColorado.png" alt="...">
                             </div>
                             <div class="col-md-12 carousel-caption carousel-captionInt">
-                                <h3>Imelda García López</h3>
+                                <h3>Brenda Luz Colorado Aguilar</h3>
                                 <h4>Asesora técnico pedagógico<br>
                                     Secretaría de Educación de Veracruz (SEV)</h4>
                                 <div class="row">
@@ -100,7 +100,7 @@
                             </div>
                             <div class="col-md-12 carousel-caption carousel-captionInt">
                                 <h3>Ramona Imelda García López</h3>
-                                <h4>profesora investigadora titular C<br>
+                                <h4>Profesora investigadora titular C<br>
                                     Departamento de Educación</h4>
                                 <div class="row">
                                     <div class="col-md-1"></div>

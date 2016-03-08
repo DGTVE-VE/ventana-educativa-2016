@@ -1,4 +1,4 @@
-<div class="row" style="opacity: .5">
+<div class="row atras" style="opacity: .9">
         <div class="col-md-12">
             <ul class="colaboradoresul1">
                 <li colaboradoresli><h5 class="plecacolaboradores">COLABORADORES</h5></li>

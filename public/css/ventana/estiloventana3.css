@@ -1,7 +1,9 @@
 .fondocolaboradores{
     background: #000;
 }
-
+.atras{
+    z-index: -1;
+}
 .colaboradoresul1{
     list-style: none;
     display: table;
@@ -15,8 +17,7 @@
 .colaboradoresul1:hover > ul{
     text-decoration:none;
     display:block;
-    opacity: 1.0;
-}
+  }
 
 .colaboradoresul2{
     display: none;
@@ -26,8 +27,6 @@
     -ms-transition: all .3s ease;
     -o-transition: all .3s ease;
     transition: all .3s ease;
-
-
 }
 
 .colaboradoresli{
@@ -41,6 +40,7 @@
     padding: 10px;
     position: relative;
     text-decoration:none;
+ 
 }
 
 .formatocolaboradores{
@@ -55,9 +55,7 @@
 .formatocolaboradores:hover{
     text-decoration:none;
  }
- .fondo{
-     background: #0f0f0f; 
- }
+
 
 #imagen-tve {
   min-height: 50px;
@@ -67,6 +65,7 @@
 }
 #imagen-tve:hover {
   background: url(../../imagenes/ventana/pieventana/tvecolor.png) no-repeat center center;
+  
 }
 
 #imagen-csuca {
@@ -102,6 +101,7 @@
 }
 #imagen-mep:hover {
   background: url(../../imagenes/ventana/pieventana/mepcolor.png) no-repeat center center;
+  
 }
 
 #imagen-amexcid {
