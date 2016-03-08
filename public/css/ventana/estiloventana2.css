@@ -29,10 +29,11 @@ body{
     border: 2px solid white;
     width: 30px;
     height: 30px;
-    margin-top: 5%;
+    color: white;
     font-weight: bold;
-    font-size: 20px;
+        font-size: 20px;
 }
+
 .iconoApps{
     width: 40px;
     height: 30px;    
@@ -47,45 +48,6 @@ body{
 
 .menuVentanaApps li > a:hover { background: transparent !important; }
 
-
-/*Modal registra usuario*/
-body.modal-open, 
-.modal-open .navbar-fixed-top, 
-.modal-open .navbar-fixed-bottom {
-    margin-right: 0;
-}
-
-.modal {
-    left: 50%;
-    bottom: auto;
-    right: auto;
-    z-index: 1050;
-    padding: 0;
-    width: 500px;
-    margin-left: -250px;
-    background-color: #ffffff;
-    border: 1px solid #999999;
-    border: 1px solid rgba(0, 0, 0, 0.2);
-    border-radius: 6px;
-    -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
-    box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
-    background-clip: padding-box;
-
-}
-
-.modal.container {
-    max-width: none;
-}
-
-.modal-backdrop {
-    position: fixed;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    z-index: 1040;
-}
-/* fin Modal registra usuario*/
 
 /*Ventana logueo*/
 .btn-login {
@@ -154,7 +116,51 @@ body.modal-open,
     margin-top: 11% !important;
 }
 .menuVentanaApps{
-     background: rgba(0, 0, 0, .2) !important; 
+    background: rgba(0, 0, 0, .2) !important; 
 }
 /*Fin Ventana logueo*/
 
+/*calendario de ventana modal de registro*/
+.clsDatePicker{
+    z-index: 100000 !important;
+}
+
+/*body {
+    padding-top:50px;
+}*/
+#presentacion {
+    margin-top: 5%;
+    padding:5px;
+    background: transparent !important;
+    width: 100%;
+}
+#presentacion .carousel-inner .item img{
+    height:650px;
+    width: 100%;
+}
+
+.carousel-control {
+    color:#fff;
+    top:44%;
+    background:transparent;
+    bottom:auto;
+    padding-top:8px;
+    width:36px;
+    border-radius:50%;
+    height:36px;
+    opacity:1;
+}
+.carousel-control.left, .carousel-control.right {
+    background-image:none !important;
+}
+.carousel-control.right,
+.carousel-control .glyphicon-chevron-right {
+    left:auto;
+    right:-10%;
+    font-size: 60px;
+}
+.carousel-control.left {
+    right:auto;
+    left:-10%;
+    font-size: 60px;
+}

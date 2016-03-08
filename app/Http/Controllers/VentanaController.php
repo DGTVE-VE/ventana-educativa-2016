@@ -5,26 +5,32 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
+use App\Intereses_educativos;
+//use App\User;
 
 class VentanaController extends Controller {
 
     public function ventana_educativa() {
-        return view('viewVentana/ventana-educativa');
+        $interes_educativo = Intereses_educativos::lists('interes_educativo', 'id');
+        return view('viewVentana/ventana-educativa', compact('interes_educativo'));
     }
 
     public function registraUsuario() {
-        $contacto = new \App\Red\Contacto();
-        $contacto->nombre_contacto = filter_input(INPUT_POST, 'nombre_contacto');
-        $contacto->correo = filter_input(INPUT_POST, 'correo');
-        $contacto->asunto = filter_input(INPUT_POST, 'asunto');
-        $contacto->mensaje = filter_input(INPUT_POST, 'mensaje');
-        $contacto->save();
-        return redirect('contacto');
+        
+        $users = new \App\User();
+        $users->name = filter_input(INPUT_POST, 'name');
+        $users->email = filter_input(INPUT_POST, 'email');
+        $users->password = filter_input(INPUT_POST, 'password');
+        $users->genero = filter_input(INPUT_POST, 'genero');
+        $users->nacimiento = filter_input(INPUT_POST, 'nacimiento');
+        $users->ciudad = filter_input(INPUT_POST, 'ciudad');
+        $users->pais = filter_input(INPUT_POST, 'pais');
+        $users->intereses_edu = filter_input(INPUT_POST, 'intereses_edu');
+        $users->save();
+//        return redirect('ventana_educativa');
     }
-
-
-    public function interes_opcion() {
-        return array('' => 'Selecciona Interes') + \App\Intereses_educativos::lists('id', 'interes_educativo');
+    
+    public function presentacion() {
+        return view('viewVentana/presentacionVentana');
     }
-
 }

@@ -1,0 +1,114 @@
+.fondocolaboradores{
+    background: #000;
+}
+.atras{
+    z-index: -1;
+}
+.colaboradoresul1{
+    list-style: none;
+    display: table;
+    overflow: hidden;
+    width: 100%;
+    background: #000;
+    position: relative;
+
+}
+
+.colaboradoresul1:hover > ul{
+    text-decoration:none;
+    display:block;
+  }
+
+.colaboradoresul2{
+    display: none;
+    text-decoration:none;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+}
+
+.colaboradoresli{
+    display: table-cell;
+}
+
+.plecacolaboradores{
+    color: #fff;
+    display: block;
+    line-height: 10px;
+    padding: 10px;
+    position: relative;
+    text-decoration:none;
+ 
+}
+
+.formatocolaboradores{
+    display: block;
+    line-height: 150px;
+    padding: 20px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+
+}
+.formatocolaboradores:hover{
+    text-decoration:none;
+ }
+
+
+#imagen-tve {
+  min-height: 50px;
+  min-width: 136px;
+  background: url(../../imagenes/ventana/pieventana/tve.png) no-repeat center center;
+  
+}
+#imagen-tve:hover {
+  background: url(../../imagenes/ventana/pieventana/tvecolor.png) no-repeat center center;
+  
+}
+
+#imagen-csuca {
+  min-height: 50px;
+  min-width: 50px;
+  background: url(../../imagenes/ventana/pieventana/csuca.png) no-repeat center center;
+}
+#imagen-csuca:hover {
+  background: url(../../imagenes/ventana/pieventana/csucacolor.png) no-repeat center center;
+}
+#imagen-ceccsica {
+  min-height: 50px;
+  min-width: 36px;
+  background: url(../../imagenes/ventana/pieventana/ceccsica.png) no-repeat center center;
+}
+#imagen-ceccsica:hover {
+  background: url(../../imagenes/ventana/pieventana/ceccsicacolor.png) no-repeat center center;
+}
+
+#imagen-unah {
+  min-height: 50px;
+  min-width: 79px;
+  background: url(../../imagenes/ventana/pieventana/unah.png) no-repeat center center;
+}
+#imagen-unah:hover {
+  background: url(../../imagenes/ventana/pieventana/unahcolor.png) no-repeat center center;
+}
+
+#imagen-mep {
+  min-height: 50px;
+  min-width: 79px;
+  background: url(../../imagenes/ventana/pieventana/mep.png) no-repeat center center;
+}
+#imagen-mep:hover {
+  background: url(../../imagenes/ventana/pieventana/mepcolor.png) no-repeat center center;
+  
+}
+
+#imagen-amexcid {
+  min-height: 50px;
+  min-width: 173px;
+  background: url(../../imagenes/ventana/pieventana/amexcid.png) no-repeat center center;
+}
+#imagen-amexcid:hover {
+  background: url(../../imagenes/ventana/pieventana/amexcidcolor.png) no-repeat center center;
+}
