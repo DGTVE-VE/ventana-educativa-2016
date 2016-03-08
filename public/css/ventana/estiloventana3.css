@@ -62,53 +62,53 @@
 #imagen-tve {
   min-height: 50px;
   min-width: 136px;
-  background: url(pieventana/tve.png) no-repeat center center;
+  background: url(../../imagenes/ventana/pieventana/tve.png) no-repeat center center;
   
 }
 #imagen-tve:hover {
-  background: url(pieventana/tvecolor.png) no-repeat center center;
+  background: url(../../imagenes/ventana/pieventana/tvecolor.png) no-repeat center center;
 }
 
 #imagen-csuca {
   min-height: 50px;
   min-width: 50px;
-  background: url(pieventana/csuca.png) no-repeat center center;
+  background: url(../../imagenes/ventana/pieventana/csuca.png) no-repeat center center;
 }
 #imagen-csuca:hover {
-  background: url(pieventana/csucacolor.png) no-repeat center center;
+  background: url(../../imagenes/ventana/pieventana/csucacolor.png) no-repeat center center;
 }
 #imagen-ceccsica {
   min-height: 50px;
   min-width: 36px;
-  background: url(pieventana/ceccsica.png) no-repeat center center;
+  background: url(../../imagenes/ventana/pieventana/ceccsica.png) no-repeat center center;
 }
 #imagen-ceccsica:hover {
-  background: url(pieventana/ceccsicacolor.png) no-repeat center center;
+  background: url(../../imagenes/ventana/pieventana/ceccsicacolor.png) no-repeat center center;
 }
 
 #imagen-unah {
   min-height: 50px;
   min-width: 79px;
-  background: url(pieventana/unah.png) no-repeat center center;
+  background: url(../../imagenes/ventana/pieventana/unah.png) no-repeat center center;
 }
 #imagen-unah:hover {
-  background: url(pieventana/unahcolor.png) no-repeat center center;
+  background: url(../../imagenes/ventana/pieventana/unahcolor.png) no-repeat center center;
 }
 
 #imagen-mep {
   min-height: 50px;
   min-width: 79px;
-  background: url(pieventana/mep.png) no-repeat center center;
+  background: url(../../imagenes/ventana/pieventana/mep.png) no-repeat center center;
 }
 #imagen-mep:hover {
-  background: url(pieventana/mepcolor.png) no-repeat center center;
+  background: url(../../imagenes/ventana/pieventana/mepcolor.png) no-repeat center center;
 }
 
 #imagen-amexcid {
   min-height: 50px;
   min-width: 173px;
-  background: url(pieventana/amexcid.png) no-repeat center center;
+  background: url(../../imagenes/ventana/pieventana/amexcid.png) no-repeat center center;
 }
 #imagen-amexcid:hover {
-  background: url(pieventana/amexcidcolor.png) no-repeat center center;
+  background: url(../../imagenes/ventana/pieventana/amexcidcolor.png) no-repeat center center;
 }

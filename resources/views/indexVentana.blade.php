@@ -51,9 +51,9 @@ and open the template in the editor.
         <div class="container-fluid">
             @yield('cuerpoVentana')
         </div>
-
-
-        
+        <div>
+            @yield('pieVentana')
+        </div>
     </body>
 </html>
 
