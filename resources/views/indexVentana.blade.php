@@ -30,6 +30,9 @@ and open the template in the editor.
 
         <link rel="stylesheet" href="css/ventana/estiloventana2.css">  
         <link rel="stylesheet" href="css/ventana/estiloventana3.css"> 
+        <link rel="stylesheet" href="css/ventana/datepicker.css"> 
+        <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css">
+        
         
         <!--CDN FormHelpers-->
         <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-formhelpers/2.3.0/css/bootstrap-formhelpers.css" rel="stylesheet"/>
@@ -43,6 +46,8 @@ and open the template in the editor.
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-formhelpers/2.3.0/js/bootstrap-formhelpers.js" type="text/javascript"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-formhelpers/2.3.0/js/bootstrap-formhelpers.min.js" type="text/javascript"></script>
+        
+        <script src="js/ventana/bootstrap-datepicker.js" type="text/javascript"></script>
     </head>
     <body>        
         <header>
