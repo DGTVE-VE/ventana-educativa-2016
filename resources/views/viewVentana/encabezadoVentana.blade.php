@@ -28,10 +28,6 @@
                                         <div class="form-group">
                                             <input type="password" name="email"  tabindex="2" class="form-control" placeholder="Contraseña">
                                         </div>
-                                        <div class="form-group text-center">
-                                            <input type="checkbox" tabindex="3" class="" name="remember" id="remember">
-                                            <label for="remember" style="color: white;"> Recordarme</label>
-                                        </div>
                                         <div class="form-group">
                                             <div class="row">
                                                 <div class="col-sm-12">
@@ -92,61 +88,109 @@
         </div>
     </div>
 </div>
-<div id="modalRegistro" class="modal fade" tabindex="-1" data-width="760" >
-    <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-        <h3>Registro</h3>
-    </div>
-    <div class="modal-body" data-focus-on="input:first">
-        <div class="row-fluid">
-            <form role="form" action="registraUsuario">
-                <div class="form-group col-md-12 span12">
-                    <label for="nombre">Nombre Completo:</label>
-                    <input type="text" name="name" id="nombre" class="form-control input-lg" placeholder="Nombre Completo">
-                </div>
-                <div class="form-group col-md-12 span12">
-                    <label for="correo">Correo Electrónico:</label>
-                    <input type="email" name="email" class="form-control input-lg" placeholder="Correo Electrónico">
-                </div>
-                <div class="form-group col-md-6 span12">
-                    <label for="contraseña">Contraseña:</label>
-                    <input type="password" name="password" class="form-control input-lg" placeholder="Contraseña">
-                </div>     
-                <div class="form-group col-md-6 span12">
-                    <label for="contraseñarep">Repetir Contraseña:</label>
-                    <input type="password" name="password_confirmation" class="form-control input-lg" placeholder="Contraseña">
-                </div>
-                <div class="form-group col-md-12 span12">
-                    <label for="genero">Genero:</label>
-                    <div class="radio">
-                        <label class="checkbox-inline"><input type="radio" name="genero">Mujer</label>
-                        <label class="checkbox-inline"><input type="radio" name="genero">Hombre</label>
+<!-- Modal -->
+<div class="modal fade" id="modalRegistro" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title" id="myModalLabel">Registro</h4>
+            </div>
+            <div class="modal-body">
+                <div class="col-md-12">
+                    <div class="row">
+                        <form role="form" action="registraUsuario" method="post">
+                            <div class="form-group col-md-12">
+                                <label for="nombre">Nombre Completo:</label>
+                                <input type="text" name="name" id="nombre" class="form-control input-lg" placeholder="Nombre Completo">
+                            </div>
+                            <div class="form-group col-md-12">
+                                <label for="correo">Correo Electrónico:</label>
+                                <input type="email" name="email" class="form-control input-lg" placeholder="Correo Electrónico">
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="contraseña">Contraseña:</label>
+                                <input type="password" name="password" class="form-control input-lg" placeholder="Contraseña">
+                            </div>     
+                            <div class="form-group col-md-6">
+                                <label for="contraseñarep">Repetir Contraseña:</label>
+                                <input type="password" name="password_confirmation" class="form-control input-lg" placeholder="Contraseña">
+                            </div>
+                            <div class="form-group col-md-12">
+                                <label for="genero">Genero:</label>
+                                <div class="radio">
+                                    <label class="checkbox-inline"><input type="radio" name="genero" value="mujer">Mujer</label>
+                                    <label class="checkbox-inline"><input type="radio" name="genero" value="hombre">Hombre</label>
+                                </div>
+                            </div>
+
+                            <div class="form-group col-md-6">
+                                <label for="intereses">Interes Educativo:</label>
+                                {!! Form::select('intereses_edu',$interes_educativo, null, array('class'=>'form-control input-lg'));!!} 
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="nacimiento">Fecha de Nacimiento:</label>
+                                <input type="text" name="nacimiento" id="nacimiento" class="form-control clsDatePicker"> 
+                            </div>
+                            <div class="col-md-12">
+                                <div class="form-group col-md-6">
+                                    <label for="pais">País:</label>
+                                    <select id="countries_states1" name="pais"  class="form-control bfh-countries" data-country="MX"></select>
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="ciudad">Ciudad:</label>
+                                    <select name="ciudad" class="input-medium bfh-states form-control" data-country="countries_states1"></select>
+                                </div>
+                            </div>
                     </div>
-                </div>
-
-                <div class="form-group col-md-6 span12">
-                    <label for="intereses">Interes Educativo:</label>
-                    {!! Form::select('intereses_edu',$interes_educativo, null, array('class'=>'form-control input-lg'));!!} 
-                </div>
-                <div class="form-group col-md-6">
-                    <label for="nacimiento">Fecha de Nacimiento:</label>
-                    <input type="date" name="nacimiento" class="form-control input-lg" placeholder="Fecha de Nacimiento">
-                    <!--<div class="bfh-datepicker" data-format="y-m-d" data-max="today" ></div>-->
-                </div>
-
-                <div class="form-group col-md-6">
-                    <label for="pais">País:</label>
-                    <select id="countries_states1" name="pais"  class="form-control bfh-countries" data-country="MX"></select>
-                </div>
-                <div class="form-group col-md-6">
-                    <label for="ciudad">Ciudad:</label>
-                    <select name="ciudad" class="input-medium bfh-states form-control" data-country="countries_states1"></select>
                 </div>
                 <div class="modal-footer">
                     <button type="button" data-dismiss="modal" class="btn">Cancelar</button>
                     <button type="submit" class="btn btn-primary">Enviar</button>
                 </div>
-            </form>
+                </form>
+            </div>
+            <!-- /.modal-content -->
         </div>
+        <!-- /.modal-dialog -->
     </div>
-</div>
+    <!-- /.modal -->
+    <script>
+        // bootstrap-datepicker
+        $('#nacimiento').datepicker({
+            changeMonth: true,
+            changeYear: true,
+            altFormat: "yy-mm-dd"
+        }).on(
+                'show', function () {
+                    // Obtener valores actuales z-index de cada elemento
+                    var zIndexModal = $('#modalRegistro').css('z-index');
+                    var zIndexFecha = $('.datepicker').css('z-index');
+
+                    // alert(zIndexModal + zIndexFEcha);
+
+                    // Re asignamos el valor z-index para mostrar sobre la ventana modal
+                    $('.datepicker').css('z-index', zIndexModal + 1);
+                });
+        $.datepicker.regional['es'] = {
+            closeText: 'Cerrar',
+            prevText: '<Ant',
+            nextText: 'Sig>',
+            currentText: 'Hoy',
+            monthNames: ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre'],
+            monthNamesShort: ['Ene', 'Feb', 'Mar', 'Abr', 'May', 'Jun', 'Jul', 'Ago', 'Sep', 'Oct', 'Nov', 'Dic'],
+            dayNames: ['Domingo', 'Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes', 'Sábado'],
+            dayNamesShort: ['Dom', 'Lun', 'Mar', 'Mié', 'Juv', 'Vie', 'Sáb'],
+            dayNamesMin: ['Do', 'Lu', 'Ma', 'Mi', 'Ju', 'Vi', 'Sá'],
+            weekHeader: 'Sm',
+            dateFormat: 'dd/mm/yy',
+            firstDay: 1,
+            isRTL: false,
+            showMonthAfterYear: false,
+            yearSuffix: ''
+        };
+        $.datepicker.setDefaults($.datepicker.regional['es']);
+        $(function () {
+            $("#nacimiento").datepicker();
+        });
+    </script>
