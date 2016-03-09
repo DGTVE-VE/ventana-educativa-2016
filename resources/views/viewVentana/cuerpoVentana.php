@@ -9,7 +9,7 @@
         </style>
 	<script>
 
-	/*	---------------------------------------	Sección Usabilidad. Agregar animación de entrada a imagenes 	--------------------------------*/
+	/*	---------------------------------------	Secciï¿½n Usabilidad. Agregar animaciï¿½n de entrada a imagenes 	--------------------------------*/
 		function agregaClaseBlur(imagen){
 			imagen = '#' + imagen;
 			$(imagen).addClass('difumina');
@@ -19,13 +19,13 @@
 			$(imagen).removeClass('difumina');
 		}
 		function quitaEfxDifumina(clase){
-			var elems = $(clase);    //elementos que quiero saber si estan en el área visible
+			var elems = $(clase);    //elementos que quiero saber si estan en el Ã¡rea visible
 			elems.each(function(){
 				$(this).removeClass("difumina");
 			});
 		}
 		function muestraCubos(){
-			var Intervalo4 = $('.Intervalo4');    //elementos que quiero saber si estan en el área visible
+			var Intervalo4 = $('.Intervalo4');    //elementos que quiero saber si estan en el Ã¡rea visible
 			Intervalo4.each(function(){
 					var cubo = $(this);
 					setTimeout(function(){
@@ -37,7 +37,7 @@
 						},750);
 					}, 1000);
 				});
-			var Intervalo3 = $('.Intervalo3');    //elementos que quiero saber si estan en el área visible
+			var Intervalo3 = $('.Intervalo3');    //elementos que quiero saber si estan en el Ã¡rea visible
 			Intervalo3.each(function(){
 					var cubo = $(this);
 					setTimeout(function(){
@@ -49,7 +49,7 @@
 						},750);
 					}, 750);
 				});
-			var Intervalo2 = $('.Intervalo2');    //elementos que quiero saber si estan en el área visible
+			var Intervalo2 = $('.Intervalo2');    //elementos que quiero saber si estan en el Ã¡rea visible
 			Intervalo2.each(function(){
 					var cubo = $(this);
 					setTimeout(function(){
@@ -61,7 +61,7 @@
 						},750);
 					}, 500);
 				});
-			var Intervalo1 = $('.Intervalo1');    //elementos que quiero saber si estan en el área visible
+			var Intervalo1 = $('.Intervalo1');    //elementos que quiero saber si estan en el Ã¡rea visible
 			Intervalo1.each(function(){
 					var cubo = $(this);
 					setTimeout(function(){
@@ -76,14 +76,14 @@
 		}
 		$(document).ready(function(){
 			$(function(){
-				var elems = $('.oculta');    //elementos que quiero saber si estan en el área visible
+				var elems = $('.oculta');    //elementos que quiero saber si estan en el Ã¡rea visible
 				elems.each(function(){
 					$(this).fadeOut();
 				});
 				muestraCubos();
 			});
 			
-			/* ------    Se llama la función que redimensiona mapas de imagenes responsivas -----  */
+			/* ------    Se llama la funciÃ³n que redimensiona mapas de imagenes responsivas -----  */
 			$(document).ready(function (e) {
 				$('img[usemap]').rwdImageMaps();
 			});
@@ -133,14 +133,14 @@
 						<area shape="poly" coords="0,0,488,0,0,488" onmouseover="agregaClaseBlur('CUBO04')" onmouseout="quitaClaseBlur('CUBO04')" href="#"/>
 					</map>
 				</div>
-				<div class="col-xs-1 col-sm-1 col-md-1 col-lg-1" style="padding-top:8%; padding-left:0px; padding-right:0px;">
-					<img id="CUBO07" src="imagenes/homeventana/CUBO-07.png" usemap="#mapacubo7" style="width:250%; height:250%; position: relative; left:-30%; z-index:5;"/>
+				<div class="col-xs-1 col-sm-1 col-md-1 col-lg-1" style="padding-top:8%; padding-left:0px; padding-right:0px;">                                    
+                                    <img id="CUBO07" src="imagenes/homeventana/CUBO-07.png" usemap="#mapacubo7" style="width:250%; height:250%; position: relative; left:-30%; z-index:5;"/>                                    
 					<map name="mapacubo7" id="mapacubo7">
-						<area shape="poly" coords="0,560,580,0,1140,544,544,1140" onmouseover="agregaClaseBlur('CUBO07')" onmouseout="quitaClaseBlur('CUBO07')" href="#"/>
-						<area shape="poly" coords="0,0,552,0,0,548" onmouseover="agregaClaseBlur('CUBO05')" onmouseout="quitaClaseBlur('CUBO05')" href="#"/>
-						<area shape="poly" coords="0,548,548,1160,0,1160" onmouseover="agregaClaseBlur('CUBO06')" onmouseout="quitaClaseBlur('CUBO06')" href="#"/>
-						<area shape="poly" coords="548,0,1160,0,1160,548" onmouseover="agregaClaseBlur('CUBO08')" onmouseout="quitaClaseBlur('CUBO08')" href="#"/>
-						<area shape="poly" coords="548,1160,1160,548,1160,1160" onmouseover="agregaClaseBlur('CUBO09')" onmouseout="quitaClaseBlur('CUBO09')" href="#"/>
+                                            <area shape="poly" coords="0,560,580,0,1140,544,544,1140" onmouseover="agregaClaseBlur('CUBO07')" onmouseout="quitaClaseBlur('CUBO07')" href="presentacion"/>
+						<area shape="poly" coords="0,0,552,0,0,548" onmouseover="agregaClaseBlur('CUBO05')" onmouseout="quitaClaseBlur('CUBO05')" href="presentacion"/>
+						<area shape="poly" coords="0,548,548,1160,0,1160" onmouseover="agregaClaseBlur('CUBO06')" onmouseout="quitaClaseBlur('CUBO06')" href="presentacion"/>
+						<area shape="poly" coords="548,0,1160,0,1160,548" onmouseover="agregaClaseBlur('CUBO08')" onmouseout="quitaClaseBlur('CUBO08')" href="presentacion"/>
+						<area shape="poly" coords="548,1160,1160,548,1160,1160" onmouseover="agregaClaseBlur('CUBO09')" onmouseout="quitaClaseBlur('CUBO09')" href="presentacion"/>
 					</map>
 				</div>
 				<div class="col-xs-1 col-sm-1 col-md-1 col-lg-1" style="padding:0">
@@ -186,7 +186,7 @@
         </div>
 		<script>
 			$(function(){
-				var elems = $('.oculta');    //elementos que quiero saber si estan en el área visible
+				var elems = $('.oculta');    //elementos que quiero saber si estan en el Ã¡rea visible
 				elems.each(function(){
 					$(this).fadeOut();
 				});
