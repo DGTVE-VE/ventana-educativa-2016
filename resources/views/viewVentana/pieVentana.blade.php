@@ -1,39 +1,49 @@
-<div class="row atras" style="opacity: .9">
-        <div class="col-md-12">
-            <ul class="colaboradoresul1">
-                <li colaboradoresli><h5 class="plecacolaboradores">COLABORADORES</h5></li>
-                <ul class="colaboradoresul2">
-                    <div class="col-md-2">
-                        <li class="colaboradoresli"><a href="#" data-toggle="tab" class="formatocolaboradores"> 
-                                <div id="imagen-tve"></div>
-                            </a></li>
-                    </div>
-                    <div class="col-md-2">
-                        <li class="colaboradoresli"><a href="#" data-toggle="tab" class="formatocolaboradores">
-                                <div id="imagen-csuca"></div>
-                            </a></li>
-                    </div>
-                    <div class="col-md-2">
-                        <li class="colaboradoresli"><a href="#" data-toggle="tab" class="formatocolaboradores">
-                                <div id="imagen-ceccsica"></div>
-                            </a></li>
-                    </div>
-                    <div class="col-md-2">
-                        <li class="colaboradoresli"><a href="#" data-toggle="tab" class="formatocolaboradores">
-                                <div id="imagen-unah"></div>
-                            </a></li>
-                    </div>
-                    <div class="col-md-2">
-                        <li class="colaboradoresli"><a href="#" data-toggle="tab" class="formatocolaboradores">
-                                <div id="imagen-mep"></div>
-                            </a></li>
-                    </div>
-                    <div class="col-md-2">
-                        <li class="colaboradoresli"><a href="#" data-toggle="tab" class="formatocolaboradores">
-                                <div id="imagen-amexcid"></div>
-                            </a></li>
-                    </div> 
-                </ul>
+ <div class="tabs_holder f1 fondomenu"style="margin-top: 3%;">
+            <ul >
+                <li ><a href="#your-tab-id-1">COLABORADORES</a></li>
+
             </ul>
+            <div class="content_holder ">
+                <div class="col-md-2">
+                    <a href="#" data-toggle="tab" class=""> 
+                        <div id="imagen-tve"></div>
+                    </a>  
+                </div>                       
+                <div class="col-md-2">
+                    <a href="#" data-toggle="tab" class="">
+                        <div id="imagen-csuca"></div>
+                    </a>
+                </div>
+                <div class="col-md-2">
+                    <a href="#" data-toggle="tab" class="">
+                        <div id="imagen-ceccsica"></div>
+                    </a>
+                </div>
+                <div class="col-md-2">
+                    <a href="#" data-toggle="tab" class="">
+                        <div id="imagen-unah"></div>
+                    </a>
+                </div>
+                <div class="col-md-2">
+                    <a href="#" data-toggle="tab" class="">
+                        <div id="imagen-mep"></div>
+                    </a>
+                </div>
+                <div class="col-md-2">
+                    <a href="#" data-toggle="tab" class="">
+                        <div id="imagen-amexcid"></div>
+                    </a>
+                </div> 
+            </div>
         </div>
-    </div>  
+
+        <script type="text/javascript" src="http://code.jquery.com/jquery-1.6.min.js"></script>
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.10/jquery-ui.min.js"></script>
+        <script type="text/javascript" src="http://onlinehtmltools.com/tab-generator/skinable_tabs.min.js"></script>
+        <script type="text/javascript">
+            $('.tabs_holder').skinableTabs({
+                effect: 'overlapping',
+                skin: 'skin3',
+                position: 'bottom'
+            });
+        </script>

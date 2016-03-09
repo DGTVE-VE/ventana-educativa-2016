@@ -3,6 +3,7 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
+            <file>file:/C:/xampp/htdocs/ventanaEducativa/resources/views/viewRed/redmite.blade.php</file>
             <file>file:/C:/xampp/htdocs/ventanaEducativa/public/css/red/estiloBase.css</file>
             <file>file:/C:/xampp/htdocs/ventanaEducativa/resources/views/viewVentana/encabezadoVentana.blade.php</file>
             <file>file:/C:/xampp/htdocs/ventanaEducativa/resources/views/viewRed/seccionheader.blade.php</file>
@@ -16,9 +17,12 @@
             <file>file:/C:/xampp/htdocs/ventanaEducativa/config/app.php</file>
             <file>file:/C:/xampp/htdocs/ventanaEducativa/resources/views/viewRed/paginapublicaciones.blade.php</file>
             <file>file:/C:/xampp/htdocs/ventanaEducativa/composer.json</file>
+            <file>file:/C:/xampp/htdocs/ventanaEducativa/resources/views/viewVentana/ventana-educativa.blade.php</file>
             <file>file:/C:/xampp/htdocs/ventanaEducativa/public/css/red/estilored2.css</file>
             <file>file:/C:/xampp/htdocs/ventanaEducativa/resources/views/viewRed/paginaproyectos.blade.php</file>
+            <file>file:/C:/xampp/htdocs/ventanaEducativa/resources/views/viewRed/modalintegrantes.blade.php</file>
             <file>file:/C:/xampp/htdocs/ventanaEducativa/public/css/ventana/estiloventana3.css</file>
+            <file>file:/C:/xampp/htdocs/ventanaEducativa/resources/views/viewRed/paginacontacto.blade.php</file>
             <file>file:/C:/xampp/htdocs/ventanaEducativa/resources/views/viewVentana/pieVentana.blade.php</file>
             <file>file:/C:/xampp/htdocs/ventanaEducativa/resources/views/viewRed/seccionintegrantes.blade.php</file>
             <file>file:/C:/xampp/htdocs/ventanaEducativa/public/imagenes/red/Banners/1600-x-650.jpg</file>
@@ -27,6 +31,7 @@
             <file>file:/C:/xampp/htdocs/ventanaEducativa/app/Http/Controllers/Controller.php</file>
             <file>file:/C:/xampp/htdocs/ventanaEducativa/app/Http/Controllers/RedmiteController.php</file>
             <file>file:/C:/xampp/htdocs/ventanaEducativa/.env</file>
+            <file>file:/C:/xampp/htdocs/ventanaEducativa/resources/views/indexRed.blade.php</file>
             <file>file:/C:/xampp/htdocs/ventanaEducativa/public/imagenes/red/Banners/1.jpg</file>
             <file>file:/C:/xampp/htdocs/ventanaEducativa/public/css/red/estilored3.css</file>
         </group>
