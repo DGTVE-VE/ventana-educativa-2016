@@ -27,6 +27,10 @@ class VentanaController extends Controller {
         $users->pais = filter_input(INPUT_POST, 'pais');
         $users->intereses_edu = filter_input(INPUT_POST, 'intereses_edu');
         $users->save();
-//        return redirect('ventana_educativa');
+        return redirect('ventana_educativa');
+    }
+    
+    public function presentacion() {
+        return view('viewVentana/presentacionVentana');
     }
 }

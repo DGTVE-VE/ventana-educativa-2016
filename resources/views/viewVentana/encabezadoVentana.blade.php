@@ -10,12 +10,34 @@
         </div>
         <div class="collapse navbar-collapse">
             <ul class="nav navbar-nav navbar-right">
-
-                <li class="fotoUsuario text-center" style="color: #FFF;">R</li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle iconoAppsImg" data-toggle="dropdown">
+                        <img class="iconoApps" src="imagenes/ventana/encabezado/iconoApps.png">
+                    </a>
+                    <ul class="dropdown-menu image-responsive menuVentanaApps">
+                        <li class="text-center">
+                            <a class="" href="#">
+                                <img src="imagenes/ventana/encabezado/logoventana.png" height="50" width="150">
+                            </a>
+                        </li>
+                        <hr>
+                        <li class="text-center">
+                            <a class="" href="redmite">
+                                <img src="imagenes/red/LogoRed/logoredmesoamericana.png" height="50" width="150">
+                            </a>
+                        </li>
+                        <hr>
+                        <li class="text-center">
+                            <a class="" href="#">
+                                <img src="imagenes/ventana/encabezado/mx.png" height="50" width="150">
+                            </a>
+                        </li>
+                        <hr>
+                    </ul>
+                </li>
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                        <strong style="color: #FFF;">Usuario</strong>
-                        <span class="glyphicon glyphicon-chevron-down" style="color: #FFF;"></span>
+                        <div class="fotoUsuario text-center">R</div>
                     </a>
                     <ul class="dropdown-menu fondoRegistro">
                         <li class="panel-body">
@@ -59,31 +81,7 @@
                         </li>
                     </ul>
                 </li>
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle iconoAppsImg" data-toggle="dropdown">
-                        <img class="iconoApps" src="imagenes/ventana/encabezado/iconoApps.png">
-                    </a>
-                    <ul class="dropdown-menu image-responsive menuVentanaApps">
-                        <li class="text-center">
-                            <a class="" href="#">
-                                <img src="imagenes/ventana/encabezado/logoventana.png" height="50" width="150">
-                            </a>
-                        </li>
-                        <hr>
-                        <li class="text-center">
-                            <a class="" href="redmite">
-                                <img src="imagenes/red/LogoRed/logoredmesoamericana.png" height="50" width="150">
-                            </a>
-                        </li>
-                        <hr>
-                        <li class="text-center">
-                            <a class="" href="#">
-                                <img src="imagenes/ventana/encabezado/mx.png" height="50" width="150">
-                            </a>
-                        </li>
-                        <hr>
-                    </ul>
-                </li>
+
             </ul>
         </div>
     </div>
@@ -102,44 +100,50 @@
                         <form role="form" action="registraUsuario" method="post">
                             <div class="form-group col-md-12">
                                 <label for="nombre">Nombre Completo:</label>
-                                <input type="text" name="name" id="nombre" class="form-control input-lg" placeholder="Nombre Completo">
+                                <input type="text" required name="name" id="nombre" class="form-control input-lg" placeholder="Nombre Completo">
                             </div>
                             <div class="form-group col-md-12">
                                 <label for="correo">Correo Electrónico:</label>
-                                <input type="email" name="email" class="form-control input-lg" placeholder="Correo Electrónico">
+                                <input type="email" required name="email" class="form-control input-lg" placeholder="Correo Electrónico">
                             </div>
                             <div class="form-group col-md-6">
                                 <label for="contraseña">Contraseña:</label>
-                                <input type="password" name="password" class="form-control input-lg" placeholder="Contraseña">
+                                <input type="password" required name="password" class="form-control input-lg" placeholder="Contraseña">
                             </div>     
                             <div class="form-group col-md-6">
                                 <label for="contraseñarep">Repetir Contraseña:</label>
-                                <input type="password" name="password_confirmation" class="form-control input-lg" placeholder="Contraseña">
+                                <input type="password" required name="password_confirmation" class="form-control input-lg" placeholder="Contraseña">
                             </div>
                             <div class="form-group col-md-12">
                                 <label for="genero">Genero:</label>
                                 <div class="radio">
-                                    <label class="checkbox-inline"><input type="radio" name="genero" value="mujer">Mujer</label>
-                                    <label class="checkbox-inline"><input type="radio" name="genero" value="hombre">Hombre</label>
+                                    <label class="checkbox-inline"><input type="radio" required name="genero" value="mujer">Mujer</label>
+                                    <label class="checkbox-inline"><input type="radio" required name="genero" value="hombre">Hombre</label>
                                 </div>
                             </div>
 
                             <div class="form-group col-md-6">
                                 <label for="intereses">Interes Educativo:</label>
-                                {!! Form::select('intereses_edu',$interes_educativo, null, array('class'=>'form-control input-lg'));!!} 
+                                <select class="form-control" required name="intereses_edu">
+                                    <option value="1">Español</option>
+                                    <option value="2">Matemáticas</option>
+                                    <option value="3">Ciencias</option>
+                                    <option value="4">Audiovisual</option>
+                                    <option value="5">Juegos Educativos</option>
+                                </select>
                             </div>
                             <div class="form-group col-md-6">
                                 <label for="nacimiento">Fecha de Nacimiento:</label>
-                                <input type="text" name="nacimiento" id="nacimiento" class="form-control clsDatePicker"> 
+                                <input required type="text" name="nacimiento" id="nacimiento" class="form-control clsDatePicker"> 
                             </div>
                             <div class="col-md-12">
                                 <div class="form-group col-md-6">
                                     <label for="pais">País:</label>
-                                    <select id="countries_states1" name="pais"  class="form-control bfh-countries" data-country="MX"></select>
+                                    <select required id="countries_states1" name="pais"  class="form-control bfh-countries" data-country="MX"></select>
                                 </div>
                                 <div class="form-group col-md-6">
                                     <label for="ciudad">Ciudad:</label>
-                                    <select name="ciudad" class="input-medium bfh-states form-control" data-country="countries_states1"></select>
+                                    <select required name="ciudad" class="input-medium bfh-states form-control" data-country="countries_states1"></select>
                                 </div>
                             </div>
                     </div>

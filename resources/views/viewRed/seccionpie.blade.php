@@ -14,7 +14,7 @@
         <br>
     </div>
     <div class="col-xs-6 col-sm-6 col-md-2 col-lg-2">
-        <h4 class="text-uppercase">Colaboradores</h4>
+        <h4 class="text-uppercase"> Colaboradores </h4>
         <div class="col-xs-12 col-sm-12 col-md-12">
             <img class="img-responsive text-center" style="width: 150px; height: 50px;" src="imagenes/red/footer/amexid.png"/>
             <br>
