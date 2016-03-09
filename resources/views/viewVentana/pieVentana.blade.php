@@ -1,9 +1,11 @@
- <div class="tabs_holder f1 fondomenu"style="margin-top: 3%;">
+ <div class="tabs_holder f1 "style="margin-top: 3%;">
             <ul >
                 <li ><a href="#your-tab-id-1">COLABORADORES</a></li>
 
             </ul>
-            <div class="content_holder ">
+     <br/>
+     
+            <div class="row">
                 <div class="col-md-2">
                     <a href="#" data-toggle="tab" class=""> 
                         <div id="imagen-tve"></div>
@@ -33,7 +35,7 @@
                     <a href="#" data-toggle="tab" class="">
                         <div id="imagen-amexcid"></div>
                     </a>
-                </div> 
+                </div>
             </div>
         </div>
 

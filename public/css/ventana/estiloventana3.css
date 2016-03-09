@@ -1,6 +1,7 @@
 .skin3.bottom .tab_header_item.tab_selected a {
-	background: #2F3F39;
-	color: #fff;
+	 background: rgba(0, 0, 0, 0.2);
+	
+       
 }
 .skin3.bottom.tabs_wrapper {
 	position: relative;
@@ -8,20 +9,19 @@
 	min-height: 40px;
 	border: none;
 	border-bottom: none;
+        
 }
 .skin3.bottom .tabs_header {
 	overflow: hidden;
-	border-bottom: 4px solid #2F3F39;
+	border-bottom: 2px solid rgba(0, 0, 0, 0.2);
 	padding-bottom: 1px;
+        
 }
 .skin3.bottom .tab_header_item.tab_selected {
 	background: none;
+        
 }
-.fondomenu{
-    background: transparent;
-    border-style: none;
-    
-}
+
 
 .f1 > ul{
     list-style: none;
@@ -29,20 +29,24 @@
     overflow: hidden;
     width: 100%;
    position: relative;
+   
+   
       
 }   
 .f1 > div {
     display: none;
+   
 }
 
 .f1:hover >div {
     display: block;
-    line-height: 120px;
+    line-height: 150px;
     padding: 10px;
     position: relative;
     text-align: center;
     text-decoration: none;
-   
+    background: rgba(0, 0, 0, 0.2);
+    
 }
 #imagen-tve {
   min-height: 50px;
