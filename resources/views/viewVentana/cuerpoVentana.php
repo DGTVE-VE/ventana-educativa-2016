@@ -8,7 +8,7 @@
 			}
         </style>
 	<script>
-	/*	---------------------------------------	Sección Usabilidad. Agregar animación de entrada a imagenes 	--------------------------------*/
+	/*	---------------------------------------	Secciï¿½n Usabilidad. Agregar animaciï¿½n de entrada a imagenes 	--------------------------------*/
 		function agregaClaseBlur(imagen){
 			imagen = '#' + imagen;
 			$(imagen).addClass('difumina');
@@ -18,13 +18,13 @@
 			$(imagen).removeClass('difumina');
 		}
 		function quitaEfxDifumina(clase){
-			var elems = $(clase);    //elementos que quiero saber si estan en el área visible
+			var elems = $(clase);    //elementos que quiero saber si estan en el ï¿½rea visible
 			elems.each(function(){
 				$(this).removeClass("difumina");
 			});
 		}
 		function muestraCubos(){
-			var Intervalo4 = $('.Intervalo4');    //elementos que quiero saber si estan en el área visible
+			var Intervalo4 = $('.Intervalo4');    //elementos que quiero saber si estan en el ï¿½rea visible
 			Intervalo4.each(function(){
 					var cubo = $(this);
 					setTimeout(function(){
@@ -35,7 +35,7 @@
 						},750);
 					}, 1000);
 				});
-			var Intervalo3 = $('.Intervalo3');    //elementos que quiero saber si estan en el área visible
+			var Intervalo3 = $('.Intervalo3');    //elementos que quiero saber si estan en el ï¿½rea visible
 			Intervalo3.each(function(){
 					var cubo = $(this);
 					setTimeout(function(){
@@ -46,7 +46,7 @@
 						},750);
 					}, 750);
 				});
-			var Intervalo2 = $('.Intervalo2');    //elementos que quiero saber si estan en el área visible
+			var Intervalo2 = $('.Intervalo2');    //elementos que quiero saber si estan en el ï¿½rea visible
 			Intervalo2.each(function(){
 					var cubo = $(this);
 					setTimeout(function(){
@@ -57,7 +57,7 @@
 						},750);
 					}, 500);
 				});
-			var Intervalo1 = $('.Intervalo1');    //elementos que quiero saber si estan en el área visible
+			var Intervalo1 = $('.Intervalo1');    //elementos que quiero saber si estan en el ï¿½rea visible
 			Intervalo1.each(function(){
 					var cubo = $(this);
 					setTimeout(function(){
@@ -71,7 +71,7 @@
 		}
 		$(document).ready(function(){
 			$(function(){
-				var elems = $('.oculta');    //elementos que quiero saber si estan en el área visible
+				var elems = $('.oculta');    //elementos que quiero saber si estan en el ï¿½rea visible
 				elems.each(function(){
 					$(this).fadeOut();
 				});
@@ -88,7 +88,7 @@
 				<div class="col-xs-1 col-sm-1 col-md-1 col-lg-1 col-xs-offset-1 col-sm-offset-1 col-md-offset-1 col-lg-offset-1" style="padding-top: 10.5%; padding-left:0; padding-right:0;">
 					<img id="CUBO01" class="oculta difumina Intervalo4 slideInLeft" src="imagenes/homeventana/CUBO-01.png" usemap="#mapacubo1" style="width:200%; height:200%; position: relative; left:-30%; z-index:3;"/>
 					<map name="mapacubo1">
-						<area shape="poly" coords="106,0,212,107,106,212,0,106,106,0" onmouseover="agregaClaseBlur('CUBO01')" onmouseout="quitaClaseBlur('CUBO01')" href="#">
+                                            <area shape="poly" coords="106,0,212,107,106,212,0,106,106,0" onmouseover="agregaClaseBlur('CUBO01')" onmouseout="quitaClaseBlur('CUBO01')" href="#">
 						<!--area shape="poly" coords="444,0,883,445,444,883,444,0" onmouseover="agregaClaseBlur('cubo1')" onmouseout="quitaClaseBlur('cubo1')" href="#"/>
 						<area shape="poly" coords="444,0,883,445,444,883,444,0" onmouseover="agregaClaseBlur('cubo1')" onmouseout="quitaClaseBlur('cubo1')" href="#"/-->
 					</map>
@@ -105,7 +105,7 @@
 					<img class="oculta difumina Intervalo1 slideInLeft" src="imagenes/homeventana/CUBO-06.png" style="width:220%; height:220%; position: relative; left:-37%; z-index:4;"/>
 				</div>
 				<div class="col-xs-1 col-sm-1 col-md-1 col-lg-1" style="padding-top:8%; padding-left:0px; padding-right:0px;">
-					<img src="imagenes/homeventana/CUBO-07.png" style="width:250%; height:250%; position: relative; left:-30%; z-index:5;"/>
+                                    <a href="presentacion"><img src="imagenes/homeventana/CUBO-07.png" style="width:250%; height:250%; position: relative; left:-30%; z-index:5;"/></a>
 				</div>
 				<div class="col-xs-1 col-sm-1 col-md-1 col-lg-1" style="padding:0">
 					<img class="oculta difumina Intervalo1 slideInRight" src="imagenes/homeventana/CUBO-08.png" style="width:220%; height:220%; position: relative; left:5%; z-index:4;"/>
