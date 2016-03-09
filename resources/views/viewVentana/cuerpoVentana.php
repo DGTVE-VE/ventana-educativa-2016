@@ -156,29 +156,29 @@
 					</map>
 				</div>
 				<div class="col-xs-1 col-sm-1 col-md-1 col-lg-1" style="padding-top: 9.7%; padding-left:0px; padding-right:0px;">
-					<img id="CUBO10" class="oculta difumina Intervalo2 slideInRight" src="imagenes/homeventana/CUBO-10.png" usemap="#mapacubo10" style="width:210%; height:210%; position: relative; left:19%; z-index:3; border: solid 1px; visibility:hidden;"/>
+					<img id="CUBO10" class="oculta difumina Intervalo2 slideInRight" src="imagenes/homeventana/CUBO-10.png" usemap="#mapacubo10" style="width:210%; height:210%; position: relative; left:19%; z-index:3; visibility:hidden;"/>
 					<map name="mapacubo10"  id="mapacubo10">
 						<area shape="poly" coords="0,456,470,0,960,500,470,940" onmouseover="agregaClaseBlur('CUBO10')" onmouseout="quitaClaseBlur('CUBO10')" href="#"/>
-						<area shape="poly" coords="456,0,930,0,930,456" onmouseover="agregaClaseBlur('CUBO11')" onmouseout="quitaClaseBlur('CUBO11')" href="#"/>
-						<area shape="poly" coords="456,912,912,456,912,912" onmouseover="agregaClaseBlur('CUBO12')" onmouseout="quitaClaseBlur('CUBO12')" href="#"/>
+						<area shape="poly" coords="456,0,980,0,980,480" onmouseover="agregaClaseBlur('CUBO11')" onmouseout="quitaClaseBlur('CUBO11')" href="#"/>
+						<area shape="poly" coords="456,960,960,456,960,960" onmouseover="agregaClaseBlur('CUBO12')" onmouseout="quitaClaseBlur('CUBO12')" href="#"/>
 					</map>
 				</div>
 				<div class="col-xs-1 col-sm-1 col-md-1 col-lg-1" style="padding:4.5%; padding-left:0px; padding-right:0px;">
-					<img id="CUBO11" class="oculta difumina Intervalo3 slideInRight" src="imagenes/homeventana/CUBO-11.png" usemap="#mapacubo11" style="width:170%; height:170%; position: relative; left:37%; z-index:1; border: solid 1px; visibility:hidden;"/>
-					<img id="CUBO12" class="oculta difumina Intervalo3 slideInRight" src="imagenes/homeventana/CUBO-12.png" usemap="#mapacubo12" style="width:180%; height:180%; position: relative; left:27%; z-index:1; border: solid 1px; visibility:hidden;"/>
+					<img id="CUBO11" class="oculta difumina Intervalo3 slideInRight" src="imagenes/homeventana/CUBO-11.png" usemap="#mapacubo11" style="width:170%; height:170%; position: relative; left:37%; z-index:1; visibility:hidden;"/>
+					<img id="CUBO12" class="oculta difumina Intervalo3 slideInRight" src="imagenes/homeventana/CUBO-12.png" usemap="#mapacubo12" style="width:180%; height:180%; position: relative; left:27%; z-index:1; visibility:hidden;"/>
 					<map name="mapacubo11" id="mapacubo11">
-						<area shape="poly" coords="0,356,356,0,708,360,360,708" onmouseover="agregaClaseBlur('CUBO11')" onmouseout="quitaClaseBlur('CUBO11')" href="#"/>
+						<area shape="poly" coords="0,356,370,0,725,360,360,708" onmouseover="agregaClaseBlur('CUBO11')" onmouseout="quitaClaseBlur('CUBO11')" href="#"/>
 					</map>
 					<map name="mapacubo12" id="mapacubo12">
 						<area shape="poly" coords="0,388,388,0,840,388,420,820" onmouseover="agregaClaseBlur('CUBO12')" onmouseout="quitaClaseBlur('CUBO12')" href="#"/>
 					</map>
 				</div>
 				<div class="col-xs-1 col-sm-1 col-md-1 col-lg-1" style="padding-top: 10.5%; padding-left:0; padding-right:0;">
-					<img id="CUBO13" class="oculta difumina Intervalo4 slideInRight" src="imagenes/homeventana/CUBO-13.png" usemap="#mapacubo13" style="width:200%; height:200%; position: relative; left:19%; z-index:2; border: solid 1px; visibility:hidden;"/>
+					<img id="CUBO13" class="oculta difumina Intervalo4 slideInRight" src="imagenes/homeventana/CUBO-13.png" usemap="#mapacubo13" style="width:200%; height:200%; position: relative; left:19%; z-index:2; visibility:hidden;"/>
 					<map name="mapacubo13" id="mapacubo13">
-						<area shape="poly" coords="0,424,424,0,920,424,480,920" onmouseover="agregaClaseBlur('CUBO13')" onmouseout="quitaClaseBlur('CUBO13')" href="#"/>
-						<area shape="poly" coords="528,0,920,0,920,392" onmouseover="agregaClaseBlur('CUBO11')" onmouseout="quitaClaseBlur('CUBO11')" href="#"/>
-						<area shape="poly" coords="888,468,940,960,400,880" onmouseover="agregaClaseBlur('CUBO12')" onmouseout="quitaClaseBlur('CUBO12')" href="#"/>
+						<area shape="poly" coords="0,424,470,0,920,424,480,920" onmouseover="agregaClaseBlur('CUBO13')" onmouseout="quitaClaseBlur('CUBO13')" href="#"/>
+						<area shape="poly" coords="0,0,0,400,400,0" onmouseover="agregaClaseBlur('CUBO11')" onmouseout="quitaClaseBlur('CUBO11')" href="#"/>
+						<area shape="poly" coords="0,460,0,920,430,920" onmouseover="agregaClaseBlur('CUBO12')" onmouseout="quitaClaseBlur('CUBO12')" href="#"/>
 					</map>
 					<!--	Animate.css 	fadeInLeft	fadeInRight	------	slideInLeft	slideInRight -->
 				</div>
