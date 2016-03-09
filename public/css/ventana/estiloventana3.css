@@ -1,73 +1,57 @@
-.fondocolaboradores{
-    background: #000;
+.skin3.bottom .tab_header_item.tab_selected a {
+	background: #2F3F39;
+	color: #fff;
 }
-.atras{
-    z-index: -1;
+.skin3.bottom.tabs_wrapper {
+	position: relative;
+	overflow: hidden;
+	min-height: 40px;
+	border: none;
+	border-bottom: none;
 }
-.colaboradoresul1{
+.skin3.bottom .tabs_header {
+	overflow: hidden;
+	border-bottom: 4px solid #2F3F39;
+	padding-bottom: 1px;
+}
+.skin3.bottom .tab_header_item.tab_selected {
+	background: none;
+}
+.fondomenu{
+    background: transparent;
+    border-style: none;
+    
+}
+
+.f1 > ul{
     list-style: none;
     display: table;
     overflow: hidden;
     width: 100%;
-    background: #000;
-    position: relative;
-
-}
-
-.colaboradoresul1:hover > ul{
-    text-decoration:none;
-    display:block;
-  }
-
-.colaboradoresul2{
+   position: relative;
+      
+}   
+.f1 > div {
     display: none;
-    text-decoration:none;
-    -webkit-transition: all .3s ease;
-    -moz-transition: all .3s ease;
-    -ms-transition: all .3s ease;
-    -o-transition: all .3s ease;
-    transition: all .3s ease;
 }
 
-.colaboradoresli{
-    display: table-cell;
-}
-
-.plecacolaboradores{
-    color: #fff;
+.f1:hover >div {
     display: block;
-    line-height: 10px;
+    line-height: 120px;
     padding: 10px;
-    position: relative;
-    text-decoration:none;
- 
-}
-
-.formatocolaboradores{
-    display: block;
-    line-height: 150px;
-    padding: 20px;
     position: relative;
     text-align: center;
     text-decoration: none;
-
+   
 }
-.formatocolaboradores:hover{
-    text-decoration:none;
- }
-
-
 #imagen-tve {
   min-height: 50px;
   min-width: 136px;
   background: url(../../imagenes/ventana/pieventana/tve.png) no-repeat center center;
-  
 }
 #imagen-tve:hover {
   background: url(../../imagenes/ventana/pieventana/tvecolor.png) no-repeat center center;
-  
 }
-
 #imagen-csuca {
   min-height: 50px;
   min-width: 50px;
@@ -101,7 +85,6 @@
 }
 #imagen-mep:hover {
   background: url(../../imagenes/ventana/pieventana/mepcolor.png) no-repeat center center;
-  
 }
 
 #imagen-amexcid {
