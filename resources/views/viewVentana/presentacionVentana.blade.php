@@ -34,10 +34,10 @@ Ventana Educativa
                 <img class="image-responsive" src="imagenes/ventana/presentacion/lamina8.png" alt="Slide2">
             </div>    
             <div class="item">
-                <img class="image-responsive" src="imagenes/ventana/presentacion/lamina8.png" alt="Slide2">
+                <img class="image-responsive" src="imagenes/ventana/presentacion/lamina9.png" alt="Slide2">
             </div>  
             <div class="item">
-                <img class="image-responsive" src="imagenes/ventana/presentacion/lamina8.png" alt="Slide2">
+                <img class="image-responsive" src="imagenes/ventana/presentacion/lamina10.png" alt="Slide2">
             </div>              
         </div>          
         <div class="carousel-controls">

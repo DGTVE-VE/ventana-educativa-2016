@@ -86,7 +86,7 @@
                                         <div class="row">
                                             <div class="col-lg-12">
                                                 <div class="text-center">
-                                                    <a href="#" tabindex="5" style="color: white;" class="forgot-password">Olvide mi contraseña</a>
+                                                    <a href="{{url('password/email')}}" tabindex="5" style="color: white;" class="forgot-password">Olvide mi contraseña</a>
                                                 </div>
                                             </div>
                                         </div>
