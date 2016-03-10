@@ -70,10 +70,10 @@
                                   <form id="login-form" action="sessions" method="POST" role="form" style="display: block;">
 									<input type="hidden" name="_token" value="{{ csrf_token() }}" />
                                     <div class="form-group">
-                                        <input type="text" name="name"  tabindex="1" class="form-control" placeholder="Usuario" value="">
+                                        <input type="email" name="email"  tabindex="1" class="form-control" placeholder="Usuario" value="">
                                     </div>
                                     <div class="form-group">
-                                        <input type="password" name="email"  tabindex="2" class="form-control" placeholder="Contraseña">
+                                        <input type="password" name="password"  tabindex="2" class="form-control" placeholder="Contraseña">
                                     </div>
                                     <div class="form-group">
                                         <div class="row">
