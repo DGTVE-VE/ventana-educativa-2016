@@ -21,7 +21,7 @@ class SessionsController extends Controller
         if (Auth::attempt(Input::only ('email', 'password'))){                        
             return Redirect::to ('ventana_educativa');
         }
-        return 'Redirect::back()->withInput ();';
+        return Redirect::back()->withInput ();
         
     }
     
