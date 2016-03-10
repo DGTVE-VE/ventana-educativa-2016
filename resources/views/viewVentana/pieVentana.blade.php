@@ -1,7 +1,7 @@
  <div class="row">
 		 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 tabs_holder f1 navbar-fixed-bottom">
 			<ul >
-				<li ><div class="fondoColabora"><a href="#your-tab-id-1"><p style="position: relative; top:15px;">COLABORADORES</p></a></div></li>
+				<li ><div class="fondoColabora"><a href="#your-tab-id-1"><p class="txtPestana">COLABORADORES</p></a></div></li>
 			</ul>
 			<div class="row">
 				<div class="col-xs-5 col-sm-4 col-md-2 col-lg-2">

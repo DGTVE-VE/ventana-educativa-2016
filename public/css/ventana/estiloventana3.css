@@ -102,6 +102,11 @@
   background: url(../../imagenes/ventana/pieventana/amexcidcolor.png) no-repeat center center;
 }
 
+.txtPestana{
+	position: relative;
+	top:15px;
+}
+
 .fondoColabora{
 	width:200px;
 	height:50px;
