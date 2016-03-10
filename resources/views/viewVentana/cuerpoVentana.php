@@ -130,6 +130,9 @@
 						<area shape="poly" coords="528,0,920,0,920,392" onmouseover="cambiaImgFoto('02')" onmouseout="cambiaImgCubo('02')" href="#"/>
 						<area shape="poly" coords="888,468,940,960,400,880" /> <!--onmouseover="cambiaImgFoto('03')" onmouseout="cambiaImgCubo('03')" -->
 					</map>
+					<a href="#">
+						<img id="imgCI" class="oculta difumina Intervalo4 slideInLeft" src="imagenes/homeventana/canal_ibero.png" onmouseover="cambiaImgFoto('01')" onmouseout="cambiaImgCubo('01')" style="width:70%; height:25%; position: absolute; top: 55%; left:75%; z-index:3; visibility:hidden;"/>
+					</a>
 				</div>
 				<div class="col-xs-1 col-sm-1 col-md-1 col-lg-1" style="padding:3%; padding-left:0px; padding-right:0px;">
 					<img id="CUBO02" class="oculta difumina Intervalo3 slideInLeft" src="imagenes/homeventana/CUBO-02.png" usemap="#mapacubo2" style="width:155%; height:155%; position: relative; left:30%; z-index:2; visibility:hidden;"/>
@@ -194,6 +197,9 @@
 						<area shape="poly" coords="548,0,1160,0,1160,548" onmouseover="cambiaImgFoto('08')" onmouseout="cambiaImgCubo('08')" href="presentacion"/>
 						<area shape="poly" coords="548,1160,1160,548,1160,1160" onmouseover="cambiaImgFoto('09')" onmouseout="cambiaImgCubo('09')" href="presentacion"/>
 					</map>
+					<a href="#">
+						<img id="imgVentBco" src="imagenes/homeventana/ventanaBco.png" onmouseover="cambiaImgFoto('07')" onmouseout="cambiaImgCubo('07')" style="width:150%; height:20%; position: absolute; top: 55%; left:5%; z-index:5;"/>
+					</a>
 				</div>
 				<div class="col-xs-1 col-sm-1 col-md-1 col-lg-1" style="padding:0">
 					<img id="CUBO08" class="oculta difumina Intervalo1 slideInRight" src="imagenes/homeventana/CUBO-08.png" usemap="#mapacubo8" style="width:187%; height:187%; position: relative; left:-7%; z-index:4; visibility:hidden;"/>
@@ -226,6 +232,9 @@
 						<area shape="poly" coords="456,0,980,0,980,480" /><!--onmouseover="cambiaImgFoto('11')" onmouseout="cambiaImgCubo('11')" -->
 						<area shape="poly" coords="456,960,960,456,960,960" /><!--onmouseover="cambiaImgFoto('12')" onmouseout="cambiaImgCubo('12')" -->
 					</map>
+					<a href="#">
+						<img id="imgRedmBCo" class="oculta difumina Intervalo4 slideInRight" src="imagenes/homeventana/redmiteBco.png" onmouseover="cambiaImgFoto('10')" onmouseout="cambiaImgCubo('10')" style="width:80%; height:35%; position: absolute; top: 50%; left:40%; z-index:3; visibility:hidden;"/>
+					</a>
 				</div>
 				<div class="col-xs-1 col-sm-1 col-md-1 col-lg-1" style="padding:3.1%; padding-left:0px; padding-right:0px;">
 					<img id="CUBO11" class="oculta difumina Intervalo3 slideInRight" src="imagenes/homeventana/CUBO-11.png" usemap="#mapacubo11" style="width:155%; height:155%; position: relative; left:-22%; z-index:1; visibility:hidden;"/>
@@ -244,6 +253,9 @@
 						<area shape="poly" coords="0,0,0,400,400,0" /><!--onmouseover="cambiaImgFoto('11')" onmouseout="cambiaImgCubo('11')" -->
 						<area shape="poly" coords="0,460,0,920,430,920" /><!--onmouseover="cambiaImgFoto('12')" onmouseout="cambiaImgCubo('12')" -->
 					</map>
+					<a href="#">
+						<img id="imgMexXBco" class="oculta difumina Intervalo4 slideInRight" src="imagenes/homeventana/mexicoxBco.png" onmouseover="cambiaImgFoto('13')" onmouseout="cambiaImgCubo('13')" style="width:100%; height:20%; position: absolute; top: 60%; left:0%; z-index:3; visibility:hidden;"/>
+					</a>
 					<!--	Animate.css 	fadeInLeft	fadeInRight	------	slideInLeft	slideInRight -->
 				</div>
 				<div class="visible-md-inline visible-lg-inline">

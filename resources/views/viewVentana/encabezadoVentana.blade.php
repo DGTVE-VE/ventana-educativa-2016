@@ -1,100 +1,119 @@
-<div class="navbar navbar-default navbar-fixed-top menuVentana" role="navigation">
-    <div class="container"> 
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span> 
-            </button>
-            <a href="#"><img class="image-responsive" src="imagenes/ventana/encabezado/logoventana.png"></a>
-        </div>
-        <div class="collapse navbar-collapse">
-            <ul class="nav navbar-nav navbar-right">
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle iconoAppsImg" data-toggle="dropdown">
-                        <img class="iconoApps" src="imagenes/ventana/encabezado/iconoApps.png">
-                    </a>
-                    <ul class="dropdown-menu image-responsive menuVentanaApps">
-                        <li class="text-center">
-                            <a class="" href="#">
-                                <img src="imagenes/ventana/encabezado/logoventana.png" height="50" width="150">
-                            </a>
-                        </li>
-                        <hr>
-                        <li class="text-center">
-                            <a class="" href="redmite">
-                                <img src="imagenes/red/LogoRed/logoredmesoamericana.png" height="50" width="150">
-                            </a>
-                        </li>
-                        <hr>
-                        <li class="text-center">
-                            <a class="" href="#">
-                                <img src="imagenes/ventana/encabezado/mx.png" height="50" width="150">
-                            </a>
-                        </li>
-                        <hr>
-                    </ul>
-                </li>
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                        <div class="fotoUsuario text-center">R</div>
-                    </a>
-                    <ul class="dropdown-menu fondoRegistro">
-                        <li class="panel-body">
-                            <div class="row">
-                                <div class="col-lg-12">
-                                    
-                                    @if (Auth::guest ())
-                                     <form id="login-form" action="sessions" method="POST" role="form" style="display: block;">
-                                        <div class="form-group">
-                                            <input type="email" name="email"  tabindex="1" class="form-control" placeholder="Correo" value="">
+<nav class="navbar navbar-default navbar-fixed-top menuVentana" role="navigation">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>    
+        <a href="ventana_educativa"><img class="image-responsive " src="imagenes/ventana/encabezado/logoventana.png"></a>
+    </div> 
+    <div class="navbar-collapse collapse">
+        <ul class="nav navbar-nav navbar-right">
+            <li class="col-md-pull-12 col-xs-pull-4 col-sm-pull-2 libuscar">
+                <form class="navbar-form navbar-right" role="search">
+                    <div class="input-group">
+                        <input type="text" class="form-control inputSearch" placeholder="Buscar...">
+                        <span class="input-group-btn ">
+                            <button type="submit" class="btn btn-default">
+                                <span class="glyphicon glyphicon-search"></span>
+                            </button>
+                        </span>
+                    </div>
+                </form>
+            </li>
+            <li class="dropdown liApp">
+                <div class=" divli dropdown-toggle" data-toggle="dropdown">
+                    <img class="iconoApps"  src="imagenes/ventana/encabezado/iconoApps.png">
+                </div>
+                <ul class="dropdown-menu image-responsive menuVentanaApps">
+                    <table>
+                        <tr>
+                            <td class="divApp">
+                                <a class="" href="#"><img src="http://placehold.it/50x50"></a>
+                                <label class="etiquetaApp">Ventana</label>
+                            </td>
+                            <td class="divApp">
+                                <a class="" href="#"><img src="http://placehold.it/50x50"></a>
+                                <label class="etiquetaApp">Ventana</label>
+                            </td>
+                            <td class="divApp">
+                                <a class="" href="#"><img src="http://placehold.it/50x50"></a>
+                                <label class="etiquetaApp">Ventana</label>
+                            </td>                            
+                        </tr>
+                        <tr>
+                            <td class="divApp">
+                                <a class="" href="#"><img src="http://placehold.it/50x50"></a>
+                                <label class="etiquetaApp">Ventana</label>
+                            </td>
+                            <td class="divApp">
+                                <a class="" href="#"><img src="http://placehold.it/50x50"></a>
+                                <label class="etiquetaApp">Ventana</label>
+                            </td>
+                            <td class="divApp">
+                                <a class="" href="#"><img src="http://placehold.it/50x50"></a>
+                                <label class="etiquetaApp">Ventana</label>
+                            </td>                            
+                        </tr>                        
+                    </table>                                       
+                </ul>
+            </li>
+            <li class="dropdown">
+                <div class=" divli dropdown-toggle" data-toggle="dropdown">
+                    <div class="fotoUsuario text-center">R</div>
+                </div>
+                <ul class="dropdown-menu fondoRegistro">
+                    <li class="panel-body">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                @if (Auth::guest ())
+                                  <form id="login-form" action="sessions" method="POST" role="form" style="display: block;">
+									<input type="hidden" name="_token" value="{{ csrf_token() }}" />
+                                    <div class="form-group">
+                                        <input type="text" name="name"  tabindex="1" class="form-control" placeholder="Usuario" value="">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="password" name="email"  tabindex="2" class="form-control" placeholder="Contraseña">
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="row">
+                                            <div class="col-sm-12">
+                                                <input type="submit" name="login-submit" style="color: white;" id="login-submit" tabindex="4" class="form-control btn btn-login" value="Entrar">
+                                            </div>
                                         </div>
-                                        <div class="form-group">
-                                            <input type="password" name="password"  tabindex="2" class="form-control" placeholder="Contraseña">
-                                        </div>
-                                         <input type="hidden" name="_token" value="{{ csrf_token() }}" />
-                                        <div class="form-group">
-                                            <div class="row">
-                                                <div class="col-sm-12">
-                                                    <input type="submit" name="login-submit" style="color: white;" id="login-submit" tabindex="4" class="form-control btn btn-login" value="Entrar">
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="row">
+                                            <div class="col-lg-12">
+                                                <div class="text-center">
+                                                    <a href="#" tabindex="5" style="color: white;" class="forgot-password">Olvide mi contraseña</a>
                                                 </div>
                                             </div>
                                         </div>
-                                        </form>                                                                        
-                                        <div class="form-group">
-                                            <div class="row">
-                                                <div class="col-lg-12">
-                                                    <div class="text-center">
-                                                        <a href="#" tabindex="5" style="color: white;" class="forgot-password">Olvide mi contraseña</a>
-                                                    </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="row">
+                                            <div class="col-lg-12">
+                                                <div class="text-center">
+                                                    <a href="#" data-target="#modalRegistro"  data-toggle="modal" tabindex="5" style="color: white;" class="forgot-password">Registrate</a>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="form-group">
-                                            <div class="row">
-                                                <div class="col-lg-12">
-                                                    <div class="text-center">
-                                                        <a href="#" data-target="#modalRegistro"  data-toggle="modal" tabindex="5" style="color: white;" class="forgot-password">Registrate</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>     
-                                                                       
-                                    @else
+                                    </div>      									
+                                </form>
+								@else
                                     loggeado
                                        {{Auth::user()->email}}
                                        <a href="logout" tabindex="5" style="color: white;" class="forgot-password">Cerrar Sesión</a>
                                     @endif
-                                </div>
                             </div>
-                        </li>
-                    </ul>
-                </li>
-
-            </ul>
-        </div>
+                        </div>
+                    </li>
+                </ul>
+            </li>
+        </ul>
     </div>
-</div>
+</nav>
 <!-- Modal -->
 <div class="modal fade" id="modalRegistro" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
     <div class="modal-dialog">
