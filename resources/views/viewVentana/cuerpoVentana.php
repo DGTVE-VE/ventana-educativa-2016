@@ -28,18 +28,60 @@
 				visibility:hidden;
 			}
         </style>
-		<link href='https://fonts.googleapis.com/css?family=Ubuntu:400,300,500,700' rel='stylesheet' type='text/css'>
 	<script>
 
 	/*	---------------------------------------	Sección Usabilidad. Agregar animación de entrada a imagenes 	--------------------------------*/
+		function mueveIzq(imagenCubo){
+			var top = ($(imagenCubo).offset().top) * 0.95;
+			var left = ($(imagenCubo).offset().left) * 0.95;
+			$(imagenCubo).offset({top:top,left:left});
+		}
+		function mueveDer(imagenCubo){
+			var top = ($(imagenCubo).offset().top) / 0.95;
+			var left = ($(imagenCubo).offset().left) / 0.95;
+			$(imagenCubo).offset({top:top,left:left});
+		}
+		function mueveArriba(imagenCubo){
+			var top = ($(imagenCubo).offset().top) * 0.95;
+			$(imagenCubo).offset({top:top});
+		}
+		function mueveAbajo(imagenCubo){
+			var top = ($(imagenCubo).offset().top) / 0.95;
+			$(imagenCubo).offset({top:top});
+		}
 		function cambiaImgFoto(imagen){
-			imagenCubo = '#CUBO' + imagen;
-			imagenFoto = 'imagenes/homeventana/FOTO-' + imagen + '.png';
+			var imagenCubo = '#CUBO' + imagen;
+			var ancho = Math.round($(imagenCubo).width() * 1.1);
+			var alto = Math.round($(imagenCubo).height() * 1.1);
+			$(imagenCubo).width(ancho);
+			$(imagenCubo).height(alto);
+			switch(imagen){
+				case '01':case '03':case '04':case '05':case '06':
+					mueveIzq(imagenCubo);
+					break;
+				case '07':case '08':case '09':case '10':case '13':
+					mueveArriba(imagenCubo);
+					break;
+			}
+			
+			var imagenFoto = 'imagenes/homeventana/FOTO-' + imagen + '.png';
 			$(imagenCubo).attr('src',imagenFoto);
 		}
 		function cambiaImgCubo(imagen){
-			imagenFoto = '#CUBO' + imagen;
-			imagenCubo = 'imagenes/homeventana/CUBO-' + imagen + '.png';
+			var imagenFoto = '#CUBO' + imagen;
+			var ancho = Math.round($(imagenFoto).width() / 1.1);
+			var alto = Math.round($(imagenFoto).height() / 1.1);
+			$(imagenFoto).width(ancho);
+			$(imagenFoto).height(alto);
+			switch(imagen){
+				case '01':case '03':case '04':case '05':case '06':
+					mueveDer(imagenFoto);
+					break;
+				case '07':case '08':case '09':case '10':case '13':
+					mueveAbajo(imagenFoto);
+					break;
+			}
+			var imagenCubo = 'imagenes/homeventana/CUBO-' + imagen + '.png';
 			$(imagenFoto).attr('src',imagenCubo);
 		}
 		function quitaEfxDifumina(clase){
@@ -136,7 +178,7 @@
 				</div>
 				<div class="col-xs-1 col-sm-1 col-md-1 col-lg-1" style="padding:3%; padding-left:0px; padding-right:0px;">
 					<img id="CUBO02" class="oculta difumina Intervalo3 slideInLeft" src="imagenes/homeventana/CUBO-02.png" usemap="#mapacubo2" style="width:155%; height:155%; position: relative; left:30%; z-index:2; visibility:hidden;"/>
-					<img id="CUBO03" class="oculta difumina Intervalo3 slideInLeft" src="imagenes/homeventana/CUBO-03.png" usemap="#mapacubo3" style="width:155%; height:155%; position: relative; left:25%; z-index:2; visibility:hidden;"/>
+					<img id="CUBO03" class="oculta difumina Intervalo3 slideInLeft" src="imagenes/homeventana/CUBO-03.png" usemap="#mapacubo3" style="width:155%; height:70%; position: absolute; left:25%; z-index:2; visibility:hidden;"/>
 					<map name="mapacubo2" id="mapacubo2">
 						<area shape="poly" coords="0,356,356,0,708,360,360,708" onmouseover="cambiaImgFoto('02')" onmouseout="cambiaImgCubo('02')" href="#"/>
 					</map>
@@ -233,7 +275,7 @@
 						<area shape="poly" coords="456,960,960,456,960,960" /><!--onmouseover="cambiaImgFoto('12')" onmouseout="cambiaImgCubo('12')" -->
 					</map>
 					<a href="#">
-						<img id="imgRedmBCo" class="oculta difumina Intervalo4 slideInRight" src="imagenes/homeventana/redmiteBco.png" onmouseover="cambiaImgFoto('10')" onmouseout="cambiaImgCubo('10')" style="width:80%; height:35%; position: absolute; top: 50%; left:40%; z-index:3; visibility:hidden;"/>
+						<img id="imgRedmBCo" class="oculta difumina Intervalo2 slideInRight" src="imagenes/homeventana/redmiteBco.png" onmouseover="cambiaImgFoto('10')" onmouseout="cambiaImgCubo('10')" style="width:70%; height:30%; position: absolute; top: 50%; left:50%; z-index:3; visibility:hidden;"/>
 					</a>
 				</div>
 				<div class="col-xs-1 col-sm-1 col-md-1 col-lg-1" style="padding:3.1%; padding-left:0px; padding-right:0px;">
@@ -254,9 +296,8 @@
 						<area shape="poly" coords="0,460,0,920,430,920" /><!--onmouseover="cambiaImgFoto('12')" onmouseout="cambiaImgCubo('12')" -->
 					</map>
 					<a href="#">
-						<img id="imgMexXBco" class="oculta difumina Intervalo4 slideInRight" src="imagenes/homeventana/mexicoxBco.png" onmouseover="cambiaImgFoto('13')" onmouseout="cambiaImgCubo('13')" style="width:100%; height:20%; position: absolute; top: 60%; left:0%; z-index:3; visibility:hidden;"/>
+						<img id="imgMexXBco" class="oculta difumina Intervalo4 slideInRight" src="imagenes/homeventana/mexicoxBco.png" onmouseover="cambiaImgFoto('13')" onmouseout="cambiaImgCubo('13')" style="width:100%; height:15%; position: absolute; top: 63%; left:0%; z-index:3; visibility:hidden;"/>
 					</a>
-					<!--	Animate.css 	fadeInLeft	fadeInRight	------	slideInLeft	slideInRight -->
 				</div>
 				<div class="visible-md-inline visible-lg-inline">
 					<div style="padding:2%;">
