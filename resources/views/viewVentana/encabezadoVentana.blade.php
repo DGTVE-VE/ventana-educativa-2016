@@ -43,13 +43,16 @@
                         <li class="panel-body">
                             <div class="row">
                                 <div class="col-lg-12">
-                                    <form id="login-form" action="entraUsuario" method="post" role="form" style="display: block;">
+                                    
+                                    @if (Auth::guest ())
+                                     <form id="login-form" action="sessions" method="POST" role="form" style="display: block;">
                                         <div class="form-group">
-                                            <input type="text" name="name"  tabindex="1" class="form-control" placeholder="Usuario" value="">
+                                            <input type="email" name="email"  tabindex="1" class="form-control" placeholder="Correo" value="">
                                         </div>
                                         <div class="form-group">
-                                            <input type="password" name="email"  tabindex="2" class="form-control" placeholder="Contraseña">
+                                            <input type="password" name="password"  tabindex="2" class="form-control" placeholder="Contraseña">
                                         </div>
+                                         <input type="hidden" name="_token" value="{{ csrf_token() }}" />
                                         <div class="form-group">
                                             <div class="row">
                                                 <div class="col-sm-12">
@@ -57,6 +60,7 @@
                                                 </div>
                                             </div>
                                         </div>
+                                        </form>                                                                        
                                         <div class="form-group">
                                             <div class="row">
                                                 <div class="col-lg-12">
@@ -74,8 +78,13 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>                                        
-                                    </form>
+                                        </div>     
+                                                                       
+                                    @else
+                                    loggeado
+                                       {{Auth::user()->email}}
+                                       <a href="logout" tabindex="5" style="color: white;" class="forgot-password">Cerrar Sesión</a>
+                                    @endif
                                 </div>
                             </div>
                         </li>
