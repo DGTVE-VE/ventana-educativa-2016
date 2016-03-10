@@ -10,39 +10,58 @@
     <div class="navbar-collapse collapse">
         <ul class="nav navbar-nav navbar-right">
             <li class="col-md-pull-12 col-xs-pull-4 col-sm-pull-2 libuscar">
-                <form id="divbuscar" class="navbar-search">
-                    <input type="search" class="buscar" placeholder="Search">
+                <form class="navbar-form navbar-right" role="search">
+                    <div class="input-group">
+                        <input type="text" class="form-control inputSearch" placeholder="Buscar...">
+                        <span class="input-group-btn ">
+                            <button type="submit" class="btn btn-default">
+                                <span class="glyphicon glyphicon-search"></span>
+                            </button>
+                        </span>
+                    </div>
                 </form>
             </li>
-            <li class="dropdown">
-                 <a href="#" class="dropdown-toggle iconoAppsImg" data-toggle="dropdown">
-                <img class="iconoApps" src="imagenes/ventana/encabezado/iconoApps.png">
-            </a>
-            <ul class="dropdown-menu image-responsive menuVentanaApps">
-                <li class="text-center">
-                    <a class="" href="#">
-                        <img src="imagenes/ventana/encabezado/logoventana.png" height="50" width="150">
-                    </a>
-                </li>
-                <hr>
-                <li class="text-center">
-                    <a class="" href="redmite">
-                        <img src="imagenes/red/LogoRed/logoredmesoamericana.png" height="50" width="150">
-                    </a>
-                </li>
-                <hr>
-                <li class="text-center">
-                    <a class="" href="#">
-                        <img src="imagenes/ventana/encabezado/mx.png" height="50" width="150">
-                    </a>
-                </li>
-                <hr>
-            </ul>
+            <li class="dropdown liApp">
+                <div class=" divli dropdown-toggle" data-toggle="dropdown">
+                    <img class="iconoApps"  src="imagenes/ventana/encabezado/iconoApps.png">
+                </div>
+                <ul class="dropdown-menu image-responsive menuVentanaApps">
+                    <table>
+                        <tr>
+                            <td class="divApp">
+                                <a class="" href="#"><img src="http://placehold.it/50x50"></a>
+                                <label class="etiquetaApp">Ventana</label>
+                            </td>
+                            <td class="divApp">
+                                <a class="" href="#"><img src="http://placehold.it/50x50"></a>
+                                <label class="etiquetaApp">Ventana</label>
+                            </td>
+                            <td class="divApp">
+                                <a class="" href="#"><img src="http://placehold.it/50x50"></a>
+                                <label class="etiquetaApp">Ventana</label>
+                            </td>                            
+                        </tr>
+                        <tr>
+                            <td class="divApp">
+                                <a class="" href="#"><img src="http://placehold.it/50x50"></a>
+                                <label class="etiquetaApp">Ventana</label>
+                            </td>
+                            <td class="divApp">
+                                <a class="" href="#"><img src="http://placehold.it/50x50"></a>
+                                <label class="etiquetaApp">Ventana</label>
+                            </td>
+                            <td class="divApp">
+                                <a class="" href="#"><img src="http://placehold.it/50x50"></a>
+                                <label class="etiquetaApp">Ventana</label>
+                            </td>                            
+                        </tr>                        
+                    </table>                                       
+                </ul>
             </li>
             <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                <div class=" divli dropdown-toggle" data-toggle="dropdown">
                     <div class="fotoUsuario text-center">R</div>
-                </a>
+                </div>
                 <ul class="dropdown-menu fondoRegistro">
                     <li class="panel-body">
                         <div class="row">
