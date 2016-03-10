@@ -66,7 +66,9 @@
                     <li class="panel-body">
                         <div class="row">
                             <div class="col-lg-12">
-                                <form id="login-form" action="entraUsuario" method="post" role="form" style="display: block;">
+                                @if (Auth::guest ())
+                                  <form id="login-form" action="sessions" method="POST" role="form" style="display: block;">
+									<input type="hidden" name="_token" value="{{ csrf_token() }}" />
                                     <div class="form-group">
                                         <input type="text" name="name"  tabindex="1" class="form-control" placeholder="Usuario" value="">
                                     </div>
@@ -97,8 +99,13 @@
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>                                        
+                                    </div>      									
                                 </form>
+								@else
+                                    loggeado
+                                       {{Auth::user()->email}}
+                                       <a href="logout" tabindex="5" style="color: white;" class="forgot-password">Cerrar Sesión</a>
+                                    @endif
                             </div>
                         </div>
                     </li>
