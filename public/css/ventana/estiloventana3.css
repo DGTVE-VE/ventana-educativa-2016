@@ -10,6 +10,7 @@
 	border: none;
 	border-bottom: none;
         
+        
 }
 .skin3.bottom .tabs_header {
 	overflow: hidden;
@@ -22,6 +23,10 @@
         
 }
 
+.skin3.bottom .tab_selected {
+	background: none;
+	color: white;
+}
 
 .f1 > ul{
     list-style: none;
@@ -29,9 +34,7 @@
     overflow: hidden;
     width: 100%;
    position: relative;
-   
-   
-      
+     
 }   
 .f1 > div {
     display: none;
@@ -45,9 +48,10 @@
     position: relative;
     text-align: center;
     text-decoration: none;
-    background: rgba(0, 0, 0, 0.2);
-    
+    background: rgba(0, 0, 0, 0.3);
+   
 }
+
 #imagen-tve {
   min-height: 50px;
   min-width: 136px;
