@@ -1,3 +1,4 @@
+/* Efectos para pie menú  */
 .skin3.bottom .tab_header_item.tab_selected a {
 	 background: rgba(0, 0, 0, 0.2);
 	
@@ -101,4 +102,22 @@
 }
 #imagen-amexcid:hover {
   background: url(../../imagenes/ventana/pieventana/amexcidcolor.png) no-repeat center center;
+}
+
+/* Efectos para iconos redes sociales */
+
+.derechaSociales{
+    float: right;
+   
+}
+.sociales{
+    list-style: none;
+}
+.cambiacolorredesSociales{
+    color: rgba(191, 191, 191, 0.7);
+        
+}
+.cambiacolorredesSociales:hover{
+    color: #fff;
+        
 }
