@@ -1,11 +1,26 @@
 <?php
-// Password reset link request routes...
-Route::get('password/email', 'Auth\PasswordController@getEmail');
-Route::post('password/email', 'Auth\PasswordController@postEmail');
 
-// Password reset routes...
-Route::get('password/reset/{token}', 'Auth\PasswordController@getReset');
-Route::post('password/reset', 'Auth\PasswordController@postReset');
+/************************** Autenticación *************************/
+//Route::get ('/createUser', function (){
+//    \App\User::create ([
+//        'name'=>'Israel',
+//        'email'=>'j.israel.toledo@gmail.com',
+//        'password'=> Hash::make ('israel')
+//        ]);
+//});
+Route::resource ('sessions', 'SessionsController');
+Route::get('login', 'SessionsController@create');
+Route::get('logout', 'SessionsController@destroy');
+
+// Password reset link request routes...
+//Route::get('password/email', 'Auth\PasswordController@getEmail');
+//Route::post('password/email', 'Auth\PasswordController@postEmail');
+//
+//// Password reset routes...
+//Route::get('password/reset/{token}', 'Auth\PasswordController@getReset');
+//Route::post('password/reset', 'Auth\PasswordController@postReset');
+
+/************************** Autenticación *************************/
 
 /****************************REDMITE***********************/
 /*Vistas principales REDMITE*/
@@ -37,7 +52,18 @@ Route::post('guardaContacto', 'RedmiteController@guardaContacto');
 
 /****************************HOME VENTANA***********************/
 //Route::get('/','VentanaController@ventana');
-Route::get('ventana_educativa','VentanaController@ventana_educativa');
+/* Las rutas dentro de este grupo, tienen sesión*/
+Route::group(['middleware' => 'web'], function () {
+     Route::auth();     
+     Route::get('ventana_educativa',['as'=>'home', 'uses'=>'VentanaController@ventana_educativa']);
+     Route::resource ('sessions', 'SessionsController');
+     Route::get('login', 'SessionsController@create');
+     Route::get('logout', 'SessionsController@destroy');
+
+});
+
+Route::get('registro','VentanaController@registro');
 Route::get('presentacion','VentanaController@presentacion');
 Route::post('registraUsuario', 'VentanaController@registraUsuario');
+Route::get ('testSession','SessionsController@test');
 /****************************HOME VENTANA***********************/

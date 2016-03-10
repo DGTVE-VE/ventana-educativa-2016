@@ -33,4 +33,8 @@ class VentanaController extends Controller {
     public function presentacion() {
         return view('viewVentana/presentacionVentana');
     }
+    
+    public function registro() {
+        return view('viewVentana/registroVentana');
+    }
 }

@@ -1,17 +1,12 @@
 /* Efectos para pie menú  */
 .skin3.bottom .tab_header_item.tab_selected a {
 	 background: rgba(0, 0, 0, 0.2);
-	
-       
 }
 .skin3.bottom.tabs_wrapper {
 	position: relative;
 	overflow: hidden;
-	min-height: 40px;
 	border: none;
 	border-bottom: none;
-        
-        
 }
 .skin3.bottom .tabs_header {
 	overflow: hidden;
@@ -34,17 +29,21 @@
     display: table;
     overflow: hidden;
     width: 100%;
-   position: relative;
-     
-}   
+	position: relative;
+	margin-bottom:0px;
+	padding:0px;
+}
+.f1{
+	padding:0px;
+}
 .f1 > div {
     display: none;
+	padding:20px;
 }
 
 .f1:hover >div {
     display: block;
     line-height: 150px;
-    padding: 10px;
     position: relative;
     text-align: center;
     text-decoration: none;
@@ -104,6 +103,7 @@
   background: url(../../imagenes/ventana/pieventana/amexcidcolor.png) no-repeat center center;
 }
 
+
 /* Efectos para iconos redes sociales */
 
 .derechaSociales{
@@ -121,3 +121,17 @@
     color: #fff;
         
 }
+
+.txtPestana{
+	position: relative;
+	top:15px;
+}
+
+.fondoColabora{
+	width:200px;
+	height:50px;
+	padding-left:20px;
+	border-bottom: 50px solid rgba(0, 0, 0, 0.3); 
+	border-right: 35px solid transparent;
+}
+

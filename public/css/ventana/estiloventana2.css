@@ -31,10 +31,11 @@ body{
     height: 30px;
     color: white;
     font-weight: bold;
-        font-size: 20px;
+    font-size: 20px;
 }
 
 .iconoApps{
+    margin-top:5%;
     width: 40px;
     height: 30px;    
 }
@@ -43,8 +44,11 @@ body{
     background: transparent;
     border-color: transparent;
 }
-
-.menuVentanaApps li > a:hover { background: transparent !important; }
+.divli{
+    padding: 20px;
+    cursor: pointer;
+}
+/*.menuVentanaApps li > a:hover { background: transparent !important; }*/
 
 
 /*Ventana logueo*/
@@ -165,87 +169,89 @@ body{
 
 
 /*search*/
-
-.buscar {
-	outline: none;
+.inputSearch{
+  background-color:rgba(0,0,0,0) !important;
+       border:none !important;
 }
-.buscar[type=search] {
-	-webkit-appearance: textfield;
-	-webkit-box-sizing: content-box;
-	font-family: inherit;
-	font-size: 100%;
-}
-.buscar::-webkit-search-decoration,
-.buscar::-webkit-search-cancel-button {
-	display: none; 
-}
+/*fin search*/
 
 
-.buscar[type=search] {
-	background: #ededed url(http://static.tumblr.com/ftv85bp/MIXmud4tx/search-icon.png) no-repeat 9px center;
-	border: solid 1px #ccc;
-	padding: 9px 10px 9px 32px;
-	width: 55px;
-	
-	-webkit-border-radius: 10em;
-	-moz-border-radius: 10em;
-	border-radius: 10em;
-	
-	-webkit-transition: all .5s;
-	-moz-transition: all .5s;
-	transition: all .5s;
-}
-.buscar[type=search]:focus {
-	width: 130px;
-	background-color: #fff;
-	border-color: #66CC75;
-	
-	-webkit-box-shadow: 0 0 5px rgba(109,207,246,.5);
-	-moz-box-shadow: 0 0 5px rgba(109,207,246,.5);
-	box-shadow: 0 0 5px rgba(109,207,246,.5);
+
+.etiquetaApp{
+    font-weight: normal;    
+    color: #000;
 }
 
-.libuscar{
-    margin-top: 10%;
+    .divApp{
+        background: rgba(255, 255, 255, .5) !important;  
+        padding: 10px;
+    }
+
+    
+    
+    
+   
+/* Smartphones (portrait y landscape) ———– */
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 480px) {
+/* Styles */
 }
 
-.buscar:-moz-placeholder {
-	color: #999;
-}
-.buscar::-webkit-input-placeholder {
-	color: #999;
-}
-
-/* Demo 2 */
-#divbuscar input[type=search] {
-	width: 15px;
-	padding-left: 10px;
-	color: transparent;
-	cursor: pointer;
-}
-#divbuscar input[type=search]:hover {
-	background-color: #fff;
-}
-#divbuscar input[type=search]:focus {
-	width: 100px;
-	padding-left: 32px;
-	color: #000;
-	background-color: #fff;
-	cursor: auto;
-}
-#divbuscar input:-moz-placeholder {
-	color: transparent;
-}
-#divbuscar input::-webkit-input-placeholder {
-	color: transparent;
+/* Smartphones (landscape) ———– */
+@media only screen
+and (min-width : 321px) {
+/* Styles */
 }
 
+/* Smartphones (portrait) ———– */
+@media only screen
+and (max-width : 320px) {
+/* Styles */
+}
 
-.navbar-search
-{
-    position: absolute;
-    width: 100%;
-    left: 0;
-    text-align: center;
-    margin: auto;
+/* iPads (portrait y landscape) ———– */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px) {
+/* Styles */
+}
+
+/* iPads (landscape) ———– */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : landscape) {
+/* Styles */
+}
+
+/* iPads (portrait) ———– */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : portrait) {
+/* Styles */
+}
+
+/* PCs y portátiles ———– */
+@media only screen
+and (min-width : 1224px) {
+/* Styles */
+}
+
+/* Pantallas grandes ———– */
+@media only screen
+and (min-width : 1824px) {
+/* Styles */
+}
+
+/* iPhone 4 ———– */
+@media
+only screen and (-webkit-min-device-pixel-ratio : 1.5),
+only screen and (min-device-pixel-ratio : 1.5) {
+/* Estilos */
+}
+.frmRegistro{
+    margin-top: 5%;
+    
 }
