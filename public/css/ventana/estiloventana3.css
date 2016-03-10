@@ -33,8 +33,8 @@
     display: table;
     overflow: hidden;
     width: 100%;
-   position: relative;
-     
+	position: relative;
+	margin-bottom:0px;
 }   
 .f1 > div {
     display: none;
@@ -101,4 +101,15 @@
 }
 #imagen-amexcid:hover {
   background: url(../../imagenes/ventana/pieventana/amexcidcolor.png) no-repeat center center;
+}
+
+.fondoColabora{
+	width:200px;
+	height:30px;
+	padding-left:20px;
+	background: rgba(0, 0, 0, 0.3);
+	border-radius: 0px 78px 0px 0px;
+	-moz-border-radius: 0px 78px 0px 0px;
+	-webkit-border-radius: 0px 78px 0px 0px;
+	border: 0px solid #000000;
 }
