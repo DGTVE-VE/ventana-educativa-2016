@@ -1,16 +1,11 @@
 .skin3.bottom .tab_header_item.tab_selected a {
 	 background: rgba(0, 0, 0, 0.2);
-	
-       
 }
 .skin3.bottom.tabs_wrapper {
 	position: relative;
 	overflow: hidden;
-	min-height: 40px;
 	border: none;
 	border-bottom: none;
-        
-        
 }
 .skin3.bottom .tabs_header {
 	overflow: hidden;
@@ -35,15 +30,19 @@
     width: 100%;
 	position: relative;
 	margin-bottom:0px;
-}   
+	padding:0px;
+}
+.f1{
+	padding:0px;
+}
 .f1 > div {
     display: none;
+	padding:20px;
 }
 
 .f1:hover >div {
     display: block;
     line-height: 150px;
-    padding: 10px;
     position: relative;
     text-align: center;
     text-decoration: none;
@@ -105,12 +104,8 @@
 
 .fondoColabora{
 	width:200px;
-	height:40px;
-	padding-top:10px;
+	height:50px;
 	padding-left:20px;
-	background: rgba(0, 0, 0, 0.3);
-	border-radius: 0px 78px 0px 0px;
-	-moz-border-radius: 0px 78px 0px 0px;
-	-webkit-border-radius: 0px 78px 0px 0px;
-	border: 0px solid #000000;
+	border-bottom: 50px solid rgba(0, 0, 0, 0.3); 
+	border-right: 35px solid transparent;
 }
