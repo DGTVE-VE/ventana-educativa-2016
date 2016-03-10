@@ -8,18 +8,21 @@
         <a href="ventana_educativa"><img class="image-responsive " src="imagenes/ventana/encabezado/logoventana.png"></a>
     </div> 
     <div class="navbar-collapse collapse">
-        <ul class="nav navbar-nav navbar-right">
+        <ul class=" nav navbar-nav navbar-right">
             <li class="col-md-pull-12 col-xs-pull-4 col-sm-pull-2 libuscar">
-                <form class="navbar-form navbar-right" role="search">
-                    <div class="input-group">
-                        <input type="text" class="form-control inputSearch" placeholder="Buscar...">
-                        <span class="input-group-btn ">
-                            <button type="submit" class="btn btn-default">
-                                <span class="glyphicon glyphicon-search"></span>
-                            </button>
-                        </span>
-                    </div>
-                </form>
+                <div class=" divli dropdown-toggle" data-toggle="dropdown">
+                    <span class="glyphicon glyphicon-search"></span>
+                </div>
+                <ul class="dropdown-menu menuVentanaApps" role="menu">
+                    <form class="navbar-form" role="search">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="" name="q">
+                            <div class="input-group-btn">
+                                <button class="btn btn-default" type="submit">Buscar</button>
+                            </div>
+                        </div>
+                    </form>
+                </ul>
             </li>
             <li class="dropdown liApp">
                 <div class=" divli dropdown-toggle" data-toggle="dropdown">
@@ -29,32 +32,32 @@
                     <table>
                         <tr>
                             <td class="divApp">
-                                <a class="" href="#"><img src="http://placehold.it/50x50"></a>
-                                <label class="etiquetaApp">Ventana</label>
+                                <a class="" href="#"><img src="imagenes/ventana/encabezado/appVentana.png"></a>
+                                <label class="etiquetaApp text-center">Ventana <br> Educativa</label>
                             </td>
                             <td class="divApp">
-                                <a class="" href="#"><img src="http://placehold.it/50x50"></a>
-                                <label class="etiquetaApp">Ventana</label>
+                                <a class="" href="#"><img src="imagenes/ventana/encabezado/appRed.png"></a>
+                                <label class="etiquetaApp text-center">Red <br> Mesoamericana</label>
                             </td>
                             <td class="divApp">
-                                <a class="" href="#"><img src="http://placehold.it/50x50"></a>
-                                <label class="etiquetaApp">Ventana</label>
+                                <a class="" href="#"><img src="imagenes/ventana/encabezado/appMexico.png"></a>
+                                <label class="etiquetaApp text-center">MéxicoX</label>
                             </td>                            
                         </tr>
                         <tr>
                             <td class="divApp">
-                                <a class="" href="#"><img src="http://placehold.it/50x50"></a>
-                                <label class="etiquetaApp">Ventana</label>
+                                <a class="" href="#"><img src="imagenes/ventana/encabezado/appIbero.png"></a>
+                                <label class="etiquetaApp text-center">Canal <br> Iberoamericano</label>
                             </td>
                             <td class="divApp">
-                                <a class="" href="#"><img src="http://placehold.it/50x50"></a>
-                                <label class="etiquetaApp">Ventana</label>
+                                <a class="" href="#"><img src=""></a>
+                                <label class="etiquetaApp text-center"></label>
                             </td>
                             <td class="divApp">
-                                <a class="" href="#"><img src="http://placehold.it/50x50"></a>
-                                <label class="etiquetaApp">Ventana</label>
+                                <a class="" href="#"><img src=""></a>
+                                <label class="etiquetaApp text-center"></label>
                             </td>                            
-                        </tr>                        
+                        </tr>                      
                     </table>                                       
                 </ul>
             </li>
@@ -67,8 +70,8 @@
                         <div class="row">
                             <div class="col-lg-12">
                                 @if (Auth::guest ())
-                                  <form id="login-form" action="sessions" method="POST" role="form" style="display: block;">
-									<input type="hidden" name="_token" value="{{ csrf_token() }}" />
+                                <form id="login-form" action="sessions" method="POST" role="form" style="display: block;">
+                                    <input type="hidden" name="_token" value="{{ csrf_token() }}" />
                                     <div class="form-group">
                                         <input type="email" name="email"  tabindex="1" class="form-control" placeholder="Usuario" value="">
                                     </div>
@@ -101,11 +104,11 @@
                                         </div>
                                     </div>      									
                                 </form>
-								@else
-                                    loggeado
-                                       {{Auth::user()->email}}
-                                       <a href="logout" tabindex="5" style="color: white;" class="forgot-password">Cerrar Sesión</a>
-                                    @endif
+                                @else
+                                loggeado
+                                {{Auth::user()->email}}
+                                <a href="logout" tabindex="5" style="color: white;" class="forgot-password">Cerrar Sesión</a>
+                                @endif
                             </div>
                         </div>
                     </li>
@@ -114,43 +117,3 @@
         </ul>
     </div>
 </nav>
-
-    <script>
-        // bootstrap-datepicker
-        $('#nacimiento').datepicker({
-            changeMonth: true,
-            changeYear: true,
-            altFormat: "yy-mm-dd"
-        }).on(
-                'show', function () {
-                    // Obtener valores actuales z-index de cada elemento
-                    var zIndexModal = $('#modalRegistro').css('z-index');
-                    var zIndexFecha = $('.datepicker').css('z-index');
-
-                    // alert(zIndexModal + zIndexFEcha);
-
-                    // Re asignamos el valor z-index para mostrar sobre la ventana modal
-                    $('.datepicker').css('z-index', zIndexModal + 1);
-                });
-        $.datepicker.regional['es'] = {
-            closeText: 'Cerrar',
-            prevText: '<Ant',
-            nextText: 'Sig>',
-            currentText: 'Hoy',
-            monthNames: ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre'],
-            monthNamesShort: ['Ene', 'Feb', 'Mar', 'Abr', 'May', 'Jun', 'Jul', 'Ago', 'Sep', 'Oct', 'Nov', 'Dic'],
-            dayNames: ['Domingo', 'Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes', 'Sábado'],
-            dayNamesShort: ['Dom', 'Lun', 'Mar', 'Mié', 'Juv', 'Vie', 'Sáb'],
-            dayNamesMin: ['Do', 'Lu', 'Ma', 'Mi', 'Ju', 'Vi', 'Sá'],
-            weekHeader: 'Sm',
-            dateFormat: 'dd/mm/yy',
-            firstDay: 1,
-            isRTL: false,
-            showMonthAfterYear: false,
-            yearSuffix: ''
-        };
-        $.datepicker.setDefaults($.datepicker.regional['es']);
-        $(function () {
-            $("#nacimiento").datepicker();
-        });
-    </script>
