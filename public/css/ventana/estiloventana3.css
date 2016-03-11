@@ -48,7 +48,7 @@
 
 #imagen-tve {
   min-height: 50px;
-  min-width: 136px;
+  min-width: 131px;
   background: url(../../imagenes/ventana/pieventana/tve.png) no-repeat center center;
 }
 #imagen-tve:hover {
@@ -64,7 +64,7 @@
 }
 #imagen-ceccsica {
   min-height: 50px;
-  min-width: 36px;
+  min-width: 50px;
   background: url(../../imagenes/ventana/pieventana/ceccsica.png) no-repeat center center;
 }
 #imagen-ceccsica:hover {
@@ -73,7 +73,7 @@
 
 #imagen-unah {
   min-height: 50px;
-  min-width: 79px;
+  min-width: 78px;
   background: url(../../imagenes/ventana/pieventana/unah.png) no-repeat center center;
 }
 #imagen-unah:hover {
@@ -82,7 +82,7 @@
 
 #imagen-mep {
   min-height: 50px;
-  min-width: 79px;
+  min-width: 75px;
   background: url(../../imagenes/ventana/pieventana/mep.png) no-repeat center center;
 }
 #imagen-mep:hover {
@@ -91,7 +91,7 @@
 
 #imagen-amexcid {
   min-height: 50px;
-  min-width: 173px;
+  min-width: 206px;
   background: url(../../imagenes/ventana/pieventana/amexcid.png) no-repeat center center;
 }
 #imagen-amexcid:hover {

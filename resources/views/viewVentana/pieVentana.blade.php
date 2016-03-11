@@ -39,10 +39,10 @@
 	</div>
 </div>
         
-<script type="text/javascript">
+<!--<script type="text/javascript">
 	$('.tabs_holder').skinableTabs({
 		effect: 'overlapping',
 		skin: 'skin3',
 		position: 'bottom'
 	});
-</script>
+</script>-->
