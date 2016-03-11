@@ -1,33 +1,33 @@
-		<style>
-			.difumina{
-				-webkit-filter: blur(3px);
-				-moz-filter: blur(3px);
-				-o-filter: blur(3px);
-				-ms-filter: blur(3px);
-				filter: blur(3px);
-			}
-			.txtHomeLg{
-				font-size:1.8em;
-				font-family: 'Ubuntu';
-			}
-			.txtHomeMd{
-				font-size:1.3em;
-				font-family: 'Ubuntu';
-			}
-			.txtHomeSm{
-				font-size:1em;
-				font-family: 'Ubuntu';
-			}
-			.txtHomeXs{
-				font-size:0.6em;
-				font-family: 'Ubuntu';
-			}
-			.contieneTxt{
-				color: white;
-				font-size:16px;
-				visibility:hidden;
-			}
-        </style>
+	<style>
+		.difumina{
+			-webkit-filter: blur(3px);
+			-moz-filter: blur(3px);
+			-o-filter: blur(3px);
+			-ms-filter: blur(3px);
+			filter: blur(3px);
+		}
+		.txtHomeLg{
+			font-size:1.8em;
+			font-family: 'Ubuntu';
+		}
+		.txtHomeMd{
+			font-size:1.3em;
+			font-family: 'Ubuntu';
+		}
+		.txtHomeSm{
+			font-size:1em;
+			font-family: 'Ubuntu';
+		}
+		.txtHomeXs{
+			font-size:0.6em;
+			font-family: 'Ubuntu';
+		}
+		.contieneTxt{
+			color: white;
+			font-size:16px;
+			visibility:hidden;
+		}
+	</style>
 	<script>
 
 	/*	---------------------------------------	Sección Usabilidad. Agregar animación de entrada a imagenes 	--------------------------------*/
@@ -299,85 +299,93 @@
 						<img id="imgMexXBco" class="oculta difumina Intervalo4 slideInRight" src="imagenes/homeventana/mexicoxBco.png" onmouseover="cambiaImgFoto('13')" onmouseout="cambiaImgCubo('13')" style="width:100%; height:15%; position: absolute; top: 63%; left:0%; z-index:3; visibility:hidden;"/>
 					</a>
 				</div>
+				<div class="col-xs-1 col-sm-1 col-md-1 col-lg-1 derechaSociales" style="padding-top: 8.9%; padding-left:0; padding-right:0;">
+					<ul class="sociales">
+						<li><a href="#" class="cambiacolorredesSociales"><span><i class="fa fa-twitter fa-3x"></i></span></a></li><br/>
+						<li><a href="#" class="cambiacolorredesSociales"><span><i class="fa fa-facebook fa-3x"></i></span></a></li><br/>
+						<li><a href="#" class="cambiacolorredesSociales"><span><i class="fa fa-youtube-play fa-3x"></i></span></a></li>
+					</ul>
+				</div>
 				<div class="visible-md-inline visible-lg-inline">
 					<div style="padding:2%;">
 					</div>
 				</div>
 			</div>
         </div>
-		<script>
-			$(function(){
-				var elems = $('.oculta');    //elementos que quiero saber si estan en el área visible
-				elems.each(function(){
-					$(this).fadeOut();
-				});
-				muestraCubos();
-			})
-/* rwdImageMaps jQuery plugin v1.5
-*
-* Allows image maps to be used in a responsive design by recalculating the area coordinates to match the actual image size on load and window.resize
-*
-* Copyright (c) 2013 Matt Stow
-* https://github.com/stowball/jQuery-rwdImageMaps
-* http://mattstow.com
-* Licensed under the MIT license
-*/
-;(function($) {
-	$.fn.rwdImageMaps = function() {
-		var $img = this;
-		
-		var rwdImageMap = function() {
-			$img.each(function() {
-				if (typeof($(this).attr('usemap')) == 'undefined')
-					return;
-				
-				var that = this,
-					$that = $(that);
-				
-				// Since WebKit doesn't know the height until after the image has loaded, perform everything in an onload copy
-				$('<img />').load(function() {
-					var attrW = 'width',
-						attrH = 'height',
-						w = $that.attr(attrW),
-						h = $that.attr(attrH);
-					
-					if (!w || !h) {
-						var temp = new Image();
-						temp.src = $that.attr('src');
-						if (!w)
-							w = temp.width;
-						if (!h)
-							h = temp.height;
-					}
-					
-					var wPercent = $that.width()/100,
-						hPercent = $that.height()/100,
-						map = $that.attr('usemap').replace('#', ''),
-						c = 'coords';
-					
-					$('map[name="' + map + '"]').find('area').each(function() {
-						var $this = $(this);
-						if (!$this.data(c))
-							$this.data(c, $this.attr(c));
-						
-						var coords = $this.data(c).split(','),
-							coordsPercent = new Array(coords.length);
-						
-						for (var i = 0; i < coordsPercent.length; ++i) {
-							if (i % 2 === 0)
-								coordsPercent[i] = parseInt(((coords[i]/w)*100)*wPercent);
-							else
-								coordsPercent[i] = parseInt(((coords[i]/h)*100)*hPercent);
-						}
-						$this.attr(c, coordsPercent.toString());
-					});
-				}).attr('src', $that.attr('src'));
-			});
-		};
-		$(window).resize(rwdImageMap).trigger('resize');
-		
-		return this;
-	};
-})(jQuery);
+<script>
+    $(function () {
+        var elems = $('.oculta');    //elementos que quiero saber si estan en el área visible
+        elems.each(function () {
+            $(this).fadeOut();
+        });
+        muestraCubos();
+    })
+            /* rwdImageMaps jQuery plugin v1.5
+             *
+             * Allows image maps to be used in a responsive design by recalculating the area coordinates to match the actual image size on load and window.resize
+             *
+             * Copyright (c) 2013 Matt Stow
+             * https://github.com/stowball/jQuery-rwdImageMaps
+             * http://mattstow.com
+             * Licensed under the MIT license
+             */
+            ;
+    (function ($) {
+        $.fn.rwdImageMaps = function () {
+            var $img = this;
+
+            var rwdImageMap = function () {
+                $img.each(function () {
+                    if (typeof ($(this).attr('usemap')) == 'undefined')
+                        return;
+
+                    var that = this,
+                            $that = $(that);
+
+                    // Since WebKit doesn't know the height until after the image has loaded, perform everything in an onload copy
+                    $('<img />').load(function () {
+                        var attrW = 'width',
+                                attrH = 'height',
+                                w = $that.attr(attrW),
+                                h = $that.attr(attrH);
+
+                        if (!w || !h) {
+                            var temp = new Image();
+                            temp.src = $that.attr('src');
+                            if (!w)
+                                w = temp.width;
+                            if (!h)
+                                h = temp.height;
+                        }
+
+                        var wPercent = $that.width() / 100,
+                                hPercent = $that.height() / 100,
+                                map = $that.attr('usemap').replace('#', ''),
+                                c = 'coords';
+
+                        $('map[name="' + map + '"]').find('area').each(function () {
+                            var $this = $(this);
+                            if (!$this.data(c))
+                                $this.data(c, $this.attr(c));
+
+                            var coords = $this.data(c).split(','),
+                                    coordsPercent = new Array(coords.length);
+
+                            for (var i = 0; i < coordsPercent.length; ++i) {
+                                if (i % 2 === 0)
+                                    coordsPercent[i] = parseInt(((coords[i] / w) * 100) * wPercent);
+                                else
+                                    coordsPercent[i] = parseInt(((coords[i] / h) * 100) * hPercent);
+                            }
+                            $this.attr(c, coordsPercent.toString());
+                        });
+                    }).attr('src', $that.attr('src'));
+                });
+            };
+            $(window).resize(rwdImageMap).trigger('resize');
+
+            return this;
+        };
+    })(jQuery);
 //* End image maps to be used in a responsive design by recalculating the area coordinates**//
 </script>
