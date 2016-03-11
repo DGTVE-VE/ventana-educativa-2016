@@ -9,7 +9,7 @@
     </div> 
     <div class="navbar-collapse collapse">
         <ul class=" nav navbar-nav navbar-right">
-            <li class="col-md-pull-12 col-xs-pull-4 col-sm-pull-2 libuscar">
+            <li class="col-md-pull-12 col-xs-pull-4 col-sm-pull-2">
                 <div class=" divli dropdown-toggle" data-toggle="dropdown">
                     <span class="glyphicon glyphicon-search"></span>
                 </div>
