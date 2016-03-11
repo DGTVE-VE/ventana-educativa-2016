@@ -36,8 +36,8 @@ body{
 
 .iconoApps{
     margin-top:5%;
-    width: 40px;
-    height: 30px;    
+    width: 38px;
+    height: 28px;    
 }
 .menuVentana{
     background-color: transparent;
@@ -45,7 +45,8 @@ body{
     border-color: transparent;
 }
 .divli{
-    padding: 20px;
+    margin-top: 10%;
+    padding: 5px;
     cursor: pointer;
 }
 /*.menuVentanaApps li > a:hover { background: transparent !important; }*/
@@ -118,7 +119,7 @@ body{
     margin-top: 11% !important;
 }
 .menuVentanaApps{
-    background: rgba(0, 0, 0, .2) !important; 
+    background: rgba(255, 255, 255, .5) !important; 
 }
 /*Fin Ventana logueo*/
 
@@ -169,10 +170,74 @@ body{
 
 
 /*search*/
-.inputSearch{
-  background-color:rgba(0,0,0,0) !important;
-       border:none !important;
+.search-form .form-group {
+  float: left !important;
+  transition: all 0.35s, border-radius 0s;
+  width: 32px;
+  height: 32px;
+  background-color: #fff;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+  border-radius: 25px;
+  border: 1px solid #ccc;
+  margin-top: 5%;
 }
+
+.libuscar{
+    margin-left: -10%;
+}
+
+.has-feedback{
+    margin-left: -115%;
+}
+
+.has-feedback:hover{
+    margin-left: -150%;
+}
+.spanbuscar{
+    color: black;
+}
+.search-form .form-group input.form-control {
+  padding:0 0 5px 30px;
+  border: 0 none;
+  background: transparent;
+  box-shadow: none;
+  display:block;
+}
+.search-form .form-group input.form-control::-webkit-input-placeholder {
+  display: none;
+}
+.search-form .form-group input.form-control:-moz-placeholder {
+  /* Firefox 18- */
+  display: none;
+}
+.search-form .form-group input.form-control::-moz-placeholder {
+  /* Firefox 19+ */
+  display: none;
+}
+.search-form .form-group input.form-control:-ms-input-placeholder {
+  display: none;
+}
+.search-form .form-group:hover,
+.search-form .form-group.hover {
+  width: 100%;
+  border-radius: 25px 25px 25px 25px;
+}
+.search-form .form-group span.form-control-feedback {
+  position: absolute;
+  top: -1px;
+  right: -2px;
+  z-index: 2;
+  display: block;
+  width: 34px;
+  height: 34px;
+  line-height: 34px;
+  text-align: center;
+  color: #000;
+  right: initial;
+  font-size: 14px;
+  padding:0 0 20px 0;
+}
+
 /*fin search*/
 
 
@@ -183,71 +248,11 @@ body{
 }
 
     .divApp{
-        background: rgba(255, 255, 255, .5) !important;  
+        /*background: rgba(255, 255, 255, .5) !important;*/  
         padding: 10px;
     }
-
-    
-    
-    
-   
-/* Smartphones (portrait y landscape) ———– */
-@media only screen
-and (min-device-width : 320px)
-and (max-device-width : 480px) {
-/* Styles */
-}
-
-/* Smartphones (landscape) ———– */
-@media only screen
-and (min-width : 321px) {
-/* Styles */
-}
-
-/* Smartphones (portrait) ———– */
-@media only screen
-and (max-width : 320px) {
-/* Styles */
-}
-
-/* iPads (portrait y landscape) ———– */
-@media only screen
-and (min-device-width : 768px)
-and (max-device-width : 1024px) {
-/* Styles */
-}
-
-/* iPads (landscape) ———– */
-@media only screen
-and (min-device-width : 768px)
-and (max-device-width : 1024px)
-and (orientation : landscape) {
-/* Styles */
-}
-
-/* iPads (portrait) ———– */
-@media only screen
-and (min-device-width : 768px)
-and (max-device-width : 1024px)
-and (orientation : portrait) {
-/* Styles */
-}
-
-/* PCs y portátiles ———– */
-@media only screen
-and (min-width : 1224px) {
-/* Styles */
-}
-
-/* Pantallas grandes ———– */
-@media only screen
-and (min-width : 1824px) {
-/* Styles */
-}
-
-/* iPhone 4 ———– */
-@media
-only screen and (-webkit-min-device-pixel-ratio : 1.5),
-only screen and (min-device-pixel-ratio : 1.5) {
-/* Estilos */
-}
+    .imgLogo{
+        width: 80%;
+        height: 80%;
+        margin-top: 5%;
+    }
