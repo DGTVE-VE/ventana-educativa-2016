@@ -23,24 +23,24 @@
                     <img class="iconoApps"  src="imagenes/ventana/encabezado/iconoApps.png">
                 </div>
                 <ul class="dropdown-menu image-responsive menuVentanaApps">
-                    <table>
+                    <table class="">
                         <tr>
-                            <td class="divApp">
-                                <a class="" href="ventana_educativa"><img src="imagenes/ventana/encabezado/appVentana.png"></a>
-                                <label class="etiquetaApp text-center">Ventana <br> Educativa</label>
+                            <td class="divApp centered">
+                                <a class="text-center" href="ventana_educativa"><img src="imagenes/ventana/encabezado/appVentana.png" class="img-responsive"></a>
+                                <label class="etiquetaApp text-center">Ventana Educativa</label>
                             </td>
-                            <td class="divApp">
-                                <a class="" href="http://redmite.televisioneducativa.gob.mx/" target="_blank"><img src="imagenes/ventana/encabezado/appRed.png"></a>
+                            <td class="divApp centered">
+                                <a class="text-center" href="http://redmite.televisioneducativa.gob.mx/" target="_blank"><img src="imagenes/ventana/encabezado/appRed.png" class="img-responsive"></a>
                                 <label class="etiquetaApp text-center">Red <br> Mesoamericana</label>
                             </td>
-                            <td class="divApp">
-                                <a class="" href="http://mx.televisioneducativa.gob.mx" target="_blank"><img src="imagenes/ventana/encabezado/appMexico.png"></a>
+                            <td class="divApp centered">
+                                <a class="text-center" href="http://mx.televisioneducativa.gob.mx" target="_blank"><img src="imagenes/ventana/encabezado/appMexico.png" class="img-responsive"></a>
                                 <label class="etiquetaApp text-center">MéxicoX</label>
                             </td>                            
                         </tr>
                         <tr>
-                            <td class="divApp">
-                                <a class="" target="_blank" href="http://www.ibe.tv/es/canal/iberoamericano/756/Iberoam%C3%A9rica-al-d%C3%ADa-1032016.htm"><img src="imagenes/ventana/encabezado/appIbero.png"></a>
+                            <td class="divApp" style="vertical-align:middle !important;">
+                                <a class="text-center" target="_blank" href="http://www.ibe.tv/es/canal/iberoamericano/756/Iberoam%C3%A9rica-al-d%C3%ADa-1032016.htm"><img class="img-responsive" src="imagenes/ventana/encabezado/appIbero.png"></a>
                                 <label class="etiquetaApp text-center">Canal <br> Iberoamericano</label>
                             </td>
                             <td class="divApp">
@@ -67,10 +67,10 @@
                                 <form id="login-form" action="sessions" method="POST" role="form" style="display: block;">
                                     <input type="hidden" name="_token" value="{{ csrf_token() }}" />
                                     <div class="form-group">
-                                        <input type="email" name="email"  tabindex="1" class="form-control" placeholder="Usuario" value="">
+                                        <input type="email" name="email"  tabindex="1" class="form-control inputLogin" placeholder="Usuario" value="">
                                     </div>
                                     <div class="form-group">
-                                        <input type="password" name="password"  tabindex="2" class="form-control" placeholder="Contraseña">
+                                        <input type="password" name="password"  tabindex="2" class="form-control inputLogin" placeholder="Contraseña">
                                     </div>
                                     <div class="form-group">
                                         <div class="row">

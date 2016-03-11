@@ -8,7 +8,9 @@
 //        'password'=> Hash::make ('israel')
 //        ]);
 //});
+Route::resource ('user', 'Api\User');
 Route::resource ('sessions', 'SessionsController');
+Route::get('user/exist/{email}',['as'=>'user.exist', 'uses'=>'Api\User@exist']);
 Route::get('login', 'SessionsController@create');
 Route::get('logout', 'SessionsController@destroy');
 
