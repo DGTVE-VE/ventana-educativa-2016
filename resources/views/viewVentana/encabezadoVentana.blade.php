@@ -5,26 +5,20 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
         </button>    
-        <a href="ventana_educativa"><img class="image-responsive " src="imagenes/ventana/encabezado/logoventana.png"></a>
+        <a href="ventana_educativa"><img class="image-responsive imgLogo " src="imagenes/ventana/encabezado/logoventana.png"></a>
     </div> 
     <div class="navbar-collapse collapse">
         <ul class=" nav navbar-nav navbar-right">
-            <li class="col-md-pull-12 col-xs-pull-4 col-sm-pull-2">
-                <div class=" divli dropdown-toggle" data-toggle="dropdown">
-                    <span class="glyphicon glyphicon-search"></span>
-                </div>
-                <ul class="dropdown-menu menuVentanaApps" role="menu">
-                    <form class="navbar-form" role="search">
-                        <div class="input-group">
-                            <input type="text" class="form-control" placeholder="" name="q">
-                            <div class="input-group-btn">
-                                <button class="btn btn-default" type="submit">Buscar</button>
-                            </div>
-                        </div>
-                    </form>
-                </ul>
+            <li class="col-md-pull-12 col-xs-pull-4 col-sm-pull-2 libuscar">
+                <form action="" class="search-form" style="width: 200px;">
+                    <div class="form-group has-feedback">
+                        <label for="search" class="sr-only">Buscar</label>
+                        <input type="text" class="form-control" name="buscar" id="buscar" placeholder="buscar">
+                        <span class="glyphicon glyphicon-search form-control-feedback spanbuscar"></span>
+                    </div>
+                </form>
             </li>
-            <li class="dropdown liApp">
+            <li class="dropdown">
                 <div class=" divli dropdown-toggle" data-toggle="dropdown">
                     <img class="iconoApps"  src="imagenes/ventana/encabezado/iconoApps.png">
                 </div>
@@ -32,21 +26,21 @@
                     <table>
                         <tr>
                             <td class="divApp">
-                                <a class="" href="#"><img src="imagenes/ventana/encabezado/appVentana.png"></a>
+                                <a class="" href="ventana_educativa"><img src="imagenes/ventana/encabezado/appVentana.png"></a>
                                 <label class="etiquetaApp text-center">Ventana <br> Educativa</label>
                             </td>
                             <td class="divApp">
-                                <a class="" href="#"><img src="imagenes/ventana/encabezado/appRed.png"></a>
+                                <a class="" href="http://redmite.televisioneducativa.gob.mx/" target="_blank"><img src="imagenes/ventana/encabezado/appRed.png"></a>
                                 <label class="etiquetaApp text-center">Red <br> Mesoamericana</label>
                             </td>
                             <td class="divApp">
-                                <a class="" href="#"><img src="imagenes/ventana/encabezado/appMexico.png"></a>
+                                <a class="" href="http://mx.televisioneducativa.gob.mx" target="_blank"><img src="imagenes/ventana/encabezado/appMexico.png"></a>
                                 <label class="etiquetaApp text-center">MéxicoX</label>
                             </td>                            
                         </tr>
                         <tr>
                             <td class="divApp">
-                                <a class="" href="#"><img src="imagenes/ventana/encabezado/appIbero.png"></a>
+                                <a class="" target="_blank" href="http://www.ibe.tv/es/canal/iberoamericano/756/Iberoam%C3%A9rica-al-d%C3%ADa-1032016.htm"><img src="imagenes/ventana/encabezado/appIbero.png"></a>
                                 <label class="etiquetaApp text-center">Canal <br> Iberoamericano</label>
                             </td>
                             <td class="divApp">
