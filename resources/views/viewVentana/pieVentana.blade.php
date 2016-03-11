@@ -6,7 +6,7 @@
 			<div class="row">
 				<div class="col-xs-5 col-sm-4 col-md-2 col-lg-2">
 					<a href="#" data-toggle="tab"> 
-						<div id="imagen-tve"></div>
+						<div id="imagen-tve" class="img-responsive"></div>
 					</a>  
 				</div>                       
 				<div class="col-xs-4 col-sm-4 col-md-2 col-lg-2">
