@@ -7,23 +7,23 @@ Ventana Educativa
 @endsection
 @section('cuerpoVentana')
 <div class = "panel panel-default frmRegistro col-lg-offset-2 col-md-8">
-    
-        <h3 class = "panel-title tituloRegistro text-center text-uppercase">
-            Registro
-        </h3>
-   
+
+    <h3 class = "panel-title tituloRegistro text-center text-uppercase">
+        Registro
+    </h3>
+
 
     <div class = "panel-body">
         <form role="form" action="registraUsuario" method="post">
             <div class="form-group col-md-12">
-                 <br>
+                <br>
                 <label for="nombre">Nombre Completo:</label>
                 <input type="text" required name="name" id="nombre" class="form-control input-medium" placeholder="Nombre Completo">
             </div>
-            <div class="form-group col-md-12">
-                <label for="correo">Correo Electrónico:</label>
-                <input id="email" type="email" required name="email" class="form-control input-medium" placeholder="Correo Electrónico">
-
+            <div class="form-group col-md-12 has-error">
+                <label for="correo">Correo Electrónico:</label>                
+                <input style=" " id="email" type="email" required name="email" class="form-control input-medium" placeholder="Correo Electrónico">                                
+                <label id="mensaje-error"> </label>
             </div>
             <div class="form-group col-md-6">
                 <label for="contraseña">Contraseña:</label>
@@ -67,27 +67,52 @@ Ventana Educativa
             </div>
             <div class="modal-footer">
                 <button type="button" data-dismiss="modal" class="btn btn-danger">Cancelar</button>
-                <button type="submit" class="btn btn-default btn-success">Enviar</button>
+                <button id="btnEnviar" type="submit" class="btn btn-default btn-success">Enviar</button>
             </div>
         </form>
     </div>
 </div>
 
 <script>
-    var _url = {{url('user/exist')}};
-    $( "#email" ).focusout(function() {
-        $.ajax({
-            url: _url + '/' + $('#email').val(),            
-          }).done(function( data ) {
-            if (data == null){
-                alert ('el usuario no existe');
-            }
-            else
-                alert ('Continua');
-          });
-    });
-</script>
+    /************ Valida correo existente en el formulario ****************************************************/
+    function muestraError (flag){
+        console.log ('entro a cambiar clase');
+        if (flag){            
+            document.getElementById ('email').style.backgroundColor ='lightpink' ;
+            document.getElementById ('mensaje-error').innerText = 'El correo ya existe';
+            document.getElementById ('btnEnviar').disabled = true;
+        } else {
+            document.getElementById ('email').style.backgroundColor ='white' ;
+            document.getElementById ('mensaje-error').innerText = '';
+            document.getElementById ('btnEnviar').disabled = false;
+        }        
+    }
     
+    function loadDoc(url) {
+        var xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function () {
+            if (xhttp.readyState == 4 && xhttp.status == 200) {                
+                if (xhttp.responseText != 'null'){
+                    muestraError (true);
+                } else {
+                    muestraError (false);
+                }
+            }
+        };
+        xhttp.open("GET", url, true);
+        xhttp.send();
+    }
+    $( "#email" ).focusout(function() {
+        var _url = '{{url('user/exist')}}' + '/' + $('#email').val();
+        console.log(_url);
+        loadDoc (_url);
+    });
+    $( "#email" ).on('input', function() {
+        muestraError (false);
+    });
+/************ Valida correo existente en el formulario ****************************************************/
+</script>
+
 
 @endsection
 @section('pieVentana')
