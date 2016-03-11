@@ -21,7 +21,7 @@ Ventana Educativa
             </div>
             <div class="form-group col-md-12">
                 <label for="correo">Correo Electrónico:</label>
-                <input type="email" required name="email" class="form-control input-lg" placeholder="Correo Electrónico">
+                <input id="email" type="email" required name="email" class="form-control input-lg" placeholder="Correo Electrónico">
             </div>
             <div class="form-group col-md-6">
                 <label for="contraseña">Contraseña:</label>
@@ -71,7 +71,21 @@ Ventana Educativa
     </div>
 </div>
 
-
+<script>
+    var _url = {{url('user/exist')}};
+    $( "#email" ).focusout(function() {
+        $.ajax({
+            url: _url + '/' + $('#email').val(),            
+          }).done(function( data ) {
+            if (data == null){
+                alert ('el usuario no existe');
+            }
+            else
+                alert ('Continua');
+          });
+    });
+</script>
+    
 
 @endsection
 @section('pieVentana')

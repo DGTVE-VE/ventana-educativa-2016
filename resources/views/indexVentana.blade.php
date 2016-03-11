@@ -30,7 +30,7 @@ and open the template in the editor.
 
         <link rel="stylesheet" href="css/ventana/estiloventana2.css">  
         <link rel="stylesheet" href="css/ventana/estiloventana3.css"> 
-        <link rel="stylesheet" href="css/ventana/datepicker.css"> 
+<!--        <link rel="stylesheet" href="css/ventana/datepicker.css"> -->
         <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css">
         
         
