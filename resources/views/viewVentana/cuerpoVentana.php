@@ -28,133 +28,90 @@
 			visibility:hidden;
 		}
 	</style>
-	<script>
+<script>
 
-	/*	---------------------------------------	Sección Usabilidad. Agregar animación de entrada a imagenes 	--------------------------------*/
-		function mueveIzq(imagenCubo){
-			var top = ($(imagenCubo).offset().top) * 0.95;
-			var left = ($(imagenCubo).offset().left) * 0.95;
-			$(imagenCubo).offset({top:top,left:left});
-		}
-		function mueveDer(imagenCubo){
-			var top = ($(imagenCubo).offset().top) / 0.95;
-			var left = ($(imagenCubo).offset().left) / 0.95;
-			$(imagenCubo).offset({top:top,left:left});
-		}
-		function mueveArriba(imagenCubo){
-			var top = ($(imagenCubo).offset().top) * 0.95;
-			$(imagenCubo).offset({top:top});
-		}
-		function mueveAbajo(imagenCubo){
-			var top = ($(imagenCubo).offset().top) / 0.95;
-			$(imagenCubo).offset({top:top});
-		}
-		function cambiaImgFoto(imagen){
-			var imagenCubo = '#CUBO' + imagen;
-			var ancho = Math.round($(imagenCubo).width() * 1.1);
-			var alto = Math.round($(imagenCubo).height() * 1.1);
-			$(imagenCubo).width(ancho);
-			$(imagenCubo).height(alto);
-			switch(imagen){
-				case '01':case '03':case '04':case '05':case '06':
-					mueveIzq(imagenCubo);
-					break;
-				case '07':case '08':case '09':case '10':case '13':
-					mueveArriba(imagenCubo);
-					break;
-			}
-			
-			var imagenFoto = 'imagenes/homeventana/FOTO-' + imagen + '.png';
-			$(imagenCubo).attr('src',imagenFoto);
-		}
-		function cambiaImgCubo(imagen){
-			var imagenFoto = '#CUBO' + imagen;
-			var ancho = Math.round($(imagenFoto).width() / 1.1);
-			var alto = Math.round($(imagenFoto).height() / 1.1);
-			$(imagenFoto).width(ancho);
-			$(imagenFoto).height(alto);
-			switch(imagen){
-				case '01':case '03':case '04':case '05':case '06':
-					mueveDer(imagenFoto);
-					break;
-				case '07':case '08':case '09':case '10':case '13':
-					mueveAbajo(imagenFoto);
-					break;
-			}
-			var imagenCubo = 'imagenes/homeventana/CUBO-' + imagen + '.png';
-			$(imagenFoto).attr('src',imagenCubo);
-		}
-		function quitaEfxDifumina(clase){
-			var elems = $(clase);    //elementos que quiero saber si estan en el área visible
-			elems.each(function(){
-				$(this).removeClass("difumina");
-			});
-		}
-		function muestraCubos(){
-			var Intervalo4 = $('.Intervalo4');    //elementos que quiero saber si estan en el área visible
-			Intervalo4.each(function(){
-					var cubo = $(this);
-					setTimeout(function(){
-						cubo.addClass("animated");
-						cubo.css("visibility","visible");
-						cubo.fadeIn();
-						setTimeout(function(){
-							quitaEfxDifumina('.Intervalo4');
-						},750);
-					}, 1000);
-				});
-			var Intervalo3 = $('.Intervalo3');    //elementos que quiero saber si estan en el área visible
-			Intervalo3.each(function(){
-					var cubo = $(this);
-					setTimeout(function(){
-						cubo.addClass("animated");
-						cubo.css("visibility","visible");
-						cubo.fadeIn();
-						setTimeout(function(){
-							quitaEfxDifumina('.Intervalo3');
-						},750);
-					}, 750);
-				});
-			var Intervalo2 = $('.Intervalo2');    //elementos que quiero saber si estan en el área visible
-			Intervalo2.each(function(){
-					var cubo = $(this);
-					setTimeout(function(){
-						cubo.addClass("animated");
-						cubo.css("visibility","visible");
-						cubo.fadeIn();
-						setTimeout(function(){
-							quitaEfxDifumina('.Intervalo2');
-						},750);
-					}, 500);
-				});
-			var Intervalo1 = $('.Intervalo1');    //elementos que quiero saber si estan en el área visible
-			Intervalo1.each(function(){
-					var cubo = $(this);
-					setTimeout(function(){
-						cubo.addClass("animated");
-						cubo.css("visibility","visible");
-						cubo.fadeIn();
-						setTimeout(function(){
-							quitaEfxDifumina('.Intervalo1');
-						},750);
-					}, 250);
-				});
-		}
-		$(document).ready(function(){
-			$(function(){
-				var elems = $('.oculta');    //elementos que quiero saber si estan en el área visible
-				elems.each(function(){
-					$(this).fadeOut();
-				});
-				muestraCubos();
-			});
-			
-			/* ------    Se llama la función que redimensiona mapas de imagenes responsivas -----  */
-			$(document).ready(function (e) {
-				$('img[usemap]').rwdImageMaps();
-			});
-		})
-	</script>
+    /*	---------------------------------------	Sección Usabilidad. Agregar animación de entrada a imagenes 	--------------------------------*/
+    function cambiaImgFoto(imagen) {
+        imagenCubo = '#CUBO' + imagen;
+        imagenFoto = 'imagenes/homeventana/FOTO-' + imagen + '.png';
+        $(imagenCubo).attr('src', imagenFoto);
+    }
+    function cambiaImgCubo(imagen) {
+        imagenFoto = '#CUBO' + imagen;
+        imagenCubo = 'imagenes/homeventana/CUBO-' + imagen + '.png';
+        $(imagenFoto).attr('src', imagenCubo);
+    }
+    function quitaEfxDifumina(clase) {
+        var elems = $(clase);    //elementos que quiero saber si estan en el área visible
+        elems.each(function () {
+            $(this).removeClass("difumina");
+        });
+    }
+    function muestraCubos() {
+        var Intervalo4 = $('.Intervalo4');    //elementos que quiero saber si estan en el área visible
+        Intervalo4.each(function () {
+            var cubo = $(this);
+            setTimeout(function () {
+                cubo.addClass("animated");
+                cubo.css("visibility", "visible");
+                cubo.fadeIn();
+                setTimeout(function () {
+                    quitaEfxDifumina('.Intervalo4');
+                }, 750);
+            }, 1000);
+        });
+        var Intervalo3 = $('.Intervalo3');    //elementos que quiero saber si estan en el área visible
+        Intervalo3.each(function () {
+            var cubo = $(this);
+            setTimeout(function () {
+                cubo.addClass("animated");
+                cubo.css("visibility", "visible");
+                cubo.fadeIn();
+                setTimeout(function () {
+                    quitaEfxDifumina('.Intervalo3');
+                }, 750);
+            }, 750);
+        });
+        var Intervalo2 = $('.Intervalo2');    //elementos que quiero saber si estan en el área visible
+        Intervalo2.each(function () {
+            var cubo = $(this);
+            setTimeout(function () {
+                cubo.addClass("animated");
+                cubo.css("visibility", "visible");
+                cubo.fadeIn();
+                setTimeout(function () {
+                    quitaEfxDifumina('.Intervalo2');
+                }, 750);
+            }, 500);
+        });
+        var Intervalo1 = $('.Intervalo1');    //elementos que quiero saber si estan en el área visible
+        Intervalo1.each(function () {
+            var cubo = $(this);
+            setTimeout(function () {
+                cubo.addClass("animated");
+                cubo.css("visibility", "visible");
+                cubo.fadeIn();
+                setTimeout(function () {
+                    quitaEfxDifumina('.Intervalo1');
+                }, 750);
+            }, 250);
+        });
+    }
+    $(document).ready(function () {
+        $(function () {
+            var elems = $('.oculta');    //elementos que quiero saber si estan en el área visible
+            elems.each(function () {
+                $(this).fadeOut();
+            });
+            muestraCubos();
+        });
+
+        /* ------    Se llama la función que redimensiona mapas de imagenes responsivas -----  */
+        $(document).ready(function (e) {
+            $('img[usemap]').rwdImageMaps();
+        });
+    })
+</script>
 		<div class="container-fluid">
 		    <div class="row">
 				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="padding:30px;">
@@ -185,7 +142,7 @@
 					<map name="mapacubo3" id="mapacubo3">
 						<area shape="poly" coords="0,388,388,0,840,388,420,820" /> <!--onmouseover="cambiaImgFoto('03')" onmouseout="cambiaImgCubo('03')" -->
 					</map>
-					<div class="contieneTxt oculta difumina Intervalo3 slideInLeft" onmouseover="cambiaImgFoto('02')" onmouseout="cambiaImgCubo('02')" style="position:absolute; top:25%; left:60%; Z-index:5;">
+					<div class="contieneTxt oculta difumina Intervalo3 slideInLeft" onmouseover="cambiaImgFoto('02')" onmouseout="cambiaImgCubo('02')" style="position:absolute; top:40%; left:60%; Z-index:5;">
 						<p class="visible-lg-inline txtHomeLg">Idiomas</p>
 						<p class="visible-md-inline txtHomeMd">Idiomas</p>
 						<p class="visible-sm-inline txtHomeSm">Idiomas</p>
