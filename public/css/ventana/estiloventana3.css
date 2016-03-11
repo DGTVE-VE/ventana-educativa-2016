@@ -1,3 +1,4 @@
+/* Efectos para pie menú  */
 .skin3.bottom .tab_header_item.tab_selected a {
 	 background: rgba(0, 0, 0, 0.2);
 }
@@ -16,11 +17,6 @@
 .skin3.bottom .tab_header_item.tab_selected {
 	background: none;
         
-}
-
-.skin3.bottom .tab_selected {
-	background: none;
-	color: white;
 }
 
 .f1 > ul{
@@ -102,10 +98,35 @@
   background: url(../../imagenes/ventana/pieventana/amexcidcolor.png) no-repeat center center;
 }
 
+
+/* Efectos para iconos redes sociales */
+
+.derechaSociales{
+    float: right;
+   
+}
+.sociales{
+    list-style: none;
+}
+.cambiacolorredesSociales{
+    color: #fff;
+        
+}
+
+#ct:hover{
+    color:#00B6F1;
+}
+#cf:hover{
+    color:#46629E;
+}
+#cy:hover{
+    color:#E62117;
+}
 .txtPestana{
 	position: relative;
 	top:15px;
-}
+        color:#fff;
+ }
 
 .fondoColabora{
 	width:200px;
@@ -113,4 +134,7 @@
 	padding-left:20px;
 	border-bottom: 50px solid rgba(0, 0, 0, 0.3); 
 	border-right: 35px solid transparent;
+}
+.fondoColabora>a{
+    text-decoration: none;
 }

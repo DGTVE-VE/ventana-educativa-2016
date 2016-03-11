@@ -5,56 +5,53 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
         </button>    
-        <a href="ventana_educativa"><img class="image-responsive " src="imagenes/ventana/encabezado/logoventana.png"></a>
+        <a href="ventana_educativa"><img class="image-responsive imgLogo " src="imagenes/ventana/encabezado/logoventana.png"></a>
     </div> 
     <div class="navbar-collapse collapse">
-        <ul class="nav navbar-nav navbar-right">
+        <ul class=" nav navbar-nav navbar-right">
             <li class="col-md-pull-12 col-xs-pull-4 col-sm-pull-2 libuscar">
-                <form class="navbar-form navbar-right" role="search">
-                    <div class="input-group">
-                        <input type="text" class="form-control inputSearch" placeholder="Buscar...">
-                        <span class="input-group-btn ">
-                            <button type="submit" class="btn btn-default">
-                                <span class="glyphicon glyphicon-search"></span>
-                            </button>
-                        </span>
+                <form action="" class="search-form" style="width: 200px;">
+                    <div class="form-group has-feedback">
+                        <label for="search" class="sr-only">Buscar</label>
+                        <input type="text" class="form-control" name="buscar" id="buscar" placeholder="buscar">
+                        <span class="glyphicon glyphicon-search form-control-feedback spanbuscar"></span>
                     </div>
                 </form>
             </li>
-            <li class="dropdown liApp">
+            <li class="dropdown">
                 <div class=" divli dropdown-toggle" data-toggle="dropdown">
                     <img class="iconoApps"  src="imagenes/ventana/encabezado/iconoApps.png">
                 </div>
                 <ul class="dropdown-menu image-responsive menuVentanaApps">
-                    <table>
+                    <table class="">
                         <tr>
-                            <td class="divApp">
-                                <a class="" href="#"><img src="http://placehold.it/50x50"></a>
-                                <label class="etiquetaApp">Ventana</label>
+                            <td class="divApp centered">
+                                <a class="text-center" href="ventana_educativa"><img src="imagenes/ventana/encabezado/appVentana.png" class="img-responsive"></a>
+                                <label class="etiquetaApp text-center">Ventana Educativa</label>
                             </td>
-                            <td class="divApp">
-                                <a class="" href="#"><img src="http://placehold.it/50x50"></a>
-                                <label class="etiquetaApp">Ventana</label>
+                            <td class="divApp centered">
+                                <a class="text-center" href="http://redmite.televisioneducativa.gob.mx/" target="_blank"><img src="imagenes/ventana/encabezado/appRed.png" class="img-responsive"></a>
+                                <label class="etiquetaApp text-center">Red <br> Mesoamericana</label>
                             </td>
-                            <td class="divApp">
-                                <a class="" href="#"><img src="http://placehold.it/50x50"></a>
-                                <label class="etiquetaApp">Ventana</label>
+                            <td class="divApp centered">
+                                <a class="text-center" href="http://mx.televisioneducativa.gob.mx" target="_blank"><img src="imagenes/ventana/encabezado/appMexico.png" class="img-responsive"></a>
+                                <label class="etiquetaApp text-center">MéxicoX</label>
                             </td>                            
                         </tr>
                         <tr>
-                            <td class="divApp">
-                                <a class="" href="#"><img src="http://placehold.it/50x50"></a>
-                                <label class="etiquetaApp">Ventana</label>
+                            <td class="divApp" style="vertical-align:middle !important;">
+                                <a class="text-center" target="_blank" href="http://www.ibe.tv/es/canal/iberoamericano/756/Iberoam%C3%A9rica-al-d%C3%ADa-1032016.htm"><img class="img-responsive" src="imagenes/ventana/encabezado/appIbero.png"></a>
+                                <label class="etiquetaApp text-center">Canal <br> Iberoamericano</label>
                             </td>
                             <td class="divApp">
-                                <a class="" href="#"><img src="http://placehold.it/50x50"></a>
-                                <label class="etiquetaApp">Ventana</label>
+                                <a class="" href="#"><img src=""></a>
+                                <label class="etiquetaApp text-center"></label>
                             </td>
                             <td class="divApp">
-                                <a class="" href="#"><img src="http://placehold.it/50x50"></a>
-                                <label class="etiquetaApp">Ventana</label>
+                                <a class="" href="#"><img src=""></a>
+                                <label class="etiquetaApp text-center"></label>
                             </td>                            
-                        </tr>                        
+                        </tr>                      
                     </table>                                       
                 </ul>
             </li>
@@ -67,13 +64,13 @@
                         <div class="row">
                             <div class="col-lg-12">
                                 @if (Auth::guest ())
-                                  <form id="login-form" action="sessions" method="POST" role="form" style="display: block;">
-									<input type="hidden" name="_token" value="{{ csrf_token() }}" />
+                                <form id="login-form" action="sessions" method="POST" role="form" style="display: block;">
+                                    <input type="hidden" name="_token" value="{{ csrf_token() }}" />
                                     <div class="form-group">
-                                        <input type="email" name="email"  tabindex="1" class="form-control" placeholder="Usuario" value="">
+                                        <input type="email" name="email"  tabindex="1" class="form-control inputLogin" placeholder="Usuario" value="">
                                     </div>
                                     <div class="form-group">
-                                        <input type="password" name="password"  tabindex="2" class="form-control" placeholder="Contraseña">
+                                        <input type="password" name="password"  tabindex="2" class="form-control inputLogin" placeholder="Contraseña">
                                     </div>
                                     <div class="form-group">
                                         <div class="row">
@@ -101,11 +98,11 @@
                                         </div>
                                     </div>      									
                                 </form>
-								@else
-                                    loggeado
-                                       {{Auth::user()->email}}
-                                       <a href="logout" tabindex="5" style="color: white;" class="forgot-password">Cerrar Sesión</a>
-                                    @endif
+                                @else
+                                loggeado
+                                {{Auth::user()->email}}
+                                <a href="logout" tabindex="5" style="color: white;" class="forgot-password">Cerrar Sesión</a>
+                                @endif
                             </div>
                         </div>
                     </li>
@@ -114,43 +111,3 @@
         </ul>
     </div>
 </nav>
-
-    <script>
-        // bootstrap-datepicker
-        $('#nacimiento').datepicker({
-            changeMonth: true,
-            changeYear: true,
-            altFormat: "yy-mm-dd"
-        }).on(
-                'show', function () {
-                    // Obtener valores actuales z-index de cada elemento
-                    var zIndexModal = $('#modalRegistro').css('z-index');
-                    var zIndexFecha = $('.datepicker').css('z-index');
-
-                    // alert(zIndexModal + zIndexFEcha);
-
-                    // Re asignamos el valor z-index para mostrar sobre la ventana modal
-                    $('.datepicker').css('z-index', zIndexModal + 1);
-                });
-        $.datepicker.regional['es'] = {
-            closeText: 'Cerrar',
-            prevText: '<Ant',
-            nextText: 'Sig>',
-            currentText: 'Hoy',
-            monthNames: ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre'],
-            monthNamesShort: ['Ene', 'Feb', 'Mar', 'Abr', 'May', 'Jun', 'Jul', 'Ago', 'Sep', 'Oct', 'Nov', 'Dic'],
-            dayNames: ['Domingo', 'Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes', 'Sábado'],
-            dayNamesShort: ['Dom', 'Lun', 'Mar', 'Mié', 'Juv', 'Vie', 'Sáb'],
-            dayNamesMin: ['Do', 'Lu', 'Ma', 'Mi', 'Ju', 'Vi', 'Sá'],
-            weekHeader: 'Sm',
-            dateFormat: 'dd/mm/yy',
-            firstDay: 1,
-            isRTL: false,
-            showMonthAfterYear: false,
-            yearSuffix: ''
-        };
-        $.datepicker.setDefaults($.datepicker.regional['es']);
-        $(function () {
-            $("#nacimiento").datepicker();
-        });
-    </script>

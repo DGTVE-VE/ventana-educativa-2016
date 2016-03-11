@@ -6,30 +6,32 @@ Ventana Educativa
 @include('viewVentana.encabezadoVentana')
 @endsection
 @section('cuerpoVentana')
-<div class = "panel panel-default frmRegistro col-lg-offset-3 col-md-6">
-    <div class = "panel-heading">
-        <h3 class = "panel-title">
+<div class = "panel panel-default frmRegistro col-lg-offset-2 col-md-8">
+    
+        <h3 class = "panel-title tituloRegistro text-center text-uppercase">
             Registro
         </h3>
-    </div>
+   
 
     <div class = "panel-body">
         <form role="form" action="registraUsuario" method="post">
             <div class="form-group col-md-12">
+                 <br>
                 <label for="nombre">Nombre Completo:</label>
-                <input type="text" required name="name" id="nombre" class="form-control input-lg" placeholder="Nombre Completo">
+                <input type="text" required name="name" id="nombre" class="form-control input-medium" placeholder="Nombre Completo">
             </div>
             <div class="form-group col-md-12">
                 <label for="correo">Correo Electrónico:</label>
-                <input id="email" type="email" required name="email" class="form-control input-lg" placeholder="Correo Electrónico">
+                <input id="email" type="email" required name="email" class="form-control input-medium" placeholder="Correo Electrónico">
+
             </div>
             <div class="form-group col-md-6">
                 <label for="contraseña">Contraseña:</label>
-                <input type="password" required name="password" class="form-control input-lg" placeholder="Contraseña">
+                <input type="password" required name="password" class="form-control input-medium" placeholder="Contraseña">
             </div>     
             <div class="form-group col-md-6">
                 <label for="contraseñarep">Repetir Contraseña:</label>
-                <input type="password" required name="password_confirmation" class="form-control input-lg" placeholder="Contraseña">
+                <input type="password" required name="password_confirmation" class="form-control input-medium" placeholder="Contraseña">
             </div>
             <div class="form-group col-md-12">
                 <label for="genero">Genero:</label>
@@ -41,7 +43,7 @@ Ventana Educativa
 
             <div class="form-group col-md-6">
                 <label for="intereses">Interes Educativo:</label>
-                <select class="form-control" required name="intereses_edu">
+                <select class="form-control input-medium" required name="intereses_edu">
                     <option value="1">Español</option>
                     <option value="2">Matemáticas</option>
                     <option value="3">Ciencias</option>
@@ -51,12 +53,12 @@ Ventana Educativa
             </div>
             <div class="form-group col-md-6">
                 <label for="nacimiento">Fecha de Nacimiento:</label>
-                <input required type="text" name="nacimiento" id="nacimiento" class="form-control clsDatePicker"> 
+                <input type="date" class="form-control input-medium" name="nacimiento" id="nacimiento" placeholder="Fecha de Nacimiento">
             </div>
             <div class="col-md-12">
                 <div class="form-group col-md-6">
                     <label for="pais">País:</label>
-                    <select required id="countries_states1" name="pais"  class="form-control bfh-countries" data-country="MX"></select>
+                    <select required id="countries_states1" name="pais"  class="form-control input-medium bfh-countries" data-country="MX"></select>
                 </div>
                 <div class="form-group col-md-6">
                     <label for="ciudad">Ciudad:</label>
@@ -64,8 +66,8 @@ Ventana Educativa
                 </div>
             </div>
             <div class="modal-footer">
-                <button type="button" data-dismiss="modal" class="btn">Cancelar</button>
-                <button type="submit" class="btn btn-primary">Enviar</button>
+                <button type="button" data-dismiss="modal" class="btn btn-danger">Cancelar</button>
+                <button type="submit" class="btn btn-default btn-success">Enviar</button>
             </div>
         </form>
     </div>
