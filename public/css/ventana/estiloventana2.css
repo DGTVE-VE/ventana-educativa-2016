@@ -244,15 +244,43 @@ body{
 
 .etiquetaApp{
     font-weight: normal;    
-    color: #000;
+    color: #fff;
+    font-family: Ubuntu;
 }
 
     .divApp{
         /*background: rgba(255, 255, 255, .5) !important;*/  
-        padding: 10px;
+        padding: 10px;        
     }
+    .divApp .img-responsive{
+        margin: 0 auto;
+    }
+
     .imgLogo{
         width: 80%;
         height: 80%;
         margin-top: 5%;
+    }
+    
+    .frmRegistro{
+        background: rgba(0, 0, 0, .3);
+        margin-top: 5%;
+        color: white;
+        font-family: Ubuntu;
+    }
+    
+    .frmRegistro input{
+        border-radius: 15px 15px 15px 15px;
+    }
+    
+        .frmRegistro select{
+        border-radius: 15px 15px 15px 15px;
+    }
+
+    .tituloRegistro{
+        font-weight: bold;
+        margin-top: 2%;
+    }
+    .inputLogin{
+        border-radius: 15px 15px 15px 15px;
     }
