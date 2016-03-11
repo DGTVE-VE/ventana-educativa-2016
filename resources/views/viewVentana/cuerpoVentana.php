@@ -258,9 +258,9 @@
 				</div>
 				<div class="col-xs-1 col-sm-1 col-md-1 col-lg-1 derechaSociales" style="padding-top: 8.9%; padding-left:0; padding-right:0;">
 					<ul class="sociales">
-						<li><a href="#" class="cambiacolorredesSociales"><span><i class="fa fa-twitter fa-2x"></i></span></a></li><br/>
-						<li><a href="#" class="cambiacolorredesSociales"><span><i class="fa fa-facebook fa-2x"></i></span></a></li><br/>
-						<li><a href="#" class="cambiacolorredesSociales"><span><i class="fa fa-youtube-play fa-2x"></i></span></a></li>
+						<li><a href="#" class="cambiacolorredesSociales"><span><i class="fa fa-twitter fa-2x " id="ct"></i></span></a></li><br/>
+						<li><a href="#" class="cambiacolorredesSociales"><span><i class="fa fa-facebook fa-2x" id="cf"></i></span></a></li><br/>
+						<li><a href="#" class="cambiacolorredesSociales"><span><i class="fa fa-youtube-play fa-2x" id="cy"></i></span></a></li>
 					</ul>
 				</div>
 				<div class="visible-md-inline visible-lg-inline">

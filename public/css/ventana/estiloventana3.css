@@ -19,8 +19,6 @@
         
 }
 
-
-
 .f1 > ul{
     list-style: none;
     display: table;
@@ -113,6 +111,16 @@
 .cambiacolorredesSociales{
     color: rgba(191, 191, 191, 0.7);
         
+}
+
+#ct:hover{
+    color:#00B6F1;
+}
+#cf:hover{
+    color:#46629E;
+}
+#cy:hover{
+    color:#E62117;
 }
 .txtPestana{
 	position: relative;
