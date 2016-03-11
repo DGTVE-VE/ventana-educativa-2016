@@ -30,8 +30,8 @@ and open the template in the editor.
 
         <link rel="stylesheet" href="css/ventana/estiloventana2.css">  
         <link rel="stylesheet" href="css/ventana/estiloventana3.css"> 
-        <link rel="stylesheet" href="css/ventana/datepicker.css"> 
-        <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css">
+        <!--link rel="stylesheet" href="css/ventana/datepicker.css"> 
+        <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css"-->
         
         
         <!--CDN FormHelpers-->
@@ -50,10 +50,10 @@ and open the template in the editor.
         <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-formhelpers/2.3.0/js/bootstrap-formhelpers.js" type="text/javascript"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-formhelpers/2.3.0/js/bootstrap-formhelpers.min.js" type="text/javascript"></script>
         
-        <script src="js/ventana/bootstrap-datepicker.js" type="text/javascript"></script>
+        <!--script src="js/ventana/bootstrap-datepicker.js" type="text/javascript"></script-->
         
-        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.10/jquery-ui.min.js"></script> <!-- efecto skin3 mení pie-->
-        <script type="text/javascript" src="http://onlinehtmltools.com/tab-generator/skinable_tabs.min.js"></script> <!-- efecto skin3 mení pie-->
+        <!--script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.10/jquery-ui.min.js"></script--> <!-- efecto skin3 mení pie-->
+        <!--script type="text/javascript" src="http://onlinehtmltools.com/tab-generator/skinable_tabs.min.js"></script--> <!-- efecto skin3 mení pie-->
     </head>
     <body>        
         <header>
