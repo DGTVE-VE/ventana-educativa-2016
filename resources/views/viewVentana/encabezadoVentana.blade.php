@@ -62,7 +62,7 @@
                 <ul class="dropdown-menu fondoRegistro">
                     <li class="panel-body">
                         <div class="row">
-                            <div class="col-lg-12">
+                            <div class="col-lg-12 col-md-12">
                                 @if (Auth::guest ())
                                 <form id="login-form" action="sessions" method="POST" role="form" style="display: block;">
                                     <input type="hidden" name="_token" value="{{ csrf_token() }}" />
@@ -74,29 +74,20 @@
                                     </div>
                                     <div class="form-group">
                                         <div class="row">
-                                            <div class="col-sm-12">
-                                                <input type="submit" name="login-submit" style="color: white;" id="login-submit" tabindex="4" class="form-control btn btn-login" value="Entrar">
+                                            <div class="col-sm-12 col-md-6 col-md-offset-3">
+                                                <input type="submit" name="login-submit" style="color: white;" id="login-submit" tabindex="4" class="form-control btn btn-sm" value="Entrar">
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="form-group">
-                                        <div class="row">
-                                            <div class="col-lg-12">
-                                                <div class="text-center">
-                                                    <a href="{{url('password/email')}}" tabindex="5" style="color: white;" class="forgot-password">Olvide mi contraseña</a>
-                                                </div>
-                                            </div>
-                                        </div>
+                                    <div class="col-md-12">
+                                    <div class="col-md-6 text-center">
+                                        <a href="{{url('password/email')}}" tabindex="5" style="color: white;" class="forgot-password">Olvide mi contraseña</a>
                                     </div>
-                                    <div class="form-group">
-                                        <div class="row">
-                                            <div class="col-lg-12">
-                                                <div class="text-center">
-                                                    <a href="registro"  tabindex="5" style="color: white;" class="forgot-password">Registrate</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>      									
+
+                                    <div class=" col-md-6 text-center">
+                                        <a href="registro"  tabindex="5" style="color: white;" class="forgot-password">Registrate</a>
+                                    </div>
+                                    </div>
                                 </form>
                                 @else
                                 loggeado
