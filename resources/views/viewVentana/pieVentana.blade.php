@@ -6,13 +6,13 @@
         </ul>
         <div class="row " id="efectobarramenu">
 
-            <div class="col-xs-3 col-sm-2 col-md-2 col-lg-2" >
+            <div class="col-xs-3 col-sm-2 col-md-1 col-lg-1" >
                 <a href="" onMouseOver="document.MyImage0.src = 'imagenes/ventana/pieventana/sepcolor.png';"
                    onMouseOut="document.MyImage0.src = 'imagenes/ventana/pieventana/sep.png';">
-                    <img class="img-responsive" src="imagenes/ventana/pieventana/sep.png" name="MyImage0">
+                    <img class="img-responsive" src="imagenes/ventana/pieventana/sep.png" width="200%" name="MyImage0">
                 </a> 
             </div>           
-
+            <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1" ></div>
             <div class="col-xs-3 col-sm-2 col-md-1 col-lg-1" >
                 <a href="" onMouseOver="document.MyImage1.src = 'imagenes/ventana/pieventana/tvecolor.png';"
                    onMouseOut="document.MyImage1.src = 'imagenes/ventana/pieventana/tve.png';">
@@ -45,12 +45,12 @@
             <div class="col-xs-3 col-sm-2 col-md-1 col-lg-1">
                 <a href="" onMouseOver="document.MyImage5.src = 'imagenes/ventana/pieventana/mepcolor.png';"
                    onMouseOut="document.MyImage5.src = 'imagenes/ventana/pieventana/mep.png';">
-                    <img class="img-responsive" src="imagenes/ventana/pieventana/mep.png" height="55%" width="55%" name="MyImage5">
+                    <img class="img-responsive" src="imagenes/ventana/pieventana/mep.png"  name="MyImage5">
                 </a> 
-               </div>
+            </div>
             <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1" ></div>
             <div class="col-xs-3 col-sm-2 col-md-1 col-lg-1">
-               <a href="" onMouseOver="document.MyImage6.src = 'imagenes/ventana/pieventana/amexcidcolor.png';"
+                <a href="" onMouseOver="document.MyImage6.src = 'imagenes/ventana/pieventana/amexcidcolor.png';"
                    onMouseOut="document.MyImage6.src = 'imagenes/ventana/pieventana/amexcid.png';">
                     <img class="img-responsive" src="imagenes/ventana/pieventana/amexcid.png" name="MyImage6">
                 </a> 
@@ -59,4 +59,4 @@
     </div>
 </div>
 <script>
-$('#efectobarramenu').addClass('animated fadeInDown'); </script>
+    $('#efectobarramenu').addClass('animated fadeInDown');</script>
