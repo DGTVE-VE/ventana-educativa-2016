@@ -92,7 +92,7 @@ Ventana Educativa
         var xhttp = new XMLHttpRequest();
         xhttp.onreadystatechange = function () {
             if (xhttp.readyState == 4 && xhttp.status == 200) {                
-                if (xhttp.responseText != 'null'){
+                if (xhttp.responseText != 'null'){ // el correo ya existe
                     muestraError (true);
                 } else {
                     muestraError (false);

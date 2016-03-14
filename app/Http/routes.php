@@ -21,7 +21,7 @@ Route::get('logout', 'SessionsController@destroy');
 /****************************REDMITE***********************/
 /*Vistas principales REDMITE*/
 //Route::get('/','RedmiteController@redmite');
-Route::get('testCorreo','RedmiteController@testMail');
+//Route::get('testCorreo','RedmiteController@testMail');
 Route::get('redmite','RedmiteController@redmite');
 
 /*Vistas de páginas secundarias REDMITE*/
@@ -67,8 +67,9 @@ Route::group(['middleware' => 'web'], function () {
     Route::post('password/reset', 'Auth\PasswordController@postReset');
 });
 
+Route::get('verificaCorreo/{correo}/{hash}', 'VentanaController@activaCorreo');
 Route::get('registro','VentanaController@registro');
 Route::get('presentacion','VentanaController@presentacion');
 Route::post('registraUsuario', 'VentanaController@registraUsuario');
-Route::get ('testSession','SessionsController@test');
+//Route::get ('testSession','SessionsController@test');
 /****************************HOME VENTANA***********************/
