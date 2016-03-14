@@ -1,320 +1,55 @@
-/*
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
-*/
-/* 
-    Created on : 2/03/2016, 01:28:20 PM
-    Author     : SMARTINEZ
-*/
-*{
-
-}
-
-body{
-    background: url(../../imagenes/ventana/background/BackgroundDefault.jpg) no-repeat center center fixed; 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    height: 100%;
-    width: 100%;
-}
-.navbarHome li { color: #000 }
-
-.fotoUsuario{
-    border-radius: 200px 200px 200px 200px;
-    -moz-border-radius: 200px 200px 200px 200px;
-    -webkit-border-radius: 200px 200px 200px 200px;
-    border: 2px solid white;
-    width: 30px;
-    height: 30px;
-    color: white;
-    font-weight: bold;
-    font-size: 20px;
-}
-
-.iconoApps{
-    margin-top:5%;
-    width: 38px;
-    height: 28px;    
-}
-.menuVentana{
-    background-color: transparent;
-    background: transparent;
-    border-color: transparent;
-}
-.divli{
-    margin-top: 10%;
-    padding: 5px;
-    cursor: pointer;
-}
-/*.menuVentanaApps li > a:hover { background: transparent !important; }*/
-
-
-/*Ventana logueo*/
-.btn-login {
-    background-color: #17a91c;
-    outline: none;
-    color: #fff;
-    font-size: 14px;
-    height: auto;
-    font-weight: normal;
-    padding: 14px 0;
-    text-transform: uppercase;
-    border-color: #17a91c;
-}
+*{}
+body{background:url(../../imagenes/ventana/background/BackgroundDefault.jpg) no-repeat center center fixed;-webkit-background-size:cover;-moz-background-size:cover;-o-background-size:cover;background-size:cover;height:100%;width:100%;}
+.navbarHome li{color:#000}
+.fotoUsuario{border-radius:200px 200px 200px 200px;-moz-border-radius:200px 200px 200px 200px;-webkit-border-radius:200px 200px 200px 200px;border:2px solid white;width:30px;height:30px;color:white;font-weight:bold;font-size:20px;}
+.iconoApps{margin-top:5%;width:38px;height:28px;}
+.menuVentana{background-color:transparent;background:transparent;border-color:transparent;}
+.divli{margin-top:10%;padding:5px;cursor:pointer;}
+.btn-login{background-color:#17a91c;outline:none;color:#fff;font-size:14px;height:auto;font-weight:normal;padding:14px 0;text-transform:uppercase;border-color:#17a91c;}
 .btn-login:hover,
-.btn-login:focus {
-    color: #fff;
-    background-color: #14671A;
-    border-color: #14671A;
-}
-
-.forgot-password {
-    text-decoration: underline;
-    color: #888;
-}
+.btn-login:focus{color:#fff;background-color:#14671A;border-color:#14671A;}
+.forgot-password{text-decoration:underline;color:#888;}
 .forgot-password:hover,
-.forgot-password:focus {
-    text-decoration: underline;
-    color: #666;
-}
-
-.btn-register {
-    background-color: #1CB94E;
-    outline: none;
-    color: #fff;
-    font-size: 14px;
-    height: auto;
-    font-weight: normal;
-    padding: 14px 0;
-    text-transform: uppercase;
-    border-color: #1CB94A;
-}
+.forgot-password:focus{text-decoration:underline;color:#666;}
+.btn-register{background-color:#1CB94E;outline:none;color:#fff;font-size:14px;height:auto;font-weight:normal;padding:14px 0;text-transform:uppercase;border-color:#1CB94A;}
 .btn-register:hover,
-.btn-register:focus {
-    color: #fff;
-    background-color: #1CA347;
-    border-color: #1CA347;
-}
-/*
-*/.navbar-login
-{
-    width: 300px;
-    padding: 10px;
-    padding-bottom: 0px;
-}
-
-.navbar-login-session
-{
-    padding: 10px;
-    padding-bottom: 0px;
-    padding-top: 0px;
-    margin-left: 5%;
-}
-
-.fondoRegistro{
-    background: rgba(0, 0, 0, .3) !important; 
-    margin-top: 20% !important;
-    width: 320px;
-    height: 230px;
-}
-
-.fondoRegistro:after {
-    content: "";
-    display: block;
-    width: 0;
-    height: 0;
-    margin-left: 284px;
-    border-left: 12px solid transparent;
-    border-right: 12px solid transparent;
-    border-bottom: 12px solid rgba(0, 0, 0, .3) !important;
-    margin-top: -234px;
-      
-}
-.menuVentanaApps{
-    background: rgba(255, 255, 255, .5) !important; 
-}
-/*Fin Ventana logueo*/
-
-/*calendario de ventana modal de registro*/
-.clsDatePicker{
-    z-index: 100000 !important;
-}
-
-/*body {
-    padding-top:50px;
-}*/
-#presentacion {
-    margin-top: 5%;
-    padding:5px;
-    background: transparent !important;
-    width: 100%;
-}
-#presentacion .carousel-inner .item img{
-    height:650px;
-    width: 100%;
-}
-
-.carousel-control {
-    color:#fff;
-    top:44%;
-    background:transparent;
-    bottom:auto;
-    padding-top:8px;
-    width:36px;
-    border-radius:50%;
-    height:36px;
-    opacity:1;
-}
-.carousel-control.left, .carousel-control.right {
-    background-image:none !important;
-}
+.btn-register:focus{color:#fff;background-color:#1CA347;border-color:#1CA347;}
+.navbar-login{width:300px;padding:10px;padding-bottom:0px;}
+.navbar-login-session{padding:10px;padding-bottom:0px;padding-top:0px;margin-left:5%;}
+.fondoRegistro{background:rgba(0, 0, 0, .3) !important;margin-top:20% !important;width:320px;height:230px;}
+.fondoRegistro:after{content:"";display:block;width:0;height:0;margin-left:284px;border-left:12px solid transparent;border-right:12px solid transparent;border-bottom:12px solid rgba(0, 0, 0, .3) !important;margin-top:-234px;}
+.menuVentanaApps{background:rgba(255, 255, 255, .5) !important;}
+.clsDatePicker{z-index:100000 !important;}
+#presentacion{margin-top:5%;padding:5px;background:transparent !important;width:100%;}
+#presentacion .carousel-inner .item img{height:650px;width:100%;}
+.carousel-control{color:#fff;top:44%;background:transparent;bottom:auto;padding-top:8px;width:36px;border-radius:50%;height:36px;opacity:1;}
+.carousel-control.left, .carousel-control.right{background-image:none !important;}
 .carousel-control.right,
-.carousel-control .glyphicon-chevron-right {
-    left:auto;
-    right:-10%;
-    font-size: 60px;
-}
-.carousel-control.left {
-    right:auto;
-    left:-10%;
-    font-size: 60px;
-}
-
-
-/*search*/
-.search-form .form-group {
-    float: left !important;
-    transition: all 0.35s, border-radius 0s;
-    width: 32px;
-    height: 32px;
-    background-color: #fff;
-    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
-    border-radius: 25px;
-    border: 1px solid #ccc;
-    margin-top: 5%;
-}
-
-.libuscar{
-    margin-left: -10%;
-}
-
-.has-feedback{
-    margin-left: -115%;
-}
-
-.has-feedback:hover{
-    margin-left: -150%;
-}
-.spanbuscar{
-    color: black;
-}
-.search-form .form-group input.form-control {
-    padding:0 0 5px 30px;
-    border: 0 none;
-    background: transparent;
-    box-shadow: none;
-    display:block;
-}
-.search-form .form-group input.form-control::-webkit-input-placeholder {
-    display: none;
-}
-.search-form .form-group input.form-control:-moz-placeholder {
-    /* Firefox 18- */
-    display: none;
-}
-.search-form .form-group input.form-control::-moz-placeholder {
-    /* Firefox 19+ */
-    display: none;
-}
-.search-form .form-group input.form-control:-ms-input-placeholder {
-    display: none;
-}
+.carousel-control .glyphicon-chevron-right{left:auto;right:-10%;font-size:60px;}
+.carousel-control.left{right:auto;left:-10%;font-size:60px;}
+.search-form .form-group{float:left !important;transition:all 0.35s, border-radius 0s;width:32px;height:32px;background-color:#fff;box-shadow:0 1px 1px rgba(0, 0, 0, 0.075) inset;border-radius:25px;border:1px solid #ccc;margin-top:5%;}
+.libuscar{margin-left:-10%;}
+.has-feedback{margin-left:-115%;}
+.has-feedback:hover{margin-left:-150%;}
+.spanbuscar{color:black;}
+.search-form .form-group input.form-control{padding:0 0 5px 30px;border:0 none;background:transparent;box-shadow:none;display:block;}
+.search-form .form-group input.form-control::-webkit-input-placeholder{display:none;}
+.search-form .form-group input.form-control:-moz-placeholder{display:none;}
+.search-form .form-group input.form-control::-moz-placeholder{display:none;}
+.search-form .form-group input.form-control:-ms-input-placeholder{display:none;}
 .search-form .form-group:hover,
-.search-form .form-group.hover {
-    width: 100%;
-    border-radius: 25px 25px 25px 25px;
-}
-.search-form .form-group span.form-control-feedback {
-    position: absolute;
-    top: -1px;
-    right: -2px;
-    z-index: 2;
-    display: block;
-    width: 34px;
-    height: 34px;
-    line-height: 34px;
-    text-align: center;
-    color: #000;
-    right: initial;
-    font-size: 14px;
-    padding:0 0 20px 0;
-}
-
-/*fin search*/
-
-
-
-.etiquetaApp{
-    font-weight: normal;    
-    color: #fff;
-    font-family: Ubuntu;
-}
-
-.divApp{
-    /*background: rgba(255, 255, 255, .5) !important;*/  
-    padding: 10px;        
-}
-.divApp .img-responsive{
-    margin: 0 auto;
-}
-
-.imgLogo{
-    width: 80%;
-    height: 80%;
-    margin-top: 5%;
-}
-
-.frmRegistro{
-    background: rgba(0, 0, 0, .3);
-    margin-top: 5%;
-    color: white;
-    font-family: Ubuntu;
-}
-
-.frmRegistro input{
-    border-radius: 15px 15px 15px 15px;
-}
-
-.frmRegistro select{
-    border-radius: 15px 15px 15px 15px;
-}
-
-.tituloRegistro{
-    font-weight: bold;
-    margin-top: 2%;
-}
-.inputLogin{
-    border-radius: 15px 15px 15px 15px;
-}
-
-#login-submit{
-    background-color: #ccc;
-
-    border-radius: 25px 25px 25px 25px;
-}
-
-#login-submit:hover{
-    background-color: #888;
-    border: 1px solid white;
-    color: #000 !important;
-}
-
-@media (min-width: 765px) {
-
-}
-@media (min-width: 1330px) {
-   
-}
+.search-form .form-group.hover{width:100%;border-radius:25px 25px 25px 25px;}
+.search-form .form-group span.form-control-feedback{position:absolute;top:-1px;right:-2px;z-index:2;display:block;width:34px;height:34px;line-height:34px;text-align:center;color:#000;right:initial;font-size:14px;padding:0 0 20px 0;}
+.etiquetaApp{font-weight:normal;color:#fff;font-family:Ubuntu;}
+.divApp{padding:10px;}
+.divApp .img-responsive{margin:0 auto;}
+.imgLogo{width:80%;height:80%;margin-top:5%;}
+.frmRegistro{background:rgba(0, 0, 0, .3);margin-top:5%;color:white;font-family:Ubuntu;}
+.frmRegistro input{border-radius:15px 15px 15px 15px;}
+.frmRegistro select{border-radius:15px 15px 15px 15px;}
+.tituloRegistro{font-weight:bold;margin-top:2%;}
+.inputLogin{border-radius:15px 15px 15px 15px;}
+#login-submit{background-color:#ccc;border-radius:25px 25px 25px 25px;}
+#login-submit:hover{background-color:#888;border:1px solid white;color:#000 !important;}
+@media (min-width:765px){}
+@media (min-width:1330px){}
