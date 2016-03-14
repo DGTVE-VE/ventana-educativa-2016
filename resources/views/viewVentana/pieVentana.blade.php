@@ -4,7 +4,7 @@
         <ul>
             <li ><div class="fondoColabora "><a href="#"><p class="txtPestana ">COLABORADORES</p></a></div></li>
         </ul>
-        <div class="row ">
+        <div class="row " id="efectobarramenu">
 
             <div class="col-xs-3 col-sm-2 col-md-2 col-lg-2" >
                 <a href="" onMouseOver="document.MyImage0.src = 'imagenes/ventana/pieventana/sepcolor.png';"
@@ -58,3 +58,5 @@
         </div>
     </div>
 </div>
+<script>
+$('#efectobarramenu').addClass('animated fadeInDown'); </script>
