@@ -28,11 +28,11 @@
 			visibility:hidden;
 		}
 		.imgOpaca{
-			-webkit-filter: contrast(70%);
-			-moz-filter: contrast(70%);
-			-o-filter: contrast(70%);
-			-ms-filter: contrast(70%);
-			filter: contrast(70%);
+			-webkit-filter: brightness(80%);
+			-moz-filter: brightness(80%);
+			-o-filter: brightness(80%);
+			-ms-filter: brightness(80%);
+			filter: brightness(80%);
 		}
 	</style>
 <script>
@@ -56,8 +56,8 @@
 		var alto = Math.round($(imagenCubo).height() * 1.15);
 		$(imagenCubo).width(ancho);
 		$(imagenCubo).height(alto);
-		var top = $(imagenCubo).offset().top - 20;
-		var left = $(imagenCubo).offset().left - 20;
+		var top = $(imagenCubo).offset().top - 15;
+		var left = $(imagenCubo).offset().left - 15;
 		$(imagenCubo).offset({top:top,left:left});		
 	}
 	
@@ -66,8 +66,8 @@
 		var alto = Math.round($(imagenFoto).height() / 1.15);
 		$(imagenFoto).width(ancho);
 		$(imagenFoto).height(alto);
-		var top = $(imagenFoto).offset().top + 20;
-		var left = $(imagenFoto).offset().left + 20;
+		var top = $(imagenFoto).offset().top + 15;
+		var left = $(imagenFoto).offset().left + 15;
 		$(imagenFoto).offset({top:top,left:left});
 	}
 	function cambiaFrente(imagenCubo, imagen){
@@ -336,7 +336,7 @@
 						<area shape="poly" coords="548,1160,1160,548,1160,1160" onmouseover="cambiaImgFoto('09')" onmouseout="cambiaImgCubo('09')" href="#"/>
 					</map>
 					<a href="presentacion">
-						<img class="imgColor" id="iconoRombo07" src="imagenes/homeventana/ventanaBco.png" onmouseover="cambiaImgFoto('07')" onmouseout="cambiaImgCubo('07')" style="width:150%; height:75%; position: absolute; top: 190%; left:0%; z-index:5;"/>
+						<img class="imgColor" id="iconoRombo07" src="imagenes/homeventana/ventanaBco.png" onmouseover="cambiaImgFoto('07')" onmouseout="cambiaImgCubo('07')" style="width:140%; height:55%; position: absolute; top: 195%; left:0%; z-index:5;"/>
 					</a>
 				</div>
 				<div class="col-xs-1 col-sm-1 col-md-1 col-lg-1" style="padding-top: 10%; padding-left:0; padding-right:0;">
@@ -371,7 +371,7 @@
 						<area shape="poly" coords="456,960,960,456,960,960" /><!--onmouseover="cambiaImgFoto('12')" onmouseout="cambiaImgCubo('12')" -->
 					</map>
 					<a href="http://redmite.televisioneducativa.gob.mx/" target="_blank">
-						<img id="iconoRombo10" class="imgColor oculta difumina Intervalo2 slideInRight" src="imagenes/homeventana/redmiteBco.png" onmouseover="cambiaImgFoto('10')" onmouseout="cambiaImgCubo('10')" style="width:90%; height:90%; position: absolute; top: 135%; left:22%; z-index:3; visibility:hidden;"/>
+						<img id="iconoRombo10" class="imgColor oculta difumina Intervalo2 slideInRight" src="imagenes/homeventana/redmiteBco.png" onmouseover="cambiaImgFoto('10')" onmouseout="cambiaImgCubo('10')" style="width:75%; height:90%; position: absolute; top: 135%; left:30%; z-index:3; visibility:hidden;"/>
 					</a>
 				</div>
 				<div class="col-xs-1 col-sm-1 col-md-1 col-lg-1" style="padding:3%; padding-left:0px; padding-right:0px;">
