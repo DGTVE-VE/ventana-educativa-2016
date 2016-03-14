@@ -8,7 +8,7 @@ body{background:url(../../imagenes/ventana/background/BackgroundDefault.jpg) no-
 .collapseBarra{background-color:transparent;background:transparent;border-color:transparent;}
 .iconoApps{margin-top:5%;width:38px;height:28px;}    
 .menuVentana{background-color:transparent;background:transparent;border-color:transparent;}
-.divli{margin-top:30%; margin-left: 100%; padding:5px;cursor:pointer;}
+.divli{margin-top:30%; margin-left: 10%; padding:5px;cursor:pointer;}
 .btn-login{background-color:#17a91c;outline:none;color:#fff;font-size:14px;height:auto;font-weight:normal;padding:14px 0;text-transform:uppercase;border-color:#17a91c;}
 .btn-login:hover,
 .btn-login:focus{color:#fff;background-color:#14671A;border-color:#14671A;}
@@ -61,7 +61,7 @@ body{background:url(../../imagenes/ventana/background/BackgroundDefault.jpg) no-
     width: 100% \9; /*Force IE10 and below to size SVG images correctly*/
     max-width: 100%;
     margin-top: 8%;
-    margin-left: 18%;
+    margin-left: 30%;
 }
 @media (min-width: 350px) { 
     .imgLogo{
@@ -77,6 +77,9 @@ body{background:url(../../imagenes/ventana/background/BackgroundDefault.jpg) no-
         width: 50% \9;
         max-width: 50%;
     }
+       .frmRegistro{
+        margin-top: 5%;
+    }
 }
 
 @media (min-width: 1024px) { 
@@ -84,12 +87,18 @@ body{background:url(../../imagenes/ventana/background/BackgroundDefault.jpg) no-
         width: 50% \9; /*Force IE10 and below to size SVG images correctly*/
         max-width: 50%;
     }    
+       .frmRegistro{
+        margin-top: 5%;
+    }
 }
 
 @media (min-width: 1200px) {
     .imgLogo{
         width: 100% \9; /*Force IE10 and below to size SVG images correctly*/
         max-width: 100%;
+    }
+      .frmRegistro{
+        margin-top: 5%;
     }
 
 }

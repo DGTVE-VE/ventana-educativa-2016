@@ -40,18 +40,40 @@
                         </td>                            
                     </tr>
                     <tr>
-                        <td class="divApp" style="vertical-align:middle !important;">
+                        <td class="divApp centered" style="vertical-align:middle !important;">
                             <a class="text-center" target="_blank" href="http://www.ibe.tv/es/canal/iberoamericano/756/Iberoam%C3%A9rica-al-d%C3%ADa-1032016.htm"><img class="img-responsive" src="imagenes/ventana/encabezado/appIbero.png"></a>
                             <label class="etiquetaApp text-center">Canal <br> Iberoamericano</label>
                         </td>
-                        <td class="divApp">
-                            <a class="" href="#"><img src=""></a>
-                            <label class="etiquetaApp text-center"></label>
+                        <td class="divApp centered">
+                            <a class="" href="#"><img class="img-responsive" src="imagenes/ventana/encabezado/appDocentes.png"></a>
+                            <label class="etiquetaApp text-center center-block">Docentes</label>
                         </td>
-                        <td class="divApp">
-                            <a class="" href="#"><img src=""></a>
-                            <label class="etiquetaApp text-center"></label>
-                        </td>                            
+                        <td class="divApp centered">
+                            <a class="" href="#"><img class="img-responsive" src="imagenes/ventana/encabezado/appIdiomas.png"></a>
+                            <label class="etiquetaApp text-center">Idiomas</label>
+                        </td>
+                        </tr>
+                    <tr>
+                        <td class="divApp centered">
+                            <a class="" href="#"><img class="img-responsive" src="imagenes/ventana/encabezado/appMediateca.png"></a>
+                            <label class="etiquetaApp text-center center-block">Mediateca</label>
+                        </td>
+                        <td class="divApp centered">
+                            <a class="" href="#"><img class="img-responsive" src="imagenes/ventana/encabezado/appPadres.png"></a>
+                            <label class="etiquetaApp text-center center-block">Padres</label>
+                        </td>
+                        <td class="divApp centered">
+                            <a class="" href="#"><img class="img-responsive" src="imagenes/ventana/encabezado/appPrimaria.png"></a>
+                            <label class="etiquetaApp text-center">Primaria</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td class="divApp centered">
+                            <a class="" href="#"><img src="imagenes/ventana/encabezado/appVOD.png"></a><br>
+                            <label class="etiquetaApp text-center">VOD</label>
+                        </td>                        
                     </tr>                      
                 </table>                                       
             </ul>
