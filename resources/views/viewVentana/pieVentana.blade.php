@@ -1,5 +1,5 @@
 <div class="row">
-    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 tabs_holder f1 navbar-fixed-bottom animated slideInDown ">
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 tabs_holder f1 navbar-fixed-bottom">
        
         <ul>
             <li ><div class="fondoColabora "><a href="#"><p class="txtPestana ">COLABORADORES</p></a></div></li>
