@@ -25,8 +25,8 @@ body{background:url(../../imagenes/ventana/background/BackgroundDefault.jpg) no-
 .carousel-control{color:#fff;top:44%;background:transparent;bottom:auto;padding-top:8px;width:36px;border-radius:50%;height:36px;opacity:1;}
 .carousel-control.left, .carousel-control.right{background-image:none !important;}
 .carousel-control.right,
-.carousel-control .glyphicon-chevron-right{left:auto;right:-10%;font-size:60px;}
-.carousel-control.left{right:auto;left:-10%;font-size:60px;}
+.carousel-control .glyphicon-chevron-right{left:auto;right:-10%;font-size:80px;}
+.carousel-control.left{right:auto;left:-10%;font-size:80px;}
 .search-form .form-group{float:left !important;transition:all 0.35s, border-radius 0s;width:32px;height:32px;background-color:#fff;box-shadow:0 1px 1px rgba(0, 0, 0, 0.075) inset;border-radius:25px;border:1px solid #ccc;margin-top:5%;}
 .libuscar{margin-left:-10%;}
 .has-feedback{margin-left:-115%;}
@@ -43,7 +43,7 @@ body{background:url(../../imagenes/ventana/background/BackgroundDefault.jpg) no-
 .etiquetaApp{font-weight:normal;color:#fff;font-family:Ubuntu;}
 .divApp{padding:10px;}
 .divApp .img-responsive{margin:0 auto;}
-.imgLogo{width:80%;height:80%;margin-top:5%;}
+/*.imgLogo{width:80%;height:80%;margin-top:5%;}*/
 .frmRegistro{background:rgba(0, 0, 0, .3);margin-top:5%;color:white;font-family:Ubuntu;}
 .frmRegistro input{border-radius:15px 15px 15px 15px;}
 .frmRegistro select{border-radius:15px 15px 15px 15px;}
@@ -51,5 +51,52 @@ body{background:url(../../imagenes/ventana/background/BackgroundDefault.jpg) no-
 .inputLogin{border-radius:15px 15px 15px 15px;}
 #login-submit{background-color:#ccc;border-radius:25px 25px 25px 25px;}
 #login-submit:hover{background-color:#888;border:1px solid white;color:#000 !important;}
-@media (min-width:765px){}
-@media (min-width:1330px){}
+
+
+.imgLogo {
+    width: 100% \9; /*Force IE10 and below to size SVG images correctly*/
+    max-width: 100%;
+}
+@media (min-width: 350px) { 
+    .imgLogo{
+        width: 35% \9; /*Force IE10 and below to size SVG images correctly*/
+        max-width: 35%;
+    }
+    .frmRegistro{
+        margin-top: 17%;
+    }
+    .collapseBarra{
+        background:#000;
+    }
+    .fondoRegistro{
+        margin-top: 0;
+    }
+
+}
+@media (min-width: 768px) { 
+    .imgLogo{
+        width: 50% \9; /*Force IE10 and below to size SVG images correctly*/
+        max-width: 50%;
+    }
+    .collapseBarra{background-color:transparent;background:transparent;border-color:transparent;}
+}
+
+@media (min-width: 1024px) { 
+    .imgLogo{
+        width: 50% \9; /*Force IE10 and below to size SVG images correctly*/
+        max-width: 50%;
+    }
+    .collapseBarra{background-color:transparent;background:transparent;border-color:transparent;}
+    
+}
+
+@media (min-width: 1200px) {
+    .imgLogo{
+        width: 100% \9; /*Force IE10 and below to size SVG images correctly*/
+        max-width: 100%;
+    }
+    .fondoRegistro{background:rgba(0, 0, 0, .3) !important;margin-top:20% !important;width:320px;height:230px;}
+    .fondoRegistro:after{content:"";display:block;width:0;height:0;margin-left:284px;border-left:12px solid transparent;border-right:12px solid transparent;border-bottom:12px solid rgba(0, 0, 0, .3) !important;margin-top:-234px;}
+    .frmRegistro{background:rgba(0, 0, 0, .3);margin-top:5%;color:white;font-family:Ubuntu;}
+    .collapseBarra{background-color:transparent;background:transparent;border-color:transparent;}
+}

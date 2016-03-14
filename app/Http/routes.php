@@ -71,5 +71,6 @@ Route::get('verificaCorreo/{correo}/{hash}', 'VentanaController@activaCorreo');
 Route::get('registro','VentanaController@registro');
 Route::get('presentacion','VentanaController@presentacion');
 Route::post('registraUsuario', 'VentanaController@registraUsuario');
+
 //Route::get ('testSession','SessionsController@test');
 /****************************HOME VENTANA***********************/

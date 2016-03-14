@@ -7,9 +7,10 @@
         </button>    
         <a href="ventana_educativa"><img class="image-responsive imgLogo " src="imagenes/ventana/encabezado/logoventana.png"></a>
     </div> 
-    <div class="navbar-collapse collapse">
+    <div class="navbar-collapse collapse collapseBarra">
         <ul class=" nav navbar-nav navbar-right">
-            <li class="col-md-pull-12 col-xs-pull-4 col-sm-pull-2 libuscar">
+            <!--<li class="col-md-pull-12 col-xs-pull-4 col-sm-pull-2 libuscar">-->
+            <li class="libuscar col-md-pull-11 col-xs-offset-6">
                 <form action="" class="search-form" style="width: 200px;">
                     <div class="form-group has-feedback">
                         <label for="search" class="sr-only">Buscar</label>
