@@ -7,9 +7,10 @@
         </button>    
         <a href="ventana_educativa"><img class="image-responsive imgLogo " src="imagenes/ventana/encabezado/logoventana.png"></a>
     </div> 
-    <div class="navbar-collapse collapse">
+    <div class="navbar-collapse collapse collapseBarra">
         <ul class=" nav navbar-nav navbar-right">
-            <li class="col-md-pull-12 col-xs-pull-4 col-sm-pull-2 libuscar">
+            <!--<li class="col-md-pull-12 col-xs-pull-4 col-sm-pull-2 libuscar">-->
+            <li class="libuscar col-md-pull-11 col-xs-offset-6">
                 <form action="" class="search-form" style="width: 200px;">
                     <div class="form-group has-feedback">
                         <label for="search" class="sr-only">Buscar</label>
@@ -62,7 +63,7 @@
                 <ul class="dropdown-menu fondoRegistro">
                     <li class="panel-body">
                         <div class="row">
-                            <div class="col-lg-12">
+                            <div class="col-lg-12 col-md-12">
                                 @if (Auth::guest ())
                                 <form id="login-form" action="sessions" method="POST" role="form" style="display: block;">
                                     <input type="hidden" name="_token" value="{{ csrf_token() }}" />
@@ -74,29 +75,20 @@
                                     </div>
                                     <div class="form-group">
                                         <div class="row">
-                                            <div class="col-sm-12">
-                                                <input type="submit" name="login-submit" style="color: white;" id="login-submit" tabindex="4" class="form-control btn btn-login" value="Entrar">
+                                            <div class="col-sm-12 col-md-6 col-md-offset-3">
+                                                <input type="submit" name="login-submit" style="color: white;" id="login-submit" tabindex="4" class="form-control btn btn-sm" value="Entrar">
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="form-group">
-                                        <div class="row">
-                                            <div class="col-lg-12">
-                                                <div class="text-center">
-                                                    <a href="{{url('password/email')}}" tabindex="5" style="color: white;" class="forgot-password">Olvide mi contraseña</a>
-                                                </div>
-                                            </div>
-                                        </div>
+                                    <div class="col-md-12">
+                                    <div class="col-md-6 text-center">
+                                        <a href="{{url('password/email')}}" tabindex="5" style="color: white;" class="forgot-password">Olvide mi contraseña</a>
                                     </div>
-                                    <div class="form-group">
-                                        <div class="row">
-                                            <div class="col-lg-12">
-                                                <div class="text-center">
-                                                    <a href="registro"  tabindex="5" style="color: white;" class="forgot-password">Registrate</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>      									
+
+                                    <div class=" col-md-6 text-center">
+                                        <a href="registro"  tabindex="5" style="color: white;" class="forgot-password">Registrate</a>
+                                    </div>
+                                    </div>
                                 </form>
                                 @else
                                 loggeado
