@@ -27,11 +27,7 @@
 	position: relative;
 	margin-bottom:0px;
 	padding:0px;
-        -webkit-transition: all .5s ease;
--moz-transition: all .8s ease;
--ms-transition: all .8s ease;
--o-transition: all .8s ease;
-transition: all .8s ease;
+ 
 }
 .f1{
 	padding:0px;
@@ -50,12 +46,7 @@ transition: all .8s ease;
     text-align: center;
     text-decoration: none;
     background: rgba(0, 0, 0, 0.3);
-    -webkit-transition: all .5s ease;
--moz-transition: all .8s ease;
--ms-transition: all .8s ease;
--o-transition: all .8s ease;
-transition: all .8s ease;
-
+   
 }
 
 #imagen-tve {

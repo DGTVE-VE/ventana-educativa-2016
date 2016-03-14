@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use Mail;
 use Illuminate\Http\Request;
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
@@ -20,14 +21,15 @@ class VentanaController extends Controller {
         $users = new \App\User();
         $users->name = filter_input(INPUT_POST, 'name');
         $users->email = filter_input(INPUT_POST, 'email');
-        $users->password = filter_input(INPUT_POST, 'password');
+        $users->password = bcrypt (filter_input(INPUT_POST, 'password'));
         $users->genero = filter_input(INPUT_POST, 'genero');
         $users->nacimiento = filter_input(INPUT_POST, 'nacimiento');
         $users->ciudad = filter_input(INPUT_POST, 'ciudad');
         $users->pais = filter_input(INPUT_POST, 'pais');
         $users->intereses_edu = filter_input(INPUT_POST, 'intereses_edu');
         $users->save();
-        return redirect('ventana_educativa');
+        return $this->enviaCorreoActivacion($users->email, md5($users->password));
+//        return redirect('ventana_educativa');
     }
     
     public function presentacion() {
@@ -37,4 +39,27 @@ class VentanaController extends Controller {
     public function registro() {
         return view('viewVentana/registroVentana');
     }
+    
+    public function enviaCorreoActivacion($correo, $hash) {
+        Mail::send('viewVentana.emails.activacion', 
+                    ['correo' => $correo, 'hash' => $hash], 
+                    function ($m) use ($correo) {
+                        $m->from('ventana@televisioneducativa.gob.mx', 'Ventana Educativa');
+                        $m->to($correo)->subject('Activación de correo!');
+                    });
+        return view('viewVentana/correoEnviado');
+    }
+    
+    public function activaCorreo (Request $request, $correo, $hash){
+        $user = \App\User::where('email', '=', $correo)->first();
+
+        if (md5($user->password) == $hash) {
+            $user->activo = 1;
+            $user->save();
+            return view ('viewVentana/activacionCorrecta');
+        } else {
+            print 'error';
+        }
+    }     
+    
 }

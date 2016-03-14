@@ -26,7 +26,7 @@ and open the template in the editor.
 
         <link rel="stylesheet" href="css/red/ihover.css">  
         <link rel="stylesheet" href="css/red/animate.css">
-    <link type="text/css" rel="stylesheet" href="http://onlinehtmltools.com/tab-generator/skins/skin3/bottom.css">
+    <!--<link type="text/css" rel="stylesheet" href="http://onlinehtmltools.com/tab-generator/skins/skin3/bottom.css">-->
 
         <link rel="stylesheet" href="css/ventana/estiloventana2.css">  
         <link rel="stylesheet" href="css/ventana/estiloventana3.css"> 
@@ -52,7 +52,7 @@ and open the template in the editor.
         <!--script src="js/ventana/bootstrap-datepicker.js" type="text/javascript"></script-->
         
         <!--script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.10/jquery-ui.min.js"></script--> <!-- efecto skin3 mení pie-->
-        <!--script type="text/javascript" src="http://onlinehtmltools.com/tab-generator/skinable_tabs.min.js"></script--> <!-- efecto skin3 mení pie-->
+        <!--<script type="text/javascript" src="http://onlinehtmltools.com/tab-generator/skinable_tabs.min.js"></script>  efecto skin3 mení pie-->
     </head>
     <body>        
         <header>

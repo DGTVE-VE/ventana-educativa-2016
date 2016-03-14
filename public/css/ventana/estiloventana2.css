@@ -115,8 +115,23 @@ body{
 }
 
 .fondoRegistro{
-    background: rgba(0, 0, 0, .2) !important; 
-    margin-top: 11% !important;
+    background: rgba(0, 0, 0, .3) !important; 
+    margin-top: 20% !important;
+    width: 320px;
+    height: 230px;
+}
+
+.fondoRegistro:after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    margin-left: 284px;
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    border-bottom: 12px solid rgba(0, 0, 0, .3) !important;
+    margin-top: -234px;
+      
 }
 .menuVentanaApps{
     background: rgba(255, 255, 255, .5) !important; 
@@ -171,15 +186,15 @@ body{
 
 /*search*/
 .search-form .form-group {
-  float: left !important;
-  transition: all 0.35s, border-radius 0s;
-  width: 32px;
-  height: 32px;
-  background-color: #fff;
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
-  border-radius: 25px;
-  border: 1px solid #ccc;
-  margin-top: 5%;
+    float: left !important;
+    transition: all 0.35s, border-radius 0s;
+    width: 32px;
+    height: 32px;
+    background-color: #fff;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+    border-radius: 25px;
+    border: 1px solid #ccc;
+    margin-top: 5%;
 }
 
 .libuscar{
@@ -197,45 +212,45 @@ body{
     color: black;
 }
 .search-form .form-group input.form-control {
-  padding:0 0 5px 30px;
-  border: 0 none;
-  background: transparent;
-  box-shadow: none;
-  display:block;
+    padding:0 0 5px 30px;
+    border: 0 none;
+    background: transparent;
+    box-shadow: none;
+    display:block;
 }
 .search-form .form-group input.form-control::-webkit-input-placeholder {
-  display: none;
+    display: none;
 }
 .search-form .form-group input.form-control:-moz-placeholder {
-  /* Firefox 18- */
-  display: none;
+    /* Firefox 18- */
+    display: none;
 }
 .search-form .form-group input.form-control::-moz-placeholder {
-  /* Firefox 19+ */
-  display: none;
+    /* Firefox 19+ */
+    display: none;
 }
 .search-form .form-group input.form-control:-ms-input-placeholder {
-  display: none;
+    display: none;
 }
 .search-form .form-group:hover,
 .search-form .form-group.hover {
-  width: 100%;
-  border-radius: 25px 25px 25px 25px;
+    width: 100%;
+    border-radius: 25px 25px 25px 25px;
 }
 .search-form .form-group span.form-control-feedback {
-  position: absolute;
-  top: -1px;
-  right: -2px;
-  z-index: 2;
-  display: block;
-  width: 34px;
-  height: 34px;
-  line-height: 34px;
-  text-align: center;
-  color: #000;
-  right: initial;
-  font-size: 14px;
-  padding:0 0 20px 0;
+    position: absolute;
+    top: -1px;
+    right: -2px;
+    z-index: 2;
+    display: block;
+    width: 34px;
+    height: 34px;
+    line-height: 34px;
+    text-align: center;
+    color: #000;
+    right: initial;
+    font-size: 14px;
+    padding:0 0 20px 0;
 }
 
 /*fin search*/
@@ -248,39 +263,58 @@ body{
     font-family: Ubuntu;
 }
 
-    .divApp{
-        /*background: rgba(255, 255, 255, .5) !important;*/  
-        padding: 10px;        
-    }
-    .divApp .img-responsive{
-        margin: 0 auto;
-    }
+.divApp{
+    /*background: rgba(255, 255, 255, .5) !important;*/  
+    padding: 10px;        
+}
+.divApp .img-responsive{
+    margin: 0 auto;
+}
 
-    .imgLogo{
-        width: 80%;
-        height: 80%;
-        margin-top: 5%;
-    }
-    
-    .frmRegistro{
-        background: rgba(0, 0, 0, .3);
-        margin-top: 5%;
-        color: white;
-        font-family: Ubuntu;
-    }
-    
-    .frmRegistro input{
-        border-radius: 15px 15px 15px 15px;
-    }
-    
-        .frmRegistro select{
-        border-radius: 15px 15px 15px 15px;
-    }
+.imgLogo{
+    width: 80%;
+    height: 80%;
+    margin-top: 5%;
+}
 
-    .tituloRegistro{
-        font-weight: bold;
-        margin-top: 2%;
-    }
-    .inputLogin{
-        border-radius: 15px 15px 15px 15px;
-    }
+.frmRegistro{
+    background: rgba(0, 0, 0, .3);
+    margin-top: 5%;
+    color: white;
+    font-family: Ubuntu;
+}
+
+.frmRegistro input{
+    border-radius: 15px 15px 15px 15px;
+}
+
+.frmRegistro select{
+    border-radius: 15px 15px 15px 15px;
+}
+
+.tituloRegistro{
+    font-weight: bold;
+    margin-top: 2%;
+}
+.inputLogin{
+    border-radius: 15px 15px 15px 15px;
+}
+
+#login-submit{
+    background-color: #ccc;
+
+    border-radius: 25px 25px 25px 25px;
+}
+
+#login-submit:hover{
+    background-color: #888;
+    border: 1px solid white;
+    color: #000 !important;
+}
+
+@media (min-width: 765px) {
+
+}
+@media (min-width: 1330px) {
+   
+}
