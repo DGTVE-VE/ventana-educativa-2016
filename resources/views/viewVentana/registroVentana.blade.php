@@ -65,7 +65,7 @@ Ventana Educativa
                     <select required name="ciudad" class="input-medium bfh-states form-control" data-country="countries_states1"></select>
                 </div>
             </div>
-            <div class="modal-footer">
+            <div class="form-group col-md-12 text-center">
                 <button type="button" data-dismiss="modal" class="btn btn-danger">Cancelar</button>
                 <button id="btnEnviar" type="submit" class="btn btn-default btn-success">Enviar</button>
             </div>

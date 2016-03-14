@@ -60,6 +60,5 @@ class VentanaController extends Controller {
         } else {
             print 'error';
         }
-    }     
-    
+    }            
 }
