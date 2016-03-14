@@ -27,23 +27,35 @@
 	position: relative;
 	margin-bottom:0px;
 	padding:0px;
+        -webkit-transition: all .5s ease;
+-moz-transition: all .8s ease;
+-ms-transition: all .8s ease;
+-o-transition: all .8s ease;
+transition: all .8s ease;
 }
 .f1{
 	padding:0px;
+ 
 }
 .f1 > div {
     display: none;
 	padding:20px;
+        
 }
 
 .f1:hover >div {
     display: block;
-    line-height: 150px;
+    line-height: 30px;
     position: relative;
     text-align: center;
     text-decoration: none;
     background: rgba(0, 0, 0, 0.3);
-   
+    -webkit-transition: all .5s ease;
+-moz-transition: all .8s ease;
+-ms-transition: all .8s ease;
+-o-transition: all .8s ease;
+transition: all .8s ease;
+
 }
 
 #imagen-tve {
@@ -110,7 +122,6 @@
 }
 .cambiacolorredesSociales{
     color: #fff;
-        
 }
 
 #ct:hover{
@@ -122,19 +133,24 @@
 #cy:hover{
     color:#E62117;
 }
+
+
 .txtPestana{
 	position: relative;
 	top:15px;
         color:#fff;
+      
  }
 
 .fondoColabora{
 	width:200px;
-	height:50px;
+	height:30px;
 	padding-left:20px;
 	border-bottom: 50px solid rgba(0, 0, 0, 0.3); 
 	border-right: 35px solid transparent;
+
 }
 .fondoColabora>a{
     text-decoration: none;
+    
 }
