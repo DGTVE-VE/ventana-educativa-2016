@@ -1,11 +1,11 @@
 <div class="row">
-    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 tabs_holder f1 navbar-fixed-bottom">
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 tabs_holder f1 navbar-fixed-bottom" >
 
         <ul>
-            <li ><div class="fondoColabora"><a href="#"><p class="txtPestana ">COLABORADORES</p></a></div></li>
+            <li><div class="fondoColabora"><a href="#"><p class="txtPestana ">COLABORADORES</p></a></div></li>
         </ul>
         <div class="row " id="efectobarramenu">
-            <table class="table" style=" border-top-style: none !important;">
+            <table class="table tablaCOlaboradores" style=" border-top-style: none !important;">
                 <tr>
                     <td>
                         <a href=" http://www.gob.mx/sep" target="_blank" onMouseOver="document.MyImage0.src = 'imagenes/ventana/pieventana/sepcolor.png';"

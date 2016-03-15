@@ -52,7 +52,7 @@
                             <a class="" href="#"><img class="img-responsive" src="imagenes/ventana/encabezado/appIdiomas.png"></a>
                             <label class="etiquetaApp text-center">Idiomas</label>
                         </td>
-                        </tr>
+                    </tr>
                     <tr>
                         <td class="divApp centered">
                             <a class="" href="#"><img class="img-responsive" src="imagenes/ventana/encabezado/appMediateca.png"></a>
@@ -69,11 +69,12 @@
                     </tr>
                     <tr>
                         <td></td>
-                        <td></td>
-                        <td class="divApp centered">
+                        <td class="divApp centered center-block">
                             <a class="" href="#"><img src="imagenes/ventana/encabezado/appVOD.png"></a><br>
                             <label class="etiquetaApp text-center">VOD</label>
                         </td>                        
+                        <td></td>
+
                     </tr>                      
                 </table>                                       
             </ul>
@@ -144,26 +145,59 @@
                         <img class="imgLogo"  src="imagenes/ventana/encabezado/iconoApps.png">
                     </div>
                     <ul class="dropdown-menu">
-                        <table class="table table-bordered">
+                        <table class="">
                             <tr>
-                                <td class="centered">
+                                <td class="divApp centered">
                                     <a class="text-center" href="ventana_educativa"><img src="imagenes/ventana/encabezado/appVentana.png" class="img-responsive"></a>
                                     <label class="etiquetaApp text-center">Ventana Educativa</label>
                                 </td>
-                                <td class="centered">
+                                <td class="divApp centered">
                                     <a class="text-center" href="http://redmite.televisioneducativa.gob.mx/" target="_blank"><img src="imagenes/ventana/encabezado/appRed.png" class="img-responsive"></a>
-                                    <label class="etiquetaApp text-center">Red  Mesoamericana</label>
+                                    <label class="etiquetaApp text-center">Red <br> Mesoamericana</label>
                                 </td>
-                                <td class="centered">
+                                <td class="divApp centered">
                                     <a class="text-center" href="http://mx.televisioneducativa.gob.mx" target="_blank"><img src="imagenes/ventana/encabezado/appMexico.png" class="img-responsive"></a>
                                     <label class="etiquetaApp text-center">MéxicoX</label>
-                                </td>                             
-                                <td class="centered">
+                                </td>                            
+                            </tr>
+                            <tr>
+                                <td class="divApp centered" style="vertical-align:middle !important;">
                                     <a class="text-center" target="_blank" href="http://www.ibe.tv/es/canal/iberoamericano/756/Iberoam%C3%A9rica-al-d%C3%ADa-1032016.htm"><img class="img-responsive" src="imagenes/ventana/encabezado/appIbero.png"></a>
-                                    <label class="etiquetaApp text-center">CanalIberoamericano</label>
-                                </td>                      
+                                    <label class="etiquetaApp text-center">Canal <br> Iberoamericano</label>
+                                </td>
+                                <td class="divApp centered">
+                                    <a class="" href="#"><img class="img-responsive" src="imagenes/ventana/encabezado/appDocentes.png"></a>
+                                    <label class="etiquetaApp text-center center-block">Docentes</label>
+                                </td>
+                                <td class="divApp centered">
+                                    <a class="" href="#"><img class="img-responsive" src="imagenes/ventana/encabezado/appIdiomas.png"></a>
+                                    <label class="etiquetaApp text-center">Idiomas</label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="divApp centered">
+                                    <a class="" href="#"><img class="img-responsive" src="imagenes/ventana/encabezado/appMediateca.png"></a>
+                                    <label class="etiquetaApp text-center center-block">Mediateca</label>
+                                </td>
+                                <td class="divApp centered">
+                                    <a class="" href="#"><img class="img-responsive" src="imagenes/ventana/encabezado/appPadres.png"></a>
+                                    <label class="etiquetaApp text-center center-block">Padres</label>
+                                </td>
+                                <td class="divApp centered">
+                                    <a class="" href="#"><img class="img-responsive" src="imagenes/ventana/encabezado/appPrimaria.png"></a>
+                                    <label class="etiquetaApp text-center">Primaria</label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td class="divApp centered center-block">
+                                    <a class="" href="#"><img src="imagenes/ventana/encabezado/appVOD.png"></a><br>
+                                    <label class="etiquetaApp text-center">VOD</label>
+                                </td>                        
+                                <td></td>
+
                             </tr>                      
-                        </table> 
+                        </table>             
                     </ul>
                 </li>
                 <li class="dropdown">
@@ -205,13 +239,14 @@
                     </ul>
                 </li>
                 <li>
-                        <h5 style="color: white;">Buscar</h5>
-                        <form action="">
-                                <label for="search" class="sr-only">Buscar</label>
-                                <input type="text" class="form-control" name="buscar" id="buscar" placeholder="buscar">
-                                <span class="glyphicon glyphicon-search form-control-feedback"></span>
-                        </form>
+                    <h5 style="color: white;">Buscar</h5>
+                    <form action="">
+                        <label for="search" class="sr-only">Buscar</label>
+                        <input type="text" class="form-control" name="buscar" id="buscar" placeholder="buscar">
+                        <span class="glyphicon glyphicon-search form-control-feedback"></span>
+                    </form>
                 </li>
             </ul>
         </div><!--/.nav-collapse -->
     </div>
+</div>
