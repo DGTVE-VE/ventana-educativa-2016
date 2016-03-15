@@ -5,7 +5,7 @@
             <li><div class="fondoColabora"><a href="#"><p class="txtPestana ">COLABORADORES</p></a></div></li>
         </ul>
         <div class="row " id="efectobarramenu">
-            <table class="table" style=" border-top-style: none !important;">
+            <table class="table tablaCOlaboradores" style=" border-top-style: none !important;">
                 <tr>
                     <td>
                         <a href=" http://www.gob.mx/sep" target="_blank" onMouseOver="document.MyImage0.src = 'imagenes/ventana/pieventana/sepcolor.png';"

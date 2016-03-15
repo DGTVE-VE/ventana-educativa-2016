@@ -102,3 +102,7 @@ body{background:url(../../imagenes/ventana/background/BackgroundDefault.jpg) no-
     }
 
 }
+
+.tablaCOlaboradores td {
+    border: 0px !important;
+}
