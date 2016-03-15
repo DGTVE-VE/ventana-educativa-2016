@@ -66,55 +66,62 @@ Ventana Educativa
                 </div>
             </div>
             <div class="form-group col-md-12 text-center">
-                <button type="button" data-dismiss="modal" class="btn btn-danger">Cancelar</button>
-                <button id="btnEnviar" type="submit" class="btn btn-default btn-success">Enviar</button>
+                <div class="col-md-4"></div>
+                <div class="col-md-1">                    
+                    <button type="button" data-dismiss="modal" class="btn btn-danger">Cancelar</button>
+                </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-1">
+                    <button id="btnEnviar" type="submit" class="btn btn-default btn-success">Enviar</button>
+                    <div>
+                        <div class="col-md-4"></div>
+                    </div>
+                    </form>
+                </div>
             </div>
-        </form>
-    </div>
-</div>
 
-<script>
-    /************ Valida correo existente en el formulario ****************************************************/
-    function muestraError (flag){
-        console.log ('entro a cambiar clase');
-        if (flag){            
-            document.getElementById ('email').style.backgroundColor ='lightpink' ;
-            document.getElementById ('mensaje-error').innerText = 'El correo ya existe';
-            document.getElementById ('btnEnviar').disabled = true;
-        } else {
-            document.getElementById ('email').style.backgroundColor ='white' ;
-            document.getElementById ('mensaje-error').innerText = '';
-            document.getElementById ('btnEnviar').disabled = false;
-        }        
-    }
-    
-    function loadDoc(url) {
-        var xhttp = new XMLHttpRequest();
-        xhttp.onreadystatechange = function () {
-            if (xhttp.readyState == 4 && xhttp.status == 200) {                
-                if (xhttp.responseText != 'null'){ // el correo ya existe
-                    muestraError (true);
-                } else {
-                    muestraError (false);
+            <script>
+                /************ Valida correo existente en el formulario ****************************************************/
+                function muestraError(flag) {
+                    console.log('entro a cambiar clase');
+                    if (flag) {
+                        document.getElementById('email').style.backgroundColor = 'lightpink';
+                        document.getElementById('mensaje-error').innerText = 'El correo ya existe';
+                        document.getElementById('btnEnviar').disabled = true;
+                    } else {
+                        document.getElementById('email').style.backgroundColor = 'white';
+                        document.getElementById('mensaje-error').innerText = '';
+                        document.getElementById('btnEnviar').disabled = false;
+                    }
                 }
-            }
-        };
-        xhttp.open("GET", url, true);
-        xhttp.send();
-    }
-    $( "#email" ).focusout(function() {
-        var _url = '{{url('user/exist')}}' + '/' + $('#email').val();
-        console.log(_url);
-        loadDoc (_url);
-    });
-    $( "#email" ).on('input', function() {
-        muestraError (false);
-    });
-/************ Valida correo existente en el formulario ****************************************************/
-</script>
+
+                function loadDoc(url) {
+                    var xhttp = new XMLHttpRequest();
+                    xhttp.onreadystatechange = function () {
+                        if (xhttp.readyState == 4 && xhttp.status == 200) {
+                            if (xhttp.responseText != 'null') { // el correo ya existe
+                                muestraError(true);
+                            } else {
+                                muestraError(false);
+                            }
+                        }
+                    };
+                    xhttp.open("GET", url, true);
+                    xhttp.send();
+                }
+                $("#email").focusout(function () {
+                    var _url = '{{url('user / exist')}}' + '/' + $('#email').val();
+                    console.log(_url);
+                    loadDoc(_url);
+                });
+                $("#email").on('input', function () {
+                    muestraError(false);
+                });
+                /************ Valida correo existente en el formulario ****************************************************/
+            </script>
 
 
-@endsection
-@section('pieVentana')
-@include('viewVentana.pieVentana')
-@endsection
+            @endsection
+            @section('pieVentana')
+            @include('viewVentana.pieVentana')
+            @endsection
