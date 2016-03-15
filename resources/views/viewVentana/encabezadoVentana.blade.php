@@ -83,7 +83,7 @@
             <div class=" divli dropdown-toggle" data-toggle="dropdown">
                 <div class="fotoUsuario text-center">R</div>
             </div>
-            <ul class="dropdown-menu fondoRegistro">
+<!--            <ul class="dropdown-menu fondoRegistro">
                 <li class="panel-body">
                     <div class="row">
                         <div class="col-lg-12 col-md-12">
@@ -121,7 +121,7 @@
                         </div>
                     </div>
                 </li>
-            </ul>
+            </ul>-->
         </li>
     </ul>
     <!--</div>-->
@@ -204,7 +204,7 @@
                     <div class="dropdown-toggle" data-toggle="dropdown">
                         <div class="fotoUsuario text-center">R</div>
                     </div>
-                    <ul class="dropdown-menu">
+<!--                    <ul class="dropdown-menu">
                         @if (Auth::guest ())
                         <form id="login-form" action="sessions" method="POST" role="form" style="display: block;">
                             <input type="hidden" name="_token" value="{{ csrf_token() }}" />
@@ -246,7 +246,7 @@
                         <span class="glyphicon glyphicon-search form-control-feedback"></span>
                     </form>
                 </li>
-            </ul>
+            </ul>-->
         </div><!--/.nav-collapse -->
     </div>
 </div>
