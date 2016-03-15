@@ -469,7 +469,6 @@
         </div>
     </div>
 </div>
-=======
 		<div class="container-fluid">
 		    <div class="row">
 				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="padding:30px;">
@@ -645,4 +644,4 @@
 				</div>
 			</div>
         </div>
->>>>>>> 44a1f0562762a0c1c0ff00abd861f7c0e4ee35f6
+
