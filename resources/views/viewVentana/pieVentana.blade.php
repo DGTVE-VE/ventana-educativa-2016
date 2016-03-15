@@ -33,8 +33,8 @@
                     </td>
                     <td>
                         <a href=" https://www.unah.edu.hn/va" target="_blank" onMouseOver="document.MyImage4.src = 'imagenes/ventana/pieventana/unahcolor.png';"
-                           onMouseOut="document.MyImage4.src = 'imagenes/ventana/pieventana/unah.png';">
-                            <img class="img-responsive" src="imagenes/ventana/pieventana/unah.png" style="margin-left: 30% !important;" name="MyImage4">
+                           onMouseOut="document.MyImage4.src = 'imagenes/ventana/pieventana/logounah.png';">
+                            <img class="img-responsive" src="imagenes/ventana/pieventana/logounah.png" style="margin-left: 30% !important;" name="MyImage4">
                         </a> 
                     </td>
                     <td>
