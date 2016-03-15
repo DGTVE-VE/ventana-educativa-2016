@@ -282,7 +282,7 @@
 						<area shape="poly" coords="0,388,388,0,840,388,420,820" /> <!--onmouseover="cambiaImgFoto('03')" onmouseout="cambiaImgCubo('03')" -->
 					</map>
 					<a href="#" target="_blank">
-						<img id="iconoRombo02" class="imgColor oculta difumina Intervalo3 slideInLeft" src="imagenes/ventana/iconoSeccion/idiomas.png" onmouseover="cambiaImgFoto('02')" onmouseout="cambiaImgCubo('02')" style="width:60%; height:60%; position: absolute; top: 110%; left:65%; z-index:3; visibility:hidden;"/>
+						<img id="iconoRombo02" class="imgColor oculta difumina Intervalo3 slideInLeft" src="imagenes/ventana/iconoSeccion/idiomas.png" onmouseover="cambiaImgFoto('02')" onmouseout="cambiaImgCubo('02')" style="width:60%; height:60%; position: absolute; top: 110%; left:60%; z-index:3; visibility:hidden;"/>
 					</a>
 					<div class="contieneTxt oculta difumina Intervalo3 slideInLeft" onmouseover="cambiaImgFoto('02')" onmouseout="cambiaImgCubo('02')" style="position:absolute; top:165%; left:55%; Z-index:10;">
 						<p class="visible-lg-inline txtHomeLg">Idiomas</p>
@@ -320,7 +320,7 @@
 						<area shape="poly" coords="0,0,488,0,0,488" onmouseover="cambiaImgFoto('04')" onmouseout="cambiaImgCubo('04')" href="#"/>
 					</map>
 					<a href="#" target="_blank">
-						<img id="iconoRombo05" class="imgColor oculta difumina Intervalo1 slideInLeft" src="imagenes/ventana/iconoSeccion/primaria.png" onmouseover="cambiaImgFoto('05')" onmouseout="cambiaImgCubo('05')" style="width:60%; height:60%; position: absolute; top: 35%; left:40%; z-index:4; visibility:hidden;"/>
+						<img id="iconoRombo05" class="imgColor oculta difumina Intervalo1 slideInLeft" src="imagenes/ventana/iconoSeccion/primaria.png" onmouseover="cambiaImgFoto('05')" onmouseout="cambiaImgCubo('05')" style="width:60%; height:60%; position: absolute; top: 35%; left:35%; z-index:4; visibility:hidden;"/>
 					</a>
 					<div id="iconoRombo05" class="contieneTxt oculta difumina Intervalo1 slideInLeft" onmouseover="cambiaImgFoto('05')" onmouseout="cambiaImgCubo('05')" style="position:absolute; top:95%; left:30%; Z-index:10;">
 						<p class="visible-lg-inline txtHomeLg">Primaria</p>
