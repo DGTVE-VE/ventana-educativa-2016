@@ -76,9 +76,10 @@ Ventana Educativa
                     <div>
                         <div class="col-md-4"></div>
                     </div>
-                    </form>
+                    
                 </div>
             </div>
+            </form>
 
             <script>
                 /************ Valida correo existente en el formulario ****************************************************/
