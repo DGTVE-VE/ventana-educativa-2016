@@ -7,11 +7,11 @@
 			filter: blur(3px);
 		}
 		.txtHomeLg{
-			font-size:1.8em;
+			font-size:1.4em;
 			font-family: 'Ubuntu';
 		}
 		.txtHomeMd{
-			font-size:1.3em;
+			font-size:1.2em;
 			font-family: 'Ubuntu';
 		}
 		.txtHomeSm{
@@ -284,7 +284,7 @@
 					<a href="#" target="_blank">
 						<img id="iconoRombo02" class="imgColor oculta difumina Intervalo3 slideInLeft" src="imagenes/ventana/iconoSeccion/idiomas.png" onmouseover="cambiaImgFoto('02')" onmouseout="cambiaImgCubo('02')" style="width:60%; height:60%; position: absolute; top: 110%; left:60%; z-index:3; visibility:hidden;"/>
 					</a>
-					<div class="contieneTxt oculta difumina Intervalo3 slideInLeft" onmouseover="cambiaImgFoto('02')" onmouseout="cambiaImgCubo('02')" style="position:absolute; top:165%; left:55%; Z-index:10;">
+					<div class="contieneTxt oculta difumina Intervalo3 slideInLeft text-center" onmouseover="cambiaImgFoto('02')" onmouseout="cambiaImgCubo('02')" style="width: 100%; position:absolute; top:165%; left:35%; Z-index:10;">
 						<p class="visible-lg-inline txtHomeLg">Idiomas</p>
 						<p class="visible-md-inline txtHomeMd">Idiomas</p>
 						<p class="visible-sm-inline txtHomeSm">Idiomas</p>
@@ -301,7 +301,7 @@
 					<a href="#" target="_blank">
 						<img id="iconoRombo04" class="imgColor oculta difumina Intervalo2 slideInLeft" src="imagenes/ventana/iconoSeccion/padres.png" onmouseover="cambiaImgFoto('04')" onmouseout="cambiaImgCubo('04')" style="width:60%; height:60%; position: absolute; top: 150%; left:40%; z-index:3; visibility:hidden;"/>
 					</a>
-					<div id="iconoRombo04" class="contieneTxt oculta difumina Intervalo2 slideInLeft" onmouseover="cambiaImgFoto('04')" onmouseout="cambiaImgCubo('04')" style="position:absolute; top:210%; left:40%; Z-index:10;">
+					<div id="iconoRombo04" class="contieneTxt oculta difumina Intervalo2 slideInLeft text-center" onmouseover="cambiaImgFoto('04')" onmouseout="cambiaImgCubo('04')" style="width: 100%; position:absolute; top:210%; left:20%; Z-index:10;">
 						<p class="visible-lg-inline txtHomeLg">Padres</p>
 						<p class="visible-md-inline txtHomeMd">Padres</p>
 						<p class="visible-sm-inline txtHomeSm">Padres</p>
@@ -322,7 +322,7 @@
 					<a href="#" target="_blank">
 						<img id="iconoRombo05" class="imgColor oculta difumina Intervalo1 slideInLeft" src="imagenes/ventana/iconoSeccion/primaria.png" onmouseover="cambiaImgFoto('05')" onmouseout="cambiaImgCubo('05')" style="width:60%; height:60%; position: absolute; top: 35%; left:35%; z-index:4; visibility:hidden;"/>
 					</a>
-					<div id="iconoRombo05" class="contieneTxt oculta difumina Intervalo1 slideInLeft" onmouseover="cambiaImgFoto('05')" onmouseout="cambiaImgCubo('05')" style="position:absolute; top:95%; left:30%; Z-index:10;">
+					<div id="iconoRombo05" class="contieneTxt oculta difumina Intervalo1 slideInLeft text-center" onmouseover="cambiaImgFoto('05')" onmouseout="cambiaImgCubo('05')" style="width: 100%; position:absolute; top:95%; left:15%; Z-index:10;">
 						<p class="visible-lg-inline txtHomeLg">Primaria</p>
 						<p class="visible-md-inline txtHomeMd">Primaria</p>
 						<p class="visible-sm-inline txtHomeSm">Primaria</p>
@@ -331,7 +331,7 @@
 					<a href="#" target="_blank">
 						<img id="iconoRombo06" class="imgColor oculta difumina Intervalo1 slideInLeft" src="imagenes/ventana/iconoSeccion/vod.png" onmouseover="cambiaImgFoto('06')" onmouseout="cambiaImgCubo('06')" style="width:60%; height:60%; position: absolute; top: 190%; left:45%; z-index:4; visibility:hidden;"/>
 					</a>
-					<div id="iconoRombo06" class="contieneTxt oculta difumina Intervalo1 slideInLeft" onmouseover="cambiaImgFoto('06')" onmouseout="cambiaImgCubo('06')" style="position:absolute; top:250%; left:50%; Z-index:10;">
+					<div id="iconoRombo06" class="contieneTxt oculta difumina Intervalo1 slideInLeft text-center" onmouseover="cambiaImgFoto('06')" onmouseout="cambiaImgCubo('06')" style="width: 100%; position:absolute; top:250%; left:20%; Z-index:10;">
 						<p class="visible-lg-inline txtHomeLg">VOD</p>
 						<p class="visible-md-inline txtHomeMd">VOD</p>
 						<p class="visible-sm-inline txtHomeSm">VOD</p>
@@ -365,7 +365,7 @@
 					<a href="#" target="_blank">
 						<img id="iconoRombo08" class="imgColor oculta difumina Intervalo1 slideInRight" src="imagenes/ventana/iconoSeccion/docentes.png" onmouseover="cambiaImgFoto('08')" onmouseout="cambiaImgCubo('08')" style="width:60%; height:60%; position: absolute; top: 30%; left:40%; z-index:4; visibility:hidden;"/>
 					</a>
-					<div id="iconoRombo08" class="contieneTxt oculta difumina Intervalo1 slideInRight" onmouseover="cambiaImgFoto('08')" onmouseout="cambiaImgCubo('08')" style="position:absolute; top:90%; left:30%; Z-index:10;">
+					<div id="iconoRombo08" class="contieneTxt oculta difumina Intervalo1 slideInRight text-center" onmouseover="cambiaImgFoto('08')" onmouseout="cambiaImgCubo('08')" style="width: 100%; position:absolute; top:90%; left:20%; Z-index:10;">
 						<p class="visible-lg-inline txtHomeLg">Docentes</p>
 						<p class="visible-md-inline txtHomeMd">Docentes</p>
 						<p class="visible-sm-inline txtHomeSm">Docentes</p>
@@ -374,11 +374,11 @@
 					<a href="#" target="_blank">
 						<img id="iconoRombo09" class="imgColor oculta difumina Intervalo1 slideInRight" src="imagenes/ventana/iconoSeccion/mediateca.png" onmouseover="cambiaImgFoto('09')" onmouseout="cambiaImgCubo('09')" style="width:60%; height:60%; position: absolute; top: 187%; left:40%; z-index:4; visibility:hidden;"/>
 					</a>
-					<div id="iconoRombo09" class="contieneTxt oculta difumina Intervalo1 slideInRight" onmouseover="cambiaImgFoto('09')" onmouseout="cambiaImgCubo('09')" style="position:absolute; top:245%; left:30%; Z-index:10;">
-						<p class="visible-lg-inline txtHomeLg">Mediateca</p>
-						<p class="visible-md-inline txtHomeMd">Mediateca</p>
-						<p class="visible-sm-inline txtHomeSm">Mediateca</p>
-						<p class="visible-xs-inline txtHomeXs" style="position: relative; top:-10px; left:-7px;">Mediateca</p>
+					<div id="iconoRombo09" class="contieneTxt oculta difumina Intervalo1 slideInRight text-center" onmouseover="cambiaImgFoto('09')" onmouseout="cambiaImgCubo('09')" style="width: 100%; position:absolute; top:245%; left:20%; Z-index:10;">
+						<p class="visible-lg-block txtHomeLg">Mediateca</p>
+						<p class="visible-md-block txtHomeMd">Mediateca</p>
+						<p class="visible-sm-block txtHomeSm">Mediateca</p>
+						<p class="visible-xs-block txtHomeXs" style="position: relative; top:-10px; left:-7px;">Mediateca</p>
 					</div>
 				</div>
 				<div class="col-xs-1 col-sm-1 col-md-1 col-lg-1" style="padding-top: 8.2%; padding-left:0px; padding-right:0px;">
@@ -410,7 +410,7 @@
 						<area shape="poly" coords="0,460,0,920,430,920" /><!--onmouseover="cambiaImgFoto('12')" onmouseout="cambiaImgCubo('12')" -->
 					</map>
 					<a href="http://mx.televisioneducativa.gob.mx/" target="_blank">
-						<img id="iconoRombo13" class="imgColor oculta difumina Intervalo4 slideInRight" src="imagenes/ventana/iconoSeccion/mexicoxBco.png" onmouseover="cambiaImgFoto('13')" onmouseout="cambiaImgCubo('13')" style="width:90%; height:35%; position: absolute; top: 155%; left:-15%; z-index:3; visibility:hidden;"/>
+						<img id="iconoRombo13" class="imgColor oculta difumina Intervalo4 slideInRight" src="imagenes/ventana/iconoSeccion/mexicoxBco.png" onmouseover="cambiaImgFoto('13')" onmouseout="cambiaImgCubo('13')" style="width:90%; height:30%; position: absolute; top: 160%; left:-15%; z-index:3; visibility:hidden;"/>
 					</a>
 				</div>
 				<div class="col-xs-1 col-sm-1 col-md-1 col-lg-1 derechaSociales" style="padding-top: 8.9%; padding-left:0; padding-right:0;">
