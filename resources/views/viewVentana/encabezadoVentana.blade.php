@@ -79,7 +79,7 @@
                 </table>                                       
             </ul>
         </li>
-        <li class="dropdown">
+        <li id="li-R"  class="dropdown">
             <div class=" divli dropdown-toggle" data-toggle="dropdown">
                 <div class="fotoUsuario text-center">R</div>
             </div>
@@ -113,10 +113,30 @@
                                     </div>
                                 </div>
                             </form>
-                            @else
-                            loggeado
-                            {{Auth::user()->email}}
-                            <a href="logout" tabindex="5" style="color: white;" class="forgot-password">Cerrar Sesión</a>
+                            @else                            
+                            Iniciaste sesión como: {{Auth::user()->email}}                            
+                            <div>
+                                <!--<div id="link-cambia-avatar"> Cambiar Avatar</div>-->
+                                <button id="link-cambia-avatar" type="button">Cambiar avatar</button>
+                                <!--<a id="link-cambia-avatar" href="#" tabindex="5" style="color: white;" class="forgot-password">Cambiar imagen</a>-->
+                                <div id="form-avatar" class="hidden" >
+                                    <form id="uploadimage" action="" method="POST" enctype="multipart/form-data">
+                                        <input type="hidden" name="_token" value="{{ csrf_token() }}" />
+                                        <div id="image_preview"><img height="100px" id="previewing" src="noimage.png" /></div>
+                                        <hr id="line">
+                                        <div id="selectImage">
+                                            <label>Selecciona tu imagen</label><br/>
+                                            <input type="file" name="image" id="file" required />
+                                            <input type="submit" value="Upload" class="submit" />
+                                        </div>                                        
+                                    </form>
+                                    <h4 id='loading' >Cargando...</h4>
+                                    <div id="message"></div>
+                                </div>
+                            </div>
+                            <div>
+                                <a href="logout" tabindex="5" style="color: white;" class="forgot-password">Cerrar Sesión</a>
+                            </div>
                             @endif
                         </div>
                     </div>
@@ -250,3 +270,70 @@
         </div><!--/.nav-collapse -->
     </div>
 </div>
+
+<script>
+    
+    /************ CAMBIAR AVATAR **************/
+    $(document).ready(function (e) {
+        $("#link-cambia-avatar").click(function(e) {
+            e.preventDefault();
+            e.stopPropagation();
+            $("#form-avatar").removeClass('hidden');
+            
+        });
+        $("#uploadimage").on('submit', (function (e) {
+            e.preventDefault();
+            $("#message").empty();
+            $('#loading').show();
+            $.ajax({
+                url: "cambiaAvatar", // Url to which the request is send
+                type: "POST", // Type of request to be send, called as method
+                data: new FormData(this), // Data sent to server, a set of key/value pairs (i.e. form fields and values)
+                contentType: false, // The content type used when sending data to the server.
+                cache: false, // To unable request pages to be cached
+                processData: false, // To send DOMDocument or non processed data file it is set to false
+                success: function (data)   // A function to be called if request succeeds
+                {
+                    $('#loading').hide();
+                    $("#form-avatar").addClass('hidden');
+                    $("#message").html(data);
+                },
+                error: function ( data )
+                {
+                    console.log (data);
+                }
+            });
+        }));
+
+// Function to preview image after validation
+        $(function () {
+            $("#file").change(function () {
+                $("#message").empty(); // To remove the previous error message
+                var file = this.files[0];
+                var imagefile = file.type;
+                var match = ["image/jpeg", "image/png", "image/jpg"];
+                if (!((imagefile == match[0]) || (imagefile == match[1]) || (imagefile == match[2])))
+                {
+                    $('#previewing').attr('src', 'noimage.png');
+                    $("#message").html("<p id='error'>Please Select A valid Image File</p>" + "<h4>Note</h4>" + "<span id='error_message'>Only jpeg, jpg and png Images type allowed</span>");
+                    return false;
+                }
+                else
+                {
+                    var reader = new FileReader();
+                    reader.onload = imageIsLoaded;
+                    reader.readAsDataURL(this.files[0]);
+                }
+            });
+        });
+        function imageIsLoaded(e) {
+            $("#file").css("color", "green");
+            $('#image_preview').css("display", "block");
+            $('#previewing').attr('src', e.target.result);
+            $('#previewing').attr('width', '100px');
+            $('#previewing').attr('height', '100px');
+        }
+        ;
+    });
+    /************ CAMBIAR AVATAR **************/
+</script>
