@@ -6,7 +6,9 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
         </button>    
-        <a href="ventana_educativa"><img class="image-responsive imgLogo " src="imagenes/ventana/encabezado/logoventana.png"></a>
+        <a href="ventana_educativa">
+            {{ HTML::image('imagenes/ventana/encabezado/logoventana.png','Logo Ventana Educativa', ['class'=>'image-responsive imgLogo']) }}
+        </a>
     </div> 
     <ul class="nav navbar-nav collapse navbar-collapse collapseBarra">
         <li class="liBuscar">
@@ -22,57 +24,77 @@
     <ul class="nav navbar-nav navbar-right collapse navbar-collapse collapseBarra">
         <li class="dropdown col-md-6">
             <div class="dropdown-toggle" data-toggle="dropdown">
-                <img class="iconoApp" width="30px" height="20px" src="imagenes/ventana/encabezado/iconoApps.png">
+                {{ HTML::image('imagenes/ventana/encabezado/iconoApps.png','Icono Apps',['width'=>'30px','height'=>'20px','class'=>'iconoApp'])}}
             </div>
             <ul class="dropdown-menu image-responsive menuVentanaApps">
                 <table class="">
                     <tr>
                         <td class="divApp centered">
-                            <a class="text-center" href="ventana_educativa"><img src="imagenes/ventana/encabezado/appVentana.png" class="img-responsive"></a>
+                            <a class="text-center" href="ventana_educativa">
+                                {{ HTML::image('imagenes/ventana/encabezado/appVentana.png','logo Ventana Educativa',['class'=>'img-responsive'])}}
+                            </a>
                             <label class="etiquetaApp text-center">Ventana Educativa</label>
                         </td>
                         <td class="divApp centered">
-                            <a class="text-center" href="http://redmite.televisioneducativa.gob.mx/" target="_blank"><img src="imagenes/ventana/encabezado/appRed.png" class="img-responsive"></a>
+                            <a class="text-center" href="http://redmite.televisioneducativa.gob.mx/" target="_blank">
+                                {{ HTML::image('imagenes/ventana/encabezado/appRed.png','logo Red Mesoamericana',['class'=>'img-responsive'])}}
+                            </a>
                             <label class="etiquetaApp text-center">Red <br> Mesoamericana</label>
                         </td>
                         <td class="divApp centered">
-                            <a class="text-center" href="http://mx.televisioneducativa.gob.mx" target="_blank"><img src="imagenes/ventana/encabezado/appMexico.png" class="img-responsive"></a>
+                            <a class="text-center" href="http://mx.televisioneducativa.gob.mx" target="_blank">
+                                {{ HTML::image('imagenes/ventana/encabezado/appMexico.png','logo MexicoX',['class'=>'img-responsive'])}}
+                            </a>
                             <label class="etiquetaApp text-center">MéxicoX</label>
                         </td>                            
                     </tr>
                     <tr>
                         <td class="divApp centered" style="vertical-align:middle !important;">
-                            <a class="text-center" target="_blank" href="http://www.ibe.tv/es/canal/iberoamericano/756/Iberoam%C3%A9rica-al-d%C3%ADa-1032016.htm"><img class="img-responsive" src="imagenes/ventana/encabezado/appIbero.png"></a>
+                            <a class="text-center" target="_blank" href="http://www.ibe.tv/es/canal/iberoamericano/756/Iberoam%C3%A9rica-al-d%C3%ADa-1032016.htm">
+                                {{ HTML::image('imagenes/ventana/encabezado/appIbero.png','logo Canal Iberoamericano',['class'=>'img-responsive'])}}
+                            </a>
                             <label class="etiquetaApp text-center">Canal <br> Iberoamericano</label>
                         </td>
                         <td class="divApp centered">
-                            <a class="" href="#"><img class="img-responsive" src="imagenes/ventana/encabezado/appDocentes.png"></a>
+                            <a class="" href="#">
+                                {{ HTML::image('imagenes/ventana/encabezado/appDocentes.png','logo Docentes',['class'=>'img-responsive'])}}
+                            </a>
                             <label class="etiquetaApp text-center center-block">Docentes</label>
                         </td>
                         <td class="divApp centered">
-                            <a class="" href="#"><img class="img-responsive" src="imagenes/ventana/encabezado/appIdiomas.png"></a>
+                            <a class="" href="#">
+                                {{ HTML::image('imagenes/ventana/encabezado/appIdiomas.png','logo Idiomas',['class'=>'img-responsive'])}}
+                            </a>
                             <label class="etiquetaApp text-center">Idiomas</label>
                         </td>
                     </tr>
                     <tr>
                         <td class="divApp centered">
-                            <a class="" href="#"><img class="img-responsive" src="imagenes/ventana/encabezado/appMediateca.png"></a>
+                            <a class="" href="#">
+                                {{ HTML::image('imagenes/ventana/encabezado/appMediateca.png','logo Mediateca',['class'=>'img-responsive'])}}
+                            </a>
                             <label class="etiquetaApp text-center center-block">Mediateca</label>
                         </td>
                         <td class="divApp centered">
-                            <a class="" href="#"><img class="img-responsive" src="imagenes/ventana/encabezado/appPadres.png"></a>
+                            <a class="" href="#">
+                                {{ HTML::image('imagenes/ventana/encabezado/appPadres.png','logo Padres',['class'=>'img-responsive'])}}
+                            </a>
                             <label class="etiquetaApp text-center center-block">Padres</label>
                         </td>
                         <td class="divApp centered">
-                            <a class="" href="#"><img class="img-responsive" src="imagenes/ventana/encabezado/appPrimaria.png"></a>
+                            <a class="" href="#">
+                                {{ HTML::image('imagenes/ventana/encabezado/appPrimaria.png','logo Primaria',['class'=>'img-responsive'])}}
+                            </a>
                             <label class="etiquetaApp text-center">Primaria</label>
                         </td>
                     </tr>
                     <tr>
                         <td></td>
                         <td class="divApp centered center-block">
-                            <a class="" href="#"><img src="imagenes/ventana/encabezado/appVOD.png"></a><br>
-                            <label class="etiquetaApp text-center">VOD</label>
+                            <a class="" href="#">
+                                {{ HTML::image('imagenes/ventana/encabezado/appVOD.png','logo VOD',['class'=>'img-responsive'])}}
+                            </a>
+                            <label class="etiquetaApp">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;VOD</label>
                         </td>                        
                         <td></td>
 
@@ -82,7 +104,7 @@
         </li>
         <li id="li-R" class="dropdown col-md-6">
             <div class=" divli dropdown-toggle" data-toggle="dropdown">
-                <img src="imagenes/ventana/encabezado/usuario.png">
+                {{ HTML::image('imagenes/ventana/encabezado/usuario.png','Logo Usuario')}}
             </div>
             <ul class="dropdown-menu fondoRegistro">
                 <li class="panel-body">
