@@ -6,8 +6,9 @@ Ventana Educativa
 @include('viewVentana.encabezadoVentana')
 @endsection
 @section('cuerpoVentana')
-<div class = "panel panel-default frmRegistro col-lg-offset-2 col-md-8">
-
+<div class="container">
+    
+<div class = "frmRegistro col-lg-offset-2 col-md-8">
     <h3 class = "panel-title tituloRegistro text-center text-uppercase">
         Registro
     </h3>
@@ -80,7 +81,9 @@ Ventana Educativa
                 </div>
             </div>
             </form>
-
+    </div>
+</div>
+</div>
             <script>
                 /************ Valida correo existente en el formulario ****************************************************/
                 function muestraError(flag) {
