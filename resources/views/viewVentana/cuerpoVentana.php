@@ -38,55 +38,55 @@
 <script>
 
     /*	---------------------------------------	Sección Usabilidad. Agregar animación de entrada a imagenes 	--------------------------------*/
-	function opacaImgs(){
-		var elems = $('.imgColor');    //elementos que quiero saber si estan en el área visible
-		elems.each(function () {
-			$(this).addClass("imgOpaca");
-		});
-	}
-	function coloreaImgs(){
-		var elems = $('.imgColor');    //elementos que quiero saber si estan en el área visible
-		elems.each(function () {
-			$(this).removeClass("imgOpaca");
-		});
-	}
-	
-	function aumentaTam(imagenCubo){
-		var ancho = Math.round($(imagenCubo).width() * 1.15);
-		var alto = Math.round($(imagenCubo).height() * 1.15);
-		$(imagenCubo).width(ancho);
-		$(imagenCubo).height(alto);
-		var top = $(imagenCubo).offset().top - 15;
-		var left = $(imagenCubo).offset().left - 15;
-		$(imagenCubo).offset({top:top,left:left});		
-	}
-	
-	function disminuyeTam(imagenFoto){
-		var ancho = Math.round($(imagenFoto).width() / 1.15);
-		var alto = Math.round($(imagenFoto).height() / 1.15);
-		$(imagenFoto).width(ancho);
-		$(imagenFoto).height(alto);
-		var top = $(imagenFoto).offset().top + 15;
-		var left = $(imagenFoto).offset().left + 15;
-		$(imagenFoto).offset({top:top,left:left});
-	}
-	function cambiaFrente(imagenCubo, imagen){
-		$(imagenCubo).removeClass("imgColor");
-		var imagenIcono = '#iconoRombo' + imagen;
-		zIndexIcono = $(imagenIcono).css('z-index');
-		$(imagenIcono).css('zIndex', '11');
-		$(imagenIcono).removeClass("imgColor");
-		
-		zIndexPrincipal = $(imagenCubo).css('z-index');
-		$(imagenCubo).css('zIndex', '10');
-	}
-	function cambiaAtras(imagenFoto, imagen){
-		$(imagenFoto).css('zIndex', zIndexPrincipal);
-		$(imagenFoto).addClass("imgColor");
-		var imagenIcono = '#iconoRombo' + imagen;
-		$(imagenIcono).css('z-index',zIndexIcono);		
-		$(imagenIcono).addClass("imgColor");
-	}
+    function opacaImgs() {
+        var elems = $('.imgColor');    //elementos que quiero saber si estan en el área visible
+        elems.each(function () {
+            $(this).addClass("imgOpaca");
+        });
+    }
+    function coloreaImgs() {
+        var elems = $('.imgColor');    //elementos que quiero saber si estan en el área visible
+        elems.each(function () {
+            $(this).removeClass("imgOpaca");
+        });
+    }
+
+    function aumentaTam(imagenCubo) {
+        var ancho = Math.round($(imagenCubo).width() * 1.15);
+        var alto = Math.round($(imagenCubo).height() * 1.15);
+        $(imagenCubo).width(ancho);
+        $(imagenCubo).height(alto);
+        var top = $(imagenCubo).offset().top - 15;
+        var left = $(imagenCubo).offset().left - 15;
+        $(imagenCubo).offset({top: top, left: left});
+    }
+
+    function disminuyeTam(imagenFoto) {
+        var ancho = Math.round($(imagenFoto).width() / 1.15);
+        var alto = Math.round($(imagenFoto).height() / 1.15);
+        $(imagenFoto).width(ancho);
+        $(imagenFoto).height(alto);
+        var top = $(imagenFoto).offset().top + 15;
+        var left = $(imagenFoto).offset().left + 15;
+        $(imagenFoto).offset({top: top, left: left});
+    }
+    function cambiaFrente(imagenCubo, imagen) {
+        $(imagenCubo).removeClass("imgColor");
+        var imagenIcono = '#iconoRombo' + imagen;
+        zIndexIcono = $(imagenIcono).css('z-index');
+        $(imagenIcono).css('zIndex', '11');
+        $(imagenIcono).removeClass("imgColor");
+
+        zIndexPrincipal = $(imagenCubo).css('z-index');
+        $(imagenCubo).css('zIndex', '10');
+    }
+    function cambiaAtras(imagenFoto, imagen) {
+        $(imagenFoto).css('zIndex', zIndexPrincipal);
+        $(imagenFoto).addClass("imgColor");
+        var imagenIcono = '#iconoRombo' + imagen;
+        $(imagenIcono).css('z-index', zIndexIcono);
+        $(imagenIcono).addClass("imgColor");
+    }
     function cambiaImgFoto(imagen) {
         var imagenCubo = '#CUBO' + imagen;
 		cambiaFrente(imagenCubo, imagen);
@@ -161,7 +161,7 @@
             }, 250);
         });
     }
-	$(function () {
+    $(function () {
         var elems = $('.oculta');    //elementos que quiero saber si estan en el área visible
         elems.each(function () {
             $(this).fadeOut();
@@ -417,188 +417,188 @@
 	<!----------------------------------	Elementos para vistas en dispositivos pequeños		--------------------------------->
 			<div class="row visible-xs-inline visible-sm-inline">
 				<div class="col-xs-10 col-sm-10 col-xs-offset-1 col-sm-offset-1" style="padding: 20%;">
-				<table>
-				<tr><td></td>
-				<td>
-					<img class="imgColor" id="CUBOSM07" src="imagenes/ventana/homeventana/CUBO-07.png" usemap="#mapacubosm07" style="width:40%; height:85%; position: absolute; top:0%; left:25%; z-index:5;"/>
-					<map name="mapacubosm07" id="mapacubosm07">
-						<area shape="poly" coords="0,560,580,0,1140,544,544,1140" onmouseover="cambiaImgFoto('SM07')" onmouseout="cambiaImgCubo('SM07')" href="presentacion"/>
-						<area shape="poly" coords="0,0,570,0,0,548" onmouseover="cambiaImgFoto('SM05')" onmouseout="cambiaImgCubo('SM05')" href="#"/>
-						<area shape="poly" coords="0,548,548,1160,0,1160" onmouseover="cambiaImgFoto('SM06')" onmouseout="cambiaImgCubo('SM06')" href="#"/>
-						<area shape="poly" coords="548,0,1160,0,1160,548" onmouseover="cambiaImgFoto('SM08')" onmouseout="cambiaImgCubo('SM08')" href="#"/>
-						<area shape="poly" coords="548,1160,1160,548,1160,1160" onmouseover="cambiaImgFoto('SM09')" onmouseout="cambiaImgCubo('SM09')" href="#"/>
-					</map>
-					<a href="presentacion">
-						<img class="imgColor" id="iconoRomboSM07" src="imagenes/ventana/iconoSeccion/ventanaBco.png" onmouseover="cambiaImgFoto('SM07')" onmouseout="cambiaImgCubo('SM07')" style="width:30%; height:25%; position: absolute; top: 30%; left:30%; z-index:5;"/>
-					</a>
-				</td><td></td>
-				</tr>
-				<tr><td>
-					<img id="CUBOSM08" class="imgColor oculta difumina Intervalo1 slideInRight" src="imagenes/ventana/homeventana/CUBO-08.png" usemap="#mapacubosm08" style="width:40%; height:85%; position: absolute; top:43%; left:5%; z-index:4; visibility:hidden;"/>
-					<map name="mapacubosm08" id="mapacubosm08">
-						<area shape="poly" coords="0,488,500,0,1020,500,500,1010" onmouseover="cambiaImgFoto('SM08')" onmouseout="cambiaImgCubo('SM08')" href="#"/>
-						<area shape="poly" coords="440,1040,1040,520,1040,1040" onmouseover="cambiaImgFoto('SM10')" onmouseout="cambiaImgCubo('SM10')" href="http://redmite.televisioneducativa.gob.mx/" target="_blank"/>
-					</map>
-					<a href="#" target="_blank">
-						<img id="iconoRombosm08" class="imgColor oculta difumina Intervalo1 slideInRight" src="imagenes/ventana/iconoSeccion/docentes.png" onmouseover="cambiaImgFoto('SM08')" onmouseout="cambiaImgCubo('SM08')" style="width:15%; height:30%; position: absolute; top: 60%; left:17%; z-index:4; visibility:hidden;"/>
-					</a>
-					<div id="iconoRombosm08" class="contieneTxt oculta difumina Intervalo1 slideInRight text-center" onmouseover="cambiaImgFoto('SM08')" onmouseout="cambiaImgCubo('SM08')" style="width: 50%; position:absolute; top:90%; left:0%; Z-index:10;">
-						<p class="visible-sm-inline txtHomeSm">Docentes</p>
-						<p class="visible-xs-inline txtHomeXs" >Docentes</p><!--style="position: relative; top:-10px; left:-7px;"-->
+					<table>
+					<tr><td></td>
+					<td>
+						<img class="imgColor" id="CUBOSM07" src="imagenes/ventana/homeventana/CUBO-07.png" usemap="#mapacubosm07" style="width:40%; height:85%; position: absolute; top:0%; left:25%; z-index:5;"/>
+						<map name="mapacubosm07" id="mapacubosm07">
+							<area shape="poly" coords="0,560,580,0,1140,544,544,1140" onmouseover="cambiaImgFoto('SM07')" onmouseout="cambiaImgCubo('SM07')" href="presentacion"/>
+							<area shape="poly" coords="0,0,570,0,0,548" onmouseover="cambiaImgFoto('SM05')" onmouseout="cambiaImgCubo('SM05')" href="#"/>
+							<area shape="poly" coords="0,548,548,1160,0,1160" onmouseover="cambiaImgFoto('SM06')" onmouseout="cambiaImgCubo('SM06')" href="#"/>
+							<area shape="poly" coords="548,0,1160,0,1160,548" onmouseover="cambiaImgFoto('SM08')" onmouseout="cambiaImgCubo('SM08')" href="#"/>
+							<area shape="poly" coords="548,1160,1160,548,1160,1160" onmouseover="cambiaImgFoto('SM09')" onmouseout="cambiaImgCubo('SM09')" href="#"/>
+						</map>
+						<a href="presentacion">
+							<img class="imgColor" id="iconoRomboSM07" src="imagenes/ventana/iconoSeccion/ventanaBco.png" onmouseover="cambiaImgFoto('SM07')" onmouseout="cambiaImgCubo('SM07')" style="width:30%; height:25%; position: absolute; top: 30%; left:30%; z-index:5;"/>
+						</a>
+					</td><td></td>
+					</tr>
+					<tr><td>
+						<img id="CUBOSM08" class="imgColor oculta difumina Intervalo1 slideInRight" src="imagenes/ventana/homeventana/CUBO-08.png" usemap="#mapacubosm08" style="width:40%; height:85%; position: absolute; top:43%; left:5%; z-index:4; visibility:hidden;"/>
+						<map name="mapacubosm08" id="mapacubosm08">
+							<area shape="poly" coords="0,488,500,0,1020,500,500,1010" onmouseover="cambiaImgFoto('SM08')" onmouseout="cambiaImgCubo('SM08')" href="#"/>
+							<area shape="poly" coords="440,1040,1040,520,1040,1040" onmouseover="cambiaImgFoto('SM10')" onmouseout="cambiaImgCubo('SM10')" href="http://redmite.televisioneducativa.gob.mx/" target="_blank"/>
+						</map>
+						<a href="#" target="_blank">
+							<img id="iconoRombosm08" class="imgColor oculta difumina Intervalo1 slideInRight" src="imagenes/ventana/iconoSeccion/docentes.png" onmouseover="cambiaImgFoto('SM08')" onmouseout="cambiaImgCubo('SM08')" style="width:15%; height:30%; position: absolute; top: 60%; left:17%; z-index:4; visibility:hidden;"/>
+						</a>
+						<div id="iconoRombosm08" class="contieneTxt oculta difumina Intervalo1 slideInRight text-center" onmouseover="cambiaImgFoto('SM08')" onmouseout="cambiaImgCubo('SM08')" style="width: 50%; position:absolute; top:90%; left:0%; Z-index:10;">
+							<p class="visible-sm-inline txtHomeSm">Docentes</p>
+							<p class="visible-xs-inline txtHomeXs" >Docentes</p><!--style="position: relative; top:-10px; left:-7px;"-->
+						</div>
+					</td>
+					<td></td>
+					<td>
+						<img id="CUBOSM09" class="imgColor oculta difumina Intervalo1 slideInRight" src="imagenes/ventana/homeventana/CUBO-09.png" usemap="#mapacubosm09" style="width:40%; height:85%; position: absolute; top:43%; left:45%; z-index:4; visibility:hidden;"/>
+						<map name="mapacubosm9" id="mapacubosm9">
+							<area shape="poly" coords="0,488,488,0,1020,500,510,1020" onmouseover="cambiaImgFoto('SM09')" onmouseout="cambiaImgCubo('SM09')" href="#"/>
+							<area shape="poly" coords="516,0,1030,0,1030,500" onmouseover="cambiaImgFoto('SM10')" onmouseout="cambiaImgCubo('SM10')" href="http://redmite.televisioneducativa.gob.mx/" target="_blank"/>
+						</map>
+						<a href="#" target="_blank">
+							<img id="iconoRombo09" class="imgColor oculta difumina Intervalo1 slideInRight" src="imagenes/ventana/iconoSeccion/mediateca.png" onmouseover="cambiaImgFoto('SM09')" onmouseout="cambiaImgCubo('SM09')" style="width:15%; height:30%; position: absolute; top: 60%; left:58%; z-index:4; visibility:hidden;"/>
+						</a>
+						<div id="iconoRombosm09" class="contieneTxt oculta difumina Intervalo1 slideInRight text-center" onmouseover="cambiaImgFoto('SM09')" onmouseout="cambiaImgCubo('SM09')" style="width: 50%; position:absolute; top:90%; left:40%; Z-index:10;">
+							<p class="visible-sm-block txtHomeSm">Mediateca</p>
+							<p class="visible-xs-block txtHomeXs">Mediateca</p>
+						</div>
+					</td>
+					</tr>
+					<tr><td></td>
+					<td>
+						<img id="CUBOSM10" class="imgColor oculta difumina Intervalo2 slideInRight" src="imagenes/ventana/homeventana/CUBO-10.png" usemap="#mapacubosm10" style="width:40%; height:85%; position: absolute; top:85%; left:25%; z-index:3; visibility:hidden;"/>
+						<map name="mapacubosm10"  id="mapacubosm10">
+							<area shape="poly" coords="0,456,470,0,960,500,470,940" onmouseover="cambiaImgFoto('SM10')" onmouseout="cambiaImgCubo('SM10')" href="http://redmite.televisioneducativa.gob.mx/" target="_blank"/>
+							<area shape="poly" coords="456,0,980,0,980,480" /><!--onmouseover="cambiaImgFoto('11')" onmouseout="cambiaImgCubo('11')" -->
+							<area shape="poly" coords="456,960,960,456,960,960" /><!--onmouseover="cambiaImgFoto('12')" onmouseout="cambiaImgCubo('12')" -->
+						</map>
+						<a href="http://redmite.televisioneducativa.gob.mx/" target="_blank">
+							<img id="iconoRombosm10" class="imgColor oculta difumina Intervalo2 slideInRight" src="imagenes/ventana/iconoSeccion/redmiteBco.png" onmouseover="cambiaImgFoto('SM10')" onmouseout="cambiaImgCubo('SM10')" style="width:20%; height:50%; position: absolute; top: 97%; left:35%; z-index:3; visibility:hidden;"/>
+						</a>
+					</td><td></td>
+					</tr>
+					<tr>
+					<td>
+						<img id="CUBOSM05" class="imgColor oculta difumina Intervalo1 slideInLeft" src="imagenes/ventana/homeventana/CUBO-05.png" usemap="#mapacubosm05" style="width:40%; height:85%; position: absolute; top:127%; left:5%; z-index:4; visibility:hidden;"/>
+						<map name="mapacubosm05" id="mapacubosm05">
+							<area shape="poly" coords="0,488,488,0,976,488,488,976" onmouseover="cambiaImgFoto('SM05')" onmouseout="cambiaImgCubo('SM05')" href="#"/>
+							<area shape="poly" coords="0,524,490,1030,0,1030" onmouseover="cambiaImgFoto('SM04')" onmouseout="cambiaImgCubo('SM04')" href="#"/>
+						</map>
+						<a href="#" target="_blank">
+							<img id="iconoRomboSM05" class="imgColor oculta difumina Intervalo1 slideInLeft" src="imagenes/ventana/iconoSeccion/primaria.png" onmouseover="cambiaImgFoto('SM05')" onmouseout="cambiaImgCubo('SM05')" style="width:15%; height:30%; position: absolute; top: 145%; left:18%; z-index:4; visibility:hidden;"/>
+						</a>
+						<div id="iconoRombosm05" class="contieneTxt oculta difumina Intervalo1 slideInLeft text-center" onmouseover="cambiaImgFoto('SM05')" onmouseout="cambiaImgCubo('SM05')" style="width: 50%; position:absolute; top:175%; left:0%; Z-index:10;">
+							<p class="visible-sm-inline txtHomeSm">Primaria</p>
+							<p class="visible-xs-inline txtHomeXs">Primaria</p>
+						</div>
+					</td>
+					<td></td>
+					<td>
+						<img id="CUBOSM06" class="imgColor oculta difumina Intervalo1 slideInLeft" src="imagenes/ventana/homeventana/CUBO-06.png" usemap="#mapacubosm06" style="width:40%; height:85%; position: absolute; top:127%; left:46%; z-index:4; visibility:hidden;"/>
+						<map name="mapacubosm06" id="mapacubosm06">
+							<area shape="poly" coords="0,488,488,0,1020,500,510,1020" onmouseover="cambiaImgFoto('SM06')" onmouseout="cambiaImgCubo('SM06')" href="#"/>
+							<area shape="poly" coords="0,0,488,0,0,488" onmouseover="cambiaImgFoto('SM04')" onmouseout="cambiaImgCubo('SM04')" href="#"/>
+						</map>
+						<a href="#" target="_blank">
+							<img id="iconoRomboSM06" class="imgColor oculta difumina Intervalo1 slideInLeft" src="imagenes/ventana/iconoSeccion/vod.png" onmouseover="cambiaImgFoto('SM06')" onmouseout="cambiaImgCubo('SM06')" style="width:15%; height:30%; position: absolute; top: 145%; left:61%; z-index:4; visibility:hidden;"/>
+						</a>
+						<div id="iconoRombosm06" class="contieneTxt oculta difumina Intervalo1 slideInLeft text-center" onmouseover="cambiaImgFoto('SM06')" onmouseout="cambiaImgCubo('SM06')" style="width: 50%; position:absolute; top:175%; left:40%; Z-index:10;">
+							<p class="visible-sm-inline txtHomeSm">VOD</p>
+							<p class="visible-xs-inline txtHomeXs">VOD</p>
+						</div>
+					</td>
+					</tr>
+					<tr>
+					<td></td>
+					<td>
+						<img id="CUBO13" class="imgColor oculta difumina Intervalo4 slideInRight" src="imagenes/ventana/homeventana/CUBO-13.png" usemap="#mapacubo13" style="width:40%; height:85%; position: absolute; top:171%; left:25%; z-index:2; visibility:hidden;"/>
+						<map name="mapacubo13" id="mapacubo13">
+							<area shape="poly" coords="0,424,470,0,920,424,480,920" onmouseover="cambiaImgFoto('13')" onmouseout="cambiaImgCubo('13')" href="http://mx.televisioneducativa.gob.mx/" target="_blank"/>
+							<area shape="poly" coords="0,0,0,400,400,0" /><!--onmouseover="cambiaImgFoto('11')" onmouseout="cambiaImgCubo('11')" -->
+							<area shape="poly" coords="0,460,0,920,430,920" /><!--onmouseover="cambiaImgFoto('12')" onmouseout="cambiaImgCubo('12')" -->
+						</map>
+						<a href="http://mx.televisioneducativa.gob.mx/" target="_blank">
+							<img id="iconoRombo13" class="imgColor oculta difumina Intervalo4 slideInRight" src="imagenes/ventana/iconoSeccion/mexicoxBco.png" onmouseover="cambiaImgFoto('13')" onmouseout="cambiaImgCubo('13')" style="width:30%; height:20%; position: absolute; top: 205%; left:30%; z-index:3; visibility:hidden;"/>
+						</a>
+					</td>
+					<td></td>
+					</tr>
+					<tr>
+					<td>
+						<img id="CUBO02" class="imgColor oculta difumina Intervalo3 slideInLeft" src="imagenes/ventana/homeventana/CUBO-02.png" usemap="#mapacubo2" style="width:40%; height:85%; position: absolute; top:215%; left:5%; z-index:2; visibility:hidden;"/>
+						<map name="mapacubo2" id="mapacubo2">
+							<area shape="poly" coords="0,356,356,0,708,360,360,708" onmouseover="cambiaImgFoto('02')" onmouseout="cambiaImgCubo('02')" href="#"/>
+						</map>
+						<a href="#" target="_blank">
+							<img id="iconoRombo02" class="imgColor oculta difumina Intervalo3 slideInLeft" src="imagenes/ventana/iconoSeccion/idiomas.png" onmouseover="cambiaImgFoto('02')" onmouseout="cambiaImgCubo('02')" style="width:15%; height:30%; position: absolute; top: 235%; left:18%; z-index:3; visibility:hidden;"/>
+						</a>
+						<div class="contieneTxt oculta difumina Intervalo3 slideInLeft text-center" onmouseover="cambiaImgFoto('02')" onmouseout="cambiaImgCubo('02')" style="width: 50%; position:absolute; top:263%; left:0%; Z-index:10;">
+							<p class="visible-sm-inline txtHomeSm">Idiomas</p>
+							<p class="visible-xs-inline txtHomeXs">Idiomas</p>
+						</div>
+					</td>
+					<td></td>
+					<td>
+						<img id="CUBO03" class="imgColor oculta difumina Intervalo3 slideInLeft" src="imagenes/ventana/homeventana/CUBO-03.png" usemap="#mapacubo3" style="width:40%; height:85%; position: absolute; top:215%; left:45%; z-index:2; visibility:hidden;"/>
+						<map name="mapacubo3" id="mapacubo3">
+							<area shape="poly" coords="0,388,388,0,840,388,420,820" /> <!--onmouseover="cambiaImgFoto('03')" onmouseout="cambiaImgCubo('03')" -->
+						</map>
+					</td>
+					</tr>
+					<tr><td></td>
+					<td>
+						<img id="CUBO04" class="imgColor oculta difumina Intervalo2 slideInLeft" src="imagenes/ventana/homeventana/CUBO-04.png" usemap="#mapacubo4" style="width:40%; height:85%; position: absolute; top:258%; left:25%; z-index:3; visibility:hidden;"/>
+						<map name="mapacubo4"  id="mapacubo4">
+							<area shape="poly" coords="0,456,456,0,912,456,456,912" onmouseover="cambiaImgFoto('04')" onmouseout="cambiaImgCubo('04')" href="#"/>
+							<area shape="poly" coords="0,456,0,0,456,0" onmouseover="cambiaImgFoto('02')" onmouseout="cambiaImgCubo('02')" href="#"/>
+							<area shape="poly" coords="-20,400,-20,960,520,960" /> <!--onmouseover="cambiaImgFoto('03')" onmouseout="cambiaImgCubo('03')" -->
+						</map>
+						<a href="#" target="_blank">
+							<img id="iconoRombo04" class="imgColor oculta difumina Intervalo2 slideInLeft" src="imagenes/ventana/iconoSeccion/padres.png" onmouseover="cambiaImgFoto('04')" onmouseout="cambiaImgCubo('04')" style="width:15%; height:30%; position: absolute; top: 280%; left:38%; z-index:3; visibility:hidden;"/>
+						</a>
+						<div id="iconoRombo04" class="contieneTxt oculta difumina Intervalo2 slideInLeft text-center" onmouseover="cambiaImgFoto('04')" onmouseout="cambiaImgCubo('04')" style="width: 50%; position:absolute; top:310%; left:20%; Z-index:10;">
+							<p class="visible-sm-inline txtHomeSm">Padres</p>
+							<p class="visible-xs-inline txtHomeXs">Padres</p>
+						</div>
+					</td>
+					<td></td></tr>
+					<tr>
+					<td>
+						<img id="CUBO11" class="imgColor oculta difumina Intervalo3 slideInRight" src="imagenes/ventana/homeventana/CUBO-11.png" usemap="#mapacubo11" style="width:40%; height:85%; position: absolute; top:300%; left:5%; z-index:2; visibility:hidden;"/>
+						<map name="mapacubo11" id="mapacubo11">
+							<area shape="poly" coords="0,356,370,0,725,360,360,708" /><!--onmouseover="cambiaImgFoto('11')" onmouseout="cambiaImgCubo('11')" -->
+						</map>
+					</td>
+					<td></td>
+					<td>
+						<img id="CUBO12" class="imgColor oculta difumina Intervalo3 slideInRight" src="imagenes/ventana/homeventana/CUBO-12.png" usemap="#mapacubo12" style="width:40%; height:85%; position: absolute; top:300%; left:45%; z-index:2; visibility:hidden;"/>
+						<map name="mapacubo12" id="mapacubo12">
+							<area shape="poly" coords="0,388,388,0,840,388,420,820" /><!--onmouseover="cambiaImgFoto('12')" onmouseout="cambiaImgCubo('12')" -->
+						</map>
+					</td>
+					</tr>
+					<tr>
+					<td></td>
+					<td>
+						<img name="CUBO01" id="CUBO01" class="imgColor oculta difumina Intervalo4 slideInLeft" src="imagenes/ventana/homeventana/CUBO-01.png" usemap="#mapacubo1" style="width:40%; height:85%; position: absolute; top:345%; left:25%; z-index:3; visibility:hidden;"/>
+						<map name="mapacubo1" id="mapacubo1">
+							<area shape="poly" coords="0,424,424,0,920,424,480,920" onmouseover="cambiaImgFoto('01')" onmouseout="cambiaImgCubo('01')" href="http://www.ibe.tv/es/canal/iberoamericano/756/Iberoam%C3%A9rica-al-d%C3%ADa-1032016.htm" target="_blank"/>
+							<area shape="poly" coords="528,0,920,0,920,392" onmouseover="cambiaImgFoto('02')" onmouseout="cambiaImgCubo('02')" href="#"/>
+							<area shape="poly" coords="888,468,940,960,400,880" /> <!--onmouseover="cambiaImgFoto('03')" onmouseout="cambiaImgCubo('03')" -->
+						</map>
+						<a href="http://www.ibe.tv/es/canal/iberoamericano/756/Iberoam%C3%A9rica-al-d%C3%ADa-1032016.htm" target="_blank">
+							<img id="iconoRombo01" class="imgColor oculta difumina Intervalo4 slideInLeft" src="imagenes/ventana/iconoSeccion/canal_ibero.png" onmouseover="cambiaImgFoto('01')" onmouseout="cambiaImgCubo('01')" style="width:15%; height:30%; position: absolute; top: 365%; left:37%; z-index:3; visibility:hidden;"/>
+						</a>
+					</td>
+					<td></td>
+					</tr>
+					</table>
+					<div class="derechaSociales" style="position:fixed; top: 50%; left:80%;">
+						<ul class="sociales">
+							<li><a href="#" class="cambiacolorredesSociales"><span><i class="fa fa-twitter fa-2x " id="ct"></i></span></a></li><br/>
+							<li><a href="#" class="cambiacolorredesSociales"><span><i class="fa fa-facebook fa-2x" id="cf"></i></span></a></li><br/>
+							<li><a href="#" class="cambiacolorredesSociales"><span><i class="fa fa-youtube-play fa-2x" id="cy"></i></span></a></li>
+						</ul>
 					</div>
-				</td>
-				<td></td>
-				<td>
-					<img id="CUBOSM09" class="imgColor oculta difumina Intervalo1 slideInRight" src="imagenes/ventana/homeventana/CUBO-09.png" usemap="#mapacubosm09" style="width:40%; height:85%; position: absolute; top:43%; left:45%; z-index:4; visibility:hidden;"/>
-					<map name="mapacubosm9" id="mapacubosm9">
-						<area shape="poly" coords="0,488,488,0,1020,500,510,1020" onmouseover="cambiaImgFoto('SM09')" onmouseout="cambiaImgCubo('SM09')" href="#"/>
-						<area shape="poly" coords="516,0,1030,0,1030,500" onmouseover="cambiaImgFoto('SM10')" onmouseout="cambiaImgCubo('SM10')" href="http://redmite.televisioneducativa.gob.mx/" target="_blank"/>
-					</map>
-					<a href="#" target="_blank">
-						<img id="iconoRombo09" class="imgColor oculta difumina Intervalo1 slideInRight" src="imagenes/ventana/iconoSeccion/mediateca.png" onmouseover="cambiaImgFoto('SM09')" onmouseout="cambiaImgCubo('SM09')" style="width:15%; height:30%; position: absolute; top: 60%; left:58%; z-index:4; visibility:hidden;"/>
-					</a>
-					<div id="iconoRombosm09" class="contieneTxt oculta difumina Intervalo1 slideInRight text-center" onmouseover="cambiaImgFoto('SM09')" onmouseout="cambiaImgCubo('SM09')" style="width: 50%; position:absolute; top:90%; left:40%; Z-index:10;">
-						<p class="visible-sm-block txtHomeSm">Mediateca</p>
-						<p class="visible-xs-block txtHomeXs">Mediateca</p>
-					</div>
-				</td>
-				</tr>
-				<tr><td></td>
-				<td>
-					<img id="CUBOSM10" class="imgColor oculta difumina Intervalo2 slideInRight" src="imagenes/ventana/homeventana/CUBO-10.png" usemap="#mapacubosm10" style="width:40%; height:85%; position: absolute; top:85%; left:25%; z-index:3; visibility:hidden;"/>
-					<map name="mapacubosm10"  id="mapacubosm10">
-						<area shape="poly" coords="0,456,470,0,960,500,470,940" onmouseover="cambiaImgFoto('SM10')" onmouseout="cambiaImgCubo('SM10')" href="http://redmite.televisioneducativa.gob.mx/" target="_blank"/>
-						<area shape="poly" coords="456,0,980,0,980,480" /><!--onmouseover="cambiaImgFoto('11')" onmouseout="cambiaImgCubo('11')" -->
-						<area shape="poly" coords="456,960,960,456,960,960" /><!--onmouseover="cambiaImgFoto('12')" onmouseout="cambiaImgCubo('12')" -->
-					</map>
-					<a href="http://redmite.televisioneducativa.gob.mx/" target="_blank">
-						<img id="iconoRombosm10" class="imgColor oculta difumina Intervalo2 slideInRight" src="imagenes/ventana/iconoSeccion/redmiteBco.png" onmouseover="cambiaImgFoto('SM10')" onmouseout="cambiaImgCubo('SM10')" style="width:20%; height:50%; position: absolute; top: 97%; left:35%; z-index:3; visibility:hidden;"/>
-					</a>
-				</td><td></td>
-				</tr>
-				<tr>
-				<td>
-					<img id="CUBOSM05" class="imgColor oculta difumina Intervalo1 slideInLeft" src="imagenes/ventana/homeventana/CUBO-05.png" usemap="#mapacubosm05" style="width:40%; height:85%; position: absolute; top:127%; left:5%; z-index:4; visibility:hidden;"/>
-					<map name="mapacubosm05" id="mapacubosm05">
-						<area shape="poly" coords="0,488,488,0,976,488,488,976" onmouseover="cambiaImgFoto('SM05')" onmouseout="cambiaImgCubo('SM05')" href="#"/>
-						<area shape="poly" coords="0,524,490,1030,0,1030" onmouseover="cambiaImgFoto('SM04')" onmouseout="cambiaImgCubo('SM04')" href="#"/>
-					</map>
-					<a href="#" target="_blank">
-						<img id="iconoRomboSM05" class="imgColor oculta difumina Intervalo1 slideInLeft" src="imagenes/ventana/iconoSeccion/primaria.png" onmouseover="cambiaImgFoto('SM05')" onmouseout="cambiaImgCubo('SM05')" style="width:15%; height:30%; position: absolute; top: 145%; left:18%; z-index:4; visibility:hidden;"/>
-					</a>
-					<div id="iconoRombosm05" class="contieneTxt oculta difumina Intervalo1 slideInLeft text-center" onmouseover="cambiaImgFoto('SM05')" onmouseout="cambiaImgCubo('SM05')" style="width: 50%; position:absolute; top:175%; left:0%; Z-index:10;">
-						<p class="visible-sm-inline txtHomeSm">Primaria</p>
-						<p class="visible-xs-inline txtHomeXs">Primaria</p>
-					</div>
-				</td>
-				<td></td>
-				<td>
-					<img id="CUBOSM06" class="imgColor oculta difumina Intervalo1 slideInLeft" src="imagenes/ventana/homeventana/CUBO-06.png" usemap="#mapacubosm06" style="width:40%; height:85%; position: absolute; top:127%; left:46%; z-index:4; visibility:hidden;"/>
-					<map name="mapacubosm06" id="mapacubosm06">
-						<area shape="poly" coords="0,488,488,0,1020,500,510,1020" onmouseover="cambiaImgFoto('SM06')" onmouseout="cambiaImgCubo('SM06')" href="#"/>
-						<area shape="poly" coords="0,0,488,0,0,488" onmouseover="cambiaImgFoto('SM04')" onmouseout="cambiaImgCubo('SM04')" href="#"/>
-					</map>
-					<a href="#" target="_blank">
-						<img id="iconoRomboSM06" class="imgColor oculta difumina Intervalo1 slideInLeft" src="imagenes/ventana/iconoSeccion/vod.png" onmouseover="cambiaImgFoto('SM06')" onmouseout="cambiaImgCubo('SM06')" style="width:15%; height:30%; position: absolute; top: 145%; left:61%; z-index:4; visibility:hidden;"/>
-					</a>
-					<div id="iconoRombosm06" class="contieneTxt oculta difumina Intervalo1 slideInLeft text-center" onmouseover="cambiaImgFoto('SM06')" onmouseout="cambiaImgCubo('SM06')" style="width: 50%; position:absolute; top:175%; left:40%; Z-index:10;">
-						<p class="visible-sm-inline txtHomeSm">VOD</p>
-						<p class="visible-xs-inline txtHomeXs">VOD</p>
-					</div>
-				</td>
-				</tr>
-				<tr>
-				<td></td>
-				<td>
-					<img id="CUBO13" class="imgColor oculta difumina Intervalo4 slideInRight" src="imagenes/ventana/homeventana/CUBO-13.png" usemap="#mapacubo13" style="width:40%; height:85%; position: absolute; top:171%; left:25%; z-index:2; visibility:hidden;"/>
-					<map name="mapacubo13" id="mapacubo13">
-						<area shape="poly" coords="0,424,470,0,920,424,480,920" onmouseover="cambiaImgFoto('13')" onmouseout="cambiaImgCubo('13')" href="http://mx.televisioneducativa.gob.mx/" target="_blank"/>
-						<area shape="poly" coords="0,0,0,400,400,0" /><!--onmouseover="cambiaImgFoto('11')" onmouseout="cambiaImgCubo('11')" -->
-						<area shape="poly" coords="0,460,0,920,430,920" /><!--onmouseover="cambiaImgFoto('12')" onmouseout="cambiaImgCubo('12')" -->
-					</map>
-					<a href="http://mx.televisioneducativa.gob.mx/" target="_blank">
-						<img id="iconoRombo13" class="imgColor oculta difumina Intervalo4 slideInRight" src="imagenes/ventana/iconoSeccion/mexicoxBco.png" onmouseover="cambiaImgFoto('13')" onmouseout="cambiaImgCubo('13')" style="width:30%; height:20%; position: absolute; top: 205%; left:30%; z-index:3; visibility:hidden;"/>
-					</a>
-				</td>
-				<td></td>
-				</tr>
-				<tr>
-				<td>
-					<img id="CUBO02" class="imgColor oculta difumina Intervalo3 slideInLeft" src="imagenes/ventana/homeventana/CUBO-02.png" usemap="#mapacubo2" style="width:40%; height:85%; position: absolute; top:215%; left:5%; z-index:2; visibility:hidden;"/>
-					<map name="mapacubo2" id="mapacubo2">
-						<area shape="poly" coords="0,356,356,0,708,360,360,708" onmouseover="cambiaImgFoto('02')" onmouseout="cambiaImgCubo('02')" href="#"/>
-					</map>
-					<a href="#" target="_blank">
-						<img id="iconoRombo02" class="imgColor oculta difumina Intervalo3 slideInLeft" src="imagenes/ventana/iconoSeccion/idiomas.png" onmouseover="cambiaImgFoto('02')" onmouseout="cambiaImgCubo('02')" style="width:15%; height:30%; position: absolute; top: 235%; left:18%; z-index:3; visibility:hidden;"/>
-					</a>
-					<div class="contieneTxt oculta difumina Intervalo3 slideInLeft text-center" onmouseover="cambiaImgFoto('02')" onmouseout="cambiaImgCubo('02')" style="width: 50%; position:absolute; top:263%; left:0%; Z-index:10;">
-						<p class="visible-sm-inline txtHomeSm">Idiomas</p>
-						<p class="visible-xs-inline txtHomeXs">Idiomas</p>
-					</div>
-				</td>
-				<td></td>
-				<td>
-					<img id="CUBO03" class="imgColor oculta difumina Intervalo3 slideInLeft" src="imagenes/ventana/homeventana/CUBO-03.png" usemap="#mapacubo3" style="width:40%; height:85%; position: absolute; top:215%; left:45%; z-index:2; visibility:hidden;"/>
-					<map name="mapacubo3" id="mapacubo3">
-						<area shape="poly" coords="0,388,388,0,840,388,420,820" /> <!--onmouseover="cambiaImgFoto('03')" onmouseout="cambiaImgCubo('03')" -->
-					</map>
-				</td>
-				</tr>
-				<tr><td></td>
-				<td>
-					<img id="CUBO04" class="imgColor oculta difumina Intervalo2 slideInLeft" src="imagenes/ventana/homeventana/CUBO-04.png" usemap="#mapacubo4" style="width:40%; height:85%; position: absolute; top:258%; left:25%; z-index:3; visibility:hidden;"/>
-					<map name="mapacubo4"  id="mapacubo4">
-						<area shape="poly" coords="0,456,456,0,912,456,456,912" onmouseover="cambiaImgFoto('04')" onmouseout="cambiaImgCubo('04')" href="#"/>
-						<area shape="poly" coords="0,456,0,0,456,0" onmouseover="cambiaImgFoto('02')" onmouseout="cambiaImgCubo('02')" href="#"/>
-						<area shape="poly" coords="-20,400,-20,960,520,960" /> <!--onmouseover="cambiaImgFoto('03')" onmouseout="cambiaImgCubo('03')" -->
-					</map>
-					<a href="#" target="_blank">
-						<img id="iconoRombo04" class="imgColor oculta difumina Intervalo2 slideInLeft" src="imagenes/ventana/iconoSeccion/padres.png" onmouseover="cambiaImgFoto('04')" onmouseout="cambiaImgCubo('04')" style="width:15%; height:30%; position: absolute; top: 280%; left:38%; z-index:3; visibility:hidden;"/>
-					</a>
-					<div id="iconoRombo04" class="contieneTxt oculta difumina Intervalo2 slideInLeft text-center" onmouseover="cambiaImgFoto('04')" onmouseout="cambiaImgCubo('04')" style="width: 50%; position:absolute; top:310%; left:20%; Z-index:10;">
-						<p class="visible-sm-inline txtHomeSm">Padres</p>
-						<p class="visible-xs-inline txtHomeXs">Padres</p>
-					</div>
-				</td>
-				<td></td></tr>
-				<tr>
-				<td>
-					<img id="CUBO11" class="imgColor oculta difumina Intervalo3 slideInRight" src="imagenes/ventana/homeventana/CUBO-11.png" usemap="#mapacubo11" style="width:40%; height:85%; position: absolute; top:300%; left:5%; z-index:2; visibility:hidden;"/>
-					<map name="mapacubo11" id="mapacubo11">
-						<area shape="poly" coords="0,356,370,0,725,360,360,708" /><!--onmouseover="cambiaImgFoto('11')" onmouseout="cambiaImgCubo('11')" -->
-					</map>
-				</td>
-				<td></td>
-				<td>
-					<img id="CUBO12" class="imgColor oculta difumina Intervalo3 slideInRight" src="imagenes/ventana/homeventana/CUBO-12.png" usemap="#mapacubo12" style="width:40%; height:85%; position: absolute; top:300%; left:45%; z-index:2; visibility:hidden;"/>
-					<map name="mapacubo12" id="mapacubo12">
-						<area shape="poly" coords="0,388,388,0,840,388,420,820" /><!--onmouseover="cambiaImgFoto('12')" onmouseout="cambiaImgCubo('12')" -->
-					</map>
-				</td>
-				</tr>
-				<tr>
-				<td></td>
-				<td>
-					<img name="CUBO01" id="CUBO01" class="imgColor oculta difumina Intervalo4 slideInLeft" src="imagenes/ventana/homeventana/CUBO-01.png" usemap="#mapacubo1" style="width:40%; height:85%; position: absolute; top:345%; left:25%; z-index:3; visibility:hidden;"/>
-					<map name="mapacubo1" id="mapacubo1">
-						<area shape="poly" coords="0,424,424,0,920,424,480,920" onmouseover="cambiaImgFoto('01')" onmouseout="cambiaImgCubo('01')" href="http://www.ibe.tv/es/canal/iberoamericano/756/Iberoam%C3%A9rica-al-d%C3%ADa-1032016.htm" target="_blank"/>
-						<area shape="poly" coords="528,0,920,0,920,392" onmouseover="cambiaImgFoto('02')" onmouseout="cambiaImgCubo('02')" href="#"/>
-						<area shape="poly" coords="888,468,940,960,400,880" /> <!--onmouseover="cambiaImgFoto('03')" onmouseout="cambiaImgCubo('03')" -->
-					</map>
-					<a href="http://www.ibe.tv/es/canal/iberoamericano/756/Iberoam%C3%A9rica-al-d%C3%ADa-1032016.htm" target="_blank">
-						<img id="iconoRombo01" class="imgColor oculta difumina Intervalo4 slideInLeft" src="imagenes/ventana/iconoSeccion/canal_ibero.png" onmouseover="cambiaImgFoto('01')" onmouseout="cambiaImgCubo('01')" style="width:15%; height:30%; position: absolute; top: 365%; left:37%; z-index:3; visibility:hidden;"/>
-					</a>
-				</td>
-				<td></td>
-				</tr>
-				</table>
-				<div class="derechaSociales" style="position:fixed; top: 50%; left:80%;">
-					<ul class="sociales">
-						<li><a href="#" class="cambiacolorredesSociales"><span><i class="fa fa-twitter fa-2x " id="ct"></i></span></a></li><br/>
-						<li><a href="#" class="cambiacolorredesSociales"><span><i class="fa fa-facebook fa-2x" id="cf"></i></span></a></li><br/>
-						<li><a href="#" class="cambiacolorredesSociales"><span><i class="fa fa-youtube-play fa-2x" id="cy"></i></span></a></li>
-					</ul>
 				</div>
 			</div>
-				</div>
-			</div>
+		</div>
