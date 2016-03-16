@@ -66,7 +66,7 @@
         <ul>
             <li><div class="fondoColaboraSM"><a href="#"><p class="txtPestanaSM">COLABORADORES</p></a></div></li>
         </ul>
-        <div id="efectobarramenu" class="table-responsive">
+        <div  class="table-responsive" id="efectobarramenu2">
             <table class="table" style="border-top-style: none !important;">
                 <tr>
                     <td>
@@ -192,5 +192,5 @@
         </div>
     </div>
 </div>-->
-<script>
-    $('#efectobarramenu').addClass('animated fadeInDown');</script>
+<script> $('#efectobarramenu').addClass('animated fadeInDown');</script>
+<script>$('#efectobarramenu2').addClass('animated bounceInLeft');</script>
