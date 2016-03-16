@@ -4,7 +4,7 @@
         <ul>
             <li><div class="fondoColabora"><a href="#"><p class="txtPestana ">COLABORADORES</p></a></div></li>
         </ul>
-        <div class="table-responsive " id="efectobarramenu">
+        <div class="tabl" id="efectobarramenu">
             <table class="table tablaCOlaboradores" style=" border-top-style: none !important;">
                 <tr>
                     <td>
