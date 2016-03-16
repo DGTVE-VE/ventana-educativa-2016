@@ -38,72 +38,72 @@
 <script>
 
     /*	---------------------------------------	Sección Usabilidad. Agregar animación de entrada a imagenes 	--------------------------------*/
-	function opacaImgs(){
-		var elems = $('.imgColor');    //elementos que quiero saber si estan en el área visible
-		elems.each(function () {
-			$(this).addClass("imgOpaca");
-		});
-	}
-	function coloreaImgs(){
-		var elems = $('.imgColor');    //elementos que quiero saber si estan en el área visible
-		elems.each(function () {
-			$(this).removeClass("imgOpaca");
-		});
-	}
-	
-	function aumentaTam(imagenCubo){
-		var ancho = Math.round($(imagenCubo).width() * 1.15);
-		var alto = Math.round($(imagenCubo).height() * 1.15);
-		$(imagenCubo).width(ancho);
-		$(imagenCubo).height(alto);
-		var top = $(imagenCubo).offset().top - 15;
-		var left = $(imagenCubo).offset().left - 15;
-		$(imagenCubo).offset({top:top,left:left});		
-	}
-	
-	function disminuyeTam(imagenFoto){
-		var ancho = Math.round($(imagenFoto).width() / 1.15);
-		var alto = Math.round($(imagenFoto).height() / 1.15);
-		$(imagenFoto).width(ancho);
-		$(imagenFoto).height(alto);
-		var top = $(imagenFoto).offset().top + 15;
-		var left = $(imagenFoto).offset().left + 15;
-		$(imagenFoto).offset({top:top,left:left});
-	}
-	function cambiaFrente(imagenCubo, imagen){
-		$(imagenCubo).removeClass("imgColor");
-		var imagenIcono = '#iconoRombo' + imagen;
-		zIndexIcono = $(imagenIcono).css('z-index');
-		$(imagenIcono).css('zIndex', '11');
-		$(imagenIcono).removeClass("imgColor");
-		
-		zIndexPrincipal = $(imagenCubo).css('z-index');
-		$(imagenCubo).css('zIndex', '10');
-	}
-	function cambiaAtras(imagenFoto, imagen){
-		$(imagenFoto).css('zIndex', zIndexPrincipal);
-		$(imagenFoto).addClass("imgColor");
-		var imagenIcono = '#iconoRombo' + imagen;
-		$(imagenIcono).css('z-index',zIndexIcono);		
-		$(imagenIcono).addClass("imgColor");
-	}
+    function opacaImgs() {
+        var elems = $('.imgColor');    //elementos que quiero saber si estan en el área visible
+        elems.each(function () {
+            $(this).addClass("imgOpaca");
+        });
+    }
+    function coloreaImgs() {
+        var elems = $('.imgColor');    //elementos que quiero saber si estan en el área visible
+        elems.each(function () {
+            $(this).removeClass("imgOpaca");
+        });
+    }
+
+    function aumentaTam(imagenCubo) {
+        var ancho = Math.round($(imagenCubo).width() * 1.15);
+        var alto = Math.round($(imagenCubo).height() * 1.15);
+        $(imagenCubo).width(ancho);
+        $(imagenCubo).height(alto);
+        var top = $(imagenCubo).offset().top - 15;
+        var left = $(imagenCubo).offset().left - 15;
+        $(imagenCubo).offset({top: top, left: left});
+    }
+
+    function disminuyeTam(imagenFoto) {
+        var ancho = Math.round($(imagenFoto).width() / 1.15);
+        var alto = Math.round($(imagenFoto).height() / 1.15);
+        $(imagenFoto).width(ancho);
+        $(imagenFoto).height(alto);
+        var top = $(imagenFoto).offset().top + 15;
+        var left = $(imagenFoto).offset().left + 15;
+        $(imagenFoto).offset({top: top, left: left});
+    }
+    function cambiaFrente(imagenCubo, imagen) {
+        $(imagenCubo).removeClass("imgColor");
+        var imagenIcono = '#iconoRombo' + imagen;
+        zIndexIcono = $(imagenIcono).css('z-index');
+        $(imagenIcono).css('zIndex', '11');
+        $(imagenIcono).removeClass("imgColor");
+
+        zIndexPrincipal = $(imagenCubo).css('z-index');
+        $(imagenCubo).css('zIndex', '10');
+    }
+    function cambiaAtras(imagenFoto, imagen) {
+        $(imagenFoto).css('zIndex', zIndexPrincipal);
+        $(imagenFoto).addClass("imgColor");
+        var imagenIcono = '#iconoRombo' + imagen;
+        $(imagenIcono).css('z-index', zIndexIcono);
+        $(imagenIcono).addClass("imgColor");
+    }
     function cambiaImgFoto(imagen) {
         var imagenCubo = '#CUBO' + imagen;
         var imagenFoto = 'imagenes/ventana/homeventana/FOTO-' + imagen + '.png';
         $(imagenCubo).attr('src', imagenFoto);
-		aumentaTam(imagenCubo);
+        aumentaTam(imagenCubo);
 
-		cambiaFrente(imagenCubo, imagen);
-		opacaImgs();
+        cambiaFrente(imagenCubo, imagen);
+        opacaImgs();
     }
     function cambiaImgCubo(imagen) {
         var imagenFoto = '#CUBO' + imagen;
         var imagenCubo = 'imagenes/ventana/homeventana/CUBO-' + imagen + '.png';
         $(imagenFoto).attr('src', imagenCubo);
-		disminuyeTam(imagenFoto);
+        disminuyeTam(imagenFoto);
 
-		coloreaImgs();
-		cambiaAtras(imagenFoto, imagen);
+        coloreaImgs();
+        cambiaAtras(imagenFoto, imagen);
     }
     function quitaEfxDifumina(clase) {
         var elems = $(clase);    //elementos que quiero saber si estan en el área visible
@@ -161,7 +161,7 @@
             }, 250);
         });
     }
-	$(function () {
+    $(function () {
         var elems = $('.oculta');    //elementos que quiero saber si estan en el área visible
         elems.each(function () {
             $(this).fadeOut();
@@ -414,7 +414,7 @@
 					</a>
 				</div>
 				<div class="col-xs-1 col-sm-1 col-md-1 col-lg-1 derechaSociales" style="padding-top: 8.9%; padding-left:0; padding-right:0;">
-					<ul class="sociales">
+					<ul>
 						<li><a href="#" class="cambiacolorredesSociales"><span><i class="fa fa-twitter fa-2x " id="ct"></i></span></a></li><br/>
 						<li><a href="#" class="cambiacolorredesSociales"><span><i class="fa fa-facebook fa-2x" id="cf"></i></span></a></li><br/>
 						<li><a href="#" class="cambiacolorredesSociales"><span><i class="fa fa-youtube-play fa-2x" id="cy"></i></span></a></li>

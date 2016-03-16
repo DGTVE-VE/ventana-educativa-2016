@@ -57,6 +57,7 @@ Route::group(['middleware' => 'web'], function () {
      Route::resource ('sessions', 'SessionsController');
      Route::get('login', 'SessionsController@create');
      Route::get('logout', 'SessionsController@destroy');
+     Route::post('cambiaAvatar', 'VentanaController@cambiaAvatar');
 
      // Password reset link request routes...
     Route::get('password/email', 'Auth\PasswordController@getEmail');
