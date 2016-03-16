@@ -10,7 +10,8 @@
                     <td>
                         <a href=" http://www.gob.mx/sep" target="_blank" onMouseOver="document.MyImage0.src = 'imagenes/ventana/pieventana/sepcolor.png';"
                            onMouseOut="document.MyImage0.src = 'imagenes/ventana/pieventana/sep.png';">
-                            <img class="img-responsive" src="imagenes/ventana/pieventana/sep.png" style="margin-left: 20% !important;" name="MyImage0">
+                            {{ HTML::image('imagenes/ventana/pieventana/sep.png','Logo sep', ['class'=>'logo-sep', 'style'=>'margin-left: 20% !important;']) }}
+                            <!--<img class="img-responsive" src="{!! HTML::image('imagenes/ventana/pieventana/sep.png') !!}" style=";" name="MyImage0">-->
                         </a> 
                     </td>
                     <td>
@@ -22,7 +23,8 @@
                     <td>
                         <a href=" http://www.csuca.org/" target="_blank" onMouseOver="document.MyImage2.src = 'imagenes/ventana/pieventana/csucacolor.png';"
                            onMouseOut="document.MyImage2.src = 'imagenes/ventana/pieventana/csuca.png';">
-                            <img class="img-responsive" src="imagenes/ventana/pieventana/csuca.png" style="margin-left: -35% !important;" name="MyImage2">
+                            {{ HTML::image("imagenes/ventana/pieventana/csuca.png", "Logo") }}
+                            <!--<img class="img-responsive" src="{!! HTML::image('imagenes/ventana/pieventana/csuca.png') !!}" style="margin-left: -35% !important;" name="MyImage2">-->
                         </a>       
                     </td>
                     <td>
