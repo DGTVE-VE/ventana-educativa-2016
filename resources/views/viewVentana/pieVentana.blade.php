@@ -4,13 +4,13 @@
         <ul>
             <li><div class="fondoColabora"><a href="#"><p class="txtPestana ">COLABORADORES</p></a></div></li>
         </ul>
-        <div class="tabl" id="efectobarramenu">
+        <div class="table-responsive " id="efectobarramenu">
             <table class="table tablaCOlaboradores" style=" border-top-style: none !important;">
                 <tr>
                     <td>
                         <a href=" http://www.gob.mx/sep" target="_blank" onMouseOver="document.MyImage0.src = 'imagenes/ventana/pieventana/sepcolor.png';"
                            onMouseOut="document.MyImage0.src = 'imagenes/ventana/pieventana/sep.png';">
-                            {{ HTML::image('imagenes/ventana/pieventana/sep.png','Logo sep', 'style'=>'margin-left: 20% !important;']) }}
+                            <!--{{ HTML::image('imagenes/ventana/pieventana/sep.png','Logo sep', ['style'=>'margin-left: 20% !important;']) }}-->
                             <!--<img class="img-responsive" src="{!! HTML::image('imagenes/ventana/pieventana/sep.png') !!}" style=";" name="MyImage0">-->
                         </a> 
                     </td>
