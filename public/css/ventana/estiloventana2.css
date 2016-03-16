@@ -94,7 +94,7 @@ body{background:url(../../imagenes/ventana/background/BackgroundDefault.jpg) no-
     .carousel-control.right,
     .carousel-control .glyphicon-chevron-right{left:auto;right:-5%;font-size:50px;}
     .carousel-control.left{right:auto;left:-5%;font-size:50px;}
-.frmRegistro{margin-top: 8%; background:rgba(0, 0, 0, .3);color:white;font-family:Ubuntu;}
+    .frmRegistro{margin-top: 8%; background:rgba(0, 0, 0, .3);color:white;font-family:Ubuntu;}
 }
 
 @media (min-width: 1200px) {
@@ -115,11 +115,14 @@ body{background:url(../../imagenes/ventana/background/BackgroundDefault.jpg) no-
     .carousel-control.right,
     .carousel-control .glyphicon-chevron-right{left:auto;right:-10%;font-size:80px;}
     .carousel-control.left{right:auto;left:-10%;font-size:80px;}
-.frmRegistro{margin-top: 8%; background:rgba(0, 0, 0, .3);color:white;font-family:Ubuntu;}
-.iconoApp{margin-top: 15% !important;}
-.menuVentanaApps{margin-top: 20% !important;}
-.fondoRegistro{margin-top: 18% !important;}
-.fondoRegistro:after{margin-top:-74%; margin-left: 87%; display:block;width:0;height:0;border-left:12px solid transparent;border-right:12px solid transparent;border-bottom:12px solid rgba(0, 0, 0, .3) !important;}
+    .frmRegistro{margin-top: 8%; background:rgba(0, 0, 0, .3);color:white;font-family:Ubuntu;}
+    .iconoApp{margin-top: 15% !important;}
+
+    .menuVentanaApps{
+        margin-top: 20% !important;
+    }
+    .fondoRegistro{margin-top: 18% !important;}
+    .fondoRegistro:after{margin-top:-74%; margin-left: 87%; display:block;width:0;height:0;border-left:12px solid transparent;border-right:12px solid transparent;border-bottom:12px solid rgba(0, 0, 0, .3) !important;}
 }
 
 .tablaCOlaboradores td {
