@@ -113,7 +113,12 @@
                 </li>
                 <li id="li-R" class="dropdown col-md-6">
                     <div class=" divli dropdown-toggle" data-toggle="dropdown">
-                        {{ HTML::image('imagenes/ventana/encabezado/usuario.png','Logo Usuario')}}
+                        @if (File::exists ('uploaded/avatares/'.Auth::user()->id.'.png'))                        
+                        {{ HTML::image('uploaded/avatares/'.Auth::user()->id.'.png', 'Avatar usuario', ['class'=>'img-circle', 'id'=>'img-usuario', 'width'=>'30px'] )}}
+                        @else
+                        {{ HTML::image('imagenes/ventana/encabezado/usuario.png','Logo Usuario',['class'=>'img-circle', 'id'=>'img-usuario'] )}}
+                        @endif
+                        
                     </div>
                     <ul class="dropdown-menu fondoRegistro">
                         <li class="panel-body">
@@ -154,7 +159,12 @@
                                         <div id="form-avatar" class="hidden" >
                                             <form id="uploadimage" action="" method="POST" enctype="multipart/form-data">
                                                 <input type="hidden" name="_token" value="{{ csrf_token() }}" />
-                                                <div id="image_preview"><img height="100px" id="previewing" src="noimage.png" /></div>
+                                                
+                                                @if (File::exists ('uploaded/avatares/'.Auth::user()->id.'.png')))
+                                                <div id="image_preview"><img height="100px" id="previewing" src="{{url('uploaded/avatares/'.Auth::user()->id.'.png')}}" /></div>
+                                                @else
+                                                <div id="image_preview"><img height="100px" id="previewing" src="imagenes/ventana/encabezado/noimage.png" /></div>
+                                                @endif
                                                 <hr id="line">
                                                 <div id="selectImage">
                                                     <label>Selecciona tu imagen</label><br/>
@@ -208,6 +218,9 @@
                     $('#loading').hide();
                     $("#form-avatar").addClass('hidden');
                     $("#message").html(data);
+                    $('#img-usuario').attr('src', data+'?'+(new Date ()));
+                    $('#img-usuario').attr('width', '30px');
+                    $('#img-usuario').attr('height', '30px');         
                 },
                 error: function (data)
                 {
@@ -223,7 +236,8 @@
                 var file = this.files[0];
                 var imagefile = file.type;
                 var match = ["image/jpeg", "image/png", "image/jpg"];
-                if (!((imagefile == match[0]) || (imagefile == match[1]) || (imagefile == match[2])))
+                // Si la imagen no es de tipo válido
+                if (match.indexOf(imagefile) === -1)
                 {
                     $('#previewing').attr('src', 'noimage.png');
                     $("#message").html("<p id='error'>Please Select A valid Image File</p>" + "<h4>Note</h4>" + "<span id='error_message'>Only jpeg, jpg and png Images type allowed</span>");
@@ -233,7 +247,7 @@
                 {
                     var reader = new FileReader();
                     reader.onload = imageIsLoaded;
-                    reader.readAsDataURL(this.files[0]);
+                    reader.readAsDataURL(this.files[0]);                    
                 }
             });
         });
