@@ -1,12 +1,12 @@
 /**{border: 2px solid red;}*/
 body{
-background-repeat: no-repeat;
-background-position: center center;
-background-attachment: fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;    
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;    
 }
 
 .frmRegistro input{border-radius:15px 15px 15px 15px;}
@@ -104,8 +104,8 @@ background-attachment: fixed;
 
 @media (min-width: 1200px) {
     .imgLogo{
-        width: 100% \9; /*Force IE10 and below to size SVG images correctly*/
-        max-width: 100%;
+        width: 70% \9; /*Force IE10 and below to size SVG images correctly*/
+        max-width: 70%;
     }
     .liBuscar{margin-left: 365% !important}
     .has-feedback{margin-left:-115%;}

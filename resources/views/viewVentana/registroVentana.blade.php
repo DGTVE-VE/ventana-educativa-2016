@@ -15,7 +15,7 @@ Ventana Educativa
 
 
     <div class = "panel-body">
-        <form role="form" action="registraUsuario" method="post">
+        <form role="form" action="{{url('registraUsuario')}}" method="post">
             <div class="form-group col-md-12">
                 <br>
                 <label for="nombre">Nombre Completo:</label>
