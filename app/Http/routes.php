@@ -76,3 +76,7 @@ Route::post('registraUsuario', 'VentanaController@registraUsuario');
 
 //Route::get ('testSession','SessionsController@test');
 /****************************HOME VENTANA***********************/
+
+/****************************MEDIATECA***********************/
+Route::get('mediateca', 'MediatecaController@mediateca');
+/****************************MEDIATECA***********************/
