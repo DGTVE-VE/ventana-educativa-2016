@@ -19,7 +19,7 @@
 			font-family: 'Ubuntu';
 		}
 		.txtHomeXs{
-			font-size:0.9em;
+			font-size:0.7em;
 			font-family: 'Ubuntu';
 		}
 		.contieneTxt{
