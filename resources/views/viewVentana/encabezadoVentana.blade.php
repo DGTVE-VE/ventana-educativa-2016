@@ -9,7 +9,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>    
-                    <a href="ventana_educativa">
+                    <a href="{{url('ventana_educativa')}}">
                         {{ HTML::image('imagenes/ventana/encabezado/logoventana.png','Logo Ventana Educativa', ['class'=>'image-responsive imgLogo']) }}
                     </a>
                 </div> 
@@ -39,7 +39,7 @@
                         <table class="">
                             <tr>
                                 <td class="divApp centered">
-                                    <a class="text-center" href="ventana_educativa">
+                                    <a class="text-center" href="{{url('ventana_educativa')}}">
                                         {{ HTML::image('imagenes/ventana/encabezado/appVentana.png','logo Ventana Educativa',['class'=>'img-responsive'])}}
                                     </a>
                                     <label class="etiquetaApp text-center">Ventana Educativa</label>
@@ -141,7 +141,7 @@
                                             </div>
 
                                             <div class=" col-md-6 text-center">
-                                                <a href="registro"  tabindex="5" style="color: white;" class="forgot-password">Registrate</a>
+                                                <a href="{{url('registro')}}"  tabindex="5" style="color: white;" class="forgot-password">Registrate</a>
                                             </div>
                                         </div>
                                     </form>
