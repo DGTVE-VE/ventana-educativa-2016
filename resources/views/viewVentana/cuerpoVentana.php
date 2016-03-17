@@ -355,7 +355,7 @@
 						<area shape="poly" coords="0,488,488,0,1020,500,510,1020" onmouseover="cambiaImgFoto('09')" onmouseout="cambiaImgCubo('09')" href="#"/>
 						<area shape="poly" coords="516,0,1030,0,1030,500" onmouseover="cambiaImgFoto('10')" onmouseout="cambiaImgCubo('10')" href="http://redmite.televisioneducativa.gob.mx/" target="_blank"/>
 					</map>
-					<a href="#" target="_blank">
+					<a href="http://formacioncontinua.sep.gob.mx/" target="_blank">
 						<img id="iconoRombo08" class="imgColor oculta difumina Intervalo1 slideInRight" src="imagenes/ventana/iconoSeccion/docentes.png" onmouseover="cambiaImgFoto('08')" onmouseout="cambiaImgCubo('08')" style="width:60%; height:60%; position: absolute; top: 30%; left:40%; z-index:4; visibility:hidden;"/>
 					</a>
 					<div id="iconoRombo08" class="contieneTxt oculta difumina Intervalo1 slideInRight text-center" onmouseover="cambiaImgFoto('08')" onmouseout="cambiaImgCubo('08')" style="width: 100%; position:absolute; top:90%; left:20%; Z-index:10;">
@@ -439,7 +439,7 @@
 							<area shape="poly" coords="0,488,500,0,1020,500,500,1010" href="#"/>
 							<area shape="poly" coords="440,1040,1040,520,1040,1040" href="http://redmite.televisioneducativa.gob.mx/" target="_blank"/>
 						</map>
-						<a href="#" target="_blank">
+						<a href="http://formacioncontinua.sep.gob.mx/" target="_blank">
 							<img id="iconoRombosm08" class="imgColor oculta difumina Intervalo1 slideInRight" src="imagenes/ventana/iconoSeccion/docentes.png" style="width:15%; height:30%; position: absolute; top: 60%; left:22%; z-index:4; visibility:hidden;"/>
 						</a>
 						<div id="iconoRombosm08" class="contieneTxt oculta difumina Intervalo1 slideInRight text-center" style="width: 50%; position:absolute; top:90%; left:5%; Z-index:10;">
