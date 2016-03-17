@@ -113,7 +113,9 @@
                 </li>
                 <li id="li-R" class="dropdown col-md-6">
                     <div class=" divli dropdown-toggle" data-toggle="dropdown">
-                        @if (File::exists ('uploaded/avatares/'.Auth::user()->id.'.png'))                        
+                        @if (Auth::guest())
+                        {{ HTML::image('imagenes/ventana/encabezado/usuario.png','Logo Usuario',['class'=>'img-circle', 'id'=>'img-usuario'] )}}                        
+                        @elseif (File::exists ('uploaded/avatares/'.Auth::user()->id.'.png'))                        
                         {{ HTML::image('uploaded/avatares/'.Auth::user()->id.'.png', 'Avatar usuario', ['class'=>'img-circle', 'id'=>'img-usuario', 'width'=>'30px'] )}}
                         @else
                         {{ HTML::image('imagenes/ventana/encabezado/usuario.png','Logo Usuario',['class'=>'img-circle', 'id'=>'img-usuario'] )}}
