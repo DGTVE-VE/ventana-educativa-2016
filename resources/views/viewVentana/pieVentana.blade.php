@@ -6,7 +6,7 @@
         </ul>
         <div id="efectobarramenu">
             <table class="table tablaCOlaboradores" style=" border-top-style: none !important;">
-                <tr>
+                          <tr>
                     <td>
                         <a href=" http://www.gob.mx/sep" target="_blank" onMouseOver="document.logosep.src = 'imagenes/ventana/pieventana/sepcolor.png';"
                            onMouseOut="document.logosep.src = 'imagenes/ventana/pieventana/sep.png';">
@@ -17,15 +17,15 @@
                     <td>
                         <a href=" http://www.televisioneducativa.gob.mx/" target="_blank" onMouseOver="document.logotve.src = 'imagenes/ventana/pieventana/tvecolor.png';"
                            onMouseOut="document.logotve.src = 'imagenes/ventana/pieventana/tve.png';">
-                           {{ HTML::image('imagenes/ventana/pieventana/tve.png','Logo tve',  ['style'=>'margin-left: -9% !important;', 'name'=>'logotve','class'=>'img-responsive'])}}     
-                        <!--<img class="img-responsive" src="imagenes/ventana/pieventana/tve.png" style="margin-left: -10% !important;" name="logotve" >-->
+                            {{ HTML::image('imagenes/ventana/pieventana/tve.png','Logo tve',  ['style'=>'margin-left: -9% !important;', 'name'=>'logotve','class'=>'img-responsive'])}}     
+                         <!--<img class="img-responsive" src="imagenes/ventana/pieventana/tve.png" style="margin-left: -10% !important;" name="logotve" >-->
                         </a> 
                     </td>
                     <td>
                         <a href=" http://www.csuca.org/" target="_blank" onMouseOver="document.logocsuca.src = 'imagenes/ventana/pieventana/csucacolor.png';"
                            onMouseOut="document.logocsuca.src = 'imagenes/ventana/pieventana/csuca.png';">                            
-                           {{ HTML::image('imagenes/ventana/pieventana/csuca.png','Logo csuca',  ['style'=>'margin-left: -30% !important;', 'name'=>'logocsuca','class'=>'img-responsive'])}}
-                            <!--<img class="img-responsive" src="{!! HTML::image('imagenes/ventana/pieventana/csuca.png') !!}" style="margin-left: -35% !important;" name="MyImage2">-->
+                            {{ HTML::image('imagenes/ventana/pieventana/csuca.png','Logo csuca',  ['style'=>'margin-left: -30% !important;', 'name'=>'logocsuca','class'=>'img-responsive'])}}
+                             <!--<img class="img-responsive" src="{!! HTML::image('imagenes/ventana/pieventana/csuca.png') !!}" style="margin-left: -35% !important;" name="MyImage2">-->
                         </a>       
                     </td>
                     <td>
@@ -62,12 +62,13 @@
     </div>
 </div>
 <div class="visible-xs-block visible-sm-block">
-    <div class="tabs_holder f1" style="position:fixed; top:50px; left:0px; width:150px;">
-        <ul>
-            <li><div class="fondoColaboraSM"><a href="#"><p class="txtPestanaSM">COLABORADORES</p></a></div></li>
-        </ul>
-        <div  class="table-responsive" id="efectobarramenu2">
-            <table class="table" style="border-top-style: none !important;">
+    <div class="tabs_holder f1SM " style="position:fixed; top:90px; left:0px; width:120px;">
+            <ul>
+                <li><div class="fondoColaboraSM"><a href="#"><p class="txtPestanaSM" id="desplegar">COLABORADORES</p></a></div></li>
+            </ul>
+        
+        <div id="efectobarramenu2">
+            <table class="table tablaCOlaboradores" id="efectobarramenu2" style="border-top-style: none !important;">
                 <tr>
                     <td>
                         <a href=" http://www.gob.mx/sep" target="_blank" onMouseOver="document.logosepsm.src = 'imagenes/ventana/pieventana/sepcolor.png';"
@@ -76,23 +77,23 @@
                             <!--<img class="img-responsive" src="imagenes/ventana/pieventana/sep.png" style="margin-left: -10% !important;" name="logoSep">-->
                         </a> 
                     </td>
-				</tr><tr>
+                </tr><tr>
                     <td>
                         <a href=" http://www.televisioneducativa.gob.mx/" target="_blank" onMouseOver="document.logotvesm.src = 'imagenes/ventana/pieventana/tvecolor.png';"
                            onMouseOut="document.logotvesm.src = 'imagenes/ventana/pieventana/tve.png';">
-                           {{ HTML::image('imagenes/ventana/pieventana/tve.png','Logo tve',  ['name'=>'logotvesm','class'=>'img-responsive'])}}     
-                        <!--<img class="img-responsive" src="imagenes/ventana/pieventana/tve.png" style="margin-left: -10% !important;" name="logotve" >-->
+                            {{ HTML::image('imagenes/ventana/pieventana/tve.png','Logo tve',  ['name'=>'logotvesm','class'=>'img-responsive'])}}     
+                         <!--<img class="img-responsive" src="imagenes/ventana/pieventana/tve.png" style="margin-left: -10% !important;" name="logotve" >-->
                         </a> 
                     </td>
-				</tr><tr>
+                </tr><tr>
                     <td>
                         <a href=" http://www.csuca.org/" target="_blank" onMouseOver="document.logocsucasm.src = 'imagenes/ventana/pieventana/csucacolor.png';"
                            onMouseOut="document.logocsucasm.src = 'imagenes/ventana/pieventana/csuca.png';">                            
-                           {{ HTML::image('imagenes/ventana/pieventana/csuca.png','Logo csuca',  ['name'=>'logocsucasm','class'=>'img-responsive'])}}
-                            <!--<img class="img-responsive" src="{!! HTML::image('imagenes/ventana/pieventana/csuca.png') !!}" style="margin-left: -35% !important;" name="MyImage2">-->
+                            {{ HTML::image('imagenes/ventana/pieventana/csuca.png','Logo csuca',  ['name'=>'logocsucasm','class'=>'img-responsive'])}}
+                             <!--<img class="img-responsive" src="{!! HTML::image('imagenes/ventana/pieventana/csuca.png') !!}" style="margin-left: -35% !important;" name="MyImage2">-->
                         </a>       
                     </td>
-				</tr><tr>
+                </tr><tr>
                     <td>
                         <a href=" http://ceducar.info/ceducar/" target="_blank" onMouseOver="document.logoceccsicasm.src = 'imagenes/ventana/pieventana/ceccsicacolor.png';"
                            onMouseOut="document.logoceccsicasm.src = 'imagenes/ventana/pieventana/ceccsica.png';">
@@ -100,7 +101,7 @@
                             <!--<img class="img-responsive" src="imagenes/ventana/pieventana/ceccsica.png" style="margin-left: 30% !important;" name="MyImage3">-->
                         </a>    
                     </td>
-				</tr><tr>
+                </tr><tr>
                     <td>
                         <a href=" https://www.unah.edu.hn/va" target="_blank" onMouseOver="document.logounahsm.src = 'imagenes/ventana/pieventana/unahcolor.png';"
                            onMouseOut="document.logounahsm.src = 'imagenes/ventana/pieventana/logounah.png';">
@@ -108,7 +109,7 @@
                             <!--<img class="img-responsive" src="imagenes/ventana/pieventana/logounah.png" style="margin-left: 30% !important;" name="MyImage4">-->
                         </a> 
                     </td>
-				</tr><tr>
+                </tr><tr>
                     <td>
                         <a href="http://www.mep.go.cr/" target="_blank" onMouseOver="document.logomepsm.src = 'imagenes/ventana/pieventana/mepcolor.png';"
                            onMouseOut="document.logomepsm.src = 'imagenes/ventana/pieventana/mep.png';">
@@ -116,7 +117,7 @@
                             <!--<img class="img-responsive" src="imagenes/ventana/pieventana/mep.png" style="margin-left: 30% !important;"  name="MyImage5">-->
                         </a> 
                     </td>
-				</tr><tr>
+                </tr><tr>
                     <td>
                         <a href=" http://amexcid.gob.mx/" target="_blank" onMouseOver="document.logoamexcidsm.src = 'imagenes/ventana/pieventana/amexcidcolor.png';"
                            onMouseOut="document.logoamexcidsm.src = 'imagenes/ventana/pieventana/amexcid.png';">
@@ -126,6 +127,7 @@
                     </td>
                 </tr>
             </table>
+           
         </div>
     </div>
 </div>
@@ -192,5 +194,15 @@
         </div>
     </div>
 </div>-->
-<script> $('#efectobarramenu').addClass('animated fadeInDown');</script>
-<script>$('#efectobarramenu2').addClass('animated slideInLeft');</script>
+<script> $('#efectobarramenu').addClass('animated fadeInDown', {duration: 'slow'} );</script>
+<!--<script>$('#efectobarramenu2').addClass('animated fadeInLeft');</script>-->
+<script>
+$(document).ready(function() {
+    $('#desplegar').click(function() {
+        $("#efectobarramenu2").animate({
+            width: "toggle",
+            "toggle"
+        });
+    });
+});
+</script>
