@@ -19,7 +19,7 @@
 			font-family: 'Ubuntu';
 		}
 		.txtHomeXs{
-			font-size:0.9em;
+			font-size:0.7em;
 			font-family: 'Ubuntu';
 		}
 		.contieneTxt{
@@ -282,7 +282,7 @@
 					<map name="mapacubo3" id="mapacubo3">
 						<area shape="poly" coords="0,388,388,0,840,388,420,820" /> <!--onmouseover="cambiaImgFoto('03')" onmouseout="cambiaImgCubo('03')" -->
 					</map>
-					<a href="#" target="_blank">
+					<a href="#">
 						<img id="iconoRombo02" class="imgColor oculta difumina Intervalo3 slideInLeft" src="imagenes/ventana/iconoSeccion/idiomas.png" onmouseover="cambiaImgFoto('02')" onmouseout="cambiaImgCubo('02')" style="width:60%; height:60%; position: absolute; top: 110%; left:60%; z-index:3; visibility:hidden;"/>
 					</a>
 					<div class="contieneTxt oculta difumina Intervalo3 slideInLeft text-center" onmouseover="cambiaImgFoto('02')" onmouseout="cambiaImgCubo('02')" style="width: 100%; position:absolute; top:165%; left:35%; Z-index:10;">
@@ -297,7 +297,7 @@
 						<area shape="poly" coords="0,456,0,0,456,0" onmouseover="cambiaImgFoto('02')" onmouseout="cambiaImgCubo('02')" href="#"/>
 						<area shape="poly" coords="-20,400,-20,960,520,960" /> <!--onmouseover="cambiaImgFoto('03')" onmouseout="cambiaImgCubo('03')" -->
 					</map>
-					<a href="#" target="_blank">
+					<a href="#">
 						<img id="iconoRombo04" class="imgColor oculta difumina Intervalo2 slideInLeft" src="imagenes/ventana/iconoSeccion/padres.png" onmouseover="cambiaImgFoto('04')" onmouseout="cambiaImgCubo('04')" style="width:60%; height:60%; position: absolute; top: 150%; left:40%; z-index:3; visibility:hidden;"/>
 					</a>
 					<div id="iconoRombo04" class="contieneTxt oculta difumina Intervalo2 slideInLeft text-center" onmouseover="cambiaImgFoto('04')" onmouseout="cambiaImgCubo('04')" style="width: 100%; position:absolute; top:210%; left:20%; Z-index:10;">
@@ -316,14 +316,14 @@
 						<area shape="poly" coords="0,488,488,0,1020,500,510,1020" onmouseover="cambiaImgFoto('06')" onmouseout="cambiaImgCubo('06')" href="#"/>
 						<area shape="poly" coords="0,0,488,0,0,488" onmouseover="cambiaImgFoto('04')" onmouseout="cambiaImgCubo('04')" href="#"/>
 					</map>
-					<a href="#" target="_blank">
+					<a href="#">
 						<img id="iconoRombo05" class="imgColor oculta difumina Intervalo1 slideInLeft" src="imagenes/ventana/iconoSeccion/primaria.png" onmouseover="cambiaImgFoto('05')" onmouseout="cambiaImgCubo('05')" style="width:60%; height:60%; position: absolute; top: 35%; left:35%; z-index:4; visibility:hidden;"/>
 					</a>
 					<div id="iconoRombo05" class="contieneTxt oculta difumina Intervalo1 slideInLeft text-center" onmouseover="cambiaImgFoto('05')" onmouseout="cambiaImgCubo('05')" style="width: 100%; position:absolute; top:95%; left:15%; Z-index:10;">
 						<p class="visible-lg-inline txtHomeLg">Estudiantes</p>
 						<p class="visible-md-inline txtHomeMd">Estudiantes</p>
 					</div>
-					<a href="#" target="_blank">
+					<a href="#">
 						<img id="iconoRombo06" class="imgColor oculta difumina Intervalo1 slideInLeft" src="imagenes/ventana/iconoSeccion/vod.png" onmouseover="cambiaImgFoto('06')" onmouseout="cambiaImgCubo('06')" style="width:60%; height:60%; position: absolute; top: 190%; left:35%; z-index:4; visibility:hidden;"/>
 					</a>
 					<div id="iconoRombo06" class="contieneTxt oculta difumina Intervalo1 slideInLeft text-center" onmouseover="cambiaImgFoto('06')" onmouseout="cambiaImgCubo('06')" style="width: 100%; position:absolute; top:250%; left:20%; Z-index:10;">
@@ -362,7 +362,7 @@
 						<p class="visible-lg-inline txtHomeLg">Docentes</p>
 						<p class="visible-md-inline txtHomeMd">Docentes</p>
 					</div>
-					<a href="#" target="_blank">
+					<a href="#">
 						<img id="iconoRombo09" class="imgColor oculta difumina Intervalo1 slideInRight" src="imagenes/ventana/iconoSeccion/mediateca.png" onmouseover="cambiaImgFoto('09')" onmouseout="cambiaImgCubo('09')" style="width:60%; height:60%; position: absolute; top: 187%; left:40%; z-index:4; visibility:hidden;"/>
 					</a>
 					<div id="iconoRombo09" class="contieneTxt oculta difumina Intervalo1 slideInRight text-center" onmouseover="cambiaImgFoto('09')" onmouseout="cambiaImgCubo('09')" style="width: 100%; position:absolute; top:245%; left:20%; Z-index:10;">
@@ -454,7 +454,7 @@
 							<area shape="poly" coords="0,488,488,0,1020,500,510,1020" href="#"/>
 							<area shape="poly" coords="516,0,1030,0,1030,500" href="http://redmite.televisioneducativa.gob.mx/" target="_blank"/>
 						</map>
-						<a href="#" target="_blank">
+						<a href="#">
 							<img id="iconoRombo09" class="imgColor oculta difumina Intervalo1 slideInRight" src="imagenes/ventana/iconoSeccion/mediateca.png" style="width:15%; height:30%; position: absolute; top: 60%; left:63%; z-index:4; visibility:hidden;"/>
 						</a>
 						<div id="iconoRombosm09" class="contieneTxt oculta difumina Intervalo1 slideInRight text-center" style="width: 50%; position:absolute; top:90%; left:45%; Z-index:10;">
@@ -483,7 +483,7 @@
 							<area shape="poly" coords="0,488,488,0,976,488,488,976" href="#"/>
 							<area shape="poly" coords="0,524,490,1030,0,1030" href="#"/>
 						</map>
-						<a href="#" target="_blank">
+						<a href="#">
 							<img id="iconoRomboSM05" class="imgColor oculta difumina Intervalo1 slideInLeft" src="imagenes/ventana/iconoSeccion/primaria.png" style="width:15%; height:30%; position: absolute; top: 145%; left:23%; z-index:4; visibility:hidden;"/>
 						</a>
 						<div id="iconoRombosm05" class="contieneTxt oculta difumina Intervalo1 slideInLeft text-center" style="width: 50%; position:absolute; top:175%; left:5%; Z-index:10;">
@@ -498,7 +498,7 @@
 							<area shape="poly" coords="0,488,488,0,1020,500,510,1020" href="#"/>
 							<area shape="poly" coords="0,0,488,0,0,488" href="#"/>
 						</map>
-						<a href="#" target="_blank">
+						<a href="#">
 							<img id="iconoRomboSM06" class="imgColor oculta difumina Intervalo1 slideInLeft" src="imagenes/ventana/iconoSeccion/vod.png" style="width:15%; height:30%; position: absolute; top: 145%; left:62%; z-index:4; visibility:hidden;"/>
 						</a>
 						<div id="iconoRombosm06" class="contieneTxt oculta difumina Intervalo1 slideInLeft text-center" style="width: 50%; position:absolute; top:175%; left:45%; Z-index:10;">
@@ -528,7 +528,7 @@
 						<map name="mapacubo2" id="mapacubo2">
 							<area shape="poly" coords="0,356,356,0,708,360,360,708" href="#"/>
 						</map>
-						<a href="#" target="_blank">
+						<a href="#">
 							<img id="iconoRombo02" class="imgColor oculta difumina Intervalo3 slideInLeft" src="imagenes/ventana/iconoSeccion/idiomas.png" style="width:15%; height:30%; position: absolute; top: 235%; left:23%; z-index:3; visibility:hidden;"/>
 						</a>
 						<div class="contieneTxt oculta difumina Intervalo3 slideInLeft text-center" style="width: 50%; position:absolute; top:263%; left:5%; Z-index:10;">
@@ -557,7 +557,7 @@
 							<area shape="poly" coords="0,456,0,0,456,0" href="#"/>
 							<area shape="poly" coords="-20,400,-20,960,520,960" />
 						</map>
-						<a href="#" target="_blank">
+						<a href="#">
 							<img id="iconoRombo04" class="imgColor oculta difumina Intervalo2 slideInLeft" src="imagenes/ventana/iconoSeccion/padres.png" style="width:15%; height:30%; position: absolute; top: 275%; left:43%; z-index:3; visibility:hidden;"/>
 						</a>
 						<div id="iconoRombo04" class="contieneTxt oculta difumina Intervalo2 slideInLeft text-center" style="width: 50%; position:absolute; top:305%; left:25%; Z-index:10;">
