@@ -54,7 +54,7 @@ and open the template in the editor.
         <!--script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.10/jquery-ui.min.js"></script--> <!-- efecto skin3 mení pie-->
         <!--<script type="text/javascript" src="http://onlinehtmltools.com/tab-generator/skinable_tabs.min.js"></script>  efecto skin3 mení pie-->
     </head>
-    <body>     
+    <body style="background-image:url('{{ asset('imagenes/ventana/background/backgroundDefault.jpg') }}');">     
         <script>
         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
         (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -68,7 +68,7 @@ and open the template in the editor.
         <header>
             @yield('menuVentana')
         </header>
-        <div class="container-fluid">
+      <div class="container-fluid">
             @yield('cuerpoVentana')
         </div>
         <div>
