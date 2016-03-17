@@ -7,11 +7,11 @@
 			filter: blur(3px);
 		}
 		.txtHomeLg{
-			font-size:1.4em;
+			font-size:1.3em;
 			font-family: 'Ubuntu';
 		}
 		.txtHomeMd{
-			font-size:1.2em;
+			font-size:1.1em;
 			font-family: 'Ubuntu';
 		}
 		.txtHomeSm{
@@ -320,11 +320,11 @@
 						<img id="iconoRombo05" class="imgColor oculta difumina Intervalo1 slideInLeft" src="imagenes/ventana/iconoSeccion/primaria.png" onmouseover="cambiaImgFoto('05')" onmouseout="cambiaImgCubo('05')" style="width:60%; height:60%; position: absolute; top: 35%; left:35%; z-index:4; visibility:hidden;"/>
 					</a>
 					<div id="iconoRombo05" class="contieneTxt oculta difumina Intervalo1 slideInLeft text-center" onmouseover="cambiaImgFoto('05')" onmouseout="cambiaImgCubo('05')" style="width: 100%; position:absolute; top:95%; left:15%; Z-index:10;">
-						<p class="visible-lg-inline txtHomeLg">Primaria</p>
-						<p class="visible-md-inline txtHomeMd">Primaria</p>
+						<p class="visible-lg-inline txtHomeLg">Estudiantes</p>
+						<p class="visible-md-inline txtHomeMd">Estudiantes</p>
 					</div>
 					<a href="#" target="_blank">
-						<img id="iconoRombo06" class="imgColor oculta difumina Intervalo1 slideInLeft" src="imagenes/ventana/iconoSeccion/vod.png" onmouseover="cambiaImgFoto('06')" onmouseout="cambiaImgCubo('06')" style="width:60%; height:60%; position: absolute; top: 190%; left:45%; z-index:4; visibility:hidden;"/>
+						<img id="iconoRombo06" class="imgColor oculta difumina Intervalo1 slideInLeft" src="imagenes/ventana/iconoSeccion/vod.png" onmouseover="cambiaImgFoto('06')" onmouseout="cambiaImgCubo('06')" style="width:60%; height:60%; position: absolute; top: 190%; left:35%; z-index:4; visibility:hidden;"/>
 					</a>
 					<div id="iconoRombo06" class="contieneTxt oculta difumina Intervalo1 slideInLeft text-center" onmouseover="cambiaImgFoto('06')" onmouseout="cambiaImgCubo('06')" style="width: 100%; position:absolute; top:250%; left:20%; Z-index:10;">
 						<p class="visible-lg-inline txtHomeLg">VOD</p>
@@ -487,8 +487,8 @@
 							<img id="iconoRomboSM05" class="imgColor oculta difumina Intervalo1 slideInLeft" src="imagenes/ventana/iconoSeccion/primaria.png" style="width:15%; height:30%; position: absolute; top: 145%; left:23%; z-index:4; visibility:hidden;"/>
 						</a>
 						<div id="iconoRombosm05" class="contieneTxt oculta difumina Intervalo1 slideInLeft text-center" style="width: 50%; position:absolute; top:175%; left:5%; Z-index:10;">
-							<p class="visible-sm-inline txtHomeSm">Primaria</p>
-							<p class="visible-xs-inline txtHomeXs">Primaria</p>
+							<p class="visible-sm-inline txtHomeSm">Estudiantes</p>
+							<p class="visible-xs-inline txtHomeXs">Estudiantes</p>
 						</div>
 					</td>
 					<td></td>
@@ -499,7 +499,7 @@
 							<area shape="poly" coords="0,0,488,0,0,488" href="#"/>
 						</map>
 						<a href="#" target="_blank">
-							<img id="iconoRomboSM06" class="imgColor oculta difumina Intervalo1 slideInLeft" src="imagenes/ventana/iconoSeccion/vod.png" style="width:15%; height:30%; position: absolute; top: 145%; left:66%; z-index:4; visibility:hidden;"/>
+							<img id="iconoRomboSM06" class="imgColor oculta difumina Intervalo1 slideInLeft" src="imagenes/ventana/iconoSeccion/vod.png" style="width:15%; height:30%; position: absolute; top: 145%; left:62%; z-index:4; visibility:hidden;"/>
 						</a>
 						<div id="iconoRombosm06" class="contieneTxt oculta difumina Intervalo1 slideInLeft text-center" style="width: 50%; position:absolute; top:175%; left:45%; Z-index:10;">
 							<p class="visible-sm-inline txtHomeSm">VOD</p>
