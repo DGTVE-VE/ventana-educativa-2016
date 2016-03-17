@@ -193,4 +193,4 @@
     </div>
 </div>-->
 <script> $('#efectobarramenu').addClass('animated fadeInDown');</script>
-<script>$('#efectobarramenu2').addClass('animated bounceInLeft');</script>
+<script>$('#efectobarramenu2').addClass('animated slideInLeft');</script>
