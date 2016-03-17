@@ -8,23 +8,25 @@ Ventana Educativa
 @endsection
 @section('cuerpoVentana')
 @if (session('status'))
-Te llegará un email con la liga para que cambies tu password.
+Te llegará un correo con la liga para que cambies tu contraseña.
 @else
-<div class = "panel panel-default frmRegistro col-lg-offset-2 col-md-8">
+<div class = "panel panel-default frmRegistro col-lg-offset-3 col-md-6">
     <br><br>
     <br><br>
-    <form method="POST" action="{{url ('password/email')}}">
+    <form method="POST" class="col-md-7 col-md-offset-2" action="{{url ('password/email')}}">
         <input type="hidden" name="_token" value="{{ csrf_token() }}" />
-        <div class="form-group">
-            <label for="email">Email</label>
+        <div class="form-group col-md-offset-2">
+            <label for="email">Correo</label>
             <input type="email" class="form-control" name="email" value="">        
         </div>
-        <button type="submit" class="btn btn-primary">
-            Envíame un email para resetear mi password.
-        </button>
+        <div class="col-md-offset-2">
+            <button type="submit" class="btn btn-success col-md-12">
+                Envíame un correo para resetear mi contraseña.
+            </button>
+        </div>
+        <br><br>
+        <br><br><br><br>
     </form>
-    <br><br><br><br>
-    <br><br>
 </div>
 @endif
 @endsection
