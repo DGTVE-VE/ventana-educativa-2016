@@ -1,5 +1,5 @@
 <!--nuevo encabezado-->
-<nav class="navbar navbar-default navbar-fixed-top menuVentana" role="navigation">
+<nav class="navbar navbar-default navbar-fixed-top lo menuVentana" role="navigation">
     <div class="container-fluid">
         <div class="row">
             <div class="col-md-2">
