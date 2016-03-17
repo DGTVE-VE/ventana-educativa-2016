@@ -1,12 +1,12 @@
 /**{border: 2px solid red;}*/
 body{
-background-repeat: no-repeat;
-background-position: center center;
-background-attachment: fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;    
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;    
 }
 
 .frmRegistro input{border-radius:15px 15px 15px 15px;}
