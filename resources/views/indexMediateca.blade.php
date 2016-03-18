@@ -39,7 +39,7 @@ and open the template in the editor.
         <div class="container-fluid">
             @yield('cuerpoMediateca')
         </div>
-        <div>
+        <div class="container-fluid">
             @yield('pieMediateca')
         </div>
     </body>
