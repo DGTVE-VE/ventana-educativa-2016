@@ -24,6 +24,10 @@ and open the template in the editor.
 
         <link rel="stylesheet" href="{{ asset('css/red/ihover.css') }}" >
         <link rel="stylesheet" href="{{ asset('css/red/animate.css') }}" >        
+        
+        <!--	-------------------------- Estilos para encabezado ------------------------------------		-->
+        <link rel="stylesheet" href="{{ asset('css/ventana/estiloventana2.css') }}" >
+        
 
         <!-- jQuery library -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
