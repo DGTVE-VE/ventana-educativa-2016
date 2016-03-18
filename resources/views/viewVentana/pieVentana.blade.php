@@ -67,7 +67,7 @@
                 <li><div class="fondoColaboraSM"><a href="#"><p class="txtPestanaSM" id="desplegar">COLABORADORES</p></a></div></li>
             </ul>
         
-        <div id="efectobarramenu2">
+        <div id="efectobarramenu2" style="width:120px;">
             <table class="table tablaCOlaboradores" id="efectobarramenu2" style="border-top-style: none !important;">
                 <tr>
                     <td>
