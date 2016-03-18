@@ -3,7 +3,7 @@
 @stop
 @extends('indexMediateca')
 @section('menuMediateca')
-	@include('viewMediateca.encabezadoMediateca')
+	@include('viewVentana.encabezadoVentana')
 @endsection
 @section('cuerpoMediateca')
 	@include('viewMediateca.cuerpoMediateca')
