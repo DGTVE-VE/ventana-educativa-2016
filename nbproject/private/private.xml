@@ -3,10 +3,18 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/xampp/htdocs/ventana-educativa-2016/resources/views/viewVentana/encabezadoVentana.blade.php</file>
-            <file>file:/C:/xampp/htdocs/ventana-educativa-2016/public/css/ventana/estiloventana2.css</file>
-            <file>file:/C:/xampp/htdocs/ventana-educativa-2016/app/Http/Controllers/VentanaController.php</file>
-            <file>file:/C:/xampp/htdocs/ventana-educativa-2016/app/Http/routes.php</file>
+            <file>file:/C:/xampp/htdocs/ventanaEducativa/resources/views/indexMediateca.blade.php</file>
+            <file>file:/C:/xampp/htdocs/ventanaEducativa/resources/views/viewMediateca/cuerpoMediateca.blade.php</file>
+            <file>file:/C:/xampp/htdocs/ventanaEducativa/resources/views/viewMediateca/pieMediateca.blade.php</file>
+            <file>file:/C:/xampp/htdocs/ventanaEducativa/resources/views/viewVentana/encabezadoVentana.blade.php</file>
+            <file>file:/C:/xampp/htdocs/ventanaEducativa/resources/views/viewMediateca/mediateca.blade.php</file>
+            <file>file:/C:/xampp/htdocs/ventanaEducativa/resources/views/viewVentana/presentacionVentana.blade.php</file>
+            <file>file:/C:/xampp/htdocs/ventanaEducativa/public/css/ventana/estiloventana3.css</file>
+            <file>file:/C:/xampp/htdocs/ventanaEducativa/public/css/ventana/estiloventana2.css</file>
+            <file>file:/C:/xampp/htdocs/ventanaEducativa/resources/views/indexVentana.blade.php</file>
+            <file>file:/C:/xampp/htdocs/ventanaEducativa/public/css/mediateca/estilomediateca3.css</file>
+            <file>file:/C:/xampp/htdocs/ventanaEducativa/storage/framework/views/b3a8b434afde7f091b08a8d9145068acc7772662.php</file>
+            <file>file:/C:/xampp/htdocs/ventanaEducativa/resources/views/viewVentana/pieVentana.blade.php</file>
         </group>
     </open-files>
 </project-private>
