@@ -28,6 +28,7 @@ and open the template in the editor.
         <!--	-------------------------- Estilos para encabezado ------------------------------------		-->
         <link rel="stylesheet" href="{{ asset('css/ventana/estiloventana2.css') }}" >
         
+        <link rel="stylesheet" href="{{ asset('css/mediateca/estilomediateca3.css') }}" >
 
         <!-- jQuery library -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
