@@ -2,6 +2,7 @@
 <div id="wrapper">
     <div class="overlay"></div>
 
+
     <!-- Sidebar -->
     <nav class="navbar navbar-inverse navbar-fixed-top" id="sidebar-wrapper" role="navigation">
         <ul class="nav sidebar-nav">
@@ -13,6 +14,7 @@
         </ul>
     </nav>
     <!-- /#sidebar-wrapper -->
+
 
     <!-- Page Content -->
     <div id="page-content-wrapper">

@@ -79,4 +79,15 @@ Route::post('registraUsuario', 'VentanaController@registraUsuario');
 
 /****************************MEDIATECA***********************/
 Route::get('mediateca', 'MediatecaController@mediateca');
+Route::get('telesecundaria', 'MediatecaController@telesecundaria');
+Route::get('telebachillerato', 'MediatecaController@telebachillerato');
+Route::get('primergrado', 'MediatecaController@primergrado');
+Route::get('segundogrado', 'MediatecaController@segundogrado');
+Route::get('tercergrado', 'MediatecaController@tercergrado');
+Route::get('semestreI', 'MediatecaController@semestreI');
+Route::get('semestreII', 'MediatecaController@semestreII');
+Route::get('semestreIII', 'MediatecaController@semestreIII');
+Route::get('semestreIV', 'MediatecaController@semestreIV');
+Route::get('semestreV', 'MediatecaController@semestreV');
+Route::get('semestreVI', 'MediatecaController@semestreVI');
 /****************************MEDIATECA***********************/
