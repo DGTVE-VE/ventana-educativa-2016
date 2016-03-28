@@ -1,0 +1,13 @@
+@section('titleMediateca')
+    Mediateca
+@stop
+@extends('indexMediateca')
+@section('menuMediateca')
+	@include('viewVentana.encabezadoVentana')
+@endsection
+@section('cuerpoMediateca')
+	@include('viewMediateca.cuerpoTelebachillerato')
+@endsection
+@section('pieMediateca')
+    @include('viewMediateca.pieMediateca')
+@endsection

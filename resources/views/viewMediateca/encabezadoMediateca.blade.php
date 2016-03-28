@@ -1,2 +1,0 @@
-<div>Encabezado Mediateca</div>
-
