@@ -1,13 +1,13 @@
 @section('titleVentana')
-    Ventana Educativa
+Ventana Educativa
 @stop
 @extends('indexVentana')
 @section('menuVentana')
-	@include('viewVentana.encabezadoVentana')
+@include('viewVentana.encabezadoVentana')
 @endsection
 @section('cuerpoVentana')
-	@include('viewVentana.cuerpoVentana')
+@include('viewVentana.cuerpoVentana')
 @endsection
 @section('pieVentana')
-    @include('viewVentana.pieVentana')
+@include('viewVentana.pieVentana')
 @endsection
