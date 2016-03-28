@@ -79,15 +79,15 @@ Route::post('registraUsuario', 'VentanaController@registraUsuario');
 
 /****************************MEDIATECA***********************/
 Route::get('mediateca', 'MediatecaController@mediateca');
-Route::get('telesecundaria', 'MediatecaController@telesecundaria');
-Route::get('telebachillerato', 'MediatecaController@telebachillerato');
-Route::get('primergrado', 'MediatecaController@primergrado');
-Route::get('segundogrado', 'MediatecaController@segundogrado');
-Route::get('tercergrado', 'MediatecaController@tercergrado');
-Route::get('semestreI', 'MediatecaController@semestreI');
-Route::get('semestreII', 'MediatecaController@semestreII');
-Route::get('semestreIII', 'MediatecaController@semestreIII');
-Route::get('semestreIV', 'MediatecaController@semestreIV');
-Route::get('semestreV', 'MediatecaController@semestreV');
-Route::get('semestreVI', 'MediatecaController@semestreVI');
+Route::get('mediateca/telesecundaria', 'MediatecaController@telesecundaria');
+Route::get('mediateca/telebachillerato', 'MediatecaController@telebachillerato');
+Route::get('mediateca/telesecundaria/primergrado', 'MediatecaController@primergrado');
+Route::get('mediateca/telesecundaria/segundogrado', 'MediatecaController@segundogrado');
+Route::get('mediateca/telesecundaria/tercergrado', 'MediatecaController@tercergrado');
+Route::get('mediateca/telebachillerato/semestreI', 'MediatecaController@semestreI');
+Route::get('mediateca/telebachillerato/semestreII', 'MediatecaController@semestreII');
+Route::get('mediateca/telebachillerato/semestreIII', 'MediatecaController@semestreIII');
+Route::get('mediateca/telebachillerato/semestreIV', 'MediatecaController@semestreIV');
+Route::get('mediateca/telebachillerato/semestreV', 'MediatecaController@semestreV');
+Route::get('mediateca/telebachillerato/semestreVI', 'MediatecaController@semestreVI');
 /****************************MEDIATECA***********************/
