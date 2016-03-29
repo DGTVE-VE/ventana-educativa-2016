@@ -6,7 +6,7 @@
 	@include('viewVentana.encabezadoVentana')
 @endsection
 @section('cuerpoMediateca')
-	@include('viewMediateca.cuerpoSemestreIII')
+	@include('viewMediateca.cuerpoSemestreI')
 @endsection
 @section('pieMediateca')
     @include('viewMediateca.pieMediateca')

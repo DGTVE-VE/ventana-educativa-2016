@@ -22,19 +22,34 @@
 	.bachSemIV{
 		position: absolute; top:40%; left:86%; width:45%; height: 110%;
 	}
+	.bajaFila{
+		position:relative; top:80px;
+	}
 </style>
-<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center textoTitulo">
+<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center textoTitulo bajaFila">
 	MEDIATECA
 </div>
 <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6" style="padding:10%;">
-	{{HTML::image('imagenes/mediateca/Telebachillerato/Inicio/SemestreI.png','Telebachillerato',['class'=>'bachSemI'])}}
-	{{HTML::image('imagenes/mediateca/Telebachillerato/Inicio/SemestreII.png','Telebachillerato',['class'=>'bachSemII'])}}
-	{{HTML::image('imagenes/mediateca/Telebachillerato/Inicio/SemestreIII.png','Telebachillerato',['class'=>'bachSemIII'])}}
+	<a href="{{url('mediateca/telebachillerato/semestreI')}}">
+		{{HTML::image('imagenes/mediateca/Telebachillerato/Inicio/SemestreI.png','Telebachillerato',['class'=>'bachSemI'])}}
+	</a>
+	<a href="{{url('mediateca/telebachillerato/semestreII')}}">
+		{{HTML::image('imagenes/mediateca/Telebachillerato/Inicio/SemestreII.png','Telebachillerato',['class'=>'bachSemII'])}}
+	</a>
+	<a href="{{url('mediateca/telebachillerato/semestreIII')}}">
+		{{HTML::image('imagenes/mediateca/Telebachillerato/Inicio/SemestreIII.png','Telebachillerato',['class'=>'bachSemIII'])}}
+	</a>
 </div>
 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 </div>
 <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6" style="padding:10%;">
-	{{HTML::image('imagenes/mediateca/Telebachillerato/Inicio/SemestreVI.png','Telebachillerato',['class'=>'bachSemVI'])}}
-	{{HTML::image('imagenes/mediateca/Telebachillerato/Inicio/SemestreV.png','Telebachillerato',['class'=>'bachSemV'])}}
-	{{HTML::image('imagenes/mediateca/Telebachillerato/Inicio/SemestreIV.png','Telebachillerato',['class'=>'bachSemIV'])}}
+	<a href="{{url('mediateca/telebachillerato/semestreVI')}}">
+		{{HTML::image('imagenes/mediateca/Telebachillerato/Inicio/SemestreVI.png','Telebachillerato',['class'=>'bachSemVI'])}}
+	</a>
+	<a href="{{url('mediateca/telebachillerato/semestreV')}}">
+		{{HTML::image('imagenes/mediateca/Telebachillerato/Inicio/SemestreV.png','Telebachillerato',['class'=>'bachSemV'])}}
+	</a>
+	<a href="{{url('mediateca/telebachillerato/semestreIV')}}">
+		{{HTML::image('imagenes/mediateca/Telebachillerato/Inicio/SemestreIV.png','Telebachillerato',['class'=>'bachSemIV'])}}
+	</a>
 </div>
