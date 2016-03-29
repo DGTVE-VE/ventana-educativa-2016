@@ -89,7 +89,7 @@
 .sidebar-nav li.open a:active,
 .sidebar-nav li.open a:focus{
     color: #fff; /*color de texto de la lista en el hover*/
-    font-weight: bold;
+    font-weight: bold; /* cambiar a bold el texto */
     text-decoration: none;
     background-color: transparent;
 }
@@ -116,7 +116,7 @@
 
 .hamburger {
     position: fixed;
-    top: 158px;  /*margen superior de la pestaña menú 160 */
+    top: 160px;  /*margen superior de la pestaña menú  */
     z-index: 999;
     display: block;
     width: 40px; /*ancho de la pestaña menú */
