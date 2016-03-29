@@ -7,7 +7,7 @@
     <nav class="navbar navbar-inverse navbar-fixed-top" id="sidebar-wrapper" role="navigation">
         <ul class="nav sidebar-nav">
             <li><a href="#">Misión</a></li>
-            <li><a href="#"><h4>Mapa Curricular</h4></a></li>
+            <li><a href="#">Mapa Curricular</a></li>
             <li><a href="#">Calendario</a></li>
             <li><a href="#">Materiales Educativos</a></li>
             <li id="sinBorde"><a href="#">Programación Televisiva</a></li>
