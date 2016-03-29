@@ -8,6 +8,3 @@
 @section('cuerpoMediateca')
 	@include('viewMediateca.cuerpoMediateca')
 @endsection
-@section('pieMediateca')
-    @include('viewMediateca.pieMediateca')
-@endsection
