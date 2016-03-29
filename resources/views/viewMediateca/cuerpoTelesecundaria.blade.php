@@ -5,13 +5,13 @@
 		font-size:2em;
 	}
 	.telesecPrimero{
-		position:absolute; top:0%; left:12%; width:77%; height: 197%;
+		position:absolute; top:5%; left:18%; width:65%; height: 166%;
 	}
 	.teleSecSegundo{
-		position: absolute; top:47%; left:51%; width:77%; height: 195%;
+		position: absolute; top:44.7%; left:51%; width:65%; height: 166%;
 	}
 	.telesecTercero{
-		position:absolute; top:106%; left:15.5%; width:77%; height: 194%;
+		position:absolute; top:94%; left:20.8%; width:65.5%; height: 166%;
 	}
 	.bajaFila{
 		position:relative; top:80px;
