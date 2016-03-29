@@ -4,9 +4,55 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "d8a144672733841be81e90e469faa7e1",
-    "content-hash": "9f7b2df3a4700edca44bc03da1b48315",
+    "hash": "9c9cbb0d12a2c1accb88669c0809aa31",
+    "content-hash": "6edd0afbc71c98ba1d8a7e495f2d5685",
     "packages": [
+        {
+            "name": "alaouy/youtube",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/alaouy/Youtube.git",
+                "reference": "a73a2b09982a97e2c23fa0e9bc097692930bec66"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/alaouy/Youtube/zipball/a73a2b09982a97e2c23fa0e9bc097692930bec66",
+                "reference": "a73a2b09982a97e2c23fa0e9bc097692930bec66",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "3.7.*@stable"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Alaouy\\Youtube\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Mustapha Alaouy",
+                    "email": "alaouym@gmail.com"
+                }
+            ],
+            "description": "Laravel PHP Facade/Wrapper for the Youtube Data API v3",
+            "keywords": [
+                "alaouy",
+                "api",
+                "laravel",
+                "video",
+                "youtube"
+            ],
+            "time": "2016-03-23 12:28:06"
+        },
         {
             "name": "classpreloader/classpreloader",
             "version": "3.0.0",
@@ -447,16 +493,16 @@
         },
         {
             "name": "laravel/framework",
-            "version": "v5.2.24",
+            "version": "v5.2.27",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/framework.git",
-                "reference": "396297a5fd3c70c2fc1af68f09ee574a2380175c"
+                "reference": "ccda783ffa253ed27dd1d4b41dbbc95e76e48a2a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/396297a5fd3c70c2fc1af68f09ee574a2380175c",
-                "reference": "396297a5fd3c70c2fc1af68f09ee574a2380175c",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/ccda783ffa253ed27dd1d4b41dbbc95e76e48a2a",
+                "reference": "ccda783ffa253ed27dd1d4b41dbbc95e76e48a2a",
                 "shasum": ""
             },
             "require": {
@@ -571,7 +617,7 @@
                 "framework",
                 "laravel"
             ],
-            "time": "2016-03-22 13:45:19"
+            "time": "2016-03-29 13:32:58"
         },
         {
             "name": "laravelcollective/html",
@@ -936,12 +982,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/paragonie/random_compat.git",
-                "reference": "ff76e1a660669bb56ba74ba0583fd8d41417bf39"
+                "reference": "c7e26a21ba357863de030f0b9e701c7d04593774"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/paragonie/random_compat/zipball/ff76e1a660669bb56ba74ba0583fd8d41417bf39",
-                "reference": "ff76e1a660669bb56ba74ba0583fd8d41417bf39",
+                "url": "https://api.github.com/repos/paragonie/random_compat/zipball/c7e26a21ba357863de030f0b9e701c7d04593774",
+                "reference": "c7e26a21ba357863de030f0b9e701c7d04593774",
                 "shasum": ""
             },
             "require": {
@@ -2173,34 +2219,6 @@
             "time": "2015-05-11 14:41:42"
         },
         {
-            "name": "mjanssen/laravel-5-breadcrumbs",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/mjanssen/Laravel-5-breadcrumbs-bundle.git",
-                "reference": "5a849e4f5b7476f8e7ce5cf1173c18709485488d"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/mjanssen/Laravel-5-breadcrumbs-bundle/zipball/5a849e4f5b7476f8e7ce5cf1173c18709485488d",
-                "reference": "5a849e4f5b7476f8e7ce5cf1173c18709485488d",
-                "shasum": ""
-            },
-            "type": "library",
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Marnix Janssen",
-                    "email": "dev.marnix@gmail.com"
-                }
-            ],
-            "description": "A simple and powerfull way to create breadcrumbs in Laravel 5+",
-            "time": "2015-12-19 21:52:35"
-        },
-        {
             "name": "mockery/mockery",
             "version": "0.9.4",
             "source": {
@@ -3277,7 +3295,7 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
-        "mjanssen/laravel-5-breadcrumbs": 20
+        "alaouy/youtube": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,

@@ -44,4 +44,7 @@ class MediatecaController extends Controller
 	public function semestreVI() {
        return view('viewMediateca/semestreVI');
     }
+    	public function videos() {
+       return view('viewMediateca/videos');
+    }
 }
