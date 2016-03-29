@@ -5,10 +5,10 @@
 		font-size:2em;
 	}
 	.telesecundaria{
-		position: absolute; top:10%; left:61%; width:80%; height: 100%;
+		position: absolute; top:10%; left:61%; width:70%; height: 90%;
 	}
 	.telebachillerato{
-		position: absolute; top:110%; left:61%; width:80%; height: 100%;
+		position: absolute; top:100%; left:61%; width:70%; height: 90%;
 	}
 	.bajaFila{
 		position:relative; top:80px;

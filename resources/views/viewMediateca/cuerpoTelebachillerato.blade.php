@@ -5,22 +5,22 @@
 		font-size:2em;
 	}
 	.bachSemI{
-		position: absolute; top:19%; left:35%; width:45%; height: 110%;
+		position: absolute; top:30%; left:55%; width:36%; height: 90%;
 	}
 	.bachSemII{
-		position: absolute; top:1%; left:70%; width:45%; height: 110%;
+		position: absolute; top:15%; left:83%; width:36%; height: 90%;
 	}
 	.bachSemIII{
-		position: absolute; top:52%; left:92%; width:45%; height: 110%;
+		position: absolute; top:58%; left:101%; width:36%; height: 90%;
 	}
 	.bachSemVI{
-		position: absolute; top:8%; left:28.5%; width:45%; height: 108%;
+		position: absolute; top:2%; left:49.5%; width:36.5%; height: 90%;
 	}
 	.bachSemV{
-		position: absolute; top:58.5%; left:51%; width:45%; height: 109%;
+		position: absolute; top:44%; left:67.8%; width:36%; height: 90%;
 	}
 	.bachSemIV{
-		position: absolute; top:40%; left:86%; width:45%; height: 110%;
+		position: absolute; top:29%; left:96.2%; width:36%; height: 90%;
 	}
 	.bajaFila{
 		position:relative; top:80px;
