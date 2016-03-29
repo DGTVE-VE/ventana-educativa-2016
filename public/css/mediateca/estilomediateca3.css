@@ -116,7 +116,7 @@
 
 .hamburger {
     position: fixed;
-    top: 160px;  /*margen superior de la pestaña menú  */
+    top: 158px;  /*margen superior de la pestaña menú  */
     z-index: 999;
     display: block;
     width: 40px; /*ancho de la pestaña menú */

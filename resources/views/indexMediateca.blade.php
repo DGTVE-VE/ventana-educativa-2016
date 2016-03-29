@@ -26,7 +26,7 @@ and open the template in the editor.
         <link rel="stylesheet" href="{{ asset('css/red/animate.css') }}" >        
         
         <!--	-------------------------- Estilos para encabezado ------------------------------------		-->
-        <link rel="stylesheet" href="{{ asset('css/ventana/estiloventana2.css') }}" >
+        <link rel="stylesheet" href="{{ asset('css/mediateca/estilomediateca2.css') }}" >
         
         <link rel="stylesheet" href="{{ asset('css/mediateca/estilomediateca3.css') }}" >
 
@@ -37,7 +37,7 @@ and open the template in the editor.
         <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 
     </head>
-    <body style="background-image:url('{{ asset('imagenes/ventana/background/backgroundDefault.jpg') }}');">     
+    <body style="background-image:url('{{ asset('imagenes/mediateca/background/backgroundDefault.jpg') }}');">     
         <header>
             @yield('menuMediateca')
         </header>
