@@ -3,7 +3,7 @@ Mediateca
 @stop
 @extends('indexMediateca')
 @section('menuMediateca')
-@include('viewVentana.encabezadoVentana')
+@include('viewMediateca.encabezadoMediateca')
 @endsection
 @section('cuerpoMediateca')
 <br<br><br><br><br><br>
@@ -17,11 +17,21 @@ Mediateca
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <button type="button" class="close textoBlanco" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Cerrar</span></button>
+                <label class="textoBlanco">Titulo de video</label>
             </div>
             <div class="modal-body">
-                <iframe width="50%" height="350" src="http://www.youtube.com/embed/loFtozxZG0s"></iframe>
-                <div id="videoscarousel" class="carousel slide ">
+                <div class="col-md-6">
+                    <iframe width="100%" height="350" src="http://www.youtube.com/embed/loFtozxZG0s"></iframe>
+                </div>
+                <div class="col-md-6 textoBlanco">
+                    <li class="list-unstyled">Materia</li>
+                    <li class="list-unstyled">Grado</li>
+                    <li class="list-unstyled">Bloque</li>
+                    <li class="list-unstyled">Sinopsis</li>
+                    <li class="list-unstyled">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</li>
+                </div>                
+                <div id="videoscarousel" class="carousel slide col-md-12 ">
                     <br><br><br>
                     <!-- Carousel items -->
                     <div class="carousel-inner col-md-12">
