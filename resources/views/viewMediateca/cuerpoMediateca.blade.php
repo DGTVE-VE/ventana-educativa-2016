@@ -24,15 +24,20 @@
 	function muestraImgCentral(idImg){
 		var idImgHover = "imagenes/mediateca/Inicio/" + idImg + "Hover.png";
 		document.getElementById(idImg).src = idImgHover;
-		var idImgCentro = idImg + "Centro";
-		document.getElementById(idImgCentro).style.visibility = "visible";
-		
+		var idImgCentro = "#" + idImg + "Centro";
+		$(idImgCentro).addClass("bounceIn");
+		$(idImgCentro).addClass("animated");
+		$(idImgCentro).css("visibility", "visible");
+		$(idImgCentro).fadeIn();
 	}
 	function ocultaImgCentral(idImg){
 		var idImgHover = "imagenes/mediateca/Inicio/" + idImg + ".png";
 		document.getElementById(idImg).src = idImgHover;
-		var idImgCentro = idImg + "Centro";
-		document.getElementById(idImgCentro).style.visibility = "hidden";
+		var idImgCentro = "#" + idImg + "Centro";
+		$(idImgCentro).css("visibility", "hidden");
+		$(idImgCentro).fadeOut();
+		$(idImgCentro).removeClass("animated");
+		$(idImgCentro).removeClass("bounceIn");
 	}
 </script>
 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center textoTitulo bajaFila">
