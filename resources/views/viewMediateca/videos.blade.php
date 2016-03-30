@@ -84,10 +84,6 @@ Mediateca
     </div>
 </div>
 @endsection
-@section('pieMediateca')
-@include('viewMediateca.pieMediateca')
-@endsection
-
 
 <script>
     autoPlayYouTubeModal();
