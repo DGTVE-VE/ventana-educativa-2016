@@ -20,46 +20,51 @@ Mediateca
                 <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
             </div>
             <div class="modal-body">
-                <iframe width="100%" height="350" src="http://www.youtube.com/embed/loFtozxZG0s"></iframe>
-                <div id="videoscarousel" class="carousel slide col-md-12">
+                <iframe width="50%" height="350" src="http://www.youtube.com/embed/loFtozxZG0s"></iframe>
+                <div id="videoscarousel" class="carousel slide ">
+                    <br><br><br>
+                    <!-- Carousel items -->
+                    <div class="carousel-inner col-md-12">
+                        <div class="item active">
+                            <div class="row-fluid">
+                                <div class="col-md-2"><a href="#x" class="thumbnail"><img src="http://placehold.it/250x250" alt="Image" style="max-width:100%;" /></a></div>
+                                <div class="col-md-2"><a href="#x" class="thumbnail"><img src="http://placehold.it/250x250" alt="Image" style="max-width:100%;" /></a></div>
+                                <div class="col-md-2"><a href="#x" class="thumbnail"><img src="http://placehold.it/250x250" alt="Image" style="max-width:100%;" /></a></div>
+                                <div class="col-md-2"><a href="#x" class="thumbnail"><img src="http://placehold.it/250x250" alt="Image" style="max-width:100%;" /></a></div>
+                                <div class="col-md-2"><a href="#x" class="thumbnail"><img src="http://placehold.it/250x250" alt="Image" style="max-width:100%;" /></a></div>
+                                <div class="col-md-2"><a href="#x" class="thumbnail"><img src="http://placehold.it/250x250" alt="Image" style="max-width:100%;" /></a></div>
+                            </div><!--/row-fluid-->
+                        </div><!--/item-->
+
+                        <div class="item">
+                            <div class="row-fluid">
+                                <div class="col-md-2"><a href="#x" class="thumbnail"><img src="http://placehold.it/250x250" alt="Image" style="max-width:100%;" /></a></div>
+                                <div class="col-md-2"><a href="#x" class="thumbnail"><img src="http://placehold.it/250x250" alt="Image" style="max-width:100%;" /></a></div>
+                                <div class="col-md-2"><a href="#x" class="thumbnail"><img src="http://placehold.it/250x250" alt="Image" style="max-width:100%;" /></a></div>
+                                <div class="col-md-2"><a href="#x" class="thumbnail"><img src="http://placehold.it/250x250" alt="Image" style="max-width:100%;" /></a></div>
+                                <div class="col-md-2"><a href="#x" class="thumbnail"><img src="http://placehold.it/250x250" alt="Image" style="max-width:100%;" /></a></div>
+                                <div class="col-md-2"><a href="#x" class="thumbnail"><img src="http://placehold.it/250x250" alt="Image" style="max-width:100%;" /></a></div>                                
+                            </div><!--/row-fluid-->
+                        </div><!--/item-->
+
+                        <div class="item">
+                            <div class="row-fluid">
+                                <div class="col-md-2"><a href="#x" class="thumbnail"><img src="http://placehold.it/250x250" alt="Image" style="max-width:100%;" /></a></div>
+                                <div class="col-md-2"><a href="#x" class="thumbnail"><img src="http://placehold.it/250x250" alt="Image" style="max-width:100%;" /></a></div>
+                                <div class="col-md-2"><a href="#x" class="thumbnail"><img src="http://placehold.it/250x250" alt="Image" style="max-width:100%;" /></a></div>
+                                <div class="col-md-2"><a href="#x" class="thumbnail"><img src="http://placehold.it/250x250" alt="Image" style="max-width:100%;" /></a></div>
+                                <div class="col-md-2"><a href="#x" class="thumbnail"><img src="http://placehold.it/250x250" alt="Image" style="max-width:100%;" /></a></div>
+                                <div class="col-md-2"><a href="#x" class="thumbnail"><img src="http://placehold.it/250x250" alt="Image" style="max-width:100%;" /></a></div>                                
+                            </div><!--/row-fluid-->
+                        </div><!--/item-->
+                    </div><!--/carousel-inner-->
+                     <br><br><br> <br><br><br> 
                     <ol class="carousel-indicators">
                         <li data-target="#videoscarousel" data-slide-to="0" class="active"></li>
                         <li data-target="#videoscarousel" data-slide-to="1"></li>
                         <li data-target="#videoscarousel" data-slide-to="2"></li>
                     </ol>
-
-                    <!-- Carousel items -->
-                    <div class="carousel-inner">
-
-                        <div class="item active">
-                            <div class="row-fluid">
-                                <div class="span3"><a href="#x" class="thumbnail"><img src="http://placehold.it/250x250" alt="Image" style="max-width:100%;" /></a></div>
-                                <div class="span3"><a href="#x" class="thumbnail"><img src="http://placehold.it/250x250" alt="Image" style="max-width:100%;" /></a></div>
-                                <div class="span3"><a href="#x" class="thumbnail"><img src="http://placehold.it/250x250" alt="Image" style="max-width:100%;" /></a></div>
-                                <div class="span3"><a href="#x" class="thumbnail"><img src="http://placehold.it/250x250" alt="Image" style="max-width:100%;" /></a></div>
-                            </div><!--/row-fluid-->
-                        </div><!--/item-->
-
-                        <div class="item">
-                            <div class="row-fluid">
-                                <div class="span3"><a href="#x" class="thumbnail"><img src="http://placehold.it/250x250" alt="Image" style="max-width:100%;" /></a></div>
-                                <div class="span3"><a href="#x" class="thumbnail"><img src="http://placehold.it/250x250" alt="Image" style="max-width:100%;" /></a></div>
-                                <div class="span3"><a href="#x" class="thumbnail"><img src="http://placehold.it/250x250" alt="Image" style="max-width:100%;" /></a></div>
-                                <div class="span3"><a href="#x" class="thumbnail"><img src="http://placehold.it/250x250" alt="Image" style="max-width:100%;" /></a></div>
-                            </div><!--/row-fluid-->
-                        </div><!--/item-->
-
-                        <div class="item">
-                            <div class="row-fluid">
-                                <div class="span3"><a href="#x" class="thumbnail"><img src="http://placehold.it/250x250" alt="Image" style="max-width:100%;" /></a></div>
-                                <div class="span3"><a href="#x" class="thumbnail"><img src="http://placehold.it/250x250" alt="Image" style="max-width:100%;" /></a></div>
-                                <div class="span3"><a href="#x" class="thumbnail"><img src="http://placehold.it/250x250" alt="Image" style="max-width:100%;" /></a></div>
-                                <div class="span3"><a href="#x" class="thumbnail"><img src="http://placehold.it/250x250" alt="Image" style="max-width:100%;" /></a></div>
-                            </div><!--/row-fluid-->
-                        </div><!--/item-->
-
-                    </div><!--/carousel-inner-->
-
+                      <br><br><br> <br><br><br>
                     <a class="left carousel-control" href="#videoscarousel" data-slide="prev">‹</a>
                     <a class="right carousel-control" href="#videoscarousel" data-slide="next">›</a>
                 </div><!--/myCarousel-->
