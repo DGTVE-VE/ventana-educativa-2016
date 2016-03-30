@@ -142,6 +142,7 @@ return [
         Collective\Html\HtmlServiceProvider::class,
         /*breadcrumbs*/
 //        DaveJamesMiller\Breadcrumbs\ServiceProvider::class,
+         Alaouy\Youtube\YoutubeServiceProvider::class,
     ],
     /*
       |--------------------------------------------------------------------------
