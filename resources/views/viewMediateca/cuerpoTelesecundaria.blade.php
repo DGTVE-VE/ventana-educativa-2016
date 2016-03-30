@@ -1,17 +1,17 @@
 <style>
 	.textoTitulo{
-		color: white;
+		color: black;
 		font-family:'Ubuntu';
 		font-size:2em;
 	}
 	.telesecPrimero{
-		position:absolute; top:5%; left:18%; width:65%; height: 166%;
+		position:absolute; top:5%; left:25%; width:65%; height: 166%;
 	}
 	.teleSecSegundo{
-		position: absolute; top:44.7%; left:51%; width:65%; height: 166%;
+		position: absolute; top:44.7%; left:58%; width:65%; height: 166%;
 	}
 	.telesecTercero{
-		position:absolute; top:94%; left:20.8%; width:65.5%; height: 166%;
+		position:absolute; top:94%; left:27.8%; width:65.5%; height: 166%;
 	}
 	.bajaFila{
 		position:relative; top:80px;

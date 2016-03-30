@@ -1,26 +1,26 @@
 <style>
 	.textoTitulo{
-		color: white;
+		color: black;
 		font-family:'Ubuntu';
 		font-size:2em;
 	}
 	.bachSemI{
-		position: absolute; top:30%; left:55%; width:36%; height: 90%;
+		position: absolute; top:29.5%; left:60.8%; width:36.5%; height: 90%;
 	}
 	.bachSemII{
-		position: absolute; top:15%; left:83%; width:36%; height: 90%;
+		position: absolute; top:15%; left:89%; width:36%; height: 90%;
 	}
 	.bachSemIII{
-		position: absolute; top:58%; left:101%; width:36%; height: 90%;
+		position: absolute; top:58%; left:107%; width:36%; height: 90%;
 	}
 	.bachSemVI{
-		position: absolute; top:2%; left:49.5%; width:36.5%; height: 90%;
+		position: absolute; top:2%; left:55.5%; width:36.5%; height: 90%;
 	}
 	.bachSemV{
-		position: absolute; top:44%; left:67.8%; width:36%; height: 90%;
+		position: absolute; top:44%; left:73.8%; width:36%; height: 90%;
 	}
 	.bachSemIV{
-		position: absolute; top:29%; left:96.2%; width:36%; height: 90%;
+		position: absolute; top:29%; left:102.2%; width:36%; height: 90%;
 	}
 	.bajaFila{
 		position:relative; top:80px;

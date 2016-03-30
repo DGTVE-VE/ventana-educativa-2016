@@ -90,4 +90,5 @@ Route::get('mediateca/telebachillerato/semestreIII', 'MediatecaController@semest
 Route::get('mediateca/telebachillerato/semestreIV', 'MediatecaController@semestreIV');
 Route::get('mediateca/telebachillerato/semestreV', 'MediatecaController@semestreV');
 Route::get('mediateca/telebachillerato/semestreVI', 'MediatecaController@semestreVI');
+Route::get('mediateca/videos','MediatecaController@videos');
 /****************************MEDIATECA***********************/

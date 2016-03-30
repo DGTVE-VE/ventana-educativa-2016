@@ -140,6 +140,8 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
         Collective\Html\HtmlServiceProvider::class,
+        /*breadcrumbs*/
+        DaveJamesMiller\Breadcrumbs\ServiceProvider::class,
     ],
     /*
       |--------------------------------------------------------------------------
@@ -186,6 +188,8 @@ return [
 //        'Form' => Collective\Html\FormFacade::class,
 //        'Html' => Collective\Html\HtmlFacade::class,
         'Form'=> Illuminate\Html\FormFacade::class,
-        'HTML'=> Illuminate\Html\HtmlFacade::class
-    ],
+        'HTML'=> Illuminate\Html\HtmlFacade::class,
+        /*breadcrumbs*/
+        'Breadcrumbs' => DaveJamesMiller\Breadcrumbs\Facade::class,
+    ],  
 ];
