@@ -16,6 +16,7 @@ Route::get('logout', 'SessionsController@destroy');
 
 
 
+
 /************************** Autenticación *************************/
 
 /****************************REDMITE***********************/
@@ -91,4 +92,6 @@ Route::get('mediateca/telebachillerato/semestreIV', 'MediatecaController@semestr
 Route::get('mediateca/telebachillerato/semestreV', 'MediatecaController@semestreV');
 Route::get('mediateca/telebachillerato/semestreVI', 'MediatecaController@semestreVI');
 Route::get('mediateca/videos','MediatecaController@videos');
+Route::get('mediateca/test','MediatecaController@test');
+
 /****************************MEDIATECA***********************/

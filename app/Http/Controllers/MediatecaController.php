@@ -47,4 +47,9 @@ class MediatecaController extends Controller
     	public function videos() {
        return view('viewMediateca/videos');
     }
+    
+    public function test (){
+        $video = \Alaouy\Youtube\Facades\Youtube::getVideoInfo('rie-hPVJ7Sw');
+        var_dump ($video);
+    }
 }
