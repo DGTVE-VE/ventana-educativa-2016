@@ -18,13 +18,13 @@ class MediatecaController extends Controller
        return view('viewMediateca/telebachillerato');
     }
     public function primergrado() {
-       return view('viewMediateca/primergrado');
+       return view('viewMediateca/primerGrado');
     }
     public function segundogrado() {
-       return view('viewMediateca/segundogrado');
+       return view('viewMediateca/segundoGrado');
     }
 	public function tercergrado() {
-       return view('viewMediateca/tercergrado');
+       return view('viewMediateca/tercerGrado');
     }
 	public function semestreI() {
        return view('viewMediateca/semestreI');

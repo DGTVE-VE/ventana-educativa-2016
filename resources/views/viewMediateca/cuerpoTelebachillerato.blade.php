@@ -26,30 +26,45 @@
 		position:relative; top:80px;
 	}
 </style>
+<script>
+	function muestraImgCentral(idImg){
+		var idImgHover = "/ventana-educativa-2016/public/imagenes/mediateca/telebachillerato/Inicio/" + idImg + "Hover.png";
+		document.getElementById(idImg).src = idImgHover;
+		/*var idImgCentro = idImg + "Centro";
+		document.getElementById(idImgCentro).style.visibility = "visible";*/
+		
+	}
+	function ocultaImgCentral(idImg){
+		var idImgHover = "/ventana-educativa-2016/public/imagenes/mediateca/telebachillerato/Inicio/" + idImg + ".png";
+		document.getElementById(idImg).src = idImgHover;
+		/*var idImgCentro = idImg + "Centro";
+		document.getElementById(idImgCentro).style.visibility = "hidden";*/
+	}
+</script>
 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center textoTitulo bajaFila">
 	MEDIATECA
 </div>
 <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6" style="padding:10%;">
 	<a href="{{url('mediateca/telebachillerato/semestreI')}}">
-		{{HTML::image('imagenes/mediateca/Telebachillerato/Inicio/SemestreI.png','Telebachillerato',['class'=>'bachSemI'])}}
+		{{HTML::image('imagenes/mediateca/telebachillerato/Inicio/semestreI.png','Telebachillerato',['class'=>'bachSemI', 'id'=>'semestreI', 'onmouseover'=>'muestraImgCentral("semestreI")', 'onmouseout'=>'ocultaImgCentral("semestreI")'])}}
 	</a>
 	<a href="{{url('mediateca/telebachillerato/semestreII')}}">
-		{{HTML::image('imagenes/mediateca/Telebachillerato/Inicio/SemestreII.png','Telebachillerato',['class'=>'bachSemII'])}}
+		{{HTML::image('imagenes/mediateca/telebachillerato/Inicio/semestreII.png','Telebachillerato',['class'=>'bachSemII', 'id'=>'semestreII', 'onmouseover'=>'muestraImgCentral("semestreII")', 'onmouseout'=>'ocultaImgCentral("semestreII")'])}}
 	</a>
 	<a href="{{url('mediateca/telebachillerato/semestreIII')}}">
-		{{HTML::image('imagenes/mediateca/Telebachillerato/Inicio/SemestreIII.png','Telebachillerato',['class'=>'bachSemIII'])}}
+		{{HTML::image('imagenes/mediateca/telebachillerato/Inicio/semestreIII.png','Telebachillerato',['class'=>'bachSemIII', 'id'=>'semestreIII', 'onmouseover'=>'muestraImgCentral("semestreIII")', 'onmouseout'=>'ocultaImgCentral("semestreIII")'])}}
 	</a>
 </div>
 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 </div>
 <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6" style="padding:10%;">
 	<a href="{{url('mediateca/telebachillerato/semestreVI')}}">
-		{{HTML::image('imagenes/mediateca/Telebachillerato/Inicio/SemestreVI.png','Telebachillerato',['class'=>'bachSemVI'])}}
+		{{HTML::image('imagenes/mediateca/telebachillerato/Inicio/semestreVI.png','Telebachillerato',['class'=>'bachSemVI', 'id'=>'semestreVI', 'onmouseover'=>'muestraImgCentral("semestreVI")', 'onmouseout'=>'ocultaImgCentral("semestreVI")'])}}
 	</a>
 	<a href="{{url('mediateca/telebachillerato/semestreV')}}">
-		{{HTML::image('imagenes/mediateca/Telebachillerato/Inicio/SemestreV.png','Telebachillerato',['class'=>'bachSemV'])}}
+		{{HTML::image('imagenes/mediateca/telebachillerato/Inicio/semestreV.png','Telebachillerato',['class'=>'bachSemV', 'id'=>'semestreV', 'onmouseover'=>'muestraImgCentral("semestreV")', 'onmouseout'=>'ocultaImgCentral("semestreV")'])}}
 	</a>
 	<a href="{{url('mediateca/telebachillerato/semestreIV')}}">
-		{{HTML::image('imagenes/mediateca/Telebachillerato/Inicio/SemestreIV.png','Telebachillerato',['class'=>'bachSemIV'])}}
+		{{HTML::image('imagenes/mediateca/telebachillerato/Inicio/semestreIV.png','Telebachillerato',['class'=>'bachSemIV', 'id'=>'semestreIV', 'onmouseover'=>'muestraImgCentral("semestreIV")', 'onmouseout'=>'ocultaImgCentral("semestreIV")'])}}
 	</a>
 </div>

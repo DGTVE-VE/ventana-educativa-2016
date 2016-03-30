@@ -22,10 +22,17 @@
 </style>
 <script>
 	function muestraImgCentral(idImg){
-		document.getElementById(idImg).style.visibility = "visible";
+		var idImgHover = "imagenes/mediateca/Inicio/" + idImg + "Hover.png";
+		document.getElementById(idImg).src = idImgHover;
+		var idImgCentro = idImg + "Centro";
+		document.getElementById(idImgCentro).style.visibility = "visible";
+		
 	}
 	function ocultaImgCentral(idImg){
-		document.getElementById(idImg).style.visibility = "hidden";
+		var idImgHover = "imagenes/mediateca/Inicio/" + idImg + ".png";
+		document.getElementById(idImg).src = idImgHover;
+		var idImgCentro = idImg + "Centro";
+		document.getElementById(idImgCentro).style.visibility = "hidden";
 	}
 </script>
 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center textoTitulo bajaFila">
@@ -33,11 +40,11 @@
 </div>
 <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 bajaFila" style="padding:10%;">
 	<a href="{{url('mediateca/telesecundaria')}}">
-		{{ HTML::image('imagenes/mediateca/Inicio/telesecundaria.png','Telesecundaria',['class'=>'telesecundaria', 'onmouseover'=>'muestraImgCentral("tSecCentro")', 'onmouseout'=>'ocultaImgCentral("tSecCentro")'])}}
+		{{ HTML::image('imagenes/mediateca/Inicio/telesec.png','Telesecundaria',['class'=>'telesecundaria', 'id'=>'telesec', 'onmouseover'=>'muestraImgCentral("telesec")', 'onmouseout'=>'ocultaImgCentral("telesec")'])}}
 	</a>
 	<a href="{{url('mediateca/telebachillerato')}}">
-		{{HTML::image('imagenes/mediateca/Inicio/telebachillerato.png','Telebachillerato',['class'=>'telebachillerato', 'onmouseover'=>'muestraImgCentral("tBacCentro")', 'onmouseout'=>'ocultaImgCentral("tBacCentro")'])}}
+		{{HTML::image('imagenes/mediateca/Inicio/telebach.png','Telebachillerato',['class'=>'telebachillerato', 'id'=>'telebach', 'onmouseover'=>'muestraImgCentral("telebach")', 'onmouseout'=>'ocultaImgCentral("telebach")'])}}
 	</a>
-	{{HTML::image('imagenes/mediateca/Inicio/TelebachilleratoCentro.png','Telebachillerato Central',['class'=>'telebachilleratoCentro', 'id'=>'tBacCentro'])}}
-	{{HTML::image('imagenes/mediateca/Inicio/TelesecundariaCentro.png','Telesecundaria Central',['class'=>'telesecundariaCentro', 'id'=>'tSecCentro'])}}
+	{{HTML::image('imagenes/mediateca/Inicio/TelebachilleratoCentro.png','Telebachillerato Central',['class'=>'telebachilleratoCentro', 'id'=>'telebachCentro'])}}
+	{{HTML::image('imagenes/mediateca/Inicio/TelesecundariaCentro.png','Telesecundaria Central',['class'=>'telesecundariaCentro', 'id'=>'telesecCentro'])}}
 </div>
