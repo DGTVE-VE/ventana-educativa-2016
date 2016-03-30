@@ -11,12 +11,12 @@
 }
 
 #wrapper.toggled {
-    padding-left: 221px; /*separación de la pestaña menú con la lista */
+    padding-left: 221px; /*separación de la pestaña menú con la lista  221*/
 }
 
 #sidebar-wrapper {
     z-index: 1000;
-    left: 220px;
+    left: 220px; /*ampliar contenedor de menú  220*/
     width: 0;
     height: 36%; /*tamaño del contenedor de la lista de menú */
     margin-left: -220px;
@@ -79,7 +79,7 @@
     display: block;
     color: #ddd; /*color de texto de la lista */
     text-decoration: none;
-    padding: 10px 15px 10px 30px;    
+    padding: 10px 15px 10px 20px;    
 }
 
 .sidebar-nav li a:hover,
@@ -120,7 +120,7 @@
     z-index: 999;
     display: block;
     width: 40px; /*ancho de la pestaña menú */
-    height: 110px;/* alto de la pestaña menú 95 */
+    height: 105px;/* alto de la pestaña menú  */
     color: #fff; /* color de letra de la pestaña */
     margin-left: 0; /* margen izquierdo */
     /*background: #424242; color de la pestaña menú */
@@ -190,7 +190,6 @@
 .cambiacolorredesSociales{
     color: #000000;
 }
-
 
 #ct:hover{
     color:#00B6F1;
