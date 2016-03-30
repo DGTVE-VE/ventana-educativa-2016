@@ -1,6 +1,6 @@
 <style>
 	.textoTitulo{
-		color: white;
+		color: black;
 		font-family:'Ubuntu';
 		font-size:2em;
 	}
@@ -20,12 +20,7 @@
 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center textoTitulo bajaFila">
 	MEDIATECA
 </div>
-<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="padding:10%;">
-</div>
 <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xs-offset-2 col-sm-offset-2 col-md-offset-2 col-lg-offset-2" style="padding:10%;">
-	<a href="{{('')}}">
-		{{HTML::image('imagenes/mediateca/Telesecundaria/tercerGrado/ArtesIII.png','Telesecundaria ArtesIII',['class'=>'telesecPrimero'])}}
-	</a>
 	<a href="{{('')}}">
 		{{HTML::image('imagenes/mediateca/Telesecundaria/tercerGrado/FormacionCivicaII.png','Telesecundaria FormacionCivicaII',['class'=>'teleSecSegundo'])}}
 	</a>
@@ -43,11 +38,5 @@
 	</a>
 	<a href="{{('')}}">
 		{{HTML::image('imagenes/mediateca/Telesecundaria/tercerGrado/InglesIII.png','Telesecundaria InglesIII',['class'=>'telesecTercero'])}}
-	</a>
-	<a href="{{('')}}">
-		{{HTML::image('imagenes/mediateca/Telesecundaria/tercerGrado/EducacionFisicaIII.png','Telesecundaria EducacionFisicaIII',['class'=>'telesecTercero'])}}
-	</a>
-	<a href="{{('')}}">
-		{{HTML::image('imagenes/mediateca/Telesecundaria/tercerGrado/TecnologiaIII.png','Telesecundaria TecnologiaIII',['class'=>'telesecTercero'])}}
 	</a>
 </div>
