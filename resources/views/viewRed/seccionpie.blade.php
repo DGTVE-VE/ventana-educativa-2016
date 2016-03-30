@@ -59,7 +59,7 @@
                     <img class="img-responsive" style="width:20px; height:15px;" src="imagenes/red/footer/mail.png"/>
                 </td>
                 <td>
-                    <p> contacto@redmesoamericana.com</p>
+                    <p> redmite@televisioneducativa.gob.mx</p>
                 </td>
             </tr>
         </table>

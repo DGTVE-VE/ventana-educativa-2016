@@ -177,3 +177,25 @@
 #sinBorde{
      border: none;
 }
+
+/* Efectos para iconos redes sociales */
+.derechaSociales{
+    float: right;
+
+}
+.sociales{
+    list-style: none;
+}
+.cambiacolorredesSociales{
+    color: #000000;
+}
+
+#ct:hover{
+    color:#00B6F1;
+}
+#cf:hover{
+    color:#46629E;
+}
+#cy:hover{
+    color:#E62117;
+}
