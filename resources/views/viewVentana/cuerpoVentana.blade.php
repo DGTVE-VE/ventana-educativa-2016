@@ -34,10 +34,6 @@
 					<a href="#">
 						{{HTML::image('imagenes/ventana/iconoSeccion/idiomas.png','',['id'=>'iconoRombo02','class'=>'imgColor oculta difumina Intervalo3 slideInLeft iconoIdiomas','onmouseover'=>'cambiaImgFoto("02")','onmouseout'=>'cambiaImgCubo("02")'])}}
 					</a>
-					<div class="contieneTxt oculta difumina Intervalo3 slideInLeft text-center" onmouseover="cambiaImgFoto('02')" onmouseout="cambiaImgCubo('02')" style="width: 100%; position:absolute; top:165%; left:35%; Z-index:10;">
-						<p class="visible-lg-inline txtHomeLg">Idiomas</p>
-						<p class="visible-md-inline txtHomeMd">Idiomas</p>
-					</div>
 				</div>
 				<div class="col-md-1 col-lg-1" style="padding-top: 8.3%; padding-left:0px; padding-right:0px;">
 					{{HTML::image('imagenes/ventana/homeventana/CUBO-04.png','Padres',['id'=>'CUBO04','class'=>'imgColor oculta difumina Intervalo2 slideInLeft rombo4','usemap'=>'#mapacubo4'])}}
@@ -68,10 +64,6 @@
 					<a href="#">
 						{{HTML::image('imagenes/ventana/iconoSeccion/primaria.png','Estudiantes',['id'=>'iconoRombo05','class'=>'imgColor oculta difumina Intervalo1 slideInLeft iconoEstudiantes','onmouseover'=>'cambiaImgFoto("05")','onmouseout'=>'cambiaImgCubo("05")'])}}
 					</a>
-					<div id="iconoRombo05" class="contieneTxt oculta difumina Intervalo1 slideInLeft text-center" onmouseover="cambiaImgFoto('05')" onmouseout="cambiaImgCubo('05')" style="width: 100%; position:absolute; top:95%; left:15%; Z-index:10;">
-						<p class="visible-lg-inline txtHomeLg">Estudiantes</p>
-						<p class="visible-md-inline txtHomeMd">Estudiantes</p>
-					</div>
 					<a href="#">
 						{{HTML::image('imagenes/ventana/iconoSeccion/vod.png','VOD',['id'=>'iconoRombo06','class'=>'imgColor oculta difumina Intervalo1 slideInLeft iconoVOD','onmouseover'=>'cambiaImgFoto("06")','onmouseout'=>'cambiaImgCubo("06")'])}}
 					</a>
@@ -107,19 +99,9 @@
 					<a href="http://formacioncontinua.sep.gob.mx/" target="_blank">
 						{{HTML::image('imagenes/ventana/iconoSeccion/docentes.png','Docentes',['id'=>'iconoRombo08','class'=>'imgColor oculta difumina Intervalo1 slideInRight iconoDocentes','onmouseover'=>'cambiaImgFoto("08")','onmouseout'=>'cambiaImgCubo("08")'])}}
 					</a>
-					<a href="http://formacioncontinua.sep.gob.mx/" target="_blank">
-						<div id="iconoRombo08" class="contieneTxt oculta difumina Intervalo1 slideInRight text-center" onmouseover="cambiaImgFoto('08')" onmouseout="cambiaImgCubo('08')" style="width: 100%; position:absolute; top:90%; left:20%; Z-index:10;">
-							<p class="visible-lg-inline txtHomeLg">Docentes</p>
-							<p class="visible-md-inline txtHomeMd">Docentes</p>
-						</div>
-					</a>
 					<a href="#">
 						{{HTML::image('imagenes/ventana/iconoSeccion/mediateca.png','Mediateca',['id'=>'iconoRombo09','class'=>'imgColor oculta difumina Intervalo1 slideInRight iconoMediateca','onmouseover'=>'cambiaImgFoto("09")','onmouseout'=>'cambiaImgCubo("09")'])}}
 					</a>
-					<div id="iconoRombo09" class="contieneTxt oculta difumina Intervalo1 slideInRight text-center" onmouseover="cambiaImgFoto('09')" onmouseout="cambiaImgCubo('09')" style="width: 100%; position:absolute; top:245%; left:20%; Z-index:10;">
-						<p class="visible-lg-block txtHomeLg">Mediateca</p>
-						<p class="visible-md-block txtHomeMd">Mediateca</p>
-					</div>
 				</div>
 				<div class="col-md-1 col-lg-1" style="padding-top: 8.2%; padding-left:0px; padding-right:0px;">
 					{{HTML::image('imagenes/ventana/homeventana/CUBO-10.png','Red Mesoamerica',['id'=>'CUBO10','class'=>'imgColor oculta difumina Intervalo2 slideInRight rombo10','usemap'=>'#mapacubo10'])}}

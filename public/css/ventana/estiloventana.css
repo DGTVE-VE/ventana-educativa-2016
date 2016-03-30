@@ -42,7 +42,7 @@
 			width:150%; height:220%; position: absolute; top:265%; left:15%; z-index:2; visibility:hidden;
 		}
 		.iconoIdiomas{
-			width:60%; height:60%; position: absolute; top: 110%; left:60%; z-index:3; visibility:hidden;
+			width:90%; height:115%; position: absolute; top: 90%; left:45%; z-index:3; visibility:hidden;
 		}
 		.rombo4{
 			width:185%; height:185%; position: absolute; top:97%; left:-20%; z-index:3; visibility:hidden;
@@ -57,7 +57,7 @@
 			width:180%; height:155%; position: absolute; top:155%; left:-23%; z-index:4; visibility:hidden;
 		}
 		.iconoEstudiantes{
-			width:60%; height:60%; position: absolute; top: 35%; left:35%; z-index:4; visibility:hidden;
+			width:100%; height:90%; position: absolute; top: 20%; left:20%; z-index:4; visibility:hidden;
 		}
 		.iconoVOD{
 			width:60%; height:60%; position: absolute; top: 190%; left:35%; z-index:4; visibility:hidden;
@@ -66,7 +66,7 @@
 			width:210%; height:260%; position: absolute; left:-35%; z-index:5;
 		}
 		.iconoVentana{
-			width:140%; height:55%; position: absolute; top: 195%; left:0%; z-index:5;
+			width:110%; height:110%; position: absolute; top: 160%; left:20%; z-index:5;
 		}
 		.rombo8{
 			width:180%; height:155%; position: absolute; top:2%; left:-18%; z-index:4; visibility:hidden;
@@ -75,16 +75,16 @@
 			width:180%; height:155%; position: absolute; top:155%; left:-17%; z-index:4; visibility:hidden;
 		}
 		.iconoDocentes{
-			width:60%; height:60%; position: absolute; top: 30%; left:40%; z-index:4; visibility:hidden;
+			width:95%; height:100%; position: absolute; top: 20%; left:25%; z-index:4; visibility:hidden;
 		}
 		.iconoMediateca{
-			width:60%; height:60%; position: absolute; top: 187%; left:40%; z-index:4; visibility:hidden;
+			width:90%; height:90%; position: absolute; top: 180%; left:30%; z-index:4; visibility:hidden;
 		}
 		.rombo10{
 			width:185%; height:185%; position: absolute; top:97%; left:-25%; z-index:3; visibility:hidden;
 		}
 		.iconoRedMesoamerica{
-			width:75%; height:90%; position: absolute; top: 135%; left:30%; z-index:3; visibility:hidden;
+			width:100%; height:100%; position: absolute; top: 130%; left:15%; z-index:3; visibility:hidden;
 		}
 		.rombo11{
 			width:150%; height:220%; position: absolute; top:50%; left:-25%; z-index:2; visibility:hidden;
@@ -93,7 +93,7 @@
 			width:150%; height:220%; position: absolute; top:265%; left:-25%; z-index:2; visibility:hidden;
 		}
 		.iconoMexicoX{
-			width:90%; height:30%; position: absolute; top: 160%; left:-15%; z-index:3; visibility:hidden;
+			width:90%; height:90%; position: absolute; top: 120%; left:-10%; z-index:3; visibility:hidden;
 		}
 		.rombo13{
 			width:160%; height:150%; position: absolute; top:100%; left:-50%; z-index:2; visibility:hidden;
