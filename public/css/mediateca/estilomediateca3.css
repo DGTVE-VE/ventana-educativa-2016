@@ -181,7 +181,8 @@
 /* Efectos para iconos redes sociales */
 .derechaSociales{
     float: right;
-
+    padding-top: 15%;
+    right: -13%;
 }
 .sociales{
     list-style: none;
@@ -189,6 +190,7 @@
 .cambiacolorredesSociales{
     color: #000000;
 }
+
 
 #ct:hover{
     color:#00B6F1;

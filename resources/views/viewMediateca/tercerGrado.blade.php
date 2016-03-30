@@ -7,6 +7,7 @@
 @endsection
 @section('cuerpoMediateca')
 	@include('viewMediateca.cuerpoTercerGrado')
+        @include('viewMediateca.barraSociales')
 @endsection
 @section('pieMediateca')
     @include('viewMediateca.pieMediateca')
