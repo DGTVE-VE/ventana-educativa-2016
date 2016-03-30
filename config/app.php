@@ -141,7 +141,7 @@ return [
         App\Providers\RouteServiceProvider::class,
         Collective\Html\HtmlServiceProvider::class,
         /*breadcrumbs*/
-        DaveJamesMiller\Breadcrumbs\ServiceProvider::class,
+//        DaveJamesMiller\Breadcrumbs\ServiceProvider::class,
     ],
     /*
       |--------------------------------------------------------------------------
@@ -190,6 +190,6 @@ return [
         'Form'=> Illuminate\Html\FormFacade::class,
         'HTML'=> Illuminate\Html\HtmlFacade::class,
         /*breadcrumbs*/
-        'Breadcrumbs' => DaveJamesMiller\Breadcrumbs\Facade::class,
+//        'Breadcrumbs' => DaveJamesMiller\Breadcrumbs\Facade::class,
     ],  
 ];

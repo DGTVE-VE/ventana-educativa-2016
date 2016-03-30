@@ -58,7 +58,7 @@
 										</tr>
 										<tr>
 											<td><span class="fa fa-envelope text-center"></span></td>
-											<td style="padding-left:3%;">contacto@redmesoamericana.com</td>
+											<td style="padding-left:3%;">redmite@televisioneducativa.gob.mx</td>
 										</tr>
 									</table>
 								</div>                  
