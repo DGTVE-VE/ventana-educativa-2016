@@ -8,31 +8,31 @@
 		position:relative; top:80px;
 	}
 	.ArtesI{
-		position:absolute; top:156%; left:43%; width:24%; height: 64%;
+		position:absolute; top:155%; left:30.9%; width:26%; height: 64%;
 	}
 	.OrientacionI{
-		position: absolute; top:103%; left:36.5%; width:25%; height: 67%;
+		position: absolute; top:101%; left:23.3%; width:28%; height: 68%;
 	}
 	.GeografiaI{
-		position:absolute; top:50%; left:42%; width:25%; height: 67%;
+		position:absolute; top:48.5%; left:29.5%; width:28%; height: 67%;
 	}
 	.EspanolI{
-		position:absolute; top:27%; left:59%; width:25%; height: 67%;
+		position:absolute; top:26.3%; left:47.5%; width:28%; height: 67.6%;
 	}
 	.MatematicasI{
-		position: absolute; top:34%; left:81%; width:25%; height: 67%;
+		position: absolute; top:33%; left:72%; width:25%; height: 68%;
 	}
 	.CienciasI{
-		position:absolute; top:69.5%; left:91.5%; width:25%; height: 67%;
+		position:absolute; top:68.5%; left:82.3%; width:25%; height: 68%;
 	}
 	.InglesI{
-		position:absolute; top:131%; left:91.5%; width:25%; height: 67%;
+		position:absolute; top:131%; left:82.5%; width:25%; height: 67%;
 	}
 	.EducacionFisicaI{
-		position: absolute; top:167.3%; left:81%; width:25%; height: 67%;
+		position: absolute; top:166.6%; left:72.3%; width:25%; height: 68%;
 	}
 	.TecnologiaI{
-		position:absolute; top:175%; left:59.5%; width:25%; height: 67%;
+		position:absolute; top:174.2%; left:49%; width:27%; height: 68%;
 	}
 </style>
 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center textoTitulo bajaFila">
@@ -40,30 +40,30 @@
 </div>
 <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xs-offset-2 col-sm-offset-2 col-md-offset-2 col-lg-offset-2" style="padding:10%;">
 	<a href="{{('')}}">
-		{{HTML::image('imagenes/mediateca/Telesecundaria/primerGrado/ArtesI.png','Telesecundaria ArtesI',['class'=>'ArtesI'])}}
+		{{HTML::image('imagenes/mediateca/tsecundaria/primerGrado/ArtesI.png','Telesecundaria ArtesI',['class'=>'ArtesI'])}}
 	</a>
 	<a href="{{('')}}">
-		{{HTML::image('imagenes/mediateca/Telesecundaria/primerGrado/OrientacionI.png','Telesecundaria OrientacionI',['class'=>'OrientacionI'])}}
+		{{HTML::image('imagenes/mediateca/tsecundaria/primerGrado/OrientacionI.png','Telesecundaria OrientacionI',['class'=>'OrientacionI'])}}
 	</a>
 	<a href="{{('')}}">
-		{{HTML::image('imagenes/mediateca/Telesecundaria/primerGrado/GeografiaI.png','Telesecundaria GeografiaI',['class'=>'GeografiaI'])}}
+		{{HTML::image('imagenes/mediateca/tsecundaria/primerGrado/GeografiaI.png','Telesecundaria GeografiaI',['class'=>'GeografiaI'])}}
 	</a>
 	<a href="{{('')}}">
-		{{HTML::image('imagenes/mediateca/Telesecundaria/primerGrado/EspanolI.png','Telesecundaria EspanolI',['class'=>'EspanolI'])}}
+		{{HTML::image('imagenes/mediateca/tsecundaria/primerGrado/EspanolI.png','Telesecundaria EspanolI',['class'=>'EspanolI'])}}
 	</a>
 	<a href="{{('')}}">
-		{{HTML::image('imagenes/mediateca/Telesecundaria/primerGrado/MatematicasI.png','Telesecundaria MatematicasI',['class'=>'MatematicasI'])}}
+		{{HTML::image('imagenes/mediateca/tsecundaria/primerGrado/MatematicasI.png','Telesecundaria MatematicasI',['class'=>'MatematicasI'])}}
 	</a>
 	<a href="{{('')}}">
-		{{HTML::image('imagenes/mediateca/Telesecundaria/primerGrado/CienciasI.png','Telesecundaria CienciasI',['class'=>'CienciasI'])}}
+		{{HTML::image('imagenes/mediateca/tsecundaria/primerGrado/CienciasI.png','Telesecundaria CienciasI',['class'=>'CienciasI'])}}
 	</a>
 	<a href="{{('')}}">
-		{{HTML::image('imagenes/mediateca/Telesecundaria/primerGrado/LenguaI.png','Telesecundaria InglesI',['class'=>'InglesI'])}}
+		{{HTML::image('imagenes/mediateca/tsecundaria/primerGrado/LenguaI.png','Telesecundaria InglesI',['class'=>'InglesI'])}}
 	</a>
 	<a href="{{('')}}">
-		{{HTML::image('imagenes/mediateca/Telesecundaria/primerGrado/EducacionFisicaI.png','Telesecundaria EducacionFisicaI',['class'=>'EducacionFisicaI'])}}
+		{{HTML::image('imagenes/mediateca/tsecundaria/primerGrado/EducacionFisicaI.png','Telesecundaria EducacionFisicaI',['class'=>'EducacionFisicaI'])}}
 	</a>
 	<a href="{{('')}}">
-		{{HTML::image('imagenes/mediateca/Telesecundaria/primerGrado/TecnologiaI.png','Telesecundaria TecnologiaI',['class'=>'TecnologiaI'])}}
+		{{HTML::image('imagenes/mediateca/tsecundaria/primerGrado/TecnologiaI.png','Telesecundaria TecnologiaI',['class'=>'TecnologiaI'])}}
 	</a>
 </div>

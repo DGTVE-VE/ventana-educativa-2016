@@ -24,24 +24,24 @@
 </div>
 <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xs-offset-2 col-sm-offset-2 col-md-offset-2 col-lg-offset-2" style="padding:10%;">
 	<a href="{{('')}}">
-		{{HTML::image('imagenes/mediateca/Telebachillerato/SemestreII/InformaticaII.png','Telebachillerato InformaticaII',['class'=>'telesecPrimero'])}}
+		{{HTML::image('imagenes/mediateca/tbachillerato/SemestreII/InformaticaII.png','Telebachillerato InformaticaII',['class'=>'telesecPrimero'])}}
 	</a>
 	<a href="{{('')}}">
-		{{HTML::image('imagenes/mediateca/Telebachillerato/SemestreII/TallerLecturaII.png','Telebachillerato TallerLecturaII',['class'=>'teleSecSegundo'])}}
+		{{HTML::image('imagenes/mediateca/tbachillerato/SemestreII/TallerLecturaII.png','Telebachillerato TallerLecturaII',['class'=>'teleSecSegundo'])}}
 	</a>
 	<a href="{{('')}}">
-		{{HTML::image('imagenes/mediateca/Telebachillerato/SemestreII/HistoriaMexicoI.png','Telebachillerato HistoriaMexicoI',['class'=>'telesecTercero'])}}
+		{{HTML::image('imagenes/mediateca/tbachillerato/SemestreII/HistoriaMexicoI.png','Telebachillerato HistoriaMexicoI',['class'=>'telesecTercero'])}}
 	</a>
 	<a href="{{('')}}">
-		{{HTML::image('imagenes/mediateca/Telebachillerato/SemestreII/EticaValoresII.png','Telebachillerato EticaValoresI',['class'=>'telesecTercero'])}}
+		{{HTML::image('imagenes/mediateca/tbachillerato/SemestreII/EticaValoresII.png','Telebachillerato EticaValoresI',['class'=>'telesecTercero'])}}
 	</a>
 	<a href="{{('')}}">
-		{{HTML::image('imagenes/mediateca/Telebachillerato/SemestreII/MatematicasII.png','Telebachillerato MatematicasII',['class'=>'telesecTercero'])}}
+		{{HTML::image('imagenes/mediateca/tbachillerato/SemestreII/MatematicasII.png','Telebachillerato MatematicasII',['class'=>'telesecTercero'])}}
 	</a>
 	<a href="{{('')}}">
-		{{HTML::image('imagenes/mediateca/Telebachillerato/SemestreII/LenguaAdicionalII.png','Telebachillerato LenguaAdicionalII',['class'=>'telesecTercero'])}}
+		{{HTML::image('imagenes/mediateca/tbachillerato/SemestreII/LenguaAdicionalII.png','Telebachillerato LenguaAdicionalII',['class'=>'telesecTercero'])}}
 	</a>
 	<a href="{{('')}}">
-		{{HTML::image('imagenes/mediateca/Telebachillerato/SemestreII/QuimicaII.png','Telebachillerato QuimicaII',['class'=>'telesecTercero'])}}
+		{{HTML::image('imagenes/mediateca/tbachillerato/SemestreII/QuimicaII.png','Telebachillerato QuimicaII',['class'=>'telesecTercero'])}}
 	</a>
 </div>

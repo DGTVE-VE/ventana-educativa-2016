@@ -22,30 +22,30 @@
 </div>
 <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xs-offset-2 col-sm-offset-2 col-md-offset-2 col-lg-offset-2" style="padding:10%;">
 	<a href="{{('')}}">
-		{{HTML::image('imagenes/mediateca/Telesecundaria/segundoGrado/ArtesII.png','Telesecundaria ArtesII',['class'=>'telesecPrimero'])}}
+		{{HTML::image('imagenes/mediateca/tsecundaria/segundoGrado/ArtesII.png','Telesecundaria ArtesII',['class'=>'telesecPrimero'])}}
 	</a>
 	<a href="{{('')}}">
-		{{HTML::image('imagenes/mediateca/Telesecundaria/segundoGrado/FormacionCivicaI.png','Telesecundaria FormacionCivicaI',['class'=>'teleSecSegundo'])}}
+		{{HTML::image('imagenes/mediateca/tsecundaria/segundoGrado/FormacionCivicaI.png','Telesecundaria FormacionCivicaI',['class'=>'teleSecSegundo'])}}
 	</a>
 	<a href="{{('')}}">
-		{{HTML::image('imagenes/mediateca/Telesecundaria/segundoGrado/OrientacionII.png','Telesecundaria OrientacionII',['class'=>'telesecTercero'])}}
+		{{HTML::image('imagenes/mediateca/tsecundaria/segundoGrado/OrientacionII.png','Telesecundaria OrientacionII',['class'=>'telesecTercero'])}}
 	</a>
 	<a href="{{('')}}">
-		{{HTML::image('imagenes/mediateca/Telesecundaria/segundoGrado/HistoriaI.png','Telesecundaria HistoriaI',['class'=>'telesecTercero'])}}
+		{{HTML::image('imagenes/mediateca/tsecundaria/segundoGrado/HistoriaI.png','Telesecundaria HistoriaI',['class'=>'telesecTercero'])}}
 	</a>
 	<a href="{{('')}}">
-		{{HTML::image('imagenes/mediateca/Telesecundaria/segundoGrado/EspanolII.png','Telesecundaria EspanolII',['class'=>'telesecTercero'])}}
+		{{HTML::image('imagenes/mediateca/tsecundaria/segundoGrado/EspanolII.png','Telesecundaria EspanolII',['class'=>'telesecTercero'])}}
 	</a>
 	<a href="{{('')}}">
-		{{HTML::image('imagenes/mediateca/Telesecundaria/segundoGrado/MatematicasII.png','Telesecundaria MatematicasII',['class'=>'telesecTercero'])}}
+		{{HTML::image('imagenes/mediateca/tsecundaria/segundoGrado/MatematicasII.png','Telesecundaria MatematicasII',['class'=>'telesecTercero'])}}
 	</a>
 	<a href="{{('')}}">
-		{{HTML::image('imagenes/mediateca/Telesecundaria/segundoGrado/CienciasII.png','Telesecundaria CienciasII',['class'=>'telesecTercero'])}}
+		{{HTML::image('imagenes/mediateca/tsecundaria/segundoGrado/CienciasII.png','Telesecundaria CienciasII',['class'=>'telesecTercero'])}}
 	</a>
 	<a href="{{('')}}">
-		{{HTML::image('imagenes/mediateca/Telesecundaria/segundoGrado/InglesII.png','Telesecundaria InglesII',['class'=>'telesecTercero'])}}
+		{{HTML::image('imagenes/mediateca/tsecundaria/segundoGrado/InglesII.png','Telesecundaria InglesII',['class'=>'telesecTercero'])}}
 	</a>
 	<a href="{{('')}}">
-		{{HTML::image('imagenes/mediateca/Telesecundaria/segundoGrado/EducacionFisicaII.png','Telesecundaria EducacionFisicaII',['class'=>'telesecTercero'])}}
+		{{HTML::image('imagenes/mediateca/tsecundaria/segundoGrado/EducacionFisicaII.png','Telesecundaria EducacionFisicaII',['class'=>'telesecTercero'])}}
 	</a>
 </div>
