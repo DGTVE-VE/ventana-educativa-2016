@@ -45,10 +45,6 @@
 					<a href="#">
 						{{HTML::image('imagenes/ventana/iconoSeccion/padres.png','Padres',['id'=>'iconoRombo04','class'=>'imgColor oculta difumina Intervalo2 slideInLeft iconoPadres','onmouseover'=>'cambiaImgFoto("04")','onmouseout'=>'cambiaImgCubo("04")'])}}
 					</a>
-					<div id="iconoRombo04" class="contieneTxt oculta difumina Intervalo2 slideInLeft text-center" onmouseover="cambiaImgFoto('04')" onmouseout="cambiaImgCubo('04')" style="width: 100%; position:absolute; top:210%; left:20%; Z-index:10;">
-						<p class="visible-lg-inline txtHomeLg">Padres</p>
-						<p class="visible-md-inline txtHomeMd">Padres</p>
-					</div>
 				</div>
 				<div class="col-md-1 col-lg-1" style="padding-top: 10%; padding-left:0; padding-right:0;">
 					{{HTML::image('imagenes/ventana/homeventana/CUBO-05.png','Estudiantes',['id'=>'CUBO05','class'=>'imgColor oculta difumina Intervalo1 slideInLeft rombo5', 'usemap'=>'#mapacubo5'])}}
@@ -67,10 +63,6 @@
 					<a href="#">
 						{{HTML::image('imagenes/ventana/iconoSeccion/vod.png','VOD',['id'=>'iconoRombo06','class'=>'imgColor oculta difumina Intervalo1 slideInLeft iconoVOD','onmouseover'=>'cambiaImgFoto("06")','onmouseout'=>'cambiaImgCubo("06")'])}}
 					</a>
-					<div id="iconoRombo06" class="contieneTxt oculta difumina Intervalo1 slideInLeft text-center" onmouseover="cambiaImgFoto('06')" onmouseout="cambiaImgCubo('06')" style="width: 100%; position:absolute; top:250%; left:20%; Z-index:10;">
-						<p class="visible-lg-inline txtHomeLg">VOD</p>
-						<p class="visible-md-inline txtHomeMd">VOD</p>
-					</div>
 				</div>
 				<div class="col-md-1 col-lg-1" style="padding-top:6.8%; padding-left:0px; padding-right:0px;">
 					{{HTML::image('imagenes/ventana/homeventana/CUBO-07.png','Ventana Educativa',['id'=>'CUBO07','class'=>'imgColor rombo7','usemap'=>'#mapacubo7'])}}
@@ -175,12 +167,6 @@
 						<a href="http://formacioncontinua.sep.gob.mx/" target="_blank">
 							{{HTML::image('imagenes/ventana/iconoSeccion/docentes.png','Docentes',['id'=>'iconoRombosm08','class'=>'imgColor oculta difumina Intervalo1 slideInRight iconoDocentesSM'])}}
 						</a>
-						<a href="http://formacioncontinua.sep.gob.mx/" target="_blank">
-							<div id="iconoRombosm08" class="contieneTxt oculta difumina Intervalo1 slideInRight text-center" style="width: 50%; position:absolute; top:90%; left:5%; Z-index:10;">
-								<p class="visible-sm-inline txtHomeSm">Docentes</p>
-								<p class="visible-xs-inline txtHomeXs" >Docentes</p>
-							</div>
-						</a>
 					</td>
 					<td></td>
 					<td>
@@ -192,10 +178,6 @@
 						<a href="#">
 							{{HTML::image('imagenes/ventana/iconoSeccion/mediateca.png','Mediateca',['id'=>'iconoRombo09','class'=>'imgColor oculta difumina Intervalo1 slideInRight iconoFoto9'])}}
 						</a>
-						<div id="iconoRombosm09" class="contieneTxt oculta difumina Intervalo1 slideInRight text-center" style="width: 50%; position:absolute; top:90%; left:45%; Z-index:10;">
-							<p class="visible-sm-block txtHomeSm">Mediateca</p>
-							<p class="visible-xs-block txtHomeXs">Mediateca</p>
-						</div>
 					</td>
 					</tr>
 					<tr><td></td>
@@ -221,10 +203,6 @@
 						<a href="#">
 							{{HTML::image('imagenes/ventana/iconoSeccion/primaria.png','Estudiantes',['id'=>'iconoRomboSM05','class'=>'imgColor oculta difumina Intervalo1 slideInLeft iconoFoto5'])}}
 						</a>
-						<div id="iconoRombosm05" class="contieneTxt oculta difumina Intervalo1 slideInLeft text-center" style="width: 50%; position:absolute; top:175%; left:5%; Z-index:10;">
-							<p class="visible-sm-inline txtHomeSm">Estudiantes</p>
-							<p class="visible-xs-inline txtHomeXs">Estudiantes</p>
-						</div>
 					</td>
 					<td></td>
 					<td>
@@ -236,10 +214,6 @@
 						<a href="#">
 							{{HTML::image('imagenes/ventana/iconoSeccion/vod.png','VOD',['id'=>'iconoRomboSM06','class'=>'imgColor oculta difumina Intervalo1 slideInLeft iconoFoto6'])}}
 						</a>
-						<div id="iconoRombosm06" class="contieneTxt oculta difumina Intervalo1 slideInLeft text-center" style="width: 50%; position:absolute; top:175%; left:45%; Z-index:10;">
-							<p class="visible-sm-inline txtHomeSm">VOD</p>
-							<p class="visible-xs-inline txtHomeXs">VOD</p>
-						</div>
 					</td>
 					</tr>
 					<tr>
@@ -266,10 +240,6 @@
 						<a href="#">
 							{{HTML::image('imagenes/ventana/iconoSeccion/idiomas.png','Idiomas',['id'=>'iconoRomboSM02','class'=>'imgColor oculta difumina Intervalo3 slideInLeft iconoFoto2'])}}
 						</a>
-						<div class="contieneTxt oculta difumina Intervalo3 slideInLeft text-center" style="width: 50%; position:absolute; top:263%; left:5%; Z-index:10;">
-							<p class="visible-sm-inline txtHomeSm">Idiomas</p>
-							<p class="visible-xs-inline txtHomeXs">Idiomas</p>
-						</div>
 					</td>
 					<td></td>
 					<td>
@@ -295,10 +265,6 @@
 						<a href="#">
 							{{HTML::image('imagenes/ventana/iconoSeccion/padres.png','Padres',['id'=>'iconoRomboSM04','class'=>'imgColor oculta difumina Intervalo2 slideInLeft iconoFotoPadres'])}}
 						</a>
-						<div id="iconoRombosm04" class="contieneTxt oculta difumina Intervalo2 slideInLeft text-center" style="width: 50%; position:absolute; top:305%; left:25%; Z-index:10;">
-							<p class="visible-sm-inline txtHomeSm">Padres</p>
-							<p class="visible-xs-inline txtHomeXs">Padres</p>
-						</div>
 					</td>
 					<td></td></tr>
 					</table>
