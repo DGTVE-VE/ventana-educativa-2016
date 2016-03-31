@@ -21,6 +21,7 @@ body{
 .mueveTabla{
 	background:rgba(0, 0, 0, .3) !important;
 	position: fixed; right:3%;
+	box-shadow: 5px 5px 1px rgba(0, 0, 0, .2);
 }
 .etiquetaApp{font-weight:normal;color:#fff;font-family:Ubuntu;}
 .divApp{padding:10px;}

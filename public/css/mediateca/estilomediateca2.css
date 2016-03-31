@@ -40,6 +40,7 @@ and open the template in the editor.
 .mueveTabla{
 	background:rgba(0, 0, 0, .3) !important;
 	position: fixed; right:3%;
+	box-shadow: 5px 5px 1px rgba(0, 0, 0, .2);
 }
 @media (min-width: 768px) {
   .modal-fullscreen .modal-dialog {
