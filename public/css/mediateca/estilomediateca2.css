@@ -37,6 +37,10 @@ and open the template in the editor.
   margin-left: auto;
   width: 100%;
 }
+.mueveTabla{
+	background:rgba(0, 0, 0, .5) !important;
+	position: fixed; right:0px;
+}
 @media (min-width: 768px) {
   .modal-fullscreen .modal-dialog {
     width: 750px;
@@ -78,7 +82,7 @@ body{
 #login-submit:hover{background-color:#888;border:1px solid white;color:#000 !important;}
 
 
-.menuVentanaApps{background:rgba(255, 255, 255, .5) !important;}
+.menuVentanaApps{background:transparent; border:none;}
 .etiquetaApp{font-weight:normal;color:#fff;font-family:Ubuntu;}
 .divApp{padding:10px;}
 .divApp .img-responsive{margin:0 auto;}
