@@ -22,7 +22,7 @@ Mediateca
             </div>
             <div class="modal-body">
                 <div class="col-md-6">
-                    <iframe width="100%" height="350" src="http://www.youtube.com/embed/loFtozxZG0s"></iframe>
+                    <iframe width="100%" height="350" src="http://www.youtube.com/embed/DuoWIRDptWM"></iframe>
 
                 </div>
                 <div class="col-md-6 textoBlanco">
@@ -38,7 +38,11 @@ Mediateca
                     <div class="carousel-inner col-md-12">
                         <div class="item active">
                             <div class="row-fluid">
-                                <div class="col-md-2"><a href="#x" class="thumbnail"><img src="http://placehold.it/250x250" alt="Image" style="max-width:100%;" /></a></div>
+                                <div class="col-md-2"><a href="#x">                                        
+                                        <img src="https://i.ytimg.com/vi/DuoWIRDptWM/default.jpg" alt="Image" style="max-width:100%;" />
+                                        <p class="textoBlanco">Títulos</p>
+                                    </a>
+                                </div>
                                 <div class="col-md-2"><a href="#x" class="thumbnail"><img src="http://placehold.it/250x250" alt="Image" style="max-width:100%;" /></a></div>
                                 <div class="col-md-2"><a href="#x" class="thumbnail"><img src="http://placehold.it/250x250" alt="Image" style="max-width:100%;" /></a></div>
                                 <div class="col-md-2"><a href="#x" class="thumbnail"><img src="http://placehold.it/250x250" alt="Image" style="max-width:100%;" /></a></div>
@@ -69,13 +73,13 @@ Mediateca
                             </div><!--/row-fluid-->
                         </div><!--/item-->
                     </div><!--/carousel-inner-->
-                     <br><br><br> <br><br><br> 
+                    <br><br><br> <br><br><br> 
                     <ol class="carousel-indicators">
                         <li data-target="#videoscarousel" data-slide-to="0" class="active"></li>
                         <li data-target="#videoscarousel" data-slide-to="1"></li>
                         <li data-target="#videoscarousel" data-slide-to="2"></li>
                     </ol>
-                      <br><br><br> <br><br><br>
+                    <br><br><br> <br><br><br>
                     <a class="left carousel-control" href="#videoscarousel" data-slide="prev">‹</a>
                     <a class="right carousel-control" href="#videoscarousel" data-slide="next">›</a>
                 </div><!--/myCarousel-->

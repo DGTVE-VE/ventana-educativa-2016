@@ -2,8 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use Illuminate\Database\Eloquent\Model;
 use Illuminate\Http\Request;
 use App\Http\Requests;
+use \Alaouy\Youtube\Facades\Youtube;
 
 class MediatecaController extends Controller {
 
@@ -56,12 +58,36 @@ class MediatecaController extends Controller {
     }
 
     public function videos() {
+//        $thumbnail = "https://i.ytimg.com/vi/".$video1."/default.jpg";
+
         return view('viewMediateca/videos');
     }
 
-    public function test() {
-        $video = \Alaouy\Youtube\Facades\Youtube::getVideoInfo('rie-hPVJ7Sw');
-        var_dump ($video);
+    public function test(Request $request) {
+        /* Obtener información de video */
+        $video = Youtube::getVideoInfo('DuoWIRDptWM');
+//        var_dump ($video);
+        /* obtener url de thumbnail */
+        echo $thumbnail = $video->snippet->thumbnails->default->url;
+        /* obtener url */
+        $url = $request->path();
+//        print 'url de seccion:  '.$url;
+//        $consultaVideo = DB::select('select * from telesecundaria where grado = "primero" and materia=');
+    }
+
+    public function getVideosTelesec(Request $request) {
+        $url = $request->path();
+        $valor1 =strpos($url, '/');
+        $valor2 = substr ($url,0,$valor1);
+        $valor3 = strpos($url, $valor1+1,'/');
+        print $valor2;
+        /*whereNested: varias condiciones */
+        $videosTelesecundaria =  \App\Telesecundaria::whereNested(function($query) {
+                            $query->where('materia', '=', 'Artes I. Artes Visuales');
+                            $query->where('grado', '=', '1');
+                        })
+                        ->get(array('id', 'materia','grado','bloque','sinopsis','url'));
+//         return $videosTelesecundaria->toJson();            
     }
 
 }
