@@ -19,8 +19,8 @@ body{
 
 .menuVentanaApps{background:transparent; border:none;}
 .mueveTabla{
-	background:rgba(0, 0, 0, .5) !important;
-	position: fixed; right:0px;
+	background:rgba(0, 0, 0, .3) !important;
+	position: fixed; right:3%;
 }
 .etiquetaApp{font-weight:normal;color:#fff;font-family:Ubuntu;}
 .divApp{padding:10px;}
