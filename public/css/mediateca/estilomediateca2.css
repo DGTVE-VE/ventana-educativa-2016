@@ -8,57 +8,16 @@ and open the template in the editor.
     Author     : SMARTINEZ
 */
 
-/* .modal-fullscreen */
-
-.modal-fullscreen {
-  width:100%;
-  height:100%;
-  background:rgba(0, 0, 0, 0.7);
-}
-.modal-fullscreen .modal-content {
-  background: transparent;
-  border: 0;
-  -webkit-box-shadow: none;
-  box-shadow: none;  
-}
-.modal-backdrop.modal-backdrop-fullscreen {
-  background: #ffffff;
-}
-.modal-backdrop.modal-backdrop-fullscreen.in {
-  opacity: .97;
-  filter: alpha(opacity=97);
-}
-
-/* .modal-fullscreen size: we use Bootstrap media query breakpoints */
-
-.modal-fullscreen .modal-dialog {
-  margin: 0;
-  margin-right: auto;
-  margin-left: auto;
-  width: 100%;
-}
-@media (min-width: 768px) {
-  .modal-fullscreen .modal-dialog {
-    width: 750px;
-  }
-}
-@media (min-width: 992px) {
-  .modal-fullscreen .modal-dialog {
-    width: 970px;
-  }
-}
-@media (min-width: 1200px) {
-  .modal-fullscreen .modal-dialog {
-     width: 1170px;
-  }
+.mueveTabla{
+    background:rgba(0, 0, 0, .3) !important;
+    position: fixed; right:3%;
+    box-shadow: 5px 5px 1px rgba(0, 0, 0, .2);
 }
 
 .textoBlanco{
     color: white;
 }
-#videoscarousel{
-    
-}
+
 /**{border: 2px solbuscar red;}*/
 body{
     background-repeat: no-repeat;
@@ -78,24 +37,13 @@ body{
 #login-submit:hover{background-color:#888;border:1px solid white;color:#000 !important;}
 
 
-.menuVentanaApps{background:rgba(255, 255, 255, .5) !important;}
+.menuVentanaApps{background:transparent; border:none;}
 .etiquetaApp{font-weight:normal;color:#fff;font-family:Ubuntu;}
 .divApp{padding:10px;}
 .divApp .img-responsive{margin:0 auto;}
 .fondoRegistro{background:rgba(0, 0, 0, .3) !important;width:320px;height:230px;}
 
 
-
-.search-form .form-group{transition:all 0.35s, border-radius 0s;width:32px;height:32px;background-color:#fff;box-shadow:0 1px 1px rgba(0, 0, 0, 0.075) inset;border-radius:25px;border:1px solid #ccc;}
-.spanbuscar{color:black;}
-.search-form .form-group input.form-control{padding:0 0 5px 30px;border:0 none;background:transparent;box-shadow:none;display:block;}
-.search-form .form-group input.form-control::-webkit-input-placeholder{display:none;}
-.search-form .form-group input.form-control:-moz-placeholder{display:none;}
-.search-form .form-group input.form-control::-moz-placeholder{display:none;}
-.search-form .form-group input.form-control:-ms-input-placeholder{display:none;}
-.search-form .form-group:hover,
-.search-form .form-group.hover{width:100%;border-radius:25px 25px 25px 25px;}
-.search-form .form-group span.form-control-feedback{position:absolute;top:-2px;right:-1px;left:-2px;z-index:2;display:block;width:34px;height:34px;line-height:34px;text-align:center;color:#000;right:initial;font-size:14px;padding:0 0 20px 0;}
 
 
 
@@ -135,13 +83,6 @@ body{
     .has-feedback:hover{margin-left:-50%;}
     .menuVentana{padding: 2%;background-color:transparent;background:transparent;border-color:transparent;}
     .collapseBarra{background-color:transparent;background:transparent !important;border-color:transparent;}
-    #presentacion{margin-top: 7%; background:transparent !important;}
-    .carousel-control-presentacion{color:#fff;top:44%;background:transparent;bottom:auto;padding-top:8px;width:36px;border-radius:50%;height:36px;opacity:1;}
-    .carousel-control.left, .carousel-control.right{background-image:none !important;}
-    .carousel-control.right,
-    .carousel-control .glyphicon-chevron-right{left:auto;right:-5%;font-size:50px;}
-    .carousel-control.left{right:auto;left:-5%;font-size:50px;}
-    .frmRegistro{margin-top: 8%; background:rgba(0, 0, 0, .3);color:white;font-family:Ubuntu;}
 }
 
 @media (min-width: 1024px) { 
@@ -149,18 +90,11 @@ body{
         width: 50% \9; /*Force IE10 and below to size SVG images correctly*/
         max-width: 50%;
     }   
-    .liBuscar{margin-left: 365% !important}
     .has-feedback{margin-left:-115%;}
     .has-feedback:hover{margin-left:-150%;}
     .menuVentana{padding: 2%;background-color:transparent;background:transparent;border-color:transparent;}
     .collapseBarra{background-color:transparent;background:transparent !important;border-color:transparent;}
-    #presentacion{margin-top: 7%; background:transparent !important;}
-    .carousel-control-presentacion{color:#fff;top:44%;background:transparent;bottom:auto;padding-top:8px;width:36px;border-radius:50%;height:36px;opacity:1;}
-    .carousel-control.left, .carousel-control.right{background-image:none !important;}
-    .carousel-control.right,
-    .carousel-control .glyphicon-chevron-right{left:auto;right:-5%;font-size:50px;}
-    .carousel-control.left{right:auto;left:-5%;font-size:50px;}
-    .frmRegistro{margin-top: 8%; background:rgba(0, 0, 0, .3);color:white;font-family:Ubuntu;}
+
 }
 
 @media (min-width: 1200px) {
@@ -174,24 +108,17 @@ body{
     .menuVentana{padding:1% 3% 0 2%;background-color:transparent;background:transparent;border-color:transparent;}
     .collapseBarra{background-color:transparent;background:transparent !important;border-color:transparent;}
     liMenus{margin-top: 5%;}
-    #presentacion{margin-top: 7%; background:transparent !important;}
-    #presentacion img{width: 90%; height: 80% !important}
-    .carousel-control-presentacion{color:#fff;top:44%;background:transparent;bottom:auto;padding-top:8px;width:36px;border-radius:50%;height:36px;opacity:1;}
-    .carousel-control.left, .carousel-control.right{background-image:none !important;}
-    .carousel-control.right,
-    .carousel-control .glyphicon-chevron-right{left:auto;right:-10%;font-size:80px;}
-    .carousel-control.left{right:auto;left:-10%;font-size:80px;}
-    .frmRegistro{margin-top: 8%; background:rgba(0, 0, 0, .3);color:white;font-family:Ubuntu;}
     .iconoApp{margin-top: 15% !important;}
 
     .menuVentanaApps{
         margin-top: 20% !important;
     }
-    .fondoRegistro{margin-top: 18% !important;}
-    .fondoRegistro:after{margin-top:-74%; margin-left: 87%; display:block;width:0;height:0;border-left:12px solid transparent;border-right:12px solid transparent;border-bottom:12px solid rgba(0, 0, 0, .3) !important;}
 }
 
-.tablaCOlaboradores td {
-    border: 0px !important;
-}
 
+.transparenciaVideos{
+    margin-top: 6%;
+    background:rgba(0, 0, 0, .3);
+    width: 100%;
+    height: 100%;
+}

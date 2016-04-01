@@ -24,21 +24,21 @@
 </div>
 <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xs-offset-2 col-sm-offset-2 col-md-offset-2 col-lg-offset-2" style="padding:10%;">
 	<a href="{{('')}}">
-		{{HTML::image('imagenes/mediateca/Telebachillerato/SemestreIII/BiologiaI.png','Telebachillerato BiologiaI',['class'=>'telesecPrimero'])}}
+		{{HTML::image('imagenes/mediateca/tbachillerato/SemestreIII/BiologiaI.png','Telebachillerato BiologiaI',['class'=>'telesecPrimero'])}}
 	</a>
 	<a href="{{('')}}">
-		{{HTML::image('imagenes/mediateca/Telebachillerato/SemestreIII/LiteraturaI.png','Telebachillerato LiteraturaI',['class'=>'teleSecSegundo'])}}
+		{{HTML::image('imagenes/mediateca/tbachillerato/SemestreIII/LiteraturaI.png','Telebachillerato LiteraturaI',['class'=>'teleSecSegundo'])}}
 	</a>
 	<a href="{{('')}}">
-		{{HTML::image('imagenes/mediateca/Telebachillerato/SemestreIII/HistoriaMexicoII.png','Telebachillerato HistoriaMexicoII',['class'=>'telesecTercero'])}}
+		{{HTML::image('imagenes/mediateca/tbachillerato/SemestreIII/HistoriaMexicoII.png','Telebachillerato HistoriaMexicoII',['class'=>'telesecTercero'])}}
 	</a>
 	<a href="{{('')}}">
-		{{HTML::image('imagenes/mediateca/Telebachillerato/SemestreIII/FisicaI.png','Telebachillerato FisicaI',['class'=>'telesecTercero'])}}
+		{{HTML::image('imagenes/mediateca/tbachillerato/SemestreIII/FisicaI.png','Telebachillerato FisicaI',['class'=>'telesecTercero'])}}
 	</a>
 	<a href="{{('')}}">
-		{{HTML::image('imagenes/mediateca/Telebachillerato/SemestreIII/MatematicasIII.png','Telebachillerato MatematicasIII',['class'=>'telesecTercero'])}}
+		{{HTML::image('imagenes/mediateca/tbachillerato/SemestreIII/MatematicasIII.png','Telebachillerato MatematicasIII',['class'=>'telesecTercero'])}}
 	</a>
 	<a href="{{('')}}">
-		{{HTML::image('imagenes/mediateca/Telebachillerato/SemestreIII/LenguaAdicionalIII .png','Telebachillerato LenguaAdicionalIII ',['class'=>'telesecTercero'])}}
+		{{HTML::image('imagenes/mediateca/tbachillerato/SemestreIII/LenguaAdicionalIII .png','Telebachillerato LenguaAdicionalIII ',['class'=>'telesecTercero'])}}
 	</a>
 </div>

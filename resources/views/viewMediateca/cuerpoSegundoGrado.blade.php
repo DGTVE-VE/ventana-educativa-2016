@@ -7,45 +7,63 @@
 	.bajaFila{
 		position:relative; top:80px;
 	}
-	/*.telesecPrimero{
-		position:absolute; top:10%; left:12%; width:77%; height: 197%;
+	.ArtesII{
+		position:absolute; top:146.8%; left:30.3%; width:26%; height: 64%;
 	}
-	.teleSecSegundo{
-		position: absolute; top:57%; left:51%; width:77%; height: 195%;
+	.FormacionCivicaI{
+		position: absolute; top:97.8%; left:24.2%; width:26%; height: 64%;
 	}
-	.telesecTercero{
-		position:absolute; top:116%; left:15.5%; width:77%; height: 194%;
-	}*/
+	.OrientacionII{
+		position:absolute; top:47%; left:30%; width:26%; height: 64%;
+	}
+	.HistoriaI{
+		position:absolute; top:26%; left:47%; width:26%; height: 64%;
+	}
+	.EspanolII{
+		position: absolute; top:32.5%; left:69.8%; width:26%; height: 64%;
+	}
+	.MatematicasII{
+		position:absolute; top:66.4%; left:80.7%; width:26%; height: 64%;
+	}
+	.CienciasII{
+		position:absolute; top:125%; left:80.8%; width:26%; height: 64%;
+	}
+	.InglesII{
+		position: absolute; top:159.5%; left:70%; width:26%; height: 64%;
+	}
+	.EducacionFisicaII{
+		position:absolute; top:166.5%; left:47.8%; width:26%; height: 64%;
+	}
 </style>
 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center textoTitulo bajaFila">
 	MEDIATECA
 </div>
 <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xs-offset-2 col-sm-offset-2 col-md-offset-2 col-lg-offset-2" style="padding:10%;">
 	<a href="{{('')}}">
-		{{HTML::image('imagenes/mediateca/Telesecundaria/segundoGrado/ArtesII.png','Telesecundaria ArtesII',['class'=>'telesecPrimero'])}}
+		{{HTML::image('imagenes/mediateca/tsecundaria/segundoGrado/ArtesII.png','Telesecundaria ArtesII',['class'=>'ArtesII'])}}
 	</a>
 	<a href="{{('')}}">
-		{{HTML::image('imagenes/mediateca/Telesecundaria/segundoGrado/FormacionCivicaI.png','Telesecundaria FormacionCivicaI',['class'=>'teleSecSegundo'])}}
+		{{HTML::image('imagenes/mediateca/tsecundaria/segundoGrado/FormacionCivicaI.png','Telesecundaria FormacionCivicaI',['class'=>'FormacionCivicaI'])}}
 	</a>
 	<a href="{{('')}}">
-		{{HTML::image('imagenes/mediateca/Telesecundaria/segundoGrado/OrientacionII.png','Telesecundaria OrientacionII',['class'=>'telesecTercero'])}}
+		{{HTML::image('imagenes/mediateca/tsecundaria/segundoGrado/OrientacionII.png','Telesecundaria OrientacionII',['class'=>'OrientacionII'])}}
 	</a>
 	<a href="{{('')}}">
-		{{HTML::image('imagenes/mediateca/Telesecundaria/segundoGrado/HistoriaI.png','Telesecundaria HistoriaI',['class'=>'telesecTercero'])}}
+		{{HTML::image('imagenes/mediateca/tsecundaria/segundoGrado/HistoriaI.png','Telesecundaria HistoriaI',['class'=>'HistoriaI'])}}
 	</a>
 	<a href="{{('')}}">
-		{{HTML::image('imagenes/mediateca/Telesecundaria/segundoGrado/EspanolII.png','Telesecundaria EspanolII',['class'=>'telesecTercero'])}}
+		{{HTML::image('imagenes/mediateca/tsecundaria/segundoGrado/EspanolII.png','Telesecundaria EspanolII',['class'=>'EspanolII'])}}
 	</a>
 	<a href="{{('')}}">
-		{{HTML::image('imagenes/mediateca/Telesecundaria/segundoGrado/MatematicasII.png','Telesecundaria MatematicasII',['class'=>'telesecTercero'])}}
+		{{HTML::image('imagenes/mediateca/tsecundaria/segundoGrado/MatematicasII.png','Telesecundaria MatematicasII',['class'=>'MatematicasII'])}}
 	</a>
 	<a href="{{('')}}">
-		{{HTML::image('imagenes/mediateca/Telesecundaria/segundoGrado/CienciasII.png','Telesecundaria CienciasII',['class'=>'telesecTercero'])}}
+		{{HTML::image('imagenes/mediateca/tsecundaria/segundoGrado/CienciasII.png','Telesecundaria CienciasII',['class'=>'CienciasII'])}}
 	</a>
 	<a href="{{('')}}">
-		{{HTML::image('imagenes/mediateca/Telesecundaria/segundoGrado/InglesII.png','Telesecundaria InglesII',['class'=>'telesecTercero'])}}
+		{{HTML::image('imagenes/mediateca/tsecundaria/segundoGrado/InglesII.png','Telesecundaria InglesII',['class'=>'InglesII'])}}
 	</a>
 	<a href="{{('')}}">
-		{{HTML::image('imagenes/mediateca/Telesecundaria/segundoGrado/EducacionFisicaII.png','Telesecundaria EducacionFisicaII',['class'=>'telesecTercero'])}}
+		{{HTML::image('imagenes/mediateca/tsecundaria/segundoGrado/EducacionFisicaII.png','Telesecundaria EducacionFisicaII',['class'=>'EducacionFisicaII'])}}
 	</a>
 </div>

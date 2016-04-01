@@ -83,6 +83,7 @@ Route::get('mediateca', 'MediatecaController@mediateca');
 Route::get('mediateca/telesecundaria', 'MediatecaController@telesecundaria');
 Route::get('mediateca/telebachillerato', 'MediatecaController@telebachillerato');
 Route::get('mediateca/telesecundaria/primergrado', 'MediatecaController@primergrado');
+/*ejemplo de uso para youtube*/
 Route::get('mediateca/telesecundaria/primergrado/espanol', 'MediatecaController@test');
 Route::get('mediateca/telesecundaria/segundogrado', 'MediatecaController@segundogrado');
 Route::get('mediateca/telesecundaria/tercergrado', 'MediatecaController@tercergrado');
@@ -94,5 +95,5 @@ Route::get('mediateca/telebachillerato/semestreV', 'MediatecaController@semestre
 Route::get('mediateca/telebachillerato/semestreVI', 'MediatecaController@semestreVI');
 Route::get('mediateca/videos','MediatecaController@videos');
 Route::get('mediateca/test','MediatecaController@test');
-
+Route::get('mediateca/getVideosTelesec','MediatecaController@getVideosTelesec');
 /****************************MEDIATECA***********************/

@@ -36,7 +36,7 @@
                         </a>    
                     </td>
                     <td>
-                        <a href=" https://www.unah.edu.hn/va" target="_blank" onMouseOver="document.logounah.src = 'imagenes/ventana/pieventana/unahcolor.png';"
+                        <a href=" https://www.unah.edu.hn/" target="_blank" onMouseOver="document.logounah.src = 'imagenes/ventana/pieventana/unahcolor.png';"
                            onMouseOut="document.logounah.src = 'imagenes/ventana/pieventana/logounah.png';">
                             {{ HTML::image('imagenes/ventana/pieventana/logounah.png','Logo unah',  ['style'=>'margin-left: 45% !important;', 'name'=>'logounah','class'=>'img-responsive'])}}
                             <!--<img class="img-responsive" src="imagenes/ventana/pieventana/logounah.png" style="margin-left: 30% !important;" name="MyImage4">-->

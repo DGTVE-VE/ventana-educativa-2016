@@ -24,21 +24,21 @@
 </div>
 <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xs-offset-2 col-sm-offset-2 col-md-offset-2 col-lg-offset-2" style="padding:10%;">
 	<a href="{{('')}}">
-		{{HTML::image('imagenes/mediateca/Telebachillerato/SemestreIV/BiologiaII.png','Telebachillerato BiologiaII',['class'=>'telesecPrimero'])}}
+		{{HTML::image('imagenes/mediateca/tbachillerato/SemestreIV/BiologiaII.png','Telebachillerato BiologiaII',['class'=>'telesecPrimero'])}}
 	</a>
 	<a href="{{('')}}">
-		{{HTML::image('imagenes/mediateca/Telebachillerato/SemestreIV/LiteraturaII.png','Telebachillerato LiteraturaII',['class'=>'teleSecSegundo'])}}
+		{{HTML::image('imagenes/mediateca/tbachillerato/SemestreIV/LiteraturaII.png','Telebachillerato LiteraturaII',['class'=>'teleSecSegundo'])}}
 	</a>
 	<a href="{{('')}}">
-		{{HTML::image('imagenes/mediateca/Telebachillerato/SemestreIV/Estructura.png','Telebachillerato Estructura',['class'=>'telesecTercero'])}}
+		{{HTML::image('imagenes/mediateca/tbachillerato/SemestreIV/Estructura.png','Telebachillerato Estructura',['class'=>'telesecTercero'])}}
 	</a>
 	<a href="{{('')}}">
-		{{HTML::image('imagenes/mediateca/Telebachillerato/SemestreIV/FisicaII.png','Telebachillerato FisicaII',['class'=>'telesecTercero'])}}
+		{{HTML::image('imagenes/mediateca/tbachillerato/SemestreIV/FisicaII.png','Telebachillerato FisicaII',['class'=>'telesecTercero'])}}
 	</a>
 	<a href="{{('')}}">
-		{{HTML::image('imagenes/mediateca/Telebachillerato/SemestreIV/MatematicasIV.png','Telebachillerato MatematicasIV',['class'=>'telesecTercero'])}}
+		{{HTML::image('imagenes/mediateca/tbachillerato/SemestreIV/MatematicasIV.png','Telebachillerato MatematicasIV',['class'=>'telesecTercero'])}}
 	</a>
 	<a href="{{('')}}">
-		{{HTML::image('imagenes/mediateca/Telebachillerato/SemestreIV/LenguaAdicionalIV.png','Telebachillerato LenguaAdicionalIV ',['class'=>'telesecTercero'])}}
+		{{HTML::image('imagenes/mediateca/tbachillerato/SemestreIV/LenguaAdicionalIV.png','Telebachillerato LenguaAdicionalIV ',['class'=>'telesecTercero'])}}
 	</a>
 </div>
