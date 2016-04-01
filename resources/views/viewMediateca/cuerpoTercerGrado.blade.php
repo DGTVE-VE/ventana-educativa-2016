@@ -5,7 +5,7 @@
 		font-size:2em;
 	}
 	.bajaFila{
-		position:relative; top:80px;
+		position:relative; top:80px; z-index:10;
 	}
 	.FormacionCivicaII{
 		position:absolute; top:40.3%; left:25.6%; width:36%; height: 88%;
@@ -27,7 +27,18 @@
 	}
 </style>
 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center textoTitulo bajaFila">
-	MEDIATECA
+	<?php
+		$uri = $_SERVER['REQUEST_URI'];
+		$uriActual = explode('/',$uri);
+		$elemsURI= count($uriActual);
+		echo '<a href="'?>{{url($uriActual[3])}}<?php echo '">'.strtoupper($uriActual[3]).'</a>';
+		$hrefCompleta = $uriActual[3];
+		for($i=4; $i<$elemsURI;$i++){
+			$hrefCompleta = $hrefCompleta."/".$uriActual[$i];
+			echo ' / ';
+			echo '<a href="'?>{{url($hrefCompleta)}}<?php echo'">'.strtoupper($uriActual[$i]).'</a>';
+		}
+	?>
 </div>
 <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xs-offset-2 col-sm-offset-2 col-md-offset-2 col-lg-offset-2" style="padding:10%;">
 	<a href="{{('')}}">

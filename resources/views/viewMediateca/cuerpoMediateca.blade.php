@@ -11,7 +11,7 @@
 		position: absolute; top:100%; left:65%; width:70%; height: 90%; z-index:1;
 	}
 	.bajaFila{
-		position:relative; top:80px;
+		position:relative; top:80px; z-index:10;
 	}
 	.telebachilleratoCentro{
 		position: absolute; top:35%; left:72%; width:55%; height: 120%;	z-index:0; visibility: hidden;
@@ -41,7 +41,16 @@
 	}
 </script>
 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center textoTitulo bajaFila">
-	EDUCAMEDIA
+	<?php
+		$uri = $_SERVER['REQUEST_URI'];
+		$uriActual = explode('/',$uri);
+		$elemsURI= count($uriActual) - 1;
+		echo '<a href='.$uriActual[3].'>'.strtoupper($uriActual[3]).'</a>';
+		for($i=3; $i<$elemsURI;$i++){
+			echo ' / ';
+			echo '<a href='.$uriActual[$i].'>'.strtoupper($uriActual[$i]).'</a>';
+		}
+	?>
 </div>
 <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 bajaFila" style="padding:10%;">
 	<a href="{{url('mediateca/telesecundaria')}}">
