@@ -8,22 +8,22 @@
 		position:relative; top:80px;
 	}
 	.FormacionCivicaII{
-		position:absolute; top:39.3%; left:30.4%; width:35%; height: 85%;
+		position:absolute; top:40.3%; left:25.6%; width:36%; height: 88%;
 	}
 	.HistoriaII{
-		position: absolute; top:12%; left:53%; width:35%; height: 85%;
+		position: absolute; top:12%; left:49%; width:36%; height: 88%;
 	}
 	.EspanolIII{
-		position:absolute; top:39.8%; left:75.3%; width:35%; height: 85%;
+		position:absolute; top:41%; left:72.1%; width:36%; height: 88%;
 	}
 	.MatematicasIII{
-		position:absolute; top:113.5%; left:75.2%; width:35%; height: 85%;
+		position:absolute; top:117.3%; left:72%; width:36%; height: 88%;
 	}
 	.CienciasIII{
-		position: absolute; top:140%; left:52%; width:35%; height: 85%;
+		position: absolute; top:145%; left:48.2%; width:36%; height: 88%;
 	}
 	.InglesIII{
-		position:absolute; top:112.3%; left:30.1%; width:35%; height: 85%;
+		position:absolute; top:116.3%; left:25.4%; width:36%; height: 88%;
 	}
 </style>
 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center textoTitulo bajaFila">
