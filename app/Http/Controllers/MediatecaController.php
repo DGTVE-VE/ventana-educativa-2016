@@ -77,17 +77,15 @@ class MediatecaController extends Controller {
 
     public function getVideosTelesec(Request $request) {
         $url = $request->path();
-        $valor1 =strpos($url, '/');
-        $valor2 = substr ($url,0,$valor1);
-        $valor3 = strpos($url, $valor1+1,'/');
-        print $valor2;
-        /*whereNested: varias condiciones */
+        var_dump(explode('/', $url));
+
+        /* whereNested: varias condiciones */
         $videosTelesecundaria =  \App\Telesecundaria::whereNested(function($query) {
                             $query->where('materia', '=', 'Artes I. Artes Visuales');
                             $query->where('grado', '=', '1');
                         })
                         ->get(array('id', 'materia','grado','bloque','sinopsis','url'));
-//         return $videosTelesecundaria->toJson();            
+         return $videosTelesecundaria->toJson();            
     }
 
 }

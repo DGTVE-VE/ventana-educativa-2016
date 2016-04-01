@@ -6,7 +6,7 @@ and open the template in the editor.
 -->
 <html lang='en'>
     <head>
-        <title>@yield('titleMediateca','Mediateca')</title>
+        <title>@yield('titleMediateca','Educamedia')</title>
         <!--  App Descripción  -->
         <meta name="description" content="Ventana Educativa 2016"/>
         <meta charset="utf-8">
