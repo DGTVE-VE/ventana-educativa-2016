@@ -28,6 +28,7 @@ and open the template in the editor.
         <!--	-------------------------- Estilos para encabezado ------------------------------------		-->
         <link rel="stylesheet" href="{{ asset('css/mediateca/estilomediateca2.css') }}" >
         
+        <!--	-------------------------- Estilos para menus de Telesecundaria, Telebachillerato y redes sociales-->
         <link rel="stylesheet" href="{{ asset('css/mediateca/estilomediateca3.css') }}" >
 
         <!-- jQuery library -->
@@ -35,7 +36,8 @@ and open the template in the editor.
 
         <!-- Latest compiled JavaScript -->
         <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-
+     
+      
     </head>
     <body style="background-image:url('{{ asset('imagenes/mediateca/background/backgroundAzul.jpg') }}');">     
         <header>

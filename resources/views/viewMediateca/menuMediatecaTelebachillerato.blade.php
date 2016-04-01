@@ -1,4 +1,4 @@
-<div class="row" style="left: 0%;">
+<div class="row">
     <div id="wrapper">
         <div class="overlay"></div>
 

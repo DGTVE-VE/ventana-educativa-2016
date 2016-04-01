@@ -7,6 +7,6 @@
                 <li><a href="https://www.youtube.com/user/tveducativamx?feature=sub_widget_1" target="_blank" class="cambiacolorredesSociales"><span><i class="fa fa-youtube-play fa-2x" id="cy"></i></span></a></li>
             </ul>
         </div>
-    </div> <!-- /.row -->
-</div> <!-- /.container -->
+    </div> 
+</div> 
 
