@@ -1,7 +1,6 @@
-/*-------------------------------*/
-/*           Wrappers            */
-/*-------------------------------*/
+/* Estilo para los menus de Telesecundaria y Telebachillerato */
 
+/* Wrappers  */
 #wrapper {
     padding-left: 0; /*posición de la pestaña menú al inicio */
     -webkit-transition: all 0.5s ease;
@@ -190,7 +189,6 @@
 .cambiacolorredesSociales{
     color: #000000;
 }
-
 #ct:hover{
     color:#00B6F1;
 }
