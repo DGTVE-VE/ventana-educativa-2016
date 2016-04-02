@@ -44,11 +44,13 @@
 	<?php
 		$uri = $_SERVER['REQUEST_URI'];
 		$uriActual = explode('/',$uri);
-		$elemsURI= count($uriActual) - 1;
-		echo '<a href='.$uriActual[3].'>'.strtoupper($uriActual[3]).'</a>';
-		for($i=3; $i<$elemsURI;$i++){
+		$elemsURI= count($uriActual);
+		echo '<a href="'?>{{url($uriActual[3])}}<?php echo '">'.strtoupper($uriActual[3]).'</a>';
+		$hrefCompleta = $uriActual[3];
+		for($i=4; $i<$elemsURI;$i++){
+			$hrefCompleta = $hrefCompleta."/".$uriActual[$i];
 			echo ' / ';
-			echo '<a href='.$uriActual[$i].'>'.strtoupper($uriActual[$i]).'</a>';
+			echo '<a href="'?>{{url($hrefCompleta)}}<?php echo'">'.strtoupper($uriActual[$i]).'</a>';
 		}
 	?>
 </div>
