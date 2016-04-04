@@ -1,11 +1,11 @@
 <style>
 	.textoTitulo{
-		color: white;
+		color: black;
 		font-family:'Ubuntu';
 		font-size:2em;
 	}
 	.bajaFila{
-		position:relative; top:80px;
+		position:relative; top:80px; z-index:10;
 	}
 	/*.telesecPrimero{
 		position:absolute; top:10%; left:12%; width:77%; height: 197%;
@@ -18,7 +18,9 @@
 	}*/
 </style>
 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center textoTitulo bajaFila">
-	MEDIATECA
+	<?php
+		generaBreadCrumbs();
+	?>
 </div>
 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="padding:10%;">
 </div>

@@ -34,26 +34,20 @@
 </script>
 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center textoTitulo bajaFila">
 	<?php
-		$uri = $_SERVER['REQUEST_URI'];
-		$uriActual = explode('/',$uri);
-		$elemsURI= count($uriActual);
-		echo '<a href="'?>{{url($uriActual[3])}}<?php echo '">'.strtoupper($uriActual[3]).'</a>';
-		$hrefCompleta = $uriActual[3];
-		for($i=4; $i<$elemsURI;$i++){
-			$hrefCompleta = $hrefCompleta."/".$uriActual[$i];
-			echo ' / ';
-			echo '<a href="'?>{{url($hrefCompleta)}}<?php echo'">'.strtoupper($uriActual[$i]).'</a>';
-		}
+		generaBreadCrumbs();
 	?>
 </div>
 <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xs-offset-2 col-sm-offset-2 col-md-offset-2 col-lg-offset-2" style="padding:10%;">
-	<a href="{{url('mediateca/telesecundaria/primergrado')}}">
-		{{HTML::image('imagenes/mediateca/tsecundaria/Inicio/primerGrado.png','Telesecundaria Primero',['class'=>'telesecPrimero', 'id'=>'primerGrado', 'onmouseover'=>'muestraImgCentral("primerGrado")', 'onmouseout'=>'ocultaImgCentral("primerGrado")'])}}
-	</a>
-	<a href="{{url('mediateca/telesecundaria/segundogrado')}}">
-		{{HTML::image('imagenes/mediateca/tsecundaria/Inicio/segundoGrado.png','Telesecundaria Segundo',['class'=>'teleSecSegundo', 'id'=>'segundoGrado', 'onmouseover'=>'muestraImgCentral("segundoGrado")', 'onmouseout'=>'ocultaImgCentral("segundoGrado")'])}}
-	</a>
-	<a href="{{url('mediateca/telesecundaria/tercergrado')}}">
-		{{HTML::image('imagenes/mediateca/tsecundaria/Inicio/tercerGrado.png','Telesecundaria Tercero',['class'=>'telesecTercero', 'id'=>'tercerGrado', 'onmouseover'=>'muestraImgCentral("tercerGrado")', 'onmouseout'=>'ocultaImgCentral("tercerGrado")'])}}
-	</a>
+	<map name="mapaTelesecPrimer">
+		<area alt="" shape="poly" coords="41,347,38,222,149,108,273,73,385,103,341,189,240,184,159,244,137,336,41,347" href="{{url('mediateca/telesecundaria/primergrado')}}" onmouseover="muestraImgCentral('primerGrado')" onmouseout="ocultaImgCentral('primerGrado')">
+	</map>
+	{{HTML::image('imagenes/mediateca/tsecundaria/Inicio/primerGrado.png','Telesecundaria Primero',['class'=>'telesecPrimero', 'id'=>'primerGrado', 'usemap'=>'#mapaTelesecPrimer'])}}
+	<map name="mapaTelesecSegundo">
+		<area alt="" shape="poly" coords="121,88,167,0,149,253,302,141,311,253,273,349,205,415,149,335,189,284,187,147,121,88" href="{{url('mediateca/telesecundaria/segundogrado')}}" onmouseover="muestraImgCentral('segundoGrado')" onmouseout="ocultaImgCentral('segundoGrado')">
+	</map>
+	{{HTML::image('imagenes/mediateca/tsecundaria/Inicio/segundoGrado.png','Telesecundaria Segundo',['class'=>'teleSecSegundo', 'id'=>'segundoGrado','usemap'=>'#mapaTelesecSegundo'])}}
+	<map name="mapaTelesecTercero">
+		<area alt="" shape="poly" coords="41,347,38,222,149,108,273,73,385,103,341,189,240,184,159,244,137,336,41,347" href="{{url('mediateca/telesecundaria/tercergrado')}}" onmouseover="muestraImgCentral('tercerGrado')" onmouseout="ocultaImgCentral('tercerGrado')">
+	</map>
+		{{HTML::image('imagenes/mediateca/tsecundaria/Inicio/tercerGrado.png','Telesecundaria Tercero',['class'=>'telesecTercero', 'id'=>'tercerGrado', 'usemap'=>'#mapaTelesecTercero'])}}
 </div>

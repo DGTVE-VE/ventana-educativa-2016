@@ -23,7 +23,7 @@
 		position: absolute; top:29%; left:102.2%; width:36%; height: 90%;
 	}
 	.bajaFila{
-		position:relative; top:80px;
+		position:relative; top:80px; z-index:10;
 	}
 </style>
 <script>
@@ -42,7 +42,9 @@
 	}
 </script>
 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center textoTitulo bajaFila">
-	MEDIATECA
+	<?php
+		generaBreadCrumbs();
+	?>
 </div>
 <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6" style="padding:10%;">
 	<a href="{{url('mediateca/telebachillerato/semestreI')}}">

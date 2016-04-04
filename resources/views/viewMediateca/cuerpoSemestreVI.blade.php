@@ -1,6 +1,6 @@
 <style>
 	.textoTitulo{
-		color: white;
+		color: black;
 		font-family:'Ubuntu';
 		font-size:2em;
 	}
@@ -13,9 +13,14 @@
 	.telesecTercero{
 		position:absolute; top:116%; left:15.5%; width:77%; height: 194%;
 	}
+	.bajaFila{
+		position:relative; top:80px; z-index:10;
+	}
 </style>
-<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center textoTitulo">
-	MEDIATECA
+<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center textoTitulo bajaFila">
+	<?php
+		generaBreadCrumbs();
+	?>
 </div>
 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="padding:10%;">
 </div>
