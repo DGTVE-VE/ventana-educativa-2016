@@ -9,80 +9,76 @@ Mediateca
 <div class="container">
     <div class="row">
         <div class="col-md-12 transparenciaVideos">
-            <div><h3 class="textoBlanco">Materia</h3></div>
-            <hr>
-            <div class="col-md-6">
-                <iframe width="100%" height="350" src="http://www.youtube.com/embed/DuoWIRDptWM"></iframe>
-
-            </div>
-            <div class="col-md-6 textoBlanco">
-                <li class="list-unstyled">Serie</li>
-                <li class="list-unstyled">Grado</li>
-                <li class="list-unstyled">Bloque</li>
-                <li class="list-unstyled">Sinopsis</li>
-                <li class="list-unstyled">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</li>
-            </div>                
-            <div class="col-md-12">
-                <div class="well-none">
-                                            <br>
-                    <div class="col-md-1">
-                        <a class="left carousel-control" href="#carouselVideos" data-slide="prev"><i class="fa fa-chevron-left fa-2x"></i></a>
-                    </div>
-                    <div id="carouselVideos" class="carousel slide col-md-10">
-                        <!-- Carousel items -->
-                        <div class="carousel-inner">
-                            <div class="item active">
-                                <div class="row">
-                                    <div class="col-sm-3 col-xs-6 col-md-3"><a href="#x">
-                                            <img src="http://img.youtube.com/vi/DuoWIRDptWM/2.jpg" alt="Image" class="img-responsive"></a>
-                                        <p class="textoBlanco">Título</p>
-                                    </div>
-                                    <div class="col-sm-3 col-xs-6 col-md-3"><a href="#x">
-                                            <img src="http://img.youtube.com/vi/XCeTWXAp3Ho/2.jpg" alt="Image" class="img-responsive"></a>
-                                        <p class="textoBlanco">Título</p>
-                                    </div>
-
-                                    <div class="col-sm-3 col-xs-6 col-md-3"><a href="#x">
-                                            <img src="http://img.youtube.com/vi/H7WB6nf35wg/2.jpg" alt="Image" class="img-responsive"></a>
-                                        <p class="textoBlanco">Título</p>
-                                    </div>
-                                    <div class="col-sm-3 col-xs-6 col-md-3"><a href="#x">
-                                            <img src="http://img.youtube.com/vi/za3BDlRGbFg/2.jpg" alt="Image" class="img-responsive"></a>
-                                        <p class="textoBlanco">Título</p>
-                                    </div>
+            <div id="custom_carousel" class="carousel slide" data-ride="carousel" data-interval="1000">
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-md-3"><img src="http://placehold.it/350x250" class="img-responsive"></div>
+                                <div class="col-md-9">
+                                    <h2>Slide 1</h2>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, labore, magni illum nemo ipsum quod voluptates ab natus nulla possimus incidunt aut neque quaerat mollitia perspiciatis assumenda asperiores consequatur soluta.</p>
                                 </div>
-                                <!--/row-->
                             </div>
-                            <!--/item-->
-                            <div class="item">
-                                <div class="row">
-                                    <div class="col-sm-3 col-xs-6"><a href="#x" class="thumbnail"><img src="http://placehold.it/250x250" alt="Image" class="img-responsive"></a>
-                                    </div>
-                                    <div class="col-sm-3 col-xs-6"><a href="#x" class="thumbnail"><img src="http://placehold.it/250x250" alt="Image" class="img-responsive"></a>
-                                    </div>
-                                    <div class="col-sm-3 col-xs-6"><a href="#x" class="thumbnail"><img src="http://placehold.it/250x250" alt="Image" class="img-responsive"></a>
-                                    </div>
-                                    <div class="col-sm-3 col-xs-6"><a href="#x" class="thumbnail"><img src="http://placehold.it/250x250" alt="Image" class="img-responsive"></a>
-                                    </div>
-                                </div>
-                                <!--/row-->
-                            </div>
-                            <!--/item-->
-                        </div>
-
-                    </div>
-                    <!--/carousel-inner--> 
-                    <div class="col-md-1">
-                        <a class="right carousel-control" href="#carouselVideos" data-slide="next">
-                            <i class="fa fa-chevron-right  fa-2x"></i>
-                        </a>
+                        </div>            
                     </div> 
-                    <!--/myCarousel-->
+                    <div class="item">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-md-3"><img src="http://placehold.it/350x250" class="img-responsive"></div>
+                                <div class="col-md-9">
+                                    <h2>Slide 2</h2>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, labore, magni illum nemo ipsum quod voluptates ab natus nulla possimus incidunt aut neque quaerat mollitia perspiciatis assumenda asperiores consequatur soluta.</p>
+                                </div>
+                            </div>
+                        </div>            
+                    </div> 
+                    <div class="item">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-md-3"><img src="http://placehold.it/350x250" class="img-responsive"></div>
+                                <div class="col-md-9">
+                                    <h2>Slide 3</h2>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, labore, magni illum nemo ipsum quod voluptates ab natus nulla possimus incidunt aut neque quaerat mollitia perspiciatis assumenda asperiores consequatur soluta.</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, labore, magni illum nemo ipsum quod voluptates ab natus nulla possimus incidunt aut neque quaerat mollitia perspiciatis assumenda asperiores consequatur soluta.</p>
+                                </div>                                
+                            </div>
+                        </div>           
+                    </div> 
+                    <div class="item">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-md-3"><img src="http://placehold.it/350x250" class="img-responsive"></div>
+                                <div class="col-md-9">
+                                    <h2>Slide 4</h2>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, labore, magni illum nemo ipsum quod voluptates ab natus nulla possimus incidunt aut neque quaerat mollitia perspiciatis assumenda asperiores consequatur soluta.</p>
+                                </div>                                
+                            </div>
+                        </div>           
+                    </div> 
+                    <!-- End Item -->
                 </div>
-                <!--/well-->
+                <!-- End Carousel Inner -->
+                <div class="controls">
+                    <ul class="nav">
+                        <li data-target="#custom_carousel" data-slide-to="0" class="active"><a href="#"><img src="http://placehold.it/50x50"><small>Slide One</small></a></li>
+                        <li data-target="#custom_carousel" data-slide-to="1"><a href="#"><img src="http://placehold.it/50x50"><small>Slide Two</small></a></li>
+                        <li data-target="#custom_carousel" data-slide-to="2"><a href="#"><img src="http://placehold.it/50x50"><small>Slide Three</small></a></li>
+                        <li data-target="#custom_carousel" data-slide-to="3"><a href="#"><img src="http://placehold.it/50x50"><small>Slide Four</small></a></li>
+                    </ul>
+                </div>
             </div>
+            <!-- End Carousel -->
         </div>
     </div>
 </div>
 
 @endsection
+<script>
+ $(document).ready(function(ev){
+    $('#custom_carousel').on('slide.bs.carousel', function (evt) {
+      $('#custom_carousel .controls li.active').removeClass('active');
+      $('#custom_carousel .controls li:eq('+$(evt.relatedTarget).index()+')').addClass('active');
+    })
+});
+</script>

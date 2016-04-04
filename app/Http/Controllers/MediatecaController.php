@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Http\Request;
 use App\Http\Requests;
+use App\Telesecundaria;
+use App\Telebachillerato;
 use \Alaouy\Youtube\Facades\Youtube;
 
 class MediatecaController extends Controller {
@@ -75,17 +77,34 @@ class MediatecaController extends Controller {
 //        $consultaVideo = DB::select('select * from telesecundaria where grado = "primero" and materia=');
     }
 
-    public function getVideosTelesec(Request $request) {
-        $url = $request->path();
-        var_dump(explode('/', $url));
+    public function getVideos(Request $request, $nivel, $grado, $materia) {
 
-        /* whereNested: varias condiciones */
-        $videosTelesecundaria =  \App\Telesecundaria::whereNested(function($query) {
-                            $query->where('materia', '=', 'Artes I. Artes Visuales');
-                            $query->where('grado', '=', '1');
-                        })
-                        ->get(array('id', 'materia','grado','bloque','sinopsis','url'));
-         return $videosTelesecundaria->toJson();            
+        if ($nivel == 'telesecundaria') {
+            return $this->getVideosTelesecundaria($grado, $materia);
+        } else if ($nivel == 'telebachillerato') {
+            return $this->getVideosTelebachillerato($grado, $materia);
+        } else {
+            //VISTA ERROR
+            return 'error';
+        }
+    }
+
+    public function getVideosTelesecundaria($grado, $materia) {
+        $videos = Telesecundaria::whereNested(function($sQL) use ($grado, $materia) {
+                    $sQL->where('grado', '=', $grado);
+                    $sQL->where('materia_id', '=', $materia);
+                })->get();
+//        var_dump ($videos);
+        return view('viewMediateca/videos')->with('videos', $videos);
+    }
+
+    public function getVideosTelebachillerato($grado, $materia) {
+        $videos = Telebachillerato::whereNested(function($sQL) use ($grado, $materia) {
+                    $sQL->where('grado', '=', $grado);
+                    $sQL->where('materia_id', '=', $materia);
+                })->get();
+//        var_dump ($videos);
+        return view('viewMediateca/videos')->with('videos', $videos);
     }
 
 }
