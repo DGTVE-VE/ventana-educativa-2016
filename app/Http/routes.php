@@ -10,7 +10,8 @@
 //});
 Route::resource ('user', 'Api\User');
 Route::resource ('sessions', 'SessionsController');
-Route::get('user/exist/{email}',['as'=>'user.exist', 'uses'=>'Api\User@exist']);
+Route::get('user/existEmail/{email}',['as'=>'user.existEmail', 'uses'=>'Api\User@existEmail']);
+Route::get('user/existNick/{nickname}',['as'=>'user.existNick', 'uses'=>'Api\User@existNick']);
 Route::get('login', 'SessionsController@create');
 Route::get('logout', 'SessionsController@destroy');
 
@@ -84,7 +85,8 @@ Route::get('mediateca/telesecundaria', 'MediatecaController@telesecundaria');
 Route::get('mediateca/telebachillerato', 'MediatecaController@telebachillerato');
 Route::get('mediateca/telesecundaria/primergrado', 'MediatecaController@primergrado');
 /*ejemplo de uso para youtube*/
-Route::get('mediateca/telesecundaria/primergrado/espanol', 'MediatecaController@test');
+Route::get('mediateca/{nivel}/{grado}/{materia}', 'MediatecaController@getVideos');
+//Route::get('mediateca/telesecundaria/1/11', 'MediatecaController@getVideos');
 Route::get('mediateca/telesecundaria/segundogrado', 'MediatecaController@segundogrado');
 Route::get('mediateca/telesecundaria/tercergrado', 'MediatecaController@tercergrado');
 Route::get('mediateca/telebachillerato/semestreI', 'MediatecaController@semestreI');
