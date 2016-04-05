@@ -29,6 +29,21 @@
 		position: absolute; top:120.3%; left:28.6%; width:32%; height: 80%;
 	}
 </style>
+<script>
+	function muestraImgCentro(idImg){
+		var idImgHover = "/ventana-educativa-2016/public/imagenes/mediateca/tbachillerato/SemestreI/" + idImg + "Hover.png";
+		document.getElementById(idImg).src = idImgHover;
+		/*var idImgCentro = idImg + "Centro";
+		document.getElementById(idImgCentro).style.visibility = "visible";*/
+		
+	}
+	function ocultaImgCentro(idImg){
+		var idImgHover = "/ventana-educativa-2016/public/imagenes/mediateca/tbachillerato/SemestreI/" + idImg + ".png";
+		document.getElementById(idImg).src = idImgHover;
+		/*var idImgCentro = idImg + "Centro";
+		document.getElementById(idImgCentro).style.visibility = "hidden";*/
+	}
+</script>
 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center textoTitulo bajaFila">
 	<?php
 		generaBreadCrumbs();
@@ -36,24 +51,24 @@
 </div>
 <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xs-offset-2 col-sm-offset-2 col-md-offset-2 col-lg-offset-2" style="padding:10%;">
 	<a href="{{('')}}">
-		{{HTML::image('imagenes/mediateca/tbachillerato/SemestreI/InformaticaI.png','Telebachillerato InformaticaI',['class'=>'InformaticaI'])}}
+		{{HTML::image('imagenes/mediateca/tbachillerato/SemestreI/InformaticaI.png','Telebachillerato InformaticaI',['class'=>'InformaticaI', 'id'=>'InformaticaI', 'onmouseover'=>'muestraImgCentro("InformaticaI")', 'onmouseout'=>'ocultaImgCentro("InformaticaI")'])}}
 	</a>
 	<a href="{{('')}}">
-		{{HTML::image('imagenes/mediateca/tbachillerato/SemestreI/TallerLectura.png','Telebachillerato TallerLectura',['class'=>'TallerLectura'])}}
+		{{HTML::image('imagenes/mediateca/tbachillerato/SemestreI/TallerLectura.png','Telebachillerato TallerLectura',['class'=>'TallerLectura', 'id'=>'TallerLectura', 'onmouseover'=>'muestraImgCentro("TallerLectura")', 'onmouseout'=>'ocultaImgCentro("TallerLectura")'])}}
 	</a>
 	<a href="{{('')}}">
-		{{HTML::image('imagenes/mediateca/tbachillerato/SemestreI/IntroCS.png','Telebachillerato IntroCS',['class'=>'IntroCS'])}}
+		{{HTML::image('imagenes/mediateca/tbachillerato/SemestreI/IntroCS.png','Telebachillerato IntroCS',['class'=>'IntroCS', 'id'=>'IntroCS', 'onmouseover'=>'muestraImgCentro("IntroCS")', 'onmouseout'=>'ocultaImgCentro("IntroCS")'])}}
 	</a>
 	<a href="{{('')}}">
-		{{HTML::image('imagenes/mediateca/tbachillerato/SemestreI/EticaValoresI.png','Telebachillerato EticaValoresI',['class'=>'EticaValoresI'])}}
+		{{HTML::image('imagenes/mediateca/tbachillerato/SemestreI/EticaValoresI.png','Telebachillerato EticaValoresI',['class'=>'EticaValoresI', 'id'=>'EticaValoresI', 'onmouseover'=>'muestraImgCentro("EticaValoresI")', 'onmouseout'=>'ocultaImgCentro("EticaValoresI")'])}}
 	</a>
 	<a href="{{('')}}">
-		{{HTML::image('imagenes/mediateca/tbachillerato/SemestreI/MatematicasI.png','Telebachillerato MatematicasI',['class'=>'MatematicasI'])}}
+		{{HTML::image('imagenes/mediateca/tbachillerato/SemestreI/MatematicasI.png','Telebachillerato MatematicasI',['class'=>'MatematicasI', 'id'=>'MatematicasI', 'onmouseover'=>'muestraImgCentro("MatematicasI")', 'onmouseout'=>'ocultaImgCentro("MatematicasI")'])}}
 	</a>
 	<a href="{{('')}}">
-		{{HTML::image('imagenes/mediateca/tbachillerato/SemestreI/LenguaAdicionalI.png','Telebachillerato LenguaAdicionalI',['class'=>'LenguaAdicionalI'])}}
+		{{HTML::image('imagenes/mediateca/tbachillerato/SemestreI/LenguaAdicionalI.png','Telebachillerato LenguaAdicionalI',['class'=>'LenguaAdicionalI', 'id'=>'LenguaAdicionalI', 'onmouseover'=>'muestraImgCentro("LenguaAdicionalI")', 'onmouseout'=>'ocultaImgCentro("LenguaAdicionalI")'])}}
 	</a>
 	<a href="{{('')}}">
-		{{HTML::image('imagenes/mediateca/tbachillerato/SemestreI/QuimicaI.png','Telebachillerato QuimicaI',['class'=>'QuimicaI'])}}
+		{{HTML::image('imagenes/mediateca/tbachillerato/SemestreI/QuimicaI.png','Telebachillerato QuimicaI',['class'=>'QuimicaI', 'id'=>'QuimicaI', 'onmouseover'=>'muestraImgCentro("QuimicaI")', 'onmouseout'=>'ocultaImgCentro("QuimicaI")'])}}
 	</a>
 </div>
