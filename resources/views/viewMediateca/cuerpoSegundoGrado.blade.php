@@ -35,6 +35,21 @@
 		position:absolute; top:166.5%; left:47.8%; width:26%; height: 64%;
 	}
 </style>
+<script>
+	function muestraImgCentro(idImg){
+		var idImgHover = "/ventana-educativa-2016/public/imagenes/mediateca/tsecundaria/segundoGrado/" + idImg + "Hover.png";
+		document.getElementById(idImg).src = idImgHover;
+		/*var idImgCentro = idImg + "Centro";
+		document.getElementById(idImgCentro).style.visibility = "visible";*/
+		
+	}
+	function ocultaImgCentro(idImg){
+		var idImgHover = "/ventana-educativa-2016/public/imagenes/mediateca/tsecundaria/segundoGrado/" + idImg + ".png";
+		document.getElementById(idImg).src = idImgHover;
+		/*var idImgCentro = idImg + "Centro";
+		document.getElementById(idImgCentro).style.visibility = "hidden";*/
+	}
+</script>
 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center textoTitulo bajaFila">
 	<?php
 		generaBreadCrumbs();
@@ -42,30 +57,30 @@
 </div>
 <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xs-offset-2 col-sm-offset-2 col-md-offset-2 col-lg-offset-2" style="padding:10%;">
 	<a href="{{('')}}">
-		{{HTML::image('imagenes/mediateca/tsecundaria/segundoGrado/ArtesII.png','Telesecundaria ArtesII',['class'=>'ArtesII'])}}
+		{{HTML::image('imagenes/mediateca/tsecundaria/segundoGrado/ArtesII.png','Telesecundaria ArtesII',['class'=>'ArtesII', 'id'=>'ArtesII', 'onmouseover'=>'muestraImgCentro("ArtesII")', 'onmouseout'=>'ocultaImgCentro("ArtesII")'])}}
 	</a>
 	<a href="{{('')}}">
-		{{HTML::image('imagenes/mediateca/tsecundaria/segundoGrado/FormacionCivicaI.png','Telesecundaria FormacionCivicaI',['class'=>'FormacionCivicaI'])}}
+		{{HTML::image('imagenes/mediateca/tsecundaria/segundoGrado/FormacionCivicaI.png','Telesecundaria FormacionCivicaI',['class'=>'FormacionCivicaI', 'id'=>'FormacionCivicaI', 'onmouseover'=>'muestraImgCentro("FormacionCivicaI")', 'onmouseout'=>'ocultaImgCentro("FormacionCivicaI")'])}}
 	</a>
 	<a href="{{('')}}">
-		{{HTML::image('imagenes/mediateca/tsecundaria/segundoGrado/OrientacionII.png','Telesecundaria OrientacionII',['class'=>'OrientacionII'])}}
+		{{HTML::image('imagenes/mediateca/tsecundaria/segundoGrado/OrientacionII.png','Telesecundaria OrientacionII',['class'=>'OrientacionII', 'id'=>'OrientacionII', 'onmouseover'=>'muestraImgCentro("OrientacionII")', 'onmouseout'=>'ocultaImgCentro("OrientacionII")'])}}
 	</a>
 	<a href="{{('')}}">
-		{{HTML::image('imagenes/mediateca/tsecundaria/segundoGrado/HistoriaI.png','Telesecundaria HistoriaI',['class'=>'HistoriaI'])}}
+		{{HTML::image('imagenes/mediateca/tsecundaria/segundoGrado/HistoriaI.png','Telesecundaria HistoriaI',['class'=>'HistoriaI', 'id'=>'HistoriaI', 'onmouseover'=>'muestraImgCentro("HistoriaI")', 'onmouseout'=>'ocultaImgCentro("HistoriaI")'])}}
 	</a>
 	<a href="{{('')}}">
-		{{HTML::image('imagenes/mediateca/tsecundaria/segundoGrado/EspanolII.png','Telesecundaria EspanolII',['class'=>'EspanolII'])}}
+		{{HTML::image('imagenes/mediateca/tsecundaria/segundoGrado/EspanolII.png','Telesecundaria EspanolII',['class'=>'EspanolII', 'id'=>'EspanolII', 'onmouseover'=>'muestraImgCentro("EspanolII")', 'onmouseout'=>'ocultaImgCentro("EspanolII")'])}}
 	</a>
 	<a href="{{('')}}">
-		{{HTML::image('imagenes/mediateca/tsecundaria/segundoGrado/MatematicasII.png','Telesecundaria MatematicasII',['class'=>'MatematicasII'])}}
+		{{HTML::image('imagenes/mediateca/tsecundaria/segundoGrado/MatematicasII.png','Telesecundaria MatematicasII',['class'=>'MatematicasII', 'id'=>'MatematicasII', 'onmouseover'=>'muestraImgCentro("MatematicasII")', 'onmouseout'=>'ocultaImgCentro("MatematicasII")'])}}
 	</a>
 	<a href="{{('')}}">
-		{{HTML::image('imagenes/mediateca/tsecundaria/segundoGrado/CienciasII.png','Telesecundaria CienciasII',['class'=>'CienciasII'])}}
+		{{HTML::image('imagenes/mediateca/tsecundaria/segundoGrado/CienciasII.png','Telesecundaria CienciasII',['class'=>'CienciasII', 'id'=>'CienciasII', 'onmouseover'=>'muestraImgCentro("CienciasII")', 'onmouseout'=>'ocultaImgCentro("CienciasII")'])}}
 	</a>
 	<a href="{{('')}}">
-		{{HTML::image('imagenes/mediateca/tsecundaria/segundoGrado/InglesII.png','Telesecundaria InglesII',['class'=>'InglesII'])}}
+		{{HTML::image('imagenes/mediateca/tsecundaria/segundoGrado/InglesII.png','Telesecundaria InglesII',['class'=>'InglesII', 'id'=>'InglesII', 'onmouseover'=>'muestraImgCentro("InglesII")', 'onmouseout'=>'ocultaImgCentro("InglesII")'])}}
 	</a>
 	<a href="{{('')}}">
-		{{HTML::image('imagenes/mediateca/tsecundaria/segundoGrado/EducacionFisicaII.png','Telesecundaria EducacionFisicaII',['class'=>'EducacionFisicaII'])}}
+		{{HTML::image('imagenes/mediateca/tsecundaria/segundoGrado/EducacionFisicaII.png','Telesecundaria EducacionFisicaII',['class'=>'EducacionFisicaII', 'id'=>'EducacionFisicaII', 'onmouseover'=>'muestraImgCentro("EducacionFisicaII")', 'onmouseout'=>'ocultaImgCentro("EducacionFisicaII")'])}}
 	</a>
 </div>
