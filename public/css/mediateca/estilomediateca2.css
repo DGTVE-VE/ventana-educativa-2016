@@ -126,8 +126,8 @@ body{
 
 #custom_carousel .item {
 
-    color:#000;
-    background-color:#eee;
+    color:#fff;
+    /*background:rgba(0, 0, 0, .3);*/
     padding:20px 0;
 }
 #custom_carousel .controls{
@@ -138,15 +138,16 @@ body{
     white-space: nowrap;
     text-align: center;
     position: relative;
-    background:#ddd
+    background:rgba(0, 0, 0, .5);
 }
 #custom_carousel .controls li {
     display: table-cell;
     width: 1%;
-    max-width:90px
+    max-width:100%;
+      
 }
 #custom_carousel .controls li.active {
-    background-color:#eee;
+
     border-top:3px solid orange;
 }
 #custom_carousel .controls a small {
@@ -154,4 +155,6 @@ body{
     display:block;
     font-size:10px;
     margin-top:5px;
-    font-weight:bold;}
+    font-weight:bold;
+        color:#fff;
+}

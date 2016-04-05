@@ -9,65 +9,63 @@ Mediateca
 <div class="container">
     <div class="row">
         <div class="col-md-12 transparenciaVideos">
-            <div id="custom_carousel" class="carousel slide" data-ride="carousel" data-interval="1000">
+            <div id="custom_carousel" class="carousel slide" data-ride="carousel" data-interval="false">
                 <!-- Wrapper for slides -->
-                <div class="carousel-inner">
-                    <div class="item active">
+                <div class="carousel-inner">                    
+                    @foreach ($videos as $item => $video)
+                    <div class="item {{ ($item) ? '' : ' active' }}">
                         <div class="container-fluid">
                             <div class="row">
-                                <div class="col-md-3"><img src="http://placehold.it/350x250" class="img-responsive"></div>
-                                <div class="col-md-9">
-                                    <h2>Slide 1</h2>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, labore, magni illum nemo ipsum quod voluptates ab natus nulla possimus incidunt aut neque quaerat mollitia perspiciatis assumenda asperiores consequatur soluta.</p>
+                                <div class="col-md-12"><h3>{{$video->serie}}</h2></div>
+                                <div class="col-md-7">
+                                    <iframe type="text/html" width="640" height="390" src="http://www.youtube.com/embed/{{ $video->url }}?enablejsapi=1" frameborder="0"></iframe>
+                                </div>
+                                <div class="col-md-5">
+                                    <li class="list-unstyled"><h4>{{ $video->subtitulo_serie.' '.$video->subtitulo_programa}}<h3></li>
+                                    <li class="list-unstyled"><h4>{{ $video->titulo_programa }}<h3></li>                                                
+                                    <li class="list-unstyled"><h4>Grado: {{ $video->grado }}</h4></li>
+                                    <li class="list-unstyled"><h4>Sinopsis</h4></li>
+                                    <li class="list-unstyled text-justify">{{ $video->sinopsis }}</li>
                                 </div>
                             </div>
                         </div>            
                     </div> 
-                    <div class="item">
-                        <div class="container-fluid">
-                            <div class="row">
-                                <div class="col-md-3"><img src="http://placehold.it/350x250" class="img-responsive"></div>
-                                <div class="col-md-9">
-                                    <h2>Slide 2</h2>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, labore, magni illum nemo ipsum quod voluptates ab natus nulla possimus incidunt aut neque quaerat mollitia perspiciatis assumenda asperiores consequatur soluta.</p>
-                                </div>
-                            </div>
-                        </div>            
-                    </div> 
-                    <div class="item">
-                        <div class="container-fluid">
-                            <div class="row">
-                                <div class="col-md-3"><img src="http://placehold.it/350x250" class="img-responsive"></div>
-                                <div class="col-md-9">
-                                    <h2>Slide 3</h2>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, labore, magni illum nemo ipsum quod voluptates ab natus nulla possimus incidunt aut neque quaerat mollitia perspiciatis assumenda asperiores consequatur soluta.</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, labore, magni illum nemo ipsum quod voluptates ab natus nulla possimus incidunt aut neque quaerat mollitia perspiciatis assumenda asperiores consequatur soluta.</p>
-                                </div>                                
-                            </div>
-                        </div>           
-                    </div> 
-                    <div class="item">
-                        <div class="container-fluid">
-                            <div class="row">
-                                <div class="col-md-3"><img src="http://placehold.it/350x250" class="img-responsive"></div>
-                                <div class="col-md-9">
-                                    <h2>Slide 4</h2>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, labore, magni illum nemo ipsum quod voluptates ab natus nulla possimus incidunt aut neque quaerat mollitia perspiciatis assumenda asperiores consequatur soluta.</p>
-                                </div>                                
-                            </div>
-                        </div>           
-                    </div> 
+                    @endforeach
+                    
                     <!-- End Item -->
                 </div>
                 <!-- End Carousel Inner -->
                 <div class="controls">
-                    <ul class="nav">
-                        <li data-target="#custom_carousel" data-slide-to="0" class="active"><a href="#"><img src="http://placehold.it/50x50"><small>Slide One</small></a></li>
-                        <li data-target="#custom_carousel" data-slide-to="1"><a href="#"><img src="http://placehold.it/50x50"><small>Slide Two</small></a></li>
-                        <li data-target="#custom_carousel" data-slide-to="2"><a href="#"><img src="http://placehold.it/50x50"><small>Slide Three</small></a></li>
-                        <li data-target="#custom_carousel" data-slide-to="3"><a href="#"><img src="http://placehold.it/50x50"><small>Slide Four</small></a></li>
+                    <ul class="nav col-md-12">
+                        <div  class="col-md-8">
+                        @foreach ($videos as $item => $video)
+                        <li data-target="#custom_carousel" data-slide-to="{{$item}}" class="item {{ ($item) ? '' : ' active' }}">
+                            <a href="#">
+                                <img src="http://img.youtube.com/vi/{{ $video->url }}/2.jpg">
+                                <!--<small>{{ $video->titulo_programa}}</small>-->
+                                <small>
+                                    @if (strlen($video->titulo_programa) > 20)
+                                       {{ $titulo= substr($video->titulo_programa, 0, 20).'...'}}                                 
+                                    @else
+                                        {{$video->titulo_programa}}
+                                    @endif
+                                </small>
+                            </a>
+                        </li>
+                        @endforeach 
+                        </div>
                     </ul>
-                </div>
+                    <ul class="pagination col-md-12">
+                        <li class="disabled">
+                            <a href="#">&laquo;</a>
+                        </li>
+                        <li class="active">
+                            <a href="#">1 <span class="sr-only"></span></a>
+                        </li>
+                    </ul>
+                </div>                
             </div>
+            
             <!-- End Carousel -->
         </div>
     </div>
@@ -75,10 +73,10 @@ Mediateca
 
 @endsection
 <script>
- $(document).ready(function(ev){
-    $('#custom_carousel').on('slide.bs.carousel', function (evt) {
-      $('#custom_carousel .controls li.active').removeClass('active');
-      $('#custom_carousel .controls li:eq('+$(evt.relatedTarget).index()+')').addClass('active');
-    })
-});
+   $(function() {
+      $('#custom_carousel').on('slid.bs.carousel', function () {
+         alert("This event fires immediately when the slide instance method" +"is invoked.");
+      });
+   });
 </script>
+
