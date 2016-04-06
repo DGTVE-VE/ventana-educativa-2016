@@ -4,35 +4,22 @@
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
             <file>file:/C:/xampp/htdocs/ventanaEducativa/resources/views/indexMediateca.blade.php</file>
+            <file>file:/C:/xampp/htdocs/ventanaEducativa/resources/views/viewMediateca/cuerpoSemestreV.blade.php</file>
             <file>file:/C:/xampp/htdocs/ventanaEducativa/resources/views/viewVentana/encabezadoVentana.blade.php</file>
+            <file>file:/C:/xampp/htdocs/ventanaEducativa/public/css/ventana/estiloventana.css</file>
             <file>file:/C:/xampp/htdocs/ventanaEducativa/resources/views/viewMediateca/tercerGrado.blade.php</file>
             <file>file:/C:/xampp/htdocs/ventanaEducativa/resources/views/viewMediateca/semestreV.blade.php</file>
+            <file>file:/C:/xampp/htdocs/ventanaEducativa/resources/views/viewMediateca/primerGrado.blade.php</file>
             <file>file:/C:/xampp/htdocs/ventanaEducativa/resources/views/viewVentana/presentacionVentana.blade.php</file>
+            <file>file:/C:/xampp/htdocs/ventanaEducativa/resources/views/indexVentana.blade.php</file>
+            <file>file:/C:/xampp/htdocs/ventanaEducativa/resources/views/viewMediateca/menuMediatecaTelesecundaria.blade.php</file>
             <file>file:/C:/xampp/htdocs/ventanaEducativa/resources/views/viewMediateca/semestreIV.blade.php</file>
             <file>file:/C:/xampp/htdocs/ventanaEducativa/app/Http/routes.php</file>
             <file>file:/C:/xampp/htdocs/ventanaEducativa/resources/views/viewMediateca/segundoGrado.blade.php</file>
             <file>file:/C:/xampp/htdocs/ventanaEducativa/resources/views/viewMediateca/cuerpoSemestreI.blade.php</file>
+            <file>file:/C:/xampp/htdocs/ventanaEducativa/resources/views/viewMediateca/cuerpoSemestreVI.blade.php</file>
             <file>file:/C:/xampp/htdocs/ventanaEducativa/resources/views/viewMediateca/cuerpoTelesecundaria.blade.php</file>
             <file>file:/C:/xampp/htdocs/ventanaEducativa/public/css/ventana/estiloventana2.css</file>
-            <file>file:/C:/xampp/htdocs/ventanaEducativa/resources/views/viewMediateca/menuMediatecaTelebachillerato.blade.php</file>
-            <file>file:/C:/xampp/htdocs/ventanaEducativa/resources/views/viewMediateca/cuerpoSegundoGrado.blade.php</file>
-            <file>file:/C:/xampp/htdocs/ventanaEducativa/resources/views/viewMediateca/telebachillerato.blade.php</file>
-            <file>file:/C:/xampp/htdocs/ventanaEducativa/resources/views/viewMediateca/encabezadoMediateca.blade.php</file>
-            <file>file:/C:/xampp/htdocs/ventanaEducativa/public/css/ventana/estiloventana3.css</file>
-            <file>file:/C:/xampp/htdocs/ventanaEducativa/public/css/mediateca/estilomediateca3.css</file>
-            <file>file:/C:/xampp/htdocs/ventanaEducativa/storage/framework/views/b3a8b434afde7f091b08a8d9145068acc7772662.php</file>
-            <file>file:/C:/xampp/htdocs/ventanaEducativa/resources/views/viewVentana/pieVentana.blade.php</file>
-            <file>file:/C:/xampp/htdocs/ventanaEducativa/resources/views/viewMediateca/cuerpoTercerGrado.blade.php</file>
-            <file>file:/C:/xampp/htdocs/ventanaEducativa/resources/views/viewMediateca/cuerpoMediateca.blade.php</file>
-            <file>file:/C:/xampp/htdocs/ventanaEducativa/resources/views/viewMediateca/cuerpoSemestreII.blade.php</file>
-            <file>file:/C:/xampp/htdocs/ventanaEducativa/resources/views/viewMediateca/semestreVI.blade.php</file>
-            <file>file:/C:/xampp/htdocs/ventanaEducativa/resources/views/viewMediateca/cuerpoSemestreV.blade.php</file>
-            <file>file:/C:/xampp/htdocs/ventanaEducativa/public/css/ventana/estiloventana.css</file>
-            <file>file:/C:/xampp/htdocs/ventanaEducativa/resources/views/viewMediateca/primerGrado.blade.php</file>
-            <file>file:/C:/xampp/htdocs/ventanaEducativa/resources/views/indexVentana.blade.php</file>
-            <file>file:/C:/xampp/htdocs/ventanaEducativa/resources/views/viewMediateca/menuMediatecaTelesecundaria.blade.php</file>
-            <file>file:/C:/xampp/htdocs/ventanaEducativa/resources/views/viewMediateca/cuerpoSemestreVI.blade.php</file>
-            <file>file:/C:/xampp/htdocs/ventanaEducativa/resources/views/viewMediateca/cuerpoSemestreIV.blade.php</file>
             <file>file:/C:/xampp/htdocs/ventanaEducativa/resources/views/viewVentana/correoEnviado.blade.php</file>
             <file>file:/C:/xampp/htdocs/ventanaEducativa/resources/views/viewRed/paginapublicaciones.blade.php</file>
             <file>file:/C:/xampp/htdocs/ventanaEducativa/resources/views/viewMediateca/cuerpoSemestreIII.blade.php</file>
@@ -40,19 +27,30 @@
             <file>file:/C:/xampp/htdocs/ventanaEducativa/public/css/mediateca/estilomediateca2.css</file>
             <file>file:/C:/xampp/htdocs/ventanaEducativa/resources/views/viewMediateca/barraSociales.blade.php</file>
             <file>file:/C:/xampp/htdocs/ventanaEducativa/app/Http/Controllers/MediatecaController.php</file>
+            <file>file:/C:/xampp/htdocs/ventanaEducativa/resources/views/viewMediateca/menuMediatecaTelebachillerato.blade.php</file>
+            <file>file:/C:/xampp/htdocs/ventanaEducativa/resources/views/viewMediateca/cuerpoSegundoGrado.blade.php</file>
+            <file>file:/C:/xampp/htdocs/ventanaEducativa/resources/views/viewMediateca/telebachillerato.blade.php</file>
             <file>file:/C:/xampp/htdocs/ventanaEducativa/resources/views/viewMediateca/telesecundaria.blade.php</file>
             <file>file:/C:/xampp/htdocs/ventanaEducativa/resources/views/viewMediateca/semestreII.blade.php</file>
             <file>file:/C:/xampp/htdocs/ventanaEducativa/resources/views/viewMediateca/cuerpoPrimerGrado.blade.php</file>
+            <file>file:/C:/xampp/htdocs/ventanaEducativa/resources/views/viewMediateca/encabezadoMediateca.blade.php</file>
             <file>file:/C:/xampp/htdocs/ventanaEducativa/resources/views/viewMediateca/cuerpoMediateca.blade%20-%20copia.php</file>
+            <file>file:/C:/xampp/htdocs/ventanaEducativa/public/css/ventana/estiloventana3.css</file>
+            <file>file:/C:/xampp/htdocs/ventanaEducativa/public/css/mediateca/estilomediateca3.css</file>
+            <file>file:/C:/xampp/htdocs/ventanaEducativa/storage/framework/views/b3a8b434afde7f091b08a8d9145068acc7772662.php</file>
+            <file>file:/C:/xampp/htdocs/ventanaEducativa/resources/views/viewVentana/pieVentana.blade.php</file>
+            <file>file:/C:/xampp/htdocs/ventanaEducativa/resources/views/viewMediateca/cuerpoTercerGrado.blade.php</file>
+            <file>file:/C:/xampp/htdocs/ventanaEducativa/resources/views/viewMediateca/cuerpoMediateca.blade.php</file>
             <file>file:/C:/xampp/htdocs/ventanaEducativa/resources/views/viewVentana/cuerpoVentana.blade.php</file>
             <file>file:/C:/xampp/htdocs/ventanaEducativa/app/Http/Controllers/VentanaController.php</file>
-            <file>file:/C:/xampp/htdocs/ventanaEducativa/resources/views/viewMediateca/cuerpoTelebachillerato.blade.php</file>
             <file>file:/C:/xampp/htdocs/ventanaEducativa/resources/views/viewVentana/activacionCorrecta.blade.php</file>
             <file>file:/C:/xampp/htdocs/ventanaEducativa/resources/views/viewMediateca/mediateca.blade.php</file>
             <file>file:/C:/xampp/htdocs/ventanaEducativa/app/Http/Controllers/Controller.php</file>
             <file>file:/C:/xampp/htdocs/ventanaEducativa/resources/views/viewMediateca/semestreI.blade.php</file>
             <file>file:/C:/xampp/htdocs/ventanaEducativa/resources/views/viewMediateca/semestreIII.blade.php</file>
+            <file>file:/C:/xampp/htdocs/ventanaEducativa/resources/views/viewMediateca/cuerpoSemestreII.blade.php</file>
             <file>file:/C:/xampp/htdocs/ventanaEducativa/app/Http/Controllers/RedmiteController.php</file>
+            <file>file:/C:/xampp/htdocs/ventanaEducativa/resources/views/viewMediateca/semestreVI.blade.php</file>
         </group>
     </open-files>
 </project-private>

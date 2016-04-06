@@ -4,6 +4,9 @@
 		font-family:'Ubuntu';
 		font-size:2em;
 	}
+	.formaPropedeutica{
+		position: absolute; top:25%; left:94%; width:32%; height: 80%;
+	}
 	.bachSemI{
 		position: absolute; top:29.3%; left:66%; width:32.5%; height: 80%;
 	}
@@ -21,9 +24,6 @@
 	}
 	.bachSemIV{
 		position: absolute; top:56.4%; left:86.1%; width:32%; height: 80%;
-	}
-	.componente{
-		position: absolute; top:25%; left:94%; width:32%; height: 80%;
 	}
 	.bajaFila{
 		position:relative; top:80px; z-index:10;
@@ -51,7 +51,7 @@
 </div>
 <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6" style="padding:10%;">
 	<a href="{{url('mediateca/telebachillerato/componente')}}">
-		{{HTML::image('imagenes/mediateca/tbachillerato/Inicio/componente.png','Telebachillerato',['class'=>'componente', 'id'=>'componente', 'onmouseover'=>'muestraImgCentro("componente")', 'onmouseout'=>'ocultaImgCentro("componente")'])}}
+		{{HTML::image('imagenes/mediateca/tbachillerato/Inicio/formaPropedeutica.png','Telebachillerato',['class'=>'formaPropedeutica', 'id'=>'formaPropedeutica', 'onmouseover'=>'muestraImgCentro("formaPropedeutica")', 'onmouseout'=>'ocultaImgCentro("formaPropedeutica")'])}}
 	</a>
 	<a href="{{url('mediateca/telebachillerato/semestreI')}}">
 		{{HTML::image('imagenes/mediateca/tbachillerato/Inicio/semestreI.png','Telebachillerato',['class'=>'bachSemI', 'id'=>'semestreI', 'onmouseover'=>'muestraImgCentro("semestreI")', 'onmouseout'=>'ocultaImgCentro("semestreI")'])}}
