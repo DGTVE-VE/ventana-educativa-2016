@@ -18,7 +18,7 @@
                     <div class="modal-content">
                           <div class="modal-body">
                           <button type="button" class="close" data-dismiss="modal">&times;</button>
-                          <iframe class=""src="http://www.enba.sep.gob.mx/files/calendario2015-2016.pdf" width="870" height="560" frameborder="0"></iframe> 
+                          <iframe class=""src="http://www.enba.sep.gob.mx/files/calendario2015-2016.pdf" width="870" height="560" ></iframe> 
                       </div>
                     </div>
                   </div>
