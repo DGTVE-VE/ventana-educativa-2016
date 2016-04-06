@@ -31,14 +31,14 @@
 </style>
 <script>
 	function muestraImgCentro(idImg){
-		var idImgHover = "/ventana-educativa-2016/public/imagenes/mediateca/tbachillerato/Inicio/" + idImg + "Hov.png";
+		var idImgHover = "{{url('imagenes/mediateca/tbachillerato/Inicio')}}" + "/" + idImg + "Hov.png";
 		document.getElementById(idImg).src = idImgHover;
 		/*var idImgCentro = idImg + "Centro";
 		document.getElementById(idImgCentro).style.visibility = "visible";*/
 		
 	}
 	function ocultaImgCentro(idImg){
-		var idImgHover = "/ventana-educativa-2016/public/imagenes/mediateca/tbachillerato/Inicio/" + idImg + ".png";
+		var idImgHover = "{{url('imagenes/mediateca/tbachillerato/Inicio')}}" + "/" + idImg + ".png";
 		document.getElementById(idImg).src = idImgHover;
 		/*var idImgCentro = idImg + "Centro";
 		document.getElementById(idImgCentro).style.visibility = "hidden";*/
