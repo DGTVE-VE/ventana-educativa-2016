@@ -68,7 +68,7 @@
 					</ul>
 
 				</li>
-				<li class="text-uppercase fondoMenu"><a href="publicaciones">PUBLICACIONES</a></li>
+				<li class="text-uppercase fondoMenu"><a href="redmite/publicaciones">PUBLICACIONES</a></li>
 				<li class="text-uppercase fondoMenu"><a href="contacto">CONTACTO</a></li>
 			</ul>
 		</div>

@@ -23,11 +23,10 @@ Route::get('logout', 'SessionsController@destroy');
 /****************************REDMITE***********************/
 /*Vistas principales REDMITE*/
 //Route::get('/','RedmiteController@redmite');
-//Route::get('testCorreo','RedmiteController@testMail');
 Route::get('redmite','RedmiteController@redmite');
 
 /*Vistas de páginas secundarias REDMITE*/
-Route::get('publicaciones','RedmiteController@publicaciones');
+Route::get('redmite/publicaciones','RedmiteController@publicaciones');
 Route::get('quienesSomos','RedmiteController@quienesSomos');
 Route::get('areastematicas','RedmiteController@areastematicas');
 Route::get('proyectos','RedmiteController@proyectos');
@@ -49,7 +48,7 @@ Route::post('guardaContacto', 'RedmiteController@guardaContacto');
 
 
 /****************************HOME VENTANA***********************/
-//Route::get('/','VentanaController@ventana');
+
 /* Las rutas dentro de este grupo, tienen sesión*/
 Route::group(['middleware' => 'web'], function () {
      Route::auth();
