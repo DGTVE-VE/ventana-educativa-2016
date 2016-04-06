@@ -23,6 +23,7 @@ class VentanaController extends Controller {
     public function registraUsuario() {
 
         $users = new \App\User();
+        $users->nickname = filter_input(INPUT_POST, 'nickname');
         $users->name = filter_input(INPUT_POST, 'name');
         $users->email = filter_input(INPUT_POST, 'email');
         $users->password = bcrypt(filter_input(INPUT_POST, 'password'));
@@ -30,10 +31,14 @@ class VentanaController extends Controller {
         $users->nacimiento = filter_input(INPUT_POST, 'nacimiento');
         $users->ciudad = filter_input(INPUT_POST, 'ciudad');
         $users->pais = filter_input(INPUT_POST, 'pais');
-        $users->intereses_edu = filter_input(INPUT_POST, 'intereses_edu');
+        $users->intereses_edu = filter_input(INPUT_POST, 'intereses_edu');        
+        $users->is_teacher = (filter_input(INPUT_POST, 'is_teacher') == 'on')? 1 : 0;
+        $users->is_student = (filter_input(INPUT_POST, 'is_student') == 'on')? 1 : 0;
+        $users->is_parent =  (filter_input(INPUT_POST, 'is_parent') == 'on')? 1 : 0;
+        
         $users->save();
         return $this->enviaCorreoActivacion($users->email, md5($users->password));
-//        return redirect('ventana_educativa');
+        
     }
 
     public function presentacion() {

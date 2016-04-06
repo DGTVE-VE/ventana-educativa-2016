@@ -229,4 +229,22 @@
     });
     /************ CAMBIAR AVATAR **************/
 </script>
-
+	<?php
+		function generaBreadCrumbs(){
+			$uri = $_SERVER['REQUEST_URI'];
+			$uriActual = explode('/',$uri);
+			$elemsURI= count($uriActual);
+			$j=$elemsURI-1;
+			while($uriActual[$j]!='mediateca'){
+				$j--;
+			}
+			echo '<a href="'?>{{url($uriActual[$j])}}<?php echo '">'.strtoupper($uriActual[$j]).'</a>';
+			$hrefCompleta = $uriActual[$j];
+			$j++;
+			for($i=$j; $i<$elemsURI;$i++){
+				$hrefCompleta = $hrefCompleta."/".$uriActual[$i];
+				echo ' / ';
+				echo '<a href="'?>{{url($hrefCompleta)}}<?php echo'">'.strtoupper($uriActual[$i]).'</a>';
+			}
+		}
+	?>

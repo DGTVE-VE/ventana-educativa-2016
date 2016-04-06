@@ -1,26 +1,46 @@
 <style>
 	.textoTitulo{
-		color: white;
+		color: black;
 		font-family:'Ubuntu';
 		font-size:2em;
 	}
-	.telesecPrimero{
-		position:absolute; top:10%; left:12%; width:77%; height: 197%;
+	.Ecologia{
+		position:absolute; top:8%; left:20.6%; width:65%; height: 166%;
 	}
-	.teleSecSegundo{
-		position: absolute; top:57%; left:51%; width:77%; height: 195%;
+	.Filosofia{
+		position: absolute; top:22.7%; left:57.4%; width:65%; height: 166%;
 	}
-	.telesecTercero{
-		position:absolute; top:116%; left:15.5%; width:77%; height: 194%;
+	.Metodologia{
+		position:absolute; top:98%; left:32.8%; width:65.5%; height: 166%;
+	}
+	.bajaFila{
+		position:relative; top:80px; z-index:10;
 	}
 </style>
-<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center textoTitulo">
-	MEDIATECA
+<script>
+	function muestraImgCentro(idImg){
+		var idImgHover = "/ventana-educativa-2016/public/imagenes/mediateca/tbachillerato/SemestreVI/" + idImg + "Hover.png";
+		document.getElementById(idImg).src = idImgHover;
+		/*var idImgCentro = idImg + "Centro";
+		document.getElementById(idImgCentro).style.visibility = "visible";*/
+		
+	}
+	function ocultaImgCentro(idImg){
+		var idImgHover = "/ventana-educativa-2016/public/imagenes/mediateca/tbachillerato/SemestreVI/" + idImg + ".png";
+		document.getElementById(idImg).src = idImgHover;
+		/*var idImgCentro = idImg + "Centro";
+		document.getElementById(idImgCentro).style.visibility = "hidden";*/
+	}
+</script>
+<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center textoTitulo bajaFila">
+	<?php
+		generaBreadCrumbs();
+	?>
 </div>
-<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="padding:10%;">
+<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="padding:1%;">
 </div>
 <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xs-offset-2 col-sm-offset-2 col-md-offset-2 col-lg-offset-2" style="padding:10%;">
-	{{HTML::image('imagenes/mediateca/Telesecundaria/Inicio/PrimerGrado.png','Telesecundaria Primero',['class'=>'telesecPrimero'])}}
-	{{HTML::image('imagenes/mediateca/Telesecundaria/Inicio/SegundoGrado.png','Telesecundaria Segundo',['class'=>'teleSecSegundo'])}}
-	{{HTML::image('imagenes/mediateca/Telesecundaria/Inicio/TercerGrado.png','Telesecundaria Tercero',['class'=>'telesecTercero'])}}
+	{{HTML::image('imagenes/mediateca/tbachillerato/SemestreVI/Ecologia.png','Telebachillerato Ecologia',['class'=>'Ecologia', 'id'=>'Ecologia', 'onmouseover'=>'muestraImgCentro("Ecologia")', 'onmouseout'=>'ocultaImgCentro("Ecologia")'])}}
+	{{HTML::image('imagenes/mediateca/tbachillerato/SemestreVI/Filosofia.png','Telebachillerato Filosofia',['class'=>'Filosofia', 'id'=>'Filosofia', 'onmouseover'=>'muestraImgCentro("Filosofia")', 'onmouseout'=>'ocultaImgCentro("Filosofia")'])}}
+	{{HTML::image('imagenes/mediateca/tbachillerato/SemestreVI/Metodologia.png','Telebachillerato Geografia',['class'=>'Metodologia', 'id'=>'Metodologia', 'onmouseover'=>'muestraImgCentro("Metodologia")', 'onmouseout'=>'ocultaImgCentro("Metodologia")'])}}
 </div>

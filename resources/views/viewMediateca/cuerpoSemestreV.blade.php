@@ -1,26 +1,48 @@
 <style>
 	.textoTitulo{
-		color: white;
+		color: black;
 		font-family:'Ubuntu';
 		font-size:2em;
 	}
-	.telesecPrimero{
-		position:absolute; top:10%; left:12%; width:77%; height: 197%;
+	.Geografia{
+		position: absolute; top:9%; left:65%; width:70%; height: 95%; z-index:1;
 	}
-	.teleSecSegundo{
-		position: absolute; top:57%; left:51%; width:77%; height: 195%;
+	.HistoriaUniv{
+		position: absolute; top:96.5%; left:65%; width:70%; height: 95%; z-index:1;
 	}
-	.telesecTercero{
-		position:absolute; top:116%; left:15.5%; width:77%; height: 194%;
+	.bajaFila{
+		position:relative; top:80px; z-index:10;
+	}
+	.telebachilleratoCentro{
+		position: absolute; top:35%; left:72%; width:55%; height: 120%;	z-index:0; visibility: hidden;
+	}
+	.telesecundariaCentro{
+		position: absolute; top:35%; left:73%; width:55%; height: 120%; z-index:0; visibility: hidden;
 	}
 </style>
-<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center textoTitulo">
-	MEDIATECA
+<script>
+	function muestraImgCentro(idImg){
+		var idImgHover = "/ventana-educativa-2016/public/imagenes/mediateca/tbachillerato/SemestreV/" + idImg + "Hover.png";
+		document.getElementById(idImg).src = idImgHover;
+		/*var idImgCentro = idImg + "Centro";
+		document.getElementById(idImgCentro).style.visibility = "visible";*/
+		
+	}
+	function ocultaImgCentro(idImg){
+		var idImgHover = "/ventana-educativa-2016/public/imagenes/mediateca/tbachillerato/SemestreV/" + idImg + ".png";
+		document.getElementById(idImg).src = idImgHover;
+		/*var idImgCentro = idImg + "Centro";
+		document.getElementById(idImgCentro).style.visibility = "hidden";*/
+	}
+</script>
+<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center textoTitulo bajaFila">
+	<?php
+		generaBreadCrumbs();
+	?>
 </div>
-<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="padding:10%;">
-</div>
-<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xs-offset-2 col-sm-offset-2 col-md-offset-2 col-lg-offset-2" style="padding:10%;">
-	{{HTML::image('imagenes/mediateca/Telesecundaria/Inicio/PrimerGrado.png','Telesecundaria Primero',['class'=>'telesecPrimero'])}}
-	{{HTML::image('imagenes/mediateca/Telesecundaria/Inicio/SegundoGrado.png','Telesecundaria Segundo',['class'=>'teleSecSegundo'])}}
-	{{HTML::image('imagenes/mediateca/Telesecundaria/Inicio/TercerGrado.png','Telesecundaria Tercero',['class'=>'telesecTercero'])}}
+<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 bajaFila" style="padding:10%;">
+	{{HTML::image('imagenes/mediateca/tbachillerato/SemestreV/Geografia.png','Telebachillerato Geografia',['class'=>'Geografia', 'id'=>'Geografia', 'onmouseover'=>'muestraImgCentro("Geografia")', 'onmouseout'=>'ocultaImgCentro("Geografia")'])}}
+	{{HTML::image('imagenes/mediateca/tbachillerato/SemestreV/HistoriaUniv.png','Telebachillerato HistoriaUniv',['class'=>'HistoriaUniv', 'id'=>'HistoriaUniv', 'onmouseover'=>'muestraImgCentro("HistoriaUniv")', 'onmouseout'=>'ocultaImgCentro("HistoriaUniv")'])}}
+	{{HTML::image('imagenes/mediateca/Inicio/TelebachilleratoCentro.png','Telebachillerato Central',['class'=>'telebachilleratoCentro', 'id'=>'telebachCentro'])}}
+	{{HTML::image('imagenes/mediateca/Inicio/TelesecundariaCentro.png','Telesecundaria Central',['class'=>'telesecundariaCentro', 'id'=>'telesecCentro'])}}
 </div>

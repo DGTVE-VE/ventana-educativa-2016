@@ -25,7 +25,7 @@
 	.CienciasI{
 		position:absolute; top:66%; left:78.7%; width:26%; height: 64%;
 	}
-	.InglesI{
+	.LenguaI{
 		position:absolute; top:124.7%; left:78.8%; width:26%; height: 64%;
 	}
 	.EducacionFisicaI{
@@ -35,46 +35,52 @@
 		position:absolute; top:165.8%; left:44.5%; width:28%; height: 64%;
 	}
 </style>
+<script>
+	function muestraImgCentro(idImg){
+		var idImgHover = "/ventana-educativa-2016/public/imagenes/mediateca/tsecundaria/primerGrado/" + idImg + "Hover.png";
+		document.getElementById(idImg).src = idImgHover;
+		/*var idImgCentro = idImg + "Centro";
+		document.getElementById(idImgCentro).style.visibility = "visible";*/
+		
+	}
+	function ocultaImgCentro(idImg){
+		var idImgHover = "/ventana-educativa-2016/public/imagenes/mediateca/tsecundaria/primerGrado/" + idImg + ".png";
+		document.getElementById(idImg).src = idImgHover;
+		/*var idImgCentro = idImg + "Centro";
+		document.getElementById(idImgCentro).style.visibility = "hidden";*/
+	}
+</script>
 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center textoTitulo bajaFila">
 	<?php
-		$uri = $_SERVER['REQUEST_URI'];
-		$uriActual = explode('/',$uri);
-		$elemsURI= count($uriActual);
-		echo '<a href="'?>{{url($uriActual[3])}}<?php echo '">'.strtoupper($uriActual[3]).'</a>';
-		$hrefCompleta = $uriActual[3];
-		for($i=4; $i<$elemsURI;$i++){
-			$hrefCompleta = $hrefCompleta."/".$uriActual[$i];
-			echo ' / ';
-			echo '<a href="'?>{{url($hrefCompleta)}}<?php echo'">'.strtoupper($uriActual[$i]).'</a>';
-		}
+		generaBreadCrumbs();
 	?>
 </div>
 <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xs-offset-2 col-sm-offset-2 col-md-offset-2 col-lg-offset-2" style="padding:10%;">
 	<a href="{{('')}}">
-		{{HTML::image('imagenes/mediateca/tsecundaria/primerGrado/ArtesI.png','Telesecundaria ArtesI',['class'=>'ArtesI'])}}
+		{{HTML::image('imagenes/mediateca/tsecundaria/primerGrado/ArtesI.png','Telesecundaria ArtesI',['class'=>'ArtesI', 'id'=>'ArtesI', 'onmouseover'=>'muestraImgCentro("ArtesI")', 'onmouseout'=>'ocultaImgCentro("ArtesI")'])}}
 	</a>
 	<a href="{{('')}}">
-		{{HTML::image('imagenes/mediateca/tsecundaria/primerGrado/OrientacionI.png','Telesecundaria OrientacionI',['class'=>'OrientacionI'])}}
+		{{HTML::image('imagenes/mediateca/tsecundaria/primerGrado/OrientacionI.png','Telesecundaria OrientacionI',['class'=>'OrientacionI', 'id'=>'OrientacionI', 'onmouseover'=>'muestraImgCentro("OrientacionI")', 'onmouseout'=>'ocultaImgCentro("OrientacionI")'])}}
 	</a>
 	<a href="{{('')}}">
-		{{HTML::image('imagenes/mediateca/tsecundaria/primerGrado/GeografiaI.png','Telesecundaria GeografiaI',['class'=>'GeografiaI'])}}
+		{{HTML::image('imagenes/mediateca/tsecundaria/primerGrado/GeografiaI.png','Telesecundaria GeografiaI',['class'=>'GeografiaI', 'id'=>'GeografiaI', 'onmouseover'=>'muestraImgCentro("GeografiaI")', 'onmouseout'=>'ocultaImgCentro("GeografiaI")'])}}
 	</a>
 	<a href="{{('')}}">
-		{{HTML::image('imagenes/mediateca/tsecundaria/primerGrado/EspanolI.png','Telesecundaria EspanolI',['class'=>'EspanolI'])}}
+		{{HTML::image('imagenes/mediateca/tsecundaria/primerGrado/EspanolI.png','Telesecundaria EspanolI',['class'=>'EspanolI', 'id'=>'EspanolI', 'onmouseover'=>'muestraImgCentro("EspanolI")', 'onmouseout'=>'ocultaImgCentro("EspanolI")'])}}
 	</a>
 	<a href="{{('')}}">
-		{{HTML::image('imagenes/mediateca/tsecundaria/primerGrado/MatematicasI.png','Telesecundaria MatematicasI',['class'=>'MatematicasI'])}}
+		{{HTML::image('imagenes/mediateca/tsecundaria/primerGrado/MatematicasI.png','Telesecundaria MatematicasI',['class'=>'MatematicasI', 'id'=>'MatematicasI', 'onmouseover'=>'muestraImgCentro("MatematicasI")', 'onmouseout'=>'ocultaImgCentro("MatematicasI")'])}}
 	</a>
 	<a href="{{('')}}">
-		{{HTML::image('imagenes/mediateca/tsecundaria/primerGrado/CienciasI.png','Telesecundaria CienciasI',['class'=>'CienciasI'])}}
+		{{HTML::image('imagenes/mediateca/tsecundaria/primerGrado/CienciasI.png','Telesecundaria CienciasI',['class'=>'CienciasI', 'id'=>'CienciasI', 'onmouseover'=>'muestraImgCentro("CienciasI")', 'onmouseout'=>'ocultaImgCentro("CienciasI")'])}}
 	</a>
 	<a href="{{('')}}">
-		{{HTML::image('imagenes/mediateca/tsecundaria/primerGrado/LenguaI.png','Telesecundaria InglesI',['class'=>'InglesI'])}}
+		{{HTML::image('imagenes/mediateca/tsecundaria/primerGrado/LenguaI.png','Telesecundaria LenguaI',['class'=>'LenguaI', 'id'=>'LenguaI', 'onmouseover'=>'muestraImgCentro("LenguaI")', 'onmouseout'=>'ocultaImgCentro("LenguaI")'])}}
 	</a>
 	<a href="{{('')}}">
-		{{HTML::image('imagenes/mediateca/tsecundaria/primerGrado/EducacionFisicaI.png','Telesecundaria EducacionFisicaI',['class'=>'EducacionFisicaI'])}}
+		{{HTML::image('imagenes/mediateca/tsecundaria/primerGrado/EducacionFisicaI.png','Telesecundaria EducacionFisicaI',['class'=>'EducacionFisicaI', 'id'=>'EducacionFisicaI', 'onmouseover'=>'muestraImgCentro("EducacionFisicaI")', 'onmouseout'=>'ocultaImgCentro("EducacionFisicaI")'])}}
 	</a>
 	<a href="{{('')}}">
-		{{HTML::image('imagenes/mediateca/tsecundaria/primerGrado/TecnologiaI.png','Telesecundaria TecnologiaI',['class'=>'TecnologiaI'])}}
+		{{HTML::image('imagenes/mediateca/tsecundaria/primerGrado/TecnologiaI.png','Telesecundaria TecnologiaI',['class'=>'TecnologiaI', 'id'=>'TecnologiaI', 'onmouseover'=>'muestraImgCentro("TecnologiaI")', 'onmouseout'=>'ocultaImgCentro("TecnologiaI")'])}}
 	</a>
 </div>
