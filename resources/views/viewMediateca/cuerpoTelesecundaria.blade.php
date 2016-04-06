@@ -19,14 +19,14 @@
 </style>
 <script>
 	function muestraImgCentral(idImg){
-		var idImgHover = "/ventana-educativa-2016/public/imagenes/mediateca/tsecundaria/Inicio/" + idImg + "Hover.png";
+		var idImgHover = "{{url('imagenes/mediateca/tsecundaria/Inicio')}}" + "/" + idImg + "Hover.png";
 		document.getElementById(idImg).src = idImgHover;
 		/*var idImgCentro = idImg + "Centro";
 		document.getElementById(idImgCentro).style.visibility = "visible";*/
 		
 	}
 	function ocultaImgCentral(idImg){
-		var idImgHover = "/ventana-educativa-2016/public/imagenes/mediateca/tsecundaria/Inicio/" + idImg + ".png";
+		var idImgHover = "{{url('imagenes/mediateca/tsecundaria/Inicio')}}" + "/" + idImg + ".png";
 		document.getElementById(idImg).src = idImgHover;
 		/*var idImgCentro = idImg + "Centro";
 		document.getElementById(idImgCentro).style.visibility = "hidden";*/

@@ -28,14 +28,14 @@
 </style>
 <script>
 	function muestraImgCentro(idImg){
-		var idImgHover = "/ventana-educativa-2016/public/imagenes/mediateca/tsecundaria/tercerGrado/" + idImg + "Hover.png";
+		var idImgHover = "{{url('imagenes/mediateca/tsecundaria/tercerGrado')}}" + "/" + idImg + "Hover.png";
 		document.getElementById(idImg).src = idImgHover;
 		/*var idImgCentro = idImg + "Centro";
 		document.getElementById(idImgCentro).style.visibility = "visible";*/
 		
 	}
 	function ocultaImgCentro(idImg){
-		var idImgHover = "/ventana-educativa-2016/public/imagenes/mediateca/tsecundaria/tercerGrado/" + idImg + ".png";
+		var idImgHover = "{{url('imagenes/mediateca/tsecundaria/tercerGrado')}}" + "/" + idImg + ".png";
 		document.getElementById(idImg).src = idImgHover;
 		/*var idImgCentro = idImg + "Centro";
 		document.getElementById(idImgCentro).style.visibility = "hidden";*/
