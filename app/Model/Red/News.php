@@ -1,10 +1,10 @@
 <?php
 
-namespace App;
+namespace App\Model\Red;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Materia_telebach extends Model
+class News extends Model
 {
     //
 }

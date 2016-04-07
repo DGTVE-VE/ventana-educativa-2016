@@ -62,7 +62,7 @@ class RedmiteController extends Controller {
 
     public function guardaCorreoNewsLetter() {
 
-        $news = new \App\Red\News();
+        $news = new \App\Model\Red\News();
         $news->correo = filter_input(INPUT_POST, 'correo_newsletter');
         $news->hash = md5(date('Y/m/d H:i:s'));
         $news->save();
@@ -73,7 +73,7 @@ class RedmiteController extends Controller {
 
     public function activaCorreoNews(Request $request, $correo, $hash) {
 
-        $news = \App\Red\News::where('correo', '=', $correo)->first();
+        $news = \App\Model\Red\News::where('correo', '=', $correo)->first();
 
         if ($news->hash == $hash) {
             $news->validado = 1;
@@ -85,7 +85,7 @@ class RedmiteController extends Controller {
     }
 
     public function guardaContacto() {
-        $contacto = new \App\Red\Contacto();
+        $contacto = new \App\Model\Red\Contacto();
         $contacto->nombre_contacto = filter_input(INPUT_POST, 'nombre_contacto');
         $contacto->correo = filter_input(INPUT_POST, 'correo');
         $contacto->asunto = filter_input(INPUT_POST, 'asunto');
