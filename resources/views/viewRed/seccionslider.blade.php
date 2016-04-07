@@ -12,16 +12,20 @@
             <!-- Wrapper for slides -->
             <div class="carousel-inner" role="listbox" style="margin:0px;">
                 <div class="item active">
-                    <img id="imgSliderHome" class="img-responsive imgSliderHome" src="imagenes/red/Banners/1.jpg" alt="..."/>
+                    <!--<img id="imgSliderHome" class="img-responsive imgSliderHome" src="imagenes/red/Banners/1.jpg" alt="..."/>-->
+                    {{ HTML::image('imagenes/red/Banners/1.jpg','bannerSlider1', array('id'=>'imgSliderHome','class'=>'img-responsive imgSliderHome'))}}
                 </div>
                 <div class="item">
-                    <img id="imgSliderHome2" class="img-responsive imgSliderHome" src="imagenes/red/Banners/2.jpg" alt="imagenes/red/1600-x-650.jpg"/>
+                    <!--<img id="imgSliderHome2" class="img-responsive imgSliderHome" src="imagenes/red/Banners/2.jpg" alt="imagenes/red/1600-x-650.jpg"/>-->
+                    {{ HTML::image('imagenes/red/Banners/2.jpg','bannerSlider2', array('id'=>'imgSliderHome2','class'=>'img-responsive imgSliderHome'))}}
                 </div>
                 <div class="item">
-                    <img id="imgSliderHome3" class="img-responsive imgSliderHome" src="imagenes/red/Banners/banner-3.jpg" alt="http://placehold.it/1600x500"/>
+                    <!--<img id="imgSliderHome3" class="img-responsive imgSliderHome" src="imagenes/red/Banners/banner-3.jpg" alt="http://placehold.it/1600x500"/>-->
+                    {{ HTML::image('imagenes/red/Banners/banner-3.jpg','bannerSlider3', array('id'=>'imgSliderHome3','class'=>'img-responsive imgSliderHome'))}}
                 </div>
                 <div class="item">
-                    <img id="imgSliderHome4" class="img-responsive imgSliderHome" src="imagenes/red/Banners/banner-4.jpg" alt="..."/>
+                    <!--<img id="imgSliderHome4" class="img-responsive imgSliderHome" src="imagenes/red/Banners/banner-4.jpg" alt="..."/>-->
+                    {{ HTML::image('imagenes/red/Banners/banner-4.jpg','bannerSlider4', array('id'=>'imgSliderHome4','class'=>'img-responsive imgSliderHome'))}}
                 </div>
             </div>
 
