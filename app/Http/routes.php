@@ -34,10 +34,6 @@ Route::get('contacto', 'RedmiteController@contacto');
 Route::get('correoValidado', 'RedmiteController@correoValidado');
 
 /* Vistas de administración Formularios REDMITE */
-Route::get('frmbanner', 'RedmiteController@frmbanner');
-Route::get('frmcolaboradores', 'RedmiteController@frmcolaboradores');
-Route::get('frmproyectos', 'RedmiteController@frmproyectos');
-Route::get('frmpublicaciones', 'RedmiteController@frmpublicaciones');
 Route::get('usuarios', 'RedmiteController@usuarios');
 Route::post('guardaCorreoNewsLetter', 'RedmiteController@guardaCorreoNewsLetter');
 Route::get('activaCorreo/{correo}/{hash}', 'RedmiteController@activaCorreoNews');
