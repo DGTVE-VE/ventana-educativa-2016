@@ -7,22 +7,27 @@
 				<span class="icon-bar"></span>
 				<span class="icon-bar"></span>
 			</button>
-			<a class="navbar-brand" href="redmite">
-				<img class="img-responsive subeHorizontal" src="imagenes/red/LogoRed/logoredmesoamericana.png" alt="Logo Red Mesoamericana"/>
-			</a>
+			<a class="navbar-brand" href="{{url('redmite')}}">
+				<!--<img class="img-responsive subeHorizontal" src="imagenes/red/LogoRed/logoredmesoamericana.png" alt="Logo Red Mesoamericana"/>-->
+                        {{ HTML::image('imagenes/red/LogoRed/logoredmesoamericana.png','Logo Red Mesoamericana', array('class'=>'image-responsive subeHorizontal'))}}
+                        </a>
 		</div>
 
 		<div class="collapse navbar-collapse js-navbar-collapse">
 			<ul class="nav navbar-nav navbar-right">
-				<li class="text-uppercase fondoMenu"><a href="redmite">INICIO</a></li>
-				<li class="text-uppercase fondoMenu"><a href="quienesSomos">¿QUIÉNES SOMOS?</a></li>
+				<li class="text-uppercase fondoMenu"><a href="{{url('redmite')}}">INICIO</a></li>
+				<li class="text-uppercase fondoMenu"><a href="redmite/quienesSomos">¿QUIÉNES SOMOS?</a></li>
 				<li class="dropdown menu-large">
 					<a href="#" class="dropdown-toggle text-uppercase fondoMenu" data-toggle="dropdown">Eventos <b class="caret"></b></a>				
 					<ul class="dropdown-menu yamm-fw">
 						<li class="col-md-12">
 							<ul>
 								<li class="dropdown-header text-center"><h3>INNTEDU 2016</h3></li>
-								<div class="col-md-2"><img class="image-responsive" src="imagenes/red/eventos/logoinntedu.jpg"></div>
+								<div class="col-md-2">
+                                                                    <!--<img class="image-responsive" src="imagenes/red/eventos/logoinntedu.jpg">-->
+                                                                    {{ HTML::image('imagenes/red/eventos/logoinntedu.jpg','Logo tedu', array('class'=>'image-responsive'))}}
+
+                                                                </div>
 								<div class="col-md-4">
 									<h4 class="text-uppercase text-center">Descripción</h4>
 									<p class="text-justify">El Primer Encuentro Internacional de Innovación y Tecnología para la Educación se realizará los próximos 11, 12 y 13 de octubre, en las instalaciones de Centro Nacional de la Artes de la Ciudad de México. </p>
@@ -68,7 +73,7 @@
 					</ul>
 
 				</li>
-				<li class="text-uppercase fondoMenu"><a href="redmite/publicaciones">PUBLICACIONES</a></li>
+				<li class="text-uppercase fondoMenu"><a href="{{url('redmite/publicaciones')}}">PUBLICACIONES</a></li>
 				<li class="text-uppercase fondoMenu"><a href="contacto">CONTACTO</a></li>
 			</ul>
 		</div>

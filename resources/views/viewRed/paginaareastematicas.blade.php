@@ -15,7 +15,8 @@ Publicaciones
 <div class="row backpareatema txtAreasTematicas" style="padding-top:50px; padding-bottom:25px; border-top:solid 1px white;">
 	<div class="col-sm-1 col-md-1 col-lg-1"></div>
 	<div class="col-xs-4 col-sm-2 col-md-2 col-lg-2">
-		<img src="imagenes/red/areasTematicas/redesdeconocimientoyaprendizaje-blanco.png" style="position:absolute;">
+		<!--<img src="imagenes/red/areasTematicas/redesdeconocimientoyaprendizaje-blanco.png" style="position:absolute;">-->
+                {{ HTML::image('imagenes/red/areasTematicas/redesdeconocimientoyaprendizaje-blanco.png','redes conocimiento', array('style'=>'position:absolute;'))}}
 	</div>
 	<div class="col-xs-8 col-sm-7 col-md-7 col-lg-7">
 		<h3>Redes de Conocimiento y Aprendizaje</h3><br><br>
@@ -37,7 +38,8 @@ Publicaciones
 <div class="row backpareatema txtAreasTematicas" style="padding-top:25px; padding-bottom:25px; border-top:solid 1px white;">
 	<div class="col-sm-1 col-md-1 col-lg-1"></div>
 	<div class="col-xs-4 col-sm-2 col-md-2 col-lg-2">
-		<img src="imagenes/red/areasTematicas/modelosyambienteseducativos-blanco.png" style="position:absolute;">
+		<!--<img src="imagenes/red/areasTematicas/modelosyambienteseducativos-blanco.png" style="position:absolute;">-->
+                {{ HTML::image('imagenes/red/areasTematicas/modelosyambienteseducativos-blanco.png','ambientes educativos', array('style'=>'position:absolute;'))}}
 	</div>
 	<div class="col-xs-8 col-sm-7 col-md-7 col-lg-7">
 		<h3>Modelos y Ambientes Educativos</h3><br><br>
@@ -60,7 +62,8 @@ Publicaciones
 <div class="row backpareatema txtAreasTematicas" style="padding-top:25px; padding-bottom:25px; border-top:solid 1px white;">
 	<div class="col-sm-1 col-md-1 col-lg-1"></div>
 	<div class="col-xs-4 col-sm-2 col-md-2 col-lg-2">
-		<img src="imagenes/red/areasTematicas/gestionycalidaddeprogramaseducativos-blanco.png" style="position:absolute;">
+		<!--<img src="imagenes/red/areasTematicas/gestionycalidaddeprogramaseducativos-blanco.png" style="position:absolute;">-->
+                {{ HTML::image('imagenes/red/areasTematicas/gestionycalidaddeprogramaseducativos-blanco.png','gestion y calidad', array('style'=>'position:absolute;'))}}
 	</div>
 	<div class="col-xs-8 col-sm-7 col-md-7 col-lg-7">
 		<h3>Gestión y Calidad de Programas Educativos</h3><br><br>
@@ -84,7 +87,8 @@ Publicaciones
 <div class="row backpareatema txtAreasTematicas" style="padding-top:25px; padding-bottom:25px; border-top:solid 1px white;">
 	<div class="col-sm-1 col-md-1 col-lg-1"></div>
 	<div class="col-xs-4 col-sm-2 col-md-2 col-lg-2">
-		<img src="imagenes/red/areasTematicas/multimediaydesarrolloeducativo-blanco.png" style="position:absolute;">
+		<!--<img src="imagenes/red/areasTematicas/multimediaydesarrolloeducativo-blanco.png" style="position:absolute;">-->
+                {{ HTML::image('imagenes/red/areasTematicas/multimediaydesarrolloeducativo-blanco.png','desarrollo educativo', array('style'=>'position:absolute;'))}}
 	</div>
 	<div class="col-xs-8 col-sm-7 col-md-7 col-lg-7">
 		<h3>Multimedia y Desarrollo Educativo</h3><br><br>
@@ -108,7 +112,8 @@ Publicaciones
 <div class="row backpareatema txtAreasTematicas" style="padding-top:25px; padding-bottom:50px; border-top:solid 1px white;">
 	<div class="col-sm-1 col-md-1 col-lg-1"></div>
 	<div class="col-xs-4 col-sm-2 col-md-2 col-lg-2">
-		<img src="imagenes/red/areasTematicas/politicaeducativaycambiosocial-blanco.png" style="position:absolute;">
+		<!--<img src="imagenes/red/areasTematicas/politicaeducativaycambiosocial-blanco.png" style="position:absolute;">-->
+                {{ HTML::image('imagenes/red/areasTematicas/politicaeducativaycambiosocial-blanco.png','cambio social', array('style'=>'position:absolute;'))}}
 	</div>
 	<div class="col-xs-8 col-sm-7 col-md-7 col-lg-7">
 		<h3>Política Educativa y Cambio Social</h3><br><br>

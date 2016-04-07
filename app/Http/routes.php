@@ -27,9 +27,9 @@ Route::get('redmite', 'RedmiteController@redmite');
 
 /* Vistas de páginas secundarias REDMITE */
 Route::get('redmite/publicaciones', 'RedmiteController@publicaciones');
-Route::get('quienesSomos', 'RedmiteController@quienesSomos');
-Route::get('areastematicas', 'RedmiteController@areastematicas');
-Route::get('proyectos', 'RedmiteController@proyectos');
+Route::get('redmite/quienesSomos', 'RedmiteController@quienesSomos');
+Route::get('redmite/areastematicas', 'RedmiteController@areastematicas');
+Route::get('redmite/proyectos', 'RedmiteController@proyectos');
 Route::get('contacto', 'RedmiteController@contacto');
 Route::get('correoValidado', 'RedmiteController@correoValidado');
 

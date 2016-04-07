@@ -1,11 +1,12 @@
-<div class="row" style="background-image: url('imagenes/red/integrantes/gradiente.jpg');">
+<div class="row" style="background-image:url('{{ asset('imagenes/red/integrantes/gradiente.jpg') }}')">
     <div class="col-md-12 fondo_Obscuro">
         <div class="col-md-12 text-center text-uppercase">
             <p class="pleca"> Nuestros integrantes </p>
         </div>
     </div>
     <div class="col-md-6">
-        <img name="imagenMapa_n"  src="imagenes/red/integrantes/gris.png"  border="5px" id="imagenMapa" class="mapaCentroAmerica img-responsive" usemap="#mapa_n" alt="" />
+        <!--<img name="imagenMapa_n"  src="imagenes/red/integrantes/gris.png"  border="5px" id="imagenMapa" class="mapaCentroAmerica img-responsive" usemap="#mapa_n" alt="" />-->
+        {{ HTML::image('imagenes/red/integrantes/gris.png','integrantes', array('name'=>'imagenMapa_n','id'=>'imagenMapa', 'border'=>'5px','class' =>'mapaCentroAmerica img-responsive', 'usemap'=>'#mapa_n'))}}
         <map name="mapa_n" id="mapa">         
             <area alt="Colombia" onmouseover="entraPais(1)" onmouseout="saleMouseInte();" href="#" data-keyboard="true" data-toggle="modal" shape="poly" coords="330,279,347,262,347,226,378,187,394,230,433,238,431,274,414,279,414,319,366,292"/>
             <area alt="Costa Rica" onmouseover="entraPais(2)" onmouseout="saleMouseInte();" href="#modalCostaRica" shape="poly" data-toggle="modal" coords="265,192,290,182,308,208,307,223,291,216"/>
@@ -45,8 +46,8 @@
                         <!-- Integrante 1 -->
                         <div class="item active">
                             <div class="col-md-12 text-center">
-                                <img  src="imagenes/red/integrantes/fotos/mexico/RubenEdel.png" alt="...">
-                            </div>
+                                <!--<img  src="imagenes/red/integrantes/fotos/mexico/RubenEdel.png" alt="...">-->
+                                {{ HTML::image('imagenes/red/integrantes/fotos/mexico/RubenEdel.png','integrante mex1')}}                            </div>
                             <div class="col-md-12 carousel-caption carousel-captionInt">
                                 <h3>Rubén Edel Navarro</h3>
                                 <h4>Investigador de tiempo completo<br>
@@ -71,7 +72,8 @@
                         <!-- Integrante 2 -->
                         <div class="item ">
                             <div class="col-md-12 text-center">
-                                <img  src="imagenes/red/integrantes/fotos/mexico/BrendaLuzColorado.png" alt="...">
+                                <!--<img  src="imagenes/red/integrantes/fotos/mexico/BrendaLuzColorado.png" alt="...">-->
+                                {{ HTML::image('imagenes/red/integrantes/fotos/mexico/BrendaLuzColorado.png','integrante mex2')}}  
                             </div>
                             <div class="col-md-12 carousel-caption carousel-captionInt">
                                 <h3>Brenda Luz Colorado Aguilar</h3>
@@ -96,7 +98,8 @@
                         <!-- Integrante 3 -->
                         <div class="item ">
                             <div class="col-md-12 text-center">
-                                <img  src="imagenes/red/integrantes/fotos/mexico/RamonaImelda.png" alt="...">
+                                <!--<img  src="imagenes/red/integrantes/fotos/mexico/RamonaImelda.png" alt="...">-->
+                                {{ HTML::image('imagenes/red/integrantes/fotos/mexico/RamonaImelda.png','integrante mex3')}}  
                             </div>
                             <div class="col-md-12 carousel-caption carousel-captionInt">
                                 <h3>Ramona Imelda García López</h3>
@@ -172,7 +175,8 @@
                     <div class="carousel-inner carousel-innerInt">
                         <div class="item active">
                             <div class="col-md-12 text-center">
-                                <img  src="imagenes/red/integrantes/fotos/costarica/AnaGuilma.png" alt="...">
+                                <!--<img  src="imagenes/red/integrantes/fotos/costarica/AnaGuilma.png" alt="...">-->
+                                {{ HTML::image('imagenes/red/integrantes/fotos/costarica/AnaGuilma.png','integrante cost1')}} 
                             </div>
                             <div class="col-md-12 carousel-caption carousel-captionInt">
                                 <h3>Ana Gilma Guevara Bello</h3>
@@ -195,7 +199,8 @@
                         <!--Colaborador 2-->
                         <div class="item">
                             <div class="col-md-12 text-center">
-                                <img  src="imagenes/red/integrantes/fotos/costarica/AnnyGonzalez.png" alt="...">
+                                <!--<img  src="imagenes/red/integrantes/fotos/costarica/AnnyGonzalez.png" alt="...">-->
+                                {{ HTML::image('imagenes/red/integrantes/fotos/costarica/AnnyGonzalez.png','integrante cost2')}} 
                             </div>
                             <div class="col-md-12 carousel-caption carousel-captionInt">
                                 <h3>Anny González Gairaud </h3>
@@ -216,7 +221,8 @@
                         <!--Colaborador 3-->
                         <div class="item">
                             <div class="col-md-12 text-center">
-                                <img  src="imagenes/red/integrantes/fotos/costarica/LiliamCorrales.png" alt="...">
+                                <!--<img  src="imagenes/red/integrantes/fotos/costarica/LiliamCorrales.png" alt="...">-->
+                                {{ HTML::image('imagenes/red/integrantes/fotos/costarica/LiliamCorrales.png','integrante cost3')}} 
                             </div>
                             <div class="col-md-12 carousel-caption carousel-captionInt">
                                 <h3>Lilliam Corrales Torres</h3>
@@ -239,7 +245,8 @@
                         <!--Colaborador 4-->                        
                         <div class="item">
                             <div class="col-md-12 text-center">
-                                <img  src="imagenes/red/integrantes/fotos/costarica/RandallCastro.png" alt="...">
+                                <!--<img  src="imagenes/red/integrantes/fotos/costarica/RandallCastro.png" alt="...">-->
+                                {{ HTML::image('imagenes/red/integrantes/fotos/costarica/RandallCastro.png','integrante cost4')}} 
                             </div>
                             <div class="col-md-12 carousel-caption carousel-captionInt">
                                 <h3>Rándall Castro Madrigal</h3>
@@ -266,7 +273,8 @@
                         <!--Colaborador 5-->                        
                         <div class="item">
                             <div class="col-md-12 text-center">
-                                <img  src="imagenes/red/integrantes/fotos/costarica/AlejandraSanchez.png" alt="...">
+                                <!--<img  src="imagenes/red/integrantes/fotos/costarica/AlejandraSanchez.png" alt="...">-->
+                                {{ HTML::image('imagenes/red/integrantes/fotos/costarica/AlejandraSanchez.png','integrante cost5')}} 
                             </div>
                             <div class="col-md-12 carousel-caption carousel-captionInt">
                                 <h3>Alejandra Sánchez Flores</h3>
@@ -285,7 +293,8 @@
                         <!--Colaborador 6-->                        
                         <div class="item">
                             <div class="col-md-12 text-center">
-                                <img  src="imagenes/red/integrantes/fotos/costarica/ElizabethFigueroa.png" alt="...">
+                                <!--<img  src="imagenes/red/integrantes/fotos/costarica/ElizabethFigueroa.png" alt="...">-->
+                                {{ HTML::image('imagenes/red/integrantes/fotos/costarica/ElizabethFigueroa.png','integrante cost6')}}
                             </div>
                             <div class="col-md-12 carousel-caption carousel-captionInt">
                                 <h3>Elizabeth Figueroa Fallas</h3>
@@ -305,7 +314,8 @@
                         <!--Colaborador 7-->                        
                         <div class="item">
                             <div class="col-md-12 text-center">
-                                <img  src="imagenes/red/integrantes/fotos/costarica/JavierFranciscoBarquero.jpg" alt="...">
+                                <!--<img  src="imagenes/red/integrantes/fotos/costarica/JavierFranciscoBarquero.jpg" alt="...">-->
+                                {{ HTML::image('imagenes/red/integrantes/fotos/costarica/JavierFranciscoBarquero.jpg','integrante cost7')}}
                             </div>
                             <div class="col-md-12 carousel-caption carousel-captionInt">
                                 <h3>Javier Francisco Barquero Rodríguez</h3>
@@ -330,7 +340,8 @@
                         <!--Colaborador 8-->                        
                         <div class="item">
                             <div class="col-md-12 text-center">
-                                <img  src="imagenes/red/integrantes/fotos/costarica/HermesMena.png" alt="...">
+                                <!--<img  src="imagenes/red/integrantes/fotos/costarica/HermesMena.png" alt="...">-->
+                                 {{ HTML::image('imagenes/red/integrantes/fotos/costarica/HermesMena.png','integrante cost8')}}
                             </div>
                             <div class="col-md-12 carousel-caption carousel-captionInt">
                                 <h3>Hermes Mena Picado</h3>
@@ -353,8 +364,8 @@
                         <!--Colaborador 9-->                        
                         <div class="item">
                             <div class="col-md-12 text-center">
-                                <img  src="imagenes/red/integrantes/fotos/costarica/XiniaLizethZuñiga.png" alt="...">
-                            </div>
+                                <!--<img  src="imagenes/red/integrantes/fotos/costarica/XiniaLizethZuñiga.png" alt="...">-->
+                                {{ HTML::image('imagenes/red/integrantes/fotos/costarica/XiniaLizethZuñiga.png','integrante cost9')}}                            </div>
                             <div class="col-md-12 carousel-caption carousel-captionInt">
                                 <h3>Xinia Lizeth Zúñiga Esquivel</h3>
                                 <h4>Asesora de Matemáticas<br>
@@ -376,7 +387,8 @@
                         <!--Colaborador 10-->                        
                         <div class="item">
                             <div class="col-md-12 text-center">
-                                <img  src="imagenes/red/integrantes/fotos/costarica/RichardNavarro.png" alt="...">
+                                <!--<img  src="imagenes/red/integrantes/fotos/costarica/RichardNavarro.png" alt="...">-->
+                                {{ HTML::image('imagenes/red/integrantes/fotos/costarica/RichardNavarro.png','integrante cost10')}}
                             </div>
                             <div class="col-md-12 carousel-caption carousel-captionInt">
                                 <h3>Richard Navarro Garro</h3>
@@ -404,7 +416,8 @@
                         <!--Colaborador 11-->                        
                         <div class="item">
                             <div class="col-md-12 text-center">
-                                <img  src="imagenes/red/integrantes/fotos/costarica/YorlenyRocioRojas.png" alt="...">
+                                <!--<img  src="imagenes/red/integrantes/fotos/costarica/YorlenyRocioRojas.png" alt="...">-->
+                                {{ HTML::image('imagenes/red/integrantes/fotos/costarica/YorlenyRocioRojas.png','integrante cost11')}}
                             </div>
                             <div class="col-md-12 carousel-caption carousel-captionInt">
                                 <h3>Yorleny Rocío Rojas Jiménez</h3>
@@ -461,7 +474,8 @@
                     <div class="carousel-inner carousel-innerInt">
                         <div class="item active">
                             <div class="col-md-12 text-center">
-                                <img  src="imagenes/red/integrantes/fotos/republicadominicana/EuniceImperio.png" alt="...">
+                                <!--<img  src="imagenes/red/integrantes/fotos/republicadominicana/EuniceImperio.png" alt="...">-->
+                                {{ HTML::image('imagenes/red/integrantes/fotos/republicadominicana/EuniceImperio.png','integrante rep1')}}
                             </div>
                             <div class="col-md-12 carousel-caption carousel-captionInt">
                                 <h3>Eunice Imperio Vicioso Melo</h3>
@@ -491,7 +505,8 @@
                         <!--Colaborador 2-->
                         <div class="item">
                             <div class="col-md-12 text-center">
-                                <img  src="imagenes/red/integrantes/fotos/republicadominicana/RafaelDavidFranciscoVentura.png" alt="...">
+                                <!--<img  src="imagenes/red/integrantes/fotos/republicadominicana/RafaelDavidFranciscoVentura.png" alt="...">-->
+                                {{ HTML::image('imagenes/red/integrantes/fotos/republicadominicana/RafaelDavidFranciscoVentura.png','integrante rep2')}}
                             </div>
                             <div class="col-md-12 carousel-caption carousel-captionInt">
                                 <h3>Rafael David Francisco Ventura, M. A.</h3>
@@ -548,7 +563,8 @@
                         <!-- Colaborador 1 -->
                         <div class="item active">
                             <div class="col-md-12 text-center">
-                                <img  src="imagenes/red/integrantes/fotos/panama/IbzkaRodríguez.png" alt="...">
+                                <!--<img  src="imagenes/red/integrantes/fotos/panama/IbzkaRodríguez.png" alt="...">-->
+                                {{ HTML::image('imagenes/red/integrantes/fotos/panama/IbzkaRodríguez.png','integrante pan1')}}
                             </div>
                             <div class="col-md-12 carousel-caption carousel-captionInt">
                                 <h3>Gibzka Rodríguez de Vernier</h3>
@@ -573,7 +589,8 @@
                         <!-- Colaborador 2 -->
                         <div class="item ">
                             <div class="col-md-12 text-center">
-                                <img  src="imagenes/red/integrantes/fotos/panama/MarielaMendoza.png" alt="...">
+                                <!--<img  src="imagenes/red/integrantes/fotos/panama/MarielaMendoza.png" alt="...">-->
+                                 {{ HTML::image('imagenes/red/integrantes/fotos/panama/MarielaMendoza.png','integrante pan2')}}
                             </div>
                             <div class="col-md-12 carousel-caption carousel-captionInt">
                                 <h3>Mariela Mendoza de Quezada</h3>
@@ -630,7 +647,8 @@
                     <div class="carousel-inner carousel-innerInt">
                         <div class="item active">
                             <div class="col-md-12 text-center">
-                                <img  src="imagenes/red/integrantes/fotos/guatemala/CarlotaCalito.png" alt="...">
+                                <!--<img  src="imagenes/red/integrantes/fotos/guatemala/CarlotaCalito.png" alt="...">-->
+                                {{ HTML::image('imagenes/red/integrantes/fotos/guatemala/CarlotaCalito.png','integrante gua1')}}
                             </div>
                             <div class="col-md-12 carousel-caption carousel-captionInt">
                                 <h3>Carlota Calito de Alfaro</h3>
@@ -688,7 +706,8 @@
                     <div class="carousel-inner carousel-innerInt">
                         <div class="item active">
                             <div class="col-md-12 text-center">
-                                <img  src="imagenes/red/integrantes/fotos/honduras/GladisOndinaGalindo.png" alt="...">
+                                <!--<img  src="imagenes/red/integrantes/fotos/honduras/GladisOndinaGalindo.png" alt="...">-->
+                                {{ HTML::image('imagenes/red/integrantes/fotos/honduras/GladisOndinaGalindo.png','integrante hon1')}}
                             </div>
                             <div class="col-md-12 carousel-caption carousel-captionInt">
                                 <h3>Gladis Ondina Galindo Velásquez</h3>
