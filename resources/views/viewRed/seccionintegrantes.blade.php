@@ -11,7 +11,7 @@
             <area alt="Colombia" onmouseover="entraPais(1)" onmouseout="saleMouseInte();" href="#" data-keyboard="true" data-toggle="modal" shape="poly" coords="330,279,347,262,347,226,378,187,394,230,433,238,431,274,414,279,414,319,366,292"/>
             <area alt="Costa Rica" onmouseover="entraPais(2)" onmouseout="saleMouseInte();" href="#modalCostaRica" shape="poly" data-toggle="modal" coords="265,192,290,182,308,208,307,223,291,216"/>
             <area alt="Dominicana" onmouseover="entraPais(3)" onmouseout="saleMouseInte();" href="#modalRepublicaDominicana" shape="poly" data-toggle="modal" coords="379,130,389,111,414,114,433,130"/>
-            <area alt="El Salvador" onmouseover="entraPais(4)" onmouseout="saleMouseInte();" href="#" shape="poly" data-toggle="modal" coords="237,173,243,155,254,183"/>
+            <area alt="El Salvador" onmouseover="entraPais(4)" onmouseout="saleMouseInte();" href="#modalSalvador" shape="poly" data-toggle="modal" coords="237,173,243,155,254,183"/>
             <area alt="Guatemala" onmouseover="entraPais(5)" onmouseout="saleMouseInte();" href="#modalGuatemala" shape="poly" data-toggle="modal" coords="214,162,240,128,249,143,237,173"/>
             <area alt="Honduras" onmouseover="entraPais(6)" onmouseout="saleMouseInte();" href="#modalHonduras" shape="poly" data-toggle="modal" coords="242,156,247,142,290,146,253,183"/>
             <area alt="México" onmouseover="entraPais(7)" onmouseout="saleMouseInte();" href="#modalMexico" data-toggle="modal" shape="poly" coords="90,98,162,90,188,123,225,111,228,93,262,100,216,162,159,145,127,131,97,121"/>
@@ -24,6 +24,7 @@
         <h4 class="">Selecciona un país para ver más...</h4>
     </div>
 </div>
+                       
 <!-- Modal México-->
 <div id="modalMexico" class="modal modal-fullscreen fade centraCont" tabindex="-1" role="dialog">
     <div class="modal-dialog">
@@ -40,6 +41,8 @@
                         <li data-target="#carouselMexico" data-slide-to="0" class="active"></li>
                         <li data-target="#carouselMexico" data-slide-to="1" class="active"></li>
                         <li data-target="#carouselMexico" data-slide-to="2" class="active"></li>
+                        <li data-target="#carouselMexico" data-slide-to="3" class="active"></li>
+                        <li data-target="#carouselMexico" data-slide-to="4" class="active"></li>                        
                     </ol>
                     <!-- Wrapper for slides -->
                     <div class="carousel-inner carousel-innerInt">
@@ -47,7 +50,7 @@
                         <div class="item active">
                             <div class="col-md-12 text-center">
                                 <!--<img  src="imagenes/red/integrantes/fotos/mexico/RubenEdel.png" alt="...">-->
-                                {{ HTML::image('imagenes/red/integrantes/fotos/mexico/RubenEdel.png','integrante mex1')}}                            </div>
+                                {{ HTML::image('imagenes/red/integrantes/fotos/mexico/RubenEdel.png','Colaborador México 1')}}                            </div>
                             <div class="col-md-12 carousel-caption carousel-captionInt">
                                 <h3>Rubén Edel Navarro</h3>
                                 <h4>Investigador de tiempo completo<br>
@@ -73,7 +76,7 @@
                         <div class="item ">
                             <div class="col-md-12 text-center">
                                 <!--<img  src="imagenes/red/integrantes/fotos/mexico/BrendaLuzColorado.png" alt="...">-->
-                                {{ HTML::image('imagenes/red/integrantes/fotos/mexico/BrendaLuzColorado.png','integrante mex2')}}  
+                                {{ HTML::image('imagenes/red/integrantes/fotos/mexico/BrendaLuzColorado.png','Colaborador México 2')}}  
                             </div>
                             <div class="col-md-12 carousel-caption carousel-captionInt">
                                 <h3>Brenda Luz Colorado Aguilar</h3>
@@ -99,7 +102,7 @@
                         <div class="item ">
                             <div class="col-md-12 text-center">
                                 <!--<img  src="imagenes/red/integrantes/fotos/mexico/RamonaImelda.png" alt="...">-->
-                                {{ HTML::image('imagenes/red/integrantes/fotos/mexico/RamonaImelda.png','integrante mex3')}}  
+                                {{ HTML::image('imagenes/red/integrantes/fotos/mexico/RamonaImelda.png','Colaborador México 3')}}  
                             </div>
                             <div class="col-md-12 carousel-caption carousel-captionInt">
                                 <h3>Ramona Imelda García López</h3>
@@ -124,6 +127,63 @@
                                             nacionales e internacionales, así como coautora de algunos capítulos de libros. 
                                             Ha participado en distintos proyectos de investigación, tanto como responsable como 
                                             colaboradora, a nivel institucional e interinstitucional.</p>
+                                    </div>
+                                    <div class="col-md-1"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Integrante 4 -->
+                        <div class="item ">
+                            <div class="col-md-12 text-center">
+                                {{ HTML::image('imagenes/red/integrantes/fotos/mexico/yadiranavarrorangel.png','Colaborador México 4')}}  
+                            </div>
+                            <div class="col-md-12 carousel-caption carousel-captionInt">
+                                <h3>Yadira Navarro Rangel</h3>
+                                <h4>Coordinadora del Doctorado en Sistema y Ambientes Educativos<br>
+                                    Programa Interinstitucional, Sede BUAP</h4>
+                                <div class="row">
+                                    <div class="col-md-1"></div>
+                                    <div class="col-md-10">
+                                        <p class="text-justify">Doctora en Educación por la Universidad Autónoma de Aguascalientes (UAA) y Miembro del Sistema Nacional de Investigadores Nivel 1.
+                                            Participó en el programa para lideres emergentes en educación en línea del Institute for Engaged Leadership in Online Learning (IELOL) from Penn State University y forma parte de equipo institucional de la BUAP para el proyecto “Comunidades Digitales para el Aprendizaje en Educación Superior” CODAES.
+                                            Es miembro del Consejo Mexicano de Investigación Educativa (COMIE), de la Red de Investigación e Innovación en Sistemas y Ambientes Educativos (RIISAE) del Espacio Común de Educación Superior a Distancia (ECOESAD), de la Red TIC del CONACyT y de la Red en Tecnologías Educativas del Programa para el Desarrollo Profesional Docente (PRODEP)
+                                            Actualmente es la Coordinadora del Doctorado en Sistema y Ambientes Educativos. Programa Interinstitucional, Sede BUAP.
+                                            Además de los Entornos Virtuales de Aprendizaje y las comunidades de práctica, ha realizado investigaciones en temas de seguimiento de egresados y trayectorias académicas, evaluación docente, Escuelas Normales y formación docente, Federalismo y descentralización de la educación México, expansión de la cobertura de secundaria con enfoque de género. Cuenta con publicaciones en dichos temas.
+                                            </p>
+                                    </div>
+                                    <div class="col-md-1"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Integrante 5 -->
+                        <div class="item ">
+                            <div class="col-md-12 text-center">
+                                {{ HTML::image('imagenes/red/integrantes/fotos/mexico/rafaelcordobadelvalle.png','Colaborador México 5')}}  
+                            </div>
+                            <div class="col-md-12 carousel-caption carousel-captionInt">
+                                <h3>Rafael Córdoba Del Valle</h3>
+                                <h4>Colaborador del Doctorado en Sistemas y Ambientes Educativos</h4>
+                                <div class="row">
+                                    <div class="col-md-1"></div>
+                                    <div class="col-md-10">
+                                        <p class="text-justify">Doctor en Sistemas y Ambientes Educativos por la Universidad Veracruzana y candidato a investigador del Consejo Nacional de Ciencia y Tecnología (CONACyT). Es miembro del Consejo de Transformación Educativa y miembro del cuerpo académico Gestión Tecnológica: Aplicación en Educación y Negocios. Desarrolla investigación en la línea de Entornos Virtuales de Aprendizaje en la que se destaca su participación como ponente en diversos congresos nacionales e internacionales. </p>
+                                    </div>
+                                    <div class="col-md-1"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Integrante 6 -->
+                        <div class="item ">
+                            <div class="col-md-12 text-center">
+                                    {{ HTML::image('imagenes/red/integrantes/fotos/mexico/rosadelcarmenfloresmacias.png','Colaborador México 6')}}  
+                            </div>
+                            <div class="col-md-12 carousel-caption carousel-captionInt">
+                                <h3>Rosa del Carmen Flores Macías</h3>
+                                <h4>Pertenece al Sistema Nacional de Investigadores</h4>
+                                <div class="row">
+                                    <div class="col-md-1"></div>
+                                    <div class="col-md-10">
+                                        <p class="text-justify">Investigadora en el campo de la Psicología Educativa desde hace más de 30 años, sus publicaciones abarcan diferentes temas; pertenece al Sistema Nacional de Investigadores. Una de sus líneas de investigación es el desarrollo de entornos virtuales de aprendizaje para promover la competencia lectora en educación básica, media superior y superior. Así mismo, tiene investigación sobre los procesos de enseñanza y aprendizaje en internet, así como sobre la atención a las dificultades de los alumnos. Sitio web: http://tutoriaaprendizajeadolescentes.org/</p>
                                     </div>
                                     <div class="col-md-1"></div>
                                 </div>
@@ -747,7 +807,54 @@
 </div>
 <!--fin modal Honduras-->
 
-
+<!-- Modal El salvador-->
+<div id="modalSalvador" class="modal modal-fullscreen fade centraCont" tabindex="-1" role="dialog">
+    <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close closeInt" data-dismiss="modal" aria-hidden="true">X</button>
+            </div>
+            <div class="modal-body">
+                <div id="carouselSalvador" class="carousel slide" data-ride="carousel">
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators" style="top:120%;">
+                        <li data-target="#carouselSalvador" data-slide-to="0" class="active"></li>
+                    </ol>
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner carousel-innerInt">
+                        <!-- Colaborador 1 -->
+                        <div class="item active">
+                            <div class="col-md-12 text-center">
+                                <!--<img  src="imagenes/red/integrantes/fotos/panama/IbzkaRodríguez.png" alt="...">-->
+                                {{ HTML::image('imagenes/red/integrantes/fotos/elsalvador/carlosrodriguezrivas.png','Integrante El Salvador 1')}}
+                            </div>
+                            <div class="col-md-12 carousel-caption carousel-captionInt">
+                                <h3>Carlos Rodríguez Rivas</h3>
+<!--                                <h4></h4>-->
+                                <div class="row">
+                                    <div class="col-md-1"></div>
+                                    <div class="col-md-10">
+                                        <p class="text-justify">Coordinador e investigador en educación del Centro Nacional de Investigaciones en Ciencias Sociales y Humanidades del Viceministerio de Ciencia y Tecnología de El Salvador. Coordinador del Plan Nacional de Formación de Docentes en Servicio en el Sector Público del área de ciencias sociales. Además es profesor de filosofía contemporánea en la Universidad de El Salvador. Tiene estudios de licenciatura en filosofía por la Universidad de El Salvador y ha realizado estudios de Maestría en Filosofía Iberoamericana en la Universidad Centroamericana "José Simeón Cañas". Su trabajo se concentra en historia intelectual, historia de la educación, epistemología y metodologías de la enseñanza de las ciencias sociales.</p>
+                                    </div>
+                                    <div class="col-md-1"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Controls -->
+                    <a class="left carousel-control" href="#carouselSalvador" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left"></span>
+                    </a>
+                    <a class="right carousel-control" href="#carouselSalvador" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right"></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--fin modal el Salvador-->
 
 <script>
     function saleMouseInte() {
