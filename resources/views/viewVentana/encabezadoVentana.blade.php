@@ -194,7 +194,7 @@
                 {
                     $('#loading').hide();
                     $("#form-avatar").addClass('hidden');
-                    $("#message").html(data);
+//                    $("#message").html(data);
                     $('#img-usuario').attr('src', data + '?' + (new Date()));
                     $('#img-usuario').attr('width', '30px');
                     $('#img-usuario').attr('height', '30px');
