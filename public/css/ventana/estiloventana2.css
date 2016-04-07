@@ -139,6 +139,7 @@ body{
     border: 0px !important;
 }
 
+/*Estilo para el registro de usuario en el cambio de avatar*/
 .btn-file-avatar {
     position: relative;
     overflow: hidden;

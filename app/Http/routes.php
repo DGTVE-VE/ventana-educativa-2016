@@ -84,7 +84,7 @@ Route::group(['middleware' => 'web'], function () {
     Route::get('mediateca/telebachillerato', 'MediatecaController@telebachillerato');
     Route::get('mediateca/telesecundaria/primergrado', 'MediatecaController@primergrado');
     /* ejemplo de uso para youtube */
-    Route::get('mediateca/{nivel}/{grado}/{materia}', 'MediatecaController@getVideos');
+    Route::get('mediateca/{nivel}/{grado}/{materia}/{bloque}', 'MediatecaController@getVideos');
 //Route::get('mediateca/telesecundaria/1/11', 'MediatecaController@getVideos');
     Route::get('mediateca/telesecundaria/segundogrado', 'MediatecaController@segundogrado');
     Route::get('mediateca/telesecundaria/tercergrado', 'MediatecaController@tercergrado');

@@ -35,14 +35,12 @@ Mediateca
                     <!-- End Item -->
                 </div>
                 <!-- End Carousel Inner -->
-                <div class="controls">
-                    <ul class="nav col-md-12">
-                        <div  class="col-md-8">
+                 <div class="controls" id="custom_controls">
+                    <ul>
                         @foreach ($videos as $item => $video)
                         <li data-target="#custom_carousel" data-slide-to="{{$item}}" class="item {{ ($item) ? '' : ' active' }}">
                             <a href="#">
                                 <img src="http://img.youtube.com/vi/{{ $video->url }}/2.jpg">
-                                <!--<small>{{ $video->titulo_programa}}</small>-->
                                 <small>
                                     @if (strlen($video->titulo_programa) > 20)
                                        {{ $titulo= substr($video->titulo_programa, 0, 20).'...'}}                                 
@@ -53,20 +51,31 @@ Mediateca
                             </a>
                         </li>
                         @endforeach 
+
+                    </ul>                   
+                </div> 
+<!--                <a class="left carousel-control" href="#custom_controls" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+                </a>
+                <a class="right carousel-control" href="#custom_controls" role="button" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                </a>-->
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 text-center">
+                            <!--<h5 class="textoBlanco">Bloque</h5>-->
+                            <ul class="pager">
+                                @foreach ($paginacion as $item => $bloquePagina)
+                                    <li class="{{ ($item) ? '' : ' active' }}">
+                                        <a href="{{url($url.'/'.$bloquePagina->bloque)}}">
+                                            {{$bloquePagina->bloque}}
+                                        </a>
+                                    </li>                        
+                                 @endforeach 
+                            </ul>
                         </div>
-                    </ul>
-                    <ul class="pagination col-md-12">
-                        <li class="disabled">
-                            <a href="#">&laquo;</a>
-                        </li>
-                        <li class="active">
-                            <a href="#">1 <span class="sr-only"></span></a>
-                        </li>
-                             <li>
-                            <a href="#">1 <span class="sr-only"></span></a>
-                        </li>
-                    </ul>
-                </div>                
+                    </div>    
+                </div>
             </div>
             
             <!-- End Carousel -->
@@ -76,10 +85,12 @@ Mediateca
 
 @endsection
 <script>
-   $(function() {
-      $('#custom_carousel').on('slid.bs.carousel', function () {
-         alert("This event fires immediately when the slide instance method" +"is invoked.");
-      });
-   });
+$('.carousel-control.left').click(function() {
+  $('#custom_controls').carousel('prev');
+});
+
+$('.carousel-control.right').click(function() {
+  $('#custom_controls').carousel('next');
+});
 </script>
 
