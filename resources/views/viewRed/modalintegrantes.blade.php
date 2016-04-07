@@ -19,13 +19,16 @@
 
                     <div class="carousel-inner innerInt col-xs-12 col-md-3 col-lg-12">
                         <div class="item active">
-                            <img alt="First slide" src="imagenes/red/integrantes/GIBZKARODRIGUEZ.png">   
+                            <!--<img alt="First slide" src="imagenes/red/integrantes/GIBZKARODRIGUEZ.png">-->   
+                            {{ HTML::image('imagenes/red/integrantes/GIBZKARODRIGUEZ.png','First slide')}}
                         </div>
                         <div class="item">
-                            <img alt="Second slide" src="imagenes/red/integrantes/anaguilma.png">  
+                            <!--<img alt="Second slide" src="imagenes/red/integrantes/anaguilma.png">-->  
+                            {{ HTML::image('imagenes/red/integrantes/anaguilma.png','Second slide')}}
                         </div>
                         <div class="item">
-                            <img alt="Third slide" src="imagenes/red/integrantes/GIBZKARODRIGUEZ.png">
+                            <!--<img alt="Third slide" src="imagenes/red/integrantes/GIBZKARODRIGUEZ.png">-->
+                            {{ HTML::image('imagenes/red/integrantes/GIBZKARODRIGUEZ.png','Third slide')}}
                         </div>
                     </div>
 

@@ -13,11 +13,11 @@ and open the template in the editor.
         <meta name="author" content="Ecosistema Digital de Aprendizaje (DGTVE)">
         <meta http-equiv="X-UA-Compatible" content="IE=Edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
-        <link rel="stylesheet" href="css/red/estiloredmesoamericana.css">
+        <link rel="stylesheet" href="{{asset('css/red/estiloredmesoamericana.css')}}">
         <link rel="shortcut icon" href="{{ asset('redmite.ico') }}" >
-        <link rel="stylesheet" href="css/red/estilored2.css">
-        <link rel="stylesheet" href="css/red/estilored3.css">
-        <link rel="stylesheet" href="css/red/bootstrap-social.css">
+        <link rel="stylesheet" href="{{asset('css/red/estilored2.css')}}">
+        <link rel="stylesheet" href="{{asset('css/red/estilored3.css')}}">
+        <link rel="stylesheet" href="{{asset('css/red/bootstrap-social.css')}}">
 
 
         <!-- Latest compiled and minified CSS -->
@@ -45,8 +45,8 @@ and open the template in the editor.
         <link href='https://fonts.googleapis.com/css?family=Oxygen:400,700,300' rel='stylesheet' type='text/css'>
         <link href='https://fonts.googleapis.com/css?family=Exo:400,600,300,700'rel='stylesheet' type='text/css'>
 
-        <link rel="stylesheet" href="css/red/ihover.css">  
-        <link rel="stylesheet" href="css/red/animate.css">
+        <link rel="stylesheet" href="{{asset('css/red/ihover.css')}}">  
+        <link rel="stylesheet" href="{{asset('css/red/animate.css')}}">
 
 
 
@@ -81,6 +81,6 @@ and open the template in the editor.
         <div class="container-fluid">
             @yield('cuerpoRedmite')
         </div>
-        <script src="js/red/jsredmesoamericana.js"></script>
+        <script src="{{asset('js/red/jsredmesoamericana.js')}}"></script>
     </body>
 </html>
