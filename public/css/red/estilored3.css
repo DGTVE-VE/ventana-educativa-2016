@@ -1,18 +1,18 @@
-/*
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
-*/
 /* 
     Created on : 22/01/2016, 05:18:09 PM
     Author     : SMARTINEZ
 */
+/********* Estilos sección proyectos **********/
+div.margen-superior-secproyectos{
+   margin-top:-20px;
+}
 
+
+/********* Estilos página de proyectos *********/
 .carousel-proyectos {
     margin-bottom: 0;
     padding: 0 40px 30px 40px;
 }
-/* The controlsy */
 .circuloFlecha {
     left: -12px;
     height: 40px;
@@ -25,10 +25,26 @@ and open the template in the editor.
 .controlDerechoCarousel {
     right: -12px;
 }
-
-#flechaizq{
-
+.controlIzquierdoCarousel{
+    left: 5px;
 }
+
+.backproyectos{
+    background: url(../../imagenes/red/proyectos/fondoproyectoscarousel.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.justifica-parrafo-proyectos{
+    text-align: justify;
+}
+div.margen-superior-proyectos{
+    margin-top: 5%;
+}
+
+
+/********** Estilos para página quienes somos *********/
 
 .backpaquienes{
     background: url(../../imagenes/red/quienesSomos/backquienessomos.jpg) no-repeat center center fixed; 
@@ -37,24 +53,13 @@ and open the template in the editor.
     -o-background-size: cover;
     background-size: cover;
 }
-.imgquienes{
-/*    width: 90%;
-    height: 90%;
-    background: url(../../imagenes/red/quienesSomos/textoquienessomoschico.png) no-repeat center; 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;*/
-}
-.backproyectos{
-    background: url(../../imagenes/red/proyectos/fondoproyectoscarousel.jpg) no-repeat center center fixed; 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-}
 .txtQuienesSomos{
     color:white;
     font-family: 'Oxygen', sans-serif;
-    /*font-size:14px;*/
+}
+
+/********* Estilos para página publicaciones *********/
+img.tamaho-thumbnail-publicaciones{
+    width: 400px; 
+    height: 251px;
 }

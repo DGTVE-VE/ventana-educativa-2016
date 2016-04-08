@@ -49,7 +49,6 @@ and open the template in the editor.
         <link rel="stylesheet" href="{{asset('css/red/animate.css')}}">
 
 
-
         <!--<link rel="stylesheet" href="css/red/full-slider.css">-->  
 
     </head>
