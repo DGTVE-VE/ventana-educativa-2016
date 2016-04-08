@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Red;
+namespace App\Model\Red;
 
 use Illuminate\Database\Eloquent\Model;
 
 class News extends Model
 {
-    //
+     protected $table = 'News';
 }

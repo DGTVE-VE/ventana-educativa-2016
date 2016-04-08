@@ -9,9 +9,10 @@ Ventana Educativa
 <div class = "panel panel-default frmRegistro col-lg-offset-2 col-md-8">
 <br><br>
 <br><br>
-    <h3 class = "panel-title tituloRegistro text-center text-uppercase">
+{{ HTML::image('imagenes/ventana/envioCorreo/banner1.png','Envío de correo de confirmación', ['class'=>'img-responsive'])}}
+<!--    <h3 class = "panel-title tituloRegistro text-center text-uppercase">
          El correo para activación ha sido enviado.
-    </h3>
+    </h3>-->
 <br><br><br><br>
     <br><br>
 </div>

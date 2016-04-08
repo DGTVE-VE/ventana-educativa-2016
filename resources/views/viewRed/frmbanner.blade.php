@@ -1,1 +1,0 @@
-<div>Banner</div>
