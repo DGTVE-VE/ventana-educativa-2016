@@ -25,4 +25,8 @@ class User extends Authenticatable implements CanResetPassword
     protected $hidden = [
         'password', 'remember_token',
     ];
+    
+    public function colaborador (){
+        return $this->hasOne('App\Model\Red\Colaborador', 'user_id');
+    }
 }
