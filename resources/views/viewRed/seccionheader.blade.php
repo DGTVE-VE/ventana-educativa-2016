@@ -1,3 +1,4 @@
+<nav class="navbar yamm navbar-default" role="navigation"></nav>
 <nav class="navbar yamm navbar-default navbar-fixed-top" role="navigation" style="height:80px;">
     <div class="container-fluid">
         <div class="navbar-header">
