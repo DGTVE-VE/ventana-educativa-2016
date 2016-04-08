@@ -67,6 +67,8 @@ Route::group(['middleware' => 'web'], function () {
     //// Password reset routes...
     Route::get('password/reset/{token}', 'Auth\PasswordController@getReset');
     Route::post('password/reset', 'Auth\PasswordController@postReset');
+    Route::resource('redmite/blog', 'RedBlogController');
+//    Route::post('redmite/blog/comment', 'RedBlogController@comment');
 });
 
 Route::get('verificaCorreo/{correo}/{hash}', 'VentanaController@activaCorreo');
