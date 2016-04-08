@@ -2,32 +2,39 @@
     <div class="division">
     </div>
     <div class="col-xs-6 col-sm-6 col-md-2 col-md-offset-1 col-lg-2 col-lg-offset-1">
-        <img class="img-responsive" src="imagenes/red/LogoRed/logoNegativo.png" width="155" height="155" alt="..."/>
+        <!--<img class="img-responsive" src="imagenes/red/LogoRed/logoNegativo.png" width="155" height="155" alt="..."/>-->
+        {{ HTML::image('imagenes/red/LogoRed/logoNegativo.png','logo negativo', array('class'=>'img-responsive', 'width'=>'155', 'height'=>'155'))}}
         <br>
         <a href="https://twitter.com/Red_Mesoamerica" target="_blank">
-			<img id="imgIconoTwetter" class="img-responsive img-rounded" style="float:left; width:50px; height:50px;  position: relative; left:15px;" src="imagenes/red/footer/icono-twetter-A.png" onmouseenter="imgResalta('twetter')" onmouseleave="imgNormal('twetter')"/>
-		</a>
+	<!--<img id="imgIconoTwetter" class="img-responsive img-rounded" style="float:left; width:50px; height:50px;  position: relative; left:15px;" src="imagenes/red/footer/icono-twetter-A.png" onmouseenter="imgResalta('twetter')" onmouseleave="imgNormal('twetter')"/>-->
+	{{ HTML::image('imagenes/red/footer/icono-twetter-A.png','icono twitter', array('class'=>'img-responsive img-rounded','id'=>'imgIconoTwetter', 'style'=>'float:left; width:50px; height:50px; position: relative; left:15px;', 'onmouseenter'=>'imgResalta("twetter")', 'onmouseleave'=>'imgNormal("twetter")'))}}
+        </a>
         <a href="https://www.facebook.com/Red-Mesoamericana-de-Investigaci%C3%B3n-y-Tecnolog%C3%ADa-Educat%C3%ADva-930360840393101/" target="_blank">
-			<img id="imgIconoFacebook" class="img-responsive img-rounded" style="float:left; width:50px; height:50px; position: relative; left:35px;" src="imagenes/red/footer/icono-face-A.png" onmouseenter="imgResalta('facebook')" onmouseleave="imgNormal('facebook')"/>
-		</a>
+             <!--<img id="imgIconoFacebook" class="img-responsive img-rounded" style="float:left; width:50px; height:50px; position: relative; left:35px;" src="imagenes/red/footer/icono-face-A.png" onmouseenter="imgResalta('facebook')" onmouseleave="imgNormal('facebook')"/>-->
+         {{ HTML::image('imagenes/red/footer/icono-face-A.png','icono facebook', array('class'=>'img-responsive img-rounded','id'=>'imgIconoFacebook', 'style'=>'float:left; width:50px; height:50px; position: relative; left:35px;', 'onmouseenter'=>'imgResalta("facebook")', 'onmouseleave'=>'imgNormal("facebook")'))}}
+        </a>
         <!--<img id="imgIconoYoutube" class="img-responsive img-rounded" style="float:left; width:50px; height:50px;" src="imagenes/red/footer/icono-youtube-A.png" onmouseenter="imgResalta('youtube')" onmouseleave="imgNormal('youtube')"/>-->
         <br>
     </div>
     <div class="col-xs-6 col-sm-6 col-md-2 col-lg-2">
         <h4 class="text-uppercase"> Colaboradores </h4>
         <div class="col-xs-12 col-sm-12 col-md-12">
-            <img class="img-responsive text-center" style="width: 150px; height: 50px;" src="imagenes/red/footer/amexid.png"/>
+            <!--<img class="img-responsive text-center" style="width: 150px; height: 50px;" src="imagenes/red/footer/amexid.png"/>-->
+            {{ HTML::image('imagenes/red/footer/amexid.png','logo amexid', array('class'=>'img-responsive text-center', 'style'=>'width:150px; height:50px;)'))}}
             <br>
         </div>
         <div class="col-xs-6 col-sm-3 col-md-6 col-lg-6">
-            <img src="imagenes/red/footer/ceccsica.png" style="width: 60px; height: 79px;"/>
+            <!--<img src="imagenes/red/footer/ceccsica.png" style="width: 60px; height: 79px;"/>-->
+            {{ HTML::image('imagenes/red/footer/ceccsica.png','logo ceccsica', array('class'=>'img-responsive','style'=>'width:60px; height:79px;)'))}}
         </div>
         <div class="col-xs-6 col-sm-3 col-md-6 col-lg-6">
-            <img src="imagenes/red/footer/csuca.png" style="width: 75px; height: 75px;"/>
+            <!--<img src="imagenes/red/footer/csuca.png" style="width: 75px; height: 75px;"/>-->
+            {{ HTML::image('imagenes/red/footer/csuca.png','logo csuca', array('class'=>'img-responsive','style'=>'width:75px; height:75px;)'))}}
         </div>
         <div class="col-xs-12 col-sm-12 col-sm-12 col-md-12 col-lg-12">
             <br>
-            <img class="img-responsive" style="width: 150px; height: 50px;"  src="imagenes/red/footer/tve.png"/>
+            <!--<img class="img-responsive" style="width: 150px; height: 50px;"  src="imagenes/red/footer/tve.png"/>-->
+             {{ HTML::image('imagenes/red/footer/tve.png','logo tve', array('class'=>'img-responsive','style'=>'width:150px; height:50px;)'))}}
         </div>
     </div>
     <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
@@ -35,7 +42,8 @@
         <table>
             <tr>
                 <td class="imgTecho" style="padding:5px;">
-                    <img class="img-responsive" style="align:flex-start; width:14px; height:20px;" src="imagenes/red/footer/localizacion.png"/>
+                    <!--<img class="img-responsive" style="align:flex-start; width:14px; height:20px;" src="imagenes/red/footer/localizacion.png"/>-->
+                    {{ HTML::image('imagenes/red/footer/localizacion.png','logo localizacion', array('class'=>'img-responsive','style'=>'align:flex-start; width:14px; height:20px;)'))}}
                 </td>
                 <td>
                     <p>Av. Circunvalación s/n, esquina Tabiqueros,<br>
@@ -45,7 +53,8 @@
             </tr>
             <tr>
                 <td class="imgTecho" style="padding:5px;">
-                    <img class="img-responsive" style="align:flex-start; width:20px; height:20px;" src="imagenes/red/footer/telefono.png"/>
+                    <!--<img class="img-responsive" style="align:flex-start; width:20px; height:20px;" src="imagenes/red/footer/telefono.png"/>-->
+                    {{ HTML::image('imagenes/red/footer/telefono.png','logo telefono', array('class'=>'img-responsive','style'=>'align:flex-start; width:20px; height:20px;)'))}}
                 </td>
                 <td>
                     <p>(55) 3601 8100 <br>
@@ -56,7 +65,8 @@
             </tr>
             <tr>
                 <td class="imgTecho" style="padding:5px;">
-                    <img class="img-responsive" style="width:20px; height:15px;" src="imagenes/red/footer/mail.png"/>
+                    <!--<img class="img-responsive" style="width:20px; height:15px;" src="imagenes/red/footer/mail.png"/>-->
+                    {{ HTML::image('imagenes/red/footer/mail.png','logo mail', array('class'=>'img-responsive','style'=>'align:flex-start; width:20px; height:15px;)'))}}
                 </td>
                 <td>
                     <p> redmite@televisioneducativa.gob.mx</p>
@@ -72,7 +82,7 @@
             Docentes <strong class="lead">Procesos formativos</strong> Pedagogía digital</p>
         <br>
         <h4>Mantente informado. Suscríbete.</h4>
-        <form class="form-inline" action="guardaCorreoNewsLetter" method="POST">
+        <form class="form-inline" action="redmite/guardaCorreoNewsLetter" method="POST">
             <div class="form-group col-xs-12 col-sm-12 col-md-12 col-lg-12">
                 <input type="email" name="correo_newsletter" class="form-control" id="correoElectronico" placeholder="direccion@servidor.com"  style="width:80%">
                 <button type="submit" class="btn btn-primary"><span class="glyphicon glyphicon-send"></span></button>
@@ -91,7 +101,8 @@
         <div class="col-xs-3 col-sm-6 col-md-1 text-center">
             <br>
             <a id="top-link-block" data-spy="affix" data-offset-top="300" class="nav up-arrow" href="#pag_principal" data-toggle="tooltip" title="ARRIBA">
-                <img class="img-responsive img-rounded footer" src="imagenes/red/footer/flecha-arriba.png" alt="..." style="width:42px; height:40px;"/>
+                <!--<img class="img-responsive img-rounded footer" src="imagenes/red/footer/flecha-arriba.png" alt="..." style="width:42px; height:40px;"/>-->
+                {{ HTML::image('imagenes/red/footer/flecha-arriba.png','flecha arriba', array('class'=>'img-responsive img-rounded footer','style'=>'width:42px; height:40px;)'))}}
                 <!--span class="glyphicon glyphicon-menu-up" style="border-style:solid; border-width: 1px; padding:15px;"></span-->
             </a>
             <br>

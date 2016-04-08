@@ -3,32 +3,15 @@ Contacto
 @stop
 @extends('indexRed')
 @section('menuRedmite')
-<a name="redesconocimiento"></a>
 @include('viewRed.seccionheader')
 @endsection
 @section('cuerpoRedmite')
 <div class="row" style="margin-top:55px;" >
-	<div class="col-xs-12 col-sm-12 col-md-12">
-		<div class="division textoContacto">
-		<h4 class="text-uppercase"><br>Dirección General de <br class="visible-xs-inline"> Televisión Educativa</h4>
-		</div>
-	</div>
-    <!--div class="col-md-12 ">        
-        <!--        <div class="col-md-1">
-                    <ul class="nav navbar-nav navbar-right">
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-share-alt shareContacto"></i></b></a>
-                            <ul class="dropdown-menu">
-                                <li><a href="#"><span class="fa fa-google-plus btnShare text-center"></span>     Compartir por Google+</a></li>
-                                <li><a href="#"><span class="fa fa-facebook btnShare text-center"></span>      Compartir por Facebook</a></li>
-                                <li><a href="#"><span class="fa fa-twitter btnShare text-center"></span>     Compartir por Twitter</a></li>
-                                <li><a href="#"><span class="fa fa-envelope btnShare text-center"></span>     Compartir por correo eletrónico</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-        
-                </div>-->
-    <!--/div-->
+    <div class="col-xs-12 col-sm-12 col-md-12">
+        <div class="division textoContacto">
+            <h4 class="text-uppercase"><br>Dirección General de <br class="visible-xs-inline"> Televisión Educativa</h4>
+        </div>
+    </div>
     <div class="col-md-12">
         <script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script>
         <div style='overflow:hidden;height:450px;width:100%;'>

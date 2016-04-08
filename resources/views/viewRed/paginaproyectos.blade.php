@@ -13,7 +13,7 @@ Proyectos
             <p class="pleca">Proyectos</p>
         </div>
     </div>
-    <link rel="stylesheet" href="css/red/estiloRed3.css">
+    <link rel="stylesheet" href="{{asset('css/red/estiloRed3.css')}}">
     <!-- Carousel -->
     <div class="container">
         <div class="row">
@@ -24,19 +24,22 @@ Proyectos
                     <!-- Carousel items -->
                     <div class="carousel-inner">
                         <div class="active item" data-slide-number="0">
-                            <img src="imagenes/red/proyectos/bannersproyectos/1erencuentro.jpg">
+                            <!--<img src="imagenes/red/proyectos/bannersproyectos/1erencuentro.jpg">-->
+                            {{ HTML::image('imagenes/red/proyectos/bannersproyectos/1erencuentro.jpg','baner1 proyectos')}}
                         </div>
                         <div class="item" data-slide-number="1">
-                            <img src="imagenes/red/proyectos/bannersproyectos/ventanaeducativa.jpg">
+<!--                            <img src="imagenes/red/proyectos/bannersproyectos/ventanaeducativa.jpg">-->
+                            {{ HTML::image('imagenes/red/proyectos/bannersproyectos/ventanaeducativa.jpg','baner2 proyectos')}}
                         </div>
 
                         <div class="item" data-slide-number="2">
-                            <img src="imagenes/red/proyectos/bannersproyectos/pedagogiadigital.jpg">
+                            <!--<img src="imagenes/red/proyectos/bannersproyectos/pedagogiadigital.jpg">-->
+                            {{ HTML::image('imagenes/red/proyectos/bannersproyectos/pedagogiadigital.jpg','baner3 proyectos')}}
                         </div>
                     </div><!-- Carousel nav -->
                 </div>
-                <a  data-slide="prev" href="#myCarouselProyecto" class="left carousel-control circuloFlecha" >‹</a>
-                <a data-slide="next" href="#myCarouselProyecto" class="right carousel-control circuloFlecha controlDerechoCarousel">›</a>
+                <a  data-slide="prev" href="{{url('#myCarouselProyecto')}}" class="left carousel-control circuloFlecha" >‹</a>
+                <a data-slide="next" href="{{url('#myCarouselProyecto')}}" class="right carousel-control circuloFlecha controlDerechoCarousel">›</a>
             </div>
             <div class="col-md-1"></div>
         </div>

@@ -1,4 +1,4 @@
-﻿			<div class="row fondo_Obscuro">
+﻿<div class="row fondo_Obscuro">
     <div class="col-md-12" style="padding:0px;">
         <div id="carousel-2" class="carousel slide" data-ride="carousel">
             <!-- Indicators -->
@@ -13,28 +13,32 @@
             <div class="carousel-inner" role="listbox" style="margin:0px;">
                 <div class="item active">
                     <center>
-                        <img class="img-responsive" src="imagenes/red/Banners/1.jpg" alt="..."/> <!--http://172.16.101.33/ventana-educativa-2016/public/-->
+                        <!--<img class="img-responsive" src="imagenes/red/Banners/1.jpg" alt="..."/> http://172.16.101.33/ventana-educativa-2016/public/-->
+                        {{ HTML::image('imagenes/red/Banners/1.jpg','banner1', array('class'=>'image-responsive'))}}
                         <div class="carousel-caption">
                         </div>
                     </center>
                 </div>
                 <div class="item">
                     <center>
-                        <img class="img-responsive" src="imagenes/red/Banners/2.jpg" alt="..."/> <!--imagenes/red/1600-x-650.jpg-->
+                        <!--<img class="img-responsive" src="imagenes/red/Banners/2.jpg" alt="..."/> imagenes/red/1600-x-650.jpg-->
+                        {{ HTML::image('imagenes/red/Banners/2.jpg','banner2', array('class'=>'image-responsive'))}}
                         <div class="carousel-caption">
                         </div>
                     </center>
                 </div>
                 <div class="item">
                     <center>
-                        <img class="img-responsive" src="imagenes/red/Banners/banner-3.jpg" alt="..."/> <!--http://placehold.it/1600x500-->
+                        <!--<img class="img-responsive" src="imagenes/red/Banners/banner-3.jpg" alt="..."/> http://placehold.it/1600x500-->
+                        {{ HTML::image('imagenes/red/Banners/banner-3.jpg','banner3', array('class'=>'image-responsive'))}}
                         <div class="carousel-caption">
                         </div>
                     </center>
                 </div>
                 <div class="item">
                     <center>
-                        <img class="img-responsive" src="imagenes/red/Banners/banner-4.jpg" alt="..."/>
+                        <!--<img class="img-responsive" src="imagenes/red/Banners/banner-4.jpg" alt="..."/>-->
+                        {{ HTML::image('imagenes/red/Banners/banner-4.jpg','banner4', array('class'=>'image-responsive'))}}
                         <div class="carousel-caption">
                         </div>
                     </center>
@@ -84,7 +88,9 @@
             <tr>
                 <td style="padding-left:60px;"><p> </p></td>
                 <td class="imgTabla">
-                    <img class="img-responsive" alt="imagen fija" src="imagenes/red/areasTematicas/RedesConocimiento.png"/></td>
+                    <!--<img class="img-responsive" alt="imagen fija" src="imagenes/red/areasTematicas/RedesConocimiento.png"/>-->
+                    {{ HTML::image('imagenes/red/areasTematicas/RedesConocimiento.png','imagen fija', array('class'=>'image-responsive'))}}
+                </td>
                 <td class="txtTabla"><h3><strong>Redes de conocimiento y aprendizaje</strong></h3>
                 </td>
             </tr>
@@ -102,7 +108,10 @@
                ">
             <tr>
                 <td style="padding-left:60px;"><p> </p></td>
-                <td class="imgTabla"><img class="img-responsive" alt="imagen fija" src="imagenes/red/areasTematicas/ambientesEducativos.png"/></td>
+                <td class="imgTabla">
+                    <!--<img class="img-responsive" alt="imagen fija" src="imagenes/red/areasTematicas/ambientesEducativos.png"/>-->
+                    {{ HTML::image('imagenes/red/areasTematicas/ambientesEducativos.png','imagen fija', array('class'=>'image-responsive'))}}
+                </td>
                 <td class="txtTabla"><h3><strong>Modelos y ambientes educativos</strong></h3>
                 </td>
             </tr>
@@ -123,7 +132,10 @@
                ">
             <tr>
                 <td style="padding-left:60px;"><p> </p></td>
-                <td class="imgTabla"><img class="img-responsive" alt="imagen fija" src="imagenes/red/areasTematicas/Gestioncalidad.png"/></td>
+                <td class="imgTabla">
+                    <!--<img class="img-responsive" alt="imagen fija" src="imagenes/red/areasTematicas/Gestioncalidad.png"/>-->
+                    {{ HTML::image('imagenes/red/areasTematicas/Gestioncalidad.png','imagen fija', array('class'=>'image-responsive'))}}
+                </td>
                 <td class="txtTabla"><h3><strong>Gestion y calidad de programas educativos</strong></h3>
                 </td>
             </tr>
@@ -149,7 +161,10 @@
                </ul>
                ">
             <tr>
-                <td class="imgTabla"><img class="img-responsive" alt="imagen fija" src="imagenes/red/areasTematicas/Multimedia.png"/></td>
+                <td class="imgTabla">
+                    <!--<img class="img-responsive" alt="imagen fija" src="imagenes/red/areasTematicas/Multimedia.png"/>-->
+                    {{ HTML::image('imagenes/red/areasTematicas/Multimedia.png','imagen fija', array('class'=>'image-responsive'))}}
+                </td>
                 <td class="txtTabla"><h3><strong>Multimedia y desarrollo educativo</strong></h3>
                 </td>
             </tr>
@@ -171,7 +186,10 @@
                </ul>
                ">
             <tr>
-                <td class="imgTabla"><img class="img-responsive" alt="imagen fija" src="imagenes/red/areasTematicas/PoliticaEducativa.png"/></td>
+                <td class="imgTabla">
+                    <!--<img class="img-responsive" alt="imagen fija" src="imagenes/red/areasTematicas/PoliticaEducativa.png"/>-->
+                    {{ HTML::image('imagenes/red/areasTematicas/PoliticaEducativa.png','imagen fija', array('class'=>'image-responsive'))}}
+                </td>
                 <td class="txtTabla"><h3><strong>Politica Educativa y cambio social</strong></h3>
                 </td>
             </tr>
@@ -198,7 +216,8 @@
         <center>
             <div class="thumbnail marcoMorado"> <!--homologa-->
                 <a href="#">
-                    <img class="img-responsive img-rounded" style="padding-top:10px;" src="imagenes/red/proyectos/primerEncuentro.jpg" alt="..."/> <!--http://placehold.it/250x250-->
+                    <!--<img class="img-responsive img-rounded" style="padding-top:10px;" src="imagenes/red/proyectos/primerEncuentro.jpg" alt="..."/> http://placehold.it/250x250-->
+                    {{ HTML::image('imagenes/red/proyectos/primerEncuentro.jpg','imagen fija', array('class'=>'image-responsive img-rounded', 'style' =>'padding-top:10px;'))}}
                 </a>
                 <div class="caption">
                 </div>
@@ -209,7 +228,8 @@
         <center>
             <div class="thumbnail marcoMorado"> <!-- 376x371-->
                 <a href="#">
-                    <img class="img-responsive img-rounded imgAbajo10" src="imagenes/red/proyectos/ventanaEducativa.jpg" alt="..."/>
+                    <!--<img class="img-responsive img-rounded imgAbajo10" src="imagenes/red/proyectos/ventanaEducativa.jpg" alt="..."/>-->
+                    {{ HTML::image('imagenes/red/proyectos/ventanaEducativa.jpg','imagen fija', array('class'=>'image-responsive img-rounded imgAbajo10'))}}
                 </a>
                 <div class="caption">
                 </div>
@@ -220,7 +240,8 @@
         <center>
             <div class="thumbnail marcoMorado"><!--homologa-->
                 <a href="#">
-                    <img class="img-responsive img-rounded imgAbajo10"src="imagenes/red/proyectos/ecosistema.jpg" alt="..."/>
+                    <!--<img class="img-responsive img-rounded imgAbajo10"src="imagenes/red/proyectos/ecosistema.jpg" alt="..."/>-->
+                    {{ HTML::image('imagenes/red/proyectos/ecosistema.jpg','imagen fija', array('class'=>'image-responsive img-rounded imgAbajo10'))}}
                 </a>
                 <div class="caption">
                 </div>
@@ -229,7 +250,10 @@
     </div>
     <div class="col-sm-12 col-md-12">
         <center>
-            <a href="#"> <img class="img-responsive img-rounded imgAbajo30" src="imagenes/red/proyectos/boton-ver-todos.png" alt="..."/></a>
+            <a href="#"> 
+                <!--<img class="img-responsive img-rounded imgAbajo30" src="imagenes/red/proyectos/boton-ver-todos.png" alt="..."/>-->
+                {{ HTML::image('imagenes/red/proyectos/boton-ver-todos.png','imagen fija', array('class'=>'image-responsive img-rounded imgAbajo30'))}}
+            </a>
         </center>
     </div>
     <div class="col-md-12">
@@ -312,7 +336,8 @@
                     <div class="row">
                         <div class="col-xs-6 col-sm-6 col-md-2 col-md-offset-2">
                             <div class="thumbnail">
-                                <img class="img-responsive img-rounded" src="http://placehold.it/150x200" alt="..."/>
+                                <!--<img class="img-responsive img-rounded" src="http://placehold.it/150x200" alt="..."/>-->
+                                {{ HTML::image('http://placehold.it/150x200','imagen fija', array('class'=>'image-responsive img-rounded'))}}
                                 <div class="caption">
                                     <h4>Nombre Colaborador</h4>
                                     <p>Resumen de descripción</p>
@@ -322,7 +347,8 @@
                         </div>
                         <div class="col-xs-6 col-sm-6 col-md-2">
                             <div class="thumbnail">
-                                <img class="img-responsive img-rounded" src="http://placehold.it/150x200" alt="..."/>
+                                <!--<img class="img-responsive img-rounded" src="http://placehold.it/150x200" alt="..."/>-->
+                                {{ HTML::image('http://placehold.it/150x200','imagen fija', array('class'=>'image-responsive img-rounded'))}}
                                 <div class="caption">
                                     <h4>Nombre Colaborador</h4>
                                     <p>Resumen de descripción</p>
@@ -332,7 +358,8 @@
                         </div>
                         <div class="col-xs-6 col-sm-6 col-md-2">
                             <div class="thumbnail">
-                                <img class="img-responsive img-rounded" src="http://placehold.it/150x200" alt="..."/>
+                                <!--<img class="img-responsive img-rounded" src="http://placehold.it/150x200" alt="..."/>-->
+                                {{ HTML::image('http://placehold.it/150x200','imagen fija', array('class'=>'image-responsive img-rounded'))}}
                                 <div class="caption">
                                     <h4>Nombre Colaborador</h4>
                                     <p>Resumen de descripción</p>
@@ -342,7 +369,8 @@
                         </div>
                         <div class="col-xs-6 col-sm-6 col-md-2">
                             <div class="thumbnail">
-                                <img class="img-responsive img-rounded" src="http://placehold.it/150x200" alt="..."/>
+                                <!--<img class="img-responsive img-rounded" src="http://placehold.it/150x200" alt="..."/>-->
+                                {{ HTML::image('http://placehold.it/150x200','imagen fija', array('class'=>'image-responsive img-rounded'))}}
                                 <div class="caption">
                                     <h4>Nombre Colaborador</h4>
                                     <p>Resumen de descripción</p>
@@ -356,7 +384,8 @@
                     <div class="row">
                         <div class="col-xs-6 col-sm-6 col-md-2 col-md-offset-2">
                             <div class="thumbnail">
-                                <img class="img-responsive img-rounded" src="http://placehold.it/150x200" alt="..."/>
+                                <!--<img class="img-responsive img-rounded" src="http://placehold.it/150x200" alt="..."/>-->
+                                {{ HTML::image('http://placehold.it/150x200','imagen fija', array('class'=>'image-responsive img-rounded'))}}
                                 <div class="caption">
                                     <h4>Nombre Colaborador</h4>
                                     <p>Resumen de descripción</p>
@@ -366,7 +395,8 @@
                         </div>
                         <div class="col-xs-6 col-sm-6 col-md-2">
                             <div class="thumbnail">
-                                <img class="img-responsive img-rounded" src="http://placehold.it/150x200" alt="..."/>
+                                <!--<img class="img-responsive img-rounded" src="http://placehold.it/150x200" alt="..."/>-->
+                                {{ HTML::image('http://placehold.it/150x200','imagen fija', array('class'=>'image-responsive img-rounded'))}}
                                 <div class="caption">
                                     <h4>Nombre Colaborador</h4>
                                     <p>Resumen de descripción</p>
@@ -376,7 +406,8 @@
                         </div>
                         <div class="col-xs-6 col-sm-6 col-md-2">
                             <div class="thumbnail">
-                                <img class="img-responsive img-rounded" src="http://placehold.it/150x200" alt="..."/>
+                                <!--<img class="img-responsive img-rounded" src="http://placehold.it/150x200" alt="..."/>-->
+                                {{ HTML::image('http://placehold.it/150x200','imagen fija', array('class'=>'image-responsive img-rounded'))}}
                                 <div class="caption">
                                     <h4>Nombre Colaborador</h4>
                                     <p>Resumen de descripción</p>
@@ -386,7 +417,8 @@
                         </div>
                         <div class="col-xs-6 col-sm-6 col-md-2">
                             <div class="thumbnail">
-                                <img class="img-responsive img-rounded" src="http://placehold.it/150x200" alt="..."/>
+                                <!--<img class="img-responsive img-rounded" src="http://placehold.it/150x200" alt="..."/>-->
+                                {{ HTML::image('http://placehold.it/150x200','imagen fija', array('class'=>'image-responsive img-rounded'))}}
                                 <div class="caption">
                                     <h4>Nombre Colaborador</h4>
                                     <p>Resumen de descripción</p>
@@ -400,7 +432,8 @@
                     <div class="row">
                         <div class="col-xs-6 col-sm-6 col-md-2 col-md-offset-2">
                             <div class="thumbnail">
-                                <img class="img-responsive img-rounded" src="http://placehold.it/150x200" alt="..."/>
+                                <!--<img class="img-responsive img-rounded" src="http://placehold.it/150x200" alt="..."/>-->
+                                {{ HTML::image('http://placehold.it/150x200','imagen fija', array('class'=>'image-responsive img-rounded'))}}
                                 <div class="caption">
                                     <h4>Nombre Colaborador</h4>
                                     <p>Resumen de descripción</p>
@@ -410,7 +443,8 @@
                         </div>
                         <div class="col-xs-6 col-sm-6 col-md-2">
                             <div class="thumbnail">
-                                <img class="img-responsive img-rounded" src="http://placehold.it/150x200" alt="..."/>
+                                <!--<img class="img-responsive img-rounded" src="http://placehold.it/150x200" alt="..."/>-->
+                                {{ HTML::image('http://placehold.it/150x200','imagen fija', array('class'=>'image-responsive img-rounded'))}}
                                 <div class="caption">
                                     <h4>Nombre Colaborador</h4>
                                     <p>Resumen de descripción</p>
@@ -420,7 +454,8 @@
                         </div>
                         <div class="col-xs-6 col-sm-6 col-md-2">
                             <div class="thumbnail">
-                                <img class="img-responsive img-rounded" src="http://placehold.it/150x200" alt="..."/>
+                                <!--<img class="img-responsive img-rounded" src="http://placehold.it/150x200" alt="..."/>-->
+                                {{ HTML::image('http://placehold.it/150x200','imagen fija', array('class'=>'image-responsive img-rounded'))}}
                                 <div class="caption">
                                     <h4>Nombre Colaborador</h4>
                                     <p>Resumen de descripción</p>
@@ -430,7 +465,8 @@
                         </div>
                         <div class="col-xs-6 col-sm-6 col-md-2">
                             <div class="thumbnail">
-                                <img class="img-responsive img-rounded" src="http://placehold.it/150x200" alt="..."/>
+                                <!--<img class="img-responsive img-rounded" src="http://placehold.it/150x200" alt="..."/>-->
+                                {{ HTML::image('http://placehold.it/150x200','imagen fija', array('class'=>'image-responsive img-rounded'))}}
                                 <div class="caption">
                                     <h4>Nombre Colaborador</h4>
                                     <p>Resumen de descripción</p>
@@ -444,7 +480,8 @@
                     <div class="row">
                         <div class="col-xs-6 col-sm-6 col-md-2 col-md-offset-2">
                             <div class="thumbnail">
-                                <img class="img-responsive img-rounded" src="http://placehold.it/150x200" alt="..."/>
+                                <!--<img class="img-responsive img-rounded" src="http://placehold.it/150x200" alt="..."/>-->
+                                {{ HTML::image('http://placehold.it/150x200','imagen fija', array('class'=>'image-responsive img-rounded'))}}
                                 <div class="caption">
                                     <h4>Nombre Colaborador</h4>
                                     <p>Resumen de descripción</p>
@@ -454,7 +491,8 @@
                         </div>
                         <div class="col-xs-6 col-sm-6 col-md-2">
                             <div class="thumbnail">
-                                <img class="img-responsive img-rounded" src="http://placehold.it/150x200" alt="..."/>
+                                <!--<img class="img-responsive img-rounded" src="http://placehold.it/150x200" alt="..."/>-->
+                                {{ HTML::image('http://placehold.it/150x200','imagen fija', array('class'=>'image-responsive img-rounded'))}}
                                 <div class="caption">
                                     <h4>Nombre Colaborador</h4>
                                     <p>Resumen de descripción</p>
@@ -464,7 +502,8 @@
                         </div>
                         <div class="col-xs-6 col-sm-6 col-md-2">
                             <div class="thumbnail">
-                                <img class="img-responsive img-rounded" src="http://placehold.it/150x200" alt="..."/>
+                                <!--<img class="img-responsive img-rounded" src="http://placehold.it/150x200" alt="..."/>-->
+                                {{ HTML::image('http://placehold.it/150x200','imagen fija', array('class'=>'image-responsive img-rounded'))}}
                                 <div class="caption">
                                     <h4>Nombre Colaborador</h4>
                                     <p>Resumen de descripción</p>
@@ -474,7 +513,8 @@
                         </div>
                         <div class="col-xs-6 col-sm-6 col-md-2">
                             <div class="thumbnail">
-                                <img class="img-responsive img-rounded" src="http://placehold.it/150x200" alt="..."/>
+                                <!--<img class="img-responsive img-rounded" src="http://placehold.it/150x200" alt="..."/>-->
+                                {{ HTML::image('http://placehold.it/150x200','imagen fija', array('class'=>'image-responsive img-rounded'))}}
                                 <div class="caption">
                                     <h4>Nombre Colaborador</h4>
                                     <p>Resumen de descripción</p>
@@ -529,10 +569,13 @@
         <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
     </div>
     <div class="col-md-3">
-        <img class="img-responsive img-rounded" style="width:150px; height:48px;" src="imagenes/red/Logotipos/facebook.png" alt="..."/>
+        <!--<img class="img-responsive img-rounded" style="width:150px; height:48px;" src="imagenes/red/Logotipos/facebook.png" alt="..."/>-->
+        {{ HTML::image('imagenes/red/Logotipos/facebook.png','facebook', array('class'=>'image-responsive img-rounded','style'=>'width:150px; height:48px;'))}}
         <div>Contenido Facebook.</div>
         <img class="img-responsive img-rounded" style="width:150px; height:48px;" src="imagenes/red/Logotipos/twitter.png" alt="..."/>
+        {{ HTML::image('imagenes/red/Logotipos/twitter.png','twitter', array('class'=>'image-responsive img-rounded','style'=>'width:150px; height:48px;'))}}
         <div>Contenido Twitter.</div>
+
     </div>
 </div>
 <div class="row fondo_Claro">
@@ -547,13 +590,15 @@
     <div class="division">
     </div>
     <div class="col-md-2 col-md-offset-1">
-        <img class="img-responsive img-rounded" src="imagenes/red/LogoRed/logoNegativo.png" alt="..."/>
+        <!--<img class="img-responsive img-rounded" src="imagenes/red/LogoRed/logoNegativo.png" alt="..."/>-->
+        {{ HTML::image('imagenes/red/LogoRed/logoNegativo.png','logo negativo', array('class'=>'image-responsive img-rounded'))}}
         <br>
     </div>
     <div class="col-md-2">
         <h4 class="text-uppercase">Colaboradores</h4>
         <br>
-        <img class="img-responsive img-rounded" style="width:150px; height:50px;" src="imagenes/red/footer/amexid.png"/>
+        <!--<img class="img-responsive img-rounded" style="width:150px; height:50px;" src="imagenes/red/footer/amexid.png"/>-->
+        {{ HTML::image('imagenes/red/footer/amexid.png','amexid', array('class'=>'img-responsive img-rounded', 'style'=>'width:150px; height:50px;'))}}
         <br>
         <h4>CECC/SICA</h4>
         <h4>CSUCA</h4>
@@ -564,7 +609,8 @@
         <table>
             <tr>
                 <td class="imgTecho">
-                    <img class="img-rounded" style="align:flex-start; width:14px; height:20px;" src="imagenes/red/footer/localizacion.png"/>
+                    <!--<img class="img-rounded" style="align:flex-start; width:14px; height:20px;" src="imagenes/red/footer/localizacion.png"/>-->
+                    {{ HTML::image('imagenes/red/footer/localizacion.png','localizacion', array('class'=>'img-rounded', 'style'=>'align:flex-start; width:14px; height:20px;'))}}
                 </td>
                 <td>
                     <p>Av. Circunvalación s/n, esquina Tabiqueros,<br>
@@ -574,7 +620,8 @@
             </tr>
             <tr>
                 <td class="imgTecho">
-                    <img class="img-responsive img-rounded" style="align:flex-start; width:20px; height:20px;" src="imagenes/red/footer/telefono.png"/>
+                    <!--<img class="img-responsive img-rounded" style="align:flex-start; width:20px; height:20px;" src="imagenes/red/footer/telefono.png"/>-->
+                    {{ HTML::image('imagenes/red/footer/telefono.png','telefono', array('class'=>'img-responsive img-rounded', 'style'=>'align:flex-start; width:20px; height:20px;'))}}
                 </td>
                 <td>
                     <p>(55) 3601 8100 <br>
@@ -585,7 +632,8 @@
             </tr>
             <tr>
                 <td class="imgTecho">
-                    <img class="img-responsive img-rounded" style="width:20px; height:20px;" src="imagenes/red/footer/mail.png"/>
+                    <!--<img class="img-responsive img-rounded" style="width:20px; height:20px;" src="imagenes/red/footer/mail.png"/>-->
+                    {{ HTML::image('imagenes/red/footer/mail.png','mail', array('class'=>'img-responsive img-rounded', 'style'=>'width:20px; height:20px;'))}}
                 </td>
                 <td>
                     <p> contacto@redmesoamericana.com</p>
@@ -605,9 +653,12 @@
 </div>
 <div class="row fondo_footer1">
     <div class="col-md-3 col-md-offset-1">
-        <img class="img-responsive img-rounded" style="float:left;" src="http://placehold.it/60x60"/>
-        <img class="img-responsive img-rounded" style="float:left;" src="http://placehold.it/60x60"/>
-        <img class="img-responsive img-rounded" style="float:left;" src="http://placehold.it/60x60"/>
+        <!--<img class="img-responsive img-rounded" style="float:left;" src="http://placehold.it/60x60"/>-->
+        {{ HTML::image('http://placehold.it/60x60','imagen fija', array('class'=>'image-responsive img-rounded','style'=>'float:left;'))}}
+       <!--<img class="img-responsive img-rounded" style="float:left;" src="http://placehold.it/60x60"/>-->
+        {{ HTML::image('http://placehold.it/60x60','imagen fija', array('class'=>'image-responsive img-rounded','style'=>'float:left;'))}}
+       <!--<img class="img-responsive img-rounded" style="float:left;" src="http://placehold.it/60x60"/>-->
+        {{ HTML::image('http://placehold.it/60x60','imagen fija', array('class'=>'image-responsive img-rounded','style'=>'float:left;'))}}
     </div>
     <div class="col-md-4">
     </div>
@@ -630,11 +681,12 @@
     <div class="col-md-1 text-center">
         <br>
         <a class="nav up-arrow" href="#pag_principal" data-toggle="tooltip" title="ARRIBA">
-            <img class="img-responsive img-rounded" src="http://placehold.it/50x50" alt="..."/>
+            <!--<img class="img-responsive img-rounded" src="http://placehold.it/50x50" alt="..."/>-->
+            {{ HTML::image('http://placehold.it/50x50','imagen fija', array('class'=>'image-responsive'))}}
             <!--span class="glyphicon glyphicon-triangle-top"></span-->
         </a>
         <br>
     </div>
 </div>	
-<script src="js/principal.js"></script>
+<script src="{{url('js/principal.js')}}"></script>
 <!--/div-->
