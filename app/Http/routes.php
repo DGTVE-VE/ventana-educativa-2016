@@ -32,6 +32,9 @@ Route::get('redmite/areastematicas', 'RedmiteController@areastematicas');
 Route::get('redmite/proyectos', 'RedmiteController@proyectos');
 Route::get('redmite/contacto', 'RedmiteController@contacto');
 Route::get('redmite/correoValidado', 'RedmiteController@correoValidado');
+Route::get('redmite/contacto', 'RedmiteController@contacto');
+Route::get('correoValidado', 'RedmiteController@correoValidado');
+
 
 /* Vistas de administración Formularios REDMITE */
 Route::get('redmite/usuarios', 'RedmiteController@usuarios');
