@@ -572,7 +572,7 @@
         <!--<img class="img-responsive img-rounded" style="width:150px; height:48px;" src="imagenes/red/Logotipos/facebook.png" alt="..."/>-->
         {{ HTML::image('imagenes/red/Logotipos/facebook.png','facebook', array('class'=>'image-responsive img-rounded','style'=>'width:150px; height:48px;'))}}
         <div>Contenido Facebook.</div>
-        <img class="img-responsive img-rounded" style="width:150px; height:48px;" src="imagenes/red/Logotipos/twitter.png" alt="..."/>
+        <!--<img class="img-responsive img-rounded" style="width:150px; height:48px;" src="imagenes/red/Logotipos/twitter.png" alt="..."/>-->
         {{ HTML::image('imagenes/red/Logotipos/twitter.png','twitter', array('class'=>'image-responsive img-rounded','style'=>'width:150px; height:48px;'))}}
         <div>Contenido Twitter.</div>
 

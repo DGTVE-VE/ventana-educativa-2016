@@ -48,10 +48,7 @@ and open the template in the editor.
         <link rel="stylesheet" href="{{asset('css/red/ihover.css')}}">  
         <link rel="stylesheet" href="{{asset('css/red/animate.css')}}">
 
-<<<<<<< HEAD
-=======
         @yield('header')
->>>>>>> 1e3cf2944b7f053973e8326ca65bbae7704e207b
 
         <!--<link rel="stylesheet" href="css/red/full-slider.css">-->  
 

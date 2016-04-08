@@ -6,7 +6,7 @@ Quienes Somos
 @include('viewRed.seccionheader')
 @endsection
 @section('cuerpoRedmite')
-<div class="row fondo_Obscuro" style="margin-top: 80px;">
+<div class="row fondo_Obscuro">
     <div class="col-xs-12 col-sm-12">
     </div>
     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center text-uppercase">

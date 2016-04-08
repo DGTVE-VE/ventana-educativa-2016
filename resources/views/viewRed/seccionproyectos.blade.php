@@ -1,4 +1,4 @@
-﻿<div class="row fondo_Obscuro margen-superior-secproyectos">
+﻿<div class="row fondo_Obscuro ">
     <div class="col-md-12 text-center text-uppercase">
         <p class="pleca"> Proyectos </p>
     </div>

@@ -7,7 +7,7 @@ Proyectos
 @endsection
 @section('cuerpoRedmite')
 
-<div class="row margen-superior-proyectos" >        
+<div class="row">        
     <div class="row fondo_Obscuro">
         <div class="col-md-12 text-center text-uppercase">
             <p class="pleca">Proyectos</p>
