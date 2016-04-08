@@ -36,22 +36,6 @@ class RedmiteController extends Controller {
         return view('viewRed/paginacontacto');
     }
 
-    public function frmbanner() {
-        return view('viewRed/frmbanner');
-    }
-
-    public function frmcolaboradores() {
-        return view('viewRed/frmcolaboradores');
-    }
-
-    public function frmproyectos() {
-        return view('viewRed/frmproyectos');
-    }
-
-    public function frmpublicaciones() {
-        return view('viewRed/frmpublicaciones');
-    }
-
     public function usuarios() {
         return view('viewRed/frmusuarios');
     }
@@ -78,7 +62,7 @@ class RedmiteController extends Controller {
         if ($news->hash == $hash) {
             $news->validado = 1;
             $news->save();
-            return redirect('correoValidado');
+            return redirect('redmite/correoValidado');
         } else {
             print 'error';
         }
@@ -91,7 +75,7 @@ class RedmiteController extends Controller {
         $contacto->asunto = filter_input(INPUT_POST, 'asunto');
         $contacto->mensaje = filter_input(INPUT_POST, 'mensaje');
         $contacto->save();
-        return redirect('contacto');
+        return redirect('redmite/contacto');
     }
 
     public function enviaCorreoActivacion($correo, $hash) {
@@ -99,7 +83,7 @@ class RedmiteController extends Controller {
             $m->from('redmite@televisioneducativa.gob.mx', 'Red Mesoamericana');
             $m->to($correo)->subject('Activación de correo!');
         });
-        return redirect('correoValidado');
+        return redirect('redmite/correoValidado');
     }
 
 }

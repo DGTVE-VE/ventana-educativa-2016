@@ -7,7 +7,7 @@ Correo Validado
 @endsection
 @section('cuerpoRedmite')
 <div class="row" style="margin-top: 5%;">
-    <a href="indexRed"><img class="responsive center-block" src="imagenes/red/footer/activacionexitosa.jpg"></a>
+    <div class="col-md-offset-3">{{ HTML::image('imagenes/red/footer/activacionexitosa.jpg','Correo Validado', ['class'=>'img-responsive'])}}</div>        
 </div>
 @include('viewRed.seccionpie')
 @stop
