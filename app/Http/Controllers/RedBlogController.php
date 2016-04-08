@@ -26,7 +26,7 @@ class RedBlogController extends Controller
         $recientes = Blog::orderBy('created_at', 'desc')->take (5)->get ();
         $leidos = Blog::orderBy ('visitas', 'desc')->take (5)->get ();
         $comentados = array ();
-        $blogs = Blog::paginate (10);
+        $blogs = Blog::paginate (5);
         $colaboradores = array ();
         foreach ($blogs as $blog){
             $colaboradores [$blog->colaborador_id] = Colaborador::find ($blog->colaborador_id);
