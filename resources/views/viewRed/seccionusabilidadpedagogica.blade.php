@@ -1,4 +1,4 @@
-<div class="row fondo_Obscuro" style="margin-top:-20px;">
+<div class="row fondo_Obscuro" style="margin-top:0px;">
     <div class="col-md-12 text-center text-uppercase">
         <p class="pleca"> Modelo de Usabilidad Pedagógica de las TIC</p>
     </div>
