@@ -82,7 +82,7 @@
             Docentes <strong class="lead">Procesos formativos</strong> Pedagogía digital</p>
         <br>
         <h4>Mantente informado. Suscríbete.</h4>
-        <form class="form-inline" action="guardaCorreoNewsLetter" method="POST">
+        <form class="form-inline" action="redmite/guardaCorreoNewsLetter" method="POST">
             <div class="form-group col-xs-12 col-sm-12 col-md-12 col-lg-12">
                 <input type="email" name="correo_newsletter" class="form-control" id="correoElectronico" placeholder="direccion@servidor.com"  style="width:80%">
                 <button type="submit" class="btn btn-primary"><span class="glyphicon glyphicon-send"></span></button>

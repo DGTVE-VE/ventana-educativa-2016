@@ -1,3 +1,4 @@
+<nav class="navbar yamm navbar-default" role="navigation"></nav>
 <nav class="navbar yamm navbar-default navbar-fixed-top" role="navigation" style="height:80px;">
     <div class="container-fluid">
         <div class="navbar-header">
@@ -71,7 +72,6 @@
                         </li>
 
                     </ul>
-
                 </li>
                 <li class="text-uppercase fondoMenu"><a href="{{url('redmite/publicaciones')}}">PUBLICACIONES</a></li>
                 <li class="text-uppercase fondoMenu"><a href="{{url('redmite/contacto')}}">CONTACTO</a></li>

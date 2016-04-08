@@ -14,7 +14,10 @@ use App\Intereses_educativos;
 //use App\User;
 
 class VentanaController extends Controller {
-
+//    public function correoEnviado() {/*para pruebas de visualización*/
+//        return view('viewVentana/correoEnviado');
+//    }
+//    
     public function ventana_educativa() {
         $interes_educativo = Intereses_educativos::lists('interes_educativo', 'id');
         return view('viewVentana/ventana-educativa', compact('interes_educativo'));

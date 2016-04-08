@@ -7,7 +7,6 @@ div.margen-superior-secproyectos{
    margin-top:-20px;
 }
 
-
 /********* Estilos página de proyectos *********/
 .carousel-proyectos {
     margin-bottom: 0;
@@ -28,7 +27,6 @@ div.margen-superior-secproyectos{
 .controlIzquierdoCarousel{
     left: 5px;
 }
-
 .backproyectos{
     background: url(../../imagenes/red/proyectos/fondoproyectoscarousel.jpg) no-repeat center center fixed; 
     -webkit-background-size: cover;

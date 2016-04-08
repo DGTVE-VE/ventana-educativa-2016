@@ -6,17 +6,15 @@ Ventana Educativa
 @include('viewVentana.encabezadoVentana')
 @endsection
 @section('cuerpoVentana')
-<div class = "panel panel-default frmRegistro col-lg-offset-2 col-md-8">
-<br><br>
-<br><br>
-{{ HTML::image('imagenes/ventana/envioCorreo/banner1.png','Envío de correo de confirmación', ['class'=>'img-responsive'])}}
-<!--    <h3 class = "panel-title tituloRegistro text-center text-uppercase">
-         El correo para activación ha sido enviado.
-    </h3>-->
-<br><br><br><br>
+<div class = "col-lg-offset-4 col-md-12">
+    <br><br>
+    <br><br>
+    <br><br>
+    <br><br>
+    <a href="ventana_educativa">
+    {{ HTML::image('imagenes/ventana/envioCorreo/banner1.png','modelos educativos', array('class'=>'image-responsive', 'width' => 600, 'height' => 400))}}
+    </a>
+    <br><br><br><br>
     <br><br>
 </div>
-@endsection
-@section('pieVentana')
-@include('viewVentana.pieVentana')
 @endsection
