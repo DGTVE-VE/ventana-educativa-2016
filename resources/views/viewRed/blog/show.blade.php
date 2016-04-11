@@ -19,6 +19,7 @@
         
         <h3>Conversación de expertos </h3>
         @if(Auth::check())
+        @if (Auth::user ()->is_researcher)
         <form action="{{url ('redmite/blog/comment')}}" method="POST" enctype="multipart/form-data">
             <input type="hidden" name="_token" value="{{ csrf_token() }}" />    
             <input type="hidden" name="id_colaborador" value="{{$colaborador->id}}" />    
@@ -27,6 +28,7 @@
             <textarea name="comment"></textarea>
             <button type="submit" class="btn btn-default"> Comentar </button>
         </form>
+        @endif
         @endif
         <div>           
             @foreach ($blog->comments as $comment)
