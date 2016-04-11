@@ -103,7 +103,8 @@
                                         </a>
                                     </td>
                                 </tr>
-								<tr>    <!-- ********************************************************		Agregar iconos extra en menú	-->
+								<!-- ********************************************************		Agregar iconos extra en menú	-->
+								<!--tr>    
 									<td>
 									</td>
 									<td class="text-center">
@@ -128,7 +129,7 @@
                                             {{ HTML::image('imagenes/ventana/encabezado/appPrimaria.png','logo Primaria',['class'=>'ocultaImgApp'])}}
                                         </a>
 									</td>
-								</tr>
+								</tr-->
                             </table>                                       
                         </ul>
                     </li>
