@@ -5,6 +5,7 @@
     {{$comment->colaborador->nombre}}
 {!!$comment->comment!!}
 @if (Auth::check ())
+@if (Auth::user ()->is_researcher)
 <a class='btn-responder'> Responder </a>
 <div style="display: none" id='respuesta-{{$comment->id}}'>
     <form action="{{url ('redmite/blog/comment')}}" method="POST">
@@ -16,6 +17,7 @@
         <button type="submit" class="btn btn-default"> Responder </button>
     </form>
 </div>
+@endif
 @endif
 @if($comment->respuestas->count() > 0)
     @foreach ($comment->respuestas as $respuesta)
