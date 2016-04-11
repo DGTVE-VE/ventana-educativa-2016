@@ -11,8 +11,8 @@ Ventana Educativa
     <br><br>
     <br><br>
     <br><br>
-    <a href="ventana_educativa">
-    {{ HTML::image('imagenes/ventana/envioCorreo/banner1.png','modelos educativos', array('class'=>'image-responsive', 'width' => 600, 'height' => 400))}}
+    <a href="{{url('ventana_educativa')}}">
+    {{ HTML::image('imagenes/ventana/envioCorreo/banner1.png','Envío de correo para activar cuenta', array('class'=>'image-responsive', 'width' => 600, 'height' => 400))}}
     </a>
     <br><br><br><br>
     <br><br>

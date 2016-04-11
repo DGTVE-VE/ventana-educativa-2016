@@ -1,4 +1,4 @@
-<div class="row fondo_transparente" style="margin-top:80px;">
+<div class="row fondo_transparente">
     <div class="col-xs-12 col-sm-12 col-md-12" style="padding:0px;">
         <div id="carouselSliderHome" class="carousel slide" data-ride="carousel">
             <!-- Indicators -->

@@ -1,4 +1,17 @@
 <!--nuevo encabezado-->
+
+<style>
+	.ocultaImgApp{
+		visibility:hidden;
+		width:0px;
+		height:0px;
+	}
+	.iconoGde{
+		color:white;
+		font-size:14px;
+		cursor:pointer;
+	}
+</style>
 <nav class="navbar navbar-default navbar-fixed-top lo menuVentana" role="navigation">
     <div class="container-fluid">
         <div class="row">
@@ -71,6 +84,32 @@
                                         </a>
                                     </td>
                                 </tr>
+								<!--tr>    ********************************************************		Agregar iconos extra en menú
+									<td>
+									</td>
+									<td class="text-center">
+										<p class="iconoGde" onclick="muestraMasIconos()">M&aacute;s</p>
+									</td>
+									<td>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<a class="" href="#">
+                                            {{ HTML::image('imagenes/ventana/encabezado/appPrimaria.png','logo Primaria',['class'=>'ocultaImgApp'])}}
+                                        </a>
+									</td>
+									<td class="">
+										<a class="" href="#">
+                                            {{ HTML::image('imagenes/ventana/encabezado/appPrimaria.png','logo Primaria',['class'=>'ocultaImgApp'])}}
+                                        </a>
+									</td>
+									<td>
+										<a class="" href="#">
+                                            {{ HTML::image('imagenes/ventana/encabezado/appPrimaria.png','logo Primaria',['class'=>'ocultaImgApp'])}}
+                                        </a>
+									</td>
+								</tr-->
                             </table>                                       
                         </ul>
                     </li>
@@ -90,7 +129,7 @@
                                 <div class="row">
                                     <div class="col-lg-12 col-md-12">
                                         @if (Auth::guest ())
-                                        <form id="login-form" action="sessions" method="POST" role="form" style="display: block;">
+                                        <form id="login-form" action="{{url('sessions')}}" method="POST" role="form" style="display: block;">
                                             <input type="hidden" name="_token" value="{{ csrf_token() }}" />
                                             <div class="form-group">
                                                 <input type="email" name="email"  tabindex="1" class="form-control inputLogin" placeholder="Usuario" value="">
@@ -123,7 +162,7 @@
                                         <h4 style="color: white;" class="text-center">{{Auth::user()->email}}</h4>                            
 
                                         <div class="col-md-6 text-center">
-                                            <a href="logout" tabindex="5" style="color: red; font-weight: bold;" class="forgot-password">
+                                            <a href="{{url('logout')}}" tabindex="5" style="color: red; font-weight: bold;" class="forgot-password">
                                                 Cerrar Sesión
                                             </a>
                                         </div>
@@ -238,4 +277,22 @@
         ;
     });
     /************ CAMBIAR AVATAR **************/
+	/*	-------------------------------------	Hace visible o invisible los iconos de apps adicionales	--------------------------------------	*/
+	imgOculto = true;
+	function muestraMasIconos(){
+		if(imgOculto){
+			event.stopPropagation();
+			$(".ocultaImgApp").css("width","100%");
+			$(".ocultaImgApp").css("height","100%");
+			$(".ocultaImgApp").css("visibility","visible");
+			imgOculto = false;
+		}
+		else{
+			event.stopPropagation();
+			$(".ocultaImgApp").css("width","0%");
+			$(".ocultaImgApp").css("height","0%");
+			$(".ocultaImgApp").css("visibility","hidden");
+			imgOculto = true;
+		}
+	}
 </script>

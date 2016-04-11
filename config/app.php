@@ -140,9 +140,9 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
         Collective\Html\HtmlServiceProvider::class,
-        /*breadcrumbs*/
-//        DaveJamesMiller\Breadcrumbs\ServiceProvider::class,
          Alaouy\Youtube\YoutubeServiceProvider::class,
+        /*messages */
+         Laracasts\Flash\FlashServiceProvider::class,
     ],
     /*
       |--------------------------------------------------------------------------
@@ -190,7 +190,6 @@ return [
 //        'Html' => Collective\Html\HtmlFacade::class,
         'Form'=> Illuminate\Html\FormFacade::class,
         'HTML'=> Illuminate\Html\HtmlFacade::class,
-        /*breadcrumbs*/
-//        'Breadcrumbs' => DaveJamesMiller\Breadcrumbs\Facade::class,
+        'Flash' => Laracasts\Flash\Flash::class,
     ],  
 ];
