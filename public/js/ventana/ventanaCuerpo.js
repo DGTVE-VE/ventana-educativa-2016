@@ -1,24 +1,30 @@
-    /*	---------------------------------------	Sección Usabilidad. Agregar animación de entrada a imagenes 	--------------------------------*/
+    /*	--------------------------------	Sección Usabilidad. Cambia colores en rombos no seleccionados 	---------------------------*/
     function opacaImgs() {
-        var elems = $('.imgColor');    //elementos que quiero saber si estan en el área visible
+        var elems = $('.imgColor');
         elems.each(function () {
             $(this).addClass("imgOpaca");
         });
     }
     function coloreaImgs() {
-        var elems = $('.imgColor');    //elementos que quiero saber si estan en el área visible
+        var elems = $('.imgColor');
         elems.each(function () {
             $(this).removeClass("imgOpaca");
         });
     }
-
+	/*	----------------------------	Cambiar tamaño de la imagen	seleccionada	-------------------------------------*/
     function aumentaTam(imagenCubo) {
         var ancho = Math.round($(imagenCubo).width() * 1.15);
         var alto = Math.round($(imagenCubo).height() * 1.15);
         $(imagenCubo).width(ancho);
         $(imagenCubo).height(alto);
-        var top = $(imagenCubo).offset().top - 15;
-        var left = $(imagenCubo).offset().left - 15;
+		if(imagenCubo=='#CUBO07'){
+			var desplazamiento = 20;
+		}
+		else{
+			var desplazamiento = 15;
+		}
+        var top = $(imagenCubo).offset().top - desplazamiento;
+        var left = $(imagenCubo).offset().left - desplazamiento;
         $(imagenCubo).offset({top: top, left: left});
     }
 
@@ -27,10 +33,17 @@
         var alto = Math.round($(imagenFoto).height() / 1.15);
         $(imagenFoto).width(ancho);
         $(imagenFoto).height(alto);
-        var top = $(imagenFoto).offset().top + 15;
-        var left = $(imagenFoto).offset().left + 15;
+		if(imagenFoto=='#CUBO07'){
+			var desplazamiento = 20;
+		}
+		else{
+			var desplazamiento = 15;
+		}
+        var top = $(imagenFoto).offset().top + desplazamiento;
+        var left = $(imagenFoto).offset().left + desplazamiento;
         $(imagenFoto).offset({top: top, left: left});
     }
+	/*	----------------------------	Cambiar orden en que se muestra la imagen	-------------------------------------*/
     function cambiaFrente(imagenCubo, imagen) {
         $(imagenCubo).removeClass("imgColor");
         var imagenIcono = '#iconoRombo' + imagen;
@@ -48,6 +61,7 @@
         $(imagenIcono).css('z-index', zIndexIcono);
         $(imagenIcono).addClass("imgColor");
     }
+	/*	----------------------------	Cambiar imagen de rombos	-------------------------------------*/
     function cambiaImgFoto(imagen) {
         var imagenCubo = '#CUBO' + imagen;
 		cambiaFrente(imagenCubo, imagen);
@@ -66,12 +80,14 @@
 		disminuyeTam(imagenFoto);
 		coloreaImgs();
     }
+	/*	---------------------------------------	Quita efecto de desenfoque en rombos después de la entrada 	--------------------------------*/
     function quitaEfxDifumina(clase) {
-        var elems = $(clase);    //elementos que quiero saber si estan en el área visible
+        var elems = $(clase);
         elems.each(function () {
             $(this).removeClass("difumina");
         });
     }
+	/*	---------------------------------------	Sección Usabilidad. Agregar animación de entrada a imagenes 	--------------------------------*/
     function muestraCubos() {
         var Intervalo4 = $('.Intervalo4');    //elementos que quiero saber si estan en el área visible
         Intervalo4.each(function () {
