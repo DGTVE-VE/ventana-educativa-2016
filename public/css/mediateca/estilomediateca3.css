@@ -1,6 +1,9 @@
 /* Estilo para los menus de Telesecundaria y Telebachillerato */
 
 /* Wrappers  */
+.margensuperiormenuTS{
+  top: 15%;
+}
 #wrapper {
     padding-left: 0; /*posición de la pestaña menú al inicio */
     -webkit-transition: all 0.5s ease;
@@ -19,7 +22,7 @@
     width: 0;
     height: 36%; /*tamaño del contenedor de la lista de menú */
     margin-left: -220px;
-    margin-top: 10%; /*margen superior del menú */
+    margin-top: 0; /*margen superior del menú*/ 
     overflow-y: auto;
     overflow-x: hidden;
     /*background: #424242;*/
@@ -36,7 +39,7 @@
 
 #page-content-wrapper {
     width: 100%;
-    padding-top: 70px;
+    /*padding-top: 70px;*/
 }
 
 #wrapper.toggled #page-content-wrapper {
@@ -115,7 +118,7 @@
 
 .hamburger {
     position: fixed;
-    top: 158px;  /*margen superior de la pestaña menú  */
+    /*top: 0;  margen superior de la pestaña menú  */
     z-index: 999;
     display: block;
     width: 40px; /*ancho de la pestaña menú */
@@ -179,9 +182,12 @@
 
 /* Efectos para iconos redes sociales */
 .derechaSociales{
-    float: right;
-    padding-top: 15%;
-    right: -13%;
+    position: fixed;
+    right: 10px;
+    top:280px;
+    /*float: right;
+    padding-top: -30%;
+    right: -13%; */
 }
 .sociales{
     list-style: none;

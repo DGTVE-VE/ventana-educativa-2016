@@ -1,5 +1,7 @@
 @extends ('indexRed')
-
+@section('menuRedmite')
+@include('viewRed.seccionheader')
+@endsection
 @section ('cuerpoRedmite')	
 <div class="row">
     <div class='col-md-2'></div>
@@ -16,6 +18,8 @@
             {!!$blog->cuerpo!!}
         </div>
 
+        @if (Auth::check ())
+        @if (Auth::user ()->is_researcher)
         <h2>Comentarios </h2>
         <form action="{{url ('redmite/blog/comment')}}" method="POST" enctype="multipart/form-data">
             <input type="hidden" name="_token" value="{{ csrf_token() }}" />    
@@ -44,8 +48,10 @@
             </div>
             @endforeach 
         </div>
+        @endif
+        @endif
     </div>
-    <div class='col-md-3'>
+    <div class='col-md-4'>
         <div>
             <h3> Acerca del autor </h3>
             <img src="{{url($colaborador->url_foto)}}" width="50" height="50">
@@ -85,7 +91,7 @@
         </div>
     </div>
 </div>
-
+<hr>
 
 
 

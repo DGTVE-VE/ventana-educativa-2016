@@ -6,6 +6,7 @@
 	@include('viewMediateca.encabezadoMediateca')
 @endsection
 @section('cuerpoMediateca')
+   
 	<style>
 		.textoTitulo{
 			color: black;
@@ -80,7 +81,7 @@
 		{{HTML::image('imagenes/mediateca/tsecundaria/iconoCentral/centralSegundo.png','Telesecundaria central Segundo',['class'=>'segundoGradoCentro', 'id'=>'segundoGradoCentro'])}}
 		{{HTML::image('imagenes/mediateca/tsecundaria/iconoCentral/centralTercero.png','Telesecundaria central Tercero',['class'=>'tercerGradoCentro', 'id'=>'tercerGradoCentro'])}}
 	</div>
-	@include('viewMediateca.barraSociales')
+	 @include('viewMediateca.barraSociales')
 @endsection
 @section('pieMediateca')
     @include('viewMediateca.menuMediatecaTelesecundaria')
