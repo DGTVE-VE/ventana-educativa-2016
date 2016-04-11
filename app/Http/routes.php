@@ -104,5 +104,6 @@ Route::group(['middleware' => 'web'], function () {
     Route::get('mediateca/videos', 'MediatecaController@videos');
     Route::get('mediateca/test', 'MediatecaController@test');
     Route::get('mediateca/getVideosTelesec', 'MediatecaController@getVideosTelesec');
+    Route::get('store','MediatecaController@store');
     /*     * **************************MEDIATECA********************** */
 });

@@ -26,7 +26,11 @@ class RedBlogController extends Controller
     public function index (){
         $recientes = Blog::orderBy('created_at', 'desc')->take (5)->get ();
         $leidos = Blog::orderBy ('visitas', 'desc')->take (5)->get ();
+<<<<<<< HEAD
+        $comentados = array ();
+=======
         $comentados = $this->geBlogstMasComentados (5);    
+>>>>>>> fb0cc72eb12df83d7eec1bd59a9f1073bb83ae23
         $blogs = Blog::paginate (5);
         $colaboradores = array ();
         foreach ($blogs as $blog){

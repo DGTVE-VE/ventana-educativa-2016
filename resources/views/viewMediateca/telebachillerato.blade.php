@@ -6,6 +6,7 @@
 	@include('viewMediateca.encabezadoMediateca')
 @endsection
 @section('cuerpoMediateca')
+    
 	<style>
 		.textoTitulo{
 			color: black;

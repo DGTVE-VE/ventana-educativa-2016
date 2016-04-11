@@ -43,6 +43,7 @@
                         <li data-target="#carouselMexico" data-slide-to="2" class="active"></li>
                         <li data-target="#carouselMexico" data-slide-to="3" class="active"></li>
                         <li data-target="#carouselMexico" data-slide-to="4" class="active"></li>                        
+                        <li data-target="#carouselMexico" data-slide-to="5" class="active"></li>  
                     </ol>
                     <!-- Wrapper for slides -->
                     <div class="carousel-inner carousel-innerInt">

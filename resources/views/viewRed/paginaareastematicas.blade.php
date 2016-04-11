@@ -7,7 +7,7 @@ Publicaciones
 @endsection
 @section('cuerpoRedmite')
 <a name="redesconocimiento"></a>
-<div class="row fondo_Obscuro" style="margin-top: 80px;">
+<div class="row fondo_Obscuro">
     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center text-uppercase">
         <p class="pleca"> Áreas Temáticas</p>
     </div>

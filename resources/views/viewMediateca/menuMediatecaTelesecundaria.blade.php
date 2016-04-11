@@ -1,39 +1,42 @@
 <div class="row">
     <div id="wrapper">
         <div class="overlay"></div>
-
         <!-- Sidebar -->
-        <nav class="navbar navbar-inverse navbar-fixed-top" id="sidebar-wrapper" role="navigation">
-            <ul class="nav sidebar-nav">
-                <li><a href="http://telesecundaria.dgmie.sep.gob.mx/mision/" target="_blank">Misión</a></li>
-                <li><a href="http://telesecundaria.dgmie.sep.gob.mx/mapa/" target="_blank">Mapa Curricular</a></li>
-                <li><a data-toggle="modal" href="#myModal-telesec">Calendario</a></li>
-                <li><a href="http://telesecundaria.dgmie.sep.gob.mx/materiales/" tarjet="_blank">Materiales Educativos</a></li>
-                <li id="sinBorde"><a href="http://www.televisioneducativa.gob.mx/canales/telesecundaria" target="_blank">Programación Televisiva</a></li>
-            </ul>
-        </nav>
-         <!-- Ventana modal para calendario escolar -->
-                <div class="modal fade" id="myModal-telesec" role="dialog">
-                  <div class="modal-dialog modal-lg">
+        <div class="margensuperiormenuTS">
+            <nav class="navbar navbar-inverse navbar-fixed-top margensuperiormenuTS" id="sidebar-wrapper" role="navigation">
+                <ul class="nav sidebar-nav">
+                    <li><a href="http://telesecundaria.dgmie.sep.gob.mx/mision/" target="_blank">Misión</a></li>
+                    <li><a href="http://telesecundaria.dgmie.sep.gob.mx/mapa/" target="_blank">Mapa Curricular</a></li>
+                    <li><a data-toggle="modal" href="#myModal-telesec">Calendario</a></li>
+                    <li><a href="http://telesecundaria.dgmie.sep.gob.mx/materiales/" tarjet="_blank">Materiales Educativos</a></li>
+                    <li id="sinBorde"><a href="http://www.televisioneducativa.gob.mx/canales/telesecundaria" target="_blank">Programación Televisiva</a></li>
+                </ul>
+            </nav>
+            <!-- /#sidebar-wrapper -->
+
+            <!-- Page Content -->
+            <div id="page-content-wrapper" class="margensuperiormenuTS">
+                <button type="button" class="hamburger is-closed margensuperiormenuTS" data-toggle="offcanvas" >
+                    <span class="vertical">MENÚ</span>
+                </button>
+            </div> <!-- /#page-content-wrapper -->
+
+
+            <!-- Ventana modal para calendario escolar -->
+            <div class="modal fade" id="myModal-telesec" role="dialog">
+                <div class="modal-dialog modal-lg">
                     <div class="modal-content">
-                          <div class="modal-body">
-                          <button type="button" class="close" data-dismiss="modal">&times;</button>
-                          <iframe class=""src="http://www.enba.sep.gob.mx/files/calendario2015-2016.pdf" width="870" height="560" ></iframe> 
-                      </div>
+                        <div class="modal-body">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <iframe class=""src="http://www.enba.sep.gob.mx/files/calendario2015-2016.pdf" width="870" height="560" ></iframe> 
+                        </div>
                     </div>
-                  </div>
-                </div> <!-- Fin modal -->
-        <!-- /#sidebar-wrapper -->
-       
-        <!-- Page Content -->
-        <div id="page-content-wrapper">
-            <button type="button" class="hamburger is-closed" data-toggle="offcanvas" >
-                <span class="vertical">MENÚ</span>
-            </button>
-        </div> <!-- /#page-content-wrapper -->
+                </div>
+            </div> <!-- Fin modal -->
+        </div>
     </div> <!-- /#wrapper -->
 </div>
- 
+
 <script>
 
     $(document).ready(function () {
@@ -66,6 +69,6 @@
     });
 
 </script>
- 
+
 
 

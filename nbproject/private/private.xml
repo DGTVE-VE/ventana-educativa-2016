@@ -6,34 +6,51 @@
             <file>file:/C:/xampp/htdocs/ventanaEducativa/resources/views/viewRed/_seccionCuerpoRed.php</file>
             <file>file:/C:/xampp/htdocs/ventanaEducativa/resources/views/indexMediateca.blade.php</file>
             <file>file:/C:/xampp/htdocs/ventanaEducativa/resources/views/viewRed/redmite.blade.php</file>
-            <file>file:/C:/xampp/htdocs/ventanaEducativa/resources/views/viewRed/frmcolaboradores.blade.php</file>
-            <file>file:/C:/xampp/htdocs/ventanaEducativa/resources/views/viewRed/frmbanner.blade.php</file>
+            <file>file:/C:/xampp/htdocs/ventanaEducativa/public/css/red/estiloBase.css</file>
             <file>file:/C:/xampp/htdocs/ventanaEducativa/resources/views/viewVentana/encabezadoVentana.blade.php</file>
             <file>file:/C:/xampp/htdocs/ventanaEducativa/resources/views/viewRed/seccionheader.blade.php</file>
             <file>file:/C:/xampp/htdocs/ventanaEducativa/resources/views/viewRed/seccionretosregionales.blade.php</file>
             <file>file:/C:/xampp/htdocs/ventanaEducativa/resources/views/viewVentana/registroVentana.blade.php</file>
+            <file>file:/C:/xampp/htdocs/ventanaEducativa/public/css/red/full-slider.css</file>
+            <file>file:/C:/xampp/htdocs/ventanaEducativa/resources/views/viewMediateca/menuMediatecaTelesecundaria.blade.php</file>
             <file>file:/C:/xampp/htdocs/ventanaEducativa/app/Http/routes.php</file>
             <file>file:/C:/xampp/htdocs/ventanaEducativa/resources/views/viewRed/seccionpie.blade.php</file>
+            <file>file:/C:/xampp/htdocs/ventanaEducativa/public/css/red/estiloIntegrantes.css</file>
+            <file>file:/C:/xampp/htdocs/ventanaEducativa/public/css/red/estiloredmesoamericana.css</file>
             <file>file:/C:/xampp/htdocs/ventanaEducativa/resources/views/viewRed/seccionslider.blade.php</file>
             <file>file:/C:/xampp/htdocs/ventanaEducativa/resources/views/viewRed/paginapublicaciones.blade.php</file>
-            <file>file:/C:/xampp/htdocs/ventanaEducativa/resources/views/viewRed/frmpublicaciones.blade.php</file>
+            <file>file:/C:/xampp/htdocs/ventanaEducativa/public/css/red/ihover.min.css</file>
+            <file>file:/C:/xampp/htdocs/ventanaEducativa/public/css/mediateca/estilomediateca2.css</file>
             <file>file:/C:/xampp/htdocs/ventanaEducativa/resources/views/viewMediateca/barraSociales.blade.php</file>
             <file>file:/C:/xampp/htdocs/ventanaEducativa/resources/views/viewRed/paginaproyectos.blade.php</file>
+            <file>file:/C:/xampp/htdocs/ventanaEducativa/public/css/red/estilored2.css</file>
             <file>file:/C:/xampp/htdocs/ventanaEducativa/app/Http/Controllers/MediatecaController.php</file>
             <file>file:/C:/xampp/htdocs/ventanaEducativa/resources/views/viewRed/modalintegrantes.blade.php</file>
+            <file>file:/C:/xampp/htdocs/ventanaEducativa/resources/views/viewMediateca/menuMediatecaTelebachillerato.blade.php</file>
             <file>file:/C:/xampp/htdocs/ventanaEducativa/resources/views/viewRed/correoValidado.blade.php</file>
+            <file>file:/C:/xampp/htdocs/ventanaEducativa/resources/views/viewMediateca/telebachillerato.blade.php</file>
+            <file>file:/C:/xampp/htdocs/ventanaEducativa/resources/views/viewMediateca/encabezadoMediateca.blade.php</file>
+            <file>file:/C:/xampp/htdocs/ventanaEducativa/resources/views/viewMediateca/telesecundaria.blade.php</file>
+            <file>file:/C:/xampp/htdocs/ventanaEducativa/public/css/red/ihover.css</file>
             <file>file:/C:/xampp/htdocs/ventanaEducativa/resources/views/viewRed/paginacontacto.blade.php</file>
             <file>file:/C:/xampp/htdocs/ventanaEducativa/resources/views/viewRed/seccionareastematicas.blade.php</file>
             <file>file:/C:/xampp/htdocs/ventanaEducativa/resources/views/viewRed/paginaareastematicas.blade.php</file>
+            <file>file:/C:/xampp/htdocs/ventanaEducativa/public/css/red/font-awesome.min.css</file>
+            <file>file:/C:/xampp/htdocs/ventanaEducativa/public/css/mediateca/estilomediateca3.css</file>
+            <file>file:/C:/xampp/htdocs/ventanaEducativa/resources/views/viewVentana/pieVentana.blade.php</file>
             <file>file:/C:/xampp/htdocs/ventanaEducativa/resources/views/viewRed/seccionintegrantes.blade.php</file>
             <file>file:/C:/xampp/htdocs/ventanaEducativa/resources/views/viewRed/seccionusabilidadpedagogica.blade.php</file>
             <file>file:/C:/xampp/htdocs/ventanaEducativa/resources/views/viewRed/mailActivacion.blade.php</file>
+            <file>file:/C:/xampp/htdocs/ventanaEducativa/public/css/red/bootstrap-modal-carousel.css</file>
+            <file>file:/C:/xampp/htdocs/ventanaEducativa/public/css/red/bootstrap-social.css</file>
             <file>file:/C:/xampp/htdocs/ventanaEducativa/resources/views/viewRed/seccionproyectos.blade.php</file>
             <file>file:/C:/xampp/htdocs/ventanaEducativa/resources/views/viewRed/paginaquienessomos.blade.php</file>
             <file>file:/C:/xampp/htdocs/ventanaEducativa/resources/views/viewRed/frmusuarios.blade.php</file>
-            <file>file:/C:/xampp/htdocs/ventanaEducativa/resources/views/viewRed/frmproyectos.blade.php</file>
+            <file>file:/C:/xampp/htdocs/ventanaEducativa/resources/views/viewMediateca/mediateca.blade.php</file>
             <file>file:/C:/xampp/htdocs/ventanaEducativa/app/Http/Controllers/RedmiteController.php</file>
             <file>file:/C:/xampp/htdocs/ventanaEducativa/resources/views/indexRed.blade.php</file>
+            <file>file:/C:/xampp/htdocs/ventanaEducativa/public/css/red/estilored3.css</file>
+            <file>file:/C:/xampp/htdocs/ventanaEducativa/public/css/red/bootstrap-modal-carousel.min.css</file>
         </group>
     </open-files>
 </project-private>

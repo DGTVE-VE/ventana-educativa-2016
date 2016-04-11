@@ -1,4 +1,36 @@
 <!--nuevo encabezado-->
+<style>
+	.ocultaImgApp{
+		visibility:hidden;
+		width:0px;
+		height:0px;
+	}
+	.iconoGde{
+		color:white;
+		font-size:14px;
+		cursor:pointer;
+	}
+</style>
+<script>
+	/*	-------------------------------------	Hace visible o invisible los iconos de apps adicionales	--------------------------------------	*/
+	imgOculto = true;
+	function muestraMasIconos(){
+		if(imgOculto){
+			event.stopPropagation();
+			$(".ocultaImgApp").css("width","100%");
+			$(".ocultaImgApp").css("height","100%");
+			$(".ocultaImgApp").css("visibility","visible");
+			imgOculto = false;
+		}
+		else{
+			event.stopPropagation();
+			$(".ocultaImgApp").css("width","0%");
+			$(".ocultaImgApp").css("height","0%");
+			$(".ocultaImgApp").css("visibility","hidden");
+			imgOculto = true;
+		}
+	}
+</script>
 <nav class="navbar navbar-default navbar-fixed-top lo menuVentana" role="navigation">
     <div class="container-fluid">
         <div class="row">
@@ -71,6 +103,32 @@
                                         </a>
                                     </td>
                                 </tr>
+								<tr>    <!-- ********************************************************		Agregar iconos extra en menú	-->
+									<td>
+									</td>
+									<td class="text-center">
+										<p class="iconoGde" onclick="muestraMasIconos()">M&aacute;s</p>
+									</td>
+									<td>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<a class="" href="#">
+                                            {{ HTML::image('imagenes/ventana/encabezado/appPrimaria.png','logo Primaria',['class'=>'ocultaImgApp'])}}
+                                        </a>
+									</td>
+									<td class="">
+										<a class="" href="#">
+                                            {{ HTML::image('imagenes/ventana/encabezado/appPrimaria.png','logo Primaria',['class'=>'ocultaImgApp'])}}
+                                        </a>
+									</td>
+									<td>
+										<a class="" href="#">
+                                            {{ HTML::image('imagenes/ventana/encabezado/appPrimaria.png','logo Primaria',['class'=>'ocultaImgApp'])}}
+                                        </a>
+									</td>
+								</tr>
                             </table>                                       
                         </ul>
                     </li>
