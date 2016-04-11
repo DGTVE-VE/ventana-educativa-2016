@@ -1,4 +1,4 @@
-<div class="row fondo_Obscuro" style="margin-top:0px;">
+<div class="row fondo_Obscuro" style="margin-top:-20px;">
     <div class="col-md-12 text-center text-uppercase">
         <p class="pleca"> Modelo de Usabilidad Pedagógica de las TIC</p>
     </div>
@@ -29,7 +29,7 @@
         </div>
         <div class="visible-sm-block text-justify" style="width:270px; position:relative; top:400px;">
                 <!--<img class="estoy-visible slideInLeft img-responsive" alt="" src="imagenes/red/ModeloUsabilidad/texto2-01.png">-->
-            {{ HTML::image('imagenes/red/ModeloUsabilidad/texto2-01.png','texto1', array('class'=>'estoy-visible slideInLeft img-responsive'))}}
+            {{ HTML::image('imagenes/red/ModeloUsabilidad/texto2-01.png','texto2', array('class'=>'estoy-visible slideInLeft img-responsive'))}}
             <!--p>Análisis de la disposición y expectativas docentes para la implementación de la tecnología como parte de las actividades educativas.</p-->
         </div>
     </div>
@@ -101,19 +101,19 @@
         <!-- ------------------------------------		resolucion grande Lineas 		------------------------------------------------- -->
         <div class="hidden-xs hidden-sm text-justify" style="font-size:6px; width:140px; position:absolute; top:-10px; left:50px;">
                 <!--<img class="estoy-visible slideInLeft img-responsive" alt="" src="imagenes/red/ModeloUsabilidad/nodo1-01.png">-->
-            {{ HTML::image('imagenes/red/ModeloUsabilidad/nodo1-01.png','nodo01', array('class'=>'estoy-visible slideInLeft img-responsive'))}}
+            {{ HTML::image('imagenes/red/ModeloUsabilidad/nodo1-01.png','nod01', array('class'=>'estoy-visible slideInLeft img-responsive'))}}
         </div>
         <div class="hidden-xs hidden-sm text-justify" style="font-size:6px; width:170px; position:absolute; top:130px; left:-50px;">
                 <!--<img class="estoy-visible slideInLeft img-responsive" alt="" src="imagenes/red/ModeloUsabilidad/nodo2-01.png" style="float:left;">-->
-            {{ HTML::image('imagenes/red/ModeloUsabilidad/nodo2-01.png','nodo02', array('class'=>'estoy-visible slideInLeft img-responsive'))}}
+            {{ HTML::image('imagenes/red/ModeloUsabilidad/nodo2-01.png','nod02', array('class'=>'estoy-visible slideInLeft img-responsive'))}}
         </div>
         <div class="hidden-xs hidden-sm text-justify" style="font-size:6px; width:150px; position:absolute; top:195px; left:390px;">
                 <!--<img class="estoy-visible slideInLeft img-responsive" alt="" src="imagenes/red/ModeloUsabilidad/nodo3-01.png" style="float:left;">-->
-            {{ HTML::image('imagenes/red/ModeloUsabilidad/nodo3-01.png','nodo03', array('class'=>'estoy-visible slideInLeft img-responsive', 'style'=>'float:left;'))}}
+            {{ HTML::image('imagenes/red/ModeloUsabilidad/nodo3-01.png','nod03', array('class'=>'estoy-visible slideInLeft img-responsive', 'style'=>'float:left;'))}}
         </div>
         <div class="hidden-xs hidden-sm text-justify" style="font-size:6px; width:170px; position:absolute; top:360px; left:300px;">
                 <!--<img class="estoy-visible slideInLeft img-responsive" alt="" src="imagenes/red/ModeloUsabilidad/nodo4-01.png" style="float:left;">-->
-            {{ HTML::image('imagenes/red/ModeloUsabilidad/nodo4-01.png','nodo04', array('class'=>'estoy-visible slideInLeft img-responsive', 'style'=>'float:left;'))}}
+            {{ HTML::image('imagenes/red/ModeloUsabilidad/nodo4-01.png','nod04', array('class'=>'estoy-visible slideInLeft img-responsive', 'style'=>'float:left;'))}}
         </div>
     </div>
     <div class="col-xs-9 col-sm-2 col-md-3 col-lg-3" style="height:550px;">
@@ -146,12 +146,12 @@
         <div class="visible-sm-block text-justify" style="width:270px; position: relative; top:-50px; left:-170px;">
                 <!--<img class="estoy-visible slideInRight img-responsive" alt="" src="imagenes/red/ModeloUsabilidad/texto3-01.png">-->
             <!--p>Formación y/o actualización de docentes de acuerdo con los saberes digitales básicos propuestos (pertinencia y cultura digital, saberes informáticos, informacionales y de comunicación, diseño de recursos).</p-->
-            {{ HTML::image('imagenes/red/ModeloUsabilidad/texto3-01.png','texto01', array('class'=>'estoy-visible slideInLeft img-responsive'))}}
+            {{ HTML::image('imagenes/red/ModeloUsabilidad/texto3-01.png','text01', array('class'=>'estoy-visible slideInLeft img-responsive'))}}
         </div>
         <div class="visible-sm-block text-justify" style="width:270px; position:relative; top:400px; left: -200px;">
                 <!--<img class="estoy-visible slideInLeft img-responsive" alt="" src="imagenes/red/ModeloUsabilidad/texto4-01.png">-->
             <!--p>Diseño del proceso de apropiación e incorporación de la tecnología como parte del contexto educativo del docente.</p-->
-            {{ HTML::image('imagenes/red/ModeloUsabilidad/texto4-01.png','texto04', array('class'=>'estoy-visible slideInLeft img-responsive'))}}
+            {{ HTML::image('imagenes/red/ModeloUsabilidad/texto4-01.png','text04', array('class'=>'estoy-visible slideInLeft img-responsive'))}}
         </div>
 
     </div>

@@ -2,7 +2,7 @@
 <html>
     <body>
         <a href="{{url ('verificaCorreo')}}/{{$correo}}/{{$hash}}"> 
-            Activa tu correo para ingresar a ventana educativa.
+            {{ HTML::image('imagenes/ventana/envioCorreo/banner2.png','Activa tu correo', array('class'=>'image-responsive', 'width' => 300, 'height' => 400))}}
          </a>        
     </body>
 </html>

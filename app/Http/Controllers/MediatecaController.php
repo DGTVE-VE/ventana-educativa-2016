@@ -5,8 +5,8 @@ namespace App\Http\Controllers;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Http\Request;
 use App\Http\Requests;
-use App\Model\Mediateca\Telesecundaria;
-use App\Model\Mediateca\Telebachillerato;
+use App\Mediateca\Telesecundaria;
+use App\Mediateca\Telebachillerato;
 use \Alaouy\Youtube\Facades\Youtube;
 
 class MediatecaController extends Controller {
