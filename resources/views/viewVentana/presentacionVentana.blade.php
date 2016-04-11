@@ -32,6 +32,9 @@ Ventana Educativa
                     <div class="item ">
                         <img class="image-responsive" src="imagenes/ventana/presentacion/lamina7.png" alt="">
                     </div>  
+                                        <div class="item ">
+                        <img class="image-responsive" src="imagenes/ventana/presentacion/lamina8.png" alt="">
+                    </div>  
                 </div>          
                 <div class="carousel-controls">
                     <a class="left carousel-control carousel-control-presentacion" href="#presentacion" data-slide="prev"><i class="fa fa-angle-left fa-lg"></i></a>
