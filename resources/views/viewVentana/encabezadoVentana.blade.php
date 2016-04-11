@@ -129,7 +129,7 @@
                                 <div class="row">
                                     <div class="col-lg-12 col-md-12">
                                         @if (Auth::guest ())
-                                        <form id="login-form" action="sessions" method="POST" role="form" style="display: block;">
+                                        <form id="login-form" action="{{url('sessions')}}" method="POST" role="form" style="display: block;">
                                             <input type="hidden" name="_token" value="{{ csrf_token() }}" />
                                             <div class="form-group">
                                                 <input type="email" name="email"  tabindex="1" class="form-control inputLogin" placeholder="Usuario" value="">
@@ -162,7 +162,7 @@
                                         <h4 style="color: white;" class="text-center">{{Auth::user()->email}}</h4>                            
 
                                         <div class="col-md-6 text-center">
-                                            <a href="logout" tabindex="5" style="color: red; font-weight: bold;" class="forgot-password">
+                                            <a href="{{url('logout')}}" tabindex="5" style="color: red; font-weight: bold;" class="forgot-password">
                                                 Cerrar Sesión
                                             </a>
                                         </div>

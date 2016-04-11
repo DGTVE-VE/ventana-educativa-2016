@@ -11,6 +11,7 @@ use App\Model\Red\Colaborador;
 use App\Model\Red\Comment;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Redirect;
+use Illuminate\Support\Facades\DB;
 use Log;
 class RedBlogController extends Controller
 {
@@ -25,8 +26,8 @@ class RedBlogController extends Controller
     public function index (){
         $recientes = Blog::orderBy('created_at', 'desc')->take (5)->get ();
         $leidos = Blog::orderBy ('visitas', 'desc')->take (5)->get ();
-        $comentados = array ();
-        $blogs = Blog::paginate (10);
+        $comentados = $this->geBlogstMasComentados (5);    
+        $blogs = Blog::paginate (5);
         $colaboradores = array ();
         foreach ($blogs as $blog){
             $colaboradores [$blog->colaborador_id] = Colaborador::find ($blog->colaborador_id);
@@ -88,7 +89,7 @@ class RedBlogController extends Controller
         
         $recientes = Blog::orderBy('created_at', 'desc')->take (5)->get ();
         $leidos = Blog::orderBy ('visitas', 'desc')->take (5)->get ();
-        $comentados = array ();
+        $comentados = $this->geBlogstMasComentados (5);
         $colaborador = Colaborador::find ($blog->colaborador_id);
         return view('viewRed/blog/show', compact('blog', 'colaborador', 'leidos', 'recientes', 'comentados'));
     }
@@ -158,6 +159,20 @@ class RedBlogController extends Controller
             unlink($targetFile);
         }
         imagepng ($tmp, $targetFile);
+    }
+    
+    private function geBlogstMasComentados ($cuantos){
+        $numComments = DB::table ('red_blog_comments')
+                ->select ('id_blog', DB::raw ('count(*) as total'))
+                ->groupBy ('id_blog')->take ($cuantos)->get ();
+        $ids = array ();
+        foreach ($numComments as $num){
+            $ids [] = $num->id_blog;
+        }
+        $comentados = DB::table('red_blog')
+                    ->whereIn('id', $ids)
+                    ->get();   
+        return $comentados;
     }
 
 }

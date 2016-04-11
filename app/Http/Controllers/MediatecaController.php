@@ -5,9 +5,10 @@ namespace App\Http\Controllers;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Http\Request;
 use App\Http\Requests;
-use App\Mediateca\Telesecundaria;
-use App\Mediateca\Telebachillerato;
+use App\Model\Mediateca\Telesecundaria;
+use App\Model\Mediateca\Telebachillerato;
 use \Alaouy\Youtube\Facades\Youtube;
+use Laracasts\Flash\Flash;
 
 class MediatecaController extends Controller {
 
@@ -102,7 +103,7 @@ class MediatecaController extends Controller {
                     $sQL->where('bloque', '=', $bloque);
                 })->get();
         /* Query para extraer los distintos bloques que existen en la tabla */
-        $paginacion = Telesecundaria::distinct()->select('bloque')->orWhereNotNull('bloque')->get();        
+        $paginacion = Telesecundaria::distinct()->select('bloque')->orWhereNotNull('bloque')->get();
         /* Envío de querys y variables a la vista */
         return view('viewMediateca/videos')
                         ->with('videos', $videos)
@@ -122,6 +123,11 @@ class MediatecaController extends Controller {
                         ->with('videos', $videos)
                         ->with('paginacion', $paginacion)
                         ->with('url', $url);
+    }
+
+    public function store(Request $request) {
+        Flash::message('Welcome Aboard!');
+        return redirect('mediateca')->with('key', 'You have done successfully');
     }
 
 }

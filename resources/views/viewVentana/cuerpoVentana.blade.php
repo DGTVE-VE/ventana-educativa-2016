@@ -67,13 +67,13 @@
 				<div class="col-md-1 col-lg-1" style="padding-top:6.8%; padding-left:0px; padding-right:0px;">
 					{{HTML::image('imagenes/ventana/homeventana/CUBO-07.png','Ventana Educativa',['id'=>'CUBO07','class'=>'imgColor rombo7','usemap'=>'#mapacubo7'])}}
 					<map name="mapacubo7" id="mapacubo7">
-						<area shape="poly" coords="0,560,580,0,1140,544,544,1140" onmouseover="cambiaImgFoto('07')" onmouseout="cambiaImgCubo('07')" href="presentacion"/>
+						<area shape="poly" coords="0,560,580,0,1140,544,544,1140" onmouseover="cambiaImgFoto('07')" onmouseout="cambiaImgCubo('07')" href="{{url('presentacion')}}"/>
 						<area shape="poly" coords="0,0,570,0,0,548" onmouseover="cambiaImgFoto('05')" onmouseout="cambiaImgCubo('05')" href="#"/>
 						<area shape="poly" coords="0,548,548,1160,0,1160" onmouseover="cambiaImgFoto('06')" onmouseout="cambiaImgCubo('06')" href="#"/>
 						<area shape="poly" coords="548,0,1160,0,1160,548" onmouseover="cambiaImgFoto('08')" onmouseout="cambiaImgCubo('08')" href="http://formacioncontinua.sep.gob.mx/" target="_blank"/>
 						<area shape="poly" coords="548,1160,1160,548,1160,1160" onmouseover="cambiaImgFoto('09')" onmouseout="cambiaImgCubo('09')" href="#"/>
 					</map>
-					<a href="presentacion">
+					<a href="{{url('presentacion')}}">
 						{{HTML::image('imagenes/ventana/iconoSeccion/ventanaBco.png','Ventana Educativa',['id'=>'iconoRombo07','class'=>'imgColor iconoVentana','onmouseover'=>'cambiaImgFoto("07")','onmouseout'=>'cambiaImgCubo("07")'])}}
 					</a>
 				</div>
@@ -147,13 +147,13 @@
 					<td>
 						{{HTML::image('imagenes/ventana/homeventana/FOTO-07.png','Ventana Educativa',['id'=>'CUBOSM07','class'=>'imgColor rombosm7','usemap'=>'#mapacubosm07'])}}
 						<map name="mapacubosm07" id="mapacubosm07">
-							<area shape="poly" coords="0,560,580,0,1140,544,544,1140" href="presentacion"/>
+							<area shape="poly" coords="0,560,580,0,1140,544,544,1140" href="{{url('presentacion')}}"/>
 							<area shape="poly" coords="0,0,570,0,0,548" href="#"/>
 							<area shape="poly" coords="0,548,548,1160,0,1160" href="#"/>
 							<area shape="poly" coords="548,0,1160,0,1160,548" href="#"/>
 							<area shape="poly" coords="548,1160,1160,548,1160,1160" href="#"/>
 						</map>
-						<a href="presentacion">
+						<a href="{{url('presentacion')}}">
 							{{HTML::image('imagenes/ventana/iconoSeccion/ventanaBco.png','ventana Educativa',['id'=>'iconoRomboSM07','class'=>'imgColor iconoRomboSM7'])}}
 						</a>
 					</td><td></td>
