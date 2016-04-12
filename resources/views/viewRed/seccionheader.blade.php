@@ -1,4 +1,4 @@
-<link rel="stylesheet" type="text/css" href="css/mediateca/estilomediateca2.css">
+<link rel="stylesheet" type="text/css" href={{url('css/mediateca/estilomediateca2.css')}}>
 <style>
 	#barraSecundaria.affix{
 		top:0;
