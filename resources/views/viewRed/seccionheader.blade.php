@@ -7,6 +7,16 @@
 	#barraSecundaria.affix + .container-fluid{
 		padding-top:70px;
 	}
+	.tablaMenuApps{
+	    position: fixed; right:3%;
+		box-shadow: 5px 5px 1px rgba(0, 0, 0, .2);
+		background:rgba(0, 0, 0, .7);
+	}
+	.fondoRegistroMedia{
+		background:rgba(0, 0, 0, .7);
+		width:320px;
+		height:230px;
+	}
 </style>
 <div style="height:70px;">
 	@include('viewMediateca.encabezadoMediateca')
@@ -15,6 +25,10 @@
 	$('#navegacionMediateca').removeClass('navbar-fixed-top');
 	$('#navegacionMediateca').css('height','70px');
 	$('#navegacionMediateca').css('background-color','#f8f8f8');
+	$('#menuVentanaApps').removeClass('mueveTabla');
+	$('#menuVentanaApps').addClass('tablaMenuApps');
+	$('#menuVentanaRegistro').removeClass('fondoRegistro');
+	$('#menuVentanaRegistro').addClass('fondoRegistroMedia');
 </script>
 <div style="height:80px;">
 <nav id="barraSecundaria" class="navbar yamm navbar-default" data-spy="affix" data-offset-top="70" role="navigation" style="height:80px; z-index:10;">
