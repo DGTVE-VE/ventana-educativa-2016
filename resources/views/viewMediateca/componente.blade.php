@@ -74,7 +74,7 @@
 			<area alt="" title=""  href="{{url('mediateca/telebachillerato/componente')}}" shape="poly" coords="150,314,140,264,58,182,2,66,180,2,222,64,214,96,312,140" onmouseover="muestraImgCentro('CienciasComunicacionI')" onmouseout="ocultaImgCentro('CienciasComunicacionI')"/>
 		</map>
 		{{HTML::image('imagenes/mediateca/tbachillerato/componente/CienciasComunicacionI.png','Telesecundaria CienciasComunicacionI',['class'=>'CienciasComunicacionI', 'id'=>'CienciasComunicacionI', 'usemap'=>'#mapaartes1o'])}}
-		<a href="{{('')}}">
+		<a href="{{(url('mediateca/telebachillerato/1/1/1'))}}">
 			{{HTML::image('imagenes/mediateca/tbachillerato/componente/CienciasComunicacionII.png','Telesecundaria CienciasComunicacionII',['class'=>'CienciasComunicacionII', 'id'=>'CienciasComunicacionII', 'onmouseover'=>'muestraImgCentro("CienciasComunicacionII")', 'onmouseout'=>'ocultaImgCentro("CienciasComunicacionII")'])}}
 		</a>
 		<a href="{{('')}}">
