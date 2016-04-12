@@ -1,11 +1,9 @@
 @extends ('indexRed')
-
-@section ('header')
 {{HTML::script('js/bootstrap-tagsinput.min.js')}}
 {{HTML::style('css/bootstrap-tagsinput.css')}}
-@stop
-
+@include ('viewRed.seccionheader')
 @section ('cuerpoRedmite')
+<div class="row">
 <div class='col-md-3'></div>
 <div class='col-md-6'>
     <form action="{{url ('redmite/blog')}}" method="POST" enctype="multipart/form-data">
@@ -33,6 +31,8 @@
         <textarea name="cuerpo"></textarea>
         <button type="submit" class="btn btn-default"> Publicar </button>
     </form>
+</div>
+<div class="col-md-3"></div>
 </div>
 
 
