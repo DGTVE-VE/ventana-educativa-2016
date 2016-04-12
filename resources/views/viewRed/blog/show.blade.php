@@ -1,5 +1,5 @@
 @extends ('indexRed')
-
+@include ('viewRed.seccionheader')
 @section ('cuerpoRedmite')	
 <div class="row">
     <div class='col-md-2'></div>
@@ -16,36 +16,29 @@
             {!!$blog->cuerpo!!}
         </div>
 
-        <h2>Comentarios </h2>
+        
+        <h3>Conversación de expertos </h3>
+        @if(Auth::check())
+        @if (Auth::user ()->is_researcher)
         <form action="{{url ('redmite/blog/comment')}}" method="POST" enctype="multipart/form-data">
             <input type="hidden" name="_token" value="{{ csrf_token() }}" />    
             <input type="hidden" name="id_colaborador" value="{{$colaborador->id}}" />    
             <input type="hidden" name="id_blog" value="{{$blog->id}}" />    
             <input type="hidden" name="id_comment" value="0" />            
             <textarea name="comment"></textarea>
-            <button type="submit" class="btn btn-default"> Publicar </button>
+            <button type="submit" class="btn btn-default"> Comentar </button>
         </form>
-        <div>
-
+        @endif
+        @endif
+        <div>           
             @foreach ($blog->comments as $comment)
-            <div>
-                {!!$comment->comment!!}
-
-                <div class='hidden' id='{{'respuesta-'.$blog->id}}}'>
-                    <form action="{{url ('redmite/blog/comment')}}" method="POST">
-                        <input type="hidden" name="_token" value="{{ csrf_token() }}" />    
-                        <input type="hidden" name="id_colaborador" value="{{Auth::user ()->colaborador->id}}" />    
-                        <input type="hidden" name="id_blog" value="{{$blog->id}}" />    
-                        <input type="hidden" name="id_comment" value="{{$comment->id}}" />            
-                        <textarea name="comment"></textarea>
-                        <button type="submit" class="btn btn-default"> Responder </button>
-                    </form>
-                </div>
-            </div>
+                @if ($comment->id_comment == 0) 
+                    @include('viewRed.blog.comments', ['comment'=>$comment])  
+                @endif
             @endforeach 
         </div>
     </div>
-    <div class='col-md-3'>
+    <div class='col-md-4'>
         <div>
             <h3> Acerca del autor </h3>
             <img src="{{url($colaborador->url_foto)}}" width="50" height="50">
@@ -85,16 +78,15 @@
         </div>
     </div>
 </div>
-
-
-
-
-
-
-
 <script src="//cdn.tinymce.com/4/tinymce.min.js"></script>
 <script>tinymce.init({selector: 'textarea'});</script>
-
+<script>
+    $('.btn-responder').click(function(){
+        console.log ('si');
+        console.log ($(this).next());
+        $(this).next().slideToggle();        
+    });
+</script>
 
 @include('viewRed.seccionpie')
 @stop

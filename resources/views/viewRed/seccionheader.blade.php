@@ -1,5 +1,23 @@
-<nav class="navbar yamm navbar-default" role="navigation"></nav>
-<nav class="navbar yamm navbar-default navbar-fixed-top" role="navigation" style="height:80px;">
+<link rel="stylesheet" type="text/css" href="css/mediateca/estilomediateca2.css">
+<style>
+	#barraSecundaria.affix{
+		top:0;
+		width:100%;
+	}
+	#barraSecundaria.affix + .container-fluid{
+		padding-top:70px;
+	}
+</style>
+<div style="height:70px;">
+	@include('viewMediateca.encabezadoMediateca')
+</div>
+<script>
+	$('#navegacionMediateca').removeClass('navbar-fixed-top');
+	$('#navegacionMediateca').css('height','70px');
+	$('#navegacionMediateca').css('background-color','#f8f8f8');
+</script>
+<div style="height:80px;">
+<nav id="barraSecundaria" class="navbar yamm navbar-default" data-spy="affix" data-offset-top="70" role="navigation" style="height:80px; z-index:10;">
     <div class="container-fluid">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".js-navbar-collapse">
@@ -79,3 +97,4 @@
         </div>
     </div>
 </nav>
+</div>

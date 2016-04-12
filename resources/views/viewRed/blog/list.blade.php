@@ -1,9 +1,9 @@
 @extends ('indexRed')
-
+@include ('viewRed.seccionheader')
 @section ('cuerpoRedmite')	
 <div class="row">
     <div class="col-md-2"></div>
-    <div class="col-md-7">
+    <div class="col-md-6">
         @foreach ($blogs as $blog)
 
         <div class="row">
@@ -27,8 +27,10 @@
 
         <hr>
         @endforeach
+        {!! $blogs->render() !!}
     </div>
-    <div class='col-md-3'>
+    <hr>
+    <div class='col-md-4'>
         <ul class="nav nav-tabs" id='myTabs'>
             <li class="active">
                 <a data-toggle="tab" href="#leidos">Más leído</a></li>
