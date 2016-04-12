@@ -7,14 +7,35 @@
 	#barraSecundaria.affix + .container-fluid{
 		padding-top:70px;
 	}
+	.tablaMenuApps{
+	    position: fixed; right:3%;
+		box-shadow: 5px 5px 1px rgba(0, 0, 0, .2);
+		background:rgba(0, 0, 0, .7);
+	}
+	.fondoRegistroMedia{
+		background:rgba(0, 0, 0, .7);
+		width:320px;
+		height:230px;
+	}
+	.menuVentanaRedmite{
+		padding:5px;
+	}
 </style>
-<div style="height:70px;">
-	@include('viewMediateca.encabezadoMediateca')
+<div style="height:55px;">
+	@include('viewVentana.encabezadoVentana')
 </div>
 <script>
-	$('#navegacionMediateca').removeClass('navbar-fixed-top');
-	$('#navegacionMediateca').css('height','70px');
-	$('#navegacionMediateca').css('background-color','#f8f8f8');
+	$('#buscar').css('visibility','hidden');
+	$('#iconoBuscar').css('visibility','hidden');
+	$('#navegacionVentana').removeClass('menuVentana');
+	$('#navegacionVentana').addClass('menuVentanaRedmite');
+	$('#navegacionVentana').addClass('navbar-inverse');
+	$('#navegacionVentana').removeClass('navbar-fixed-top');
+	$('#navegacionVentana').css('height','55px');
+	$('#mueveTablaApps').removeClass('mueveTabla');
+	$('#mueveTablaApps').addClass('tablaMenuApps');
+	$('#menuVentanaRegistro').removeClass('fondoRegistro');
+	$('#menuVentanaRegistro').addClass('fondoRegistroMedia');
 </script>
 <div style="height:80px;">
 <nav id="barraSecundaria" class="navbar yamm navbar-default" data-spy="affix" data-offset-top="70" role="navigation" style="height:80px; z-index:10;">

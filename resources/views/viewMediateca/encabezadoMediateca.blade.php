@@ -68,7 +68,7 @@
                             {{ HTML::image('imagenes/mediateca/encabezado/iconoApps.png','Icono Apps',['width'=>'30px','height'=>'20px','class'=>'iconoApp'])}}
                         </div>
                         <ul class="dropdown-menu img-responsive menuVentanaApps">
-                            <table class="mueveTabla">
+                            <table id="menuVentanaApps" class="mueveTabla">
                                 <tr>
                                     <td class="divApp centered center-block">
                                         <a class="" href="#">
@@ -144,7 +144,7 @@
                             @endif
 
                         </div>
-                        <ul class="dropdown-menu fondoRegistro">
+                        <ul id="menuVentanaRegistro" class="dropdown-menu fondoRegistro">
                             <li class="panel-body">
                                 <div class="row">
                                     <div class="col-lg-12 col-md-12">

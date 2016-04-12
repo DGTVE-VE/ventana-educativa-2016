@@ -101,6 +101,7 @@ Route::group(['middleware' => 'web'], function () {
     Route::get('mediateca/telebachillerato/semestreIV', 'MediatecaController@semestreIV');
     Route::get('mediateca/telebachillerato/semestreV', 'MediatecaController@semestreV');
     Route::get('mediateca/telebachillerato/semestreVI', 'MediatecaController@semestreVI');
+	Route::get('mediateca/telebachillerato/componente', 'MediatecaController@componente');
     Route::get('mediateca/videos', 'MediatecaController@videos');
     Route::get('mediateca/test', 'MediatecaController@test');
     Route::get('mediateca/getVideosTelesec', 'MediatecaController@getVideosTelesec');
