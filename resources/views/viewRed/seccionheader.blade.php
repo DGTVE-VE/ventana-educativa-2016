@@ -17,16 +17,23 @@
 		width:320px;
 		height:230px;
 	}
+	.menuVentanaRedmite{
+		padding:5px;
+	}
 </style>
-<div style="height:70px;">
-	@include('viewMediateca.encabezadoMediateca')
+<div style="height:55px;">
+	@include('viewVentana.encabezadoVentana')
 </div>
 <script>
-	$('#navegacionMediateca').removeClass('navbar-fixed-top');
-	$('#navegacionMediateca').css('height','70px');
-	$('#navegacionMediateca').css('background-color','#f8f8f8');
-	$('#menuVentanaApps').removeClass('mueveTabla');
-	$('#menuVentanaApps').addClass('tablaMenuApps');
+	$('#buscar').css('visibility','hidden');
+	$('#iconoBuscar').css('visibility','hidden');
+	$('#navegacionVentana').removeClass('menuVentana');
+	$('#navegacionVentana').addClass('menuVentanaRedmite');
+	$('#navegacionVentana').addClass('navbar-inverse');
+	$('#navegacionVentana').removeClass('navbar-fixed-top');
+	$('#navegacionVentana').css('height','55px');
+	$('#mueveTablaApps').removeClass('mueveTabla');
+	$('#mueveTablaApps').addClass('tablaMenuApps');
 	$('#menuVentanaRegistro').removeClass('fondoRegistro');
 	$('#menuVentanaRegistro').addClass('fondoRegistroMedia');
 </script>

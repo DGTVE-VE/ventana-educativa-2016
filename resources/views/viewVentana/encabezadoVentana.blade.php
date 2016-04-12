@@ -12,7 +12,7 @@
 		cursor:pointer;
 	}
 </style>
-<nav class="navbar navbar-default navbar-fixed-top lo menuVentana" role="navigation">
+<nav id="navegacionVentana" class="navbar navbar-default navbar-fixed-top lo menuVentana" role="navigation">
     <div class="container-fluid">
         <div class="row">
             <div class="col-md-2">
@@ -35,7 +35,7 @@
                             <div class="form-group has-feedback">
                                 <label for="search" class="sr-only">Buscar</label>
                                 <input type="text" class="form-control" name="buscar" id="buscar" placeholder="buscar">
-                                <span class="glyphicon glyphicon-search form-control-feedback spanbuscar"></span>
+                                <span id="iconoBuscar" class="glyphicon glyphicon-search form-control-feedback spanbuscar"></span>
                             </div>
                         </form>
                     </li>
@@ -48,8 +48,8 @@
                         <div class="dropdown-toggle" data-toggle="dropdown">
                             {{ HTML::image('imagenes/ventana/encabezado/iconoApps.png','Icono Apps',['width'=>'30px','height'=>'20px','class'=>'iconoApp'])}}
                         </div>
-                        <ul class="dropdown-menu img-responsive menuVentanaApps">
-                            <table class="mueveTabla">
+                        <ul id="menuVentanaApps" class="dropdown-menu img-responsive menuVentanaApps">
+                            <table id="mueveTablaApps" class="mueveTabla">
                                 <tr>
                                     <td class="divApp centered center-block">
                                         <a class="" href="#">
@@ -124,7 +124,7 @@
                             @endif
 
                         </div>
-                        <ul class="dropdown-menu fondoRegistro">
+                        <ul id="menuVentanaRegistro" class="dropdown-menu fondoRegistro">
                             <li class="panel-body">
                                 <div class="row">
                                     <div class="col-lg-12 col-md-12">
