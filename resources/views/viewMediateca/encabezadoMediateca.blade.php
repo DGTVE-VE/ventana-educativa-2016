@@ -10,6 +10,11 @@
 		font-size:14px;
 		cursor:pointer;
 	}
+	.textoTitulo{
+		color: black;
+		font-family:'Ubuntu';
+		font-size:17px;
+	}
 </style>
 <script>
 	/*	-------------------------------------	Hace visible o invisible los iconos de apps adicionales	--------------------------------------	*/
@@ -305,7 +310,7 @@
 			$uriActual = explode('/',$uri);
 			$elemsURI= count($uriActual);
 			$j=$elemsURI-1;
-			while($uriActual[$j]!='mediateca'){
+			while($uriActual[$j]!='educamedia'){
 				$j--;
 			}
 			echo '<a href="'?>{{url($uriActual[$j])}}<?php echo '">'.strtoupper($uriActual[$j]).'</a>';

@@ -85,26 +85,26 @@ Route::group(['middleware' => 'web'], function () {
     
     
 
-    /*     * **************************MEDIATECA********************** */
-    Route::get('mediateca', 'MediatecaController@mediateca');
-    Route::get('mediateca/telesecundaria', 'MediatecaController@telesecundaria');
-    Route::get('mediateca/telebachillerato', 'MediatecaController@telebachillerato');
-    Route::get('mediateca/telesecundaria/primergrado', 'MediatecaController@primergrado');
+    /*     * **************************educamedia********************** */
+    Route::get('educamedia', 'MediatecaController@mediateca');
+    Route::get('educamedia/telesecundaria', 'MediatecaController@telesecundaria');
+    Route::get('educamedia/telebachillerato', 'MediatecaController@telebachillerato');
+    Route::get('educamedia/telesecundaria/primergrado', 'MediatecaController@primergrado');
     /* ejemplo de uso para youtube */
-    Route::get('mediateca/{nivel}/{grado}/{materia}/{bloque}', 'MediatecaController@getVideos');
+    Route::get('educamedia/{nivel}/{grado}/{materia}/{bloque}', 'MediatecaController@getVideos');
 //Route::get('mediateca/telesecundaria/1/11', 'MediatecaController@getVideos');
-    Route::get('mediateca/telesecundaria/segundogrado', 'MediatecaController@segundogrado');
-    Route::get('mediateca/telesecundaria/tercergrado', 'MediatecaController@tercergrado');
-    Route::get('mediateca/telebachillerato/semestreI', 'MediatecaController@semestreI');
-    Route::get('mediateca/telebachillerato/semestreII', 'MediatecaController@semestreII');
-    Route::get('mediateca/telebachillerato/semestreIII', 'MediatecaController@semestreIII');
-    Route::get('mediateca/telebachillerato/semestreIV', 'MediatecaController@semestreIV');
-    Route::get('mediateca/telebachillerato/semestreV', 'MediatecaController@semestreV');
-    Route::get('mediateca/telebachillerato/semestreVI', 'MediatecaController@semestreVI');
-	Route::get('mediateca/telebachillerato/componente', 'MediatecaController@componente');
-    Route::get('mediateca/videos', 'MediatecaController@videos');
-    Route::get('mediateca/test', 'MediatecaController@test');
-    Route::get('mediateca/getVideosTelesec', 'MediatecaController@getVideosTelesec');
+    Route::get('educamedia/telesecundaria/segundogrado', 'MediatecaController@segundogrado');
+    Route::get('educamedia/telesecundaria/tercergrado', 'MediatecaController@tercergrado');
+    Route::get('educamedia/telebachillerato/semestreI', 'MediatecaController@semestreI');
+    Route::get('educamedia/telebachillerato/semestreII', 'MediatecaController@semestreII');
+    Route::get('educamedia/telebachillerato/semestreIII', 'MediatecaController@semestreIII');
+    Route::get('educamedia/telebachillerato/semestreIV', 'MediatecaController@semestreIV');
+    Route::get('educamedia/telebachillerato/semestreV', 'MediatecaController@semestreV');
+    Route::get('educamedia/telebachillerato/semestreVI', 'MediatecaController@semestreVI');
+	Route::get('educamedia/telebachillerato/componente', 'MediatecaController@componente');
+    Route::get('educamedia/videos', 'MediatecaController@videos');
+    Route::get('educamedia/test', 'MediatecaController@test');
+    Route::get('educamedia/getVideosTelesec', 'MediatecaController@getVideosTelesec');
     Route::get('store','MediatecaController@store');
     /*     * **************************MEDIATECA********************** */
 });

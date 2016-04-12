@@ -7,11 +7,6 @@
 @endsection
 @section('cuerpoMediateca')
 	<style>
-		.textoTitulo{
-			color: black;
-			font-family:'Ubuntu';
-			font-size:2em;
-		}
 		.bajaFila{
 			position:relative; top:80px; z-index:10;
 		}
