@@ -5,12 +5,12 @@
         <div class="margensuperiormenuTS">
             <nav class="navbar navbar-inverse navbar-fixed-top margensuperiormenuTS" id="sidebar-wrapper" role="navigation">
                <ul class="nav sidebar-nav">
-                <li><a href="http://www.dgb.sep.gob.mx/02-m1/02-subsistemas/telebachillerato/NORMATIVIDAD/DOCUMENTO_BASE_TBC_2015.pdf" target="_blank">Normatividad</a></li>
-                <li><a href="http://www.dgb.sep.gob.mx/02-m1/02-subsistemas/telebachillerato/NORMATIVIDAD/Mapa_CURRICULAR_tbc_2014.pdf" target="_blank">Mapa Curricular</a></li>
-                <li><a data-toggle="modal" href="#myModal">Calendario</a></li>
-                <li><a href="http://www.dgb.sep.gob.mx/02-m1/02-subsistemas/telebachillerato.php?id=materiales_audiovisuales" tarjet="_blank">Materiales Audiovisuales</a></li>
-                <li id="sinBorde"><a href="http://www.dgb.sep.gob.mx/02-m1/02-subsistemas/telebachillerato.php?id=materiales_impresos" target="_blank">Material Impreso</a></li>
-            </ul>
+                    <li><a href="http://www.dgb.sep.gob.mx/02-m1/02-subsistemas/telebachillerato/NORMATIVIDAD/DOCUMENTO_BASE_TBC_2015.pdf" target="_blank">Normatividad</a></li>
+                    <li><a href="http://www.dgb.sep.gob.mx/02-m1/02-subsistemas/telebachillerato/NORMATIVIDAD/Mapa_CURRICULAR_tbc_2014.pdf" target="_blank">Mapa Curricular</a></li>
+                    <li><a data-toggle="modal" href="#myModal-telebach">Calendario</a></li>
+                    <li><a href="http://www.dgb.sep.gob.mx/02-m1/02-subsistemas/telebachillerato.php?id=materiales_audiovisuales" tarjet="_blank">Materiales Audiovisuales</a></li>
+                    <li id="sinBorde"><a href="http://www.dgb.sep.gob.mx/02-m1/02-subsistemas/telebachillerato.php?id=materiales_impresos" target="_blank">Material Impreso</a></li>
+                </ul>
             </nav>
             <!-- /#sidebar-wrapper -->
 
@@ -23,7 +23,7 @@
 
 
             <!-- Ventana modal para calendario escolar -->
-            <div class="modal fade" id="myModal-telesec" role="dialog">
+            <div class="modal fade" id="myModal-telebach" role="dialog">
                 <div class="modal-dialog modal-lg">
                     <div class="modal-content">
                         <div class="modal-body">
@@ -36,7 +36,6 @@
         </div>
     </div> <!-- /#wrapper -->
 </div>
-
 
 <script>
 
