@@ -60,6 +60,10 @@ class MediatecaController extends Controller {
         return view('viewMediateca/semestreVI');
     }
 
+    public function componente() {
+        return view('viewMediateca/componente');
+    }
+	
     public function videos() {
 //        $thumbnail = "https://i.ytimg.com/vi/".$video1."/default.jpg";
 

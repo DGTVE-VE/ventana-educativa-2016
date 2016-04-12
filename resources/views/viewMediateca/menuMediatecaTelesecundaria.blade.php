@@ -8,7 +8,7 @@
                     <li><a href="http://telesecundaria.dgmie.sep.gob.mx/mision/" target="_blank">Misión</a></li>
                     <li><a href="http://telesecundaria.dgmie.sep.gob.mx/mapa/" target="_blank">Mapa Curricular</a></li>
                     <li><a data-toggle="modal" href="#myModal-telesec">Calendario</a></li>
-                    <li><a href="http://telesecundaria.dgmie.sep.gob.mx/materiales/" tarjet="_blank">Materiales Educativos</a></li>
+                    <li><a href="http://telesecundaria.dgmie.sep.gob.mx/materiales/" target="_blank">Materiales Educativos</a></li>
                     <li id="sinBorde"><a href="http://www.televisioneducativa.gob.mx/canales/telesecundaria" target="_blank">Programación Televisiva</a></li>
                 </ul>
             </nav>
