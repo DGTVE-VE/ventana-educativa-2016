@@ -63,12 +63,12 @@
 		{{HTML::image('imagenes/mediateca/tsecundaria/Inicio/primerGrado.png','Telesecundaria Primero',['class'=>'telesecPrimero', 'id'=>'primerGrado', 'usemap'=>'#mapaTelesecPrimer'])}}
 		<map name="mapaTelesecSegundo">
 			<area alt="segundo grado" shape="poly" coords="147.6,144,201.6,1.6,290,72,336.25,142.4,368.75,233.6,383.75,342.4,372.5,396.2,348.75,463.4,276.1,523.6,203,459.8,149,369.6,199.1,328.9,220,287.1,247.2,340.8,238.8,268.8,199.2,187.2" href="{{url('educamedia/telesecundaria/segundogrado')}}" onmouseover="muestraImgCentral('segundoGrado')" onmouseout="ocultaImgCentral('segundoGrado')">
-			<area alt="primer grado" shape="poly" coords="144,140.8,199.2,0,1.2,3.2,2.4,179.2,46.8,132.8,102,120" href="{{url('mediateca/telesecundaria/primergrado')}}" onmouseover="muestraImgCentral('primerGrado')" onmouseout="ocultaImgCentral('primerGrado')">
+			<area alt="primer grado" shape="poly" coords="144,140.8,199.2,0,1.2,3.2,2.4,179.2,46.8,132.8,102,120" href="{{url('educamedia/telesecundaria/primergrado')}}" onmouseover="muestraImgCentral('primerGrado')" onmouseout="ocultaImgCentral('primerGrado')">
 		</map>
 		{{HTML::image('imagenes/mediateca/tsecundaria/Inicio/segundoGrado.png','Telesecundaria Segundo',['class'=>'teleSecSegundo', 'id'=>'segundoGrado','usemap'=>'#mapaTelesecSegundo'])}}
 		<map name="mapaTelesecTercero">
-			<area alt="primer grado" shape="poly" coords="25.2,141.6,144,126,141.6,67.2,163.2,0,50.4,1.2,37.2,1.2,27.6,72" href="{{url('mediateca/telesecundaria/primergrado')}}" onmouseover="muestraImgCentral('primerGrado')" onmouseout="ocultaImgCentral('primerGrado')">
-			<area alt="segundo grado" shape="poly" coords="455,2.4,532.5,1.2,531.25,319.2,510,400,400,247.2" href="{{url('mediateca/telesecundaria/segundogrado')}}" onmouseover="muestraImgCentral('segundoGrado')" onmouseout="ocultaImgCentral('segundoGrado')">
+			<area alt="primer grado" shape="poly" coords="25.2,141.6,144,126,141.6,67.2,163.2,0,50.4,1.2,37.2,1.2,27.6,72" href="{{url('educamedia/telesecundaria/primergrado')}}" onmouseover="muestraImgCentral('primerGrado')" onmouseout="ocultaImgCentral('primerGrado')">
+			<area alt="segundo grado" shape="poly" coords="455,2.4,532.5,1.2,531.25,319.2,510,400,400,247.2" href="{{url('educamedia/telesecundaria/segundogrado')}}" onmouseover="muestraImgCentral('segundoGrado')" onmouseout="ocultaImgCentral('segundoGrado')">
 			<area alt="tercer grado" shape="poly" coords="26.4,147.5,144,131.25,164.4,196.25,201.6,248.75,234,271.25,300,291.25,361.2,285,417.6,256.25,487.2,353.75,422.4,397.5,338.4,415,261.6,415,211.2,398.75,134.4,355,84,305,54,258.75" href="{{url('educamedia/telesecundaria/tercergrado')}}" onmouseover="muestraImgCentral('tercerGrado')" onmouseout="ocultaImgCentral('tercerGrado')">
 		</map>
 		{{HTML::image('imagenes/mediateca/tsecundaria/Inicio/tercerGrado.png','Telesecundaria Tercero',['class'=>'telesecTercero', 'id'=>'tercerGrado', 'usemap'=>'#mapaTelesecTercero'])}}

@@ -1,5 +1,5 @@
 @section('titleMediateca')
-    Mediateca
+    Educamedia
 @stop
 @extends('indexMediateca')
 @section('menuMediateca')
@@ -7,11 +7,6 @@
 @endsection
 @section('cuerpoMediateca')
 	<style>
-		.textoTitulo{
-			color: black;
-			font-family:'Ubuntu';
-			font-size:2em;
-		}
 		.bajaFila{
 			position:relative; top:80px; z-index:10;
 		}
@@ -64,22 +59,22 @@
 		?>
 	</div>
 	<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xs-offset-2 col-sm-offset-2 col-md-offset-2 col-lg-offset-2" style="padding:10%;">
-		<a href="{{(url('mediateca/telesecundaria/3/27/1'))}}">
+		<a href="{{(url('educamedia/telesecundaria/3/27/1'))}}">
 			{{HTML::image('imagenes/mediateca/tsecundaria/tercerGrado/formacionCivica.png','Telesecundaria FormacionCivicaII',['class'=>'FormacionCivicaII', 'id'=>'formacionCivica', 'onmouseover'=>'muestraImgCentro("formacionCivica")', 'onmouseout'=>'ocultaImgCentro("formacionCivica")'])}}
 		</a>
-		<a href="{{(url('mediateca/telesecundaria/3/28/1'))}}">
+		<a href="{{(url('educamedia/telesecundaria/3/28/1'))}}">
 			{{HTML::image('imagenes/mediateca/tsecundaria/tercerGrado/historia.png','Telesecundaria HistoriaII',['class'=>'HistoriaII', 'id'=>'historia', 'onmouseover'=>'muestraImgCentro("historia")', 'onmouseout'=>'ocultaImgCentro("historia")'])}}
 		</a>
-		<a href="{{(url('mediateca/telesecundaria/3/26/1'))}}">
+		<a href="{{(url('educamedia/telesecundaria/3/26/1'))}}">
 			{{HTML::image('imagenes/mediateca/tsecundaria/tercerGrado/espanol.png','Telesecundaria EspanolIII',['class'=>'EspanolIII', 'id'=>'espanol', 'onmouseover'=>'muestraImgCentro("espanol")', 'onmouseout'=>'ocultaImgCentro("espanol")'])}}
 		</a>
-		<a href="{{(url('mediateca/telesecundaria/3/30/1'))}}">
+		<a href="{{(url('educamedia/telesecundaria/3/30/1'))}}">
 			{{HTML::image('imagenes/mediateca/tsecundaria/tercerGrado/matematicas.png','Telesecundaria MatematicasIII',['class'=>'MatematicasIII', 'id'=>'matematicas', 'onmouseover'=>'muestraImgCentro("matematicas")', 'onmouseout'=>'ocultaImgCentro("matematicas")'])}}
 		</a>
-		<a href="{{(url('mediateca/telesecundaria/3/25/1'))}}">
+		<a href="{{(url('educamedia/telesecundaria/3/25/1'))}}">
 			{{HTML::image('imagenes/mediateca/tsecundaria/tercerGrado/ciencias.png','Telesecundaria CienciasIII',['class'=>'CienciasIII', 'id'=>'ciencias', 'onmouseover'=>'muestraImgCentro("ciencias")', 'onmouseout'=>'ocultaImgCentro("ciencias")'])}}
 		</a>
-		<a href="{{(url('mediateca/telesecundaria/3/29/0'))}}">
+		<a href="{{(url('educamedia/telesecundaria/3/29/0'))}}">
 			{{HTML::image('imagenes/mediateca/tsecundaria/tercerGrado/lengua.png','Telesecundaria InglesIII',['class'=>'InglesIII', 'id'=>'lengua', 'onmouseover'=>'muestraImgCentro("lengua")', 'onmouseout'=>'ocultaImgCentro("lengua")'])}}
 		</a>
 		{{HTML::image('imagenes/mediateca/tsecundaria/iconoCentral/formacionCivicaCentro.png','Telesecundaria central tecnologia',['class'=>'imgPrimeroCentral', 'id'=>'formacionCivicaCentro'])}}
