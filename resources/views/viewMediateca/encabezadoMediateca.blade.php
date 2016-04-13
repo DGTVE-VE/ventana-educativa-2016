@@ -39,7 +39,7 @@
 <nav id="navegacionMediateca" class="navbar navbar-default navbar-fixed-top lo menuVentana" role="navigation">
     <div class="container-fluid">
         <div class="row">
-            <div class="col-md-2">
+            <div class="col-md-4">
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                         <span class="icon-bar"></span>
@@ -65,8 +65,17 @@
                     </li>
                 </ul>
             </div>-->
-            <!--<div class="col-md-2"></div>-->
-            <div class="col-md-10">
+            <div class="col-md-2 text-center">
+			<a href="http://www.gob.mx/sep" target="_blank">
+				{{ HTML::image('imagenes/mediateca/encabezado/sepcolor.png','Icono Apps')}}
+			</a>
+			</div>
+            <div class="col-md-2 text-center">
+			<a href="http://www.televisioneducativa.gob.mx" target="_blank">
+				{{ HTML::image('imagenes/mediateca/encabezado/tvecolor.png','Icono Apps')}}
+			</a>
+			</div>
+            <div class="col-md-4">
                 <ul class="nav navbar-nav navbar-right collapse navbar-collapse collapseBarra">
                     <li class="dropdown col-md-6">
                         <div class="dropdown-toggle" data-toggle="dropdown">
@@ -305,11 +314,27 @@
 </script>
 
 	<?php
+		function seleccionaGrado($grado){
+			switch($grado){
+				case '1':	$grado = 'primergrado';	break;
+				case '2':	$grado = 'segundogrado';	break;
+				case '3':	$grado = 'tercergrado';	break;
+				case 'I':	$grado = 'semestreI';	break;
+				case 'II':	$grado = 'semestreII';	break;
+				case 'III':	$grado = 'semestreIII';	break;
+				case 'IV':	$grado = 'semestreIV';	break;
+				case 'V':	$grado = 'semestreV';	break;
+				case 'VI':	$grado = 'semestreVI';	break;
+				case 'VI':	$grado = 'componente';	break;
+			}
+			return $grado;
+		}
 		function generaBreadCrumbs(){
 			$uri = $_SERVER['REQUEST_URI'];
 			$uriActual = explode('/',$uri);
 			$elemsURI= count($uriActual);
 			$j=$elemsURI-1;
+			$termina=false;
 			while($uriActual[$j]!='educamedia'){
 				$j--;
 			}
@@ -317,9 +342,18 @@
 			$hrefCompleta = $uriActual[$j];
 			$j++;
 			for($i=$j; $i<$elemsURI;$i++){
-				$hrefCompleta = $hrefCompleta."/".$uriActual[$i];
-				echo ' / ';
-				echo '<a href="'?>{{url($hrefCompleta)}}<?php echo'">'.strtoupper($uriActual[$i]).'</a>';
+				if(strlen($uriActual[$i])<3){
+					$gradoURI = seleccionaGrado($uriActual[$i]);
+					$termina=true;
+				}
+				else{
+					$gradoURI = $uriActual[$i];
+				}
+				$hrefCompleta = $hrefCompleta."/".$gradoURI;
+				echo ' / <a href="'?>{{url($hrefCompleta)}}<?php echo'">'.strtoupper($gradoURI).'</a>';
+				if($termina==true){
+					break;
+				}
 			}
 		}
 	?>

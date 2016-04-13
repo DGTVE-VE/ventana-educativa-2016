@@ -7,7 +7,16 @@ Mediateca
 @endsection
 @section('cuerpoMediateca')
 <div class="container">
-    <div class="row transparenciaVideos">   
+    <div class="row">
+		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center textoTitulo" style="padding:40px;">
+		</div>
+		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center textoTitulo">
+			<?php
+				generaBreadCrumbs();
+			?>
+		</div>
+	</div>
+    <div class="row transparenciaVideos">
         <div id="custom_carousel" class="carousel slide" data-ride="carousel" data-interval="false">
             <div class="col-md-8">
                 <div class="carousel-inner">                    
