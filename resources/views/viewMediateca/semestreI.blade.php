@@ -53,7 +53,7 @@
 		?>
 	</div>
 	<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xs-offset-2 col-sm-offset-2 col-md-offset-2 col-lg-offset-2" style="padding:10%;">
-		<a href="{{('')}}">
+		<a href="{{(url('educamedia/telebachillerato/I/5/1'))}}">
 			{{HTML::image('imagenes/mediateca/tbachillerato/SemestreI/InformaticaI.png','Telebachillerato InformaticaI',['class'=>'InformaticaI', 'id'=>'InformaticaI', 'onmouseover'=>'muestraImgCentro("InformaticaI")', 'onmouseout'=>'ocultaImgCentro("InformaticaI")'])}}
 		</a>
 		<a href="{{('')}}">

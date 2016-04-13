@@ -72,7 +72,7 @@
 			{{HTML::image('imagenes/mediateca/tsecundaria/tercerGrado/matematicas.png','Telesecundaria MatematicasIII',['class'=>'MatematicasIII', 'id'=>'matematicas', 'onmouseover'=>'muestraImgCentro("matematicas")', 'onmouseout'=>'ocultaImgCentro("matematicas")'])}}
 		</a>
 		<a href="{{(url('educamedia/telesecundaria/3/25/1'))}}">
-			{{HTML::image('imagenes/mediateca/tsecundaria/tercerGrado/ciencias.png','Telesecundaria CienciasIII',['class'=>'CienciasIII', 'id'=>'ciencias', 'onmouseover'=>'muestraImgCentro("ciencias")', 'onmouseout'=>'ocultaImgCentro("ciencias")'])}}
+			{{HTML::image('imagenes/mediateca/tsecundaria/tercerGrado/quimica.png','Telesecundaria Ciencias III quimica',['class'=>'CienciasIII', 'id'=>'quimica', 'onmouseover'=>'muestraImgCentro("quimica")', 'onmouseout'=>'ocultaImgCentro("quimica")'])}}
 		</a>
 		<a href="{{(url('educamedia/telesecundaria/3/29/0'))}}">
 			{{HTML::image('imagenes/mediateca/tsecundaria/tercerGrado/lengua.png','Telesecundaria InglesIII',['class'=>'InglesIII', 'id'=>'lengua', 'onmouseover'=>'muestraImgCentro("lengua")', 'onmouseout'=>'ocultaImgCentro("lengua")'])}}
@@ -81,7 +81,7 @@
 		{{HTML::image('imagenes/mediateca/tsecundaria/iconoCentral/historiaCentro.png','Telesecundaria central geografia',['class'=>'imgPrimeroCentral', 'id'=>'historiaCentro'])}}
 		{{HTML::image('imagenes/mediateca/tsecundaria/iconoCentral/espanolCentro.png','Telesecundaria central espanol',['class'=>'imgPrimeroCentral', 'id'=>'espanolCentro'])}}
 		{{HTML::image('imagenes/mediateca/tsecundaria/iconoCentral/matematicasCentro.png','Telesecundaria central matematicas',['class'=>'imgPrimeroCentral', 'id'=>'matematicasCentro'])}}
-		{{HTML::image('imagenes/mediateca/tsecundaria/iconoCentral/cienciasCentro.png','Telesecundaria central ciencias',['class'=>'imgPrimeroCentral', 'id'=>'cienciasCentro'])}}
+		{{HTML::image('imagenes/mediateca/tsecundaria/iconoCentral/quimicaCentro.png','Telesecundaria central quimica',['class'=>'imgPrimeroCentral', 'id'=>'quimicaCentro'])}}
 		{{HTML::image('imagenes/mediateca/tsecundaria/iconoCentral/lenguaCentro.png','Telesecundaria central lengua',['class'=>'imgPrimeroCentral', 'id'=>'lenguaCentro'])}}
 	</div>
 	@include('viewMediateca.barraSociales')
