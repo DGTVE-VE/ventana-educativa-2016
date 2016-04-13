@@ -1,5 +1,5 @@
 @section('titleMediateca')
-    Mediateca
+    Educamedia
 @stop
 @extends('indexMediateca')
 @section('menuMediateca')
@@ -7,11 +7,11 @@
 @endsection
 @section('cuerpoMediateca')
 	<style>
-		.textoTitulo{
+		/*.textoTitulo{
 			color: black;
 			font-family:'Ubuntu';
 			font-size:2em;
-		}
+		}*/
 		.telesecundaria{
 			position: absolute; top:10%; left:65%; width:70%; height: 90%; z-index:1;
 		}
@@ -54,10 +54,10 @@
 		?>
 	</div>
 	<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 bajaFila" style="padding:10%;">
-		<a href="{{url('mediateca/telesecundaria')}}">
+		<a href="{{url('educamedia/telesecundaria')}}">
 			{{ HTML::image('imagenes/mediateca/Inicio/telesec.png','Telesecundaria',['class'=>'telesecundaria', 'id'=>'telesec', 'onmouseover'=>'muestraImgCentral("telesec")', 'onmouseout'=>'ocultaImgCentral("telesec")'])}}
 		</a>
-		<a href="{{url('mediateca/telebachillerato')}}">
+		<a href="{{url('educamedia/telebachillerato')}}">
 			{{HTML::image('imagenes/mediateca/Inicio/telebach.png','Telebachillerato',['class'=>'telebachillerato', 'id'=>'telebach', 'onmouseover'=>'muestraImgCentral("telebach")', 'onmouseout'=>'ocultaImgCentral("telebach")'])}}
 		</a>
 		{{HTML::image('imagenes/mediateca/Inicio/TelebachilleratoCentro.png','Telebachillerato Central',['class'=>'telebachilleratoCentro', 'id'=>'telebachCentro'])}}

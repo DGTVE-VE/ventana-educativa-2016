@@ -7,11 +7,6 @@
 @endsection
 @section('cuerpoMediateca')
 	<style>
-		.textoTitulo{
-			color: black;
-			font-family:'Ubuntu';
-			font-size:2em;
-		}
 		.bajaFila{
 			position:relative; top:80px; z-index:10;
 		}
@@ -74,33 +69,33 @@
 	</div>
 	<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xs-offset-2 col-sm-offset-2 col-md-offset-2 col-lg-offset-2" style="padding:10%;">
 		<map name="mapaartes1o" id="mapaartes1o">
-			<area alt="" title=""  href="{{(url('mediateca/telesecundaria/1/1/1'))}}" shape="poly" coords="150,314,140,264,58,182,2,66,180,2,222,64,214,96,312,140" onmouseover="muestraImgCentro('artes')" onmouseout="ocultaImgCentro('artes')"/>
+			<area alt="" title=""  href="{{(url('educamedia/telesecundaria/1/1/1'))}}" shape="poly" coords="150,314,140,264,58,182,2,66,180,2,222,64,214,96,312,140" onmouseover="muestraImgCentro('artes')" onmouseout="ocultaImgCentro('artes')"/>
 		</map>
                 <!--<a href="{{(url('mediateca/telesecundaria/1/1/1'))}}">-->
 		        {{HTML::image('imagenes/mediateca/tsecundaria/primerGrado/artes.png','Telesecundaria ArtesI',['class'=>'ArtesI', 'id'=>'artes', 'usemap'=>'#mapaartes1o'])}}
                 <!--</a>-->
-		<a href="{{(url('mediateca/telesecundaria/1/11/1'))}}">
+		<a href="{{(url('educamedia/telesecundaria/1/11/1'))}}">
 			{{HTML::image('imagenes/mediateca/tsecundaria/primerGrado/orientacion.png','Telesecundaria OrientacionI',['class'=>'OrientacionI', 'id'=>'orientacion', 'onmouseover'=>'muestraImgCentro("orientacion")', 'onmouseout'=>'ocultaImgCentro("orientacion")'])}}
 		</a>
-		<a href="{{(url('mediateca/telesecundaria/1/8/1'))}}">
+		<a href="{{(url('educamedia/telesecundaria/1/8/1'))}}">
 			{{HTML::image('imagenes/mediateca/tsecundaria/primerGrado/geografia.png','Telesecundaria GeografiaI',['class'=>'GeografiaI', 'id'=>'geografia', 'onmouseover'=>'muestraImgCentro("geografia")', 'onmouseout'=>'ocultaImgCentro("geografia")'])}}
 		</a>
-		<a href="{{(url('mediateca/telesecundaria/1/7/1'))}}">
+		<a href="{{(url('educamedia/telesecundaria/1/7/1'))}}">
 			{{HTML::image('imagenes/mediateca/tsecundaria/primerGrado/espanol.png','Telesecundaria EspanolI',['class'=>'EspanolI', 'id'=>'espanol', 'onmouseover'=>'muestraImgCentro("espanol")', 'onmouseout'=>'ocultaImgCentro("espanol")'])}}
 		</a>
-		<a href="{{(url('mediateca/telesecundaria/1/10/1'))}}">
+		<a href="{{(url('educamedia/telesecundaria/1/10/1'))}}">
 			{{HTML::image('imagenes/mediateca/tsecundaria/primerGrado/matematicas.png','Telesecundaria MatematicasI',['class'=>'MatematicasI', 'id'=>'matematicas', 'onmouseover'=>'muestraImgCentro("matematicas")', 'onmouseout'=>'ocultaImgCentro("matematicas")'])}}
 		</a>
-		<a href="{{(url('mediateca/telesecundaria/1/5/1'))}}">
+		<a href="{{(url('educamedia/telesecundaria/1/5/1'))}}">
 			{{HTML::image('imagenes/mediateca/tsecundaria/primerGrado/ciencias.png','Telesecundaria CienciasI',['class'=>'CienciasI', 'id'=>'ciencias', 'onmouseover'=>'muestraImgCentro("ciencias")', 'onmouseout'=>'ocultaImgCentro("ciencias")'])}}
 		</a>
-		<a href="{{(url('mediateca/telesecundaria/1/9/0'))}}">
+		<a href="{{(url('educamedia/telesecundaria/1/9/0'))}}">
 			{{HTML::image('imagenes/mediateca/tsecundaria/primerGrado/lengua.png','Telesecundaria lengua',['class'=>'LenguaI', 'id'=>'lengua', 'onmouseover'=>'muestraImgCentro("lengua")', 'onmouseout'=>'ocultaImgCentro("lengua")'])}}
 		</a>
-		<a href="{{(url('mediateca/telesecundaria/1/6/1'))}}">
+		<a href="{{(url('educamedia/telesecundaria/1/6/1'))}}">
 			{{HTML::image('imagenes/mediateca/tsecundaria/primerGrado/educacionFisica.png','Telesecundaria EducacionFisicaI',['class'=>'EducacionFisicaI', 'id'=>'educacionFisica', 'onmouseover'=>'muestraImgCentro("educacionFisica")', 'onmouseout'=>'ocultaImgCentro("educacionFisica")'])}}
 		</a>
-		<a href="{{(url('mediateca/telesecundaria/1/12/1'))}}">
+		<a href="{{(url('educamedia/telesecundaria/1/12/1'))}}">
 			{{HTML::image('imagenes/mediateca/tsecundaria/primerGrado/tecnologia.png','Telesecundaria TecnologiaI',['class'=>'TecnologiaI', 'id'=>'tecnologia', 'onmouseover'=>'muestraImgCentro("tecnologia")', 'onmouseout'=>'ocultaImgCentro("tecnologia")'])}}
 		</a>
 		{{HTML::image('imagenes/mediateca/tsecundaria/iconoCentral/artesCentro.png','Telesecundaria central artes',['class'=>'imgPrimeroCentral', 'id'=>'artesCentro'])}}

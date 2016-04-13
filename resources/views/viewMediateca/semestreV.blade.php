@@ -1,5 +1,5 @@
 @section('titleMediateca')
-    Mediateca
+    Educamedia
 @stop
 @extends('indexMediateca')
 @section('menuMediateca')
@@ -7,11 +7,6 @@
 @endsection
 @section('cuerpoMediateca')
 	<style>
-		.textoTitulo{
-			color: black;
-			font-family:'Ubuntu';
-			font-size:2em;
-		}
 		.Geografia{
 			position: absolute; top:9%; left:65%; width:70%; height: 95%; z-index:1;
 		}

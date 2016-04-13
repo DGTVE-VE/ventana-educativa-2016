@@ -1,5 +1,5 @@
 @section('titleMediateca')
-    Mediateca
+    Educamedia
 @stop
 @extends('indexMediateca')
 @section('menuMediateca')
@@ -8,11 +8,6 @@
 @section('cuerpoMediateca')
     
 	<style>
-		.textoTitulo{
-			color: black;
-			font-family:'Ubuntu';
-			font-size:2em;
-		}
 		.formaPropedeutica{
 			position: absolute; top:25%; left:94%; width:32%; height: 80%;
 		}
@@ -59,29 +54,29 @@
 		?>
 	</div>
 	<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6" style="padding:10%;">
-		<a href="{{url('mediateca/telebachillerato/componente')}}">
+		<a href="{{url('educamedia/telebachillerato/componente')}}">
 			{{HTML::image('imagenes/mediateca/tbachillerato/Inicio/formaPropedeutica.png','Telebachillerato',['class'=>'formaPropedeutica', 'id'=>'formaPropedeutica', 'onmouseover'=>'muestraImgCentro("formaPropedeutica")', 'onmouseout'=>'ocultaImgCentro("formaPropedeutica")'])}}
 		</a>
-		<a href="{{url('mediateca/telebachillerato/semestreI')}}">
+		<a href="{{url('educamedia/telebachillerato/semestreI')}}">
 			{{HTML::image('imagenes/mediateca/tbachillerato/Inicio/semestreI.png','Telebachillerato',['class'=>'bachSemI', 'id'=>'semestreI', 'onmouseover'=>'muestraImgCentro("semestreI")', 'onmouseout'=>'ocultaImgCentro("semestreI")'])}}
 		</a>
-		<a href="{{url('mediateca/telebachillerato/semestreVI')}}">
+		<a href="{{url('educamedia/telebachillerato/semestreVI')}}">
 			{{HTML::image('imagenes/mediateca/tbachillerato/Inicio/semestreVI.png','Telebachillerato',['class'=>'bachSemVI', 'id'=>'semestreVI', 'onmouseover'=>'muestraImgCentro("semestreVI")', 'onmouseout'=>'ocultaImgCentro("semestreVI")'])}}
 		</a>
 	</div>
 	<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 	</div>
 	<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6" style="padding:10%;">
-		<a href="{{url('mediateca/telebachillerato/semestreII')}}">
+		<a href="{{url('educamedia/telebachillerato/semestreII')}}">
 			{{HTML::image('imagenes/mediateca/tbachillerato/Inicio/semestreII.png','Telebachillerato',['class'=>'bachSemII', 'id'=>'semestreII', 'onmouseover'=>'muestraImgCentro("semestreII")', 'onmouseout'=>'ocultaImgCentro("semestreII")'])}}
 		</a>
-		<a href="{{url('mediateca/telebachillerato/semestreV')}}">
+		<a href="{{url('educamedia/telebachillerato/semestreV')}}">
 			{{HTML::image('imagenes/mediateca/tbachillerato/Inicio/semestreV.png','Telebachillerato',['class'=>'bachSemV', 'id'=>'semestreV', 'onmouseover'=>'muestraImgCentro("semestreV")', 'onmouseout'=>'ocultaImgCentro("semestreV")'])}}
 		</a>
-		<a href="{{url('mediateca/telebachillerato/semestreIV')}}">
+		<a href="{{url('educamedia/telebachillerato/semestreIV')}}">
 			{{HTML::image('imagenes/mediateca/tbachillerato/Inicio/semestreIV.png','Telebachillerato',['class'=>'bachSemIV', 'id'=>'semestreIV', 'onmouseover'=>'muestraImgCentro("semestreIV")', 'onmouseout'=>'ocultaImgCentro("semestreIV")'])}}
 		</a>
-		<a href="{{url('mediateca/telebachillerato/semestreIII')}}">
+		<a href="{{url('educamedia/telebachillerato/semestreIII')}}">
 			{{HTML::image('imagenes/mediateca/tbachillerato/Inicio/semestreIII.png','Telebachillerato',['class'=>'bachSemIII', 'id'=>'semestreIII', 'onmouseover'=>'muestraImgCentro("semestreIII")', 'onmouseout'=>'ocultaImgCentro("semestreIII")'])}}
 		</a>
 	</div>
