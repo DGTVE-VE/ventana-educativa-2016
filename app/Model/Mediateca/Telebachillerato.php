@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Mediateca;
+namespace App\Model\Mediateca;
 
 use Illuminate\Database\Eloquent\Model;
 

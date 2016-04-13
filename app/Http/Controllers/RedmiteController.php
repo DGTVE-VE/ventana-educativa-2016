@@ -6,12 +6,15 @@ use Mail;
 use Illuminate\Http\Request;
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
+use App\Model\Red\Colaborador;
+use App\User;
 
 class RedmiteController extends Controller {
 
     public function redmite() {
         return view('viewRed/redmite');
     }
+
     public function publicaciones() {
         return view('viewRed/paginapublicaciones');
     }
@@ -84,6 +87,23 @@ class RedmiteController extends Controller {
             $m->to($correo)->subject('Activación de correo!');
         });
         return redirect('redmite/correoValidado');
+    }
+
+    public function integrantes() {
+        return view('viewRed/adminRed/frmintegrantes');
+    }
+
+    public function buscaIntegrantes(Requests $request) {
+        $email = filter_input(INPUT_POST, 'email');
+//         print $email;
+        $integrante = User::where('email', $email)->first();
+        if (is_null($integrante)) {
+           return redirect('redmite/admin/integrantes')->with('message', 'Usuario No Registrado');
+        } else {
+            $request->session()->flash('status', 'Captura los demás datos para completar el registro!');
+            return redirect('redmite/admin/integrantes')->with($integrante);
+        }
+//         print $integrante;
     }
 
 }
