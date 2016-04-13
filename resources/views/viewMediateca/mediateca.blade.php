@@ -7,11 +7,6 @@
 @endsection
 @section('cuerpoMediateca')
 	<style>
-		/*.textoTitulo{
-			color: black;
-			font-family:'Ubuntu';
-			font-size:2em;
-		}*/
 		.telesecundaria{
 			position: absolute; top:10%; left:65%; width:70%; height: 90%; z-index:1;
 		}
