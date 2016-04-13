@@ -1,7 +1,8 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use Illuminate\Support\Facades\Redirect;
+use Illuminate\Support\Facades\Session;
 use Mail;
 use Illuminate\Http\Request;
 use App\Http\Requests;
@@ -90,20 +91,28 @@ class RedmiteController extends Controller {
     }
 
     public function integrantes() {
-        return view('viewRed/adminRed/frmintegrantes');
+        return view('viewRed/adminRed/frmregistroIntegrante');
     }
 
-    public function buscaIntegrantes(Requests $request) {
+    public function buscaIntegrantes() {
         $email = filter_input(INPUT_POST, 'email');
-//         print $email;
-        $integrante = User::where('email', $email)->first();
+        $integrante = User::where('email', $email)->get();
         if (is_null($integrante)) {
-           return redirect('redmite/admin/integrantes')->with('message', 'Usuario No Registrado');
+            return redirect::to('redmite/admin/integrantes')->with('message', 'Usuario No Registrado');
         } else {
-            $request->session()->flash('status', 'Captura los demás datos para completar el registro!');
-            return redirect('redmite/admin/integrantes')->with($integrante);
-        }
-//         print $integrante;
+            return view('viewRed/adminRed/frmregistroIntegrante', compact($integrante))->with('message', 'Complete el siguiente registro para ser parte de la RedMite');
+        }        
     }
-
+    public function guardaIntegrantes(Request $request, $email,$id,$pais,$nombre,$url_foto) {
+        $colaborador = new Colaborador();
+        /*user*/
+        
+        
+        /*nuevos campos integrante*/
+        $puesto = filter_input(INPUT_POST, 'puesto');
+        $area = filter_input(INPUT_POST, 'area');
+        $dependencia = filter_input(INPUT_POST, 'dependencia');
+        $resena = filter_input(INPUT_POST, 'resena');
+        $colaborador->save();
+    }
 }
