@@ -325,7 +325,7 @@
 				case 'IV':	$grado = 'semestreIV';	break;
 				case 'V':	$grado = 'semestreV';	break;
 				case 'VI':	$grado = 'semestreVI';	break;
-				case 'VI':	$grado = 'componente';	break;
+				case 'VII':	$grado = 'componente';	break;
 			}
 			return $grado;
 		}
