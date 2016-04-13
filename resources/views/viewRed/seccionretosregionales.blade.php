@@ -153,10 +153,8 @@
 
     <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4" style="padding-right:8%;">
         <h3>Redes Sociales</h3>
-        <!--<img class="img-responsive img-rounded" style="width:150px; height:48px;" src="imagenes/red/Logotipos/facebook.png" alt="..."/>-->
         {{ HTML::image('imagenes/red/Logotipos/facebook.png','facebook', array('class'=>'img-responsive img-rounded', 'style'=>'width:150px; height:48px;'))}}
         <!--<div>Contenido Facebook.</div>-->
-        <!--<div><div class="fb-page" data-href="https://www.facebook.com/Red-Mesoamericana-de-Investigaci&#xf3;n-y-Tecnolog&#xed;a-Educat&#xed;va-930360840393101/" data-tabs="timeline" data-width="450" data-height="230" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"></div></div>-->      
         <div><div class="fb-page" data-href="{{url('https://www.facebook.com/Red-Mesoamericana-de-Investigaci&#xf3;n-y-Tecnolog&#xed;a-Educat&#xed;va-930360840393101/')}}" data-tabs="timeline" data-width="450" data-height="230" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"></div></div>      
         <!--<div>Contenido Twitter.</div>-->
         <br>
