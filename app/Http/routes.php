@@ -14,36 +14,9 @@ Route::get('user/existEmail/{email}', ['as' => 'user.existEmail', 'uses' => 'Api
 Route::get('user/existNick/{nickname}', ['as' => 'user.existNick', 'uses' => 'Api\User@existNick']);
 Route::get('login', 'SessionsController@create');
 Route::get('logout', 'SessionsController@destroy');
-
-
-
-
 /* * ************************ Autenticación ************************ */
 
-/* * **************************REDMITE********************** */
-/* Vistas principales REDMITE */
-//Route::get('/','RedmiteController@redmite');
-Route::get('redmite', 'RedmiteController@redmite');
 
-/* Vistas de páginas secundarias REDMITE */
-Route::get('redmite/publicaciones', 'RedmiteController@publicaciones');
-Route::get('redmite/quienesSomos', 'RedmiteController@quienesSomos');
-Route::get('redmite/areastematicas', 'RedmiteController@areastematicas');
-Route::get('redmite/proyectos', 'RedmiteController@proyectos');
-Route::get('redmite/contacto', 'RedmiteController@contacto');
-Route::get('redmite/correoValidado', 'RedmiteController@correoValidado');
-Route::get('redmite/contacto', 'RedmiteController@contacto');
-Route::get('correoValidado', 'RedmiteController@correoValidado');
-
-
-/* Vistas de administración Formularios REDMITE */
-Route::get('redmite/usuarios', 'RedmiteController@usuarios');
-Route::post('redmite/guardaCorreoNewsLetter', 'RedmiteController@guardaCorreoNewsLetter');
-Route::get('redmite/activaCorreo/{correo}/{hash}', 'RedmiteController@activaCorreoNews');
-Route::post('redmite/guardaContacto', 'RedmiteController@guardaContacto');
-
-
-/* * **************************REDMITE********************** */
 
 
 
@@ -74,7 +47,7 @@ Route::group(['middleware' => 'web'], function () {
     Route::get('presentacion', 'VentanaController@presentacion');
     Route::post('registraUsuario', 'VentanaController@registraUsuario');
     Route::get('correoEnviado', 'VentanaController@correoEnviado');
-    
+
     /* REDMITE */
     Route::resource('redmite/blog', 'RedBlogController');
     Route::post('redmite/blog/comment', 'RedBlogController@comment');
@@ -82,8 +55,8 @@ Route::group(['middleware' => 'web'], function () {
 
 //Route::get ('testSession','SessionsController@test');
     /*     * **************************HOME VENTANA********************** */
-    
-    
+
+
 
     /*     * **************************educamedia********************** */
     Route::get('educamedia', 'MediatecaController@mediateca');
@@ -93,6 +66,7 @@ Route::group(['middleware' => 'web'], function () {
     /* ejemplo de uso para youtube */
     Route::get('educamedia/{nivel}/{grado}/{materia}/{bloque}', 'MediatecaController@getVideos');
 //Route::get('mediateca/telesecundaria/1/11', 'MediatecaController@getVideos');
+
     Route::get('educamedia/telesecundaria/segundogrado', 'MediatecaController@segundogrado');
     Route::get('educamedia/telesecundaria/tercergrado', 'MediatecaController@tercergrado');
     Route::get('educamedia/telebachillerato/semestreI', 'MediatecaController@semestreI');
@@ -106,5 +80,31 @@ Route::group(['middleware' => 'web'], function () {
     Route::get('educamedia/test', 'MediatecaController@test');
     Route::get('educamedia/getVideosTelesec', 'MediatecaController@getVideosTelesec');
     Route::get('store','MediatecaController@store');
+
     /*     * **************************MEDIATECA********************** */
+
+    /*     * **************************REDMITE********************** */
+    /* Vistas principales REDMITE */
+//Route::get('/','RedmiteController@redmite');
+    Route::get('redmite', 'RedmiteController@redmite');
+
+    /* Vistas de páginas secundarias REDMITE */
+    Route::get('redmite/publicaciones', 'RedmiteController@publicaciones');
+    Route::get('redmite/quienesSomos', 'RedmiteController@quienesSomos');
+    Route::get('redmite/areastematicas', 'RedmiteController@areastematicas');
+    Route::get('redmite/proyectos', 'RedmiteController@proyectos');
+    Route::get('redmite/contacto', 'RedmiteController@contacto');
+    Route::get('redmite/correoValidado', 'RedmiteController@correoValidado');
+    Route::get('redmite/contacto', 'RedmiteController@contacto');
+    Route::get('correoValidado', 'RedmiteController@correoValidado');
+
+
+    /* Vistas de administración Formularios REDMITE */
+    Route::get('redmite/usuarios', 'RedmiteController@usuarios');
+    Route::post('redmite/guardaCorreoNewsLetter', 'RedmiteController@guardaCorreoNewsLetter');
+    Route::get('redmite/activaCorreo/{correo}/{hash}', 'RedmiteController@activaCorreoNews');
+    Route::post('redmite/guardaContacto', 'RedmiteController@guardaContacto');
+
+
+    /*     * **************************REDMITE********************** */
 });
