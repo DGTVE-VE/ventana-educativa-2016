@@ -39,7 +39,7 @@
 <nav id="navegacionMediateca" class="navbar navbar-default navbar-fixed-top lo menuVentana" role="navigation">
     <div class="container-fluid">
         <div class="row">
-            <div class="col-md-2">
+            <div class="col-md-4">
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                         <span class="icon-bar"></span>
@@ -65,8 +65,17 @@
                     </li>
                 </ul>
             </div>-->
-            <!--<div class="col-md-2"></div>-->
-            <div class="col-md-10">
+            <div class="col-md-2 text-center">
+			<a href="http://www.gob.mx/sep" target="_blank">
+				{{ HTML::image('imagenes/mediateca/encabezado/sepcolor.png','Icono Apps')}}
+			</a>
+			</div>
+            <div class="col-md-2 text-center">
+			<a href="http://www.televisioneducativa.gob.mx" target="_blank">
+				{{ HTML::image('imagenes/mediateca/encabezado/tvecolor.png','Icono Apps')}}
+			</a>
+			</div>
+            <div class="col-md-4">
                 <ul class="nav navbar-nav navbar-right collapse navbar-collapse collapseBarra">
                     <li class="dropdown col-md-6">
                         <div class="dropdown-toggle" data-toggle="dropdown">
