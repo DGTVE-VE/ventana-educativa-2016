@@ -87,7 +87,7 @@
 			{{HTML::image('imagenes/mediateca/tsecundaria/segundoGrado/matematicas.png','Telesecundaria MatematicasII',['class'=>'MatematicasII', 'id'=>'matematicas', 'onmouseover'=>'muestraImgCentro("matematicas")', 'onmouseout'=>'ocultaImgCentro("matematicas")'])}}
 		</a>
 		<a href="{{(url('educamedia/telesecundaria/2/18/1'))}}">
-			{{HTML::image('imagenes/mediateca/tsecundaria/segundoGrado/ciencias.png','Telesecundaria CienciasII',['class'=>'CienciasII', 'id'=>'ciencias', 'onmouseover'=>'muestraImgCentro("ciencias")', 'onmouseout'=>'ocultaImgCentro("ciencias")'])}}
+			{{HTML::image('imagenes/mediateca/tsecundaria/segundoGrado/fisica.png','Telesecundaria Ciencias II fisica',['class'=>'CienciasII', 'id'=>'fisica', 'onmouseover'=>'muestraImgCentro("fisica")', 'onmouseout'=>'ocultaImgCentro("fisica")'])}}
 		</a>
 		<a href="{{(url('educamedia/telesecundaria/2/22/0'))}}">
 			{{HTML::image('imagenes/mediateca/tsecundaria/segundoGrado/lengua.png','Telesecundaria InglesII',['class'=>'InglesII', 'id'=>'lengua', 'onmouseover'=>'muestraImgCentro("lengua")', 'onmouseout'=>'ocultaImgCentro("lengua")'])}}
@@ -101,7 +101,7 @@
 		{{HTML::image('imagenes/mediateca/tsecundaria/iconoCentral/historiaCentro.png','Telesecundaria central geografia',['class'=>'imgPrimeroCentral', 'id'=>'historiaCentro'])}}
 		{{HTML::image('imagenes/mediateca/tsecundaria/iconoCentral/espanolCentro.png','Telesecundaria central espanol',['class'=>'imgPrimeroCentral', 'id'=>'espanolCentro'])}}
 		{{HTML::image('imagenes/mediateca/tsecundaria/iconoCentral/matematicasCentro.png','Telesecundaria central matematicas',['class'=>'imgPrimeroCentral', 'id'=>'matematicasCentro'])}}
-		{{HTML::image('imagenes/mediateca/tsecundaria/iconoCentral/cienciasCentro.png','Telesecundaria central ciencias',['class'=>'imgPrimeroCentral', 'id'=>'cienciasCentro'])}}
+		{{HTML::image('imagenes/mediateca/tsecundaria/iconoCentral/fisicaCentro.png','Telesecundaria central fisica',['class'=>'imgPrimeroCentral', 'id'=>'fisicaCentro'])}}
 		{{HTML::image('imagenes/mediateca/tsecundaria/iconoCentral/lenguaCentro.png','Telesecundaria central lengua',['class'=>'imgPrimeroCentral', 'id'=>'lenguaCentro'])}}
 		{{HTML::image('imagenes/mediateca/tsecundaria/iconoCentral/educacionFisicaCentro.png','Telesecundaria central educacionFisica',['class'=>'imgPrimeroCentral', 'id'=>'educacionFisicaCentro'])}}
 	</div>
