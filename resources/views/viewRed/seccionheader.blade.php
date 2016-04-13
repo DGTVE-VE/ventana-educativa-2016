@@ -114,6 +114,7 @@
                 </li>
                 <li class="text-uppercase fondoMenu"><a href="{{url('redmite/publicaciones')}}">PUBLICACIONES</a></li>
                 <li class="text-uppercase fondoMenu"><a href="{{url('redmite/contacto')}}">CONTACTO</a></li>
+				<!--li class="text-uppercase fondoMenu"><a href="{{url('redmite/blog')}}">BLOG</a></li-->
             </ul>
         </div>
     </div>
