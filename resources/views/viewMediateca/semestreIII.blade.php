@@ -50,22 +50,22 @@
 		?>
 	</div>
 	<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xs-offset-2 col-sm-offset-2 col-md-offset-2 col-lg-offset-2" style="padding:10%;">
-		<a href="{{('')}}">
+		<a href="{{(url('educamedia/telebachillerato/III/20/1'))}}">
 			{{HTML::image('imagenes/mediateca/tbachillerato/SemestreIII/BiologiaI.png','Telebachillerato BiologiaI',['class'=>'BiologiaI', 'id'=>'BiologiaI', 'onmouseover'=>'muestraImgCentro("BiologiaI")', 'onmouseout'=>'ocultaImgCentro("BiologiaI")'])}}
 		</a>
-		<a href="{{('')}}">
+		<a href="{{(url('educamedia/telebachillerato/III/18/1'))}}">
 			{{HTML::image('imagenes/mediateca/tbachillerato/SemestreIII/LiteraturaI.png','Telebachillerato LiteraturaI',['class'=>'LiteraturaI', 'id'=>'LiteraturaI', 'onmouseover'=>'muestraImgCentro("LiteraturaI")', 'onmouseout'=>'ocultaImgCentro("LiteraturaI")'])}}
 		</a>
-		<a href="{{('')}}">
+		<a href="{{(url('educamedia/telebachillerato/III/17/1'))}}">
 			{{HTML::image('imagenes/mediateca/tbachillerato/SemestreIII/HistoriaMexicoII.png','Telebachillerato HistoriaMexicoII',['class'=>'HistoriaMexicoII', 'id'=>'HistoriaMexicoII', 'onmouseover'=>'muestraImgCentro("HistoriaMexicoII")', 'onmouseout'=>'ocultaImgCentro("HistoriaMexicoII")'])}}
 		</a>
-		<a href="{{('')}}">
+		<a href="{{(url('educamedia/telebachillerato/III/16/1'))}}">
 			{{HTML::image('imagenes/mediateca/tbachillerato/SemestreIII/FisicaI.png','Telebachillerato FisicaI',['class'=>'FisicaI', 'id'=>'FisicaI', 'onmouseover'=>'muestraImgCentro("FisicaI")', 'onmouseout'=>'ocultaImgCentro("FisicaI")'])}}
 		</a>
-		<a href="{{('')}}">
+		<a href="{{(url('educamedia/telebachillerato/III/15/1'))}}">
 			{{HTML::image('imagenes/mediateca/tbachillerato/SemestreIII/MatematicasIII.png','Telebachillerato MatematicasIII',['class'=>'MatematicasIII', 'id'=>'MatematicasIII', 'onmouseover'=>'muestraImgCentro("MatematicasIII")', 'onmouseout'=>'ocultaImgCentro("MatematicasIII")'])}}
 		</a>
-		<a href="{{('')}}">
+		<a href="{{(url('educamedia/telebachillerato/III/19/1'))}}">
 			{{HTML::image('imagenes/mediateca/tbachillerato/SemestreIII/LenguaAdicionalIII.png','Telebachillerato LenguaAdicionalIII ',['class'=>'LenguaAdicionalIII', 'id'=>'LenguaAdicionalIII', 'onmouseover'=>'muestraImgCentro("LenguaAdicionalIII")', 'onmouseout'=>'ocultaImgCentro("LenguaAdicionalIII")'])}}
 		</a>
 	</div>

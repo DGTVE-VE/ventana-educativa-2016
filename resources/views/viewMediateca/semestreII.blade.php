@@ -53,25 +53,25 @@
 		?>
 	</div>
 	<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xs-offset-2 col-sm-offset-2 col-md-offset-2 col-lg-offset-2" style="padding:10%;">
-		<a href="{{('')}}">
+		<a href="{{(url('educamedia/telebachillerato/II/12/1'))}}">
 			{{HTML::image('imagenes/mediateca/tbachillerato/SemestreII/InformaticaII.png','Telebachillerato InformaticaII',['class'=>'InformaticaII', 'id'=>'InformaticaII', 'onmouseover'=>'muestraImgCentro("InformaticaII")', 'onmouseout'=>'ocultaImgCentro("InformaticaII")'])}}
 		</a>
-		<a href="{{('')}}">
+		<a href="{{(url('educamedia/telebachillerato/II/11/1'))}}">
 			{{HTML::image('imagenes/mediateca/tbachillerato/SemestreII/TallerLecturaII.png','Telebachillerato TallerLecturaII',['class'=>'TallerLecturaII', 'id'=>'TallerLecturaII', 'onmouseover'=>'muestraImgCentro("TallerLecturaII")', 'onmouseout'=>'ocultaImgCentro("TallerLecturaII")'])}}
 		</a>
-		<a href="{{('')}}">
+		<a href="{{(url('educamedia/telebachillerato/II/10/1'))}}">
 			{{HTML::image('imagenes/mediateca/tbachillerato/SemestreII/HistoriaMexicoI.png','Telebachillerato HistoriaMexicoI',['class'=>'HistoriaMexicoI', 'id'=>'HistoriaMexicoI', 'onmouseover'=>'muestraImgCentro("HistoriaMexicoI")', 'onmouseout'=>'ocultaImgCentro("HistoriaMexicoI")'])}}
 		</a>
-		<a href="{{('')}}">
+		<a href="{{(url('educamedia/telebachillerato/II/14/1'))}}">
 			{{HTML::image('imagenes/mediateca/tbachillerato/SemestreII/EticaValoresII.png','Telebachillerato EticaValoresII',['class'=>'EticaValoresII', 'id'=>'EticaValoresII', 'onmouseover'=>'muestraImgCentro("EticaValoresII")', 'onmouseout'=>'ocultaImgCentro("EticaValoresII")'])}}
 		</a>
-		<a href="{{('')}}">
+		<a href="{{(url('educamedia/telebachillerato/II/8/1'))}}">
 			{{HTML::image('imagenes/mediateca/tbachillerato/SemestreII/MatematicasII.png','Telebachillerato MatematicasII',['class'=>'MatematicasII', 'id'=>'MatematicasII', 'onmouseover'=>'muestraImgCentro("MatematicasII")', 'onmouseout'=>'ocultaImgCentro("MatematicasII")'])}}
 		</a>
-		<a href="{{('')}}">
+		<a href="{{(url('educamedia/telebachillerato/II/13/1'))}}">
 			{{HTML::image('imagenes/mediateca/tbachillerato/SemestreII/LenguaAdicionalII.png','Telebachillerato LenguaAdicionalII',['class'=>'LenguaAdicionalII', 'id'=>'LenguaAdicionalII', 'onmouseover'=>'muestraImgCentro("LenguaAdicionalII")', 'onmouseout'=>'ocultaImgCentro("LenguaAdicionalII")'])}}
 		</a>
-		<a href="{{('')}}">
+		<a href="{{(url('educamedia/telebachillerato/II/9/1'))}}">
 			{{HTML::image('imagenes/mediateca/tbachillerato/SemestreII/QuimicaII.png','Telebachillerato QuimicaII',['class'=>'QuimicaII', 'id'=>'QuimicaII', 'onmouseover'=>'muestraImgCentro("QuimicaII")', 'onmouseout'=>'ocultaImgCentro("QuimicaII")'])}}
 		</a>
 	</div>

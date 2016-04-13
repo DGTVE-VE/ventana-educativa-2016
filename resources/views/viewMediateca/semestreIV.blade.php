@@ -50,22 +50,22 @@
 		?>
 	</div>
 	<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xs-offset-2 col-sm-offset-2 col-md-offset-2 col-lg-offset-2" style="padding:10%;">
-		<a href="{{('')}}">
+		<a href="{{(url('educamedia/telebachillerato/IV/22/1'))}}">
 			{{HTML::image('imagenes/mediateca/tbachillerato/SemestreIV/BiologiaII.png','Telebachillerato BiologiaII',['class'=>'BiologiaII', 'id'=>'BiologiaII', 'onmouseover'=>'muestraImgCentro("BiologiaII")', 'onmouseout'=>'ocultaImgCentro("BiologiaII")'])}}
 		</a>
-		<a href="{{('')}}">
+		<a href="{{(url('educamedia/telebachillerato/IV/25/1'))}}">
 			{{HTML::image('imagenes/mediateca/tbachillerato/SemestreIV/LiteraturaII.png','Telebachillerato LiteraturaII',['class'=>'LiteraturaII', 'id'=>'LiteraturaII', 'onmouseover'=>'muestraImgCentro("LiteraturaII")', 'onmouseout'=>'ocultaImgCentro("LiteraturaII")'])}}
 		</a>
-		<a href="{{('')}}">
+		<a href="{{(url('educamedia/telebachillerato/IV/24/1'))}}">
 			{{HTML::image('imagenes/mediateca/tbachillerato/SemestreIV/Estructura.png','Telebachillerato Estructura',['class'=>'Estructura', 'id'=>'Estructura', 'onmouseover'=>'muestraImgCentro("Estructura")', 'onmouseout'=>'ocultaImgCentro("Estructura")'])}}
 		</a>
-		<a href="{{('')}}">
+		<a href="{{(url('educamedia/telebachillerato/IV/23/1'))}}">
 			{{HTML::image('imagenes/mediateca/tbachillerato/SemestreIV/FisicaII.png','Telebachillerato FisicaII',['class'=>'FisicaII', 'id'=>'FisicaII', 'onmouseover'=>'muestraImgCentro("FisicaII")', 'onmouseout'=>'ocultaImgCentro("FisicaII")'])}}
 		</a>
-		<a href="{{('')}}">
+		<a href="{{(url('educamedia/telebachillerato/IV/21/1'))}}">
 			{{HTML::image('imagenes/mediateca/tbachillerato/SemestreIV/MatematicasIV.png','Telebachillerato MatematicasIV',['class'=>'MatematicasIV', 'id'=>'MatematicasIV', 'onmouseover'=>'muestraImgCentro("MatematicasIV")', 'onmouseout'=>'ocultaImgCentro("MatematicasIV")'])}}
 		</a>
-		<a href="{{('')}}">
+		<a href="{{(url('educamedia/telebachillerato/IV/26/1'))}}">
 			{{HTML::image('imagenes/mediateca/tbachillerato/SemestreIV/LenguaAdicionalIV.png','Telebachillerato LenguaAdicionalIV ',['class'=>'LenguaAdicionalIV', 'id'=>'LenguaAdicionalIV', 'onmouseover'=>'muestraImgCentro("LenguaAdicionalIV")', 'onmouseout'=>'ocultaImgCentro("LenguaAdicionalIV")'])}}
 		</a>
 	</div>
