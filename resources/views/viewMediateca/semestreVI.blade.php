@@ -8,13 +8,13 @@ Educamedia
 @section('cuerpoMediateca')
 <style>
     .Ecologia{
-        position:absolute; top:8%; left:20.6%; width:65%; height: 166%;
+        position:absolute; top:15.8%; left:22.2%; width:60%; height: 152%;
     }
     .Filosofia{
-        position: absolute; top:22.7%; left:57.4%; width:65%; height: 166%;
+        position: absolute; top:29%; left:56%; width:60%; height: 152%;
     }
     .Metodologia{
-        position:absolute; top:98%; left:32.8%; width:65.5%; height: 166%;
+        position:absolute; top:98.2%; left:33.5%; width:60%; height: 152%;
     }
     .bajaFila{
         position:relative; top:80px; z-index:10;

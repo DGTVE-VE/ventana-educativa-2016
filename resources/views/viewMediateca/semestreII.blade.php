@@ -11,25 +11,25 @@
 			position:relative; top:80px; z-index:10;
 		}
 		.InformaticaII{
-			position: absolute; top:48.7%; left:29.6%; width:32.5%; height: 80%;
+			position: absolute; top:53%; left:29%; width:30.5%; height: 75%;
 		}
 		.TallerLecturaII{
-			position: absolute; top:20%; left:49%; width:32%; height: 80%;
+			position: absolute; top:26%; left:47.3%; width:30%; height: 75%;
 		}
 		.HistoriaMexicoI{
-			position: absolute; top:34.5%; left:74.7%; width:32%; height: 80%;
+			position: absolute; top:39.5%; left:71.6%; width:30%; height: 75%;
 		}
 		.EticaValoresII{
-			position: absolute; top:96.7%; left:81.7%; width:32.5%; height: 80%;
+			position: absolute; top:98%; left:78.2%; width:30.5%; height: 75%;
 		}
 		.MatematicasII{
-			position: absolute; top:146.5%; left:71.7%; width:32%; height: 80%;
+			position: absolute; top:145%; left:68.8%; width:30%; height: 75%;
 		}
 		.LenguaAdicionalII{
-			position: absolute; top:153.5%; left:45%; width:32%; height: 80%;
+			position: absolute; top:152%; left:43.7%; width:30%; height: 75%;
 		}
 		.QuimicaII{
-			position: absolute; top:120.3%; left:28.6%; width:32%; height: 80%;
+			position: absolute; top:120.3%; left:28%; width:30.2%; height: 75%;
 		}
 	</style>
 	<script>

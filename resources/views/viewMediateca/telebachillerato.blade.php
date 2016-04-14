@@ -9,25 +9,25 @@
     
 	<style>
 		.formaPropedeutica{
-			position: absolute; top:25%; left:94%; width:32%; height: 80%;
+			position: absolute; top:25.5%; left:94.7%; width:30%; height: 79%;
 		}
 		.bachSemI{
-			position: absolute; top:29.3%; left:66%; width:32.5%; height: 80%;
+			position: absolute; top:29.5%; left:68.4%; width:30.5%; height: 79%;
 		}
 		.bachSemII{
-			position: absolute; top:-22%; left:55.4%; width:32%; height: 80%;
+			position: absolute; top:-23.4%; left:58.4%; width:30.5%; height: 79%;
 		}
 		.bachSemIII{
-			position: absolute; top:39.5%; left:61.8%; width:32%; height: 80%;
+			position: absolute; top:36.8%; left:64.5%; width:30%; height: 79%;
 		}
 		.bachSemVI{
-			position: absolute; top:63.7%; left:108.3%; width:32.5%; height: 80%;
+			position: absolute; top:63%; left:108%; width:30.5%; height: 79%;
 		}
 		.bachSemV{
-			position: absolute; top:30%; left:106.3%; width:32%; height: 80%;
+			position: absolute; top:28%; left:106.1%; width:30%; height: 79%;
 		}
 		.bachSemIV{
-			position: absolute; top:56.4%; left:86.1%; width:32%; height: 80%;
+			position: absolute; top:53.7%; left:87.3%; width:30%; height: 79%;
 		}
 		.bajaFila{
 			position:relative; top:80px; z-index:10;

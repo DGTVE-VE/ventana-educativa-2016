@@ -11,25 +11,25 @@
 			position:relative; top:80px; z-index:10;
 		}
 		.InformaticaI{
-			position: absolute; top:48.7%; left:29.6%; width:32.5%; height: 80%;
+			position: absolute; top:53.3%; left:29.1%; width:30.5%; height: 75%;
 		}
 		.TallerLectura{
-			position: absolute; top:20%; left:49%; width:32%; height: 80%;
+			position: absolute; top:26.3%; left:47.4%; width:30%; height: 75%;
 		}
 		.IntroCS{
-			position: absolute; top:34.5%; left:74.7%; width:32%; height: 80%;
+			position: absolute; top:39.8%; left:71.6%; width:30%; height: 75%;
 		}
 		.EticaValoresI{
-			position: absolute; top:96.7%; left:81.7%; width:32.5%; height: 80%;
+			position: absolute; top:98.4%; left:78.2%; width:30.5%; height: 75%;
 		}
 		.MatematicasI{
-			position: absolute; top:146.5%; left:71.7%; width:32%; height: 80%;
+			position: absolute; top:145%; left:68.9%; width:30%; height: 75%;
 		}
 		.LenguaAdicionalI{
-			position: absolute; top:153.5%; left:45%; width:32%; height: 80%;
+			position: absolute; top:151.8%; left:43.7%; width:30%; height: 75%;
 		}
 		.QuimicaI{
-			position: absolute; top:120.3%; left:28.6%; width:32%; height: 80%;
+			position: absolute; top:120.5%; left:28%; width:30.3%; height: 75%;
 		}
 	</style>
 	<script>

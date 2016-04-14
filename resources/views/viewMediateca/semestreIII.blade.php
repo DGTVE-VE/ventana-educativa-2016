@@ -11,22 +11,22 @@
 			position:relative; top:80px; z-index:10;
 		}
 		.BiologiaI{
-			position:absolute; top:95.5%; left:25.8%; width:36%; height: 88%;
+			position:absolute; top:95%; left:25%; width:34%; height: 87%;
 		}
 		.LiteraturaI{
-			position: absolute; top:30%; left:34%; width:36%; height: 88%;
+			position: absolute; top:30.1%; left:32.8%; width:34%; height: 87%;
 		}
 		.HistoriaMexicoII{
-			position:absolute; top:22.5%; left:64.6%; width:36%; height: 88%;
+			position:absolute; top:22.5%; left:61.8%; width:34%; height: 87%;
 		}
 		.FisicaI{
-			position:absolute; top:72.9%; left:79.8%; width:36%; height: 88%;
+			position:absolute; top:72.6%; left:76.1%; width:34%; height: 87%;
 		}
 		.MatematicasIII{
-			position: absolute; top:138.2%; left:71.5%; width:36%; height: 88%;
+			position: absolute; top:137.3%; left:68.3%; width:34%; height: 87%;
 		}
 		.LenguaAdicionalIII{
-			position:absolute; top:145.6%; left:40.7%; width:36%; height: 88%;
+			position:absolute; top:144.7%; left:39.2%; width:34%; height: 87%;
 		}
 	</style>
 	<script>

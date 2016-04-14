@@ -11,28 +11,28 @@ Educamedia
         position:relative; top:80px; z-index:10;
     }
     .CienciasSaludII{
-        position:absolute; top:47%; left:27%; width:28%; height: 69%;
+        position:absolute; top:51.1%; left:30.7%; width:26%; height: 66%;
     }
     .CienciasSaludI{
-        position:absolute; top:24.7%; left:45.7%; width:28%; height: 69%;
+        position:absolute; top:29.5%; left:48.2%; width:26%; height: 66%;
     }
     .CienciasComunicacionI{
-        position: absolute; top:36.3%; left:68.9%; width:28%; height: 69%;
+        position: absolute; top:40.7%; left:69.7%; width:26%; height: 66%;
     }
     .CienciasComunicacionII{
-        position:absolute; top:82.7%; left:77.9%; width:28%; height: 69%;
+        position:absolute; top:85%; left:78%; width:26%; height: 66%;
     }
     .ProbabilidadI{
-        position:absolute; top:139.2%; left:73.4%; width:28%; height: 69%;
+        position:absolute; top:139%; left:73.7%; width:26%; height: 66%;
     }
     .ProbabilidadII{
-        position: absolute; top:162%; left:54.8%; width:28%; height: 69%;
+        position: absolute; top:160.5%; left:56.3%; width:26%; height: 66%;
     }
     .PsicologiaII{
-        position:absolute; top:150.5%; left:31.6%; width:28%; height: 69%;
+        position:absolute; top:149.6%; left:34.8%; width:26%; height: 66%;
     }
     .PsicologiaI{
-        position: absolute; top:104.3%; left:22.6%; width:28%; height: 69%;
+        position: absolute; top:105.5%; left:26.6%; width:26%; height: 66%;
     }
     .imgPrimeroCentral{
         position: absolute; top:90%; left:50%; width:30%; height: 75%; z-index:0; visibility: hidden;
