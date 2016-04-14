@@ -67,12 +67,12 @@
             </div>-->
             <div class="col-md-2 text-center">
 			<a href="http://www.gob.mx/sep" target="_blank">
-				{{ HTML::image('imagenes/mediateca/encabezado/sepcolor.png','Icono Apps')}}
+				{{ HTML::image('imagenes/mediateca/encabezado/sepcolor.png','Icono Apps',['class'=>''])}}
 			</a>
 			</div>
             <div class="col-md-2 text-center">
 			<a href="http://www.televisioneducativa.gob.mx" target="_blank">
-				{{ HTML::image('imagenes/mediateca/encabezado/tvecolor.png','Icono Apps')}}
+				{{ HTML::image('imagenes/mediateca/encabezado/tvecolor.png','Icono Apps',['class'=>''])}}
 			</a>
 			</div>
             <div class="col-md-4">
