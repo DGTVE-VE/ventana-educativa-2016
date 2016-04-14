@@ -8,7 +8,11 @@ Ventana Educativa
 @endsection
 @section('cuerpoVentana')
 @if (session('status'))
-Te llegará un correo con la liga para que cambies tu contraseña.
+<div class = "panel panel-default frmRegistro col-lg-offset-3 col-md-6">
+    <br><br>
+    Te llegará un correo con la liga para que cambies tu contraseña.
+    <br><br>    
+</div>
 @else
 <div class = "panel panel-default frmRegistro col-lg-offset-3 col-md-6">
     <br><br>
