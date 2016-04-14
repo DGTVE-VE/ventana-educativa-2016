@@ -9,13 +9,13 @@
    
 	<style>
 		.telesecPrimero{
-			position:absolute; top:5%; left:25%; width:65%; height: 166%;
+			position:absolute; top:9.3%; left:26.2%; width:63%; height: 157%;
 		}
 		.teleSecSegundo{
-			position: absolute; top:44.7%; left:58%; width:65%; height: 166%;
+			position: absolute; top:46.7%; left:58.2%; width:63%; height: 157%;
 		}
 		.telesecTercero{
-			position:absolute; top:94%; left:27.8%; width:65.5%; height: 166%;
+			position:absolute; top:94%; left:29%; width:63%; height: 157%;
 		}
 		.bajaFila{
 			position:relative; top:80px; z-index:10;
