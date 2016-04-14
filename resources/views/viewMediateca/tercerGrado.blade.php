@@ -11,22 +11,22 @@
 			position:relative; top:80px; z-index:10;
 		}
 		.FormacionCivicaII{
-			position:absolute; top:40%; left:25%; width:38%; height: 93%;
+			position:absolute; top:42.7%; left:26.2%; width:36%; height: 88%;
 		}
 		.HistoriaII{
-			position: absolute; top:10%; left:49.5%; width:38%; height: 93%;
+			position: absolute; top:14%; left:49.7%; width:36%; height: 88%;
 		}
 		.EspanolIII{
-			position:absolute; top:40.2%; left:73.8%; width:38%; height: 93%;
+			position:absolute; top:43%; left:73%; width:36%; height: 88%;
 		}
 		.MatematicasIII{
-			position:absolute; top:121%; left:73.7%; width:38%; height: 93%;
+			position:absolute; top:119.7%; left:72.9%; width:36%; height: 88%;
 		}
 		.CienciasIII{
-			position: absolute; top:150.5%; left:48.7%; width:38%; height: 93%;
+			position: absolute; top:147.6%; left:48.9%; width:36%; height: 88%;
 		}
 		.InglesIII{
-			position:absolute; top:120.2%; left:24.7%; width:38%; height: 93%;
+			position:absolute; top:118.7%; left:26%; width:36%; height: 88%;
 		}
 		.imgPrimeroCentral{
 			position: absolute; top:92%; left:54%; width:30%; height: 75%; z-index:0; visibility: hidden;

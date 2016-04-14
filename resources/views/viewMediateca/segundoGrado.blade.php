@@ -11,31 +11,31 @@
 			position:relative; top:80px; z-index:10; z-index:10;
 		}
 		.ArtesII{
-			position:absolute; top:146.8%; left:30.3%; width:26%; height: 64%;
+			position:absolute; top:144.0%; left:34.7%; width:24%; height: 62%;
 		}
 		.FormacionCivicaI{
-			position: absolute; top:97.8%; left:24.2%; width:26%; height: 64%;
+			position: absolute; top:96.8%; left:29.1%; width:24%; height: 62%;
 		}
 		.OrientacionII{
-			position:absolute; top:47%; left:30%; width:26%; height: 64%;
+			position:absolute; top:48%; left:34.4%; width:24%; height: 62%;
 		}
 		.HistoriaI{
-			position:absolute; top:26%; left:47%; width:26%; height: 64%;
+			position:absolute; top:27.7%; left:50%; width:24%; height: 62%;
 		}
 		.EspanolII{
-			position: absolute; top:32.5%; left:69.8%; width:26%; height: 64%;
+			position: absolute; top:34%; left:71%; width:24%; height: 62%;
 		}
 		.MatematicasII{
-			position:absolute; top:66.4%; left:80.7%; width:26%; height: 64%;
+			position:absolute; top:66.8%; left:81%; width:24%; height: 62%;
 		}
 		.CienciasII{
-			position:absolute; top:125%; left:80.8%; width:26%; height: 64%;
+			position:absolute; top:123.6%; left:81.1%; width:24%; height: 62%;
 		}
 		.InglesII{
-			position: absolute; top:159.5%; left:70%; width:26%; height: 64%;
+			position: absolute; top:156.6%; left:71.3%; width:24%; height: 62%;
 		}
 		.EducacionFisicaII{
-			position:absolute; top:166.5%; left:47.8%; width:26%; height: 64%;
+			position:absolute; top:163.3%; left:50.8%; width:24%; height: 62%;
 		}
 		.imgPrimeroCentral{
 			position: absolute; top:92%; left:52%; width:30%; height: 75%; z-index:0; visibility: hidden;
