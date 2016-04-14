@@ -44,6 +44,15 @@
 		?>
 	</div>
 	<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 bajaFila" style="padding:10%;">
+<!--            <a href="{{(url('educamedia/telebachillerato/IV/22/1'))}}">
+			{{HTML::image('imagenes/mediateca/tbachillerato/SemestreIV/BiologiaII.png','Telebachillerato BiologiaII',['class'=>'BiologiaII', 'id'=>'BiologiaII', 'onmouseover'=>'muestraImgCentro("BiologiaII")', 'onmouseout'=>'ocultaImgCentro("BiologiaII")'])}}
+		</a>
+            <a href="{{(url('educamedia/telebachillerato/IV/22/1'))}}">
+			{{HTML::image('imagenes/mediateca/tbachillerato/SemestreIV/BiologiaII.png','Telebachillerato BiologiaII',['class'=>'BiologiaII', 'id'=>'BiologiaII', 'onmouseover'=>'muestraImgCentro("BiologiaII")', 'onmouseout'=>'ocultaImgCentro("BiologiaII")'])}}
+		</a>
+            <a href="{{(url('educamedia/telebachillerato/IV/22/1'))}}">
+			{{HTML::image('imagenes/mediateca/tbachillerato/SemestreIV/BiologiaII.png','Telebachillerato BiologiaII',['class'=>'BiologiaII', 'id'=>'BiologiaII', 'onmouseover'=>'muestraImgCentro("BiologiaII")', 'onmouseout'=>'ocultaImgCentro("BiologiaII")'])}}
+		</a>-->
 		{{HTML::image('imagenes/mediateca/tbachillerato/SemestreV/Geografia.png','Telebachillerato Geografia',['class'=>'Geografia', 'id'=>'Geografia', 'onmouseover'=>'muestraImgCentro("Geografia")', 'onmouseout'=>'ocultaImgCentro("Geografia")'])}}
 		{{HTML::image('imagenes/mediateca/tbachillerato/SemestreV/HistoriaUniv.png','Telebachillerato HistoriaUniv',['class'=>'HistoriaUniv', 'id'=>'HistoriaUniv', 'onmouseover'=>'muestraImgCentro("HistoriaUniv")', 'onmouseout'=>'ocultaImgCentro("HistoriaUniv")'])}}
 		{{HTML::image('imagenes/mediateca/Inicio/TelebachilleratoCentro.png','Telebachillerato Central',['class'=>'telebachilleratoCentro', 'id'=>'telebachCentro'])}}
