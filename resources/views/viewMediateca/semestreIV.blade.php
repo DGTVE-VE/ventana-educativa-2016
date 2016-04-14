@@ -53,6 +53,7 @@
 		<a href="{{(url('educamedia/telebachillerato/IV/22/1'))}}">
 			{{HTML::image('imagenes/mediateca/tbachillerato/SemestreIV/BiologiaII.png','Telebachillerato BiologiaII',['class'=>'BiologiaII', 'id'=>'BiologiaII', 'onmouseover'=>'muestraImgCentro("BiologiaII")', 'onmouseout'=>'ocultaImgCentro("BiologiaII")'])}}
 		</a>
+            
 		<a href="{{(url('educamedia/telebachillerato/IV/25/1'))}}">
 			{{HTML::image('imagenes/mediateca/tbachillerato/SemestreIV/LiteraturaII.png','Telebachillerato LiteraturaII',['class'=>'LiteraturaII', 'id'=>'LiteraturaII', 'onmouseover'=>'muestraImgCentro("LiteraturaII")', 'onmouseout'=>'ocultaImgCentro("LiteraturaII")'])}}
 		</a>
