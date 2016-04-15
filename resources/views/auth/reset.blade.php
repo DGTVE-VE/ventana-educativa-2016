@@ -7,8 +7,7 @@ Ventana Educativa
 @endsection
 @section('cuerpoVentana')
 <div class = "panel panel-default frmRegistro col-lg-offset-4 col-md-4">
-    <br><br>
-    <h5>Para el cambio de contraseña ingresa lo siguiente:</h5>
+    <br><br>    
     <br><br>
     <br><br>
     <form method="POST" action="{{url('password/reset')}}">

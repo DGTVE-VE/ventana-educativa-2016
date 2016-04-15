@@ -10,7 +10,8 @@ Ventana Educativa
 @if (session('status'))
 <div class = "panel panel-default frmRegistro col-lg-offset-3 col-md-6">
     <br><br>
-    Te llegará un correo con la liga para que cambies tu contraseña.
+    <h4>Te llegará un correo con la liga para que cambies tu contraseña</h4> 
+    <small>(En caso de no visualizar el correo en la bandeja de entrada revise el correo no deseado)</small>
     <br><br>    
 </div>
 @else
