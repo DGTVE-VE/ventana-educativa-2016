@@ -331,7 +331,6 @@
 			document.getElementById(idImgCentro).style.visibility = "hidden";*/
 		}
 	</script>
-</script>
 <nav id="navegacionMediateca" class="navbar navbar-default navbar-fixed-top lo menuVentana" role="navigation">
     <div class="container-fluid">
         <div class="row">
@@ -348,15 +347,15 @@
                 </div> 
             </div>
             <div class="col-md-2 text-center">
-			<a href="http://www.gob.mx/sep" target="_blank">
-				{{ HTML::image('imagenes/mediateca/encabezado/sepcolor.png','Icono Apps',['class'=>''])}}
-			</a>
-			</div>
+                <a href="http://www.gob.mx/sep" target="_blank">
+                    {{ HTML::image('imagenes/mediateca/encabezado/sepcolor.png','Icono Apps',['class'=>''])}}
+                </a>
+            </div>
             <div class="col-md-2 text-center">
-			<a href="http://www.televisioneducativa.gob.mx" target="_blank">
-				{{ HTML::image('imagenes/mediateca/encabezado/tvecolor.png','Icono Apps',['class'=>''])}}
-			</a>
-			</div>
+                <a href="http://www.televisioneducativa.gob.mx" target="_blank">
+                    {{ HTML::image('imagenes/mediateca/encabezado/tvecolor.png','Icono Apps',['class'=>''])}}
+                </a>
+            </div>
             <div class="col-md-4">
                 <ul class="nav navbar-nav navbar-right collapse navbar-collapse collapseBarra">
                     <li class="dropdown col-md-6">
@@ -459,15 +458,14 @@
                                             <a id="link-cambia-avatar" style="color: white; font-weight: bold;" >Cambiar avatar</a>
                                         </div>
                                         <div>
-                                        @if (Auth::check())  
-                                        @if (Auth::user()->is_researcher)
-                                        <div class="col-md-12 text-center">
-                                            <a href="{{url('redmite/admin/integrantes')}}" tabindex="5" style="color: #00B6F1; font-weight: bold;" class="forgot-password">
-                                                Registro integrante RedMITE
-                                            </a>
-                                        </div>
-                                        @endif
-                                        @endif
+                                            <!--link para abrir formulario de registro de integrante de la RedMITE-->
+                                            @if (Auth::user()->is_researcher)
+                                            <div class="col-md-12 text-center">
+                                                <a href="{{url('redmite/admin/integrantes')}}" tabindex="5" style="color: #00B6F1; font-weight: bold;" class="forgot-password">
+                                                    Registro integrante RedMITE
+                                                </a>
+                                            </div>
+                                            @endif
                                             <hr id="line">
                                             <!--<a id="link-cambia-avatar" href="#" tabindex="5" style="color: white;" class="forgot-password">Cambiar imagen</a>-->
                                             <div id="form-avatar" class="hidden center-block" style="color: white;">
@@ -488,7 +486,7 @@
                                                         <input type="submit" value="Subir Imagen" class="submit btn btn-info" />
                                                         <!--<h4 id='loading' >Cargando...</h4>-->
                                                     </div>  
-                                                    
+
                                                 </form>
                                             </div>
                                         </div>
@@ -577,47 +575,62 @@
     /************ CAMBIAR AVATAR **************/
 </script>
 
-	<?php
-		function seleccionaGrado($grado){
-			switch($grado){
-				case '1':	$grado = 'primergrado';	break;
-				case '2':	$grado = 'segundogrado';	break;
-				case '3':	$grado = 'tercergrado';	break;
-				case 'I':	$grado = 'semestreI';	break;
-				case 'II':	$grado = 'semestreII';	break;
-				case 'III':	$grado = 'semestreIII';	break;
-				case 'IV':	$grado = 'semestreIV';	break;
-				case 'V':	$grado = 'semestreV';	break;
-				case 'VI':	$grado = 'semestreVI';	break;
-				case 'VII':	$grado = 'componente';	break;
-			}
-			return $grado;
-		}
-		function generaBreadCrumbs(){
-			$uri = $_SERVER['REQUEST_URI'];
-			$uriActual = explode('/',$uri);
-			$elemsURI= count($uriActual);
-			$j=$elemsURI-1;
-			$termina=false;
-			while($uriActual[$j]!='educamedia'){
-				$j--;
-			}
-			echo '<a href="'?>{{url($uriActual[$j])}}<?php echo '">'.strtoupper($uriActual[$j]).'</a>';
-			$hrefCompleta = $uriActual[$j];
-			$j++;
-			for($i=$j; $i<$elemsURI;$i++){
-				if(strlen($uriActual[$i])<3){
-					$gradoURI = seleccionaGrado($uriActual[$i]);
-					$termina=true;
-				}
-				else{
-					$gradoURI = $uriActual[$i];
-				}
-				$hrefCompleta = $hrefCompleta."/".$gradoURI;
-				echo ' / <a href="'?>{{url($hrefCompleta)}}<?php echo'">'.strtoupper($gradoURI).'</a>';
-				if($termina==true){
-					break;
-				}
-			}
-		}
-	?>
+<?php
+
+function seleccionaGrado($grado) {
+    switch ($grado) {
+        case '1': $grado = 'primergrado';
+            break;
+        case '2': $grado = 'segundogrado';
+            break;
+        case '3': $grado = 'tercergrado';
+            break;
+        case 'I': $grado = 'semestreI';
+            break;
+        case 'II': $grado = 'semestreII';
+            break;
+        case 'III': $grado = 'semestreIII';
+            break;
+        case 'IV': $grado = 'semestreIV';
+            break;
+        case 'V': $grado = 'semestreV';
+            break;
+        case 'VI': $grado = 'semestreVI';
+            break;
+        case 'VII': $grado = 'componente';
+            break;
+    }
+    return $grado;
+}
+
+function generaBreadCrumbs() {
+    $uri = $_SERVER['REQUEST_URI'];
+    $uriActual = explode('/', $uri);
+    $elemsURI = count($uriActual);
+    $j = $elemsURI - 1;
+    $termina = false;
+    while ($uriActual[$j] != 'educamedia') {
+        $j--;
+    }
+    echo '<a href="'
+    ?>{{url($uriActual[$j])}}<?php
+    echo '">' . strtoupper($uriActual[$j]) . '</a>';
+    $hrefCompleta = $uriActual[$j];
+    $j++;
+    for ($i = $j; $i < $elemsURI; $i++) {
+        if (strlen($uriActual[$i]) < 3) {
+            $gradoURI = seleccionaGrado($uriActual[$i]);
+            $termina = true;
+        } else {
+            $gradoURI = $uriActual[$i];
+        }
+        $hrefCompleta = $hrefCompleta . "/" . $gradoURI;
+        echo ' / <a href="'
+        ?>{{url($hrefCompleta)}}<?php
+        echo'">' . strtoupper($gradoURI) . '</a>';
+        if ($termina == true) {
+            break;
+        }
+    }
+}
+?>
