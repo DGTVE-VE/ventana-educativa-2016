@@ -279,7 +279,7 @@
 
     </div>
     @if(Session::has('message'))
-    <div class="col-md-5 col-md-offset-4" style="margin-top: 15%;">
+    <div class="col-md-4 col-md-offset-4" style="margin-top: 15%;">
     <p class="alert {{ Session::get('alert-class', 'alert-info') }}">{{ Session::get('message') }}</p>
     </div>
     @endif
