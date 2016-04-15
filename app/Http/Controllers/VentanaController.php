@@ -10,6 +10,7 @@ use Illuminate\Support\Facades\Redirect;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Auth;
 use App\Intereses_educativos;
+use App\Http\Controllers\Flash;
 
 //use App\User;
 
