@@ -34,7 +34,6 @@ Ventana Educativa
         </div>
     </div>
 </div>
-@endif
 @endsection
 @section('pieVentana')
 @include('viewVentana.pieVentana')
