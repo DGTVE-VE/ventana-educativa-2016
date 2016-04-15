@@ -344,8 +344,8 @@
                                 <div class="row">
                                     <div class="col-md-1"></div>
                                     <div class="col-md-10">
-                                        <p class="text-justify">Ingenirera en informática. Labora para la CECC/SICA como Encargada de Tecnología y Comunicación. 
-                                            Actualemte cursa Licenciatura en Ingeniería Informática con énfasis en Administración de Proyectos.</p>
+                                        <p class="text-justify">Ingeniera en informática. Labora para la CECC/SICA como Encargada de Tecnología y Comunicación. 
+                                            Actualmente cursa Licenciatura en Ingeniería Informática con énfasis en Administración de Proyectos.</p>
                                     </div>
                                     <div class="col-md-1"></div>
                                 </div>
@@ -414,7 +414,7 @@
                                     <div class="col-md-10">
                                         <p class="text-justify">Licenciado en Ciencias de la Educación con Énfasis en la Enseñanza de la Matemática, 
                                             con Maestría en Didáctica de la Matemática para Educación Primaria. Docente de educación 
-                                            secundaria y universitaria,actualmente se desempeña como Asesor Regional de Matemática en la 
+                                            secundaria y universitaria, actualmente se desempeña como Asesor Regional de Matemática en la 
                                             Dirección Regional Educativa de Aguirre.</p>
                                     </div>
                                     <div class="col-md-1"></div>
@@ -493,7 +493,7 @@
                                             Licenciada en Ciencias de la Educación con énfasis en Docencia. Licenciada en 
                                             Ciencias de la Educación con énfasis en Administración Educativa. UNED 
                                             (Universidad Estatal a Distancia de Costa Rica). Docente en el área de matemática
-                                            en primaria y universidad. Actualmente,sesora pedagógica en matemática.</p>
+                                            en primaria y universidad. Actualmente, asesora pedagógica en matemática.</p>
                                     </div>
                                     <div class="col-md-1"></div>
                                 </div>
