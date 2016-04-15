@@ -10,6 +10,7 @@ Ventana Educativa
 <div class="container">
     <div class="row">
         <div class="col-md-offset-3 col-md-8">
+            <br><br><br><br><br>
             <form method="POST" action="{{url('password/reset')}}">
                 {{csrf_field()}}
                 <input type="hidden" name="token" value="{{$token}}" />
@@ -34,7 +35,4 @@ Ventana Educativa
         </div>
     </div>
 </div>
-@endsection
-@section('pieVentana')
-@include('viewVentana.pieVentana')
 @endsection
