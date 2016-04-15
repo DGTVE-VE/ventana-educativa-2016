@@ -10,6 +10,7 @@ use Illuminate\Support\Facades\Redirect;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Auth;
 use App\Intereses_educativos;
+use Illuminate\Support\Facades\Session;
 
 //use App\User;
 
@@ -66,7 +67,8 @@ class VentanaController extends Controller {
         if (md5($user->password) == $hash) {
             $user->activo = 1;
             $user->save();
-            return view('viewVentana/activacionCorrecta');
+            return Redirect::home()->with('message','¡Bienvenido! Gracias por ser parte de Ventana Educativa.');
+//            return view('viewVentana/activacionCorrecta');
         } else {
             print 'error';
         }
