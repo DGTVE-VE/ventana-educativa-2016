@@ -6,59 +6,6 @@ Educamedia
 @include('viewMediateca.encabezadoMediateca')
 @endsection
 @section('cuerpoMediateca')
-<style>
-    .bajaFila{
-        position:relative; top:80px; z-index:10;
-    }
-    .CienciasSaludII{
-        position:absolute; top:51.1%; left:30.7%; width:26%; height: 66%;
-    }
-    .CienciasSaludI{
-        position:absolute; top:29.5%; left:48.2%; width:26%; height: 66%;
-    }
-    .CienciasComunicacionI{
-        position: absolute; top:40.7%; left:69.7%; width:26%; height: 66%;
-    }
-    .CienciasComunicacionII{
-        position:absolute; top:85%; left:78%; width:26%; height: 66%;
-    }
-    .ProbabilidadI{
-        position:absolute; top:139%; left:73.7%; width:26%; height: 66%;
-    }
-    .ProbabilidadII{
-        position: absolute; top:160.5%; left:56.3%; width:26%; height: 66%;
-    }
-    .PsicologiaII{
-        position:absolute; top:149.6%; left:34.8%; width:26%; height: 66%;
-    }
-    .PsicologiaI{
-        position: absolute; top:105.5%; left:26.6%; width:26%; height: 66%;
-    }
-    .imgPrimeroCentral{
-        position: absolute; top:90%; left:50%; width:30%; height: 75%; z-index:0; visibility: hidden;
-    }
-</style>
-<script>
-    function muestraImgCentro(idImg) {
-        var idImgHover = "{{url('imagenes/mediateca/tbachillerato/componente')}}" + "/" + idImg + "Hover.png";
-        document.getElementById(idImg).src = idImgHover;
-        var idImgCentro = "#" + idImg + "Centro";
-        $(idImgCentro).addClass("bounceIn");
-        $(idImgCentro).addClass("animated");
-        $(idImgCentro).css("visibility", "visible");
-        $(idImgCentro).fadeIn();
-
-    }
-    function ocultaImgCentro(idImg) {
-        var idImgHover = "{{url('imagenes/mediateca/tbachillerato/componente')}}" + "/" + idImg + ".png";
-        document.getElementById(idImg).src = idImgHover;
-        var idImgCentro = "#" + idImg + "Centro";
-        $(idImgCentro).css("visibility", "hidden");
-        $(idImgCentro).fadeOut();
-        $(idImgCentro).removeClass("animated");
-        $(idImgCentro).removeClass("bounceIn");
-    }
-</script>
 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center textoTitulo bajaFila">
     <?php
     generaBreadCrumbs();
@@ -66,31 +13,31 @@ Educamedia
 </div>
 <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xs-offset-2 col-sm-offset-2 col-md-offset-2 col-lg-offset-2" style="padding:10%;">
     <map name="mapaartes1o" id="mapaartes1o">
-        <area alt="" title=""  href="{{url('mediateca/telebachillerato/componente')}}" shape="poly" coords="150,314,140,264,58,182,2,66,180,2,222,64,214,96,312,140" onmouseover="muestraImgCentro('CienciasComunicacionI')" onmouseout="ocultaImgCentro('CienciasComunicacionI')"/>
+        <area alt="" title=""  href="{{url('mediateca/telebachillerato/componente')}}" shape="poly" coords="150,314,140,264,58,182,2,66,180,2,222,64,214,96,312,140" onmouseover="muestraImgCentro('componente','CienciasComunicacionI')" onmouseout="ocultaImgCentro('componente','CienciasComunicacionI')"/>
     </map>
     <a href="{{(url('educamedia/telebachillerato/Propedéutico/32/1'))}}">
         {{HTML::image('imagenes/mediateca/tbachillerato/componente/CienciasComunicacionI.png','Telesecundaria CienciasComunicacionI',['class'=>'CienciasComunicacionI', 'id'=>'CienciasComunicacionI', 'usemap'=>'#mapaartes1o'])}}
     </a>
     <a href="{{(url('educamedia/telebachillerato/Propedéutico/33/1'))}}">
-        {{HTML::image('imagenes/mediateca/tbachillerato/componente/CienciasComunicacionII.png','Telesecundaria CienciasComunicacionII',['class'=>'CienciasComunicacionII', 'id'=>'CienciasComunicacionII', 'onmouseover'=>'muestraImgCentro("CienciasComunicacionII")', 'onmouseout'=>'ocultaImgCentro("CienciasComunicacionII")'])}}
+        {{HTML::image('imagenes/mediateca/tbachillerato/componente/CienciasComunicacionII.png','Telesecundaria CienciasComunicacionII',['class'=>'CienciasComunicacionII', 'id'=>'CienciasComunicacionII', 'onmouseover'=>'muestraImgCentro("componente","CienciasComunicacionII")', 'onmouseout'=>'ocultaImgCentro("componente","CienciasComunicacionII")'])}}
     </a>
     <a href="{{(url('educamedia/telebachillerato/Propedéutico/34/1'))}}">
-        {{HTML::image('imagenes/mediateca/tbachillerato/componente/CienciasSaludI.png','Telesecundaria CienciasSaludI',['class'=>'CienciasSaludI', 'id'=>'CienciasSaludI', 'onmouseover'=>'muestraImgCentro("CienciasSaludI")', 'onmouseout'=>'ocultaImgCentro("CienciasSaludI")'])}}
+        {{HTML::image('imagenes/mediateca/tbachillerato/componente/CienciasSaludI.png','Telesecundaria CienciasSaludI',['class'=>'CienciasSaludI', 'id'=>'CienciasSaludI', 'onmouseover'=>'muestraImgCentro("componente","CienciasSaludI")', 'onmouseout'=>'ocultaImgCentro("componente","CienciasSaludI")'])}}
     </a>
     <a href="{{(url('educamedia/telebachillerato/Propedéutico/35/1'))}}">
-        {{HTML::image('imagenes/mediateca/tbachillerato/componente/CienciasSaludII.png','Telesecundaria CienciasSaludII',['class'=>'CienciasSaludII', 'id'=>'CienciasSaludII', 'onmouseover'=>'muestraImgCentro("CienciasSaludII")', 'onmouseout'=>'ocultaImgCentro("CienciasSaludII")'])}}
+        {{HTML::image('imagenes/mediateca/tbachillerato/componente/CienciasSaludII.png','Telesecundaria CienciasSaludII',['class'=>'CienciasSaludII', 'id'=>'CienciasSaludII', 'onmouseover'=>'muestraImgCentro("componente","CienciasSaludII")', 'onmouseout'=>'ocultaImgCentro("componente","CienciasSaludII")'])}}
     </a>
     <a href="{{(url('educamedia/telebachillerato/Propedéutico/36/1'))}}">
-        {{HTML::image('imagenes/mediateca/tbachillerato/componente/ProbabilidadI.png','Telesecundaria ProbabilidadI',['class'=>'ProbabilidadI', 'id'=>'ProbabilidadI', 'onmouseover'=>'muestraImgCentro("ProbabilidadI")', 'onmouseout'=>'ocultaImgCentro("ProbabilidadI")'])}}
+        {{HTML::image('imagenes/mediateca/tbachillerato/componente/ProbabilidadI.png','Telesecundaria ProbabilidadI',['class'=>'ProbabilidadI', 'id'=>'ProbabilidadI', 'onmouseover'=>'muestraImgCentro("componente","ProbabilidadI")', 'onmouseout'=>'ocultaImgCentro("componente","ProbabilidadI")'])}}
     </a>
     <a href="{{(url('educamedia/telebachillerato/Propedéutico/37/1'))}}">
-        {{HTML::image('imagenes/mediateca/tbachillerato/componente/ProbabilidadII.png','Telesecundaria ProbabilidadII',['class'=>'ProbabilidadII', 'id'=>'ProbabilidadII', 'onmouseover'=>'muestraImgCentro("ProbabilidadII")', 'onmouseout'=>'ocultaImgCentro("ProbabilidadII")'])}}
+        {{HTML::image('imagenes/mediateca/tbachillerato/componente/ProbabilidadII.png','Telesecundaria ProbabilidadII',['class'=>'ProbabilidadII', 'id'=>'ProbabilidadII', 'onmouseover'=>'muestraImgCentro("componente","ProbabilidadII")', 'onmouseout'=>'ocultaImgCentro("componente","ProbabilidadII")'])}}
     </a>
     <a href="{{(url('educamedia/telebachillerato/Propedéutico/38/1'))}}">
-        {{HTML::image('imagenes/mediateca/tbachillerato/componente/PsicologiaI.png','Telesecundaria PsicologiaI',['class'=>'PsicologiaI', 'id'=>'PsicologiaI', 'onmouseover'=>'muestraImgCentro("PsicologiaI")', 'onmouseout'=>'ocultaImgCentro("PsicologiaI")'])}}
+        {{HTML::image('imagenes/mediateca/tbachillerato/componente/PsicologiaI.png','Telesecundaria PsicologiaI',['class'=>'PsicologiaI', 'id'=>'PsicologiaI', 'onmouseover'=>'muestraImgCentro("componente","PsicologiaI")', 'onmouseout'=>'ocultaImgCentro("componente","PsicologiaI")'])}}
     </a>
     <a href="{{(url('educamedia/telebachillerato/Propedéutico/39/1'))}}">
-        {{HTML::image('imagenes/mediateca/tbachillerato/componente/PsicologiaII.png','Telesecundaria PsicologiaII',['class'=>'PsicologiaII', 'id'=>'PsicologiaII', 'onmouseover'=>'muestraImgCentro("PsicologiaII")', 'onmouseout'=>'ocultaImgCentro("PsicologiaII")'])}}
+        {{HTML::image('imagenes/mediateca/tbachillerato/componente/PsicologiaII.png','Telesecundaria PsicologiaII',['class'=>'PsicologiaII', 'id'=>'PsicologiaII', 'onmouseover'=>'muestraImgCentro("componente","PsicologiaII")', 'onmouseout'=>'ocultaImgCentro("componente","PsicologiaII")'])}}
     </a>
     <!--{{HTML::image('imagenes/mediateca/tsecundaria/iconoCentral/artesCentro.png','Telesecundaria central artes',['class'=>'imgPrimeroCentral', 'id'=>'artesCentro'])}}
     {{HTML::image('imagenes/mediateca/tsecundaria/iconoCentral/orientacionCentro.png','Telesecundaria central orientacion',['class'=>'imgPrimeroCentral', 'id'=>'orientacionCentro'])}}

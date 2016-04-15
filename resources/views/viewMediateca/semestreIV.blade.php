@@ -6,44 +6,6 @@
 	@include('viewMediateca.encabezadoMediateca')
 @endsection
 @section('cuerpoMediateca')
-	<style>
-		.bajaFila{
-			position:relative; top:80px; z-index:10;
-		}
-		.BiologiaII{
-			position:absolute; top:95%; left:24.1%; width:34%; height: 87%;
-		}
-		.LiteraturaII{
-			position: absolute; top:30%; left:32%; width:34%; height: 87%;
-		}
-		.Estructura{
-			position:absolute; top:22.5%; left:61%; width:34%; height: 87%;
-		}
-		.FisicaII{
-			position:absolute; top:72.3%; left:75.2%; width:34%; height: 87%;
-		}
-		.MatematicasIV{
-			position: absolute; top:137%; left:67.4%; width:34%; height: 87%;
-		}
-		.LenguaAdicionalIV{
-			position:absolute; top:144.6%; left:38.3%; width:34%; height: 87%;
-		}
-	</style>
-	<script>
-		function muestraImgCentro(idImg){
-			var idImgHover = "{{url('imagenes/mediateca/tbachillerato/SemestreIV')}}" + "/" + idImg + "Hover.png";
-			document.getElementById(idImg).src = idImgHover;
-			/*var idImgCentro = idImg + "Centro";
-			document.getElementById(idImgCentro).style.visibility = "visible";*/
-			
-		}
-		function ocultaImgCentro(idImg){
-			var idImgHover = "{{url('imagenes/mediateca/tbachillerato/SemestreIV')}}" + "/" + idImg + ".png";
-			document.getElementById(idImg).src = idImgHover;
-			/*var idImgCentro = idImg + "Centro";
-			document.getElementById(idImgCentro).style.visibility = "hidden";*/
-		}
-	</script>
 	<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center textoTitulo bajaFila">
 		<?php
 			generaBreadCrumbs();
@@ -51,23 +13,23 @@
 	</div>
 	<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xs-offset-2 col-sm-offset-2 col-md-offset-2 col-lg-offset-2" style="padding:10%;">
 		<a href="{{(url('educamedia/telebachillerato/IV/22/1'))}}">
-			{{HTML::image('imagenes/mediateca/tbachillerato/SemestreIV/BiologiaII.png','Telebachillerato BiologiaII',['class'=>'BiologiaII', 'id'=>'BiologiaII', 'onmouseover'=>'muestraImgCentro("BiologiaII")', 'onmouseout'=>'ocultaImgCentro("BiologiaII")'])}}
+			{{HTML::image('imagenes/mediateca/tbachillerato/SemestreIV/BiologiaII.png','Telebachillerato BiologiaII',['class'=>'BiologiaII', 'id'=>'BiologiaII', 'onmouseover'=>'muestraImgCentro("SemestreIV","BiologiaII")', 'onmouseout'=>'ocultaImgCentro("SemestreIV","BiologiaII")'])}}
 		</a>
             
 		<a href="{{(url('educamedia/telebachillerato/IV/25/1'))}}">
-			{{HTML::image('imagenes/mediateca/tbachillerato/SemestreIV/LiteraturaII.png','Telebachillerato LiteraturaII',['class'=>'LiteraturaII', 'id'=>'LiteraturaII', 'onmouseover'=>'muestraImgCentro("LiteraturaII")', 'onmouseout'=>'ocultaImgCentro("LiteraturaII")'])}}
+			{{HTML::image('imagenes/mediateca/tbachillerato/SemestreIV/LiteraturaII.png','Telebachillerato LiteraturaII',['class'=>'LiteraturaII', 'id'=>'LiteraturaII', 'onmouseover'=>'muestraImgCentro("SemestreIV","LiteraturaII")', 'onmouseout'=>'ocultaImgCentro("SemestreIV","LiteraturaII")'])}}
 		</a>
 		<a href="{{(url('educamedia/telebachillerato/IV/24/1'))}}">
-			{{HTML::image('imagenes/mediateca/tbachillerato/SemestreIV/Estructura.png','Telebachillerato Estructura',['class'=>'Estructura', 'id'=>'Estructura', 'onmouseover'=>'muestraImgCentro("Estructura")', 'onmouseout'=>'ocultaImgCentro("Estructura")'])}}
+			{{HTML::image('imagenes/mediateca/tbachillerato/SemestreIV/Estructura.png','Telebachillerato Estructura',['class'=>'Estructura', 'id'=>'Estructura', 'onmouseover'=>'muestraImgCentro("SemestreIV","Estructura")', 'onmouseout'=>'ocultaImgCentro("SemestreIV","Estructura")'])}}
 		</a>
 		<a href="{{(url('educamedia/telebachillerato/IV/23/1'))}}">
-			{{HTML::image('imagenes/mediateca/tbachillerato/SemestreIV/FisicaII.png','Telebachillerato FisicaII',['class'=>'FisicaII', 'id'=>'FisicaII', 'onmouseover'=>'muestraImgCentro("FisicaII")', 'onmouseout'=>'ocultaImgCentro("FisicaII")'])}}
+			{{HTML::image('imagenes/mediateca/tbachillerato/SemestreIV/FisicaII.png','Telebachillerato FisicaII',['class'=>'FisicaII', 'id'=>'FisicaII', 'onmouseover'=>'muestraImgCentro("SemestreIV","FisicaII")', 'onmouseout'=>'ocultaImgCentro("SemestreIV","FisicaII")'])}}
 		</a>
 		<a href="{{(url('educamedia/telebachillerato/IV/21/1'))}}">
-			{{HTML::image('imagenes/mediateca/tbachillerato/SemestreIV/MatematicasIV.png','Telebachillerato MatematicasIV',['class'=>'MatematicasIV', 'id'=>'MatematicasIV', 'onmouseover'=>'muestraImgCentro("MatematicasIV")', 'onmouseout'=>'ocultaImgCentro("MatematicasIV")'])}}
+			{{HTML::image('imagenes/mediateca/tbachillerato/SemestreIV/MatematicasIV.png','Telebachillerato MatematicasIV',['class'=>'MatematicasIV', 'id'=>'MatematicasIV', 'onmouseover'=>'muestraImgCentro("SemestreIV","MatematicasIV")', 'onmouseout'=>'ocultaImgCentro("SemestreIV","MatematicasIV")'])}}
 		</a>
 		<a href="{{(url('educamedia/telebachillerato/IV/26/1'))}}">
-			{{HTML::image('imagenes/mediateca/tbachillerato/SemestreIV/LenguaAdicionalIV.png','Telebachillerato LenguaAdicionalIV ',['class'=>'LenguaAdicionalIV', 'id'=>'LenguaAdicionalIV', 'onmouseover'=>'muestraImgCentro("LenguaAdicionalIV")', 'onmouseout'=>'ocultaImgCentro("LenguaAdicionalIV")'])}}
+			{{HTML::image('imagenes/mediateca/tbachillerato/SemestreIV/LenguaAdicionalIV.png','Telebachillerato LenguaAdicionalIV ',['class'=>'LenguaAdicionalIV', 'id'=>'LenguaAdicionalIV', 'onmouseover'=>'muestraImgCentro("SemestreIV","LenguaAdicionalIV")', 'onmouseout'=>'ocultaImgCentro("SemestreIV","LenguaAdicionalIV")'])}}
 		</a>
 	</div>
 	@include('viewMediateca.barraSociales')
