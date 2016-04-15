@@ -1,4 +1,4 @@
-<!--nuevo encabezado-->
+﻿<!--nuevo encabezado-->
 <style>
 	.bajaFila{
 		position:relative; top:80px; z-index:10;
@@ -21,19 +21,16 @@
 	}
 /*	----------	Estilo pagina de telesecundaria	----------	*/
 	.telesecPrimero{
-		position:absolute; top:9.3%; left:26.2%; width:63%; height: 157%; z-index:1;
+		position:absolute; top:-80px; left:-25px; z-index:1; visibility:hidden;
 	}
-	.teleSecSegundo{
-		position: absolute; top:46.7%; left:58.2%; width:63%; height: 157%; z-index:1;
+	.telesecSegundo{
+		position: absolute; top:23px; left:193px; z-index:1; visibility:hidden;
 	}
 	.telesecTercero{
-		position:absolute; top:94%; left:29%; width:63%; height: 157%; z-index:1;
-	}
-	.bajaFila{
-		position:relative; top:80px; z-index:10;
+		position:absolute; top:151px; left:-6px; z-index:1; visibility:hidden;
 	}
 	.imgTelesecCentro{
-		position: absolute; top:90%; left:53%; width:30%; height: 75%; z-index:0; visibility: hidden;
+		position: absolute; top:150px; left:150px; width:215px; height: 140px; z-index:0; visibility: hidden;
 	}
 /*	------------	Estilo Primer grado	----------	*/
 	.ArtesI{
@@ -294,6 +291,26 @@
 			imgOculto = true;
 		}
 	}
+	/*	----------	Manipula imagenes del centro del aro en telesecundaria	PRUEBA----------	*/
+		function resaltaImgSecu(prefijo, idImg){
+			var idImgHover = "#" + idImg + "Hover";
+			$(idImgHover).css("visibility", "visible");
+			var idImgCentro = "#" + idImg + "Centro";
+			$(idImgCentro).addClass("bounceIn");
+			$(idImgCentro).addClass("animated");
+			$(idImgCentro).css("visibility", "visible");
+			$(idImgCentro).fadeIn();
+			
+		}
+		function normalImgSecu(prefijo, idImg){
+			var idImgHover = "#" + idImg + "Hover";
+			$(idImgHover).css("visibility", "hidden");
+			var idImgCentro = "#" + idImg + "Centro";
+			$(idImgCentro).css("visibility", "hidden");
+			$(idImgCentro).fadeOut();
+			$(idImgCentro).removeClass("animated");
+			$(idImgCentro).removeClass("bounceIn");
+		}
 	/*	----------	Manipula imagenes del centro del aro en telesecundaria	----------	*/
 		function muestraImgCentroSecu(prefijo, idImg){
 			document.getElementById(idImg).style.zIndex='5';

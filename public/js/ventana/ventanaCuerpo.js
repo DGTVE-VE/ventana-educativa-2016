@@ -12,36 +12,40 @@
         });
     }
 	/*	----------------------------	Cambiar tamaño de la imagen	seleccionada	-------------------------------------*/
-    function aumentaTam(imagenCubo) {
-        var ancho = Math.round($(imagenCubo).width() * 1.15);
-        var alto = Math.round($(imagenCubo).height() * 1.15);
-        $(imagenCubo).width(ancho);
-        $(imagenCubo).height(alto);
-		if(imagenCubo=='#CUBO07'){
-			var desplazamiento = 20;
+    function aumentaTam(nombreCubo) {
+        var ancho = Math.round($(nombreCubo).width() * 1.15);
+        var alto = Math.round($(nombreCubo).height() * 1.15);
+        $(nombreCubo).width(ancho);
+        $(nombreCubo).height(alto);
+		if(nombreCubo=='#CUBO07'){
+			var desplazaMenos = 20;
 		}
 		else{
-			var desplazamiento = 15;
+			var desplazaMenos = 15;
 		}
-        var top = $(imagenCubo).offset().top - desplazamiento;
-        var left = $(imagenCubo).offset().left - desplazamiento;
-        $(imagenCubo).offset({top: top, left: left});
+        var arriba = $(nombreCubo).offset().top - desplazaMenos;
+        var izquierda = $(nombreCubo).offset().left - desplazaMenos;
+		if (navigator.userAgent.toLowerCase().indexOf('chrome') > -1 || navigator.userAgent.toLowerCase().indexOf('firefox') > -1 || navigator.userAgent.toLowerCase().indexOf('safari') > -1){
+			$(nombreCubo).offset({top: arriba, left: izquierda});
+		}
     }
 
-    function disminuyeTam(imagenFoto) {
-        var ancho = Math.round($(imagenFoto).width() / 1.15);
-        var alto = Math.round($(imagenFoto).height() / 1.15);
-        $(imagenFoto).width(ancho);
-        $(imagenFoto).height(alto);
-		if(imagenFoto=='#CUBO07'){
-			var desplazamiento = 20;
+    function disminuyeTam(nombreFoto) {
+        var ancho = Math.round($(nombreFoto).width() / 1.15);
+        var alto = Math.round($(nombreFoto).height() / 1.15);
+        $(nombreFoto).width(ancho);
+        $(nombreFoto).height(alto);
+		if(nombreFoto=='#CUBO07'){
+			var desplazamas = 20;
 		}
 		else{
-			var desplazamiento = 15;
+			var desplazamas = 15;
 		}
-        var top = $(imagenFoto).offset().top + desplazamiento;
-        var left = $(imagenFoto).offset().left + desplazamiento;
-        $(imagenFoto).offset({top: top, left: left});
+		var arriba = $(nombreFoto).offset().top + desplazamas;
+        var izquierda = $(nombreFoto).offset().left + desplazamas;
+		if (navigator.userAgent.toLowerCase().indexOf('chrome') > -1 || navigator.userAgent.toLowerCase().indexOf('firefox') > -1 || navigator.userAgent.toLowerCase().indexOf('safari') > -1){
+			$(nombreFoto).offset({top: arriba, left: izquierda});
+		}
     }
 	/*	----------------------------	Cambiar orden en que se muestra la imagen	-------------------------------------*/
     function cambiaFrente(imagenCubo, imagen) {

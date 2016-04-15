@@ -200,8 +200,8 @@
 $(document).ready(function() {
     $('#desplegar').click(function() {
         $("#efectobarramenu2").animate({
-            width: "toggle",
-            "toggle"
+            width: "toggle"
+			//,"toggle"
         });
     });
 });
