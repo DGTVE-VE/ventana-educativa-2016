@@ -97,16 +97,21 @@ class RedmiteController extends Controller {
     }
 
     public function guardaIntegrantes() {        
-        
+        $user = Colaborador::find(Auth::user()->id);
+        if (is_null($user)){
+            return redirect('integrantes')->with('message','El usuario ya esta registrado');
+        } else{
         $colaborador = new Colaborador();
-        $user_id = Auth::user()->id;
-        $url_foto = filter_input(INPUT_POST, 'url_foto');        
-        $puesto = filter_input(INPUT_POST, 'puesto');
-        $area = filter_input(INPUT_POST, 'area');
-        $dependencia = filter_input(INPUT_POST, 'dependencia');                
-        $resena = filter_input(INPUT_POST, 'resena');
-        $colabora = filter_input(INPUT, 'colabora');               
-        $colaborador->save();
+            $user_id = Auth::user()->id;
+            $url_foto = filter_input(INPUT_POST, 'url_foto');
+            $puesto = filter_input(INPUT_POST, 'puesto');
+            $area = filter_input(INPUT_POST, 'area');
+            $dependencia = filter_input(INPUT_POST, 'dependencia');
+            $resena = filter_input(INPUT_POST, 'resena');
+            $colabora = filter_input(INPUT, 'colabora');
+            $colaborador->save();
+            return redirect('integrantes')->with('message','Ahora eres parte de la Red podrás publicar y descargar material');
+        }       
     }
 
 }
