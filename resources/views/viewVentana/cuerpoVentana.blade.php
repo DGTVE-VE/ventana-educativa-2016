@@ -279,6 +279,6 @@
 
 			</div>
                                                            @if(Session::has('message'))
-            <p class="alert {{ Session::get('alert-class', 'alert-info') }}">{{ Session::get('message') }}</p>
+                                                           <p style="margin-top: 10%;" class="alert {{ Session::get('alert-class', 'alert-info') }}">{{ Session::get('message') }}</p>
             @endif
 		</div>
