@@ -51,20 +51,6 @@
                     </a>
                 </div> 
             </div>
-            <!--<div class="col-md-1"></div>-->
-<!--            <div class="col-md-3">
-                <ul class="nav navbar-nav collapse navbar-collapse collapseBarra">
-                    <li class="liBuscar">
-                        <form action="" class="search-form" style="width: 200px;">
-                            <div class="form-group has-feedback">
-                                <label for="search" class="sr-only">Buscar</label>
-                                <input type="text" class="form-control" name="buscar" id="buscar" placeholder="buscar">
-                                <span class="glyphicon glyphicon-search form-control-feedback spanbuscar"></span>
-                            </div>
-                        </form>
-                    </li>
-                </ul>
-            </div>-->
             <div class="col-md-2 text-center">
 			<a href="http://www.gob.mx/sep" target="_blank">
 				{{ HTML::image('imagenes/mediateca/encabezado/sepcolor.png','Icono Apps',['class'=>''])}}
@@ -117,33 +103,6 @@
                                         </a>
                                     </td>
                                 </tr>
-								<!-- ********************************************************		Agregar iconos extra en menú	-->
-								<!--tr>    
-									<td>
-									</td>
-									<td class="text-center">
-										<p class="iconoGde" onclick="muestraMasIconos()">M&aacute;s</p>
-									</td>
-									<td>
-									</td>
-								</tr>
-								<tr>
-									<td>
-										<a class="" href="#">
-                                            {{ HTML::image('imagenes/ventana/encabezado/appPrimaria.png','logo Primaria',['class'=>'ocultaImgApp'])}}
-                                        </a>
-									</td>
-									<td class="">
-										<a class="" href="#">
-                                            {{ HTML::image('imagenes/ventana/encabezado/appPrimaria.png','logo Primaria',['class'=>'ocultaImgApp'])}}
-                                        </a>
-									</td>
-									<td>
-										<a class="" href="#">
-                                            {{ HTML::image('imagenes/ventana/encabezado/appPrimaria.png','logo Primaria',['class'=>'ocultaImgApp'])}}
-                                        </a>
-									</td>
-								</tr-->
                             </table>                                       
                         </ul>
                     </li>
@@ -204,6 +163,15 @@
                                             <a id="link-cambia-avatar" style="color: white; font-weight: bold;" >Cambiar avatar</a>
                                         </div>
                                         <div>
+                                        @if (Auth::check())  
+                                        @if (Auth::user()->is_researcher)
+                                        <div class="col-md-12 text-center">
+                                            <a href="{{url('redmite/admin/integrantes')}}" tabindex="5" style="color: #00B6F1; font-weight: bold;" class="forgot-password">
+                                                Registro integrante RedMITE
+                                            </a>
+                                        </div>
+                                        @endif
+                                        @endif
                                             <hr id="line">
                                             <!--<a id="link-cambia-avatar" href="#" tabindex="5" style="color: white;" class="forgot-password">Cambiar imagen</a>-->
                                             <div id="form-avatar" class="hidden center-block" style="color: white;">
