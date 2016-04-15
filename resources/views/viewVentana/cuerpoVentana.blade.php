@@ -2,6 +2,9 @@
 	<script type="text/javascript" src="js/ventana/ventanaCuerpo.js"></script>
 		<div class="container-fluid">
 		    <div class="row">
+                                                    @if(Session::has('message'))
+            <p class="alert {{ Session::get('alert-class', 'alert-info') }}">{{ Session::get('message') }}</p>
+            @endif
 				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="padding:30px;">
 				</div>
 			</div>
@@ -138,13 +141,13 @@
 					<div style="padding:2%;">
 					</div>
 				</div>
-                            @if(Session::has('message'))
-            <p class="alert {{ Session::get('alert-class', 'alert-info') }}">{{ Session::get('message') }}</p>
-            @endif
 			</div>
 	<!----------------------------------	Elementos para vistas en dispositivos pequeños		--------------------------------->
-			<div class="row visible-xs-inline visible-sm-inline">
+			<div class="row visible-xs-inline visible-sm-inline">                            
 				<div class="col-xs-10 col-sm-10 col-xs-offset-1 col-sm-offset-1" style="padding: 20%;">
+                                                                            @if(Session::has('message'))
+            <p class="alert {{ Session::get('alert-class', 'alert-info') }}">{{ Session::get('message') }}</p>
+            @endif
 					<table>
 					<tr><td></td>
 					<td>
@@ -279,8 +282,6 @@
 						</ul>
 					</div>
 				</div>
-                                        @if(Session::has('message'))
-            <p class="alert {{ Session::get('alert-class', 'alert-info') }}">{{ Session::get('message') }}</p>
-            @endif
+
 			</div>
 		</div>
