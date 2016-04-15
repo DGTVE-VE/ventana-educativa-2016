@@ -138,6 +138,9 @@
 					<div style="padding:2%;">
 					</div>
 				</div>
+                            @if(Session::has('message'))
+            <p class="alert {{ Session::get('alert-class', 'alert-info') }}">{{ Session::get('message') }}</p>
+            @endif
 			</div>
 	<!----------------------------------	Elementos para vistas en dispositivos pequeños		--------------------------------->
 			<div class="row visible-xs-inline visible-sm-inline">
@@ -276,5 +279,8 @@
 						</ul>
 					</div>
 				</div>
+                                        @if(Session::has('message'))
+            <p class="alert {{ Session::get('alert-class', 'alert-info') }}">{{ Session::get('message') }}</p>
+            @endif
 			</div>
 		</div>
