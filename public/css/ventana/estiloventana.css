@@ -33,7 +33,7 @@
 			width:160%; height:150%; position: absolute; top:102%; left:27%; z-index:3; visibility:hidden;
 		}
 		.iconoCanalIbero{
-			width:60%; height:55%; position: absolute; top: 150%; left:75%; z-index:3; visibility:hidden;
+			width:80%; height:73%; position: absolute; top: 130%; left:63%; z-index:3; visibility:hidden;
 		}
 		.rombo2{
 			width:150%; height:220%; position: absolute; top:50%; left:20%; z-index:2; visibility:hidden;
@@ -89,8 +89,14 @@
 		.rombo11{
 			width:150%; height:220%; position: absolute; top:50%; left:-25%; z-index:2; visibility:hidden;
 		}
+		.iconoCultura{
+			width:90%; height:110%; position: absolute; top: 90%; left:5%; z-index:3; visibility:hidden;
+		}
 		.rombo12{
 			width:150%; height:220%; position: absolute; top:265%; left:-25%; z-index:2; visibility:hidden;
+		}
+		.iconoBiblioteca{
+			width:95%; height:130%; position: absolute; top: 295%; left:5%; z-index:3; visibility:hidden;
 		}
 		.iconoMexicoX{
 			width:90%; height:90%; position: absolute; top: 120%; left:-10%; z-index:3; visibility:hidden;
