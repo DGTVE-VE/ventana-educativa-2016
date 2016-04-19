@@ -30,6 +30,7 @@ and open the template in the editor.
         
         <!--	-------------------------- Estilos para menus de Telesecundaria, Telebachillerato y redes sociales-->
         <link rel="stylesheet" href="{{ asset('css/mediateca/estilomediateca3.css') }}" >
+        @yield ('estilos')
 
         <!-- jQuery library -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
@@ -37,6 +38,7 @@ and open the template in the editor.
         <!-- Latest compiled JavaScript -->
         <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
      
+        @yield ('scripts')
       
     </head>
     <body style="background-image:url('{{ asset('imagenes/mediateca/background/backgroundAzul.jpg') }}');">     

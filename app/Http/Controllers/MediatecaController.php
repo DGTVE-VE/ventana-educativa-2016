@@ -7,7 +7,9 @@ use Illuminate\Http\Request;
 use App\Http\Requests;
 use App\Model\Mediateca\Telesecundaria;
 use App\Model\Mediateca\Telebachillerato;
+use App\Model\Mediateca\RatingTelesecundaria;
 use \Alaouy\Youtube\Facades\Youtube;
+use Illuminate\Support\Facades\Auth;
 use Laracasts\Flash\Flash;
 
 class MediatecaController extends Controller {
@@ -122,9 +124,25 @@ class MediatecaController extends Controller {
         
         /* Envío de querys y variables a la vista */
         return view('viewMediateca/videos')
+                        ->with('nivel', 'telesecundaria')
                         ->with('videos', $videos)
                         ->with('paginacion', $paginacion)
                         ->with('url', $url);
+    }
+    
+    public function guardaRating (){
+        $nivel = filter_input(INPUT_POST, 'nivel');
+        $id = filter_input(INPUT_POST, 'id');
+        $rating = filter_input(INPUT_POST, 'rating');
+        if ($nivel == 'telesecundaria') {
+            $user_id = Auth::user ()->id;            
+            $ratingSaved = RatingTelesecundaria::
+                    firstOrCreate(['user_id' => $user_id, 
+                                   'telesecundaria_id' => $id]);
+            $ratingSaved->rating = $rating;
+            $ratingSaved->save ();
+        }
+        
     }
 
     public function getVideosTelebachillerato($grado, $materia, $bloque, $url) {
@@ -150,6 +168,7 @@ class MediatecaController extends Controller {
         
         /* Envío de querys y variables a la vista */
         return view('viewMediateca/videos')
+                        ->with('nivel', 'telebachillerato')
                         ->with('videos', $videos)
                         ->with('paginacion', $paginacion)
                         ->with('url', $url);

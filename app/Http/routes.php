@@ -80,7 +80,7 @@ Route::group(['middleware' => 'web'], function () {
     Route::get('educamedia/test', 'MediatecaController@test');
     Route::get('educamedia/getVideosTelesec', 'MediatecaController@getVideosTelesec');
     Route::get('store','MediatecaController@store');
-
+    Route::post ('educamedia/rate', 'MediatecaController@guardaRating');
     /*     * **************************MEDIATECA********************** */
 
     /*     * **************************REDMITE********************** */
