@@ -34,6 +34,7 @@
             <a href="#">
                 {{HTML::image('imagenes/ventana/iconoSeccion/idiomas.png','',['id'=>'iconoRombo02','class'=>'imgColor oculta difumina Intervalo3 slideInLeft iconoIdiomas','onmouseover'=>'cambiaImgFoto("02")','onmouseout'=>'cambiaImgCubo("02")'])}}
             </a>
+			{{HTML::image('imagenes/ventana/iconoSeccion/salud.png','',['id'=>'iconoRombo03','class'=>'imgColor oculta difumina Intervalo3 slideInLeft iconoSalud'])}}
         </div>
         <div class="col-md-1 col-lg-1" style="padding-top: 8.3%; padding-left:0px; padding-right:0px;">
             {{HTML::image('imagenes/ventana/homeventana/CUBO-04.png','Padres',['id'=>'CUBO04','class'=>'imgColor oculta difumina Intervalo2 slideInLeft rombo4','usemap'=>'#mapacubo4'])}}
