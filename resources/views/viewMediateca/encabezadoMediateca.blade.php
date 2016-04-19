@@ -614,7 +614,7 @@ function seleccionaGrado($grado) {
             break;
         case 'VI': $grado = 'semestreVI';
             break;
-        case 'Propedéutico': $grado = 'componente';
+        case 'VII': $grado = 'componente';
             break;
     }
     return $grado;
@@ -635,7 +635,7 @@ function generaBreadCrumbs() {
     $hrefCompleta = $uriActual[$j];
     $j++;
     for ($i = $j; $i < $elemsURI; $i++) {
-        if (strlen($uriActual[$i]) < 4) {
+        if (strlen($uriActual[$i]) < 4 ) {
             $gradoURI = seleccionaGrado($uriActual[$i]);
             $termina = true;
         } else {
