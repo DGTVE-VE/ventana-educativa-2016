@@ -16,7 +16,7 @@
             <map name="mapacubo1" id="mapacubo1">
                 <area shape="poly" coords="0,424,424,0,920,424,480,920" onmouseover="cambiaImgFoto('01')" onmouseout="cambiaImgCubo('01')" href="http://www.ibe.tv/es/canal/iberoamericano/756/Iberoam%C3%A9rica-al-d%C3%ADa-1032016.htm" target="_blank"/>
                 <area shape="poly" coords="528,0,920,0,920,392" onmouseover="cambiaImgFoto('02')" onmouseout="cambiaImgCubo('02')" href="#"/>
-                <area shape="poly" coords="888,468,940,960,400,880" /> <!--onmouseover="cambiaImgFoto('03')" onmouseout="cambiaImgCubo('03')" -->
+                <area shape="poly" coords="888,468,940,960,400,880" href="http://www.promocion.salud.gob.mx/dgps/interior1/programas/escuela_salud.html" onmouseover="cambiaImgFoto('03')" onmouseout="cambiaImgCubo('03')"/>
             </map>
             <a href="http://www.ibe.tv/es/canal/iberoamericano/756/Iberoam%C3%A9rica-al-d%C3%ADa-1032016.htm" target="_blank">
                 {{HTML::image('imagenes/ventana/iconoSeccion/canal_ibero.png','canal IberoAmericano',['id'=>'iconoRombo01','class'=>'imgColor oculta difumina Intervalo4 slideInLeft iconoCanalIbero','onmouseover'=>'cambiaImgFoto("01")','onmouseout'=>'cambiaImgCubo("01")'])}}
@@ -29,19 +29,21 @@
                 <area shape="poly" coords="0,356,356,0,708,360,360,708" onmouseover="cambiaImgFoto('02')" onmouseout="cambiaImgCubo('02')" href="#"/>
             </map>
             <map name="mapacubo3" id="mapacubo3">
-                <area shape="poly" coords="0,388,388,0,840,388,420,820" /> <!--onmouseover="cambiaImgFoto('03')" onmouseout="cambiaImgCubo('03')" -->
+                <area shape="poly" coords="0,388,388,0,840,388,420,820" href="http://www.promocion.salud.gob.mx/dgps/interior1/programas/escuela_salud.html" onmouseover="cambiaImgFoto('03')" onmouseout="cambiaImgCubo('03')"/>
             </map>
             <a href="#">
                 {{HTML::image('imagenes/ventana/iconoSeccion/idiomas.png','',['id'=>'iconoRombo02','class'=>'imgColor oculta difumina Intervalo3 slideInLeft iconoIdiomas','onmouseover'=>'cambiaImgFoto("02")','onmouseout'=>'cambiaImgCubo("02")'])}}
             </a>
-			{{HTML::image('imagenes/ventana/iconoSeccion/salud.png','',['id'=>'iconoRombo03','class'=>'imgColor oculta difumina Intervalo3 slideInLeft iconoSalud'])}}
+			<a href="http://www.promocion.salud.gob.mx/dgps/interior1/programas/escuela_salud.html">
+				{{HTML::image('imagenes/ventana/iconoSeccion/salud.png','',['id'=>'iconoRombo03','class'=>'imgColor oculta difumina Intervalo3 slideInLeft iconoSalud','onmouseover'=>'cambiaImgFoto("03")','onmouseout'=>'cambiaImgCubo("03")'])}}
+			</a>
         </div>
         <div class="col-md-1 col-lg-1" style="padding-top: 8.3%; padding-left:0px; padding-right:0px;">
             {{HTML::image('imagenes/ventana/homeventana/CUBO-04.png','Padres',['id'=>'CUBO04','class'=>'imgColor oculta difumina Intervalo2 slideInLeft rombo4','usemap'=>'#mapacubo4'])}}
             <map name="mapacubo4"  id="mapacubo4">
                 <area shape="poly" coords="0,456,456,0,912,456,456,912" onmouseover="cambiaImgFoto('04')" onmouseout="cambiaImgCubo('04')" href="#"/>
                 <area shape="poly" coords="0,456,0,0,456,0" onmouseover="cambiaImgFoto('02')" onmouseout="cambiaImgCubo('02')" href="#"/>
-                <area shape="poly" coords="-20,400,-20,960,520,960" /> <!--onmouseover="cambiaImgFoto('03')" onmouseout="cambiaImgCubo('03')" -->
+                <area shape="poly" coords="-20,400,-20,960,520,960" href="http://www.promocion.salud.gob.mx/dgps/interior1/programas/escuela_salud.html" onmouseover="cambiaImgFoto('03')" onmouseout="cambiaImgCubo('03')"/>
             </map>
             <a href="#">
                 {{HTML::image('imagenes/ventana/iconoSeccion/padres.png','Padres',['id'=>'iconoRombo04','class'=>'imgColor oculta difumina Intervalo2 slideInLeft iconoPadres','onmouseover'=>'cambiaImgFoto("04")','onmouseout'=>'cambiaImgCubo("04")'])}}
@@ -100,8 +102,8 @@
             {{HTML::image('imagenes/ventana/homeventana/CUBO-10.png','Red Mesoamerica',['id'=>'CUBO10','class'=>'imgColor oculta difumina Intervalo2 slideInRight rombo10','usemap'=>'#mapacubo10'])}}
             <map name="mapacubo10"  id="mapacubo10">
                 <area shape="poly" coords="0,456,470,0,960,500,470,940" onmouseover="cambiaImgFoto('10')" onmouseout="cambiaImgCubo('10')" href="{{url('redmite')}}"/>
-                <area shape="poly" coords="456,0,980,0,980,480" /><!--onmouseover="cambiaImgFoto('11')" onmouseout="cambiaImgCubo('11')" -->
-                <area shape="poly" coords="456,960,960,456,960,960" /><!--onmouseover="cambiaImgFoto('12')" onmouseout="cambiaImgCubo('12')" -->
+                <area shape="poly" coords="456,0,980,0,980,480" href="http://www.mexicoescultura.com/" onmouseover="cambiaImgFoto('11')" onmouseout="cambiaImgCubo('11')"/>
+                <area shape="poly" coords="456,960,960,456,960,960" href="http://www.sep.gob.mx/swb/sep1/sep1_Bibliotecas#.VxaMxzB96hc" onmouseover="cambiaImgFoto('12')" onmouseout="cambiaImgCubo('12')"/>
             </map>
             <a href="{{url('redmite')}}">
                 {{HTML::image('imagenes/ventana/iconoSeccion/redmiteBco.png','Red Mesoamericana',['id'=>'iconoRombo10','class'=>'imgColor oculta difumina Intervalo2 slideInRight iconoRedMesoamerica','onmouseover'=>'cambiaImgFoto("10")','onmouseout'=>'cambiaImgCubo("10")'])}}
@@ -109,22 +111,26 @@
         </div>
         <div class="col-md-1 col-lg-1" style="padding:3%; padding-left:0px; padding-right:0px;">
             {{HTML::image('imagenes/ventana/homeventana/CUBO-11.png',' ',['id'=>'CUBO11','class'=>'imgColor oculta difumina Intervalo3 slideInRight rombo11','usemap'=>'#mapacubo11'])}}
-			{{HTML::image('imagenes/ventana/iconoSeccion/cultura.png','Cultura',['id'=>'iconoRombo11','class'=>'imgColor oculta difumina Intervalo3 slideInRight iconoCultura'])}}
+			<a href="http://www.mexicoescultura.com/">
+				{{HTML::image('imagenes/ventana/iconoSeccion/cultura.png','Cultura',['id'=>'iconoRombo11','class'=>'imgColor oculta difumina Intervalo3 slideInRight iconoCultura','onmouseover'=>'cambiaImgFoto("11")','onmouseout'=>'cambiaImgCubo("11")'])}}
+			</a>
             {{HTML::image('imagenes/ventana/homeventana/CUBO-12.png',' ',['id'=>'CUBO12','class'=>'imgColor oculta difumina Intervalo3 slideInRight rombo12','usemap'=>'#mapacubo12'])}}
-			{{HTML::image('imagenes/ventana/iconoSeccion/biblioteca.png','Biblioteca',['id'=>'iconoRombo11','class'=>'imgColor oculta difumina Intervalo3 slideInRight iconoBiblioteca'])}}
+			<a href="http://www.sep.gob.mx/swb/sep1/sep1_Bibliotecas#.VxaMxzB96hc">
+				{{HTML::image('imagenes/ventana/iconoSeccion/biblioteca.png','Biblioteca',['id'=>'iconoRombo12','class'=>'imgColor oculta difumina Intervalo3 slideInRight iconoBiblioteca','onmouseover'=>'cambiaImgFoto("12")','onmouseout'=>'cambiaImgCubo("12")'])}}
+			</a>
             <map name="mapacubo11" id="mapacubo11">
-                <area shape="poly" coords="0,356,370,0,725,360,360,708" /><!--onmouseover="cambiaImgFoto('11')" onmouseout="cambiaImgCubo('11')" -->
+                <area shape="poly" coords="0,356,370,0,725,360,360,708" href="http://www.mexicoescultura.com/" onmouseover="cambiaImgFoto('11')" onmouseout="cambiaImgCubo('11')"/>
             </map>
             <map name="mapacubo12" id="mapacubo12">
-                <area shape="poly" coords="0,388,388,0,840,388,420,820" /><!--onmouseover="cambiaImgFoto('12')" onmouseout="cambiaImgCubo('12')" -->
+                <area shape="poly" coords="0,388,388,0,840,388,420,820" href="http://www.sep.gob.mx/swb/sep1/sep1_Bibliotecas#.VxaMxzB96hc" onmouseover="cambiaImgFoto('12')" onmouseout="cambiaImgCubo('12')"/>
             </map>
         </div>
         <div class="col-md-1 col-lg-1" style="padding-top: 8.9%; padding-left:0; padding-right:0;">
             {{HTML::image('imagenes/ventana/homeventana/CUBO-13.png','Mexico X',['id'=>'CUBO13','class'=>'imgColor oculta difumina Intervalo4 slideInRight rombo13','usemap'=>'#mapacubo13'])}}
             <map name="mapacubo13" id="mapacubo13">
                 <area shape="poly" coords="0,424,470,0,920,424,480,920" onmouseover="cambiaImgFoto('13')" onmouseout="cambiaImgCubo('13')" href="http://mx.televisioneducativa.gob.mx/" target="_blank"/>
-                <area shape="poly" coords="0,0,0,400,400,0" /><!--onmouseover="cambiaImgFoto('11')" onmouseout="cambiaImgCubo('11')" -->
-                <area shape="poly" coords="0,460,0,920,430,920" /><!--onmouseover="cambiaImgFoto('12')" onmouseout="cambiaImgCubo('12')" -->
+                <area shape="poly" coords="0,0,0,400,400,0" href="http://www.mexicoescultura.com/" onmouseover="cambiaImgFoto('11')" onmouseout="cambiaImgCubo('11')"/>
+                <area shape="poly" coords="0,460,0,920,430,920" href="http://www.sep.gob.mx/swb/sep1/sep1_Bibliotecas#.VxaMxzB96hc" onmouseover="cambiaImgFoto('12')" onmouseout="cambiaImgCubo('12')"/>
             </map>
             <a href="http://mx.televisioneducativa.gob.mx/" target="_blank">
                 {{HTML::image('imagenes/ventana/iconoSeccion/mexicoxBco.png','Mexico X',['id'=>'iconoRombo13','class'=>'imgColor oculta difumina Intervalo4 slideInRight iconoMexicoX','onmouseover'=>'cambiaImgFoto("13")','onmouseout'=>'cambiaImgCubo("13")'])}}
@@ -246,6 +252,19 @@
                     </td>
                     <td></td>
                     <td>
+                        {{HTML::image('imagenes/ventana/homeventana/FOTO-04.png','Padres',['id'=>'CUBOSM04','class'=>'imgColor oculta difumina Intervalo2 slideInLeft foto4','usemap'=>'#mapacubosm4'])}}
+                        <map name="mapacubosm4"  id="mapacubosm4">
+                            <area shape="poly" coords="0,456,456,0,912,456,456,912" href="#"/>
+                            <area shape="poly" coords="0,456,0,0,456,0" href="#"/>
+                            <area shape="poly" coords="-20,400,-20,960,520,960" />
+                        </map>
+                        <a href="#">
+                            {{HTML::image('imagenes/ventana/iconoSeccion/padres.png','Padres',['id'=>'iconoRomboSM04','class'=>'imgColor oculta difumina Intervalo2 slideInLeft iconoFotoPadres'])}}
+                        </a>
+                    </td>
+                </tr>
+                <tr><td></td>
+                    <td>
                         {{HTML::image('imagenes/ventana/homeventana/FOTO-01.png','Canal IberoAmericano',['id'=>'CUBOSM01','class'=>'imgColor oculta difumina Intervalo4 slideInLeft foto1','usemap'=>'#mapacubosm1'])}}
                         <map name="mapacubo1" id="mapacubosm1">
                             <area shape="poly" coords="0,424,424,0,920,424,480,920" href="http://www.ibe.tv/es/canal/iberoamericano/756/Iberoam%C3%A9rica-al-d%C3%ADa-1032016.htm" target="_blank"/>
@@ -256,18 +275,38 @@
                             {{HTML::image('imagenes/ventana/iconoSeccion/canal_ibero.png','Canal IberoAmericano',['id'=>'iconoRomboSM01','class'=>'imgColor oculta difumina Intervalo4 slideInLeft iconoFotoCanal'])}}
                         </a>
                     </td>
+                    <td></td></tr>
+                <tr>
+                    <td>
+						{{HTML::image('imagenes/ventana/homeventana/FOTO-11.png',' ',['id'=>'CUBO11','class'=>'imgColor oculta difumina Intervalo3 slideInRight romboSMCultura','usemap'=>'#mapacubo11'])}}
+						<a href="http://www.mexicoescultura.com/">
+							{{HTML::image('imagenes/ventana/iconoSeccion/cultura.png','Cultura',['id'=>'iconoRombo11','class'=>'imgColor oculta difumina Intervalo3 slideInRight iconoSMCultura','onmouseover'=>'cambiaImgFoto("11")','onmouseout'=>'cambiaImgCubo("11")'])}}
+						</a>
+
+						<map name="mapacubo11" id="mapacubo11">
+							<area shape="poly" coords="0,356,370,0,725,360,360,708" href="http://www.mexicoescultura.com/" onmouseover="cambiaImgFoto('11')" onmouseout="cambiaImgCubo('11')"/>
+						</map>
+                    </td>
+                    <td></td>
+                    <td>
+						{{HTML::image('imagenes/ventana/homeventana/FOTO-12.png',' ',['id'=>'CUBO12','class'=>'imgColor oculta difumina Intervalo3 slideInRight romboSMBiblioteca','usemap'=>'#mapacubo12'])}}
+						<a href="http://www.sep.gob.mx/swb/sep1/sep1_Bibliotecas#.VxaMxzB96hc">
+							{{HTML::image('imagenes/ventana/iconoSeccion/biblioteca.png','Biblioteca',['id'=>'iconoRombo12','class'=>'imgColor oculta difumina Intervalo3 slideInRight iconoSMBiblioteca','onmouseover'=>'cambiaImgFoto("12")','onmouseout'=>'cambiaImgCubo("12")'])}}
+						</a>
+						<map name="mapacubo12" id="mapacubo12">
+							<area shape="poly" coords="0,388,388,0,840,388,420,820" href="http://www.sep.gob.mx/swb/sep1/sep1_Bibliotecas#.VxaMxzB96hc" onmouseover="cambiaImgFoto('12')" onmouseout="cambiaImgCubo('12')"/>
+						</map>
+                    </td>
                 </tr>
                 <tr><td></td>
                     <td>
-                        {{HTML::image('imagenes/ventana/homeventana/FOTO-04.png','Padres',['id'=>'CUBOSM04','class'=>'imgColor oculta difumina Intervalo2 slideInLeft foto4','usemap'=>'#mapacubosm4'])}}
-                        <map name="mapacubosm4"  id="mapacubosm4">
-                            <area shape="poly" coords="0,456,456,0,912,456,456,912" href="#"/>
-                            <area shape="poly" coords="0,456,0,0,456,0" href="#"/>
-                            <area shape="poly" coords="-20,400,-20,960,520,960" />
-                        </map>
-                        <a href="#">
-                            {{HTML::image('imagenes/ventana/iconoSeccion/padres.png','Padres',['id'=>'iconoRomboSM04','class'=>'imgColor oculta difumina Intervalo2 slideInLeft iconoFotoPadres'])}}
-                        </a>
+                        {{HTML::image('imagenes/ventana/homeventana/FOTO-03.png',' ',['id'=>'CUBO03','class'=>'imgColor oculta difumina Intervalo3 slideInLeft romboSMSalud', 'usemap'=>'#mapacubo3'])}}
+						<map name="mapacubo3" id="mapacubo3">
+							<area shape="poly" coords="0,388,388,0,840,388,420,820" href="http://www.promocion.salud.gob.mx/dgps/interior1/programas/escuela_salud.html" onmouseover="cambiaImgFoto('03')" onmouseout="cambiaImgCubo('03')"/>
+						</map>
+						<a href="http://www.promocion.salud.gob.mx/dgps/interior1/programas/escuela_salud.html">
+							{{HTML::image('imagenes/ventana/iconoSeccion/salud.png','',['id'=>'iconoRombo03','class'=>'imgColor oculta difumina Intervalo3 slideInLeft iconoSMSalud','onmouseover'=>'cambiaImgFoto("03")','onmouseout'=>'cambiaImgCubo("03")'])}}
+						</a>
                     </td>
                     <td></td></tr>
             </table>
