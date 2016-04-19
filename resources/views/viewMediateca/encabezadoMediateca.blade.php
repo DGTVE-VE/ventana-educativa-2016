@@ -211,7 +211,7 @@
                                 <div class="row">
                                     <div class="col-lg-12 col-md-12">
                                         @if (Auth::guest ())
-                                        <form id="login-form" action="sessions" method="POST" role="form" style="display: block;">
+                                        <form id="login-form" action="{{url('sessions')}}" method="POST" role="form" style="display: block;">
                                             <input type="hidden" name="_token" value="{{ csrf_token() }}" />
                                             <div class="form-group">
                                                 <input type="email" name="email"  tabindex="1" class="form-control inputLogin" placeholder="Usuario" value="">
@@ -412,7 +412,7 @@ function generaBreadCrumbs() {
     $hrefCompleta = $uriActual[$j];
     $j++;
     for ($i = $j; $i < $elemsURI; $i++) {
-        if (strlen($uriActual[$i]) < 3) {
+        if (strlen($uriActual[$i]) < 4 ) {
             $gradoURI = seleccionaGrado($uriActual[$i]);
             $termina = true;
         } else {

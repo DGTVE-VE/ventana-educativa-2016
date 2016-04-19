@@ -185,6 +185,7 @@
     position: fixed;
     right: 10px;
     top:280px;
+    
 }
 .sociales{
     list-style: none;
@@ -216,4 +217,9 @@
  .formato-404{
     font-family: Tahoma;
     color: red;
+}
+.soloTexto>a{
+    text-decoration: none;
+     color: #000;
+    
 }

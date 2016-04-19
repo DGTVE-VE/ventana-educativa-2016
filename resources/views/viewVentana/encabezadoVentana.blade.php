@@ -118,7 +118,7 @@
                             @if (Auth::guest())
                             {{ HTML::image('imagenes/ventana/encabezado/usuario.png','Logo Usuario',['class'=>'img-circle', 'id'=>'img-usuario'] )}}                        
                             @elseif (File::exists ('uploaded/avatares/'.Auth::user()->id.'.png'))                        
-                            {{ HTML::image('uploaded/avatares/'.Auth::user()->id.'.png', 'Avatar usuario', ['class'=>'img-circle', 'id'=>'img-usuario', 'width'=>'30px'] )}}
+                            {{ HTML::image('uploaded/avatares/'.Auth::user()->id.'.png', 'Avatar usuario', ['class'=>'img-circle', 'id'=>'img-usuario', 'width'=>'35px'] )}}
                             @else
                             {{ HTML::image('imagenes/ventana/encabezado/usuario.png','Logo Usuario',['class'=>'img-circle', 'id'=>'img-usuario'] )}}
                             @endif
@@ -235,8 +235,8 @@
                     $("#form-avatar").addClass('hidden');
 //                    $("#message").html(data);
                     $('#img-usuario').attr('src', data + '?' + (new Date()));
-                    $('#img-usuario').attr('width', '30px');
-                    $('#img-usuario').attr('height', '30px');
+                    $('#img-usuario').attr('width', '35px');
+                    $('#img-usuario').attr('height', '35px');
                 },
                 error: function (data)
                 {
