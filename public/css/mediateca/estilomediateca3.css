@@ -180,7 +180,7 @@
      border: none;
 }
 
-/* Efectos para iconos redes sociales */
+/* Estilos para iconos redes sociales */
 .derechaSociales{
     position: fixed;
     right: 10px;
@@ -200,4 +200,20 @@
 }
 #cy:hover{
     color:#E62117;
+}
+
+/*Estilos para la Página de Error */
+.centrar-texto-error{
+     text-align: center; 
+     margin-left: auto; 
+     margin-right: auto; 
+     margin-bottom: auto; 
+     margin-top: auto;
+ }
+ .color-fondo-error{
+     background: #f0edeb;
+ }
+ .formato-404{
+    font-family: Tahoma;
+    color: red;
 }

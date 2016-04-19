@@ -6,27 +6,29 @@
 	@include('viewMediateca.encabezadoMediateca')
 @endsection
 @section('cuerpoMediateca')
-	<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center textoTitulo bajaFila">
-		<?php
-			generaBreadCrumbs();
-		?>
+	<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center" style="padding:4%">
 	</div>
-	<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xs-offset-2 col-sm-offset-2 col-md-offset-2 col-lg-offset-2" style="padding:10%;">
-		<map name="mapaTelesecPrimer">
-			<area alt="primer grado" shape="poly" coords="46.8,442.3,45.6,345.2,94.8,226.8,158.4,156.2,244.8,107.1,328.8,95.8,462.0,128.5,415.2,243.2,337.2,224.3,282.0,230.6,232.8,257.0,199.2,302.4,175.2,349.0,168.0,425.9" href="{{url('educamedia/telesecundaria/primergrado')}}" onmouseover="muestraImgCentroSecu('Inicio', 'primerGrado')" onmouseout="ocultaImgCentroSecu('Inicio', 'primerGrado')">
+	<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center textoTitulo">
+		<p><?php
+			generaBreadCrumbs();
+		?></p><br>
+	</div>
+	<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xs-offset-4 col-sm-offset-4 col-md-offset-4 col-lg-offset-4">
+		<map name="telesecGrados" id="telesecGrados">
+			<area alt="" title="" href="#" shape="poly" coords="0,268,1,207,8,173,28,125,58,84,101,44,160,14,208,2,272,1,316,12,346,23,300,111,251,95,204,97,166,114,129,154,112,183,102,209,100,257" onmouseover="resaltaImgSecu('Inicio', 'primerGrado')" onmouseout="normalImgSecu('Inicio', 'primerGrado')"/>
+			<area alt="" title="" href="#" shape="poly" coords="328,358,383,437,440,381,461,345,479,282,482,263,481,215,475,170,460,136,437,95,410,65,370,35,347,22,302,111,333,133,360,162,379,200,385,260,372,302,353,331" onmouseover="resaltaImgSecu('Inicio', 'segundoGrado')" onmouseout="normalImgSecu('Inicio', 'segundoGrado')"/>
+			<area alt="" title="" href="#" shape="poly" coords="0,269,98,258,122,316,166,365,216,383,252,384,295,374,327,359,382,438,333,467,286,480,264,481,214,481,162,471,109,449,60,405,22,356" onmouseover="resaltaImgSecu('Inicio', 'tercerGrado')" onmouseout="normalImgSecu('Inicio', 'tercerGrado')"/>
 		</map>
-		{{HTML::image('imagenes/mediateca/tsecundaria/Inicio/primerGrado.png','Telesecundaria Primero',['class'=>'telesecPrimero', 'id'=>'primerGrado', 'usemap'=>'#mapaTelesecPrimer'])}}
-		<map name="mapaTelesecSegundo">
-			<area alt="segundo grado" shape="poly" coords="147.6,144,201.6,1.6,290,72,336.25,142.4,368.75,233.6,383.75,342.4,372.5,396.2,348.75,463.4,276.1,523.6,203,459.8,149,369.6,199.1,328.9,220,287.1,247.2,340.8,238.8,268.8,199.2,187.2" href="{{url('educamedia/telesecundaria/segundogrado')}}" onmouseover="muestraImgCentroSecu('Inicio', 'segundoGrado')" onmouseout="ocultaImgCentroSecu('Inicio', 'segundoGrado')">
-			<area alt="primer grado" shape="poly" coords="144,140.8,199.2,0,1.2,3.2,2.4,179.2,46.8,132.8,102,120" href="{{url('educamedia/telesecundaria/primergrado')}}" onmouseover="muestraImgCentroSecu('Inicio', 'primerGrado')" onmouseout="ocultaImgCentroSecu('Inicio', 'primerGrado')">
-		</map>
-		{{HTML::image('imagenes/mediateca/tsecundaria/Inicio/segundoGrado.png','Telesecundaria Segundo',['class'=>'teleSecSegundo', 'id'=>'segundoGrado','usemap'=>'#mapaTelesecSegundo'])}}
-		<map name="mapaTelesecTercero">
-			<area alt="primer grado" shape="poly" coords="25.2,141.6,144,126,141.6,67.2,163.2,0,50.4,1.2,37.2,1.2,27.6,72" href="{{url('educamedia/telesecundaria/primergrado')}}" onmouseover="muestraImgCentroSecu('Inicio', 'primerGrado')" onmouseout="ocultaImgCentroSecu('Inicio', 'primerGrado')">
-			<area alt="segundo grado" shape="poly" coords="455,2.4,532.5,1.2,531.25,319.2,510,400,400,247.2" href="{{url('educamedia/telesecundaria/segundogrado')}}" onmouseover="muestraImgCentroSecu('Inicio', 'segundoGrado')" onmouseout="ocultaImgCentroSecu('Inicio', 'segundoGrado')">
-			<area alt="tercer grado" shape="poly" coords="26.4,147.5,144,131.25,164.4,196.25,201.6,248.75,234,271.25,300,291.25,361.2,285,417.6,256.25,487.2,353.75,422.4,397.5,338.4,415,261.6,415,211.2,398.75,134.4,355,84,305,54,258.75" href="{{url('educamedia/telesecundaria/tercergrado')}}" onmouseover="muestraImgCentroSecu('Inicio', 'tercerGrado')" onmouseout="ocultaImgCentroSecu('Inicio', 'tercerGrado')">
-		</map>
-		{{HTML::image('imagenes/mediateca/tsecundaria/Inicio/tercerGrado.png','Telesecundaria Tercero',['class'=>'telesecTercero', 'id'=>'tercerGrado', 'usemap'=>'#mapaTelesecTercero'])}}
+		{{HTML::image('imagenes/mediateca/tsecundaria/Inicio/telesecundaria.png','Telesecundaria Primero',['id'=>'primerGrado', 'usemap'=>'#telesecGrados'])}}
+		<a href="{{url('educamedia/telesecundaria/primergrado')}}">
+		{{HTML::image('imagenes/mediateca/tsecundaria/Inicio/primerGradoHover.png','Telesecundaria Primero',['class'=>'telesecPrimero', 'id'=>'primerGradoHover', 'onmouseover'=>'resaltaImgSecu("Inicio", "primerGrado")', 'onmouseout'=>'normalImgSecu("Inicio", "primerGrado")'])}}
+		</a>
+		<a href="{{url('educamedia/telesecundaria/segundogrado')}}">
+		{{HTML::image('imagenes/mediateca/tsecundaria/Inicio/segundoGradoHover.png','Telesecundaria Segundo',['class'=>'telesecSegundo', 'id'=>'segundoGradoHover', 'onmouseover'=>'resaltaImgSecu("Inicio", "segundoGrado")', 'onmouseout'=>'normalImgSecu("Inicio", "segundoGrado")'])}}
+		</a>
+		<a href="{{url('educamedia/telesecundaria/tercergrado')}}">
+		{{HTML::image('imagenes/mediateca/tsecundaria/Inicio/tercerGradoHover.png','Telesecundaria Tercero',['class'=>'telesecTercero', 'id'=>'tercerGradoHover', 'onmouseover'=>'resaltaImgSecu("Inicio", "tercerGrado")', 'onmouseout'=>'normalImgSecu("Inicio", "tercerGrado")'])}}
+		</a>
 		{{HTML::image('imagenes/mediateca/tsecundaria/iconoCentral/centralPrimero.png','Telesecundaria central Primero',['class'=>'imgTelesecCentro', 'id'=>'primerGradoCentro'])}}
 		{{HTML::image('imagenes/mediateca/tsecundaria/iconoCentral/centralSegundo.png','Telesecundaria central Segundo',['class'=>'imgTelesecCentro', 'id'=>'segundoGradoCentro'])}}
 		{{HTML::image('imagenes/mediateca/tsecundaria/iconoCentral/centralTercero.png','Telesecundaria central Tercero',['class'=>'imgTelesecCentro', 'id'=>'tercerGradoCentro'])}}
