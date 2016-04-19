@@ -58,6 +58,15 @@ and open the template in the editor.
 
         <!--script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.10/jquery-ui.min.js"></script--> <!-- efecto skin3 mení pie-->
         <!--<script type="text/javascript" src="http://onlinehtmltools.com/tab-generator/skinable_tabs.min.js"></script>  efecto skin3 mení pie-->
+    <style type="text/css">
+/* this would probably be in a CSS file */
+#browserWarning { display:none; }
+</style>
+<!--[if IE 6]>
+<style type="text/css">
+#browserWarning { display:; }
+</style>
+<![endif]-->
     </head>
     <body style="background-image:url('{{ asset('imagenes/ventana/background/backgroundDefault.jpg') }}');">     
         <script>
@@ -89,3 +98,23 @@ ga('send', 'pageview');
     </body>
 </html>
 
+<script type="text/javascript">
+// check if browser is IE6 (when IE) or not FF6 (when FF)
+if ((jQuery.browser.msie) && (parseInt(jQuery.browser.version) < 7)
+    || ($.browser.mozilla && $.browser.version.substr(0,1) != '3')) {
+        $('#browserWarning').show();
+}
+
+</script>
+
+<script> 
+    /*Scriopt para mensaje emergente de actualización de navegador*/
+var $buoop = {c:2}; 
+function $buo_f(){ 
+ var e = document.createElement("script"); 
+ e.src = "//browser-update.org/update.min.js"; 
+ document.body.appendChild(e);
+};
+try {document.addEventListener("DOMContentLoaded", $buo_f,false)}
+catch(e){window.attachEvent("onload", $buo_f)}
+</script> 
