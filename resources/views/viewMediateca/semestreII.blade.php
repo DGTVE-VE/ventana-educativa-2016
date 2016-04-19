@@ -6,12 +6,14 @@
 	@include('viewMediateca.encabezadoMediateca')
 @endsection
 @section('cuerpoMediateca')
-	<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center textoTitulo bajaFila">
-		<?php
-			generaBreadCrumbs();
-		?>
+	<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center" style="padding:4%">
 	</div>
-	<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xs-offset-2 col-sm-offset-2 col-md-offset-2 col-lg-offset-2" style="padding:10%;">
+	<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center textoTitulo">
+		<p><?php
+			generaBreadCrumbs();
+		?></p><br>
+	</div>
+	<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xs-offset-4 col-sm-offset-4 col-md-offset-4 col-lg-offset-4">
 		<a href="{{(url('educamedia/telebachillerato/II/12/1'))}}">
 			{{HTML::image('imagenes/mediateca/tbachillerato/SemestreII/InformaticaII.png','Telebachillerato InformaticaII',['class'=>'InformaticaII', 'id'=>'InformaticaII', 'onmouseover'=>'muestraImgCentro("SemestreII","InformaticaII")', 'onmouseout'=>'ocultaImgCentro("SemestreII","InformaticaII")'])}}
 		</a>
