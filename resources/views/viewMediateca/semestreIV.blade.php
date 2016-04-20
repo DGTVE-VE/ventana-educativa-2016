@@ -22,7 +22,7 @@
 			<area alt="" title="" href="{{(url('educamedia/telebachillerato/IV/21/1'))}}" onmouseover="resaltaImgSecu('SemestreIV','MatematicasIV')" onmouseout="normalImgSecu('SemestreIV','MatematicasIV')" shape="poly" coords="376,295,465,330,467,331,456,353,438,383,415,412,373,447,338,464,276,482,261,385,297,374,336,352,362,323" />
 			<area alt="" title="" href="{{(url('educamedia/telebachillerato/IV/26/1'))}}" onmouseover="resaltaImgSecu('SemestreIV','LenguaAdicionalIV')" onmouseout="normalImgSecu('SemestreIV','LenguaAdicionalIV')" shape="poly" coords="261,386,275,480,255,481,210,482,144,464,97,435,53,393,52,391,130,333,144,350,182,372,223,384" />
 		</map>
-		{{HTML::image('imagenes/mediateca/tbachillerato/SemestreIV/SemestreIV.png','telebachillerato Semestre V',['class'=>'posicionInicial img-responsive', 'id'=>'SemestreV'])}}
+		{{HTML::image('imagenes/mediateca/tbachillerato/SemestreIV/semestreIV.png','telebachillerato Semestre V',['class'=>'posicionInicial img-responsive', 'id'=>'SemestreV'])}}
 			{{HTML::image('imagenes/mediateca/tbachillerato/SemestreIV/BiologiaIIHover.png','Telebachillerato BiologiaII',['class'=>'resaltaImg img-responsive', 'id'=>'BiologiaIIHover'])}}
 			{{HTML::image('imagenes/mediateca/tbachillerato/SemestreIV/LiteraturaIIHover.png','Telebachillerato LiteraturaII',['class'=>'resaltaImg img-responsive', 'id'=>'LiteraturaIIHover'])}}
 			{{HTML::image('imagenes/mediateca/tbachillerato/SemestreIV/EstructuraHover.png','Telebachillerato Estructura',['class'=>'resaltaImg img-responsive', 'id'=>'EstructuraHover'])}}

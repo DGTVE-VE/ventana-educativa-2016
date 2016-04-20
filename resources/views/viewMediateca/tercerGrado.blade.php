@@ -36,7 +36,7 @@
 		{{HTML::image('imagenes/mediateca/tsecundaria/iconoCentral/matematicasCentro.png','Telesecundaria central matematicas',['class'=>'imgPrimeroCentral', 'id'=>'matematicasCentro'])}}
 		{{HTML::image('imagenes/mediateca/tsecundaria/iconoCentral/quimicaCentro.png','Telesecundaria central quimica',['class'=>'imgPrimeroCentral', 'id'=>'quimicaCentro'])}}
 		{{HTML::image('imagenes/mediateca/tsecundaria/iconoCentral/lenguaCentro.png','Telesecundaria central lengua',['class'=>'imgPrimeroCentral', 'id'=>'lenguaCentro'])}}
-		{{HTML::image('imagenes/mediateca/tsecundaria/tercerGrado/ImgMapa.png','telesecundaria',['class'=>'posicionMapa img-responsive', 'id'=>'telebachilleratoSEMII', 'usemap'=>'#mapaTercerGdo'])}}
+		{{HTML::image('imagenes/mediateca/tsecundaria/tercerGrado/imgMapa.png','telesecundaria',['class'=>'posicionMapa img-responsive', 'id'=>'telebachilleratoSEMII', 'usemap'=>'#mapaTercerGdo'])}}
 	</div>
 	@include('viewMediateca.barraSociales')
 @endsection
