@@ -1,7 +1,7 @@
 <link rel="stylesheet" type="text/css" href="css/ventana/estiloventana.css"/>
 <script type="text/javascript" src="js/ventana/ventanaCuerpo.js"></script>
 <div class="container-fluid">
-    <div class="row">
+    <div class="row">        
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="padding:30px;">
         </div>
     </div>
@@ -11,6 +11,13 @@
             <div style="padding:2%;">
             </div>
         </div>
+        @if(Session::has('message'))
+        <div class="col-md-12">
+            <div class="col-md-3"></div>
+            <p class="alert col-md-6 text-center message-compatible {{ Session::get('alert-class', 'alert-info') }}">{{ Session::get('message') }}</p>
+            <div class="col-md-3"></div>
+        </div>
+        @endif
         <div class="col-md-1 col-lg-1 col-md-offset-1 col-lg-offset-1" style="padding-top: 8.9%; padding-left:0; padding-right:0;">
             {{HTML::image('imagenes/ventana/homeventana/CUBO-01.png','Canal IberoAmericano',['name'=>'CUBO01','id'=>'CUBO01', 'class'=>'imgColor oculta difumina Intervalo4 slideInLeft rombo1', 'usemap'=>'#mapacubo1'])}}
             <map name="mapacubo1" id="mapacubo1">
@@ -361,11 +368,19 @@
         </div>
 
     </div>
-
-    @if(Session::has('message'))
-    <div class="col-md-4 col-md-offset-4" style="margin-top: 15%;">
-        <p class="alert {{ Session::get('alert-class', 'alert-info') }}">{{ Session::get('message') }}</p>
+    @if (Session::has('flash_notification.message'))
+    <div class="col-md-12" style="margin-top: 15%;">
+        <div class="col-md-3"></div>
+        <div class="alert col-md-6 text-center message-compatible alert-{{ Session::get('flash_notification.level') }}">            
+            {{ Session::get('flash_notification.message') }}
+        </div>
+        <div class="col-md-3"></div>
     </div>
     @endif
-
 </div>
+<script>
+    $(".alert").alert();
+    window.setTimeout(function () {
+        $(".alert").alert('close');
+    }, 7000);
+</script>

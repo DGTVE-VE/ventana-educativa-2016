@@ -45,7 +45,7 @@
 		{{HTML::image('imagenes/mediateca/tsecundaria/iconoCentral/fisicaCentro.png','Telesecundaria central fisica',['class'=>'imgPrimeroCentral', 'id'=>'fisicaCentro'])}}
 		{{HTML::image('imagenes/mediateca/tsecundaria/iconoCentral/lenguaCentro.png','Telesecundaria central lengua',['class'=>'imgPrimeroCentral', 'id'=>'lenguaCentro'])}}
 		{{HTML::image('imagenes/mediateca/tsecundaria/iconoCentral/educacionFisicaCentro.png','Telesecundaria central educacionFisica',['class'=>'imgPrimeroCentral', 'id'=>'educacionFisicaCentro'])}}
-		{{HTML::image('imagenes/mediateca/tsecundaria/segundoGrado/ImgMapa.png','telesecundaria',['class'=>'posicionMapa img-responsive', 'id'=>'telebachilleratoSEMII', 'usemap'=>'#mapaSegundoGdo'])}}
+		{{HTML::image('imagenes/mediateca/tsecundaria/segundoGrado/imgMapa.png','telesecundaria',['class'=>'posicionMapa img-responsive', 'id'=>'telebachilleratoSEMII', 'usemap'=>'#mapaSegundoGdo'])}}
 	</div>
     @include('viewMediateca.barraSociales')
 @endsection
