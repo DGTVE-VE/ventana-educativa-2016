@@ -29,7 +29,7 @@
 			{{HTML::image('imagenes/mediateca/tbachillerato/SemestreIV/FisicaIIHover.png','Telebachillerato FisicaII',['class'=>'resaltaImg img-responsive', 'id'=>'FisicaIIHover'])}}
 			{{HTML::image('imagenes/mediateca/tbachillerato/SemestreIV/MatematicasIVHover.png','Telebachillerato MatematicasIV',['class'=>'resaltaImg img-responsive', 'id'=>'MatematicasIVHover'])}}
 			{{HTML::image('imagenes/mediateca/tbachillerato/SemestreIV/LenguaAdicionalIVHover.png','Telebachillerato LenguaAdicionalIV ',['class'=>'resaltaImg img-responsive', 'id'=>'LenguaAdicionalIVHover'])}}
-		{{HTML::image('imagenes/mediateca/tbachillerato/SemestreIV/ImgMapa.png','Telebachillerato',['class'=>'posicionMapa img-responsive', 'id'=>'telebachilleratoSEMV', 'usemap'=>'#mapaSemIV'])}}
+		{{HTML::image('imagenes/mediateca/tbachillerato/SemestreIV/imgMapa.png','Telebachillerato',['class'=>'posicionMapa img-responsive', 'id'=>'telebachilleratoSEMV', 'usemap'=>'#mapaSemIV'])}}
 	</div>
 	@include('viewMediateca.barraSociales')
 @endsection
