@@ -10,7 +10,7 @@
                     <li><a data-toggle="modal" href="#myModal-calendario">Calendario</a></li>
                     <li><a data-toggle="modal" href="#myModal-materialEducativo">Materiales Educativos</a></li>
                     <li id="sinBorde"><a href="{{url('http://www.televisioneducativa.gob.mx/canales/telesecundaria#subenlaces')}}" target="_blank">Programación Televisiva</a></li>
-                </ul>
+                </ul>|
             </nav>
            
             <!-- Page Content -->
@@ -45,7 +45,7 @@
                         </div>
                        <div class="modal-body">
                            <h3>Mapa Curricular</h3>
-                               {{ HTML::image('imagenes/mediateca/tsecundaria/mapaCurricularts.png','mapa curricular',['width'=>'870','height'=>'620']) }}
+                               {{ HTML::image('imagenes/mediateca/tsecundaria/mapaCurricularts.png','mapa curricular',['width'=>'870','height'=>'550']) }}
                             
                         </div>
                     </div>
