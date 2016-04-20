@@ -403,6 +403,10 @@ function generaBreadCrumbs() {
         $hrefCompleta = $hrefCompleta . "/" . $gradoURI;
         echo ' / <a href="'
         ?>{{url($hrefCompleta)}}<?php
+		if(strpos($uriActual[$i],'%C3%A9')!==false){
+			$gradoURI= 'Proped&#201;utico';
+			$termina = true;
+		}
         echo'">' . strtoupper($gradoURI) . '</a>';
         if ($termina == true) {
             break;
