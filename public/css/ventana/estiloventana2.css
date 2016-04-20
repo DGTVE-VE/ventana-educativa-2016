@@ -176,3 +176,9 @@ body{
     height: 30px;
     width: 30px;
 }
+
+.message-compatible{
+   background:rgba(0, 0, 0, .3) !important;
+   border: 0 !important;
+   color: white;
+}

@@ -176,7 +176,7 @@ class MediatecaController extends Controller {
 
     public function store(Request $request) {
         Flash::message('Welcome Aboard!');
-        return redirect('mediateca')->with('key', 'You have done successfully');
+        return redirect('educamedia/telesecundaria/primergrado')->with('key', 'You have done successfully');
     }
 
 }

@@ -25,10 +25,10 @@
                 <div class="modal-dialog modal-lg">
                     <div class="modal-content">
                         <div class="modal-header">
-                             <h3>Telesecundaria
-                             <button type="button" class="close" data-dismiss="modal">&times;</button></h3>
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title">Telesecundaria</h4>
                         </div>
-                        <div class="modal-body">
+                        <div class="modal-body text-justify">
                             <h2>Misión</h2><br/>
                             <p>Brindar a los grupos más vulnerables del país educación secundaria, con una sólida formación en cada disciplina con principios éticos y de solidaridad social, que les permita desarrollar sus aptitudes y capacidades para que sus egresados sean capaces de desempeñarse exitosamente en educación media, así como de aprovechar responsablemente los recursos locales para mejorar su calidad de vida, a través de espacios educativos, materiales, equipo informático, uso de nuevas tecnologías de la información y la comunicación (TIC), y métodos pedagógicos acordes a sus necesidades específicas. Al mismo tiempo de suministrar la formación y los recursos necesarios a los docentes para garantizar su óptimo desempeño.</p>
                         </div>
@@ -42,11 +42,11 @@
                     <div class="modal-content">
                         <div class="modal-header">
                             <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title">Telesecundaria</h4>
                         </div>
                        <div class="modal-body">
-                           <h3 >Telesecundaria</h3>
-                           <h2>Mapa Curricular</h3>
-                               {{ HTML::image('imagenes/mediateca/tsecundaria/mapaCurricularts.png','mapa curricular',['width'=>'870','height'=>'550']) }}
+                            <h2>Mapa Curricular</h3>
+                            {{ HTML::image('imagenes/mediateca/tsecundaria/mapaCurricularts.png','mapa curricular',['width'=>'100%','height'=>'100%']) }}
                         </div>
                     </div>
                 </div>
@@ -58,13 +58,12 @@
                     <div class="modal-content">
                         <div class="modal-header">
                             <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title">Telesecundaria</h4>
                         </div>
-                        <div class="modal-body soloTexto">
-                            <a href="{{url('http://telesecundaria.dgmie.sep.gob.mx/materiales/')}}" target="_blank" >
-                            <h3 >Telesecundaria</h3>
-                            <h2>Materiales Educativos</h2>
-                            <p>Este espacio le ofrece una amplia gama de materiales educativos desarrollados para la Telesecundaria: libros digitales para alumnos y maestros, apuntes, videos de consulta, audios e interactivos, se encuentran a su disposición para consultarlos o descargarlos a su equipo.</p>
-                            </a>
+                        <div class="modal-body text-justify">
+                            <h2>Materiales Educativos</h2><br/>
+                            <p>Este espacio le ofrece una amplia gama de materiales educativos desarrollados para la Telesecundaria: libros digitales para alumnos y maestros, apuntes, videos de consulta, audios e interactivos, se encuentran a su disposición para consultarlos o descargarlos a su equipo.
+                            <a href="{{url('http://telesecundaria.dgmie.sep.gob.mx/materiales/')}}" target="_blank" > Consultar material...</a></p>
                         </div>
                     </div>
                 </div>
@@ -76,10 +75,11 @@
                     <div class="modal-content">
                         <div class="modal-header">
                             <button type="button" class="close" data-dismiss="modal">&times;</button>
+                             <h4 class="modal-title">Telesecundaria</h4>
                         </div>
                         <div class="modal-body">
                             <a href="{{url('http://www.enba.sep.gob.mx/files/calendario2015-2016.pdf')}}" target="_blank">
-                            {{ HTML::image('imagenes/mediateca/tsecundaria/calendarioEscolar.jpg','calendario',['width'=>'870','height'=>'620']) }}
+                            {{ HTML::image('imagenes/mediateca/tsecundaria/calendarioEscolar.jpg','calendario',['width'=>'100%','height'=>'100%']) }}
                             </a>
                         </div>
                     </div>

@@ -189,7 +189,7 @@
                                         <h4 style="color: white;" class="text-center">{{Auth::user()->email}}</h4>                            
 
                                         <div class="col-md-6 text-center">
-                                            <a href="logout" tabindex="5" style="color: red; font-weight: bold;" class="forgot-password">
+                                            <a href="{{url('logout')}}" tabindex="5" style="color: red; font-weight: bold;" class="forgot-password">
                                                 Cerrar Sesión
                                             </a>
                                         </div>
