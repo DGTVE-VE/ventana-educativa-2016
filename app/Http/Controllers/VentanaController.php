@@ -11,6 +11,8 @@ use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Auth;
 use App\Intereses_educativos;
 use Illuminate\Support\Facades\Session;
+use Laracasts\Flash\Flash;
+
 
 //use App\User;
 
@@ -20,8 +22,8 @@ class VentanaController extends Controller {
 //    }
 //    
     public function ventana_educativa() {
-        $interes_educativo = Intereses_educativos::lists('interes_educativo', 'id');
-        return view('viewVentana/ventana-educativa', compact('interes_educativo'));
+        Flash::message('Para una mejor experiencia de visualización le recomendamos usar el navegador Google Chrome o Firefox');
+        return view('viewVentana/ventana-educativa');
     }
 
     public function registraUsuario() {

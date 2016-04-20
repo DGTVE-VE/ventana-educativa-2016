@@ -282,15 +282,15 @@
     function muestraMasIconos() {
         if (imgOculto) {
             event.stopPropagation();
-            $(".ocultaImgApp").css("width", "90%");
-            $(".ocultaImgApp").css("height", "90%");
+            $(".ocultaImgApp").css("width", "83px");
+            $(".ocultaImgApp").css("height", "83px");
             $(".ocultaImgApp").css("visibility", "visible");
             imgOculto = false;
         }
         else {
             event.stopPropagation();
-            $(".ocultaImgApp").css("width", "0%");
-            $(".ocultaImgApp").css("height", "0%");
+            $(".ocultaImgApp").css("width", "0px");
+            $(".ocultaImgApp").css("height", "0px");
             $(".ocultaImgApp").css("visibility", "hidden");
             imgOculto = true;
         }
