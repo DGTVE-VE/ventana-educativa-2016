@@ -44,9 +44,9 @@
                             <button type="button" class="close" data-dismiss="modal">&times;</button>
                         </div>
                        <div class="modal-body">
-                           <h3>Mapa Curricular</h3>
+                           <h3 >Telesecundaria</h3>
+                           <h2>Mapa Curricular</h3>
                                {{ HTML::image('imagenes/mediateca/tsecundaria/mapaCurricularts.png','mapa curricular',['width'=>'870','height'=>'550']) }}
-                            
                         </div>
                     </div>
                 </div>
