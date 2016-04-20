@@ -8,7 +8,7 @@ Mediateca
 @include('viewMediateca.encabezadoMediateca')
 @endsection
 @section('cuerpoMediateca')
-<div class="container">
+<div class="container-fluid">
     <div class="row">
 		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center textoTitulo" style="padding-top:80px;">
 		</div>
@@ -18,22 +18,105 @@ Mediateca
 			?>
 		</div>
 	</div>
+<div class="col-md-1"></div>
+<div class="col-md-10">
     <div class="row transparenciaVideos">
         <div id="custom_carousel" class="carousel slide" data-ride="carousel" data-interval="false">
             <div class="col-md-8" id='div-containter'>
                 
-                <h3>{{$videos[0]->serie}}</h2>                
-                <div id="player" align="center">    </div>
+                <h3>{{$videos[0]->materia}}</h3>                
+                <h2>{{$videos[0]->titulo_programa}}</h2>                
+                <div id="player" class="col-md-12" align="center">    </div>
                 
+                <div class="pull-right">
                 <input type="number" name="rating" id="star-rating" class="rating" />
                 <input type="hidden" id="video-id" value="{{ $videos[0]->id }}" />
                 <input type="hidden" id="nivel" value="{{ $nivel }}" />
+                </div>
                 
-                <li class="list-unstyled"><h4>{{ $videos[0]->subtitulo_serie.' '.$videos[0]->subtitulo_programa}}<h3></li>
-                <li class="list-unstyled"><h4>{{ $videos[0]->titulo_programa }}<h3></li>                                                
+                <a href="#"><i class="fa fa-facebook-square fa-2x redesText"></i></a>
+                <a href="#"><i class="fa fa-twitter-square fa-2x redesText"></i></a>
+                <a href="#"><i class="fa fa-envelope-square fa-2x redesText"></i></a>
+                
+                <li class="list-unstyled"><h4>{{ $videos[0]->subtitulo_serie }}<h3></li>
+                <li class="list-unstyled"><h4>{{ $videos[0]->subtitulo_programa }}<h3></li>                                                
                 <li class="list-unstyled"><h4>Grado: {{ $videos[0]->grado }}</h4></li>
-                <li class="list-unstyled"><h4>Sinopsis</h4></li>
-                <li class="list-unstyled text-justify">{{ $videos[0]->sinopsis }}</li>
+                @if (strlen($videos[0]->titulo_programa) > 250)                                
+                    <li  class="list-unstyled text-justify">{{ $videos[0]->sinopsis }}</li>
+                @else                                                     
+                    <li class="list-unstyled text-justify">{{ $titulo= substr($videos[0]->sinopsis, 0, 250).'...'}}</li>
+                @endif
+                <div id="botonmas" data-toggle="collapse" data-target="#massinopsis" class="col-md-12 text-center">
+                <span>Más</span>
+                <span class="caret"></span>
+                </div>  
+                <br> <br>
+                <div class="col-md-6"><!--Inicia comentario 1-->
+                    <div class="panel panel-white post panel-shadow">
+                        <div class="post-heading">
+                            <div class="pull-left image">
+                                <i class="fa fa-user fa-3x text-center img-circle avatar" aria-hidden="true" alt="Imagen de Usuario"></i>
+                                <!--<img src="http://bootdey.com/img/Content/user_1.jpg" class="img-circle avatar" alt="user profile image">-->
+                            </div>
+                            <div class="pull-left meta">
+                                <div class="title h5">
+                                    <p>Nombre Usuario</p>
+                                    <i class="fa fa-graduation-cap" aria-hidden="true"></i>
+                                    <i class="fa fa-graduation-cap" aria-hidden="true"></i>
+                                    <i class="fa fa-graduation-cap" aria-hidden="true"></i>
+                                    <i class="fa fa-graduation-cap" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                            <h6 class="time pull-right">fecha</h6>
+                        </div> 
+                        <div class="post-description"> 
+                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. </p>
+<!--                        <div class="col-md-12">-->
+                            <div class="pull-right">
+                            <i class="fa fa-thumbs-up icon stat-item"></i>   2
+                            &nbsp;&nbsp;&nbsp;
+                            <span>Comentar</span>
+                            <label>2</label>                            
+                            <span class="caret"></span>                            
+                            </div>
+                            <br>
+                        <!--</div>-->                            
+                        </div>
+                    </div>
+                </div><!--Termina comentario--->
+                <div class="col-md-6"><!--Inicia comentario 1-->
+                    <div class="panel panel-white post panel-shadow">
+                        <div class="post-heading">
+                            <div class="pull-left image">
+                                <i class="fa fa-user fa-3x text-center img-circle avatar" aria-hidden="true" alt="Imagen de Usuario"></i>
+                                <!--<img src="http://bootdey.com/img/Content/user_1.jpg" class="img-circle avatar" alt="user profile image">-->
+                            </div>
+                            <div class="pull-left meta">
+                                <div class="title h5">
+                                    <p>Nombre Usuario</p>
+                                    <i class="fa fa-graduation-cap" aria-hidden="true"></i>
+                                    <i class="fa fa-graduation-cap" aria-hidden="true"></i>
+                                    <i class="fa fa-graduation-cap" aria-hidden="true"></i>
+                                    <i class="fa fa-graduation-cap" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                            <h6 class="time pull-right">fecha</h6>
+                        </div> 
+                        <div class="post-description"> 
+                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. </p>
+<!--                        <div class="col-md-12">-->
+                            <div class="pull-right">
+                            <i class="fa fa-thumbs-up icon stat-item"></i>   2
+                            &nbsp;&nbsp;&nbsp;
+                            <span>Comentar</span>
+                            <label>2</label>                            
+                            <span class="caret"></span>                            
+                            </div>
+                            <br>
+                        <!--</div>-->                            
+                        </div>
+                    </div>
+                </div><!--Termina comentario--->                
             </div>
         </div>
         <div class="col-md-4 controls" id="custom_controls">
@@ -65,7 +148,8 @@ Mediateca
         
         <!-- End Carousel -->
     </div>                                                        
-<div class='row'> <br></div>
+</div>
+<div class="col-md-1"></div>
 </div>
 @endsection                                                
 @section('estilos')
@@ -73,13 +157,22 @@ Mediateca
 @endsection
 
 @section('scripts')
+<script>
+//    $(document).ready(function(){
+       
+//    });    
+</script>
+
 <script src="https://www.youtube.com/player_api"></script>
 
 <!--https://github.com/javiertoledo/bootstrap-rating-input-->
 <script src="{{asset ('js/bootstrap-rating-input.min.js')}}"></script>
 <script>
     $(document).ready( function (){
-    
+ $("massinopsis").collapse({toggle: false});
+    $("botonmas").click(function(){
+        $("nomuestra").addClass("hidden");
+    });
         $('#star-rating').change (function (){
             $.ajax({
                 method: "POST",

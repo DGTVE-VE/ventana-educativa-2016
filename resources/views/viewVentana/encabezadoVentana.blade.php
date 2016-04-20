@@ -1,16 +1,16 @@
 <!--nuevo encabezado-->
 
 <style>
-	.ocultaImgApp{
-		visibility:hidden;
-		width:0px;
-		height:0px;
-	}
-	.iconoGde{
-		color:white;
-		font-size:14px;
-		cursor:pointer;
-	}
+    .ocultaImgApp{
+        visibility:hidden;
+        width:0px;
+        height:0px;
+    }
+    .iconoGde{
+        color:white;
+        font-size:14px;
+        cursor:pointer;
+    }
 </style>
 <nav id="navegacionVentana" class="navbar navbar-default navbar-fixed-top lo menuVentana" role="navigation">
     <div class="container-fluid">
@@ -84,32 +84,32 @@
                                         </a>
                                     </td>
                                 </tr>
-								<tr>
-									<td>
-									</td>
-									<td class="text-center">
-										<p class="iconoGde" onclick="muestraMasIconos()">M&aacute;s</p>
-									</td>
-									<td>
-									</td>
-								</tr>
-								<tr>
-									<td>
-										<a class="" href="#">
-                                            {{ HTML::image('imagenes/ventana/encabezado/appSalud.png','icono appSalud',['class'=>'ocultaImgApp'])}}
+                                <tr>
+                                    <td>
+                                    </td>
+                                    <td class="text-center">
+                                        <p class="iconoGde" onclick="muestraMasIconos()">M&aacute;s</p>
+                                    </td>
+                                    <td>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a class="divApp centered" href="#">
+                                            {{ HTML::image('imagenes/ventana/encabezado/appSalud.png','Logo Salud',['class'=>'ocultaImgApp'])}}
                                         </a>
-									</td>
-									<td class="">
-										<a class="" href="#">
-                                            {{ HTML::image('imagenes/ventana/encabezado/appCultura.png','icono appCultura',['class'=>'ocultaImgApp'])}}
+                                    </td>
+                                    <td class="divApp centered">
+                                        <a class="" href="#">
+                                            {{ HTML::image('imagenes/ventana/encabezado/appCultura.png','Logo Cultura',['class'=>'ocultaImgApp'])}}
                                         </a>
-									</td>
-									<td>
-										<a class="" href="#">
-                                            {{ HTML::image('imagenes/ventana/encabezado/appBiblioteca.png','icono appBiblioteca',['class'=>'ocultaImgApp'])}}
+                                    </td>
+                                    <td>
+                                        <a class="divApp centered" href="#">
+                                            {{ HTML::image('imagenes/ventana/encabezado/appBiblioteca.png','Logo Biblioteca',['class'=>'ocultaImgApp'])}}
                                         </a>
-									</td>
-								</tr>
+                                    </td>
+                                </tr>
                             </table>                                       
                         </ul>
                     </li>
@@ -190,7 +190,7 @@
                                                         <input type="submit" value="Subir Imagen" class="submit btn btn-info" />
                                                         <!--<h4 id='loading' >Cargando...</h4>-->
                                                     </div>  
-                                                    
+
                                                 </form>
                                             </div>
                                         </div>
@@ -277,22 +277,22 @@
         ;
     });
     /************ CAMBIAR AVATAR **************/
-	/*	-------------------------------------	Hace visible o invisible los iconos de apps adicionales	--------------------------------------	*/
-	imgOculto = true;
-	function muestraMasIconos(){
-		if(imgOculto){
-			event.stopPropagation();
-			$(".ocultaImgApp").css("width","100%");
-			$(".ocultaImgApp").css("height","100%");
-			$(".ocultaImgApp").css("visibility","visible");
-			imgOculto = false;
-		}
-		else{
-			event.stopPropagation();
-			$(".ocultaImgApp").css("width","0%");
-			$(".ocultaImgApp").css("height","0%");
-			$(".ocultaImgApp").css("visibility","hidden");
-			imgOculto = true;
-		}
-	}
+    /*	-------------------------------------	Hace visible o invisible los iconos de apps adicionales	--------------------------------------	*/
+    imgOculto = true;
+    function muestraMasIconos() {
+        if (imgOculto) {
+            event.stopPropagation();
+            $(".ocultaImgApp").css("width", "90%");
+            $(".ocultaImgApp").css("height", "90%");
+            $(".ocultaImgApp").css("visibility", "visible");
+            imgOculto = false;
+        }
+        else {
+            event.stopPropagation();
+            $(".ocultaImgApp").css("width", "0%");
+            $(".ocultaImgApp").css("height", "0%");
+            $(".ocultaImgApp").css("visibility", "hidden");
+            imgOculto = true;
+        }
+    }
 </script>
