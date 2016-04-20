@@ -179,4 +179,14 @@ class MediatecaController extends Controller {
         return redirect('educamedia/telesecundaria/primergrado')->with('key', 'You have done successfully');
     }
 
+    public function storeTelesecundariaComment (){
+        
+        $comment = new \App\Model\Mediateca\TelesecundariaComments;
+        $comment->comment_id = filter_input (INPUT_POST, 'comment_id');
+        $comment->usuario_id = Auth::user ()->id;
+        $comment->telesecundaria_id = filter_input (INPUT_POST, 'video_id');        
+        $comment->comment = filter_input (INPUT_POST, 'comment');
+        $comment->save ();
+        return view('viewMediateca/comments')->with('comment', $comment);
+    }
 }
