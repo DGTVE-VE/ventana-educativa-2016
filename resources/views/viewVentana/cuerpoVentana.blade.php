@@ -268,9 +268,28 @@
                         <map name="mapacubosm2" id="mapacubosm2">
                             <area shape="poly" coords="0,356,356,0,708,360,360,708" href="#"/>
                         </map>
-                        <a href="#">
+                        <a data-toggle="modal" href="#myModal-idiomasSM">
                             {{HTML::image('imagenes/ventana/iconoSeccion/idiomas.png','Idiomas',['id'=>'iconoRomboSM02','class'=>'imgColor oculta difumina Intervalo3 slideInLeft iconoFoto2'])}}
                         </a>
+
+                        <!-- Modal Idiomas-->
+                        <div class="modal fade" id="myModal-idiomasSM" role="dialog">
+                            <div class="modal-dialog modal-lg">
+                                <div class="modal-content">
+                                    <div class="modal-header ">
+                                        <button type="button" class="close" data-dismiss="modal">&times</button>
+                                        <h4 class="modal-title">Idiomas</h4>
+                                    </div>
+                                    <div class="modal-body">
+                                        {{ HTML::image('imagenes/ventana/homeventana/imageningles.jpg','idioma ingles',['width'=>'100%','height'=>'100%']) }}
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-primary" data-dismiss="modal">Cerrar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> <!--Fin Modal Idiomas-->
+
                     </td>
                     <td></td>
                     <td>
