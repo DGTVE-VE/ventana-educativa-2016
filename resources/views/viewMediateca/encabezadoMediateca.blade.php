@@ -44,66 +44,6 @@
 		position: absolute; top:100px; left:100px; width:289px; height: 289px; z-index:0; visibility: hidden;
 	}
 </style>
-<script>
-	/*	-------------------------------------	Hace visible o invisible los iconos de apps adicionales	--------------------------------------	*/
-	imgOculto = true;
-	function muestraMasIconos(){
-		if(imgOculto){
-			event.stopPropagation();
-			$(".ocultaImgApp").css("width","100%");
-			$(".ocultaImgApp").css("height","100%");
-			$(".ocultaImgApp").css("visibility","visible");
-			imgOculto = false;
-		}
-		else{
-			event.stopPropagation();
-			$(".ocultaImgApp").css("width","0%");
-			$(".ocultaImgApp").css("height","0%");
-			$(".ocultaImgApp").css("visibility","hidden");
-			imgOculto = true;
-		}
-	}
-	/*	----------	Manipula imagenes del centro del aro en telesecundaria	PRUEBA----------	*/
-		function resaltaImgSecu(prefijo, idImg){
-			var idImgHover = "#" + idImg + "Hover";
-			$(idImgHover).css("visibility", "visible");
-			var idImgCentro = "#" + idImg + "Centro";
-			$(idImgCentro).addClass("bounceIn");
-			$(idImgCentro).addClass("animated");
-			$(idImgCentro).css("visibility", "visible");
-			$(idImgCentro).fadeIn();
-			
-		}
-		function normalImgSecu(prefijo, idImg){
-			var idImgHover = "#" + idImg + "Hover";
-			$(idImgHover).css("visibility", "hidden");
-			var idImgCentro = "#" + idImg + "Centro";
-			$(idImgCentro).css("visibility", "hidden");
-			$(idImgCentro).fadeOut();
-			$(idImgCentro).removeClass("animated");
-			$(idImgCentro).removeClass("bounceIn");
-		}
-	/*	----------	Manipula imagenes del centro del aro en inicio mediateca	----------	*/
-		function muestraImgCentral(idImg){
-			var idImgHover = "#" + idImg + "Hover";
-			$(idImgHover).css("visibility", "visible");
-			var idImgCentro = "#" + idImg + "Centro";
-			$(idImgCentro).addClass("bounceIn");
-			$(idImgCentro).addClass("animated");
-			$(idImgCentro).css("visibility", "visible");
-			$(idImgCentro).css("zIndex", 0);
-			$(idImgCentro).fadeIn();
-		}
-		function ocultaImgCentral(idImg){
-			var idImgHover = "#" + idImg + "Hover";
-			$(idImgHover).css("visibility", "hidden");
-			var idImgCentro = "#" + idImg + "Centro";
-			$(idImgCentro).css("visibility", "hidden");
-			$(idImgCentro).fadeOut();
-			$(idImgCentro).removeClass("animated");
-			$(idImgCentro).removeClass("bounceIn");
-		}
-	</script>
 <nav id="navegacionMediateca" class="navbar navbar-default navbar-fixed-top lo menuVentana" role="navigation">
     <div class="container-fluid">
         <div class="row">
@@ -121,12 +61,12 @@
             </div>
             <div class="col-md-2 text-center">
                 <a href="http://www.gob.mx/sep" target="_blank">
-                    {{ HTML::image('imagenes/mediateca/encabezado/sepcolor.png','Icono Apps',['class'=>''])}}
+                    {{ HTML::image('imagenes/mediateca/encabezado/sepcolor.png','Icono Apps',['class'=>'image-responsive'])}}
                 </a>
             </div>
             <div class="col-md-2 text-center">
                 <a href="http://www.televisioneducativa.gob.mx" target="_blank">
-                    {{ HTML::image('imagenes/mediateca/encabezado/tvecolor.png','Icono Apps',['class'=>''])}}
+                    {{ HTML::image('imagenes/mediateca/encabezado/tvecolor.png','Icono Apps',['class'=>'image-responsive'])}}
                 </a>
             </div>
             <div class="col-md-4">
@@ -372,24 +312,45 @@
         ;
     });
     /************ CAMBIAR AVATAR **************/
-      /*	-------------------------------------	Hace visible o invisible los iconos de apps adicionales	--------------------------------------	*/
-    imgOculto = true;
-    function muestraMasIconos() {
-        if (imgOculto) {
-            event.stopPropagation();
-            $(".ocultaImgApp").css("width", "90%");
-            $(".ocultaImgApp").css("height", "90%");
-            $(".ocultaImgApp").css("visibility", "visible");
-            imgOculto = false;
-        }
-        else {
-            event.stopPropagation();
-            $(".ocultaImgApp").css("width", "0%");
-            $(".ocultaImgApp").css("height", "0%");
-            $(".ocultaImgApp").css("visibility", "hidden");
-            imgOculto = true;
-        }
-    }
+	
+/*	-------------------------------------	Hace visible o invisible los iconos de apps adicionales	--------------------------------------	*/
+	imgOculto = true;
+	function muestraMasIconos(){
+		if(imgOculto){
+			event.stopPropagation();
+			$(".ocultaImgApp").css("width","83px");
+			$(".ocultaImgApp").css("height","83px");
+			$(".ocultaImgApp").css("visibility","visible");
+			imgOculto = false;
+		}
+		else{
+			event.stopPropagation();
+			$(".ocultaImgApp").css("width","0%");
+			$(".ocultaImgApp").css("height","0%");
+			$(".ocultaImgApp").css("visibility","hidden");
+			imgOculto = true;
+		}
+	}
+/*	----------	Manipula imagenes del centro del aro en telesecundaria	----------	*/
+		function resaltaImgSecu(prefijo, idImg){
+			var idImgHover = "#" + idImg + "Hover";
+			$(idImgHover).css("visibility", "visible");
+			var idImgCentro = "#" + idImg + "Centro";
+			$(idImgCentro).addClass("bounceIn");
+			$(idImgCentro).addClass("animated");
+			$(idImgCentro).css("visibility", "visible");
+			$(idImgCentro).fadeIn();
+			
+		}
+		function normalImgSecu(prefijo, idImg){
+			var idImgHover = "#" + idImg + "Hover";
+			$(idImgHover).css("visibility", "hidden");
+			var idImgCentro = "#" + idImg + "Centro";
+			$(idImgCentro).css("visibility", "hidden");
+			$(idImgCentro).fadeOut();
+			$(idImgCentro).removeClass("animated");
+			$(idImgCentro).removeClass("bounceIn");
+		}
 </script>
 
 <?php
@@ -413,8 +374,6 @@ function seleccionaGrado($grado) {
         case 'V': $grado = 'semestreV';
             break;
         case 'VI': $grado = 'semestreVI';
-            break;
-        case 'VII': $grado = 'componente';
             break;
     }
     return $grado;
