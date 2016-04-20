@@ -13,7 +13,7 @@ and open the template in the editor.
         <meta name="author" content="Ecosistema Digital de Aprendizaje (DGTVE)">
         <meta http-equiv="X-UA-Compatible" content="IE=Edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
-        <link rel="shortcut icon" href="{{ asset('mediateca.ico') }}" >
+        <link rel="shortcut icon" href="{{ asset('redmite1.ico') }}" >
 
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
