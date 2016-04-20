@@ -44,81 +44,21 @@ Mediateca
                 <li class="list-unstyled"><h4 id="subtitulo_programa">{{ $videos[0]->subtitulo_programa }}<h3></li>                                                
                 <li class="list-unstyled"><h4 id="grado">Grado: {{ $videos[0]->grado }}</h4></li>
                 
-                    <li class="list-unstyled text-justify" id="sinopsis">{{ $videos[0]->sinopsis }}</li>
+                <li class="list-unstyled text-justify" id="sinopsis" style="display: none;">{{ $videos[0]->sinopsis }}</li>
                 
-                    <li class="list-unstyled text-justify" id="sinopsis-250">{{ substr($videos[0]->sinopsis, 0, 250).'...'}}</li>
+                <li class="list-unstyled text-justify" id="sinopsis-250">{{ substr($videos[0]->sinopsis, 0, 250).'...'}}</li>
                 
                 <div id="botonmas" data-toggle="collapse" data-target="#massinopsis" class="col-md-12 text-center">
                 <span>Más</span>
                 <span class="caret"></span>
                 </div>  
-                <br> <br>
-                <div class="col-md-6"><!--Inicia comentario 1-->
-                    <div class="panel panel-white post panel-shadow">
-                        <div class="post-heading">
-                            <div class="pull-left image">
-                                <i class="fa fa-user fa-3x text-center img-circle avatar" aria-hidden="true" alt="Imagen de Usuario"></i>
-                                <!--<img src="http://bootdey.com/img/Content/user_1.jpg" class="img-circle avatar" alt="user profile image">-->
-                            </div>
-                            <div class="pull-left meta">
-                                <div class="title h5">
-                                    <p>Nombre Usuario</p>
-                                    <i class="fa fa-graduation-cap" aria-hidden="true"></i>
-                                    <i class="fa fa-graduation-cap" aria-hidden="true"></i>
-                                    <i class="fa fa-graduation-cap" aria-hidden="true"></i>
-                                    <i class="fa fa-graduation-cap" aria-hidden="true"></i>
-                                </div>
-                            </div>
-                            <h6 class="time pull-right">fecha</h6>
-                        </div> 
-                        <div class="post-description"> 
-                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. </p>
-<!--                        <div class="col-md-12">-->
-                            <div class="pull-right">
-                            <i class="fa fa-thumbs-up icon stat-item"></i>   2
-                            &nbsp;&nbsp;&nbsp;
-                            <span>Comentar</span>
-                            <label>2</label>                            
-                            <span class="caret"></span>                            
-                            </div>
-                            <br>
-                        <!--</div>-->                            
-                        </div>
-                    </div>
-                </div><!--Termina comentario--->
-                <div class="col-md-6"><!--Inicia comentario 1-->
-                    <div class="panel panel-white post panel-shadow">
-                        <div class="post-heading">
-                            <div class="pull-left image">
-                                <i class="fa fa-user fa-3x text-center img-circle avatar" aria-hidden="true" alt="Imagen de Usuario"></i>
-                                <!--<img src="http://bootdey.com/img/Content/user_1.jpg" class="img-circle avatar" alt="user profile image">-->
-                            </div>
-                            <div class="pull-left meta">
-                                <div class="title h5">
-                                    <p>Nombre Usuario</p>
-                                    <i class="fa fa-graduation-cap" aria-hidden="true"></i>
-                                    <i class="fa fa-graduation-cap" aria-hidden="true"></i>
-                                    <i class="fa fa-graduation-cap" aria-hidden="true"></i>
-                                    <i class="fa fa-graduation-cap" aria-hidden="true"></i>
-                                </div>
-                            </div>
-                            <h6 class="time pull-right">fecha</h6>
-                        </div> 
-                        <div class="post-description"> 
-                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. </p>
-<!--                        <div class="col-md-12">-->
-                            <div class="pull-right">
-                            <i class="fa fa-thumbs-up icon stat-item"></i>   2
-                            &nbsp;&nbsp;&nbsp;
-                            <span>Comentar</span>
-                            <label>2</label>                            
-                            <span class="caret"></span>                            
-                            </div>
-                            <br>
-                        <!--</div>-->                            
-                        </div>
-                    </div>
-                </div><!--Termina comentario--->                
+                <br>
+                <textarea id="comment" rows="3" class="form-control"></textarea>                
+                <button id="btn-comentar" type="button" class="btn btn-default"> Comentar </button>
+                <br> 
+                <div id="comentarios"> 
+                
+                </div>
             </div>
         </div>
         <div class="col-md-4 controls" id="custom_controls">
@@ -171,6 +111,7 @@ Mediateca
 <script src="{{asset ('js/bootstrap-rating-input.min.js')}}"></script>
 <script>
     $(document).ready( function (){
+        /* Se guarda la información de los videos para cambiarla cuando dan click*/
         var videos = {!!(string)$videos!!}        
         var _videos = {};
         for (i = 0; i<videos.length; i++){            
@@ -202,6 +143,7 @@ Mediateca
             _id = $(this).attr ('_id');
             player.loadVideoById(data);
             $("#materia").html(_videos[_id].materia);
+            $("#video-id").val(_videos[_id].id);
             $("#titulo_programa").html(_videos[_id].titulo_programa);
             $("#subtitulo_serie").html(_videos[_id].subtitulo_serie);
             $("#subtitulo_programa").html(_videos[_id].subtitulo_programa);
@@ -209,6 +151,24 @@ Mediateca
             $("#sinopsis").html(_videos[_id].sinopsis);
             $("#sinopsis-250").html(_videos[_id].sinopsis.substring (0, 250));
             $('#div-containter').fadeIn ();
+        });
+        
+        $('#btn-comentar').click (function (){
+            
+            $.ajax({
+                method: "POST",
+                url: "{{url('educamedia/comment/telesecundaria')}}",
+                data: { comment: $("#comment").val(),                     
+                        video_id: $("#video-id").val(), 
+                        comment_id: 0, 
+                        _token:"{{csrf_token()}}" },                
+                error: function(ts) { 
+                    console.log (ts.responseText); 
+                }})
+                .done(function( msg ) {
+                    $("#comentarios").append(msg)
+//                    console.log ( "Data Saved: " + msg );
+                });
         });
     });
     
@@ -331,7 +291,7 @@ function initializeYoutube(youtubeId, time) {
             modestbranding: 1, // Evita que el logo de youtube se muestre en la barra de control
             showinfo: 0, // Evita que se muestre información del video antes de su reproducción
             enablejsapi: 1, // Permite que el reproductor sea controlado por el API de Javascript
-            autoplay: 1, // Autoinicio habilitado
+            autoplay: 0, // Autoinicio habilitado
             rel: 0, // Evita que muestre videos relacionados al finalizar.
             start: time // Tiempo en el que debe iniciar el video
         },
