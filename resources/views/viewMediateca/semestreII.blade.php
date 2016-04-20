@@ -14,27 +14,24 @@
 		?></p><br>
 	</div>
 	<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xs-offset-4 col-sm-offset-4 col-md-offset-4 col-lg-offset-4">
-		<a href="{{(url('educamedia/telebachillerato/II/12/1'))}}">
-			{{HTML::image('imagenes/mediateca/tbachillerato/SemestreII/InformaticaII.png','Telebachillerato InformaticaII',['class'=>'InformaticaII', 'id'=>'InformaticaII', 'onmouseover'=>'muestraImgCentro("SemestreII","InformaticaII")', 'onmouseout'=>'ocultaImgCentro("SemestreII","InformaticaII")'])}}
-		</a>
-		<a href="{{(url('educamedia/telebachillerato/II/11/1'))}}">
-			{{HTML::image('imagenes/mediateca/tbachillerato/SemestreII/TallerLecturaII.png','Telebachillerato TallerLecturaII',['class'=>'TallerLecturaII', 'id'=>'TallerLecturaII', 'onmouseover'=>'muestraImgCentro("SemestreII","TallerLecturaII")', 'onmouseout'=>'ocultaImgCentro("SemestreII","TallerLecturaII")'])}}
-		</a>
-		<a href="{{(url('educamedia/telebachillerato/II/10/1'))}}">
-			{{HTML::image('imagenes/mediateca/tbachillerato/SemestreII/HistoriaMexicoI.png','Telebachillerato HistoriaMexicoI',['class'=>'HistoriaMexicoI', 'id'=>'HistoriaMexicoI', 'onmouseover'=>'muestraImgCentro("SemestreII","HistoriaMexicoI")', 'onmouseout'=>'ocultaImgCentro("SemestreII","HistoriaMexicoI")'])}}
-		</a>
-		<a href="{{(url('educamedia/telebachillerato/II/14/1'))}}">
-			{{HTML::image('imagenes/mediateca/tbachillerato/SemestreII/EticaValoresII.png','Telebachillerato EticaValoresII',['class'=>'EticaValoresII', 'id'=>'EticaValoresII', 'onmouseover'=>'muestraImgCentro("SemestreII","EticaValoresII")', 'onmouseout'=>'ocultaImgCentro("SemestreII","EticaValoresII")'])}}
-		</a>
-		<a href="{{(url('educamedia/telebachillerato/II/8/1'))}}">
-			{{HTML::image('imagenes/mediateca/tbachillerato/SemestreII/MatematicasII.png','Telebachillerato MatematicasII',['class'=>'MatematicasII', 'id'=>'MatematicasII', 'onmouseover'=>'muestraImgCentro("SemestreII","MatematicasII")', 'onmouseout'=>'ocultaImgCentro("SemestreII","MatematicasII")'])}}
-		</a>
-		<a href="{{(url('educamedia/telebachillerato/II/13/1'))}}">
-			{{HTML::image('imagenes/mediateca/tbachillerato/SemestreII/LenguaAdicionalII.png','Telebachillerato LenguaAdicionalII',['class'=>'LenguaAdicionalII', 'id'=>'LenguaAdicionalII', 'onmouseover'=>'muestraImgCentro("SemestreII","LenguaAdicionalII")', 'onmouseout'=>'ocultaImgCentro("SemestreII","LenguaAdicionalII")'])}}
-		</a>
-		<a href="{{(url('educamedia/telebachillerato/II/9/1'))}}">
-			{{HTML::image('imagenes/mediateca/tbachillerato/SemestreII/QuimicaII.png','Telebachillerato QuimicaII',['class'=>'QuimicaII', 'id'=>'QuimicaII', 'onmouseover'=>'muestraImgCentro("SemestreII","QuimicaII")', 'onmouseout'=>'ocultaImgCentro("SemestreII","QuimicaII")'])}}
-		</a>
+		<map name="mapaSemII" id="mapaSemII">
+			<area alt="" onmouseover="resaltaImgSecu('SemestreII','InformaticaII')" onmouseout="normalImgSecu('SemestreII','InformaticaII')" title="" href="{{(url('educamedia/telebachillerato/II/12/1'))}}" shape="poly" coords="1,232,99,232,103,209,111,183,124,158,140,140,159,124,101,45,83,58,60,81,36,111,13,159,4,192" />
+			<area alt="" onmouseover="resaltaImgSecu('SemestreII','TallerLecturaII')" onmouseout="normalImgSecu('SemestreII','TallerLecturaII')" title="" href="{{(url('educamedia/telebachillerato/II/11/1'))}}" shape="poly" coords="161,121,102,44,129,28,156,15,192,5,212,0,256,1,295,5,313,10,282,104,250,96,199,101" />
+			<area alt="" onmouseover="resaltaImgSecu('SemestreII','HistoriaMexicoI')" onmouseout="normalImgSecu('SemestreII','HistoriaMexicoI')" title="" href="{{(url('educamedia/telebachillerato/II/10/1'))}}" shape="poly" coords="285,104,316,12,352,25,374,39,397,55,420,76,448,112,466,149,471,164,376,192,357,154,326,124" />
+			<area alt="" onmouseover="resaltaImgSecu('SemestreII','EticaValoresII')" onmouseout="normalImgSecu('SemestreII','EticaValoresII')" title="" href="{{(url('educamedia/telebachillerato/II/14/1'))}}" shape="poly" coords="378,193,471,166,482,203,483,278,471,322,451,365,367,314,382,273,387,237" />
+			<area alt="" onmouseover="resaltaImgSecu('SemestreII','MatematicasII')" onmouseout="normalImgSecu('SemestreII','MatematicasII')" title="" href="{{(url('educamedia/telebachillerato/II/8/1'))}}" shape="poly" coords="265,384,281,481,364,452,392,434,422,406,448,367,450,364,367,316,349,338,323,357,297,373" />
+			<area alt="" onmouseover="resaltaImgSecu('SemestreII','LenguaAdicionalII')" onmouseout="normalImgSecu('SemestreII','LenguaAdicionalII')" title="" href="{{(url('educamedia/telebachillerato/II/13/1'))}}" shape="poly" coords="281,479,265,383,248,387,224,385,192,377,159,359,144,348,82,422,109,445,157,470,204,482" />
+			<area alt="" onmouseover="resaltaImgSecu('SemestreII','QuimicaII')" onmouseout="normalImgSecu('SemestreII','QuimicaII')" title="" href="{{(url('educamedia/telebachillerato/II/9/1'))}}" shape="poly" coords="82,421,143,348,137,340,120,317,107,285,99,253,99,234,95,233,2,234,2,248,2,273,3,298,12,316,21,340,40,381" />
+		</map>
+		{{HTML::image('imagenes/mediateca/tbachillerato/SemestreII/SemestreII.png','telebachillerato Semestre II',['class'=>'posicionInicial img-responsive', 'id'=>'SemestreII'])}}
+			{{HTML::image('imagenes/mediateca/tbachillerato/SemestreII/InformaticaIIHover.png','Telebachillerato InformaticaII',['class'=>'resaltaImg img-responsive', 'id'=>'InformaticaIIHover'])}}
+			{{HTML::image('imagenes/mediateca/tbachillerato/SemestreII/TallerLecturaIIHover.png','Telebachillerato TallerLecturaII',['class'=>'resaltaImg img-responsive', 'id'=>'TallerLecturaIIHover'])}}
+			{{HTML::image('imagenes/mediateca/tbachillerato/SemestreII/HistoriaMexicoIHover.png','Telebachillerato HistoriaMexicoI',['class'=>'resaltaImg img-responsive', 'id'=>'HistoriaMexicoIHover'])}}
+			{{HTML::image('imagenes/mediateca/tbachillerato/SemestreII/EticaValoresIIHover.png','Telebachillerato EticaValoresII',['class'=>'resaltaImg img-responsive', 'id'=>'EticaValoresIIHover'])}}
+			{{HTML::image('imagenes/mediateca/tbachillerato/SemestreII/MatematicasIIHover.png','Telebachillerato MatematicasII',['class'=>'resaltaImg img-responsive', 'id'=>'MatematicasIIHover'])}}
+			{{HTML::image('imagenes/mediateca/tbachillerato/SemestreII/LenguaAdicionalIIHover.png','Telebachillerato LenguaAdicionalII',['class'=>'resaltaImg img-responsive', 'id'=>'LenguaAdicionalIIHover'])}}
+			{{HTML::image('imagenes/mediateca/tbachillerato/SemestreII/QuimicaIIHover.png','Telebachillerato QuimicaII',['class'=>'resaltaImg img-responsive', 'id'=>'QuimicaIIHover'])}}
+		{{HTML::image('imagenes/mediateca/tbachillerato/SemestreII/imgMapa.png','Telebachillerato',['class'=>'posicionMapa img-responsive', 'id'=>'telebachilleratoSEMII', 'usemap'=>'#mapaSemII'])}}
 	</div>
 	@include('viewMediateca.barraSociales')
 @endsection
