@@ -25,11 +25,11 @@
                 <div class="modal-dialog modal-lg">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                             <h3>Telesecundaria
+                             <button type="button" class="close" data-dismiss="modal">&times;</button></h3>
                         </div>
                         <div class="modal-body">
-                            <h3>Telesecundaria</h3>
-                            <h2>Misión</h2>
+                            <h2>Misión</h2><br/>
                             <p>Brindar a los grupos más vulnerables del país educación secundaria, con una sólida formación en cada disciplina con principios éticos y de solidaridad social, que les permita desarrollar sus aptitudes y capacidades para que sus egresados sean capaces de desempeñarse exitosamente en educación media, así como de aprovechar responsablemente los recursos locales para mejorar su calidad de vida, a través de espacios educativos, materiales, equipo informático, uso de nuevas tecnologías de la información y la comunicación (TIC), y métodos pedagógicos acordes a sus necesidades específicas. Al mismo tiempo de suministrar la formación y los recursos necesarios a los docentes para garantizar su óptimo desempeño.</p>
                         </div>
                     </div>

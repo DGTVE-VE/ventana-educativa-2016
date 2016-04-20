@@ -33,7 +33,7 @@ Educamedia
 			{{HTML::image('imagenes/mediateca/tbachillerato/componente/ProbabilidadIIHover.png','Telesecundaria ProbabilidadII',['class'=>'resaltaImg img-responsive', 'id'=>'ProbabilidadIIHover'])}}
 			{{HTML::image('imagenes/mediateca/tbachillerato/componente/PsicologiaIHover.png','Telesecundaria PsicologiaI',['class'=>'resaltaImg img-responsive', 'id'=>'PsicologiaIHover'])}}
 			{{HTML::image('imagenes/mediateca/tbachillerato/componente/PsicologiaIIHover.png','Telesecundaria PsicologiaII',['class'=>'resaltaImg img-responsive', 'id'=>'PsicologiaIIHover'])}}
-			{{HTML::image('imagenes/mediateca/tbachillerato/componente/ImgMapa.png','Telebachillerato',['class'=>'posicionMapa img-responsive', 'id'=>'telebachilleratoSEMII', 'usemap'=>'#mapaSemPedagogico'])}}
+			{{HTML::image('imagenes/mediateca/tbachillerato/componente/imgMapa.png','Telebachillerato',['class'=>'posicionMapa img-responsive', 'id'=>'telebachilleratoSEMII', 'usemap'=>'#mapaSemPedagogico'])}}
 		<!--{{HTML::image('imagenes/mediateca/tsecundaria/iconoCentral/artesCentro.png','Telesecundaria central artes',['class'=>'imgPrimeroCentral', 'id'=>'artesCentro'])}}
 		{{HTML::image('imagenes/mediateca/tsecundaria/iconoCentral/orientacionCentro.png','Telesecundaria central orientacion',['class'=>'imgPrimeroCentral', 'id'=>'orientacionCentro'])}}
 		{{HTML::image('imagenes/mediateca/tsecundaria/iconoCentral/geografiaCentro.png','Telesecundaria central geografia',['class'=>'imgPrimeroCentral', 'id'=>'geografiaCentro'])}}

@@ -1,8 +1,5 @@
 ﻿<!--nuevo encabezado-->
 <style>
-	.bajaFila{
-		position:relative; top:80px; z-index:10;
-	}
 /*	----------	Estilo encabezado	----------*/
 	.ocultaImgApp{
 		visibility:hidden;
@@ -19,7 +16,7 @@
 		font-family:'Ubuntu';
 		font-size:17px;
 	}
-
+/*	----------	Estilo General todos los grados	----------*/
 	.posicionInicial{
 		position: absolute; top:0; left:0; z-index:2;
 	}
@@ -32,22 +29,20 @@
 	.imgPrimeroCentral{
 		position: absolute; top:130px; left:130px; z-index:0; visibility: hidden;
 	}
-
-/*	----------	Estilo pagina de telesecundaria	----------	*/
-	.telesecPrimero{
-		position:absolute; top:-80px; left:-25px; z-index:1; visibility:hidden;
-	}
-	.telesecSegundo{
-		position: absolute; top:23px; left:193px; z-index:1; visibility:hidden;
-	}
-	.telesecTercero{
-		position:absolute; top:151px; left:-6px; z-index:1; visibility:hidden;
-	}
+/*	----------	Estilo pagina Inicio telesecundaria	----------	*/		
 	.imgTelesecCentro{
-		position: absolute; top:150px; left:150px; width:215px; height: 140px; z-index:0; visibility: hidden;
+		position: absolute; top:160px; left:140px; z-index:0; visibility: hidden;
 	}
-
-
+/*	----------	Estilo pagina Inicio Educamedia	----------	*/	
+	.telesecundaria{
+		position: absolute; top:0px; left:15px;  z-index:5; visibility: hidden;
+	}
+	.telebachillerato{
+		position: absolute; top:240px; left:15px; z-index:5; visibility: hidden; 
+	}
+	.iniImgCentro{
+		position: absolute; top:100px; left:100px; width:289px; height: 289px; z-index:0; visibility: hidden;
+	}
 </style>
 <script>
 	/*	-------------------------------------	Hace visible o invisible los iconos de apps adicionales	--------------------------------------	*/
@@ -88,41 +83,25 @@
 			$(idImgCentro).removeClass("animated");
 			$(idImgCentro).removeClass("bounceIn");
 		}
-	/*	----------	Manipula imagenes del centro del aro en telesecundaria	----------	*/
-		function muestraImgCentroSecu(prefijo, idImg){
-			document.getElementById(idImg).style.zIndex='5';
-			var idImgHover = "{{url('imagenes/mediateca/tsecundaria')}}" + "/" + prefijo + "/" + idImg + "Hover.png";
-			document.getElementById(idImg).src = idImgHover;
+	/*	----------	Manipula imagenes del centro del aro en inicio mediateca	----------	*/
+		function muestraImgCentral(idImg){
+			var idImgHover = "#" + idImg + "Hover";
+			$(idImgHover).css("visibility", "visible");
 			var idImgCentro = "#" + idImg + "Centro";
 			$(idImgCentro).addClass("bounceIn");
 			$(idImgCentro).addClass("animated");
 			$(idImgCentro).css("visibility", "visible");
+			$(idImgCentro).css("zIndex", 0);
 			$(idImgCentro).fadeIn();
-			
 		}
-		function ocultaImgCentroSecu(prefijo, idImg){
-			document.getElementById(idImg).style.zIndex='1';
-			var idImgHover = "{{url('imagenes/mediateca/tsecundaria')}}" + "/" + prefijo + "/" + idImg + ".png";
-			document.getElementById(idImg).src = idImgHover;
+		function ocultaImgCentral(idImg){
+			var idImgHover = "#" + idImg + "Hover";
+			$(idImgHover).css("visibility", "hidden");
 			var idImgCentro = "#" + idImg + "Centro";
 			$(idImgCentro).css("visibility", "hidden");
 			$(idImgCentro).fadeOut();
 			$(idImgCentro).removeClass("animated");
 			$(idImgCentro).removeClass("bounceIn");
-		}
-	/*	----------	Manipula imagenes del centro del aro en telebachillerato	----------	*/
-		function muestraImgCentro(prefijo, idImg){
-			var idImgHover = "{{url('imagenes/mediateca/tbachillerato')}}" + "/" + prefijo + "/" + idImg + "Hover.png";
-			document.getElementById(idImg).src = idImgHover;
-			/*var idImgCentro = idImg + "Centro";
-			document.getElementById(idImgCentro).style.visibility = "visible";*/
-			
-		}
-		function ocultaImgCentro(prefijo, idImg){
-			var idImgHover = "{{url('imagenes/mediateca/tbachillerato')}}" + "/" + prefijo + "/" + idImg + ".png";
-			document.getElementById(idImg).src = idImgHover;
-			/*var idImgCentro = idImg + "Centro";
-			document.getElementById(idImgCentro).style.visibility = "hidden";*/
 		}
 	</script>
 <nav id="navegacionMediateca" class="navbar navbar-default navbar-fixed-top lo menuVentana" role="navigation">
@@ -189,6 +168,32 @@
                                     <td class="divApp centered">
                                         <a class="" href="#">
                                             {{ HTML::image('imagenes/ventana/encabezado/appPadres.png','logo Padres')}}
+                                        </a>
+                                    </td>
+                                </tr>
+                             <tr>
+                                    <td>
+                                    </td>
+                                    <td class="text-center">
+                                        <p class="iconoGde" onclick="muestraMasIconos()">M&aacute;s</p>
+                                    </td>
+                                    <td>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a class="divApp centered" href="#">
+                                            {{ HTML::image('imagenes/ventana/encabezado/appSalud.png','Logo Salud',['class'=>'ocultaImgApp'])}}
+                                        </a>
+                                    </td>
+                                    <td class="divApp centered">
+                                        <a class="" href="#">
+                                            {{ HTML::image('imagenes/ventana/encabezado/appCultura.png','Logo Cultura',['class'=>'ocultaImgApp'])}}
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a class="divApp centered" href="#">
+                                            {{ HTML::image('imagenes/ventana/encabezado/appBiblioteca.png','Logo Biblioteca',['class'=>'ocultaImgApp'])}}
                                         </a>
                                     </td>
                                 </tr>
@@ -367,6 +372,24 @@
         ;
     });
     /************ CAMBIAR AVATAR **************/
+      /*	-------------------------------------	Hace visible o invisible los iconos de apps adicionales	--------------------------------------	*/
+    imgOculto = true;
+    function muestraMasIconos() {
+        if (imgOculto) {
+            event.stopPropagation();
+            $(".ocultaImgApp").css("width", "90%");
+            $(".ocultaImgApp").css("height", "90%");
+            $(".ocultaImgApp").css("visibility", "visible");
+            imgOculto = false;
+        }
+        else {
+            event.stopPropagation();
+            $(".ocultaImgApp").css("width", "0%");
+            $(".ocultaImgApp").css("height", "0%");
+            $(".ocultaImgApp").css("visibility", "hidden");
+            imgOculto = true;
+        }
+    }
 </script>
 
 <?php
@@ -427,4 +450,5 @@ function generaBreadCrumbs() {
         }
     }
 }
+
 ?>
