@@ -6,31 +6,30 @@
 	@include('viewMediateca.encabezadoMediateca')
 @endsection
 @section('cuerpoMediateca')
-	<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center textoTitulo bajaFila">
-		<?php
-			generaBreadCrumbs();
-		?>
+	<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center" style="padding:4%">
 	</div>
-	<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xs-offset-2 col-sm-offset-2 col-md-offset-2 col-lg-offset-2" style="padding:10%;">
-		<a href="{{(url('educamedia/telebachillerato/IV/22/1'))}}">
-			{{HTML::image('imagenes/mediateca/tbachillerato/SemestreIV/BiologiaII.png','Telebachillerato BiologiaII',['class'=>'BiologiaII', 'id'=>'BiologiaII', 'onmouseover'=>'muestraImgCentro("SemestreIV","BiologiaII")', 'onmouseout'=>'ocultaImgCentro("SemestreIV","BiologiaII")'])}}
-		</a>
-            
-		<a href="{{(url('educamedia/telebachillerato/IV/25/1'))}}">
-			{{HTML::image('imagenes/mediateca/tbachillerato/SemestreIV/LiteraturaII.png','Telebachillerato LiteraturaII',['class'=>'LiteraturaII', 'id'=>'LiteraturaII', 'onmouseover'=>'muestraImgCentro("SemestreIV","LiteraturaII")', 'onmouseout'=>'ocultaImgCentro("SemestreIV","LiteraturaII")'])}}
-		</a>
-		<a href="{{(url('educamedia/telebachillerato/IV/24/1'))}}">
-			{{HTML::image('imagenes/mediateca/tbachillerato/SemestreIV/Estructura.png','Telebachillerato Estructura',['class'=>'Estructura', 'id'=>'Estructura', 'onmouseover'=>'muestraImgCentro("SemestreIV","Estructura")', 'onmouseout'=>'ocultaImgCentro("SemestreIV","Estructura")'])}}
-		</a>
-		<a href="{{(url('educamedia/telebachillerato/IV/23/1'))}}">
-			{{HTML::image('imagenes/mediateca/tbachillerato/SemestreIV/FisicaII.png','Telebachillerato FisicaII',['class'=>'FisicaII', 'id'=>'FisicaII', 'onmouseover'=>'muestraImgCentro("SemestreIV","FisicaII")', 'onmouseout'=>'ocultaImgCentro("SemestreIV","FisicaII")'])}}
-		</a>
-		<a href="{{(url('educamedia/telebachillerato/IV/21/1'))}}">
-			{{HTML::image('imagenes/mediateca/tbachillerato/SemestreIV/MatematicasIV.png','Telebachillerato MatematicasIV',['class'=>'MatematicasIV', 'id'=>'MatematicasIV', 'onmouseover'=>'muestraImgCentro("SemestreIV","MatematicasIV")', 'onmouseout'=>'ocultaImgCentro("SemestreIV","MatematicasIV")'])}}
-		</a>
-		<a href="{{(url('educamedia/telebachillerato/IV/26/1'))}}">
-			{{HTML::image('imagenes/mediateca/tbachillerato/SemestreIV/LenguaAdicionalIV.png','Telebachillerato LenguaAdicionalIV ',['class'=>'LenguaAdicionalIV', 'id'=>'LenguaAdicionalIV', 'onmouseover'=>'muestraImgCentro("SemestreIV","LenguaAdicionalIV")', 'onmouseout'=>'ocultaImgCentro("SemestreIV","LenguaAdicionalIV")'])}}
-		</a>
+	<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center textoTitulo">
+		<p><?php
+			generaBreadCrumbs();
+		?></p><br>
+	</div>
+	<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xs-offset-4 col-sm-offset-4 col-md-offset-4 col-lg-offset-4">
+		<map name="mapaSemIV" id="mapaSemIV">
+			<area alt="" title="" href="{{(url('educamedia/telebachillerato/IV/22/1'))}}" onmouseover="resaltaImgSecu('SemestreIV','BiologiaII')" onmouseout="normalImgSecu('SemestreIV','BiologiaII')" shape="poly" coords="51,391,130,331,108,287,99,257,101,217,106,190,16,157,7,182,2,216,2,267,14,334" />
+			<area alt="" title="" href="{{(url('educamedia/telebachillerato/IV/25/1'))}}" onmouseover="resaltaImgSecu('SemestreIV','LiteraturaII')" onmouseout="normalImgSecu('SemestreIV','LiteraturaII')" shape="poly" coords="107,189,17,154,32,121,62,78,106,42,156,17,207,2,221,101,177,109,140,136" />
+			<area alt="" title="" href="{{(url('educamedia/telebachillerato/IV/24/1'))}}" onmouseover="resaltaImgSecu('SemestreIV','Estructura')" onmouseout="normalImgSecu('SemestreIV','Estructura')" shape="poly" coords="224,99,210,2,270,0,326,16,361,32,403,63,435,92,354,152,329,126,297,108,253,96" />
+			<area alt="" title="" href="{{(url('educamedia/telebachillerato/IV/23/1'))}}" onmouseover="resaltaImgSecu('SemestreIV','FisicaII')" onmouseout="normalImgSecu('SemestreIV','FisicaII')" shape="poly" coords="357,153,435,96,468,156,481,203,483,260,468,329,375,294,384,260,384,216,373,179" />
+			<area alt="" title="" href="{{(url('educamedia/telebachillerato/IV/21/1'))}}" onmouseover="resaltaImgSecu('SemestreIV','MatematicasIV')" onmouseout="normalImgSecu('SemestreIV','MatematicasIV')" shape="poly" coords="376,295,465,330,467,331,456,353,438,383,415,412,373,447,338,464,276,482,261,385,297,374,336,352,362,323" />
+			<area alt="" title="" href="{{(url('educamedia/telebachillerato/IV/26/1'))}}" onmouseover="resaltaImgSecu('SemestreIV','LenguaAdicionalIV')" onmouseout="normalImgSecu('SemestreIV','LenguaAdicionalIV')" shape="poly" coords="261,386,275,480,255,481,210,482,144,464,97,435,53,393,52,391,130,333,144,350,182,372,223,384" />
+		</map>
+		{{HTML::image('imagenes/mediateca/tbachillerato/SemestreIV/SemestreIV.png','telebachillerato Semestre V',['class'=>'posicionInicial img-responsive', 'id'=>'SemestreV'])}}
+			{{HTML::image('imagenes/mediateca/tbachillerato/SemestreIV/BiologiaIIHover.png','Telebachillerato BiologiaII',['class'=>'resaltaImg img-responsive', 'id'=>'BiologiaIIHover'])}}
+			{{HTML::image('imagenes/mediateca/tbachillerato/SemestreIV/LiteraturaIIHover.png','Telebachillerato LiteraturaII',['class'=>'resaltaImg img-responsive', 'id'=>'LiteraturaIIHover'])}}
+			{{HTML::image('imagenes/mediateca/tbachillerato/SemestreIV/EstructuraHover.png','Telebachillerato Estructura',['class'=>'resaltaImg img-responsive', 'id'=>'EstructuraHover'])}}
+			{{HTML::image('imagenes/mediateca/tbachillerato/SemestreIV/FisicaIIHover.png','Telebachillerato FisicaII',['class'=>'resaltaImg img-responsive', 'id'=>'FisicaIIHover'])}}
+			{{HTML::image('imagenes/mediateca/tbachillerato/SemestreIV/MatematicasIVHover.png','Telebachillerato MatematicasIV',['class'=>'resaltaImg img-responsive', 'id'=>'MatematicasIVHover'])}}
+			{{HTML::image('imagenes/mediateca/tbachillerato/SemestreIV/LenguaAdicionalIVHover.png','Telebachillerato LenguaAdicionalIV ',['class'=>'resaltaImg img-responsive', 'id'=>'LenguaAdicionalIVHover'])}}
+		{{HTML::image('imagenes/mediateca/tbachillerato/SemestreIV/ImgMapa.png','Telebachillerato',['class'=>'posicionMapa img-responsive', 'id'=>'telebachilleratoSEMV', 'usemap'=>'#mapaSemIV'])}}
 	</div>
 	@include('viewMediateca.barraSociales')
 @endsection

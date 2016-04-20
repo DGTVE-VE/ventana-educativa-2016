@@ -156,14 +156,32 @@
 			width:25%; height:50%; position: absolute; top: 228%; left:17%; z-index:3; visibility:hidden;
 		}
 		.foto1{
-			width:40%; height:85%; position: absolute; top:213%; left:50%; z-index:3; visibility:hidden;
-		}
-		.iconoFotoCanal{
-			width:17%; height:33%; position: absolute; top: 236%; left:61%; z-index:3; visibility:hidden;
-		}
-		.foto4{
 			width:40%; height:85%; position: absolute; top:255.5%; left:30%; z-index:3; visibility:hidden;
 		}
+		.iconoFotoCanal{
+			width:21%; height:47%; position: absolute; top: 268%; left:40%; z-index:3; visibility:hidden;
+		}
+		.foto4{
+			width:40%; height:85%; position: absolute; top:213%; left:50%; z-index:3; visibility:hidden;
+		}
 		.iconoFotoPadres{
-			width:27%; height:47%; position: absolute; top: 273%; left:36%; z-index:3; visibility:hidden;
+			width:20%; height:40%; position: absolute; top: 236%; left:61%; z-index:3; visibility:hidden;
+		}
+		.romboSMCultura{
+			width:40%; height:85%; position: absolute; top:298%; left:10%; z-index:4; visibility:hidden;
+		}
+		.iconoSMCultura{
+			width:25%; height:50%; position: absolute; top: 315%; left:18%; z-index:4; visibility:hidden;
+		}
+		.romboSMBiblioteca{
+			width:40%; height:85%; position: absolute; top:298%; left:50%; z-index:4; visibility:hidden;
+		}
+		.iconoSMBiblioteca{
+			width:23%; height:45%; position: absolute; top: 315%; left:59%; z-index:4; visibility:hidden;
+		}
+		.romboSMSalud{
+			width:40%; height:85%; position: absolute; top:340%; left:30%; z-index:3; visibility:hidden;
+		}
+		.iconoSMSalud{
+			width:21%; height:47%; position: absolute; top: 360%; left:40%; z-index:3; visibility:hidden;
 		}

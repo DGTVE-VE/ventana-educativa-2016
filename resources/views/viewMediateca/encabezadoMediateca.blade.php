@@ -19,6 +19,20 @@
 		font-family:'Ubuntu';
 		font-size:17px;
 	}
+
+	.posicionInicial{
+		position: absolute; top:0; left:0; z-index:2;
+	}
+	.resaltaImg{
+		position: absolute; top:0; left:0; z-index:3; visibility: hidden; 
+	}
+	.posicionMapa{
+		position: absolute; top:0; left:0; z-index:5;
+	}
+	.imgPrimeroCentral{
+		position: absolute; top:130px; left:130px; z-index:0; visibility: hidden;
+	}
+
 /*	----------	Estilo pagina de telesecundaria	----------	*/
 	.telesecPrimero{
 		position:absolute; top:-80px; left:-25px; z-index:1; visibility:hidden;
@@ -32,245 +46,8 @@
 	.imgTelesecCentro{
 		position: absolute; top:150px; left:150px; width:215px; height: 140px; z-index:0; visibility: hidden;
 	}
-/*	------------	Estilo Primer grado	----------	*/
-	.ArtesI{
-		position:absolute; top:146%; left:33.5%; width:22.5%; height: 58%; z-index:1;
-	}
-	.OrientacionI{
-		position: absolute; top:98.3%; left:27.3%; width:24.2%; height: 61%; z-index:1;
-	}
-	.GeografiaI{
-		position:absolute; top:49.3%; left:32.6%; width:24.3%; height: 62%; z-index:1;
-	}
-	.EspanolI{
-		position:absolute; top:29.6%; left:48.2%; width:25%; height: 61.5%; z-index:1;
-	}
-	.Matematicas1{
-		position: absolute; top:35.6%; left:70%; width:24%; height: 62%; z-index:1;
-	}
-	.CienciasI{
-		position:absolute; top:68%; left:80%; width:24%; height: 62%; z-index:1;
-	}
-	.LenguaI{
-		position:absolute; top:124.2%; left:80.1%; width:24%; height: 61%; z-index:1;
-	}
-	.EducacionFisicaI{
-		position: absolute; top:156.2%; left:70.5%; width:24%; height: 62%; z-index:1;
-	}
-	.TecnologiaI{
-		position:absolute; top:163%; left:48.6%; width:25.5%; height: 61.2%; z-index:1;
-	}
-	.imgPrimeroCentral{
-		position: absolute; top:90%; left:50%; width:30%; height: 75%; z-index:0; visibility: hidden;
-	}
-/*	------------	Estilo Segundo grado	----------	*/
-	.ArtesII{
-		position:absolute; top:144.0%; left:34.7%; width:24%; height: 62%; z-index:1;
-	}
-	.FormacionCivicaI{
-		position: absolute; top:96.8%; left:29.1%; width:24%; height: 62%; z-index:1;
-	}
-	.OrientacionII{
-		position:absolute; top:48%; left:34.4%; width:24%; height: 62%; z-index:1;
-	}
-	.HistoriaI{
-		position:absolute; top:27.7%; left:50%; width:24%; height: 62%; z-index:1;
-	}
-	.EspanolII{
-		position: absolute; top:34%; left:71%; width:24%; height: 62%; z-index:1;
-	}
-	.Matematicas2{
-		position:absolute; top:66.8%; left:81%; width:24%; height: 62%; z-index:1;
-	}
-	.CienciasII{
-		position:absolute; top:123.6%; left:81.1%; width:24%; height: 62%; z-index:1;
-	}
-	.InglesII{
-		position: absolute; top:156.6%; left:71.3%; width:24%; height: 62%; z-index:1;
-	}
-	.EducacionFisicaII{
-		position:absolute; top:163.3%; left:50.8%; width:24%; height: 62%; z-index:1;
-	}
-	.imgSegundoCentral{
-		position: absolute; top:92%; left:52%; width:30%; height: 75%; z-index:0; visibility: hidden;
-	}
-/*	------------	Estilo Tercer grado	----------	*/	
-	.FormacionCivicaII{
-		position:absolute; top:42.7%; left:26.2%; width:36%; height: 88%; z-index:1;
-	}
-	.HistoriaII{
-		position: absolute; top:14%; left:49.7%; width:36%; height: 88%; z-index:1;
-	}
-	.EspanolIII{
-		position:absolute; top:43%; left:73%; width:36%; height: 88%; z-index:1;
-	}
-	.Matematicas3{
-		position:absolute; top:119.7%; left:72.9%; width:36%; height: 88%; z-index:1;
-	}
-	.CienciasIII{
-		position: absolute; top:147.6%; left:48.9%; width:36%; height: 88%; z-index:1;
-	}
-	.InglesIII{
-		position:absolute; top:118.7%; left:26%; width:36%; height: 88%; z-index:1;
-	}
-	.imgTerceroCentral{
-		position: absolute; top:92%; left:54%; width:30%; height: 75%; z-index:0; visibility: hidden;
-	}
-/*	------------	Estilo telebachillerato página inicial	----------	*/	
-	.formaPropedeutica{
-		position: absolute; top:25.5%; left:94.7%; width:30%; height: 79%;
-	}
-	.bachSemI{
-		position: absolute; top:29.5%; left:68.4%; width:30.5%; height: 79%;
-	}
-	.bachSemII{
-		position: absolute; top:-23.4%; left:58.4%; width:30.5%; height: 79%;
-	}
-	.bachSemIII{
-		position: absolute; top:36.8%; left:64.5%; width:30%; height: 79%;
-	}
-	.bachSemVI{
-		position: absolute; top:63%; left:108%; width:30.5%; height: 79%;
-	}
-	.bachSemV{
-		position: absolute; top:28%; left:106.1%; width:30%; height: 79%;
-	}
-	.bachSemIV{
-		position: absolute; top:53.7%; left:87.3%; width:30%; height: 79%;
-	}
-/*	------------	Estilo telebachillerato primer semestre	----------	*/
-	.InformaticaI{
-		position: absolute; top:53.3%; left:29.1%; width:30.5%; height: 75%;
-	}
-	.TallerLectura{
-		position: absolute; top:26.3%; left:47.4%; width:30%; height: 75%;
-	}
-	.IntroCS{
-		position: absolute; top:39.8%; left:71.6%; width:30%; height: 75%;
-	}
-	.EticaValoresI{
-		position: absolute; top:98.4%; left:78.2%; width:30.5%; height: 75%;
-	}
-	.MatematicasI{
-		position: absolute; top:145%; left:68.9%; width:30%; height: 75%;
-	}
-	.LenguaAdicionalI{
-		position: absolute; top:151.8%; left:43.7%; width:30%; height: 75%;
-	}
-	.QuimicaI{
-		position: absolute; top:120.5%; left:28%; width:30.3%; height: 75%;
-	}
-/*	------------	Estilo telebachillerato segundo semestre	----------	*/
-	.InformaticaII{
-		position: absolute; top:53%; left:29%; width:30.5%; height: 75%;
-	}
-	.TallerLecturaII{
-		position: absolute; top:26%; left:47.3%; width:30%; height: 75%;
-	}
-	.HistoriaMexicoI{
-		position: absolute; top:39.5%; left:71.6%; width:30%; height: 75%;
-	}
-	.EticaValoresII{
-		position: absolute; top:98%; left:78.2%; width:30.5%; height: 75%;
-	}
-	.MatematicasII{
-		position: absolute; top:145%; left:68.8%; width:30%; height: 75%;
-	}
-	.LenguaAdicionalII{
-		position: absolute; top:152%; left:43.7%; width:30%; height: 75%;
-	}
-	.QuimicaII{
-		position: absolute; top:120.3%; left:28%; width:30.2%; height: 75%;
-	}
-/*	------------	Estilo telebachillerato tercer semestre	----------	*/
-	.BiologiaI{
-		position:absolute; top:95%; left:25%; width:34%; height: 87%;
-	}
-	.LiteraturaI{
-		position: absolute; top:30.1%; left:32.8%; width:34%; height: 87%;
-	}
-	.HistoriaMexicoII{
-		position:absolute; top:22.5%; left:61.8%; width:34%; height: 87%;
-	}
-	.FisicaI{
-		position:absolute; top:72.6%; left:76.1%; width:34%; height: 87%;
-	}
-	.MatematicasIII{
-		position: absolute; top:137.3%; left:68.3%; width:34%; height: 87%;
-	}
-	.LenguaAdicionalIII{
-		position:absolute; top:144.7%; left:39.2%; width:34%; height: 87%;
-	}
-/*	------------	Estilo telebachillerato cuarto semestre	----------	*/
-	.BiologiaII{
-		position:absolute; top:95%; left:24.1%; width:34%; height: 87%;
-	}
-	.LiteraturaII{
-		position: absolute; top:30%; left:32%; width:34%; height: 87%;
-	}
-	.Estructura{
-		position:absolute; top:22.5%; left:61%; width:34%; height: 87%;
-	}
-	.FisicaII{
-		position:absolute; top:72.3%; left:75.2%; width:34%; height: 87%;
-	}
-	.MatematicasIV{
-		position: absolute; top:137%; left:67.4%; width:34%; height: 87%;
-	}
-	.LenguaAdicionalIV{
-		position:absolute; top:144.6%; left:38.3%; width:34%; height: 87%;
-	}
-/*	------------	Estilo telebachillerato quinto semestre	----------	*/
-    .Geografia{
-        position: absolute; top:9%; left:65%; width:70%; height: 95%; z-index:1;
-    }
-    .HistoriaUniv{
-        position: absolute; top:96.5%; left:65%; width:70%; height: 95%; z-index:1;
-    }
-    .telebachilleratoCentro{
-        position: absolute; top:35%; left:72%; width:55%; height: 120%;	z-index:0; visibility: hidden;
-    }
-    .telesecundariaCentro{
-        position: absolute; top:35%; left:73%; width:55%; height: 120%; z-index:0; visibility: hidden;
-    }
-/*	------------	Estilo telebachillerato sexto semestre	----------	*/
-    .Ecologia{
-        position:absolute; top:15.8%; left:22.2%; width:60%; height: 152%;
-    }
-    .Filosofia{
-        position: absolute; top:29%; left:56%; width:60%; height: 152%;
-    }
-    .Metodologia{
-        position:absolute; top:98.2%; left:33.5%; width:60%; height: 152%;
-    }
-/*	------------	Estilo telebachillerato semestre pedagogico	----------	*/
-	.CienciasSaludII{
-        position:absolute; top:51.1%; left:30.7%; width:26%; height: 66%;
-    }
-    .CienciasSaludI{
-        position:absolute; top:29.5%; left:48.2%; width:26%; height: 66%;
-    }
-    .CienciasComunicacionI{
-        position: absolute; top:40.7%; left:69.7%; width:26%; height: 66%;
-    }
-    .CienciasComunicacionII{
-        position:absolute; top:85%; left:78%; width:26%; height: 66%;
-    }
-    .ProbabilidadI{
-        position:absolute; top:139%; left:73.7%; width:26%; height: 66%;
-    }
-    .ProbabilidadII{
-        position: absolute; top:160.5%; left:56.3%; width:26%; height: 66%;
-    }
-    .PsicologiaII{
-        position:absolute; top:149.6%; left:34.8%; width:26%; height: 66%;
-    }
-    .PsicologiaI{
-        position: absolute; top:105.5%; left:26.6%; width:26%; height: 66%;
-    }
-    .imgPrimeroCentral{
-        position: absolute; top:90%; left:50%; width:30%; height: 75%; z-index:0; visibility: hidden;
-    }
+
+
 </style>
 <script>
 	/*	-------------------------------------	Hace visible o invisible los iconos de apps adicionales	--------------------------------------	*/

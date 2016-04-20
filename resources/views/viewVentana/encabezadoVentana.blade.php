@@ -84,7 +84,7 @@
                                         </a>
                                     </td>
                                 </tr>
-								<!--tr>    ********************************************************		Agregar iconos extra en menú
+								<tr>
 									<td>
 									</td>
 									<td class="text-center">
@@ -96,20 +96,20 @@
 								<tr>
 									<td>
 										<a class="" href="#">
-                                            {{ HTML::image('imagenes/ventana/encabezado/appPrimaria.png','logo Primaria',['class'=>'ocultaImgApp'])}}
+                                            {{ HTML::image('imagenes/ventana/encabezado/appSalud.png','icono appSalud',['class'=>'ocultaImgApp'])}}
                                         </a>
 									</td>
 									<td class="">
 										<a class="" href="#">
-                                            {{ HTML::image('imagenes/ventana/encabezado/appPrimaria.png','logo Primaria',['class'=>'ocultaImgApp'])}}
+                                            {{ HTML::image('imagenes/ventana/encabezado/appCultura.png','icono appCultura',['class'=>'ocultaImgApp'])}}
                                         </a>
 									</td>
 									<td>
 										<a class="" href="#">
-                                            {{ HTML::image('imagenes/ventana/encabezado/appPrimaria.png','logo Primaria',['class'=>'ocultaImgApp'])}}
+                                            {{ HTML::image('imagenes/ventana/encabezado/appBiblioteca.png','icono appBiblioteca',['class'=>'ocultaImgApp'])}}
                                         </a>
 									</td>
-								</tr-->
+								</tr>
                             </table>                                       
                         </ul>
                     </li>
