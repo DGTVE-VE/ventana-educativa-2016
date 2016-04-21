@@ -99,18 +99,6 @@ Mediateca
             </div>
         </div>
         <div class="col-md-4 controls" id="custom_controls">
-            <div class="col-md-12">
-                <div class="col-md-3 centrarTextDiv"><h4>Bloque</h4></div>
-                <ul class="pager col-md-9">
-                    @foreach ($paginacion as $item => $bloquePagina)
-                        <li class="{{ ($item) ? '' : ' active' }}">
-                            <a href="{{url($url.'/'.$bloquePagina->bloque)}}">
-                                {{$bloquePagina->bloque}}
-                            </a>
-                        </li>                        
-                     @endforeach 
-                </ul>
-            </div>
             <div class="col-md-12 listVideos">
             <table class="table table-condensed">                
                 @foreach ($videos as $item => $video)
