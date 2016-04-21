@@ -15,7 +15,7 @@
 	</div>
 	<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xs-offset-4 col-sm-offset-4 col-md-offset-4 col-lg-offset-4">
 		<map name="mapaPrimerGdo" id="mapaPrimerGdo">
-			<area alt="" href="{{(url('mediateca/telesecundaria/1/1/1'))}}" title="" onmouseover="resaltaImgSecu('primerGrado', 'artes')" onmouseout="normalImgSecu('primerGrado', 'artes')" shape="poly" coords="15,329,110,295,124,323,146,349,172,369,121,455,78,424,37,378" />
+			<area alt="" href="{{(url('educamedia/telesecundaria/1/1/1'))}}" title="" onmouseover="resaltaImgSecu('primerGrado', 'artes')" onmouseout="normalImgSecu('primerGrado', 'artes')" shape="poly" coords="15,329,110,295,124,323,146,349,172,369,121,455,78,424,37,378" />
 			<area alt="" href="{{(url('educamedia/telesecundaria/1/12/1'))}}" title="" onmouseover="resaltaImgSecu('primerGrado', 'tecnologia')" onmouseout="normalImgSecu('primerGrado', 'tecnologia')" shape="poly" coords="175,370,205,382,236,387,269,384,290,481,191,481,123,456" />
 			<area alt="" href="{{(url('educamedia/telesecundaria/1/11/1'))}}" title="" onmouseover="resaltaImgSecu('primerGrado', 'orientacion')" onmouseout="normalImgSecu('primerGrado', 'orientacion')" shape="poly" coords="15,327,107,293,98,250,105,196,12,161,2,197,1,267" />
 			<area alt="" href="{{(url('educamedia/telesecundaria/1/8/1'))}}" title="" onmouseover="resaltaImgSecu('primerGrado', 'geografia')" onmouseout="normalImgSecu('primerGrado', 'geografia')" shape="poly" coords="106,194,133,149,169,119,120,33,77,63,38,109,13,160" />
