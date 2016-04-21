@@ -6,15 +6,16 @@
 <div class="row">
     <div class='col-md-2'></div>
     <div class='col-md-5'>
-        <h1> {{$colaborador->nombre}}</h1>
-        <h1> {{$blog->titulo}}</h1>
+        <br>
+        <div class="col-md-12"><img src="{{url ($blog->imagen)}}" class="img-responsive center-block"></div>                
+        <h3 class="text-center"> {{$blog->titulo}}</h3>
         <?php
         $dt = new DateTime($blog->created_at);
         $date = $dt->format('m/d/Y');
         ?>
         {{$date}}
-        
-        <div>
+        <h4 class="text-left">Por: {{$colaborador->user->name}}</h4>
+        <div class="text-justify">
             {!!$blog->cuerpo!!}
         </div>
 
@@ -41,43 +42,87 @@
         </div>
     </div>
     <div class='col-md-4'>
+        <br>
+            <!--Acerca de-->
+            <div class="panel-heading blogPanel">
+                <h4 class="panel-title">
+                    <a data-toggle="collapse" href="#acercade">
+                        Acerca del autor
+                        <i class="fa fa-plus pull-right" aria-hidden="true"></i>
+                    </a>
+                </h4>
+            </div>
+            <div id="acercade" class="panel-collapse collapse">
+                <div class="panel-body">
+                    <div class="row">
+                    <div class="col-md-2"><img src="{{asset($colaborador->url_foto)}}" width="50" height="50"></div>
+                    <div class="col-md-10"><h5>{{$colaborador->user->name}}</h5></div>
+                    <div class="col-md-10"><h5>{{$colaborador->puesto}}</h5></div>
+                    <div class="col-md-12"><p class="text-justify">{{$colaborador->resena}}</p></div>
+                    </div>
+                </div>
+            </div>
         <div>
-            <h3> Acerca del autor </h3>
-            <img src="{{url($colaborador->url_foto)}}" width="50" height="50">
-            {{$colaborador->nombre}}
-            {{$colaborador->resena}}
+        <br>
+        <div class="panel-group bordeBlog"><br>
+            <div class="panel panel-default">
+                <div class="panel-heading blogPanel">
+                    <h4 class="panel-title">
+                        <a data-toggle="collapse" href="#leidos">
+                            Más leído
+                            <i class="fa fa-plus pull-right" aria-hidden="true"></i>                            
+                        </a>
+                    </h4>
+                </div>
+                <div id="leidos" class="panel-collapse collapse">
+                    <div class="panel-body">
+                        <ol>
+                            @foreach ($leidos as $leido)
+                            <li> <a href="{{url("redmite/blog/$leido->id")}}"> {{$leido->titulo}}</a></li>                    
+                            @endforeach                        
+                        </ol>
+                    </div>
+                </div>
+                <!--recientes-->
+                <div class="panel-heading blogPanel">
+                    <h4 class="panel-title">
+                        <a data-toggle="collapse" href="#recientes">
+                            Más reciente
+                            <i class="fa fa-plus pull-right" aria-hidden="true"></i>                            
+                        </a>
+                    </h4>
+                </div>
+                <div id="recientes" class="panel-collapse collapse">
+                    <div class="panel-body">
+                        <ol>
+                            @foreach ($recientes as $reciente)
+                            <li> <a href="{{url("redmite/blog/$reciente->id")}}"> {{$reciente->titulo}}</a></li>
+                            @endforeach 
+                        </ol>
+                    </div>
+                </div>
+                <!--comentados-->
+                <div class="panel-heading blogPanel">
+                    <h4 class="panel-title">
+                        <a data-toggle="collapse" href="#comentados">
+                            Más comentado
+                            <i class="fa fa-plus pull-right" aria-hidden="true"></i>
+                        </a>
+                    </h4>
+                </div>
+                <div id="comentados" class="panel-collapse collapse">
+                    <div class="panel-body">
+                        <ol>
+                            @foreach ($comentados as $comentado)
+                            <li> <a href="{{url("redmite/blog/$comentado->id")}}"> {{$comentado->titulo}}</a></li>
+                            @endforeach                       
+                        </ol>
+                    </div>
+                </div>
+            </div>
         </div>
-        <hr>
-        <ul class="nav nav-tabs">
-            <li class="active">
-                <a data-toggle="tab" href="#leidos">Más leído</a></li>
-            <li><a data-toggle="tab" href="#recientes">Más reciente</a></li>
-            <li><a data-toggle="tab" href="#comentados">Más comentado</a></li>
-        </ul>
-
-        <div class="tab-content">
-            <div id="leidos" class="tab-pane fade in active">
-                <ul>
-                    @foreach ($leidos as $leido)
-                    <li> <a href="{{url("redmite/blog/$leido->id")}}"> {{$leido->titulo}}</a></li>
-                    @endforeach
-                </ul>
-            </div>
-            <div id="recientes" class="tab-pane fade">
-                <ul>
-                    @foreach ($recientes as $reciente)
-                    <li> <a href="{{url("redmite/blog/$reciente->id")}}"> {{$reciente->titulo}}</a></li>
-                    @endforeach
-                </ul>
-            </div>
-            <div id="comentados" class="tab-pane fade">
-                <ul>
-                    @foreach ($comentados as $comentado)
-                    <li> <a href="{{url("redmite/blog/$comentado->id")}}"> {{$comentado->titulo}}</a></li>
-                    @endforeach
-                </ul>
-            </div>
-        </div>
+        <br>
+    </div>
     </div>
 </div>
 <script src="//cdn.tinymce.com/4/tinymce.min.js"></script>

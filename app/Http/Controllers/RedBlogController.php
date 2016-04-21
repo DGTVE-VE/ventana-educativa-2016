@@ -91,6 +91,7 @@ class RedBlogController extends Controller
         $leidos = Blog::orderBy ('visitas', 'desc')->take (5)->get ();
         $comentados = $this->geBlogstMasComentados (5);
         $colaborador = Colaborador::find ($blog->colaborador_id);
+//        dd($colaborador);
         return view('viewRed/blog/show', compact('blog', 'colaborador', 'leidos', 'recientes', 'comentados'));
     }
     
