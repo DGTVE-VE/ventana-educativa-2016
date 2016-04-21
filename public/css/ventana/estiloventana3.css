@@ -1,4 +1,4 @@
-/* Efectos para pie menú  */
+﻿/* Efectos para pie menú  */
 .skin3.bottom .tab_header_item.tab_selected a {
     background: rgba(0, 0, 0, 0.2);
 }
@@ -17,41 +17,6 @@
 .skin3.bottom .tab_header_item.tab_selected {
     background: none;
 
-}
-
-.f1 > ul{
-    list-style: none;
-    display: table;
-    overflow: hidden;
-    width: 100%;
-    position: relative;
-    margin-bottom:0px;
-    padding:0px;
-   
-}
-.f1{
-    padding:0px;
-
-}
-.f1 > div {
-    display: none;
-    padding:20px;
-
-}
-
-.f1:hover > div{
-    display: block;
-    line-height: 20px;
-    position: relative;
-    text-align: center;
-    text-decoration: none;
-    background: rgba(0, 0, 0, 0.3);
-    -webkit-transition: all 4s ease;
--moz-transition: all 4s ease;
--ms-transition: all 4s ease;
--o-transition: all 4s ease;
-transition: all 4s ease;
-    
 }
 
 /* Efectos para iconos redes sociales */
@@ -93,7 +58,6 @@ transition: all 4s ease;
     height:80px;
     border-bottom: 100px solid rgba(0, 0, 0, 0.3); 
     padding-left:10px;
-    /*border-right: 35px solid transparent;*/
     writing-mode: vertical-lr;
 }
 
@@ -138,14 +102,6 @@ transition: all 4s ease;
 .f1SM:hover > div{
     display: block;
     line-height: 20px;
-    position: relative;
-    text-align: center;
     text-decoration: none;
-    background: rgba(0, 0, 0, 0.3);
-    
-}
-#desplegar{
-    position: absolute;
-    left:0;  /*se oculta por la izquierda*/
-    /*right: 0;  se oculta por la derecha */
+    background: rgba(0, 0, 0, 0.3);    
 }
