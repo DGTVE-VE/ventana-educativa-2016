@@ -131,15 +131,11 @@ Educamedia
 </div>
 @endsection                                                
 @section('estilos')
-
+<link rel="stylesheet" href="{{ asset('css/jquery-ui.min.css') }}" >
 @endsection
 
 @section('scripts')
-<script>
-//    $(document).ready(function(){
-       
-//    });    
-</script>
+<script src="{{asset ('js/jquery-ui.min.js')}}"></script>
 
 <script src="https://www.youtube.com/player_api"></script>
 
@@ -153,7 +149,7 @@ Educamedia
         for (i = 0; i<videos.length; i++){            
             _videos[videos[i].id] = videos[i];
         }        
-        
+        loadComments ({{$videos[0]->id}});
         $("massinopsis").collapse({toggle: false});
         
         $("botonmas").click(function(){
@@ -170,6 +166,7 @@ Educamedia
                 }})
                 .done(function( msg ) {
                     console.log ( "Data Saved: " + msg );
+                    loadComments ($("#video-id").val());
                 });
         });
         
@@ -187,6 +184,7 @@ Educamedia
             $("#sinopsis").html(_videos[_id].sinopsis);
             $("#sinopsis-250").html(_videos[_id].sinopsis.substring (0, 250));
             $('#div-containter').fadeIn ();
+            loadComments (_id);
         });
         
         $('#btn-comentar').click (function (){
@@ -202,11 +200,31 @@ Educamedia
                     console.log (ts.responseText); 
                 }})
                 .done(function( msg ) {
-                    $("#comentarios").append(msg)
+                    $("#comentarios").prepend(msg)
 //                    console.log ( "Data Saved: " + msg );
                 });
         });
+        
+       
+
+        function loadComments (id){
+            var urlget = "{{url('educamedia/telesecundaria/comments')}}";
+            var _url = urlget + '/'+id;
+             $.ajax({
+                method: "GET",
+                url: _url,   
+                error: function(ts) { 
+                    console.log (ts.responseText); 
+                }})
+                .done(function( msg ) {
+                    console.log ('Comentarios cargados: '+id);
+                    $("#comentarios").html(msg)
+//                    console.log ( "Data Saved: " + msg );
+                });
+        }
     });
+    
+    
     
     /** URL del api de ventana educativa*/
 //var api = "http://localhost/ventana-educativa/api/v1/";

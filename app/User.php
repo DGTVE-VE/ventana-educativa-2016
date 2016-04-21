@@ -29,4 +29,14 @@ class User extends Authenticatable implements CanResetPassword
     public function colaborador (){
         return $this->hasOne('App\Model\Red\Colaborador', 'user_id');
     }
+    
+    public function ratingTelesecundaria ($telesecundaria_id){
+        $rating = Model\Mediateca\RatingTelesecundaria::
+                where ('user_id', $this->id)
+                -> where ('telesecundaria_id', $telesecundaria_id)->first ();
+        if ($rating == null){
+            return 0;
+        }
+        return $rating->rating;
+    }
 }

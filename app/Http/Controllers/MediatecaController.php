@@ -136,6 +136,14 @@ class MediatecaController extends Controller {
         $comment->telesecundaria_id = filter_input (INPUT_POST, 'video_id');        
         $comment->comment = filter_input (INPUT_POST, 'comment');
         $comment->save ();
-        return view('viewMediateca/comments')->with('comment', $comment);
+        return view('viewMediateca/comment')->with('comment', $comment);
+    }
+    
+    public function telesecundariaComments ($id){
+        $comments = \App\Model\Mediateca\TelesecundariaComments::
+                where('telesecundaria_id', $id)
+                ->where ('comment_id', 0)
+                ->orderBy('created_at','DESC')->get();
+        return view('viewMediateca/comments')->with('comments', $comments);
     }
 }
