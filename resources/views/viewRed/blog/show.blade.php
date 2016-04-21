@@ -1,5 +1,7 @@
 @extends ('indexRed')
+@section('menuRedmite')
 @include ('viewRed.seccionheader')
+@endsection
 @section ('cuerpoRedmite')
 <div class="row">
     <div class='col-md-2'></div>
