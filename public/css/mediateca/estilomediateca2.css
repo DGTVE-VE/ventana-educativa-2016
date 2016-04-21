@@ -128,8 +128,8 @@ body{
 }
 
 .listVideos{
-    height: 1000px;
-    overflow: auto;
+   height: auto;
+    overflow: hidden;
 }
 
 #custom_carousel .item {

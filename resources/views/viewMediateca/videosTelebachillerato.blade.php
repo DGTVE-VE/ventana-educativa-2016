@@ -1,7 +1,7 @@
 @extends('indexMediateca')
 
 @section('titleMediateca')
-Mediateca
+Educamedia
 @stop
 
 <style>
@@ -61,8 +61,8 @@ Mediateca
         <div id="custom_carousel" class="carousel slide" data-ride="carousel" data-interval="false">
             <div class="col-md-8" id='div-containter'>
                 
-                <h3 id="materia">{{$videos[0]->materia}}</h3>                
-                <h2 id="titulo_programa">{{$videos[0]->titulo_programa}}</h2>                
+                <h3 id="materia">{{$videos[0]->asignatura}}</h3>                
+                <h2 id="titulo_programa">{{$videos[0]->programa}}</h2>                
                 <div id="player" class="col-md-12" align="center">    </div>
                 
                 @if(Auth::check ())
@@ -79,7 +79,7 @@ Mediateca
                 
                 <li class="list-unstyled"><h4 id="subtitulo_serie">{{ $videos[0]->subtitulo_serie }}<h3></li>
                 <li class="list-unstyled"><h4 id="subtitulo_programa">{{ $videos[0]->subtitulo_programa }}<h3></li>                                                
-                <li class="list-unstyled"><h4 id="grado">Grado: {{ $videos[0]->grado }}</h4></li>
+                <li class="list-unstyled"><h4 id="grado">Semestre: {{ $videos[0]->semestre }}</h4></li>
                 
                 <li class="list-unstyled text-justify" id="sinopsis" style="display: none;">{{ $videos[0]->sinopsis }}</li>
                 
@@ -99,6 +99,9 @@ Mediateca
             </div>
         </div>
         <div class="col-md-4 controls" id="custom_controls">
+            <div class="col-md-12">
+                <div class="col-md-3 centrarTextDiv"><h4></h4></div>
+            </div>
             <div class="col-md-12 listVideos">
             <table class="table table-condensed">                
                 @foreach ($videos as $item => $video)
@@ -106,7 +109,7 @@ Mediateca
                     <td data-target="#custom_carousel" data-slide-to="{{$item}}" class="item" data-id='{{ $video->url }}' _id="{{$video->id}}">
                             <img src="http://img.youtube.com/vi/{{ $video->url }}/2.jpg" class='item-a'>                            
                     </td>
-                    <td class="redesText">{{$video->titulo_programa}}</td>
+                    <td class="redesText">{{$video->programa}}</td>
                 </tr>                
                 @endforeach 
             </table>

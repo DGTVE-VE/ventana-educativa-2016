@@ -64,7 +64,9 @@ Route::group(['middleware' => 'web'], function () {
     Route::get('educamedia/telebachillerato', 'MediatecaController@telebachillerato');
     Route::get('educamedia/telesecundaria/primergrado', 'MediatecaController@primergrado');
     /* ejemplo de uso para youtube */
-    Route::get('educamedia/{nivel}/{grado}/{materia}/{bloque}', 'MediatecaController@getVideos');
+//    Route::get('educamedia/{nivel}/{grado}/{materia}/{bloque}', 'MediatecaController@getVideos');
+    Route::get('educamedia/telesecundaria/{grado}/{materia}/{bloque}', 'MediatecaController@getVideosTelesecundaria');
+    Route::get('educamedia/telebachillerato/{grado}/{materia}', 'MediatecaController@getVideosTelebachillerato');
 //Route::get('mediateca/telesecundaria/1/11', 'MediatecaController@getVideos');
 
     Route::get('educamedia/telesecundaria/segundogrado', 'MediatecaController@segundogrado');
@@ -78,10 +80,10 @@ Route::group(['middleware' => 'web'], function () {
     
     Route::get('educamedia/telebachillerato/Propedéutico', 'MediatecaController@componente');
 
-    Route::get('educamedia/videos', 'MediatecaController@videos');
-    Route::get('educamedia/test', 'MediatecaController@test');
-    Route::get('educamedia/getVideosTelesec', 'MediatecaController@getVideosTelesec');
-    Route::get('store','MediatecaController@store');
+//    Route::get('educamedia/videos', 'MediatecaController@videos');
+//    Route::get('educamedia/test', 'MediatecaController@test');
+//    Route::get('educamedia/getVideosTelesec', 'MediatecaController@getVideosTelesec');
+//    Route::get('store','MediatecaController@store');
     Route::post ('educamedia/rate', 'MediatecaController@guardaRating');
     Route::post ('educamedia/comment/telesecundaria', 'MediatecaController@storeTelesecundariaComment');
     /*     * **************************MEDIATECA********************** */

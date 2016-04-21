@@ -72,37 +72,11 @@ class MediatecaController extends Controller {
         return view('viewMediateca/videos');
     }
 
-    public function test(Request $request) {
-        /* Obtener información de video */
-//        $video = Youtube::getVideoInfo('DuoWIRDptWM');
-//        var_dump ($video);
-        /* obtener url de thumbnail */
-//        echo $thumbnail = $video->snippet->thumbnails->default->url;
-        /* obtener url */
-//        $url = $request->path();
-//        print 'url de seccion:  '.$url;
-//        $consultaVideo = DB::select('select * from telesecundaria where grado = "primero" and materia=');
-//             $bloquePaginacion = Telesecundaria::distinct()->select('bloque')->get();
-//        dd($bloquePaginacion);
-    }
-
-    public function getVideos(Request $request, $nivel, $grado, $materia, $bloque) {
-        /* Obtener el path */
-        $url_actual = $request->path();
-        /* Obtener el último fragmento de l path y agregarselo a la cadena de path actual */
-        $url = substr($url_actual, 0, strrpos($url_actual, '/'));
-        if ($nivel == 'telesecundaria') {
-            return $this->getVideosTelesecundaria($grado, $materia, $bloque, $url);
-        } else if ($nivel == 'telebachillerato') {
-            return $this->getVideosTelebachillerato($grado, $materia, $bloque, $url);
-        } else {
-            //VISTA ERROR
-            return 'error';
-        }
-    }
-
-    public function getVideosTelesecundaria($grado, $materia, $bloque, $url) {
-        if ($bloque > 0){
+    public function getVideosTelesecundaria(Request $request,$grado, $materia, $bloque) {
+    $url_actual = $request->path();
+            /* Obtener el último fragmento de l path y agregarselo a la cadena de path actual */
+            $url = substr($url_actual, 0, strrpos($url_actual, '/'));               
+        if ($bloque > 0){   
             /* Query para filtrar videos por grado, bloque, materia */
             $videos = Telesecundaria::whereNested(function($sQL) use ($grado, $materia, $bloque) {
                         $sQL->where('grado', '=', $grado);
@@ -116,15 +90,13 @@ class MediatecaController extends Controller {
             $videos = Telesecundaria::whereNested(function($sQL) use ($grado, $materia, $bloque) {
                     $sQL->where('grado', '=', $grado);
                     $sQL->where('materia_id', '=', $materia);
-//                    $sQL->where('bloque', '=','null');
             })->get();
             $paginacion [] = new Telesecundaria;
             $paginacion[0]->bloque = 0;
         }
         
         /* Envío de querys y variables a la vista */
-        return view('viewMediateca/videos')
-                        ->with('nivel', 'telesecundaria')
+        return view('viewMediateca/videosTelesecundaria')
                         ->with('videos', $videos)
                         ->with('paginacion', $paginacion)
                         ->with('url', $url);
@@ -145,38 +117,15 @@ class MediatecaController extends Controller {
         
     }
 
-    public function getVideosTelebachillerato($grado, $materia, $bloque, $url) {
-             if ($bloque > 0){
-            /* Query para filtrar videos por grado, bloque, materia */
-            $videos = Telebachillerato::whereNested(function($sQL) use ($grado, $materia, $bloque) {
-                        $sQL->where('semestre', '=', $grado);
-                        $sQL->where('materia_id', '=', $materia);
-                        $sQL->where('numero_programa', '=', $bloque);
-                    })->get();
-                    /* Query para extraer los distintos bloques que existen en la tabla */
-            $paginacion = Telebachillerato::distinct()->select('numero_programa')->orWhereNotNull('numero_programa')->get();
-        } else {
+    public function getVideosTelebachillerato($grado, $materia) {     
                     /* Query para filtrar videos por grado, bloque, materia */
-            $videos = Telebachillerato::whereNested(function($sQL) use ($grado, $materia, $bloque) {
+            $videos = Telebachillerato::whereNested(function($sQL) use ($grado, $materia) {
                     $sQL->where('semestre', '=', $grado);
                     $sQL->where('materia_id', '=', $materia);
-//                    $sQL->where('bloque', '=','null');
             })->get();
-            $paginacion [] = new Telebachillerato;
-            $paginacion[0]->bloque = 0;
-        }
-        
+       
         /* Envío de querys y variables a la vista */
-        return view('viewMediateca/videos')
-                        ->with('nivel', 'telebachillerato')
-                        ->with('videos', $videos)
-                        ->with('paginacion', $paginacion)
-                        ->with('url', $url);
-    }
-
-    public function store(Request $request) {
-        Flash::message('Welcome Aboard!');
-        return redirect('educamedia/telesecundaria/primergrado')->with('key', 'You have done successfully');
+        return view('viewMediateca/videosTelebachillerato')->with('videos', $videos);
     }
 
     public function storeTelesecundariaComment (){
