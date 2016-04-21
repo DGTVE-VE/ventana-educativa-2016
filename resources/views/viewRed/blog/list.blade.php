@@ -1,5 +1,7 @@
 @extends ('indexRed')
+@section('menuRedmite')
 @include ('viewRed.seccionheader')
+@endsection
 @section ('cuerpoRedmite')
 <style>
 	.tablaMenuApps{

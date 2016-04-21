@@ -61,8 +61,8 @@ Educamedia
         <div id="custom_carousel" class="carousel slide" data-ride="carousel" data-interval="false">
             <div class="col-md-8" id='div-containter'>
                 
-                <h3 id="materia">{{$videos[0]->materia}}</h3>                
-                <h2 id="titulo_programa">{{$videos[0]->titulo_programa}}</h2>                
+                <h3 id="materia">{{$videos[0]->asignatura}}</h3>                
+                <h2 id="titulo_programa">{{$videos[0]->programa}}</h2>                
                 <div id="player" class="col-md-12" align="center">    </div>
                 
                 @if(Auth::check ())
@@ -79,7 +79,7 @@ Educamedia
                 
                 <li class="list-unstyled"><h4 id="subtitulo_serie">{{ $videos[0]->subtitulo_serie }}<h3></li>
                 <li class="list-unstyled"><h4 id="subtitulo_programa">{{ $videos[0]->subtitulo_programa }}<h3></li>                                                
-                <li class="list-unstyled"><h4 id="grado">Grado: {{ $videos[0]->grado }}</h4></li>
+                <li class="list-unstyled"><h4 id="grado">Semestre: {{ $videos[0]->semestre }}</h4></li>
                 
                 <li class="list-unstyled text-justify" id="sinopsis" style="display: none;">{{ $videos[0]->sinopsis }}</li>
                 
@@ -100,16 +100,7 @@ Educamedia
         </div>
         <div class="col-md-4 controls" id="custom_controls">
             <div class="col-md-12">
-                <div class="col-md-3 centrarTextDiv"><h4>Bloque</h4></div>
-                <ul class="pager col-md-9">
-                    @foreach ($paginacion as $item => $bloquePagina)
-                        <li class="{{ ($item) ? '' : ' active' }}">
-                            <a href="{{url($url.'/'.$bloquePagina->bloque)}}">
-                                {{$bloquePagina->bloque}}
-                            </a>
-                        </li>                        
-                     @endforeach 
-                </ul>
+                <div class="col-md-3 centrarTextDiv"><h4></h4></div>
             </div>
             <div class="col-md-12 listVideos">
             <table class="table table-condensed">                
@@ -118,7 +109,7 @@ Educamedia
                     <td data-target="#custom_carousel" data-slide-to="{{$item}}" class="item" data-id='{{ $video->url }}' _id="{{$video->id}}">
                             <img src="http://img.youtube.com/vi/{{ $video->url }}/2.jpg" class='item-a'>                            
                     </td>
-                    <td class="redesText">{{$video->titulo_programa}}</td>
+                    <td class="redesText">{{$video->programa}}</td>
                 </tr>                
                 @endforeach 
             </table>
@@ -131,11 +122,15 @@ Educamedia
 </div>
 @endsection                                                
 @section('estilos')
-<link rel="stylesheet" href="{{ asset('css/jquery-ui.min.css') }}" >
+
 @endsection
 
 @section('scripts')
-<script src="{{asset ('js/jquery-ui.min.js')}}"></script>
+<script>
+//    $(document).ready(function(){
+       
+//    });    
+</script>
 
 <script src="https://www.youtube.com/player_api"></script>
 
@@ -149,7 +144,7 @@ Educamedia
         for (i = 0; i<videos.length; i++){            
             _videos[videos[i].id] = videos[i];
         }        
-        loadComments ({{$videos[0]->id}});
+        
         $("massinopsis").collapse({toggle: false});
         
         $("botonmas").click(function(){
@@ -166,7 +161,6 @@ Educamedia
                 }})
                 .done(function( msg ) {
                     console.log ( "Data Saved: " + msg );
-                    loadComments ($("#video-id").val());
                 });
         });
         
@@ -184,7 +178,6 @@ Educamedia
             $("#sinopsis").html(_videos[_id].sinopsis);
             $("#sinopsis-250").html(_videos[_id].sinopsis.substring (0, 250));
             $('#div-containter').fadeIn ();
-            loadComments (_id);
         });
         
         $('#btn-comentar').click (function (){
@@ -200,31 +193,11 @@ Educamedia
                     console.log (ts.responseText); 
                 }})
                 .done(function( msg ) {
-                    $("#comentarios").prepend(msg)
+                    $("#comentarios").append(msg)
 //                    console.log ( "Data Saved: " + msg );
                 });
         });
-        
-       
-
-        function loadComments (id){
-            var urlget = "{{url('educamedia/telesecundaria/comments')}}";
-            var _url = urlget + '/'+id;
-             $.ajax({
-                method: "GET",
-                url: _url,   
-                error: function(ts) { 
-                    console.log (ts.responseText); 
-                }})
-                .done(function( msg ) {
-                    console.log ('Comentarios cargados: '+id);
-                    $("#comentarios").html(msg)
-//                    console.log ( "Data Saved: " + msg );
-                });
-        }
     });
-    
-    
     
     /** URL del api de ventana educativa*/
 //var api = "http://localhost/ventana-educativa/api/v1/";

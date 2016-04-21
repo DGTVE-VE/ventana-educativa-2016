@@ -11,11 +11,81 @@
 		font-size:14px;
 		cursor:pointer;
 	}
+	
+@media (min-width: 250px) { 
+    .logoBarraTVE{
+        width: 33px;
+        height: 13px;
+    }
+	.logoBarraSEP{
+		width: 33px;
+        height: 10px;
+	}
 	.textoTitulo{
 		color: black;
 		font-family:'Ubuntu';
-		font-size:17px;
+		font-size:10px;
 	}
+}
+
+
+@media (min-width: 350px) {
+    .logoBarraTVE{
+        width: 33px;
+        height: 13px;
+    }
+	.logoBarraSEP{
+		width: 33px;
+        height: 10px;
+	}
+	.textoTitulo{
+		color: black;
+		font-family:'Ubuntu';
+		font-size:10px;
+	}
+}
+@media (min-width: 768px) { 
+    .logoBarraTVE{
+        width: 65px;
+        height: 25px;
+    }
+	.logoBarraSEP{
+		width: 65px;
+        height: 20px;
+	}
+		.textoTitulo{
+		color: black;
+		font-family:'Ubuntu';
+		font-size:15px;
+	}
+}
+
+@media (min-width: 1024px) {
+    .logoBarraTVE{
+        width: 65px; 
+        height: 25px;
+    }
+	.logoBarraSEP{
+		width: 65px;
+        height: 20px;
+	}
+	.textoTitulo{
+		color: black;
+		font-family:'Ubuntu';
+		font-size:18px;
+	}
+}
+
+@media (min-width: 1200px) {
+    .logoBarraTVE{
+        width: 131px;
+        height: 50px;
+    }
+	.logoBarraSEP{
+		width: 166px;
+        height: 50px;
+	}
+}
 /*	----------	Estilo General todos los grados	----------*/
 	.posicionInicial{
 		position: absolute; top:0; left:0; z-index:2;
@@ -47,7 +117,7 @@
 <nav id="navegacionMediateca" class="navbar navbar-default navbar-fixed-top lo menuVentana" role="navigation">
     <div class="container-fluid">
         <div class="row">
-            <div class="col-md-4">
+            <div class="col-xs-3 col-sm-3 col-md-4 col-lg-4">
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                         <span class="icon-bar"></span>
@@ -59,17 +129,17 @@
                     </a>
                 </div> 
             </div>
-            <div class="col-md-2 text-center">
+            <div class="col-xs-3 col-sm-3 col-md-2 col-lg-2 text-center">
                 <a href="http://www.gob.mx/sep" target="_blank">
-                    {{ HTML::image('imagenes/mediateca/encabezado/sepcolor.png','Icono Apps',['class'=>'image-responsive'])}}
+                    {{ HTML::image('imagenes/mediateca/encabezado/sepcolor.png','Icono Apps',['class'=>'logoBarraSEP'])}}
                 </a>
             </div>
-            <div class="col-md-2 text-center">
+            <div class="col-xs-3 col-sm-3 col-md-2 col-lg-2 text-center">
                 <a href="http://www.televisioneducativa.gob.mx" target="_blank">
-                    {{ HTML::image('imagenes/mediateca/encabezado/tvecolor.png','Icono Apps',['class'=>'image-responsive'])}}
+                    {{ HTML::image('imagenes/mediateca/encabezado/tvecolor.png','Icono Apps',['class'=>'logoBarraTVE'])}}
                 </a>
             </div>
-            <div class="col-md-4">
+            <div class="col-xs-3 col-sm-3 col-md-4 col-lg-4">
                 <ul class="nav navbar-nav navbar-right collapse navbar-collapse collapseBarra">
                     <li class="dropdown col-md-6">
                         <div class="dropdown-toggle" data-toggle="dropdown">

@@ -20,7 +20,7 @@
 		<area alt="" title="" href="{{url('educamedia/telebachillerato')}}" onmouseover="resaltaImgSecu('Inicio', 'telebach')" onmouseout="normalImgSecu('Inicio', 'telebach')" shape="poly" coords="0,243,7,306,27,357,70,418,114,449,181,479,210,481,275,481,341,464,399,428,442,380,467,330,482,274,482,242,381,246,372,297,344,339,317,361,273,379,212,382,166,365,121,318,107,288,97,241" />
 	</map>
 		{{HTML::image('imagenes/mediateca/Inicio/home.png','Telesecundaria',['class'=>'posicionInicial img-responsive', 'id'=>'iniEducamedia', 'usemap'=>'#inicioEducamedia'])}}
-			{{HTML::image('imagenes/mediateca/Inicio/telesecHover.png','Telesecundaria',['class'=>'resaltaImg img-responsive', 'id'=>'telesecHover', ])}}
+			{{HTML::image('imagenes/mediateca/Inicio/telesecHover.png','Telesecundaria',['class'=>'resaltaImg img-responsive', 'id'=>'telesecHover'])}}
 			{{HTML::image('imagenes/mediateca/Inicio/telebachHover.png','Telesecundaria',['class'=>'resaltaImg img-responsive', 'id'=>'telebachHover'])}}
 		{{HTML::image('imagenes/mediateca/Inicio/TelebachilleratoCentro.png','Telebachillerato Central',['class'=>' img-responsive iniImgCentro', 'id'=>'telebachCentro'])}}
 		{{HTML::image('imagenes/mediateca/Inicio/TelesecundariaCentro.png','Telesecundaria Central',['class'=>'img-responsive iniImgCentro', 'id'=>'telesecCentro'])}}
