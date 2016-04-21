@@ -117,33 +117,33 @@
 <nav id="navegacionMediateca" class="navbar navbar-default navbar-fixed-top lo menuVentana" role="navigation">
     <div class="container-fluid">
         <div class="row">
-            <div class="col-xs-3 col-sm-3 col-md-4 col-lg-4">
+            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
                 <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <!--button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
-                    </button>    
+                    </button-->    
                     <a href="{{url('ventana_educativa')}}">
                         {{ HTML::image('imagenes/mediateca/encabezado/logoventana.png','Logo Ventana Educativa', ['class'=>'image-responsive imgLogo']) }}
                     </a>
                 </div> 
             </div>
-            <div class="col-xs-3 col-sm-3 col-md-2 col-lg-2 text-center">
+            <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 text-center">
                 <a href="http://www.gob.mx/sep" target="_blank">
                     {{ HTML::image('imagenes/mediateca/encabezado/sepcolor.png','Icono Apps',['class'=>'logoBarraSEP'])}}
                 </a>
             </div>
-            <div class="col-xs-3 col-sm-3 col-md-2 col-lg-2 text-center">
+            <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 text-center">
                 <a href="http://www.televisioneducativa.gob.mx" target="_blank">
                     {{ HTML::image('imagenes/mediateca/encabezado/tvecolor.png','Icono Apps',['class'=>'logoBarraTVE'])}}
                 </a>
             </div>
-            <div class="col-xs-3 col-sm-3 col-md-4 col-lg-4">
-                <ul class="nav navbar-nav navbar-right collapse navbar-collapse collapseBarra">
-                    <li class="dropdown col-md-6">
+            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                <ul class="nav navbar-nav navbar-right"><!-- class=" collapse navbar-collapse collapseBarra" -->
+                    <li class="dropdown col-xs-6 col-md-6" style="float:left;">
                         <div class="dropdown-toggle" data-toggle="dropdown">
-                            {{ HTML::image('imagenes/mediateca/encabezado/iconoApps.png','Icono Apps',['width'=>'30px','height'=>'20px','class'=>'iconoApp'])}}
+                            {{ HTML::image('imagenes/mediateca/encabezado/iconoApps.png','Icono Apps',['class'=>'appsLogo'])}}
                         </div>
                         <ul class="dropdown-menu img-responsive menuVentanaApps">
                             <table id="menuVentanaApps" class="mueveTabla">
@@ -210,14 +210,14 @@
                             </table>                                       
                         </ul>
                     </li>
-                    <li id="li-R" class="dropdown col-md-6">
+                    <li id="li-R" class="dropdown col-xs-6 col-sm-6 col-md-6" style="float:right;">
                         <div class=" divli dropdown-toggle" data-toggle="dropdown">
                             @if (Auth::guest())
-                            {{ HTML::image('imagenes/mediateca/encabezado/usuario.png','Logo Usuario',['class'=>'img-circle', 'id'=>'img-usuario'] )}}                        
+                            {{ HTML::image('imagenes/mediateca/encabezado/usuario.png','Logo Usuario',['class'=>'img-circle iconoApp', 'id'=>'img-usuario'] )}}
                             @elseif (File::exists ('uploaded/avatares/'.Auth::user()->id.'.png'))                        
-                            {{ HTML::image('uploaded/avatares/'.Auth::user()->id.'.png', 'Avatar usuario', ['class'=>'img-circle', 'id'=>'img-usuario', 'width'=>'30px'] )}}
+                            {{ HTML::image('uploaded/avatares/'.Auth::user()->id.'.png', 'Avatar usuario', ['class'=>'img-circle iconoApp', 'id'=>'img-usuario'] )}}
                             @else
-                            {{ HTML::image('imagenes/mediateca/encabezado/usuario.png','Logo Usuario',['class'=>'img-circle', 'id'=>'img-usuario'] )}}
+                            {{ HTML::image('imagenes/mediateca/encabezado/usuario.png','Logo Usuario',['class'=>'img-circle iconoApp', 'id'=>'img-usuario'] )}}
                             @endif
 
                         </div>
@@ -340,8 +340,8 @@
                     $("#form-avatar").addClass('hidden');
 //                    $("#message").html(data);
                     $('#img-usuario').attr('src', data + '?' + (new Date()));
-                    $('#img-usuario').attr('width', '30px');
-                    $('#img-usuario').attr('height', '30px');
+                   /*$('#img-usuario').attr('width', '30px');
+                    $('#img-usuario').attr('height', '30px');*/
                 },
                 error: function (data)
                 {
