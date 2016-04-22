@@ -72,3 +72,17 @@ and open the template in the editor.
     width: 100%;
     height: 520px;
 }
+
+
+/*estilo para el blog*/
+
+.blogPanel{
+    background: #424242 !important;
+    color: white !important;
+}
+
+.bordeBlog{
+    border-top: 1px solid #424242;
+}
+
+.TextoNegro{color: black;}
