@@ -13,7 +13,7 @@
 			generaBreadCrumbs();
 		?></p><br>
 	</div>
-	<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xs-offset-3 col-sm-offset-3 col-md-offset-3 col-lg-offset-4">
+	<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 		<map name="mapaPrimerGdo" id="mapaPrimerGdo">
 			<area alt="" href="{{(url('educamedia/telesecundaria/1/1/1'))}}" title="" onmouseover="resaltaImgSecu('primerGrado', 'artes')" onmouseout="normalImgSecu('primerGrado', 'artes')" shape="poly" coords="15,329,110,295,124,323,146,349,172,369,121,455,78,424,37,378" />
 			<area alt="" href="{{(url('educamedia/telesecundaria/1/12/1'))}}" title="" onmouseover="resaltaImgSecu('primerGrado', 'tecnologia')" onmouseout="normalImgSecu('primerGrado', 'tecnologia')" shape="poly" coords="175,370,205,382,236,387,269,384,290,481,191,481,123,456" />
@@ -25,7 +25,7 @@
 			<area alt="" href="{{(url('educamedia/telesecundaria/1/9/0'))}}" title="" onmouseover="resaltaImgSecu('primerGrado', 'lengua')" onmouseout="normalImgSecu('primerGrado', 'lengua')" shape="poly" coords="386,244,483,242,475,309,461,355,432,394,432,397,353,338,371,305,384,272" />
 			<area alt="" href="{{(url('educamedia/telesecundaria/1/6/1'))}}" title="" onmouseover="resaltaImgSecu('primerGrado', 'educacionFisica')" onmouseout="normalImgSecu('primerGrado', 'educacionFisica')" shape="poly" coords="351,339,428,400,406,424,356,458,295,479,292,477,271,386,307,371,334,352" />
 		</map>
-		<div style="width:483px; height:483px; margin:auto;">
+		<div style="width:483px; height:483px; margin:auto; position: relative;">
 			{{HTML::image('imagenes/mediateca/tsecundaria/primerGrado/primergrado.png','Telesecundaria primergrado',['id'=>'primergrado', 'class'=>'posicionInicial img-responsive'])}}
 			{{HTML::image('imagenes/mediateca/tsecundaria/primerGrado/artesHover.png','Telesecundaria ArtesI',['class'=>'resaltaImg img-responsive', 'id'=>'artesHover'])}}
 			{{HTML::image('imagenes/mediateca/tsecundaria/primerGrado/orientacionHover.png','Telesecundaria OrientacionI',['class'=>'resaltaImg img-responsive', 'id'=>'orientacionHover'])}}

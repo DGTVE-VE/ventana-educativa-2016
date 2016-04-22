@@ -20,6 +20,40 @@
 	.menuVentanaRedmite{
 		padding:5px;
 	}
+	
+	@media (min-width: 250px) { 
+		.iconoApp{width:10px; height:10px;
+		}
+		.appsLogo{width:15px; height:10px;
+		}
+	}
+
+	@media (min-width: 350px) { 
+		.iconoApp{width:10px; height:10px;
+		}
+		.appsLogo{width:15px; height:10px;
+		}
+	}
+	@media (min-width: 768px) { 
+		.iconoApp{width:25px; height:25px;
+		}
+		.appsLogo{width:25px; height:16px;
+		}
+	}
+
+	@media (min-width: 1024px) { 
+		.iconoApp{width:30px; height:30px;
+		}
+		.appsLogo{width:30px; height:20px;
+		}
+	}
+
+	@media (min-width: 1200px) {
+		.appsLogo{margin-top: 15% !important;width:30px; height:20px;
+		}
+		.menuVentanaApps{margin-top: 20% !important;
+		}
+	}
 </style>
 <div style="height:55px;">
 	@include('viewVentana.encabezadoVentana')

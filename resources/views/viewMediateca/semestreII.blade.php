@@ -13,7 +13,7 @@
 			generaBreadCrumbs();
 		?></p><br>
 	</div>
-		<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xs-offset-3 col-sm-offset-3 col-md-offset-3 col-lg-offset-4">
+	<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 		<map name="mapaSemII" id="mapaSemII">
 			<area alt="" onmouseover="resaltaImgSecu('SemestreII','InformaticaII')" onmouseout="normalImgSecu('SemestreII','InformaticaII')" title="" href="{{(url('educamedia/telebachillerato/II/12'))}}" shape="poly" coords="1,232,99,232,103,209,111,183,124,158,140,140,159,124,101,45,83,58,60,81,36,111,13,159,4,192" />
 			<area alt="" onmouseover="resaltaImgSecu('SemestreII','TallerLecturaII')" onmouseout="normalImgSecu('SemestreII','TallerLecturaII')" title="" href="{{(url('educamedia/telebachillerato/II/11'))}}" shape="poly" coords="161,121,102,44,129,28,156,15,192,5,212,0,256,1,295,5,313,10,282,104,250,96,199,101" />
@@ -23,7 +23,7 @@
 			<area alt="" onmouseover="resaltaImgSecu('SemestreII','LenguaAdicionalII')" onmouseout="normalImgSecu('SemestreII','LenguaAdicionalII')" title="" href="{{(url('educamedia/telebachillerato/II/13'))}}" shape="poly" coords="281,479,265,383,248,387,224,385,192,377,159,359,144,348,82,422,109,445,157,470,204,482" />
 			<area alt="" onmouseover="resaltaImgSecu('SemestreII','QuimicaII')" onmouseout="normalImgSecu('SemestreII','QuimicaII')" title="" href="{{(url('educamedia/telebachillerato/II/9/1'))}}" shape="poly" coords="82,421,143,348,137,340,120,317,107,285,99,253,99,234,95,233,2,234,2,248,2,273,3,298,12,316,21,340,40,381" />
 		</map>
-		<div style="width:483px; height:483px; margin:auto;">
+		<div style="width:483px; height:483px; margin:auto; position: relative;">
 			{{HTML::image('imagenes/mediateca/tbachillerato/SemestreII/semestreII.png','telebachillerato Semestre II',['class'=>'posicionInicial img-responsive', 'id'=>'SemestreII'])}}
 			{{HTML::image('imagenes/mediateca/tbachillerato/SemestreII/InformaticaIIHover.png','Telebachillerato InformaticaII',['class'=>'resaltaImg img-responsive', 'id'=>'InformaticaIIHover'])}}
 			{{HTML::image('imagenes/mediateca/tbachillerato/SemestreII/TallerLecturaIIHover.png','Telebachillerato TallerLecturaII',['class'=>'resaltaImg img-responsive', 'id'=>'TallerLecturaIIHover'])}}
