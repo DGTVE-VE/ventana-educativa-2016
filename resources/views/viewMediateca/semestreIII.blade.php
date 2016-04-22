@@ -13,7 +13,7 @@
 			generaBreadCrumbs();
 		?></p><br>
 	</div>
-		<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xs-offset-3 col-sm-offset-3 col-md-offset-3 col-lg-offset-4">
+	<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 		<map name="mapaSemIII" id="mapaSemIII">
 			<area alt="" title="" href="{{(url('educamedia/telebachillerato/III/20'))}}" onmouseover="resaltaImgSecu('SemestreIII','BiologiaI')" onmouseout="normalImgSecu('SemestreIII','BiologiaI')" shape="poly" coords="51,390,129,331,108,291,99,245,101,210,107,191,18,156,15,155,10,173,1,197,1,270,5,306,28,359" />
 			<area alt="" title="" href="{{(url('educamedia/telebachillerato/III/18'))}}" onmouseover="resaltaImgSecu('SemestreIII','LiteraturaI')" onmouseout="normalImgSecu('SemestreIII','LiteraturaI')" shape="poly" coords="15,154,107,190,134,148,162,123,193,107,222,99,209,2,203,2,189,3,147,19,117,31,76,62,49,96" />
@@ -22,7 +22,7 @@
 			<area alt="" title="" href="{{(url('educamedia/telebachillerato/III/15'))}}" onmouseover="resaltaImgSecu('SemestreIII','MatematicasIII')" onmouseout="normalImgSecu('SemestreIII','MatematicasIII')" shape="poly" coords="376,296,467,333,448,369,408,419,379,443,326,468,274,480,261,385,315,362,351,339" />
 			<area alt="" title="" href="{{(url('educamedia/telebachillerato/III/19'))}}" onmouseover="resaltaImgSecu('SemestreIII','LenguaAdicionalIII')" onmouseout="normalImgSecu('SemestreIII','LenguaAdicionalIII')" shape="poly" coords="53,392,129,333,162,362,204,381,238,386,260,386,273,482,200,482,164,473,119,452,73,419" />
 		</map>
-		<div style="width:483px; height:483px; margin:auto;">
+		<div style="width:483px; height:483px; margin:auto; position: relative;">
 			{{HTML::image('imagenes/mediateca/tbachillerato/SemestreIII/semestreIII.png','telebachillerato Semestre III',['class'=>'posicionInicial img-responsive', 'id'=>'SemestreIII'])}}
 			{{HTML::image('imagenes/mediateca/tbachillerato/SemestreIII/BiologiaIHover.png','Telebachillerato BiologiaI',['class'=>'resaltaImg img-responsive', 'id'=>'BiologiaIHover'])}}
 			{{HTML::image('imagenes/mediateca/tbachillerato/SemestreIII/LiteraturaIHover.png','Telebachillerato LiteraturaI',['class'=>'resaltaImg img-responsive', 'id'=>'LiteraturaIHover'])}}
