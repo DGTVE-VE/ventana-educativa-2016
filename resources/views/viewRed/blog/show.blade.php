@@ -33,10 +33,12 @@
         </form>
         @endif
         @endif
-        <div>           
+        <div>
             @foreach ($blog->comments as $comment)
                 @if ($comment->id_comment == 0) 
+                <div style="background-color: #d9d9d9;">
                     @include('viewRed.blog.comments', ['comment'=>$comment])  
+                    </div>
                 @endif
             @endforeach 
         </div>
