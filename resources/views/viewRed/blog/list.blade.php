@@ -33,7 +33,7 @@
     <div class="col-md-7">
         @foreach ($blogs as $blog)
         <br>
-        <div class="row bordeBlog">
+        <div class="row bordeBlog text-justify">
             <br>
             <div class="col-md-3">
                 <a href="{{url("redmite/blog/$blog->id")}}">
