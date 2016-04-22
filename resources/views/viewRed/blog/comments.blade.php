@@ -1,5 +1,5 @@
 
-<div style='border-left: 1px solid black; margin-left: 10px; margin-bottom: 10px; padding: 5px'>
+<div style='margin-left: 10px; margin-bottom: 10px; padding: 5px'>
     
     <img src="{{url($comment->colaborador->url_foto)}}" width="40" height="40">
     {{$comment->colaborador->nombre}}
