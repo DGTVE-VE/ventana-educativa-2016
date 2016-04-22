@@ -46,7 +46,7 @@
                 <ul class="nav navbar-nav navbar-right collapse navbar-collapse collapseBarra">
                     <li class="dropdown col-md-6">
                         <div class="dropdown-toggle" data-toggle="dropdown">
-                            {{ HTML::image('imagenes/ventana/encabezado/iconoApps.png','Icono Apps',['width'=>'30px','height'=>'20px','class'=>'iconoApp'])}}
+                            {{ HTML::image('imagenes/ventana/encabezado/iconoApps.png','Icono Apps',['width'=>'30px','height'=>'20px','class'=>'iconoApp appsLogo'])}}
                         </div>
                         <ul id="menuVentanaApps" class="dropdown-menu img-responsive menuVentanaApps">
                             <table id="mueveTablaApps" class="mueveTabla">
@@ -116,11 +116,11 @@
                     <li id="li-R" class="dropdown col-md-6">
                         <div class=" divli dropdown-toggle" data-toggle="dropdown">
                             @if (Auth::guest())
-                            {{ HTML::image('imagenes/ventana/encabezado/usuario.png','Logo Usuario',['class'=>'img-circle', 'id'=>'img-usuario'] )}}                        
+                            {{ HTML::image('imagenes/ventana/encabezado/usuario.png','Logo Usuario',['class'=>'img-circle iconoApp', 'id'=>'img-usuario'] )}}                        
                             @elseif (File::exists ('uploaded/avatares/'.Auth::user()->id.'.png'))                        
-                            {{ HTML::image('uploaded/avatares/'.Auth::user()->id.'.png', 'Avatar usuario', ['class'=>'img-circle', 'id'=>'img-usuario', 'width'=>'35px'] )}}
+                            {{ HTML::image('uploaded/avatares/'.Auth::user()->id.'.png', 'Avatar usuario', ['class'=>'img-circle iconoApp', 'id'=>'img-usuario', 'width'=>'35px'] )}}
                             @else
-                            {{ HTML::image('imagenes/ventana/encabezado/usuario.png','Logo Usuario',['class'=>'img-circle', 'id'=>'img-usuario'] )}}
+                            {{ HTML::image('imagenes/ventana/encabezado/usuario.png','Logo Usuario',['class'=>'img-circle iconoApp', 'id'=>'img-usuario'] )}}
                             @endif
 
                         </div>
