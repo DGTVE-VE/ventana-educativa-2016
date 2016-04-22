@@ -1,6 +1,6 @@
 @extends ('indexRed')
 @section('menuRedmite')
-@include ('viewRed.seccionheader')
+    @include ('viewRed.seccionheader')
 @endsection
 @section ('cuerpoRedmite')
 <style>
