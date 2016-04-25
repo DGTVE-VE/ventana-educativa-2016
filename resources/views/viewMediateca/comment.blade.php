@@ -43,7 +43,9 @@
             </div>
             <br>
             <div id="respuestas-{{$comment->id}}" style="display: none" >
+                @if (Auth::check ())
                 <div class="row">
+                    
                     <div class="col-md-10">
                         <textarea class="form-control"></textarea>
                     </div>
@@ -51,6 +53,7 @@
                         <button class="btn btn-info form-control"> Responder </button>
                     </div>
                 </div>
+                @endif
                 <div class="row">
                     
                 @if($comment->respuestas->count() > 0)

@@ -99,7 +99,8 @@ class MediatecaController extends Controller {
         return view('viewMediateca/videosTelesecundaria')
                         ->with('videos', $videos)
                         ->with('paginacion', $paginacion)
-                        ->with('url', $url);
+                        ->with('url', $url)
+                        ->with('nivel', 'telesecundaria');
     }
     
     public function guardaRating (){
