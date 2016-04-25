@@ -19,7 +19,7 @@
 			<area alt="" href="{{url('educamedia/telesecundaria/segundogrado')}}" onmouseover="resaltaImgSecu('Inicio', 'segundoGrado')" onmouseout="normalImgSecu('Inicio', 'segundoGrado')" title="" shape="poly" coords="328,358,383,437,440,381,461,345,479,282,482,263,481,215,475,170,460,136,437,95,410,65,370,35,347,22,302,111,333,133,360,162,379,200,385,260,372,302,353,331"/>
 			<area alt="" href="{{url('educamedia/telesecundaria/tercergrado')}}" onmouseover="resaltaImgSecu('Inicio', 'tercerGrado')" onmouseout="normalImgSecu('Inicio', 'tercerGrado')" title="" shape="poly" coords="0,269,98,258,122,316,166,365,216,383,252,384,295,374,327,359,382,438,333,467,286,480,264,481,214,481,162,471,109,449,60,405,22,356"/>
 		</map>
-		<div style="width:483px; height:483px; margin:auto; position: relative;">
+		<div class="contenedorAro">
 			{{HTML::image('imagenes/mediateca/tsecundaria/Inicio/telesecundaria.png','Telesecundaria Primero',['class'=>'posicionInicial img-responsive','id'=>'primerGrado'])}}
 			{{HTML::image('imagenes/mediateca/tsecundaria/Inicio/primerGradoHover.png','Telesecundaria Primero',['class'=>'resaltaImg img-responsive', 'id'=>'primerGradoHover'])}}
 			{{HTML::image('imagenes/mediateca/tsecundaria/Inicio/segundoGradoHover.png','Telesecundaria Segundo',['class'=>'resaltaImg img-responsive', 'id'=>'segundoGradoHover'])}}

@@ -24,7 +24,7 @@ Educamedia
 			<area alt="" title="" href="{{(url('educamedia/telebachillerato/Propedéutico/39'))}}" onmouseover="resaltaImgSecu('componente','PsicologiaII')" onmouseout="normalImgSecu('componente','PsicologiaII')" shape="poly" coords="119,315,33,364,59,401,94,433,117,449,179,475,204,382,172,368,134,339" />
 			<area alt="" title="" href="{{(url('educamedia/telebachillerato/Propedéutico/38'))}}" onmouseover="resaltaImgSecu('componente','PsicologiaI')" onmouseout="normalImgSecu('componente','PsicologiaI')" shape="poly" coords="117,315,34,362,12,319,3,273,1,209,7,183,101,209,96,237,102,282" />
 		</map>
-		<div style="width:483px; height:483px; margin:auto; position: relative;">
+		<div class="contenedorAro">
 			{{HTML::image('imagenes/mediateca/tbachillerato/componente/Componente.png','Telesecundaria SemestrePedagogico',['class'=>'posicionInicial img-responsive', 'id'=>'Pedagogico'])}}
 			{{HTML::image('imagenes/mediateca/tbachillerato/componente/CienciasComunicacionIHover.png','Telesecundaria CienciasComunicacionI',['class'=>'resaltaImg img-responsive', 'id'=>'CienciasComunicacionIHover'])}}
 			{{HTML::image('imagenes/mediateca/tbachillerato/componente/CienciasComunicacionIIHover.png','Telesecundaria CienciasComunicacionII',['class'=>'resaltaImg img-responsive', 'id'=>'CienciasComunicacionIIHover'])}}

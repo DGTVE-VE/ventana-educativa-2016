@@ -22,7 +22,7 @@
 			<area alt="" title="" href="{{(url('educamedia/telesecundaria/3/25/1'))}}" onmouseover="resaltaImgSecu('segundoGrado', 'quimica')" onmouseout="normalImgSecu('tercerGrado', 'quimica')" shape="poly" coords="310,370,357,456,282,480,209,481,155,470,117,449,167,365,210,380,266,383" />
 			<area alt="" title="" href="{{(url('educamedia/telesecundaria/3/29/0'))}}" onmouseover="resaltaImgSecu('segundoGrado', 'lengua')" onmouseout="normalImgSecu('tercerGrado', 'lengua')" shape="poly" coords="0,243,98,241,105,281,120,315,141,343,167,364,115,450,70,416,31,366,9,306" />
 		</map>
-		<div style="width:483px; height:483px; margin:auto; position: relative;">
+		<div class="contenedorAro">
 			{{HTML::image('imagenes/mediateca/tsecundaria/tercerGrado/tercerGrado.png','Telesecundaria tercer Grado',['id'=>'tercerGrado', 'class'=>'posicionInicial img-responsive'])}}
 			{{HTML::image('imagenes/mediateca/tsecundaria/tercerGrado/formacionCivicaHover.png','Telesecundaria FormacionCivicaII',['class'=>'resaltaImg img-responsive', 'id'=>'orientacionHover'])}}
 			{{HTML::image('imagenes/mediateca/tsecundaria/tercerGrado/historiaHover.png','Telesecundaria HistoriaII',['class'=>'resaltaImg img-responsive', 'id'=>'historiaHover'])}}

@@ -23,7 +23,7 @@
 			<area alt="" title="" href="{{url('educamedia/telebachillerato/semestreIII')}}" onmouseover="resaltaImgSecu('Inicio','semestreIII')" onmouseout="normalImgSecu('Inicio','semestreIII')" shape="poly" coords="10,319,108,287,128,328,150,350,190,374,158,468,127,458,91,433,54,397,33,364" />
 			<area alt="" title="" href="{{url('educamedia/telebachillerato/semestreII')}}" onmouseover="resaltaImgSecu('Inicio','semestreII')" onmouseout="normalImgSecu('Inicio','semestreII')" shape="poly" coords="104,286,10,317,2,257,3,197,10,171,23,137,37,114,119,166,106,192,99,236" />
 		</map>
-		<div style="width:483px; height:483px; margin:auto; position: relative;">
+		<div class="contenedorAro">
 			{{HTML::image('imagenes/mediateca/tbachillerato/Inicio/telebachillerato.png','Telebachillerato',['id'=>'telebachillerato', 'class'=>'posicionInicial img-responsive'])}}
 			{{HTML::image('imagenes/mediateca/tbachillerato/Inicio/formaPropedeuticaHover.png','Telebachillerato',['class'=>'resaltaImg img-responsive', 'id'=>'formaPropedeuticaHover'])}}
 			{{HTML::image('imagenes/mediateca/tbachillerato/Inicio/semestreIHover.png','Telebachillerato',['class'=>'resaltaImg img-responsive', 'id'=>'semestreIHover'])}}
@@ -32,6 +32,12 @@
 			{{HTML::image('imagenes/mediateca/tbachillerato/Inicio/semestreVHover.png','Telebachillerato',['class'=>'resaltaImg img-responsive', 'id'=>'semestreVHover'])}}
 			{{HTML::image('imagenes/mediateca/tbachillerato/Inicio/semestreIVHover.png','Telebachillerato',['class'=>'resaltaImg img-responsive', 'id'=>'semestreIVHover'])}}
 			{{HTML::image('imagenes/mediateca/tbachillerato/Inicio/semestreIIIHover.png','Telebachillerato',['class'=>'resaltaImg img-responsive', 'id'=>'semestreIIIHover'])}}
+			{{HTML::image('imagenes/mediateca/tbachillerato/imgCentral/sem1.png','Telebachillerato Central',['class'=>' img-responsive iniImgCentro', 'id'=>'semestreICentro'])}}
+			{{HTML::image('imagenes/mediateca/tbachillerato/imgCentral/sem2.png','Telesecundaria Central',['class'=>'img-responsive iniImgCentro', 'id'=>'semestreIICentro'])}}
+			{{HTML::image('imagenes/mediateca/tbachillerato/imgCentral/sem3.png','Telebachillerato Central',['class'=>' img-responsive iniImgCentro', 'id'=>'semestreIIICentro'])}}
+			{{HTML::image('imagenes/mediateca/tbachillerato/imgCentral/sem4.png','Telesecundaria Central',['class'=>'img-responsive iniImgCentro', 'id'=>'semestreIVCentro'])}}
+			{{HTML::image('imagenes/mediateca/tbachillerato/imgCentral/sem5.png','Telebachillerato Central',['class'=>' img-responsive iniImgCentro', 'id'=>'semestreVCentro'])}}
+			{{HTML::image('imagenes/mediateca/tbachillerato/imgCentral/sem6.png','Telesecundaria Central',['class'=>'img-responsive iniImgCentro', 'id'=>'semestreVICentro'])}}
 			{{HTML::image('imagenes/mediateca/tbachillerato/Inicio/ImgMapa.png','Telebachillerato',['class'=>'posicionMapa img-responsive', 'id'=>'telebachilleratoSEMII', 'usemap'=>'#mapaTelebachillerato'])}}
 		</div>
 	</div>

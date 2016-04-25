@@ -23,7 +23,7 @@
 			<area alt="" title="" href="{{(url('educamedia/telebachillerato/I/6'))}}" onmouseover="resaltaImgSecu('SemestreI','LenguaAdicionalI')" onmouseout="normalImgSecu('SemestreI','LenguaAdicionalI')" shape="poly" coords="144,348,179,371,208,382,248,386,266,384,281,482,203,483,155,471,123,453,97,438,81,424" />
 			<area alt="" title="" href="{{(url('educamedia/telebachillerato/I/2'))}}" onmouseover="resaltaImgSecu('SemestreI','QuimicaI')" onmouseout="normalImgSecu('SemestreI','QuimicaI')" shape="poly" coords="82,421,143,348,137,340,120,317,107,285,99,253,99,234,95,233,2,234,2,248,2,273,3,298,12,316,21,340,40,381" />
 		</map>
-		<div style="width:483px; height:483px; margin:auto; position: relative;">
+		<div class="contenedorAro">
 			{{HTML::image('imagenes/mediateca/tbachillerato/SemestreI/semestreI.png','telebachillerato Semestre I',['class'=>'posicionInicial img-responsive', 'id'=>'SemestreI'])}}
 			{{HTML::image('imagenes/mediateca/tbachillerato/SemestreI/InformaticaIHover.png','Telebachillerato InformaticaI',['class'=>'resaltaImg img-responsive', 'id'=>'InformaticaIHover'])}}
 			{{HTML::image('imagenes/mediateca/tbachillerato/SemestreI/TallerLecturaHover.png','Telebachillerato TallerLectura',['class'=>'resaltaImg img-responsive', 'id'=>'TallerLecturaHover'])}}

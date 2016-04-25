@@ -12,80 +12,154 @@
 		cursor:pointer;
 	}
 	
-@media (min-width: 250px) { 
-    .logoBarraTVE{
-        width: 33px;
-        height: 13px;
-    }
-	.logoBarraSEP{
-		width: 33px;
-        height: 10px;
-	}
-	.textoTitulo{
-		color: black;
-		font-family:'Ubuntu';
-		font-size:10px;
-	}
-}
-
-
-@media (min-width: 350px) {
-    .logoBarraTVE{
-        width: 33px;
-        height: 13px;
-    }
-	.logoBarraSEP{
-		width: 33px;
-        height: 10px;
-	}
-	.textoTitulo{
-		color: black;
-		font-family:'Ubuntu';
-		font-size:10px;
-	}
-}
-@media (min-width: 768px) { 
-    .logoBarraTVE{
-        width: 65px;
-        height: 25px;
-    }
-	.logoBarraSEP{
-		width: 65px;
-        height: 20px;
-	}
+	@media (min-width: 250px) { 
+		.logoBarraTVE{
+			width: 33px;
+			height: 13px;
+		}
+		.logoBarraSEP{
+			width: 33px;
+			height: 10px;
+		}
 		.textoTitulo{
-		color: black;
-		font-family:'Ubuntu';
-		font-size:15px;
+			color: black;
+			font-family:'Ubuntu';
+			font-size:10px;
+		}
+		.contenedorAro{
+			width:283px; height:283px; margin:auto; position: relative;
+		}
+	/*	----------	Estilo pagina Inicio telesecundaria	----------	*/
+		.imgTelesecCentro{
+			position: absolute; top:75px; left:65px; width: 150px; height: 150px; z-index:0; visibility: hidden;
+		}
+	/*	----------	Estilo pagina Inicio Educamedia	----------	*/	
+		.iniImgCentro{
+			position: absolute; top:45px; left:50px; width:190px; height: 190px; z-index:0; visibility: hidden;
+		}
+	/*	----------	Estilo General todos los grados	----------*/
+		.imgPrimeroCentral{
+			position: absolute; top:95px; left:95px; width:100px; height: 100px; z-index:0; visibility: hidden;
+		}
 	}
-}
 
-@media (min-width: 1024px) {
-    .logoBarraTVE{
-        width: 65px; 
-        height: 25px;
-    }
-	.logoBarraSEP{
-		width: 65px;
-        height: 20px;
+	@media (min-width: 350px) {
+		.logoBarraTVE{
+			width: 33px;
+			height: 13px;
+		}
+		.logoBarraSEP{
+			width: 33px;
+			height: 10px;
+		}
+		.textoTitulo{
+			color: black;
+			font-family:'Ubuntu';
+			font-size:10px;
+		}
+		.contenedorAro{
+			width:283px; height:283px; margin:auto; position: relative;
+		}
+	/*	----------	Estilo pagina Inicio telesecundaria	----------	*/
+		.imgTelesecCentro{
+			position: absolute; top:75px; left:65px; width: 150px; height: 150px; z-index:0; visibility: hidden;
+		}
+	/*	----------	Estilo pagina Inicio Educamedia	----------	*/	
+		.iniImgCentro{
+			position: absolute; top:45px; left:50px; width:190px; height: 190px; z-index:0; visibility: hidden;
+		}
+	/*	----------	Estilo General todos los grados	----------*/
+		.imgPrimeroCentral{
+			position: absolute; top:95px; left:95px; width:100px; height: 100px; z-index:0; visibility: hidden;
+		}
 	}
-	.textoTitulo{
-		color: black;
-		font-family:'Ubuntu';
-		font-size:18px;
+	@media (min-width: 768px) { 
+		.logoBarraTVE{
+			width: 65px;
+			height: 25px;
+		}
+		.logoBarraSEP{
+			width: 65px;
+			height: 20px;
+		}
+			.textoTitulo{
+			color: black;
+			font-family:'Ubuntu';
+			font-size:15px;
+		}
+		.contenedorAro{
+			width:483px; height:483px; margin:auto; position: relative;
+		}
+	/*	----------	Estilo pagina Inicio telesecundaria	----------	*/
+		.imgTelesecCentro{
+			position: absolute; top:150px; left:130px; width: 230px; height: 230px; z-index:0; visibility: hidden;
+		}
+	/*	----------	Estilo pagina Inicio Educamedia	----------	*/	
+		.iniImgCentro{
+			position: absolute; top:100px; left:100px; width:289px; height: 289px; z-index:0; visibility: hidden;
+		}
+	/*	----------	Estilo General todos los grados	----------*/
+		.imgPrimeroCentral{
+			position: absolute; top:130px; left:130px; width:225px; height: 225px; z-index:0; visibility: hidden;
+		}
 	}
-}
 
-@media (min-width: 1200px) {
-    .logoBarraTVE{
-        width: 131px;
-        height: 50px;
-    }
-	.logoBarraSEP{
-		width: 166px;
-        height: 50px;
+	@media (min-width: 1024px) {
+		.logoBarraTVE{
+			width: 65px; 
+			height: 25px;
+		}
+		.logoBarraSEP{
+			width: 65px;
+			height: 20px;
+		}
+		.textoTitulo{
+			color: black;
+			font-family:'Ubuntu';
+			font-size:18px;
+		}
+		.contenedorAro{
+			width:483px; height:483px; margin:auto; position: relative;
+		}
+	/*	----------	Estilo pagina Inicio telesecundaria	----------	*/
+		.imgTelesecCentro{
+			position: absolute; top:150px; left:130px; width: 230px; height: 230px; z-index:0; visibility: hidden;
+		}
+	/*	----------	Estilo pagina Inicio Educamedia	----------	*/	
+		.iniImgCentro{
+			position: absolute; top:100px; left:100px; width:289px; height: 289px; z-index:0; visibility: hidden;
+		}
+	/*	----------	Estilo General todos los grados	----------*/
+		.imgPrimeroCentral{
+			position: absolute; top:130px; left:130px; width:225px; height: 225px; z-index:0; visibility: hidden;
+		}
 	}
-}
+
+	@media (min-width: 1200px) {
+		.logoBarraTVE{
+			width: 131px;
+			height: 50px;
+		}
+		.logoBarraSEP{
+			width: 166px;
+			height: 50px;
+		}
+		.contenedorAro{
+			width:483px; height:483px; margin:auto; position: relative;
+		}
+	/*	----------	Estilo pagina Inicio telesecundaria	----------	*/
+		.imgTelesecCentro{ 
+			position: absolute; top:150px; left:130px; width: 230px; height: 230px; z-index:0; visibility: hidden;
+		}
+	/*	----------	Estilo pagina Inicio Educamedia	----------	*/	
+		.iniImgCentro{
+			position: absolute; top:100px; left:100px; width:289px; height: 289px; z-index:0; visibility: hidden;
+		}
+	/*	----------	Estilo General todos los grados	----------*/
+		.imgPrimeroCentral{
+			position: absolute; top:130px; left:130px; width:225px; height: 225px; z-index:0; visibility: hidden;
+		}
+	}
 /*	----------	Estilo General todos los grados	----------*/
 	.posicionInicial{
 		position: absolute; top:0; left:0; z-index:2;
@@ -96,13 +170,8 @@
 	.posicionMapa{
 		position: absolute; top:0; left:0; z-index:5;
 	}
-	.imgPrimeroCentral{
-		position: absolute; top:130px; left:130px; z-index:0; visibility: hidden;
-	}
-/*	----------	Estilo pagina Inicio telesecundaria	----------	*/		
-	.imgTelesecCentro{
-		position: absolute; top:160px; left:140px; z-index:0; visibility: hidden;
-	}
+
+
 /*	----------	Estilo pagina Inicio Educamedia	----------	*/	
 	.telesecundaria{
 		position: absolute; top:0px; left:15px;  z-index:5; visibility: hidden;
@@ -110,9 +179,7 @@
 	.telebachillerato{
 		position: absolute; top:240px; left:15px; z-index:5; visibility: hidden; 
 	}
-	.iniImgCentro{
-		position: absolute; top:100px; left:100px; width:289px; height: 289px; z-index:0; visibility: hidden;
-	}
+
 </style>
 <nav id="navegacionMediateca" class="navbar navbar-default navbar-fixed-top lo menuVentana" role="navigation">
     <div class="container-fluid">

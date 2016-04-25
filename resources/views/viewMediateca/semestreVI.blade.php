@@ -19,7 +19,7 @@ Educamedia
 			<area alt="" title="" href="{{(url('educamedia/telebachillerato/VI/31'))}}" onmouseover="resaltaImgSecu('SemestreVI','Metodologia')" onmouseout="normalImgSecu('SemestreVI','Metodologia')" shape="poly" coords="109,296,17,330,38,379,86,430,136,463,197,483,288,483,340,466,392,435,428,400,353,339,323,359,239,387,180,374,134,341" />
 			<area alt="" title="" href="{{(url('educamedia/telebachillerato/VI/29'))}}" onmouseover="resaltaImgSecu('SemestreVI','Ecologia')" onmouseout="normalImgSecu('SemestreVI','Ecologia')" shape="poly" coords="108,295,16,329,2,262,1,200,19,148,51,97,105,48,147,23,200,7,258,2,286,7,267,105,256,100,215,101,165,122,120,167,99,226" />
 		</map>
-		<div style="width:483px; height:483px; margin:auto; position: relative;">
+		<div class="contenedorAro">
 			{{HTML::image('imagenes/mediateca/tbachillerato/SemestreVI/semestreVI.png','telebachillerato Semestre VI',['class'=>'posicionInicial img-responsive', 'id'=>'SemestreVI'])}}
 			{{HTML::image('imagenes/mediateca/tbachillerato/SemestreVI/EcologiaHover.png','Telebachillerato Ecologia',['class'=>'resaltaImg img-responsive', 'id'=>'EcologiaHover'])}}
 			{{HTML::image('imagenes/mediateca/tbachillerato/SemestreVI/FilosofiaHover.png','Telebachillerato Filosofia',['class'=>'resaltaImg img-responsive', 'id'=>'FilosofiaHover'])}}

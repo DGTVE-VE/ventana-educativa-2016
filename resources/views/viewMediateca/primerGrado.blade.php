@@ -25,7 +25,7 @@
 			<area alt="" href="{{(url('educamedia/telesecundaria/1/9/0'))}}" title="" onmouseover="resaltaImgSecu('primerGrado', 'lengua')" onmouseout="normalImgSecu('primerGrado', 'lengua')" shape="poly" coords="386,244,483,242,475,309,461,355,432,394,432,397,353,338,371,305,384,272" />
 			<area alt="" href="{{(url('educamedia/telesecundaria/1/6/1'))}}" title="" onmouseover="resaltaImgSecu('primerGrado', 'educacionFisica')" onmouseout="normalImgSecu('primerGrado', 'educacionFisica')" shape="poly" coords="351,339,428,400,406,424,356,458,295,479,292,477,271,386,307,371,334,352" />
 		</map>
-		<div style="width:483px; height:483px; margin:auto; position: relative;">
+		<div class="contenedorAro">
 			{{HTML::image('imagenes/mediateca/tsecundaria/primerGrado/primergrado.png','Telesecundaria primergrado',['id'=>'primergrado', 'class'=>'posicionInicial img-responsive'])}}
 			{{HTML::image('imagenes/mediateca/tsecundaria/primerGrado/artesHover.png','Telesecundaria ArtesI',['class'=>'resaltaImg img-responsive', 'id'=>'artesHover'])}}
 			{{HTML::image('imagenes/mediateca/tsecundaria/primerGrado/orientacionHover.png','Telesecundaria OrientacionI',['class'=>'resaltaImg img-responsive', 'id'=>'orientacionHover'])}}
