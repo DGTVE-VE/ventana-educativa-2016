@@ -18,8 +18,15 @@
                 <div class="title h5">
                     <p>{{$comment->usuario->name}}</p>
                     {{--*/ $i = 0; /*--}} 
+                    <?php
+                    if ($comment instanceof \App\Model\Mediateca\TelesecundariaComments){
+                        $stars = $comment->usuario->ratingTelesecundaria($comment->telesecundaria_id);
+                    } else if ($comment instanceof \App\Model\Mediateca\TelebachilleratoComments){
+                        $stars = $comment->usuario->ratingTelebachillerato($comment->telebachillerato_id);
+                    }                    
+                    ?>
 <!--                    Pone las estrellas llenas-->
-                    @for ($i=0; $i<$comment->usuario->ratingTelesecundaria($comment->telesecundaria_id); $i++)
+                    @for ($i=0; $i<$stars; $i++)
                         <i class="fa fa-star" aria-hidden="true"></i>
                     @endfor
 <!--                    Pone las estrellas vacías-->
@@ -43,7 +50,9 @@
             </div>
             <br>
             <div id="respuestas-{{$comment->id}}" style="display: none" >
+                @if (Auth::check ())
                 <div class="row">
+                    
                     <div class="col-md-10">
                         <textarea class="form-control"></textarea>
                     </div>
@@ -51,6 +60,7 @@
                         <button class="btn btn-info form-control"> Responder </button>
                     </div>
                 </div>
+                @endif
                 <div class="row">
                     
                 @if($comment->respuestas->count() > 0)

@@ -39,4 +39,13 @@ class User extends Authenticatable implements CanResetPassword
         }
         return $rating->rating;
     }
+    public function ratingTelebachillerato ($telebachillerato_id){
+        $rating = Model\Mediateca\RatingTelebachillerato::
+                where ('user_id', $this->id)
+                -> where ('telebachillerato_id', $telebachillerato_id)->first ();
+        if ($rating == null){
+            return 0;
+        }
+        return $rating->rating;
+    }
 }
