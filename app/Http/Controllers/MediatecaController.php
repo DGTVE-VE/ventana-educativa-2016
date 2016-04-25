@@ -115,7 +115,15 @@ class MediatecaController extends Controller {
             $ratingSaved->rating = $rating;
             $ratingSaved->save ();
         }
-        
+        if ($nivel == 'telebachillerato') {
+            $user_id = Auth::user ()->id;            
+            $ratingSaved = \App\Model\Mediateca\RatingTelebachillerato::
+                    firstOrCreate(['user_id' => $user_id, 
+                                   'telebachillerato_id' => $id]);
+            $ratingSaved->rating = $rating;
+            $ratingSaved->save ();
+        }
+        return 'rating guardado';
     }
 
     public function getVideosTelebachillerato($grado, $materia) {     
@@ -126,7 +134,7 @@ class MediatecaController extends Controller {
             })->get();
        
         /* Envío de querys y variables a la vista */
-        return view('viewMediateca/videosTelebachillerato')->with('videos', $videos);
+        return view('viewMediateca/videosTelebachillerato')->with('videos', $videos)->with('nivel', 'telebachillerato');
     }
 
     public function storeTelesecundariaComment (){
@@ -143,6 +151,26 @@ class MediatecaController extends Controller {
     public function telesecundariaComments ($id){
         $comments = \App\Model\Mediateca\TelesecundariaComments::
                 where('telesecundaria_id', $id)
+                ->where ('comment_id', 0)
+                ->orderBy('created_at','DESC')->get();
+        return view('viewMediateca/comments')->with('comments', $comments);
+    }
+    
+     public function storeTelebachilleratoComment (){
+        
+        $comment = new \App\Model\Mediateca\TelebachilleratoComments;
+        $comment->comment_id = filter_input (INPUT_POST, 'comment_id');
+        $comment->usuario_id = Auth::user ()->id;
+        $comment->telebachillerato_id = filter_input (INPUT_POST, 'video_id');        
+        $comment->comment = filter_input (INPUT_POST, 'comment');
+        $comment->save ();
+        return view('viewMediateca/comment')->with('comment', $comment);
+    }
+    
+    public function telebachilleratoComments ($id){
+    
+        $comments = \App\Model\Mediateca\TelebachilleratoComments::
+                where('telebachillerato_id', $id)
                 ->where ('comment_id', 0)
                 ->orderBy('created_at','DESC')->get();
         return view('viewMediateca/comments')->with('comments', $comments);
