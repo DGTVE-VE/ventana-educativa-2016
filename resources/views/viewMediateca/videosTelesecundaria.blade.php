@@ -336,10 +336,10 @@ function initializeYoutube(youtubeId, time) {
         height: 390,
         videoId: youtubeId,
         playerVars: {
-            controls: 0, // Los controles no se muestran
+            controls: 2, // Los controles no se muestran
             playsinline: 0, // Reproducción a pantalla completa
             iv_load_policy: 3, // Las anotaciones del video no se muestran 
-            modestbranding: 1, // Evita que el logo de youtube se muestre en la barra de control
+            modestbranding: 0, // Evita que el logo de youtube se muestre en la barra de control
             showinfo: 0, // Evita que se muestre información del video antes de su reproducción
             enablejsapi: 1, // Permite que el reproductor sea controlado por el API de Javascript
             autoplay: 0, // Autoinicio habilitado
