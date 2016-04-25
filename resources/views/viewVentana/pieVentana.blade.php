@@ -1,13 +1,12 @@
 <!--	-----------------	Barra colaboradores para resoluciones grandes	----------------	-->
 <div class="row visible-md-block visible-lg-block">
-    <div id="barraNavegacionColabora" class="col-md-12 col-lg-12 tabs_holder navbar-fixed-bottom quitaPad" onmouseover="ocultaPestana()" onmouseout="muestraPestana()">
-		<div id="pestanaColabora" class="fondoColabora"><a href="#"><p id="textoColabora" class="txtPestana ">COLABORADORES</p></a></div></li>
+    <div id="barraNavegacionColabora" class="col-md-12 col-lg-12 tabs_holder navbar-fixed-bottom quitaPad" onmouseenter="ocultaPestana()" onmouseleave="muestraPestana()">
+		<div id="pestanaColabora" class="fondoColabora" ><a href="#"><p id="textoColabora" class="txtPestana" id="desplegar">COLABORADORES</p></a></div>
         <div id="efectobarramenu" class="quitaPad">
-			<div id="pestanaColabora" class="fondoColabora"><a href="#"><p id="textoColabora" class="txtPestana ">COLABORADORES</p></a></div></li>
-			<div class="fondoTablaColabora">
+			<div id="fondoTablaColabora" class="fondoTablaColabora">
 				<div style="padding:10px;">
 				</div>
-				<table class="table tablaCOlaboradores">
+				<table class="table tablaCOlaboradores"   >
 					<tr>
 						<td>
 							<a href=" http://www.gob.mx/sep" target="_blank" onMouseOver="document.logosep.src = 'imagenes/ventana/pieventana/sepcolor.png';"
@@ -30,7 +29,7 @@
 						<td>
 							<a href=" http://ceducar.info/ceducar/" target="_blank" onMouseOver="document.logoceccsica.src = 'imagenes/ventana/pieventana/ceccsicacolor.png';"
 							   onMouseOut="document.logoceccsica.src = 'imagenes/ventana/pieventana/ceccsica.png';">
-								{{ HTML::image('imagenes/ventana/pieventana//ceccsica.png','Logo ceccsica',  ['style'=>'margin-left: 30% !important;', 'name'=>'logoceccsica','class'=>'img-responsive'])}}
+								{{ HTML::image('imagenes/ventana/pieventana/ceccsica.png','Logo ceccsica',  ['style'=>'margin-left: 30% !important;', 'name'=>'logoceccsica','class'=>'img-responsive'])}}
 							</a>    
 						</td>
 						<td>
@@ -120,33 +119,28 @@
 			</div>
 		</td>
 		<td style="vertical-align:top;">
-			<div class="fondoColaboraSM"><a href="#"><p class="txtPestanaSM" id="desplegar">COLABORADORES</p></a></div>
+			<div class="fondoColaboraSM"><a href="#"><p class="txtPestanaSM" id="desplegar1">COLABORADORES</p></a></div>
 		</td></tr>
 		</table>
     </div>
 </div>
+
 <script>
 
-	//$('#efectobarramenu2').addClass('animated fadeInLeft');
 	$(document).ready(function() {
-		$('#desplegar').click(function() {
+		$("#fondoTablaColabora").slideToggle("fast");
+		$('#desplegar1').click(function() {
 			$("#efectobarramenu2").animate({
 				width: "toggle"
 				//,"toggle"
 			});
 		});
-		$('#efectobarramenu').addClass('animated fadeInUp', {duration: 'slow'} );
-		$('#efectobarramenu').css('display','none');
 		$('#efectobarramenu2').css('display','none');
 	});
 	function ocultaPestana(){
-		$('#pestanaColabora').css('display','none');
-		$('#textoColabora').css('visibility','hidden');
-		$('#efectobarramenu').css('display','block');
+		$("#fondoTablaColabora").slideDown("slow");
 	}
 	function muestraPestana(){
-		$('#pestanaColabora').css('display','block');
-		$('#textoColabora').css('visibility','visible');
-		$('#efectobarramenu').css('display','none');
+		$("#fondoTablaColabora").slideUp("slow");
 	}
 </script>
