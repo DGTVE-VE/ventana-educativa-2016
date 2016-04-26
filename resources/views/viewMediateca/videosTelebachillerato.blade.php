@@ -61,8 +61,8 @@ Educamedia
         <div id="custom_carousel" class="carousel slide" data-ride="carousel" data-interval="false">
             <div class="col-md-8" id='div-containter'>
                 
-                <h3 id="materia">{{$videos[0]->asignatura}}</h3>                
-                <h2 id="titulo_programa">{{$videos[0]->programa}}</h2>                
+                <h5 id="materia">{{$videos[0]->asignatura}}</h5>                
+                <h4 id="titulo_programa">{{$videos[0]->programa}}</h4>                
                 <div id="player" class="col-md-12" align="center">    </div>
                 
                 @if(Auth::check ())
@@ -72,18 +72,19 @@ Educamedia
                 <input type="hidden" id="nivel" value="{{ $nivel }}" />
                 </div>
                 @endif
-                
+                <div class="col-md-12">
                 <a href="#"><i class="fa fa-facebook-square fa-2x redesText"></i></a>
                 <a href="#"><i class="fa fa-twitter-square fa-2x redesText"></i></a>
                 <a href="#"><i class="fa fa-envelope-square fa-2x redesText"></i></a>
+                </div>
                 
-                <li class="list-unstyled"><h4 id="subtitulo_serie">{{ $videos[0]->subtitulo_serie }}<h3></li>
-                <li class="list-unstyled"><h4 id="subtitulo_programa">{{ $videos[0]->subtitulo_programa }}<h3></li>                                                
-                <li class="list-unstyled"><h4 id="grado">Semestre: {{ $videos[0]->semestre }}</h4></li>
+                <li class="list-unstyled"><h5 id="subtitulo_serie">{{ $videos[0]->subtitulo_serie }}<h5></li>
+                <li class="list-unstyled"><h5 id="subtitulo_programa">{{ $videos[0]->subtitulo_programa }}<h5></li>                                                
+                <li class="list-unstyled"><h5 id="grado">Semestre: {{ $videos[0]->semestre }}</h5></li>
                 
                 <li class="list-unstyled text-justify" id="sinopsis" style="display: none;">{{ $videos[0]->sinopsis }}</li>
                 
-                <li class="list-unstyled text-justify" id="sinopsis-250">{{ substr($videos[0]->sinopsis, 0, 250).'...'}}</li>
+                <li class="list-unstyled text-justify" id="sinopsis-250">{{ substr($videos[0]->sinopsis, 0, 300).'...'}}</li>
                 
                 <div id="botonmas" data-toggle="collapse" data-target="#massinopsis" class="col-md-12 text-center">
                 <span>Más</span>
@@ -109,7 +110,7 @@ Educamedia
                 @foreach ($videos as $item => $video)
                 <tr>
                     <td data-target="#custom_carousel" data-slide-to="{{$item}}" class="item" data-id='{{ $video->url }}' _id="{{$video->id}}">
-                            <img src="http://img.youtube.com/vi/{{ $video->url }}/2.jpg" class='item-a'>                            
+                        <img src="http://img.youtube.com/vi/{{ $video->url }}/2.jpg" class='item-a'>                            
                     </td>
                     <td class="redesText">{{$video->programa}}</td>
                 </tr>                
@@ -332,7 +333,7 @@ function initializeYoutube(youtubeId, time) {
         height: 390,
         videoId: youtubeId,
         playerVars: {
-            controls: 0, // Los controles no se muestran
+            controls: 1, // Los controles no se muestran
             playsinline: 0, // Reproducción a pantalla completa
             iv_load_policy: 3, // Las anotaciones del video no se muestran 
             modestbranding: 1, // Evita que el logo de youtube se muestre en la barra de control

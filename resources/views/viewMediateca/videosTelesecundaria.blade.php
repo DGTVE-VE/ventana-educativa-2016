@@ -60,11 +60,11 @@ Educamedia
     <div class="col-md-10 contenedorVideo transparenciaVideos">
         <div id="custom_carousel" class="carousel slide" data-ride="carousel" data-interval="false">
             <div class="col-md-8" id='div-containter'>
-                
-                <h3 id="materia">{{$videos[0]->materia}}</h3>                
-                <h2 id="titulo_programa">{{$videos[0]->titulo_programa}}</h2>                
-                <div id="player" class="col-md-12" align="center">    </div>
-                
+                <div class="col-md-12">
+                <h5 id="materia">{{$videos[0]->materia}}</h5>                
+                <h4 id="titulo_programa">{{$videos[0]->titulo_programa}}</h4>                
+                <div id="player" align="center">    </div>
+                </div>
                 @if(Auth::check ())
                 <div class="pull-right">                    
                 <input type="number" name="rating" id="star-rating" class="rating" data-icon-lib="fa" data-active-icon="fa-star" data-inactive-icon="fa-star-o"  />
@@ -72,19 +72,20 @@ Educamedia
                 <input type="hidden" id="nivel" value="{{ $nivel }}" />
                 </div>
                 @endif
-                
+                <div class="col-md-12">
                 <a href="#"><i class="fa fa-facebook-square fa-2x redesText"></i></a>
                 <a href="#"><i class="fa fa-twitter-square fa-2x redesText"></i></a>
-                <a href="#"><i class="fa fa-envelope-square fa-2x redesText"></i></a>
-                
-                <li class="list-unstyled"><h4 id="subtitulo_serie">{{ $videos[0]->subtitulo_serie }}<h3></li>
-                <li class="list-unstyled"><h4 id="subtitulo_programa">{{ $videos[0]->subtitulo_programa }}<h3></li>                                                
-                <li class="list-unstyled"><h4 id="grado">Grado: {{ $videos[0]->grado }}</h4></li>
-                
+                <a href="#"><i class="fa fa-envelope-square fa-2x redesText"></i></a>                
+                </div>
+                <div class="col-md-12">
+                <li class="list-unstyled"><h5 id="subtitulo_serie">{{ $videos[0]->subtitulo_serie }}<h5></li>
+                <li class="list-unstyled"><h5 id="subtitulo_programa">{{ $videos[0]->subtitulo_programa }}<h5></li>                                                
+                <li class="list-unstyled"><h5 id="grado">Grado: {{ $videos[0]->grado }}</h5></li>
+              
                 <li class="list-unstyled text-justify" id="sinopsis" style="display: none;">{{ $videos[0]->sinopsis }}</li>
                 
                 <li class="list-unstyled text-justify" id="sinopsis-250">{{ substr($videos[0]->sinopsis, 0, 250).'...'}}</li>
-                
+                  </div>
                 <div id="botonmas" data-toggle="collapse" data-target="#massinopsis" class="col-md-12 text-center">
                 <span>Más</span>
                 <span class="caret"></span>
@@ -100,10 +101,10 @@ Educamedia
                 </div>
             </div>
         </div>
-        <div class="col-md-4 controls" id="custom_controls">
+        <div class="col-md-12 controls" id="custom_controls">
             <div class="col-md-12">
-                <div class="col-md-3 centrarTextDiv"><h4>Bloque</h4></div>
-                <ul class="pager col-md-9">
+                <div class="col-md-1 centrarTextDiv"><h5>Bloque</h5></div>
+                <ul class="pager col-md-11">
                     @foreach ($paginacion as $item => $bloquePagina)
                         <li class="{{ ($item) ? '' : ' active' }}">
                             <a href="{{url($url.'/'.$bloquePagina->bloque)}}">
