@@ -53,11 +53,12 @@
                 @if (Auth::check ())
                 <div class="row">
                     
-                    <div class="col-md-10">
-                        <textarea class="form-control"></textarea>
+                    <div class="col-md-12">
+                        <textarea rows="3" placeholder="Responde aquí..." class="form-control textareaTransparencia"></textarea>
                     </div>
-                    <div class="col-md-2">
-                        <button class="btn btn-info form-control"> Responder </button>
+                    <div class="col-md-12">
+                        <!--<button class="btn btn-info form-control"> Responder </button>-->
+                        <a class="linkComentar">Envíar respuesta</a>
                     </div>
                 </div>
                 @endif

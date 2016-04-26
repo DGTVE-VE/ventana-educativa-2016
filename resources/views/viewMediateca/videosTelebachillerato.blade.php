@@ -59,39 +59,46 @@ Educamedia
     <div class="col-md-10 contenedorVideo transparenciaVideos">
         <div id="custom_carousel" class="carousel slide" data-ride="carousel" data-interval="false">
             <div class="col-md-8" id='div-containter'>
-                
-                <h3 id="materia">{{$videos[0]->asignatura}}</h3>                
-                <h2 id="titulo_programa">{{$videos[0]->programa}}</h2>                
-                <div id="player" class="col-md-12" align="center">    </div>
+                <div class="col-md-12">
+                    <h5 id="materia">{{$videos[0]->asignatura}}</h5>                
+                    <h4 id="titulo_programa">{{$videos[0]->programa}}</h4>                
+                    <div id="player" align="center">    </div>
                 
                 @if(Auth::check ())
-                <div class="pull-right">                    
-                <input type="number" name="rating" id="star-rating" class="rating" data-icon-lib="fa" data-active-icon="fa-star" data-inactive-icon="fa-star-o"  />
-                <input type="hidden" id="video-id" value="{{ $videos[0]->id }}" />
-                <input type="hidden" id="nivel" value="{{ $nivel }}" />
-                </div>
+<!--                    <div class=" pull-right">
+                    <a href="#"><i class="fa fa-facebook-square fa-2x redesText"></i></a>
+                    <a href="#"><i class="fa fa-twitter-square fa-2x redesText"></i></a>
+                    <a href="#"><i class="fa fa-envelope-square fa-2x redesText"></i></a>
+                    </div>-->
+                    <div class=" pull-left">
+                    <input type="number" name="rating" id="star-rating" class="rating" data-icon-lib="fa" data-active-icon="fa-star" data-inactive-icon="fa-star-o"  />
+                    <input type="hidden" id="video-id" value="{{ $videos[0]->id }}" />
+                    <input type="hidden" id="nivel" value="{{ $nivel }}" />
+                    </div>
                 @endif
-                
-                <a href="#"><i class="fa fa-facebook-square fa-2x redesText"></i></a>
-                <a href="#"><i class="fa fa-twitter-square fa-2x redesText"></i></a>
-                <a href="#"><i class="fa fa-envelope-square fa-2x redesText"></i></a>
-                
-                <li class="list-unstyled"><h4 id="subtitulo_serie">{{ $videos[0]->subtitulo_serie }}<h3></li>
-                <li class="list-unstyled"><h4 id="subtitulo_programa">{{ $videos[0]->subtitulo_programa }}<h3></li>                                                
-                <li class="list-unstyled"><h4 id="grado">Semestre: {{ $videos[0]->semestre }}</h4></li>
-                
-                <li class="list-unstyled text-justify" id="sinopsis" style="display: none;">{{ $videos[0]->sinopsis }}</li>
-                
-                <li class="list-unstyled text-justify" id="sinopsis-250">{{ substr($videos[0]->sinopsis, 0, 250).'...'}}</li>
-                
-                <div id="botonmas" data-toggle="collapse" data-target="#massinopsis" class="col-md-12 text-center">
-                <span>Más</span>
-                <span class="caret"></span>
-                </div>  
-                <br>
+                </div>
+                <div class="col-md-12">
+                    <li class="list-unstyled"><h5 id="subtitulo_serie">{{ $videos[0]->subtitulo_serie }}<h5></li>
+                    <li class="list-unstyled"><h5 id="subtitulo_programa">{{ $videos[0]->subtitulo_programa }}<h5></li>                                                
+                    <li class="list-unstyled"><h5 id="grado">Semestre: {{ $videos[0]->semestre }}</h5></li>
+
+                    <li class="list-unstyled text-justify" id="sinopsis" style="display: none;">{{ $videos[0]->sinopsis }}</li>
+
+                    <li class="list-unstyled text-justify" id="sinopsis-250">{{ substr($videos[0]->sinopsis, 0, 300).'...'}}</li>
+
+                    <div id="botonmas" data-toggle="collapse" data-target="#massinopsis" class="col-md-12 text-center">
+                    <span>Más</span>
+                    <span class="caret"></span>
+                    </div>  
+                    <br>
+                </div>
                  @if (Auth::check ())
-                <textarea id="comment" rows="3" class="form-control"></textarea>                
-                <button id="btn-comentar" type="button" class="btn btn-default"> Comentar </button>
+                 <div class="col-md-12">
+                     <br>
+                <textarea id="comment" rows="3" placeholder="Comenta aquí..."  class="form-control textareaTransparencia"></textarea>                
+                <br>
+                <button id="btn-comentar" type="button" class="btn btn-success pull-right"> Comentar </button>
+                <br><br>
                 @endif
                 <br> 
                 <div id="comentarios"> 
@@ -108,7 +115,7 @@ Educamedia
                 @foreach ($videos as $item => $video)
                 <tr>
                     <td data-target="#custom_carousel" data-slide-to="{{$item}}" class="item" data-id='{{ $video->url }}' _id="{{$video->id}}">
-                            <img src="http://img.youtube.com/vi/{{ $video->url }}/2.jpg" class='item-a'>                            
+                        <img src="http://img.youtube.com/vi/{{ $video->url }}/2.jpg" class='item-a'>                            
                     </td>
                     <td class="redesText">{{$video->programa}}</td>
                 </tr>                
@@ -331,7 +338,7 @@ function initializeYoutube(youtubeId, time) {
         height: 390,
         videoId: youtubeId,
         playerVars: {
-            controls: 0, // Los controles no se muestran
+            controls: 1, // Los controles no se muestran
             playsinline: 0, // Reproducción a pantalla completa
             iv_load_policy: 3, // Las anotaciones del video no se muestran 
             modestbranding: 1, // Evita que el logo de youtube se muestre en la barra de control

@@ -73,6 +73,7 @@
                         </a>
                     </h4>
                 </div>
+                <br>
                 <div id="leidos" class="panel-collapse collapse">
                     <div class="panel-body">
                         <ol>
@@ -81,7 +82,7 @@
                             @endforeach                        
                         </ol>
                     </div>
-                </div>
+                </div>                
                 <!--recientes-->
                 <div class="panel-heading blogPanel">
                     <h4 class="panel-title">
@@ -91,6 +92,7 @@
                         </a>
                     </h4>
                 </div>
+                <br>
                 <div id="recientes" class="panel-collapse collapse">
                     <div class="panel-body">
                         <ol>
