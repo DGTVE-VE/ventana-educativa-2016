@@ -46,7 +46,7 @@ Educamedia
 @endsection
 @section('cuerpoMediateca')
 <div class="container-fluid">
-	<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center" style="padding:4%"></div>
+	<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center" style="padding:2%"></div>
 	<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center textoTitulo">
 		<p><?php
 			generaBreadCrumbs();
@@ -58,7 +58,7 @@ Educamedia
     <div class="col-md-10 contenedorVideo transparenciaVideos">
         <div id="custom_carousel" class="carousel slide" data-ride="carousel" data-interval="false">
             <div class="col-md-12 col-xs-12 col-lg-8 col-sm-12" id='div-containter'>
-                <div class="col-md-12">
+                <div class="col-md-12" style="overflow: auto;">
                     <h5 id="materia">{{$videos[0]->materia}}</h5>                
                     <h4 id="titulo_programa">{{$videos[0]->titulo_programa}}</h4>                
                     <div id="player" align="center">    </div>
@@ -87,10 +87,10 @@ Educamedia
 
                     <li class="list-unstyled text-justify" id="sinopsis" style="display: none;">{{ $videos[0]->sinopsis }}</li>
 
-                    <li class="list-unstyled text-justify" id="sinopsis-250">{{ substr($videos[0]->sinopsis, 0, 250).'...'}}</li>
+                    <li class="list-unstyled text-justify" id="sinopsis-250">{{ substr($videos[0]->sinopsis, 0, 350).'...'}}</li>
                     <div id="botonmas" data-toggle="collapse" data-target="#massinopsis" class="col-md-12 text-center">
-                    <span>Más</span>
-                    <span class="caret"></span>
+<!--                    <span>Más</span>
+                    <span class="caret"></span>-->
                     </div>  
                 </div>
                 @if (Auth::check ())
@@ -104,6 +104,7 @@ Educamedia
                     <div id="comentarios"></div>
                 </div>
             </div>
+            <br>
             <div class="col-md-12 col-xs-12 col-lg-4 col-sm-12 controls" id="custom_controls">
                 <div class="col-md-12">
                     <h5>Bloque</h5>
@@ -122,7 +123,7 @@ Educamedia
                         @foreach ($videos as $item => $video)
                         <tr>
                             <td data-target="#custom_carousel" data-slide-to="{{$item}}" class="item" data-id='{{ $video->url }}' _id="{{$video->id}}">
-                                    <img src="http://img.youtube.com/vi/{{ $video->url }}/2.jpg" class='item-a'>                            
+                                    <img src="http://img.youtube.com/vi/{{ $video->url }}/2.jpg" class='item-a' style="cursor:pointer;">                            
                             </td>
                             <td class="redesText">{{$video->titulo_programa}}</td>
                         </tr>                
@@ -190,13 +191,13 @@ Educamedia
             $("#subtitulo_programa").html(_videos[_id].subtitulo_programa);
             $("#grado").html(_videos[_id].grado);
             $("#sinopsis").html(_videos[_id].sinopsis);
-            $("#sinopsis-250").html(_videos[_id].sinopsis.substring (0, 300));
+            $("#sinopsis-250").html(_videos[_id].sinopsis.substring (0, 350));
             $('#div-containter').fadeIn ();
             loadComments (_id);
         });
         
         $('#btn-comentar').click (function (){
-            
+            console.log ('si entro');
             $.ajax({
                 method: "POST",
                 url: "{{url('educamedia/comment/telesecundaria')}}",
@@ -208,8 +209,8 @@ Educamedia
                     console.log (ts.responseText); 
                 }})
                 .done(function( msg ) {
-                    $("#comentarios").append(msg)
-//                    console.log ( "Data Saved: " + msg );
+                    $("#comentarios").prepend(msg)
+                    console.log ( "Data Saved: " + msg );
                 });
         });
         function loadComments (id){

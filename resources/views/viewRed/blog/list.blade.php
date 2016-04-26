@@ -39,11 +39,11 @@
                 <a href="{{url("redmite/blog/$blog->id")}}">
                     <img src="{{url ($blog->imagen)}}" height="100" width="150">
                 </a>
-                <br><br>
+<!--                <br><br>
                 <a href="" class="TextoNegro"><i class="fa fa-commenting-o fa-2x pull-left" aria-hidden="true" title="Comentar publicación" data-toggle="tooltip" data-placement="bottom"></i></a>
                 <a href="" class="btn btn-facebook btn-sm  pull-right"><i title="Compartir en Facebook" data-toggle="tooltip" data-placement="bottom" class="fa fa-facebook"></i></a>
                 <a href="" class="btn btn-twitter btn-sm pull-right"><i title="Compartir en Twitter" data-toggle="tooltip" data-placement="bottom" class="fa fa-twitter"></i></a>  
-                
+                -->
             </div>
             <div class="col-md-9">
                 <h3><a href="{{url("redmite/blog/$blog->id")}}"> {{$blog->titulo}} </a></h3>
