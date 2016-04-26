@@ -93,7 +93,7 @@ class MediatecaController extends Controller {
                     $sQL->where('materia_id', '=', $materia);
             })->get();
             $paginacion [] = new Telesecundaria;
-            $paginacion[0]->bloque = null;
+            $paginacion[0]->bloque = 0;
         }
         
         /* Envío de querys y variables a la vista */
