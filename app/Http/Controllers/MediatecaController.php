@@ -85,8 +85,7 @@ class MediatecaController extends Controller {
                         $sQL->where('bloque', '=', $bloque);
                     })->get();
                     /* Query para extraer los distintos bloques que existen en la tabla */
-//            $paginacion = Telesecundaria::distinct()->select('bloque')->orWhereNotNull('bloque')->get();
-                    $paginacion = DB::select('select distinct bloque from telesecundaria where grado = :grado and materia_id = :materia_id', ['grado' => $grado, 'materia_id' => $materia]);
+            $paginacion = DB::select('select distinct bloque from telesecundaria where grado = :grado and materia_id = :materia_id', ['grado' => $grado, 'materia_id' => $materia]);
         } else {
                     /* Query para filtrar videos por grado, bloque, materia */
             $videos = Telesecundaria::whereNested(function($sQL) use ($grado, $materia, $bloque) {
@@ -94,7 +93,7 @@ class MediatecaController extends Controller {
                     $sQL->where('materia_id', '=', $materia);
             })->get();
             $paginacion [] = new Telesecundaria;
-            $paginacion[0]->bloque = 0;
+            $paginacion[0]->bloque = null;
         }
         
         /* Envío de querys y variables a la vista */
