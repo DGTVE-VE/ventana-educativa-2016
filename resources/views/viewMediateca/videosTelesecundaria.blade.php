@@ -106,8 +106,7 @@ Educamedia
             </div>
             <br>
             <div class="col-md-12 col-xs-12 col-lg-4 col-sm-12 controls" id="custom_controls">
-                <div class="col-md-12">
-                    {{print $paginacion[0]->bloque}}
+                <div class="col-md-12">                    
                     <h5>Bloque</h5>
                     <ul>
                         @foreach ($paginacion as $item => $bloquePagina)
