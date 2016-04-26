@@ -47,7 +47,7 @@ body{
 .divApp{padding:10px;}
 .divApp .img-responsive{margin:0 auto;}
 .fondoRegistro{background:rgba(0, 0, 0, .3) !important;width:320px;height:230px;}
-
+#menuVentanaRegistro{float:right;}
 
 
 
