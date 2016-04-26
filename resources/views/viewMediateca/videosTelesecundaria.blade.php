@@ -46,14 +46,13 @@ Educamedia
 @endsection
 @section('cuerpoMediateca')
 <div class="container-fluid">
-    <div class="row">
-		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center textoTitulo" style="padding-top:80px;">
-		</div>
-		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center textoTitulo">
-			<?php
-				generaBreadCrumbs();
-			?>
-		</div>
+	<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center" style="padding:4%">
+	</div>
+	<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center textoTitulo">
+		<p><?php
+			generaBreadCrumbs();
+		?>
+		</p><br>
 	</div>
     <div class="row">
     <div class="col-md-1"></div>
