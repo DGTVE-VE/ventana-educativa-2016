@@ -57,7 +57,7 @@ Educamedia
     <div class="col-md-1"></div>
     <div class="col-md-10 contenedorVideo transparenciaVideos">
         <div id="custom_carousel" class="carousel slide" data-ride="carousel" data-interval="false">
-            <div class="col-md-12 col-xs-12 col-lg-8 col-sm-12" id='div-containter'>
+            <div class="col-md-8 col-xs-12 col-lg-8 col-sm-12" id='div-containter'>
                 <div class="col-md-12" style="overflow: auto;">
                     <h5 id="materia">{{$videos[0]->materia}}</h5>                
                     <h4 id="titulo_programa">{{$videos[0]->titulo_programa}}</h4>                
@@ -105,7 +105,7 @@ Educamedia
                 </div>
             </div>
             <br>
-            <div class="col-md-12 col-xs-12 col-lg-4 col-sm-12 controls" id="custom_controls">
+            <div class="col-md-4 col-xs-12 col-lg-4 col-sm-12 controls" id="custom_controls">
                 <div class="col-md-12">                    
                     <h5>Bloque</h5>
                     <ul>
