@@ -252,7 +252,7 @@
                                     <td>
                                     </td>
                                     <td class="text-center">
-                                        <p class="iconoGde" onclick="muestraMasIconos()">M&aacute;s</p>
+                                        <p class="iconoGde" onclick="muestraMasIconos(event)">M&aacute;s</p>
                                     </td>
                                     <td>
                                     </td>
@@ -452,7 +452,7 @@
 	
 /*	-------------------------------------	Hace visible o invisible los iconos de apps adicionales	--------------------------------------	*/
 	imgOculto = true;
-	function muestraMasIconos(){
+	function muestraMasIconos(event){
 		if(imgOculto){
 			event.stopPropagation();
 			$(".ocultaImgApp").css("width","83px");
