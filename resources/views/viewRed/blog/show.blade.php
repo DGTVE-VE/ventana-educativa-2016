@@ -5,7 +5,7 @@
 @section ('cuerpoRedmite')
 <div class="row">
     <div class='col-md-2'></div>
-    <div class='col-md-5'>
+    <div class='col-md-5 txtBlogRed'>
         <br>
         <div class="col-md-12"><img src="{{url ($blog->imagen)}}" class="img-responsive center-block"></div>                
         <h3 class="text-center"> {{$blog->titulo}}</h3>
@@ -44,7 +44,7 @@
             @endforeach 
         </div>
     </div>
-    <div class='col-md-4'>
+    <div class='col-md-4 txtBlogRed'>
         <br>
         <!--Acerca de-->
         <div class="panel-heading blogPanel">

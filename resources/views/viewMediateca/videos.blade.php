@@ -45,7 +45,7 @@ Educamedia
 @include('viewMediateca.encabezadoMediateca')
 @endsection
 @section('cuerpoMediateca')
-<div class="container-fluid">
+<div class="container-fluid txtVideosRed">
 	<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center" style="padding:4%">
 	</div>
 	<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center textoTitulo">
@@ -97,7 +97,7 @@ Educamedia
                 </div>
             </div>
         </div>
-        <div class="col-md-4 controls" id="custom_controls">
+        <div class="col-md-4 controls txtVideosRed" id="custom_controls">
             <div class="col-md-12">
                 <div class="col-md-3 centrarTextDiv"><h4>Bloque</h4></div>
                 <ul class="pager col-md-9">
