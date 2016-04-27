@@ -38,6 +38,7 @@
 			{{HTML::image('imagenes/mediateca/tbachillerato/imgCentral/sem4.png','Telesecundaria Central',['class'=>'img-responsive iniImgCentro', 'id'=>'semestreIVCentro'])}}
 			{{HTML::image('imagenes/mediateca/tbachillerato/imgCentral/sem5.png','Telebachillerato Central',['class'=>' img-responsive iniImgCentro', 'id'=>'semestreVCentro'])}}
 			{{HTML::image('imagenes/mediateca/tbachillerato/imgCentral/sem6.png','Telesecundaria Central',['class'=>'img-responsive iniImgCentro', 'id'=>'semestreVICentro'])}}
+			{{HTML::image('imagenes/mediateca/tbachillerato/imgCentral/formaPropedeutica.png','Telesecundaria Central',['class'=>'img-responsive iniImgCentro', 'id'=>'formaPropedeuticaCentro'])}}
 			{{HTML::image('imagenes/mediateca/tbachillerato/Inicio/ImgMapa.png','Telebachillerato',['class'=>'posicionMapa img-responsive', 'id'=>'telebachilleratoSEMII', 'usemap'=>'#mapaTelebachillerato'])}}
 		</div>
 	</div>
