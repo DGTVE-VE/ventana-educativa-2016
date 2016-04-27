@@ -134,7 +134,5 @@
         $(this).tab('show')
     });
 </script>
-
-
 @include('viewRed.seccionpie')
 @stop
