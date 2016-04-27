@@ -35,7 +35,7 @@
 		}
 	/*	----------	Estilo pagina Inicio Educamedia	----------	*/	
 		.iniImgCentro{
-			position: absolute; top:45px; left:50px; width:190px; height: 190px; z-index:0; visibility: hidden;
+			position: absolute; top:75px; left:80px; width:130px; height: 130px; z-index:0; visibility: hidden;
 		}
 	/*	----------	Estilo General todos los grados	----------*/
 		.imgPrimeroCentral{
@@ -66,7 +66,7 @@
 		}
 	/*	----------	Estilo pagina Inicio Educamedia	----------	*/	
 		.iniImgCentro{
-			position: absolute; top:45px; left:50px; width:190px; height: 190px; z-index:0; visibility: hidden;
+			position: absolute; top:75px; left:80px; width:130px; height: 130px; z-index:0; visibility: hidden;
 		}
 	/*	----------	Estilo General todos los grados	----------*/
 		.imgPrimeroCentral{
@@ -96,7 +96,7 @@
 		}
 	/*	----------	Estilo pagina Inicio Educamedia	----------	*/	
 		.iniImgCentro{
-			position: absolute; top:100px; left:100px; width:289px; height: 289px; z-index:0; visibility: hidden;
+			position: absolute; top:130px; left:130px; width:230px; height: 230px; z-index:0; visibility: hidden;
 		}
 	/*	----------	Estilo General todos los grados	----------*/
 		.imgPrimeroCentral{
@@ -127,7 +127,7 @@
 		}
 	/*	----------	Estilo pagina Inicio Educamedia	----------	*/	
 		.iniImgCentro{
-			position: absolute; top:100px; left:100px; width:289px; height: 289px; z-index:0; visibility: hidden;
+			position: absolute; top:130px; left:130px; width:230px; height: 230px; z-index:0; visibility: hidden;
 		}
 	/*	----------	Estilo General todos los grados	----------*/
 		.imgPrimeroCentral{
@@ -153,7 +153,7 @@
 		}
 	/*	----------	Estilo pagina Inicio Educamedia	----------	*/	
 		.iniImgCentro{
-			position: absolute; top:100px; left:100px; width:289px; height: 289px; z-index:0; visibility: hidden;
+			position: absolute; top:130px; left:130px; width:230px; height: 230px; z-index:0; visibility: hidden;
 		}
 	/*	----------	Estilo General todos los grados	----------*/
 		.imgPrimeroCentral{
@@ -252,7 +252,7 @@
                                     <td>
                                     </td>
                                     <td class="text-center">
-                                        <p class="iconoGde" onclick="muestraMasIconos()">M&aacute;s</p>
+                                        <p class="iconoGde" onclick="muestraMasIconos(event)">M&aacute;s</p>
                                     </td>
                                     <td>
                                     </td>
@@ -452,7 +452,7 @@
 	
 /*	-------------------------------------	Hace visible o invisible los iconos de apps adicionales	--------------------------------------	*/
 	imgOculto = true;
-	function muestraMasIconos(){
+	function muestraMasIconos(event){
 		if(imgOculto){
 			event.stopPropagation();
 			$(".ocultaImgApp").css("width","83px");

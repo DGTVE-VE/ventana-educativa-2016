@@ -46,80 +46,82 @@ Educamedia
 @endsection
 @section('cuerpoMediateca')
 <div class="container-fluid">
-    <div class="row">
-		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center textoTitulo" style="padding-top:80px;">
-		</div>
-		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center textoTitulo">
-			<?php
-				generaBreadCrumbs();
-			?>
-		</div>
+    <div class="row">    
+	<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center" style="padding:2%"></div>
+	<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center textoTitulo">
+		<p><?php
+			generaBreadCrumbs();
+		?>
+		</p><br>
 	</div>
-    <div class="row">
-    <div class="col-md-1"></div>
-    <div class="col-md-10 contenedorVideo transparenciaVideos">
-        <div id="custom_carousel" class="carousel slide" data-ride="carousel" data-interval="false">
-            <div class="col-md-8" id='div-containter'>
-                
-                <h3 id="materia">{{$videos[0]->asignatura}}</h3>                
-                <h2 id="titulo_programa">{{$videos[0]->programa}}</h2>                
-                <div id="player" class="col-md-12" align="center">    </div>
-                
-                @if(Auth::check ())
-                <div class="pull-right">                    
-                <input type="number" name="rating" id="star-rating" class="rating" data-icon-lib="fa" data-active-icon="fa-star" data-inactive-icon="fa-star-o"  />
-                <input type="hidden" id="video-id" value="{{ $videos[0]->id }}" />
-                <input type="hidden" id="nivel" value="{{ $nivel }}" />
+
+        <div class="col-md-1"></div>
+        <div class="col-md-10 contenedorVideo transparenciaVideos">
+            <div class="col-md-12 col-xs-12 col-lg-8 col-sm-12" id='div-containter'>
+                <div class="col-md-12" style="overflow: auto;">
+                    <h5 id="materia">{{$videos[0]->asignatura}}</h5>                
+                    <h4 id="titulo_programa">{{$videos[0]->programa}}</h4>                
+                    <div id="player" align="center">    </div>
                 </div>
-                @endif
-                
-                <a href="#"><i class="fa fa-facebook-square fa-2x redesText"></i></a>
-                <a href="#"><i class="fa fa-twitter-square fa-2x redesText"></i></a>
-                <a href="#"><i class="fa fa-envelope-square fa-2x redesText"></i></a>
-                
-                <li class="list-unstyled"><h4 id="subtitulo_serie">{{ $videos[0]->subtitulo_serie }}<h3></li>
-                <li class="list-unstyled"><h4 id="subtitulo_programa">{{ $videos[0]->subtitulo_programa }}<h3></li>                                                
-                <li class="list-unstyled"><h4 id="grado">Semestre: {{ $videos[0]->semestre }}</h4></li>
-                
-                <li class="list-unstyled text-justify" id="sinopsis" style="display: none;">{{ $videos[0]->sinopsis }}</li>
-                
-                <li class="list-unstyled text-justify" id="sinopsis-250">{{ substr($videos[0]->sinopsis, 0, 250).'...'}}</li>
-                
-                <div id="botonmas" data-toggle="collapse" data-target="#massinopsis" class="col-md-12 text-center">
-                <span>Más</span>
-                <span class="caret"></span>
-                </div>  
-                <br>
+                <div class="col-md-12">
+                    @if(Auth::check ())
+                    <br>
+                    <div class="col-md-3"></div>
+                    <div class="col-md-3">
+                        <a href="#"><i class="fa fa-facebook-square fa-2x redesText"></i></a>
+                        <a href="#"><i class="fa fa-twitter-square fa-2x redesText"></i></a>
+                        <a href="#"><i class="fa fa-envelope-square fa-2x redesText"></i></a>                
+                    </div>
+                    <div class="col-md-3">                    
+                        <input type="number" name="rating" id="star-rating" class="rating" data-icon-lib="fa" data-active-icon="fa-star" data-inactive-icon="fa-star-o"  />
+                        <input type="hidden" id="video-id" value="{{ $videos[0]->id }}" />
+                        <input type="hidden" id="nivel" value="{{ $nivel }}" />
+                    </div>
+                    <div class="col-md-3"></div>                                        
+                    @endif     
+                </div>
+                <div class="col-md-12">
+                    <li class="list-unstyled"><h5 id="subtitulo_serie">{{ $videos[0]->subtitulo_serie }}<h5></li>
+                    <li class="list-unstyled"><h5 id="subtitulo_programa">{{ $videos[0]->subtitulo_programa }}<h5></li>                                                
+                    <li class="list-unstyled"><h5 id="grado">Semestre: {{ $videos[0]->semestre }}</h5></li>
+
+                    <li class="list-unstyled text-justify" id="sinopsis" style="display: none;">{{ $videos[0]->sinopsis }}</li>
+
+                    <li class="list-unstyled text-justify" id="sinopsis-250">{{ substr($videos[0]->sinopsis, 0, 350).'...'}}</li>
+                    <div id="botonmas" data-toggle="collapse" data-target="#massinopsis" class="col-md-12 text-center">
+<!--                    <span>Más</span>
+                    <span class="caret"></span>-->
+                    </div>  
+                    <br>
+                </div>
+                <div class="col-md-12">                
                  @if (Auth::check ())
-                <textarea id="comment" rows="3" class="form-control"></textarea>                
-                <button id="btn-comentar" type="button" class="btn btn-default"> Comentar </button>
-                @endif
-                <br> 
-                <div id="comentarios"> 
-                
+                    <br>
+                    <textarea id="comment" rows="3" placeholder="Comenta aquí..." class="form-control textareaTransparencia"></textarea>                
+                    <a class="linkComentar" id="btn-comentar">Envíar Comentario </a>
+                    <br><br>                    
+                    <br> 
+                    <div id="comentarios"></div> 
+                 @endif                    
                 </div>
             </div>
+            <br>
+            <div class="col-md-12 col-xs-12 col-lg-4 col-sm-12 controls" id="custom_controls">
+                <div class="col-md-12 listVideos">
+                    <table class="table table-responsive">                
+                        @foreach ($videos as $item => $video)
+                        <tr>
+                            <td data-target="#custom_carousel" data-slide-to="{{$item}}" class="item" data-id='{{ $video->url }}' _id="{{$video->id}}">
+                                <img src="http://img.youtube.com/vi/{{ $video->url }}/2.jpg" class='item-a' style="cursor:pointer;">                            
+                            </td>
+                            <td class="redesText">{{$video->programa}}</td>
+                        </tr>                
+                        @endforeach 
+                    </table>
+                </div>
+            </div>        
         </div>
-        <div class="col-md-4 controls" id="custom_controls">
-            <div class="col-md-12">
-                <div class="col-md-3 centrarTextDiv"><h4></h4></div>
-            </div>
-            <div class="col-md-12 listVideos">
-            <table class="table table-condensed">                
-                @foreach ($videos as $item => $video)
-                <tr>
-                    <td data-target="#custom_carousel" data-slide-to="{{$item}}" class="item" data-id='{{ $video->url }}' _id="{{$video->id}}">
-                            <img src="http://img.youtube.com/vi/{{ $video->url }}/2.jpg" class='item-a'>                            
-                    </td>
-                    <td class="redesText">{{$video->programa}}</td>
-                </tr>                
-                @endforeach 
-            </table>
-            </div>
-        </div>        
-        <!-- End Carousel -->
-    </div>
-    <div class="col-md-1"></div>
+        <div class="col-md-1"></div>
     </div>
 </div>
 @endsection                                                
@@ -173,14 +175,14 @@ Educamedia
             data = $(this).attr ('data-id');
             _id = $(this).attr ('_id');
             player.loadVideoById(data);
-            $("#materia").html(_videos[_id].materia);
+            $("#materia").html(_videos[_id].asignatura);
             $("#video-id").val(_videos[_id].id);
-            $("#titulo_programa").html(_videos[_id].titulo_programa);
+            $("#titulo_programa").html(_videos[_id].programa);
             $("#subtitulo_serie").html(_videos[_id].subtitulo_serie);
             $("#subtitulo_programa").html(_videos[_id].subtitulo_programa);
             $("#grado").html(_videos[_id].grado);
             $("#sinopsis").html(_videos[_id].sinopsis);
-            $("#sinopsis-250").html(_videos[_id].sinopsis.substring (0, 250));
+            $("#sinopsis-250").html(_videos[_id].sinopsis.substring (0, 350));
             $('#div-containter').fadeIn ();
             loadComments (_id);
         });
@@ -332,7 +334,7 @@ function initializeYoutube(youtubeId, time) {
         height: 390,
         videoId: youtubeId,
         playerVars: {
-            controls: 0, // Los controles no se muestran
+            controls: 1, // Los controles no se muestran
             playsinline: 0, // Reproducción a pantalla completa
             iv_load_policy: 3, // Las anotaciones del video no se muestran 
             modestbranding: 1, // Evita que el logo de youtube se muestre en la barra de control

@@ -39,6 +39,7 @@
             <div class="fondo_Claro text-justify">
                 @include('viewRed.blog.comments', ['comment'=>$comment])  
             </div>
+            <hr>
             @endif
             @endforeach 
         </div>
@@ -75,7 +76,7 @@
                                 <i class="fa fa-plus pull-right" aria-hidden="true"></i>                            
                             </a>
                         </h4>
-                    </div>
+                    </div>                    
                     <div id="leidos" class="panel-collapse collapse">
                         <div class="panel-body">
                             <ol>
@@ -85,6 +86,7 @@
                             </ol>
                         </div>
                     </div>
+                    <br>
                     <!--recientes-->
                     <div class="panel-heading blogPanel">
                         <h4 class="panel-title">
@@ -103,6 +105,7 @@
                             </ol>
                         </div>
                     </div>
+                    <br>
                     <!--comentados-->
                     <div class="panel-heading blogPanel">
                         <h4 class="panel-title">
@@ -127,8 +130,16 @@
         </div>
     </div>
 </div>
-<script src="//cdn.tinymce.com/4/tinymce.min.js"></script>
-<script>tinymce.init({selector: 'textarea'});</script>
+
+<script src="{{asset ('tinymce/tinymce.min.js')}}"></script>
+<script>
+    tinymce.init({        
+        selector: 'textarea',
+        language: 'es_MX'
+    });
+
+</script>
+<!-- /TinyMCE -->
 <script>
     $('.btn-responder').click(function () {
         console.log('si');

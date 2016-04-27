@@ -11,6 +11,7 @@ use App\Model\Mediateca\RatingTelesecundaria;
 use \Alaouy\Youtube\Facades\Youtube;
 use Illuminate\Support\Facades\Auth;
 use Laracasts\Flash\Flash;
+use DB;
 
 class MediatecaController extends Controller {
 
@@ -84,7 +85,7 @@ class MediatecaController extends Controller {
                         $sQL->where('bloque', '=', $bloque);
                     })->get();
                     /* Query para extraer los distintos bloques que existen en la tabla */
-            $paginacion = Telesecundaria::distinct()->select('bloque')->orWhereNotNull('bloque')->get();
+            $paginacion = DB::select('select distinct bloque from telesecundaria where grado = :grado and materia_id = :materia_id', ['grado' => $grado, 'materia_id' => $materia]);
         } else {
                     /* Query para filtrar videos por grado, bloque, materia */
             $videos = Telesecundaria::whereNested(function($sQL) use ($grado, $materia, $bloque) {
