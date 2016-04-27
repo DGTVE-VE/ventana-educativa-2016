@@ -21,7 +21,7 @@
 			<area alt="" onmouseover="resaltaImgSecu('SemestreII','EticaValoresII')" onmouseout="normalImgSecu('SemestreII','EticaValoresII')" title="" href="{{(url('educamedia/telebachillerato/II/14'))}}" shape="poly" coords="378,193,471,166,482,203,483,278,471,322,451,365,367,314,382,273,387,237" />
 			<area alt="" onmouseover="resaltaImgSecu('SemestreII','MatematicasII')" onmouseout="normalImgSecu('SemestreII','MatematicasII')" title="" href="{{(url('educamedia/telebachillerato/II/8'))}}" shape="poly" coords="265,384,281,481,364,452,392,434,422,406,448,367,450,364,367,316,349,338,323,357,297,373" />
 			<area alt="" onmouseover="resaltaImgSecu('SemestreII','LenguaAdicionalII')" onmouseout="normalImgSecu('SemestreII','LenguaAdicionalII')" title="" href="{{(url('educamedia/telebachillerato/II/13'))}}" shape="poly" coords="281,479,265,383,248,387,224,385,192,377,159,359,144,348,82,422,109,445,157,470,204,482" />
-			<area alt="" onmouseover="resaltaImgSecu('SemestreII','QuimicaII')" onmouseout="normalImgSecu('SemestreII','QuimicaII')" title="" href="{{(url('educamedia/telebachillerato/II/9/1'))}}" shape="poly" coords="82,421,143,348,137,340,120,317,107,285,99,253,99,234,95,233,2,234,2,248,2,273,3,298,12,316,21,340,40,381" />
+			<area alt="" onmouseover="resaltaImgSecu('SemestreII','QuimicaII')" onmouseout="normalImgSecu('SemestreII','QuimicaII')" title="" href="{{(url('educamedia/telebachillerato/II/9'))}}" shape="poly" coords="82,421,143,348,137,340,120,317,107,285,99,253,99,234,95,233,2,234,2,248,2,273,3,298,12,316,21,340,40,381" />
 		</map>
 		<div class="contenedorAro">
 			{{HTML::image('imagenes/mediateca/tbachillerato/SemestreII/semestreII.png','telebachillerato Semestre II',['class'=>'posicionInicial img-responsive', 'id'=>'SemestreII'])}}
