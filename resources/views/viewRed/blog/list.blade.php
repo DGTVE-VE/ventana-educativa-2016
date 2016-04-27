@@ -30,7 +30,7 @@
 </script>
 <div class="row">
     <div class="col-md-1"></div>
-    <div class="col-md-7">
+    <div class="col-md-7 txtBlogRed">
         @foreach ($blogs as $blog)
         <br>
         <div class="row bordeBlog text-justify">
@@ -61,7 +61,7 @@
         @endforeach
         {!! $blogs->render() !!}
     </div>   
-    <div class="col-md-3">
+    <div class="col-md-3 txtBlogRed">
         <br>
         <div class="panel-group bordeBlog"><br>
             <div class="panel panel-default">
@@ -136,7 +136,5 @@
         $(this).tab('show')
     });
 </script>
-
-
 @include('viewRed.seccionpie')
 @stop
