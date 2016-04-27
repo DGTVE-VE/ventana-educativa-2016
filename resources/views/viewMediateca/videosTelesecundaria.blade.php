@@ -46,6 +46,7 @@ Educamedia
 @endsection
 @section('cuerpoMediateca')
 <div class="container-fluid">
+    <div class="row">
 	<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center" style="padding:2%"></div>
 	<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center textoTitulo">
 		<p><?php
@@ -53,89 +54,82 @@ Educamedia
 		?>
 		</p><br>
 	</div>
-    <div class="row">
-    <div class="col-md-1"></div>
-    <div class="col-md-10 contenedorVideo transparenciaVideos">
-        <div id="custom_carousel" class="carousel slide" data-ride="carousel" data-interval="false">
-            <div class="col-md-8 col-xs-12 col-lg-8 col-sm-12" id='div-containter'>
-                <div class="col-md-12" style="overflow: auto;">
-                    <h5 id="materia">{{$videos[0]->materia}}</h5>                
-                    <h4 id="titulo_programa">{{$videos[0]->titulo_programa}}</h4>                
-                    <div id="player" align="center">    </div>
-                </div>
-                @if(Auth::check ())
-                <div class="col-md-12">
-                    <br>
-                    <div class="col-md-3"></div>
-                    <div class="col-md-3">
-                        <a href="#"><i class="fa fa-facebook-square fa-2x redesText"></i></a>
-                        <a href="#"><i class="fa fa-twitter-square fa-2x redesText"></i></a>
-                        <a href="#"><i class="fa fa-envelope-square fa-2x redesText"></i></a>                
+        <div class="col-md-1"></div>
+        <div class="col-md-10 contenedorVideo transparenciaVideos">
+            <div class="row" id='div-containter'>
+                <div class="col-md-8">
+                    <div class="col-md-12" style="overflow: auto;">
+                        <h5 id="materia">{{$videos[0]->materia}}</h5>                
+                        <h4 id="titulo_programa">{{$videos[0]->titulo_programa}}</h4>                
+                        <div id="player" align="center">    </div>
+                    </div>                    
+                    <div class="col-md-12">
+                        @if(Auth::check ())
+                        <br>
+                        <div class="col-md-3"></div>
+                        <div class="col-md-3">
+                            <a href="#"><i class="fa fa-facebook-square fa-2x redesText"></i></a>
+                            <a href="#"><i class="fa fa-twitter-square fa-2x redesText"></i></a>
+                            <a href="#"><i class="fa fa-envelope-square fa-2x redesText"></i></a>                
+                        </div>
+                        <div class="col-md-3">                    
+                            <input type="number" name="rating" id="star-rating" class="rating" data-icon-lib="fa" data-active-icon="fa-star" data-inactive-icon="fa-star-o"  />
+                            <input type="hidden" id="video-id" value="{{ $videos[0]->id }}" />
+                            <input type="hidden" id="nivel" value="{{ $nivel }}" />
+                        </div>
+                        <div class="col-md-3"></div>                                        
+                        @endif                    
                     </div>
-                    <div class="col-md-3">                    
-                        <input type="number" name="rating" id="star-rating" class="rating" data-icon-lib="fa" data-active-icon="fa-star" data-inactive-icon="fa-star-o"  />
-                        <input type="hidden" id="video-id" value="{{ $videos[0]->id }}" />
-                        <input type="hidden" id="nivel" value="{{ $nivel }}" />
+                    <div class="col-md-12">
+                        <li class="list-unstyled"><h5 id="subtitulo_serie">{{ $videos[0]->subtitulo_serie }}<h5></li>
+                        <li class="list-unstyled"><h5 id="subtitulo_programa">{{ $videos[0]->subtitulo_programa }}<h5></li>                                                
+                        <li class="list-unstyled"><h5 id="grado">Grado: {{ $videos[0]->grado }}</h5></li>
+
+                        <li class="list-unstyled text-justify" id="sinopsis" style="display: none;">{{ $videos[0]->sinopsis }}</li>
+
+                        <li class="list-unstyled text-justify" id="sinopsis-250">{{ substr($videos[0]->sinopsis, 0, 350).'...'}}</li>
+                        <div id="botonmas" data-toggle="collapse" data-target="#massinopsis" class="col-md-12 text-center">
+                        </div>  
                     </div>
-                    <div class="col-md-3"></div>                                        
-                    @endif                    
-                </div>
-                <div class="col-md-12">
-                    <li class="list-unstyled"><h5 id="subtitulo_serie">{{ $videos[0]->subtitulo_serie }}<h5></li>
-                    <li class="list-unstyled"><h5 id="subtitulo_programa">{{ $videos[0]->subtitulo_programa }}<h5></li>                                                
-                    <li class="list-unstyled"><h5 id="grado">Grado: {{ $videos[0]->grado }}</h5></li>
-
-                    <li class="list-unstyled text-justify" id="sinopsis" style="display: none;">{{ $videos[0]->sinopsis }}</li>
-
-                    <li class="list-unstyled text-justify" id="sinopsis-250">{{ substr($videos[0]->sinopsis, 0, 350).'...'}}</li>
-                    <div id="botonmas" data-toggle="collapse" data-target="#massinopsis" class="col-md-12 text-center">
-<!--                    <span>Más</span>
-                    <span class="caret"></span>-->
-                    </div>  
-                </div>
-                @if (Auth::check ())
-                <div class="col-md-12">
-                    <br>
-                    <textarea id="comment" rows="3" placeholder="Comenta aquí..." class="form-control textareaTransparencia"></textarea>                
-                    <a class="linkComentar" id="btn-comentar">Envíar Comentario </a>
-                    <br><br>                    
-                    @endif
-                    <br> 
-                    <div id="comentarios"></div>
+                    <div class="col-md-12">
+                        @if (Auth::check ())                    
+                        <br>
+                        <textarea id="comment" rows="3" placeholder="Comenta aquí..." class="form-control textareaTransparencia"></textarea>                
+                        <a class="linkComentar" id="btn-comentar">Envíar Comentario </a>
+                        <br><br>                                            
+                        <div id="comentarios"></div>
+                        @endif                        
+                    </div>
+                </div>                
+                <div class="col-md-4 pager" id="custom_controls">
+                    <div class="col-md-12">                    
+                        <h5 class="col-md-2">Bloque</h5>
+                        <ul class="col-md-10">
+                            @foreach ($paginacion as $item => $bloquePagina)
+                                <li class="{{ ($item) ? '' : ' active' }}">
+                                    <a href="{{url($url.'/'.$bloquePagina->bloque)}}">
+                                        {{$bloquePagina->bloque}}
+                                    </a>
+                                </li>                        
+                             @endforeach 
+                        </ul>
+                    </div>    
+                    <div class="col-md-12 listVideos">
+                        <table class="table table-responsive">                
+                            @foreach ($videos as $item => $video)
+                            <tr>
+                                <td data-target="#custom_carousel" data-slide-to="{{$item}}" class="item" data-id='{{ $video->url }}' _id="{{$video->id}}">
+                                        <img src="http://img.youtube.com/vi/{{ $video->url }}/2.jpg" class='item-a' style="cursor:pointer;">                            
+                                </td>
+                                <td class="redesText">{{$video->titulo_programa}}</td>
+                            </tr>                
+                            @endforeach 
+                        </table>
+                    </div>
                 </div>
             </div>
-            <br>
-            <div class="col-md-4 col-xs-12 col-lg-4 col-sm-12 controls" id="custom_controls">
-                <div class="col-md-12">                    
-                    <h5>Bloque</h5>
-                    <ul>
-                        @foreach ($paginacion as $item => $bloquePagina)
-                            <li class="{{ ($item) ? '' : ' active' }}">
-                                <a href="{{url($url.'/'.$bloquePagina->bloque)}}">
-                                    {{$bloquePagina->bloque}}
-                                </a>
-                            </li>                        
-                         @endforeach 
-                    </ul>
-                </div>    
-                <div class="col-md-12 listVideos">
-                    <table class="table table-responsive">                
-                        @foreach ($videos as $item => $video)
-                        <tr>
-                            <td data-target="#custom_carousel" data-slide-to="{{$item}}" class="item" data-id='{{ $video->url }}' _id="{{$video->id}}">
-                                    <img src="http://img.youtube.com/vi/{{ $video->url }}/2.jpg" class='item-a' style="cursor:pointer;">                            
-                            </td>
-                            <td class="redesText">{{$video->titulo_programa}}</td>
-                        </tr>                
-                        @endforeach 
-                    </table>
-                </div>
-            </div>
-        </div>        
-        <!-- End Carousel -->
-    </div>
-    <div class="col-md-1"></div>
-    </div>
+        </div>
+        <div class="col-md-1"></div>
     </div>
 </div>
 @endsection                                                

@@ -46,6 +46,7 @@ Educamedia
 @endsection
 @section('cuerpoMediateca')
 <div class="container-fluid">
+    <div class="row">    
 	<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center" style="padding:2%"></div>
 	<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center textoTitulo">
 		<p><?php
@@ -53,18 +54,17 @@ Educamedia
 		?>
 		</p><br>
 	</div>
-    <div class="row">
-    <div class="col-md-1"></div>
-    <div class="col-md-10 contenedorVideo transparenciaVideos">
-        <div id="custom_carousel" class="carousel slide" data-ride="carousel" data-interval="false">
+
+        <div class="col-md-1"></div>
+        <div class="col-md-10 contenedorVideo transparenciaVideos">
             <div class="col-md-12 col-xs-12 col-lg-8 col-sm-12" id='div-containter'>
                 <div class="col-md-12" style="overflow: auto;">
                     <h5 id="materia">{{$videos[0]->asignatura}}</h5>                
                     <h4 id="titulo_programa">{{$videos[0]->programa}}</h4>                
                     <div id="player" align="center">    </div>
                 </div>
-                @if(Auth::check ())
-                 <div class="col-md-12">
+                <div class="col-md-12">
+                    @if(Auth::check ())
                     <br>
                     <div class="col-md-3"></div>
                     <div class="col-md-3">
@@ -79,7 +79,7 @@ Educamedia
                     </div>
                     <div class="col-md-3"></div>                                        
                     @endif     
-                 </div>
+                </div>
                 <div class="col-md-12">
                     <li class="list-unstyled"><h5 id="subtitulo_serie">{{ $videos[0]->subtitulo_serie }}<h5></li>
                     <li class="list-unstyled"><h5 id="subtitulo_programa">{{ $videos[0]->subtitulo_programa }}<h5></li>                                                
@@ -94,36 +94,34 @@ Educamedia
                     </div>  
                     <br>
                 </div>
+                <div class="col-md-12">                
                  @if (Auth::check ())
-                 <div class="col-md-12">
                     <br>
                     <textarea id="comment" rows="3" placeholder="Comenta aquí..." class="form-control textareaTransparencia"></textarea>                
                     <a class="linkComentar" id="btn-comentar">Envíar Comentario </a>
                     <br><br>                    
-                    @endif
                     <br> 
                     <div id="comentarios"></div> 
-                 </div>
+                 @endif                    
+                </div>
             </div>
             <br>
-        <div class="col-md-12 col-xs-12 col-lg-4 col-sm-12 controls" id="custom_controls">
-            <div class="col-md-12 listVideos">
-            <table class="table table-responsive">                
-                @foreach ($videos as $item => $video)
-                <tr>
-                    <td data-target="#custom_carousel" data-slide-to="{{$item}}" class="item" data-id='{{ $video->url }}' _id="{{$video->id}}">
-                        <img src="http://img.youtube.com/vi/{{ $video->url }}/2.jpg" class='item-a' style="cursor:pointer;">                            
-                    </td>
-                    <td class="redesText">{{$video->programa}}</td>
-                </tr>                
-                @endforeach 
-            </table>
-            </div>
-        </div>        
-        <!-- End Carousel -->
+            <div class="col-md-12 col-xs-12 col-lg-4 col-sm-12 controls" id="custom_controls">
+                <div class="col-md-12 listVideos">
+                    <table class="table table-responsive">                
+                        @foreach ($videos as $item => $video)
+                        <tr>
+                            <td data-target="#custom_carousel" data-slide-to="{{$item}}" class="item" data-id='{{ $video->url }}' _id="{{$video->id}}">
+                                <img src="http://img.youtube.com/vi/{{ $video->url }}/2.jpg" class='item-a' style="cursor:pointer;">                            
+                            </td>
+                            <td class="redesText">{{$video->programa}}</td>
+                        </tr>                
+                        @endforeach 
+                    </table>
+                </div>
+            </div>        
         </div>
         <div class="col-md-1"></div>
-        </div>
     </div>
 </div>
 @endsection                                                
