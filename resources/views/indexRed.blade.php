@@ -47,7 +47,8 @@ and open the template in the editor.
 
         <link rel="stylesheet" href="{{asset('css/red/ihover.css')}}">  
         <link rel="stylesheet" href="{{asset('css/red/animate.css')}}">
-
+		<!--	Libreria Parallax	-->
+		<script src="js/parallax.js-1.4.2/parallax.min.js"></script>
         @yield('header')
 
         <!--<link rel="stylesheet" href="css/red/full-slider.css">-->  

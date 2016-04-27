@@ -1,4 +1,4 @@
-<div class="row" style="background-image:url('{{ asset('imagenes/red/integrantes/gradiente.jpg') }}')">
+<div class="row parallax-window" data-parallax="scroll" data-image-src= {{url('imagenes/red/integrantes/gradiente.jpg')}} speed="0.3">
     <div class="col-md-12 fondo_Obscuro">
         <div class="col-md-12 text-center text-uppercase">
             <p class="pleca"> Nuestros integrantes </p>

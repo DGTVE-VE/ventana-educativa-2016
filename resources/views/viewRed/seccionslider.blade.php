@@ -12,41 +12,32 @@
             <!-- Wrapper for slides -->
             <div class="carousel-inner" role="listbox" style="margin:0px;">
                 <div class="item active">
-                    <!--<img id="imgSliderHome" class="img-responsive imgSliderHome" src="imagenes/red/Banners/1.jpg" alt="..."/>-->
-                    {{ HTML::image('imagenes/red/Banners/1.jpg','bannerSlider1', array('id'=>'imgSliderHome','class'=>'img-responsive imgSliderHome'))}}
+					<div class="parallax-window" data-parallax="scroll" data-image-src= {{url('imagenes/red/Banners/1.jpg')}} speed="0.3" style="visibility:hidden;">
+						{{ HTML::image('imagenes/red/Banners/imgTransparente.png','bannerSlider1', array('id'=>'imgSliderHome','class'=>'img-responsive imgSliderHome'))}}
+					</div>
                 </div>
                 <div class="item">
-                    <!--<img id="imgSliderHome2" class="img-responsive imgSliderHome" src="imagenes/red/Banners/2.jpg" alt="imagenes/red/1600-x-650.jpg"/>-->
-                    {{ HTML::image('imagenes/red/Banners/2.jpg','bannerSlider2', array('id'=>'imgSliderHome2','class'=>'img-responsive imgSliderHome'))}}
+					<!--div class="parallax-window" data-parallax="scroll" data-image-src= {{url('imagenes/red/Banners/2.jpg')}} speed="0.3"-->
+						{{ HTML::image('imagenes/red/Banners/2.jpg','bannerSlider1', array('id'=>'imgSliderHome','class'=>'img-responsive imgSliderHome'))}}
+					<!--/div-->
                 </div>
                 <div class="item">
-                    <!--<img id="imgSliderHome3" class="img-responsive imgSliderHome" src="imagenes/red/Banners/banner-3.jpg" alt="http://placehold.it/1600x500"/>-->
                     {{ HTML::image('imagenes/red/Banners/banner-3.jpg','bannerSlider3', array('id'=>'imgSliderHome3','class'=>'img-responsive imgSliderHome'))}}
                 </div>
                 <div class="item">
-                    <!--<img id="imgSliderHome4" class="img-responsive imgSliderHome" src="imagenes/red/Banners/banner-4.jpg" alt="..."/>-->
                     {{ HTML::image('imagenes/red/Banners/banner-4.jpg','bannerSlider4', array('id'=>'imgSliderHome4','class'=>'img-responsive imgSliderHome'))}}
                 </div>
             </div>
 
             <!-- Controls -->
-            <a class="left carousel-control" href="#carouselSliderHome" role="button" data-slide="prev" onclick="reiniciaBarra()">
+            <a class="left carousel-control" href="#carouselSliderHome" role="button" data-slide="prev">
                 <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
                 <span class="sr-only">Previous</span>
             </a>
-            <a class="right carousel-control" href="#carouselSliderHome" role="button" data-slide="next" onclick="reiniciaBarra()">
+            <a class="right carousel-control" href="#carouselSliderHome" role="button" data-slide="next">
                 <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
                 <span class="sr-only">Next</span>
             </a>
         </div>
-
-    </div>
-</div>
-<div class="row fondo_Claro">
-    <!--div class="col-xs-12 col-sm-12 col-md-12 progress-container" style="height: 0px; padding:0px;"-->
-    <div class="col-xs-12 col-sm-12 col-md-12" style="height: 0px;">
-        <!--div class="progress active" style="margin:0px; opacity:0.8; height:8px;">
-                <div id="indicador" class="progress-bar"></div>
-        </div-->
     </div>
 </div>

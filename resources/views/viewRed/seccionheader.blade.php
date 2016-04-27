@@ -54,6 +54,10 @@
 		.menuVentanaApps{margin-top: 20% !important;
 		}
 	}
+	.parallax-window {
+		min-height: 400px;
+		background: transparent;
+	}
 </style>
 <div style="height:55px;">
 	@include('viewVentana.encabezadoVentana')
