@@ -36,8 +36,15 @@
 </div>
 
 
-<script src="//cdn.tinymce.com/4/tinymce.min.js"></script>
-<script>tinymce.init({selector: 'textarea'});</script>
+<!--<script src="//cdn.tinymce.com/4/tinymce.min.js"></script>-->
+<script src="{{asset ('tinymce/tinymce.min.js')}}"></script>
+<script>
+    tinymce.init({        
+        selector: 'textarea',
+        language: 'es_MX'
+    });
+
+</script>
 <script>
     $(document).ready(function (e) {
     // Function to preview image after validation

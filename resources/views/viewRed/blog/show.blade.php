@@ -130,14 +130,14 @@
         </div>
     </div>
 </div>
-<script src="//cdn.tinymce.com/4/tinymce.min.js"></script>
-<script>tinymce.init({selector: 'textarea'});</script>
-<script type="text/javascript">
-tinyMCE.init({
-     language : "es", // change language here
-     mode : "textareas",
-     theme : "simple"   
-});
+
+<script src="{{asset ('tinymce/tinymce.min.js')}}"></script>
+<script>
+    tinymce.init({        
+        selector: 'textarea',
+        language: 'es_MX'
+    });
+
 </script>
 <!-- /TinyMCE -->
 <script>
