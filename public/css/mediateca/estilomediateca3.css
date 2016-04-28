@@ -218,3 +218,7 @@
     font-family: Tahoma;
     color: red;
 }
+/*Estilo de letra para videos de telesecundaria y telebachilerato */
+.txtVideosRed{
+    font-family: Ubuntu;
+}

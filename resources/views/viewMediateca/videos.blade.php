@@ -45,10 +45,10 @@ Educamedia
 @include('viewMediateca.encabezadoMediateca')
 @endsection
 @section('cuerpoMediateca')
-<div class="container-fluid txtVideosRed">
+<div class="container-fluid">
 	<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center" style="padding:4%">
 	</div>
-	<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center textoTitulo">
+	<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center textoTitulo txtVideosRed">
 		<p><?php
 			generaBreadCrumbs();
 		?>
@@ -56,7 +56,7 @@ Educamedia
 	</div>
     <div class="row">
     <div class="col-md-1"></div>
-    <div class="col-md-10 contenedorVideo transparenciaVideos">
+    <div class="col-md-10 contenedorVideo transparenciaVideos txtVideosRed">
         <div id="custom_carousel" class="carousel slide" data-ride="carousel" data-interval="false">
             <div class="col-md-8" id='div-containter'>
                 
@@ -97,7 +97,7 @@ Educamedia
                 </div>
             </div>
         </div>
-        <div class="col-md-4 controls txtVideosRed" id="custom_controls">
+        <div class="col-md-4 controls" id="custom_controls">
             <div class="col-md-12">
                 <div class="col-md-3 centrarTextDiv"><h4>Bloque</h4></div>
                 <ul class="pager col-md-9">

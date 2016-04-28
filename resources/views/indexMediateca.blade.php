@@ -21,7 +21,8 @@ and open the template in the editor.
 
         <!--	-------------------------- Fuentes de google fonts ------------------------------------		-->
         <link href='https://fonts.googleapis.com/css?family=Ubuntu:400,300,500,700' rel='stylesheet' type='text/css'>
-
+        <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Oxygen">
+        
         <link rel="stylesheet" href="{{ asset('css/red/ihover.css') }}" >
         <link rel="stylesheet" href="{{ asset('css/red/animate.css') }}" >        
         
