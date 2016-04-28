@@ -48,7 +48,7 @@ Educamedia
 <div class="container-fluid">
     <div class="row">    
 	<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center" style="padding:2%"></div>
-	<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center textoTitulo">
+	<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center textoTitulo txtVideosRed">
 		<p><?php
 			generaBreadCrumbs();
 		?>
@@ -56,8 +56,8 @@ Educamedia
 	</div>
 
         <div class="col-md-1"></div>
-        <div class="col-md-10 contenedorVideo transparenciaVideos">
-            <div class="col-md-12 col-xs-12 col-lg-8 col-sm-12" id='div-containter'>
+        <div class="col-md-10 contenedorVideo transparenciaVideos ">
+            <div class="col-md-12 col-xs-12 col-lg-8 col-sm-12 txtVideosRed" id='div-containter'>
                 <div class="col-md-12" style="overflow: auto;">
                     <h5 id="materia">{{$videos[0]->asignatura}}</h5>                
                     <h4 id="titulo_programa">{{$videos[0]->programa}}</h4>                
@@ -81,8 +81,8 @@ Educamedia
                     @endif     
                 </div>
                 <div class="col-md-12">
-                    <li class="list-unstyled"><h5 id="subtitulo_serie">{{ $videos[0]->subtitulo_serie }}<h5></li>
-                    <li class="list-unstyled"><h5 id="subtitulo_programa">{{ $videos[0]->subtitulo_programa }}<h5></li>                                                
+                    <li class="list-unstyled"><h5 id="subtitulo_serie">{{ $videos[0]->subtitulo_serie }}</h5></li>
+                    <li class="list-unstyled"><h5 id="subtitulo_programa">{{ $videos[0]->subtitulo_programa }}</h5></li>                                                
                     <li class="list-unstyled"><h5 id="grado">Semestre: {{ $videos[0]->semestre }}</h5></li>
 
                     <li class="list-unstyled text-justify" id="sinopsis" style="display: none;">{{ $videos[0]->sinopsis }}</li>
@@ -106,7 +106,7 @@ Educamedia
                 </div>
             </div>
             <br>
-            <div class="col-md-12 col-xs-12 col-lg-4 col-sm-12 controls" id="custom_controls">
+            <div class="col-md-12 col-xs-12 col-lg-4 col-sm-12 controls txtVideosRed" id="custom_controls">
                 <div class="col-md-12 listVideos">
                     <table class="table table-responsive">                
                         @foreach ($videos as $item => $video)

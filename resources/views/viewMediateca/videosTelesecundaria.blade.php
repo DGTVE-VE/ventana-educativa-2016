@@ -48,7 +48,7 @@ Educamedia
 <div class="container-fluid">
     <div class="row">
 	<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center" style="padding:2%"></div>
-	<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center textoTitulo">
+	<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center textoTitulo txtVideosRed">
 		<p><?php
 			generaBreadCrumbs();
 		?>
@@ -57,7 +57,7 @@ Educamedia
         <div class="col-md-1"></div>
         <div class="col-md-10 contenedorVideo transparenciaVideos">
             <div class="row" id='div-containter'>
-                <div class="col-md-8">
+                <div class="col-md-8 txtVideosRed">
                     <div class="col-md-12" style="overflow: auto;">
                         <h5 id="materia">{{$videos[0]->materia}}</h5>                
                         <h4 id="titulo_programa">{{$videos[0]->titulo_programa}}</h4>                
@@ -101,7 +101,7 @@ Educamedia
                         @endif                        
                     </div>
                 </div>                
-                <div class="col-md-4 pager" id="custom_controls">
+                <div class="col-md-4 pager txtVideosRed" id="custom_controls">
                     <div class="col-md-12">                    
                         <h5 class="col-md-2">Bloque</h5>
                         <ul class="col-md-10">
