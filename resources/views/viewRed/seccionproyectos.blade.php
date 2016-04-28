@@ -3,7 +3,7 @@
         <p class="pleca"> Proyectos </p>
     </div>
 </div>
-<div class="row fondo_Transparente text-center" style="background-image:url('{{ asset('imagenes/red/proyectos/fondo-proyectos.jpg')}}')">
+<div class="row fondo_Transparente text-center parallax-window"  data-parallax="scroll" data-image-src= {{url('imagenes/red/proyectos/fondo-proyectos.jpg')}} speed="0.3" >
     <div class="col-md-12">
         <div class="division">
         </div>
