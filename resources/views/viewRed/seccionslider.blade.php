@@ -12,20 +12,28 @@
             <!-- Wrapper for slides -->
             <div class="carousel-inner" role="listbox" style="margin:0px;">
                 <div class="item active">
-					<div class="parallax-window" data-parallax="scroll" data-image-src= {{url('imagenes/red/Banners/1.jpg')}} speed="0.3" style="visibility:hidden;">
-						{{ HTML::image('imagenes/red/Banners/imgTransparente.png','bannerSlider1', array('id'=>'imgSliderHome','class'=>'img-responsive imgSliderHome'))}}
+					<div id="parallaxcarouselSliderHome" class="parallaxcarouselSliderHome">
+						{{ HTML::image('imagenes/red/Banners/1.jpg','bannerSlider1', array('id'=>'imgSliderHome','class'=>'img-responsive imgSliderHome'))}}
+					</div>
+					{{ HTML::image('imagenes/red/Banners/imgTransparente.png','bannerSlider1', array('class'=>'img-responsive'))}}
+                </div>
+                <div class="item">
+					{{ HTML::image('imagenes/red/Banners/imgTransparente.png','bannerSlider1', array('class'=>'img-responsive'))}}
+					<div id="parallaxcarouselSliderHome1" class="parallaxcarouselSliderHome">
+						{{ HTML::image('imagenes/red/Banners/2.jpg','bannerSlider1', array('id'=>'imgSliderHome','class'=>'img-responsive imgSliderHome'))}}
 					</div>
                 </div>
                 <div class="item">
-					<!--div class="parallax-window" data-parallax="scroll" data-image-src= {{url('imagenes/red/Banners/2.jpg')}} speed="0.3"-->
-						{{ HTML::image('imagenes/red/Banners/2.jpg','bannerSlider1', array('id'=>'imgSliderHome','class'=>'img-responsive imgSliderHome'))}}
-					<!--/div-->
+					{{ HTML::image('imagenes/red/Banners/imgTransparente.png','bannerSlider1', array('class'=>'img-responsive'))}}
+					<div id="parallaxcarouselSliderHome2" class="parallaxcarouselSliderHome">
+						{{ HTML::image('imagenes/red/Banners/banner-3.jpg','bannerSlider3', array('id'=>'imgSliderHome3','class'=>'img-responsive imgSliderHome'))}}
+					</div>
                 </div>
                 <div class="item">
-                    {{ HTML::image('imagenes/red/Banners/banner-3.jpg','bannerSlider3', array('id'=>'imgSliderHome3','class'=>'img-responsive imgSliderHome'))}}
-                </div>
-                <div class="item">
-                    {{ HTML::image('imagenes/red/Banners/banner-4.jpg','bannerSlider4', array('id'=>'imgSliderHome4','class'=>'img-responsive imgSliderHome'))}}
+					{{ HTML::image('imagenes/red/Banners/imgTransparente.png','bannerSlider1', array('class'=>'img-responsive'))}}
+					<div id="parallaxcarouselSliderHome3" class="parallaxcarouselSliderHome">
+						{{ HTML::image('imagenes/red/Banners/banner-4.jpg','bannerSlider4', array('id'=>'imgSliderHome4','class'=>'img-responsive imgSliderHome'))}}
+					</div>
                 </div>
             </div>
 

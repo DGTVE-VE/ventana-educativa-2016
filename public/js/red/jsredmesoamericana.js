@@ -244,10 +244,10 @@
 		function parallaxScroll(){
 			var scrolled = $(window).scrollTop();
 			if(is_chrome){
-				$('#parallaxcarouselSliderHome').css('top',(0+(scrolled*0.7))+'px');
-				$('#parallaxcarouselSliderHome1').css('top',(0+(scrolled*0.7))+'px');
-				$('#parallaxcarouselSliderHome2').css('top',(0+(scrolled*0.7))+'px');
-				$('#parallaxcarouselSliderHome3').css('top',(0+(scrolled*0.7))+'px');
+				$('#parallaxcarouselSliderHome').css('top',(0+(scrolled*0.3))+'px');
+				$('#parallaxcarouselSliderHome1').css('top',(0+(scrolled*0.3))+'px');
+				$('#parallaxcarouselSliderHome2').css('top',(0+(scrolled*0.3))+'px');
+				$('#parallaxcarouselSliderHome3').css('top',(0+(scrolled*0.3))+'px');
 			}
 			else{
 				$('#parallaxcarouselSliderHome').css('top',(0-(scrolled*0.7))+'px');
@@ -259,7 +259,13 @@
 			$('#parallax-fondoIntegrantes').css('top',(0-(scrolled*0.55))+'px');
 		}
 		/*  -------------------------------------    Detectar si navegador es chrome   -----------------------------------------------*/
-				var is_chrome = navigator.userAgent.toLowerCase().indexOf('chrome') > -1;
+		var is_chrome = navigator.userAgent.toLowerCase().indexOf('chrome') > -1;
+		if(is_chrome){
+			$('.imgSliderHome').css('top','-10'+'px');
+		}
+		else{
+			$('.imgSliderHome').css('top','100'+'px');
+		}
 		/*
 * rwdImageMaps jQuery plugin v1.5
 *
