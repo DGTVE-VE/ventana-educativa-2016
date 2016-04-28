@@ -56,7 +56,6 @@ class RedmiteController extends Controller {
         $news->correo = filter_input(INPUT_POST, 'correo_newsletter');
         $news->hash = md5(date('Y/m/d H:i:s'));
         $news->save();
-
         $this->enviaCorreoActivacion($news->correo, $news->hash);
         return redirect('redmite');
     }
