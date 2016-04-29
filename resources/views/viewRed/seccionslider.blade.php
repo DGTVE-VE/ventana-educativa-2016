@@ -12,27 +12,39 @@
             <!-- Wrapper for slides -->
             <div class="carousel-inner" role="listbox" style="margin:0px;">
                 <div class="item active">
-					<div id="parallaxcarouselSliderHome" class="parallaxcarouselSliderHome">
+					<div id="parallaxcarouselSliderHome" class="parallaxcarouselSliderHome visible-md-block visible-lg-block">
 						{{ HTML::image('imagenes/red/Banners/1.jpg','bannerSlider1', array('id'=>'imgSliderHome','class'=>'img-responsive imgSliderHome'))}}
 					</div>
-					{{ HTML::image('imagenes/red/Banners/imgTransparente.png','bannerSlider1', array('class'=>'img-responsive'))}}
+					<div class="visible-xs-block visible-sm-block">
+						{{ HTML::image('imagenes/red/Banners/1.jpg','bannerSlider1', array('id'=>'imgSliderHomeSM','class'=>'img-responsive'))}}
+					</div>
+					{{ HTML::image('imagenes/red/Banners/imgTransparente.png','bannerSlider1', array('class'=>'img-responsive visible-md-block visible-lg-block'))}}
                 </div>
                 <div class="item">
-					{{ HTML::image('imagenes/red/Banners/imgTransparente.png','bannerSlider1', array('class'=>'img-responsive'))}}
-					<div id="parallaxcarouselSliderHome1" class="parallaxcarouselSliderHome">
+					{{ HTML::image('imagenes/red/Banners/imgTransparente.png','bannerSlider1', array('class'=>'img-responsive visible-md-block visible-lg-block'))}}
+					<div id="parallaxcarouselSliderHome1" class="parallaxcarouselSliderHome visible-md-block visible-lg-block">
 						{{ HTML::image('imagenes/red/Banners/2.jpg','bannerSlider1', array('id'=>'imgSliderHome','class'=>'img-responsive imgSliderHome'))}}
 					</div>
-                </div>
-                <div class="item">
-					{{ HTML::image('imagenes/red/Banners/imgTransparente.png','bannerSlider1', array('class'=>'img-responsive'))}}
-					<div id="parallaxcarouselSliderHome2" class="parallaxcarouselSliderHome">
-						{{ HTML::image('imagenes/red/Banners/banner-3.jpg','bannerSlider3', array('id'=>'imgSliderHome3','class'=>'img-responsive imgSliderHome'))}}
+					<div class="visible-xs-block visible-sm-block">
+						{{ HTML::image('imagenes/red/Banners/2.jpg','bannerSlider2', array('id'=>'imgSliderHomeSM','class'=>'img-responsive'))}}
 					</div>
                 </div>
                 <div class="item">
-					{{ HTML::image('imagenes/red/Banners/imgTransparente.png','bannerSlider1', array('class'=>'img-responsive'))}}
-					<div id="parallaxcarouselSliderHome3" class="parallaxcarouselSliderHome">
+					{{ HTML::image('imagenes/red/Banners/imgTransparente.png','bannerSlider1', array('class'=>'img-responsive visible-md-block visible-lg-block'))}}
+					<div id="parallaxcarouselSliderHome2" class="parallaxcarouselSliderHome visible-md-block visible-lg-block">
+						{{ HTML::image('imagenes/red/Banners/banner-3.jpg','bannerSlider3', array('id'=>'imgSliderHome3','class'=>'img-responsive imgSliderHome'))}}
+					</div>
+					<div class="visible-xs-block visible-sm-block">
+						{{ HTML::image('imagenes/red/Banners/banner-3.jpg','bannerSlider1', array('id'=>'imgSliderHomeSM','class'=>'img-responsive'))}}
+					</div>
+                </div>
+                <div class="item">
+					{{ HTML::image('imagenes/red/Banners/imgTransparente.png','bannerSlider1', array('class'=>'img-responsive visible-md-block visible-lg-block'))}}
+					<div id="parallaxcarouselSliderHome3" class="parallaxcarouselSliderHome visible-md-block visible-lg-block">
 						{{ HTML::image('imagenes/red/Banners/banner-4.jpg','bannerSlider4', array('id'=>'imgSliderHome4','class'=>'img-responsive imgSliderHome'))}}
+					</div>
+					<div class="visible-xs-block visible-sm-block">
+						{{ HTML::image('imagenes/red/Banners/banner-4.jpg','bannerSlider1', array('id'=>'imgSliderHomeSM','class'=>'img-responsive'))}}
 					</div>
                 </div>
             </div>

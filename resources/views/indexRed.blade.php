@@ -31,16 +31,6 @@ and open the template in the editor.
 
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
-        <!-- efecto barra desplazamiento horizontal -->
-        <!--link rel="stylesheet" href="malihu-custom-scrollbar-plugin-master/jquery.mCustomScrollbar.css">
-        <script src="malihu-custom-scrollbar-plugin-master/jquery.mCustomScrollbar.concat.min.js"></script>
-        <script src="malihu-custom-scrollbar-plugin-master/usarCustomScrollbar.js"></script-->
-
-        <!-- Estilo Header del Home-->
-<!--        <link rel="stylesheet" href="{{ URL::asset('css/estiloBase.css') }}">
-        Estilo Red Mesoamericana
-        <link rel="stylesheet" href="{{ URL::asset('css/estiloRed.css') }}">-->
-
         <!--	-------------------------- Fuentes de google fonts ------------------------------------		-->
         <link href='https://fonts.googleapis.com/css?family=Oxygen:400,700,300' rel='stylesheet' type='text/css'>
         <link href='https://fonts.googleapis.com/css?family=Exo:400,600,300,700'rel='stylesheet' type='text/css'>
@@ -49,13 +39,12 @@ and open the template in the editor.
         <link rel="stylesheet" href="{{asset('css/red/animate.css')}}">
 		<!--	Libreria Parallax	-->
 		<script src="js/parallax.js-1.4.2/parallax.min.js"></script>
-        @yield('header')
 
-        <!--<link rel="stylesheet" href="css/red/full-slider.css">-->  
+        @yield('header')
 
     </head>
     <body id="pag_principal" style="padding:0px; overflow-x:hidden">     
-<!--        Script para Google Analytics de la red Mesoamericana-->
+		<!--        Script para Google Analytics de la red Mesoamericana	-->
         <script>
         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
         (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -76,7 +65,7 @@ and open the template in the editor.
             js.src = "//connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v2.5&appId=876445959080347";
             fjs.parentNode.insertBefore(js, fjs);
         }(document, 'script', 'facebook-jssdk'));</script>
-        <div class="container-fluid" style="z-index:2; padding:0px;"> <!--data-spy="affix" data-offset-top="80"-->
+        <div class="container-fluid" style="z-index:2; padding:0px;">
             @yield('menuRedmite')
         </div>
         <div class="container-fluid">

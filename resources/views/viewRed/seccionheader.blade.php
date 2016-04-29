@@ -1,4 +1,3 @@
-<link rel="stylesheet" type="text/css" href={{url('css/mediateca/estilomediateca2.css')}}>
 <style>
 	#barraSecundaria.affix{
 		top:0;
@@ -59,6 +58,8 @@
 		background: transparent;
 	}
 </style>
+<!--	Incluir barra de navegación de ventana y ajuste de elementos	-->
+<link rel="stylesheet" type="text/css" href={{url('css/mediateca/estilomediateca2.css')}}>
 <div style="height:55px;">
 	@include('viewVentana.encabezadoVentana')
 </div>
@@ -75,6 +76,7 @@
 	$('#menuVentanaRegistro').removeClass('fondoRegistro');
 	$('#menuVentanaRegistro').addClass('fondoRegistroMedia');
 </script>
+	<!--	**************************************	-->
 <div style="height:80px;">
 <nav id="barraSecundaria" class="navbar yamm navbar-default" data-spy="affix" data-offset-top="70" role="navigation" style="height:80px; z-index:10;">
     <div class="container-fluid">
