@@ -194,7 +194,7 @@ body{
     }
     .contenedorVideo{
         margin-top: 10px !important;
-        max-height:900px;
+        max-height:800px;
         overflow-x: hidden;
     }
 }
@@ -380,5 +380,28 @@ body{
 }
 
 .textareaTransparencia{
-     background:rgba(0, 0, 0, .5);
+    background:rgba(0, 0, 0, .5);
+}
+
+.bloqueMed {
+    padding-left: 10px !important;
+    padding-top: 0px !important;
+    width: 30px;
+    height: 30px;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 600px;
+    border-radius: 600px;
+    list-style-type:none;
+    background-color: rgba(0, 0, 0, .2) !important;
+    -moz-box-shadow:inset 0px 1px 8px rgba(0, 0, 0, .5);
+    -webkit-box-shadow:inset 0px 1px 8px rgba(0, 0, 0, .5);
+    box-shadow:inset 0px 1px 8px rgba(0, 0, 0, .5);    
+    color: white;
+    font-size: 18px;
+}
+
+.bloqueMed:hover{
+    background: white !important;
+    color: black;
+    border: 2px solid rgba(255, 255, 255, .5);    
 }
