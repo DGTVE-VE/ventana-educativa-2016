@@ -32,6 +32,13 @@
 			{{HTML::image('imagenes/mediateca/tbachillerato/SemestreI/MatematicasIHover.png','Telebachillerato MatematicasI',['class'=>'resaltaImg img-responsive', 'id'=>'MatematicasIHover'])}}
 			{{HTML::image('imagenes/mediateca/tbachillerato/SemestreI/LenguaAdicionalIHover.png','Telebachillerato LenguaAdicionalI',['class'=>'resaltaImg img-responsive', 'id'=>'LenguaAdicionalIHover'])}}
 			{{HTML::image('imagenes/mediateca/tbachillerato/SemestreI/QuimicaIHover.png','Telebachillerato QuimicaI',['class'=>'resaltaImg img-responsive', 'id'=>'QuimicaIHover'])}}
+
+			{{HTML::image('imagenes/mediateca/tbachillerato/imgCentral/IntroCS.png','Telebachillerato Central',['class'=>' img-responsive iniImgCentro', 'id'=>'IntroCSCentro'])}}
+			{{HTML::image('imagenes/mediateca/tbachillerato/imgCentral/EticaValoresI.png','Telebachillerato Central',['class'=>' img-responsive iniImgCentro', 'id'=>'EticaValoresICentro'])}}
+			{{HTML::image('imagenes/mediateca/tbachillerato/imgCentral/matematicasI.png','Telebachillerato Central',['class'=>' img-responsive iniImgCentro', 'id'=>'MatematicasICentro'])}}
+			{{HTML::image('imagenes/mediateca/tbachillerato/imgCentral/lenguaAdicional.png','Telebachillerato Central',['class'=>' img-responsive iniImgCentro', 'id'=>'LenguaAdicionalICentro'])}}
+			{{HTML::image('imagenes/mediateca/tbachillerato/imgCentral/quimica.png','Telebachillerato Central',['class'=>' img-responsive iniImgCentro', 'id'=>'QuimicaICentro'])}}
+			
 			{{HTML::image('imagenes/mediateca/tbachillerato/SemestreI/imgMapa.png','Telebachillerato Semestre I',['class'=>'posicionMapa img-responsive', 'id'=>'telebachilleratoSEMI', 'usemap'=>'#mapaSemI'])}}
 		</div>
 	</div>

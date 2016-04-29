@@ -30,6 +30,12 @@
 			{{HTML::image('imagenes/mediateca/tbachillerato/SemestreIV/FisicaIIHover.png','Telebachillerato FisicaII',['class'=>'resaltaImg img-responsive', 'id'=>'FisicaIIHover'])}}
 			{{HTML::image('imagenes/mediateca/tbachillerato/SemestreIV/MatematicasIVHover.png','Telebachillerato MatematicasIV',['class'=>'resaltaImg img-responsive', 'id'=>'MatematicasIVHover'])}}
 			{{HTML::image('imagenes/mediateca/tbachillerato/SemestreIV/LenguaAdicionalIVHover.png','Telebachillerato LenguaAdicionalIV ',['class'=>'resaltaImg img-responsive', 'id'=>'LenguaAdicionalIVHover'])}}
+			
+			{{HTML::image('imagenes/mediateca/tbachillerato/imgCentral/literatura.png','Telebachillerato Central',['class'=>' img-responsive iniImgCentro', 'id'=>'LiteraturaIICentro'])}}
+			{{HTML::image('imagenes/mediateca/tbachillerato/imgCentral/socioeconomicaMexico.png','Telebachillerato Central',['class'=>' img-responsive iniImgCentro', 'id'=>'EstructuraCentro'])}}
+			{{HTML::image('imagenes/mediateca/tbachillerato/imgCentral/matematicasI.png','Telebachillerato Central',['class'=>' img-responsive iniImgCentro', 'id'=>'MatematicasIVCentro'])}}
+			{{HTML::image('imagenes/mediateca/tbachillerato/imgCentral/lenguaAdicional.png','Telebachillerato Central',['class'=>' img-responsive iniImgCentro', 'id'=>'LenguaAdicionalIVCentro'])}}
+			
 			{{HTML::image('imagenes/mediateca/tbachillerato/SemestreIV/imgMapa.png','Telebachillerato',['class'=>'posicionMapa img-responsive', 'id'=>'telebachilleratoSEMV', 'usemap'=>'#mapaSemIV'])}}
 		</div>
 	</div>

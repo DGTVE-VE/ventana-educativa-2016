@@ -24,6 +24,9 @@ Educamedia
 			{{HTML::image('imagenes/mediateca/tbachillerato/SemestreVI/EcologiaHover.png','Telebachillerato Ecologia',['class'=>'resaltaImg img-responsive', 'id'=>'EcologiaHover'])}}
 			{{HTML::image('imagenes/mediateca/tbachillerato/SemestreVI/FilosofiaHover.png','Telebachillerato Filosofia',['class'=>'resaltaImg img-responsive', 'id'=>'FilosofiaHover'])}}
 			{{HTML::image('imagenes/mediateca/tbachillerato/SemestreVI/MetodologiaHover.png','Telebachillerato Geografia',['class'=>'resaltaImg img-responsive', 'id'=>'MetodologiaHover'])}}
+			
+			{{HTML::image('imagenes/mediateca/tbachillerato/imgCentral/ecologia.png','Telebachillerato Central',['class'=>' img-responsive iniImgCentro', 'id'=>'EcologiaCentro'])}}
+			
 			{{HTML::image('imagenes/mediateca/tbachillerato/SemestreVI/imgMapa.png','Telebachillerato',['class'=>'posicionMapa img-responsive', 'id'=>'telebachilleratoSEMII', 'usemap'=>'#mapaSemVI'])}}
 		</div>
 </div>

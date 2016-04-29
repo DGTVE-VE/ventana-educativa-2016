@@ -22,6 +22,9 @@ Educamedia
 			{{HTML::image('imagenes/mediateca/tbachillerato/SemestreV/semestreV.png','telebachillerato Semestre V',['class'=>'posicionInicial img-responsive', 'id'=>'SemestreV'])}}
 			{{HTML::image('imagenes/mediateca/tbachillerato/SemestreV/GeografiaHover.png','Telebachillerato Geografia',['class'=>'resaltaImg img-responsive', 'id'=>'GeografiaHover'])}}
 			{{HTML::image('imagenes/mediateca/tbachillerato/SemestreV/HistoriaUnivHover.png','Telebachillerato HistoriaUniv',['class'=>'resaltaImg img-responsive', 'id'=>'HistoriaUnivHover'])}}
+			
+			{{HTML::image('imagenes/mediateca/tbachillerato/imgCentral/geografia.png','Telebachillerato Central',['class'=>' img-responsive iniImgCentro', 'id'=>'GeografiaCentro'])}}
+			
 			{{HTML::image('imagenes/mediateca/tbachillerato/SemestreV/imgMapa.png','Telebachillerato',['class'=>'posicionMapa img-responsive', 'id'=>'telebachilleratoSEMV', 'usemap'=>'#mapaSemV'])}}
 		</div>
 	</div>

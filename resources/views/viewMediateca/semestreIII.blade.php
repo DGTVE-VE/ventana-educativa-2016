@@ -30,6 +30,11 @@
 			{{HTML::image('imagenes/mediateca/tbachillerato/SemestreIII/FisicaIHover.png','Telebachillerato FisicaI',['class'=>'resaltaImg img-responsive', 'id'=>'FisicaIHover'])}}
 			{{HTML::image('imagenes/mediateca/tbachillerato/SemestreIII/MatematicasIIIHover.png','Telebachillerato MatematicasIII',['class'=>'resaltaImg img-responsive', 'id'=>'MatematicasIIIHover'])}}
 			{{HTML::image('imagenes/mediateca/tbachillerato/SemestreIII/LenguaAdicionalIIIHover.png','Telebachillerato LenguaAdicionalIII ',['class'=>'resaltaImg img-responsive', 'id'=>'LenguaAdicionalIIIHover'])}}
+			
+			{{HTML::image('imagenes/mediateca/tbachillerato/imgCentral/literatura.png','Telebachillerato Central',['class'=>' img-responsive iniImgCentro', 'id'=>'LiteraturaICentro'])}}
+			{{HTML::image('imagenes/mediateca/tbachillerato/imgCentral/matematicasI.png','Telebachillerato Central',['class'=>' img-responsive iniImgCentro', 'id'=>'MatematicasIIICentro'])}}
+			{{HTML::image('imagenes/mediateca/tbachillerato/imgCentral/lenguaAdicional.png','Telebachillerato Central',['class'=>' img-responsive iniImgCentro', 'id'=>'LenguaAdicionalIIICentro'])}}
+			
 			{{HTML::image('imagenes/mediateca/tbachillerato/SemestreIII/imgMapa.png','Telebachillerato',['class'=>'posicionMapa img-responsive', 'id'=>'telebachilleratoSEMIII', 'usemap'=>'#mapaSemIII'])}}
 		</div>
 	</div>

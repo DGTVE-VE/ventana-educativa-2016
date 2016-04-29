@@ -159,8 +159,8 @@
 	#parallaxcarouselSliderHome2, #parallaxcarouselSliderHome3{
 		position:fixed;
 		top:0px;
-		left:40%;
-		margin-left:-600px;
+		left:30%;
+		margin-left:-480px;
 		z-index:-1;
 	}
 	.imgSliderHome{
