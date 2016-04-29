@@ -34,17 +34,17 @@ Educamedia
 			{{HTML::image('imagenes/mediateca/tbachillerato/componente/ProbabilidadIIHover.png','Telesecundaria ProbabilidadII',['class'=>'resaltaImg img-responsive', 'id'=>'ProbabilidadIIHover'])}}
 			{{HTML::image('imagenes/mediateca/tbachillerato/componente/PsicologiaIHover.png','Telesecundaria PsicologiaI',['class'=>'resaltaImg img-responsive', 'id'=>'PsicologiaIHover'])}}
 			{{HTML::image('imagenes/mediateca/tbachillerato/componente/PsicologiaIIHover.png','Telesecundaria PsicologiaII',['class'=>'resaltaImg img-responsive', 'id'=>'PsicologiaIIHover'])}}
+
+			{{HTML::image('imagenes/mediateca/tbachillerato/imgCentral/salud.png','Telebachillerato Central',['class'=>' img-responsive iniImgCentro', 'id'=>'CienciasSaludICentro'])}}
+			{{HTML::image('imagenes/mediateca/tbachillerato/imgCentral/salud.png','Telebachillerato Central',['class'=>' img-responsive iniImgCentro', 'id'=>'CienciasSaludIICentro'])}}
+			{{HTML::image('imagenes/mediateca/tbachillerato/imgCentral/cienciasComunicacion.png','Telebachillerato Central',['class'=>' img-responsive iniImgCentro', 'id'=>'CienciasComunicacionICentro'])}}
+			{{HTML::image('imagenes/mediateca/tbachillerato/imgCentral/cienciasComunicacion.png','Telebachillerato Central',['class'=>' img-responsive iniImgCentro', 'id'=>'CienciasComunicacionIICentro'])}}
+			{{HTML::image('imagenes/mediateca/tbachillerato/imgCentral/probabilidad.png','Telebachillerato Central',['class'=>' img-responsive iniImgCentro', 'id'=>'ProbabilidadICentro'])}}
+			{{HTML::image('imagenes/mediateca/tbachillerato/imgCentral/probabilidad.png','Telebachillerato Central',['class'=>' img-responsive iniImgCentro', 'id'=>'ProbabilidadIICentro'])}}
+			{{HTML::image('imagenes/mediateca/tbachillerato/imgCentral/psicologia.png','Telebachillerato Central',['class'=>' img-responsive iniImgCentro', 'id'=>'PsicologiaICentro'])}}
+			{{HTML::image('imagenes/mediateca/tbachillerato/imgCentral/psicologiaSilla.png','Telebachillerato Central',['class'=>' img-responsive iniImgCentro', 'id'=>'PsicologiaIICentro'])}}
+			
 			{{HTML::image('imagenes/mediateca/tbachillerato/componente/imgMapa.png','Telebachillerato',['class'=>'posicionMapa img-responsive', 'id'=>'telebachilleratoSEMII', 'usemap'=>'#mapaSemPedagogico'])}}
-			<!--{{HTML::image('imagenes/mediateca/tsecundaria/iconoCentral/artesCentro.png','Telesecundaria central artes',['class'=>'imgPrimeroCentral', 'id'=>'artesCentro'])}}
-			{{HTML::image('imagenes/mediateca/tsecundaria/iconoCentral/orientacionCentro.png','Telesecundaria central orientacion',['class'=>'imgPrimeroCentral', 'id'=>'orientacionCentro'])}}
-			{{HTML::image('imagenes/mediateca/tsecundaria/iconoCentral/geografiaCentro.png','Telesecundaria central geografia',['class'=>'imgPrimeroCentral', 'id'=>'geografiaCentro'])}}
-			{{HTML::image('imagenes/mediateca/tsecundaria/iconoCentral/espanolCentro.png','Telesecundaria central espanol',['class'=>'imgPrimeroCentral', 'id'=>'espanolCentro'])}}
-			{{HTML::image('imagenes/mediateca/tsecundaria/iconoCentral/matematicasCentro.png','Telesecundaria central matematicas',['class'=>'imgPrimeroCentral', 'id'=>'matematicasCentro'])}}
-			{{HTML::image('imagenes/mediateca/tsecundaria/iconoCentral/cienciasCentro.png','Telesecundaria central ciencias',['class'=>'imgPrimeroCentral', 'id'=>'cienciasCentro'])}}
-			{{HTML::image('imagenes/mediateca/tsecundaria/iconoCentral/lenguaCentro.png','Telesecundaria central lengua',['class'=>'imgPrimeroCentral', 'id'=>'lenguaCentro'])}}
-			{{HTML::image('imagenes/mediateca/tsecundaria/iconoCentral/educacionFisicaCentro.png','Telesecundaria central educacionFisica',['class'=>'imgPrimeroCentral', 'id'=>'educacionFisicaCentro'])}}
-			{{HTML::image('imagenes/mediateca/tsecundaria/iconoCentral/tecnologiaCentro.png','Telesecundaria central tecnologia',['class'=>'imgPrimeroCentral', 'id'=>'tecnologiaCentro'])}}
-			-->
 		</div>
 	</div>
 @include('viewMediateca.barraSociales')

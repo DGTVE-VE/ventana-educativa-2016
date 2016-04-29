@@ -35,6 +35,8 @@
 			{{HTML::image('imagenes/mediateca/tbachillerato/imgCentral/socioeconomicaMexico.png','Telebachillerato Central',['class'=>' img-responsive iniImgCentro', 'id'=>'EstructuraCentro'])}}
 			{{HTML::image('imagenes/mediateca/tbachillerato/imgCentral/matematicasI.png','Telebachillerato Central',['class'=>' img-responsive iniImgCentro', 'id'=>'MatematicasIVCentro'])}}
 			{{HTML::image('imagenes/mediateca/tbachillerato/imgCentral/lenguaAdicional.png','Telebachillerato Central',['class'=>' img-responsive iniImgCentro', 'id'=>'LenguaAdicionalIVCentro'])}}
+			{{HTML::image('imagenes/mediateca/tbachillerato/imgCentral/biologia.png','Telebachillerato Central',['class'=>' img-responsive iniImgCentro', 'id'=>'BiologiaIICentro'])}}
+			{{HTML::image('imagenes/mediateca/tbachillerato/imgCentral/fisica.png','Telebachillerato Central',['class'=>' img-responsive iniImgCentro', 'id'=>'FisicaIICentro'])}}
 			
 			{{HTML::image('imagenes/mediateca/tbachillerato/SemestreIV/imgMapa.png','Telebachillerato',['class'=>'posicionMapa img-responsive', 'id'=>'telebachilleratoSEMV', 'usemap'=>'#mapaSemIV'])}}
 		</div>

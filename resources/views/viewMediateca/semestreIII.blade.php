@@ -34,6 +34,9 @@
 			{{HTML::image('imagenes/mediateca/tbachillerato/imgCentral/literatura.png','Telebachillerato Central',['class'=>' img-responsive iniImgCentro', 'id'=>'LiteraturaICentro'])}}
 			{{HTML::image('imagenes/mediateca/tbachillerato/imgCentral/matematicasI.png','Telebachillerato Central',['class'=>' img-responsive iniImgCentro', 'id'=>'MatematicasIIICentro'])}}
 			{{HTML::image('imagenes/mediateca/tbachillerato/imgCentral/lenguaAdicional.png','Telebachillerato Central',['class'=>' img-responsive iniImgCentro', 'id'=>'LenguaAdicionalIIICentro'])}}
+			{{HTML::image('imagenes/mediateca/tbachillerato/imgCentral/biologia.png','Telebachillerato Central',['class'=>' img-responsive iniImgCentro', 'id'=>'BiologiaICentro'])}}
+			{{HTML::image('imagenes/mediateca/tbachillerato/imgCentral/fisica.png','Telebachillerato Central',['class'=>' img-responsive iniImgCentro', 'id'=>'FisicaICentro'])}}
+			{{HTML::image('imagenes/mediateca/tbachillerato/imgCentral/historiaMexico.png','Telebachillerato Central',['class'=>' img-responsive iniImgCentro', 'id'=>'HistoriaMexicoIICentro'])}}
 			
 			{{HTML::image('imagenes/mediateca/tbachillerato/SemestreIII/imgMapa.png','Telebachillerato',['class'=>'posicionMapa img-responsive', 'id'=>'telebachilleratoSEMIII', 'usemap'=>'#mapaSemIII'])}}
 		</div>
