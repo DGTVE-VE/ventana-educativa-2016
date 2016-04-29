@@ -102,17 +102,18 @@ Educamedia
                     </div>
                 </div>                
                 <div class="col-md-4 pager txtVideosRed" id="custom_controls">
-                    <div class="col-md-12">                    
+                    <div class="col-md-12 ">                    
                         <h5 class="col-md-2">Bloque</h5>
-                        <ul class="col-md-10">
-                            @foreach ($paginacion as $item => $bloquePagina)
-                                <li class="{{ ($item) ? '' : ' active' }}">
-                                    <a href="{{url($url.'/'.$bloquePagina->bloque)}}">
-                                        {{$bloquePagina->bloque}}
-                                    </a>
-                                </li>                        
-                             @endforeach 
-                        </ul>
+                        <div class="col-md-10">
+                        @foreach ($paginacion as $item => $bloquePagina)
+                            <li class="list-inline">                                
+                                <a class="bloqueMed" href="{{url($url.'/'.$bloquePagina->bloque)}}">
+                                    {{$bloquePagina->bloque}}   
+                                </a>                                    
+                            </li>                        
+                            &nbsp;&nbsp;&nbsp;
+                        @endforeach 
+                        </div>
                     </div>    
                     <div class="col-md-12 listVideos">
                         <table class="table table-responsive">                
