@@ -198,46 +198,56 @@
 		
 	/*	---------------------------------------	Sección Usabilidad. Agregar animación de entrada a imagenes 	--------------------------------*/
         $(function(){
-            var elems = $('.estoy-visible');    //elementos que quiero saber si estan en el área visible
-            var winW = $(window).width();       //dimensiones de la ventana
-            var winH = $(window).height();      //dimensiones de la ventana
-            elems.each(function(){
-                var self = $(this);
-				$(this).fadeOut();
-                self.on('esta/visible',function(){
-                    //evento personalizado que crearemos mas abajo, se dispara cuando el elemento está visible
-                    //lo que ponemos aca es lo que queremos hacer si el elemento aparece en pantalla
-                    $(this).fadeIn();
-					$(this).addClass("animated");
-                });
-                self.on('esta/invisible',function(){
-                    //evento personalizado que crearemos mas abajo, se dispara cuando el elemento está FUERA del area visible
-                    //lo que ponemos aca es lo que queremos hacer si el elemento DESAPARECE de la pantalla
-                    //$(this).fadeOut();
-					$(this).removeClass("animated");
-                });
-                
-                //obtenemos las dimensiones de cada elemento y su posicion
-                var self_w = self.outerWidth()/10; //ancho exterior
-                var self_h = self.outerHeight()/10; //alto exterior
-                var self_l = self.offset().left; //coordenada izquierda
-                var self_t = self.offset().top; //coordenada arriba
-                
-                //asignamos un evento a window.scroll(), para cuando se haga scroll
-                //esta parte del script es algo inefectiva. No es bueno si son muchos los elementos a verificar.
-                $(window).scroll(function(){
-                    var scroll_h = this.pageXOffset;
-                    var scroll_v = this.pageYOffset;
-                    //acá verificamos si el elemento está COMPLETAMENTE dentro de las dimensiones de la ventana
-                    if( (self_w + self_l - scroll_h) <= winW && (self_l) >= scroll_h &&
-                        (self_h + self_t - scroll_v) <= winH && (self_t) >= scroll_v ){
-                        self.trigger('esta/visible');
-                    }
-                    else{
-                        self.trigger('esta/invisible');
-                    }
-                });
-            });
+			if(~is_safari){
+				var elems = $('.estoy-visible');    //elementos que quiero saber si estan en el área visible
+				var winW = $(window).width();       //dimensiones de la ventana
+				var winH = $(window).height();      //dimensiones de la ventana
+				elems.each(function(){
+					var self = $(this);
+					$(this).fadeOut();
+					self.on('esta/visible',function(){
+						//evento personalizado que crearemos mas abajo, se dispara cuando el elemento está visible
+						//lo que ponemos aca es lo que queremos hacer si el elemento aparece en pantalla
+						$(this).fadeIn();
+						$(this).addClass("animated");
+					});
+					self.on('esta/invisible',function(){
+						//evento personalizado que crearemos mas abajo, se dispara cuando el elemento está FUERA del area visible
+						//lo que ponemos aca es lo que queremos hacer si el elemento DESAPARECE de la pantalla
+						//$(this).fadeOut();
+						$(this).removeClass("animated");
+					});
+					
+					//obtenemos las dimensiones de cada elemento y su posicion
+					if(is_chrome || is_safari){
+						divideAncho = 2;
+						divideAlto = 2;
+					}
+					else{
+						divideAncho = 10;
+						divideAlto = 10;
+					}
+					var self_w = self.outerWidth()/divideAncho; //ancho exterior
+					var self_h = self.outerHeight()/divideAlto; //alto exterior
+					var self_l = self.offset().left; //coordenada izquierda
+					var self_t = self.offset().top; //coordenada arriba
+					
+					//asignamos un evento a window.scroll(), para cuando se haga scroll
+					//esta parte del script es algo inefectiva. No es bueno si son muchos los elementos a verificar.
+					$(window).scroll(function(){
+						var scroll_h = this.pageXOffset;
+						var scroll_v = this.pageYOffset;
+						//acá verificamos si el elemento está COMPLETAMENTE dentro de las dimensiones de la ventana
+						if( (self_w + self_l - scroll_h) <= winW && (self_l) >= scroll_h &&
+							(self_h + self_t - scroll_v) <= winH && (self_t) >= scroll_v ){
+							self.trigger('esta/visible');
+						}
+						else{
+							self.trigger('esta/invisible');
+						}
+					});
+				});
+			}
         })
 		
 		/*  -------------------------------------    Activar efecto parallax en scroll   -----------------------------------------------*/
