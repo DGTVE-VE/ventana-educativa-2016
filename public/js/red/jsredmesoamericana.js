@@ -243,7 +243,7 @@
 		/*  -------------------------------------    Activar efecto parallax en scroll   -----------------------------------------------*/
 		function parallaxScroll(){
 			var scrolled = $(window).scrollTop();
-			if(is_chrome){
+			if(is_chrome || is_safari){
 				$('#parallaxcarouselSliderHome').css('top',(0+(scrolled*0.3))+'px');
 				$('#parallaxcarouselSliderHome1').css('top',(0+(scrolled*0.3))+'px');
 				$('#parallaxcarouselSliderHome2').css('top',(0+(scrolled*0.3))+'px');
@@ -258,12 +258,17 @@
 		}
 		/*  -------------------------------------    Detectar si navegador es chrome   -----------------------------------------------*/
 		var is_chrome = navigator.userAgent.toLowerCase().indexOf('chrome') > -1;
+		var is_safari = navigator.userAgent.toLowerCase().indexOf('safari') > -1;
 		if(is_chrome){
+			$('.imgSliderHome').css('top','-10'+'px');
+		}
+		else if(is_safari){
 			$('.imgSliderHome').css('top','-10'+'px');
 		}
 		else{
 			$('.imgSliderHome').css('top','110'+'px');
 		}
+		
 		/*
 * rwdImageMaps jQuery plugin v1.5
 *
