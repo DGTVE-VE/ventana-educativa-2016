@@ -47,7 +47,7 @@ Proyectos
 
             <div id="slide-content" style="display: none;">
                 <div  id="slide-content-0">
-                    <h2>1. Primer encuentro </h2>
+                    <h2>1. Primer Encuentro </h2>
                     <p class="justifica-parrafo-proyectos"> El pasado Encuentro de Investigadores, Evaluadores y Técnicos en el Diseño de Recursos
                         Educativos, realizado del 28 al 30 de octubre de 2015, en San José, Costa Rica, tuvo como 
                         objetivo desarrollar líneas estratégicas para la producción de recursos para apoyo del 

@@ -114,6 +114,7 @@ Route::group(['middleware' => 'web'], function () {
     Route::get('redmite/activaCorreo/{correo}/{hash}', 'RedmiteController@activaCorreoNews');
     Route::post('redmite/guardaContacto', 'RedmiteController@guardaContacto');
     Route::get('redmite/admin/integrantes', 'RedmiteController@integrantes');       
-    Route::post('redmite/admin/guardaIntegrantes', 'RedmiteController@guardaIntegrantes');    
+    Route::post('redmite/admin/guardaIntegrantes', 'RedmiteController@guardaIntegrantes');   
+    Route::get('redmite/guardarProyecto', 'RedmiteController@guardarProyecto');
     /*     * **************************REDMITE********************** */
 });

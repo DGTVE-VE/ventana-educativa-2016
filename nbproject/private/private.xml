@@ -3,12 +3,10 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/xampp/htdocs/ventanaEducativa/resources/views/viewRed/blog/list.blade.php</file>
-            <file>file:/C:/xampp/htdocs/ventanaEducativa/public/css/red/estiloredmesoamericana.css</file>
-            <file>file:/C:/xampp/htdocs/ventanaEducativa/resources/views/viewMediateca/videos.blade.php</file>
-            <file>file:/C:/xampp/htdocs/ventanaEducativa/resources/views/viewMediateca/videosTelebachillerato.blade.php</file>
-            <file>file:/C:/xampp/htdocs/ventanaEducativa/resources/views/viewRed/blog/show.blade.php</file>
-            <file>file:/C:/xampp/htdocs/ventanaEducativa/resources/views/viewRed/paginaareastematicas.blade.php</file>
+            <file>file:/C:/xampp/htdocs/ventanaEducativa/app/Http/routes.php</file>
+            <file>file:/C:/xampp/htdocs/ventanaEducativa/resources/views/viewRed/frmusuarios.blade.php</file>
+            <file>file:/C:/xampp/htdocs/ventanaEducativa/app/Http/Controllers/RedmiteController.php</file>
+            <file>file:/C:/xampp/htdocs/ventanaEducativa/public/css/mediateca/estilomediateca3.css</file>
         </group>
     </open-files>
 </project-private>
