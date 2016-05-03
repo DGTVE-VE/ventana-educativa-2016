@@ -44,6 +44,7 @@ Route::group(['middleware' => 'web'], function () {
 
     Route::get('verificaCorreo/{correo}/{hash}', 'VentanaController@activaCorreo');
     Route::get('registro', 'VentanaController@registro');
+    Route::get('acceso', 'VentanaController@acceso');
     Route::get('presentacion', 'VentanaController@presentacion');
     Route::post('registraUsuario', 'VentanaController@registraUsuario');
     Route::get('correoEnviado', 'VentanaController@correoEnviado');

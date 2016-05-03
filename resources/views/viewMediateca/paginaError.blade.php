@@ -1,3 +1,11 @@
+@section('titleVentana')
+Ventana Educativa
+@stop
+@extends('indexVentana')
+@section('menuVentana')
+@include('viewVentana.encabezadoVentana')
+@endsection
+@section('cuerpoVentana')
 <div class="container">
     <br/><br/>
     <div class="thumbnail color-fondo-error"> <br/><br/>
@@ -10,4 +18,5 @@
         </div>
     </div>
 </div>
+@endsection
 

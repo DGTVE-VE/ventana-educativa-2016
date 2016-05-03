@@ -56,7 +56,7 @@ Publicaciones
                                 <ul class="list-group list-group-flush text-center">
                                     <li class="list-group-item text-justify">Título: Foro Interregional de investigación sobre EVA</li>
                                     <li class="list-group-item text-justify">Autor: Rubén Edel Navarro, Manuel Juarez Pacheco, Yadira Navarro Rangel, María Soledad Ramírez Montoya </li>
-                                    <li class="list-group-item text-justify">Categoría: Redes Academicas y Tecnologicas</li>
+                                    <li class="list-group-item text-justify">Categoría: Redes Académicas y Tecnológicas</li>
                                     <li class="list-group-item text-justify"><a href="{{url('publicacionesRed/mexico/forointerregionalinvestigacionsobreeva.pdf')}}" download="foroInterRegionalInvEVA.pdf">
                                             Material de descarga</a></li>
                                 </ul>
@@ -97,7 +97,7 @@ Publicaciones
                                     {{ HTML::image('publicacionesRed/mexico/imagenesthumbnails/mexico05.jpg','usabilidad pedagogica', array('class'=>'image-responsive tamaho-thumbnail-publicaciones'))}}
                                 </a>
                                 <ul class="list-group list-group-flush text-center">
-                                    <li class="list-group-item text-justify">Título: Usabilidad Pedagogica de las TIC</li>
+                                    <li class="list-group-item text-justify">Título: Usabilidad Pedagógica de las TIC</li>
                                     <li class="list-group-item text-justify">Autor: Brenda Luz Colorado Aguilar,Rubén Edel Navarro</li>
                                     <li class="list-group-item text-justify">Categoría: Tecnologías de la Información y Comunicación</li>
                                     <li class="list-group-item text-justify"><a href="{{url('publicacionesRed/mexico/usabilidadpedagogicatic.pdf')}}" download="usabilidadPedagogicaTIC.pdf">
@@ -275,7 +275,7 @@ Publicaciones
                                 <ul class="list-group list-group-flush text-center">
                                     <li class="list-group-item text-justify">Título: Foro Interregional de investigación sobre EVA</li>
                                     <li class="list-group-item text-justify">Autor: Rubén Edel Navarro, Manuel Juarez Pacheco, Yadira Navarro Rangel, María Soledad Ramírez Montoya </li>
-                                    <li class="list-group-item text-justify">Categoría: Redes Academicas y Tecnologicas</li>
+                                    <li class="list-group-item text-justify">Categoría: Redes Académicas y Tecnológicas</li>
                                     <li class="list-group-item text-justify"><a href="{{url('publicacionesRed/mexico/forointerregionalinvestigacionsobreeva.pdf')}}" download="foroInterRegionalInvEVA.pdf">
                                             Material de descarga</a></li>
                                 </ul>
@@ -286,7 +286,7 @@ Publicaciones
                                     {{ HTML::image('publicacionesRed/mexico/imagenesthumbnails/mexico03.jpg','modelos educativos', array('class'=>'image-responsive tamaho-thumbnail-publicaciones'))}}
                                 </a>
                                 <ul class="list-group list-group-flush text-center">
-                                    <li class="list-group-item text-justify">Título: Los modelos TecnoEducativos</li>
+                                    <li class="list-group-item text-justify">Título: Los modelos Tecno-Educativos</li>
                                     <li class="list-group-item text-justify">Autor: Ismael Esquivel Gómez</li>
                                     <li class="list-group-item text-justify">Categoría: Aprendizaje del siglo XXI</li>
                                     <li class="list-group-item text-justify"><a href="{{url('publicacionesRed/mexico/modelostecnoeducativos.pdf')}}" download="modelosTecnoEducativos.pdf">
@@ -316,7 +316,7 @@ Publicaciones
                                     {{ HTML::image('publicacionesRed/mexico/imagenesthumbnails/mexico05.jpg','usabilidad pedagogica', array('class'=>'image-responsive tamaho-thumbnail-publicaciones'))}}
                                 </a>
                                 <ul class="list-group list-group-flush text-center">
-                                    <li class="list-group-item text-justify">Título: Usabilidad Pedagogica de las TIC</li>
+                                    <li class="list-group-item text-justify">Título: Usabilidad Pedagógica de las TIC</li>
                                     <li class="list-group-item text-justify">Autor: Brenda Luz Colorado Aguilar,Rubén Edel Navarro</li>
                                     <li class="list-group-item text-justify">Categoría: Tecnologías de la Información y Comunicación</li>
                                     <li class="list-group-item text-justify"><a href="{{url('publicacionesRed/mexico/usabilidadpedagogicatic.pdf')}}" download="usabilidadPedagogicaTIC.pdf">
