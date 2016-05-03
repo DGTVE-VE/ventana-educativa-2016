@@ -22,16 +22,16 @@ and open the template in the editor.
         <!--	-------------------------- Fuentes de google fonts ------------------------------------		-->
         <link href='https://fonts.googleapis.com/css?family=Ubuntu:400,300,500,700' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Oxygen">
-        
+
         <link rel="stylesheet" href="{{ asset('css/red/ihover.css') }}" >
         <link rel="stylesheet" href="{{ asset('css/red/animate.css') }}" >        
-        
+
         <!--	-------------------------- Estilos para encabezado ------------------------------------		-->
         <link rel="stylesheet" href="{{ asset('css/mediateca/estilomediateca2.css') }}" >
-        
+
         <!--	-------------------------- Estilos para menus de Telesecundaria, Telebachillerato y redes sociales-->
         <link rel="stylesheet" href="{{ asset('css/mediateca/estilomediateca3.css') }}" >
-        
+
         @yield ('estilos')
 
         <!-- jQuery library -->
@@ -39,9 +39,9 @@ and open the template in the editor.
 
         <!-- Latest compiled JavaScript -->
         <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-        
+
         @yield ('scripts')
-      
+
     </head>
     <body style="background-image:url('{{ asset('imagenes/mediateca/background/backgroundAzul.jpg') }}');">     
         <header>
@@ -56,3 +56,21 @@ and open the template in the editor.
     </body>
 </html>
 
+<!--        Script para Google Analytics de la red Mesoamericana	-->
+<script>
+(function (i, s, o, g, r, a, m) {
+    i['GoogleAnalyticsObject'] = r;
+    i[r] = i[r] || function () {
+        (i[r].q = i[r].q || []).push(arguments)
+    }, i[r].l = 1 * new Date();
+    a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0];
+    a.async = 1;
+    a.src = g;
+    m.parentNode.insertBefore(a, m)
+})(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+ga('create', 'UA-75232922-1', 'auto');
+ga('send', 'pageview');
+
+</script>
