@@ -1,3 +1,10 @@
+	<?php 
+		/*$integrantes = DB::connection('mysqlVentana')->select('select * from red_colaboradores');
+		foreach($integrantes as $integrante){
+			echo $integrante->area;
+			echo '<br>';
+		}*/
+	?>
 <div class="row parallax-window" data-parallax="scroll" data-image-src= {{url('imagenes/red/integrantes/gradiente.jpg')}} speed="0.3">
     <div class="col-md-12 fondo_Obscuro">
         <div class="col-md-12 text-center text-uppercase">

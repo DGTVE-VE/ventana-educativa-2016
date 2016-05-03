@@ -49,10 +49,7 @@ Educamedia
 	<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center" style="padding:4%">
 	</div>
 	<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center textoTitulo txtVideosRed">
-		<p><?php
-			generaBreadCrumbs();
-		?>
-		</p><br>
+		<p>{{ generaBreadCrumbs() }}</p><br>
 	</div>
     <div class="row">
     <div class="col-md-1"></div>
