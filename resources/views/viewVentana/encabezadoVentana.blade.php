@@ -170,6 +170,14 @@
                                             <a id="link-cambia-avatar" style="color: white; font-weight: bold;" >Cambiar avatar</a>
                                         </div>
                                         <div>
+                                                                                        <!--link para abrir formulario de registro de integrante de la RedMITE-->
+                                            @if (Auth::user()->is_researcher)
+                                            <div class="col-md-12 text-center">
+                                                <a href="{{url('redmite/admin/integrantes')}}" tabindex="5" style="color: #00B6F1; font-weight: bold;" class="forgot-password">
+                                                    Registro integrante RedMITE
+                                                </a>
+                                            </div>
+                                            @endif
                                             <hr id="line">
                                             <!--<a id="link-cambia-avatar" href="#" tabindex="5" style="color: white;" class="forgot-password">Cambiar imagen</a>-->
                                             <div id="form-avatar" class="hidden center-block" style="color: white;">

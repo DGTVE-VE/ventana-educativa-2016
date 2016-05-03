@@ -1,7 +1,9 @@
 @extends ('indexRed')
 {{HTML::script('js/bootstrap-tagsinput.min.js')}}
 {{HTML::style('css/bootstrap-tagsinput.css')}}
+@section('menuRedmite')
 @include ('viewRed.seccionheader')
+@endsection
 @section ('cuerpoRedmite')
 <div class="row">
 <div class='col-md-3'></div>
