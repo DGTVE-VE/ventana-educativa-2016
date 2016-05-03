@@ -122,6 +122,60 @@
 		.contenedorLinea4{
 			font-size:6px; width:170px; position:absolute; top:360px; left:300px;
 		}
+		.imgTexto1{
+			width:270px; height:52px; position:absolute; top:-30px; left:-265px;
+		}
+		.imgTexto2{
+			width:300px; height:71px; position:absolute; top:220px; left:-310px;
+		}
+		.imgTexto3{
+			width:300px; height:56px; position:absolute; top:25%; left:98%;
+		}
+		.imgTexto4{
+			width:270px; height:58px; position:absolute; top:95%; left:90%;
+		}
+	}
+	@media(min-width:1440px){
+		.imgTexto1{
+			width:270px; height:52px; position:absolute; top:-30px; left:-265px;
+		}
+		.imgTexto2{
+			width:300px; height:71px; position:absolute; top:220px; left:-310px;
+		}
+		.imgTexto3{
+			width:300px; height:56px; position:absolute; top:25%; left:85%;
+		}
+		.imgTexto4{
+			width:270px; height:58px; position:absolute; top:85%; left:80%;
+		}
+	}
+	@media(min-width:1600px){
+		.imgTexto1{
+			width:270px; height:52px; position:absolute; top:-30px; left:-265px;
+		}
+		.imgTexto2{
+			width:300px; height:71px; position:absolute; top:220px; left:-310px;
+		}
+		.imgTexto3{
+			width:300px; height:56px; position:absolute; top:25%; left:80%;
+		}
+		.imgTexto4{
+			width:270px; height:58px; position:absolute; top:85%; left:80%;
+		}
+	}
+	@media(min-width:2000px){
+		.imgTexto1{
+			width:270px; height:52px; position:absolute; top:-30px; left:-265px;
+		}
+		.imgTexto2{
+			width:300px; height:71px; position:absolute; top:220px; left:-310px;
+		}
+		.imgTexto3{
+			width:300px; height:56px; position:absolute; top:25%; left:63%;
+		}
+		.imgTexto4{
+			width:270px; height:58px; position:absolute; top:85%; left:60%;
+		}
 	}
 </style>
 <div class="row fondo_Obscuro">
@@ -175,11 +229,11 @@
         </div>
         <div class="hidden-xs hidden-sm text-justify">
             <!--p>Formación y/o actualización de docentes de acuerdo con los saberes digitales básicos propuestos (pertinencia y cultura digital, saberes informáticos, informacionales y de comunicación, diseño de recursos).</p-->
-            {{ HTML::image('imagenes/red/ModeloUsabilidad/texto3-01.png','texto03', array('id'=>'txtSaberesDig','class'=>'estoy-visible slideInLeft imgTexto3'))}}
+            {{ HTML::image('imagenes/red/ModeloUsabilidad/texto3-01.png','texto03', array('id'=>'txtSaberesDig','class'=>'estoy-visible slideInRight imgTexto3'))}}
         </div>
         <div class="hidden-xs hidden-sm text-justify">
             <!--p>Diseño del proceso de apropiación e incorporación de la tecnología como parte del contexto educativo del docente.</p-->
-            {{ HTML::image('imagenes/red/ModeloUsabilidad/texto4-01.png','texto04', array('id'=>'txtApropiacion','class'=>'estoy-visible slideInLeft imgTexto4'))}}
+            {{ HTML::image('imagenes/red/ModeloUsabilidad/texto4-01.png','texto04', array('id'=>'txtApropiacion','class'=>'estoy-visible slideInRight imgTexto4'))}}
         </div>
         <!-- ------------------------------------		resolucion pequeña Lineas		------------------------------------------------- -->
         <div class="visible-sm-block text-justify" style="font-size:6px; width:120px; position:absolute; top:10px; left:75px;">
@@ -189,10 +243,10 @@
             {{ HTML::image('imagenes/red/ModeloUsabilidad/nodo2-01.png','nodo2', array('class'=>'estoy-visible slideInLeft img-responsive'))}}
         </div>
         <div class="visible-sm-block text-justify" style="font-size:6px; width:120px; position:absolute; top:170px; left:415px;">
-            {{ HTML::image('imagenes/red/ModeloUsabilidad/nodo3-01.png','nodo3', array('class'=>'estoy-visible slideInLeft img-responsive'))}}
+            {{ HTML::image('imagenes/red/ModeloUsabilidad/nodo3-01.png','nodo3', array('class'=>'estoy-visible slideInRight img-responsive'))}}
         </div>
         <div class="visible-sm-block text-justify" style="font-size:6px; width:150px; position:absolute; top:360px; left:300px;">
-            {{ HTML::image('imagenes/red/ModeloUsabilidad/nodo4-01.png','nodo4', array('class'=>'estoy-visible slideInLeft img-responsive'))}}
+            {{ HTML::image('imagenes/red/ModeloUsabilidad/nodo4-01.png','nodo4', array('class'=>'estoy-visible slideInRight img-responsive'))}}
         </div>
         <!-- ------------------------------------		resolucion grande Lineas 		------------------------------------------------- -->
         <div class="hidden-xs hidden-sm text-justify contenedorLinea1">
@@ -202,10 +256,10 @@
             {{ HTML::image('imagenes/red/ModeloUsabilidad/nodo2-01.png','nod02', array('class'=>'estoy-visible slideInLeft img-responsive'))}}
         </div>
         <div class="hidden-xs hidden-sm text-justify contenedorLinea3">
-            {{ HTML::image('imagenes/red/ModeloUsabilidad/nodo3-01.png','nod03', array('class'=>'estoy-visible slideInLeft img-responsive', 'style'=>'float:left;'))}}
+            {{ HTML::image('imagenes/red/ModeloUsabilidad/nodo3-01.png','nod03', array('class'=>'estoy-visible slideInRight img-responsive', 'style'=>'float:left;'))}}
         </div>
         <div class="hidden-xs hidden-sm text-justify contenedorLinea4">
-            {{ HTML::image('imagenes/red/ModeloUsabilidad/nodo4-01.png','nod04', array('class'=>'estoy-visible slideInLeft img-responsive', 'style'=>'float:left;'))}}
+            {{ HTML::image('imagenes/red/ModeloUsabilidad/nodo4-01.png','nod04', array('class'=>'estoy-visible slideInRight img-responsive', 'style'=>'float:left;'))}}
         </div>
     </div>
     <div class="col-xs-9 col-sm-2 col-md-3 col-lg-3" style="height:550px;">
@@ -223,21 +277,21 @@
         <div class="visible-xs-block text-justify" style="width:210px;  position: relative; top:70px;">
             <p class="visible-xs-block text-uppercase">Saberes Digitales Básicos</p>
             <!--p>Formación y/o actualización de docentes de acuerdo con los saberes digitales básicos propuestos (pertinencia y cultura digital, saberes informáticos, informacionales y de comunicación, diseño de recursos).</p-->
-            {{ HTML::image('imagenes/red/ModeloUsabilidad/texto3-01.png','tex03', array('class'=>'estoy-visible slideInLeft img-responsive'))}}
+            {{ HTML::image('imagenes/red/ModeloUsabilidad/texto3-01.png','tex03', array('class'=>'estoy-visible slideInRight img-responsive'))}}
         </div>
         <div class="visible-xs-block text-justify" style="width:210px;  position: relative; top:100px;">
             <p class="visible-xs-block text-uppercase">Apropiación e Incorporación Educativa</p>
             <!--p>Diseño del proceso de apropiación e incorporación de la tecnología como parte del contexto educativo del docente.</p-->
-            {{ HTML::image('imagenes/red/ModeloUsabilidad/texto4-01.png','tex04', array('class'=>'estoy-visible slideInLeft img-responsive'))}}
+            {{ HTML::image('imagenes/red/ModeloUsabilidad/texto4-01.png','tex04', array('class'=>'estoy-visible slideInRight img-responsive'))}}
         </div>
         <!--	-------------------------------		Resolucion pequeña Texto	------------------------	-->
         <div class="visible-sm-block text-justify" style="width:270px; position: relative; top:-50px; left:-170px;">
             <!--p>Formación y/o actualización de docentes de acuerdo con los saberes digitales básicos propuestos (pertinencia y cultura digital, saberes informáticos, informacionales y de comunicación, diseño de recursos).</p-->
-            {{ HTML::image('imagenes/red/ModeloUsabilidad/texto3-01.png','text01', array('class'=>'estoy-visible slideInLeft img-responsive'))}}
+            {{ HTML::image('imagenes/red/ModeloUsabilidad/texto3-01.png','text01', array('class'=>'estoy-visible slideInRight img-responsive'))}}
         </div>
         <div class="visible-sm-block text-justify" style="width:270px; position:relative; top:400px; left: -200px;">
             <!--p>Diseño del proceso de apropiación e incorporación de la tecnología como parte del contexto educativo del docente.</p-->
-            {{ HTML::image('imagenes/red/ModeloUsabilidad/texto4-01.png','text04', array('class'=>'estoy-visible slideInLeft img-responsive'))}}
+            {{ HTML::image('imagenes/red/ModeloUsabilidad/texto4-01.png','text04', array('class'=>'estoy-visible slideInRight img-responsive'))}}
         </div>
 
     </div>

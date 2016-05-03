@@ -41,7 +41,6 @@ and open the template in the editor.
 		<script src="js/parallax.js-1.4.2/parallax.min.js"></script>
 
         @yield('header')
-
     </head>
     <body id="pag_principal" style="padding:0px; overflow-x:hidden">     
 		<!--        Script para Google Analytics de la red Mesoamericana	-->
