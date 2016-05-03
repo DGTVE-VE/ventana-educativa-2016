@@ -50,6 +50,10 @@ class RedmiteController extends Controller {
         return view('viewRed/correoValidado');
     }
 
+    public function guardarProyecto(){
+        return view('viewRed/frmproyectos');
+    }
+    
     public function guardaCorreoNewsLetter() {
 
         $news = new \App\Model\Red\News();
