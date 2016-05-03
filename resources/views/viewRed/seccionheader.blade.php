@@ -151,20 +151,20 @@
                     </ul>
                 </li>
                 <li class="text-uppercase fondoMenu"><a href="{{url('redmite/publicaciones')}}">PUBLICACIONES</a></li>
-                <li class="text-uppercase fondoMenu"><a href="{{url('redmite/contacto')}}">CONTACTO</a></li>
-				<li class="text-uppercase fondoMenu"><div class="col-md-5" style="position: relative; top:15px;"><a href="{{url('redmite/blog')}}">BLOG</a></div>
+				<li class="text-uppercase fondoMenu"><div class="col-md-5 fondoMenu" style="position: relative; top:15px;"><a href="{{url('redmite/blog')}}">BLOG</a></div>
 				@if (Auth::guest ())
 				@else
 					@if (Auth::user()->is_researcher)
 					<div class="col-md-2 text-center" style="position: relative; top:15px;">
 						<a href="#" class="dropdown-toggle text-uppercase fondoMenu" data-toggle="dropdown"><b class="caret"></b></a>
 							<ul class="dropdown-menu yamm-fw">
-								<a href="{{url('redmite/blog/create')}}"> Agregar Publicacion </a>
+								<li class="text-uppercase fondoMenu"><a href="{{url('redmite/blog/create')}}"> Agregar Publicacion </a></li>
 							</ul>
 					</div>
 					@endif
 				@endif
 				</li>
+				<li class="text-uppercase fondoMenu"><a href="{{url('redmite/contacto')}}">CONTACTO</a></li>
             </ul>
         </div>
     </div>
