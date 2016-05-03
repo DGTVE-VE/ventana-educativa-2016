@@ -88,7 +88,6 @@
                 <span class="icon-bar"></span>
             </button>
             <a class="navbar-brand" href="{{url('redmite')}}">
-                    <!--<img class="img-responsive subeHorizontal" src="imagenes/red/LogoRed/logoredmesoamericana.png" alt="Logo Red Mesoamericana"/>-->
                 {{ HTML::image('imagenes/red/LogoRed/logoredmesoamericana.png','Logo Red Mesoamericana', array('class'=>'image-responsive subeHorizontal'))}}
             </a>
         </div>
@@ -104,7 +103,6 @@
                             <ul>
                                 <li class="dropdown-header text-center"><h3>INNTEDU 2016</h3></li>
                                 <div class="col-md-2">
-                                    <!--<img class="image-responsive" src="imagenes/red/eventos/logoinntedu.jpg">-->
                                     {{ HTML::image('imagenes/red/eventos/logoinntedu.jpg','Logo tedu', array('class'=>'image-responsive'))}}
 
                                 </div>
@@ -154,7 +152,7 @@
                 </li>
                 <li class="text-uppercase fondoMenu"><a href="{{url('redmite/publicaciones')}}">PUBLICACIONES</a></li>
                 <li class="text-uppercase fondoMenu"><a href="{{url('redmite/contacto')}}">CONTACTO</a></li>
-				<!--li class="text-uppercase fondoMenu"><a href="{{url('redmite/blog')}}">BLOG</a></li-->
+				<li class="text-uppercase fondoMenu"><a href="{{url('redmite/blog')}}">BLOG</a></li>
             </ul>
         </div>
     </div>

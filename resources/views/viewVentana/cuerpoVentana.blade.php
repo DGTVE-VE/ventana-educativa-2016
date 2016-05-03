@@ -101,8 +101,7 @@
                 <area shape="poly" coords="0,0,570,0,0,548" onmouseover="cambiaImgFoto('05')" onmouseout="cambiaImgCubo('05')" href="#"/>
                 <area shape="poly" coords="0,548,548,1160,0,1160" onmouseover="cambiaImgFoto('06')" onmouseout="cambiaImgCubo('06')" href="#"/>
                 <area shape="poly" coords="548,0,1160,0,1160,548" onmouseover="cambiaImgFoto('08')" onmouseout="cambiaImgCubo('08')" href="http://formacioncontinua.sep.gob.mx/" target="_blank"/>
-                <area shape="poly" coords="548,1160,1160,548,1160,1160" onmouseover="cambiaImgFoto('09')" onmouseout="cambiaImgCubo('09')" href="#"/>
-				<!--area shape="poly" coords="548,1160,1160,548,1160,1160" onmouseover="cambiaImgFoto('09')" onmouseout="cambiaImgCubo('09')" href="{{url('educamedia')}}"/-->
+				<area shape="poly" coords="548,1160,1160,548,1160,1160" onmouseover="cambiaImgFoto('09')" onmouseout="cambiaImgCubo('09')" href="{{url('educamedia')}}"/>
             </map>
             <a href="{{url('presentacion')}}">
                 {{HTML::image('imagenes/ventana/iconoSeccion/ventanaBco.png','Ventana Educativa',['id'=>'iconoRombo07','class'=>'imgColor iconoVentana','onmouseover'=>'cambiaImgFoto("07")','onmouseout'=>'cambiaImgCubo("07")'])}}
@@ -116,15 +115,13 @@
                 <area shape="poly" coords="440,1040,1040,520,1040,1040" onmouseover="cambiaImgFoto('10')" onmouseout="cambiaImgCubo('10')" href="{{url('redmite')}}"/>
             </map>
             <map name="mapacubo9" id="mapacubo9">
-                <area shape="poly" coords="0,488,488,0,1020,500,510,1020" onmouseover="cambiaImgFoto('09')" onmouseout="cambiaImgCubo('09')" href="#"/>
-				<!--area shape="poly" coords="0,488,488,0,1020,500,510,1020" onmouseover="cambiaImgFoto('09')" onmouseout="cambiaImgCubo('09')" href="{{url('educamedia')}}"/-->
+				<area shape="poly" coords="0,488,488,0,1020,500,510,1020" onmouseover="cambiaImgFoto('09')" onmouseout="cambiaImgCubo('09')" href="{{url('educamedia')}}"/>
                 <area shape="poly" coords="516,0,1030,0,1030,500" onmouseover="cambiaImgFoto('10')" onmouseout="cambiaImgCubo('10')" href="{{url('redmite')}}"/>
             </map>
             <a href="http://formacioncontinua.sep.gob.mx/" target="_blank">
                 {{HTML::image('imagenes/ventana/iconoSeccion/docentes.png','Docentes',['id'=>'iconoRombo08','class'=>'imgColor oculta difumina Intervalo1 slideInRight iconoDocentes','onmouseover'=>'cambiaImgFoto("08")','onmouseout'=>'cambiaImgCubo("08")'])}}
             </a>
             <a href="{{url('educamedia')}}">
-			<a href="#">
                 {{HTML::image('imagenes/ventana/iconoSeccion/mediateca.png','Mediateca',['id'=>'iconoRombo09','class'=>'imgColor oculta difumina Intervalo1 slideInRight iconoMediateca','onmouseover'=>'cambiaImgFoto("09")','onmouseout'=>'cambiaImgCubo("09")'])}}
             </a>
         </div>
@@ -213,12 +210,10 @@
                     <td>
                         {{HTML::image('imagenes/ventana/homeventana/FOTO-09.png','Mediateca',['id'=>'CUBOSM09','class'=>'imgColor oculta difumina Intervalo1 slideInRight foto9','usemap'=>'#mapacubosm09'])}}
                         <map name="mapacubosm09" id="mapacubosm09">
-                            <!--area shape="poly" coords="0,488,488,0,1020,500,510,1020" href="{{url('educamedia')}}"/-->
-							<area shape="poly" coords="0,488,488,0,1020,500,510,1020" href="#"/>
-                            <area shape="poly" coords="516,0,1030,0,1030,500" href="http://redmite.televisioneducativa.gob.mx/"/>
+                            <area shape="poly" coords="0,488,488,0,1020,500,510,1020" href="{{url('educamedia')}}"/>
+	                        <area shape="poly" coords="516,0,1030,0,1030,500" href="http://redmite.televisioneducativa.gob.mx/"/>
                         </map>
-                        <a href="#">
-						<!--a href="{{url('educamedia')}}"-->
+						<a href="{{url('educamedia')}}">
                             {{HTML::image('imagenes/ventana/iconoSeccion/mediateca.png','Mediateca',['id'=>'iconoRombo09','class'=>'imgColor oculta difumina Intervalo1 slideInRight iconoFoto9'])}}
                         </a>
                     </td>
