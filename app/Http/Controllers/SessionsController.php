@@ -14,7 +14,7 @@ use Illuminate\Support\Facades\Session;
 class SessionsController extends Controller
 {
     public function create (){
-        return Redirect::to ('ventana_educativa');
+        return Redirect::to ('acceso');
     }
     
     public function store (){
@@ -27,8 +27,7 @@ class SessionsController extends Controller
     
     public function destroy (){
         Auth::logout ();
-        return Redirect::route ('sessions.create');
+        return Redirect::back ();
     }
-    public function test (Request $request){        
-    }
+    
 }
