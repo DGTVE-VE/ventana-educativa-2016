@@ -15,6 +15,18 @@ use DB;
 
 class MediatecaController extends Controller {
 
+     public function __construct() {
+        
+        $this->middleware('auth', 
+            ['only' => ['getVideosTelesecundaria', 
+                        'guardaRating', 
+                        'getVideosTelebachillerato', 
+                        'storeTelesecundariaComment',
+                        'telesecundariaComments',
+                        'storeTelebachilleratoComment',
+                        'telebachilleratoComments']]);
+    }
+    
     public function mediateca() {
         return view('viewMediateca/mediateca');
     }

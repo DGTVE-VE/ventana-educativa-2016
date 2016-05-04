@@ -11,9 +11,15 @@ use App\Http\Controllers\Controller;
 use App\Model\Red\Colaborador;
 use App\User;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Input;
 
 class RedmiteController extends Controller {
 
+    public function __construct() {
+        
+        $this->middleware('auth', ['only' => ['integrantes', 'guardaIntegrantes']]);
+    }
+    
     public function redmite() {
         return view('viewRed/redmite');
     }
@@ -96,25 +102,89 @@ class RedmiteController extends Controller {
     }
 
     public function integrantes() {
-        return view('viewRed/adminRed/frmregistroIntegrante');
+        if (Auth::user()->is_researcher ){
+            return view('viewRed/adminRed/frmregistroIntegrante');
+        } else {
+            abort(401, 'Unauthorized action.');
+        }
     }
 
-    public function guardaIntegrantes() {        
-        $user = Colaborador::find(Auth::user()->id);
-        if (is_null($user)){
-            return redirect('integrantes')->with('message','El usuario ya esta registrado');
-        } else{
+    public function guardaIntegrantes(Request $request) {        
+        
+        var_dump ($_FILES);
+        
         $colaborador = new Colaborador();
-            $user_id = Auth::user()->id;
-            $url_foto = filter_input(INPUT_POST, 'url_foto');
-            $puesto = filter_input(INPUT_POST, 'puesto');
-            $area = filter_input(INPUT_POST, 'area');
-            $dependencia = filter_input(INPUT_POST, 'dependencia');
-            $resena = filter_input(INPUT_POST, 'resena');
-            $colabora = filter_input(INPUT, 'colabora');
-            $colaborador->save();
-            return redirect('integrantes')->with('message','Ahora eres parte de la Red podrás publicar y descargar material');
-        }       
+        $colaborador->user_id = Auth::user()->id;            
+        $colaborador->puesto = filter_input(INPUT_POST, 'puesto');
+        $colaborador->area = filter_input(INPUT_POST, 'area');
+        $colaborador->dependencia = filter_input(INPUT_POST, 'dependencia');
+        $colaborador->resena = filter_input(INPUT_POST, 'resena');            
+        $colaborador->save();
+        $colaborador->url_foto = $this->storeImage ($request, $colaborador->id);
+        $colaborador->save();
+        return redirect('redmite/admin/integrantes')->with('message','Ahora eres parte de la Red podrás publicar y descargar material');
+
     }
 
+    public function storeImage ($request, $id){
+        $file = $request->file('imagen');  
+//        $v = Input::file('imagen');
+//        var_dump ($v);
+        if (Input::file('imagen')->isValid()) {            
+            $targetFile = 'uploaded/redmite/integrantes/'.$id.'.png';  
+            $this->resize($targetFile, Input::file('imagen')->getRealPath());            
+            return $targetFile;
+        } else {           
+            Log::error ('La imagen no es valida para subir: '.$file->getClientOriginalName());
+            return null;
+        }
+    }
+    
+    private function newImage ($originalFile){
+        $info = getimagesize($originalFile);
+        $mime = $info['mime'];
+        switch ($mime) {
+            case 'image/jpeg':
+                $img = imagecreatefromjpeg($originalFile);                
+                break;
+
+            case 'image/png':
+                $img = imagecreatefrompng($originalFile);                
+                break;
+
+            case 'image/gif':
+                $img = imagecreatefromgif($originalFile);                
+                break;
+
+            default:
+                throw new Exception('Unknown image type.');
+        }
+        
+        return $img;
+    }
+    /* ANCHO Y ALTO DE LAS FOTOS DE LOS INTEGRANTES DE LA RED*/
+    public $widthImage = 150;
+    public $heigtImage = 150;
+    
+    private function resize($targetFile, $originalFile) {        
+        $img = $this->newImage ($originalFile);        
+        list($width, $height) = getimagesize($originalFile);
+        
+        $tmp = imagecreatetruecolor($this->widthImage, $this->heigtImage);        
+      
+        imagecopyresampled($tmp, $img, 
+                0,              //dst_x
+                0,              //dst_y
+                0,              //src_x
+                0,              //src_y
+                $this->widthImage,      //dst_w
+                $this->heigtImage,     //dst_h  
+                $width,         //src_w
+                $height);       //src_h
+
+        if (file_exists($targetFile)) {
+            unlink($targetFile);
+        }
+        imagepng ($tmp, $targetFile);
+    }
 }
