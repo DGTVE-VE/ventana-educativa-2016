@@ -37,22 +37,60 @@
                 <div id="carouselMexico" class="carousel slide" data-ride="carousel">
                     <!-- Indicators -->
                     <ol class="carousel-indicators" style="top:120%;">
+					<?php
+					/*	Llenar info de colaboradores de méxico desde base de datos*/
+						/*$consultaMX = "SELECT users.name, red_colaboradores.url_foto, red_colaboradores.puesto, red_colaboradores.resena, red_colaboradores.area FROM red_colaboradores INNER JOIN users ON red_colaboradores.user_id = users.id WHERE users.pais = 'MX'";
+						$integrantes = DB::connection('mysqlVentana')->select($consultaMX);
+						for($i=0;$i<count($integrantes);$i++){
+							echo '<li data-target="#carouselMexico" data-slide-to="'.$i.'" class="active"></li>';
+						}*/
+					?>
                         <li data-target="#carouselMexico" data-slide-to="0" class="active"></li>
                         <li data-target="#carouselMexico" data-slide-to="1" class="active"></li>
                         <li data-target="#carouselMexico" data-slide-to="2" class="active"></li>
                         <li data-target="#carouselMexico" data-slide-to="3" class="active"></li>
                         <li data-target="#carouselMexico" data-slide-to="4" class="active"></li>                        
-                        <li data-target="#carouselMexico" data-slide-to="5" class="active"></li>  
+                        <li data-target="#carouselMexico" data-slide-to="5" class="active"></li>
                     </ol>
                     <!-- Wrapper for slides -->
                     <div class="carousel-inner carousel-innerInt">
                         <!-- Integrante 1 -->
-                        <div class="item active">
-                            <div class="col-md-12 text-center">
-                                <!--<img  src="imagenes/red/integrantes/fotos/mexico/RubenEdel.png" alt="...">-->
-                                {{ HTML::image('imagenes/red/integrantes/fotos/mexico/RubenEdel.png','Colaborador México 1')}}                            </div>
-                            <div class="col-md-12 carousel-caption carousel-captionInt">
-                                <h3>Rubén Edel Navarro</h3>
+						<?php
+							/*$primerElem = true;
+							foreach($integrantes as $integrante){
+								if($primerElem){
+									echo '<div class="item active">';
+									$primerElem = false;
+								}else{
+									echo '<div class="item">';
+								}
+									echo '<div class="col-md-12 text-center">';
+						?>
+											{{ HTML::image('imagenes/red/integrantes/fotos/mexico/RubenEdel.png','Colaborador México 1')}}
+						<?php
+									echo '</div>';
+									echo '<div class="col-md-12 carousel-caption carousel-captionInt">';
+										echo '<h3>'.$integrante->name.'</h3>';
+										echo '<h4>'.$integrante->puesto.'<br>';
+										echo $integrante->area.'</h4>';
+										echo '<div class="row">';
+											echo '<div class="col-md-1"></div>';
+											echo '<div class="col-md-10">';
+												echo '<p class="text-justify">'.$integrante->resena.'</p>';
+											echo '</div>';
+											echo '<div class="col-md-1"></div>';
+										echo '</div>';
+									echo '</div>';
+								echo '</div>';
+							}*/
+						?>
+                            
+						<div class="item active">
+							<div class="col-md-12 text-center">
+								{{ HTML::image('imagenes/red/integrantes/fotos/mexico/RubenEdel.png','Colaborador México 1')}}
+							</div>
+							<div class="col-md-12 carousel-caption carousel-captionInt">
+								<h3>Rubén Edel Navarro</h3>
                                 <h4>Investigador de tiempo completo<br>
                                     Universidad Veracruzana</h4>
                                 <div class="row">
@@ -72,7 +110,8 @@
                                 </div>
                             </div>
                         </div>
-                        <!-- Integrante 2 -->
+						
+						<!-- Integrante 2 -->
                         <div class="item ">
                             <div class="col-md-12 text-center">
                                 <!--<img  src="imagenes/red/integrantes/fotos/mexico/BrendaLuzColorado.png" alt="...">-->
@@ -915,15 +954,3 @@
         $('img[usemap]').rwdImageMaps();
     });
 </script>
-	<?php 
-		/*$integrantes = DB::connection('mysqlVentana')->select('select * from red_colaboradores');
-		foreach($integrantes as $integrante){
-			echo $integrante->area;
-			echo '<br>';
-		}
-			for($i=0;$i<count($integrantes);$i++){
-				echo '<li data-target="#carouselMexico" data-slide-to="'.$i.'" class="active"></li>';
-			}
-
-		*/
-	?>
