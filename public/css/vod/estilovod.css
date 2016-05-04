@@ -17,3 +17,9 @@ body{
     -o-background-size: cover;
     background-size: cover;    
 }
+
+.bannerVod{
+    position: fixed;
+    top: 0;
+    left: 0;
+}

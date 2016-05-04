@@ -18,8 +18,6 @@
         <div class="text-justify">
             {!!$blog->cuerpo!!}
         </div>
-
-
         <h3>Conversación de expertos </h3>
         @if(Auth::check())
         @if (Auth::user ()->is_researcher)

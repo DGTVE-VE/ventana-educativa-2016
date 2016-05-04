@@ -25,6 +25,12 @@ and open the template in the editor.
 
         <link rel="stylesheet" href="{{ asset('css/red/ihover.css') }}" >
         <link rel="stylesheet" href="{{ asset('css/red/animate.css') }}" >        
+
+        <!--	-------------------------- Estilos para encabezado ------------------------------------		-->
+        <link rel="stylesheet" href="{{ asset('css/mediateca/estilomediateca2.css') }}" >
+
+        @yield ('estilos')
+
         
         <link rel="stylesheet" href="{{ asset('css/vod/estilovod.css') }}" >        
         
@@ -40,13 +46,13 @@ and open the template in the editor.
     </head>
     <body style="background-image:url('{{ asset('imagenes/vod/background/background5.jpg') }}');">     
         <header>
-            @yield('menuVOD')
+            @yield('menuVod')
         </header>
         <div class="container-fluid">
-            @yield('cuerpoVOD')
+            @yield('cuerpoVod')
         </div>
         <div class="container-fluid">
-            @yield('pieVOD')
+            @yield('pieVod')
         </div>
     </body>
 </html>
