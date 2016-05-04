@@ -21,14 +21,14 @@
         
         <hr id="line">
         <div class="form-group">                                                          
-            <div id="selectImage">
-                <div id="image_preview"><img height="66px" width='100px' id="previewing" src="{{url ('imagenes/ventana/encabezado/noimage.png')}}" /></div>
+            <div id="selectImage_blog">                
+                <img height="66px" width='100px' id="previewing_blog" src="{{url ('imagenes/ventana/encabezado/noimage.png')}}" />
                 <label>Selecciona tu imagen</label><br/>
-                <input type="file" name="imagen" id="file" required />                
+                <input type="file" name="imagen" id="file_blog" required />                
             </div>                                                    
             
-            <div id='loading' class='hidden'> Cargando... </div>
-            <div id="message"></div>
+            <div id='loading_blog' class='hidden'> Cargando... </div>
+            <div id="message_blog"></div>
         </div>        
         <textarea name="cuerpo"></textarea>
         <button type="submit" class="btn btn-default"> Publicar </button>
@@ -51,16 +51,16 @@
     $(document).ready(function (e) {
     // Function to preview image after validation
         $(function () {
-            $("#file").change(function () {
-                $("#message").empty(); // To remove the previous error message
+            $("#file_blog").change(function () {
+                $("#message_blog").empty(); // To remove the previous error message
                 var file = this.files[0];
                 var imagefile = file.type;
                 var match = ["image/jpeg", "image/png", "image/jpg"];
                 // Si la imagen no es de tipo válido
                 if (match.indexOf(imagefile) === -1)
                 {
-                    $('#previewing').attr('src', 'noimage.png');
-                    $("#message").html("<p id='error'>Please Select A valid Image File</p>" + "<h4>Note</h4>" + "<span id='error_message'>Only jpeg, jpg and png Images type allowed</span>");
+                    $('#previewing_blog').attr('src', 'noimage.png');
+                    $("#message_blog").html("<p id='error'>Please Select A valid Image File</p>" + "<h4>Note</h4>" + "<span id='error_message'>Only jpeg, jpg and png Images type allowed</span>");
                     return false;
                 }
                 else
@@ -72,11 +72,11 @@
             });
         });
         function imageIsLoaded(e) {
-            $("#file").css("color", "green");
-            $('#image_preview').css("display", "block");
-            $('#previewing').attr('src', e.target.result);
-            $('#previewing').attr('width', '100px');
-            $('#previewing').attr('height', '66px');
+            $("#file_blog").css("color", "green");
+//            $('#image_preview').css("display", "block");
+            $('#previewing_blog').attr('src', e.target.result);
+            $('#previewing_blog').attr('width', '100px');
+            $('#previewing_blog').attr('height', '66px');
         }
         ;
     });

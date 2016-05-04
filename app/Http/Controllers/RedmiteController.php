@@ -111,8 +111,6 @@ class RedmiteController extends Controller {
 
     public function guardaIntegrantes(Request $request) {        
         
-        var_dump ($_FILES);
-        
         $colaborador = new Colaborador();
         $colaborador->user_id = Auth::user()->id;            
         $colaborador->puesto = filter_input(INPUT_POST, 'puesto');
