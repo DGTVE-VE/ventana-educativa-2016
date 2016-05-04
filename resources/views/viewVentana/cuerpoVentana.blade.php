@@ -87,13 +87,32 @@
                 <area shape="poly" coords="0,488,488,0,1020,500,510,1020" onmouseover="cambiaImgFoto('06')" onmouseout="cambiaImgCubo('06')" href="#"/>
                 <area shape="poly" coords="0,0,488,0,0,488" onmouseover="cambiaImgFoto('04')" onmouseout="cambiaImgCubo('04')" href="#"/>
             </map>
-            <a href="#">
+            <a data-toggle="modal" href="#myModal-estudiantes">
                 {{HTML::image('imagenes/ventana/iconoSeccion/primaria.png','Estudiantes',['id'=>'iconoRombo05','class'=>'imgColor oculta difumina Intervalo1 slideInLeft iconoEstudiantes','onmouseover'=>'cambiaImgFoto("05")','onmouseout'=>'cambiaImgCubo("05")'])}}
             </a>
             <a href="#">
                 {{HTML::image('imagenes/ventana/iconoSeccion/vod.png','VOD',['id'=>'iconoRombo06','class'=>'imgColor oculta difumina Intervalo1 slideInLeft iconoVOD','onmouseover'=>'cambiaImgFoto("06")','onmouseout'=>'cambiaImgCubo("06")'])}}
             </a>
         </div>
+
+        <!-- Modal Estudiantes-->
+        <div class="modal fade" id="myModal-estudiantes" role="dialog">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header ">
+                        <button type="button" class="close" data-dismiss="modal">&times</button>
+                        <h4 class="modal-title"></h4>
+                    </div>
+                    <div class="modal-body">
+                        {{ HTML::image('imagenes/ventana/homeventana/modalestudiantes.png','estudiantes',['width'=>'100%','height'=>'100%']) }}
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-dismiss="modal">Cerrar</button>
+                    </div>
+                </div>
+            </div>
+        </div> <!--Fin Modal Estudiantes -->
+
         <div class="col-md-1 col-lg-1" style="padding-top:6.8%; padding-left:0px; padding-right:0px;">
             {{HTML::image('imagenes/ventana/homeventana/CUBO-07.png','Ventana Educativa',['id'=>'CUBO07','class'=>'imgColor rombo7','usemap'=>'#mapacubo7'])}}
             <map name="mapacubo7" id="mapacubo7">
@@ -101,7 +120,7 @@
                 <area shape="poly" coords="0,0,570,0,0,548" onmouseover="cambiaImgFoto('05')" onmouseout="cambiaImgCubo('05')" href="#"/>
                 <area shape="poly" coords="0,548,548,1160,0,1160" onmouseover="cambiaImgFoto('06')" onmouseout="cambiaImgCubo('06')" href="#"/>
                 <area shape="poly" coords="548,0,1160,0,1160,548" onmouseover="cambiaImgFoto('08')" onmouseout="cambiaImgCubo('08')" href="http://formacioncontinua.sep.gob.mx/" target="_blank"/>
-				<area shape="poly" coords="548,1160,1160,548,1160,1160" onmouseover="cambiaImgFoto('09')" onmouseout="cambiaImgCubo('09')" href="{{url('educamedia')}}"/>
+                <area shape="poly" coords="548,1160,1160,548,1160,1160" onmouseover="cambiaImgFoto('09')" onmouseout="cambiaImgCubo('09')" href="{{url('educamedia')}}"/>
             </map>
             <a href="{{url('presentacion')}}">
                 {{HTML::image('imagenes/ventana/iconoSeccion/ventanaBco.png','Ventana Educativa',['id'=>'iconoRombo07','class'=>'imgColor iconoVentana','onmouseover'=>'cambiaImgFoto("07")','onmouseout'=>'cambiaImgCubo("07")'])}}
@@ -115,7 +134,7 @@
                 <area shape="poly" coords="440,1040,1040,520,1040,1040" onmouseover="cambiaImgFoto('10')" onmouseout="cambiaImgCubo('10')" href="{{url('redmite')}}"/>
             </map>
             <map name="mapacubo9" id="mapacubo9">
-				<area shape="poly" coords="0,488,488,0,1020,500,510,1020" onmouseover="cambiaImgFoto('09')" onmouseout="cambiaImgCubo('09')" href="{{url('educamedia')}}"/>
+                <area shape="poly" coords="0,488,488,0,1020,500,510,1020" onmouseover="cambiaImgFoto('09')" onmouseout="cambiaImgCubo('09')" href="{{url('educamedia')}}"/>
                 <area shape="poly" coords="516,0,1030,0,1030,500" onmouseover="cambiaImgFoto('10')" onmouseout="cambiaImgCubo('10')" href="{{url('redmite')}}"/>
             </map>
             <a href="http://formacioncontinua.sep.gob.mx/" target="_blank">
@@ -211,9 +230,9 @@
                         {{HTML::image('imagenes/ventana/homeventana/FOTO-09.png','Mediateca',['id'=>'CUBOSM09','class'=>'imgColor oculta difumina Intervalo1 slideInRight foto9','usemap'=>'#mapacubosm09'])}}
                         <map name="mapacubosm09" id="mapacubosm09">
                             <area shape="poly" coords="0,488,488,0,1020,500,510,1020" href="{{url('educamedia')}}"/>
-	                        <area shape="poly" coords="516,0,1030,0,1030,500" href="http://redmite.televisioneducativa.gob.mx/"/>
+                            <area shape="poly" coords="516,0,1030,0,1030,500" href="http://redmite.televisioneducativa.gob.mx/"/>
                         </map>
-						<a href="{{url('educamedia')}}">
+                        <a href="{{url('educamedia')}}">
                             {{HTML::image('imagenes/ventana/iconoSeccion/mediateca.png','Mediateca',['id'=>'iconoRombo09','class'=>'imgColor oculta difumina Intervalo1 slideInRight iconoFoto9'])}}
                         </a>
                     </td>
@@ -238,9 +257,26 @@
                             <area shape="poly" coords="0,488,488,0,976,488,488,976" href="#"/>
                             <area shape="poly" coords="0,524,490,1030,0,1030" href="#"/>
                         </map>
-                        <a href="#">
+                        <a data-toggle="modal" href="#myModal-estudiantesSM">
                             {{HTML::image('imagenes/ventana/iconoSeccion/primaria.png','Estudiantes',['id'=>'iconoRomboSM05','class'=>'imgColor oculta difumina Intervalo1 slideInLeft iconoFoto5'])}}
                         </a>
+                        <!-- Modal Estudiantes-->
+                        <div class="modal fade" id="myModal-estudiantesSM" role="dialog">
+                            <div class="modal-dialog modal-lg">
+                                <div class="modal-content">
+                                    <div class="modal-header ">
+                                        <button type="button" class="close" data-dismiss="modal">&times</button>
+                                        <h4 class="modal-title"></h4>
+                                    </div>
+                                    <div class="modal-body">
+                                        {{ HTML::image('imagenes/ventana/homeventana/modalestudiantes.png','estudiantes',['width'=>'100%','height'=>'100%']) }}
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-primary" data-dismiss="modal">Cerrar</button>
+                                    </div>
+                                </div>
+                            </div>
+                      </div> <!--Fin Modal Estudiantes -->
                     </td>
                     <td></td>
                     <td>

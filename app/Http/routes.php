@@ -118,6 +118,10 @@ Route::group(['middleware' => 'web'], function () {
     Route::post('redmite/admin/guardaIntegrantes', 'RedmiteController@guardaIntegrantes');   
     Route::get('redmite/guardarProyecto', 'RedmiteController@guardarProyecto');
     /*     * **************************REDMITE********************** */
+    
+    /* * **************************VOD********************** */
+    Route::get('vod', 'VodController@vod');    
+    /* * **************************VOD********************** */
 });
 /*	------------	Función que extrae e imprime breadcrumbs	-----------	*/
 	function seleccionaGrado($grado) {
