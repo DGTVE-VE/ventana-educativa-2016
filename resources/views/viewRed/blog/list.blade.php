@@ -1,6 +1,6 @@
 @extends ('indexRed')
 @section('menuRedmite')
-    @include ('viewRed.seccionheader')
+@include ('viewRed.seccionheader')
 @endsection
 @section ('cuerpoRedmite')
 <style>
@@ -39,10 +39,10 @@
                 <a href="{{url("redmite/blog/$blog->id")}}">
                     <img src="{{url ($blog->imagen)}}" height="100" width="150">
                 </a>
-<!--                <br><br>
-                <a href="" class="TextoNegro"><i class="fa fa-commenting-o fa-2x pull-left" aria-hidden="true" title="Comentar publicación" data-toggle="tooltip" data-placement="bottom"></i></a>
-                <a href="" class="btn btn-facebook btn-sm  pull-right"><i title="Compartir en Facebook" data-toggle="tooltip" data-placement="bottom" class="fa fa-facebook"></i></a>
-                <a href="" class="btn btn-twitter btn-sm pull-right"><i title="Compartir en Twitter" data-toggle="tooltip" data-placement="bottom" class="fa fa-twitter"></i></a>  
+                <!--                <br><br>
+                                <a href="" class="TextoNegro"><i class="fa fa-commenting-o fa-2x pull-left" aria-hidden="true" title="Comentar publicación" data-toggle="tooltip" data-placement="bottom"></i></a>
+                                <a href="" class="btn btn-facebook btn-sm  pull-right"><i title="Compartir en Facebook" data-toggle="tooltip" data-placement="bottom" class="fa fa-facebook"></i></a>
+                                <a href="" class="btn btn-twitter btn-sm pull-right"><i title="Compartir en Twitter" data-toggle="tooltip" data-placement="bottom" class="fa fa-twitter"></i></a>  
                 -->
             </div>
             <div class="col-md-9">
@@ -119,14 +119,28 @@
                             @endforeach                       
                         </ol>
                     </div>
-                </div>
+                </div>                 
             </div>
         </div>
         <br>
         <h4><strong>Tags</strong></h4>
         <div class="bordeBlog">
-           <!--Aquí las tags-->
+            <!--Aquí las tags-->
         </div>
+        <br>
+        @if (Auth::guest ())
+        @else
+        @if (Auth::user()->is_researcher)
+        <!--Agregar publicación-->
+        <div class="panel-heading blogPanel col-md-6 text-center">
+            <h4 class="panel-title">
+                <a href="{{url('redmite/blog/create')}}">
+                    Agregar publicación
+                </a>
+            </h4>
+        </div>
+        @endif
+        @endif 
     </div>
     <div class="col-md-1"></div>
 </div>
