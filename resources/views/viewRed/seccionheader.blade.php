@@ -151,7 +151,7 @@
                     </ul>
                 </li>
                 <li class="text-uppercase fondoMenu"><a href="{{url('redmite/publicaciones')}}">PUBLICACIONES</a></li>
-				<li class="text-uppercase fondoMenu"><div class="col-md-5 text-uppercase fondoMenu" style="position: relative; top:15px;"><a href="{{url('redmite/blog')}}">BLOG</a></div>
+                <li class="text-uppercase fondoMenu"><div class="col-md-5 fondoMenu" style="position: relative; top:15px;"><a style="text-decoration: none; color: grey;" href="{{url('redmite/blog')}}">BLOG</a></div>
 				@if (Auth::guest ())
 				@else
 					@if (Auth::user()->is_researcher)
