@@ -63,8 +63,6 @@
 <div style="height:55px;">
 	@include('viewVentana.encabezadoVentana')
 </div>
-<!--	Libreria Parallax	-->
-<script src="js/parallax.js-1.4.2/parallax.min.js"></script>
 
 <script>
 	$('#buscar').css('visibility','hidden');

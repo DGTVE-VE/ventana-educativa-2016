@@ -1,4 +1,7 @@
-﻿<div class="row fondo_Obscuro" style="margin-top:-20px;">
+﻿<!--	Libreria Parallax	-->
+<script src="js/parallax.js-1.4.2/parallax.min.js"></script>
+
+<div class="row fondo_Obscuro" style="margin-top:-20px;">
     <div class="col-md-12 text-center text-uppercase">
         <p class="pleca"> Proyectos </p>
     </div>
