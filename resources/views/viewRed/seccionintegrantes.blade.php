@@ -1,10 +1,3 @@
-	<?php 
-		/*$integrantes = DB::connection('mysqlVentana')->select('select * from red_colaboradores');
-		foreach($integrantes as $integrante){
-			echo $integrante->area;
-			echo '<br>';
-		}*/
-	?>
 <div class="row parallax-window" data-parallax="scroll" data-image-src= {{url('imagenes/red/integrantes/gradiente.jpg')}} speed="0.3">
     <div class="col-md-12 fondo_Obscuro">
         <div class="col-md-12 text-center text-uppercase">
@@ -12,7 +5,6 @@
         </div>
     </div>
     <div class="col-md-6">
-        <!--<img name="imagenMapa_n"  src="imagenes/red/integrantes/gris.png"  border="5px" id="imagenMapa" class="mapaCentroAmerica img-responsive" usemap="#mapa_n" alt="" />-->
         {{ HTML::image('imagenes/red/integrantes/gris.png','integrantes', array('name'=>'imagenMapa_n','id'=>'imagenMapa', 'border'=>'5px','class' =>'mapaCentroAmerica img-responsive', 'usemap'=>'#mapa_n'))}}
         <map name="mapa_n" id="mapa">         
             <area alt="Colombia" onmouseover="entraPais(1)" onmouseout="saleMouseInte();" href="#" data-keyboard="true" data-toggle="modal" shape="poly" coords="330,279,347,262,347,226,378,187,394,230,433,238,431,274,414,279,414,319,366,292"/>
@@ -923,3 +915,15 @@
         $('img[usemap]').rwdImageMaps();
     });
 </script>
+	<?php 
+		/*$integrantes = DB::connection('mysqlVentana')->select('select * from red_colaboradores');
+		foreach($integrantes as $integrante){
+			echo $integrante->area;
+			echo '<br>';
+		}
+			for($i=0;$i<count($integrantes);$i++){
+				echo '<li data-target="#carouselMexico" data-slide-to="'.$i.'" class="active"></li>';
+			}
+
+		*/
+	?>

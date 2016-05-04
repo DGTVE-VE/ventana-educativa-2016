@@ -44,6 +44,7 @@ Route::group(['middleware' => 'web'], function () {
 
     Route::get('verificaCorreo/{correo}/{hash}', 'VentanaController@activaCorreo');
     Route::get('registro', 'VentanaController@registro');
+    Route::get('acceso', 'VentanaController@acceso');
     Route::get('presentacion', 'VentanaController@presentacion');
     Route::post('registraUsuario', 'VentanaController@registraUsuario');
     Route::get('correoEnviado', 'VentanaController@correoEnviado');
@@ -117,6 +118,10 @@ Route::group(['middleware' => 'web'], function () {
     Route::post('redmite/admin/guardaIntegrantes', 'RedmiteController@guardaIntegrantes');   
     Route::get('redmite/guardarProyecto', 'RedmiteController@guardarProyecto');
     /*     * **************************REDMITE********************** */
+    
+    /* * **************************VOD********************** */
+    Route::get('vod', 'VodController@vod');    
+    /* * **************************VOD********************** */
 });
 /*	------------	Función que extrae e imprime breadcrumbs	-----------	*/
 	function seleccionaGrado($grado) {

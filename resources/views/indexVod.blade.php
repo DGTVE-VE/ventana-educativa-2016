@@ -6,7 +6,7 @@ and open the template in the editor.
 -->
 <html lang='en'>
     <head>
-        <title>@yield('titleMediateca','Educamedia')</title>
+        <title>@yield('titleVod','Videos Bajo Demanda')</title>
         <!--  App Descripción  -->
         <meta name="description" content="Ventana Educativa 2016"/>
         <meta charset="utf-8">
@@ -25,14 +25,9 @@ and open the template in the editor.
 
         <link rel="stylesheet" href="{{ asset('css/red/ihover.css') }}" >
         <link rel="stylesheet" href="{{ asset('css/red/animate.css') }}" >        
-
-        <!--	-------------------------- Estilos para encabezado ------------------------------------		-->
-        <link rel="stylesheet" href="{{ asset('css/mediateca/estilomediateca2.css') }}" >
-
-        <!--	-------------------------- Estilos para menus de Telesecundaria, Telebachillerato y redes sociales-->
-        <link rel="stylesheet" href="{{ asset('css/mediateca/estilomediateca3.css') }}" >
-
-        @yield ('estilos')
+        
+        <link rel="stylesheet" href="{{ asset('css/vod/estilovod.css') }}" >        
+        
 
         <!-- jQuery library -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
@@ -43,15 +38,15 @@ and open the template in the editor.
         @yield ('scripts')
 
     </head>
-    <body style="background-image:url('{{ asset('imagenes/mediateca/background/backgroundAzul.jpg') }}');">     
+    <body style="background-image:url('{{ asset('imagenes/vod/background/background5.jpg') }}');">     
         <header>
-            @yield('menuMediateca')
+            @yield('menuVOD')
         </header>
         <div class="container-fluid">
-            @yield('cuerpoMediateca')
+            @yield('cuerpoVOD')
         </div>
         <div class="container-fluid">
-            @yield('pieMediateca')
+            @yield('pieVOD')
         </div>
     </body>
 </html>

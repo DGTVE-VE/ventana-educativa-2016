@@ -55,6 +55,10 @@ class VentanaController extends Controller {
         return view('viewVentana/registroVentana');
     }
 
+     public function acceso() {
+        return view('viewVentana/acceso');
+    }
+    
     public function enviaCorreoActivacion($correo, $hash) {
         Mail::send('viewVentana.emails.activacion', ['correo' => $correo, 'hash' => $hash], function ($m) use ($correo) {
             $m->from('ventana@televisioneducativa.gob.mx', 'Ventana Educativa');
