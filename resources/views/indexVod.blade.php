@@ -44,7 +44,7 @@ and open the template in the editor.
         @yield ('scripts')
 
     </head>
-    <body style="background-image:url('{{ asset('imagenes/vod/background/background5.jpg') }}');">     
+    <body>     
         <header>
             @yield('menuVod')
         </header>
