@@ -16,6 +16,7 @@ Ventana Educativa
 
         <div class = "panel-body">
             <form role="form" action="{{url('registraUsuario')}}" method="post">
+                <input type="hidden" name="back_url" value="{{ $back_url }}">
                 <input type="hidden" name="_token" value="{{ csrf_token() }}">
                 <div id='mensaje-error' class="alert alert-danger hidden" >            
                 </div>

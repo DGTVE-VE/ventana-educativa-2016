@@ -11,7 +11,7 @@
         <h3 class = "panel-title tituloRegistro text-center text-uppercase">
             Acceso
         </h3>
-
+        
         <li class="panel-body list-unstyled">
             <div class="row">
                 <div class="col-lg-12 col-md-12">

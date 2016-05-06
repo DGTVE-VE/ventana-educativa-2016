@@ -19,7 +19,8 @@ class SessionsController extends Controller
     
     public function store (){
         if (Auth::attempt(Input::only ('email', 'password'))){                        
-            return Redirect::back();
+//            return Redirect::back();
+            return redirect()->intended('defaultpage');
         }
         return Redirect::back()->withInput ();
         

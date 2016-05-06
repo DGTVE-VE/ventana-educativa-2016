@@ -12,7 +12,7 @@ use Illuminate\Support\Facades\Auth;
 use App\Intereses_educativos;
 use Illuminate\Support\Facades\Session;
 use Laracasts\Flash\Flash;
-
+use Illuminate\Support\Facades\URL;
 
 //use App\User;
 
@@ -43,7 +43,7 @@ class VentanaController extends Controller {
         $users->is_parent =  (filter_input(INPUT_POST, 'is_parent') == 'on')? 1 : 0;
         
         $users->save();
-        return $this->enviaCorreoActivacion($users->email, md5($users->password));
+        return $this->enviaCorreoActivacion($users->email, md5($users->password), filter_input (INPUT_POST, 'back_url'));
         
     }
 
@@ -52,19 +52,22 @@ class VentanaController extends Controller {
     }
 
     public function registro() {
-        return view('viewVentana/registroVentana');
+        
+        return view('viewVentana/registroVentana')
+            ->with ('back_url', URL::previous());
     }
 
      public function acceso() {
         return view('viewVentana/acceso');
     }
     
-    public function enviaCorreoActivacion($correo, $hash) {
+    public function enviaCorreoActivacion($correo, $hash, $back_url) {
         Mail::send('viewVentana.emails.activacion', ['correo' => $correo, 'hash' => $hash], function ($m) use ($correo) {
             $m->from('ventana@televisioneducativa.gob.mx', 'Ventana Educativa');
             $m->to($correo)->subject('Activación de correo!');
         });
-        return view('viewVentana/correoEnviado');
+        return redirect ($back_url);
+//        return view('viewVentana/correoEnviado');
     }
 
     public function activaCorreo(Request $request, $correo, $hash) {
