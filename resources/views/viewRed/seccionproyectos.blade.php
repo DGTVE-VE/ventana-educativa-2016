@@ -6,7 +6,7 @@
         <p class="pleca"> Proyectos </p>
     </div>
 </div>
-<div class="row fondo_Transparente text-center parallax-window"  data-parallax="scroll" data-image-src= {{url('imagenes/red/proyectos/fondo-proyectos.jpg')}} speed="0.3" >
+<div class="row fondo_Transparente text-center parallax-window" data-parallax="scroll" data-speed="0.3" data-image-src= {{url('imagenes/red/proyectos/fondo-proyectos.jpg')}} data-position="0px -20px">
     <div class="col-md-12">
         <div class="division">
         </div>
@@ -30,3 +30,9 @@
         <div class="division"></div>
     </div>
 </div>
+<script>
+	$('.parallax-window').parallax({
+		naturalWidth:1600,
+		naturalHeight:500
+	});
+</script>

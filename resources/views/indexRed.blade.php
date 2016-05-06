@@ -42,7 +42,7 @@ and open the template in the editor.
 
         @yield('header')
     </head>
-    <body id="pag_principal" style="padding:0px; overflow-x:hidden">     
+    <body id="pag_principal" style="padding:0px; overflow-x:hidden">
 		<!--        Script para Google Analytics de la red Mesoamericana	-->
         <script>
         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
