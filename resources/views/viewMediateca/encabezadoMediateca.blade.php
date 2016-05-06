@@ -191,7 +191,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button-->    
-                    <a href="{{url('ventana_educativa')}}">
+                    <a href="#">
                         {{ HTML::image('imagenes/mediateca/encabezado/logoventana.png','Logo Ventana Educativa', ['class'=>'image-responsive imgLogo']) }}
                     </a>
                 </div> 

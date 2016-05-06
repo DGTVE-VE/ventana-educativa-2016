@@ -1,19 +1,18 @@
 @section('titleVentana')
-Ventana Educativa
+    Ventana Educativa
 @stop
-@extends('indexVentana')
-@section('menuVentana')
-@include('viewVentana.encabezadoVentana')
+@section('menuMediateca')
+	@include('viewMediateca.encabezadoMediateca')
 @endsection
-@section('cuerpoVentana')
+@extends('indexMediateca')
+@section('cuerpoMediateca')
 <div class="container">
-
     <div class = "frmRegistro col-lg-offset-2 col-md-8">
         <h3 class = "panel-title tituloRegistro text-center text-uppercase">
             Acceso
         </h3>
 
-        <li class="panel-body">
+        <li class="panel-body list-unstyled">
             <div class="row">
                 <div class="col-lg-12 col-md-12">
                     @if (Auth::guest ())
@@ -99,6 +98,6 @@ Ventana Educativa
 </div>
 
 @endsection
-@section('pieVentana')
+@section('pieMediateca')
 
 @endsection        
