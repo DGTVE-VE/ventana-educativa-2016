@@ -8,19 +8,43 @@ and open the template in the editor.
     Author     : SMARTINEZ
 */
 
-body{
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-attachment: fixed; 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;    
-}
 
-.bannerVod{
-    position: fixed;
+
+html,body {
+    height:100%;
+    width:100%;
+    position:relative;
+    background-color: #141414;
+    z-index: -1
+}
+#background-carousel-vod{
+    position:fixed;
+    width:100%;
+    height:80%;
+    z-index:-1;
     top: 0;
     left: 0;
     width: 120%;
+}
+.carousel,
+.carousel-inner {
+    width:100%;
+    height:100%;
+    z-index:15;
+    overflow:hidden;
+}
+.item {
+    width:100%;
+    height:100%;
+    background-position:center center;
+    background-size:cover;
+    z-index:15;
+}
+#content-wrapper-vod {
+    z-index:10 !important;
+    min-width:100%;
+    min-height:100%;
+    margin-top: 30%;
+    margin-left: -20%;
+    font-size: 20px;
 }
