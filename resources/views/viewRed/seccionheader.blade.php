@@ -54,7 +54,7 @@
 		}
 	}
 	.parallax-window {
-		min-height: 400px;
+		min-height: 500px;
 		background: transparent;
 	}
 </style>

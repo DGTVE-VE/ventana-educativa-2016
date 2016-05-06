@@ -85,7 +85,7 @@
 			.textoTitulo{
 			color: black;
 			font-family:'Ubuntu';
-			font-size:15px;
+			font-size:16px;
 		}
 		.contenedorAro{
 			width:483px; height:483px; margin:auto; position: relative;
@@ -116,7 +116,7 @@
 		.textoTitulo{
 			color: black;
 			font-family:'Ubuntu';
-			font-size:18px;
+			font-size:19px;
 		}
 		.contenedorAro{
 			width:483px; height:483px; margin:auto; position: relative;
@@ -207,76 +207,7 @@
                 </a>
             </div>
             <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-                <ul class="nav navbar-nav navbar-right"><!-- class=" collapse navbar-collapse collapseBarra" -->
-                    <li class="dropdown col-xs-6 col-md-6" style="float:left;">
-                        <div class="dropdown-toggle" data-toggle="dropdown">
-                            {{ HTML::image('imagenes/mediateca/encabezado/iconoApps.png','Icono Apps',['class'=>'appsLogo'])}}
-                        </div>
-                        <ul class="dropdown-menu img-responsive menuVentanaApps">
-                            <table id="menuVentanaApps" class="mueveTabla">
-                                <tr>
-                                    <td class="divApp centered center-block">
-                                        <a class="" href="#">
-                                            {{ HTML::image('imagenes/ventana/encabezado/appVOD.png','logo VOD')}}
-                                        </a>
-                                    </td>                        
-                                    <td class="divApp centered">
-                                        <a class="" href="#">
-                                            {{ HTML::image('imagenes/ventana/encabezado/appIdiomas.png','logo Idiomas')}}
-                                        </a>
-                                    </td>
-                                    <td class="divApp centered">
-                                        <a class="" href="#">
-                                            {{ HTML::image('imagenes/ventana/encabezado/appMediateca.png','logo Mediateca')}}
-                                        </a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="divApp centered">
-                                        <a class="" href="#">
-                                            {{ HTML::image('imagenes/ventana/encabezado/appPrimaria.png','logo Primaria')}}
-                                        </a>
-                                    </td>
-                                    <td class="divApp centered">
-                                        <a class="" href="#">
-                                            {{ HTML::image('imagenes/ventana/encabezado/appDocentes.png','logo Docentes')}}
-                                        </a>
-                                    </td>
-                                    <td class="divApp centered">
-                                        <a class="" href="#">
-                                            {{ HTML::image('imagenes/ventana/encabezado/appPadres.png','logo Padres')}}
-                                        </a>
-                                    </td>
-                                </tr>
-                             <tr>
-                                    <td>
-                                    </td>
-                                    <td class="text-center">
-                                        <p class="iconoGde" onclick="muestraMasIconos(event)">M&aacute;s</p>
-                                    </td>
-                                    <td>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <a class="divApp centered" href="#">
-                                            {{ HTML::image('imagenes/ventana/encabezado/appSalud.png','Logo Salud',['class'=>'ocultaImgApp'])}}
-                                        </a>
-                                    </td>
-                                    <td class="divApp centered">
-                                        <a class="" href="#">
-                                            {{ HTML::image('imagenes/ventana/encabezado/appCultura.png','Logo Cultura',['class'=>'ocultaImgApp'])}}
-                                        </a>
-                                    </td>
-                                    <td>
-                                        <a class="divApp centered" href="#">
-                                            {{ HTML::image('imagenes/ventana/encabezado/appBiblioteca.png','Logo Biblioteca',['class'=>'ocultaImgApp'])}}
-                                        </a>
-                                    </td>
-                                </tr>
-                            </table>                                       
-                        </ul>
-                    </li>
+                <ul class="nav navbar-nav navbar-right">
                     <li id="li-R" class="dropdown col-xs-6 col-sm-6 col-md-6" style="float:right;">
                         <div class=" divli dropdown-toggle" data-toggle="dropdown">
                             @if (Auth::guest())
@@ -450,24 +381,6 @@
     });
     /************ CAMBIAR AVATAR **************/
 	
-/*	-------------------------------------	Hace visible o invisible los iconos de apps adicionales	--------------------------------------	*/
-	imgOculto = true;
-	function muestraMasIconos(event){
-		if(imgOculto){
-			event.stopPropagation();
-			$(".ocultaImgApp").css("width","83px");
-			$(".ocultaImgApp").css("height","83px");
-			$(".ocultaImgApp").css("visibility","visible");
-			imgOculto = false;
-		}
-		else{
-			event.stopPropagation();
-			$(".ocultaImgApp").css("width","0%");
-			$(".ocultaImgApp").css("height","0%");
-			$(".ocultaImgApp").css("visibility","hidden");
-			imgOculto = true;
-		}
-	}
 /*	----------	Manipula imagenes del centro del aro en telesecundaria	----------	*/
 		function resaltaImgSecu(prefijo, idImg){
 			var idImgHover = "#" + idImg + "Hover";

@@ -1,4 +1,4 @@
-/* Estilo para los menus de Telesecundaria y Telebachillerato */
+﻿/* Estilo para los menus de Telesecundaria y Telebachillerato */
 
 /* Wrappers  */
 .margensuperiormenuTS{
@@ -183,8 +183,8 @@
 /* Estilos para iconos redes sociales */
 .derechaSociales{
     position: fixed;
-    right: 1%;
-    top: 28%;
+    right: 2%;
+    top: 35%;
     
 }
 .sociales{
