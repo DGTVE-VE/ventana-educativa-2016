@@ -29,6 +29,7 @@ and open the template in the editor.
         <!--	-------------------------- Estilos para encabezado ------------------------------------		-->
         <link rel="stylesheet" href="{{ asset('css/mediateca/estilomediateca2.css') }}" >
 
+        
         @yield ('estilos')
 
         

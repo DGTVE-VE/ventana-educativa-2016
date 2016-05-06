@@ -19,6 +19,10 @@ Videos Bajo Demanda
 		});
 	</script>
 @endsection
+
 @section('cuerpoVod')
         @include('viewVod.bannerVod')
+@endsection
+@section('menuVod')
+    @include('viewVod.menuVod')
 @endsection
