@@ -103,13 +103,15 @@ Educamedia
                         <h5 class="col-md-2">Bloque</h5>
                         <div class="col-md-10">
                         @foreach ($paginacion as $item => $bloquePagina)
-                            <li class="list-inline">                                
-                                <a class="bloqueMed" href="{{url($url.'/'.$bloquePagina->bloque)}}">
-                                    {{$bloquePagina->bloque}}   
-                                </a>                                    
-                            </li>                        
-                            &nbsp;&nbsp;&nbsp;
-                        @endforeach 
+							@if($bloquePagina->bloque!='0')
+								<li class="list-inline">                                
+									<a class="bloqueMed" href="{{url($url.'/'.$bloquePagina->bloque)}}">
+										{{$bloquePagina->bloque}}   
+									</a>                                    
+								</li>                        
+								&nbsp;&nbsp;&nbsp;
+							@endif
+						@endforeach
                         </div>
                     </div>    
                     <div class="col-md-12 listVideos">
