@@ -47,7 +47,9 @@ and open the template in the editor.
     </head>
     <body>     
         <header>
-            @yield('menuVod')
+			<div class="container-fluid">
+				@yield('menuVod')
+			</div>
         </header>
         <div class="container-fluid">
             @yield('cuerpoVod')
