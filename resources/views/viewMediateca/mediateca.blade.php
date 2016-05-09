@@ -25,10 +25,5 @@
 			{{HTML::image('imagenes/mediateca/Inicio/imgMapa.png','Telebachillerato',['class'=>'posicionMapa img-responsive', 'id'=>'educamediaIni', 'usemap'=>'#inicioEducamedia'])}}
 		</div>
 	</div>
-	<style>
-		.cinemagraph{
-			top:95px; left:98px; width:286px; height:292px;
-		}
-	</style>
     @include('viewMediateca.barraSociales')
 @endsection

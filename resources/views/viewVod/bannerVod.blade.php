@@ -31,6 +31,9 @@
 			$('#carreteSerie1').carousel({
 				interval: false
 			})
+			$('#carreteSerie2').carousel({
+				interval: false
+			})
         });
     </script>
 </div>
@@ -44,16 +47,18 @@
 	}
 	.cambiaPadding{
 		padding:0px;
-		margin:0px;
+	}
+	.reduceAnchoFlecha{
+		width:3%;
 	}
 </style>
 </div>
 <div class="row">
 	<div class="col-md-12 col-lg-12">
-		<p style="color:white;">MI LISTA</p>
+		<p style="color:white; font-size:16px;">MI LISTA</p>
 	</div>
 </div>
-<div class="row">
+<div class="row" style="padding-right:5px; padding-left:5px; margin-top:10px; margin-bottom:30px;">
 	<div class="col-md-12 col-lg-12">
 		<div id="carreteSerie1" class="carousel slide" data-ride="carousel">
 			<div class="carousel-inner" role="listbox">
@@ -61,7 +66,7 @@
 					<div class="row">
 						<div class="col-xs-6 col-sm-6 col-md-2 cambiaPadding">
 							<div class="thumbnail fondoTrans">
-								<img class="img-responsive" src="http://placehold.it/240x134.9" alt="...">
+								<img class="img-responsive" src="http://placehold.it/260x480" alt="...">
 								<div class="caption txtSobreImg">
 									<h4>Serie 1</h4>
 									<p>Resumen de descripción
@@ -71,7 +76,7 @@
 						</div>
 						<div class="col-xs-6 col-sm-6 col-md-2 cambiaPadding">
 							<div class="thumbnail fondoTrans">
-								<img class="img-responsive" src="http://placehold.it/240x134.9" alt="...">
+								<img class="img-responsive" src="http://placehold.it/260x480" alt="...">
 								<div class="caption txtSobreImg">
 									<h4>Serie 2</h4>
 									<p>Resumen de descripción
@@ -81,7 +86,7 @@
 						</div>
 						<div class="col-xs-6 col-sm-6 col-md-2 cambiaPadding">
 							<div class="thumbnail fondoTrans">
-								<img class="img-responsive" src="http://placehold.it/240x135" alt="...">
+								<img class="img-responsive" src="http://placehold.it/260x480" alt="...">
 								<div class="caption txtSobreImg">
 									<h4>Serie 3</h4>
 									<p>Resumen de descripción
@@ -91,7 +96,7 @@
 						</div>
 						<div class="col-xs-6 col-sm-6 col-md-2 cambiaPadding">
 							<div class="thumbnail fondoTrans">
-								<img class="img-responsive" src="http://placehold.it/239.83x134.9" alt="...">
+								<img class="img-responsive" src="http://placehold.it/260x480" alt="...">
 								<div class="caption txtSobreImg">
 									<h4>Serie 4</h4>
 									<p>Resumen de descripción
@@ -101,7 +106,7 @@
 						</div>
 						<div class="col-xs-6 col-sm-6 col-md-2 cambiaPadding">
 							<div class="thumbnail fondoTrans">
-								<img class="img-responsive" src="http://placehold.it/239.83x134.9" alt="...">
+								<img class="img-responsive" src="http://placehold.it/260x480" alt="...">
 								<div class="caption txtSobreImg">
 									<h4>Serie 5</h4>
 									<p>Resumen de descripción
@@ -111,7 +116,7 @@
 						</div>
 						<div class="col-xs-6 col-sm-6 col-md-2 cambiaPadding">
 							<div class="thumbnail fondoTrans">
-								<img class="img-responsive" src="http://placehold.it/239.83x134.9" alt="...">
+								<img class="img-responsive" src="http://placehold.it/260x480" alt="...">
 								<div class="caption txtSobreImg">
 									<h4>Serie 6</h4>
 									<p>Resumen de descripción
@@ -122,10 +127,10 @@
 					</div>
 				</div>
 				<div class="item">
-										<div class="row">
+					<div class="row">
 						<div class="col-xs-6 col-sm-6 col-md-2 cambiaPadding">
 							<div class="thumbnail fondoTrans">
-								<img class="img-responsive" src="http://placehold.it/240x134.9" alt="...">
+								<img class="img-responsive" src="http://placehold.it/260x480" alt="...">
 								<div class="caption txtSobreImg">
 									<h4>Serie 1</h4>
 									<p>Resumen de descripción
@@ -135,7 +140,7 @@
 						</div>
 						<div class="col-xs-6 col-sm-6 col-md-2 cambiaPadding">
 							<div class="thumbnail fondoTrans">
-								<img class="img-responsive" src="http://placehold.it/240x134.9" alt="...">
+								<img class="img-responsive" src="http://placehold.it/260x480" alt="...">
 								<div class="caption txtSobreImg">
 									<h4>Serie 2</h4>
 									<p>Resumen de descripción
@@ -145,7 +150,7 @@
 						</div>
 						<div class="col-xs-6 col-sm-6 col-md-2 cambiaPadding">
 							<div class="thumbnail fondoTrans">
-								<img class="img-responsive" src="http://placehold.it/240x135" alt="...">
+								<img class="img-responsive" src="http://placehold.it/260x480" alt="...">
 								<div class="caption txtSobreImg">
 									<h4>Serie 3</h4>
 									<p>Resumen de descripción
@@ -155,7 +160,7 @@
 						</div>
 						<div class="col-xs-6 col-sm-6 col-md-2 cambiaPadding">
 							<div class="thumbnail fondoTrans">
-								<img class="img-responsive" src="http://placehold.it/239.83x134.9" alt="...">
+								<img class="img-responsive" src="http://placehold.it/260x480" alt="...">
 								<div class="caption txtSobreImg">
 									<h4>Serie 4</h4>
 									<p>Resumen de descripción
@@ -165,7 +170,7 @@
 						</div>
 						<div class="col-xs-6 col-sm-6 col-md-2 cambiaPadding">
 							<div class="thumbnail fondoTrans">
-								<img class="img-responsive" src="http://placehold.it/239.83x134.9" alt="...">
+								<img class="img-responsive" src="http://placehold.it/260x480" alt="...">
 								<div class="caption txtSobreImg">
 									<h4>Serie 5</h4>
 									<p>Resumen de descripción
@@ -175,7 +180,7 @@
 						</div>
 						<div class="col-xs-6 col-sm-6 col-md-2 cambiaPadding">
 							<div class="thumbnail fondoTrans">
-								<img class="img-responsive" src="http://placehold.it/239.83x134.9" alt="...">
+								<img class="img-responsive" src="http://placehold.it/260x480" alt="...">
 								<div class="caption txtSobreImg">
 									<h4>Serie 6</h4>
 									<p>Resumen de descripción
@@ -186,11 +191,160 @@
 					</div>
 				</div>
 			</div>
-			<a class="left carousel-control" href="#carreteSerie1" role="button" data-slide="prev">
+			<a class="left carousel-control reduceAnchoFlecha" href="#carreteSerie1" role="button" data-slide="prev">
 				<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
 				<span class="sr-only">Previous</span>
 			</a>
-			<a class="right carousel-control" href="#carreteSerie1" role="button" data-slide="next">
+			<a class="right carousel-control reduceAnchoFlecha" href="#carreteSerie1" role="button" data-slide="next">
+				<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+				<span class="sr-only">Next</span>
+			</a>
+		</div>
+	</div>
+</div>
+<div class="row">
+	<div class="col-md-12 col-lg-12">
+		<p style="color:white; font-size:16px;">CLASIFICACION 2</p>
+	</div>
+</div>
+<div class="row" style="padding-right:5px; padding-left:5px; margin-top:10px; margin-bottom:30px;">
+	<div class="col-md-12 col-lg-12">
+		<div id="carreteSerie2" class="carousel slide" data-ride="carousel">
+			<div class="carousel-inner" role="listbox">
+				<div class="item active">
+					<div class="row">
+						<div class="col-xs-6 col-sm-6 col-md-2 cambiaPadding">
+							<div class="thumbnail fondoTrans">
+								<img class="img-responsive" src="http://placehold.it/260x480" alt="...">
+								<div class="caption txtSobreImg">
+									<h4>Serie 1</h4>
+									<p>Resumen de descripción
+									<button type="button" class="btn btn-link">Ver mas</button></p>
+								</div>
+							</div>
+						</div>
+						<div class="col-xs-6 col-sm-6 col-md-2 cambiaPadding">
+							<div class="thumbnail fondoTrans">
+								<img class="img-responsive" src="http://placehold.it/260x480" alt="...">
+								<div class="caption txtSobreImg">
+									<h4>Serie 2</h4>
+									<p>Resumen de descripción
+									<button type="button" class="btn btn-link">Ver mas</button></p>
+								</div>
+							</div>
+						</div>
+						<div class="col-xs-6 col-sm-6 col-md-2 cambiaPadding">
+							<div class="thumbnail fondoTrans">
+								<img class="img-responsive" src="http://placehold.it/260x480" alt="...">
+								<div class="caption txtSobreImg">
+									<h4>Serie 3</h4>
+									<p>Resumen de descripción
+									<button type="button" class="btn btn-link">Ver mas</button></p>
+								</div>
+							</div>
+						</div>
+						<div class="col-xs-6 col-sm-6 col-md-2 cambiaPadding">
+							<div class="thumbnail fondoTrans">
+								<img class="img-responsive" src="http://placehold.it/260x480" alt="...">
+								<div class="caption txtSobreImg">
+									<h4>Serie 4</h4>
+									<p>Resumen de descripción
+									<button type="button" class="btn btn-link">Ver mas</button></p>
+								</div>
+							</div>
+						</div>
+						<div class="col-xs-6 col-sm-6 col-md-2 cambiaPadding">
+							<div class="thumbnail fondoTrans">
+								<img class="img-responsive" src="http://placehold.it/260x480" alt="...">
+								<div class="caption txtSobreImg">
+									<h4>Serie 5</h4>
+									<p>Resumen de descripción
+									<button type="button" class="btn btn-link">Ver mas</button></p>
+								</div>
+							</div>
+						</div>
+						<div class="col-xs-6 col-sm-6 col-md-2 cambiaPadding">
+							<div class="thumbnail fondoTrans">
+								<img class="img-responsive" src="http://placehold.it/260x480" alt="...">
+								<div class="caption txtSobreImg">
+									<h4>Serie 6</h4>
+									<p>Resumen de descripción
+									<button type="button" class="btn btn-link">Ver mas</button></p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="item">
+					<div class="row">
+						<div class="col-xs-6 col-sm-6 col-md-2 cambiaPadding">
+							<div class="thumbnail fondoTrans">
+								<img class="img-responsive" src="http://placehold.it/260x480" alt="...">
+								<div class="caption txtSobreImg">
+									<h4>Serie 1</h4>
+									<p>Resumen de descripción
+									<button type="button" class="btn btn-link">Ver mas</button></p>
+								</div>
+							</div>
+						</div>
+						<div class="col-xs-6 col-sm-6 col-md-2 cambiaPadding">
+							<div class="thumbnail fondoTrans">
+								<img class="img-responsive" src="http://placehold.it/260x480" alt="...">
+								<div class="caption txtSobreImg">
+									<h4>Serie 2</h4>
+									<p>Resumen de descripción
+									<button type="button" class="btn btn-link">Ver mas</button></p>
+								</div>
+							</div>
+						</div>
+						<div class="col-xs-6 col-sm-6 col-md-2 cambiaPadding">
+							<div class="thumbnail fondoTrans">
+								<img class="img-responsive" src="http://placehold.it/260x480" alt="...">
+								<div class="caption txtSobreImg">
+									<h4>Serie 3</h4>
+									<p>Resumen de descripción
+									<button type="button" class="btn btn-link">Ver mas</button></p>
+								</div>
+							</div>
+						</div>
+						<div class="col-xs-6 col-sm-6 col-md-2 cambiaPadding">
+							<div class="thumbnail fondoTrans">
+								<img class="img-responsive" src="http://placehold.it/260x480" alt="...">
+								<div class="caption txtSobreImg">
+									<h4>Serie 4</h4>
+									<p>Resumen de descripción
+									<button type="button" class="btn btn-link">Ver mas</button></p>
+								</div>
+							</div>
+						</div>
+						<div class="col-xs-6 col-sm-6 col-md-2 cambiaPadding">
+							<div class="thumbnail fondoTrans">
+								<img class="img-responsive" src="http://placehold.it/260x480" alt="...">
+								<div class="caption txtSobreImg">
+									<h4>Serie 5</h4>
+									<p>Resumen de descripción
+									<button type="button" class="btn btn-link">Ver mas</button></p>
+								</div>
+							</div>
+						</div>
+						<div class="col-xs-6 col-sm-6 col-md-2 cambiaPadding">
+							<div class="thumbnail fondoTrans">
+								<img class="img-responsive" src="http://placehold.it/260x480" alt="...">
+								<div class="caption txtSobreImg">
+									<h4>Serie 6</h4>
+									<p>Resumen de descripción
+									<button type="button" class="btn btn-link">Ver mas</button></p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<a class="left carousel-control reduceAnchoFlecha" href="#carreteSerie2" role="button" data-slide="prev">
+				<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+				<span class="sr-only">Previous</span>
+			</a>
+			<a class="right carousel-control reduceAnchoFlecha" href="#carreteSerie2" role="button" data-slide="next">
 				<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
 				<span class="sr-only">Next</span>
 			</a>
