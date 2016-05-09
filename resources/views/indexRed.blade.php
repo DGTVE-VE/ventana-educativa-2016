@@ -73,3 +73,6 @@ and open the template in the editor.
         <script src="{{asset('js/red/jsredmesoamericana.js')}}"></script>
     </body>
 </html>
+<?php 
+Log::info('Memory Usage:'.Request::path()." - " . (memory_get_peak_usage (true)/1024/1024));
+?>
