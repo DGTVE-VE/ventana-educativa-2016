@@ -1,37 +1,181 @@
-<div class="container-fluid">
+<div class="row">
+<div class="col-md-12 col-lg-12">
     <div id="background-carousel-vod">
         <div id="carouselVod" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
-                <img class="item active" src="{{asset('imagenes/vod/series/ciudad_de_los_dioses.png')}}"/>
-                <img class="item img-responsive" src="{{asset('imagenes/vod/series/cocinando_mexico.png')}}"/>
-                <img class="item img-responsive" src="{{asset('imagenes/vod/series/corteyqueda.png')}}"/>        
-                <img class="item img-responsive" src="{{asset('imagenes/vod/series/el_chango_y_la_chancla.png')}}"/> 
-                <img class="item img-responsive" src="{{asset('imagenes/vod/series/el_saber_del_deporte.png')}}"/>
-                <img class="item img-responsive" src="{{asset('imagenes/vod/series/las_culturas.png')}}"/> 
-                <img class="item img-responsive" src="{{asset('imagenes/vod/series/mujeres_que_hacen_historia.png')}}"/> 
-                <img class="item img-responsive" src="{{asset('imagenes/vod/series/oigadoctor.png')}}"/>
-                <img class="item img-responsive" src="{{asset('imagenes/vod/series/que_onda_con_el_sexo.png')}}"/>
-                <img class="item img-responsive" src="{{asset('imagenes/vod/series/telebachillerato.png')}}"/>
-                <img class="item img-responsive" src="{{asset('imagenes/vod/series/un_nuevo_significado.png')}}"/>
+                <div class="item active" style="background-image:url('{{asset('imagenes/vod/series/ciudad_de_los_dioses.png')}}')"></div>
+                <div class="item" style="background-image:url('{{asset('imagenes/vod/series/ciudad_de_los_dioses.png')}}')"></div>
+                <div class="item" style="background-image:url('{{asset('imagenes/vod/series/ciudad_de_los_dioses.png')}}')"></div>        
             </div>
         </div>
+    </div>
     <div id="content-wrapper-vod">
         <!-- PAGE CONTENT -->
         <div class="container">
-            <div class="btn btn-danger text-uppercase"><span class="fa fa-play" aria-hidden="true"></span>&nbsp;&nbsp;Reproducir</div>
-            <div class="btn btn-info text-uppercase"><span class="fa fa fa-plus" aria-hidden="true"></span>&nbsp;&nbsp;Mi lista</div>            
-        </div><!-- End Well -->
-    </div><!-- End Container -->
-    <!-- PAGE CONTENT -->        
+            <div>
+                <div class="btn btn-danger text-uppercase"><span class="fa fa-play" aria-hidden="true"></span>&nbsp;&nbsp;Reproducir</div>
+                <div class="btn btn-info text-uppercase"><span class="fa fa fa-plus" aria-hidden="true"></span>&nbsp;&nbsp;Mi lista</div>            
+            </div><!-- End Well -->
+        </div><!-- End Container -->
+        <!-- PAGE CONTENT -->
     </div>
-</div>
-<script>
-    $(document).ready(function () {
-        /* Additional Javascript (required) */
-        $('#carouselVod').carousel({
-            pause: 'none'
-        })
-    });
-</script>
 
+    <script>
+        $(document).ready(function () {
+            /* Additional Javascript (required) */
+            $('#carouselVod').carousel({
+                pause: 'none'
+            })
+        });
+    </script>
+</div>
+<style>
+	.txtSobreImg{
+		 position:absolute; top:120px;
+	}
+</style>
+</div>
+<div class="row">
+	<div class="col-md-12 col-lg-12">
+		<div id="carreteSerie1" class="carousel slide" data-ride="carousel">
+			<div class="carousel-inner" role="listbox">
+				<div class="item active">
+					<div class="row">
+						<div class="col-xs-6 col-sm-6 col-md-2">
+							<div class="thumbnail">
+								<img class="img-responsive img-rounded" src="http://placehold.it/300x300" alt="...">
+								<div class="caption txtSobreImg">
+									<h4>Serie 1</h4>
+									<p>Resumen de descripción</p>
+									<button type="button" class="btn btn-link">Ver mas</button>
+								</div>
+							</div>
+						</div>
+						<div class="col-xs-6 col-sm-6 col-md-2">
+							<div class="thumbnail">
+								<img class="img-responsive img-rounded" src="http://placehold.it/300x300" alt="...">
+								<div class="caption txtSobreImg">
+									<h4>Serie 2</h4>
+									<p>Resumen de descripción</p>
+									<button type="button" class="btn btn-link">Ver mas</button>
+								</div>
+							</div>
+						</div>
+						<div class="col-xs-6 col-sm-6 col-md-2">
+							<div class="thumbnail">
+								<img class="img-responsive img-rounded" src="http://placehold.it/300x300" alt="...">
+								<div class="caption txtSobreImg">
+									<h4>Serie 3</h4>
+									<p>Resumen de descripción</p>
+									<button type="button" class="btn btn-link">Ver mas</button>
+								</div>
+							</div>
+						</div>
+						<div class="col-xs-6 col-sm-6 col-md-2">
+							<div class="thumbnail">
+								<img class="img-responsive img-rounded" src="http://placehold.it/300x300" alt="...">
+								<div class="caption txtSobreImg">
+									<h4>Serie 4</h4>
+									<p>Resumen de descripción</p>
+									<button type="button" class="btn btn-link">Ver mas</button>
+								</div>
+							</div>
+						</div>
+						<div class="col-xs-6 col-sm-6 col-md-2">
+							<div class="thumbnail">
+								<img class="img-responsive img-rounded" src="http://placehold.it/300x300" alt="...">
+								<div class="caption txtSobreImg">
+									<h4>Serie 5</h4>
+									<p>Resumen de descripción</p>
+									<button type="button" class="btn btn-link">Ver mas</button>
+								</div>
+							</div>
+						</div>
+						<div class="col-xs-6 col-sm-6 col-md-2">
+							<div class="thumbnail">
+								<img class="img-responsive img-rounded" src="http://placehold.it/300x300" alt="...">
+								<div class="caption txtSobreImg">
+									<h4>Serie 6</h4>
+									<p>Resumen de descripción</p>
+									<button type="button" class="btn btn-link">Ver mas</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="item">
+					<div class="row">
+						<div class="col-xs-6 col-sm-6 col-md-2">
+							<div class="thumbnail">
+								<img class="img-responsive img-rounded" src="http://placehold.it/100x100" alt="...">
+								<div class="caption">
+									<h4>Serie 1</h4>
+									<p>Resumen de descripción</p>
+									<button type="button" class="btn btn-link">Ver mas</button>
+								</div>
+							</div>
+						</div>
+						<div class="col-xs-6 col-sm-6 col-md-2">
+							<div class="thumbnail">
+								<img class="img-responsive img-rounded" src="http://placehold.it/100x100" alt="...">
+								<div class="caption">
+									<h4>Serie 2</h4>
+									<p>Resumen de descripción</p>
+									<button type="button" class="btn btn-link">Ver mas</button>
+								</div>
+							</div>
+						</div>
+						<div class="col-xs-6 col-sm-6 col-md-2">
+							<div class="thumbnail">
+								<img class="img-responsive img-rounded" src="http://placehold.it/100x100" alt="...">
+								<div class="caption">
+									<h4>Serie 3</h4>
+									<p>Resumen de descripción</p>
+									<button type="button" class="btn btn-link">Ver mas</button>
+								</div>
+							</div>
+						</div>
+						<div class="col-xs-6 col-sm-6 col-md-2">
+							<div class="thumbnail">
+								<img class="img-responsive img-rounded" src="http://placehold.it/100x100" alt="...">
+								<div class="caption">
+									<h4>Serie 4</h4>
+									<p>Resumen de descripción</p>
+									<button type="button" class="btn btn-link">Ver mas</button>
+								</div>
+							</div>
+						</div>
+						<div class="col-xs-6 col-sm-6 col-md-2">
+							<div class="thumbnail">
+								<img class="img-responsive img-rounded" src="http://placehold.it/100x100" alt="...">
+								<div class="caption">
+									<h4>Serie 5</h4>
+									<p>Resumen de descripción</p>
+									<button type="button" class="btn btn-link">Ver mas</button>
+								</div>
+							</div>
+						</div>
+						<div class="col-xs-6 col-sm-6 col-md-2">
+							<div class="thumbnail">
+								<img class="img-responsive img-rounded" src="http://placehold.it/100x100" alt="...">
+								<div class="caption">
+									<h4>Serie 6</h4>
+									<p>Resumen de descripción</p>
+									<button type="button" class="btn btn-link">Ver mas</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<a class="left carousel-control" href="#carreteSerie1" role="button" data-slide="prev">
+				<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+				<span class="sr-only">Previous</span>
+			</a>
+			<a class="right carousel-control" href="#carreteSerie1" role="button" data-slide="next">
+				<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+				<span class="sr-only">Next</span>
+			</a>
+		</div>
+	</div>
 </div>
