@@ -122,6 +122,11 @@ Route::group(['middleware' => 'web'], function () {
     /* * **************************VOD********************** */
     Route::get('vod', 'VodController@vod');    
     /* * **************************VOD********************** */
+    
+    /* * **************************Cultura********************** */
+    Route::get('cultura', 'CulturaController@cultura');    
+    /* * **************************Cultura********************** */
+    
 });
 /*	------------	Función que extrae e imprime breadcrumbs	-----------	*/
 	function seleccionaGrado($grado) {
