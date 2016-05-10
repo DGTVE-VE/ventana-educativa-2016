@@ -120,7 +120,8 @@ Route::group(['middleware' => 'web'], function () {
     /*     * **************************REDMITE********************** */
     
     /* * **************************VOD********************** */
-    Route::get('vod', 'VodController@vod');    
+    Route::get('vod', 'VodController@vod');
+	Route::get('vod/detalleSeries', 'VodController@series');
     /* * **************************VOD********************** */
     
     /* * **************************Cultura********************** */

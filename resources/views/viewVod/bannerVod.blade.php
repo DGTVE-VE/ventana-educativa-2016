@@ -5,9 +5,9 @@
     <div id="background-carousel-vod">
         <div id="carouselVod" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
-                <div class="item active" style="background-image:url('{{asset('imagenes/vod/series/ciudad_de_los_dioses.png')}}')"></div>
-                <div class="item" style="background-image:url('{{asset('imagenes/vod/series/ciudad_de_los_dioses.png')}}')"></div>
-                <div class="item" style="background-image:url('{{asset('imagenes/vod/series/ciudad_de_los_dioses.png')}}')"></div>        
+                <div class="item active" style="background-image:url('{{asset('imagenes/vod/series/bannerPrincipal.jpg')}}')"></div>
+                <div class="item" style="background-image:url('{{asset('imagenes/vod/series/bannerPrincipal.jpg')}}')"></div>
+                <div class="item" style="background-image:url('{{asset('imagenes/vod/series/bannerPrincipal.jpg')}}')"></div>        
             </div>
         </div>
     </div>
@@ -38,8 +38,17 @@
     </script>
 </div>
 <style>
+	.estiloTxt{
+		color: white;
+	}
+	.estiloIconoMas{
+		color: white; font-size:36px; cursor:pointer
+	}
+	.divIconoMas{
+		height:20px; width:20px; margin:auto;
+	}
 	.txtSobreImg{
-		 position:absolute; top:20px; left:10px;
+		 position:absolute; top:350px; left:10px; width:90%;
 	}
 	.fondoTrans{
 		background-color:transparent;
@@ -51,14 +60,20 @@
 	.reduceAnchoFlecha{
 		width:3%;
 	}
+	.thumbnailVertical{
+		width: 260px;
+	}
+	.margenesFila{
+		padding-right:35px; padding-left:35px; margin-top:10px; margin-bottom:30px;
+	}
 </style>
 </div>
 <div class="row">
 	<div class="col-md-12 col-lg-12">
-		<p style="color:white; font-size:16px;">MI LISTA</p>
+		<a href="{{url('vod/detalleSeries')}}"><p style="color:white; font-size:16px;">MI LISTA</p></a>
 	</div>
 </div>
-<div class="row" style="padding-right:5px; padding-left:5px; margin-top:10px; margin-bottom:30px;">
+<div class="row margenesFila">
 	<div class="col-md-12 col-lg-12">
 		<div id="carreteSerie1" class="carousel slide" data-ride="carousel">
 			<div class="carousel-inner" role="listbox">
@@ -66,61 +81,73 @@
 					<div class="row">
 						<div class="col-xs-6 col-sm-6 col-md-2 cambiaPadding">
 							<div class="thumbnail fondoTrans">
-								<img class="img-responsive" src="http://placehold.it/260x480" alt="...">
+								<img class="img-responsive thumbnailVertical" src="{{url('imagenes/vod/series/thumbnailVertical.jpg')}}" alt="...">
 								<div class="caption txtSobreImg">
-									<h4>Serie 1</h4>
-									<p>Resumen de descripción
-									<button type="button" class="btn btn-link">Ver mas</button></p>
+									<h4 class="estiloTxt">Serie 1</h4>
+									<span class="estiloTxt">Resumen de descripción</span>
+									<div class="divIconoMas">
+										<span class="glyphicon glyphicon glyphicon-menu-down estiloIconoMas" aria-hidden="true"></span>
+									</div>
 								</div>
 							</div>
 						</div>
 						<div class="col-xs-6 col-sm-6 col-md-2 cambiaPadding">
 							<div class="thumbnail fondoTrans">
-								<img class="img-responsive" src="http://placehold.it/260x480" alt="...">
+								<img class="img-responsive thumbnailVertical" src="{{url('imagenes/vod/series/thumbnailVertical.jpg')}}" alt="...">
 								<div class="caption txtSobreImg">
-									<h4>Serie 2</h4>
-									<p>Resumen de descripción
-									<button type="button" class="btn btn-link">Ver mas</button></p>
+									<h4 class="estiloTxt">Serie 2</h4>
+									<span class="estiloTxt">Resumen de descripción</span>
+									<div class="divIconoMas">
+										<span class="glyphicon glyphicon glyphicon-menu-down estiloIconoMas" aria-hidden="true"></span>
+									</div>
 								</div>
 							</div>
 						</div>
 						<div class="col-xs-6 col-sm-6 col-md-2 cambiaPadding">
 							<div class="thumbnail fondoTrans">
-								<img class="img-responsive" src="http://placehold.it/260x480" alt="...">
+								<img class="img-responsive thumbnailVertical" src="{{url('imagenes/vod/series/thumbnailVertical.jpg')}}" alt="...">
 								<div class="caption txtSobreImg">
-									<h4>Serie 3</h4>
-									<p>Resumen de descripción
-									<button type="button" class="btn btn-link">Ver mas</button></p>
+									<h4 class="estiloTxt">Serie 3</h4>
+									<span class="estiloTxt">Resumen de descripción</span>
+									<div class="divIconoMas">
+										<span class="glyphicon glyphicon glyphicon-menu-down estiloIconoMas" aria-hidden="true"></span>
+									</div>
 								</div>
 							</div>
 						</div>
 						<div class="col-xs-6 col-sm-6 col-md-2 cambiaPadding">
 							<div class="thumbnail fondoTrans">
-								<img class="img-responsive" src="http://placehold.it/260x480" alt="...">
+								<img class="img-responsive thumbnailVertical" src="{{url('imagenes/vod/series/thumbnailVertical.jpg')}}" alt="...">
 								<div class="caption txtSobreImg">
-									<h4>Serie 4</h4>
-									<p>Resumen de descripción
-									<button type="button" class="btn btn-link">Ver mas</button></p>
+									<h4 class="estiloTxt">Serie 4</h4>
+									<span class="estiloTxt">Resumen de descripción</span>
+									<div class="divIconoMas">
+										<span class="glyphicon glyphicon glyphicon-menu-down estiloIconoMas" aria-hidden="true"></span>
+									</div>
 								</div>
 							</div>
 						</div>
 						<div class="col-xs-6 col-sm-6 col-md-2 cambiaPadding">
 							<div class="thumbnail fondoTrans">
-								<img class="img-responsive" src="http://placehold.it/260x480" alt="...">
+								<img class="img-responsive thumbnailVertical" src="{{url('imagenes/vod/series/thumbnailVertical.jpg')}}" alt="...">
 								<div class="caption txtSobreImg">
-									<h4>Serie 5</h4>
-									<p>Resumen de descripción
-									<button type="button" class="btn btn-link">Ver mas</button></p>
+									<h4 class="estiloTxt">Serie 5</h4>
+									<span class="estiloTxt">Resumen de descripción</span>
+									<div class="divIconoMas">
+										<span class="glyphicon glyphicon glyphicon-menu-down estiloIconoMas" aria-hidden="true"></span>
+									</div>
 								</div>
 							</div>
 						</div>
 						<div class="col-xs-6 col-sm-6 col-md-2 cambiaPadding">
 							<div class="thumbnail fondoTrans">
-								<img class="img-responsive" src="http://placehold.it/260x480" alt="...">
+								<img class="img-responsive thumbnailVertical" src="{{url('imagenes/vod/series/thumbnailVertical.jpg')}}" alt="...">
 								<div class="caption txtSobreImg">
-									<h4>Serie 6</h4>
-									<p>Resumen de descripción
-									<button type="button" class="btn btn-link">Ver mas</button></p>
+									<h4 class="estiloTxt">Serie 6</h4>
+									<span class="estiloTxt">Resumen de descripción</span>
+									<div class="divIconoMas">
+										<span class="glyphicon glyphicon glyphicon-menu-down estiloIconoMas" aria-hidden="true"></span>
+									</div>
 								</div>
 							</div>
 						</div>
@@ -130,61 +157,73 @@
 					<div class="row">
 						<div class="col-xs-6 col-sm-6 col-md-2 cambiaPadding">
 							<div class="thumbnail fondoTrans">
-								<img class="img-responsive" src="http://placehold.it/260x480" alt="...">
+								<img class="img-responsive thumbnailVertical" src="{{url('imagenes/vod/series/thumbnailVertical.jpg')}}" alt="...">
 								<div class="caption txtSobreImg">
-									<h4>Serie 1</h4>
-									<p>Resumen de descripción
-									<button type="button" class="btn btn-link">Ver mas</button></p>
+									<h4 class="estiloTxt">Serie 1</h4>
+									<span class="estiloTxt">Resumen de descripción</span>
+									<div class="divIconoMas">
+										<span class="glyphicon glyphicon glyphicon-menu-down estiloIconoMas" aria-hidden="true"></span>
+									</div>
 								</div>
 							</div>
 						</div>
 						<div class="col-xs-6 col-sm-6 col-md-2 cambiaPadding">
 							<div class="thumbnail fondoTrans">
-								<img class="img-responsive" src="http://placehold.it/260x480" alt="...">
+								<img class="img-responsive thumbnailVertical" src="{{url('imagenes/vod/series/thumbnailVertical.jpg')}}" alt="...">
 								<div class="caption txtSobreImg">
-									<h4>Serie 2</h4>
-									<p>Resumen de descripción
-									<button type="button" class="btn btn-link">Ver mas</button></p>
+									<h4 class="estiloTxt">Serie 2</h4>
+									<span class="estiloTxt">Resumen de descripción</span>
+									<div class="divIconoMas">
+										<span class="glyphicon glyphicon glyphicon-menu-down estiloIconoMas" aria-hidden="true"></span>
+									</div>
 								</div>
 							</div>
 						</div>
 						<div class="col-xs-6 col-sm-6 col-md-2 cambiaPadding">
 							<div class="thumbnail fondoTrans">
-								<img class="img-responsive" src="http://placehold.it/260x480" alt="...">
+								<img class="img-responsive thumbnailVertical" src="{{url('imagenes/vod/series/thumbnailVertical.jpg')}}" alt="...">
 								<div class="caption txtSobreImg">
-									<h4>Serie 3</h4>
-									<p>Resumen de descripción
-									<button type="button" class="btn btn-link">Ver mas</button></p>
+									<h4 class="estiloTxt">Serie 3</h4>
+									<span class="estiloTxt">Resumen de descripción</span>
+									<div class="divIconoMas">
+										<span class="glyphicon glyphicon glyphicon-menu-down estiloIconoMas" aria-hidden="true"></span>
+									</div>
 								</div>
 							</div>
 						</div>
 						<div class="col-xs-6 col-sm-6 col-md-2 cambiaPadding">
 							<div class="thumbnail fondoTrans">
-								<img class="img-responsive" src="http://placehold.it/260x480" alt="...">
+								<img class="img-responsive thumbnailVertical" src="{{url('imagenes/vod/series/thumbnailVertical.jpg')}}" alt="...">
 								<div class="caption txtSobreImg">
-									<h4>Serie 4</h4>
-									<p>Resumen de descripción
-									<button type="button" class="btn btn-link">Ver mas</button></p>
+									<h4 class="estiloTxt">Serie 4</h4>
+									<span class="estiloTxt">Resumen de descripción</span>
+									<div class="divIconoMas">
+										<span class="glyphicon glyphicon glyphicon-menu-down estiloIconoMas" aria-hidden="true"></span>
+									</div>
 								</div>
 							</div>
 						</div>
 						<div class="col-xs-6 col-sm-6 col-md-2 cambiaPadding">
 							<div class="thumbnail fondoTrans">
-								<img class="img-responsive" src="http://placehold.it/260x480" alt="...">
+								<img class="img-responsive thumbnailVertical" src="{{url('imagenes/vod/series/thumbnailVertical.jpg')}}" alt="...">
 								<div class="caption txtSobreImg">
-									<h4>Serie 5</h4>
-									<p>Resumen de descripción
-									<button type="button" class="btn btn-link">Ver mas</button></p>
+									<h4 class="estiloTxt">Serie 5</h4>
+									<span class="estiloTxt">Resumen de descripción</span>
+									<div class="divIconoMas">
+										<span class="glyphicon glyphicon glyphicon-menu-down estiloIconoMas" aria-hidden="true"></span>
+									</div>
 								</div>
 							</div>
 						</div>
 						<div class="col-xs-6 col-sm-6 col-md-2 cambiaPadding">
 							<div class="thumbnail fondoTrans">
-								<img class="img-responsive" src="http://placehold.it/260x480" alt="...">
+								<img class="img-responsive thumbnailVertical" src="{{url('imagenes/vod/series/thumbnailVertical.jpg')}}" alt="...">
 								<div class="caption txtSobreImg">
-									<h4>Serie 6</h4>
-									<p>Resumen de descripción
-									<button type="button" class="btn btn-link">Ver mas</button></p>
+									<h4 class="estiloTxt">Serie 6</h4>
+									<span class="estiloTxt">Resumen de descripción</span>
+									<div class="divIconoMas">
+										<span class="glyphicon glyphicon glyphicon-menu-down estiloIconoMas" aria-hidden="true"></span>
+									</div>
 								</div>
 							</div>
 						</div>
@@ -204,10 +243,10 @@
 </div>
 <div class="row">
 	<div class="col-md-12 col-lg-12">
-		<p style="color:white; font-size:16px;">CLASIFICACION 2</p>
+		<a href="{{url('vod/detalleSeries')}}"><p style="color:white; font-size:16px;">CLASIFICACION 2</p></a>
 	</div>
 </div>
-<div class="row" style="padding-right:5px; padding-left:5px; margin-top:10px; margin-bottom:30px;">
+<div class="row margenesFila">
 	<div class="col-md-12 col-lg-12">
 		<div id="carreteSerie2" class="carousel slide" data-ride="carousel">
 			<div class="carousel-inner" role="listbox">
@@ -217,9 +256,11 @@
 							<div class="thumbnail fondoTrans">
 								<img class="img-responsive" src="http://placehold.it/260x480" alt="...">
 								<div class="caption txtSobreImg">
-									<h4>Serie 1</h4>
-									<p>Resumen de descripción
-									<button type="button" class="btn btn-link">Ver mas</button></p>
+									<h4 class="estiloTxt">Serie 1</h4>
+									<span class="estiloTxt">Resumen de descripción</span>
+									<div class="divIconoMas">
+										<span class="glyphicon glyphicon glyphicon-menu-down estiloIconoMas" aria-hidden="true"></span>
+									</div>
 								</div>
 							</div>
 						</div>
@@ -227,9 +268,11 @@
 							<div class="thumbnail fondoTrans">
 								<img class="img-responsive" src="http://placehold.it/260x480" alt="...">
 								<div class="caption txtSobreImg">
-									<h4>Serie 2</h4>
-									<p>Resumen de descripción
-									<button type="button" class="btn btn-link">Ver mas</button></p>
+									<h4 class="estiloTxt">Serie 2</h4>
+									<span class="estiloTxt">Resumen de descripción</span>
+									<div class="divIconoMas">
+										<span class="glyphicon glyphicon glyphicon-menu-down estiloIconoMas" aria-hidden="true"></span>
+									</div>
 								</div>
 							</div>
 						</div>
@@ -237,9 +280,11 @@
 							<div class="thumbnail fondoTrans">
 								<img class="img-responsive" src="http://placehold.it/260x480" alt="...">
 								<div class="caption txtSobreImg">
-									<h4>Serie 3</h4>
-									<p>Resumen de descripción
-									<button type="button" class="btn btn-link">Ver mas</button></p>
+									<h4 class="estiloTxt">Serie 3</h4>
+									<span class="estiloTxt">Resumen de descripción</span>
+									<div class="divIconoMas">
+										<span class="glyphicon glyphicon glyphicon-menu-down estiloIconoMas" aria-hidden="true"></span>
+									</div>
 								</div>
 							</div>
 						</div>
@@ -247,9 +292,11 @@
 							<div class="thumbnail fondoTrans">
 								<img class="img-responsive" src="http://placehold.it/260x480" alt="...">
 								<div class="caption txtSobreImg">
-									<h4>Serie 4</h4>
-									<p>Resumen de descripción
-									<button type="button" class="btn btn-link">Ver mas</button></p>
+									<h4 class="estiloTxt">Serie 4</h4>
+									<span class="estiloTxt">Resumen de descripción</span>
+									<div class="divIconoMas">
+										<span class="glyphicon glyphicon glyphicon-menu-down estiloIconoMas" aria-hidden="true"></span>
+									</div>
 								</div>
 							</div>
 						</div>
@@ -257,9 +304,11 @@
 							<div class="thumbnail fondoTrans">
 								<img class="img-responsive" src="http://placehold.it/260x480" alt="...">
 								<div class="caption txtSobreImg">
-									<h4>Serie 5</h4>
-									<p>Resumen de descripción
-									<button type="button" class="btn btn-link">Ver mas</button></p>
+									<h4 class="estiloTxt">Serie 5</h4>
+									<span class="estiloTxt">Resumen de descripción</span>
+									<div class="divIconoMas">
+										<span class="glyphicon glyphicon glyphicon-menu-down estiloIconoMas" aria-hidden="true"></span>
+									</div>
 								</div>
 							</div>
 						</div>
@@ -267,9 +316,11 @@
 							<div class="thumbnail fondoTrans">
 								<img class="img-responsive" src="http://placehold.it/260x480" alt="...">
 								<div class="caption txtSobreImg">
-									<h4>Serie 6</h4>
-									<p>Resumen de descripción
-									<button type="button" class="btn btn-link">Ver mas</button></p>
+									<h4 class="estiloTxt">Serie 6</h4>
+									<span class="estiloTxt">Resumen de descripción</span>
+									<div class="divIconoMas">
+										<span class="glyphicon glyphicon glyphicon-menu-down estiloIconoMas" aria-hidden="true"></span>
+									</div>
 								</div>
 							</div>
 						</div>
@@ -281,9 +332,11 @@
 							<div class="thumbnail fondoTrans">
 								<img class="img-responsive" src="http://placehold.it/260x480" alt="...">
 								<div class="caption txtSobreImg">
-									<h4>Serie 1</h4>
-									<p>Resumen de descripción
-									<button type="button" class="btn btn-link">Ver mas</button></p>
+									<h4 class="estiloTxt">Serie 1</h4>
+									<span class="estiloTxt">Resumen de descripción</span>
+									<div class="divIconoMas">
+										<span class="glyphicon glyphicon glyphicon-menu-down estiloIconoMas" aria-hidden="true"></span>
+									</div>
 								</div>
 							</div>
 						</div>
@@ -291,9 +344,11 @@
 							<div class="thumbnail fondoTrans">
 								<img class="img-responsive" src="http://placehold.it/260x480" alt="...">
 								<div class="caption txtSobreImg">
-									<h4>Serie 2</h4>
-									<p>Resumen de descripción
-									<button type="button" class="btn btn-link">Ver mas</button></p>
+									<h4 class="estiloTxt">Serie 2</h4>
+									<span class="estiloTxt">Resumen de descripción</span>
+									<div class="divIconoMas">
+										<span class="glyphicon glyphicon glyphicon-menu-down estiloIconoMas" aria-hidden="true"></span>
+									</div>
 								</div>
 							</div>
 						</div>
@@ -301,9 +356,11 @@
 							<div class="thumbnail fondoTrans">
 								<img class="img-responsive" src="http://placehold.it/260x480" alt="...">
 								<div class="caption txtSobreImg">
-									<h4>Serie 3</h4>
-									<p>Resumen de descripción
-									<button type="button" class="btn btn-link">Ver mas</button></p>
+									<h4 class="estiloTxt">Serie 3</h4>
+									<span class="estiloTxt">Resumen de descripción</span>
+									<div class="divIconoMas">
+										<span class="glyphicon glyphicon glyphicon-menu-down estiloIconoMas" aria-hidden="true"></span>
+									</div>
 								</div>
 							</div>
 						</div>
@@ -311,9 +368,11 @@
 							<div class="thumbnail fondoTrans">
 								<img class="img-responsive" src="http://placehold.it/260x480" alt="...">
 								<div class="caption txtSobreImg">
-									<h4>Serie 4</h4>
-									<p>Resumen de descripción
-									<button type="button" class="btn btn-link">Ver mas</button></p>
+									<h4 class="estiloTxt">Serie 4</h4>
+									<span class="estiloTxt">Resumen de descripción</span>
+									<div class="divIconoMas">
+										<span class="glyphicon glyphicon glyphicon-menu-down estiloIconoMas" aria-hidden="true"></span>
+									</div>
 								</div>
 							</div>
 						</div>
@@ -321,9 +380,11 @@
 							<div class="thumbnail fondoTrans">
 								<img class="img-responsive" src="http://placehold.it/260x480" alt="...">
 								<div class="caption txtSobreImg">
-									<h4>Serie 5</h4>
-									<p>Resumen de descripción
-									<button type="button" class="btn btn-link">Ver mas</button></p>
+									<h4 class="estiloTxt">Serie 5</h4>
+									<span class="estiloTxt">Resumen de descripción</span>
+									<div class="divIconoMas">
+										<span class="glyphicon glyphicon glyphicon-menu-down estiloIconoMas" aria-hidden="true"></span>
+									</div>
 								</div>
 							</div>
 						</div>
@@ -331,9 +392,11 @@
 							<div class="thumbnail fondoTrans">
 								<img class="img-responsive" src="http://placehold.it/260x480" alt="...">
 								<div class="caption txtSobreImg">
-									<h4>Serie 6</h4>
-									<p>Resumen de descripción
-									<button type="button" class="btn btn-link">Ver mas</button></p>
+									<h4 class="estiloTxt">Serie 6</h4>
+									<span class="estiloTxt">Resumen de descripción</span>
+									<div class="divIconoMas">
+										<span class="glyphicon glyphicon glyphicon-menu-down estiloIconoMas" aria-hidden="true"></span>
+									</div>
 								</div>
 							</div>
 						</div>
