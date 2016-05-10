@@ -20,8 +20,8 @@
 			{{HTML::image('imagenes/mediateca/Inicio/home.png','Telesecundaria',['class'=>'posicionInicial img-responsive', 'id'=>'iniEducamedia'])}}
 				{{HTML::image('imagenes/mediateca/Inicio/telesecHover.png','Telesecundaria',['class'=>'resaltaImg img-responsive', 'id'=>'telesecHover'])}}
 				{{HTML::image('imagenes/mediateca/Inicio/telebachHover.png','Telesecundaria',['class'=>'resaltaImg img-responsive', 'id'=>'telebachHover'])}}
-			{{HTML::image('imagenes/mediateca/Inicio/TelebachilleratoCentro.gif','Telebachillerato Central',['class'=>' img-responsive iniImgCentro img-circle', 'id'=>'telebachCentro'])}}
-			{{HTML::image('imagenes/mediateca/Inicio/TelesecundariaCentro.gif','Telesecundaria Central',['class'=>'img-responsive iniImgCentro img-circle', 'id'=>'telesecCentro'])}}
+			{{HTML::image('imagenes/mediateca/Inicio/TelebachilleratoCentro.gif','Telebachillerato Central',['class'=>' img-responsive iniImgCentro img-circle cinemagraph', 'id'=>'telebachCentro'])}}
+			{{HTML::image('imagenes/mediateca/Inicio/TelesecundariaCentro.gif','Telesecundaria Central',['class'=>'img-responsive iniImgCentro img-circle cinemagraph', 'id'=>'telesecCentro'])}}
 			{{HTML::image('imagenes/mediateca/Inicio/imgMapa.png','Telebachillerato',['class'=>'posicionMapa img-responsive', 'id'=>'educamediaIni', 'usemap'=>'#inicioEducamedia'])}}
 		</div>
 	</div>

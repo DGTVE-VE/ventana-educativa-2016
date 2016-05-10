@@ -6,7 +6,7 @@ and open the template in the editor.
 -->
 <html lang='en'>
     <head>
-        <title>@yield('titleVod','Videos Bajo Demanda')</title>
+        <title>@yield('titleCultura','Cultura')</title>
         <!--  App Descripción  -->
         <meta name="description" content="Ventana Educativa 2016"/>
         <meta charset="utf-8">
@@ -18,24 +18,19 @@ and open the template in the editor.
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-
+        
         <!--	-------------------------- Fuentes de google fonts ------------------------------------		-->
         <link href='https://fonts.googleapis.com/css?family=Ubuntu:400,300,500,700' rel='stylesheet' type='text/css'>
-        <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Oxygen">
 
-        <link rel="stylesheet" href="{{ asset('css/red/ihover.css') }}" >
+        <link rel="stylesheet" href="{{ asset('css/cultura/hover.css') }}" media="all" >
         <link rel="stylesheet" href="{{ asset('css/red/animate.css') }}" >        
 
         <!--	-------------------------- Estilos para encabezado ------------------------------------		-->
-        <link rel="stylesheet" href="{{ asset('css/mediateca/estilomediateca2.css') }}" >
-
+        <link rel="stylesheet" href="{{ asset('css/mediateca/estilomediateca2.css') }}" >      
+        <link rel="stylesheet" href="{{ asset('css/cultura/estilocultura.css') }}" >      
         
         @yield ('estilos')
-
         
-        <link rel="stylesheet" href="{{ asset('css/vod/estilovod.css') }}" >        
-        
-
         <!-- jQuery library -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 
@@ -45,22 +40,17 @@ and open the template in the editor.
         @yield ('scripts')
 
     </head>
-    <body>     
+    <body style="background-image:url('{{ asset('imagenes/cultura/backgroundCultura.jpg') }}');">     
         <header>
-			<div class="container-fluid">
-				@yield('menuVod')
-			</div>
+            @yield('menuCultura')
         </header>
         <div class="container-fluid">
-            @yield('cuerpoVod')
-        </div>
-        <div class="container-fluid">
-            @yield('pieVod')
+            @yield('cuerpoCultura')
         </div>
     </body>
 </html>
 
-<!--        Script para Google Analytics de la red Mesoamericana	-->
+<!--        Script para Google Analytics       -->
 <script>
 (function (i, s, o, g, r, a, m) {
     i['GoogleAnalyticsObject'] = r;
@@ -78,3 +68,4 @@ ga('create', 'UA-75232922-1', 'auto');
 ga('send', 'pageview');
 
 </script>
+

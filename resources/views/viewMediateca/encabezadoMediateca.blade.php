@@ -35,7 +35,7 @@
 		}
 	/*	----------	Estilo pagina Inicio Educamedia	----------	*/	
 		.iniImgCentro{
-			position: absolute; top:75px; left:80px; width:130px; height: 130px; z-index:0; visibility: hidden;
+			position: absolute; top:57px; left:58px; width:170px; height:169px; z-index:0; visibility: hidden;
 		}
 	/*	----------	Estilo General todos los grados	----------*/
 		.imgPrimeroCentral{
@@ -66,7 +66,7 @@
 		}
 	/*	----------	Estilo pagina Inicio Educamedia	----------	*/	
 		.iniImgCentro{
-			position: absolute; top:75px; left:80px; width:130px; height: 130px; z-index:0; visibility: hidden;
+			position: absolute; top:57px; left:58px; width:170px; height:169px; z-index:0; visibility: hidden;
 		}
 	/*	----------	Estilo General todos los grados	----------*/
 		.imgPrimeroCentral{
@@ -96,7 +96,7 @@
 		}
 	/*	----------	Estilo pagina Inicio Educamedia	----------	*/	
 		.iniImgCentro{
-			position: absolute; top:130px; left:130px; width:230px; height: 230px; z-index:0; visibility: hidden;
+			position: absolute; top:95px; left:98px; width:288px; height:292px; z-index:0; visibility: hidden;
 		}
 	/*	----------	Estilo General todos los grados	----------*/
 		.imgPrimeroCentral{
@@ -127,7 +127,7 @@
 		}
 	/*	----------	Estilo pagina Inicio Educamedia	----------	*/	
 		.iniImgCentro{
-			position: absolute; top:130px; left:130px; width:230px; height: 230px; z-index:0; visibility: hidden;
+			position: absolute; top:95px; left:98px; width:286px; height:292px; z-index:0; visibility: hidden;
 		}
 	/*	----------	Estilo General todos los grados	----------*/
 		.imgPrimeroCentral{
@@ -153,7 +153,7 @@
 		}
 	/*	----------	Estilo pagina Inicio Educamedia	----------	*/	
 		.iniImgCentro{
-			position: absolute; top:130px; left:130px; width:230px; height: 230px; z-index:0; visibility: hidden;
+			position: absolute; top:95px; left:98px; width:286px; height:292px; z-index:0; visibility: hidden;
 		}
 	/*	----------	Estilo General todos los grados	----------*/
 		.imgPrimeroCentral{
