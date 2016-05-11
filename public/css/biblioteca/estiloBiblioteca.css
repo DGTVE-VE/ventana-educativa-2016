@@ -7,53 +7,111 @@ and open the template in the editor.
     Created on : 9/05/2016, 05:51:14 PM
     Author     : SMARTINEZ
 */
+* {margin:0; padding:0}
 
-.content {
-    width:200px;
-    height:0px;
-    margin-right: auto;
-    margin-left: auto;
+.accordion {
+  width: 50%;
+  max-width: 1080px;
+  height: 650px;
+  overflow: hidden;
+  margin: 50px auto;
 }
-.panel-group {
-    width:430px;
-    z-index: 100;
-    -webkit-backface-visibility: hidden;
-    -webkit-transform: translateX(-100%) rotate(-90deg);
-    -webkit-transform-origin: right top;
-    -moz-transform: translateX(-100%) rotate(-90deg);
-    -moz-transform-origin: right top;
-    -o-transform: translateX(-100%) rotate(-90deg);
-    -o-transform-origin: right top;
-    transform: translateX(-100%) rotate(-90deg);
-    transform-origin: right top;
+
+.accordion ul {
+  width: 100%;
+  display: table;
+  table-layout: fixed;
+  margin: 0;
+  padding: 0;
 }
-.panel-heading {
-    width: 430px;
+
+.accordion ul li {
+  display: table-cell;
+  vertical-align: bottom;
+  position: relative;
+  width: 16.666%;
+  height: 650px;
+  background-repeat: no-repeat;
+  /*background-position: center center;*/
+  transition: all 500ms ease;
 }
-.panel-title {
-    height:18px
+
+.accordion ul li div {
+  display: block;
+  overflow: hidden;
+  width: 100%;
 }
-.panel-title a {
-    float:right;
-    text-decoration:none;
-    padding: 10px 430px;
-    margin: -10px -430px;
+
+.accordion ul li div a {
+  display: block;
+  height: 350px;
+  width: 100%;
+  position: relative;
+  z-index: 3;
+  vertical-align: bottom;
+  padding: 15px 20px;
+  box-sizing: border-box;
+  color: #fff;
+  text-decoration: none;
+  font-family: Open Sans, sans-serif;
+  transition: all 200ms ease;
 }
-.panel-body {
-    height:830px;
+
+.accordion ul li div a * {
+  opacity: 0;
+  margin: 0;
+  width: 100%;
+  text-overflow: ellipsis;
+  position: relative;
+  z-index: 5;
+  white-space: nowrap;
+  overflow: hidden;
+  -webkit-transform: translateX(-20px);
+  transform: translateX(-20px);
+  -webkit-transition: all 400ms ease;
+  transition: all 400ms ease;
 }
-.panel-group img {
-    -webkit-backface-visibility: hidden;
-    -webkit-transform: translateX(0%) rotate(90deg);
-    -webkit-transform-origin: left top;
-    -moz-transform: translateX(0%) rotate(90deg);
-    -moz-transform-origin: left top;
-    -o-transform: translateX(0%) rotate(90deg);
-    -o-transform-origin: left top;
-    transform: translateX(0%) rotate(90deg);
-    transform-origin: left top;
+
+.accordion ul li div a h2 {
+  font-family: Montserrat, sans-serif;
+  text-overflow: clip;
+  font-size: 24px;
+  text-transform: uppercase;
+  margin-bottom: 2px;
+  top: 160px;
 }
-.panel-group .panel img {
-    margin-left:400px;
-    position: absolute;
+
+.accordion ul li div a p {
+  top: 160px;
+  font-size: 13.5px;
+}
+
+.accordion ul:hover li { width: 14%; }
+
+.accordion ul:hover li:hover { width: 70%; }
+
+.accordion ul:hover li:hover a { background: rgba(0, 0, 0, 0.4); }
+
+.accordion ul:hover li:hover a * {
+  opacity: 1;
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+}
+ @media screen and (max-width: 600px) {
+
+body { margin: 0; }
+
+.accordion { height: auto; }
+
+.accordion ul li,
+.accordion ul li:hover,
+.accordion ul:hover li,
+.accordion ul:hover li:hover {
+  position: relative;
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+  -webkit-transition: none;
+  transition: none;
+}
 }
