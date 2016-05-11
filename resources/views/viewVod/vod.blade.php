@@ -8,13 +8,14 @@ Videos Bajo Demanda
 		$('#buscar').css('display','none');
 		$('#iconoBuscar').css('display','none');
 		$('#navegacionVentana').css('height','55px');
+		$('#navegacionVentana').css('background','rgba(0, 0, 0, .3)');
 		$(window).scroll(function(){
 			var scroll_v = this.pageYOffset;
 			if(scroll_v > 10){
-				$('#navegacionVentana').css('background','rgba(0, 0, 0, .3)');
+				$('#navegacionVentana').css('background','rgba(0, 0, 0, .6)');
 			}
 			if(scroll_v < 10){
-				$('#navegacionVentana').css('background','transparent');
+				$('#navegacionVentana').css('background','rgba(0, 0, 0, .3)');
 			}
 		});
 	</script>
