@@ -129,6 +129,10 @@ Route::group(['middleware' => 'web'], function () {
     Route::get('cultura', 'CulturaController@cultura');    
     /* * **************************Cultura********************** */
     
+    /* * **************************Cultura********************** */
+    Route::get('biblioteca', 'BibliotecaController@biblioteca');    
+    /* * **************************Cultura********************** */
+    
 });
 /*	------------	Función que extrae e imprime breadcrumbs	-----------	*/
 	function seleccionaGrado($grado) {
