@@ -9,7 +9,7 @@
 //        ]);
 //});
 Route::resource('user', 'Api\User');
-Route::resource('sessions', 'SessionsController');
+
 Route::get('user/existEmail/{email}', ['as' => 'user.existEmail', 'uses' => 'Api\User@existEmail']);
 Route::get('user/existNick/{nickname}', ['as' => 'user.existNick', 'uses' => 'Api\User@existNick']);
 Route::get('login', 'SessionsController@create');
@@ -24,6 +24,7 @@ Route::get('logout', 'SessionsController@destroy');
 
 /* Las rutas dentro de este grupo, tienen sesión */
 Route::group(['middleware' => 'web'], function () {
+    Route::resource('sessions', 'SessionsController');
     Route::auth();
     Route::get('/', 'VentanaController@ventana_educativa');
     Route::get('ventana_educativa', ['as' => 'home', 'uses' => 'VentanaController@ventana_educativa']);
@@ -120,7 +121,8 @@ Route::group(['middleware' => 'web'], function () {
     /*     * **************************REDMITE********************** */
     
     /* * **************************VOD********************** */
-    Route::get('vod', 'VodController@vod');    
+    Route::get('vod', 'VodController@vod');
+	Route::get('vod/detalleSeries', 'VodController@series');
     /* * **************************VOD********************** */
     
     /* * **************************Cultura********************** */

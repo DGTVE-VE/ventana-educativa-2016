@@ -11,4 +11,7 @@ class VodController extends Controller
     public function vod() {
         return view('viewVod/vod');
     }
+    public function series() {
+        return view('viewVod/listaVideos');
+    }
 }

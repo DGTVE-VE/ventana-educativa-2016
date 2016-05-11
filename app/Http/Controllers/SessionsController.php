@@ -17,10 +17,11 @@ class SessionsController extends Controller
         return Redirect::to ('acceso');
     }
     
-    public function store (){
+    public function store (Request $request){
         if (Auth::attempt(Input::only ('email', 'password'))){                        
 //            return Redirect::back();
-            return redirect()->intended('defaultpage');
+            $url = $request->session()->get('url', '/');            
+            return redirect()->intended($url);
         }
         return Redirect::back()->withInput ();
         
