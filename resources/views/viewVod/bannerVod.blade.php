@@ -9,8 +9,7 @@
 		height:20px; width:20px; margin:auto;
 	}
 	.fondoTrans{
-		background-color:transparent;
-		border:none;
+		background-color:transparent; border:none;
 	}
 	.cambiaPadding{
 		padding:0px;
@@ -29,6 +28,12 @@
 	}
 	.margenMenuChico{
 		padding-top:55px;
+	}
+	.estiloTab{
+		 height:350px; color:white;
+	}
+	.iconoCerrar{
+		cursor:pointer; position:absolute; right:2%; font-size:2em;
 	}
 	@media(min-width:300px){
 		.posicionDescripcion{
@@ -141,6 +146,18 @@
 			interval: false
 		})
 	});
+	function muestraDetalle(numDiv){
+		var nombreDivDetalle = '#detalleSerie' + numDiv;
+		$(nombreDivDetalle).css('display','block');
+		console.log($(nombreDivDetalle).offset().top);
+		var windowTop = $(nombreDivDetalle).offset().top - '250';
+		$(document).scrollTop(windowTop)
+	}
+	
+	function cierraDetalle(numDiv){
+		var nombreDivDetalle = '#detalleSerie' + numDiv;
+		$(nombreDivDetalle).css('display','none');
+	}
 </script>
 <div class="row visible-xs margenMenuChico">
 </div>
@@ -229,7 +246,7 @@
 									<h4 class="estiloTxt">Serie 1</h4>
 									<span class="estiloTxt">Resumen de descripción</span>
 									<div class="divIconoMas">
-										<span class="glyphicon glyphicon glyphicon-menu-down estiloIconoMas" aria-hidden="true"></span>
+										<span class="glyphicon glyphicon glyphicon-menu-down estiloIconoMas" onclick="muestraDetalle('1')" aria-hidden="true"></span>
 									</div>
 								</div>
 							</div>
@@ -241,7 +258,7 @@
 									<h4 class="estiloTxt">Serie 2</h4>
 									<span class="estiloTxt">Resumen de descripción</span>
 									<div class="divIconoMas">
-										<span class="glyphicon glyphicon glyphicon-menu-down estiloIconoMas" aria-hidden="true"></span>
+										<span class="glyphicon glyphicon glyphicon-menu-down estiloIconoMas" onclick="muestraDetalle('1')" aria-hidden="true"></span>
 									</div>
 								</div>
 							</div>
@@ -253,7 +270,7 @@
 									<h4 class="estiloTxt">Serie 3</h4>
 									<span class="estiloTxt">Resumen de descripción</span>
 									<div class="divIconoMas">
-										<span class="glyphicon glyphicon glyphicon-menu-down estiloIconoMas" aria-hidden="true"></span>
+										<span class="glyphicon glyphicon glyphicon-menu-down estiloIconoMas" onclick="muestraDetalle('1')" aria-hidden="true"></span>
 									</div>
 								</div>
 							</div>
@@ -265,7 +282,7 @@
 									<h4 class="estiloTxt">Serie 4</h4>
 									<span class="estiloTxt">Resumen de descripción</span>
 									<div class="divIconoMas">
-										<span class="glyphicon glyphicon glyphicon-menu-down estiloIconoMas" aria-hidden="true"></span>
+										<span class="glyphicon glyphicon glyphicon-menu-down estiloIconoMas" onclick="muestraDetalle('1')" aria-hidden="true"></span>
 									</div>
 								</div>
 							</div>
@@ -277,7 +294,7 @@
 									<h4 class="estiloTxt">Serie 5</h4>
 									<span class="estiloTxt">Resumen de descripción</span>
 									<div class="divIconoMas">
-										<span class="glyphicon glyphicon glyphicon-menu-down estiloIconoMas" aria-hidden="true"></span>
+										<span class="glyphicon glyphicon glyphicon-menu-down estiloIconoMas" onclick="muestraDetalle('1')" aria-hidden="true"></span>
 									</div>
 								</div>
 							</div>
@@ -289,7 +306,7 @@
 									<h4 class="estiloTxt">Serie 6</h4>
 									<span class="estiloTxt">Resumen de descripción</span>
 									<div class="divIconoMas">
-										<span class="glyphicon glyphicon glyphicon-menu-down estiloIconoMas" aria-hidden="true"></span>
+										<span class="glyphicon glyphicon glyphicon-menu-down estiloIconoMas" onclick="muestraDetalle('1')" aria-hidden="true"></span>
 									</div>
 								</div>
 							</div>
@@ -305,7 +322,7 @@
 									<h4 class="estiloTxt">Serie 1</h4>
 									<span class="estiloTxt">Resumen de descripción</span>
 									<div class="divIconoMas">
-										<span class="glyphicon glyphicon glyphicon-menu-down estiloIconoMas" aria-hidden="true"></span>
+										<span class="glyphicon glyphicon glyphicon-menu-down estiloIconoMas" onclick="muestraDetalle('1')" aria-hidden="true"></span>
 									</div>
 								</div>
 							</div>
@@ -317,7 +334,7 @@
 									<h4 class="estiloTxt">Serie 2</h4>
 									<span class="estiloTxt">Resumen de descripción</span>
 									<div class="divIconoMas">
-										<span class="glyphicon glyphicon glyphicon-menu-down estiloIconoMas" aria-hidden="true"></span>
+										<span class="glyphicon glyphicon glyphicon-menu-down estiloIconoMas" onclick="muestraDetalle('1')" aria-hidden="true"></span>
 									</div>
 								</div>
 							</div>
@@ -329,7 +346,7 @@
 									<h4 class="estiloTxt">Serie 3</h4>
 									<span class="estiloTxt">Resumen de descripción</span>
 									<div class="divIconoMas">
-										<span class="glyphicon glyphicon glyphicon-menu-down estiloIconoMas" aria-hidden="true"></span>
+										<span class="glyphicon glyphicon glyphicon-menu-down estiloIconoMas" onclick="muestraDetalle('1')" aria-hidden="true"></span>
 									</div>
 								</div>
 							</div>
@@ -341,7 +358,7 @@
 									<h4 class="estiloTxt">Serie 4</h4>
 									<span class="estiloTxt">Resumen de descripción</span>
 									<div class="divIconoMas">
-										<span class="glyphicon glyphicon glyphicon-menu-down estiloIconoMas" aria-hidden="true"></span>
+										<span class="glyphicon glyphicon glyphicon-menu-down estiloIconoMas" onclick="muestraDetalle('1')" aria-hidden="true"></span>
 									</div>
 								</div>
 							</div>
@@ -353,7 +370,7 @@
 									<h4 class="estiloTxt">Serie 5</h4>
 									<span class="estiloTxt">Resumen de descripción</span>
 									<div class="divIconoMas">
-										<span class="glyphicon glyphicon glyphicon-menu-down estiloIconoMas" aria-hidden="true"></span>
+										<span class="glyphicon glyphicon glyphicon-menu-down estiloIconoMas" onclick="muestraDetalle('1')" aria-hidden="true"></span>
 									</div>
 								</div>
 							</div>
@@ -365,7 +382,7 @@
 									<h4 class="estiloTxt">Serie 6</h4>
 									<span class="estiloTxt">Resumen de descripción</span>
 									<div class="divIconoMas">
-										<span class="glyphicon glyphicon glyphicon-menu-down estiloIconoMas" aria-hidden="true"></span>
+										<span class="glyphicon glyphicon glyphicon-menu-down estiloIconoMas" onclick="muestraDetalle('1')" aria-hidden="true"></span>
 									</div>
 								</div>
 							</div>
@@ -382,6 +399,30 @@
 				<span class="sr-only">Next</span>
 			</a>
 		</div>
+	</div>
+	<div id="detalleSerie1" class="col-md-12" style="display: none;">
+		<div class="tab-content estiloTab">
+			<div id="descripcion1" class="tab-pane fade in active">
+				<h3>DESCRIPCION GENERAL</h3>
+				<p>Some content.</p>
+			</div>
+			<div id="similares1" class="tab-pane fade">
+				<h3>TITULOS SIMILARES</h3>
+				<p>Some content in menu 1.</p>
+			</div>
+			<div id="detalles1" class="tab-pane fade">
+				<h3>DETALLES</h3>
+				<p>Some content in menu 2.</p>
+			</div>
+		</div>
+		<ul class="nav nav-tabs nav-justified">
+			<li></li>
+			<li class="active"><a data-toggle="tab" href="#descripcion1">DESCRIPCION GENERAL</a></li>
+			<li><a data-toggle="tab" href="#similares1">TITULOS SIMILARES</a></li>
+			<li><a data-toggle="tab" href="#detalles1">DETALLES</a></li>
+			<li></li>
+		</ul>
+		<span class="glyphicon glyphicon-remove iconoCerrar" aria-hidden="true" onclick="cierraDetalle('1')"></span>
 	</div>
 </div>
 <div class="row margenesFila margenInferior">
@@ -402,7 +443,7 @@
 									<h4 class="estiloTxt">Serie 1</h4>
 									<span class="estiloTxt">Resumen de descripción</span>
 									<div class="divIconoMas">
-										<span class="glyphicon glyphicon glyphicon-menu-down estiloIconoMas" aria-hidden="true"></span>
+										<span class="glyphicon glyphicon glyphicon-menu-down estiloIconoMas" onclick="muestraDetalle('2')" aria-hidden="true"></span>
 									</div>
 								</div>
 							</div>
@@ -414,7 +455,7 @@
 									<h4 class="estiloTxt">Serie 2</h4>
 									<span class="estiloTxt">Resumen de descripción</span>
 									<div class="divIconoMas">
-										<span class="glyphicon glyphicon glyphicon-menu-down estiloIconoMas" aria-hidden="true"></span>
+										<span class="glyphicon glyphicon glyphicon-menu-down estiloIconoMas" onclick="muestraDetalle('2')" aria-hidden="true"></span>
 									</div>
 								</div>
 							</div>
@@ -426,7 +467,7 @@
 									<h4 class="estiloTxt">Serie 3</h4>
 									<span class="estiloTxt">Resumen de descripción</span>
 									<div class="divIconoMas">
-										<span class="glyphicon glyphicon glyphicon-menu-down estiloIconoMas" aria-hidden="true"></span>
+										<span class="glyphicon glyphicon glyphicon-menu-down estiloIconoMas" onclick="muestraDetalle('2')" aria-hidden="true"></span>
 									</div>
 								</div>
 							</div>
@@ -438,7 +479,7 @@
 									<h4 class="estiloTxt">Serie 4</h4>
 									<span class="estiloTxt">Resumen de descripción</span>
 									<div class="divIconoMas">
-										<span class="glyphicon glyphicon glyphicon-menu-down estiloIconoMas" aria-hidden="true"></span>
+										<span class="glyphicon glyphicon glyphicon-menu-down estiloIconoMas" onclick="muestraDetalle('2')" aria-hidden="true"></span>
 									</div>
 								</div>
 							</div>
@@ -450,7 +491,7 @@
 									<h4 class="estiloTxt">Serie 5</h4>
 									<span class="estiloTxt">Resumen de descripción</span>
 									<div class="divIconoMas">
-										<span class="glyphicon glyphicon glyphicon-menu-down estiloIconoMas" aria-hidden="true"></span>
+										<span class="glyphicon glyphicon glyphicon-menu-down estiloIconoMas" onclick="muestraDetalle('2')" aria-hidden="true"></span>
 									</div>
 								</div>
 							</div>
@@ -462,7 +503,7 @@
 									<h4 class="estiloTxt">Serie 6</h4>
 									<span class="estiloTxt">Resumen de descripción</span>
 									<div class="divIconoMas">
-										<span class="glyphicon glyphicon glyphicon-menu-down estiloIconoMas" aria-hidden="true"></span>
+										<span class="glyphicon glyphicon glyphicon-menu-down estiloIconoMas" onclick="muestraDetalle('2')" aria-hidden="true"></span>
 									</div>
 								</div>
 							</div>
@@ -478,7 +519,7 @@
 									<h4 class="estiloTxt">Serie 1</h4>
 									<span class="estiloTxt">Resumen de descripción</span>
 									<div class="divIconoMas">
-										<span class="glyphicon glyphicon glyphicon-menu-down estiloIconoMas" aria-hidden="true"></span>
+										<span class="glyphicon glyphicon glyphicon-menu-down estiloIconoMas" onclick="muestraDetalle('2')" aria-hidden="true"></span>
 									</div>
 								</div>
 							</div>
@@ -490,7 +531,7 @@
 									<h4 class="estiloTxt">Serie 2</h4>
 									<span class="estiloTxt">Resumen de descripción</span>
 									<div class="divIconoMas">
-										<span class="glyphicon glyphicon glyphicon-menu-down estiloIconoMas" aria-hidden="true"></span>
+										<span class="glyphicon glyphicon glyphicon-menu-down estiloIconoMas" onclick="muestraDetalle('2')" aria-hidden="true"></span>
 									</div>
 								</div>
 							</div>
@@ -502,7 +543,7 @@
 									<h4 class="estiloTxt">Serie 3</h4>
 									<span class="estiloTxt">Resumen de descripción</span>
 									<div class="divIconoMas">
-										<span class="glyphicon glyphicon glyphicon-menu-down estiloIconoMas" aria-hidden="true"></span>
+										<span class="glyphicon glyphicon glyphicon-menu-down estiloIconoMas" onclick="muestraDetalle('2')" aria-hidden="true"></span>
 									</div>
 								</div>
 							</div>
@@ -514,7 +555,7 @@
 									<h4 class="estiloTxt">Serie 4</h4>
 									<span class="estiloTxt">Resumen de descripción</span>
 									<div class="divIconoMas">
-										<span class="glyphicon glyphicon glyphicon-menu-down estiloIconoMas" aria-hidden="true"></span>
+										<span class="glyphicon glyphicon glyphicon-menu-down estiloIconoMas" onclick="muestraDetalle('2')" aria-hidden="true"></span>
 									</div>
 								</div>
 							</div>
@@ -526,7 +567,7 @@
 									<h4 class="estiloTxt">Serie 5</h4>
 									<span class="estiloTxt">Resumen de descripción</span>
 									<div class="divIconoMas">
-										<span class="glyphicon glyphicon glyphicon-menu-down estiloIconoMas" aria-hidden="true"></span>
+										<span class="glyphicon glyphicon glyphicon-menu-down estiloIconoMas" onclick="muestraDetalle('2')" aria-hidden="true"></span>
 									</div>
 								</div>
 							</div>
@@ -538,7 +579,7 @@
 									<h4 class="estiloTxt">Serie 6</h4>
 									<span class="estiloTxt">Resumen de descripción</span>
 									<div class="divIconoMas">
-										<span class="glyphicon glyphicon glyphicon-menu-down estiloIconoMas" aria-hidden="true"></span>
+										<span class="glyphicon glyphicon glyphicon-menu-down estiloIconoMas" onclick="muestraDetalle('2')" aria-hidden="true"></span>
 									</div>
 								</div>
 							</div>
@@ -555,5 +596,29 @@
 				<span class="sr-only">Next</span>
 			</a>
 		</div>
+	</div>
+	<div id="detalleSerie2" class="col-md-12" style="display: none;">
+		<div class="tab-content estiloTab">
+			<div id="descripcion2" class="tab-pane fade in active">
+				<h3>DESCRIPCION GENERAL</h3>
+				<p>Some content.</p>
+			</div>
+			<div id="similares2" class="tab-pane fade">
+				<h3>TITULOS SIMILARES</h3>
+				<p>Some content in menu 1.</p>
+			</div>
+			<div id="detalles2" class="tab-pane fade">
+				<h3>DETALLES</h3>
+				<p>Some content in menu 2.</p>
+			</div>
+		</div>
+		<ul class="nav nav-tabs nav-justified">
+			<li></li>
+			<li class="active"><a data-toggle="tab" href="#descripcion2">DESCRIPCION GENERAL</a></li>
+			<li><a data-toggle="tab" href="#similares2">TITULOS SIMILARES</a></li>
+			<li><a data-toggle="tab" href="#detalles2">DETALLES</a></li>
+			<li></li>
+		</ul>
+		<span class="glyphicon glyphicon-remove iconoCerrar" aria-hidden="true" onclick="cierraDetalle('2')"></span>
 	</div>
 </div>
