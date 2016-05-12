@@ -3,13 +3,10 @@
 		color: white;
 	}
 	.estiloIconoMas{
-		color: white; font-size:36px; cursor:pointer
+		color: white; font-size:30px; cursor:pointer
 	}
 	.divIconoMas{
 		height:20px; width:20px; margin:auto;
-	}
-	.txtSobreImg{
-		 position:absolute; top:350px; left:10px; width:90%;
 	}
 	.fondoTrans{
 		background-color:transparent;
@@ -30,12 +27,105 @@
 	.margenInferior{
 		margin-bottom:30px;
 	}
-	.posicionDescripcion{
-		right:36%; left:7%; top:37%;
-		text-align: left;
+	.margenMenuChico{
+		padding-top:55px;
 	}
-	.posicionBotones{
-		right:55%; left:7%; bottom:5%;
+	@media(min-width:300px){
+		.posicionDescripcion{
+			visibility:hidden;
+			right:36%; left:7%; top:37%;
+			text-align: left;
+		}
+		.posicionBotones{
+			visibility:hidden;
+			right:55%; left:7%; bottom:5%;
+		}
+		.txtSobreImg{
+			 display:none;
+		}
+	}
+	@media(min-width:425px){
+		.posicionDescripcion{
+			visibility:hidden;
+			right:36%; left:7%; top:37%;
+			text-align: left;
+		}
+		.posicionBotones{
+			visibility:visible;
+			right:55%; left:7%; bottom:5%;
+		}
+		.anchoBtnRep{
+			width:70px;
+		}
+		.anchoBtnLista{
+			width:55px;
+		}
+		.textoPeque{
+			font-size:0.5em;
+		}
+		.txtSobreImg{
+			 position:absolute; top:75%; left:20%; width:90%; display:none;
+		}
+	}
+	@media(min-width:768px){
+		.posicionDescripcion{
+			visibility:visible;
+			right:36%; left:7%; top:33%;
+			text-align: left;
+		}
+		.posicionBotones{
+			visibility:visible;
+			right:55%; left:7%; bottom:3%;
+		}
+		.anchoBtnRep{
+			width:120px;
+		}
+		.anchoBtnLista{
+			width:100px;
+		}
+		.textoPeque{
+			font-size:0.8em;
+		}
+		.txtSobreImg{
+			 position:absolute; top:65%; left:15%; width:90%; display:block;
+		}
+		.divIconoMas{
+			height:20px; width:20px; margin-left:25%; margin-right:30%;
+		}
+	}
+	@media(min-width:992px){
+		.posicionDescripcion{
+			visibility:visible;
+			right:36%; left:7%; top:38%;
+			text-align: left;
+		}
+		.posicionBotones{
+			visibility:visible;
+			right:55%; left:7%; bottom:5%;
+		}
+		.anchoBtnRep{
+			width:140px;
+		}
+		.anchoBtnLista{
+			width:120px;
+		}
+		.textoPeque{
+			font-size:1em;
+		}
+		.txtSobreImg{
+			 position:absolute; top:55%; left:10%; width:90%; display:block;
+		}
+		.divIconoMas{
+			height:20px; width:20px; margin:auto;
+		}
+	}
+	@media(min-width:1400px){
+		.txtSobreImg{
+			 position:absolute; top:65%; left:15%; width:90%; display:block;
+		}
+		.divIconoMas{
+			height:20px; width:20px; margin-left:30%; margin-right:30%;
+		}
 	}
 </style>
 <script>
@@ -52,7 +142,8 @@
 		})
 	});
 </script>
-
+<div class="row visible-xs margenMenuChico">
+</div>
 <div class="row margenInferior">
 	<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
 	  <!-- Indicators -->
@@ -67,42 +158,42 @@
 		<div class="item active">
 			<img src="{{asset('imagenes/vod/series/bannerPrincipal.jpg')}}" alt="...">
 			<div class="carousel-caption posicionDescripcion">
-				<div class="col-md-8 col-md-8">
+				<div class="col-sm-8 col-md-8 col-md-8">
 					Texto de prueba con descripción de la serie en el banner principal Texto de prueba con descripción de la serie en el banner principal
 				</div>
 			</div>
 			<div class="carousel-caption posicionBotones">
-				<div class="col-md-12 col-lg-12">
-					<div class="btn btn-danger text-uppercase"><span class="fa fa-play" aria-hidden="true"></span>&nbsp;&nbsp;Reproducir</div>
-					<div class="btn btn-info text-uppercase"><span class="fa fa fa-plus" aria-hidden="true"></span>&nbsp;&nbsp;Mi lista</div>            
+				<div class="col-sm-12 col-md-12 col-lg-12">
+					<div class="btn btn-danger text-uppercase anchoBtnRep textoPeque"><span class="fa fa-play hidden-xs" aria-hidden="true"></span><span class="hidden-xs">&nbsp;&nbsp;</span>Reproducir</div>
+					<div class="btn btn-info text-uppercase anchoBtnLista textoPeque"><span class="fa fa fa-plus hidden-xs" aria-hidden="true"></span><span class="hidden-xs">&nbsp;&nbsp;</span>Mi lista</div>            
 				</div>
 			</div>
 		</div>
 		<div class="item">
 		  <img src="{{asset('imagenes/vod/series/bannerPrincipal.jpg')}}" alt="...">
 		  	<div class="carousel-caption posicionDescripcion">
-				<div class="col-md-8 col-lg-8">
+				<div class="col-sm-8 col-md-8 col-md-8">
 					Texto de prueba con descripción de la serie en el banner principal Texto de prueba con descripción de la serie en el banner principal
 				</div>
 			</div>
 			<div class="carousel-caption posicionBotones">
-				<div class="col-md-12 col-lg-12">
-					<div class="btn btn-danger text-uppercase"><span class="fa fa-play" aria-hidden="true"></span>&nbsp;&nbsp;Reproducir</div>
-					<div class="btn btn-info text-uppercase"><span class="fa fa fa-plus" aria-hidden="true"></span>&nbsp;&nbsp;Mi lista</div>            
+				<div class="col-sm-12 col-md-12 col-lg-12">
+					<div class="btn btn-danger text-uppercase anchoBtnRep textoPeque"><span class="fa fa-play hidden-xs" aria-hidden="true"></span><span class="hidden-xs">&nbsp;&nbsp;</span>Reproducir</div>
+					<div class="btn btn-info text-uppercase anchoBtnLista textoPeque"><span class="fa fa fa-plus hidden-xs" aria-hidden="true"></span><span class="hidden-xs">&nbsp;&nbsp;</span>Mi lista</div>            
 				</div>
 			</div>
 		</div>
 		<div class="item">
 		  <img src="{{asset('imagenes/vod/series/bannerPrincipal.jpg')}}" alt="...">
 			<div class="carousel-caption posicionDescripcion">
-				<div class="col-md-8 col-lg-8">
+				<div class="col-sm-8 col-md-8 col-md-8">
 					Texto de prueba con descripción de la serie en el banner principal Texto de prueba con descripción de la serie en el banner principal
 				</div>
 			</div>
 			<div class="carousel-caption posicionBotones">
-				<div class="col-md-12 col-lg-12">
-					<div class="btn btn-danger text-uppercase"><span class="fa fa-play" aria-hidden="true"></span>&nbsp;&nbsp;Reproducir</div>
-					<div class="btn btn-info text-uppercase"><span class="fa fa fa-plus" aria-hidden="true"></span>&nbsp;&nbsp;Mi lista</div>            
+				<div class="col-sm-12 col-md-12 col-lg-12">
+					<div class="btn btn-danger text-uppercase anchoBtnRep textoPeque"><span class="fa fa-play hidden-xs" aria-hidden="true"></span><span class="hidden-xs">&nbsp;&nbsp;</span>Reproducir</div>
+					<div class="btn btn-info text-uppercase anchoBtnLista textoPeque"><span class="fa fa fa-plus hidden-xs" aria-hidden="true"></span><span class="hidden-xs">&nbsp;&nbsp;</span>Mi lista</div>            
 				</div>
 			</div>
 		</div>
@@ -131,7 +222,7 @@
 			<div class="carousel-inner" role="listbox">
 				<div class="item active">
 					<div class="row">
-						<div class="col-xs-6 col-sm-6 col-md-2 cambiaPadding">
+						<div class="col-xs-4 col-sm-4 col-md-2 cambiaPadding">
 							<div class="thumbnail fondoTrans">
 								<img class="img-responsive thumbnailVertical" src="{{url('imagenes/vod/series/thumbnailVertical.jpg')}}" alt="...">
 								<div class="caption txtSobreImg">
@@ -143,7 +234,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="col-xs-6 col-sm-6 col-md-2 cambiaPadding">
+						<div class="col-xs-4 col-sm-4 col-md-2 cambiaPadding">
 							<div class="thumbnail fondoTrans">
 								<img class="img-responsive thumbnailVertical" src="{{url('imagenes/vod/series/thumbnailVertical.jpg')}}" alt="...">
 								<div class="caption txtSobreImg">
@@ -155,7 +246,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="col-xs-6 col-sm-6 col-md-2 cambiaPadding">
+						<div class="col-xs-4 col-sm-4 col-md-2 cambiaPadding">
 							<div class="thumbnail fondoTrans">
 								<img class="img-responsive thumbnailVertical" src="{{url('imagenes/vod/series/thumbnailVertical.jpg')}}" alt="...">
 								<div class="caption txtSobreImg">
@@ -167,7 +258,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="col-xs-6 col-sm-6 col-md-2 cambiaPadding">
+						<div class="col-xs-4 col-sm-4 col-md-2 cambiaPadding">
 							<div class="thumbnail fondoTrans">
 								<img class="img-responsive thumbnailVertical" src="{{url('imagenes/vod/series/thumbnailVertical.jpg')}}" alt="...">
 								<div class="caption txtSobreImg">
@@ -179,7 +270,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="col-xs-6 col-sm-6 col-md-2 cambiaPadding">
+						<div class="col-xs-4 col-sm-4 col-md-2 cambiaPadding">
 							<div class="thumbnail fondoTrans">
 								<img class="img-responsive thumbnailVertical" src="{{url('imagenes/vod/series/thumbnailVertical.jpg')}}" alt="...">
 								<div class="caption txtSobreImg">
@@ -191,7 +282,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="col-xs-6 col-sm-6 col-md-2 cambiaPadding">
+						<div class="col-xs-4 col-sm-4 col-md-2 cambiaPadding">
 							<div class="thumbnail fondoTrans">
 								<img class="img-responsive thumbnailVertical" src="{{url('imagenes/vod/series/thumbnailVertical.jpg')}}" alt="...">
 								<div class="caption txtSobreImg">
@@ -207,7 +298,7 @@
 				</div>
 				<div class="item">
 					<div class="row">
-						<div class="col-xs-6 col-sm-6 col-md-2 cambiaPadding">
+						<div class="col-xs-4 col-sm-4 col-md-2 cambiaPadding">
 							<div class="thumbnail fondoTrans">
 								<img class="img-responsive thumbnailVertical" src="{{url('imagenes/vod/series/thumbnailVertical.jpg')}}" alt="...">
 								<div class="caption txtSobreImg">
@@ -219,7 +310,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="col-xs-6 col-sm-6 col-md-2 cambiaPadding">
+						<div class="col-xs-4 col-sm-4 col-md-2 cambiaPadding">
 							<div class="thumbnail fondoTrans">
 								<img class="img-responsive thumbnailVertical" src="{{url('imagenes/vod/series/thumbnailVertical.jpg')}}" alt="...">
 								<div class="caption txtSobreImg">
@@ -231,7 +322,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="col-xs-6 col-sm-6 col-md-2 cambiaPadding">
+						<div class="col-xs-4 col-sm-4 col-md-2 cambiaPadding">
 							<div class="thumbnail fondoTrans">
 								<img class="img-responsive thumbnailVertical" src="{{url('imagenes/vod/series/thumbnailVertical.jpg')}}" alt="...">
 								<div class="caption txtSobreImg">
@@ -243,7 +334,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="col-xs-6 col-sm-6 col-md-2 cambiaPadding">
+						<div class="col-xs-4 col-sm-4 col-md-2 cambiaPadding">
 							<div class="thumbnail fondoTrans">
 								<img class="img-responsive thumbnailVertical" src="{{url('imagenes/vod/series/thumbnailVertical.jpg')}}" alt="...">
 								<div class="caption txtSobreImg">
@@ -255,7 +346,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="col-xs-6 col-sm-6 col-md-2 cambiaPadding">
+						<div class="col-xs-4 col-sm-4 col-md-2 cambiaPadding">
 							<div class="thumbnail fondoTrans">
 								<img class="img-responsive thumbnailVertical" src="{{url('imagenes/vod/series/thumbnailVertical.jpg')}}" alt="...">
 								<div class="caption txtSobreImg">
@@ -267,7 +358,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="col-xs-6 col-sm-6 col-md-2 cambiaPadding">
+						<div class="col-xs-4 col-sm-4 col-md-2 cambiaPadding">
 							<div class="thumbnail fondoTrans">
 								<img class="img-responsive thumbnailVertical" src="{{url('imagenes/vod/series/thumbnailVertical.jpg')}}" alt="...">
 								<div class="caption txtSobreImg">
@@ -304,7 +395,7 @@
 			<div class="carousel-inner" role="listbox">
 				<div class="item active">
 					<div class="row">
-						<div class="col-xs-6 col-sm-6 col-md-2 cambiaPadding">
+						<div class="col-xs-4 col-sm-4 col-md-2 cambiaPadding">
 							<div class="thumbnail fondoTrans">
 								<img class="img-responsive" src="http://placehold.it/260x480" alt="...">
 								<div class="caption txtSobreImg">
@@ -316,7 +407,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="col-xs-6 col-sm-6 col-md-2 cambiaPadding">
+						<div class="col-xs-4 col-sm-4 col-md-2 cambiaPadding">
 							<div class="thumbnail fondoTrans">
 								<img class="img-responsive" src="http://placehold.it/260x480" alt="...">
 								<div class="caption txtSobreImg">
@@ -328,7 +419,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="col-xs-6 col-sm-6 col-md-2 cambiaPadding">
+						<div class="col-xs-4 col-sm-4 col-md-2 cambiaPadding">
 							<div class="thumbnail fondoTrans">
 								<img class="img-responsive" src="http://placehold.it/260x480" alt="...">
 								<div class="caption txtSobreImg">
@@ -340,7 +431,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="col-xs-6 col-sm-6 col-md-2 cambiaPadding">
+						<div class="col-xs-4 col-sm-4 col-md-2 cambiaPadding">
 							<div class="thumbnail fondoTrans">
 								<img class="img-responsive" src="http://placehold.it/260x480" alt="...">
 								<div class="caption txtSobreImg">
@@ -352,7 +443,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="col-xs-6 col-sm-6 col-md-2 cambiaPadding">
+						<div class="col-xs-4 col-sm-4 col-md-2 cambiaPadding">
 							<div class="thumbnail fondoTrans">
 								<img class="img-responsive" src="http://placehold.it/260x480" alt="...">
 								<div class="caption txtSobreImg">
@@ -364,7 +455,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="col-xs-6 col-sm-6 col-md-2 cambiaPadding">
+						<div class="col-xs-4 col-sm-4 col-md-2 cambiaPadding">
 							<div class="thumbnail fondoTrans">
 								<img class="img-responsive" src="http://placehold.it/260x480" alt="...">
 								<div class="caption txtSobreImg">
@@ -380,7 +471,7 @@
 				</div>
 				<div class="item">
 					<div class="row">
-						<div class="col-xs-6 col-sm-6 col-md-2 cambiaPadding">
+						<div class="col-xs-4 col-sm-4 col-md-2 cambiaPadding">
 							<div class="thumbnail fondoTrans">
 								<img class="img-responsive" src="http://placehold.it/260x480" alt="...">
 								<div class="caption txtSobreImg">
@@ -392,7 +483,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="col-xs-6 col-sm-6 col-md-2 cambiaPadding">
+						<div class="col-xs-4 col-sm-4 col-md-2 cambiaPadding">
 							<div class="thumbnail fondoTrans">
 								<img class="img-responsive" src="http://placehold.it/260x480" alt="...">
 								<div class="caption txtSobreImg">
@@ -404,7 +495,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="col-xs-6 col-sm-6 col-md-2 cambiaPadding">
+						<div class="col-xs-4 col-sm-4 col-md-2 cambiaPadding">
 							<div class="thumbnail fondoTrans">
 								<img class="img-responsive" src="http://placehold.it/260x480" alt="...">
 								<div class="caption txtSobreImg">
@@ -416,7 +507,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="col-xs-6 col-sm-6 col-md-2 cambiaPadding">
+						<div class="col-xs-4 col-sm-4 col-md-2 cambiaPadding">
 							<div class="thumbnail fondoTrans">
 								<img class="img-responsive" src="http://placehold.it/260x480" alt="...">
 								<div class="caption txtSobreImg">
@@ -428,7 +519,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="col-xs-6 col-sm-6 col-md-2 cambiaPadding">
+						<div class="col-xs-4 col-sm-4 col-md-2 cambiaPadding">
 							<div class="thumbnail fondoTrans">
 								<img class="img-responsive" src="http://placehold.it/260x480" alt="...">
 								<div class="caption txtSobreImg">
@@ -440,7 +531,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="col-xs-6 col-sm-6 col-md-2 cambiaPadding">
+						<div class="col-xs-4 col-sm-4 col-md-2 cambiaPadding">
 							<div class="thumbnail fondoTrans">
 								<img class="img-responsive" src="http://placehold.it/260x480" alt="...">
 								<div class="caption txtSobreImg">
