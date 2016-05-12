@@ -267,7 +267,8 @@
                         <li data-target="#carouselCostaRica" data-slide-to="8"></li>
                         <li data-target="#carouselCostaRica" data-slide-to="9"></li>
                         <li data-target="#carouselCostaRica" data-slide-to="10"></li>
-
+                        <li data-target="#carouselCostaRica" data-slide-to="11"></li>
+                        
                     </ol>
                     <!-- Wrapper for slides -->
                     <!--Colaborador 1-->
@@ -537,6 +538,27 @@
                                 </div>
                             </div>                        
                         </div>
+                        <!--Colaborador 12-->                        
+                        <div class="item">
+                            <div class="col-md-12 text-center">
+                                <!--<img  src="imagenes/red/integrantes/fotos/costarica/YorlenyRocioRojas.png" alt="...">-->
+                                {{ HTML::image('imagenes/red/integrantes/fotos/costarica/sirleneChavez.png','integrante cost12')}}
+                            </div>
+                            <div class="col-md-12 carousel-caption carousel-captionInt">
+                                <h3>Sirlene Chaves Vargas</h3>
+                                <h4>Asesora Nacional de Educación en el área de la incorporación de las tecnologías<br>
+                                    Dirección de Recursos Tecnológicos, Ministerio de Educación Pública de Costa Rica
+                                </h4>
+                                <div class="row">
+                                    <div class="col-md-1"></div>
+                                    <div class="col-md-10">
+                                        <p class="text-justify">Bachiller en el Enseñanza del Arte y la Comunicación Visual, Licenciada en la Enseñanza de las Artes Plásticas. Docente de secundaria por 8 años. Actualmente, desarrolladora de contenido y guionista de recursos multimediales basados en Diseño Instruccional. Con competencia en el manejo de software y herramientas digitales para el diseño de recursos tecnológicos educativos y manejo de herramientas de manipulación de imágenes.</p>
+                                    </div>
+                                    <div class="col-md-1"></div>
+                                </div>
+                            </div>                        
+                        </div>
+                        
                         <!-- Controls -->
                         <a class="left carousel-control" href="#carouselCostaRica" data-slide="prev">
                             <span class="glyphicon glyphicon-chevron-left"></span>
@@ -741,6 +763,7 @@
                     <!-- Indicators -->
                     <ol class="carousel-indicators" style="top:120%;">
                         <li data-target="#carouselGuatemala" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselGuatemala" data-slide-to="1" class="active"></li>
                     </ol>
                     <!-- Wrapper for slides -->
                     <div class="carousel-inner carousel-innerInt">
@@ -771,6 +794,27 @@
                                 </div>
                             </div>
                         </div>
+                        <!-- Colaborador 2 -->
+                        <div class="item ">
+                            <div class="col-md-12 text-center">
+                                <!--<img  src="imagenes/red/integrantes/fotos/panama/MarielaMendoza.png" alt="...">-->
+                                 {{ HTML::image('imagenes/red/integrantes/fotos/guatemala/carlosLopez.png','integrante gua2')}}
+                            </div>
+                            <div class="col-md-12 carousel-caption carousel-captionInt">
+                                <h3>Carlos López Alonzo</h3>
+                                <h4>Profesional Técnico de la Dirección General de Currículo<br>
+                                    Ministerio de Educación de Guatemala
+                                </h4>
+                                <div class="row">
+                                    <div class="col-md-1"></div>
+                                    <div class="col-md-10">
+                                        <p class="text-justify">Licenciado en Pedagogía con orientación en Administración y Evaluación Educativa y postgrados en el área de Currículo, Gerencia Educativa y Habilidades Docentes.  Labora desde hace más de 15 años  en el área técnica, participando el proceso de Transformación Curricular, en el marco de la Reforma Educativa que se inició en el año de 1,997. Se ha especializado desde hace siete años en el área curricular participando en el diseño del Currículo Nacional Base de Guatemala en los diferentes niveles educativos y actualmente es Subdirector de Diseño y Desarrollo Curricular.</p>
+                                    </div>
+                                    <div class="col-md-1"></div>
+                                </div>
+                            </div>
+                        </div>
+                        
                     </div>
                     <!-- Controls -->
                     <a class="left carousel-control" href="#carouselGuatemala" data-slide="prev">
