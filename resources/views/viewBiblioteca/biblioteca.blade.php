@@ -24,17 +24,20 @@ Biblioteca
 <div class="container">
     <div class="row">
         <br><br><br<br><br><br>
-        <div class="accordion">
-            <ul>
-                <li style="background-image: url('{{asset('imagenes/biblioteca/pais/costarica.jpg')}}')"></li>
-                <li style="background-image: url('{{asset('imagenes/biblioteca/pais/guatemala.jpg')}}')"></li>
-                <li style="background-image: url('{{asset('imagenes/biblioteca/pais/honduras.jpg')}}')"></li>
-                <li style="background-image: url('{{asset('imagenes/biblioteca/pais/mexico.jpg')}}')"></li>
-                <li style="background-image: url('{{asset('imagenes/biblioteca/pais/nicaragua.jpg')}}')"></li>
-                <li style="background-image: url('{{asset('imagenes/biblioteca/pais/salvador.jpg')}}')"></li>
+        <div class="accordionBiblio">
+            <ul id="tomosBiblioteca">
+                <li onclick="location.href='{{asset('biblioteca/tomos')}}'" style="background-image: url('{{asset('imagenes/biblioteca/pais/costarica.jpg')}}')"></li>
+                <li onclick="location.href='{{asset('biblioteca/tomos')}}'" style="background-image: url('{{asset('imagenes/biblioteca/pais/guatemala.jpg')}}')"></li>
+                <li onclick="location.href='{{asset('biblioteca/tomos')}}'" style="background-image: url('{{asset('imagenes/biblioteca/pais/honduras.jpg')}}')"></li>
+                <li onclick="location.href='{{asset('biblioteca/tomos')}}'" style="background-image: url('{{asset('imagenes/biblioteca/pais/mexico.jpg')}}')"></li>
+                <li onclick="location.href='{{asset('biblioteca/tomos')}}'" style="background-image: url('{{asset('imagenes/biblioteca/pais/nicaragua.jpg')}}')"></li>
+                <li onclick="location.href='{{asset('biblioteca/tomos')}}'" style="background-image: url('{{asset('imagenes/biblioteca/pais/salvador.jpg')}}')"></li>
             </ul>
         </div>
     </div>
 </div>
 @include('viewMediateca.barraSociales')
 @endsection
+<script>
+    
+</script>

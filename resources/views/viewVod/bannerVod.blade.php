@@ -132,6 +132,11 @@
 			height:20px; width:20px; margin-left:30%; margin-right:30%;
 		}
 	}
+	@media(min-width:1500px){
+		.imgBanerPrincipal{
+			 width:100%;
+		}
+	}
 </style>
 <script>
 	$(document).ready(function () {
@@ -150,7 +155,7 @@
 		var nombreDivDetalle = '#detalleSerie' + numDiv;
 		$(nombreDivDetalle).css('display','block');
 		console.log($(nombreDivDetalle).offset().top);
-		var windowTop = $(nombreDivDetalle).offset().top - '250';
+		var windowTop = $(nombreDivDetalle).offset().top - '350';
 		$(document).scrollTop(windowTop)
 	}
 	
@@ -173,7 +178,7 @@
 	  <!-- Wrapper for slides -->
 	<div class="carousel-inner" role="listbox">
 		<div class="item active">
-			<img src="{{asset('imagenes/vod/series/bannerPrincipal.jpg')}}" alt="...">
+			<img class="imgBanerPrincipal" src="{{asset('imagenes/vod/series/bannerPrincipal.jpg')}}" alt="...">
 			<div class="carousel-caption posicionDescripcion">
 				<div class="col-sm-8 col-md-8 col-md-8">
 					Texto de prueba con descripción de la serie en el banner principal Texto de prueba con descripción de la serie en el banner principal
@@ -187,7 +192,7 @@
 			</div>
 		</div>
 		<div class="item">
-		  <img src="{{asset('imagenes/vod/series/bannerPrincipal.jpg')}}" alt="...">
+		  <img class="imgBanerPrincipal" src="{{asset('imagenes/vod/series/bannerPrincipal.jpg')}}" alt="...">
 		  	<div class="carousel-caption posicionDescripcion">
 				<div class="col-sm-8 col-md-8 col-md-8">
 					Texto de prueba con descripción de la serie en el banner principal Texto de prueba con descripción de la serie en el banner principal
@@ -201,7 +206,7 @@
 			</div>
 		</div>
 		<div class="item">
-		  <img src="{{asset('imagenes/vod/series/bannerPrincipal.jpg')}}" alt="...">
+		  <img class="imgBanerPrincipal" src="{{asset('imagenes/vod/series/bannerPrincipal.jpg')}}" alt="...">
 			<div class="carousel-caption posicionDescripcion">
 				<div class="col-sm-8 col-md-8 col-md-8">
 					Texto de prueba con descripción de la serie en el banner principal Texto de prueba con descripción de la serie en el banner principal

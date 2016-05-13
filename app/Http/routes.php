@@ -131,6 +131,7 @@ Route::group(['middleware' => 'web'], function () {
     
     /* * **************************Cultura********************** */
     Route::get('biblioteca', 'BibliotecaController@biblioteca');    
+    Route::get('biblioteca/tomos', 'BibliotecaController@tomos');    
     /* * **************************Cultura********************** */
     
 });
