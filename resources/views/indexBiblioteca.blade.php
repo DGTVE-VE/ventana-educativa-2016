@@ -69,6 +69,6 @@ ga('create', 'UA-75232922-1', 'auto');
 ga('send', 'pageview');
 
 </script>
-<?php 
-Log::info('Memory Usage:'.Request::path()." - " . (memory_get_peak_usage (true)/1024/1024));
+<?php
+Log::info('Memory Usage:' . Request::path() . " - " . (memory_get_peak_usage(true) / 1024 / 1024));
 ?>

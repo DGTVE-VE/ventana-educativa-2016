@@ -23,7 +23,7 @@ Biblioteca
 @section('cuerpoBiblioteca')
 <div class="container">
     <div class="row">
-        <br><br><br<br><br><br>
+        <br><br><br><br><br><br>
         <div class="accordionBiblio">
             <ul id="tomosBiblioteca">
                 <li onclick="location.href='{{asset('biblioteca/tomos')}}'" style="background-image: url('{{asset('imagenes/biblioteca/pais/costarica.jpg')}}')"></li>

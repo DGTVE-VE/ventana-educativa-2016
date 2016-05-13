@@ -1,10 +1,22 @@
-/*
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
-*/
-/* 
-    Created on : 9/05/2016, 12:23:41 PM
-    Author     : SMARTINEZ
-*/
-/**{border: 1px solid red;}*/
+/* Estilos para iconos redes sociales  cultura*/
+.derechaSocialesCul{
+    position: fixed;
+    right: 2%;
+    top: 35%;
+    
+}
+.socialesCul{
+    list-style: none;
+}
+.cambiacolorredesSocialesCul{
+    color: #000000;
+}
+#ct-cul:hover{
+    color:#00B6F1;
+}
+#cf-cul:hover{
+    color:#46629E;
+}
+#cy-cul:hover{
+    color:#E62117;
+}

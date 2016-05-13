@@ -32,7 +32,7 @@ Cultura
             <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla a lectus eget enim vehicula malesuada a ut quam. Donec eget quam a augue iaculis rhoncus. Mauris tellus risus, faucibus et ex id, aliquam congue ante. Integer pellentesque molestie mattis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Phasellus porttitor eros lacinia risus porttitor, luctus fermentum leo blandit. Duis elementum purus eu justo suscipit, eget lacinia elit iaculis. Morbi varius cursus tortor, vitae viverra quam consequat vitae. Nunc quis leo vitae ipsum molestie congue. Sed facilisis tincidunt nisi, ac luctus massa imperdiet at. Ut finibus nisl erat, a tempor nibh efficitur in. Aliquam eu lacus nisl. Etiam vitae dapibus nibh. Aliquam erat volutpat.</p>
         </div>
         <!--<div class="col-md-1"></div>-->
-        <div class="col-md-7 ">
+        <div class="col-md-7">
             <table class="table table-responsive text-center">
                 <thead></thead>
                 <tbody>
@@ -57,5 +57,6 @@ Cultura
         <div class="col-md-1"></div>
     </div>
 </div>  
+@include('viewMediateca.barraSociales')
 @endsection
 

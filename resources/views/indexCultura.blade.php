@@ -26,7 +26,8 @@ and open the template in the editor.
         <link rel="stylesheet" href="{{ asset('css/red/animate.css') }}" >        
 
         <!--	-------------------------- Estilos para encabezado ------------------------------------		-->
-        <link rel="stylesheet" href="{{ asset('css/mediateca/estilomediateca2.css') }}" >      
+        <link rel="stylesheet" href="{{ asset('css/mediateca/estilomediateca2.css') }}" > 
+        <link rel="stylesheet" href="{{ asset('css/mediateca/estilomediateca3.css') }}" > 
         <link rel="stylesheet" href="{{ asset('css/cultura/estilocultura.css') }}" >      
         
         @yield ('estilos')
