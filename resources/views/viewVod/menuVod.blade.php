@@ -7,7 +7,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand fondo-menu-SM" href="#"><span class="col-txt-menu">Menú</span></a>
+            <!--<a class="navbar-brand fondo-menu-SM" href="#"><span class="col-txt-menu">Menú</span></a>-->
         </div>
         <div class="collapse navbar-collapse js-navbar-collapse">
             <ul class="nav navbar-nav">
