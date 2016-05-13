@@ -18,6 +18,7 @@ and open the template in the editor.
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css">
 
         <!--	-------------------------- Fuentes de google fonts ------------------------------------		-->
         <link href='https://fonts.googleapis.com/css?family=Ubuntu:400,300,500,700' rel='stylesheet' type='text/css'>
@@ -29,21 +30,21 @@ and open the template in the editor.
         <!--	-------------------------- Estilos para encabezado ------------------------------------		-->
         <link rel="stylesheet" href="{{ asset('css/mediateca/estilomediateca2.css') }}" >
 
-        
         @yield ('estilos')
-
         
         <link rel="stylesheet" href="{{ asset('css/vod/estilovod.css') }}" >        
-        
+        <link rel="stylesheet" href="{{ asset('css/vod/estilovod3.css') }}" >        
 
         <!-- jQuery library -->
+        
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-
+       
         <!-- Latest compiled JavaScript -->
         <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-
+        
+                       
         @yield ('scripts')
-
+        
     </head>
     <body>     
         <header>
