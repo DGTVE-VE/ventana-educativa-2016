@@ -36,5 +36,5 @@ Biblioteca
         </div>
     </div>
 </div>
-</div>
+@include('viewMediateca.barraSociales')
 @endsection

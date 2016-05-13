@@ -3,8 +3,8 @@ Videos Bajo Demanda
 @stop
 @extends('indexVod')
 @section('menuVod')
-	@include('viewVentana.encabezadoVentana')
-	<script>
+	<!--Aquí va el encabezado de ventana-->
+        <script>
 		$('#buscar').css('display','none');
 		$('#iconoBuscar').css('display','none');
 		$('#navegacionVentana').css('height','55px');
@@ -19,11 +19,13 @@ Videos Bajo Demanda
 			}
 		});
 	</script>
+         @include('viewVod.menuVod')
+          <script>
+		$('#menuVOD').css('top','100px');
+          </script>
+         
 @endsection
 
 @section('cuerpoVod')
         @include('viewVod.bannerVod')
-@endsection
-@section('menuVod')
-    @include('viewVod.menuVod')
 @endsection
