@@ -23,7 +23,7 @@
         <h4 class="">Selecciona un país para ver más...</h4>
     </div>
 </div>
-                       
+
 <!-- Modal México-->
 <div id="modalMexico" class="modal modal-fullscreen fade centraCont" tabindex="-1" role="dialog">
     <div class="modal-dialog">
@@ -37,14 +37,14 @@
                 <div id="carouselMexico" class="carousel slide" data-ride="carousel">
                     <!-- Indicators -->
                     <ol class="carousel-indicators" style="top:120%;">
-					<?php
-					/*	Llenar info de colaboradores de méxico desde base de datos*/
-						/*$consultaMX = "SELECT users.name, red_colaboradores.url_foto, red_colaboradores.puesto, red_colaboradores.resena, red_colaboradores.area FROM red_colaboradores INNER JOIN users ON red_colaboradores.user_id = users.id WHERE users.pais = 'MX'";
-						$integrantes = DB::connection('mysqlVentana')->select($consultaMX);
-						for($i=0;$i<count($integrantes);$i++){
-							echo '<li data-target="#carouselMexico" data-slide-to="'.$i.'" class="active"></li>';
-						}*/
-					?>
+                        <?php
+                        /* 	Llenar info de colaboradores de méxico desde base de datos */
+                        /* $consultaMX = "SELECT users.name, red_colaboradores.url_foto, red_colaboradores.puesto, red_colaboradores.resena, red_colaboradores.area FROM red_colaboradores INNER JOIN users ON red_colaboradores.user_id = users.id WHERE users.pais = 'MX'";
+                          $integrantes = DB::connection('mysqlVentana')->select($consultaMX);
+                          for($i=0;$i<count($integrantes);$i++){
+                          echo '<li data-target="#carouselMexico" data-slide-to="'.$i.'" class="active"></li>';
+                          } */
+                        ?>
                         <li data-target="#carouselMexico" data-slide-to="0" class="active"></li>
                         <li data-target="#carouselMexico" data-slide-to="1" class="active"></li>
                         <li data-target="#carouselMexico" data-slide-to="2" class="active"></li>
@@ -55,42 +55,42 @@
                     <!-- Wrapper for slides -->
                     <div class="carousel-inner carousel-innerInt">
                         <!-- Integrante 1 -->
-						<?php
-							/*$primerElem = true;
-							foreach($integrantes as $integrante){
-								if($primerElem){
-									echo '<div class="item active">';
-									$primerElem = false;
-								}else{
-									echo '<div class="item">';
-								}
-									echo '<div class="col-md-12 text-center">';
-						?>
-											{{ HTML::image('imagenes/red/integrantes/fotos/mexico/RubenEdel.png','Colaborador México 1')}}
-						<?php
-									echo '</div>';
-									echo '<div class="col-md-12 carousel-caption carousel-captionInt">';
-										echo '<h3>'.$integrante->name.'</h3>';
-										echo '<h4>'.$integrante->puesto.'<br>';
-										echo $integrante->area.'</h4>';
-										echo '<div class="row">';
-											echo '<div class="col-md-1"></div>';
-											echo '<div class="col-md-10">';
-												echo '<p class="text-justify">'.$integrante->resena.'</p>';
-											echo '</div>';
-											echo '<div class="col-md-1"></div>';
-										echo '</div>';
-									echo '</div>';
-								echo '</div>';
-							}*/
-						?>
-                            
-						<div class="item active">
-							<div class="col-md-12 text-center">
-								{{ HTML::image('imagenes/red/integrantes/fotos/mexico/RubenEdel.png','Colaborador México 1')}}
-							</div>
-							<div class="col-md-12 carousel-caption carousel-captionInt">
-								<h3>Rubén Edel Navarro</h3>
+                        <?php
+                        /* $primerElem = true;
+                          foreach($integrantes as $integrante){
+                          if($primerElem){
+                          echo '<div class="item active">';
+                          $primerElem = false;
+                          }else{
+                          echo '<div class="item">';
+                          }
+                          echo '<div class="col-md-12 text-center">';
+                          ?>
+                          {{ HTML::image('imagenes/red/integrantes/fotos/mexico/RubenEdel.png','Colaborador México 1')}}
+                          <?php
+                          echo '</div>';
+                          echo '<div class="col-md-12 carousel-caption carousel-captionInt">';
+                          echo '<h3>'.$integrante->name.'</h3>';
+                          echo '<h4>'.$integrante->puesto.'<br>';
+                          echo $integrante->area.'</h4>';
+                          echo '<div class="row">';
+                          echo '<div class="col-md-1"></div>';
+                          echo '<div class="col-md-10">';
+                          echo '<p class="text-justify">'.$integrante->resena.'</p>';
+                          echo '</div>';
+                          echo '<div class="col-md-1"></div>';
+                          echo '</div>';
+                          echo '</div>';
+                          echo '</div>';
+                          } */
+                        ?>
+
+                        <div class="item active">
+                            <div class="col-md-12 text-center">
+                                {{ HTML::image('imagenes/red/integrantes/fotos/mexico/RubenEdel.png','Colaborador México 1')}}
+                            </div>
+                            <div class="col-md-12 carousel-caption carousel-captionInt">
+                                <h3>Rubén Edel Navarro</h3>
                                 <h4>Investigador de tiempo completo<br>
                                     Universidad Veracruzana</h4>
                                 <div class="row">
@@ -110,8 +110,8 @@
                                 </div>
                             </div>
                         </div>
-						
-						<!-- Integrante 2 -->
+
+                        <!-- Integrante 2 -->
                         <div class="item ">
                             <div class="col-md-12 text-center">
                                 <!--<img  src="imagenes/red/integrantes/fotos/mexico/BrendaLuzColorado.png" alt="...">-->
@@ -188,7 +188,7 @@
                                             Es miembro del Consejo Mexicano de Investigación Educativa (COMIE), de la Red de Investigación e Innovación en Sistemas y Ambientes Educativos (RIISAE) del Espacio Común de Educación Superior a Distancia (ECOESAD), de la Red TIC del CONACyT y de la Red en Tecnologías Educativas del Programa para el Desarrollo Profesional Docente (PRODEP)
                                             Actualmente es la Coordinadora del Doctorado en Sistema y Ambientes Educativos. Programa Interinstitucional, Sede BUAP.
                                             Además de los Entornos Virtuales de Aprendizaje y las comunidades de práctica, ha realizado investigaciones en temas de seguimiento de egresados y trayectorias académicas, evaluación docente, Escuelas Normales y formación docente, Federalismo y descentralización de la educación México, expansión de la cobertura de secundaria con enfoque de género. Cuenta con publicaciones en dichos temas.
-                                            </p>
+                                        </p>
                                     </div>
                                     <div class="col-md-1"></div>
                                 </div>
@@ -214,7 +214,7 @@
                         <!-- Integrante 6 -->
                         <div class="item ">
                             <div class="col-md-12 text-center">
-                                    {{ HTML::image('imagenes/red/integrantes/fotos/mexico/rosadelcarmenfloresmacias.png','Colaborador México 6')}}  
+                                {{ HTML::image('imagenes/red/integrantes/fotos/mexico/rosadelcarmenfloresmacias.png','Colaborador México 6')}}  
                             </div>
                             <div class="col-md-12 carousel-caption carousel-captionInt">
                                 <h3>Rosa del Carmen Flores Macías</h3>
@@ -268,7 +268,7 @@
                         <li data-target="#carouselCostaRica" data-slide-to="9"></li>
                         <li data-target="#carouselCostaRica" data-slide-to="10"></li>
                         <li data-target="#carouselCostaRica" data-slide-to="11"></li>
-                        
+
                     </ol>
                     <!-- Wrapper for slides -->
                     <!--Colaborador 1-->
@@ -441,7 +441,7 @@
                         <div class="item">
                             <div class="col-md-12 text-center">
                                 <!--<img  src="imagenes/red/integrantes/fotos/costarica/HermesMena.png" alt="...">-->
-                                 {{ HTML::image('imagenes/red/integrantes/fotos/costarica/HermesMena.png','integrante cost8')}}
+                                {{ HTML::image('imagenes/red/integrantes/fotos/costarica/HermesMena.png','integrante cost8')}}
                             </div>
                             <div class="col-md-12 carousel-caption carousel-captionInt">
                                 <h3>Hermes Mena Picado</h3>
@@ -558,7 +558,7 @@
                                 </div>
                             </div>                        
                         </div>
-                        
+
                         <!-- Controls -->
                         <a class="left carousel-control" href="#carouselCostaRica" data-slide="prev">
                             <span class="glyphicon glyphicon-chevron-left"></span>
@@ -711,7 +711,7 @@
                         <div class="item ">
                             <div class="col-md-12 text-center">
                                 <!--<img  src="imagenes/red/integrantes/fotos/panama/MarielaMendoza.png" alt="...">-->
-                                 {{ HTML::image('imagenes/red/integrantes/fotos/panama/MarielaMendoza.png','integrante pan2')}}
+                                {{ HTML::image('imagenes/red/integrantes/fotos/panama/MarielaMendoza.png','integrante pan2')}}
                             </div>
                             <div class="col-md-12 carousel-caption carousel-captionInt">
                                 <h3>Mariela Mendoza de Quezada</h3>
@@ -798,7 +798,7 @@
                         <div class="item ">
                             <div class="col-md-12 text-center">
                                 <!--<img  src="imagenes/red/integrantes/fotos/panama/MarielaMendoza.png" alt="...">-->
-                                 {{ HTML::image('imagenes/red/integrantes/fotos/guatemala/carlosLopez.png','integrante gua2')}}
+                                {{ HTML::image('imagenes/red/integrantes/fotos/guatemala/carlosLopez.png','integrante gua2')}}
                             </div>
                             <div class="col-md-12 carousel-caption carousel-captionInt">
                                 <h3>Carlos López Alonzo</h3>
@@ -814,7 +814,7 @@
                                 </div>
                             </div>
                         </div>
-                        
+
                     </div>
                     <!-- Controls -->
                     <a class="left carousel-control" href="#carouselGuatemala" data-slide="prev">
@@ -914,7 +914,7 @@
                             </div>
                             <div class="col-md-12 carousel-caption carousel-captionInt">
                                 <h3>Carlos Rodríguez Rivas</h3>
-<!--                                <h4></h4>-->
+                                <!--                                <h4></h4>-->
                                 <div class="row">
                                     <div class="col-md-1"></div>
                                     <div class="col-md-10">
