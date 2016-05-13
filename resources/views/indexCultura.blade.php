@@ -38,7 +38,6 @@ and open the template in the editor.
         <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 
         @yield ('scripts')
-
     </head>
     <body style="background-image:url('{{ asset('imagenes/cultura/backgroundCultura.jpg') }}');">     
         <header>

@@ -9,7 +9,7 @@ and open the template in the editor.
 */
 * {margin:0; padding:0}
 
-.accordion {
+.accordionBiblio {
   width: 50%;
   max-width: 1080px;
   height: 650px;
@@ -17,7 +17,7 @@ and open the template in the editor.
   margin: 50px auto;
 }
 
-.accordion ul {
+.accordionBiblio ul {
   width: 100%;
   display: table;
   table-layout: fixed;
@@ -25,7 +25,7 @@ and open the template in the editor.
   padding: 0;
 }
 
-.accordion ul li {
+.accordionBiblio ul li {
   display: table-cell;
   vertical-align: bottom;
   position: relative;
@@ -36,13 +36,13 @@ and open the template in the editor.
   transition: all 500ms ease;
 }
 
-.accordion ul li div {
+.accordionBiblio ul li div {
   display: block;
   overflow: hidden;
   width: 100%;
 }
 
-.accordion ul li div a {
+.accordionBiblio ul li div a {
   display: block;
   height: 350px;
   width: 100%;
@@ -57,7 +57,7 @@ and open the template in the editor.
   transition: all 200ms ease;
 }
 
-.accordion ul li div a * {
+.accordionBiblio ul li div a * {
   opacity: 0;
   margin: 0;
   width: 100%;
@@ -72,7 +72,7 @@ and open the template in the editor.
   transition: all 400ms ease;
 }
 
-.accordion ul li div a h2 {
+.accordionBiblio ul li div a h2 {
   font-family: Montserrat, sans-serif;
   text-overflow: clip;
   font-size: 24px;
@@ -81,18 +81,18 @@ and open the template in the editor.
   top: 160px;
 }
 
-.accordion ul li div a p {
+.accordionBiblio ul li div a p {
   top: 160px;
   font-size: 13.5px;
 }
 
-.accordion ul:hover li { width: 14%; }
+.accordionBiblio ul:hover li { width: 14%; }
 
-.accordion ul:hover li:hover { width: 70%; }
+.accordionBiblio ul:hover li:hover { width: 70%; }
 
-.accordion ul:hover li:hover a { background: rgba(0, 0, 0, 0.4); }
+.accordionBiblio ul:hover li:hover a { background: rgba(0, 0, 0, 0.4); }
 
-.accordion ul:hover li:hover a * {
+.accordionBiblio ul:hover li:hover a * {
   opacity: 1;
   -webkit-transform: translateX(0);
   transform: translateX(0);
@@ -101,12 +101,13 @@ and open the template in the editor.
 
 body { margin: 0; }
 
-.accordion { height: auto; }
+.accordionBiblio { height: auto; }
 
-.accordion ul li,
-.accordion ul li:hover,
-.accordion ul:hover li,
-.accordion ul:hover li:hover {
+
+.accordionBiblio ul li,
+.accordionBiblio ul li:hover,
+.accordionBiblio ul:hover li,
+.accordionBiblio ul:hover li:hover {
   position: relative;
   display: table;
   table-layout: fixed;
@@ -114,4 +115,114 @@ body { margin: 0; }
   -webkit-transition: none;
   transition: none;
 }
+}
+
+
+/*acordion tomos*/
+/*
+*
+*    Author:    Michael Raffaele <michael@mraffaele.com>
+*    Date:    25th October 2011
+*    Info:     http://www.mraffaele.com/blog/2011/10/25/css-accordion-no-javascript/
+*
+*/
+
+/* Shared for all accordion types */
+.accordion {
+    font-family:Arial, Helvetica, sans-serif; 
+    margin:0 auto;
+    font-size:14px;
+    border:1px solid #542437;
+    border-radius:10px;
+    width:800px;
+    padding:10px;
+    background:#fff;
+}
+.accordion ul {
+    list-style:none;
+    margin:0;
+    padding:0;    
+}
+.accordion li {
+    margin:0;
+    padding:0;
+}
+.accordion [type=radio], .accordion [type=checkbox] {
+    display:none;
+}
+.accordion label {
+    display:block;
+    font-size:16px;
+    line-height:16px;
+    background:#D95B43;
+    border:1px solid #542437;
+    color:#542437;
+    text-shadow:1px 1px 1px rgba(255,255,255,0.3);
+    font-weight:700;
+    cursor:pointer;
+    text-transform:uppercase;
+    -webkit-transition: all .2s ease-out;
+    -moz-transition: all .2s ease-out;
+}
+.accordion ul li label:hover, .accordion [type=radio]:checked ~ label, .accordion [type=checkbox]:checked ~ label {
+    background-image: url('../../imagenes/biblioteca/tomos/bajacalifornia.jpg');
+    color:#FFF;
+    text-shadow:1px 1px 1px rgba(0,0,0,0.5)
+}
+.accordion .content {
+    padding:0 10px;
+    overflow:hidden;
+    border:1px solid #fff; /* Make the border match the background so it fades in nicely */
+    -webkit-transition: all .5s ease-out;
+    -moz-transition: all .5s ease-out;
+}
+.accordion p {
+    color:#333;
+    margin:0 0 10px;
+}
+.accordion h3 {
+    color:#542437;
+    padding:0;
+    margin:10px 0;
+}
+
+/* Horizontal */
+/* Unfortunately fixed heights need to be set for this */
+.horizontal {
+    overflow:hidden;
+    height:300px;
+}
+.horizontal ul li {
+    float:left;
+    margin:0 1px 0 0;
+}
+.horizontal ul li label {
+    word-wrap:break-word;
+    letter-spacing:10px;
+    text-align:center;
+    height:280px;
+    padding:10px 0 10px 5px;
+    width:25px;
+    float:left;
+}
+.horizontal ul li .content {
+    height:300px;
+    padding:0;
+    display:inline-block; /* Makes its work in FF */
+    visibility:hidden; /* Chrome bug cant show width < 1px for some reason so need to toggle visibility */
+    width:1px;
+    border-left:0;
+}
+.horizontal [type=radio]:checked ~ label {
+    border-right:0;    
+}
+.horizontal ul li label:hover {
+    border:1px solid #542437; /* Again, we don't want the border to disappear on hover */
+}
+.horizontal [type=radio]:checked ~ label ~ .content {    
+    visibility:visible;
+    width:442px;
+    padding:0 10px;
+    border:1px solid #542437;
+    border-left:0;    
 }
