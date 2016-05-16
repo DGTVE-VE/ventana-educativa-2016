@@ -15,7 +15,7 @@
             <!-- Page Content -->
             <div id="page-content-wrapper-bib" class="margensuperiormenuBib">
                 <button type="button" class="hamburger-biblioteca is-closed margensuperiormenuBib" data-toggle="offcanvas" >
-                    <span class="vertical">MENÚ</span>
+                    <span class="vertical-biblioteca">MENÚ</span>
                 </button>
             </div> <!-- fin page-content-->
      
