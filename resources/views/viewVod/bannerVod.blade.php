@@ -1,4 +1,20 @@
 <style>
+	.fondoDegradadoMenuInicial{
+		background: rgba(0, 0, 0, .3); /* For browsers that do not support gradients */
+		background: -webkit-linear-gradient(rgba(0, 0, 0, .3), transparent); /* For Safari 5.1 to 6.0 */
+		background: -o-linear-gradient(rgba(0, 0, 0, .3), transparent); /* For Opera 11.1 to 12.0 */
+		background: -moz-linear-gradient(rgba(0, 0, 0, .3), transparent); /* For Firefox 3.6 to 15 */
+		background: linear-gradient(rgba(0, 0, 0, .3), transparent); /* Standard syntax */
+		border: none;
+	}
+	.fondoDegradadoMenu{
+		background: rgba(0, 0, 0, .6); /* For browsers that do not support gradients */
+		background: -webkit-linear-gradient(rgba(0, 0, 0, .6), transparent); /* For Safari 5.1 to 6.0 */
+		background: -o-linear-gradient(rgba(0, 0, 0, .6), transparent); /* For Opera 11.1 to 12.0 */
+		background: -moz-linear-gradient(rgba(0, 0, 0, .6), transparent); /* For Firefox 3.6 to 15 */
+		background: linear-gradient(rgba(0, 0, 0, .6), transparent); /* Standard syntax */
+		border: none;
+	}
 	.estiloTxt{
 		color: white;
 	}
