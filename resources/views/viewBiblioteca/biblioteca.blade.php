@@ -21,7 +21,6 @@ Biblioteca
         }
     });
 </script>        
-
 @endsection
 @section('cuerpoBiblioteca')
 <div class="container">
@@ -41,6 +40,7 @@ Biblioteca
 </div>
 @include('viewMediateca.barraSociales')
 @endsection
+
 <script>
     
 </script>

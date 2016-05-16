@@ -134,6 +134,7 @@ Biblioteca
         </div><!-- End Carousel -->          
     </div>
 </div>
+@include('viewBiblioteca.menuBiblioteca')
 @endsection
 <script type="text/javascript">
 
