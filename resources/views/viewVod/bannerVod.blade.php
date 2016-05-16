@@ -51,6 +51,9 @@
 	.iconoCerrar{
 		cursor:pointer; position:absolute; right:2%; font-size:2em;
 	}
+	.escondeTitulo{
+		visibility:hidden;
+	}
 	@media(min-width:300px){
 		.posicionDescripcion{
 			visibility:hidden;
@@ -179,6 +182,14 @@
 		var nombreDivDetalle = '#detalleSerie' + numDiv;
 		$(nombreDivDetalle).css('display','none');
 	}
+	function muestraTitulo(idTitulo){
+		var divTitulo = '#titulo' + idTitulo;
+		$(divTitulo).removeClass('escondeTitulo');
+	}
+	function ocultaTitulo(idTitulo){
+		var divTitulo = '#titulo' + idTitulo;
+		$(divTitulo).addClass('escondeTitulo');
+	}
 </script>
 <div class="row visible-xs margenMenuChico">
 </div>
@@ -261,9 +272,9 @@
 				<div class="item active">
 					<div class="row">
 						<div class="col-xs-4 col-sm-4 col-md-2 cambiaPadding">
-							<div class="thumbnail fondoTrans">
+							<div class="thumbnail fondoTrans" onmouseover="muestraTitulo('11')" onmouseout="ocultaTitulo('11')">
 								<img class="img-responsive thumbnailVertical" src="{{url('imagenes/vod/series/thumbnailVertical.jpg')}}" alt="...">
-								<div class="caption txtSobreImg">
+								<div id="titulo11" class="caption txtSobreImg escondeTitulo">
 									<h4 class="estiloTxt">Serie 1</h4>
 									<span class="estiloTxt">Resumen de descripción</span>
 									<div class="divIconoMas">
@@ -273,9 +284,9 @@
 							</div>
 						</div>
 						<div class="col-xs-4 col-sm-4 col-md-2 cambiaPadding">
-							<div class="thumbnail fondoTrans">
+							<div class="thumbnail fondoTrans" onmouseover="muestraTitulo('12')" onmouseout="ocultaTitulo('12')">
 								<img class="img-responsive thumbnailVertical" src="{{url('imagenes/vod/series/thumbnailVertical.jpg')}}" alt="...">
-								<div class="caption txtSobreImg">
+								<div id="titulo12" class="caption txtSobreImg escondeTitulo">
 									<h4 class="estiloTxt">Serie 2</h4>
 									<span class="estiloTxt">Resumen de descripción</span>
 									<div class="divIconoMas">
@@ -285,9 +296,9 @@
 							</div>
 						</div>
 						<div class="col-xs-4 col-sm-4 col-md-2 cambiaPadding">
-							<div class="thumbnail fondoTrans">
+							<div class="thumbnail fondoTrans" onmouseover="muestraTitulo('13')" onmouseout="ocultaTitulo('13')">
 								<img class="img-responsive thumbnailVertical" src="{{url('imagenes/vod/series/thumbnailVertical.jpg')}}" alt="...">
-								<div class="caption txtSobreImg">
+								<div id="titulo13" class="caption txtSobreImg escondeTitulo">
 									<h4 class="estiloTxt">Serie 3</h4>
 									<span class="estiloTxt">Resumen de descripción</span>
 									<div class="divIconoMas">
@@ -297,9 +308,9 @@
 							</div>
 						</div>
 						<div class="col-xs-4 col-sm-4 col-md-2 cambiaPadding">
-							<div class="thumbnail fondoTrans">
+							<div class="thumbnail fondoTrans" onmouseover="muestraTitulo('14')" onmouseout="ocultaTitulo('14')">
 								<img class="img-responsive thumbnailVertical" src="{{url('imagenes/vod/series/thumbnailVertical.jpg')}}" alt="...">
-								<div class="caption txtSobreImg">
+								<div id="titulo14" class="caption txtSobreImg escondeTitulo">
 									<h4 class="estiloTxt">Serie 4</h4>
 									<span class="estiloTxt">Resumen de descripción</span>
 									<div class="divIconoMas">
@@ -309,9 +320,9 @@
 							</div>
 						</div>
 						<div class="col-xs-4 col-sm-4 col-md-2 cambiaPadding">
-							<div class="thumbnail fondoTrans">
+							<div class="thumbnail fondoTrans" onmouseover="muestraTitulo('15')" onmouseout="ocultaTitulo('15')">
 								<img class="img-responsive thumbnailVertical" src="{{url('imagenes/vod/series/thumbnailVertical.jpg')}}" alt="...">
-								<div class="caption txtSobreImg">
+								<div id="titulo15" class="caption txtSobreImg escondeTitulo">
 									<h4 class="estiloTxt">Serie 5</h4>
 									<span class="estiloTxt">Resumen de descripción</span>
 									<div class="divIconoMas">
@@ -321,9 +332,9 @@
 							</div>
 						</div>
 						<div class="col-xs-4 col-sm-4 col-md-2 cambiaPadding">
-							<div class="thumbnail fondoTrans">
+							<div class="thumbnail fondoTrans" onmouseover="muestraTitulo('16')" onmouseout="ocultaTitulo('16')">
 								<img class="img-responsive thumbnailVertical" src="{{url('imagenes/vod/series/thumbnailVertical.jpg')}}" alt="...">
-								<div class="caption txtSobreImg">
+								<div id="titulo16" class="caption txtSobreImg escondeTitulo">
 									<h4 class="estiloTxt">Serie 6</h4>
 									<span class="estiloTxt">Resumen de descripción</span>
 									<div class="divIconoMas">
@@ -337,9 +348,9 @@
 				<div class="item">
 					<div class="row">
 						<div class="col-xs-4 col-sm-4 col-md-2 cambiaPadding">
-							<div class="thumbnail fondoTrans">
+							<div class="thumbnail fondoTrans" onmouseover="muestraTitulo('17')" onmouseout="ocultaTitulo('17')">
 								<img class="img-responsive thumbnailVertical" src="{{url('imagenes/vod/series/thumbnailVertical.jpg')}}" alt="...">
-								<div class="caption txtSobreImg">
+								<div id="titulo17" class="caption txtSobreImg escondeTitulo">
 									<h4 class="estiloTxt">Serie 1</h4>
 									<span class="estiloTxt">Resumen de descripción</span>
 									<div class="divIconoMas">
@@ -349,9 +360,9 @@
 							</div>
 						</div>
 						<div class="col-xs-4 col-sm-4 col-md-2 cambiaPadding">
-							<div class="thumbnail fondoTrans">
+							<div class="thumbnail fondoTrans" onmouseover="muestraTitulo('18')" onmouseout="ocultaTitulo('18')">
 								<img class="img-responsive thumbnailVertical" src="{{url('imagenes/vod/series/thumbnailVertical.jpg')}}" alt="...">
-								<div class="caption txtSobreImg">
+								<div id="titulo18" class="caption txtSobreImg escondeTitulo">
 									<h4 class="estiloTxt">Serie 2</h4>
 									<span class="estiloTxt">Resumen de descripción</span>
 									<div class="divIconoMas">
@@ -361,9 +372,9 @@
 							</div>
 						</div>
 						<div class="col-xs-4 col-sm-4 col-md-2 cambiaPadding">
-							<div class="thumbnail fondoTrans">
+							<div class="thumbnail fondoTrans" onmouseover="muestraTitulo('19')" onmouseout="ocultaTitulo('19')">
 								<img class="img-responsive thumbnailVertical" src="{{url('imagenes/vod/series/thumbnailVertical.jpg')}}" alt="...">
-								<div class="caption txtSobreImg">
+								<div id="titulo19" class="caption txtSobreImg escondeTitulo">
 									<h4 class="estiloTxt">Serie 3</h4>
 									<span class="estiloTxt">Resumen de descripción</span>
 									<div class="divIconoMas">
@@ -373,9 +384,9 @@
 							</div>
 						</div>
 						<div class="col-xs-4 col-sm-4 col-md-2 cambiaPadding">
-							<div class="thumbnail fondoTrans">
+							<div class="thumbnail fondoTrans" onmouseover="muestraTitulo('110')" onmouseout="ocultaTitulo('110')">
 								<img class="img-responsive thumbnailVertical" src="{{url('imagenes/vod/series/thumbnailVertical.jpg')}}" alt="...">
-								<div class="caption txtSobreImg">
+								<div id="titulo110" class="caption txtSobreImg escondeTitulo">
 									<h4 class="estiloTxt">Serie 4</h4>
 									<span class="estiloTxt">Resumen de descripción</span>
 									<div class="divIconoMas">
@@ -385,9 +396,9 @@
 							</div>
 						</div>
 						<div class="col-xs-4 col-sm-4 col-md-2 cambiaPadding">
-							<div class="thumbnail fondoTrans">
+							<div class="thumbnail fondoTrans" onmouseover="muestraTitulo('111')" onmouseout="ocultaTitulo('111')">
 								<img class="img-responsive thumbnailVertical" src="{{url('imagenes/vod/series/thumbnailVertical.jpg')}}" alt="...">
-								<div class="caption txtSobreImg">
+								<div id="titulo111" class="caption txtSobreImg escondeTitulo">
 									<h4 class="estiloTxt">Serie 5</h4>
 									<span class="estiloTxt">Resumen de descripción</span>
 									<div class="divIconoMas">
@@ -397,9 +408,9 @@
 							</div>
 						</div>
 						<div class="col-xs-4 col-sm-4 col-md-2 cambiaPadding">
-							<div class="thumbnail fondoTrans">
+							<div class="thumbnail fondoTrans" onmouseover="muestraTitulo('112')" onmouseout="ocultaTitulo('112')">
 								<img class="img-responsive thumbnailVertical" src="{{url('imagenes/vod/series/thumbnailVertical.jpg')}}" alt="...">
-								<div class="caption txtSobreImg">
+								<div id="titulo112" class="caption txtSobreImg escondeTitulo">
 									<h4 class="estiloTxt">Serie 6</h4>
 									<span class="estiloTxt">Resumen de descripción</span>
 									<div class="divIconoMas">
@@ -458,9 +469,9 @@
 				<div class="item active">
 					<div class="row">
 						<div class="col-xs-4 col-sm-4 col-md-2 cambiaPadding">
-							<div class="thumbnail fondoTrans">
+							<div class="thumbnail fondoTrans" onmouseover="muestraTitulo('21')" onmouseout="ocultaTitulo('21')">
 								<img class="img-responsive" src="http://placehold.it/260x480" alt="...">
-								<div class="caption txtSobreImg">
+								<div id="titulo21" class="caption txtSobreImg escondeTitulo">
 									<h4 class="estiloTxt">Serie 1</h4>
 									<span class="estiloTxt">Resumen de descripción</span>
 									<div class="divIconoMas">
@@ -470,9 +481,9 @@
 							</div>
 						</div>
 						<div class="col-xs-4 col-sm-4 col-md-2 cambiaPadding">
-							<div class="thumbnail fondoTrans">
+							<div class="thumbnail fondoTrans" onmouseover="muestraTitulo('22')" onmouseout="ocultaTitulo('22')">
 								<img class="img-responsive" src="http://placehold.it/260x480" alt="...">
-								<div class="caption txtSobreImg">
+								<div id="titulo22" class="caption txtSobreImg escondeTitulo">
 									<h4 class="estiloTxt">Serie 2</h4>
 									<span class="estiloTxt">Resumen de descripción</span>
 									<div class="divIconoMas">
@@ -482,9 +493,9 @@
 							</div>
 						</div>
 						<div class="col-xs-4 col-sm-4 col-md-2 cambiaPadding">
-							<div class="thumbnail fondoTrans">
+							<div class="thumbnail fondoTrans" onmouseover="muestraTitulo('23')" onmouseout="ocultaTitulo('23')">
 								<img class="img-responsive" src="http://placehold.it/260x480" alt="...">
-								<div class="caption txtSobreImg">
+								<div id="titulo23" class="caption txtSobreImg escondeTitulo">
 									<h4 class="estiloTxt">Serie 3</h4>
 									<span class="estiloTxt">Resumen de descripción</span>
 									<div class="divIconoMas">
@@ -494,9 +505,9 @@
 							</div>
 						</div>
 						<div class="col-xs-4 col-sm-4 col-md-2 cambiaPadding">
-							<div class="thumbnail fondoTrans">
+							<div class="thumbnail fondoTrans" onmouseover="muestraTitulo('24')" onmouseout="ocultaTitulo('24')">
 								<img class="img-responsive" src="http://placehold.it/260x480" alt="...">
-								<div class="caption txtSobreImg">
+								<div id="titulo24" class="caption txtSobreImg escondeTitulo">
 									<h4 class="estiloTxt">Serie 4</h4>
 									<span class="estiloTxt">Resumen de descripción</span>
 									<div class="divIconoMas">
@@ -506,9 +517,9 @@
 							</div>
 						</div>
 						<div class="col-xs-4 col-sm-4 col-md-2 cambiaPadding">
-							<div class="thumbnail fondoTrans">
+							<div class="thumbnail fondoTrans" onmouseover="muestraTitulo('25')" onmouseout="ocultaTitulo('25')">
 								<img class="img-responsive" src="http://placehold.it/260x480" alt="...">
-								<div class="caption txtSobreImg">
+								<div id="titulo25" class="caption txtSobreImg escondeTitulo">
 									<h4 class="estiloTxt">Serie 5</h4>
 									<span class="estiloTxt">Resumen de descripción</span>
 									<div class="divIconoMas">
@@ -518,9 +529,9 @@
 							</div>
 						</div>
 						<div class="col-xs-4 col-sm-4 col-md-2 cambiaPadding">
-							<div class="thumbnail fondoTrans">
+							<div class="thumbnail fondoTrans" onmouseover="muestraTitulo('26')" onmouseout="ocultaTitulo('26')">
 								<img class="img-responsive" src="http://placehold.it/260x480" alt="...">
-								<div class="caption txtSobreImg">
+								<div id="titulo26" class="caption txtSobreImg escondeTitulo">
 									<h4 class="estiloTxt">Serie 6</h4>
 									<span class="estiloTxt">Resumen de descripción</span>
 									<div class="divIconoMas">
@@ -534,9 +545,9 @@
 				<div class="item">
 					<div class="row">
 						<div class="col-xs-4 col-sm-4 col-md-2 cambiaPadding">
-							<div class="thumbnail fondoTrans">
+							<div class="thumbnail fondoTrans" onmouseover="muestraTitulo('27')" onmouseout="ocultaTitulo('27')">
 								<img class="img-responsive" src="http://placehold.it/260x480" alt="...">
-								<div class="caption txtSobreImg">
+								<div id="titulo27" class="caption txtSobreImg escondeTitulo">
 									<h4 class="estiloTxt">Serie 1</h4>
 									<span class="estiloTxt">Resumen de descripción</span>
 									<div class="divIconoMas">
@@ -546,9 +557,9 @@
 							</div>
 						</div>
 						<div class="col-xs-4 col-sm-4 col-md-2 cambiaPadding">
-							<div class="thumbnail fondoTrans">
+							<div class="thumbnail fondoTrans" onmouseover="muestraTitulo('28')" onmouseout="ocultaTitulo('28')">
 								<img class="img-responsive" src="http://placehold.it/260x480" alt="...">
-								<div class="caption txtSobreImg">
+								<div id="titulo28" class="caption txtSobreImg escondeTitulo">
 									<h4 class="estiloTxt">Serie 2</h4>
 									<span class="estiloTxt">Resumen de descripción</span>
 									<div class="divIconoMas">
@@ -558,9 +569,9 @@
 							</div>
 						</div>
 						<div class="col-xs-4 col-sm-4 col-md-2 cambiaPadding">
-							<div class="thumbnail fondoTrans">
+							<div class="thumbnail fondoTrans" onmouseover="muestraTitulo('29')" onmouseout="ocultaTitulo('29')">
 								<img class="img-responsive" src="http://placehold.it/260x480" alt="...">
-								<div class="caption txtSobreImg">
+								<div id="titulo29" class="caption txtSobreImg escondeTitulo">
 									<h4 class="estiloTxt">Serie 3</h4>
 									<span class="estiloTxt">Resumen de descripción</span>
 									<div class="divIconoMas">
@@ -570,9 +581,9 @@
 							</div>
 						</div>
 						<div class="col-xs-4 col-sm-4 col-md-2 cambiaPadding">
-							<div class="thumbnail fondoTrans">
+							<div class="thumbnail fondoTrans" onmouseover="muestraTitulo('210')" onmouseout="ocultaTitulo('210')">
 								<img class="img-responsive" src="http://placehold.it/260x480" alt="...">
-								<div class="caption txtSobreImg">
+								<div id="titulo210" class="caption txtSobreImg escondeTitulo">
 									<h4 class="estiloTxt">Serie 4</h4>
 									<span class="estiloTxt">Resumen de descripción</span>
 									<div class="divIconoMas">
@@ -582,9 +593,9 @@
 							</div>
 						</div>
 						<div class="col-xs-4 col-sm-4 col-md-2 cambiaPadding">
-							<div class="thumbnail fondoTrans">
+							<div class="thumbnail fondoTrans" onmouseover="muestraTitulo('211')" onmouseout="ocultaTitulo('211')">
 								<img class="img-responsive" src="http://placehold.it/260x480" alt="...">
-								<div class="caption txtSobreImg">
+								<div id="titulo211" class="caption txtSobreImg escondeTitulo">
 									<h4 class="estiloTxt">Serie 5</h4>
 									<span class="estiloTxt">Resumen de descripción</span>
 									<div class="divIconoMas">
@@ -594,9 +605,9 @@
 							</div>
 						</div>
 						<div class="col-xs-4 col-sm-4 col-md-2 cambiaPadding">
-							<div class="thumbnail fondoTrans">
+							<div class="thumbnail fondoTrans" onmouseover="muestraTitulo('212')" onmouseout="ocultaTitulo('212')">
 								<img class="img-responsive" src="http://placehold.it/260x480" alt="...">
-								<div class="caption txtSobreImg">
+								<div id="titulo212" class="caption txtSobreImg escondeTitulo">
 									<h4 class="estiloTxt">Serie 6</h4>
 									<span class="estiloTxt">Resumen de descripción</span>
 									<div class="divIconoMas">
