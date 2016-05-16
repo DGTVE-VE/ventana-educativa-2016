@@ -37,10 +37,10 @@ Cultura
                 <thead></thead>
                 <tbody>
                     <tr>
-                        <td><a href="http://www.mcj.go.cr/" target="_blank" class="hvr-grow-shadow"><br><img class="animated zoomIn img-responsive" src="{{asset('imagenes/cultura/pais/costarica.png')}}"/></a><br><br></td>                        
-                        <td><a href="http://www.mincultura.gov.co/" class="hvr-grow-shadow" target="_blank" ><br><img class="animated zoomIn img-responsive" src="{{asset('imagenes/cultura/pais/colombia.png')}}"/></a><br><br></td>                                                
+                        <td><a href="http://www.mcj.go.cr/" target="_blank" class="hvr-push"><br><img class="animated zoomIn img-responsive" src="{{asset('imagenes/cultura/pais/costarica.png')}}"/></a><br><br></td>                        
+                        <td><a href="http://www.mincultura.gov.co/" class="hvr-push" target="_blank" ><br><img class="animated zoomIn img-responsive" src="{{asset('imagenes/cultura/pais/colombia.png')}}"/></a><br><br></td>                                                
                         <td><a href="http://www.cultura.gob.sv/" target="_blank"  class="hvr-grow-shadow"><br><img class="animated zoomIn img-responsive" src="{{asset('imagenes/cultura/pais/elsalvador.png')}}"/></a><br><br></td>                        
-                        <td><a href="http://mcd.gob.gt/" class="hvr-grow-shadow"target="_blank" ><br><img class="animated zoomIn img-responsive" src="{{asset('imagenes/cultura/pais/guatemala.png')}}"/></a><br><br></td>
+                        <td><a href="http://mcd.gob.gt/" class="hvr-grow-shadow" target="_blank" ><br><img class="animated zoomIn img-responsive" src="{{asset('imagenes/cultura/pais/guatemala.png')}}"/></a><br><br></td>
                     </tr>
                     <tr>
                         <td><a href="http://sichonduras.hn/" target="_blank" class="hvr-grow-shadow"><img class="animated zoomIn img-responsive" src="{{asset('imagenes/cultura/pais/honduras.png')}}"/></a><br><br></td>
