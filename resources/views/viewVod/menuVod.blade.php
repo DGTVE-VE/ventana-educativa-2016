@@ -1,5 +1,4 @@
-<div id="menuVOD" class="container">
-    <nav class="navbar navbar-default ancho-menu-vod">
+    <nav id="menuVOD" class="navbar navbar-default navbar-fixed-top ancho-menu-vod">
         <div class="navbar-header">
             <button class="navbar-toggle fondo-menu-SM" type="button" data-toggle="collapse" data-target=".js-navbar-collapse">
                 <span class="sr-only">Toggle navigation</span>
@@ -47,4 +46,3 @@
             </ul>
         </div><!-- /.nav-collapse -->
     </nav>
-</div>

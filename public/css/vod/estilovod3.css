@@ -1,8 +1,9 @@
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700);
+﻿@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700);
 
 .ancho-menu-vod{ /* Estilos de opción Explorar */
+    margin-left:20%;
     padding: 0px 0px;
-    width: 80%;
+    width: 40%;
     font-size: 17px;
     background:transparent;
     border:0;
