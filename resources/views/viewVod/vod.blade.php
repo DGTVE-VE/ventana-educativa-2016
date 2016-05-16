@@ -9,6 +9,7 @@ Videos Bajo Demanda
 		$('#iconoBuscar').css('display','none');
 		$('#navegacionVentana').css('height','55px');
 		$('#navegacionVentana').css('background','rgba(0, 0, 0, .3)');
+		$('#navegacionVentana').css('zIndex',900);
 		$(window).scroll(function(){
 			var scroll_v = this.pageYOffset;
 			if(scroll_v > 10){
@@ -20,11 +21,7 @@ Videos Bajo Demanda
 		});
 	</script>
         @include('viewVod.menuVod')
-        <script>
-              $('#menuVOD').css('top','100px');
-        </script>
 @endsection
-
 @section('cuerpoVod')
         @include('viewVod.bannerVod')
 @endsection
