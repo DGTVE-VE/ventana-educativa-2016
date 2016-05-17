@@ -192,96 +192,43 @@
 <div class="row visible-xs margenMenuChico">
 </div>
 <div class="row margenInferior">
-	<?php
-/*		$consultaSeries = "SELECT serie.titulo, serie.sinopsis, serie.descripcion FROM serie";
-		$infoSeries = DB::connection('mysqlVema')->select($consultaSeries);
-		foreach($infoSeries as $serie){
-			echo '<p style="color:white;">Serie: '.$serie->titulo.'</p>';
-		}*/
-	?>
 	<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-	  <!-- Indicators -->
-	  <ol class="carousel-indicators">
-		<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-		<li data-target="#carousel-example-generic" data-slide-to="1"></li>
-		<li data-target="#carousel-example-generic" data-slide-to="2"></li>
-		<li data-target="#carousel-example-generic" data-slide-to="3"></li>
-		<li data-target="#carousel-example-generic" data-slide-to="4"></li>
-	  </ol>
-
-	  <!-- Wrapper for slides -->
-	<div class="carousel-inner" role="listbox">
-		<div class="item active">
-			<img class="imgBanerPrincipal" src="{{asset('imagenes/vod/universitarios/bannerPrincipal.jpg')}}" alt="...">
-			<div class="carousel-caption posicionDescripcion">
-				<div class="col-sm-8 col-md-8 col-md-8">
-					Texto de prueba con descripción de la serie en el banner principal Texto de prueba con descripción de la serie en el banner principal
-				</div>
-			</div>
-			<div class="carousel-caption posicionBotones">
-				<div class="col-sm-12 col-md-12 col-lg-12">
-					<div class="btn btn-danger text-uppercase anchoBtnRep textoPeque"><span class="fa fa-play hidden-xs" aria-hidden="true"></span><span class="hidden-xs">&nbsp;&nbsp;</span>Reproducir</div>
-					<div class="btn btn-info text-uppercase anchoBtnLista textoPeque"><span class="fa fa fa-plus hidden-xs" aria-hidden="true"></span><span class="hidden-xs">&nbsp;&nbsp;</span>Mi lista</div>            
-				</div>
-			</div>
+	<!-- Indicators -->
+		<ol class="carousel-indicators">
+			<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+			<li data-target="#carousel-example-generic" data-slide-to="1"></li>
+			<li data-target="#carousel-example-generic" data-slide-to="2"></li>
+			<li data-target="#carousel-example-generic" data-slide-to="3"></li>
+			<li data-target="#carousel-example-generic" data-slide-to="4"></li>
+		</ol>
+		<div class="carousel-inner" role="listbox">
+		<?php
+			$consultaBanner = "SELECT vod_serie.descripcion, vod_imagen.url FROM vod_serie INNER JOIN vod_imagen ON vod_serie.id = vod_imagen.serie_id WHERE vod_serie.activo =1 AND vod_imagen.ubicacion_id=1;";
+			$infoBanner = DB::connection('mysql')->select($consultaBanner);
+			$i = 1;
+			foreach($infoBanner as $serieBanner){
+				if($i == 1){
+					echo '<div class="item active">';
+					$i=2;
+				}else{
+					echo '<div class="item">';
+				}
+					echo '<img class="imgBanerPrincipal" src="'.url($serieBanner->url).'" alt="...">';
+					echo '<div class="carousel-caption posicionDescripcion">';
+						echo '<div class="col-sm-8 col-md-8 col-md-8">';
+							echo $serieBanner->descripcion;
+						echo '</div>';
+					echo '</div>';
+					echo '<div class="carousel-caption posicionBotones">';
+						echo '<div class="col-sm-12 col-md-12 col-lg-12">';
+							echo '<div class="btn btn-danger text-uppercase anchoBtnRep textoPeque"><span class="fa fa-play hidden-xs" aria-hidden="true"></span><span class="hidden-xs">&nbsp;&nbsp;</span>Reproducir</div>';
+							echo '<div class="btn btn-info text-uppercase anchoBtnLista textoPeque"><span class="fa fa fa-plus hidden-xs" aria-hidden="true"></span><span class="hidden-xs">&nbsp;&nbsp;</span>Mi lista</div>            ';
+						echo '</div>';
+					echo '</div>';
+				echo '</div>';
+			}
+		?>
 		</div>
-		<div class="item">
-		  <img class="imgBanerPrincipal" src="{{asset('imagenes/vod/sinEtiquetas/bannerPrincipal.jpg')}}" alt="...">
-		  	<div class="carousel-caption posicionDescripcion">
-				<div class="col-sm-8 col-md-8 col-md-8">
-					Texto de prueba con descripción de la serie en el banner principal Texto de prueba con descripción de la serie en el banner principal
-				</div>
-			</div>
-			<div class="carousel-caption posicionBotones">
-				<div class="col-sm-12 col-md-12 col-lg-12">
-					<div class="btn btn-danger text-uppercase anchoBtnRep textoPeque"><span class="fa fa-play hidden-xs" aria-hidden="true"></span><span class="hidden-xs">&nbsp;&nbsp;</span>Reproducir</div>
-					<div class="btn btn-info text-uppercase anchoBtnLista textoPeque"><span class="fa fa fa-plus hidden-xs" aria-hidden="true"></span><span class="hidden-xs">&nbsp;&nbsp;</span>Mi lista</div>            
-				</div>
-			</div>
-		</div>
-		<div class="item">
-		  <img class="imgBanerPrincipal" src="{{asset('imagenes/vod/saberMas/bannerPrincipal.jpg')}}" alt="...">
-			<div class="carousel-caption posicionDescripcion">
-				<div class="col-sm-8 col-md-8 col-md-8">
-					Texto de prueba con descripción de la serie en el banner principal Texto de prueba con descripción de la serie en el banner principal
-				</div>
-			</div>
-			<div class="carousel-caption posicionBotones">
-				<div class="col-sm-12 col-md-12 col-lg-12">
-					<div class="btn btn-danger text-uppercase anchoBtnRep textoPeque"><span class="fa fa-play hidden-xs" aria-hidden="true"></span><span class="hidden-xs">&nbsp;&nbsp;</span>Reproducir</div>
-					<div class="btn btn-info text-uppercase anchoBtnLista textoPeque"><span class="fa fa fa-plus hidden-xs" aria-hidden="true"></span><span class="hidden-xs">&nbsp;&nbsp;</span>Mi lista</div>            
-				</div>
-			</div>
-		</div>
-		<div class="item">
-		  <img class="imgBanerPrincipal" src="{{asset('imagenes/vod/retosDesafios/bannerPrincipal.jpg')}}" alt="...">
-			<div class="carousel-caption posicionDescripcion">
-				<div class="col-sm-8 col-md-8 col-md-8">
-					Texto de prueba con descripción de la serie en el banner principal Texto de prueba con descripción de la serie en el banner principal
-				</div>
-			</div>
-			<div class="carousel-caption posicionBotones">
-				<div class="col-sm-12 col-md-12 col-lg-12">
-					<div class="btn btn-danger text-uppercase anchoBtnRep textoPeque"><span class="fa fa-play hidden-xs" aria-hidden="true"></span><span class="hidden-xs">&nbsp;&nbsp;</span>Reproducir</div>
-					<div class="btn btn-info text-uppercase anchoBtnLista textoPeque"><span class="fa fa fa-plus hidden-xs" aria-hidden="true"></span><span class="hidden-xs">&nbsp;&nbsp;</span>Mi lista</div>            
-				</div>
-			</div>
-		</div>
-		<div class="item">
-		  <img class="imgBanerPrincipal" src="{{asset('imagenes/vod/lanzamiento750/bannerPrincipal.jpg')}}" alt="...">
-			<div class="carousel-caption posicionDescripcion">
-				<div class="col-sm-8 col-md-8 col-md-8">
-					Texto de prueba con descripción de la serie en el banner principal Texto de prueba con descripción de la serie en el banner principal
-				</div>
-			</div>
-			<div class="carousel-caption posicionBotones">
-				<div class="col-sm-12 col-md-12 col-lg-12">
-					<div class="btn btn-danger text-uppercase anchoBtnRep textoPeque"><span class="fa fa-play hidden-xs" aria-hidden="true"></span><span class="hidden-xs">&nbsp;&nbsp;</span>Reproducir</div>
-					<div class="btn btn-info text-uppercase anchoBtnLista textoPeque"><span class="fa fa fa-plus hidden-xs" aria-hidden="true"></span><span class="hidden-xs">&nbsp;&nbsp;</span>Mi lista</div>            
-				</div>
-			</div>
-		</div>
-	  </div>
 
 	  <!-- Controls -->
 	  <a class="left carousel-control reduceAnchoFlecha" href="#carousel-example-generic" role="button" data-slide="prev">
