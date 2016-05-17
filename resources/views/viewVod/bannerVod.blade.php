@@ -192,6 +192,13 @@
 <div class="row visible-xs margenMenuChico">
 </div>
 <div class="row margenInferior">
+	<?php
+/*		$consultaSeries = "SELECT serie.titulo, serie.sinopsis, serie.descripcion FROM serie";
+		$infoSeries = DB::connection('mysqlVema')->select($consultaSeries);
+		foreach($infoSeries as $serie){
+			echo '<p style="color:white;">Serie: '.$serie->titulo.'</p>';
+		}*/
+	?>
 	<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
 	  <!-- Indicators -->
 	  <ol class="carousel-indicators">

@@ -4,6 +4,16 @@ Biblioteca
 @extends('indexBiblioteca')
 @section('menuBiblioteca')
 @include('viewVentana.encabezadoVentana')
+<style>
+	.fondoDegradadoMenuInicial{
+		background: rgba(0, 0, 0, .4);
+		border: none;
+	}
+	.fondoDegradadoMenu{
+		background: rgba(0, 0, 0, .7);
+		border: none;
+	}
+</style>
 <script>
     $('#buscar').css('display', 'none');
     $('#iconoBuscar').css('display', 'none');
@@ -11,15 +21,18 @@ Biblioteca
 	$('.imgLogo').attr('src','{{url("imagenes/biblioteca/imgMenu/ventanaEducativa.png")}}');
 	$('.appsLogo').attr('src','{{url("imagenes/biblioteca/imgMenu/menu.png")}}');
 	$('#img-usuario').attr('src','{{url("imagenes/biblioteca/imgMenu/registro.png")}}');
-    $(window).scroll(function () {
-        var scroll_v = this.pageYOffset;
-        if (scroll_v > 10) {
-            $('#navegacionVentana').css('background', 'rgba(0, 0, 0, .3)');
-        }
-        if (scroll_v < 10) {
-            $('#navegacionVentana').css('background', 'transparent');
-        }
-    });
+		$('#navegacionVentana').addClass('fondoDegradadoMenuInicial');
+		$(window).scroll(function(){
+			var scroll_v = this.pageYOffset;
+			if(scroll_v > 10){
+				$('#navegacionVentana').removeClass('fondoDegradadoMenuInicial');
+				$('#navegacionVentana').addClass('fondoDegradadoMenu');
+			}
+			if(scroll_v < 10){
+				$('#navegacionVentana').removeClass('fondoDegradadoMenu');
+				$('#navegacionVentana').addClass('fondoDegradadoMenuInicial');
+			}
+		});
 </script>        
 @endsection
 @section('cuerpoBiblioteca')
@@ -46,7 +59,3 @@ Biblioteca
 </div>
 @include('viewMediateca.barraSociales')
 @endsection
-
-<script>
-    
-</script>
