@@ -168,7 +168,6 @@
 	function muestraDetalle(numDiv){
 		var nombreDivDetalle = '#detalleSerie' + numDiv;
 		$(nombreDivDetalle).css('display','block');
-		console.log($(nombreDivDetalle).offset().top);
 		var windowTop = $(nombreDivDetalle).offset().top - '350';
 		$(document).scrollTop(windowTop)
 	}
@@ -180,10 +179,14 @@
 	function muestraTitulo(idTitulo){
 		var divTitulo = '#titulo' + idTitulo;
 		$(divTitulo).removeClass('escondeTitulo');
+		/*var nombreImagen = '#imagen' + idTitulo;
+		$(nombreImagen).attr("src","{{url('imagenes/vod/educacionVanguardia/thumbnailVertical2.jpg')}}");*/
 	}
 	function ocultaTitulo(idTitulo){
 		var divTitulo = '#titulo' + idTitulo;
 		$(divTitulo).addClass('escondeTitulo');
+		/*var nombreImagen = '#imagen' + idTitulo;
+		$(nombreImagen).attr("src","{{url('imagenes/vod/educacionVanguardia/thumbnailVertical.jpg')}}");*/
 	}
 </script>
 <div class="row visible-xs margenMenuChico">
@@ -298,7 +301,7 @@
 					<div class="row">
 						<div class="col-xs-4 col-sm-4 col-md-2 cambiaPadding">
 							<div class="thumbnail fondoTrans" onmouseover="muestraTitulo('11')" onmouseout="ocultaTitulo('11')">
-								<img class="img-responsive thumbnailVertical" src="{{url('imagenes/vod/banderasPais/argentina.jpg')}}" alt="...">
+								<img id="imagen11" class="img-responsive thumbnailVertical" src="{{url('imagenes/vod/banderasPais/argentina.jpg')}}" alt="...">
 								<div id="titulo11" class="caption txtSobreImg escondeTitulo">
 									<h4 class="estiloTxt">Serie 1</h4>
 									<span class="estiloTxt">Resumen de descripción</span>
