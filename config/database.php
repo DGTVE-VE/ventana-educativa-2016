@@ -75,6 +75,18 @@ return [
             'prefix'    => '',
             'strict'    => false,
         ],
+
+        'mysqlVema' => [
+            'driver'    => 'mysql',
+            'host'      => env('DB_HOST_VEMA', 'localhost'),
+            'database'  => env('DB_DATABASE_VEMA', 'forge'),
+            'username'  => env('DB_USERNAME_VEMA', 'forge'),
+            'password'  => env('DB_PASSWORD_VEMA', ''),
+            'charset'   => 'utf8',
+            'collation' => 'utf8_unicode_ci',
+            'prefix'    => '',
+            'strict'    => false,
+        ],
 		
         'pgsql' => [
             'driver'   => 'pgsql',

@@ -12,13 +12,13 @@ Cultura
 		$('.imgLogo').attr('src','{{url("imagenes/cultura/imgMenu/ventanaEducativa.png")}}');
 		$('.appsLogo').attr('src','{{url("imagenes/cultura/imgMenu/menu.png")}}');
 		$('#img-usuario').attr('src','{{url("imagenes/cultura/imgMenu/registro.png")}}');
-		$(window).scroll(function(){
+		$(window).scroll(function () {
 			var scroll_v = this.pageYOffset;
-			if(scroll_v > 10){
-				$('#navegacionVentana').css('background','rgba(0, 0, 0, .3)');
+			if (scroll_v > 10) {
+				$('#navegacionVentana').css('background', 'rgba(0, 0, 0, .3)');
 			}
-			if(scroll_v < 10){
-				$('#navegacionVentana').css('background','transparent');
+			if (scroll_v < 10) {
+				$('#navegacionVentana').css('background', 'transparent');
 			}
 		});
 	</script>        

@@ -9,9 +9,9 @@ Biblioteca
     $('#buscar').css('display', 'none');
     $('#iconoBuscar').css('display', 'none');
     $('#navegacionVentana').css('height', '55px');
-	$('.imgLogo').attr('src','{{url("imagenes/biblioteca/imgMenu/ventanaEducativa.png")}}');
-	$('.appsLogo').attr('src','{{url("imagenes/biblioteca/imgMenu/menu.png")}}');
-	$('#img-usuario').attr('src','{{url("imagenes/biblioteca/imgMenu/registro.png")}}');
+    $('.imgLogo').attr('src', '{{url("imagenes/biblioteca/imgMenu/ventanaEducativa.png")}}');
+    $('.appsLogo').attr('src', '{{url("imagenes/biblioteca/imgMenu/menu.png")}}');
+    $('#img-usuario').attr('src', '{{url("imagenes/biblioteca/imgMenu/registro.png")}}');
     $(window).scroll(function () {
         var scroll_v = this.pageYOffset;
         if (scroll_v > 10) {
@@ -27,7 +27,10 @@ Biblioteca
 @section('cuerpoBiblioteca')
 <div class="container">
     <div class="row">
-        <br><br><br<br><br><br>
+        <br><br>
+        <h2 class="text-center"><a style="text-decoration: none; color: black;" href="{{asset('biblioteca')}}">Biblioteca</a></h2>
+        <br>
+
         <!-- Carousel
 ================================================== -->
         <div id="CarouselTomo" class="carousel slide">
@@ -36,10 +39,10 @@ Biblioteca
                     <div class="accordion">
                         <ul>
                             <li style="background-image: url({{asset('imagenes/biblioteca/tomos/bajacalifornia.jpg')}})">
-                                <div> <a href="#">
-                                        <h4>1Lorem Ipsum</h4>
-                                        <p>1Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-                                    </a> </div>
+                                <div> 
+                                    <img src="{{asset('imagenes/biblioteca/tomos/hoverTomos/biblioteca-01.png')}}">
+                                    <a class="hrefTomos" href="#">Ver página</a>
+                                </div>
                             </li>
                             <li style="background-image: url({{asset('imagenes/biblioteca/tomos/bejaminfranklin.jpg')}})">
                                 <div> <a href="#">
@@ -127,10 +130,13 @@ Biblioteca
                             </li>
                         </ul>
                     </div>
-                </figure>                                                                                   
-            </div>              
-            <a class="carousel-control left" href="#CarouselTomo" data-slide="prev"><i class="fa fa-angle-double-left"></i></a>
-            <a class="carousel-control right" href="#CarouselTomo" data-slide="next"><i class="fa fa-angle-double-right"></i></a>                                   
+                </figure>       
+
+            </div>     
+            <div class="carousel-controls">
+                <a class="left carousel-control carousel-control-tomos" href="#CarouselTomo" data-slide="prev"><span class="flecha-izq-presentacion"><i class="fa fa-angle-left fa-lg"></i></span></a>
+                <a class="right carousel-control carousel-control-tomos" href="#CarouselTomo" data-slide="next"><span class="flecha-der-presentacion"><i class="fa fa-angle-right fa-lg"></i></span></a>
+            </div>
         </div><!-- End Carousel -->          
     </div>
 </div>
