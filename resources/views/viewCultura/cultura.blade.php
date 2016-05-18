@@ -52,11 +52,13 @@ Cultura
                 <thead></thead>
                 <tbody>
                     <tr>
-                        <td><a href="#" target= "_blank"><br><img class="animated zoomIn img-responsive" src="{{asset('imagenes/cultura/pais/logos/secCulturaMexico.png')}}"/></a></td>                        
-                        <td><a href="#" target= "_blank"><br><img class="animated zoomIn img-responsive" src="{{asset('imagenes/cultura/pais/logos/ceccSica.png')}}"/></a></td>                                                
-                        <td></td>
-                        <td><a href="#" target= "_blank"><br><img class="animated zoomIn img-responsive" src="{{asset('imagenes/cultura/pais/logos/culturaJuventud.png')}}"/></a></td>                        
+						<td><a href="http://www.televisioneducativa.gob.mx" target= "_blank"><img class="animated zoomIn img-responsive" src="{{asset('imagenes/cultura/pais/logos/tvecolor.png')}}" style="margin: auto"/></a></td>
+						<td><a href="http://ceducar.info/ceducar/" target= "_blank"><img class="animated zoomIn img-responsive" src="{{asset('imagenes/cultura/pais/logos/ceccSica.png')}}" style="margin: auto"/></a></td>
                     </tr>
+					<tr>
+                        <td><a href="#"><img class="animated zoomIn img-responsive" src="{{asset('imagenes/cultura/pais/logos/secCulturaMexico.png')}}" style="margin: auto"/></a></td>
+                        <td><a href="#"><img class="animated zoomIn img-responsive" src="{{asset('imagenes/cultura/pais/logos/culturaJuventud.png')}}" style="margin: auto"/></a></td>
+					</tr>
                 </tbody>
             </table>
         </div>
