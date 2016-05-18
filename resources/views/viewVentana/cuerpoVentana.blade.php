@@ -21,11 +21,11 @@
         <div class="col-md-1 col-lg-1 col-md-offset-1 col-lg-offset-1" style="padding-top: 8.9%; padding-left:0; padding-right:0;">
             {{HTML::image('imagenes/ventana/homeventana/CUBO-01.png','Canal IberoAmericano',['name'=>'CUBO01','id'=>'CUBO01', 'class'=>'imgColor oculta difumina Intervalo4 slideInLeft rombo1', 'usemap'=>'#mapacubo1'])}}
             <map name="mapacubo1" id="mapacubo1">
-                <area shape="poly" coords="0,424,424,0,920,424,480,920" onmouseover="cambiaImgFoto('01')" onmouseout="cambiaImgCubo('01')" href="http://www.ibe.tv/es/canal/iberoamericano/756/Iberoam%C3%A9rica-al-d%C3%ADa-1032016.htm" target="_blank"/>
+                <area shape="poly" coords="0,424,424,0,920,424,480,920" onmouseover="cambiaImgFoto('01')" onmouseout="cambiaImgCubo('01')" href="http://www.ibe.tv/" target="_blank"/>
                 <area shape="poly" coords="528,0,920,0,920,392" onmouseover="cambiaImgFoto('02')" onmouseout="cambiaImgCubo('02')" href="#"/>
                 <area shape="poly" coords="888,468,940,960,400,880" href="http://www.promocion.salud.gob.mx/dgps/interior1/programas/escuela_salud.html" target="_blank" onmouseover="cambiaImgFoto('03')" onmouseout="cambiaImgCubo('03')"/>
             </map>
-            <a href="http://www.ibe.tv/es/canal/iberoamericano/756/Iberoam%C3%A9rica-al-d%C3%ADa-1032016.htm" target="_blank">
+            <a href="http://www.ibe.tv/" target="_blank">
                 {{HTML::image('imagenes/ventana/iconoSeccion/canal_ibero.png','canal IberoAmericano',['id'=>'iconoRombo01','class'=>'imgColor oculta difumina Intervalo4 slideInLeft iconoCanalIbero','onmouseover'=>'cambiaImgFoto("01")','onmouseout'=>'cambiaImgCubo("01")'])}}
             </a>
         </div>
@@ -351,11 +351,11 @@
                     <td>
                         {{HTML::image('imagenes/ventana/homeventana/FOTO-01.png','Canal IberoAmericano',['id'=>'CUBOSM01','class'=>'imgColor oculta difumina Intervalo4 slideInLeft foto1','usemap'=>'#mapacubosm1'])}}
                         <map name="mapacubo1" id="mapacubosm1">
-                            <area shape="poly" coords="0,424,424,0,920,424,480,920" href="http://www.ibe.tv/es/canal/iberoamericano/756/Iberoam%C3%A9rica-al-d%C3%ADa-1032016.htm" target="_blank"/>
+                            <area shape="poly" coords="0,424,424,0,920,424,480,920" href="http://www.ibe.tv/" target="_blank"/>
                             <area shape="poly" coords="528,0,920,0,920,392" href="#"/>
                             <area shape="poly" coords="888,468,940,960,400,880" />
                         </map>
-                        <a href="http://www.ibe.tv/es/canal/iberoamericano/756/Iberoam%C3%A9rica-al-d%C3%ADa-1032016.htm" target="_blank">
+                        <a href="http://www.ibe.tv/" target="_blank">
                             {{HTML::image('imagenes/ventana/iconoSeccion/canal_ibero.png','Canal IberoAmericano',['id'=>'iconoRomboSM01','class'=>'imgColor oculta difumina Intervalo4 slideInLeft iconoFotoCanal'])}}
                         </a>
                     </td>
