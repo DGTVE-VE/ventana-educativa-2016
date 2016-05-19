@@ -18,14 +18,13 @@
                                 <!--<li class="dropdown-header megaheader">Inicio</li>-->
                                 <li><a href="#">Inicio</a></li>
                                 <li><a href="#">Mi lista</a></li>
-                                <li><a href="#">Originales</a></li>
-                                <li><a href="#">Novedades</a></li>
-                                <li><a href="#">Formas de Ver</a></li>
+                                <li><a href="#">Dirección General de Televisión Educativa</a></li>
+                                <li><a href="#">Concursos</a></li>
                             </ul>
                         </li>
                         <li class="col-sm-4">
                             <ul>
-                                <li class="dropdown-header megaheader">Temas</li>
+                                <li class="dropdown-header megaheader">Clasificaciones</li>
                                 <li><a href="#">Educación </a></li>
                                 <li><a href="#">Deportes</a></li>
                                 <li><a href="#">Salud</a></li>
