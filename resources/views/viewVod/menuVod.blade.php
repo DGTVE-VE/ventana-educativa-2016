@@ -18,27 +18,27 @@
                                 <!--<li class="dropdown-header megaheader">Inicio</li>-->
                                 <li><a href="#">Inicio</a></li>
                                 <li><a href="#">Mi lista</a></li>
-                                <li><a href="#">Dirección General de Televisión Educativa</a></li>
+                                <li><a href="#">Dir.Gral de Televisión Educativa</a></li>
                                 <li><a href="#">Concursos</a></li>
                             </ul>
                         </li>
                         <li class="col-sm-4">
-                            <ul>
+<!--                            <ul>
                                 <li class="dropdown-header megaheader">Clasificaciones</li>
                                 <li><a href="#">Educación </a></li>
                                 <li><a href="#">Deportes</a></li>
                                 <li><a href="#">Salud</a></li>
                                 <li><a href="#">Tecnología</a></li>
                             </ul>
-                        </li>
+                        </li>-->
                         <li class="col-sm-4">
-                            <ul>
+<!--                            <ul>
                                 <li class="dropdown-header megaheader"></li>
                                 <li><a href="#">Ciencia </a></li>
                                 <li><a href="#">Cultura</a></li>
                                 <li><a href="#">Música</a></li>
                                 <li><a href="#">Animación</a></li>                                         
-                            </ul>
+                            </ul>-->
                         </li>
                     </ul>
                 </li>
