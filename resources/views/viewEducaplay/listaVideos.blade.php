@@ -50,6 +50,7 @@ Educaplay
 		padding-right:35px; padding-left:35px; margin-top:10px; margin-bottom:30px;
 	}
 </style>
+@include('viewEducaplay.menuEducaplay')
 @endsection
 @section('cuerpoEducaplay')
 	<div class="row" style="height:100px;">

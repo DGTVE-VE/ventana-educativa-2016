@@ -6,23 +6,21 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <!--<a class="navbar-brand fondo-menu-SM" href="#"><span class="col-txt-menu">Menú</span></a>-->
         </div>
         <div class="collapse navbar-collapse js-navbar-collapse">
             <ul class="nav navbar-nav">
                 <li class="dropdown mega-dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Explorar<span class="glyphicon glyphicon-chevron-down pull-right"></span></a>
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" id="txt-explorar">Explorar<span class="glyphicon glyphicon-chevron-down pull-right"></span></a>
                     <ul class="dropdown-menu mega-dropdown-menu row">
-                        <li class="col-sm-4">
+                        <li class="col-sm-11">
                             <ul>
-                                <!--<li class="dropdown-header megaheader">Inicio</li>-->
                                 <li><a href="#">Inicio</a></li>
                                 <li><a href="#">Mi lista</a></li>
-                                <li><a href="#">Dir.Gral de Televisión Educativa</a></li>
+                                <li><a href="#">Dirección General de Televisión Educativa</a></li>
                                 <li><a href="#">Concursos</a></li>
                             </ul>
                         </li>
-                        <li class="col-sm-4">
+                        <!--<li class="col-sm-4">-->
 <!--                            <ul>
                                 <li class="dropdown-header megaheader">Clasificaciones</li>
                                 <li><a href="#">Educación </a></li>
@@ -31,7 +29,7 @@
                                 <li><a href="#">Tecnología</a></li>
                             </ul>
                         </li>-->
-                        <li class="col-sm-4">
+                        <!--<li class="col-sm-5">-->
 <!--                            <ul>
                                 <li class="dropdown-header megaheader"></li>
                                 <li><a href="#">Ciencia </a></li>
@@ -39,7 +37,7 @@
                                 <li><a href="#">Música</a></li>
                                 <li><a href="#">Animación</a></li>                                         
                             </ul>-->
-                        </li>
+                        <!--</li>-->
                     </ul>
                 </li>
             </ul>
