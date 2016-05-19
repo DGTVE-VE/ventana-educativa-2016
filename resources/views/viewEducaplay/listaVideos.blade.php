@@ -1,8 +1,8 @@
-@section('titleVod')
-Videos Bajo Demanda
+@section('titleEducaplay')
+Educaplay
 @stop
-@extends('indexVod')
-@section('menuVod')
+@extends('indexEducaplay')
+@section('menuEducaplay')
 	@include('viewVentana.encabezadoVentana')
 	<script>
 		$('#buscar').css('display','none');
@@ -50,8 +50,9 @@ Videos Bajo Demanda
 		padding-right:35px; padding-left:35px; margin-top:10px; margin-bottom:30px;
 	}
 </style>
+@include('viewEducaplay.menuEducaplay')
 @endsection
-@section('cuerpoVod')
+@section('cuerpoEducaplay')
 	<div class="row" style="height:100px;">
 	</div>
 	<div class="row margenesFila">
@@ -62,7 +63,7 @@ Videos Bajo Demanda
 	<div class="row margenesFila">
 		<div class="col-xs-6 col-sm-6 col-md-2 cambiaPadding">
 			<div class="thumbnail fondoTrans">
-				<img class="img-responsive" src="{{url('imagenes/vod/series/thumbnailHorizontal.jpg')}}" alt="...">
+				<img class="img-responsive" src="{{url('imagenes/educaplay/series/thumbnailHorizontal.jpg')}}" alt="...">
 				<div class="caption txtSobreImg estiloTxt">
 					<h4 class="estiloTxt">Serie 1</h4>
 					<span class="estiloTxt">Resumen de descripción</span>
@@ -74,7 +75,7 @@ Videos Bajo Demanda
 		</div>
 		<div class="col-xs-6 col-sm-6 col-md-2 cambiaPadding">
 			<div class="thumbnail fondoTrans">
-				<img class="img-responsive" src="{{url('imagenes/vod/series/thumbnailHorizontal.jpg')}}" alt="...">
+				<img class="img-responsive" src="{{url('imagenes/educaplay/series/thumbnailHorizontal.jpg')}}" alt="...">
 				<div class="caption txtSobreImg">
 					<h4 class="estiloTxt">Serie 2</h4>
 					<span class="estiloTxt">Resumen de descripción</span>
@@ -86,7 +87,7 @@ Videos Bajo Demanda
 		</div>
 		<div class="col-xs-6 col-sm-6 col-md-2 cambiaPadding">
 			<div class="thumbnail fondoTrans">
-				<img class="img-responsive" src="{{url('imagenes/vod/series/thumbnailHorizontal.jpg')}}" alt="...">
+				<img class="img-responsive" src="{{url('imagenes/educaplay/series/thumbnailHorizontal.jpg')}}" alt="...">
 				<div class="caption txtSobreImg">
 					<h4 class="estiloTxt">Serie 3</h4>
 					<span class="estiloTxt">Resumen de descripción</span>
@@ -98,7 +99,7 @@ Videos Bajo Demanda
 		</div>
 		<div class="col-xs-6 col-sm-6 col-md-2 cambiaPadding">
 			<div class="thumbnail fondoTrans">
-				<img class="img-responsive" src="{{url('imagenes/vod/series/thumbnailHorizontal.jpg')}}" alt="...">
+				<img class="img-responsive" src="{{url('imagenes/educaplay/series/thumbnailHorizontal.jpg')}}" alt="...">
 				<div class="caption txtSobreImg">
 					<h4 class="estiloTxt">Serie 4</h4>
 					<span class="estiloTxt">Resumen de descripción</span>
@@ -110,7 +111,7 @@ Videos Bajo Demanda
 		</div>
 		<div class="col-xs-6 col-sm-6 col-md-2 cambiaPadding">
 			<div class="thumbnail fondoTrans">
-				<img class="img-responsive" src="{{url('imagenes/vod/series/thumbnailHorizontal.jpg')}}" alt="...">
+				<img class="img-responsive" src="{{url('imagenes/educaplay/series/thumbnailHorizontal.jpg')}}" alt="...">
 				<div class="caption txtSobreImg">
 					<h4 class="estiloTxt">Serie 5</h4>
 					<span class="estiloTxt">Resumen de descripción</span>
@@ -122,7 +123,7 @@ Videos Bajo Demanda
 		</div>
 		<div class="col-xs-6 col-sm-6 col-md-2 cambiaPadding">
 			<div class="thumbnail fondoTrans">
-				<img class="img-responsive" src="{{url('imagenes/vod/series/thumbnailHorizontal.jpg')}}" alt="...">
+				<img class="img-responsive" src="{{url('imagenes/educaplay/series/thumbnailHorizontal.jpg')}}" alt="...">
 				<div class="caption txtSobreImg">
 					<h4 class="estiloTxt">Serie 6</h4>
 					<span class="estiloTxt">Resumen de descripción</span>
@@ -210,7 +211,7 @@ Videos Bajo Demanda
 	<div class="row margenesFila">
 		<div class="col-xs-6 col-sm-6 col-md-2 cambiaPadding">
 			<div class="thumbnail fondoTrans">
-				<img class="img-responsive" src="{{url('imagenes/vod/series/thumbnailHorizontal.jpg')}}" alt="...">
+				<img class="img-responsive" src="{{url('imagenes/educaplay/series/thumbnailHorizontal.jpg')}}" alt="...">
 				<div class="caption txtSobreImg">
 					<h4 class="estiloTxt">Serie 1</h4>
 					<span class="estiloTxt">Resumen de descripción</span>
@@ -222,7 +223,7 @@ Videos Bajo Demanda
 		</div>
 		<div class="col-xs-6 col-sm-6 col-md-2 cambiaPadding">
 			<div class="thumbnail fondoTrans">
-				<img class="img-responsive" src="{{url('imagenes/vod/series/thumbnailHorizontal.jpg')}}" alt="...">
+				<img class="img-responsive" src="{{url('imagenes/educaplay/series/thumbnailHorizontal.jpg')}}" alt="...">
 				<div class="caption txtSobreImg">
 					<h4 class="estiloTxt">Serie 2</h4>
 					<span class="estiloTxt">Resumen de descripción</span>
@@ -234,7 +235,7 @@ Videos Bajo Demanda
 		</div>
 		<div class="col-xs-6 col-sm-6 col-md-2 cambiaPadding">
 			<div class="thumbnail fondoTrans">
-				<img class="img-responsive" src="{{url('imagenes/vod/series/thumbnailHorizontal.jpg')}}" alt="...">
+				<img class="img-responsive" src="{{url('imagenes/educaplay/series/thumbnailHorizontal.jpg')}}" alt="...">
 				<div class="caption txtSobreImg">
 					<h4 class="estiloTxt">Serie 3</h4>
 					<span class="estiloTxt">Resumen de descripción</span>
@@ -246,7 +247,7 @@ Videos Bajo Demanda
 		</div>
 		<div class="col-xs-6 col-sm-6 col-md-2 cambiaPadding">
 			<div class="thumbnail fondoTrans">
-				<img class="img-responsive" src="{{url('imagenes/vod/series/thumbnailHorizontal.jpg')}}" alt="...">
+				<img class="img-responsive" src="{{url('imagenes/educaplay/series/thumbnailHorizontal.jpg')}}" alt="...">
 				<div class="caption txtSobreImg">
 					<h4 class="estiloTxt">Serie 4</h4>
 					<span class="estiloTxt">Resumen de descripción</span>
@@ -258,7 +259,7 @@ Videos Bajo Demanda
 		</div>
 		<div class="col-xs-6 col-sm-6 col-md-2 cambiaPadding">
 			<div class="thumbnail fondoTrans">
-				<img class="img-responsive" src="{{url('imagenes/vod/series/thumbnailHorizontal.jpg')}}" alt="...">
+				<img class="img-responsive" src="{{url('imagenes/educaplay/series/thumbnailHorizontal.jpg')}}" alt="...">
 				<div class="caption txtSobreImg">
 					<h4 class="estiloTxt">Serie 5</h4>
 					<span class="estiloTxt">Resumen de descripción</span>
@@ -270,7 +271,7 @@ Videos Bajo Demanda
 		</div>
 		<div class="col-xs-6 col-sm-6 col-md-2 cambiaPadding">
 			<div class="thumbnail fondoTrans">
-				<img class="img-responsive" src="{{url('imagenes/vod/series/thumbnailHorizontal.jpg')}}" alt="...">
+				<img class="img-responsive" src="{{url('imagenes/educaplay/series/thumbnailHorizontal.jpg')}}" alt="...">
 				<div class="caption txtSobreImg">
 					<h4 class="estiloTxt">Serie 6</h4>
 					<span class="estiloTxt">Resumen de descripción</span>

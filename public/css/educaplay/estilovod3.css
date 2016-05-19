@@ -7,7 +7,6 @@
     background:transparent;
     border:0;
 }
-
 .fondo-menu-SM{
     background-color: #ccc;
 }
@@ -17,17 +16,22 @@
     border-top-right-radius:4px;
 }
 .navbar-default .navbar-nav>li>a {   /*botón Explorar*/
-    width:185px;
+    width: 205px;
+    font-weight:bold;
+    color: #FF0000;
+}
+.navbar-default .navbar-nav>li>a:hover {   /*botón Explorar*/
+    width:225px;
     font-weight:bold;
     color: #FF0000;
 }
 .mega-dropdown {
-  position: static !important;
-  width:100%;
- }
-.mega-dropdown-menu {  /*Ancho del contenrdor menú */
-    padding: 0px 0px;
+    position: static !important;
     width: 100%;
+}
+.mega-dropdown-menu {  /*Ancho del contenerdor menú */
+    padding: 0px 0px;
+    width: 70%;
     box-shadow: none;
     background-color: #444; /*fondo del contenedor del menú */
     -webkit-box-shadow: none;
@@ -39,7 +43,7 @@
     border-left: 17px solid transparent;
     position: absolute;
     top: -15px;
-    left: 175px;
+    left: 135px;
     z-index: 10;
 }
 .mega-dropdown-menu:after { /*estilo para la flecha del menú */
@@ -49,34 +53,39 @@
     border-left: 19px solid transparent;
     position: absolute;
     top: -17px;
-    left: 173px;
+    left: 133px;
     z-index: 8;
 }
 .mega-dropdown-menu > li > ul { /*margen dentro del contenedor del menú */
-  padding: 0;
-  margin: 0;
+    padding: 0;
+    margin: 0;
 }
 .mega-dropdown-menu > li > ul > li {
-  list-style: none;
+    list-style: none;
 }
 .mega-dropdown-menu > li > ul > li > a { /*Estilo de las opciones del menú (texto)*/
-  display: block;
-  padding: 3px 20px;
-  clear: both;
-  font-weight: normal;
-  line-height: 1.628571429;
-  color: #ccc;
-  white-space: normal;
+    display: block;
+    padding: 3px 20px;
+    clear: both;
+    font-weight: normal;
+    line-height: 2.628571429;
+    color: #ccc;
+    white-space: normal;
 }
-.mega-dropdown-menu > li ul > li > a:hover,
-.mega-dropdown-menu > li ul > li > a:focus { /*Efectos de hover al posicionarse en una opción del menú(texto) */
-  text-decoration: none;
-  color: #444;
-  background-color: #f5f5f5;
+.mega-dropdown-menu li ul li> a:hover,
+.mega-dropdown-menu li ul  li > a:focus { /*Efectos de hover al posicionarse en una opción del menú(texto) */
+    text-decoration: none;
+    color: #444;
+    background-color: #f5f5f5;
 }
 .mega-dropdown-menu .dropdown-header { /*Efectos de texto de encabezado (Temas) */
-  color: #428bca;
-  font-size: 18px;
-  font-weight:bold;
+    color: #428bca;
+    font-size: 18px;
+    font-weight:bold;
 }
-
+#txt-explorar{
+    width:180px;
+    font-weight:bold;
+    color: #FF0000;
+    background: transparent;
+}

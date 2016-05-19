@@ -6,7 +6,7 @@ and open the template in the editor.
 -->
 <html lang='en'>
     <head>
-        <title>@yield('titleVod','Videos Bajo Demanda')</title>
+        <title>@yield('titleEducaplay','Educaplay')</title>
         <!--  App Descripción  -->
         <meta name="description" content="Ventana Educativa 2016"/>
         <meta charset="utf-8">
@@ -32,8 +32,8 @@ and open the template in the editor.
 
         @yield ('estilos')
         
-        <link rel="stylesheet" href="{{ asset('css/vod/estilovod.css') }}" >        
-        <link rel="stylesheet" href="{{ asset('css/vod/estilovod3.css') }}" >        
+        <link rel="stylesheet" href="{{ asset('css/educaplay/estilovod.css') }}" >        
+        <link rel="stylesheet" href="{{ asset('css/educaplay/estilovod3.css') }}" >        
 
         <!-- jQuery library -->
         
@@ -49,14 +49,14 @@ and open the template in the editor.
     <body>     
         <header>
 			<div class="container-fluid">
-				@yield('menuVod')
+				@yield('menuEducaplay')
 			</div>
         </header>
         <div class="container-fluid">
-            @yield('cuerpoVod')
+            @yield('cuerpoEducaplay')
         </div>
         <div class="container-fluid">
-            @yield('pieVod')
+            @yield('pieEducaplay')
         </div>
     </body>
 </html>
