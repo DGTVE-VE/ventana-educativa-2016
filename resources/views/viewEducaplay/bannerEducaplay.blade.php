@@ -180,13 +180,13 @@
 		var divTitulo = '#titulo' + idTitulo;
 		$(divTitulo).removeClass('escondeTitulo');
 		/*var nombreImagen = '#imagen' + idTitulo;
-		$(nombreImagen).attr("src","{{url('imagenes/vod/educacionVanguardia/thumbnailVertical2.jpg')}}");*/
+		$(nombreImagen).attr("src","{{url('imagenes/educaplay/educacionVanguardia/thumbnailVertical2.jpg')}}");*/
 	}
 	function ocultaTitulo(idTitulo){
 		var divTitulo = '#titulo' + idTitulo;
 		$(divTitulo).addClass('escondeTitulo');
 		/*var nombreImagen = '#imagen' + idTitulo;
-		$(nombreImagen).attr("src","{{url('imagenes/vod/educacionVanguardia/thumbnailVertical.jpg')}}");*/
+		$(nombreImagen).attr("src","{{url('imagenes/educaplay/educacionVanguardia/thumbnailVertical.jpg')}}");*/
 	}
 </script>
 <div class="row visible-xs margenMenuChico">
@@ -201,9 +201,10 @@
 			<li data-target="#carousel-example-generic" data-slide-to="3"></li>
 			<li data-target="#carousel-example-generic" data-slide-to="4"></li>
 		</ol>
-		<div class="carousel-inner" role="listbox">
+		<div class="carousel-inner" role="listbox">                    
 		<?php
-			$consultaBanner = "SELECT vod_serie.descripcion, vod_imagen.url FROM vod_serie INNER JOIN vod_imagen ON vod_serie.id = vod_imagen.serie_id WHERE vod_serie.activo =1 AND vod_imagen.ubicacion_id=1;";
+                
+			$consultaBanner = "SELECT edu_serie.descripcion, edu_imagen.url FROM edu_serie INNER JOIN edu_imagen ON edu_serie.id = edu_imagen.serie_id WHERE edu_serie.activo =1 AND edu_imagen.ubicacion_id=1;";
 			$infoBanner = DB::connection('mysql')->select($consultaBanner);
 			$i = 1;
 			foreach($infoBanner as $serieBanner){
@@ -244,7 +245,7 @@
 
 <div class="row margenesFila margenInferior">
 	<div class="col-md-12 col-lg-12 text-uppercase">
-		<a href="{{url('vod/detalleSeries')}}"><p style="color:white; font-size:16px;"> Muestra Iberoamericana de Televisión Educativa y Cultural</p></a>
+		<a href="{{url('educaplay/detalleSeries')}}"><p style="color:white; font-size:16px;"> Muestra Iberoamericana de Televisión Educativa y Cultural</p></a>
 	</div>
 </div>
 <div class="row margenesFila margenInferior">
@@ -255,7 +256,7 @@
 					<div class="row">
 						<div class="col-xs-4 col-sm-4 col-md-2 cambiaPadding">
 							<div class="thumbnail fondoTrans" onmouseover="muestraTitulo('11')" onmouseout="ocultaTitulo('11')">
-								<img id="imagen11" class="img-responsive thumbnailVertical" src="{{url('imagenes/vod/banderasPais/argentina.jpg')}}" alt="...">
+								<img id="imagen11" class="img-responsive thumbnailVertical" src="{{url('imagenes/educaplay/banderasPais/argentina.jpg')}}" alt="...">
 								<div id="titulo11" class="caption txtSobreImg escondeTitulo">
 									<h4 class="estiloTxt">Serie 1</h4>
 									<span class="estiloTxt">Resumen de descripción</span>
@@ -267,7 +268,7 @@
 						</div>
 						<div class="col-xs-4 col-sm-4 col-md-2 cambiaPadding">
 							<div class="thumbnail fondoTrans" onmouseover="muestraTitulo('12')" onmouseout="ocultaTitulo('12')">
-								<img class="img-responsive thumbnailVertical" src="{{url('imagenes/vod/banderasPais/chile.jpg')}}" alt="...">
+								<img class="img-responsive thumbnailVertical" src="{{url('imagenes/educaplay/banderasPais/chile.jpg')}}" alt="...">
 								<div id="titulo12" class="caption txtSobreImg escondeTitulo">
 									<h4 class="estiloTxt">Serie 2</h4>
 									<span class="estiloTxt">Resumen de descripción</span>
@@ -279,7 +280,7 @@
 						</div>
 						<div class="col-xs-4 col-sm-4 col-md-2 cambiaPadding">
 							<div class="thumbnail fondoTrans" onmouseover="muestraTitulo('13')" onmouseout="ocultaTitulo('13')">
-								<img class="img-responsive thumbnailVertical" src="{{url('imagenes/vod/banderasPais/colombia.jpg')}}" alt="...">
+								<img class="img-responsive thumbnailVertical" src="{{url('imagenes/educaplay/banderasPais/colombia.jpg')}}" alt="...">
 								<div id="titulo13" class="caption txtSobreImg escondeTitulo">
 									<h4 class="estiloTxt">Serie 3</h4>
 									<span class="estiloTxt">Resumen de descripción</span>
@@ -291,7 +292,7 @@
 						</div>
 						<div class="col-xs-4 col-sm-4 col-md-2 cambiaPadding">
 							<div class="thumbnail fondoTrans" onmouseover="muestraTitulo('14')" onmouseout="ocultaTitulo('14')">
-								<img class="img-responsive thumbnailVertical" src="{{url('imagenes/vod/banderasPais/ecuador.jpg')}}" alt="...">
+								<img class="img-responsive thumbnailVertical" src="{{url('imagenes/educaplay/banderasPais/ecuador.jpg')}}" alt="...">
 								<div id="titulo14" class="caption txtSobreImg escondeTitulo">
 									<h4 class="estiloTxt">Serie 4</h4>
 									<span class="estiloTxt">Resumen de descripción</span>
@@ -303,7 +304,7 @@
 						</div>
 						<div class="col-xs-4 col-sm-4 col-md-2 cambiaPadding">
 							<div class="thumbnail fondoTrans" onmouseover="muestraTitulo('15')" onmouseout="ocultaTitulo('15')">
-								<img class="img-responsive thumbnailVertical" src="{{url('imagenes/vod/banderasPais/espana.jpg')}}" alt="...">
+								<img class="img-responsive thumbnailVertical" src="{{url('imagenes/educaplay/banderasPais/espana.jpg')}}" alt="...">
 								<div id="titulo15" class="caption txtSobreImg escondeTitulo">
 									<h4 class="estiloTxt">Serie 5</h4>
 									<span class="estiloTxt">Resumen de descripción</span>
@@ -315,7 +316,7 @@
 						</div>
 						<div class="col-xs-4 col-sm-4 col-md-2 cambiaPadding">
 							<div class="thumbnail fondoTrans" onmouseover="muestraTitulo('16')" onmouseout="ocultaTitulo('16')">
-								<img class="img-responsive thumbnailVertical" src="{{url('imagenes/vod/banderasPais/mexico.jpg')}}" alt="...">
+								<img class="img-responsive thumbnailVertical" src="{{url('imagenes/educaplay/banderasPais/mexico.jpg')}}" alt="...">
 								<div id="titulo16" class="caption txtSobreImg escondeTitulo">
 									<h4 class="estiloTxt">Serie 6</h4>
 									<span class="estiloTxt">Resumen de descripción</span>
@@ -331,7 +332,7 @@
 					<div class="row">
 						<div class="col-xs-4 col-sm-4 col-md-2 cambiaPadding">
 							<div class="thumbnail fondoTrans" onmouseover="muestraTitulo('17')" onmouseout="ocultaTitulo('17')">
-								<img class="img-responsive thumbnailVertical" src="{{url('imagenes/vod/banderasPais/argentina.jpg')}}" alt="...">
+								<img class="img-responsive thumbnailVertical" src="{{url('imagenes/educaplay/banderasPais/argentina.jpg')}}" alt="...">
 								<div id="titulo17" class="caption txtSobreImg escondeTitulo">
 									<h4 class="estiloTxt">Serie 1</h4>
 									<span class="estiloTxt">Resumen de descripción</span>
@@ -343,7 +344,7 @@
 						</div>
 						<div class="col-xs-4 col-sm-4 col-md-2 cambiaPadding">
 							<div class="thumbnail fondoTrans" onmouseover="muestraTitulo('18')" onmouseout="ocultaTitulo('18')">
-								<img class="img-responsive thumbnailVertical" src="{{url('imagenes/vod/banderasPais/chile.jpg')}}" alt="...">
+								<img class="img-responsive thumbnailVertical" src="{{url('imagenes/educaplay/banderasPais/chile.jpg')}}" alt="...">
 								<div id="titulo18" class="caption txtSobreImg escondeTitulo">
 									<h4 class="estiloTxt">Serie 2</h4>
 									<span class="estiloTxt">Resumen de descripción</span>
@@ -355,7 +356,7 @@
 						</div>
 						<div class="col-xs-4 col-sm-4 col-md-2 cambiaPadding">
 							<div class="thumbnail fondoTrans" onmouseover="muestraTitulo('19')" onmouseout="ocultaTitulo('19')">
-								<img class="img-responsive thumbnailVertical" src="{{url('imagenes/vod/banderasPais/colombia.jpg')}}" alt="...">
+								<img class="img-responsive thumbnailVertical" src="{{url('imagenes/educaplay/banderasPais/colombia.jpg')}}" alt="...">
 								<div id="titulo19" class="caption txtSobreImg escondeTitulo">
 									<h4 class="estiloTxt">Serie 3</h4>
 									<span class="estiloTxt">Resumen de descripción</span>
@@ -367,7 +368,7 @@
 						</div>
 						<div class="col-xs-4 col-sm-4 col-md-2 cambiaPadding">
 							<div class="thumbnail fondoTrans" onmouseover="muestraTitulo('110')" onmouseout="ocultaTitulo('110')">
-								<img class="img-responsive thumbnailVertical" src="{{url('imagenes/vod/banderasPais/ecuador.jpg')}}" alt="...">
+								<img class="img-responsive thumbnailVertical" src="{{url('imagenes/educaplay/banderasPais/ecuador.jpg')}}" alt="...">
 								<div id="titulo110" class="caption txtSobreImg escondeTitulo">
 									<h4 class="estiloTxt">Serie 4</h4>
 									<span class="estiloTxt">Resumen de descripción</span>
@@ -379,7 +380,7 @@
 						</div>
 						<div class="col-xs-4 col-sm-4 col-md-2 cambiaPadding">
 							<div class="thumbnail fondoTrans" onmouseover="muestraTitulo('111')" onmouseout="ocultaTitulo('111')">
-								<img class="img-responsive thumbnailVertical" src="{{url('imagenes/vod/banderasPais/espana.jpg')}}" alt="...">
+								<img class="img-responsive thumbnailVertical" src="{{url('imagenes/educaplay/banderasPais/espana.jpg')}}" alt="...">
 								<div id="titulo111" class="caption txtSobreImg escondeTitulo">
 									<h4 class="estiloTxt">Serie 5</h4>
 									<span class="estiloTxt">Resumen de descripción</span>
@@ -391,7 +392,7 @@
 						</div>
 						<div class="col-xs-4 col-sm-4 col-md-2 cambiaPadding">
 							<div class="thumbnail fondoTrans" onmouseover="muestraTitulo('112')" onmouseout="ocultaTitulo('112')">
-								<img class="img-responsive thumbnailVertical" src="{{url('imagenes/vod/banderasPais/mexico.jpg')}}" alt="...">
+								<img class="img-responsive thumbnailVertical" src="{{url('imagenes/educaplay/banderasPais/mexico.jpg')}}" alt="...">
 								<div id="titulo112" class="caption txtSobreImg escondeTitulo">
 									<h4 class="estiloTxt">Serie 6</h4>
 									<span class="estiloTxt">Resumen de descripción</span>
@@ -441,7 +442,7 @@
 </div>
 <div class="row margenesFila margenInferior">
 	<div class="col-md-12 col-lg-12 text-uppercase">
-		<a href="{{url('vod/detalleSeries')}}"><p style="color:white; font-size:16px;">Dirección General de Televisión Educativa</p></a>
+		<a href="{{url('educaplay/detalleSeries')}}"><p style="color:white; font-size:16px;">Dirección General de Televisión Educativa</p></a>
 	</div>
 </div>
 <div class="row margenesFila margenInferior">
@@ -452,7 +453,7 @@
 					<div class="row">
 						<div class="col-xs-4 col-sm-4 col-md-2 cambiaPadding">
 							<div class="thumbnail fondoTrans" onmouseover="muestraTitulo('21')" onmouseout="ocultaTitulo('21')">
-								<img class="img-responsive" src="{{url('imagenes/vod/educacionVanguardia/thumbnailVertical.jpg')}}" alt="...">
+								<img class="img-responsive" src="{{url('imagenes/educaplay/educacionVanguardia/thumbnailVertical.jpg')}}" alt="...">
 								<div id="titulo21" class="caption txtSobreImg escondeTitulo">
 									<h4 class="estiloTxt">Serie 1</h4>
 									<span class="estiloTxt">Resumen de descripción</span>
@@ -464,7 +465,7 @@
 						</div>
 						<div class="col-xs-4 col-sm-4 col-md-2 cambiaPadding">
 							<div class="thumbnail fondoTrans" onmouseover="muestraTitulo('22')" onmouseout="ocultaTitulo('22')">
-								<img class="img-responsive" src="{{url('imagenes/vod/guardianesTierra/thumbnailVertical.jpg')}}" alt="...">
+								<img class="img-responsive" src="{{url('imagenes/educaplay/guardianesTierra/thumbnailVertical.jpg')}}" alt="...">
 								<div id="titulo22" class="caption txtSobreImg escondeTitulo">
 									<h4 class="estiloTxt">Serie 2</h4>
 									<span class="estiloTxt">Resumen de descripción</span>
@@ -476,7 +477,7 @@
 						</div>
 						<div class="col-xs-4 col-sm-4 col-md-2 cambiaPadding">
 							<div class="thumbnail fondoTrans" onmouseover="muestraTitulo('23')" onmouseout="ocultaTitulo('23')">
-								<img class="img-responsive" src="{{url('imagenes/vod/lanzamiento750/thumbnailVertical.jpg')}}" alt="...">
+								<img class="img-responsive" src="{{url('imagenes/educaplay/lanzamiento750/thumbnailVertical.jpg')}}" alt="...">
 								<div id="titulo23" class="caption txtSobreImg escondeTitulo">
 									<h4 class="estiloTxt">Serie 3</h4>
 									<span class="estiloTxt">Resumen de descripción</span>
@@ -488,7 +489,7 @@
 						</div>
 						<div class="col-xs-4 col-sm-4 col-md-2 cambiaPadding">
 							<div class="thumbnail fondoTrans" onmouseover="muestraTitulo('24')" onmouseout="ocultaTitulo('24')">
-								<img class="img-responsive" src="{{url('imagenes/vod/retosDesafios/thumbnailVertical.jpg')}}" alt="...">
+								<img class="img-responsive" src="{{url('imagenes/educaplay/retosDesafios/thumbnailVertical.jpg')}}" alt="...">
 								<div id="titulo24" class="caption txtSobreImg escondeTitulo">
 									<h4 class="estiloTxt">Serie 4</h4>
 									<span class="estiloTxt">Resumen de descripción</span>
@@ -500,7 +501,7 @@
 						</div>
 						<div class="col-xs-4 col-sm-4 col-md-2 cambiaPadding">
 							<div class="thumbnail fondoTrans" onmouseover="muestraTitulo('25')" onmouseout="ocultaTitulo('25')">
-								<img class="img-responsive" src="{{url('imagenes/vod/saberMas/thumbnailVertical.jpg')}}" alt="...">
+								<img class="img-responsive" src="{{url('imagenes/educaplay/saberMas/thumbnailVertical.jpg')}}" alt="...">
 								<div id="titulo25" class="caption txtSobreImg escondeTitulo">
 									<h4 class="estiloTxt">Serie 5</h4>
 									<span class="estiloTxt">Resumen de descripción</span>
@@ -512,7 +513,7 @@
 						</div>
 						<div class="col-xs-4 col-sm-4 col-md-2 cambiaPadding">
 							<div class="thumbnail fondoTrans" onmouseover="muestraTitulo('26')" onmouseout="ocultaTitulo('26')">
-								<img class="img-responsive" src="{{url('imagenes/vod/sinEtiquetas/thumbnailVertical.jpg')}}" alt="...">
+								<img class="img-responsive" src="{{url('imagenes/educaplay/sinEtiquetas/thumbnailVertical.jpg')}}" alt="...">
 								<div id="titulo26" class="caption txtSobreImg escondeTitulo">
 									<h4 class="estiloTxt">Serie 6</h4>
 									<span class="estiloTxt">Resumen de descripción</span>
@@ -528,7 +529,7 @@
 					<div class="row">
 						<div class="col-xs-4 col-sm-4 col-md-2 cambiaPadding">
 							<div class="thumbnail fondoTrans" onmouseover="muestraTitulo('27')" onmouseout="ocultaTitulo('27')">
-								<img class="img-responsive" src="{{url('imagenes/vod/universitarios/thumbnailVertical.jpg')}}" alt="...">
+								<img class="img-responsive" src="{{url('imagenes/educaplay/universitarios/thumbnailVertical.jpg')}}" alt="...">
 								<div id="titulo27" class="caption txtSobreImg escondeTitulo">
 									<h4 class="estiloTxt">Serie 1</h4>
 									<span class="estiloTxt">Resumen de descripción</span>
@@ -540,7 +541,7 @@
 						</div>
 						<div class="col-xs-4 col-sm-4 col-md-2 cambiaPadding">
 							<div class="thumbnail fondoTrans" onmouseover="muestraTitulo('28')" onmouseout="ocultaTitulo('28')">
-								<img class="img-responsive" src="{{url('imagenes/vod/educacionVanguardia/thumbnailVertical.jpg')}}" alt="...">
+								<img class="img-responsive" src="{{url('imagenes/educaplay/educacionVanguardia/thumbnailVertical.jpg')}}" alt="...">
 								<div id="titulo28" class="caption txtSobreImg escondeTitulo">
 									<h4 class="estiloTxt">Serie 2</h4>
 									<span class="estiloTxt">Resumen de descripción</span>
@@ -552,7 +553,7 @@
 						</div>
 						<div class="col-xs-4 col-sm-4 col-md-2 cambiaPadding">
 							<div class="thumbnail fondoTrans" onmouseover="muestraTitulo('29')" onmouseout="ocultaTitulo('29')">
-								<img class="img-responsive" src="{{url('imagenes/vod/guardianesTierra/thumbnailVertical.jpg')}}" alt="...">
+								<img class="img-responsive" src="{{url('imagenes/educaplay/guardianesTierra/thumbnailVertical.jpg')}}" alt="...">
 								<div id="titulo29" class="caption txtSobreImg escondeTitulo">
 									<h4 class="estiloTxt">Serie 3</h4>
 									<span class="estiloTxt">Resumen de descripción</span>
@@ -564,7 +565,7 @@
 						</div>
 						<div class="col-xs-4 col-sm-4 col-md-2 cambiaPadding">
 							<div class="thumbnail fondoTrans" onmouseover="muestraTitulo('210')" onmouseout="ocultaTitulo('210')">
-								<img class="img-responsive" src="{{url('imagenes/vod/lanzamiento750/thumbnailVertical.jpg')}}" alt="...">
+								<img class="img-responsive" src="{{url('imagenes/educaplay/lanzamiento750/thumbnailVertical.jpg')}}" alt="...">
 								<div id="titulo210" class="caption txtSobreImg escondeTitulo">
 									<h4 class="estiloTxt">Serie 4</h4>
 									<span class="estiloTxt">Resumen de descripción</span>
@@ -576,7 +577,7 @@
 						</div>
 						<div class="col-xs-4 col-sm-4 col-md-2 cambiaPadding">
 							<div class="thumbnail fondoTrans" onmouseover="muestraTitulo('211')" onmouseout="ocultaTitulo('211')">
-								<img class="img-responsive" src="{{url('imagenes/vod/retosDesafios/thumbnailVertical.jpg')}}" alt="...">
+								<img class="img-responsive" src="{{url('imagenes/educaplay/retosDesafios/thumbnailVertical.jpg')}}" alt="...">
 								<div id="titulo211" class="caption txtSobreImg escondeTitulo">
 									<h4 class="estiloTxt">Serie 5</h4>
 									<span class="estiloTxt">Resumen de descripción</span>
@@ -588,7 +589,7 @@
 						</div>
 						<div class="col-xs-4 col-sm-4 col-md-2 cambiaPadding">
 							<div class="thumbnail fondoTrans" onmouseover="muestraTitulo('212')" onmouseout="ocultaTitulo('212')">
-								<img class="img-responsive" src="{{url('imagenes/vod/saberMas/thumbnailVertical.jpg')}}" alt="...">
+								<img class="img-responsive" src="{{url('imagenes/educaplay/saberMas/thumbnailVertical.jpg')}}" alt="...">
 								<div id="titulo212" class="caption txtSobreImg escondeTitulo">
 									<h4 class="estiloTxt">Serie 6</h4>
 									<span class="estiloTxt">Resumen de descripción</span>

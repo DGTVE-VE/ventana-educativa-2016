@@ -121,8 +121,8 @@ Route::group(['middleware' => 'web'], function () {
     /*     * **************************REDMITE********************** */
     
     /* * **************************VOD********************** */
-    Route::get('vod', 'VodController@vod');
-	Route::get('vod/detalleSeries', 'VodController@series');
+    Route::get('educaplay', 'EducaplayController@educaplay');
+	Route::get('educaplay/detalleSeries', 'EducaplayController@series');
     /* * **************************VOD********************** */
     
     /* * **************************Cultura********************** */
