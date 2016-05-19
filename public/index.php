@@ -52,9 +52,9 @@ $kernel = $app->make(Illuminate\Contracts\Http\Kernel::class);
 $response = $kernel->handle(
     $request = Illuminate\Http\Request::capture()
 );
-
-$request->session()->put('url', $request->path());
-
+if ($request->getSession() !== null){
+    $request->session()->put('url', $request->path());
+}
 $response->send();
 
 $kernel->terminate($request, $response);
