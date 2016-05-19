@@ -27,7 +27,7 @@
  }
 .mega-dropdown-menu {  /*Ancho del contenrdor menú */
     padding: 0px 0px;
-    width: 80%;
+    width: 100%;
     box-shadow: none;
     background-color: #444; /*fondo del contenedor del menú */
     -webkit-box-shadow: none;
@@ -64,8 +64,7 @@
   padding: 3px 20px;
   clear: both;
   font-weight: normal;
-  font-size: 17px;
-  line-height: 1.428571429;
+  line-height: 1.628571429;
   color: #ccc;
   white-space: normal;
 }

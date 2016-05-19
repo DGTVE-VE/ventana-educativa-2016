@@ -12,15 +12,15 @@ Cultura
 		$('.imgLogo').attr('src','{{url("imagenes/cultura/imgMenu/ventanaEducativa.png")}}');
 		$('.appsLogo').attr('src','{{url("imagenes/cultura/imgMenu/menu.png")}}');
 		$('#img-usuario').attr('src','{{url("imagenes/cultura/imgMenu/registro.png")}}');
-		$(window).scroll(function () {
-			var scroll_v = this.pageYOffset;
-			if (scroll_v > 10) {
-				$('#navegacionVentana').css('background', 'rgba(0, 0, 0, .3)');
-			}
-			if (scroll_v < 10) {
-				$('#navegacionVentana').css('background', 'transparent');
-			}
-		});
+    //		$(window).scroll(function () {
+    //			var scroll_v = this.pageYOffset;
+    //			if (scroll_v > 10) {
+    //				$('#navegacionVentana').css('background', 'rgba(0, 0, 0, .3)');
+    //			}
+    //			if (scroll_v < 10) {
+    //				$('#navegacionVentana').css('background', 'transparent');
+    //			}
+    //		});
 	</script>        
 @endsection
 @section('cuerpoCultura')
@@ -53,7 +53,7 @@ Cultura
                 <tbody>
                     <tr>
 						<td><a href="http://www.televisioneducativa.gob.mx" target= "_blank"><img class="animated zoomIn img-responsive" src="{{asset('imagenes/cultura/pais/logos/tvecolor.png')}}" style="margin: auto"/></a></td>
-						<td><a href="http://ceducar.info/ceducar/" target= "_blank"><img class="animated zoomIn img-responsive" src="{{asset('imagenes/cultura/pais/logos/ceccSica.png')}}" style="margin: auto"/></a></td>
+						<td><a href="http://ceducar.info/ceducar/" target= "_blank"><img class="animated zoomIn img-responsive" src="{{asset('imagenes/cultura/pais/logos/ceccSica-02.png')}}" style="margin: auto; "/></a></td>
                     </tr>
 					<tr>
                         <td><a href="#"><img class="animated zoomIn img-responsive" src="{{asset('imagenes/cultura/pais/logos/secCulturaMexico.png')}}" style="margin: auto"/></a></td>
