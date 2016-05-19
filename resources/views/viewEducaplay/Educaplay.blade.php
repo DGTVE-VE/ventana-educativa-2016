@@ -1,8 +1,8 @@
-@section('titleVod')
-Videos Bajo Demanda
+@section('titleEducaplay')
+Educaplay
 @stop
-@extends('indexVod')
-@section('menuVod')
+@extends('indexEducaplay')
+@section('menuEducaplay')
 	@include('viewVentana.encabezadoVentana')
         <script>
 		$('#buscar').css('display','none');
@@ -22,8 +22,8 @@ Videos Bajo Demanda
 			}
 		});
 	</script>
-        @include('viewVod.menuVod')
+        @include('viewEducaplay.menuEducaplay')
 @endsection
-@section('cuerpoVod')
-        @include('viewVod.bannerVod')
+@section('cuerpoEducaplay')
+        @include('viewEducaplay.bannerEducaplay')
 @endsection
