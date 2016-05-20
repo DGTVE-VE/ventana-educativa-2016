@@ -13,25 +13,21 @@
                     <div class="row">
                         <div class="col-xs-4 col-sm-4 col-md-2 cambiaPadding">
                             <div class="thumbnail fondoTrans" onmouseover="muestraTitulo('11')" onmouseout="ocultaTitulo('11')">
-                                <img id="imagen11" class="img-responsive thumbnailVertical" src="{{url('imagenes/educaplay/banderasPais/argentina.jpg')}}" alt="...">
+                                <img id="imagen11" class="img-responsive thumbnailVertical" src="{{url('imagenes/educaplay/clasificacion/concurso/categoria/argentina/argentina_vertical.jpg')}}" alt="...">
                                 <div id="titulo11" class="caption txtSobreImg escondeTitulo">
                                     <h4 class="estiloTxt">Serie 1</h4>
                                     <span class="estiloTxt">Resumen de descripción</span>
-                                    <div class="divIconoMas">
-                                        <span class="glyphicon glyphicon glyphicon-menu-down estiloIconoMas" onclick="muestraDetalle('1')" aria-hidden="true"></span>
-                                    </div>
+                                    <img class="estiloIconoMas divIconoMas" src="{{url('imagenes/educaplay/flechaDetalle.png')}}" onclick="muestraDetalle('1')"/>
                                 </div>
                             </div>
                         </div>
                         <div class="col-xs-4 col-sm-4 col-md-2 cambiaPadding">
                             <div class="thumbnail fondoTrans" onmouseover="muestraTitulo('12')" onmouseout="ocultaTitulo('12')">
-                                <img class="img-responsive thumbnailVertical" src="{{url('imagenes/educaplay/banderasPais/chile.jpg')}}" alt="...">
+                                <img class="img-responsive thumbnailVertical" src="{{url('imagenes/educaplay/clasificacion/concurso/categoria/chile/chile_vertical.jpg')}}" alt="...">
                                 <div id="titulo12" class="caption txtSobreImg escondeTitulo">
                                     <h4 class="estiloTxt">Serie 2</h4>
                                     <span class="estiloTxt">Resumen de descripción</span>
-                                    <div class="divIconoMas">
-                                        <span class="glyphicon glyphicon glyphicon-menu-down estiloIconoMas" onclick="muestraDetalle('1')" aria-hidden="true"></span>
-                                    </div>
+                                    <img class="estiloIconoMas divIconoMas" src="{{url('imagenes/educaplay/flechaDetalle.png')}}" onclick="muestraDetalle('1')"/>
                                 </div>
                             </div>
                         </div>
@@ -41,9 +37,7 @@
                                 <div id="titulo13" class="caption txtSobreImg escondeTitulo">
                                     <h4 class="estiloTxt">Serie 3</h4>
                                     <span class="estiloTxt">Resumen de descripción</span>
-                                    <div class="divIconoMas">
-                                        <span class="glyphicon glyphicon glyphicon-menu-down estiloIconoMas" onclick="muestraDetalle('1')" aria-hidden="true"></span>
-                                    </div>
+                                    <img class="estiloIconoMas divIconoMas" src="{{url('imagenes/educaplay/flechaDetalle.png')}}" onclick="muestraDetalle('1')"/>
                                 </div>
                             </div>
                         </div>
@@ -53,9 +47,7 @@
                                 <div id="titulo14" class="caption txtSobreImg escondeTitulo">
                                     <h4 class="estiloTxt">Serie 4</h4>
                                     <span class="estiloTxt">Resumen de descripción</span>
-                                    <div class="divIconoMas">
-                                        <span class="glyphicon glyphicon glyphicon-menu-down estiloIconoMas" onclick="muestraDetalle('1')" aria-hidden="true"></span>
-                                    </div>
+                                    <img class="estiloIconoMas divIconoMas" src="{{url('imagenes/educaplay/flechaDetalle.png')}}" onclick="muestraDetalle('1')"/>
                                 </div>
                             </div>
                         </div>
@@ -65,9 +57,7 @@
                                 <div id="titulo15" class="caption txtSobreImg escondeTitulo">
                                     <h4 class="estiloTxt">Serie 5</h4>
                                     <span class="estiloTxt">Resumen de descripción</span>
-                                    <div class="divIconoMas">
-                                        <span class="glyphicon glyphicon glyphicon-menu-down estiloIconoMas" onclick="muestraDetalle('1')" aria-hidden="true"></span>
-                                    </div>
+                                    <img class="estiloIconoMas divIconoMas" src="{{url('imagenes/educaplay/flechaDetalle.png')}}" onclick="muestraDetalle('1')"/>
                                 </div>
                             </div>
                         </div>
@@ -77,9 +67,7 @@
                                 <div id="titulo16" class="caption txtSobreImg escondeTitulo">
                                     <h4 class="estiloTxt">Serie 6</h4>
                                     <span class="estiloTxt">Resumen de descripción</span>
-                                    <div class="divIconoMas">
-                                        <span class="glyphicon glyphicon glyphicon-menu-down estiloIconoMas" onclick="muestraDetalle('1')" aria-hidden="true"></span>
-                                    </div>
+                                    <img class="estiloIconoMas divIconoMas" src="{{url('imagenes/educaplay/flechaDetalle.png')}}" onclick="muestraDetalle('1')"/>
                                 </div>
                             </div>
                         </div>
@@ -93,9 +81,7 @@
                                 <div id="titulo17" class="caption txtSobreImg escondeTitulo">
                                     <h4 class="estiloTxt">Serie 1</h4>
                                     <span class="estiloTxt">Resumen de descripción</span>
-                                    <div class="divIconoMas">
-                                        <span class="glyphicon glyphicon glyphicon-menu-down estiloIconoMas" onclick="muestraDetalle('1')" aria-hidden="true"></span>
-                                    </div>
+                                    <img class="estiloIconoMas divIconoMas" src="{{url('imagenes/educaplay/flechaDetalle.png')}}" onclick="muestraDetalle('1')"/>
                                 </div>
                             </div>
                         </div>
@@ -105,9 +91,7 @@
                                 <div id="titulo18" class="caption txtSobreImg escondeTitulo">
                                     <h4 class="estiloTxt">Serie 2</h4>
                                     <span class="estiloTxt">Resumen de descripción</span>
-                                    <div class="divIconoMas">
-                                        <span class="glyphicon glyphicon glyphicon-menu-down estiloIconoMas" onclick="muestraDetalle('1')" aria-hidden="true"></span>
-                                    </div>
+                                    <img class="estiloIconoMas divIconoMas" src="{{url('imagenes/educaplay/flechaDetalle.png')}}" onclick="muestraDetalle('1')"/>
                                 </div>
                             </div>
                         </div>
@@ -117,9 +101,7 @@
                                 <div id="titulo19" class="caption txtSobreImg escondeTitulo">
                                     <h4 class="estiloTxt">Serie 3</h4>
                                     <span class="estiloTxt">Resumen de descripción</span>
-                                    <div class="divIconoMas">
-                                        <span class="glyphicon glyphicon glyphicon-menu-down estiloIconoMas" onclick="muestraDetalle('1')" aria-hidden="true"></span>
-                                    </div>
+                                    <img class="estiloIconoMas divIconoMas" src="{{url('imagenes/educaplay/flechaDetalle.png')}}" onclick="muestraDetalle('1')"/>
                                 </div>
                             </div>
                         </div>
@@ -129,9 +111,7 @@
                                 <div id="titulo110" class="caption txtSobreImg escondeTitulo">
                                     <h4 class="estiloTxt">Serie 4</h4>
                                     <span class="estiloTxt">Resumen de descripción</span>
-                                    <div class="divIconoMas">
-                                        <span class="glyphicon glyphicon glyphicon-menu-down estiloIconoMas" onclick="muestraDetalle('1')" aria-hidden="true"></span>
-                                    </div>
+                                    <img class="estiloIconoMas divIconoMas" src="{{url('imagenes/educaplay/flechaDetalle.png')}}" onclick="muestraDetalle('1')"/>
                                 </div>
                             </div>
                         </div>
@@ -141,9 +121,7 @@
                                 <div id="titulo111" class="caption txtSobreImg escondeTitulo">
                                     <h4 class="estiloTxt">Serie 5</h4>
                                     <span class="estiloTxt">Resumen de descripción</span>
-                                    <div class="divIconoMas">
-                                        <span class="glyphicon glyphicon glyphicon-menu-down estiloIconoMas" onclick="muestraDetalle('1')" aria-hidden="true"></span>
-                                    </div>
+                                    <img class="estiloIconoMas divIconoMas" src="{{url('imagenes/educaplay/flechaDetalle.png')}}" onclick="muestraDetalle('1')"/>
                                 </div>
                             </div>
                         </div>
@@ -153,9 +131,7 @@
                                 <div id="titulo112" class="caption txtSobreImg escondeTitulo">
                                     <h4 class="estiloTxt">Serie 6</h4>
                                     <span class="estiloTxt">Resumen de descripción</span>
-                                    <div class="divIconoMas">
-                                        <span class="glyphicon glyphicon glyphicon-menu-down estiloIconoMas" onclick="muestraDetalle('1')" aria-hidden="true"></span>
-                                    </div>
+                                    <img class="estiloIconoMas divIconoMas" src="{{url('imagenes/educaplay/flechaDetalle.png')}}" onclick="muestraDetalle('1')"/>
                                 </div>
                             </div>
                         </div>
@@ -175,16 +151,161 @@
     <div id="detalleSerie1" class="col-md-12" style="display: none;">
         <div class="tab-content estiloTab">
             <div id="descripcion1" class="tab-pane fade in active">
-                <h3>DESCRIPCION GENERAL</h3>
-                <p>Some content.</p>
+				<div class="col-md-3">
+					<h3>Nombre de la Serie</h3>
+					<p>Descripcion de la serie.</p>
+					<p>Elenco.</p>
+				</div>
+				<div class="col-md-9">
+					<img src="{{url('imagenes/educaplay/clasificacion/dgtve/categoria/series/documental/banner.jpg')}}" class="img-responsive" onclick="muestraDetalle('1')"/>
+				</div>
             </div>
             <div id="similares1" class="tab-pane fade">
                 <h3>CAPÍTULOS</h3>
-                <p>Some content in menu 1.</p>
+				<div id="carreteCapitulos" class="carousel slide" data-ride="carousel">
+					<div class="carousel-inner" role="listbox">
+						<div class="item active">
+							<div class="row">
+								<div class="col-md-1">
+								</div>
+								<div class="col-xs-4 col-sm-4 col-md-2 cambiaPadding">
+									<div class="thumbnail fondoTrans">
+										<img class="img-responsive" src="{{url('imagenes/educaplay/clasificacion/dgtve/categoria/series/documental/h1.jpg')}}" alt="...">
+										<div id="titulo21" class="caption">
+											<h4 class="estiloTxt">Calificacion</h4>
+											<span class="estiloTxt">Sinopsis capitulo</span>
+											<img class="estiloIconoMas divIconoMas" src="{{url('imagenes/educaplay/flechaDetalle.png')}}" onclick="muestraDetalle('1')"/>
+										</div>
+									</div>
+								</div>
+								<div class="col-xs-4 col-sm-4 col-md-2 cambiaPadding">
+									<div class="thumbnail fondoTrans">
+										<img class="img-responsive" src="{{url('imagenes/educaplay/clasificacion/dgtve/categoria/series/documental/h1.jpg')}}" alt="...">
+										<div id="titulo21" class="caption">
+											<h4 class="estiloTxt">Calificacion</h4>
+											<span class="estiloTxt">Sinopsis capitulo</span>
+											<img class="estiloIconoMas divIconoMas" src="{{url('imagenes/educaplay/flechaDetalle.png')}}" onclick="muestraDetalle('1')"/>
+										</div>
+									</div>
+								</div>
+								<div class="col-xs-4 col-sm-4 col-md-2 cambiaPadding">
+									<div class="thumbnail fondoTrans">
+										<img class="img-responsive" src="{{url('imagenes/educaplay/clasificacion/dgtve/categoria/series/documental/h1.jpg')}}" alt="...">
+										<div id="titulo21" class="caption">
+											<h4 class="estiloTxt">Calificacion</h4>
+											<span class="estiloTxt">Sinopsis capitulo</span>
+											<img class="estiloIconoMas divIconoMas" src="{{url('imagenes/educaplay/flechaDetalle.png')}}" onclick="muestraDetalle('1')"/>
+										</div>
+									</div>
+								</div>
+								<div class="col-xs-4 col-sm-4 col-md-2 cambiaPadding">
+									<div class="thumbnail fondoTrans">
+										<img class="img-responsive" src="{{url('imagenes/educaplay/clasificacion/dgtve/categoria/series/documental/h1.jpg')}}" alt="...">
+										<div id="titulo21" class="caption">
+											<h4 class="estiloTxt">Calificacion</h4>
+											<span class="estiloTxt">Sinopsis capitulo</span>
+											<img class="estiloIconoMas divIconoMas" src="{{url('imagenes/educaplay/flechaDetalle.png')}}" onclick="muestraDetalle('1')"/>
+										</div>
+									</div>
+								</div>
+								<div class="col-xs-4 col-sm-4 col-md-2 cambiaPadding">
+									<div class="thumbnail fondoTrans">
+										<img class="img-responsive" src="{{url('imagenes/educaplay/clasificacion/dgtve/categoria/series/documental/h1.jpg')}}" alt="...">
+										<div id="titulo21" class="caption">
+											<h4 class="estiloTxt">Calificacion</h4>
+											<span class="estiloTxt">Sinopsis capitulo</span>
+											<img class="estiloIconoMas divIconoMas" src="{{url('imagenes/educaplay/flechaDetalle.png')}}" onclick="muestraDetalle('1')"/>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="item">
+							<div class="row">
+								<div class="col-xs-1 col-sm-1 col-md-1">
+								</div>
+								<div class="col-xs-4 col-sm-4 col-md-2 cambiaPadding">
+									<div class="thumbnail fondoTrans">
+										<img class="img-responsive" src="{{url('imagenes/educaplay/clasificacion/dgtve/categoria/series/documental/h1.jpg')}}" alt="...">
+										<div id="titulo21" class="caption">
+											<h4 class="estiloTxt">Calificacion</h4>
+											<span class="estiloTxt">Sinopsis capitulo</span>
+											<img class="estiloIconoMas divIconoMas" src="{{url('imagenes/educaplay/flechaDetalle.png')}}" onclick="muestraDetalle('1')"/>
+										</div>
+									</div>
+								</div>
+								<div class="col-xs-4 col-sm-4 col-md-2 cambiaPadding">
+									<div class="thumbnail fondoTrans">
+										<img class="img-responsive" src="{{url('imagenes/educaplay/clasificacion/dgtve/categoria/series/documental/h1.jpg')}}" alt="...">
+										<div id="titulo21" class="caption">
+											<h4 class="estiloTxt">Calificacion</h4>
+											<span class="estiloTxt">Sinopsis capitulo</span>
+											<img class="estiloIconoMas divIconoMas" src="{{url('imagenes/educaplay/flechaDetalle.png')}}" onclick="muestraDetalle('1')"/>
+										</div>
+									</div>
+								</div>
+								<div class="col-xs-4 col-sm-4 col-md-2 cambiaPadding">
+									<div class="thumbnail fondoTrans">
+										<img class="img-responsive" src="{{url('imagenes/educaplay/clasificacion/dgtve/categoria/series/documental/h1.jpg')}}" alt="...">
+										<div id="titulo21" class="caption">
+											<h4 class="estiloTxt">Calificacion</h4>
+											<span class="estiloTxt">Sinopsis capitulo</span>
+											<img class="estiloIconoMas divIconoMas" src="{{url('imagenes/educaplay/flechaDetalle.png')}}" onclick="muestraDetalle('1')"/>
+										</div>
+									</div>
+								</div>
+								<div class="col-xs-4 col-sm-4 col-md-2 cambiaPadding">
+									<div class="thumbnail fondoTrans">
+										<img class="img-responsive" src="{{url('imagenes/educaplay/clasificacion/dgtve/categoria/series/documental/h1.jpg')}}" alt="...">
+										<div id="titulo21" class="caption">
+											<h4 class="estiloTxt">Calificacion</h4>
+											<span class="estiloTxt">Sinopsis capitulo</span>
+											<img class="estiloIconoMas divIconoMas" src="{{url('imagenes/educaplay/flechaDetalle.png')}}" onclick="muestraDetalle('1')"/>
+										</div>
+									</div>
+								</div>
+								<div class="col-xs-4 col-sm-4 col-md-2 cambiaPadding">
+									<div class="thumbnail fondoTrans">
+										<img class="img-responsive" src="{{url('imagenes/educaplay/clasificacion/dgtve/categoria/series/documental/h1.jpg')}}" alt="...">
+										<div id="titulo21" class="caption">
+											<h4 class="estiloTxt">Calificacion</h4>
+											<span class="estiloTxt">Sinopsis capitulo</span>
+											<img class="estiloIconoMas divIconoMas" src="{{url('imagenes/educaplay/flechaDetalle.png')}}" onclick="muestraDetalle('1')"/>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<a class="left carousel-control reduceAnchoFlecha" href="#carreteCapitulos" role="button" data-slide="prev">
+						<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+						<span class="sr-only">Previous</span>
+					</a>
+					<a class="right carousel-control reduceAnchoFlecha" href="#carreteCapitulos" role="button" data-slide="next">
+						<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+						<span class="sr-only">Next</span>
+					</a>
+				</div>
             </div>
             <div id="detalles1" class="tab-pane fade">
-                <h3>DETALLES</h3>
-                <p>Some content in menu 2.</p>
+                <h3>Nombre Serie</h3>
+				<div class="col-md-1">
+				</div>
+				<div class="col-md-2">
+					<p>Director.</p>
+				</div>
+                <div class="col-md-2">
+					<p>Generos.</p>
+				</div>
+				<div class="col-md-2">
+					<p>Reseñas.</p>
+				</div>
+				<div class="col-md-2">
+					<p>Clasificación.</p>
+				</div>
+				<div class="col-md-2">
+					<p>Audio.</p>
+				</div>
             </div>
         </div>
         <ul class="nav nav-tabs nav-justified">
@@ -217,9 +338,7 @@
                                 <div id="titulo21" class="caption txtSobreImg escondeTitulo">
                                     <h4 class="estiloTxt">Serie 1</h4>
                                     <span class="estiloTxt">Resumen de descripción</span>
-                                    <div class="divIconoMas">
-                                        <span class="glyphicon glyphicon glyphicon-menu-down estiloIconoMas" onclick="muestraDetalle('2')" aria-hidden="true"></span>
-                                    </div>
+                                    <img class="estiloIconoMas divIconoMas" src="{{url('imagenes/educaplay/flechaDetalle.png')}}" onclick="muestraDetalle('1')"/>
                                 </div>
                             </div>
                         </div>
@@ -229,9 +348,7 @@
                                 <div id="titulo22" class="caption txtSobreImg escondeTitulo">
                                     <h4 class="estiloTxt">Serie 2</h4>
                                     <span class="estiloTxt">Resumen de descripción</span>
-                                    <div class="divIconoMas">
-                                        <span class="glyphicon glyphicon glyphicon-menu-down estiloIconoMas" onclick="muestraDetalle('2')" aria-hidden="true"></span>
-                                    </div>
+                                    <img class="estiloIconoMas divIconoMas" src="{{url('imagenes/educaplay/flechaDetalle.png')}}" onclick="muestraDetalle('1')"/>
                                 </div>
                             </div>
                         </div>
@@ -241,9 +358,7 @@
                                 <div id="titulo23" class="caption txtSobreImg escondeTitulo">
                                     <h4 class="estiloTxt">Serie 3</h4>
                                     <span class="estiloTxt">Resumen de descripción</span>
-                                    <div class="divIconoMas">
-                                        <span class="glyphicon glyphicon glyphicon-menu-down estiloIconoMas" onclick="muestraDetalle('2')" aria-hidden="true"></span>
-                                    </div>
+                                    <img class="estiloIconoMas divIconoMas" src="{{url('imagenes/educaplay/flechaDetalle.png')}}" onclick="muestraDetalle('1')"/>
                                 </div>
                             </div>
                         </div>
@@ -253,9 +368,7 @@
                                 <div id="titulo24" class="caption txtSobreImg escondeTitulo">
                                     <h4 class="estiloTxt">Serie 4</h4>
                                     <span class="estiloTxt">Resumen de descripción</span>
-                                    <div class="divIconoMas">
-                                        <span class="glyphicon glyphicon glyphicon-menu-down estiloIconoMas" onclick="muestraDetalle('2')" aria-hidden="true"></span>
-                                    </div>
+                                    <img class="estiloIconoMas divIconoMas" src="{{url('imagenes/educaplay/flechaDetalle.png')}}" onclick="muestraDetalle('1')"/>
                                 </div>
                             </div>
                         </div>
@@ -265,9 +378,7 @@
                                 <div id="titulo25" class="caption txtSobreImg escondeTitulo">
                                     <h4 class="estiloTxt">Serie 5</h4>
                                     <span class="estiloTxt">Resumen de descripción</span>
-                                    <div class="divIconoMas">
-                                        <span class="glyphicon glyphicon glyphicon-menu-down estiloIconoMas" onclick="muestraDetalle('2')" aria-hidden="true"></span>
-                                    </div>
+                                    <img class="estiloIconoMas divIconoMas" src="{{url('imagenes/educaplay/flechaDetalle.png')}}" onclick="muestraDetalle('1')"/>
                                 </div>
                             </div>
                         </div>
@@ -277,9 +388,7 @@
                                 <div id="titulo26" class="caption txtSobreImg escondeTitulo">
                                     <h4 class="estiloTxt">Serie 6</h4>
                                     <span class="estiloTxt">Resumen de descripción</span>
-                                    <div class="divIconoMas">
-                                        <span class="glyphicon glyphicon glyphicon-menu-down estiloIconoMas" onclick="muestraDetalle('2')" aria-hidden="true"></span>
-                                    </div>
+                                    <img class="estiloIconoMas divIconoMas" src="{{url('imagenes/educaplay/flechaDetalle.png')}}" onclick="muestraDetalle('1')"/>
                                 </div>
                             </div>
                         </div>
@@ -293,9 +402,7 @@
                                 <div id="titulo27" class="caption txtSobreImg escondeTitulo">
                                     <h4 class="estiloTxt">Serie 1</h4>
                                     <span class="estiloTxt">Resumen de descripción</span>
-                                    <div class="divIconoMas">
-                                        <span class="glyphicon glyphicon glyphicon-menu-down estiloIconoMas" onclick="muestraDetalle('2')" aria-hidden="true"></span>
-                                    </div>
+                                    <img class="estiloIconoMas divIconoMas" src="{{url('imagenes/educaplay/flechaDetalle.png')}}" onclick="muestraDetalle('1')"/>
                                 </div>
                             </div>
                         </div>
@@ -305,9 +412,7 @@
                                 <div id="titulo28" class="caption txtSobreImg escondeTitulo">
                                     <h4 class="estiloTxt">Serie 2</h4>
                                     <span class="estiloTxt">Resumen de descripción</span>
-                                    <div class="divIconoMas">
-                                        <span class="glyphicon glyphicon glyphicon-menu-down estiloIconoMas" onclick="muestraDetalle('2')" aria-hidden="true"></span>
-                                    </div>
+                                    <img class="estiloIconoMas divIconoMas" src="{{url('imagenes/educaplay/flechaDetalle.png')}}" onclick="muestraDetalle('1')"/>
                                 </div>
                             </div>
                         </div>
@@ -317,9 +422,7 @@
                                 <div id="titulo29" class="caption txtSobreImg escondeTitulo">
                                     <h4 class="estiloTxt">Serie 3</h4>
                                     <span class="estiloTxt">Resumen de descripción</span>
-                                    <div class="divIconoMas">
-                                        <span class="glyphicon glyphicon glyphicon-menu-down estiloIconoMas" onclick="muestraDetalle('2')" aria-hidden="true"></span>
-                                    </div>
+                                    <img class="estiloIconoMas divIconoMas" src="{{url('imagenes/educaplay/flechaDetalle.png')}}" onclick="muestraDetalle('1')"/>
                                 </div>
                             </div>
                         </div>
@@ -329,9 +432,7 @@
                                 <div id="titulo210" class="caption txtSobreImg escondeTitulo">
                                     <h4 class="estiloTxt">Serie 4</h4>
                                     <span class="estiloTxt">Resumen de descripción</span>
-                                    <div class="divIconoMas">
-                                        <span class="glyphicon glyphicon glyphicon-menu-down estiloIconoMas" onclick="muestraDetalle('2')" aria-hidden="true"></span>
-                                    </div>
+                                    <img class="estiloIconoMas divIconoMas" src="{{url('imagenes/educaplay/flechaDetalle.png')}}" onclick="muestraDetalle('1')"/>
                                 </div>
                             </div>
                         </div>
@@ -341,9 +442,7 @@
                                 <div id="titulo211" class="caption txtSobreImg escondeTitulo">
                                     <h4 class="estiloTxt">Serie 5</h4>
                                     <span class="estiloTxt">Resumen de descripción</span>
-                                    <div class="divIconoMas">
-                                        <span class="glyphicon glyphicon glyphicon-menu-down estiloIconoMas" onclick="muestraDetalle('2')" aria-hidden="true"></span>
-                                    </div>
+                                    <img class="estiloIconoMas divIconoMas" src="{{url('imagenes/educaplay/flechaDetalle.png')}}" onclick="muestraDetalle('1')"/>
                                 </div>
                             </div>
                         </div>
@@ -353,9 +452,7 @@
                                 <div id="titulo212" class="caption txtSobreImg escondeTitulo">
                                     <h4 class="estiloTxt">Serie 6</h4>
                                     <span class="estiloTxt">Resumen de descripción</span>
-                                    <div class="divIconoMas">
-                                        <span class="glyphicon glyphicon glyphicon-menu-down estiloIconoMas" onclick="muestraDetalle('2')" aria-hidden="true"></span>
-                                    </div>
+                                    <img class="estiloIconoMas divIconoMas" src="{{url('imagenes/educaplay/flechaDetalle.png')}}" onclick="muestraDetalle('1')"/>
                                 </div>
                             </div>
                         </div>
@@ -374,17 +471,162 @@
     </div>
     <div id="detalleSerie2" class="col-md-12" style="display: none;">
         <div class="tab-content estiloTab">
-            <div id="descripcion2" class="tab-pane fade in active">
-                <h3>DESCRIPCION GENERAL</h3>
-                <p>Some content.</p>
+            <div id="descripcion1" class="tab-pane fade in active">
+				<div class="col-md-3">
+					<h3>Nombre de la Serie</h3>
+					<p>Descripcion de la serie.</p>
+					<p>Elenco.</p>
+				</div>
+				<div class="col-md-9">
+					<img src="{{url('imagenes/educaplay/clasificacion/dgtve/categoria/series/documental/banner.jpg')}}" class="img-responsive" onclick="muestraDetalle('1')"/>
+				</div>
             </div>
-            <div id="similares2" class="tab-pane fade">
+            <div id="similares1" class="tab-pane fade">
                 <h3>CAPÍTULOS</h3>
-                <p>Some content in menu 1.</p>
+				<div id="carreteCapitulos" class="carousel slide" data-ride="carousel">
+					<div class="carousel-inner" role="listbox">
+						<div class="item active">
+							<div class="row">
+								<div class="col-md-1">
+								</div>
+								<div class="col-xs-4 col-sm-4 col-md-2 cambiaPadding">
+									<div class="thumbnail fondoTrans">
+										<img class="img-responsive" src="{{url('imagenes/educaplay/clasificacion/dgtve/categoria/series/documental/h1.jpg')}}" alt="...">
+										<div id="titulo21" class="caption">
+											<h4 class="estiloTxt">Calificacion</h4>
+											<span class="estiloTxt">Sinopsis capitulo</span>
+											<img class="estiloIconoMas divIconoMas" src="{{url('imagenes/educaplay/flechaDetalle.png')}}" onclick="muestraDetalle('1')"/>
+										</div>
+									</div>
+								</div>
+								<div class="col-xs-4 col-sm-4 col-md-2 cambiaPadding">
+									<div class="thumbnail fondoTrans">
+										<img class="img-responsive" src="{{url('imagenes/educaplay/clasificacion/dgtve/categoria/series/documental/h1.jpg')}}" alt="...">
+										<div id="titulo21" class="caption">
+											<h4 class="estiloTxt">Calificacion</h4>
+											<span class="estiloTxt">Sinopsis capitulo</span>
+											<img class="estiloIconoMas divIconoMas" src="{{url('imagenes/educaplay/flechaDetalle.png')}}" onclick="muestraDetalle('1')"/>
+										</div>
+									</div>
+								</div>
+								<div class="col-xs-4 col-sm-4 col-md-2 cambiaPadding">
+									<div class="thumbnail fondoTrans">
+										<img class="img-responsive" src="{{url('imagenes/educaplay/clasificacion/dgtve/categoria/series/documental/h1.jpg')}}" alt="...">
+										<div id="titulo21" class="caption">
+											<h4 class="estiloTxt">Calificacion</h4>
+											<span class="estiloTxt">Sinopsis capitulo</span>
+											<img class="estiloIconoMas divIconoMas" src="{{url('imagenes/educaplay/flechaDetalle.png')}}" onclick="muestraDetalle('1')"/>
+										</div>
+									</div>
+								</div>
+								<div class="col-xs-4 col-sm-4 col-md-2 cambiaPadding">
+									<div class="thumbnail fondoTrans">
+										<img class="img-responsive" src="{{url('imagenes/educaplay/clasificacion/dgtve/categoria/series/documental/h1.jpg')}}" alt="...">
+										<div id="titulo21" class="caption">
+											<h4 class="estiloTxt">Calificacion</h4>
+											<span class="estiloTxt">Sinopsis capitulo</span>
+											<img class="estiloIconoMas divIconoMas" src="{{url('imagenes/educaplay/flechaDetalle.png')}}" onclick="muestraDetalle('1')"/>
+										</div>
+									</div>
+								</div>
+								<div class="col-xs-4 col-sm-4 col-md-2 cambiaPadding">
+									<div class="thumbnail fondoTrans">
+										<img class="img-responsive" src="{{url('imagenes/educaplay/clasificacion/dgtve/categoria/series/documental/h1.jpg')}}" alt="...">
+										<div id="titulo21" class="caption">
+											<h4 class="estiloTxt">Calificacion</h4>
+											<span class="estiloTxt">Sinopsis capitulo</span>
+											<img class="estiloIconoMas divIconoMas" src="{{url('imagenes/educaplay/flechaDetalle.png')}}" onclick="muestraDetalle('1')"/>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="item">
+							<div class="row">
+								<div class="col-xs-1 col-sm-1 col-md-1">
+								</div>
+								<div class="col-xs-4 col-sm-4 col-md-2 cambiaPadding">
+									<div class="thumbnail fondoTrans">
+										<img class="img-responsive" src="{{url('imagenes/educaplay/clasificacion/dgtve/categoria/series/documental/h1.jpg')}}" alt="...">
+										<div id="titulo21" class="caption">
+											<h4 class="estiloTxt">Calificacion</h4>
+											<span class="estiloTxt">Sinopsis capitulo</span>
+											<img class="estiloIconoMas divIconoMas" src="{{url('imagenes/educaplay/flechaDetalle.png')}}" onclick="muestraDetalle('1')"/>
+										</div>
+									</div>
+								</div>
+								<div class="col-xs-4 col-sm-4 col-md-2 cambiaPadding">
+									<div class="thumbnail fondoTrans">
+										<img class="img-responsive" src="{{url('imagenes/educaplay/clasificacion/dgtve/categoria/series/documental/h1.jpg')}}" alt="...">
+										<div id="titulo21" class="caption">
+											<h4 class="estiloTxt">Calificacion</h4>
+											<span class="estiloTxt">Sinopsis capitulo</span>
+											<img class="estiloIconoMas divIconoMas" src="{{url('imagenes/educaplay/flechaDetalle.png')}}" onclick="muestraDetalle('1')"/>
+										</div>
+									</div>
+								</div>
+								<div class="col-xs-4 col-sm-4 col-md-2 cambiaPadding">
+									<div class="thumbnail fondoTrans">
+										<img class="img-responsive" src="{{url('imagenes/educaplay/clasificacion/dgtve/categoria/series/documental/h1.jpg')}}" alt="...">
+										<div id="titulo21" class="caption">
+											<h4 class="estiloTxt">Calificacion</h4>
+											<span class="estiloTxt">Sinopsis capitulo</span>
+											<img class="estiloIconoMas divIconoMas" src="{{url('imagenes/educaplay/flechaDetalle.png')}}" onclick="muestraDetalle('1')"/>
+										</div>
+									</div>
+								</div>
+								<div class="col-xs-4 col-sm-4 col-md-2 cambiaPadding">
+									<div class="thumbnail fondoTrans">
+										<img class="img-responsive" src="{{url('imagenes/educaplay/clasificacion/dgtve/categoria/series/documental/h1.jpg')}}" alt="...">
+										<div id="titulo21" class="caption">
+											<h4 class="estiloTxt">Calificacion</h4>
+											<span class="estiloTxt">Sinopsis capitulo</span>
+											<img class="estiloIconoMas divIconoMas" src="{{url('imagenes/educaplay/flechaDetalle.png')}}" onclick="muestraDetalle('1')"/>
+										</div>
+									</div>
+								</div>
+								<div class="col-xs-4 col-sm-4 col-md-2 cambiaPadding">
+									<div class="thumbnail fondoTrans">
+										<img class="img-responsive" src="{{url('imagenes/educaplay/clasificacion/dgtve/categoria/series/documental/h1.jpg')}}" alt="...">
+										<div id="titulo21" class="caption">
+											<h4 class="estiloTxt">Calificacion</h4>
+											<span class="estiloTxt">Sinopsis capitulo</span>
+											<img class="estiloIconoMas divIconoMas" src="{{url('imagenes/educaplay/flechaDetalle.png')}}" onclick="muestraDetalle('1')"/>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<a class="left carousel-control reduceAnchoFlecha" href="#carreteCapitulos" role="button" data-slide="prev">
+						<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+						<span class="sr-only">Previous</span>
+					</a>
+					<a class="right carousel-control reduceAnchoFlecha" href="#carreteCapitulos" role="button" data-slide="next">
+						<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+						<span class="sr-only">Next</span>
+					</a>
+				</div>
             </div>
-            <div id="detalles2" class="tab-pane fade">
-                <h3>DETALLES</h3>
-                <p>Some content in menu 2.</p>
+            <div id="detalles1" class="tab-pane fade">
+                <h3>Nombre Serie</h3>
+				<div class="col-md-1">
+				</div>
+				<div class="col-md-2">
+					<p>Director.</p>
+				</div>
+                <div class="col-md-2">
+					<p>Generos.</p>
+				</div>
+				<div class="col-md-2">
+					<p>Reseñas.</p>
+				</div>
+				<div class="col-md-2">
+					<p>Clasificación.</p>
+				</div>
+				<div class="col-md-2">
+					<p>Audio.</p>
+				</div>
             </div>
         </div>
         <ul class="nav nav-tabs nav-justified">
