@@ -27,7 +27,7 @@ class EducaplayController extends Controller {
     }
 
     function series() {
-        return view('viewEducaplay/listaVideos');
+        return view('viewEducaplay/listaVideosEducaplay');
     }
     
 //    function getImagesVerticales ($tipo, $id){
