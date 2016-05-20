@@ -32,8 +32,8 @@ and open the template in the editor.
 
         @yield ('estilos')
         
-        <link rel="stylesheet" href="{{ asset('css/educaplay/estilovod.css') }}" >        
-        <link rel="stylesheet" href="{{ asset('css/educaplay/estilovod3.css') }}" >        
+        <link rel="stylesheet" href="{{ asset('css/educaplay/estilovod.css') }}" >
+        <link rel="stylesheet" href="{{ asset('css/educaplay/estilovod3.css') }}" >
 
         <!-- jQuery library -->
         
@@ -42,7 +42,7 @@ and open the template in the editor.
         <!-- Latest compiled JavaScript -->
         <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
         
-                       
+		<script src="{{ asset('js/educaplay/script.js') }}"></script>
         @yield ('scripts')
         
     </head>

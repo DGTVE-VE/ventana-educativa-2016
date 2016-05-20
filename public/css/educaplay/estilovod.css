@@ -50,3 +50,157 @@ html,body {
 .hrNegra{
     border: 1px solid #141414;
    }
+
+/*	*********************	Estilo página inicial	**********	*/
+    .fondoDegradadoMenuInicial{
+        background: rgba(0, 0, 0, .3); /* For browsers that do not support gradients */
+        background: -webkit-linear-gradient(rgba(0, 0, 0, .3), transparent); /* For Safari 5.1 to 6.0 */
+        background: -o-linear-gradient(rgba(0, 0, 0, .3), transparent); /* For Opera 11.1 to 12.0 */
+        background: -moz-linear-gradient(rgba(0, 0, 0, .3), transparent); /* For Firefox 3.6 to 15 */
+        background: linear-gradient(rgba(0, 0, 0, .3), transparent); /* Standard syntax */
+        border: none;
+    }
+    .fondoDegradadoMenu{
+        background: rgba(0, 0, 0, .6); /* For browsers that do not support gradients */
+        background: -webkit-linear-gradient(rgba(0, 0, 0, .6), transparent); /* For Safari 5.1 to 6.0 */
+        background: -o-linear-gradient(rgba(0, 0, 0, .6), transparent); /* For Opera 11.1 to 12.0 */
+        background: -moz-linear-gradient(rgba(0, 0, 0, .6), transparent); /* For Firefox 3.6 to 15 */
+        background: linear-gradient(rgba(0, 0, 0, .6), transparent); /* Standard syntax */
+        border: none;
+    }
+    .estiloTxt{
+        color: white;
+    }
+    .estiloIconoMas{
+        color: white; font-size:30px; cursor:pointer
+    }
+    .divIconoMas{
+        height:20px; width:20px; margin:auto;
+    }
+    .fondoTrans{
+        background-color:transparent; border:none;
+    }
+    .cambiaPadding{
+        padding:0px;
+    }
+    .reduceAnchoFlecha{
+        width:3%;
+    }
+    .thumbnailVertical{
+        width: 260px;
+    }
+    .margenesFila{
+        padding-right:35px; padding-left:35px;
+    }
+    .margenInferior{
+        margin-bottom:30px;
+    }
+    .margenMenuChico{
+        padding-top:55px;
+    }
+    .estiloTab{
+        height:350px; color:white;
+    }
+    .iconoCerrar{
+        cursor:pointer; position:absolute; right:2%; font-size:2em;
+    }
+    .escondeTitulo{
+        visibility:hidden;
+    }
+    @media(min-width:300px){
+        .posicionDescripcion{
+            visibility:hidden;
+        }
+        .posicionBotones{
+            visibility:hidden;
+        }
+        .txtSobreImg{
+            display:none;
+        }
+    }
+    @media(min-width:425px){
+        .posicionDescripcion{
+            visibility:hidden;
+        }
+        .posicionBotones{
+            visibility:visible;
+            right:55%; left:0%; bottom:0%;
+        }
+        .anchoBtnRep{
+            width:70px;
+        }
+        .anchoBtnLista{
+            width:55px;
+        }
+        .textoPeque{
+            font-size:0.5em;
+        }
+        .txtSobreImg{
+            position:absolute; top:75%; left:20%; width:90%; display:none;
+        }
+    }
+    @media(min-width:768px){
+        .posicionDescripcion{
+            visibility:visible;
+            right:20%; left:3%; top:59%;
+            text-align: left;
+        }
+        .posicionBotones{
+            visibility:visible;
+            right:55%; left:4%; bottom:-10%;
+        }
+        .anchoBtnRep{
+            width:120px;
+        }
+        .anchoBtnLista{
+            width:100px;
+        }
+        .textoPeque{
+            font-size:0.8em;
+        }
+        .txtSobreImg{
+            position:absolute; top:65%; left:15%; width:90%; display:block;
+        }
+        .divIconoMas{
+            height:20px; width:20px; margin-left:25%; margin-right:30%;
+        }
+    }
+    @media(min-width:992px){
+        .posicionDescripcion{
+            visibility:visible;
+            right:25%; left:3%; top:65%;
+            text-align: left;
+        }
+        .posicionBotones{
+            visibility:visible;
+            right:60%; left:4%; bottom:2%;
+        }
+        .anchoBtnRep{
+            width:140px;
+        }
+        .anchoBtnLista{
+            width:120px;
+        }
+        .textoPeque{
+            font-size:1em;
+        }
+        .txtSobreImg{
+            position:absolute; top:55%; left:10%; width:90%; display:block;
+        }
+        .divIconoMas{
+            height:20px; width:20px; margin:auto;
+        }
+    }
+    @media(min-width:1400px){
+        .txtSobreImg{
+            position:absolute; top:65%; left:15%; width:90%; display:block;
+        }
+        .divIconoMas{
+            height:20px; width:20px; margin-left:30%; margin-right:30%;
+        }
+    }
+    @media(min-width:1500px){
+        .imgBanerPrincipal{
+            width:100%;
+        }
+    }
