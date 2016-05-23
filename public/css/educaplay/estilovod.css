@@ -72,10 +72,10 @@ html,body {
         color: white;
     }
     .estiloIconoMas{
-        color: white; font-size:30px; cursor:pointer
+        color: white; cursor:pointer
     }
     .divIconoMas{
-        height:20px; width:20px; margin:auto;
+        height:50px; width:100px; margin-left:15%;
     }
     .fondoTrans{
         background-color:transparent; border:none;
@@ -162,7 +162,7 @@ html,body {
             position:absolute; top:65%; left:15%; width:90%; display:block;
         }
         .divIconoMas{
-            height:20px; width:20px; margin-left:25%; margin-right:30%;
+            height:20px; width:100px; position: absolute; top:150%; left:0;
         }
     }
     @media(min-width:992px){
@@ -188,7 +188,7 @@ html,body {
             position:absolute; top:55%; left:10%; width:90%; display:block;
         }
         .divIconoMas{
-            height:20px; width:20px; margin:auto;
+            height:20px; width:100px; margin-left:15%; margin-right:30%; position: absolute; top:150%; left:0;
         }
     }
     @media(min-width:1400px){
@@ -196,7 +196,7 @@ html,body {
             position:absolute; top:65%; left:15%; width:90%; display:block;
         }
         .divIconoMas{
-            height:20px; width:20px; margin-left:30%; margin-right:30%;
+            height:20px; width:120px; position: absolute; top:150%; left:0;
         }
     }
     @media(min-width:1500px){

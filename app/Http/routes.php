@@ -120,11 +120,12 @@ Route::group(['middleware' => 'web'], function () {
     Route::get('redmite/guardarProyecto', 'RedmiteController@guardarProyecto');
     /*     * **************************REDMITE********************** */
 
-    /*     * **************************VOD********************** */
+    /*     * **************************Educaplay********************** */
     Route::get('educaplay', 'EducaplayController@educaplay');
     Route::get('educaplay/detalleSeries', 'EducaplayController@series');
-    Route::get('educaplay/menuEducaplay', 'EducaplayController@menueducaplay');
-    /*     * **************************VOD********************** */
+
+    /*     * **************************Educaplay********************** */
+
 
     /*     * **************************Cultura********************** */
     Route::get('cultura', 'CulturaController@cultura');

@@ -40,13 +40,20 @@ class EducaplayController extends Controller {
     function series() {
        $menuEducaplay = $this->educaplayMenu();
         return view('viewEducaplay/listaVideos')->with('menuEducaplay',$menuEducaplay);
+
     }
     
-//    function getImagesVerticales ($tipo, $id){
-//        // COnuslta
-//        // Imprimir ->toJson ()
+    function getImagesVerticales ($tipo, $id){
+        // COnuslta
+                $imagenVertical = DB::table('Edu_serie')
+                ->join('Edu_imagen', 'Edu_serie.id', '=', 'Edu_imagen.serie_id')
+                ->select('Edu_serie.descripcion', 'Edu_imagen.url')
+                ->where('Edu_imagen.activo', '=', '1')
+                ->where('Edu_imagen.ubicacion_id','=','1')
+                ->get();
+       dd($imagenVertical);   
+//          $imagenVertical->toJson();
 //        return '{{urlimagen 1}, {url imagen2}}';
-//    }
-    
+    }
 }
   
