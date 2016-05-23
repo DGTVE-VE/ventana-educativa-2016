@@ -48,7 +48,7 @@ Biblioteca
                 <li style="background-image: url('{{asset('imagenes/biblioteca/pais/dominicana.jpg')}}')"></li>
                 <li style="background-image: url('{{asset('imagenes/biblioteca/pais/guatemala.jpg')}}')"></li>
                 <li style="background-image: url('{{asset('imagenes/biblioteca/pais/honduras.jpg')}}')"></li>
-                <li class="hoverLiBiblioteca" onclick="location.href='{{asset('biblioteca/tomos')}}'" style="background-image: url('{{asset('imagenes/biblioteca/pais/mexico.jpg')}}')"></li>
+                <li class="hoverLiBiblioteca" onclick="location.href='{{asset('biblioteca/tomos/0')}}'" style="background-image: url('{{asset('imagenes/biblioteca/pais/mexico.jpg')}}')"></li>
                 <li style="background-image: url('{{asset('imagenes/biblioteca/pais/nicaragua.jpg')}}')"></li>
                 <li style="background-image: url('{{asset('imagenes/biblioteca/pais/panama.jpg')}}')"></li>                
                 <li style="background-image: url('{{asset('imagenes/biblioteca/pais/salvador.jpg')}}')"></li>
