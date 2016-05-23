@@ -5,10 +5,9 @@
         <div class="margensuperiormenuBib">
             <nav class="navbar navbar-inverse navbar-fixed-top margensuperiormenuBib" id="sidebar-wrapper-biblioteca" role="navigation">
                 <ul class="nav sidebar-nav">
-                    <li><a href="#">Docente</a></li>
-                    <li><a href="#">Nacional</a></li>
-                    <li><a href="#">Escolar</a></li>
-                    <li id="sinBorde"><a href="#">Pública</a></li>
+                    @foreach($bibliotecaMenu as $bibliotecaMenu)
+                        <li><a href="tomos/{{$bibliotecaMenu->id}}">{{$bibliotecaMenu->nombre}}</a></li>
+                    @endforeach 
                 </ul>
             </nav>
 
@@ -18,7 +17,6 @@
                     <span class="vertical-biblioteca">MENÚ</span>
                 </button>
             </div> <!-- fin page-content-->
-     
         </div>
     </div> 
 </div>

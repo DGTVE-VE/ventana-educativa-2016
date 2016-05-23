@@ -75,6 +75,8 @@ Biblioteca
 
 @endsection
 @section('cuerpoBiblioteca')
+@include('viewBiblioteca.menuBiblioteca')
+
 <div class="row" style="padding-top:55px;">
     <div class="col-md-12">
     </div>
@@ -136,5 +138,5 @@ Biblioteca
         <img src="{{ asset('imagenes/biblioteca/tomos/plecaMadera.png') }}" style="position: absolute; left:10%; width:80%">
     </div>
 </div>
-@include('viewBiblioteca.menuBiblioteca')
+
 @endsection
