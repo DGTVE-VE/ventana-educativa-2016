@@ -89,47 +89,38 @@ Biblioteca
         <div id="carouselTomos" class="carousel slide" data-ride="carousel" data-interval="false" style="margin-left:5%; margin-right:5%;">
             <!-- Indicators -->
             <ol class="carousel-indicators">
-                @foreach ($tomos as $item => $numeroitem)         
+                @foreach ($tomos as $item => $numeroitem)
                 @if($item===0)
-                <li data-target="#carouselTomos" data-slide-to="0" class="active"></li>
-                @elseif($item != 0)
-                <li data-target="#carouselTomos" data-slide-to="{{$item}}"></li>
+					<li data-target="#carouselTomos" data-slide-to="0" class="active"></li>
+                @elseif($item === 9 || $item === 19)
+					<li data-target="#carouselTomos" data-slide-to="{{$item}}"></li>
                 @endif       
                 @endforeach
             </ol>
 
             <!-- Wrapper for slides -->
             <div class="carousel-inner" role="listbox">
+				<?php $i=1; ?>
                 @foreach ($tomos as $item => $tomo)         
-                @if($item===0)
-                <div class="item active">
-                    <div class="hidden-xs hidden-sm col-sm-1 col-md-1" id="columnaMargen1">
-                    </div>
-                    <div id="contenedor1{{$item}}" class="col-xs-3 col-sm-2 col-md-1 col-lg-1" onmouseenter="muestraDescripcion('1',{{$item}})" onmouseleave="ocultaDescripcion('1',{{$item}})">
-                        <img id="imagenLomo1" src="{{url($tomo->url_tomo)}}" class="img-responsive imagenLomo" alt="...">
-                        <img id="descripcion1{{$item}}" src="{{url($tomo->url_descripcion)}}" class="img-responsive imagenDescribe" alt="...">
-                    </div>
-                </div>
-                @elseif(($item != 0) &&($item < 9))
-                <div class="item">
-                    <div class="col-md-1" id="columnaMargen1">
-                    </div>
-                    <div id="contenedor1{{$item}}" class="col-xs-3 col-sm-2 col-md-1 col-lg-1" onmouseover="muestraDescripcion('1', '{{$item}}')" onmouseleave="ocultaDescripcion('1',{{$item}})">
-                        <img src="{{url($tomo->url_tomo)}}" class="img-responsive imagenLomo" alt="...">
-                        <img id="descripcion1{{$item}}" src="{{url($tomo->url_descripcion)}}" class="img-responsive imagenDescribe" alt="...">
-                    </div>                    
-                </div>                    
-                @else($item >= 9)
-                <div class="item">
-                    <div class="col-md-1" id="columnaMargen2">
-                    </div>
-                    <div id="contenedor2{{$item}}" class="col-xs-3 col-sm-2 col-md-1 col-lg-1" onmouseover="muestraDescripcion('2', '{{$item}}')" onmouseleave="ocultaDescripcion('2',{{$item}})">
-                        <img src="{{url($tomo->url_tomo)}}" class="img-responsive imagenLomo" alt="...">
-                        <img id="descripcion2{{$item}}" src="{{url($tomo->url_descripcion)}}" class="img-responsive imagenDescribe" alt="...">
-                    </div>                    
-                </div>
-                @endif 
+					@if($item===0)
+						<div class="item active">
+							<div class="hidden-xs hidden-sm col-sm-1 col-md-1" id="columnaMargen1">
+							</div>
+					@elseif($item===10 || $item===20)
+						<?php $i=$i+1; ?>
+						<div class="item">
+							<div class="hidden-xs hidden-sm col-sm-1 col-md-1" id="columnaMargen{{$i}}">
+							</div>
+					@endif 
+						<div id="contenedor{{$i}}{{$item}}" class="col-xs-3 col-sm-2 col-md-1 col-lg-1" onmouseenter="muestraDescripcion({{$i}},{{$item}})" onmouseleave="ocultaDescripcion({{$i}},{{$item}})">
+							<img id="imagenLomo{{$i}}" src="{{url($tomo->url_tomo)}}" class="img-responsive imagenLomo" alt="...">
+							<img id="descripcion{{$i}}{{$item}}" src="{{url($tomo->url_descripcion)}}" class="img-responsive imagenDescribe" alt="...">
+						</div>
+					@if($item===9 || $item===19 || $item===29)
+						</div>
+					@endif
                 @endforeach
+				</div>
             </div>
 
             <!-- Controls -->
