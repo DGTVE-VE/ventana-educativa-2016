@@ -123,6 +123,7 @@ Route::group(['middleware' => 'web'], function () {
     /*     * **************************VOD********************** */
     Route::get('educaplay', 'EducaplayController@educaplay');
     Route::get('educaplay/detalleSeries', 'EducaplayController@series');
+    Route::get('educaplay/menuEducaplay', 'EducaplayController@menueducaplay');
     /*     * **************************VOD********************** */
 
     /*     * **************************Cultura********************** */
