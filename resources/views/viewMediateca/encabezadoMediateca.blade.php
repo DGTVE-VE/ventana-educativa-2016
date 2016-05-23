@@ -382,10 +382,18 @@
     /************ CAMBIAR AVATAR **************/
 	
 /*	----------	Manipula imagenes del centro del aro en telesecundaria	----------	*/
+
+                var gifs = [
+                @for ($i = 1; $i<= 16; $i++)
+                   "{{asset ('imagenes/mediateca/Inicio/gifs/'.$i.'.gif')}}",
+                @endfor
+                ];
 		function resaltaImgSecu(prefijo, idImg){
-			var idImgHover = "#" + idImg + "Hover";
+                        var random = Math.floor((Math.random() * 16));                        
+			var idImgHover = "#" + idImg + "Hover";                        
 			$(idImgHover).css("visibility", "visible");
 			var idImgCentro = "#" + idImg + "Centro";
+                        $(idImgCentro).attr("src", gifs[random]);
 			$(idImgCentro).addClass("bounceIn");
 			$(idImgCentro).addClass("animated");
 			$(idImgCentro).css("visibility", "visible");
