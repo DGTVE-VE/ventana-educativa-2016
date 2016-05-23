@@ -79,7 +79,7 @@ Route::group(['middleware' => 'web'], function () {
     Route::get('educamedia/telebachillerato/semestreIV', 'MediatecaController@semestreIV');
     Route::get('educamedia/telebachillerato/semestreV', 'MediatecaController@semestreV');
     Route::get('educamedia/telebachillerato/semestreVI', 'MediatecaController@semestreVI');
-    
+
     Route::get('educamedia/telebachillerato/Propedéutico', 'MediatecaController@componente');
 
 //    Route::get('educamedia/videos', 'MediatecaController@videos');
@@ -87,11 +87,11 @@ Route::group(['middleware' => 'web'], function () {
 //    Route::get('educamedia/getVideosTelesec', 'MediatecaController@getVideosTelesec');
 //    Route::get('store','MediatecaController@store');
 
-    Route::post ('educamedia/rate', 'MediatecaController@guardaRating');
-    Route::post ('educamedia/comment/telesecundaria', 'MediatecaController@storeTelesecundariaComment');
-    Route::get('educamedia/telesecundaria/comments/{id}','MediatecaController@telesecundariaComments');
-    Route::post ('educamedia/comment/telebachillerato', 'MediatecaController@storeTelebachilleratoComment');
-    Route::get('educamedia/comments/telebachillerato/{id}','MediatecaController@telebachilleratoComments');
+    Route::post('educamedia/rate', 'MediatecaController@guardaRating');
+    Route::post('educamedia/comment/telesecundaria', 'MediatecaController@storeTelesecundariaComment');
+    Route::get('educamedia/telesecundaria/comments/{id}', 'MediatecaController@telesecundariaComments');
+    Route::post('educamedia/comment/telebachillerato', 'MediatecaController@storeTelebachilleratoComment');
+    Route::get('educamedia/comments/telebachillerato/{id}', 'MediatecaController@telebachilleratoComments');
     /*     * **************************MEDIATECA********************** */
 
     /*     * **************************REDMITE********************** */
@@ -115,80 +115,85 @@ Route::group(['middleware' => 'web'], function () {
     Route::post('redmite/guardaCorreoNewsLetter', 'RedmiteController@guardaCorreoNewsLetter');
     Route::get('redmite/activaCorreo/{correo}/{hash}', 'RedmiteController@activaCorreoNews');
     Route::post('redmite/guardaContacto', 'RedmiteController@guardaContacto');
-    Route::get('redmite/admin/integrantes', 'RedmiteController@integrantes');       
-    Route::post('redmite/admin/guardaIntegrantes', 'RedmiteController@guardaIntegrantes');   
+    Route::get('redmite/admin/integrantes', 'RedmiteController@integrantes');
+    Route::post('redmite/admin/guardaIntegrantes', 'RedmiteController@guardaIntegrantes');
     Route::get('redmite/guardarProyecto', 'RedmiteController@guardarProyecto');
     /*     * **************************REDMITE********************** */
-    
-    /* * **************************VOD********************** */
-    Route::get('vod', 'VodController@vod');
-	Route::get('vod/detalleSeries', 'VodController@series');
-    /* * **************************VOD********************** */
-    
-    /* * **************************Cultura********************** */
-    Route::get('cultura', 'CulturaController@cultura');    
-    /* * **************************Cultura********************** */
-    
-    /* * **************************Cultura********************** */
-    Route::get('biblioteca', 'BibliotecaController@biblioteca');    
-    Route::get('biblioteca/tomos', 'BibliotecaController@tomos');    
-    /* * **************************Cultura********************** */
-    
-});
-/*	------------	Función que extrae e imprime breadcrumbs	-----------	*/
-	function seleccionaGrado($grado) {
-		switch ($grado) {
-			case '1': $grado = 'primergrado';
-				break;
-			case '2': $grado = 'segundogrado';
-				break;
-			case '3': $grado = 'tercergrado';
-				break;
-			case 'I': $grado = 'semestreI';
-				break;
-			case 'II': $grado = 'semestreII';
-				break;
-			case 'III': $grado = 'semestreIII';
-				break;
-			case 'IV': $grado = 'semestreIV';
-				break;
-			case 'V': $grado = 'semestreV';
-				break;
-			case 'VI': $grado = 'semestreVI';
-				break;
-		}
-		return $grado;
-	}
 
-	function generaBreadCrumbs() {
-		$uri = $_SERVER['REQUEST_URI'];
-		$uriActual = explode('/', $uri);
-		$elemsURI = count($uriActual);
-		$j = $elemsURI - 1;
-		$termina = false;
-		while ($uriActual[$j] != 'educamedia') {
-			$j--;
-		}
-		echo '<a href='.url($uriActual[$j]);
-		echo '>' . strtoupper($uriActual[$j]) . '</a>';
-		$hrefCompleta = $uriActual[$j];
-		$j++;
-		for ($i = $j; $i < $elemsURI; $i++) {
-			if (strlen($uriActual[$i]) < 4 ) {
-				$gradoURI = seleccionaGrado($uriActual[$i]);
-				$termina = true;
-			} else {
-				$gradoURI = $uriActual[$i];
-			}
-			$hrefCompleta = url($hrefCompleta . "/" . $gradoURI);
-			echo ' / <a href="'.$hrefCompleta;
-			if(strpos($uriActual[$i],'%C3%A9')!==false){
-				$gradoURI= 'Proped&#201;utico';
-				$termina = true;
-			}
-			echo'">' . strtoupper($gradoURI) . '</a>';
-			if ($termina == true) {
-				break;
-			}
-		}
-	}
+    /*     * **************************Educaplay********************** */
+    Route::get('educaplay', 'EducaplayController@educaplay');
+    Route::get('educaplay/detalleSeries', 'EducaplayController@series');
+
+    /*     * **************************Educaplay********************** */
+
+
+    /*     * **************************Cultura********************** */
+    Route::get('cultura', 'CulturaController@cultura');
+    /*     * **************************Cultura********************** */
+
+    /*     * **************************Cultura********************** */
+    Route::get('biblioteca', 'BibliotecaController@biblioteca');
+    Route::get('biblioteca/tomos', 'BibliotecaController@tomos');
+    /*     * **************************Cultura********************** */
+});
+
+//Route::get ('api/getImagenes/{tipo}/{id}', '');
+
+/* 	------------	Función que extrae e imprime breadcrumbs	-----------	 */
+
+function seleccionaGrado($grado) {
+    switch ($grado) {
+        case '1': $grado = 'primergrado';
+            break;
+        case '2': $grado = 'segundogrado';
+            break;
+        case '3': $grado = 'tercergrado';
+            break;
+        case 'I': $grado = 'semestreI';
+            break;
+        case 'II': $grado = 'semestreII';
+            break;
+        case 'III': $grado = 'semestreIII';
+            break;
+        case 'IV': $grado = 'semestreIV';
+            break;
+        case 'V': $grado = 'semestreV';
+            break;
+        case 'VI': $grado = 'semestreVI';
+            break;
+    }
+    return $grado;
+}
+
+function generaBreadCrumbs() {
+    $uri = $_SERVER['REQUEST_URI'];
+    $uriActual = explode('/', $uri);
+    $elemsURI = count($uriActual);
+    $j = $elemsURI - 1;
+    $termina = false;
+    while ($uriActual[$j] != 'educamedia') {
+        $j--;
+    }
+    echo '<a href=' . url($uriActual[$j]);
+    echo '>' . strtoupper($uriActual[$j]) . '</a>';
+    $hrefCompleta = $uriActual[$j];
+    $j++;
+    for ($i = $j; $i < $elemsURI; $i++) {
+        if (strlen($uriActual[$i]) < 4) {
+            $gradoURI = seleccionaGrado($uriActual[$i]);
+            $termina = true;
+        } else {
+            $gradoURI = $uriActual[$i];
+        }
+        $hrefCompleta = url($hrefCompleta . "/" . $gradoURI);
+        echo ' / <a href="' . $hrefCompleta;
+        if (strpos($uriActual[$i], '%C3%A9') !== false) {
+            $gradoURI = 'Proped&#201;utico';
+            $termina = true;
+        }
+        echo'">' . strtoupper($gradoURI) . '</a>';
+        if ($termina == true) {
+            break;
+        }
+    }
+}

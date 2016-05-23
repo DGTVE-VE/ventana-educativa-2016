@@ -33,9 +33,9 @@ Quienes Somos
         </p><br>
         <h4>MISIÓN</h4>
         <p>
-            Integrar una red de expertos acádemicos e investigadores que analicen, propongan y compartan
-            aspectos revelantes para la generación de una educación básica de calidad e inclusiva en la región
-            mesoamericana, a través de investigación, expeiencias, modelos pedagógicos y nuevas metodologías 
+            Integrar una red de expertos académicos e investigadores que analicen, propongan y compartan
+            aspectos relevantes para la generación de una educación básica de calidad e inclusiva en la región
+            mesoamericana, a través de investigación, experiencias, modelos pedagógicos y nuevas metodologías 
             que contribuyan a la mejora del nivel del desarrollo humano de la sociedad ante el escenario global.
         </p><br>
         <h4>VISIÓN</h4>
@@ -50,7 +50,7 @@ Quienes Somos
         <h4>OBJETIVOS GENERALES</h4>
         <P>
             Integrar un espacio para el encuentro, difusión e impulso de la investigación educativa por
-            acádemicos y profesionales, enfocada al uso y aprovechamiento de las Tecnologías de la
+            académicos y profesionales, enfocada al uso y aprovechamiento de las Tecnologías de la
             Información y Comunicación (TIC) en la educación básica, así como para la identificación de nuevos
             enfoques y modelos pedagógicos, que permitan generar una educación inclusiva y de calidad en
             la región mesoamericana.
@@ -66,8 +66,8 @@ Quienes Somos
             <li class="list-unstyled"><span class="fa fa-minus"></span> Crear aportes científicos que favorezcan a nuevas metodologías
                 y tendencias para el proceso de enseñanza y aprendizaje.</li>
             <li class="list-unstyled"><span class="fa fa-minus"></span> Proveer al docente de recursos que le permitan articular desde
-                su labor, la configuración de la comunidad escolar (alumno-profesor-padre de familia.</li>
-            <li class="list-unstyled"><span class="fa fa-minus"></span> Ser un espacio que permita compartir experiencias y puntos en
+                su labor, la configuración de la comunidad escolar (alumno-profesor-padre de familia).</li>
+            <li class="list-unstyled"><span class="fa fa-minus"></span> Generar un espacio que permita compartir experiencias y puntos en
                 común entre los miembros de la Red.</li>
         </ul>
     </div>

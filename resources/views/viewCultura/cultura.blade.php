@@ -12,15 +12,15 @@ Cultura
 		$('.imgLogo').attr('src','{{url("imagenes/cultura/imgMenu/ventanaEducativa.png")}}');
 		$('.appsLogo').attr('src','{{url("imagenes/cultura/imgMenu/menu.png")}}');
 		$('#img-usuario').attr('src','{{url("imagenes/cultura/imgMenu/registro.png")}}');
-		$(window).scroll(function () {
-			var scroll_v = this.pageYOffset;
-			if (scroll_v > 10) {
-				$('#navegacionVentana').css('background', 'rgba(0, 0, 0, .3)');
-			}
-			if (scroll_v < 10) {
-				$('#navegacionVentana').css('background', 'transparent');
-			}
-		});
+    //		$(window).scroll(function () {
+    //			var scroll_v = this.pageYOffset;
+    //			if (scroll_v > 10) {
+    //				$('#navegacionVentana').css('background', 'rgba(0, 0, 0, .3)');
+    //			}
+    //			if (scroll_v < 10) {
+    //				$('#navegacionVentana').css('background', 'transparent');
+    //			}
+    //		});
 	</script>        
 @endsection
 @section('cuerpoCultura')
@@ -28,17 +28,37 @@ Cultura
 <div class="container-fluid">
     <div class="row">
         <div class="col-md-4">
-            <h2>Catálogo Digital Cultural</h2>
-            <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla a lectus eget enim vehicula malesuada a ut quam. Donec eget quam a augue iaculis rhoncus. Mauris tellus risus, faucibus et ex id, aliquam congue ante. Integer pellentesque molestie mattis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Phasellus porttitor eros lacinia risus porttitor, luctus fermentum leo blandit. Duis elementum purus eu justo suscipit, eget lacinia elit iaculis. Morbi varius cursus tortor, vitae viverra quam consequat vitae. Nunc quis leo vitae ipsum molestie congue. Sed facilisis tincidunt nisi, ac luctus massa imperdiet at. Ut finibus nisl erat, a tempor nibh efficitur in. Aliquam eu lacus nisl. Etiam vitae dapibus nibh. Aliquam erat volutpat.</p>
+            <h2>Agenda Cultural Mesoamericana</h2>
+            <p class="text-justify">Es un espacio de cooperaci&#243;n entre los ministerios de cultura de la regi&#243;n, para la promoci&#243;n 
+			y difusi&#243;n cultural de los diferentes bienes y servicios culturales, as&#237; como los proyectos de las Industrias Creativas y 
+			Culturales que se realizan desde cada pa&#237;s, con el fin de favorecer la cohesi&#243;n social y el fortalecimiento de la econom&#237;a 
+			creativa.</p>
+			<p class="text-justify">Los contenidos de dicha secci&#243;n estar&#225;n enfocados en: patrimonio cultural (artesan&#237;a, expresi&#243;n
+			cultural tradicional, festivales y celebraciones), artes dram&#225;ticas (M&#250;sica, teatro, bailes cl&#225;sicos, etc.), audiovisual 
+			(cine, televisi&#243;n y radio), servicios creativos (arquitectura y publicidad), nuevos medios (contenido digital, software, juegos y 
+			animaci&#243;n), diseño (de moda, interior,	gr&#225;fico y de joyas), editoriales y medios impresos (libros, prensa y otras publicaciones),
+			artes visuales (pintura, escultura y fotograf&#237;a).<sup>1</sup></p>
+			<table style="border-top: solid 1px;"><thead></thead>
+				<tbody>
+                    <tr>
+						<td style="padding:10px;">
+							<p class="text-justify"><small><sup>1</sup>Clasificación de las Industrias Creativas y Culturales por la UNCTAD</small></p>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			
             <table class="table table-responsive">
                 <thead></thead>
                 <tbody>
                     <tr>
-                        <td><a href="#" target= "_blank"><br><img class="animated zoomIn img-responsive" src="{{asset('imagenes/cultura/pais/logos/secCulturaMexico.png')}}"/></a></td>                        
-                        <td><a href="#" target= "_blank"><br><img class="animated zoomIn img-responsive" src="{{asset('imagenes/cultura/pais/logos/ceccSica.png')}}"/></a></td>                                                
-                        <td></td>
-                        <td><a href="#" target= "_blank"><br><img class="animated zoomIn img-responsive" src="{{asset('imagenes/cultura/pais/logos/culturaJuventud.png')}}"/></a></td>                        
+						<td><a href="http://www.televisioneducativa.gob.mx" target= "_blank"><img class="animated zoomIn img-responsive" src="{{asset('imagenes/cultura/pais/logos/tvecolor.png')}}" style="margin: auto"/></a></td>
+						<td><a href="http://ceducar.info/ceducar/" target= "_blank"><img class="animated zoomIn img-responsive" src="{{asset('imagenes/cultura/pais/logos/ceccSica-02.png')}}" style="margin: auto; "/></a></td>
                     </tr>
+					<tr>
+                        <td><a href="#"><img class="animated zoomIn img-responsive" src="{{asset('imagenes/cultura/pais/logos/secCulturaMexico.png')}}" style="margin: auto"/></a></td>
+                        <td><a href="#"><img class="animated zoomIn img-responsive" src="{{asset('imagenes/cultura/pais/logos/culturaJuventud.png')}}" style="margin: auto"/></a></td>
+					</tr>
                 </tbody>
             </table>
         </div>

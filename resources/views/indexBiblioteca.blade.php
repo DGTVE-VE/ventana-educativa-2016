@@ -14,8 +14,11 @@ and open the template in the editor.
         <meta http-equiv="X-UA-Compatible" content="IE=Edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
         <link rel="shortcut icon" href="{{ asset('redmite1.ico') }}" >
-
-        <!-- Bootstrap CSS -->
+		
+		<!-- CDN JQuery 1.12.3 -->
+		<script src="https://code.jquery.com/jquery-1.12.3.min.js" integrity="sha256-aaODHAgvwQW1bFOGXMeX+pC4PZIPsvn2h1sArYOhgXQ="crossorigin="anonymous"></script>
+        
+		<!-- Bootstrap CSS -->
         <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
         <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
@@ -34,10 +37,6 @@ and open the template in the editor.
         <link rel="stylesheet" href="{{ asset('css/mediateca/estilomediateca3.css') }}" >
         <link rel="stylesheet" href="{{ asset('css/biblioteca/estiloBiblioteca3.css') }}" >
         @yield ('estilos')
-
-        <!-- jQuery library -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-        <script src="//code.jquery.com/jquery.min.js"></script>
 
         <!-- Latest compiled JavaScript -->
         <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>

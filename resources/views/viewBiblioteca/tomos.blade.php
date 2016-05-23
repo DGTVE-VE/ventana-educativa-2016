@@ -4,7 +4,28 @@ Biblioteca
 @extends('indexBiblioteca')
 @section('menuBiblioteca')
 @include('viewVentana.encabezadoVentana')
-
+<style>
+    .fondoDegradadoMenuInicial{
+        background: rgba(0, 0, 0, .4);
+        border: none;
+    }
+    .fondoDegradadoMenu{
+        background: rgba(0, 0, 0, .7);
+        border: none;
+    }
+    .reduceFlecha{
+        width:20px;
+    }
+    .contenedor{
+        -webkit-transition: all 0.5s ease;
+        -moz-transition: all 0.5s ease;
+        -o-transition: all 0.5s ease;
+        transition: all 0.5s ease;
+    }
+    .imagenDescribe{
+        position:absolute; top:0px; left: 25%; display: none; z-index:-1;
+    }
+</style>
 <script>
     $('#buscar').css('display', 'none');
     $('#iconoBuscar').css('display', 'none');
@@ -12,136 +33,91 @@ Biblioteca
     $('.imgLogo').attr('src', '{{url("imagenes/biblioteca/imgMenu/ventanaEducativa.png")}}');
     $('.appsLogo').attr('src', '{{url("imagenes/biblioteca/imgMenu/menu.png")}}');
     $('#img-usuario').attr('src', '{{url("imagenes/biblioteca/imgMenu/registro.png")}}');
+    $('#navegacionVentana').addClass('fondoDegradadoMenuInicial');
     $(window).scroll(function () {
         var scroll_v = this.pageYOffset;
         if (scroll_v > 10) {
-            $('#navegacionVentana').css('background', 'rgba(0, 0, 0, .3)');
+            $('#navegacionVentana').removeClass('fondoDegradadoMenuInicial');
+            $('#navegacionVentana').addClass('fondoDegradadoMenu');
         }
         if (scroll_v < 10) {
-            $('#navegacionVentana').css('background', 'transparent');
+            $('#navegacionVentana').removeClass('fondoDegradadoMenu');
+            $('#navegacionVentana').addClass('fondoDegradadoMenuInicial');
         }
     });
+    $(document).ready(function () {
+        var contenedor = '#contenedor11';
+        anchoCol = $(contenedor).width() * 1.3;
+        anchoAumenta = anchoCol * 3.2;
+        altoLomos = $('#imagenLomo1').height();
+        anchoLomos = $('#imagenLomo1').width();
+        $('.imagenLomo').css('height', altoLomos);
+        $('.imagenLomo').css('width', anchoLomos);
+        $('.imagenDescribe').css('height', altoLomos);
+    });
+    function muestraDescripcion(elem, libro) {
+        var contenedor = '#contenedor' + elem + libro;
+        $(contenedor).css('width', anchoAumenta);
+        var colMargen = '#columnaMargen' + elem;
+        $(colMargen).css('display', 'none');
+        var contenedorDescr = '#descripcion' + elem + libro;
+        $(contenedorDescr).css('display', 'block');
+    }
+    function ocultaDescripcion(elem, libro) {
+        var contenedor = '#contenedor' + elem + libro;
+        $(contenedor).css('width', anchoCol);
+        var colMargen = '#columnaMargen' + elem;
+        $(colMargen).css('display', 'block');
+        var contenedorDescr = '#descripcion' + elem + libro;
+        $(contenedorDescr).css('display', 'none');
+    }
 </script>        
 
 @endsection
 @section('cuerpoBiblioteca')
-<div class="container">
-    <div class="row">
-        <br><br>
-        <h2 class="text-center"><a style="text-decoration: none; color: black;" href="{{asset('biblioteca')}}">Biblioteca</a></h2>
-        <br>
+@include('viewBiblioteca.menuBiblioteca')
 
-        <!-- Carousel
-================================================== -->
-        <div id="CarouselTomo" class="carousel slide">
-            <div class="carousel-inner">           
-                <figure class="item active">
-                    <div class="accordion">
-                        <ul>
-                            <li style="background-image: url({{asset('imagenes/biblioteca/tomos/bajacalifornia.jpg')}})">
-                                <div> 
-                                    <img src="{{asset('imagenes/biblioteca/tomos/hoverTomos/biblioteca-01.png')}}">
-                                    <a class="hrefTomos" href="#">Ver página</a>
-                                </div>
-                            </li>
-                            <li style="background-image: url({{asset('imagenes/biblioteca/tomos/bejaminfranklin.jpg')}})">
-                                <div> <a href="#">
-                                        <h4>2Lorem Ipsum</h4>
-                                        <p>2Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-                                    </a> </div>
-                            </li>
-                            <li style="background-image: url({{asset('imagenes/biblioteca/tomos/colegiomex.jpg')}})">
-                                <div> <a href="#">
-                                        <h4>3Lorem Ipsum</h4>
-                                        <p>3Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-                                    </a> </div>
-                            </li>
-                            <li style="background-image: url({{asset('imagenes/biblioteca/tomos/conevyt.jpg')}})">
-                                <div> <a href="#">
-                                        <h4>4Lorem Ipsum</h4>
-                                        <p>4Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-                                    </a> </div>
-                            </li>
-                            <li style="background-image: url({{asset('imagenes/biblioteca/tomos/congresounion.jpg')}})">
-                                <div> <a href="#">
-                                        <h4>5Lorem Ipsum</h4>
-                                        <p>5Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-                                    </a> </div>
-                            </li>
-                            <li style="background-image: url({{asset('imagenes/biblioteca/tomos/ecest.jpg')}})">
-                                <div> <a href="#">
-                                        <h4>6Lorem Ipsum</h4>
-                                        <p>6Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-                                    </a> </div>
-                            </li>
-                        </ul>
-                    </div>
-                </figure>
-                <figure class="item">
-                    <div class="accordion">
-                        <ul>
-                            <li style="background-image: url({{asset('imagenes/biblioteca/tomos/itam.jpg')}})">
-                                <div> <a href="#">
-                                        <h4>1Lorem Ipsum</h4>
-                                        <p>1Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-                                    </a> </div>
-                            </li>
-                            <li style="background-image: url({{asset('imagenes/biblioteca/tomos/iteso.jpg')}})">
-                                <div> <a href="#">
-                                        <h4>2Lorem Ipsum</h4>
-                                        <p>2Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-                                    </a> </div>
-                            </li>
-                            <li style="background-image: url({{asset('imagenes/biblioteca/tomos/mundial.jpg')}})">
-                                <div> <a href="#">
-                                        <h4>3Lorem Ipsum</h4>
-                                        <p>3Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-                                    </a> </div>
-                            </li>
-                            <li style="background-image: url({{asset('imagenes/biblioteca/tomos/tecmonterrey.jpg')}})">
-                                <div> <a href="#">
-                                        <h4>4Lorem Ipsum</h4>
-                                        <p>4Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-                                    </a> </div>
-                            </li>
-                            <li style="background-image: url({{asset('imagenes/biblioteca/tomos/unamcienciastierra.jpg')}})">
-                                <div> <a href="#">
-                                        <h4>5Lorem Ipsum</h4>
-                                        <p>5Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-                                    </a> </div>
-                            </li>
-                            <li style="background-image: url({{asset('imagenes/biblioteca/tomos/unameduardogarcia.jpg')}})">
-                                <div> <a href="#">
-                                        <h4>6Lorem Ipsum</h4>
-                                        <p>6Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-                                    </a> </div>
-                            </li>
-                        </ul>
-                    </div>
-                </figure>  
-                <figure class="item">
-                    <div class="accordion">
-                        <ul>
-                            <li style="background-image: url({{asset('imagenes/biblioteca/tomos/unamjorgecarpizo.jpg')}})">
-                                <div> <a href="#">
-                                        <h4>1Lorem Ipsum</h4>
-                                        <p>1Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-                                    </a> </div>
-                            </li>
-                        </ul>
-                    </div>
-                </figure>       
-
-            </div>     
-            <div class="carousel-controls">
-                <a class="left carousel-control carousel-control-tomos" href="#CarouselTomo" data-slide="prev"><span class="flecha-izq-presentacion"><i class="fa fa-angle-left fa-lg"></i></span></a>
-                <a class="right carousel-control carousel-control-tomos" href="#CarouselTomo" data-slide="next"><span class="flecha-der-presentacion"><i class="fa fa-angle-right fa-lg"></i></span></a>
-            </div>
-        </div><!-- End Carousel -->          
+<div class="row" style="padding-top:55px;">
+    <div class="col-md-12">
     </div>
 </div>
-@include('viewBiblioteca.menuBiblioteca')
-@endsection
-<script type="text/javascript">
+<div class="row" style="padding:10px;">
+    <div class="col-md-12">
+        <h2 class="text-center">Biblioteca</h2>
+    </div>
+</div>
+<div class="row">
+    <div class="col-xs-10 col-xs-offset-1 col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1">
+		<?php $i=0; ?>
+			@foreach ($tomos as $item => $tomo)         
+				@if($item % 10 === 0)
+					<?php $i++; ?>
+					<div class="row">
+						<div class="hidden-xs hidden-sm col-sm-1 col-md-1" id="columnaMargen{{$i}}">
+						</div>
+				@endif
+				@if(($item % 2 === 0) && $item!=0)
+					<div class="visible-xs-block col-xs-12">
+						<img src="{{ asset('imagenes/biblioteca/tomos/plecaMadera.png') }}" style="position: relative; width:95%">
+					</div>
+				@endif
+				@if(($item % 4 === 0) && $item!=0)
+					<div class="visible-sm-block col-sm-12">
+						<img src="{{ asset('imagenes/biblioteca/tomos/plecaMadera.png') }}" style="position: relative; width:95%">
+					</div>
+				@endif
+					<div id="contenedor{{$i}}{{$item}}" class="col-xs-3 col-sm-2 col-md-1 col-lg-1 contenedor" onmouseenter="muestraDescripcion({{$i}},{{$item}})" onmouseleave="ocultaDescripcion({{$i}},{{$item}})">
+						<img id="imagenLomo{{$i}}" src="{{url($tomo->url_tomo)}}" class="img-responsive imagenLomo" alt="...">
+						<img id="descripcion{{$i}}{{$item}}" src="{{url($tomo->url_descripcion)}}" class="img-responsive imagenDescribe" alt="...">
+					</div>
+				@if(($item+1) % 10 === 0)
+					</div>
+					<img class="hidden-xs" src="{{ asset('imagenes/biblioteca/tomos/plecaMadera.png') }}" style="width:100%"/>
+				@endif
+			@endforeach
+		</div>
+		<img src="{{ asset('imagenes/biblioteca/tomos/plecaMadera.png') }}" style="width:100%"/>
+	</div>
+</div>
 
-</script> 
+@endsection

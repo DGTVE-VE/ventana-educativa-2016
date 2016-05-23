@@ -3,9 +3,13 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/xampp/htdocs/ventanaEducativa/resources/views/viewVod/vod.blade.php</file>
-            <file>file:/C:/xampp/htdocs/ventanaEducativa/public/css/vod/estilovod3.css</file>
-            <file>file:/C:/xampp/htdocs/ventanaEducativa/resources/views/viewVod/menuVod.blade.php</file>
+            <file>file:/C:/xampp/htdocs/ventanaEducativa/app/Http/routes.php</file>
+            <file>file:/C:/xampp/htdocs/ventanaEducativa/resources/views/indexEducaplay.blade.php</file>
+            <file>file:/C:/xampp/htdocs/ventanaEducativa/app/Http/Controllers/EducaplayController.php</file>
+            <file>file:/C:/xampp/htdocs/ventanaEducativa/resources/views/viewEducaplay/menuEducaplay.blade.php</file>
+            <file>file:/C:/xampp/htdocs/ventanaEducativa/resources/views/viewBiblioteca/menuBiblioteca.php</file>
+            <file>file:/C:/xampp/htdocs/ventanaEducativa/resources/views/viewBiblioteca/biblioteca.blade.php</file>
+            <file>file:/C:/xampp/htdocs/ventanaEducativa/resources/views/viewEducaplay/educaplay.blade.php</file>
         </group>
     </open-files>
 </project-private>
