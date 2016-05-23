@@ -3,7 +3,7 @@
 	$clasificacionActual = BibliotecaController::obtieneClasificacion();
 ?>
 @section('titleBiblioteca')
-Biblioteca
+	Biblioteca
 @stop
 @extends('indexBiblioteca')
 @section('menuBiblioteca')

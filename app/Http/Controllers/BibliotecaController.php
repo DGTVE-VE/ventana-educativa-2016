@@ -2,9 +2,10 @@
 
 namespace App\Http\Controllers;
 use DB;
-
 use Illuminate\Http\Request;
 use App\Http\Requests;
+use App\Model\Biblioteca\bib_clasifica;
+
 
 class BibliotecaController extends Controller {
 
@@ -21,9 +22,12 @@ class BibliotecaController extends Controller {
 		}
         
 //        dd($tomos);
-        return view('viewBiblioteca/tomos')->with('tomos',$tomos);
+        $bibliotecaMenu = $this->menuBiblioteca();
+      
+        return view('viewBiblioteca/tomos')->with('tomos',$tomos)->with('bibliotecaMenu',$bibliotecaMenu);
         
     }
+
 	public static function obtieneClasificacion(){
 		$uri = $_SERVER['REQUEST_URI'];
 		$uriActual = explode('/', $uri);
@@ -45,4 +49,12 @@ class BibliotecaController extends Controller {
 		}
 		return $nombreClasifica;
 	}
+    
+    public function menuBiblioteca(){
+        $bibliotecaMenu= DB::table('bib_clasifica')
+           ->select('id','nombre')
+           ->get();     
+        
+        return $bibliotecaMenu;
+    }
 }
