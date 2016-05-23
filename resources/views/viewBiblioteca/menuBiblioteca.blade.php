@@ -6,7 +6,7 @@
             <nav class="navbar navbar-inverse navbar-fixed-top margensuperiormenuBib" id="sidebar-wrapper-biblioteca" role="navigation">
                 <ul class="nav sidebar-nav">
                     @foreach($bibliotecaMenu as $bibliotecaMenu)
-                        <li><a href="tomos/{{$bibliotecaMenu->id}}">{{$bibliotecaMenu->nombre}}</a></li>
+                        <li><a href="{{url('biblioteca/tomos/'.$bibliotecaMenu->id)}}">{{$bibliotecaMenu->nombre}}</a></li>
                     @endforeach 
                 </ul>
             </nav>
