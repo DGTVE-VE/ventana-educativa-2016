@@ -26,5 +26,5 @@ Educaplay
 @endsection
 @section('cuerpoEducaplay')
         @include('viewEducaplay.bannerEducaplay')
-		@include('viewEducaplay.carretesEducaplay')
+        @include('viewEducaplay.carretesEducaplay')
 @endsection
