@@ -55,6 +55,9 @@
 	.pad10px{
 		padding:10px;
 	}
+	.textoLigaBiblio{
+		 position: absolute; bottom:5%; right: 7%; display:none;
+	}
 </style>
 <script>
     $('#buscar').css('display', 'none');
@@ -92,6 +95,8 @@
         $(colMargen).css('display', 'none');
         var contenedorDescr = '#descripcion' + elem + libro;
         $(contenedorDescr).css('display', 'block');
+		var textoLigaBiblio = '#ligaBiblioteca' + elem + libro;
+        $(textoLigaBiblio).css('display', 'block');
     }
     function ocultaDescripcion(elem, libro) {
         var contenedor = '#contenedor' + elem + libro;
@@ -100,6 +105,8 @@
         $(colMargen).css('display', 'block');
         var contenedorDescr = '#descripcion' + elem + libro;
         $(contenedorDescr).css('display', 'none');
+		var textoLigaBiblio = '#ligaBiblioteca' + elem + libro;
+        $(textoLigaBiblio).css('display', 'none');
     }
 </script>        
 
@@ -137,6 +144,7 @@
 					</div>
 				@endif
 					<div id="contenedor{{$i}}{{$item}}" class="col-xs-3 col-sm-2 col-md-1 col-lg-1 contenedor" onmouseenter="muestraDescripcion({{$i}},{{$item}})" onmouseleave="ocultaDescripcion({{$i}},{{$item}})">
+						<a id="ligaBiblioteca{{$i}}{{$item}}" href="{{$tomo->link_consulta}}" class="textoLigaBiblio" target="_blank">Ir a la biblioteca</a>
 						<img id="imagenLomo{{$i}}" src="{{url($tomo->url_tomo)}}" class="img-responsive imagenLomo" alt="...">
 						<img id="descripcion{{$i}}{{$item}}" src="{{url($tomo->url_descripcion)}}" class="img-responsive imagenDescribe" alt="...">
 					</div>
