@@ -13,14 +13,14 @@
 }
 
 #wrapper-biblioteca.toggled {
-    padding-left: 141px; /*separación de la pestaña menú con la lista  221*/
+    padding-left: 126px; /*separación de la pestaña menú con la lista  221*/
 }
 
 #sidebar-wrapper-biblioteca {
     z-index: 1000;
     left: 220px; /*ampliar contenedor de menú  220*/
     width: 0;
-    height: 33%; /*tamaño del contenedor de la lista de menú */
+    height: 35%; /*tamaño del contenedor de la lista de menú */
     margin-left: -220px;
     margin-top: 0; /*margen superior del menú*/ 
     overflow-y: auto;
@@ -34,7 +34,7 @@
 }
 
 #wrapper-biblioteca.toggled #sidebar-wrapper-biblioteca {
-    width: 140px;
+    width: 125px;
 }
 
 #page-content-wrapper-bib{

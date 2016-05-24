@@ -1,5 +1,9 @@
+<?php
+	use App\Http\Controllers\BibliotecaController;
+	$clasificacionActual = BibliotecaController::obtieneClasificacion();
+?>
 @section('titleBiblioteca')
-Biblioteca
+	Biblioteca
 @stop
 @extends('indexBiblioteca')
 @section('menuBiblioteca')
@@ -25,6 +29,35 @@ Biblioteca
     .imagenDescribe{
         position:absolute; top:0px; left: 25%; display: none; z-index:-1;
     }
+	.textoEstante{
+		position: absolute;
+		left: 0;
+		width: 100%;
+		text-align: center;
+		font-size: 18px;
+		color:white;
+	}
+	.estanteSuperior{
+		bottom: 4%;
+	}
+	.estanteInferior{
+		bottom: 2%;
+	}
+	.imgMadera{
+		width:100%;
+	}
+	.posiciona{
+		position:relative;
+	}
+	.padTop55px{
+		padding-top:55px;
+	}
+	.pad10px{
+		padding:10px;
+	}
+	.textoLigaBiblio{
+		 position: absolute; bottom:5%; right: 7%; display:none;
+	}
 </style>
 <script>
     $('#buscar').css('display', 'none');
@@ -62,6 +95,8 @@ Biblioteca
         $(colMargen).css('display', 'none');
         var contenedorDescr = '#descripcion' + elem + libro;
         $(contenedorDescr).css('display', 'block');
+		var textoLigaBiblio = '#ligaBiblioteca' + elem + libro;
+        $(textoLigaBiblio).css('display', 'block');
     }
     function ocultaDescripcion(elem, libro) {
         var contenedor = '#contenedor' + elem + libro;
@@ -70,54 +105,60 @@ Biblioteca
         $(colMargen).css('display', 'block');
         var contenedorDescr = '#descripcion' + elem + libro;
         $(contenedorDescr).css('display', 'none');
+		var textoLigaBiblio = '#ligaBiblioteca' + elem + libro;
+        $(textoLigaBiblio).css('display', 'none');
     }
 </script>        
 
 @endsection
 @section('cuerpoBiblioteca')
-@include('viewBiblioteca.menuBiblioteca')
-
-<div class="row" style="padding-top:55px;">
+<div class="row padTop55px">
     <div class="col-md-12">
     </div>
 </div>
-<div class="row" style="padding:10px;">
+<div class="row pad10px">
     <div class="col-md-12">
         <h2 class="text-center">Biblioteca</h2>
     </div>
 </div>
-<div class="row">
-    <div class="col-xs-10 col-xs-offset-1 col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1">
+<div class="row posiciona">
+    <div class="col-xs-10 col-xs-offset-1 col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1 posiciona">
 		<?php $i=0; ?>
-			@foreach ($tomos as $item => $tomo)         
+			@foreach ($tomos as $item => $tomo)
 				@if($item % 10 === 0)
 					<?php $i++; ?>
-					<div class="row">
+					<div class="row posiciona">
 						<div class="hidden-xs hidden-sm col-sm-1 col-md-1" id="columnaMargen{{$i}}">
 						</div>
 				@endif
 				@if(($item % 2 === 0) && $item!=0)
-					<div class="visible-xs-block col-xs-12">
-						<img src="{{ asset('imagenes/biblioteca/tomos/plecaMadera.png') }}" style="position: relative; width:95%">
+					<div class="visible-xs-block col-xs-12 posiciona">
+						<img src="{{ asset('imagenes/biblioteca/tomos/plecaMadera.png') }}" class="imgMadera"/>
+						<div class="textoEstante estanteSuperior text-uppercase"> {{$clasificacionActual}}</div>
 					</div>
 				@endif
 				@if(($item % 4 === 0) && $item!=0)
-					<div class="visible-sm-block col-sm-12">
-						<img src="{{ asset('imagenes/biblioteca/tomos/plecaMadera.png') }}" style="position: relative; width:95%">
+					<div class="visible-sm-block col-sm-12 posiciona">
+						<img src="{{ asset('imagenes/biblioteca/tomos/plecaMadera.png') }}" class="imgMadera"/>
+						<div class="textoEstante estanteSuperior text-uppercase"> {{$clasificacionActual}}</div>
 					</div>
 				@endif
 					<div id="contenedor{{$i}}{{$item}}" class="col-xs-3 col-sm-2 col-md-1 col-lg-1 contenedor" onmouseenter="muestraDescripcion({{$i}},{{$item}})" onmouseleave="ocultaDescripcion({{$i}},{{$item}})">
+						<a id="ligaBiblioteca{{$i}}{{$item}}" href="{{$tomo->link_consulta}}" class="textoLigaBiblio" target="_blank">Ir a la biblioteca</a>
 						<img id="imagenLomo{{$i}}" src="{{url($tomo->url_tomo)}}" class="img-responsive imagenLomo" alt="...">
 						<img id="descripcion{{$i}}{{$item}}" src="{{url($tomo->url_descripcion)}}" class="img-responsive imagenDescribe" alt="...">
 					</div>
 				@if(($item+1) % 10 === 0)
+					<img src="{{ asset('imagenes/biblioteca/tomos/plecaMadera.png') }}" class="hidden-xs imgMadera"/>
+					<div class="textoEstante estanteSuperior text-uppercase"> {{$clasificacionActual}}</div>
 					</div>
-					<img class="hidden-xs" src="{{ asset('imagenes/biblioteca/tomos/plecaMadera.png') }}" style="width:100%"/>
+					
 				@endif
 			@endforeach
 		</div>
-		<img src="{{ asset('imagenes/biblioteca/tomos/plecaMadera.png') }}" style="width:100%"/>
+		<img src="{{ asset('imagenes/biblioteca/tomos/plecaMadera.png') }}" class="imgMadera"/>
+		<div class="textoEstante estanteInferior text-uppercase"> {{$clasificacionActual}}</div>
 	</div>
 </div>
-
+@include('viewBiblioteca.menuBiblioteca')
 @endsection
