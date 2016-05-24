@@ -389,16 +389,18 @@
                 @endfor
                 ];
 		function resaltaImgSecu(prefijo, idImg){
-                        var random = Math.floor((Math.random() * 16));                        
-			var idImgHover = "#" + idImg + "Hover";                        
-			$(idImgHover).css("visibility", "visible");
-			var idImgCentro = "#" + idImg + "Centro";
+                    var idImgHover = "#" + idImg + "Hover";                        
+                    $(idImgHover).css("visibility", "visible");
+                    var idImgCentro = "#" + idImg + "Centro";
+                    console.log (prefijo);
+                    if (prefijo === 'Inicio'){
+                        var random = Math.floor((Math.random() * 16));
                         $(idImgCentro).attr("src", gifs[random]);
-			$(idImgCentro).addClass("bounceIn");
-			$(idImgCentro).addClass("animated");
-			$(idImgCentro).css("visibility", "visible");
-			$(idImgCentro).fadeIn();
-			
+                    }    
+                    $(idImgCentro).addClass("bounceIn");
+                    $(idImgCentro).addClass("animated");
+                    $(idImgCentro).css("visibility", "visible");
+                    $(idImgCentro).fadeIn();
 		}
 		function normalImgSecu(prefijo, idImg){
 			var idImgHover = "#" + idImg + "Hover";
