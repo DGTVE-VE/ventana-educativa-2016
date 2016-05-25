@@ -53,7 +53,9 @@ $response = $kernel->handle(
     $request = Illuminate\Http\Request::capture()
 );
 if ($request->getSession() !== null){
-    $request->session()->put('url', $request->path());
+    if ($request->path() !== 'acceso' && $request->path() !== 'login'){ // Para que la vista de acceso no sobreescriba la url anterior.
+        $request->session()->put('url', $request->path());
+    }
 }
 $response->send();
 
