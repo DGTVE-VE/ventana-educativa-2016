@@ -4,7 +4,7 @@ namespace App\Model\Biblioteca;
 
 use Illuminate\Database\Eloquent\Model;
 
-class bib_clasifica extends Model
+class Bib_clasifica extends Model
 {
-    //
+    protected $table = 'bib_clasifica';
 }
