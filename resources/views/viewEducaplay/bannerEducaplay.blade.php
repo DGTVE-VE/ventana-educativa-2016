@@ -5,7 +5,7 @@
     <div id="carouselEducaplay" class="carousel slide" data-ride="carousel">
         <!-- Indicators -->
         <ol class="carousel-indicators">
-            @foreach ($banner as $item => $numeroitem)         
+            @foreach ($banner as $item => $numeroitem)
             @if($item===0)
             <li data-target="#carouselEducaplay" data-slide-to="0" class="active"></li>
             @elseif($item != 0)

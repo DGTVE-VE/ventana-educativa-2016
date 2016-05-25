@@ -20,7 +20,7 @@
     z-index: 1000;
     left: 220px; /*ampliar contenedor de menú  220*/
     width: 0;
-    height: 35%; /*tamaño del contenedor de la lista de menú */
+    height: 39.5%; /*tamaño del contenedor de la lista de menú */
     margin-left: -220px;
     margin-top: 0; /*margen superior del menú*/ 
     overflow-y: auto;
