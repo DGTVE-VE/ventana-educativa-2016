@@ -6,7 +6,7 @@ Biblioteca
 @include('viewVentana.encabezadoVentana')
 <style>
 	.fondoDegradadoMenuInicial{
-		background: rgba(0, 0, 0, .4);
+		background: rgba(0, 0, 0, .7);
 		border: none;
 	}
 	.fondoDegradadoMenu{
