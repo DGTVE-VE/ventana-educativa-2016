@@ -34,7 +34,7 @@ class BibliotecaController extends Controller {
 		$elemsURI = count($uriActual);
 		$j = $elemsURI - 1;
 		if($uriActual[$j]==0){
-			$nombreClasifica = "Todos";
+			$nombreClasifica = "";
 		}else{
 			$clasificaActual = DB::table('bib_clasifica')->select('nombre')->where('id','=',$uriActual[$j])->get();
 			
