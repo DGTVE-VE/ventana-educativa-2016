@@ -14,7 +14,10 @@ class EducaplayController extends Controller {
         return view('viewEducaplay/educaplay');
     }
     
-     
+	public function descripciones() {
+        return view('viewEducaplay/descripcionSerie');
+    }
+	
     public function educaplayMenu(){   //* Funcion para alimentar el menu de Educaplay    
         $menuEducaplay = DB::table('edu_categorias')
         ->select('categoria')

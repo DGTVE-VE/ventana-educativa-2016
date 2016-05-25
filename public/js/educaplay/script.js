@@ -18,6 +18,8 @@
     function muestraDetalle(numDiv) {
         var nombreDivDetalle = '#detalleSerie' + numDiv;
         $(nombreDivDetalle).css('display', 'block');
+		var btnCerrarDesc = '#btnCerrarDesc' + numDiv;
+        $(btnCerrarDesc).css('display', 'block');
         var windowTop = $(nombreDivDetalle).offset().top - '350';
         $(document).scrollTop(windowTop)
     }
@@ -25,6 +27,8 @@
     function cierraDetalle(numDiv) {
         var nombreDivDetalle = '#detalleSerie' + numDiv;
         $(nombreDivDetalle).css('display', 'none');
+		var btnCerrarDesc = '#btnCerrarDesc' + numDiv;
+        $(btnCerrarDesc).css('display', 'none');
     }
     function muestraTitulo(idTitulo) {
         var divTitulo = '#titulo' + idTitulo;
