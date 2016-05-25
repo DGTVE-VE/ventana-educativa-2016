@@ -28,7 +28,7 @@
 					</div>
 					<span id="btnCerrarDesc{{$tira - 1}}" class="glyphicon glyphicon-remove iconoCerrar" aria-hidden="true" onclick="cierraDetalle({{$tira - 1}})"></span>
 				</div>
-				<iframe id="detalleSerie{{$tira - 1}}" src="{{url('educaplay/descripciones')}}" frameborder="0" class="col-md-12" style="display: none; height:500px;">
+				<iframe id="detalleSerie{{$tira - 1}}" src="" frameborder="0" class="col-md-12" style="display: none; height:500px;">
 				</iframe>
 			</div>
 		@endif
@@ -51,7 +51,7 @@
 										<div id="titulo{{$tira}}{{$consecutivo}}" class="caption txtSobreImg escondeTitulo">
 											<h4 class="estiloTxt">{{$elemento->titulo_serie}}</h4>
 											<span class="estiloTxt">{{$elemento->descripcion}}</span>
-											<img class="estiloIconoMas divIconoMas" src="{{url('imagenes/educaplay/flechaDetalle.png')}}" onclick="muestraDetalle({{$tira}})"/>
+											<img class="estiloIconoMas divIconoMas" src="{{url('imagenes/educaplay/flechaDetalle.png')}}" onclick="muestraDetalle({{$tira}},{{$elemento->id}})"/>
 										</div>
 									</div>
 								</div>
@@ -77,6 +77,6 @@
 					</div>
 					<span id="btnCerrarDesc{{$tira}}" class="glyphicon glyphicon-remove iconoCerrar" aria-hidden="true" onclick="cierraDetalle({{$tira}})"></span>
 				</div>
-				<iframe id="detalleSerie{{$tira}}" src="{{url('educaplay/descripciones')}}" frameborder="0" class="col-md-12" style="display: none; height:500px;">
+				<iframe id="detalleSerie{{$tira}}" src="" frameborder="0" class="col-md-12" style="display: none; height:500px;">
 				</iframe>
 			</div>
