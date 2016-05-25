@@ -36,7 +36,6 @@ class EducaplayController extends Controller {
                 ->where('Edu_imagen.ubicacion_id','=','2')
 				->orderBy('categoria_id','DESC')
 		        ->get();
-
         $menuEducaplay = $this->educaplayMenu();
          return view('viewEducaplay/educaplay')->with('banner', $banner)->with('carretes', $carretes)->with('menuEducaplay',$menuEducaplay);
     }
@@ -45,4 +44,11 @@ class EducaplayController extends Controller {
         $menuEducaplay = $this->educaplayMenu();
         return view('viewEducaplay/listaVideosEducaplay')->with('menuEducaplay', $menuEducaplay);
     }
+    
+    		//    function getImagesVerticales ($tipo, $id){
+//         COnuslta
+//       dd($imagenVertical);   
+////          $imagenVertical->toJson();
+////        return '{{urlimagen 1}, {url imagen2}}';
+//    }
 }
