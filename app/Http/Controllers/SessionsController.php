@@ -20,7 +20,8 @@ class SessionsController extends Controller
     public function store (Request $request){
         if (Auth::attempt(Input::only ('email', 'password'))){                        
 //            return Redirect::back();
-            $url = $request->session()->get('url', '/');            
+            $url = $request->session()->get('url', '/');           
+//            var_dump($url);
             return redirect()->intended($url);
         }
         return Redirect::back()->withInput ();
