@@ -4,7 +4,7 @@ Educaplay
 @extends('indexEducaplay')
 @section('menuEducaplay')
 	@include('viewVentana.encabezadoVentana')
-        <script>
+	<script>
 		$('#buscar').css('display','none');
 		$('#iconoBuscar').css('display','none');
 		$('#navegacionVentana').css('height','55px');
