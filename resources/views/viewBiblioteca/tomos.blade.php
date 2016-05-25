@@ -156,8 +156,12 @@
 				@endif
 			@endforeach
 		</div>
-		<img src="{{ asset('imagenes/biblioteca/tomos/plecaMadera.png') }}" class="imgMadera"/>
-		<div class="textoEstante estanteInferior text-uppercase"> {{$clasificacionActual}}</div>
+		@if($i===0)
+			<div class="textoEstante text-uppercase" style="color:black;"> NO HAY BIBLIOTECAS PARA ESTA CLASIFICACI&#211;N </div>
+		@else
+			<img src="{{ asset('imagenes/biblioteca/tomos/plecaMadera.png') }}" class="imgMadera"/>
+			<div class="textoEstante estanteInferior text-uppercase"> {{$clasificacionActual}}</div>
+		@endif
 	</div>
 </div>
 @include('viewBiblioteca.menuBiblioteca')
