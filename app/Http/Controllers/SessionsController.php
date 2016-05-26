@@ -32,7 +32,7 @@ class SessionsController extends Controller {
     }
 
     public function create(Request $request) {
-        //Autenticar a Facebook
+        //Autenticar a Facebook        
         if (strpos($_SERVER['HTTP_USER_AGENT'], "facebookexternalhit/1.1" ) === false){
             $user = \App\User::where ('email', 'facebook@facebook.com')->first();
             Auth::login ($user);
