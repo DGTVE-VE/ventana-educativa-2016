@@ -35,19 +35,17 @@ class SessionsController extends Controller {
 //        $url = $request->session()->get('url');
 //            print $url;
         //Autenticar a Facebook        
-        var_dump ($_SERVER['HTTP_USER_AGENT']);
-        $f = strpos($_SERVER['HTTP_USER_AGENT'], "facebookexternalhit/1.1" );
-        var_dump ($f);
-//        if (strpos($_SERVER['HTTP_USER_AGENT'], "facebookexternalhit/1.1" ) !== false){
-//            
+        if (strpos($_SERVER['HTTP_USER_AGENT'], "facebookexternalhit/1.1" ) !== false){
+            print 'if';
 //            $user = \App\User::where ('email', 'facebook@facebook.com')->first();
 //            Auth::login ($user);
 //            $url = $request->session()->get('url');
 //            return Redirect::to ($url);
-////            return redirect()->intended($url);
-//        }   else { 
+//            return redirect()->intended($url);
+        }   else { 
+            print 'else';
 //            return Redirect::to ('acceso');
-//        }
+        }
     }
 
     public function store(Request $request) {
