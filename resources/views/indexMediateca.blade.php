@@ -15,12 +15,6 @@ and open the template in the editor.
         <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
         <!--metadatos para facebook-->
         
-        <meta property="og:url" content="http://ventana.televisioneducativa.gob.mx/" /> 
-        <meta property="fb:app_id" content="1408909052733113" /> 
-        <meta property="og:type" content="article" />                                  
-        <meta property="og:title" content="Ventana Educativa" /> 
-        <meta property="og:image" content="http://cdn-s3.si.com/s3fs-public/styles/mmqb_marquee_large/public/2016/01/04/antonio-brown-playoffs.jpg?itok=FT2R_Scm" /> 
-        <meta property="og:description" content="Aquí va la descripción" />
         
         <link rel="shortcut icon" href="{{ asset('redmite1.ico') }}" >
 
