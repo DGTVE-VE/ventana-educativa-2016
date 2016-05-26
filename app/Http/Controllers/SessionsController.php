@@ -36,14 +36,13 @@ class SessionsController extends Controller {
 //            print $url;
         //Autenticar a Facebook        
         if (strpos($_SERVER['HTTP_USER_AGENT'], "facebookexternalhit/1.1" ) !== false){
-            print 'if';
-//            $user = \App\User::where ('email', 'facebook@facebook.com')->first();
-//            Auth::login ($user);
-//            $url = $request->session()->get('url');
+            $user = \App\User::where ('email', 'facebook@facebook.com')->first();
+            Auth::login ($user);
+            $url = $request->session()->get('url');
+            print $url;
 //            return Redirect::to ($url);
 //            return redirect()->intended($url);
         }   else { 
-            print 'else';
 //            return Redirect::to ('acceso');
         }
     }
