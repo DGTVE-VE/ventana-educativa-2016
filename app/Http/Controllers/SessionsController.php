@@ -35,6 +35,7 @@ class SessionsController extends Controller {
 //        $url = $request->session()->get('url');
 //            print $url;
         //Autenticar a Facebook        
+        var_dump ($_SERVER['HTTP_USER_AGENT']);
         $f = strpos($_SERVER['HTTP_USER_AGENT'], "facebookexternalhit/1.1" );
         var_dump ($f);
 //        if (strpos($_SERVER['HTTP_USER_AGENT'], "facebookexternalhit/1.1" ) !== false){
