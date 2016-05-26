@@ -51,7 +51,8 @@
 										<div id="titulo{{$tira}}{{$consecutivo}}" class="caption txtSobreImg escondeTitulo">
 											<h4 class="estiloTxt">{{$elemento->titulo_serie}}</h4>
 											<span class="estiloTxt">{{$elemento->descripcion}}</span>
-											<img class="estiloIconoMas divIconoMas" src="{{url('imagenes/educaplay/flechaDetalle.png')}}" onclick="muestraDetalle({{$tira}},{{$elemento->id}})"/>
+											<!--img class="estiloIconoMas divIconoMas" src="{{url('imagenes/educaplay/flechaDetalle.png')}}" onclick="muestraDetalle({{$tira}},{{$elemento->id}})"/-->
+											<img class="estiloIconoMas divIconoMas" src="{{url('imagenes/educaplay/flechaDetalle.png')}}" onclick="muestraDetalle({{$tira}},2)"/>
 										</div>
 									</div>
 								</div>

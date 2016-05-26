@@ -1,20 +1,5 @@
 <?php
 
-/* * ************************ Autenticación ************************ */
-//Route::get ('/createUser', function (){
-//    \App\User::create ([
-//        'name'=>'Israel',
-//        'email'=>'j.israel.toledo@gmail.com',
-//        'password'=> Hash::make ('israel')
-//        ]);
-//});
-Route::resource('user', 'Api\User');
-
-Route::get('user/existEmail/{email}', ['as' => 'user.existEmail', 'uses' => 'Api\User@existEmail']);
-Route::get('user/existNick/{nickname}', ['as' => 'user.existNick', 'uses' => 'Api\User@existNick']);
-Route::get('login', 'SessionsController@create');
-Route::get('logout', 'SessionsController@destroy');
-/* * ************************ Autenticación ************************ */
 
 
 
@@ -24,6 +9,15 @@ Route::get('logout', 'SessionsController@destroy');
 
 /* Las rutas dentro de este grupo, tienen sesión */
 Route::group(['middleware' => 'web'], function () {
+    /* * ************************ Autenticación ************************ */
+    Route::resource('user', 'Api\User');
+
+    Route::get('user/existEmail/{email}', ['as' => 'user.existEmail', 'uses' => 'Api\User@existEmail']);
+    Route::get('user/existNick/{nickname}', ['as' => 'user.existNick', 'uses' => 'Api\User@existNick']);
+    Route::get('login', 'SessionsController@create');
+    Route::get('logout', 'SessionsController@destroy');
+    /* * ************************ Autenticación ************************ */
+
     Route::resource('sessions', 'SessionsController');
     Route::auth();
     Route::get('/', 'VentanaController@ventana_educativa');
@@ -124,6 +118,7 @@ Route::group(['middleware' => 'web'], function () {
     Route::get('educaplay', 'EducaplayController@educaplay');
     Route::get('educaplay/detalleSeries', 'EducaplayController@series');
 	Route::get('educaplay/descripciones/{serieId}', 'EducaplayController@descripciones');
+	Route::get('educaplay/descripciones/temporada/{serieId}/{temporada}', 'EducaplayController@temporada');
 
     /*     * **************************Educaplay********************** */
 
