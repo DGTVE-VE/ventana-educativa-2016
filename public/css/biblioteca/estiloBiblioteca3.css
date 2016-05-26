@@ -20,7 +20,7 @@
     z-index: 1000;
     left: 220px; /*ampliar contenedor de menú  220*/
     width: 0;
-    height: 39.5%; /*tamaño del contenedor de la lista de menú */
+    height: 44%; /*41tamaño del contenedor de la lista de menú */ 
     margin-left: -220px;
     margin-top: 0; /*margen superior del menú*/ 
     overflow-y: auto;
@@ -62,7 +62,7 @@
 
 .sidebar-nav li {
     position: relative; 
-    line-height: 30px;
+    line-height: 25px;
     display: inline-block;
     width: 100%;
     border-bottom: 2px solid #b4b4b4; /*border inferior del menú */
@@ -178,5 +178,8 @@
 }
 #sinBorde{
      border: none;
+}
+.ajusta-alto-menu{
+    height: auto;
 }
 

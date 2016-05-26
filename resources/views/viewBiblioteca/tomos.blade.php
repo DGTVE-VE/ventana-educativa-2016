@@ -10,7 +10,8 @@
 @include('viewVentana.encabezadoVentana')
 <style>
     .fondoDegradadoMenuInicial{
-        background: rgba(0, 0, 0, .4);
+        background: rgba(0, 0, 0, .7);
+        /*background: #000;*/
         border: none;
     }
     .fondoDegradadoMenu{
@@ -156,8 +157,12 @@
 				@endif
 			@endforeach
 		</div>
-		<img src="{{ asset('imagenes/biblioteca/tomos/plecaMadera.png') }}" class="imgMadera"/>
-		<div class="textoEstante estanteInferior text-uppercase"> {{$clasificacionActual}}</div>
+		@if($i===0)
+			<div class="textoEstante text-uppercase" style="color:black;"> NO HAY BIBLIOTECAS PARA ESTA CLASIFICACI&#211;N </div>
+		@else
+			<img src="{{ asset('imagenes/biblioteca/tomos/plecaMadera.png') }}" class="imgMadera"/>
+			<div class="textoEstante estanteInferior text-uppercase"> {{$clasificacionActual}}</div>
+		@endif
 	</div>
 </div>
 @include('viewBiblioteca.menuBiblioteca')

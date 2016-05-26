@@ -19,13 +19,7 @@ and open the template in the editor.
         <link rel="stylesheet" href="{{ asset('css/red/estiloredmesoamericana.css') }}" >
         <link rel="shortcut icon" href="{{ asset('redmite1.ico') }}" >
         
-        <meta property="og:url" content="http://ventana.televisioneducativa.gob.mx/" /> 
-        <meta property="fb:app_id" content="1408909052733113" /> 
-        <meta property="og:type" content="article" />                                  
-        <meta property="og:title" content="Ventana Educativa" /> 
-        <meta property="og:image" content="http://cdn-s3.si.com/s3fs-public/styles/mmqb_marquee_large/public/2016/01/04/antonio-brown-playoffs.jpg?itok=FT2R_Scm" /> 
-        <meta property="og:description" content="Aquí va la descripción" />
-
+        
         <!-- Latest compiled and minified CSS -->
         <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 

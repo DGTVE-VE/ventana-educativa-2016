@@ -15,10 +15,10 @@ class BibliotecaController extends Controller {
 
     public function tomos($categoria) {
 		if($categoria==0){
-			$tomos = DB::table('Biblioteca')->select('url_tomo','url_descripcion','clasifica_id','pais','link_consulta')->get();
+			$tomos = DB::table('biblioteca')->select('url_tomo','url_descripcion','clasifica_id','pais','link_consulta')->get();
 		}
 		else{
-			$tomos = DB::table('Biblioteca')->select('url_tomo','url_descripcion','clasifica_id','pais','link_consulta')->where('clasifica_id','=',$categoria)->get();
+			$tomos = DB::table('biblioteca')->select('url_tomo','url_descripcion','clasifica_id','pais','link_consulta')->where('clasifica_id','=',$categoria)->get();
 		}
         
 //        dd($tomos);

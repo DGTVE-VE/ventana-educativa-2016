@@ -97,12 +97,12 @@ html,body {
     }
     .margenMenuChico{
         padding-top:55px;
-    }
+    }11:36 a. m. 25/05/2016
     .estiloTab{
         height:350px; color:white;
     }
     .iconoCerrar{
-        cursor:pointer; position:absolute; right:2%; font-size:2em;
+        cursor:pointer; position:relative; left:90%; font-size:2em; color:white; display:none;
     }
     .escondeTitulo{
         visibility:hidden;
