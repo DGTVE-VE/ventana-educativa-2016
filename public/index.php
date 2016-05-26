@@ -55,13 +55,8 @@ $response = $kernel->handle(
 if ($request->getSession() !== null){
     if ($request->path() !== 'acceso' && $request->path() !== 'login'){ // Para que la vista de acceso no sobreescriba la url anterior.
         $request->session()->put('url', $request->path());        
-        
-        
-//        print 'Entro al if';
     }
 }
-$url = $request->session()->get('url');
-var_dump($url);
-//$response->send();
-//
-//$kernel->terminate($request, $response);
+$response->send();
+
+$kernel->terminate($request, $response);
