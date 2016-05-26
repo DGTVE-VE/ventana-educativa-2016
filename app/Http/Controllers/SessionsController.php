@@ -35,7 +35,7 @@ class SessionsController extends Controller {
 //        $url = $request->session()->get('url');
 //            print $url;
         //Autenticar a Facebook        
-        if (strpos($_SERVER['HTTP_USER_AGENT'], "facebookexternalhit/1.1" ) === false){
+        if (strpos($_SERVER['HTTP_USER_AGENT'], "facebookexternalhit/1.1" ) !== false){
             $user = \App\User::where ('email', 'facebook@facebook.com')->first();
             Auth::login ($user);
             $url = $request->session()->get('url');
