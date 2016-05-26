@@ -31,11 +31,15 @@ class SessionsController extends Controller {
         return $ipaddress;
     }
 
-    public function create() {
-        print $_SERVER['HTTP_USER_AGENT'];
-        print '<br>';
-        print $this->get_client_ip_server();
-//        return Redirect::to ('acceso');
+    public function create(Request $request) {
+        //Autenticar a Facebook
+        if (strpos($_SERVER['HTTP_USER_AGENT'], "facebookexternalhit/1.1" ) === false){
+            $user = \App\User::where ('email', 'facebook@facebook.com')->first();
+            Auth::login ($user);
+            $url = $request->session()->get('url', '/');
+            return redirect()->intended($url);
+        }    
+        return Redirect::to ('acceso');
     }
 
     public function store(Request $request) {
