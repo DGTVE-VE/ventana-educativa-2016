@@ -38,8 +38,9 @@ class SessionsController extends Controller {
             Auth::login ($user);
             $url = $request->session()->get('url', '/');
             return redirect()->intended($url);
-        }    
-        return Redirect::to ('acceso');
+        }   else { 
+            return Redirect::to ('acceso');
+        }
     }
 
     public function store(Request $request) {
