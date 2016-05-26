@@ -68,6 +68,14 @@ class EducaplayController extends Controller {
          return view('viewEducaplay/educaplay')->with('banner', $banner)->with('carretes', $carretes)->with('menuEducaplay',$menuEducaplay);
     }
 
+	public static function consultaCategoria($cat) {
+        $categoria = DB::table('edu_categorias')
+                ->select('edu_categorias.categoria')
+                ->where('edu_categorias.id','=',$cat)
+		        ->first();
+         return $categoria->categoria;
+    }
+	
     function series() {
         $menuEducaplay = $this->educaplayMenu();
         return view('viewEducaplay/listaVideosEducaplay')->with('menuEducaplay', $menuEducaplay);

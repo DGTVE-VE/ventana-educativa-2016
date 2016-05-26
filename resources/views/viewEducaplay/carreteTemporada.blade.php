@@ -3,7 +3,7 @@
 
 	<div id="carreteCapitulos" class="carousel slide" data-ride="carousel" data-interval="false">
 		<div class="carousel-inner" role="listbox">
-		<?php $i=0; ?>
+		{{--*/ $i=0; /*--}}
 		@foreach($detallesSerie as $detalle)
 			@if($i===0)
 				<div class="item active">
@@ -13,8 +13,8 @@
 			@elseif(($i % 5 === 0 ) && ($i !==0))
 				<div class="item">
 					<div class="row">
-						<div class="col-xs-1 col-sm-1 col-md-1">
-						</div>
+						<!--div class="col-xs-1 col-sm-1 col-md-1">
+						</div-->
 			@endif
 						<div class="col-xs-4 col-sm-4 col-md-2 cambiaPadding">
 							<div class="thumbnail fondoTrans">
@@ -25,7 +25,7 @@
 								</div>
 							</div>
 						</div>
-			<?php $i++; ?>
+			{{--*/ $i++; /*--}}
 			@if($i % 5 === 0)
 					</div>
 				</div>
