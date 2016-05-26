@@ -39,7 +39,7 @@ class SessionsController extends Controller {
             $user = \App\User::where ('email', 'facebook@facebook.com')->first();
             Auth::login ($user);
             $url = $request->session()->get('url');
-            print $url;
+            var_dump($url);
 //            return Redirect::to ($url);
 //            return redirect()->intended($url);
         }   else { 
