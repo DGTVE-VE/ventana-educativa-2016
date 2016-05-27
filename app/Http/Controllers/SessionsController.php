@@ -43,7 +43,7 @@ class SessionsController extends Controller {
 //            return Redirect::to ($url);
 //            return redirect()->intended($url);
         }   else { 
-//            return Redirect::to ('acceso');
+            return Redirect::to ('acceso');
         }
     }
 
