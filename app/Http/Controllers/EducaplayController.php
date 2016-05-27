@@ -76,9 +76,16 @@ class EducaplayController extends Controller {
          return $categoria->categoria;
     }
 	
-    function series() {
+    function series($idSerie) {
+		$episodiosSerie = DB::table('edu_serie')
+				->join('edu_imagen', 'edu_serie.id', '=', 'edu_imagen.serie_id')
+				->join('edu_video', 'edu_serie.id', '=', 'edu_video.serie_id')
+                ->select('edu_serie.titulo_serie', 'edu_serie.temporadas_total', 'edu_serie.clasificacion_id', 'edu_serie.descripcion', 'edu_imagen.url', 'edu_imagen.ubicacion_id', 'edu_video.sinopsis', 'edu_video.temporada', 'edu_video.capitulo', 'edu_video.url_video')
+                ->where('edu_serie.id','=',$idSerie)
+				->where('edu_imagen.ubicacion_id','=',5)
+		        ->get();
         $menuEducaplay = $this->educaplayMenu();
-        return view('viewEducaplay/listaVideosEducaplay')->with('menuEducaplay', $menuEducaplay);
+        return view('viewEducaplay/listaVideosEducaplay')->with('menuEducaplay', $menuEducaplay)->with('episodiosSerie', $episodiosSerie);
     }
     
     		//    function getImagesVerticales ($tipo, $id){

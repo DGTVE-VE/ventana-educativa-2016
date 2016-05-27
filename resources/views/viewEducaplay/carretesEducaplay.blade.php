@@ -34,8 +34,7 @@
 		/*--}}
 		<div class="row margenesFila margenInferior">
 			<div class="col-md-12 col-lg-12 text-uppercase">
-			{{--*/ $ligaDetalle = 'educaplay/detalleSeries/'.$elemento->categoria_id /*--}}
-				<a href="{{url($ligaDetalle)}}"><p style="color:white; font-size:16px;"> {{$nombreCat}}</p></a>
+				<p style="color:white; font-size:16px;"> {{$nombreCat}}</p>
 			</div>
 		</div>
 		{{--*/ $catAnterior = $elemento->categoria_id; /*--}}
@@ -53,7 +52,11 @@
 					@endif
 								<div class="col-xs-4 col-sm-4 col-md-2 cambiaPadding">
 									<div class="thumbnail fondoTrans" onmouseover="muestraTitulo({{$tira}}{{$consecutivo}})" onmouseout="ocultaTitulo({{$tira}}{{$consecutivo}})">
-										<img id="imagen{{$tira}}{{$consecutivo}}" class="img-responsive thumbnailVertical" src="{{url($elemento->url)}}" alt="...">
+										<!-- $ligaDetalle = 'educaplay/detalleSeries/'.$elemento->id /*-->
+										{{--*/ $ligaDetalle = 'educaplay/detalleSeries/2' /*--}}
+										<a href="{{url($ligaDetalle)}}">
+											<img id="imagen{{$tira}}{{$consecutivo}}" class="img-responsive thumbnailVertical" src="{{url($elemento->url)}}" alt="...">
+										</a>
 										<div id="titulo{{$tira}}{{$consecutivo}}" class="caption txtSobreImg escondeTitulo">
 											<h4 class="estiloTxt">{{$elemento->titulo_serie}}</h4>
 											<span class="estiloTxt">{{$elemento->descripcion}}</span>
