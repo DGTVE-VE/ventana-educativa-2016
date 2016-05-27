@@ -34,7 +34,8 @@
 		/*--}}
 		<div class="row margenesFila margenInferior">
 			<div class="col-md-12 col-lg-12 text-uppercase">
-				<a href="{{url('educaplay/detalleSeries')}}"><p style="color:white; font-size:16px;"> {{$nombreCat}}</p></a>
+			{{--*/ $ligaDetalle = 'educaplay/detalleSeries/'.$elemento->categoria_id /*--}}
+				<a href="{{url($ligaDetalle)}}"><p style="color:white; font-size:16px;"> {{$nombreCat}}</p></a>
 			</div>
 		</div>
 		{{--*/ $catAnterior = $elemento->categoria_id; /*--}}
