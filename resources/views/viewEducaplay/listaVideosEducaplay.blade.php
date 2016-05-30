@@ -43,6 +43,11 @@ Educaplay
 	.margenesFila{
 		padding-right:35px; padding-left:35px; margin-top:10px; margin-bottom:30px;
 	}
+	.tamanoIconoMas{
+		width:40%;
+		position:relative;
+		top: 30px;
+	}
 </style>
 @include('viewEducaplay.menuEducaplay')
 @endsection
@@ -64,10 +69,10 @@ Educaplay
 				<div class="col-xs-6 col-sm-6 col-md-2 cambiaPadding">
 					<div class="thumbnail fondoTrans">
 						<img src="http://img.youtube.com/vi/{{ $serie->url_video}}/2.jpg" class='item-a' style="height:150px;"> 
-						<div class="caption txtSobreImg estiloTxt">
-							<h4 class="estiloTxt"> Temporada: {{$serie->temporada}} Capitulo: {{$serie->capitulo}}</h4>
-							<span class="estiloTxt">{{$serie->sinopsis}}</span>
-							<img class="estiloIconoMas divIconoMas" src="{{url('imagenes/educaplay/flechaDetalle.png')}}" onclick="muestraDetalle(1,2)"/>
+						<div class="caption estiloTxt">
+							<h4 class="estiloTxt"> Temporada: {{$serie->temporada}} Episodio: {{$serie->capitulo}}</h4>
+							<span class="estiloTxt">{{$serie->sinopsis}}</span><br>
+							<!--img class="estiloIconoMas tamanoIconoMas" src="{{url('imagenes/educaplay/flechaDetalle.png')}}" onclick="muestraDetalle(1,2)"/-->
 						</div>
 					</div>
 				</div>
