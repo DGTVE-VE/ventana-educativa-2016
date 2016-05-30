@@ -1,6 +1,4 @@
-<?php
-	use App\Http\Controllers\EducaplayController;
-?>
+{{--*/ 	use App\Http\Controllers\EducaplayController; /*--}}
 <hr class="hrNegra">
 <!--Carrete 1 -->
 {{--*/ $tira=0; $catAnterior=""; $cuenta=1; $consecutivo=1; /*--}}
@@ -58,8 +56,8 @@
 											<img id="imagen{{$tira}}{{$consecutivo}}" class="img-responsive thumbnailVertical" src="{{url($elemento->url)}}" alt="...">
 										</a>
 										<div id="titulo{{$tira}}{{$consecutivo}}" class="caption txtSobreImg escondeTitulo">
-											<h4 class="estiloTxt">{{$elemento->titulo_serie}}</h4>
-											<span class="estiloTxt">{{$elemento->descripcion}}</span>
+											<h4 class="estiloTxt">{{$elemento->titulo_serie}}</h4><br>
+											<!--span class="estiloTxt">{{$elemento->descripcion}}</span-->
 											<!--img class="estiloIconoMas divIconoMas" src="{{url('imagenes/educaplay/flechaDetalle.png')}}" onclick="muestraDetalle({{$tira}},{{$elemento->id}})"/-->
 											<img class="estiloIconoMas divIconoMas" src="{{url('imagenes/educaplay/flechaDetalle.png')}}" onclick="muestraDetalle({{$tira}},2)"/>
 										</div>
