@@ -87,7 +87,9 @@ class EducaplayController extends Controller {
         $menuEducaplay = $this->educaplayMenu();
         return view('viewEducaplay/listaVideosEducaplay')->with('menuEducaplay', $menuEducaplay)->with('episodiosSerie', $episodiosSerie);
     }
-    
+    function videoSerie() {
+        return view('viewEducaplay/videoSerie');
+    }
     		//    function getImagesVerticales ($tipo, $id){
 //         COnuslta
 //       dd($imagenVertical);   

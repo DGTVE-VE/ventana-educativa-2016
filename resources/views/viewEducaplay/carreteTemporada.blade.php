@@ -18,7 +18,7 @@
 			@endif
 						<div class="col-xs-4 col-sm-4 col-md-2 cambiaPadding">
 							<div class="thumbnail fondoTrans">
-								<img src="http://img.youtube.com/vi/{{ $detalle->url_video }}/2.jpg" class='item-a'> 
+								<a href="{{url('educaplay/videoSerie')}}"><img src="http://img.youtube.com/vi/{{ $detalle->url_video }}/2.jpg" class='item-a'></a>
 								<div id="titulo21" class="caption">
 									<span class="estiloTxt">{{$detalle->sinopsis}}</span>
 									<h4 class="estiloTxt">Temporada: {{$detalle->temporada}}</h4>

@@ -56,7 +56,13 @@
 											<img id="imagen{{$tira}}{{$consecutivo}}" class="img-responsive thumbnailVertical" src="{{url($elemento->url)}}" alt="...">
 										</a>
 										<div id="titulo{{$tira}}{{$consecutivo}}" class="caption txtSobreImg escondeTitulo">
-											<h4 class="estiloTxt">{{$elemento->titulo_serie}}</h4><br>
+											<h4 class="estiloTxt">
+											@if(strlen($elemento->titulo_serie)>60)
+												{{substr($elemento->titulo_serie,0,60).'...'}}
+											@else
+												{{$elemento->titulo_serie}}
+											@endif
+											</h4><br>
 											<!--span class="estiloTxt">{{$elemento->descripcion}}</span-->
 											<!--img class="estiloIconoMas divIconoMas" src="{{url('imagenes/educaplay/flechaDetalle.png')}}" onclick="muestraDetalle({{$tira}},{{$elemento->id}})"/-->
 											<img class="estiloIconoMas divIconoMas" src="{{url('imagenes/educaplay/flechaDetalle.png')}}" onclick="muestraDetalle({{$tira}},2)"/>

@@ -17,6 +17,11 @@ Educaplay
 				$('#navegacionVentana').css('background','transparent');
 			}
 		});
+		function muestraVideo(urlVideo){
+			var direccionVideo = "https://www.youtube.com/embed/" + urlVideo;
+			$('#episodio7').attr('src',direccionVideo);
+			$('#episodio8').css('display','block');
+		}
 	</script>
 <style>
 	.estiloTxt{
@@ -48,13 +53,22 @@ Educaplay
 		position:relative;
 		top: 30px;
 	}
+	.marcoVideo{
+		width:650px; height:450px;
+	}
+	.efectoLento{
+		display:none;
+		transition: all 3s ease;
+		-webkit-transition: all 3s ease;
+		-moz-transition: all 3s ease;
+		-o-transition: all 3s ease;
+	}
 </style>
 @include('viewEducaplay.menuEducaplay')
 @endsection
 @section('cuerpoEducaplay')
 	<div class="row" style="height:100px;">
 	</div>
-	
 	{{--*/ $imprimeTitulo=0; /*--}}
 	@foreach ($episodiosSerie as $serie)
 		@if($imprimeTitulo===0)
@@ -63,12 +77,18 @@ Educaplay
 					<p class="txtTitulo">{{$serie->titulo_serie}}</p>
 				</div>
 			</div>
+			<div class="row">
+				<div id="episodio8" class="col-md-6 col-md-offset-3 efectoLento">
+					<iframe id="episodio7" src="" frameborder="0" allowfullscreen class="marcoVideo">
+					</iframe>
+				</div>
+			</div>
 			<div class="row margenesFila">
 			{{--*/ $imprimeTitulo++; /*--}}
 		@endif
 				<div class="col-xs-6 col-sm-6 col-md-2 cambiaPadding">
 					<div class="thumbnail fondoTrans">
-						<img src="http://img.youtube.com/vi/{{ $serie->url_video}}/2.jpg" class='item-a' style="height:150px;"> 
+						<img src="http://img.youtube.com/vi/{{ $serie->url_video}}/2.jpg" class='item-a' style="height:150px; cursor:pointer;" onclick="muestraVideo('{{$serie->url_video}}')">
 						<div class="caption estiloTxt">
 							<h4 class="estiloTxt"> Temporada: {{$serie->temporada}} Episodio: {{$serie->capitulo}}</h4>
 							<span class="estiloTxt">{{$serie->sinopsis}}</span><br>
