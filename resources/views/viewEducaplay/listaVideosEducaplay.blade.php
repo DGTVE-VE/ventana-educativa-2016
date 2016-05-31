@@ -69,15 +69,15 @@ Educaplay
 @section('cuerpoEducaplay')
 	<div class="row" style="height:100px;">
 	</div>
-	{{--*/ $imprimeTitulo=0; /*--}}
+	{{--*/ $imprimeTitulo=1; /*--}}
 	@foreach ($episodiosSerie as $serie)
-		@if($imprimeTitulo===0)
+		@if($imprimeTitulo===1)
 			<div class="row margenesFila">
 				<div class="col-md-12 col-lg-12">
 					<p class="txtTitulo">{{$serie->titulo_serie}}</p>
 				</div>
 			</div>
-			<div class="row">
+			<div class="row margenesFila">
 			@if($urlVideo=='0')
 				<div id="episodio8" class="col-md-6 col-md-offset-3 efectoLento">
 				{{--*/ $srcUrlVideo = ""; /*--}}
@@ -90,11 +90,10 @@ Educaplay
 				</div>
 			</div>
 			<div class="row margenesFila">
-			{{--*/ $imprimeTitulo++; /*--}}
 		@endif
-				<div class="col-xs-6 col-sm-6 col-md-2 cambiaPadding">
+				<div class="col-xs-6 col-sm-6 col-md-2 col-lg-2 cambiaPadding">
 					<div class="thumbnail fondoTrans">
-						<img src="http://img.youtube.com/vi/{{ $serie->url_video}}/2.jpg" class='item-a' style="height:150px; cursor:pointer;" onclick="muestraVideo('{{$serie->url_video}}')">
+						<img src="http://img.youtube.com/vi/{{ $serie->url_video}}/2.jpg" class='item-a' style="height:150px; cursor:pointer;" onclick="muestraVideo('{{$serie->url_video}}')"/>
 						<div class="caption estiloTxt">
 							<h4 class="estiloTxt"> Temporada: {{$serie->temporada}} Episodio: {{$serie->capitulo}}</h4>
 							<span class="estiloTxt">{{$serie->sinopsis}}</span><br>
@@ -102,6 +101,11 @@ Educaplay
 						</div>
 					</div>
 				</div>
+		@if($imprimeTitulo % 6 === 0 && $imprimeTitulo !== 0)
+				</div>
+			<div class="row margenesFila">
+		@endif
+			{{--*/ $imprimeTitulo++; /*--}}
 	@endforeach
 			</div>
 @endsection

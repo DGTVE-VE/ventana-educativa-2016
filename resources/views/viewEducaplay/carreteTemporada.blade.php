@@ -18,7 +18,7 @@
 			@endif
 						<div class="col-xs-4 col-sm-4 col-md-2 cambiaPadding">
 							<div class="thumbnail fondoTrans">
-								{{--*/ $ligaDetalle = 'educaplay/detalleSeries/2/'.$detalle->url_video /*--}}
+								{{--*/ $ligaDetalle = 'educaplay/detalleSeries/'.$detalle->id.'/'.$detalle->url_video /*--}}
 								<a href="{{url($ligaDetalle)}}" target="_top"><img src="http://img.youtube.com/vi/{{ $detalle->url_video }}/2.jpg" class='item-a'></a>
 								<div id="titulo21" class="caption">
 									<span class="estiloTxt">{{$detalle->sinopsis}}</span>

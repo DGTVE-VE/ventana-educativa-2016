@@ -3,6 +3,7 @@
 @stop
 @extends('indexEducaplay')
 @section('cuerpoEducaplay')
+@if($primerDetalleSerie !== null)
 	<div class="col-md-12" style="color:white;">
         <div class="tab-content estiloTab">
             <div id="descripcion1" class="tab-pane fade in active">
@@ -69,4 +70,9 @@
             <li></li>
         </ul>
     </div>
+@else
+	<div class="col-md-3 col-md-offset-4">
+		<p style="color:white;"> SIN DATOS PARA ESTA SERIE</p>
+	</div>
+@endif
 @endsection
