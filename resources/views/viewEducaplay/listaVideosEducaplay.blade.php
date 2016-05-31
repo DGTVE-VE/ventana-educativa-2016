@@ -18,7 +18,7 @@ Educaplay
 			}
 		});
 		function muestraVideo(urlVideo){
-			var direccionVideo = "https://www.youtube.com/embed/" + urlVideo;
+			var direccionVideo = "https://www.youtube.com/embed/" + urlVideo + "?autoplay=1";
 			$('#episodio7').attr('src',direccionVideo);
 			$('#episodio8').css('display','block');
 		}
@@ -78,8 +78,14 @@ Educaplay
 				</div>
 			</div>
 			<div class="row">
+			@if($urlVideo=='0')
 				<div id="episodio8" class="col-md-6 col-md-offset-3 efectoLento">
-					<iframe id="episodio7" src="" frameborder="0" allowfullscreen class="marcoVideo">
+				{{--*/ $srcUrlVideo = ""; /*--}}
+			@else
+				<div id="episodio8" class="col-md-6 col-md-offset-3">
+				{{--*/ $srcUrlVideo = "https://www.youtube.com/embed/".$urlVideo."?autoplay=1";/*--}}
+			@endif
+					<iframe id="episodio7" src="{{$srcUrlVideo}}" frameborder="0" class="marcoVideo">
 					</iframe>
 				</div>
 			</div>

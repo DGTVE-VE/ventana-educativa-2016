@@ -51,7 +51,7 @@
 								<div class="col-xs-4 col-sm-4 col-md-2 cambiaPadding">
 									<div class="thumbnail fondoTrans" onmouseover="muestraTitulo({{$tira}}{{$consecutivo}})" onmouseout="ocultaTitulo({{$tira}}{{$consecutivo}})">
 										<!-- $ligaDetalle = 'educaplay/detalleSeries/'.$elemento->id /*-->
-										{{--*/ $ligaDetalle = 'educaplay/detalleSeries/2' /*--}}
+										{{--*/ $ligaDetalle = 'educaplay/detalleSeries/2/0' /*--}}
 										<a href="{{url($ligaDetalle)}}">
 											<img id="imagen{{$tira}}{{$consecutivo}}" class="img-responsive thumbnailVertical" src="{{url($elemento->url)}}" alt="...">
 										</a>

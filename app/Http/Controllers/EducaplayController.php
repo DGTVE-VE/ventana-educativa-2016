@@ -76,7 +76,7 @@ class EducaplayController extends Controller {
          return $categoria->categoria;
     }
 	
-    function series($idSerie) {
+    function series($idSerie, $urlVideo) {
 		$episodiosSerie = DB::table('edu_serie')
 				->join('edu_imagen', 'edu_serie.id', '=', 'edu_imagen.serie_id')
 				->join('edu_video', 'edu_serie.id', '=', 'edu_video.serie_id')
@@ -85,7 +85,7 @@ class EducaplayController extends Controller {
 				->where('edu_imagen.ubicacion_id','=',5)
 		        ->get();
         $menuEducaplay = $this->educaplayMenu();
-        return view('viewEducaplay/listaVideosEducaplay')->with('menuEducaplay', $menuEducaplay)->with('episodiosSerie', $episodiosSerie);
+        return view('viewEducaplay/listaVideosEducaplay')->with('menuEducaplay', $menuEducaplay)->with('episodiosSerie', $episodiosSerie)->with('urlVideo', $urlVideo);
     }
     function videoSerie() {
         return view('viewEducaplay/videoSerie');
