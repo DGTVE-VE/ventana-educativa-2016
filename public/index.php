@@ -35,6 +35,25 @@ require __DIR__.'/../bootstrap/autoload.php';
 
 $app = require_once __DIR__.'/../bootstrap/app.php';
 
+
+/*
+|--------------------------------------------------------------------------
+| Run The Application
+|--------------------------------------------------------------------------
+|
+| Once we have the application, we can handle the incoming request
+| through the kernel, and send the associated response back to
+| the client's browser allowing them to enjoy the creative
+| and wonderful application we have prepared for them.
+|
+*/
+
+$kernel = $app->make(Illuminate\Contracts\Http\Kernel::class);
+
+$response = $kernel->handle(
+    $request = Illuminate\Http\Request::capture()
+);
+
 function is_session_started()
 {
     if ( php_sapi_name() !== 'cli' ) {
@@ -56,25 +75,6 @@ print $request->path();
 if ($request->path() !== 'acceso' && $request->path() !== 'login'){ // Para que la vista de acceso no sobreescriba la url anterior.
         $_SESSION['url'] = $request->path();  
 }
-/*
-|--------------------------------------------------------------------------
-| Run The Application
-|--------------------------------------------------------------------------
-|
-| Once we have the application, we can handle the incoming request
-| through the kernel, and send the associated response back to
-| the client's browser allowing them to enjoy the creative
-| and wonderful application we have prepared for them.
-|
-*/
-
-$kernel = $app->make(Illuminate\Contracts\Http\Kernel::class);
-
-$response = $kernel->handle(
-    $request = Illuminate\Http\Request::capture()
-);
-
-
 
 //if ($request->getSession() !== null){
 //    if ($request->path() !== 'acceso' && $request->path() !== 'login'){ // Para que la vista de acceso no sobreescriba la url anterior.
