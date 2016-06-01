@@ -66,22 +66,22 @@ function is_session_started()
     return FALSE;
 }
 
-// Example
-if ( is_session_started() === FALSE ) 
-    session_start();
-
-print $_SESSION['url'];
-print $request->path();
-
-if ($request->path() !== 'acceso' && $request->path() !== 'login'){ // Para que la vista de acceso no sobreescriba la url anterior.
-        $_SESSION['url'] = $request->path();  
-}
-
-//if ($request->getSession() !== null){
-//    if ($request->path() !== 'acceso' && $request->path() !== 'login'){ // Para que la vista de acceso no sobreescriba la url anterior.
-//        $request->session()->put('url', $request->path());        
-//    }
+//// Example
+//if ( is_session_started() === FALSE ) 
+//    session_start();
+//
+//print $_SESSION['url'];
+//print $request->path();
+//
+//if ($request->path() !== 'acceso' && $request->path() !== 'login'){ // Para que la vista de acceso no sobreescriba la url anterior.
+//        $_SESSION['url'] = $request->path();  
 //}
+
+if ($request->getSession() !== null){
+    if ($request->path() !== 'acceso' && $request->path() !== 'login'){ // Para que la vista de acceso no sobreescriba la url anterior.
+        $request->session()->put('url', $request->path());        
+    }
+}
 $response->send();
 
 $kernel->terminate($request, $response);
