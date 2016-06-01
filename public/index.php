@@ -52,11 +52,18 @@ $kernel = $app->make(Illuminate\Contracts\Http\Kernel::class);
 $response = $kernel->handle(
     $request = Illuminate\Http\Request::capture()
 );
-if ($request->getSession() !== null){
-    if ($request->path() !== 'acceso' && $request->path() !== 'login'){ // Para que la vista de acceso no sobreescriba la url anterior.
-        $request->session()->put('url', $request->path());        
-    }
+
+session_start();
+if ($request->path() !== 'acceso' && $request->path() !== 'login'){ // Para que la vista de acceso no sobreescriba la url anterior.
+        $_SESSION['url'] = $request->path();  
 }
+
+
+//if ($request->getSession() !== null){
+//    if ($request->path() !== 'acceso' && $request->path() !== 'login'){ // Para que la vista de acceso no sobreescriba la url anterior.
+//        $request->session()->put('url', $request->path());        
+//    }
+//}
 $response->send();
 
 $kernel->terminate($request, $response);
