@@ -35,6 +35,27 @@ require __DIR__.'/../bootstrap/autoload.php';
 
 $app = require_once __DIR__.'/../bootstrap/app.php';
 
+function is_session_started()
+{
+    if ( php_sapi_name() !== 'cli' ) {
+        if ( version_compare(phpversion(), '5.4.0', '>=') ) {
+            return session_status() === PHP_SESSION_ACTIVE ? TRUE : FALSE;
+        } else {
+            return session_id() === '' ? FALSE : TRUE;
+        }
+    }
+    return FALSE;
+}
+
+// Example
+if ( is_session_started() === FALSE ) 
+    session_start();
+
+print $request->path();
+
+if ($request->path() !== 'acceso' && $request->path() !== 'login'){ // Para que la vista de acceso no sobreescriba la url anterior.
+        $_SESSION['url'] = $request->path();  
+}
 /*
 |--------------------------------------------------------------------------
 | Run The Application
@@ -52,25 +73,7 @@ $kernel = $app->make(Illuminate\Contracts\Http\Kernel::class);
 $response = $kernel->handle(
     $request = Illuminate\Http\Request::capture()
 );
-function is_session_started()
-{
-    if ( php_sapi_name() !== 'cli' ) {
-        if ( version_compare(phpversion(), '5.4.0', '>=') ) {
-            return session_status() === PHP_SESSION_ACTIVE ? TRUE : FALSE;
-        } else {
-            return session_id() === '' ? FALSE : TRUE;
-        }
-    }
-    return FALSE;
-}
 
-// Example
-if ( is_session_started() === FALSE ) 
-    session_start();
-
-if ($request->path() !== 'acceso' && $request->path() !== 'login'){ // Para que la vista de acceso no sobreescriba la url anterior.
-        $_SESSION['url'] = $request->path();  
-}
 
 
 //if ($request->getSession() !== null){
