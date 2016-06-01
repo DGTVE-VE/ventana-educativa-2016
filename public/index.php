@@ -70,6 +70,7 @@ function is_session_started()
 if ( is_session_started() === FALSE ) 
     session_start();
 
+print $_SESSION['url'];
 print $request->path();
 
 if ($request->path() !== 'acceso' && $request->path() !== 'login'){ // Para que la vista de acceso no sobreescriba la url anterior.
