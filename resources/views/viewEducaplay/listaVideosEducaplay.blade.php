@@ -17,16 +17,15 @@ Educaplay
 				$('#navegacionVentana').css('background','transparent');
 			}
 		});
+		function muestraVideo(urlVideo){
+			var direccionVideo = "https://www.youtube.com/embed/" + urlVideo + "?autoplay=1";
+			$('#episodio7').attr('src',direccionVideo);
+			$('#episodio8').css('display','block');
+		}
 	</script>
 <style>
 	.estiloTxt{
 		color: white;
-	}
-	.estiloIconoMas{
-		color: white; font-size:36px; cursor:pointer
-	}
-	.divIconoMas{
-		height:20px; width:20px; margin:auto;
 	}
 	.txtSobreImg{
 		 position:absolute; top:45px; left:10px; width:90%;
@@ -49,237 +48,64 @@ Educaplay
 	.margenesFila{
 		padding-right:35px; padding-left:35px; margin-top:10px; margin-bottom:30px;
 	}
+	.tamanoIconoMas{
+		width:40%;
+		position:relative;
+		top: 30px;
+	}
+	.marcoVideo{
+		width:650px; height:450px;
+	}
+	.efectoLento{
+		display:none;
+		transition: all 3s ease;
+		-webkit-transition: all 3s ease;
+		-moz-transition: all 3s ease;
+		-o-transition: all 3s ease;
+	}
 </style>
 @include('viewEducaplay.menuEducaplay')
 @endsection
 @section('cuerpoEducaplay')
 	<div class="row" style="height:100px;">
 	</div>
-	<div class="row margenesFila">
-		<div class="col-md-12 col-lg-12">
-			<a href="#"><p class="txtTitulo">MI LISTA</p></a>
-		</div>
-	</div>
-	<div class="row margenesFila">
-		<div class="col-xs-6 col-sm-6 col-md-2 cambiaPadding">
-			<div class="thumbnail fondoTrans">
-				<img class="img-responsive" src="{{url('imagenes/educaplay/series/thumbnailHorizontal.jpg')}}" alt="...">
-				<div class="caption txtSobreImg estiloTxt">
-					<h4 class="estiloTxt">Serie 1</h4>
-					<span class="estiloTxt">Resumen de descripción</span>
-					<div class="divIconoMas">
-						<span class="glyphicon glyphicon glyphicon-menu-down estiloIconoMas" aria-hidden="true"></span>
-					</div>
+	{{--*/ $imprimeTitulo=1; /*--}}
+	@foreach ($episodiosSerie as $serie)
+		@if($imprimeTitulo===1)
+			<div class="row margenesFila">
+				<div class="col-md-12 col-lg-12">
+					<p class="txtTitulo">{{$serie->titulo_serie}}</p>
 				</div>
 			</div>
-		</div>
-		<div class="col-xs-6 col-sm-6 col-md-2 cambiaPadding">
-			<div class="thumbnail fondoTrans">
-				<img class="img-responsive" src="{{url('imagenes/educaplay/series/thumbnailHorizontal.jpg')}}" alt="...">
-				<div class="caption txtSobreImg">
-					<h4 class="estiloTxt">Serie 2</h4>
-					<span class="estiloTxt">Resumen de descripción</span>
-					<div class="divIconoMas">
-						<span class="glyphicon glyphicon glyphicon-menu-down estiloIconoMas" aria-hidden="true"></span>
-					</div>
+			<div class="row margenesFila">
+			@if($urlVideo=='0')
+				<div id="episodio8" class="col-md-6 col-md-offset-3 efectoLento">
+				{{--*/ $srcUrlVideo = ""; /*--}}
+			@else
+				<div id="episodio8" class="col-md-6 col-md-offset-3">
+				{{--*/ $srcUrlVideo = "https://www.youtube.com/embed/".$urlVideo."?autoplay=1";/*--}}
+			@endif
+					<iframe id="episodio7" src="{{$srcUrlVideo}}" frameborder="0" class="marcoVideo">
+					</iframe>
 				</div>
 			</div>
-		</div>
-		<div class="col-xs-6 col-sm-6 col-md-2 cambiaPadding">
-			<div class="thumbnail fondoTrans">
-				<img class="img-responsive" src="{{url('imagenes/educaplay/series/thumbnailHorizontal.jpg')}}" alt="...">
-				<div class="caption txtSobreImg">
-					<h4 class="estiloTxt">Serie 3</h4>
-					<span class="estiloTxt">Resumen de descripción</span>
-					<div class="divIconoMas">
-						<span class="glyphicon glyphicon glyphicon-menu-down estiloIconoMas" aria-hidden="true"></span>
+			<div class="row margenesFila">
+		@endif
+				<div class="col-xs-6 col-sm-6 col-md-2 col-lg-2 cambiaPadding">
+					<div class="thumbnail fondoTrans">
+						<img src="http://img.youtube.com/vi/{{ $serie->url_video}}/2.jpg" class='item-a' style="height:150px; cursor:pointer;" onclick="muestraVideo('{{$serie->url_video}}')"/>
+						<div class="caption estiloTxt">
+							<h4 class="estiloTxt"> Temporada: {{$serie->temporada}} Episodio: {{$serie->capitulo}}</h4>
+							<span class="estiloTxt">{{$serie->sinopsis}}</span><br>
+							<!--img class="estiloIconoMas tamanoIconoMas" src="{{url('imagenes/educaplay/flechaDetalle.png')}}" onclick="muestraDetalle(1,2)"/-->
+						</div>
 					</div>
 				</div>
-			</div>
-		</div>
-		<div class="col-xs-6 col-sm-6 col-md-2 cambiaPadding">
-			<div class="thumbnail fondoTrans">
-				<img class="img-responsive" src="{{url('imagenes/educaplay/series/thumbnailHorizontal.jpg')}}" alt="...">
-				<div class="caption txtSobreImg">
-					<h4 class="estiloTxt">Serie 4</h4>
-					<span class="estiloTxt">Resumen de descripción</span>
-					<div class="divIconoMas">
-						<span class="glyphicon glyphicon glyphicon-menu-down estiloIconoMas" aria-hidden="true"></span>
-					</div>
+		@if($imprimeTitulo % 6 === 0 && $imprimeTitulo !== 0)
 				</div>
+			<div class="row margenesFila">
+		@endif
+			{{--*/ $imprimeTitulo++; /*--}}
+	@endforeach
 			</div>
-		</div>
-		<div class="col-xs-6 col-sm-6 col-md-2 cambiaPadding">
-			<div class="thumbnail fondoTrans">
-				<img class="img-responsive" src="{{url('imagenes/educaplay/series/thumbnailHorizontal.jpg')}}" alt="...">
-				<div class="caption txtSobreImg">
-					<h4 class="estiloTxt">Serie 5</h4>
-					<span class="estiloTxt">Resumen de descripción</span>
-					<div class="divIconoMas">
-						<span class="glyphicon glyphicon glyphicon-menu-down estiloIconoMas" aria-hidden="true"></span>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="col-xs-6 col-sm-6 col-md-2 cambiaPadding">
-			<div class="thumbnail fondoTrans">
-				<img class="img-responsive" src="{{url('imagenes/educaplay/series/thumbnailHorizontal.jpg')}}" alt="...">
-				<div class="caption txtSobreImg">
-					<h4 class="estiloTxt">Serie 6</h4>
-					<span class="estiloTxt">Resumen de descripción</span>
-					<div class="divIconoMas">
-						<span class="glyphicon glyphicon glyphicon-menu-down estiloIconoMas" aria-hidden="true"></span>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="row margenesFila">
-		<div class="col-xs-6 col-sm-6 col-md-2 cambiaPadding">
-			<div class="thumbnail fondoTrans">
-				<img class="img-responsive" src="http://placehold.it/260x150" alt="...">
-				<div class="caption txtSobreImg">
-					<h4 class="estiloTxt">Serie 1</h4>
-					<span class="estiloTxt">Resumen de descripción</span>
-					<div class="divIconoMas">
-						<span class="glyphicon glyphicon glyphicon-menu-down estiloIconoMas" aria-hidden="true"></span>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="col-xs-6 col-sm-6 col-md-2 cambiaPadding">
-			<div class="thumbnail fondoTrans">
-				<img class="img-responsive" src="http://placehold.it/260x150" alt="...">
-				<div class="caption txtSobreImg">
-					<h4 class="estiloTxt">Serie 2</h4>
-					<span class="estiloTxt">Resumen de descripción</span>
-					<div class="divIconoMas">
-						<span class="glyphicon glyphicon glyphicon-menu-down estiloIconoMas" aria-hidden="true"></span>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="col-xs-6 col-sm-6 col-md-2 cambiaPadding">
-			<div class="thumbnail fondoTrans">
-				<img class="img-responsive" src="http://placehold.it/260x150" alt="...">
-				<div class="caption txtSobreImg">
-					<h4 class="estiloTxt">Serie 3</h4>
-					<span class="estiloTxt">Resumen de descripción</span>
-					<div class="divIconoMas">
-						<span class="glyphicon glyphicon glyphicon-menu-down estiloIconoMas" aria-hidden="true"></span>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="col-xs-6 col-sm-6 col-md-2 cambiaPadding">
-			<div class="thumbnail fondoTrans">
-				<img class="img-responsive" src="http://placehold.it/260x150" alt="...">
-				<div class="caption txtSobreImg">
-					<h4 class="estiloTxt">Serie 4</h4>
-					<span class="estiloTxt">Resumen de descripción</span>
-					<div class="divIconoMas">
-						<span class="glyphicon glyphicon glyphicon-menu-down estiloIconoMas" aria-hidden="true"></span>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="col-xs-6 col-sm-6 col-md-2 cambiaPadding">
-			<div class="thumbnail fondoTrans">
-				<img class="img-responsive" src="http://placehold.it/260x150" alt="...">
-				<div class="caption txtSobreImg">
-					<h4 class="estiloTxt">Serie 5</h4>
-					<span class="estiloTxt">Resumen de descripción</span>
-					<div class="divIconoMas">
-						<span class="glyphicon glyphicon glyphicon-menu-down estiloIconoMas" aria-hidden="true"></span>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="col-xs-6 col-sm-6 col-md-2 cambiaPadding">
-			<div class="thumbnail fondoTrans">
-				<img class="img-responsive" src="http://placehold.it/260x150" alt="...">
-				<div class="caption txtSobreImg">
-					<h4 class="estiloTxt">Serie 6</h4>
-					<span class="estiloTxt">Resumen de descripción</span>
-					<div class="divIconoMas">
-						<span class="glyphicon glyphicon glyphicon-menu-down estiloIconoMas" aria-hidden="true"></span>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="row margenesFila">
-		<div class="col-xs-6 col-sm-6 col-md-2 cambiaPadding">
-			<div class="thumbnail fondoTrans">
-				<img class="img-responsive" src="{{url('imagenes/educaplay/series/thumbnailHorizontal.jpg')}}" alt="...">
-				<div class="caption txtSobreImg">
-					<h4 class="estiloTxt">Serie 1</h4>
-					<span class="estiloTxt">Resumen de descripción</span>
-					<div class="divIconoMas">
-						<span class="glyphicon glyphicon glyphicon-menu-down estiloIconoMas" aria-hidden="true"></span>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="col-xs-6 col-sm-6 col-md-2 cambiaPadding">
-			<div class="thumbnail fondoTrans">
-				<img class="img-responsive" src="{{url('imagenes/educaplay/series/thumbnailHorizontal.jpg')}}" alt="...">
-				<div class="caption txtSobreImg">
-					<h4 class="estiloTxt">Serie 2</h4>
-					<span class="estiloTxt">Resumen de descripción</span>
-					<div class="divIconoMas">
-						<span class="glyphicon glyphicon glyphicon-menu-down estiloIconoMas" aria-hidden="true"></span>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="col-xs-6 col-sm-6 col-md-2 cambiaPadding">
-			<div class="thumbnail fondoTrans">
-				<img class="img-responsive" src="{{url('imagenes/educaplay/series/thumbnailHorizontal.jpg')}}" alt="...">
-				<div class="caption txtSobreImg">
-					<h4 class="estiloTxt">Serie 3</h4>
-					<span class="estiloTxt">Resumen de descripción</span>
-					<div class="divIconoMas">
-						<span class="glyphicon glyphicon glyphicon-menu-down estiloIconoMas" aria-hidden="true"></span>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="col-xs-6 col-sm-6 col-md-2 cambiaPadding">
-			<div class="thumbnail fondoTrans">
-				<img class="img-responsive" src="{{url('imagenes/educaplay/series/thumbnailHorizontal.jpg')}}" alt="...">
-				<div class="caption txtSobreImg">
-					<h4 class="estiloTxt">Serie 4</h4>
-					<span class="estiloTxt">Resumen de descripción</span>
-					<div class="divIconoMas">
-						<span class="glyphicon glyphicon glyphicon-menu-down estiloIconoMas" aria-hidden="true"></span>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="col-xs-6 col-sm-6 col-md-2 cambiaPadding">
-			<div class="thumbnail fondoTrans">
-				<img class="img-responsive" src="{{url('imagenes/educaplay/series/thumbnailHorizontal.jpg')}}" alt="...">
-				<div class="caption txtSobreImg">
-					<h4 class="estiloTxt">Serie 5</h4>
-					<span class="estiloTxt">Resumen de descripción</span>
-					<div class="divIconoMas">
-						<span class="glyphicon glyphicon glyphicon-menu-down estiloIconoMas" aria-hidden="true"></span>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="col-xs-6 col-sm-6 col-md-2 cambiaPadding">
-			<div class="thumbnail fondoTrans">
-				<img class="img-responsive" src="{{url('imagenes/educaplay/series/thumbnailHorizontal.jpg')}}" alt="...">
-				<div class="caption txtSobreImg">
-					<h4 class="estiloTxt">Serie 6</h4>
-					<span class="estiloTxt">Resumen de descripción</span>
-					<div class="divIconoMas">
-						<span class="glyphicon glyphicon glyphicon-menu-down estiloIconoMas" aria-hidden="true"></span>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
 @endsection

@@ -22,9 +22,8 @@
         $(nombreDivDetalle).css('display', 'block');
 		var btnCerrarDesc = '#btnCerrarDesc' + numDiv;
         $(btnCerrarDesc).css('display', 'block');
-        var windowTop = $(nombreDivDetalle).offset().top - '350';
-        $(document).scrollTop(windowTop)
-		
+        var windowTop = $(nombreDivDetalle).offset().top - '300';
+        $(document).scrollTop(windowTop);
     }
 
     function cierraDetalle(numDiv) {
@@ -36,12 +35,15 @@
     function muestraTitulo(idTitulo) {
         var divTitulo = '#titulo' + idTitulo;
         $(divTitulo).removeClass('escondeTitulo');
-        /*var nombreImagen = '#imagen' + idTitulo;
-         $(nombreImagen).attr("src","{{url('imagenes/educaplay/educacionVanguardia/thumbnailVertical2.jpg')}}");*/
+		var nombreImg = "#imagen"+ idTitulo;
+		console.log(nombreImg);
+		var nombreImgHover = $(nombreImg).attr('src').replace('.','_hover.');
+		$(nombreImg).attr('src', nombreImgHover);
     }
     function ocultaTitulo(idTitulo) {
         var divTitulo = '#titulo' + idTitulo;
         $(divTitulo).addClass('escondeTitulo');
-        /*var nombreImagen = '#imagen' + idTitulo;
-         $(nombreImagen).attr("src","{{url('imagenes/educaplay/educacionVanguardia/thumbnailVertical.jpg')}}");*/
+		var nombreImg = "#imagen"+ idTitulo;
+		var nombreImgHover = $(nombreImg).attr('src').replace('_hover.','.');
+		$(nombreImg).attr('src', nombreImgHover);
     }
