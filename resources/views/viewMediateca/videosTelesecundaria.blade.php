@@ -66,9 +66,9 @@ Educamedia
                         <br>
                         <div class="col-md-3"></div>
                         <div class="col-md-3">
-                            <a href="#"><i class="fa fa-facebook-square fa-2x redesText"></i></a>
+<!--                            <a href="#"><i class="fa fa-facebook-square fa-2x redesText"></i></a>
                             <a href="#"><i class="fa fa-twitter-square fa-2x redesText"></i></a>
-                            <a href="#"><i class="fa fa-envelope-square fa-2x redesText"></i></a> 
+                            <a href="#"><i class="fa fa-envelope-square fa-2x redesText"></i></a> -->
                             <!-- Your share button code -->
                             <div class="fb-share-button" 
                                  data-href="http://ventana.televisioneducativa.gob.mx/{{Request::path()}}" 
@@ -430,7 +430,7 @@ Educamedia
                                                 <meta property="fb:app_id" content="1408909052733113" /> 
                                                 <meta property="og:type" content="article" />                                  
                                                 <meta property="og:title" content="{{$videos[0]->titulo_programa}}" /> 
-                                                <meta property="og:image" content="http://img.youtube.com/vi/{{ $video->url }}/2.jpg" /> 
+                                                <meta property="og:image" content="http://img.youtube.com/vi/{{ $video->url }}/2.jpg" />                                             
                                                 <meta property="og:description" content="{{ $videos[0]->sinopsis }}" />
                                                 
                                                 @endsection

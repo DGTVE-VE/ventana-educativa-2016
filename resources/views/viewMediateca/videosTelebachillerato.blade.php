@@ -65,9 +65,9 @@ Educamedia
                     <br>
                     <div class="col-md-3"></div>
                     <div class="col-md-3">
-                        <a href="#"><i class="fa fa-facebook-square fa-2x redesText"></i></a>
+<!--                        <a href="#"><i class="fa fa-facebook-square fa-2x redesText"></i></a>
                         <a href="#"><i class="fa fa-twitter-square fa-2x redesText"></i></a>
-                        <a href="#"><i class="fa fa-envelope-square fa-2x redesText"></i></a>                
+                        <a href="#"><i class="fa fa-envelope-square fa-2x redesText"></i></a>                -->
                     </div>
                     <div class="col-md-3">                    
                         <input type="number" name="rating" id="star-rating" class="rating" data-icon-lib="fa" data-active-icon="fa-star" data-inactive-icon="fa-star-o"  />
