@@ -68,18 +68,19 @@ Cultura
                 <thead></thead>
                 <tbody>
                     <tr>
+                        <td><a href="#" class="hvr-push"><br><img class="animated zoomIn img-responsive" src="{{asset('imagenes/cultura/pais/belice.png')}}"/></a><br><br></td>                                                
                         <td><a href="http://www.mcj.go.cr/" target="_blank" class="hvr-push"><br><img class="animated zoomIn img-responsive" src="{{asset('imagenes/cultura/pais/costarica.png')}}"/></a><br><br></td>                        
                         <td><a href="http://www.mincultura.gov.co/" class="hvr-push" target="_blank" ><br><img class="animated zoomIn img-responsive" src="{{asset('imagenes/cultura/pais/colombia.png')}}"/></a><br><br></td>                                                
                         <td><a href="http://www.cultura.gob.sv/" target="_blank"  class="hvr-push"><br><img class="animated zoomIn img-responsive" src="{{asset('imagenes/cultura/pais/elsalvador.png')}}"/></a><br><br></td>                        
-                        <td><a href="http://mcd.gob.gt/" class="hvr-push" target="_blank" ><br><img class="animated zoomIn img-responsive" src="{{asset('imagenes/cultura/pais/guatemala.png')}}"/></a><br><br></td>
                     </tr>
                     <tr>
+                        <td><a href="http://mcd.gob.gt/" class="hvr-push" target="_blank" ><br><img class="animated zoomIn img-responsive" src="{{asset('imagenes/cultura/pais/guatemala.png')}}"/></a><br><br></td>                        
                         <td><a href="http://sichonduras.hn/" target="_blank" class="hvr-push"><img class="animated zoomIn img-responsive" src="{{asset('imagenes/cultura/pais/honduras.png')}}"/></a><br><br></td>
                         <td><a href="http://www.mexicoescultura.com/" target="_blank" class="hvr-push"><img class="animated zoomIn img-responsive" src="{{asset('imagenes/cultura/pais/mexico.png')}}"/></a><br><br></td>
                         <td><a href="http://www.inc.gob.ni/" target="_blank" class="hvr-push"><img class="animated zoomIn img-responsive" src="{{asset('imagenes/cultura/pais/nicaragua.png')}}"/></a><br><br></td>
-                        <td><a href="http://www.inac.gob.pa/" target="_blank" class="hvr-push"><img class="animated zoomIn img-responsive" src="{{asset('imagenes/cultura/pais/panama.png')}}"/></a><br><br></td>                        
                     </tr>                    
                     <tr>
+                        <td><a href="http://www.inac.gob.pa/" target="_blank" class="hvr-push"><img class="animated zoomIn img-responsive" src="{{asset('imagenes/cultura/pais/panama.png')}}"/></a><br><br></td>                                                
                         <td><a href="http://cultura.gob.do/" target="_blank" class="hvr-push"><img class="animated zoomIn img-responsive" src="{{asset('imagenes/cultura/pais/republicadominicana.png')}}"/></a><br><br></td>
                     </tr>                           
                 </tbody>

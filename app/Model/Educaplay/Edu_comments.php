@@ -6,5 +6,5 @@ use Illuminate\Database\Eloquent\Model;
 
 class Edu_comments extends Model
 {
-    //
+    protected $table = 'edu_comments';
 }
