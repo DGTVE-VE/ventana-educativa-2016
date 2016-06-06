@@ -10,7 +10,7 @@ and open the template in the editor.
                 
 
         <!--  App Descripción  -->
-        <meta name="description" content="Ventana Educativa 2016"/>
+        <meta name="description" content="Ventana Educativa"/>
         <meta charset="utf-8">
         <meta name="author" content="Ecosistema Digital de Aprendizaje (DGTVE)">
         <meta http-equiv="X-UA-Compatible" content="IE=Edge">
