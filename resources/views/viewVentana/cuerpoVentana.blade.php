@@ -280,13 +280,13 @@
                     </td>
                     <td></td>
                     <td>
-                        {{HTML::image('imagenes/ventana/homeventana/FOTO-06.png','VOD',['id'=>'CUBOSM06','class'=>'imgColor oculta difumina Intervalo1 slideInLeft foto6','usemap'=>'#mapacubosm06'])}}
+                        {{HTML::image('imagenes/ventana/homeventana/FOTO-06.png','Educaplay',['id'=>'CUBOSM06','class'=>'imgColor oculta difumina Intervalo1 slideInLeft foto6','usemap'=>'#mapacubosm06'])}}
                         <map name="mapacubosm06" id="mapacubosm06">
                             <area shape="poly" coords="0,488,488,0,1020,500,510,1020" href="#"/>
                             <area shape="poly" coords="0,0,488,0,0,488" href="#"/>
                         </map>
                         <a href="#">
-                            {{HTML::image('imagenes/ventana/iconoSeccion/vod.png','VOD',['id'=>'iconoRomboSM06','class'=>'imgColor oculta difumina Intervalo1 slideInLeft iconoFoto6'])}}
+                            {{HTML::image('imagenes/ventana/iconoSeccion/vod.png','Educaplay',['id'=>'iconoRomboSM06','class'=>'imgColor oculta difumina Intervalo1 slideInLeft iconoFoto6'])}}
                         </a>
                     </td>
                 </tr>

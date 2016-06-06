@@ -35,8 +35,8 @@ Ventana Educativa
                     <input style=" " id="email" autocomplete="off" type="email" required name="email" class="form-control input-medium" placeholder="Correo Electrónico">                                
                 </div>
                 <div class="form-group col-md-6">
-                    <label for="nacimiento">Fecha de Nacimiento:</label>
-                    <input type="date" class="form-control input-medium" name="nacimiento" id="nacimiento" placeholder="Fecha de Nacimiento">
+                    <label for="nacimiento">Fecha de Nacimiento(dd/mm/aaaa):</label>
+                    <input type="date" class="form-control input-medium" name="nacimiento" id="nacimiento" placeholder="Fecha de Nacimiento (dd/mm/aaaa)">
                 </div>
                 <div class="form-group col-md-6">
                     <label for="contraseña">Contraseña:</label>
