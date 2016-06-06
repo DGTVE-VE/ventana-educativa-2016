@@ -23,7 +23,7 @@
                         <span class="icon-bar"></span>
                     </button>    
                     <a href="{{url('ventana_educativa')}}">
-                        {{ HTML::image('imagenes/ventana/encabezado/logoventana.png','Logo Ventana Educativa', ['class'=>'image-responsive imgLogo']) }}
+                        {{ HTML::image('imagenes/ventana/encabezado/logoventana.png','Ventana Educativa', ['class'=>'image-responsive imgLogo']) }}
                     </a>
                 </div> 
             </div>
@@ -46,41 +46,41 @@
                 <ul class="nav navbar-nav navbar-right collapse navbar-collapse collapseBarra">
                     <li class="dropdown col-md-6">
                         <div class="dropdown-toggle" data-toggle="dropdown">
-                            {{ HTML::image('imagenes/ventana/encabezado/iconoApps.png','Icono Apps',['width'=>'30px','height'=>'20px','class'=>'iconoApp appsLogo'])}}
+                            {{ HTML::image('imagenes/ventana/encabezado/iconoApps.png','Diversas aplicaciones de contenido educativo',['width'=>'30px','height'=>'20px','class'=>'iconoApp appsLogo'])}}
                         </div>
                         <ul id="menuVentanaApps" class="dropdown-menu img-responsive menuVentanaApps">
                             <table id="mueveTablaApps" class="mueveTabla">
                                 <tr>
                                     <td class="divApp centered center-block">
                                         <a class="" href="#">
-                                            {{ HTML::image('imagenes/ventana/encabezado/appVOD.png','logo VOD')}}
+                                            {{ HTML::image('imagenes/ventana/encabezado/appVOD.png','Educaplay: Videos educativos')}}
                                         </a>
                                     </td>                        
                                     <td class="divApp centered">
                                         <a class="" href="#">
-                                            {{ HTML::image('imagenes/ventana/encabezado/appIdiomas.png','logo Idiomas')}}
+                                            {{ HTML::image('imagenes/ventana/encabezado/appIdiomas.png','Idiomas')}}
                                         </a>
                                     </td>
                                     <td class="divApp centered">
                                         <a class="" href="#">
-                                            {{ HTML::image('imagenes/ventana/encabezado/appMediateca.png','logo Mediateca')}}
+                                            {{ HTML::image('imagenes/ventana/encabezado/appMediateca.png','Mediateca: Videos de telesecundaria')}}
                                         </a>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td class="divApp centered">
                                         <a class="" href="#">
-                                            {{ HTML::image('imagenes/ventana/encabezado/appPrimaria.png','logo Primaria')}}
+                                            {{ HTML::image('imagenes/ventana/encabezado/appPrimaria.png','Primaria')}}
                                         </a>
                                     </td>
                                     <td class="divApp centered">
                                         <a class="" href="#">
-                                            {{ HTML::image('imagenes/ventana/encabezado/appDocentes.png','logo Docentes')}}
+                                            {{ HTML::image('imagenes/ventana/encabezado/appDocentes.png','Docentes')}}
                                         </a>
                                     </td>
                                     <td class="divApp centered">
                                         <a class="" href="#">
-                                            {{ HTML::image('imagenes/ventana/encabezado/appPadres.png','logo Padres')}}
+                                            {{ HTML::image('imagenes/ventana/encabezado/appPadres.png','Padres')}}
                                         </a>
                                     </td>
                                 </tr>
@@ -96,17 +96,17 @@
                                 <tr>
                                     <td>
                                         <a class="divApp centered" href="#">
-                                            {{ HTML::image('imagenes/ventana/encabezado/appSalud.png','Logo Salud',['class'=>'ocultaImgApp'])}}
+                                            {{ HTML::image('imagenes/ventana/encabezado/appSalud.png','Salud',['class'=>'ocultaImgApp'])}}
                                         </a>
                                     </td>
                                     <td class="divApp centered">
                                         <a class="" href="#">
-                                            {{ HTML::image('imagenes/ventana/encabezado/appCultura.png','Logo Cultura',['class'=>'ocultaImgApp'])}}
+                                            {{ HTML::image('imagenes/ventana/encabezado/appCultura.png','Cultura: Conoce las diversas páginas de cultura a nivel Centro América',['class'=>'ocultaImgApp'])}}
                                         </a>
                                     </td>
                                     <td>
                                         <a class="divApp centered" href="#">
-                                            {{ HTML::image('imagenes/ventana/encabezado/appBiblioteca.png','Logo Biblioteca',['class'=>'ocultaImgApp'])}}
+                                            {{ HTML::image('imagenes/ventana/encabezado/appBiblioteca.png','Bibliotecas de Centro América',['class'=>'ocultaImgApp'])}}
                                         </a>
                                     </td>
                                 </tr>
@@ -116,11 +116,11 @@
                     <li id="li-R" class="dropdown col-md-6">
                         <div class=" divli dropdown-toggle" data-toggle="dropdown">
                             @if (Auth::guest())
-                            {{ HTML::image('imagenes/ventana/encabezado/usuario.png','Logo Usuario',['class'=>'img-circle iconoApp', 'id'=>'img-usuario'] )}}                        
+                            {{ HTML::image('imagenes/ventana/encabezado/usuario.png','Usuario',['class'=>'img-circle iconoApp', 'id'=>'img-usuario'] )}}                        
                             @elseif (File::exists ('uploaded/avatares/'.Auth::user()->id.'.png'))                        
                             {{ HTML::image('uploaded/avatares/'.Auth::user()->id.'.png', 'Avatar usuario', ['class'=>'img-circle iconoApp', 'id'=>'img-usuario', 'width'=>'35px'] )}}
                             @else
-                            {{ HTML::image('imagenes/ventana/encabezado/usuario.png','Logo Usuario',['class'=>'img-circle iconoApp', 'id'=>'img-usuario'] )}}
+                            {{ HTML::image('imagenes/ventana/encabezado/usuario.png','Usuario',['class'=>'img-circle iconoApp', 'id'=>'img-usuario'] )}}
                             @endif
 
                         </div>
