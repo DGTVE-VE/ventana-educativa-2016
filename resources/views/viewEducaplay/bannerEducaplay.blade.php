@@ -19,7 +19,7 @@
             @if($item1===0)
             <!-- Wrapper for slides -->
             <div class="item active">                   
-                <img src="{{$bannerImagen->url}}" alt="...">
+                <img src="{{$bannerImagen->url}}" alt="Imagen banner">
                 <div class="carousel-caption posicionDescripcion">
                     <div class="col-sm-8 col-md-8 col-md-8">
                         <p class="text-justify">
@@ -37,7 +37,7 @@
             @elseif($item1 != 0)
             <!-- Wrapper for slides -->
             <div class="item">
-                <img src="{{$bannerImagen->url}}" alt="...">
+                <img src="{{$bannerImagen->url}}" alt="Imagen banner">
                 <div class="carousel-caption posicionDescripcion">
                     <div class="col-sm-6 col-md-6">
                         <p class="text-justify">

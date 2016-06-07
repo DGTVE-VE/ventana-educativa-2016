@@ -53,7 +53,7 @@
 										{{--*/ $ligaDetalle = 'educaplay/detalleSeries/'.$elemento->id.'/0' /*--}}
 										 <!--$ligaDetalle = 'educaplay/detalleSeries/2/0' /*-->
 										<a href="{{url($ligaDetalle)}}">
-											<img id="imagen{{$tira}}{{$consecutivo}}" class="img-responsive thumbnailVertical" src="{{url($elemento->url)}}" alt="...">
+											<img id="imagen{{$tira}}{{$consecutivo}}" class="img-responsive thumbnailVertical" src="{{url($elemento->url)}}" alt="Imagen Serie">
 										</a>
 										<div id="titulo{{$tira}}{{$consecutivo}}" class="caption txtSobreImg escondeTitulo">
 											<h4 class="estiloTxt">
