@@ -62,7 +62,7 @@
                                         </a>
                                     </td>
                                     <td class="divApp centered">
-                                        <a class="" href="#">
+                                        <a class="" href="{{url('educamedia')}}">
                                             {{ HTML::image('imagenes/ventana/encabezado/appMediateca.png','Mediateca: Videos de telesecundaria')}}
                                         </a>
                                     </td>
