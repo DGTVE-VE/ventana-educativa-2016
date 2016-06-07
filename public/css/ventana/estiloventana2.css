@@ -1,35 +1,17 @@
-﻿/**{border: 2px solid red;}*/
-body{
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-attachment: fixed; 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;    
-}
-
+﻿
+body{background-repeat:no-repeat;background-position:center center;background-attachment:fixed;-webkit-background-size:cover;-moz-background-size:cover;-o-background-size:cover;background-size:cover;}
 .frmRegistro input{border-radius:15px 15px 15px 15px;}
 .frmRegistro select{border-radius:15px 15px 15px 15px;}
 .tituloRegistro{font-weight:bold;}
 .inputLogin{border-radius:15px 15px 15px 15px;}
 #login-submit{background-color:#ccc;border-radius:25px 25px 25px 25px;}
 #login-submit:hover{background-color:#888;border:1px solid white;color:#000 !important;}
-
-
-.menuVentanaApps{background:transparent; border:none;}
-.mueveTabla{
-	background:rgba(0, 0, 0, .3) !important;
-	position: fixed; right:3%;
-	box-shadow: 5px 5px 1px rgba(0, 0, 0, .2);
-}
+.menuVentanaApps{background:transparent;border:none;}
+.mueveTabla{background:rgba(0, 0, 0, .3) !important;position:fixed;right:3%;box-shadow:5px 5px 1px rgba(0, 0, 0, .2);}
 .etiquetaApp{font-weight:normal;color:#fff;font-family:Ubuntu;}
 .divApp{padding:10px;}
 .divApp .img-responsive{margin:0 auto;}
 .fondoRegistro{background:rgba(0, 0, 0, .3) !important;width:320px;height:230px;}
-
-
-
 .search-form .form-group{transition:all 0.35s, border-radius 0s;width:32px;height:32px;background-color:#fff;box-shadow:0 1px 1px rgba(0, 0, 0, 0.075) inset;border-radius:25px;border:1px solid #ccc;}
 .spanbuscar{color:black;}
 .search-form .form-group input.form-control{padding:0 0 5px 30px;border:0 none;background:transparent;box-shadow:none;display:block;}
@@ -40,160 +22,79 @@ body{
 .search-form .form-group:hover,
 .search-form .form-group.hover{width:100%;border-radius:25px 25px 25px 25px;}
 .search-form .form-group span.form-control-feedback{position:absolute;top:-2px;right:-1px;left:-2px;z-index:2;display:block;width:34px;height:34px;line-height:34px;text-align:center;color:#000;right:initial;font-size:14px;padding:0 0 20px 0;}
-
-
-
-@media (min-width: 250px) { 
-    .imgLogo{
-        width: 25% \9; /*Force IE10 and below to size SVG images correctly*/
-        max-width: 25%;
-    }   
-    .liBuscar{margin-left: 2% !important}
-    .has-feedback{margin-left:-2%;}
-    .has-feedback:hover{margin-left:-10%;}
-    .collapseBarra{background:rgba(0, 0, 0, .7) !important;}
-    .menuVentana{background-color:transparent;background:transparent;border-color:transparent;}
-    .frmRegistro{margin-top: 16%; background:rgba(0, 0, 0, .3);color:white;font-family:Ubuntu;}
+@media (min-width:250px){.imgLogo{width:25% \9;max-width:25%;}
+.liBuscar{margin-left:2% !important}
+.has-feedback{margin-left:-2%;}
+.has-feedback:hover{margin-left:-10%;}
+.collapseBarra{background:rgba(0, 0, 0, .7) !important;}
+.menuVentana{background-color:transparent;background:transparent;border-color:transparent;}
+.frmRegistro{margin-top:16%;background:rgba(0, 0, 0, .3);color:white;font-family:Ubuntu;}
 }
-
-
-@media (min-width: 350px) { 
-    .imgLogo{
-        width: 25% \9; /*Force IE10 and below to size SVG images correctly*/
-        max-width: 25%;
-    }   
-    .liBuscar{margin-left: 2% !important}
-    .has-feedback{margin-left:-2%;}
-    .has-feedback:hover{margin-left:-10%;}
-    .collapseBarra{background:rgba(0, 0, 0, .7) !important;}
-    .menuVentana{background-color:transparent;background:transparent;border-color:transparent;}
-    .frmRegistro{margin-top: 16%; background:rgba(0, 0, 0, .3);color:white;font-family:Ubuntu;}
+@media (min-width:350px){.imgLogo{width:25% \9;max-width:25%;}
+.liBuscar{margin-left:2% !important}
+.has-feedback{margin-left:-2%;}
+.has-feedback:hover{margin-left:-10%;}
+.collapseBarra{background:rgba(0, 0, 0, .7) !important;}
+.menuVentana{background-color:transparent;background:transparent;border-color:transparent;}
+.frmRegistro{margin-top:16%;background:rgba(0, 0, 0, .3);color:white;font-family:Ubuntu;}
 }
-@media (min-width: 768px) { 
-    .imgLogo{
-        width: 50% \9;
-        max-width: 50%;
-    }
-    .liBuscar{margin-left: 95% !important}
-    .has-feedback{margin-left:-15%;}
-    .has-feedback:hover{margin-left:-50%;}
-    .menuVentana{padding: 2%;background-color:transparent;background:transparent;border-color:transparent;}
-    .collapseBarra{background-color:transparent;background:transparent !important;border-color:transparent;}
-    #presentacion{margin-top: 7%;margin-left: 3%; background:transparent !important;}
-    .carousel-control-presentacion{color:#fff;top:28%;background:transparent;bottom:auto;padding-top:8px;width:36px;border-radius:50%;height:36px;opacity:1;}
-    .carousel-control.left, .carousel-control.right{background-image:none !important;}
-    .carousel-control.right,
-    .carousel-control .glyphicon-chevron-right{left:auto;right:-6%;font-size:50px;}
-    .carousel-control.left{right:auto;left:-5%;font-size:50px;}
-    .frmRegistro{margin-top: 8%; background:rgba(0, 0, 0, .3);color:white;font-family:Ubuntu;}
+@media (min-width:768px){.imgLogo{width:50% \9;max-width:50%;}
+.liBuscar{margin-left:95% !important}
+.has-feedback{margin-left:-15%;}
+.has-feedback:hover{margin-left:-50%;}
+.menuVentana{padding:2%;background-color:transparent;background:transparent;border-color:transparent;}
+.collapseBarra{background-color:transparent;background:transparent !important;border-color:transparent;}
+#presentacion{margin-top:7%;margin-left:3%;background:transparent !important;}
+.carousel-control-presentacion{color:#fff;top:28%;background:transparent;bottom:auto;padding-top:8px;width:36px;border-radius:50%;height:36px;opacity:1;}
+.carousel-control.left, .carousel-control.right{background-image:none !important;}
+.carousel-control.right,
+.carousel-control .glyphicon-chevron-right{left:auto;right:-6%;font-size:50px;}
+.carousel-control.left{right:auto;left:-5%;font-size:50px;}
+.frmRegistro{margin-top:8%;background:rgba(0, 0, 0, .3);color:white;font-family:Ubuntu;}
 }
-
-@media (min-width: 1024px) { 
-    .imgLogo{
-        width: 50% \9; /*Force IE10 and below to size SVG images correctly*/
-        max-width: 50%;
-    }   
-    .liBuscar{margin-left: 365% !important}
-    .has-feedback{margin-left:-115%;}
-    .has-feedback:hover{margin-left:-150%;}
-    .menuVentana{padding: 2%;background-color:transparent;background:transparent;border-color:transparent;}
-    .collapseBarra{background-color:transparent;background:transparent !important;border-color:transparent;}
-    #presentacion{margin-top: 7%; margin-left: 3%; background:transparent !important;}
-    .carousel-control-presentacion{color:#fff;top:28%;background:transparent;bottom:auto;padding-top:8px;width:36px;border-radius:50%;height:36px;opacity:1;}
-    .carousel-control.left, .carousel-control.right{background-image:none !important;}
-    .carousel-control.right,
-    .carousel-control .glyphicon-chevron-right{left:auto;right:-6%;font-size:50px;}
-    .carousel-control.left{right:auto;left:-5%;font-size:50px;}
-    .frmRegistro{margin-top: 8%; background:rgba(0, 0, 0, .3);color:white;font-family:Ubuntu;}
+@media (min-width:1024px){.imgLogo{width:50% \9;max-width:50%;}
+.liBuscar{margin-left:365% !important}
+.has-feedback{margin-left:-115%;}
+.has-feedback:hover{margin-left:-150%;}
+.menuVentana{padding:2%;background-color:transparent;background:transparent;border-color:transparent;}
+.collapseBarra{background-color:transparent;background:transparent !important;border-color:transparent;}
+#presentacion{margin-top:7%;margin-left:3%;background:transparent !important;}
+.carousel-control-presentacion{color:#fff;top:28%;background:transparent;bottom:auto;padding-top:8px;width:36px;border-radius:50%;height:36px;opacity:1;}
+.carousel-control.left, .carousel-control.right{background-image:none !important;}
+.carousel-control.right,
+.carousel-control .glyphicon-chevron-right{left:auto;right:-6%;font-size:50px;}
+.carousel-control.left{right:auto;left:-5%;font-size:50px;}
+.frmRegistro{margin-top:8%;background:rgba(0, 0, 0, .3);color:white;font-family:Ubuntu;}
 }
-
-@media (min-width: 1200px) {
-    .imgLogo{
-        width: 70% \9; /*Force IE10 and below to size SVG images correctly*/
-        max-width: 70%;
-    }
-    .liBuscar{margin-left: 365% !important}
-    .has-feedback{margin-left:-115%;}
-    .has-feedback:hover{margin-left:-150%;}
-    .menuVentana{padding:1% 3% 0 2%;background-color:transparent;background:transparent;border-color:transparent;}
-    .collapseBarra{background-color:transparent;background:transparent !important;border-color:transparent;}
-    liMenus{margin-top: 5%;}
-    #presentacion{margin-top: 7%; margin-left: 3%; background:transparent !important;}
-    #presentacion img{width: 90%; height: 80% !important}
-    .carousel-control-presentacion{color:#fff;top:28%;background:transparent;bottom:auto;padding-top:8px;width:36px;border-radius:50%;height:36px;opacity:1;}
-    .carousel-control.left, .carousel-control.right{background-image:none !important;}
-    .carousel-control.right,
-    .carousel-control .glyphicon-chevron-right{left:auto;right:-6%;font-size:80px; }
-    .carousel-control.left{right:auto;left:-10%;font-size:80px;}
-    .frmRegistro{margin-top: 8%; background:rgba(0, 0, 0, .3);color:white;font-family:Ubuntu;}
-    .iconoApp{margin-top: 15% !important;}
-
-    .menuVentanaApps{
-        margin-top: 20% !important;
-    }
-    .fondoRegistro{margin-top: 18% !important;}
-    .fondoRegistro:after{margin-top:-74%; margin-left: 87%; display:block;width:0;height:0;border-left:12px solid transparent;border-right:12px solid transparent;border-bottom:12px solid rgba(0, 0, 0, .3) !important;}
+@media (min-width:1200px){.imgLogo{width:70% \9;max-width:70%;}
+.liBuscar{margin-left:365% !important}
+.has-feedback{margin-left:-115%;}
+.has-feedback:hover{margin-left:-150%;}
+.menuVentana{padding:1% 3% 0 2%;background-color:transparent;background:transparent;border-color:transparent;}
+.collapseBarra{background-color:transparent;background:transparent !important;border-color:transparent;}
+liMenus{margin-top:5%;}
+#presentacion{margin-top:7%;margin-left:3%;background:transparent !important;}
+#presentacion img{width:90%;height:80% !important}
+.carousel-control-presentacion{color:#fff;top:28%;background:transparent;bottom:auto;padding-top:8px;width:36px;border-radius:50%;height:36px;opacity:1;}
+.carousel-control.left, .carousel-control.right{background-image:none !important;}
+.carousel-control.right,
+.carousel-control .glyphicon-chevron-right{left:auto;right:-6%;font-size:80px;}
+.carousel-control.left{right:auto;left:-10%;font-size:80px;}
+.frmRegistro{margin-top:8%;background:rgba(0, 0, 0, .3);color:white;font-family:Ubuntu;}
+.iconoApp{margin-top:15% !important;}
+.menuVentanaApps{margin-top:20% !important;}
+.fondoRegistro{margin-top:18% !important;}
+.fondoRegistro:after{margin-top:-74%;margin-left:87%;display:block;width:0;height:0;border-left:12px solid transparent;border-right:12px solid transparent;border-bottom:12px solid rgba(0, 0, 0, .3) !important;}
 }
-.fondoTablaColabora{
-	background: rgba(0, 0, 0, 0.3);
-	padding:0px;
-}
-.quitaPad{
-	padding:0px;
-}
-.tablaCOlaboradores{
-	margin:0px;
-}
-.tablaColaboraSM{
-	border: 0px !important;  background: rgba(0, 0, 0, 0.3);
-}
-.tablaColaboraSM td {
-    border: 0px !important;
-}
-.tablaCOlaboradores td {
-    border: 0px !important;
-}
-
-/*Estilo para el registro de usuario en el cambio de avatar*/
-.btn-file-avatar {
-    position: relative;
-    overflow: hidden;
-    background: #67b168;
-}
-.btn-file-avatar input[type=file] {
-    position: absolute;
-    top: 0;
-    right: 0;
-    min-width: 100%;
-    min-height: 100%;
-    font-size: 100px;
-    text-align: right;
-    filter: alpha(opacity=0);
-    opacity: 0;
-    outline: none;
-    background: white;
-    cursor: inherit;
-    display: block;
-}
-
-/*Estilos para fijar las flechas del carousel de presetación en ventana */
-.flecha-izq-presentacion{
-    position: fixed;
-    top: 35%; 
-    left: 10%;
-}
-.flecha-der-presentacion{
-    position: fixed;
-    top: 35%; 
-    right: 14%;
-}
-#img-usuario{
-    height: 30px;
-    width: 30px;
-}
-
-.message-compatible{
-   background:rgba(0, 0, 0, .3) !important;
-   border: 0 !important;
-   color: white;
-}
+.fondoTablaColabora{background:rgba(0, 0, 0, 0.3);padding:0px;}
+.quitaPad{padding:0px;}
+.tablaCOlaboradores{margin:0px;}
+.tablaColaboraSM{border:0px !important;background:rgba(0, 0, 0, 0.3);}
+.tablaColaboraSM td{border:0px !important;}
+.tablaCOlaboradores td{border:0px !important;}
+.btn-file-avatar{position:relative;overflow:hidden;background:#67b168;}
+.btn-file-avatar input[type=file]{position:absolute;top:0;right:0;min-width:100%;min-height:100%;font-size:100px;text-align:right;filter:alpha(opacity=0);opacity:0;outline:none;background:white;cursor:inherit;display:block;}
+.flecha-izq-presentacion{position:fixed;top:35%;left:10%;}
+.flecha-der-presentacion{position:fixed;top:35%;right:14%;}
+#img-usuario{height:30px;width:30px;}
+.message-compatible{background:rgba(0, 0, 0, .3) !important;border:0 !important;color:white;}

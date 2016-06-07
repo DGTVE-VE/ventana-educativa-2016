@@ -24,7 +24,7 @@ Cultura
 	</script>        
 @endsection
 @section('cuerpoCultura')
-<br><br><br><br><br><br>
+<div class="navbar"></div>
 <div class="container-fluid">
     <div class="row">
         <div class="col-md-4">

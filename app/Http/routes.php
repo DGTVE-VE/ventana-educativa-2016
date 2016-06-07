@@ -131,6 +131,10 @@ Route::group(['middleware' => 'web'], function () {
     Route::get('biblioteca', 'BibliotecaController@biblioteca');
     Route::get('biblioteca/tomos/{categoria}', 'BibliotecaController@tomos');
     /*     * **************************Cultura********************** */
+    
+    /*     * **************************Cultura********************** */
+    Route::get('docente', 'DocenteController@docente');
+    /*     * **************************Cultura********************** */
 });
 
 //Route::get ('api/getImagenes/{tipo}/{id}', '');
