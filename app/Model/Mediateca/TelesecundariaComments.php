@@ -12,6 +12,6 @@ class TelesecundariaComments extends Model
         return $this->belongsTo('App\User', 'usuario_id');
     }
     public function respuestas (){
-        return $this->hasMany ('App\Model\Mediateca\TelesecundariaComments', 'comment_id');
+        return $this->hasMany ('App\Model\Mediateca\TelesecundariaComments', 'comment_id')->orderBy ('created_at','DESC');
     }
 }

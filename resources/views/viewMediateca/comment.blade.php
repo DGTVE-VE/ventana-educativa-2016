@@ -49,20 +49,20 @@
                 <span class="caret"></span></a>
             </div>
             <br>
-            <div id="respuestas-{{$comment->id}}" style="display: none" >
+            <div id="responde-{{$comment->id}}" style="display: none" >
                 @if (Auth::check ())
                 <div class="row">
                     
                     <div class="col-md-12">
-                        <textarea rows="3" placeholder="Responde aquí..." class="form-control textareaTransparencia"></textarea>
+                        <textarea rows="3" placeholder="Responde aquí..." class="form-control textareaTransparencia" id="responde_{{$comment->id}}"></textarea>
                     </div>
                     <div class="col-md-12">
                         <!--<button class="btn btn-info form-control"> Responder </button>-->
-                        <a class="linkComentar">Envíar respuesta</a>
+                        <a class="linkComentar" id="linkComentar_{{$comment->id}}">Envíar respuesta</a>
                     </div>
                 </div>
                 @endif
-                <div class="row">
+                <div class="row" id="respuestas-{{$comment->id}}" >
                     
                 @if($comment->respuestas->count() > 0)
                     @foreach ($comment->respuestas as $respuesta)                        
