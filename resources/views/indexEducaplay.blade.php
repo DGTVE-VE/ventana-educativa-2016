@@ -8,9 +8,10 @@ and open the template in the editor.
     <head>
         <title>@yield('titleEducaplay','Educaplay')</title>
         <!--  App Descripción  -->
-        <meta name="description" content="Ventana Educativa 2016"/>
         <meta charset="utf-8">
         <meta name="author" content="Ecosistema Digital de Aprendizaje (DGTVE)">
+        <meta name="description" content="Educaplay. Contenido multimedia publicado por la Dirección General de Televisión Educativa y la Muestra Iberoamericana de Televisoras Educativas y Culturales."/>
+        <meta name="keywords" content="Ventana Educativa, plataforma digital, contenidos educativos, multimedia, Canal Iberoamericano, Idiomas, Salud, Padres, Estudiantes, Educaplay, Docentes, Educamedia, Telesecundaria, Telebachillerato, Red Mesoamericana, Cultura, Biblioteca, MéxicoX">
         <meta http-equiv="X-UA-Compatible" content="IE=Edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
         <link rel="shortcut icon" href="{{ asset('redmite1.ico') }}" >

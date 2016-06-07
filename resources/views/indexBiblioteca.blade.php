@@ -8,17 +8,18 @@ and open the template in the editor.
     <head>
         <title>@yield('titleBiblioteca','Biblioteca')</title>
         <!--  App Descripción  -->
-        <meta name="description" content="Ventana Educativa 2016"/>
         <meta charset="utf-8">
         <meta name="author" content="Ecosistema Digital de Aprendizaje (DGTVE)">
+        <meta name="description" content="Biblioteca, es un espacio en donde se puede acceder a algunas bibliotecas digitales nacionales, universitarias, escolares, públicas, especializadas y de Investigación."/>
+        <meta name="keywords" content="Ventana Educativa, plataforma digital, contenidos educativos, multimedia, Canal Iberoamericano, Idiomas, Salud, Padres, Estudiantes, Educaplay, Docentes, Educamedia, Telesecundaria, Telebachillerato, Red Mesoamericana, Cultura, Biblioteca, MéxicoX">
         <meta http-equiv="X-UA-Compatible" content="IE=Edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
         <link rel="shortcut icon" href="{{ asset('redmite1.ico') }}" >
-		
-		<!-- CDN JQuery 1.12.3 -->
-		<script src="https://code.jquery.com/jquery-1.12.3.min.js" integrity="sha256-aaODHAgvwQW1bFOGXMeX+pC4PZIPsvn2h1sArYOhgXQ="crossorigin="anonymous"></script>
+	
+	<!-- CDN JQuery 1.12.3 -->
+	<script src="https://code.jquery.com/jquery-1.12.3.min.js" integrity="sha256-aaODHAgvwQW1bFOGXMeX+pC4PZIPsvn2h1sArYOhgXQ="crossorigin="anonymous"></script>
         
-		<!-- Bootstrap CSS -->
+	<!-- Bootstrap CSS -->
         <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
         <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet" type="text/css" />

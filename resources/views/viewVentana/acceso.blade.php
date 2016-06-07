@@ -2,7 +2,7 @@
     Ventana Educativa
 @stop
 @section('menuMediateca')
-	@include('viewMediateca.encabezadoMediateca')
+    @include('viewMediateca.encabezadoMediateca')
 @endsection
 @extends('indexMediateca')
 @section('cuerpoMediateca')
