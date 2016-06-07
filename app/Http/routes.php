@@ -44,6 +44,10 @@ Route::group(['middleware' => 'web'], function () {
     Route::post('registraUsuario', 'VentanaController@registraUsuario');
     Route::get('correoEnviado', 'VentanaController@correoEnviado');
 
+
+    Route::get('agregaMiLista', 'VentanaController@agregaMiLista');
+
+
     /* REDMITE */
     Route::resource('redmite/blog', 'RedBlogController');
     Route::post('redmite/blog/comment', 'RedBlogController@comment');
