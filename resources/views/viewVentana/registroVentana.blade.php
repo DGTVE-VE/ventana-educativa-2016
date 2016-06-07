@@ -131,7 +131,7 @@ Ventana Educativa
     }
 
     $("#email").focusout(function () {
-    var _url = '{{url('user / existEmail')}}' + '/' + $('#email').val();
+    var _url = "{{url('user/existEmail')}}" + '/' + $('#email').val();
             console.log(_url);
             loadDoc(_url, 'correo', 'email');
     });
@@ -139,7 +139,7 @@ Ventana Educativa
     muestraError(false, '', 'email');
     });
             $("#nick").focusout(function () {
-    var _url = '{{url('user / existNick')}}' + '/' + $('#nick').val();
+    var _url = "{{url('user/existNick')}}" + '/' + $('#nick').val();
             console.log(_url);
             loadDoc(_url, 'nombre de usuario', 'nick');
     });
