@@ -7,7 +7,7 @@
 	}
 </style>
 <link rel="stylesheet" type="text/css" href="css/ventana/estiloventana.css"/>
-<script type="text/javascript" src="js/ventana/ventanaCuerpo.js"></script>
+<script async type="text/javascript" src="js/ventana/ventanaCuerpo.js"></script>
 <div class="container-fluid">
     <div class="row">        
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="padding:30px;">
@@ -29,10 +29,10 @@
 		<div class="col-md-9 col-md-offset-1" style="margin-top:10px;">
 		<map name="mapaRombos" id="mapaRombos">
 			<area alt="" title="" shape="poly" coords="0,511,222,290,442,513,222,734" onmouseover="cambiaImgFoto('01')" onmouseout="cambiaImgCubo('01')" href="http://www.ibe.tv/" target="_blank"/>
-			<area alt="" title="" shape="poly" coords="274,308,458,495,644,309,459,124" onmouseover="cambiaImgFoto('02')" onmouseout="cambiaImgCubo('02')"  href="#"/>
+			<area alt="" title="" shape="poly" coords="274,308,458,495,644,309,459,124" onmouseover="cambiaImgFoto('02')" onmouseout="cambiaImgCubo('02')" data-toggle="modal" href="#myModal-idiomas"/>
 			<area alt="" title="" shape="poly" coords="463,533,261,734,463,936,663,735" onmouseover="cambiaImgFoto('03')" onmouseout="cambiaImgCubo('03')" href="http://www.promocion.salud.gob.mx/dgps/interior1/programas/escuela_salud.html" target="_blank"/>
 			<area alt="" title="" shape="poly" coords="442,511,680,750,918,512,681,274" onmouseover="cambiaImgFoto('04')" onmouseout="cambiaImgCubo('04')" href="#"/>
-			<area alt="" title="" shape="poly" coords="933,1,680,253,933,506,1187,255" onmouseover="cambiaImgFoto('05')" onmouseout="cambiaImgCubo('05')" href="#"/>
+			<area alt="" title="" shape="poly" coords="933,1,680,253,933,506,1187,255" onmouseover="cambiaImgFoto('05')" onmouseout="cambiaImgCubo('05')" data-toggle="modal" href="#myModal-estudiantes"/>
 			<area alt="" title="" shape="poly" coords="932,511,681,764,933,1017,1185,766" onmouseover="cambiaImgFoto('06')" onmouseout="cambiaImgCubo('06')" href="#"/>
 			<area alt="" title="" shape="poly" coords="1215,226,934,508,1216,794,1497,510" onmouseover="cambiaImgFoto('07')" onmouseout="cambiaImgCubo('07')" href="{{url('presentacion')}}"/>
 			<area alt="" title="" shape="poly" coords="1496,1,1243,253,1497,507,1750,253" onmouseover="cambiaImgFoto('08')" onmouseout="cambiaImgCubo('08')" href="http://formacioncontinua.sep.gob.mx/" target="_blank"/>
@@ -47,31 +47,14 @@
 		<div class="col-md-12">
 		</div>
         <div class="col-md-1 col-lg-1 col-md-offset-1 col-lg-offset-1" style="padding-top: 8.9%; padding-left:0; padding-right:0;">
-            {{HTML::image('imagenes/ventana/homeventana/CUBO-01.png','Canal IberoAmericano',['name'=>'CUBO01','id'=>'CUBO01', 'class'=>'imgColor oculta difumina Intervalo4 slideInLeft rombo1', 'usemap'=>'#mapacubo1'])}}
-            <map name="mapacubo1" id="mapacubo1">
-                <area shape="poly" coords="0,424,424,0,920,424,480,920" onmouseover="cambiaImgFoto('01')" onmouseout="cambiaImgCubo('01')" href="http://www.ibe.tv/" target="_blank"/>
-                <area shape="poly" coords="528,0,920,0,920,392" onmouseover="cambiaImgFoto('02')" onmouseout="cambiaImgCubo('02')" href="#"/>
-                <area shape="poly" coords="888,468,940,960,400,880" href="http://www.promocion.salud.gob.mx/dgps/interior1/programas/escuela_salud.html" target="_blank" onmouseover="cambiaImgFoto('03')" onmouseout="cambiaImgCubo('03')"/>
-            </map>
-            <a href="http://www.ibe.tv/" target="_blank">
-                {{HTML::image('imagenes/ventana/iconoSeccion/canal_ibero.png','canal IberoAmericano',['id'=>'iconoRombo01','class'=>'imgColor oculta difumina Intervalo4 slideInLeft iconoCanalIbero','onmouseover'=>'cambiaImgFoto("01")','onmouseout'=>'cambiaImgCubo("01")'])}}
-            </a>
+            {{HTML::image('imagenes/ventana/homeventana/CUBO-01.png','Canal IberoAmericano',['name'=>'CUBO01','id'=>'CUBO01', 'class'=>'imgColor oculta difumina Intervalo4 slideInLeft rombo1'])}}
+                {{HTML::image('imagenes/ventana/iconoSeccion/canal_ibero.png','canal IberoAmericano',['id'=>'iconoRombo01','class'=>'imgColor oculta difumina Intervalo4 slideInLeft iconoCanalIbero'])}}
         </div>
         <div class="col-md-1 col-lg-1" style="padding:3%; padding-left:0px; padding-right:0px;">
-            {{HTML::image('imagenes/ventana/homeventana/CUBO-02.png', 'Idiomas',['id'=>'CUBO02','class'=>'imgColor oculta difumina Intervalo3 slideInLeft rombo2','usemap'=>'#mapacubo2'])}}
-            {{HTML::image('imagenes/ventana/homeventana/CUBO-03.png',' ',['id'=>'CUBO03','class'=>'imgColor oculta difumina Intervalo3 slideInLeft rombo3', 'usemap'=>'#mapacubo3'])}}
-            <map name="mapacubo2" id="mapacubo2">
-                <area shape="poly" coords="0,356,356,0,708,360,360,708" onmouseover="cambiaImgFoto('02')" onmouseout="cambiaImgCubo('02')" href="#"/>
-            </map>
-            <map name="mapacubo3" id="mapacubo3">
-                <area shape="poly" coords="0,388,388,0,840,388,420,820" href="http://www.promocion.salud.gob.mx/dgps/interior1/programas/escuela_salud.html" target="_blank" onmouseover="cambiaImgFoto('03')" onmouseout="cambiaImgCubo('03')"/>
-            </map>
-            <a data-toggle="modal" href="#myModal-idiomas">
-                {{HTML::image('imagenes/ventana/iconoSeccion/idiomas.png','',['id'=>'iconoRombo02','class'=>'imgColor oculta difumina Intervalo3 slideInLeft iconoIdiomas','onmouseover'=>'cambiaImgFoto("02")','onmouseout'=>'cambiaImgCubo("02")'])}}
-            </a>
-            <a href="http://www.promocion.salud.gob.mx/dgps/interior1/programas/escuela_salud.html" target="_blank">
-                {{HTML::image('imagenes/ventana/iconoSeccion/salud.png','',['id'=>'iconoRombo03','class'=>'imgColor oculta difumina Intervalo3 slideInLeft iconoSalud','onmouseover'=>'cambiaImgFoto("03")','onmouseout'=>'cambiaImgCubo("03")'])}}
-            </a>
+            {{HTML::image('imagenes/ventana/homeventana/CUBO-02.png', 'Idiomas',['id'=>'CUBO02','class'=>'imgColor oculta difumina Intervalo3 slideInLeft rombo2'])}}
+            {{HTML::image('imagenes/ventana/homeventana/CUBO-03.png',' ',['id'=>'CUBO03','class'=>'imgColor oculta difumina Intervalo3 slideInLeft rombo3'])}}
+                {{HTML::image('imagenes/ventana/iconoSeccion/idiomas.png','',['id'=>'iconoRombo02','class'=>'imgColor oculta difumina Intervalo3 slideInLeft iconoIdiomas'])}}
+                {{HTML::image('imagenes/ventana/iconoSeccion/salud.png','',['id'=>'iconoRombo03','class'=>'imgColor oculta difumina Intervalo3 slideInLeft iconoSalud'])}}
         </div>
 
         <!-- Modal Idiomas-->
@@ -94,33 +77,14 @@
 
 
         <div class="col-md-1 col-lg-1" style="padding-top: 8.3%; padding-left:0px; padding-right:0px;">
-            {{HTML::image('imagenes/ventana/homeventana/CUBO-04.png','Padres',['id'=>'CUBO04','class'=>'imgColor oculta difumina Intervalo2 slideInLeft rombo4','usemap'=>'#mapacubo4'])}}
-            <map name="mapacubo4"  id="mapacubo4">
-                <area shape="poly" coords="0,456,456,0,912,456,456,912" onmouseover="cambiaImgFoto('04')" onmouseout="cambiaImgCubo('04')" href="#"/>
-                <area shape="poly" coords="0,456,0,0,456,0" onmouseover="cambiaImgFoto('02')" onmouseout="cambiaImgCubo('02')" href="#"/>
-                <area shape="poly" coords="-20,400,-20,960,520,960" href="http://www.promocion.salud.gob.mx/dgps/interior1/programas/escuela_salud.html" target="_blank" onmouseover="cambiaImgFoto('03')" onmouseout="cambiaImgCubo('03')"/>
-            </map>
-            <a href="#">
-                {{HTML::image('imagenes/ventana/iconoSeccion/padres.png','Padres',['id'=>'iconoRombo04','class'=>'imgColor oculta difumina Intervalo2 slideInLeft iconoPadres','onmouseover'=>'cambiaImgFoto("04")','onmouseout'=>'cambiaImgCubo("04")'])}}
-            </a>
+            {{HTML::image('imagenes/ventana/homeventana/CUBO-04.png','Padres',['id'=>'CUBO04','class'=>'imgColor oculta difumina Intervalo2 slideInLeft rombo4'])}}
+                {{HTML::image('imagenes/ventana/iconoSeccion/padres.png','Padres',['id'=>'iconoRombo04','class'=>'imgColor oculta difumina Intervalo2 slideInLeft iconoPadres'])}}
         </div>
         <div class="col-md-1 col-lg-1" style="padding-top: 10%; padding-left:0; padding-right:0;">
-            {{HTML::image('imagenes/ventana/homeventana/CUBO-05.png','Estudiantes',['id'=>'CUBO05','class'=>'imgColor oculta difumina Intervalo1 slideInLeft rombo5', 'usemap'=>'#mapacubo5'])}}
-            {{HTML::image('imagenes/ventana/homeventana/CUBO-06.png','VOD',['id'=>'CUBO06','class'=>'imgColor oculta difumina Intervalo1 slideInLeft rombo6','usemap'=>'#mapacubo6'])}}
-            <map name="mapacubo5" id="mapacubo5">
-                <area shape="poly" coords="0,488,488,0,976,488,488,976" onmouseover="cambiaImgFoto('05')" onmouseout="cambiaImgCubo('05')" href="#"/>
-                <area shape="poly" coords="0,524,490,1030,0,1030" onmouseover="cambiaImgFoto('04')" onmouseout="cambiaImgCubo('04')" href="#"/>
-            </map>
-            <map name="mapacubo6" id="mapacubo6">
-                <area shape="poly" coords="0,488,488,0,1020,500,510,1020" onmouseover="cambiaImgFoto('06')" onmouseout="cambiaImgCubo('06')" href="#"/>
-                <area shape="poly" coords="0,0,488,0,0,488" onmouseover="cambiaImgFoto('04')" onmouseout="cambiaImgCubo('04')" href="#"/>
-            </map>
-            <a data-toggle="modal" href="#myModal-estudiantes">
-                {{HTML::image('imagenes/ventana/iconoSeccion/primaria.png','Estudiantes',['id'=>'iconoRombo05','class'=>'imgColor oculta difumina Intervalo1 slideInLeft iconoEstudiantes','onmouseover'=>'cambiaImgFoto("05")','onmouseout'=>'cambiaImgCubo("05")'])}}
-            </a>
-            <a href="#">
-                {{HTML::image('imagenes/ventana/iconoSeccion/vod.png','VOD',['id'=>'iconoRombo06','class'=>'imgColor oculta difumina Intervalo1 slideInLeft iconoVOD','onmouseover'=>'cambiaImgFoto("06")','onmouseout'=>'cambiaImgCubo("06")'])}}
-            </a>
+            {{HTML::image('imagenes/ventana/homeventana/CUBO-05.png','Estudiantes',['id'=>'CUBO05','class'=>'imgColor oculta difumina Intervalo1 slideInLeft rombo5'])}}
+            {{HTML::image('imagenes/ventana/homeventana/CUBO-06.png','VOD',['id'=>'CUBO06','class'=>'imgColor oculta difumina Intervalo1 slideInLeft rombo6'])}}
+                {{HTML::image('imagenes/ventana/iconoSeccion/primaria.png','Estudiantes',['id'=>'iconoRombo05','class'=>'imgColor oculta difumina Intervalo1 slideInLeft iconoEstudiantes'])}}
+                {{HTML::image('imagenes/ventana/iconoSeccion/vod.png','VOD',['id'=>'iconoRombo06','class'=>'imgColor oculta difumina Intervalo1 slideInLeft iconoVOD'])}}
         </div>
 
         <!-- Modal Estudiantes-->
@@ -142,73 +106,28 @@
         </div> <!--Fin Modal Estudiantes -->
 
         <div class="col-md-1 col-lg-1" style="padding-top:6.8%; padding-left:0px; padding-right:0px;">
-            {{HTML::image('imagenes/ventana/homeventana/CUBO-07.png','Ventana Educativa',['id'=>'CUBO07','class'=>'imgColor rombo7','usemap'=>'#mapacubo7'])}}
-            <map name="mapacubo7" id="mapacubo7">
-                <area shape="poly" coords="0,560,580,0,1140,544,544,1140" onmouseover="cambiaImgFoto('07')" onmouseout="cambiaImgCubo('07')" href="{{url('presentacion')}}"/>
-                <area shape="poly" coords="0,0,570,0,0,548" onmouseover="cambiaImgFoto('05')" onmouseout="cambiaImgCubo('05')" href="#"/>
-                <area shape="poly" coords="0,548,548,1160,0,1160" onmouseover="cambiaImgFoto('06')" onmouseout="cambiaImgCubo('06')" href="#"/>
-                <area shape="poly" coords="548,0,1160,0,1160,548" onmouseover="cambiaImgFoto('08')" onmouseout="cambiaImgCubo('08')" href="http://formacioncontinua.sep.gob.mx/" target="_blank"/>
-                <area shape="poly" coords="548,1160,1160,548,1160,1160" onmouseover="cambiaImgFoto('09')" onmouseout="cambiaImgCubo('09')" href="{{url('educamedia')}}"/>
-            </map>
-            <a href="{{url('presentacion')}}">
-                {{HTML::image('imagenes/ventana/iconoSeccion/ventanaBco.png','Ventana Educativa',['id'=>'iconoRombo07','class'=>'imgColor iconoVentana','onmouseover'=>'cambiaImgFoto("07")','onmouseout'=>'cambiaImgCubo("07")'])}}
-            </a>
+            {{HTML::image('imagenes/ventana/homeventana/CUBO-07.png','Ventana Educativa',['id'=>'CUBO07','class'=>'imgColor rombo7'])}}
+                {{HTML::image('imagenes/ventana/iconoSeccion/ventanaBco.png','Ventana Educativa',['id'=>'iconoRombo07','class'=>'imgColor iconoVentana'])}}
         </div>
         <div class="col-md-1 col-lg-1" style="padding-top: 10%; padding-left:0; padding-right:0;">
-            {{HTML::image('imagenes/ventana/homeventana/CUBO-08.png','Docentes',['id'=>'CUBO08','class'=>'imgColor oculta difumina Intervalo1 slideInRight rombo8','usemap'=>'#mapacubo8'])}}
-            {{HTML::image('imagenes/ventana/homeventana/CUBO-09.png','Mediateca',['id'=>'CUBO09','class'=>'imgColor oculta difumina Intervalo1 slideInRight rombo9','usemap'=>'#mapacubo9'])}}
-            <map name="mapacubo8" id="mapacubo8">
-                <area shape="poly" coords="0,488,500,0,1020,500,500,1010" onmouseover="cambiaImgFoto('08')" onmouseout="cambiaImgCubo('08')" href="http://formacioncontinua.sep.gob.mx/" target="_blank"/>
-                <area shape="poly" coords="440,1040,1040,520,1040,1040" onmouseover="cambiaImgFoto('10')" onmouseout="cambiaImgCubo('10')" href="{{url('redmite')}}"/>
-            </map>
-            <map name="mapacubo9" id="mapacubo9">
-                <area shape="poly" coords="0,488,488,0,1020,500,510,1020" onmouseover="cambiaImgFoto('09')" onmouseout="cambiaImgCubo('09')" href="{{url('educamedia')}}"/>
-                <area shape="poly" coords="516,0,1030,0,1030,500" onmouseover="cambiaImgFoto('10')" onmouseout="cambiaImgCubo('10')" href="{{url('redmite')}}"/>
-            </map>
-            <a href="http://formacioncontinua.sep.gob.mx/" target="_blank">
-                {{HTML::image('imagenes/ventana/iconoSeccion/docentes.png','Docentes',['id'=>'iconoRombo08','class'=>'imgColor oculta difumina Intervalo1 slideInRight iconoDocentes','onmouseover'=>'cambiaImgFoto("08")','onmouseout'=>'cambiaImgCubo("08")'])}}
-            </a>
-            <a href="{{url('educamedia')}}">
-                {{HTML::image('imagenes/ventana/iconoSeccion/mediateca.png','Mediateca',['id'=>'iconoRombo09','class'=>'imgColor oculta difumina Intervalo1 slideInRight iconoMediateca','onmouseover'=>'cambiaImgFoto("09")','onmouseout'=>'cambiaImgCubo("09")'])}}
-            </a>
+            {{HTML::image('imagenes/ventana/homeventana/CUBO-08.png','Docentes',['id'=>'CUBO08','class'=>'imgColor oculta difumina Intervalo1 slideInRight rombo8'])}}
+            {{HTML::image('imagenes/ventana/homeventana/CUBO-09.png','Mediateca',['id'=>'CUBO09','class'=>'imgColor oculta difumina Intervalo1 slideInRight rombo9'])}}
+                {{HTML::image('imagenes/ventana/iconoSeccion/docentes.png','Docentes',['id'=>'iconoRombo08','class'=>'imgColor oculta difumina Intervalo1 slideInRight iconoDocentes'])}}
+                {{HTML::image('imagenes/ventana/iconoSeccion/mediateca.png','Mediateca',['id'=>'iconoRombo09','class'=>'imgColor oculta difumina Intervalo1 slideInRight iconoMediateca'])}}
         </div>
         <div class="col-md-1 col-lg-1" style="padding-top: 8.2%; padding-left:0px; padding-right:0px;">
-            {{HTML::image('imagenes/ventana/homeventana/CUBO-10.png','Red Mesoamerica',['id'=>'CUBO10','class'=>'imgColor oculta difumina Intervalo2 slideInRight rombo10','usemap'=>'#mapacubo10'])}}
-            <map name="mapacubo10"  id="mapacubo10">
-                <area shape="poly" coords="0,456,470,0,960,500,470,940" onmouseover="cambiaImgFoto('10')" onmouseout="cambiaImgCubo('10')" href="{{url('redmite')}}"/>
-                <area shape="poly" coords="456,0,980,0,980,480" onmouseover="cambiaImgFoto('11')" onmouseout="cambiaImgCubo('11')" href="{{url('cultura')}}"/>
-                <area shape="poly" coords="456,960,960,456,960,960" onmouseover="cambiaImgFoto('12')" onmouseout="cambiaImgCubo('12')" href="{{url('biblioteca')}}"/>
-            </map>
-            <a href="{{url('redmite')}}">
-                {{HTML::image('imagenes/ventana/iconoSeccion/redmiteBco.png','Red Mesoamericana',['id'=>'iconoRombo10','class'=>'imgColor oculta difumina Intervalo2 slideInRight iconoRedMesoamerica','onmouseover'=>'cambiaImgFoto("10")','onmouseout'=>'cambiaImgCubo("10")'])}}
-            </a>
+            {{HTML::image('imagenes/ventana/homeventana/CUBO-10.png','Red Mesoamerica',['id'=>'CUBO10','class'=>'imgColor oculta difumina Intervalo2 slideInRight rombo10'])}}
+                {{HTML::image('imagenes/ventana/iconoSeccion/redmiteBco.png','Red Mesoamericana',['id'=>'iconoRombo10','class'=>'imgColor oculta difumina Intervalo2 slideInRight iconoRedMesoamerica'])}}
         </div>
         <div class="col-md-1 col-lg-1" style="padding:3%; padding-left:0px; padding-right:0px;">
-            {{HTML::image('imagenes/ventana/homeventana/CUBO-11.png',' ',['id'=>'CUBO11','class'=>'imgColor oculta difumina Intervalo3 slideInRight rombo11','usemap'=>'#mapacubo11'])}}
-            <a href="{{url('cultura')}}">
-                {{HTML::image('imagenes/ventana/iconoSeccion/cultura.png','Cultura',['id'=>'iconoRombo11','class'=>'imgColor oculta difumina Intervalo3 slideInRight iconoCultura','onmouseover'=>'cambiaImgFoto("11")','onmouseout'=>'cambiaImgCubo("11")'])}}
-            </a>
-            {{HTML::image('imagenes/ventana/homeventana/CUBO-12.png',' ',['id'=>'CUBO12','class'=>'imgColor oculta difumina Intervalo3 slideInRight rombo12','usemap'=>'#mapacubo12'])}}
-            <a href="{{url('biblioteca')}}">
-                {{HTML::image('imagenes/ventana/iconoSeccion/biblioteca.png','Biblioteca',['id'=>'iconoRombo12','class'=>'imgColor oculta difumina Intervalo3 slideInRight iconoBiblioteca','onmouseover'=>'cambiaImgFoto("12")','onmouseout'=>'cambiaImgCubo("12")'])}}
-            </a>
-            <map name="mapacubo11" id="mapacubo11">
-                <area shape="poly" coords="0,356,370,0,725,360,360,708" href="{{url('cultura')}}"onmouseover="cambiaImgFoto('11')" onmouseout="cambiaImgCubo('11')"/>
-            </map>
-            <map name="mapacubo12" id="mapacubo12">
-                <area shape="poly" coords="0,388,388,0,840,388,420,820" href="{{url('biblioteca')}}" onmouseover="cambiaImgFoto('12')" onmouseout="cambiaImgCubo('12')"/>
-            </map>
+            {{HTML::image('imagenes/ventana/homeventana/CUBO-11.png',' ',['id'=>'CUBO11','class'=>'imgColor oculta difumina Intervalo3 slideInRight rombo11'])}}
+                {{HTML::image('imagenes/ventana/iconoSeccion/cultura.png','Cultura',['id'=>'iconoRombo11','class'=>'imgColor oculta difumina Intervalo3 slideInRight iconoCultura'])}}
+            {{HTML::image('imagenes/ventana/homeventana/CUBO-12.png',' ',['id'=>'CUBO12','class'=>'imgColor oculta difumina Intervalo3 slideInRight rombo12'])}}
+                {{HTML::image('imagenes/ventana/iconoSeccion/biblioteca.png','Biblioteca',['id'=>'iconoRombo12','class'=>'imgColor oculta difumina Intervalo3 slideInRight iconoBiblioteca'])}}
         </div>
         <div class="col-md-1 col-lg-1" style="padding-top: 8.9%; padding-left:0; padding-right:0;">
-            {{HTML::image('imagenes/ventana/homeventana/CUBO-13.png','Mexico X',['id'=>'CUBO13','class'=>'imgColor oculta difumina Intervalo4 slideInRight rombo13','usemap'=>'#mapacubo13'])}}
-            <map name="mapacubo13" id="mapacubo13">
-                <area shape="poly" coords="0,424,470,0,920,424,480,920" onmouseover="cambiaImgFoto('13')" onmouseout="cambiaImgCubo('13')" href="http://mx.televisioneducativa.gob.mx/" target="_blank"/>
-                <area shape="poly" coords="0,0,0,400,400,0" href="{{url('cultura')}}" onmouseover="cambiaImgFoto('11')" onmouseout="cambiaImgCubo('11')"/>
-                <area shape="poly" coords="0,460,0,920,430,920" href="{{url('biblioteca')}}" onmouseover="cambiaImgFoto('12')" onmouseout="cambiaImgCubo('12')"/>
-            </map>
-            <a href="http://mx.televisioneducativa.gob.mx/" target="_blank">
-                {{HTML::image('imagenes/ventana/iconoSeccion/mexicoxBco.png','Mexico X',['id'=>'iconoRombo13','class'=>'imgColor oculta difumina Intervalo4 slideInRight iconoMexicoX','onmouseover'=>'cambiaImgFoto("13")','onmouseout'=>'cambiaImgCubo("13")'])}}
-            </a>
+            {{HTML::image('imagenes/ventana/homeventana/CUBO-13.png','Mexico X',['id'=>'CUBO13','class'=>'imgColor oculta difumina Intervalo4 slideInRight rombo13'])}}
+                {{HTML::image('imagenes/ventana/iconoSeccion/mexicoxBco.png','Mexico X',['id'=>'iconoRombo13','class'=>'imgColor oculta difumina Intervalo4 slideInRight iconoMexicoX'])}}
         </div>
 
         <div class="col-md-1 col-lg-1 derechaSociales" style="padding-top: 8.9%; padding-left:0; padding-right:0;">
