@@ -275,8 +275,7 @@
                     <div class="carousel-inner carousel-innerInt">
                         <div class="item active">
                             <div class="col-md-12 text-center">
-                                <!--<img  src="imagenes/red/integrantes/fotos/costarica/AnaGuilma.png" alt="...">-->
-                                {{ HTML::image('imagenes/red/integrantes/fotos/costarica/AnaGuilma.png','integrante cost1')}} 
+                               {{ HTML::image('imagenes/red/integrantes/fotos/costarica/AnaGuilma.png','integrante cost1')}} 
                             </div>
                             <div class="col-md-12 carousel-caption carousel-captionInt">
                                 <h3>Ana Gilma Guevara Bello</h3>
@@ -299,7 +298,6 @@
                         <!--Colaborador 2-->
                         <div class="item">
                             <div class="col-md-12 text-center">
-                                <!--<img  src="imagenes/red/integrantes/fotos/costarica/AnnyGonzalez.png" alt="...">-->
                                 {{ HTML::image('imagenes/red/integrantes/fotos/costarica/AnnyGonzalez.png','integrante cost2')}} 
                             </div>
                             <div class="col-md-12 carousel-caption carousel-captionInt">
@@ -321,7 +319,6 @@
                         <!--Colaborador 3-->
                         <div class="item">
                             <div class="col-md-12 text-center">
-                                <!--<img  src="imagenes/red/integrantes/fotos/costarica/LiliamCorrales.png" alt="...">-->
                                 {{ HTML::image('imagenes/red/integrantes/fotos/costarica/LiliamCorrales.png','integrante cost3')}} 
                             </div>
                             <div class="col-md-12 carousel-caption carousel-captionInt">
@@ -345,7 +342,6 @@
                         <!--Colaborador 4-->                        
                         <div class="item">
                             <div class="col-md-12 text-center">
-                                <!--<img  src="imagenes/red/integrantes/fotos/costarica/RandallCastro.png" alt="...">-->
                                 {{ HTML::image('imagenes/red/integrantes/fotos/costarica/RandallCastro.png','integrante cost4')}} 
                             </div>
                             <div class="col-md-12 carousel-caption carousel-captionInt">
@@ -373,7 +369,6 @@
                         <!--Colaborador 5-->                        
                         <div class="item">
                             <div class="col-md-12 text-center">
-                                <!--<img  src="imagenes/red/integrantes/fotos/costarica/AlejandraSanchez.png" alt="...">-->
                                 {{ HTML::image('imagenes/red/integrantes/fotos/costarica/AlejandraSanchez.png','integrante cost5')}} 
                             </div>
                             <div class="col-md-12 carousel-caption carousel-captionInt">
@@ -393,7 +388,6 @@
                         <!--Colaborador 6-->                        
                         <div class="item">
                             <div class="col-md-12 text-center">
-                                <!--<img  src="imagenes/red/integrantes/fotos/costarica/ElizabethFigueroa.png" alt="...">-->
                                 {{ HTML::image('imagenes/red/integrantes/fotos/costarica/ElizabethFigueroa.png','integrante cost6')}}
                             </div>
                             <div class="col-md-12 carousel-caption carousel-captionInt">
@@ -414,7 +408,6 @@
                         <!--Colaborador 7-->                        
                         <div class="item">
                             <div class="col-md-12 text-center">
-                                <!--<img  src="imagenes/red/integrantes/fotos/costarica/JavierFranciscoBarquero.jpg" alt="...">-->
                                 {{ HTML::image('imagenes/red/integrantes/fotos/costarica/JavierFranciscoBarquero.jpg','integrante cost7')}}
                             </div>
                             <div class="col-md-12 carousel-caption carousel-captionInt">
@@ -440,8 +433,7 @@
                         <!--Colaborador 8-->                        
                         <div class="item">
                             <div class="col-md-12 text-center">
-                                <!--<img  src="imagenes/red/integrantes/fotos/costarica/HermesMena.png" alt="...">-->
-                                {{ HTML::image('imagenes/red/integrantes/fotos/costarica/HermesMena.png','integrante cost8')}}
+                               {{ HTML::image('imagenes/red/integrantes/fotos/costarica/HermesMena.png','integrante cost8')}}
                             </div>
                             <div class="col-md-12 carousel-caption carousel-captionInt">
                                 <h3>Hermes Mena Picado</h3>
@@ -464,7 +456,6 @@
                         <!--Colaborador 9-->                        
                         <div class="item">
                             <div class="col-md-12 text-center">
-                                <!--<img  src="imagenes/red/integrantes/fotos/costarica/XiniaLizethZuñiga.png" alt="...">-->
                                 {{ HTML::image('imagenes/red/integrantes/fotos/costarica/XiniaLizethZuñiga.png','integrante cost9')}}                            </div>
                             <div class="col-md-12 carousel-caption carousel-captionInt">
                                 <h3>Xinia Lizeth Zúñiga Esquivel</h3>
@@ -487,7 +478,6 @@
                         <!--Colaborador 10-->                        
                         <div class="item">
                             <div class="col-md-12 text-center">
-                                <!--<img  src="imagenes/red/integrantes/fotos/costarica/RichardNavarro.png" alt="...">-->
                                 {{ HTML::image('imagenes/red/integrantes/fotos/costarica/RichardNavarro.png','integrante cost10')}}
                             </div>
                             <div class="col-md-12 carousel-caption carousel-captionInt">
@@ -516,8 +506,7 @@
                         <!--Colaborador 11-->                        
                         <div class="item">
                             <div class="col-md-12 text-center">
-                                <!--<img  src="imagenes/red/integrantes/fotos/costarica/YorlenyRocioRojas.png" alt="...">-->
-                                {{ HTML::image('imagenes/red/integrantes/fotos/costarica/YorlenyRocioRojas.png','integrante cost11')}}
+                               {{ HTML::image('imagenes/red/integrantes/fotos/costarica/YorlenyRocioRojas.png','integrante cost11')}}
                             </div>
                             <div class="col-md-12 carousel-caption carousel-captionInt">
                                 <h3>Yorleny Rocío Rojas Jiménez</h3>
@@ -541,7 +530,6 @@
                         <!--Colaborador 12-->                        
                         <div class="item">
                             <div class="col-md-12 text-center">
-                                <!--<img  src="imagenes/red/integrantes/fotos/costarica/YorlenyRocioRojas.png" alt="...">-->
                                 {{ HTML::image('imagenes/red/integrantes/fotos/costarica/sirleneChavez.png','integrante cost12')}}
                             </div>
                             <div class="col-md-12 carousel-caption carousel-captionInt">
@@ -595,8 +583,7 @@
                     <div class="carousel-inner carousel-innerInt">
                         <div class="item active">
                             <div class="col-md-12 text-center">
-                                <!--<img  src="imagenes/red/integrantes/fotos/republicadominicana/EuniceImperio.png" alt="...">-->
-                                {{ HTML::image('imagenes/red/integrantes/fotos/republicadominicana/EuniceImperio.png','integrante rep1')}}
+                               {{ HTML::image('imagenes/red/integrantes/fotos/republicadominicana/EuniceImperio.png','integrante rep1')}}
                             </div>
                             <div class="col-md-12 carousel-caption carousel-captionInt">
                                 <h3>Eunice Imperio Vicioso Melo</h3>
@@ -626,7 +613,6 @@
                         <!--Colaborador 2-->
                         <div class="item">
                             <div class="col-md-12 text-center">
-                                <!--<img  src="imagenes/red/integrantes/fotos/republicadominicana/RafaelDavidFranciscoVentura.png" alt="...">-->
                                 {{ HTML::image('imagenes/red/integrantes/fotos/republicadominicana/RafaelDavidFranciscoVentura.png','integrante rep2')}}
                             </div>
                             <div class="col-md-12 carousel-caption carousel-captionInt">
@@ -684,7 +670,6 @@
                         <!-- Colaborador 1 -->
                         <div class="item active">
                             <div class="col-md-12 text-center">
-                                <!--<img  src="imagenes/red/integrantes/fotos/panama/IbzkaRodríguez.png" alt="...">-->
                                 {{ HTML::image('imagenes/red/integrantes/fotos/panama/IbzkaRodríguez.png','integrante pan1')}}
                             </div>
                             <div class="col-md-12 carousel-caption carousel-captionInt">
@@ -710,7 +695,6 @@
                         <!-- Colaborador 2 -->
                         <div class="item ">
                             <div class="col-md-12 text-center">
-                                <!--<img  src="imagenes/red/integrantes/fotos/panama/MarielaMendoza.png" alt="...">-->
                                 {{ HTML::image('imagenes/red/integrantes/fotos/panama/MarielaMendoza.png','integrante pan2')}}
                             </div>
                             <div class="col-md-12 carousel-caption carousel-captionInt">
@@ -769,7 +753,6 @@
                     <div class="carousel-inner carousel-innerInt">
                         <div class="item active">
                             <div class="col-md-12 text-center">
-                                <!--<img  src="imagenes/red/integrantes/fotos/guatemala/CarlotaCalito.png" alt="...">-->
                                 {{ HTML::image('imagenes/red/integrantes/fotos/guatemala/CarlotaCalito.png','integrante gua1')}}
                             </div>
                             <div class="col-md-12 carousel-caption carousel-captionInt">
@@ -797,7 +780,6 @@
                         <!-- Colaborador 2 -->
                         <div class="item ">
                             <div class="col-md-12 text-center">
-                                <!--<img  src="imagenes/red/integrantes/fotos/panama/MarielaMendoza.png" alt="...">-->
                                 {{ HTML::image('imagenes/red/integrantes/fotos/guatemala/carlosLopez.png','integrante gua2')}}
                             </div>
                             <div class="col-md-12 carousel-caption carousel-captionInt">
@@ -849,7 +831,6 @@
                     <div class="carousel-inner carousel-innerInt">
                         <div class="item active">
                             <div class="col-md-12 text-center">
-                                <!--<img  src="imagenes/red/integrantes/fotos/honduras/GladisOndinaGalindo.png" alt="...">-->
                                 {{ HTML::image('imagenes/red/integrantes/fotos/honduras/GladisOndinaGalindo.png','integrante hon1')}}
                             </div>
                             <div class="col-md-12 carousel-caption carousel-captionInt">
@@ -909,7 +890,6 @@
                         <!-- Colaborador 1 -->
                         <div class="item active">
                             <div class="col-md-12 text-center">
-                                <!--<img  src="imagenes/red/integrantes/fotos/panama/IbzkaRodríguez.png" alt="...">-->
                                 {{ HTML::image('imagenes/red/integrantes/fotos/elsalvador/carlosrodriguezrivas.png','Integrante El Salvador 1')}}
                             </div>
                             <div class="col-md-12 carousel-caption carousel-captionInt">

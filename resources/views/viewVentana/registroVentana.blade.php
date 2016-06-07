@@ -35,8 +35,8 @@ Ventana Educativa
                     <input style=" " id="email" autocomplete="off" type="email" required name="email" class="form-control input-medium" placeholder="Correo Electrónico">                                
                 </div>
                 <div class="form-group col-md-6">
-                    <label for="nacimiento">Fecha de Nacimiento:</label>
-                    <input type="date" class="form-control input-medium" name="nacimiento" id="nacimiento" placeholder="Fecha de Nacimiento">
+                    <label for="nacimiento">Fecha de Nacimiento(dd/mm/aaaa):</label>
+                    <input type="date" class="form-control input-medium" name="nacimiento" id="nacimiento" placeholder="Fecha de Nacimiento (dd/mm/aaaa)">
                 </div>
                 <div class="form-group col-md-6">
                     <label for="contraseña">Contraseña:</label>
@@ -131,7 +131,7 @@ Ventana Educativa
     }
 
     $("#email").focusout(function () {
-    var _url = '{{url('user / existEmail')}}' + '/' + $('#email').val();
+    var _url = "{{url('user/existEmail')}}" + '/' + $('#email').val();
             console.log(_url);
             loadDoc(_url, 'correo', 'email');
     });
@@ -139,7 +139,7 @@ Ventana Educativa
     muestraError(false, '', 'email');
     });
             $("#nick").focusout(function () {
-    var _url = '{{url('user / existNick')}}' + '/' + $('#nick').val();
+    var _url = "{{url('user/existNick')}}" + '/' + $('#nick').val();
             console.log(_url);
             loadDoc(_url, 'nombre de usuario', 'nick');
     });

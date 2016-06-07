@@ -1,0 +1,107 @@
+﻿/* Efectos para pie menú  */
+.skin3.bottom .tab_header_item.tab_selected a {
+    background: rgba(0, 0, 0, 0.2);
+}
+.skin3.bottom.tabs_wrapper {
+    position: relative;
+    overflow: hidden;
+    border: none;
+    border-bottom: none;
+}
+.skin3.bottom .tabs_header {
+    overflow: hidden;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+    padding-bottom: 1px;
+
+}
+.skin3.bottom .tab_header_item.tab_selected {
+    background: none;
+
+}
+
+/* Efectos para iconos redes sociales */
+
+.derechaSociales{
+    float: right;
+
+}
+.sociales{
+    list-style: none;
+}
+.cambiacolorredesSociales{
+    color: #fff;
+}
+
+#ct:hover{
+    color:#00B6F1;
+}
+#cf:hover{
+    color:#46629E;
+}
+#cy:hover{
+    color:#E62117;
+}
+
+.txtPestana{
+    position: relative;
+    top:15px;
+    color:#fff;
+}
+.txtPestanaSM{
+    font-size:0.8em;
+    font-family:'Ubuntu';
+    color:#fff;
+     
+}
+.fondoColaboraSM{
+    width:30px;
+    height:80px;
+    border-bottom: 100px solid rgba(0, 0, 0, 0.3); 
+    padding-left:10px;
+    writing-mode: vertical-lr;
+}
+
+.fondoColabora{
+    width:200px;
+    height:20px;
+    padding-left:20px;
+    border-bottom: 50px solid rgba(0, 0, 0, 0.3); 
+    border-right: 35px solid transparent;
+}
+
+.fondoColabora>a{
+    text-decoration: none;
+     -webkit-transition: all 4s ease;
+-moz-transition: all 4s ease;
+-ms-transition: all 4s ease;
+-o-transition: all 4s ease;
+transition: all 4s ease;
+}
+/* ++++++ */
+
+.f1SM > ul{
+    list-style: none;
+    display: table;
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+    margin-bottom:0px;
+    padding:0px;
+   
+}
+.f1SM{
+    padding:0px;
+
+}
+.f1SM > div {
+    display: none;
+    padding:20px;
+
+}
+
+.f1SM:hover > div{
+    display: block;
+    line-height: 20px;
+    text-decoration: none;
+    background: rgba(0, 0, 0, 0.3);    
+}

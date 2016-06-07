@@ -2,7 +2,7 @@
     Ventana Educativa
 @stop
 @section('menuMediateca')
-	@include('viewMediateca.encabezadoMediateca')
+    @include('viewMediateca.encabezadoMediateca')
 @endsection
 @extends('indexMediateca')
 @section('cuerpoMediateca')
@@ -19,7 +19,7 @@
                     <form id="login-form" action="{{url('sessions')}}" method="POST" role="form" style="display: block;">
                         <input type="hidden" name="_token" value="{{ csrf_token() }}" />
                         <div class="form-group">
-                            <input type="email" name="email"  tabindex="1" class="form-control inputLogin" placeholder="Usuario" value="">
+                            <input type="email" name="email"  tabindex="1" class="form-control inputLogin" placeholder="Correo Electrónico" value="">
                         </div>
                         <div class="form-group">
                             <input type="password" name="password"  tabindex="2" class="form-control inputLogin" placeholder="Contraseña">
