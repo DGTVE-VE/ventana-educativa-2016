@@ -3,6 +3,7 @@
 @stop
 @extends('indexEducaplay')
 @section('cuerpoEducaplay')
+
 @if($primerDetalleSerie !== null)
 	<div class="col-md-12" style="color:white;">
         <div class="tab-content estiloTab">
@@ -19,18 +20,21 @@
 					<h3>{{$primerDetalleSerie->titulo_serie}}</h3>
 				</div>
 				<div class="col-md-12">
-				Temporadas: 
 				</div>
 				<div class="col-md-1">
+					<div class="dropdown">
+						<button class="btn btn-default dropdown-toggle" type="button" id="btntemporada" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+							Temporada	<span class="caret"></span>
+						</button>
+						<ul class="dropdown-menu" aria-labelledby="btntemporada">
 				{{--*/ 
 					for($temp=1; $temp<= $primerDetalleSerie->temporadas_total; $temp++){
-						$ligaTemporada = "educaplay/descripciones/temporada/".$primerDetalleSerie->id."/".$temp;
-						echo '<div class="col-md-6"> 
-								<a href='.url($ligaTemporada).' target="detalleSerie"> 
-								<button type="button" class="btn btn-info" style="width:38px;">'.$temp.'</button></a>
-							  </div>';
+						$urlTemporada = "educaplay/descripciones/temporada/".$primerDetalleSerie->id."/".$temp;
+						echo '<li><a href='.url($urlTemporada).' target="detalleSerie">'.$temp.'</a></li>';
 					}
 				/*--}}
+						</ul>
+					</div>
 				</div>
 				<div class="col-md-11">
 					<iframe name="detalleSerie" id="detalleSerie" src="{{url('educaplay/descripciones/temporada/'.$primerDetalleSerie->id.'/0')}}" frameborder="0" class="col-md-12" style="height:200px;">

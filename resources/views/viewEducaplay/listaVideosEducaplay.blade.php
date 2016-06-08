@@ -4,6 +4,7 @@ Educaplay
 @extends('indexEducaplay')
 @section('menuEducaplay')
 	@include('viewVentana.encabezadoVentana')
+
 	<script>
 		$('#buscar').css('display','none');
 		$('#iconoBuscar').css('display','none');
@@ -22,6 +23,21 @@ Educaplay
 			$('#episodio7').attr('src',direccionVideo);
 			$('#episodio8').css('display','block');
 		}
+		$(document).ready( function (){
+			$('#star-rating').change (function (){
+				$.ajax({
+					method: "POST",
+					url: "{{url('educamedia/rate')}}",
+					data: { nivel: $("#nivel").val(), id: $("#video-id").val(), rating:$("#star-rating").val(), _token:"{{csrf_token()}}" },                
+					error: function(ts) { 
+						console.log (ts.responseText); 
+					}})
+					.done(function( msg ) {
+						console.log ( "Data Saved: " + msg );
+						loadComments ($("#video-id").val());
+					});
+			});
+		});
 	</script>
 <style>
 	.estiloTxt{
@@ -82,11 +98,20 @@ Educaplay
 				<div id="episodio8" class="col-md-6 col-md-offset-3 efectoLento">
 				{{--*/ $srcUrlVideo = ""; /*--}}
 			@else
-				<div id="episodio8" class="col-md-6 col-md-offset-3">
+				<div id="episodio8" class="col-md-6 col-md-offset-3 efectoLento">
 				{{--*/ $srcUrlVideo = "https://www.youtube.com/embed/".$urlVideo."?autoplay=1";/*--}}
 			@endif
 					<iframe id="episodio7" src="{{$srcUrlVideo}}" frameborder="0" class="marcoVideo">
 					</iframe>
+				</div>
+				<div class="col-md-12">
+				</div>
+				<div class="col-md-4" style="color:white;">
+					<div class="pull-right">
+						<input type="number" name="rating" id="star-rating" class="rating" data-icon-lib="fa" data-active-icon="fa-star" data-inactive-icon="fa-star-o"  />
+						<input type="hidden" id="video-id" value="5" />
+						<input type="hidden" id="nivel" value="3" />
+					</div>
 				</div>
 			</div>
 			<div class="row margenesFila">
@@ -108,4 +133,5 @@ Educaplay
 			{{--*/ $imprimeTitulo++; /*--}}
 	@endforeach
 			</div>
+			<script src="{{asset ('js/bootstrap-rating-input.min.js')}}"></script>
 @endsection
