@@ -72,7 +72,7 @@
             <a href="http://www.promocion.salud.gob.mx/dgps/interior1/programas/escuela_salud.html" target="_blank">
                 {{HTML::image('imagenes/ventana/iconoSeccion/salud.png','',['id'=>'iconoRombo03','class'=>'imgColor oculta difumina Intervalo3 slideInLeft iconoSalud','onmouseover'=>'cambiaImgFoto("03")','onmouseout'=>'cambiaImgCubo("03")'])}}
             </a>
-        </div>
+       
 
         <!-- Modal Idiomas-->
         <div class="modal fade" id="myModal-idiomas" role="dialog">
@@ -91,7 +91,7 @@
                 </div>
             </div>
         </div> <!--Fin Modal Idiomas-->
-
+ </div>
 
         <div class="col-md-1 col-lg-1" style="padding-top: 8.3%; padding-left:0px; padding-right:0px;">
             {{HTML::image('imagenes/ventana/homeventana/CUBO-04.png','Padres',['id'=>'CUBO04','class'=>'imgColor oculta difumina Intervalo2 slideInLeft rombo4','usemap'=>'#mapacubo4'])}}

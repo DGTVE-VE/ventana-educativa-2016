@@ -9,10 +9,11 @@ and open the template in the editor.
         <title>@yield('titleVentana','Venatana Educativa')</title>
                 
         <!--  App Descripción  -->
-        <meta name="description" content="Ventana Educativa"/>
-        <meta charset="utf-8">
-        <meta name="author" content="Ecosistema Digital de Aprendizaje (DGTVE)">
-        <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+        <meta charset="utf-8"/>
+        <meta name="author" content="Ecosistema Digital de Aprendizaje (DGTVE)"/>
+        <meta name="description" content="Ventana Educativa 2016. Es una plataforma de gestión y distribución de contenidos educativos multimedia, alineados a los programas educativos de nivel básico."/>
+        <meta name="keywords" content="Ventana Educativa, plataforma digital, contenidos educativos, multimedia, Canal Iberoamericano, Idiomas, Salud, Padres, Estudiantes, Educaplay, Docentes, Educamedia, Telesecundaria, Telebachillerato, Red Mesoamericana, Cultura, Biblioteca, MéxicoX"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
 
         <link rel="shortcut icon" href="{{ asset('redmite1.ico') }}" >
