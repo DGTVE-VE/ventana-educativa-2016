@@ -20,7 +20,7 @@ class VentanaController extends Controller {
 //    public function correoEnviado() {/*para pruebas de visualización*/
 //        return view('viewVentana/correoEnviado');
 //    }
-//    
+//
     public function ventana_educativa() {
         Flash::message('Para una mejor experiencia de visualización le recomendamos usar el navegador Google Chrome o Firefox');
         return view('viewVentana/ventana-educativa');
@@ -37,14 +37,14 @@ class VentanaController extends Controller {
         $users->nacimiento = filter_input(INPUT_POST, 'nacimiento');
         $users->ciudad = filter_input(INPUT_POST, 'ciudad');
         $users->pais = filter_input(INPUT_POST, 'pais');
-        $users->intereses_edu = filter_input(INPUT_POST, 'intereses_edu');        
+        $users->intereses_edu = filter_input(INPUT_POST, 'intereses_edu');
         $users->is_teacher = (filter_input(INPUT_POST, 'is_teacher') == 'on')? 1 : 0;
         $users->is_student = (filter_input(INPUT_POST, 'is_student') == 'on')? 1 : 0;
         $users->is_parent =  (filter_input(INPUT_POST, 'is_parent') == 'on')? 1 : 0;
-        
+
         $users->save();
         return $this->enviaCorreoActivacion($users->email, md5($users->password), filter_input (INPUT_POST, 'back_url'));
-        
+
     }
 
     public function presentacion() {
@@ -52,7 +52,7 @@ class VentanaController extends Controller {
     }
 
     public function registro() {
-        
+
         return view('viewVentana/registroVentana')
             ->with ('back_url', URL::previous());
     }
@@ -60,7 +60,7 @@ class VentanaController extends Controller {
      public function acceso() {
         return view('viewVentana/acceso');
     }
-    
+
     public function enviaCorreoActivacion($correo, $hash, $back_url) {
         Mail::send('viewVentana.emails.activacion', ['correo' => $correo, 'hash' => $hash], function ($m) use ($correo) {
             $m->from('ventana@televisioneducativa.gob.mx', 'Ventana Educativa');
@@ -88,15 +88,15 @@ class VentanaController extends Controller {
         $mime = $info['mime'];
         switch ($mime) {
             case 'image/jpeg':
-                $img = imagecreatefromjpeg($originalFile);                
+                $img = imagecreatefromjpeg($originalFile);
                 break;
 
             case 'image/png':
-                $img = imagecreatefrompng($originalFile);                
+                $img = imagecreatefrompng($originalFile);
                 break;
 
             case 'image/gif':
-                $img = imagecreatefromgif($originalFile);                
+                $img = imagecreatefromgif($originalFile);
                 break;
 
             default:
@@ -104,22 +104,22 @@ class VentanaController extends Controller {
         }
         return $img;
     }
-    
+
     private function resize($newWidth, $targetFile, $originalFile) {
-        $img = $this->newImage ($originalFile);        
+        $img = $this->newImage ($originalFile);
         list($width, $height) = getimagesize($originalFile);
 //        $newHeight = ($height / $width) * $newWidth;
         $newHeight = $newWidth;
         $tmp = imagecreatetruecolor($newWidth, $newHeight);
         $width = ($width > $height)? $height : $width;
         $height = ($height > $width) ? $width : $height;
-        imagecopyresampled($tmp, $img, 
+        imagecopyresampled($tmp, $img,
                 0,              //dst_x
                 0,              //dst_y
                 0,              //src_x
                 0,              //src_y
                 $newWidth,      //dst_w
-                $newHeight,     //dst_h  
+                $newHeight,     //dst_h
                 $width,         //src_w
                 $height);       //src_h
 
@@ -131,8 +131,8 @@ class VentanaController extends Controller {
 
     public function cambiaAvatar() {
 
-        if (Input::file('image')->isValid()) {            
-            $targetFile = 'uploaded/avatares/'.Auth::user()->id . '.png';  
+        if (Input::file('image')->isValid()) {
+            $targetFile = 'uploaded/avatares/'.Auth::user()->id . '.png';
             $this->resize(200, $targetFile, Input::file('image')->getRealPath());
             print url($targetFile);
         } else {
@@ -140,4 +140,17 @@ class VentanaController extends Controller {
         }
     }
 
+    public function agregaMiLista()
+    {
+      $correo = \Auth::user() -> email;
+
+      $exito = DB::table('users')->whereemail($correo)->update(['activo' => 1]);
+      if($exito == 1){
+        return "Agregada";
+      }
+      else  {
+        return 0;
+      }
+
+}
 }

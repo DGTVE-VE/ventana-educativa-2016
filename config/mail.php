@@ -54,7 +54,7 @@ return [
     |
     */
 
-    'from' => ['address' => 'redmite@televisioneducativa.gob.mx', 'name' => 'Red Mesoamericana'],
+    'from' => ['address' => 'ventana@televisioneducativa.gob.mx', 'name' => 'Ventana Educativa'],
 
     /*
     |--------------------------------------------------------------------------
@@ -79,8 +79,8 @@ return [
     | connection. You may also set the "password" value below this one.
     |
     */
-
-    'username' => env('redmite@televisioneducativa.gob.mx'),
+    'username' => env('ventana@televisioneducativa.gob.mx'),
+    //'username' => env('redmite@televisioneducativa.gob.mx'),
 
     /*
     |--------------------------------------------------------------------------
@@ -92,8 +92,8 @@ return [
     | connection so that the application will be able to send messages.
     |
     */
-
-    'password' => env('Hc5vFN4D'),
+    'password' => env('KFQ7SuycchD4'),
+//    'password' => env('Hc5vFN4D'),
 
     /*
     |--------------------------------------------------------------------------

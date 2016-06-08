@@ -12,6 +12,6 @@ class TelebachilleratoComments extends Model
         return $this->belongsTo('App\User', 'usuario_id');
     }
     public function respuestas (){
-        return $this->hasMany ('App\Model\Mediateca\TelebachilleratoComments', 'comment_id');
+        return $this->hasMany ('App\Model\Mediateca\TelebachilleratoComments', 'comment_id')->orderBy ('created_at','DESC');
     }
 }

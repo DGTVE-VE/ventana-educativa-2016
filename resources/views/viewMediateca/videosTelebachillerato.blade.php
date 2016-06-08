@@ -183,7 +183,28 @@ Educamedia
             $('#div-containter').fadeIn ();
             loadComments (_id);
         });
-        
+         $(document).on('click', "a.linkComentar", function() {                                                        
+            var $element = $(this);
+            var partes = $element.attr ('id').split ('_');                                                        
+            var respuesta = $('#responde_'+partes[1]).val();
+            console.log (respuesta);
+            $.ajax({
+                method: "POST",
+                url: "{{url('educamedia/comment/telebachillerato')}}",
+                data: {comment: respuesta,
+                    video_id: $("#video-id").val(),
+                    comment_id: partes[1],
+                    _token: "{{csrf_token()}}"},
+                error: function (ts) {
+                    console.log(ts.responseText);
+                }})
+                    .done(function (msg) {
+                        $("#respuestas-"+partes[1]).prepend($(msg).fadeIn('slow'));
+                        $('#responde_'+partes[1]).val('');
+                        console.log("Data Saved: " + msg);
+                });
+        });
+                                                    
         $('#btn-comentar').click (function (){
             
             $.ajax({
