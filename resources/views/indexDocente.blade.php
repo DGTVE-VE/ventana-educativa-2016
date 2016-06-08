@@ -18,7 +18,7 @@ and open the template in the editor.
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-        
+
         <!--	-------------------------- Fuentes de google fonts ------------------------------------		-->
         <link href='https://fonts.googleapis.com/css?family=Ubuntu:400,300,500,700' rel='stylesheet' type='text/css'>
 
@@ -29,15 +29,22 @@ and open the template in the editor.
         <link rel="stylesheet" href="{{ asset('css/mediateca/estilomediateca2.css') }}" > 
         <link rel="stylesheet" href="{{ asset('css/mediateca/estilomediateca3.css') }}" > 
         <link rel="stylesheet" href="{{ asset('css/cultura/estilocultura.css') }}" >      
-        
+
         @yield ('estilos')
-        
+
         <!-- jQuery library -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+        <!--con esta no funciona el calendario-->
+        <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>-->
 
         <!-- Latest compiled JavaScript -->
         <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 
+        <!--links para calendario-->
+        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/fullcalendar/2.2.7/fullcalendar.min.css"/>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.9.0/moment.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/fullcalendar/2.2.7/fullcalendar.min.js"></script>
+        
         @yield ('scripts')
     </head>
     <body style="background-image:url('{{ asset('imagenes/docente/backgroundDocente.jpg') }}');">     

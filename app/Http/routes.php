@@ -134,6 +134,7 @@ Route::group(['middleware' => 'web'], function () {
     
     /*     * **************************Cultura********************** */
     Route::get('docente', 'DocenteController@docente');
+    Route::resource('docente/calendario','CalendarController@calendario');
     /*     * **************************Cultura********************** */
 });
 
