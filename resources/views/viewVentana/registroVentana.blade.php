@@ -18,7 +18,18 @@ Ventana Educativa
             <form role="form" action="{{url('registraUsuario')}}" method="post">
                 <input type="hidden" name="back_url" value="{{ $back_url }}">
                 <input type="hidden" name="_token" value="{{ csrf_token() }}">
-                <div id='mensaje-error' class="alert alert-danger hidden" >            
+                <div id='mensaje-error' class="alert alert-danger hidden" >
+                </div>
+                <div>
+                  @if (count($errors) > 0)
+                      <div class="alert alert-danger">
+                          <ul>
+                              @foreach ($errors->all() as $error)
+                                  <li>{{ $error }}</li>
+                              @endforeach
+                          </ul>
+                      </div>
+                  @endif
                 </div>
                 <div class="form-group col-md-6">
                     <br>
@@ -31,8 +42,8 @@ Ventana Educativa
                     <input type="text" required autocomplete="off" name="nickname" id="nick" class="form-control input-medium" placeholder="Nombre de usuario">
                 </div>
                 <div class="form-group col-md-6 has-error">
-                    <label for="correo">Correo Electrónico:</label>                
-                    <input style=" " id="email" autocomplete="off" type="email" required name="email" class="form-control input-medium" placeholder="Correo Electrónico">                                
+                    <label for="correo">Correo Electrónico:</label>
+                    <input style=" " id="email" autocomplete="off" type="email" required name="email" class="form-control input-medium" placeholder="Correo Electrónico">
                 </div>
                 <div class="form-group col-md-6">
                     <label for="nacimiento">Fecha de Nacimiento(dd/mm/aaaa):</label>
@@ -41,21 +52,21 @@ Ventana Educativa
                 <div class="form-group col-md-6">
                     <label for="contraseña">Contraseña:</label>
                     <input type="password"  required name="password" class="form-control input-medium" placeholder="Contraseña">
-                </div>     
+                </div>
                 <div class="form-group col-md-6">
                     <label for="contraseñarep">Repetir Contraseña:</label>
                     <input type="password" required name="password_confirmation" class="form-control input-medium" placeholder="Contraseña">
                 </div>
-                
+
                     <div class="form-group col-md-6">
                         <label for="pais">País:</label>
                         <select required id="countries_states1" name="pais"  class="form-control input-medium bfh-countries" data-country="MX"></select>
                     </div>
                     <div class="form-group col-md-6">
-                        <label for="ciudad">Ciudad:</label>
+                        <label for="ciudad">Estado:</label>
                         <select required name="ciudad" class="input-medium bfh-states form-control" data-country="countries_states1"></select>
                     </div>
-                
+
                 <div class="form-group col-md-6">
                     <label for="genero">Genero:</label>
                     <div class="radio">
@@ -76,12 +87,12 @@ Ventana Educativa
                         <label><input type="checkbox" name='is_student' id='is_student'> Estudiante</label>
                     </div>
                 </div>
-                
-                
+
+
                 <div class="form-group col-md-12 text-center">
                     <div class="col-md-4"></div>
-                    <div class="col-md-1">                    
-                        <button type="button" data-dismiss="modal" class="btn btn-danger">Cancelar</button>
+                    <div class="col-md-1">
+                        <a href="{{url ('/')}}"type="button" data-dismiss="modal" class="btn btn-danger">Cancelar</a>
                     </div>
                     <div class="col-md-2"></div>
                     <div class="col-md-1">
@@ -96,6 +107,7 @@ Ventana Educativa
         </div>
     </div>
 </div>
+
 <script>
 
 
@@ -148,7 +160,6 @@ Ventana Educativa
     });
             /************ Valida correo existente en el formulario ****************************************************/
 </script>
-
 
 @endsection
 @section('pieVentana')

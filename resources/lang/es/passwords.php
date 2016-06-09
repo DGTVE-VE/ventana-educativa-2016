@@ -4,7 +4,7 @@ return [
 
     /*
     |--------------------------------------------------------------------------
-    | Password Reset Language Lines
+    | Password Reminder Language Lines
     |--------------------------------------------------------------------------
     |
     | The following language lines are the default lines which match reasons
@@ -12,11 +12,11 @@ return [
     | has failed, such as for an invalid token or invalid new password.
     |
     */
-    
-    'password' => 'Los passwords deben ser de al menos seis caracteres y coincidir en la confirmación',
-    'reset' => '¡Tú password ha sido modificado!',
-    'sent' => 'Te hemos enviado el correo con la liga para que cambies tu password.',
-    'token' => 'Este token para cambiar el password es inválido.',
-    'user' => "No existe un usuario con esa dirección de correo.",
+
+    'password' => 'La contraseña debe tener al menos 6 caracteres y coincidir con la confirmación.',
+    'reset' => '¡Su contraseña ha sido reestablecida!',
+    'sent' => '¡Recordatorio de contraseña enviado!',
+    'token' => 'Este token de reestablecimiento de contraseña es inválido.',
+    'user' => 'No se ha encontrado un usuario con esa dirección de correo.',
 
 ];
