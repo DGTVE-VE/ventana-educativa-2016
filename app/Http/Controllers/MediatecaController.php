@@ -18,9 +18,10 @@ class MediatecaController extends Controller {
      public function __construct() {
         
         $this->middleware('auth', 
-            ['only' => ['getVideosTelesecundaria', 
+            ['only' => [
+//                        'getVideosTelesecundaria', 
                         'guardaRating', 
-                        'getVideosTelebachillerato', 
+//                        'getVideosTelebachillerato', 
                         'storeTelesecundariaComment',
                         'telesecundariaComments',
                         'storeTelebachilleratoComment',
