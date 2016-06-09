@@ -38,7 +38,7 @@ Route::group(['middleware' => 'web'], function () {
 
 
     Route::get('verificaCorreo/{correo}/{hash}', 'VentanaController@activaCorreo');
-    Route::get('registro', 'VentanaController@registro');
+    Route::any('registro', 'VentanaController@registro');
     Route::get('acceso', 'VentanaController@acceso');
     Route::get('presentacion', 'VentanaController@presentacion');
     Route::post('registraUsuario', 'VentanaController@registraUsuario');
@@ -135,13 +135,13 @@ Route::group(['middleware' => 'web'], function () {
     Route::get('biblioteca', 'BibliotecaController@biblioteca');
     Route::get('biblioteca/tomos/{categoria}', 'BibliotecaController@tomos');
     /*     * **************************Cultura********************** */
-    
+
     /*     * **************************Docente********************** */
     Route::get('docente', 'DocenteController@docente');
     Route::resource('docente/calendario','DocenteController@calendario');
     Route::get('docente/mimaterial', 'DocenteController@mimaterial');
     Route::get('docente/materialapoyo', 'DocenteController@materialapoyo');
-    Route::get('docente/foros', 'DocenteController@foros');    
+    Route::get('docente/foros', 'DocenteController@foros');
     /*     * **************************Docente********************** */
 });
 

@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Mail;
+use App\Http\Requests;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Input;
 use Illuminate\Support\Facades\Validator;
@@ -26,7 +27,27 @@ class VentanaController extends Controller {
         return view('viewVentana/ventana-educativa');
     }
 
-    public function registraUsuario() {
+    public function registraUsuario(Request $request) {
+
+
+    $this->validate($request, [
+
+        'nickname' => 'required|max:254',
+        'name' => 'required|max:254',
+        'email' => 'required|email|max:254|unique:users',
+        'password' => 'required|max:60|min:6|confirmed',
+        'genero' => 'required',
+        'nacimiento' => 'required|date',
+        'ciudad' => 'required|max:100',
+        'pais' => 'required|max:100',
+
+      ]);
+
+      if ($validator->fails()) {
+          return redirect('registro')
+                      ->withErrors($validator)
+                      ->withInput();
+      }
 
         $users = new \App\User();
         $users->nickname = filter_input(INPUT_POST, 'nickname');

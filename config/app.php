@@ -69,7 +69,7 @@ return [
       | the language folders that are provided through your application.
       |
      */
-    'fallback_locale' => 'en',
+    'fallback_locale' => 'es',
     /*
       |--------------------------------------------------------------------------
       | Encryption Key
@@ -193,5 +193,5 @@ return [
         'HTML'=> Illuminate\Html\HtmlFacade::class,
         'Flash' => Laracasts\Flash\Flash::class,
 //        'Calendar' => MaddHatter\LaravelFullcalendar\Facades\Calendar::class,
-    ],  
+    ],
 ];
