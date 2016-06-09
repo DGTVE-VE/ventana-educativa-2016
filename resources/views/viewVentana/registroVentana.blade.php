@@ -92,7 +92,7 @@ Ventana Educativa
                 <div class="form-group col-md-12 text-center">
                     <div class="col-md-4"></div>
                     <div class="col-md-1">
-                        <button type="button" data-dismiss="modal" class="btn btn-danger">Cancelar</button>
+                        <a href="{{url ('/')}}"type="button" data-dismiss="modal" class="btn btn-danger">Cancelar</a>
                     </div>
                     <div class="col-md-2"></div>
                     <div class="col-md-1">
