@@ -137,10 +137,13 @@ Route::group(['middleware' => 'web'], function () {
     Route::get('biblioteca/tomos/{categoria}', 'BibliotecaController@tomos');
     /*     * **************************Cultura********************** */
     
-    /*     * **************************Cultura********************** */
+    /*     * **************************Docente********************** */
     Route::get('docente', 'DocenteController@docente');
-    Route::resource('docente/calendario','CalendarController@calendario');
-    /*     * **************************Cultura********************** */
+    Route::resource('docente/calendario','DocenteController@calendario');
+    Route::get('docente/mimaterial', 'DocenteController@mimaterial');
+    Route::get('docente/materialapoyo', 'DocenteController@materialapoyo');
+    Route::get('docente/foros', 'DocenteController@foros');    
+    /*     * **************************Docente********************** */
 });
 
 //Route::get ('api/getImagenes/{tipo}/{id}', '');

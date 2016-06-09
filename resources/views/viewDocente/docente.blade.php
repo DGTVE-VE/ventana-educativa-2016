@@ -62,20 +62,28 @@ Docente
     <div class="col-md-12 tituloDocente text-center">Docentes</div>
     <div class="row contenidoDocente">
         <div class="imgDocente col-md-3">
-            <img class="img-responsive center-block" src="imagenes/docente/materialdeapoyo.png">
+            <a href="{{asset('docente/materialapoyo')}}">
+            <img class="img-responsive center-block" src="{{asset('imagenes/docente/materialdeapoyo.png')}}">
             <input type="button" class="btn btn-docente col-md-12" value="MATERIAL DE APOYO">
+            </a>
         </div>
         <div class="imgDocente col-md-3">
-            <img class="img-responsive center-block" src="imagenes/docente/mimaterial.png">
+            <a href="{{asset('docente/mimaterial')}}">
+            <img class="img-responsive center-block" src="{{asset('imagenes/docente/mimaterial.png')}}">
             <input type="button" class="btn btn-docente col-md-12" value="MI MATERIAL">            
+            </a>
         </div>
         <div class="imgDocente col-md-3">
-            <img class="img-responsive center-block" src="imagenes/docente/foros.png">
+            <a href="{{asset('docente/foros')}}">
+            <img class="img-responsive center-block" src="{{asset('imagenes/docente/foros.png')}}">
             <input type="button" class="btn btn-docente col-md-12" value="FOROS">            
+            </a>
         </div>
         <div class="imgDocente col-md-3">
-            <img class="img-responsive center-block" src="imagenes/docente/calendario.png">
+            <a href="{{asset('docente/calendario')}}">
+            <img class="img-responsive center-block" src="{{asset('imagenes/docente/calendario.png')}}">
             <input type="button" class="btn btn-docente col-md-12" value="CALENDARIO">            
+            </a>
         </div>
     </div>
 </div>
