@@ -92,6 +92,14 @@ class EducaplayController extends Controller {
          return $categoria->categoria;
     }
 
+	public static function consultaUrlId($SerieId){
+		$urlId = DB::table('edu_video')
+			->select('edu_video.url_video')
+			->where('edu_video.serie_id','=',$SerieId)
+			->where('edu_video.capitulo','=',1)
+			->first();
+		return $urlId->url_video;
+	}
     function series($idSerie, $urlVideo) {
 		$episodiosSerie = DB::table('edu_serie')
 				->join('edu_imagen', 'edu_serie.id', '=', 'edu_imagen.serie_id')

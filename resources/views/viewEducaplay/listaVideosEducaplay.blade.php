@@ -98,7 +98,7 @@ Educaplay
 				<div id="episodio8" class="col-md-6 col-md-offset-3 efectoLento">
 				{{--*/ $srcUrlVideo = ""; /*--}}
 			@else
-				<div id="episodio8" class="col-md-6 col-md-offset-3 efectoLento">
+				<div id="episodio8" class="col-md-6 col-md-offset-3">
 				{{--*/ $srcUrlVideo = "https://www.youtube.com/embed/".$urlVideo."?autoplay=1";/*--}}
 			@endif
 					<iframe id="episodio7" src="{{$srcUrlVideo}}" frameborder="0" class="marcoVideo">
