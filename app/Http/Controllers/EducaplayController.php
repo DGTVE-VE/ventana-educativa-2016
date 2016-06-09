@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Model\Educaplay\Edu_serie;
 use App\Model\Educaplay\Edu_imagen;
+use App\Model\Educaplay\edu_rating;
 use App\Http\Requests;
 use DB;
 
@@ -92,7 +93,7 @@ class EducaplayController extends Controller {
          return $categoria->categoria;
     }
 
-	public static function consultaUrlId($SerieId){
+	static function consultaUrlId($SerieId){
 		$urlId = DB::table('edu_video')
 			->select('edu_video.url_video')
 			->where('edu_video.serie_id','=',$SerieId)
@@ -100,11 +101,25 @@ class EducaplayController extends Controller {
 			->first();
 		return $urlId->url_video;
 	}
+	
+	public function guardaRating(){
+		$user_id = filter_input(INPUT_POST,'user_id');
+		$video_id = filter_input(INPUT_POST,'video_id');
+		$rating = filter_input(INPUT_POST,'rating');
+		$ratingSaved = new edu_rating;
+		$ratingSaved->user_id = $user_id;
+		$ratingSaved->video_id = $video_id;
+		$ratingSaved->rating = $rating;
+		//$ratingSaved = edu_rating::where(['user_id'=>$user_id, 'video_id'=>$video_id]);
+		//$ratingSaved->rating = $rating;
+		$ratingSaved->save();
+	}
+	
     function series($idSerie, $urlVideo) {
 		$episodiosSerie = DB::table('edu_serie')
 				->join('edu_imagen', 'edu_serie.id', '=', 'edu_imagen.serie_id')
 				->join('edu_video', 'edu_serie.id', '=', 'edu_video.serie_id')
-                ->select('edu_serie.titulo_serie', 'edu_serie.temporadas_total', 'edu_serie.clasificacion_id', 'edu_serie.descripcion', 'edu_imagen.url', 'edu_imagen.ubicacion_id', 'edu_video.sinopsis', 'edu_video.temporada', 'edu_video.capitulo', 'edu_video.url_video')
+                ->select('edu_serie.titulo_serie', 'edu_serie.temporadas_total', 'edu_serie.clasificacion_id', 'edu_serie.descripcion', 'edu_imagen.url', 'edu_imagen.ubicacion_id', 'edu_video.id', 'edu_video.sinopsis', 'edu_video.temporada', 'edu_video.capitulo', 'edu_video.url_video')
                 ->where('edu_serie.id','=',$idSerie)
 				->where('edu_imagen.ubicacion_id','=',5)
 		        ->get();

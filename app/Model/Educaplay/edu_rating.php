@@ -1,6 +1,6 @@
 <?php
 
-namespace App;
+namespace App\Model\Educaplay;
 
 use Illuminate\Database\Eloquent\Model;
 
