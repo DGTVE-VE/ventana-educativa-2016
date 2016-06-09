@@ -121,12 +121,14 @@ Educaplay
 						<iframe id="episodio7" src="{{$srcUrlVideo}}" frameborder="0" class="marcoVideo">
 						</iframe>
 					</div>
-					<div class="col-md-2">					
+					<div class="col-md-2">
+					@if(Auth::check ())
 						<div class="pull-right" style="color:white;">
 							<input type="number" name="rating" id="star-rating" class="rating" data-icon-lib="fa" data-active-icon="fa-star" data-inactive-icon="fa-star-o"  />
 							<input type="hidden" id="video-id" value="{{$serie->id}}" />
 							<input type="hidden" id="usuario" value="1" />
 						</div>
+					@endif
 					</div>
 				</div>
 			</div>

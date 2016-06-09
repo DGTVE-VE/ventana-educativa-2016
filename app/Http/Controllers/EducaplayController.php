@@ -2,11 +2,14 @@
 
 namespace App\Http\Controllers;
 
+use Illuminate\Database\Eloquent\Model;
 use Illuminate\Http\Request;
 use App\Model\Educaplay\Edu_serie;
 use App\Model\Educaplay\Edu_imagen;
 use App\Model\Educaplay\edu_rating;
+use Illuminate\Support\Facades\Auth;
 use App\Http\Requests;
+use Laracasts\Flash\Flash;
 use DB;
 
 class EducaplayController extends Controller {
@@ -24,11 +27,6 @@ class EducaplayController extends Controller {
 				->where('edu_imagen.ubicacion_id','=',1)
 		        ->first();
         return view('viewEducaplay/descripcionSerie')->with('primerDetalleSerie', $primerDetalleSerie);
-				/*SELECT A.titulo_serie, A.temporadas_total, A.clasificacion_id, A.descripcion, B.url, B.ubicacion_id, C.sinopsis, C.temporada, C.capitulo, C.url_video
-				FROM ventana_educativa.edu_serie AS A
-				INNER JOIN ventana_educativa.edu_imagen AS B ON A.id = B.serie_id
-				INNER JOIN ventana_educativa.edu_video AS C ON A.id = C.serie_id
-				WHERE A.id = '2' AND B.ubicacion_id = "2";*/
     }
 
 	public function temporada($serieId, $temporada) {
@@ -106,13 +104,12 @@ class EducaplayController extends Controller {
 		$user_id = filter_input(INPUT_POST,'user_id');
 		$video_id = filter_input(INPUT_POST,'video_id');
 		$rating = filter_input(INPUT_POST,'rating');
-		$ratingSaved = new edu_rating;
-		$ratingSaved->user_id = $user_id;
-		$ratingSaved->video_id = $video_id;
+		$user_id = Auth::user ()->id;
+
+		$ratingSaved = edu_rating::firstOrCreate(['user_id'=>$user_id, 'video_id'=>$video_id]);
 		$ratingSaved->rating = $rating;
-		//$ratingSaved = edu_rating::where(['user_id'=>$user_id, 'video_id'=>$video_id]);
-		//$ratingSaved->rating = $rating;
 		$ratingSaved->save();
+		
 	}
 	
     function series($idSerie, $urlVideo) {
