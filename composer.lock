@@ -661,7 +661,7 @@
                 "framework",
                 "laravel"
             ],
-            "time": "2016-05-25 18:35:42"
+            "time": "2016-06-06 15:18:48"
         },
         {
             "name": "laravelcollective/html",
@@ -2363,7 +2363,7 @@
                 "reflection",
                 "static analysis"
             ],
-            "time": "2016-05-22 21:52:33"
+            "time": "2015-12-27 11:43:31"
         },
         {
             "name": "phpdocumentor/reflection-docblock",

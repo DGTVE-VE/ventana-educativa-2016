@@ -40,11 +40,7 @@
             @elseif($item1 != 0)
             <!-- Wrapper for slides -->
             <div class="item">
-<<<<<<< HEAD
-                <img src="{{$bannerImagen->url}}" alt="..." id="imgactive">
-=======
                 <img src="{{$bannerImagen->url}}" alt="Imagen banner">
->>>>>>> 644bb2264001f550feba620cc8a599256c1c267b
                 <div class="carousel-caption posicionDescripcion">
                     <div class="col-sm-6 col-md-6">
                         <p class="text-justify">
