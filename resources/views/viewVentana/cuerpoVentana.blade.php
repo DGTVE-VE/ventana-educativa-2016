@@ -28,19 +28,19 @@
         @endif
 		<div class="col-md-9 col-md-offset-1" style="margin-top:10px;">
 		<map name="mapaRombos" id="mapaRombos">
-			<area alt="" title="" shape="poly" coords="0,511,222,290,442,513,222,734" onmouseover="cambiaImgFoto('01')" onmouseout="cambiaImgCubo('01')" href="http://www.ibe.tv/" target="_blank"/>
-			<area alt="" title="" shape="poly" coords="274,308,458,495,644,309,459,124" onmouseover="cambiaImgFoto('02')" onmouseout="cambiaImgCubo('02')"  href="#"/>
-			<area alt="" title="" shape="poly" coords="463,533,261,734,463,936,663,735" onmouseover="cambiaImgFoto('03')" onmouseout="cambiaImgCubo('03')" href="http://www.promocion.salud.gob.mx/dgps/interior1/programas/escuela_salud.html" target="_blank"/>
-			<area alt="" title="" shape="poly" coords="442,511,680,750,918,512,681,274" onmouseover="cambiaImgFoto('04')" onmouseout="cambiaImgCubo('04')" href="#"/>
-			<area alt="" title="" shape="poly" coords="933,1,680,253,933,506,1187,255" onmouseover="cambiaImgFoto('05')" onmouseout="cambiaImgCubo('05')" href="#"/>
-			<area alt="" title="" shape="poly" coords="932,511,681,764,933,1017,1185,766" onmouseover="cambiaImgFoto('06')" onmouseout="cambiaImgCubo('06')" href="#"/>
-			<area alt="" title="" shape="poly" coords="1215,226,934,508,1216,794,1497,510" onmouseover="cambiaImgFoto('07')" onmouseout="cambiaImgCubo('07')" href="{{url('presentacion')}}"/>
-			<area alt="" title="" shape="poly" coords="1496,1,1243,253,1497,507,1750,253" onmouseover="cambiaImgFoto('08')" onmouseout="cambiaImgCubo('08')" href="http://formacioncontinua.sep.gob.mx/" target="_blank"/>
-			<area alt="" title="" shape="poly" coords="1498,513,1245,765,1497,1017,1751,765" onmouseover="cambiaImgFoto('09')" onmouseout="cambiaImgCubo('09')" href="{{url('educamedia')}}"/>
-			<area alt="" title="" shape="poly" coords="1516,511,1753,274,1989,511,1753,748" onmouseover="cambiaImgFoto('10')" onmouseout="cambiaImgCubo('10')" href="{{url('redmite')}}"/>
-			<area alt="" title="" shape="poly" coords="1788,308,1973,124,2157,309,1973,492" onmouseover="cambiaImgFoto('11')" onmouseout="cambiaImgCubo('11')" href="{{url('cultura')}}"/>
-			<area alt="" title="" shape="poly" coords="1969,534,2171,736,1968,938,1766,738" onmouseover="cambiaImgFoto('12')" onmouseout="cambiaImgCubo('12')" href="{{url('biblioteca')}}"/>
-			<area alt="" title="" shape="poly" coords="1992,512,2211,290,2435,511,2213,734" onmouseover="cambiaImgFoto('13')" onmouseout="cambiaImgCubo('13')" href="http://mx.televisioneducativa.gob.mx/" target="_blank"/>
+			<area alt="canal iberoamericano" title="" shape="poly" coords="0,511,222,290,442,513,222,734" onmouseover="cambiaImgFoto('01')" onmouseout="cambiaImgCubo('01')" href="http://www.ibe.tv/" target="_blank"/>
+			<area alt="idiomas" title="" shape="poly" coords="274,308,458,495,644,309,459,124" onmouseover="cambiaImgFoto('02')" onmouseout="cambiaImgCubo('02')"  href="#"/>
+			<area alt="salud" title="" shape="poly" coords="463,533,261,734,463,936,663,735" onmouseover="cambiaImgFoto('03')" onmouseout="cambiaImgCubo('03')" href="http://www.promocion.salud.gob.mx/dgps/interior1/programas/escuela_salud.html" target="_blank"/>
+			<area alt="padres" title="" shape="poly" coords="442,511,680,750,918,512,681,274" onmouseover="cambiaImgFoto('04')" onmouseout="cambiaImgCubo('04')" href="#"/>
+			<area alt="estudiantes" title="" shape="poly" coords="933,1,680,253,933,506,1187,255" onmouseover="cambiaImgFoto('05')" onmouseout="cambiaImgCubo('05')" href="#"/>
+			<area alt="educaplay" title="" shape="poly" coords="932,511,681,764,933,1017,1185,766" onmouseover="cambiaImgFoto('06')" onmouseout="cambiaImgCubo('06')" href="#"/>
+			<area alt="conocenos" title="" shape="poly" coords="1215,226,934,508,1216,794,1497,510" onmouseover="cambiaImgFoto('07')" onmouseout="cambiaImgCubo('07')" href="{{url('presentacion')}}"/>
+			<area alt="docentes" title="" shape="poly" coords="1496,1,1243,253,1497,507,1750,253" onmouseover="cambiaImgFoto('08')" onmouseout="cambiaImgCubo('08')" href="http://formacioncontinua.sep.gob.mx/" target="_blank"/>
+			<area alt="educamedia" title="" shape="poly" coords="1498,513,1245,765,1497,1017,1751,765" onmouseover="cambiaImgFoto('09')" onmouseout="cambiaImgCubo('09')" href="{{url('educamedia')}}"/>
+			<area alt="redmite" title="" shape="poly" coords="1516,511,1753,274,1989,511,1753,748" onmouseover="cambiaImgFoto('10')" onmouseout="cambiaImgCubo('10')" href="{{url('redmite')}}"/>
+			<area alt="ciltura" title="" shape="poly" coords="1788,308,1973,124,2157,309,1973,492" onmouseover="cambiaImgFoto('11')" onmouseout="cambiaImgCubo('11')" href="{{url('cultura')}}"/>
+			<area alt="biblioteca" title="" shape="poly" coords="1969,534,2171,736,1968,938,1766,738" onmouseover="cambiaImgFoto('12')" onmouseout="cambiaImgCubo('12')" href="{{url('biblioteca')}}"/>
+			<area alt="mexicox" title="" shape="poly" coords="1992,512,2211,290,2435,511,2213,734" onmouseover="cambiaImgFoto('13')" onmouseout="cambiaImgCubo('13')" href="http://mx.televisioneducativa.gob.mx/" target="_blank"/>
 		</map>
 			{{HTML::image('imagenes/ventana/homeventana/mapaRombos.png','mapaRombos',['name'=>'mapaRombos','id'=>'mapaRombos', 'class'=>'mapaRombos img-responsive', 'usemap'=>'#mapaRombos'])}}
 		</div>
@@ -447,4 +447,5 @@
     window.setTimeout(function () {
         $(".alert").alert('close');
     }, 7000);
+    
 </script>
