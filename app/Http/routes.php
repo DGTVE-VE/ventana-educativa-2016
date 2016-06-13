@@ -39,9 +39,6 @@ Route::group(['middleware' => 'web'], function () {
 
     Route::get('verificaCorreo/{correo}/{hash}', 'VentanaController@activaCorreo');
     Route::any('registro', 'VentanaController@registro');
-
-    Route::any('agregaMiLista', 'VentanaController@agregaMiLista');
-
     Route::get('acceso', 'VentanaController@acceso');
     Route::get('presentacion', 'VentanaController@presentacion');
     Route::post('registraUsuario', 'VentanaController@registraUsuario');
@@ -128,6 +125,9 @@ Route::group(['middleware' => 'web'], function () {
 	Route::get('educaplay/descripciones/temporada/{serieId}/{temporada}', 'EducaplayController@temporada');
 	Route::get('educaplay/videoSerie', 'EducaplayController@videoSerie');
 	Route::post('educaplay/rate', 'EducaplayController@guardaRating');
+
+  Route::any('agregaMiLista', 'EducaplayController@agregaMiLista');
+  Route::any('votacion', 'EducaplayController@votacion');
     /*     * **************************Educaplay********************** */
 
 
