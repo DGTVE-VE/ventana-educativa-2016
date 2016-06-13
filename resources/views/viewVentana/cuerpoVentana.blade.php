@@ -19,13 +19,6 @@
             <div style="padding:2%;">
             </div>
         </div>
-        @if(Session::has('message'))
-        <div class="col-md-12">
-            <div class="col-md-3"></div>
-            <p class="alert col-md-6 text-center message-compatible {{ Session::get('alert-class', 'alert-info') }}">{{ Session::get('message') }}</p>
-            <div class="col-md-3"></div>
-        </div>
-        @endif
 		<div class="col-md-9 col-md-offset-1" style="margin-top:10px;">
 		<map name="mapaRombos" id="mapaRombos">
 			<area alt="canal iberoamericano" title="" shape="poly" coords="0,511,222,290,442,513,222,734" onmouseover="cambiaImgFoto('01')" onmouseout="cambiaImgCubo('01')" href="http://www.ibe.tv/" target="_blank"/>
@@ -432,15 +425,14 @@
         </div>
 
     </div>
-    @if (Session::has('flash_notification.message'))
-    <div class="col-md-12" style="margin-top: 15%;">
-        <div class="col-md-3"></div>
-        <div class="alert col-md-6 text-center message-compatible alert-{{ Session::get('flash_notification.level') }}">            
-            {{ Session::get('flash_notification.message') }}
+        @if(Session::has('message'))
+        <div class="col-md-12" style="margin-top: 15%;">
+            <div class="col-md-3"></div>
+            <p class="alert col-md-6 text-center message-compatible {{ Session::get('alert-class', 'alert-info') }}">{{ Session::get('message') }}</p>
+            <div class="col-md-3"></div>
         </div>
-        <div class="col-md-3"></div>
-    </div>
-    @endif
+        @endif    
+   
 </div>
 <script>
     $(".alert").alert();

@@ -90,8 +90,8 @@ class VentanaController extends Controller {
             $m->from('ventana@televisioneducativa.gob.mx', 'Ventana Educativa');
             $m->to($correo)->subject('Activación de correo!');
         });
-        return redirect ($back_url);
-//        return view('viewVentana/correoEnviado');
+//        return redirect ($back_url);
+        return view('viewVentana/correoEnviado');
     }
 
     public function activaCorreo(Request $request, $correo, $hash) {
