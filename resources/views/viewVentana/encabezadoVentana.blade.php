@@ -69,44 +69,18 @@
                                 </tr>
                                 <tr>
                                     <td class="divApp centered">
-                                        <a class="" href="#">
-                                            {{ HTML::image('imagenes/ventana/encabezado/appPrimaria.png','Primaria')}}
-                                        </a>
-                                    </td>
-                                    <td class="divApp centered">
-                                        <a class="" href="http://formacioncontinua.sep.gob.mx/" target="_blank">
-                                            {{ HTML::image('imagenes/ventana/encabezado/appDocentes.png','Docentes')}}
-                                        </a>
-                                    </td>
-                                    <td class="divApp centered">
-                                        <a class="" href="#">
-                                            {{ HTML::image('imagenes/ventana/encabezado/appPadres.png','Padres')}}
-                                        </a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                    </td>
-                                    <td class="text-center">
-                                        <p class="iconoGde" onclick="muestraMasIconos(event)">M&aacute;s</p>
-                                    </td>
-                                    <td>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <a class="divApp centered" href="http://www.promocion.salud.gob.mx/dgps/interior1/programas/escuela_salud.html"target="_blank">
-                                            {{ HTML::image('imagenes/ventana/encabezado/appSalud.png','Salud',['class'=>'ocultaImgApp'])}}
+                                        <a class="" href="http://www.promocion.salud.gob.mx/dgps/interior1/programas/escuela_salud.html"target="_blank">
+                                            {{ HTML::image('imagenes/ventana/encabezado/appSalud.png','Salud')}}
                                         </a>
                                     </td>
                                     <td class="divApp centered">
                                         <a class="" href="{{url('cultura')}}">
-                                            {{ HTML::image('imagenes/ventana/encabezado/appCultura.png','Cultura: Conoce las diversas páginas de cultura a nivel Centro América',['class'=>'ocultaImgApp'])}}
+                                            {{ HTML::image('imagenes/ventana/encabezado/appCultura.png','Cultura: Conoce las diversas páginas de cultura a nivel Centro América')}}
                                         </a>
                                     </td>
-                                    <td>
-                                        <a class="divApp centered" href="{{url('biblioteca')}}">
-                                            {{ HTML::image('imagenes/ventana/encabezado/appBiblioteca.png','Bibliotecas de Centro América',['class'=>'ocultaImgApp'])}}
+                                    <td class="divApp centered">
+                                        <a class="" href="{{url('biblioteca')}}">
+                                            {{ HTML::image('imagenes/ventana/encabezado/appBiblioteca.png','Bibliotecas de Centro América')}}
                                         </a>
                                     </td>
                                 </tr>
