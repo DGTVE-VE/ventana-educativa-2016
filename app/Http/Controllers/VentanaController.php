@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Mail;
+use DB;
 use App\Http\Requests;
 use Validator;
 use Illuminate\Http\Request;
@@ -162,28 +163,28 @@ class VentanaController extends Controller {
         }
     }
 
-    public function agregaMiLista(){
+//     public function agregaMiLista(){
+//
+//
+//       if(\Auth::user()) {
+//
+//         $correo = \Auth::user() -> email;
+//         $id_serie = filter_input (INPUT_GET, 'id');
+//         $id_usuario = DB::table('users')->whereemail($correo)->get();
+//
+//         $exito = DB::table('edu_lista_usuario')->insert(['user_id' => $id_usuario, 'serie_id' => $id_serie]);
+//
+//         if($exito == 1){
+//           return "Agregado con exito";
+//         }
+//         else  {
+//           return "Ya esta agregada";
+//         }
+//
+//       }
+//       else {
+//         return "Inicia sesión para poder agregar la serie.";
+//       }
+// }
 
-
-      if(\Auth::user()) {
-
-        $correo = \Auth::user() -> email;
-        $id_serie = filter_input (INPUT_GET, 'id');
-        $id_usuario = DB::table('users')->whereemail($correo)->get();
-
-        $exito = DB::table('edu_lista_usuario')->insert(['user_id' => $id_usuario, 'serie_id' => $idSerie]);
-
-        if($exito == 1){
-          return "Agregado con exito";
-        }
-        else  {
-          return "Ya esta agregada";
-        }
-
-      }
-      else {
-        return "Inicia sesión para poder agregar la serie.";
-      }
-
-}
 }
