@@ -100,7 +100,7 @@ class VentanaController extends Controller {
         if (md5($user->password) == $hash) {
             $user->activo = 1;
             $user->save();
-            return Redirect::home()->with('message','¡Bienvenido! Gracias por ser parte de Ventana Educativa.');
+            return Redirect::home()->with('message','¡Bienvenido! Gracias por ser parte de Ventana Educativa. Ahora puedes iniciar sesión');
 //            return view('viewVentana/activacionCorrecta');
         } else {
             print 'error';
