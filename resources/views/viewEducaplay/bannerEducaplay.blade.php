@@ -37,7 +37,7 @@ namespace App\Http\Controllers; ?>
                     <div class="col-sm-12 col-md-12 col-lg-12">
 						{{--*/ $url_video = EducaplayController::consultaUrlId($bannerImagen->id); $ligaDetalle = 'educaplay/detalleSeries/'.$bannerImagen->id.'/'.$url_video /*--}}
                         <a href="{{url($ligaDetalle)}}"><div class="btn btn-danger text-uppercase anchoBtnRep textoPeque"><span class="fa fa-play hidden-xs" aria-hidden="true"></span><span class="hidden-xs">&nbsp;&nbsp;</span>Reproducir</div></a>
-                        <div class="btn btn-info text-uppercase anchoBtnLista textoPeque" onclick="addmilista({{$bannerImagen->id}});"><span class="fa fa fa-plus hidden-xs" aria-hidden="true"></span><span class="hidden-xs">&nbsp;&nbsp;</span>Mi lista</div>
+                        <div class="btn btn-info text-uppercase anchoBtnLista textoPeque" id = "addSerie" onclick="addmilista({{$bannerImagen->id}});"><span class="fa fa fa-plus hidden-xs" aria-hidden="true"></span><span class="hidden-xs">&nbsp;&nbsp;</span>Mi lista</div>
                     </div>
                 </div>
             </div>
@@ -57,7 +57,7 @@ namespace App\Http\Controllers; ?>
                     <div class="col-sm-12 col-md-12 col-lg-12">
 						{{--*/ $url_video = EducaplayController::consultaUrlId($bannerImagen->id); $ligaDetalle = 'educaplay/detalleSeries/'.$bannerImagen->id.'/'.$url_video /*--}}
                         <a href="{{url($ligaDetalle)}}"><div class="btn btn-danger text-uppercase anchoBtnRep textoPeque"><span class="fa fa-play hidden-xs" aria-hidden="true"></span><span class="hidden-xs">&nbsp;&nbsp;</span>Reproducir</div></a>
-                        <div class="btn btn-info text-uppercase anchoBtnLista textoPeque" onclick="addmilista({{$bannerImagen->id}});"><span class="fa fa fa-plus hidden-xs" aria-hidden="true"></span>
+                        <div class="btn btn-info text-uppercase anchoBtnLista textoPeque" id = "addSerie" onclick="addmilista({{$bannerImagen->id}});"><span class="fa fa fa-plus hidden-xs" aria-hidden="true"></span>
                           <span class="hidden-xs">&nbsp;&nbsp;</span>Mi lista</div>
                     </div>
                 </div>
@@ -79,8 +79,6 @@ namespace App\Http\Controllers; ?>
 <script>
 function addmilista(id_img){
 
-// var id_img = document.getElementsByTagName('div')[1].src;
- // alert(id_img);
 var request = $.ajax({
   url: "{{ url ('agregaMiLista') }}",
   method: "GET",
@@ -90,7 +88,7 @@ var request = $.ajax({
 request.done(function( msg ) {
   // console.log (msg);
   alert(msg);
-});
+  });
 
 };
 </script>
