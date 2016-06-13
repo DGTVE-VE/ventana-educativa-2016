@@ -74,7 +74,7 @@ Cultura
                         <td><a href="http://www.cultura.gob.sv/" target="_blank"  class="hvr-push"><br><img class="animated zoomIn img-responsive" src="{{asset('imagenes/cultura/pais/elsalvador.png')}}"/></a><br><br></td>                        
                     </tr>
                     <tr>
-                        <td><a href="http://mcd.gob.gt/" class="hvr-push" target="_blank" ><br><img class="animated zoomIn img-responsive" src="{{asset('imagenes/cultura/pais/guatemala.png')}}"/></a><br><br></td>                        
+                        <td><a href="http://mcd.gob.gt/" class="hvr-push" target="_blank" ><img class="animated zoomIn img-responsive" src="{{asset('imagenes/cultura/pais/guatemala.png')}}"/></a><br><br></td>                        
                         <td><a href="http://sichonduras.hn/" target="_blank" class="hvr-push"><img class="animated zoomIn img-responsive" src="{{asset('imagenes/cultura/pais/honduras.png')}}"/></a><br><br></td>
                         <td><a href="http://www.mexicoescultura.com/" target="_blank" class="hvr-push"><img class="animated zoomIn img-responsive" src="{{asset('imagenes/cultura/pais/mexico.png')}}"/></a><br><br></td>
                         <td><a href="http://www.inc.gob.ni/" target="_blank" class="hvr-push"><img class="animated zoomIn img-responsive" src="{{asset('imagenes/cultura/pais/nicaragua.png')}}"/></a><br><br></td>

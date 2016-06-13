@@ -1,4 +1,6 @@
-<?php namespace App\Http\Controllers; ?>
+<?php
+namespace App\Http\Controllers; ?>
+<form accept-charset="utf-8" method="POST">
 <div class="row visible-xs margenMenuChico">
 </div>
 <div class="row margenInferior">
@@ -19,7 +21,7 @@
             @foreach ($banner as $item1 => $bannerImagen)
             @if($item1===0)
             <!-- Wrapper for slides -->
-            
+
             <div class="item active" >
                 <img src="{{$bannerImagen->url}}" alt="..." id="imgactive{{$bannerImagen->id}}">
 
@@ -35,7 +37,7 @@
                     <div class="col-sm-12 col-md-12 col-lg-12">
 						{{--*/ $url_video = EducaplayController::consultaUrlId($bannerImagen->id); $ligaDetalle = 'educaplay/detalleSeries/'.$bannerImagen->id.'/'.$url_video /*--}}
                         <a href="{{url($ligaDetalle)}}"><div class="btn btn-danger text-uppercase anchoBtnRep textoPeque"><span class="fa fa-play hidden-xs" aria-hidden="true"></span><span class="hidden-xs">&nbsp;&nbsp;</span>Reproducir</div></a>
-                        <div class="btn btn-info text-uppercase anchoBtnLista textoPeque"  serie_id={{$bannerImagen->id}} onclick="addmilista();"><span class="fa fa fa-plus hidden-xs" aria-hidden="true"></span><span class="hidden-xs">&nbsp;&nbsp;</span>Mi lista</div>
+                        <div class="btn btn-info text-uppercase anchoBtnLista textoPeque" id = "addSerie" onclick="addmilista({{$bannerImagen->id}});"><span class="fa fa fa-plus hidden-xs" aria-hidden="true"></span><span class="hidden-xs">&nbsp;&nbsp;</span>Mi lista</div>
                     </div>
                 </div>
             </div>
@@ -55,7 +57,7 @@
                     <div class="col-sm-12 col-md-12 col-lg-12">
 						{{--*/ $url_video = EducaplayController::consultaUrlId($bannerImagen->id); $ligaDetalle = 'educaplay/detalleSeries/'.$bannerImagen->id.'/'.$url_video /*--}}
                         <a href="{{url($ligaDetalle)}}"><div class="btn btn-danger text-uppercase anchoBtnRep textoPeque"><span class="fa fa-play hidden-xs" aria-hidden="true"></span><span class="hidden-xs">&nbsp;&nbsp;</span>Reproducir</div></a>
-                        <div class="btn btn-info text-uppercase anchoBtnLista textoPeque" serie_id={{$bannerImagen->id}}  onclick="addmilista();"><span class="fa fa fa-plus hidden-xs" aria-hidden="true"></span>
+                        <div class="btn btn-info text-uppercase anchoBtnLista textoPeque" id = "addSerie" onclick="addmilista({{$bannerImagen->id}});"><span class="fa fa fa-plus hidden-xs" aria-hidden="true"></span>
                           <span class="hidden-xs">&nbsp;&nbsp;</span>Mi lista</div>
                     </div>
                 </div>
@@ -72,22 +74,21 @@
         </a>
     </div>
 </div>
+</form>
 
 <script>
-function addmilista(){
+function addmilista(id_img){
 
-
-var id_img = document.getElementsByTagName('img')[1].src;
- alert(id_img);
-// var request = $.ajax({
-//   url: "{{ url ('update') }}",
-//   method: "GET",
-//   data: { id : id_img },
-//   dataType: "html"
-// });
-// request.done(function( msg ) {
-//   console.log (msg);
-// });
+var request = $.ajax({
+  url: "{{ url ('agregaMiLista') }}",
+  method: "GET",
+  data: { id : id_img },
+  dataType: "html"
+});
+request.done(function( msg ) {
+  // console.log (msg);
+  alert(msg);
+  });
 
 };
 </script>

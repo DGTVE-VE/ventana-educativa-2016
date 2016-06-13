@@ -39,6 +39,9 @@ Route::group(['middleware' => 'web'], function () {
 
     Route::get('verificaCorreo/{correo}/{hash}', 'VentanaController@activaCorreo');
     Route::any('registro', 'VentanaController@registro');
+
+    Route::any('agregaMiLista', 'VentanaController@agregaMiLista');
+
     Route::get('acceso', 'VentanaController@acceso');
     Route::get('presentacion', 'VentanaController@presentacion');
     Route::post('registraUsuario', 'VentanaController@registraUsuario');

@@ -3,10 +3,13 @@
 namespace App\Http\Controllers;
 
 use Mail;
+use DB;
+use App\User;
+use Validator;
 use App\Http\Requests;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Input;
-use Illuminate\Support\Facades\Validator;
+// use Illuminate\Support\Facades\Validator;
 use Illuminate\Support\Facades\Redirect;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Auth;
@@ -15,7 +18,7 @@ use Illuminate\Support\Facades\Session;
 use Laracasts\Flash\Flash;
 use Illuminate\Support\Facades\URL;
 
-//use App\User;
+
 
 class VentanaController extends Controller {
 //    public function correoEnviado() {/*para pruebas de visualización*/
@@ -30,7 +33,7 @@ class VentanaController extends Controller {
     public function registraUsuario(Request $request) {
 
 
-    $this->validate($request, [
+   $validator = Validator::make($request->all(), [
 
         'nickname' => 'required|max:254',
         'name' => 'required|max:254',
@@ -87,8 +90,8 @@ class VentanaController extends Controller {
             $m->from('ventana@televisioneducativa.gob.mx', 'Ventana Educativa');
             $m->to($correo)->subject('Activación de correo!');
         });
-        return redirect ($back_url);
-//        return view('viewVentana/correoEnviado');
+//        return redirect ($back_url);
+        return view('viewVentana/correoEnviado');
     }
 
     public function activaCorreo(Request $request, $correo, $hash) {
@@ -97,7 +100,7 @@ class VentanaController extends Controller {
         if (md5($user->password) == $hash) {
             $user->activo = 1;
             $user->save();
-            return Redirect::home()->with('message','¡Bienvenido! Gracias por ser parte de Ventana Educativa.');
+            return Redirect::home()->with('message','¡Bienvenido! Gracias por ser parte de Ventana Educativa. Ahora puedes iniciar sesión');
 //            return view('viewVentana/activacionCorrecta');
         } else {
             print 'error';
@@ -161,17 +164,39 @@ class VentanaController extends Controller {
         }
     }
 
-    public function agregaMiLista()
-    {
-      $correo = \Auth::user() -> email;
+    public function agregaMiLista(){
 
-      $exito = DB::table('users')->whereemail($correo)->update(['activo' => 1]);
-      if($exito == 1){
-        return "Agregada";
-      }
-      else  {
-        return 0;
-      }
 
+      if(\Auth::user()) {
+
+
+
+        $id_usuario = \Auth::User() -> id;
+        $id_serie = filter_input (INPUT_GET, 'id');
+
+        $add = DB::table('edu_lista_usuario')->whereuser_id($id_usuario)->whereserie_id($id_serie)->get();
+
+        if( $add == NULL){
+
+          $exito = DB::table('edu_lista_usuario')->insert(
+            ['user_id' => $id_usuario, 'video_id' => 0, 'serie_id' => $id_serie]
+          );
+
+          if($exito == 1){
+            return "Agregada con exito.";
+          }
+
+
+        }
+
+        else  {
+          return "Esta serie ya esta agregada a tu lista";
+        }
+
+      }
+      else {
+        return "Inicia sesión para poder agregar la serie.";
+      }
 }
+
 }
