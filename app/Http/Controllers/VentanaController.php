@@ -4,8 +4,9 @@ namespace App\Http\Controllers;
 
 use Mail;
 use DB;
-use App\Http\Requests;
+use App\User;
 use Validator;
+use App\Http\Requests;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Input;
 // use Illuminate\Support\Facades\Validator;
@@ -17,7 +18,7 @@ use Illuminate\Support\Facades\Session;
 use Laracasts\Flash\Flash;
 use Illuminate\Support\Facades\URL;
 
-//use App\User;
+
 
 class VentanaController extends Controller {
 //    public function correoEnviado() {/*para pruebas de visualización*/
@@ -163,28 +164,39 @@ class VentanaController extends Controller {
         }
     }
 
-//     public function agregaMiLista(){
-//
-//
-//       if(\Auth::user()) {
-//
-//         $correo = \Auth::user() -> email;
-//         $id_serie = filter_input (INPUT_GET, 'id');
-//         $id_usuario = DB::table('users')->whereemail($correo)->get();
-//
-//         $exito = DB::table('edu_lista_usuario')->insert(['user_id' => $id_usuario, 'serie_id' => $id_serie]);
-//
-//         if($exito == 1){
-//           return "Agregado con exito";
-//         }
-//         else  {
-//           return "Ya esta agregada";
-//         }
-//
-//       }
-//       else {
-//         return "Inicia sesión para poder agregar la serie.";
-//       }
-// }
+    public function agregaMiLista(){
+
+
+      if(\Auth::user()) {
+
+
+
+        $id_usuario = \Auth::User() -> id;
+        $id_serie = filter_input (INPUT_GET, 'id');
+
+        $add = DB::table('edu_lista_usuario')->whereuser_id($id_usuario)->whereserie_id($id_serie)->get();
+
+        if( $add == NULL){
+
+          $exito = DB::table('edu_lista_usuario')->insert(
+            ['user_id' => $id_usuario, 'video_id' => 0, 'serie_id' => $id_serie]
+          );
+
+          if($exito == 1){
+            return "Agregada con exito.";
+          }
+
+
+        }
+
+        else  {
+          return "Esta serie ya esta agregada a tu lista";
+        }
+
+      }
+      else {
+        return "Inicia sesión para poder agregar la serie.";
+      }
+}
 
 }
