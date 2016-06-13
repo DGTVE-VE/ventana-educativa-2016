@@ -4,9 +4,10 @@ namespace App\Http\Controllers;
 
 use Mail;
 use App\Http\Requests;
+use Validator;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Input;
-use Illuminate\Support\Facades\Validator;
+// use Illuminate\Support\Facades\Validator;
 use Illuminate\Support\Facades\Redirect;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Auth;
@@ -30,7 +31,7 @@ class VentanaController extends Controller {
     public function registraUsuario(Request $request) {
 
 
-    $this->validate($request, [
+   $validator = Validator::make($request->all(), [
 
         'nickname' => 'required|max:254',
         'name' => 'required|max:254',
@@ -161,16 +162,27 @@ class VentanaController extends Controller {
         }
     }
 
-    public function agregaMiLista()
-    {
-      $correo = \Auth::user() -> email;
+    public function agregaMiLista(){
 
-      $exito = DB::table('users')->whereemail($correo)->update(['activo' => 1]);
-      if($exito == 1){
-        return "Agregada";
+
+      if(\Auth::user()) {
+
+        $correo = \Auth::user() -> email;
+        $id_serie = filter_input (INPUT_GET, 'id');
+        $id_usuario = DB::table('users')->whereemail($correo)->get();
+
+        $exito = DB::table('edu_lista_usuario')->insert(['user_id' => $id_usuario, 'serie_id' => $idSerie]);
+
+        if($exito == 1){
+          return "Agregado con exito";
+        }
+        else  {
+          return "Ya esta agregada";
+        }
+
       }
-      else  {
-        return 0;
+      else {
+        return "Inicia sesión para poder agregar la serie.";
       }
 
 }
