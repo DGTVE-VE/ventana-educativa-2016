@@ -4,11 +4,11 @@ namespace App\Http\Controllers;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Http\Request;
+use App\Http\Requests;
 use App\Model\Educaplay\Edu_serie;
 use App\Model\Educaplay\Edu_imagen;
-use App\Model\Educaplay\edu_rating;
+use App\Model\Educaplay\Edu_rating;
 use Illuminate\Support\Facades\Auth;
-use App\Http\Requests;
 use Laracasts\Flash\Flash;
 use DB;
 
@@ -100,16 +100,34 @@ class EducaplayController extends Controller {
 		return $urlId->url_video;
 	}
 	
+	public function queryRate(){
+		$video_id = filter_input(INPUT_POST,'video_id');
+		$user_id = Auth::user ()->id;
+		$matchThese = ['user_id' => $user_id, 'video_id' => $video_id];
+		$rating = edu_rating::where($matchThese)->first();
+		
+		if($rating != null){
+			$valorDevuelto = $rating->rating;
+		}else{
+			$valorDevuelto = 0;
+		}
+		return $valorDevuelto;
+	}
+	
 	public function guardaRating(){
-		$user_id = filter_input(INPUT_POST,'user_id');
 		$video_id = filter_input(INPUT_POST,'video_id');
 		$rating = filter_input(INPUT_POST,'rating');
 		$user_id = Auth::user ()->id;
-
-		$ratingSaved = edu_rating::firstOrCreate(['user_id'=>$user_id, 'video_id'=>$video_id]);
+		$ratingSaved = Edu_rating::firstOrNew(['user_id'=>$user_id, 'video_id'=>$video_id]);
 		$ratingSaved->rating = $rating;
 		$ratingSaved->save();
-		
+		if($ratingSaved!=null){
+			$regreso = $ratingSaved;
+		}
+		else{
+			$regreso = 0;
+		}
+		return $regreso;
 	}
 	
     function series($idSerie, $urlVideo) {

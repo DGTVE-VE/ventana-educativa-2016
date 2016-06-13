@@ -20,25 +20,45 @@ Educaplay
 		});
 		function muestraVideo(urlVideo, idVideo){
 			var direccionVideo = "https://www.youtube.com/embed/" + urlVideo + "?autoplay=1";
-			$('#episodio7').attr('src',direccionVideo);
-			$('#episodio8').css('display','block');
-			$("#video-id").val(idVideo);
-		}
-		$(document).ready( function (){
-			$('#star-rating').change (function (){
+			//$("#star-rating").remove();
+
 				$.ajax({
 					method: "POST",
-					url: "{{url('educaplay/rate')}}",
-					data: { user_id: $("#usuario").val(), video_id: $("#video-id").val(), rating:$("#star-rating").val(), _token:"{{csrf_token()}}" },
+					url: "{{url('educaplay/queryRate')}}",
+					data: { video_id: idVideo, _token:"{{csrf_token()}}" },
 					error: function(ts) { 
-						console.log (ts.responseText); 
+						console.log('Error');
+						//console.log (ts.responseText); 
 					}})
 					.done(function( msg ) {
-						console.log ( "Data Saved: " + msg );
+						//console.log ( "Rating encontrado: " + msg );
+						$("#divRating").empty();
+						$("#divRating").append('<input type="number" name="rating" id="star-rating" data-icon-lib="fa" data-active-icon="fa-star" data-inactive-icon="fa-star-o" onchange="guardaRating(this.value)" value="'+ parseInt(msg) +'"/>');
+						$("#star-rating").rating({value: parseInt(msg)});
+					});
+			$('#episodio7').attr('src',direccionVideo);
+			$('#episodio8').css('display','block');
+			$('#episodio7').attr('name',idVideo)
+		}
+		function guardaRating(CalifRating){
+			var idVideo = $('#episodio7').attr('name');
+			$.ajax({
+					method: "POST",
+					url: "{{url('educaplay/rate')}}",
+					data: { video_id: idVideo, rating: CalifRating, _token:"{{csrf_token()}}" },
+					error: function(ts) {
+						console.log (ts.responseText);
+					}})
+					.done(function( msg ) {
+						console.log ( "Data Saved: " + msg + ' ' + idVideo);
 						//loadComments ($("#video-id").val());
 					});
-			});
-			function loadComments (id){
+
+		}
+		$(document).ready( function (){
+			 /*$('#star-rating').change (function (){
+							});*/
+			/*function loadComments (id){
 				var urlget = "{{url('educamedia/telesecundaria/comments')}}";
 				var _url = urlget + '/'+id;
 				 $.ajax({
@@ -52,7 +72,7 @@ Educaplay
 						$("#comentarios").html(msg)
 	//                    console.log ( "Data Saved: " + msg );
 					});
-			}
+			}*/
 		});
 	</script>
 <style>
@@ -123,10 +143,10 @@ Educaplay
 					</div>
 					<div class="col-md-2">
 					@if(Auth::check ())
-						<div class="pull-right" style="color:white;">
-							<input type="number" name="rating" id="star-rating" class="rating" data-icon-lib="fa" data-active-icon="fa-star" data-inactive-icon="fa-star-o"  />
-							<input type="hidden" id="video-id" value="{{$serie->id}}" />
-							<input type="hidden" id="usuario" value="1" />
+						<div id="divRating" class="pull-right" style="color:white;">
+							<input type="number" name="rating" id="star-rating" class="" data-icon-lib="fa" data-active-icon="fa-star" data-inactive-icon="fa-star-o" onchange="guardaRating(this.value)"/>
+							<!--input type="hidden" id="video-id" value="0" /-->
+							<!--input type="hidden" id="usuario" value="1" /-->
 						</div>
 					@endif
 					</div>
