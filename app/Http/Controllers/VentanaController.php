@@ -105,6 +105,7 @@ class VentanaController extends Controller {
     } else {
       print 'error';
     }
+
   }
 
   private function newImage ($originalFile){
@@ -127,6 +128,59 @@ class VentanaController extends Controller {
         throw new Exception('Unknown image type.');
       }
       return $img;
+
+    public function registro() {
+
+        return view('viewVentana/registroVentana')
+            ->with ('back_url', URL::previous());
+    }
+
+     public function acceso() {
+        return view('viewVentana/acceso');
+    }
+
+    public function enviaCorreoActivacion($correo, $hash, $back_url) {
+        Mail::send('viewVentana.emails.activacion', ['correo' => $correo, 'hash' => $hash], function ($m) use ($correo) {
+            $m->from('ventana@televisioneducativa.gob.mx', 'Ventana Educativa');
+            $m->to($correo)->subject('Activación de correo!');
+        });
+//        return redirect ($back_url);
+        return view('viewVentana/correoEnviado');
+    }
+
+    public function activaCorreo(Request $request, $correo, $hash) {
+        $user = \App\User::where('email', '=', $correo)->first();
+
+        if (md5($user->password) == $hash) {
+            $user->activo = 1;
+            $user->save();
+            return Redirect::home()->with('message','¡Bienvenido! Gracias por ser parte de Ventana Educativa. Ahora puedes iniciar sesión');
+//            return view('viewVentana/activacionCorrecta');
+        } else {
+            print 'error';
+        }
+    }
+
+    private function newImage ($originalFile){
+        $info = getimagesize($originalFile);
+        $mime = $info['mime'];
+        switch ($mime) {
+            case 'image/jpeg':
+                $img = imagecreatefromjpeg($originalFile);
+                break;
+
+            case 'image/png':
+                $img = imagecreatefrompng($originalFile);
+                break;
+
+            case 'image/gif':
+                $img = imagecreatefromgif($originalFile);
+                break;
+
+            default:
+                throw new Exception('Unknown image type.');
+        }
+        return $img;
     }
 
     private function resize($newWidth, $targetFile, $originalFile) {
