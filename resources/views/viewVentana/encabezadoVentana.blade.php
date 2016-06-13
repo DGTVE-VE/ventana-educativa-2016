@@ -74,7 +74,7 @@
                                         </a>
                                     </td>
                                     <td class="divApp centered">
-                                        <a class="" href="#">
+                                        <a class="" href="http://formacioncontinua.sep.gob.mx/" target="_blank">
                                             {{ HTML::image('imagenes/ventana/encabezado/appDocentes.png','Docentes')}}
                                         </a>
                                     </td>
@@ -95,17 +95,17 @@
                                 </tr>
                                 <tr>
                                     <td>
-                                        <a class="divApp centered" href="#">
+                                        <a class="divApp centered" href="http://www.promocion.salud.gob.mx/dgps/interior1/programas/escuela_salud.html"target="_blank">
                                             {{ HTML::image('imagenes/ventana/encabezado/appSalud.png','Salud',['class'=>'ocultaImgApp'])}}
                                         </a>
                                     </td>
                                     <td class="divApp centered">
-                                        <a class="" href="#">
+                                        <a class="" href="{{url('cultura')}}">
                                             {{ HTML::image('imagenes/ventana/encabezado/appCultura.png','Cultura: Conoce las diversas páginas de cultura a nivel Centro América',['class'=>'ocultaImgApp'])}}
                                         </a>
                                     </td>
                                     <td>
-                                        <a class="divApp centered" href="#">
+                                        <a class="divApp centered" href="{{url('biblioteca')}}">
                                             {{ HTML::image('imagenes/ventana/encabezado/appBiblioteca.png','Bibliotecas de Centro América',['class'=>'ocultaImgApp'])}}
                                         </a>
                                     </td>
@@ -170,7 +170,7 @@
                                             <a id="link-cambia-avatar" style="color: white; font-weight: bold;" >Cambiar avatar</a>
                                         </div>
                                         <div>
-                                                                                        <!--link para abrir formulario de registro de integrante de la RedMITE-->
+                                            <!--link para abrir formulario de registro de integrante de la RedMITE-->
                                             @if (Auth::user()->is_researcher)
                                             <div class="col-md-12 text-center">
                                                 <a href="{{url('redmite/admin/integrantes')}}" tabindex="5" style="color: #00B6F1; font-weight: bold;" class="forgot-password">
@@ -266,8 +266,7 @@
                     $('#previewing').attr('src', 'imagenes/ventana/encabezado/noimage.png');
                     $("#message").html("<p id='error'>Por favor seleccione un tipo de imagen correcto" + "<br>  Nota: Solo se pueden usar imágenes en formato jpeg, jpg y png.</p>");
                     return false;
-                }
-                else
+                } else
                 {
                     var reader = new FileReader();
                     reader.onload = imageIsLoaded;
@@ -294,8 +293,7 @@
             $(".ocultaImgApp").css("height", "83px");
             $(".ocultaImgApp").css("visibility", "visible");
             imgOculto = false;
-        }
-        else {
+        } else {
             event.stopPropagation();
             $(".ocultaImgApp").css("width", "0px");
             $(".ocultaImgApp").css("height", "0px");
