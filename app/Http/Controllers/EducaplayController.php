@@ -141,6 +141,21 @@ class EducaplayController extends Controller {
         $menuEducaplay = $this->educaplayMenu();
         return view('viewEducaplay/listaVideosEducaplay')->with('menuEducaplay', $menuEducaplay)->with('episodiosSerie', $episodiosSerie)->with('urlVideo', $urlVideo);
     }
+	
+	static function consultaRatingXURL($urlVideo){
+		$ratingReproduce = DB::table('edu_rating')
+			->join('edu_video', 'edu_rating.video_id', '=', 'edu_video.id')
+			->select('rating')
+			->where('edu_video.url_video', $urlVideo)
+			->first();
+		if($ratingReproduce != null){
+			$devuelve = $ratingReproduce->rating;
+		}else{
+			$devuelve = 0;
+		}
+		return $devuelve;
+	}
+	
     function videoSerie() {
         return view('viewEducaplay/videoSerie');
     }
