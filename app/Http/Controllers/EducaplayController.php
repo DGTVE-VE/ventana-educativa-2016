@@ -138,7 +138,9 @@ class EducaplayController extends Controller {
     }
     else{
       $regreso = 0;
-
+    }
+      return $regreso;
+    }
 
 	static function consultaRatingXURL($urlVideo){
 		$ratingReproduce = DB::table('edu_rating')
@@ -154,11 +156,6 @@ class EducaplayController extends Controller {
 		return $devuelve;
 	}
 
-    function videoSerie() {
-        return view('viewEducaplay/videoSerie');
-    }
-    return $regreso;
-  }
 
   function series($idSerie, $urlVideo) {
     $episodiosSerie = DB::table('edu_serie')
