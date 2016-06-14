@@ -24,231 +24,218 @@ use Laracasts\Flash\Flash;
 
 class EducaplayController extends Controller {
 
-    public function educaplay1() {
-        return view('viewEducaplay/educaplay');
+  public function educaplay1() {
+    return view('viewEducaplay/educaplay');
+  }
+
+  public function descripciones($serieId) {
+    $primerDetalleSerie = DB::table('edu_serie')
+    ->join('edu_imagen', 'edu_serie.id', '=', 'edu_imagen.serie_id')
+    ->join('edu_video', 'edu_serie.id', '=', 'edu_video.serie_id')
+    ->select('edu_serie.id', 'edu_serie.titulo_serie', 'edu_serie.temporadas_total', 'categoria_id', 'edu_serie.clasificacion_id', 'edu_serie.descripcion', 'edu_imagen.url', 'edu_imagen.ubicacion_id', 'edu_video.sinopsis', 'edu_video.temporada', 'edu_video.capitulo', 'edu_video.url_video')
+    ->where('edu_serie.id','=',$serieId)
+    ->where('edu_imagen.ubicacion_id','=',1)
+    ->first();
+    return view('viewEducaplay/descripcionSerie')->with('primerDetalleSerie', $primerDetalleSerie);
+  }
+
+  public function temporada($serieId, $temporada) {
+    $detallesSerie = DB::table('edu_serie')
+    ->join('edu_imagen', 'edu_serie.id', '=', 'edu_imagen.serie_id')
+    ->join('edu_video', 'edu_serie.id', '=', 'edu_video.serie_id')
+    ->select('edu_serie.id', 'edu_serie.titulo_serie', 'edu_serie.temporadas_total', 'edu_serie.clasificacion_id', 'edu_serie.descripcion', 'edu_imagen.url', 'edu_imagen.ubicacion_id', 'edu_video.sinopsis', 'edu_video.temporada', 'edu_video.capitulo', 'edu_video.url_video')
+    ->where('edu_serie.id','=',$serieId)
+    ->where('edu_imagen.ubicacion_id','=',5)
+    ->where('edu_video.temporada','=',$temporada)
+    ->get();
+    if($detallesSerie == null){
+      if($temporada=='1'){
+        $temporada='0';
+      }
+      else{
+        $temporada='1';
+      }
+      $detallesSerie = DB::table('edu_serie')
+      ->join('edu_imagen', 'edu_serie.id', '=', 'edu_imagen.serie_id')
+      ->join('edu_video', 'edu_serie.id', '=', 'edu_video.serie_id')
+      ->select('edu_serie.id', 'edu_serie.titulo_serie', 'edu_serie.temporadas_total', 'edu_serie.clasificacion_id', 'edu_serie.descripcion', 'edu_imagen.url', 'edu_imagen.ubicacion_id', 'edu_video.sinopsis', 'edu_video.temporada', 'edu_video.capitulo', 'edu_video.url_video')
+      ->where('edu_serie.id','=',$serieId)
+      ->where('edu_imagen.ubicacion_id','=',5)
+      ->where('edu_video.temporada','=',$temporada)
+      ->get();
+    }
+    return view('viewEducaplay/carreteTemporada')->with('detallesSerie', $detallesSerie);
+  }
+
+  public function educaplayMenu() {   //* Funcion para alimentar el menu de Educaplay
+    $menuEducaplay = DB::table('edu_categorias')
+    ->select('categoria')
+    ->get();
+
+    return $menuEducaplay;
+  }
+
+  public function educaplay() {
+
+    $banner = DB::table('edu_serie')
+    ->join('edu_imagen', 'edu_serie.id', '=', 'edu_imagen.serie_id')
+    ->select('edu_serie.id','edu_serie.descripcion', 'edu_imagen.url')
+    ->where('edu_imagen.activo', '=', '1')
+    ->where('edu_imagen.ubicacion_id', '=', '1')
+    ->get();
+    $carretes = DB::table('edu_serie')
+    ->join('edu_imagen', 'edu_serie.id', '=', 'edu_imagen.serie_id')
+    ->select('edu_imagen.url', 'edu_serie.titulo_serie', 'edu_serie.descripcion', 'edu_serie.categoria_id', 'edu_serie.id')
+    ->where('edu_imagen.ubicacion_id','=','2')
+    ->orderBy('categoria_id','DESC')
+    ->get();
+    $menuEducaplay = $this->educaplayMenu();
+    return view('viewEducaplay/educaplay')->with('banner', $banner)->with('carretes', $carretes)->with('menuEducaplay',$menuEducaplay);
+  }
+
+  public static function consultaCategoria($cat) {
+    $categoria = DB::table('edu_categorias')
+    ->select('edu_categorias.categoria')
+    ->where('edu_categorias.id','=',$cat)
+    ->first();
+    return $categoria->categoria;
+  }
+
+  static function consultaUrlId($SerieId){
+    $urlId = DB::table('edu_video')
+    ->select('edu_video.url_video')
+    ->where('edu_video.serie_id','=',$SerieId)
+    ->where('edu_video.capitulo','=',1)
+    ->first();
+    return $urlId->url_video;
+  }
+
+  public function queryRate(){
+    $video_id = filter_input(INPUT_POST,'video_id');
+    $user_id = Auth::user ()->id;
+    $matchThese = ['user_id' => $user_id, 'video_id' => $video_id];
+    $rating = edu_rating::where($matchThese)->first();
+
+    if($rating != null){
+      $valorDevuelto = $rating->rating;
+    }else{
+      $valorDevuelto = 0;
+    }
+    return $valorDevuelto;
+  }
+
+
+  public function guardaRating(){
+    $video_id = filter_input(INPUT_POST,'video_id');
+    $rating = filter_input(INPUT_POST,'rating');
+    $user_id = Auth::user ()->id;
+    $ratingSaved = Edu_rating::firstOrNew(['user_id'=>$user_id, 'video_id'=>$video_id]);
+    $ratingSaved->rating = $rating;
+    $ratingSaved->save();
+
+    if($ratingSaved!=null){
+      $regreso = $ratingSaved;
+    }
+    else{
+      $regreso = 0;
+    }
+    return $regreso;
+  }
+
+  function series($idSerie, $urlVideo) {
+    $episodiosSerie = DB::table('edu_serie')
+    ->join('edu_imagen', 'edu_serie.id', '=', 'edu_imagen.serie_id')
+    ->join('edu_video', 'edu_serie.id', '=', 'edu_video.serie_id')
+    ->select('edu_serie.titulo_serie', 'edu_serie.temporadas_total', 'edu_serie.clasificacion_id', 'edu_serie.descripcion', 'edu_imagen.url', 'edu_imagen.ubicacion_id', 'edu_video.id', 'edu_video.sinopsis', 'edu_video.temporada', 'edu_video.capitulo', 'edu_video.url_video')
+    ->where('edu_serie.id','=',$idSerie)
+    ->where('edu_imagen.ubicacion_id','=',5)
+    ->get();
+    $menuEducaplay = $this->educaplayMenu();
+    return view('viewEducaplay/listaVideosEducaplay')->with('menuEducaplay', $menuEducaplay)->with('episodiosSerie', $episodiosSerie)->with('urlVideo', $urlVideo);
+  }
+  function videoSerie() {
+    return view('viewEducaplay/videoSerie');
+  }
+  //    function getImagesVerticales ($tipo, $id){
+  //         COnuslta
+  //       dd($imagenVertical);
+  ////          $imagenVertical->toJson();
+  ////        return '{{urlimagen 1}, {url imagen2}}';
+  //    }
+
+
+  public function agregaMiLista(){
+
+    if(\Auth::User()) {
+
+      $id_usuario = \Auth::User() -> id;
+      $id_serie = filter_input (INPUT_GET, 'id');
+      $add = DB::table('edu_lista_usuario')->whereuser_id($id_usuario)->whereserie_id($id_serie)->get();
+
+      if( $add == NULL){
+        $exito = DB::table('edu_lista_usuario')->insert(
+        ['user_id' => $id_usuario, 'video_id' => 0, 'serie_id' => $id_serie]
+      );
+
+      if($exito == 1){
+        return "Agregada con exito.";
+      }
+
+    }else  {
+      return "Esta serie ya esta agregada a tu lista.";
     }
 
-	public function descripciones($serieId) {
-        $primerDetalleSerie = DB::table('edu_serie')
-				->join('edu_imagen', 'edu_serie.id', '=', 'edu_imagen.serie_id')
-				->join('edu_video', 'edu_serie.id', '=', 'edu_video.serie_id')
-                ->select('edu_serie.id', 'edu_serie.titulo_serie', 'edu_serie.temporadas_total', 'edu_serie.clasificacion_id', 'edu_serie.descripcion', 'edu_imagen.url', 'edu_imagen.ubicacion_id', 'edu_video.sinopsis', 'edu_video.temporada', 'edu_video.capitulo', 'edu_video.url_video')
-				->where('edu_serie.id','=',$serieId)
-				->where('edu_imagen.ubicacion_id','=',1)
-		        ->first();
-        return view('viewEducaplay/descripcionSerie')->with('primerDetalleSerie', $primerDetalleSerie);
-    }
+  }else {
+    return "Inicia sesión para poder agregar la serie.";
+  }
+}
 
-	public function temporada($serieId, $temporada) {
-		$detallesSerie = DB::table('edu_serie')
-				->join('edu_imagen', 'edu_serie.id', '=', 'edu_imagen.serie_id')
-				->join('edu_video', 'edu_serie.id', '=', 'edu_video.serie_id')
-                ->select('edu_serie.id', 'edu_serie.titulo_serie', 'edu_serie.temporadas_total', 'edu_serie.clasificacion_id', 'edu_serie.descripcion', 'edu_imagen.url', 'edu_imagen.ubicacion_id', 'edu_video.sinopsis', 'edu_video.temporada', 'edu_video.capitulo', 'edu_video.url_video')
-                ->where('edu_serie.id','=',$serieId)
-				->where('edu_imagen.ubicacion_id','=',5)
-				->where('edu_video.temporada','=',$temporada)
-		        ->get();
-		if($detallesSerie == null){
-			if($temporada=='1'){
-				$temporada='0';
-			}
-			else{
-				$temporada='1';
-			}
-			$detallesSerie = DB::table('edu_serie')
-				->join('edu_imagen', 'edu_serie.id', '=', 'edu_imagen.serie_id')
-				->join('edu_video', 'edu_serie.id', '=', 'edu_video.serie_id')
-                ->select('edu_serie.id', 'edu_serie.titulo_serie', 'edu_serie.temporadas_total', 'edu_serie.clasificacion_id', 'edu_serie.descripcion', 'edu_imagen.url', 'edu_imagen.ubicacion_id', 'edu_video.sinopsis', 'edu_video.temporada', 'edu_video.capitulo', 'edu_video.url_video')
-                ->where('edu_serie.id','=',$serieId)
-				->where('edu_imagen.ubicacion_id','=',5)
-				->where('edu_video.temporada','=',$temporada)
-		        ->get();
-		}
-        return view('viewEducaplay/carreteTemporada')->with('detallesSerie', $detallesSerie);
-    }
+//////////////////////////////// Votación //////////////////////////////////////////////
 
-    public function educaplayMenu() {   //* Funcion para alimentar el menu de Educaplay
-        $menuEducaplay = DB::table('edu_categorias')
-                ->select('categoria')
-                ->get();
-
-        return $menuEducaplay;
-    }
-
-    public function educaplay() {
-
-        $banner = DB::table('edu_serie')
-                ->join('edu_imagen', 'edu_serie.id', '=', 'edu_imagen.serie_id')
-                ->select('edu_serie.id','edu_serie.descripcion', 'edu_imagen.url')
-                ->where('edu_imagen.activo', '=', '1')
-                ->where('edu_imagen.ubicacion_id', '=', '1')
-                ->get();
-        $carretes = DB::table('edu_serie')
-				->join('edu_imagen', 'edu_serie.id', '=', 'edu_imagen.serie_id')
-                ->select('edu_imagen.url', 'edu_serie.titulo_serie', 'edu_serie.descripcion', 'edu_serie.categoria_id', 'edu_serie.id')
-                ->where('edu_imagen.ubicacion_id','=','2')
-				->orderBy('categoria_id','DESC')
-		        ->get();
-        $menuEducaplay = $this->educaplayMenu();
-         return view('viewEducaplay/educaplay')->with('banner', $banner)->with('carretes', $carretes)->with('menuEducaplay',$menuEducaplay);
-    }
-
-	public static function consultaCategoria($cat) {
-        $categoria = DB::table('edu_categorias')
-                ->select('edu_categorias.categoria')
-                ->where('edu_categorias.id','=',$cat)
-		        ->first();
-         return $categoria->categoria;
-    }
-
-	static function consultaUrlId($SerieId){
-		$urlId = DB::table('edu_video')
-			->select('edu_video.url_video')
-			->where('edu_video.serie_id','=',$SerieId)
-			->where('edu_video.capitulo','=',1)
-			->first();
-		return $urlId->url_video;
-	}
-
-	public function queryRate(){
-		$video_id = filter_input(INPUT_POST,'video_id');
-		$user_id = Auth::user ()->id;
-		$matchThese = ['user_id' => $user_id, 'video_id' => $video_id];
-		$rating = edu_rating::where($matchThese)->first();
-
-		if($rating != null){
-			$valorDevuelto = $rating->rating;
-		}else{
-			$valorDevuelto = 0;
-		}
-		return $valorDevuelto;
-	}
-
-
-	public function guardaRating(){
-		$video_id = filter_input(INPUT_POST,'video_id');
-		$rating = filter_input(INPUT_POST,'rating');
-		$user_id = Auth::user ()->id;
-		$ratingSaved = Edu_rating::firstOrNew(['user_id'=>$user_id, 'video_id'=>$video_id]);
-		$ratingSaved->rating = $rating;
-		$ratingSaved->save();
-
-		if($ratingSaved!=null){
-			$regreso = $ratingSaved;
-		}
-		else{
-			$regreso = 0;
-		}
-		return $regreso;
-	}
-
-    function series($idSerie, $urlVideo) {
-		$episodiosSerie = DB::table('edu_serie')
-				->join('edu_imagen', 'edu_serie.id', '=', 'edu_imagen.serie_id')
-				->join('edu_video', 'edu_serie.id', '=', 'edu_video.serie_id')
-                ->select('edu_serie.titulo_serie', 'edu_serie.temporadas_total', 'edu_serie.clasificacion_id', 'edu_serie.descripcion', 'edu_imagen.url', 'edu_imagen.ubicacion_id', 'edu_video.id', 'edu_video.sinopsis', 'edu_video.temporada', 'edu_video.capitulo', 'edu_video.url_video')
-                ->where('edu_serie.id','=',$idSerie)
-				->where('edu_imagen.ubicacion_id','=',5)
-		        ->get();
-        $menuEducaplay = $this->educaplayMenu();
-        return view('viewEducaplay/listaVideosEducaplay')->with('menuEducaplay', $menuEducaplay)->with('episodiosSerie', $episodiosSerie)->with('urlVideo', $urlVideo);
-    }
-    function videoSerie() {
-        return view('viewEducaplay/videoSerie');
-    }
-    		//    function getImagesVerticales ($tipo, $id){
-//         COnuslta
-//       dd($imagenVertical);
-////          $imagenVertical->toJson();
-////        return '{{urlimagen 1}, {url imagen2}}';
-//    }
-
-
-public function agregaMiLista(){
+public function votacion(){
 
   if(\Auth::User()) {
 
     $id_usuario = \Auth::User() -> id;
-    $id_serie = filter_input (INPUT_GET, 'id');
-    $add = DB::table('edu_lista_usuario')->whereuser_id($id_usuario)->whereserie_id($id_serie)->get();
+    $nombre_serie = filter_input (INPUT_GET, 'name');
 
-    if( $add == NULL){
-      $exito = DB::table('edu_lista_usuario')->insert(
-      ['user_id' => $id_usuario, 'video_id' => 0, 'serie_id' => $id_serie]
-    );
+    if((DB::table('edu_serie')->wheretitulo_serie($nombre_serie)->wherecategoria_id('2')->get()) != NULL ){
 
-    if($exito == 1){
-      return "Agregada con exito.";
+      $n_votos = DB::table('muestra_votacion')->whereuser_id($id_usuario)->count();
+
+      if($n_votos < 5){
+
+        $id_muestra = DB::table('edu_serie')->wheretitulo_serie($nombre_serie)->lists('id');
+
+        if(DB::table('muestra_votacion')->whereuser_id($id_usuario)->wheremuestraid($id_muestra) != NULL){
+
+          $resultado = DB::table('muestra_votacion')->insert([
+            'muestra_id' => $id_muestra[0],
+            'user_id' => $id_usuario,
+          ]);
+
+          if($resultado == 1){
+
+            $n_votos = 5 - ($n_votos+1);
+
+            $resultado = "Ya votaste, te quedan".$n_votos." votos";
+
+            return $resultado;
+
+          }else {
+            return "Error en la votación.";
+          }
+        }else {
+          return "Ya votaste por esta serie.";
+        }
+      }else {
+        return "Ya no tienes votos disponibles";
+      }
+    }else {
+      return "Esta serie no esta concursando.";
     }
-
-  }else  {
-    return "Esta serie ya esta agregada a tu lista.";
-  }
-
-}else {
-  return "Inicia sesión para poder agregar la serie.";
+  }return "Debes iniciar sesión para poder emitir tu voto.";
 }
-}
-
-// public function votacion(){
-//
-//   if(\Auth::User()) {
-//
-//     $id_usuario = \Auth::User() -> id;
-//     $nombre_serie = filter_input (INPUT_GET, 'name');
-//
-//
-//     if((DB::table('muestra_registro')->wherenombre_produccion($nombre_serie)->wherecategoria_id(2)->get()) == NULL ){
-//       return "Esta serie no esta concursando.";
-//     }
-//
-//
-//     $n_votos = DB::table('muestra_votacion')->whereemail($email)->count();
-//
-//     			if($n_votos < 5){
-//
-//     				$id_usuario = DB::table('users')->whereemail($email)->get();
-//
-//     				$id_muestra = 0;
-//
-//     				DB::table('muestra_votacion')->insert([
-//     					'muestra_id' => $id_muestra,
-//     					'user_id' => $id_usuario,
-//     				]);
-//
-//     	return 1;
-//
-//     }
-//     else {
-//     	return 0;
-//     }
-//
-//     	}
-//
-//
-//
-//
-//     $add = DB::table('edu_lista_usuario')->whereuser_id($id_usuario)->whereserie_id($id_serie)->get();
-//
-//     if( $add == NULL){
-//       $exito = DB::table('edu_lista_usuario')->insert(
-//       ['user_id' => $id_usuario, 'video_id' => 0, 'serie_id' => $id_serie]
-//     );
-//
-//     if($exito == 1){
-//       $n = 0;
-//       $votoexitoso = "Ya votaste, te quedan".$n." votos";
-//       return $votoexitoso;
-//     }
-//
-//   }else  {
-//     return "Esta serie ya esta agregada a tu lista.";
-//   }
-//
-// }else {
-//   return "Inicia sesión para poder agregar la serie.";
-// }
-//
-// }
+  ///////////////////////////////////////
 
 }
