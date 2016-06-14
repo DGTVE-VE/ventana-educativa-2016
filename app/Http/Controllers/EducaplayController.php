@@ -18,6 +18,8 @@ use App\Http\Requests;
 use App\Model\Educaplay\Edu_serie;
 use App\Model\Educaplay\Edu_imagen;
 use App\Model\Educaplay\Edu_rating;
+use App\Model\Educaplay\Edu_comments;
+use App\Model\Educaplay\Edu_clasificaciones;
 use Illuminate\Support\Facades\Auth;
 use Laracasts\Flash\Flash;
 
@@ -28,16 +30,23 @@ class EducaplayController extends Controller {
     return view('viewEducaplay/educaplay');
   }
 
-  public function descripciones($serieId) {
-    $primerDetalleSerie = DB::table('edu_serie')
-    ->join('edu_imagen', 'edu_serie.id', '=', 'edu_imagen.serie_id')
-    ->join('edu_video', 'edu_serie.id', '=', 'edu_video.serie_id')
-    ->select('edu_serie.id', 'edu_serie.titulo_serie', 'edu_serie.temporadas_total', 'categoria_id', 'edu_serie.clasificacion_id', 'edu_serie.descripcion', 'edu_imagen.url', 'edu_imagen.ubicacion_id', 'edu_video.sinopsis', 'edu_video.temporada', 'edu_video.capitulo', 'edu_video.url_video')
-    ->where('edu_serie.id','=',$serieId)
-    ->where('edu_imagen.ubicacion_id','=',1)
-    ->first();
-    return view('viewEducaplay/descripcionSerie')->with('primerDetalleSerie', $primerDetalleSerie);
-  }
+	public function descripciones($serieId) {
+        $primerDetalleSerie = DB::table('edu_serie')
+				->join('edu_imagen', 'edu_serie.id', '=', 'edu_imagen.serie_id')
+				->join('edu_video', 'edu_serie.id', '=', 'edu_video.serie_id')
+                ->select('edu_serie.id', 'edu_serie.titulo_serie', 'edu_serie.temporadas_total', 'edu_serie.clasificacion_id', 'edu_serie.descripcion', 'edu_imagen.url', 'edu_imagen.ubicacion_id', 'edu_video.sinopsis', 'edu_video.temporada', 'edu_video.capitulo', 'edu_video.url_video')
+				->where('edu_serie.id','=',$serieId)
+				->where('edu_imagen.ubicacion_id','=',1)
+		        ->first();
+		$comentarios = DB::table('edu_comments')
+				->join('edu_video','edu_comments.video_id','=','edu_video.id')
+				->select('edu_video.temporada','edu_video.capitulo','edu_comments.usuario_id','edu_comments.comment')
+				->where('edu_comments.serie_id', $serieId)
+				->orderBy('edu_video.temporada','ASC')
+				->orderBy('edu_video.capitulo','ASC')
+				->get();
+        return view('viewEducaplay/descripcionSerie')->with('primerDetalleSerie', $primerDetalleSerie)->with('comentarios', $comentarios);
+    }
 
   public function temporada($serieId, $temporada) {
     $detallesSerie = DB::table('edu_serie')
@@ -93,13 +102,18 @@ class EducaplayController extends Controller {
     return view('viewEducaplay/educaplay')->with('banner', $banner)->with('carretes', $carretes)->with('menuEducaplay',$menuEducaplay);
   }
 
-  public static function consultaCategoria($cat) {
-    $categoria = DB::table('edu_categorias')
-    ->select('edu_categorias.categoria')
-    ->where('edu_categorias.id','=',$cat)
-    ->first();
-    return $categoria->categoria;
-  }
+	public static function consultaCategoria($cat) {
+        $categoria = DB::table('edu_categorias')
+                ->select('edu_categorias.categoria')
+                ->where('edu_categorias.id','=',$cat)
+		        ->first();
+		if($categoria!=null){
+			return $categoria->categoria;
+		}
+        else{
+			return 'Categoria no encontrada';
+		}
+    }
 
   static function consultaUrlId($SerieId){
     $urlId = DB::table('edu_video')
@@ -178,6 +192,17 @@ class EducaplayController extends Controller {
   ////        return '{{urlimagen 1}, {url imagen2}}';
   //    }
 
+	static function consultaClasificacion($idCat){
+		$clasificacion = Edu_clasificaciones::find($idCat);
+		if($clasificacion!= null){
+			return $clasificacion->clasifica;
+		}
+		else{
+			return 'No encontrada';
+		}
+	}
+
+  ///////////////////////////////////////
 
   public function agregaMiLista(){
 
@@ -251,6 +276,7 @@ public function votacion(){
     }
   }return "Debes iniciar sesión para poder emitir tu voto.";
 }
-  ///////////////////////////////////////
+
+
 
 }

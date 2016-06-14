@@ -1,3 +1,4 @@
+{{--*/ 	use App\Http\Controllers\EducaplayController; /*--}}
 @section('titleEducaplay')
 	Educaplay
 @stop
@@ -37,7 +38,7 @@
 					</div>
 				</div>
 				<div class="col-md-11">
-					<iframe name="detalleSerie" id="detalleSerie" src="{{url('educaplay/descripciones/temporada/'.$primerDetalleSerie->id.'/0')}}" frameborder="0" class="col-md-12" style="height:200px;">
+					<iframe name="detalleSerie" id="detalleSerie" src="{{url('educaplay/descripciones/temporada/'.$primerDetalleSerie->id.'/0')}}" frameborder="0" class="col-md-12" style="height:300px;">
 					</iframe>
 				</div>
             </div>
@@ -50,19 +51,22 @@
 				</div>
 				<div class="col-md-2 col-md-offset-1">
 					<p>{{$primerDetalleSerie->temporadas_total}} Temporadas.</p>
-					<p>Clasificaci&#243;n: {{$primerDetalleSerie->clasificacion_id}}</p>
+					<p>Clasificaci&#243;n: {{EducaplayController::consultaClasificacion($primerDetalleSerie->clasificacion_id)}}</p>
 				</div>
-                <div class="col-md-2">
-					<p>Generos.</p>
-				</div>
-				<div class="col-md-2">
-					<p>Reseñas.</p>
-				</div>
-				<div class="col-md-2">
-					<p>Clasificación.</p>
-				</div>
-				<div class="col-md-2">
-					<p>Audio.</p>
+                <div class="col-md-9">
+					<div class="row">
+						<div class="col-md-6 col-md-offset-1">
+							<p>Comentarios.</p>
+						@if($comentarios!=null)
+							@foreach($comentarios as $elemComentario)
+								<p style="color:white;">Temporada {{$elemComentario->temporada}}. Capitulo {{$elemComentario->capitulo}}</p>
+								<p style="color:white;">{{$elemComentario->comment}}</p>
+							@endforeach
+						@else
+							<p style="color:white;"> AUN NO HAY COMENTARIOS PARA ESTA SERIE</p>
+						@endif
+						</div>
+					</div>
 				</div>
             </div>
         </div>
