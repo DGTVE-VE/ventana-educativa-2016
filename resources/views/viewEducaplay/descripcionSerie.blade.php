@@ -76,7 +76,9 @@
             <li class="active"><a data-toggle="tab" href="#descripcion1">DESCRIPCION GENERAL</a></li>
             <li><a data-toggle="tab" href="#similares1">CAPÍTULOS</a></li>
             <li><a data-toggle="tab" href="#detalles1">DETALLES</a></li>
-            <li><a onclick="votacion('{!!$primerDetalleSerie->titulo_serie!!}')">VOTAR POR ESTA SERIE</a></li>
+						@if($primerDetalleSerie->categoria_id == 2)
+            <li><a type="button" onclick="votacion('{!!$primerDetalleSerie->titulo_serie!!}')" class="btn btn-danger btn-lg">VOTAR POR ESTA SERIE</a></li>
+						@endif
             <li></li>
         </ul>
     </div>
@@ -101,7 +103,7 @@ if ( r == true){
 	});
 
 	request.done(function( msg ) {
-	  // console.log (msg);
+	  //console.log (msg);
 	  alert(msg);
 
 	  });
