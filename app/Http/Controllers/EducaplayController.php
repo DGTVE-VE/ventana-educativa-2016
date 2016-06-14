@@ -18,6 +18,8 @@ use App\Http\Requests;
 use App\Model\Educaplay\Edu_serie;
 use App\Model\Educaplay\Edu_imagen;
 use App\Model\Educaplay\Edu_rating;
+use App\Model\Educaplay\Edu_comments;
+use App\Model\Educaplay\Edu_clasificaciones;
 use Illuminate\Support\Facades\Auth;
 use Laracasts\Flash\Flash;
 
@@ -36,7 +38,14 @@ class EducaplayController extends Controller {
 				->where('edu_serie.id','=',$serieId)
 				->where('edu_imagen.ubicacion_id','=',1)
 		        ->first();
-        return view('viewEducaplay/descripcionSerie')->with('primerDetalleSerie', $primerDetalleSerie);
+		$comentarios = DB::table('edu_comments')
+				->join('edu_video','edu_comments.video_id','=','edu_video.id')
+				->select('edu_video.temporada','edu_video.capitulo','edu_comments.usuario_id','edu_comments.comment')
+				->where('edu_comments.serie_id', $serieId)
+				->orderBy('edu_video.temporada','ASC')
+				->orderBy('edu_video.capitulo','ASC')
+				->get();
+        return view('viewEducaplay/descripcionSerie')->with('primerDetalleSerie', $primerDetalleSerie)->with('comentarios', $comentarios);
     }
 
 	public function temporada($serieId, $temporada) {
@@ -98,7 +107,12 @@ class EducaplayController extends Controller {
                 ->select('edu_categorias.categoria')
                 ->where('edu_categorias.id','=',$cat)
 		        ->first();
-         return $categoria->categoria;
+		if($categoria!=null){
+			return $categoria->categoria;
+		}
+        else{
+			return 'Categoria no encontrada';
+		}
     }
 
 	static function consultaUrlId($SerieId){
@@ -171,6 +185,16 @@ class EducaplayController extends Controller {
     function videoSerie() {
         return view('viewEducaplay/videoSerie');
     }
+	
+	static function consultaClasificacion($idCat){
+		$clasificacion = Edu_clasificaciones::find($idCat);
+		if($clasificacion!= null){
+			return $clasificacion->clasifica;
+		}
+		else{
+			return 'No encontrada';
+		}
+	}
     		//    function getImagesVerticales ($tipo, $id){
 //         COnuslta
 //       dd($imagenVertical);
