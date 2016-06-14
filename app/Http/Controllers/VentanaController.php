@@ -21,59 +21,113 @@ use Illuminate\Support\Facades\URL;
 
 
 class VentanaController extends Controller {
-//    public function correoEnviado() {/*para pruebas de visualización*/
-//        return view('viewVentana/correoEnviado');
-//    }
-//
-    public function ventana_educativa() {
-        Flash::message('Para una mejor experiencia de visualización le recomendamos usar el navegador Google Chrome o Firefox');
-        return view('viewVentana/ventana-educativa');
+  //    public function correoEnviado() {/*para pruebas de visualización*/
+  //        return view('viewVentana/correoEnviado');
+  //    }
+  //
+  public function ventana_educativa() {
+    Flash::message('Para una mejor experiencia de visualización le recomendamos usar el navegador Google Chrome o Firefox');
+    return view('viewVentana/ventana-educativa');
+  }
+
+  public function registraUsuario(Request $request) {
+
+
+    $validator = Validator::make($request->all(), [
+
+      'nickname' => 'required|max:254',
+      'name' => 'required|max:254',
+      'email' => 'required|email|max:254|unique:users',
+      'password' => 'required|max:60|min:6|confirmed',
+      'genero' => 'required',
+      'nacimiento' => 'required|date',
+      'ciudad' => 'required|max:100',
+      'pais' => 'required|max:100',
+
+    ]);
+
+    if ($validator->fails()) {
+      return redirect('registro')
+      ->withErrors($validator)
+      ->withInput();
     }
 
-    public function registraUsuario(Request $request) {
+    $users = new \App\User();
+    $users->nickname = filter_input(INPUT_POST, 'nickname');
+    $users->name = filter_input(INPUT_POST, 'name');
+    $users->email = filter_input(INPUT_POST, 'email');
+    $users->password = bcrypt(filter_input(INPUT_POST, 'password'));
+    $users->genero = filter_input(INPUT_POST, 'genero');
+    $users->nacimiento = filter_input(INPUT_POST, 'nacimiento');
+    $users->ciudad = filter_input(INPUT_POST, 'ciudad');
+    $users->pais = filter_input(INPUT_POST, 'pais');
+    $users->intereses_edu = filter_input(INPUT_POST, 'intereses_edu');
+    $users->is_teacher = (filter_input(INPUT_POST, 'is_teacher') == 'on')? 1 : 0;
+    $users->is_student = (filter_input(INPUT_POST, 'is_student') == 'on')? 1 : 0;
+    $users->is_parent =  (filter_input(INPUT_POST, 'is_parent') == 'on')? 1 : 0;
 
+    $users->save();
+    return $this->enviaCorreoActivacion($users->email, md5($users->password), filter_input (INPUT_POST, 'back_url'));
 
-   $validator = Validator::make($request->all(), [
+  }
 
-        'nickname' => 'required|max:254',
-        'name' => 'required|max:254',
-        'email' => 'required|email|max:254|unique:users',
-        'password' => 'required|max:60|min:6|confirmed',
-        'genero' => 'required',
-        'nacimiento' => 'required|date',
-        'ciudad' => 'required|max:100',
-        'pais' => 'required|max:100',
+  public function presentacion() {
+    return view('viewVentana/presentacionVentana');
+  }
 
-      ]);
+  public function registro() {
 
-      if ($validator->fails()) {
-          return redirect('registro')
-                      ->withErrors($validator)
-                      ->withInput();
+    return view('viewVentana/registroVentana')
+    ->with ('back_url', URL::previous());
+  }
+
+  public function acceso() {
+    return view('viewVentana/acceso');
+  }
+
+  public function enviaCorreoActivacion($correo, $hash, $back_url) {
+    Mail::send('viewVentana.emails.activacion', ['correo' => $correo, 'hash' => $hash], function ($m) use ($correo) {
+      $m->from('ventana@televisioneducativa.gob.mx', 'Ventana Educativa');
+      $m->to($correo)->subject('Activación de correo!');
+    });
+    //        return redirect ($back_url);
+    return view('viewVentana/correoEnviado');
+  }
+
+  public function activaCorreo(Request $request, $correo, $hash) {
+    $user = \App\User::where('email', '=', $correo)->first();
+
+    if (md5($user->password) == $hash) {
+      $user->activo = 1;
+      $user->save();
+      return Redirect::home()->with('message','¡Bienvenido! Gracias por ser parte de Ventana Educativa.');
+      //            return view('viewVentana/activacionCorrecta');
+    } else {
+      print 'error';
+    }
+
+  }
+
+  private function newImage ($originalFile){
+    $info = getimagesize($originalFile);
+    $mime = $info['mime'];
+    switch ($mime) {
+      case 'image/jpeg':
+      $img = imagecreatefromjpeg($originalFile);
+      break;
+
+      case 'image/png':
+      $img = imagecreatefrompng($originalFile);
+      break;
+
+      case 'image/gif':
+        $img = imagecreatefromgif($originalFile);
+        break;
+
+        default:
+        throw new Exception('Unknown image type.');
       }
-
-        $users = new \App\User();
-        $users->nickname = filter_input(INPUT_POST, 'nickname');
-        $users->name = filter_input(INPUT_POST, 'name');
-        $users->email = filter_input(INPUT_POST, 'email');
-        $users->password = bcrypt(filter_input(INPUT_POST, 'password'));
-        $users->genero = filter_input(INPUT_POST, 'genero');
-        $users->nacimiento = filter_input(INPUT_POST, 'nacimiento');
-        $users->ciudad = filter_input(INPUT_POST, 'ciudad');
-        $users->pais = filter_input(INPUT_POST, 'pais');
-        $users->intereses_edu = filter_input(INPUT_POST, 'intereses_edu');
-        $users->is_teacher = (filter_input(INPUT_POST, 'is_teacher') == 'on')? 1 : 0;
-        $users->is_student = (filter_input(INPUT_POST, 'is_student') == 'on')? 1 : 0;
-        $users->is_parent =  (filter_input(INPUT_POST, 'is_parent') == 'on')? 1 : 0;
-
-        $users->save();
-        return $this->enviaCorreoActivacion($users->email, md5($users->password), filter_input (INPUT_POST, 'back_url'));
-
-    }
-
-    public function presentacion() {
-        return view('viewVentana/presentacionVentana');
-    }
+      return $img;
 
     public function registro() {
 
@@ -130,73 +184,38 @@ class VentanaController extends Controller {
     }
 
     private function resize($newWidth, $targetFile, $originalFile) {
-        $img = $this->newImage ($originalFile);
-        list($width, $height) = getimagesize($originalFile);
-//        $newHeight = ($height / $width) * $newWidth;
-        $newHeight = $newWidth;
-        $tmp = imagecreatetruecolor($newWidth, $newHeight);
-        $width = ($width > $height)? $height : $width;
-        $height = ($height > $width) ? $width : $height;
-        imagecopyresampled($tmp, $img,
-                0,              //dst_x
-                0,              //dst_y
-                0,              //src_x
-                0,              //src_y
-                $newWidth,      //dst_w
-                $newHeight,     //dst_h
-                $width,         //src_w
-                $height);       //src_h
+      $img = $this->newImage ($originalFile);
+      list($width, $height) = getimagesize($originalFile);
+      //        $newHeight = ($height / $width) * $newWidth;
+      $newHeight = $newWidth;
+      $tmp = imagecreatetruecolor($newWidth, $newHeight);
+      $width = ($width > $height)? $height : $width;
+      $height = ($height > $width) ? $width : $height;
+      imagecopyresampled($tmp, $img,
+      0,              //dst_x
+      0,              //dst_y
+      0,              //src_x
+      0,              //src_y
+      $newWidth,      //dst_w
+      $newHeight,     //dst_h
+      $width,         //src_w
+      $height);       //src_h
 
-        if (file_exists($targetFile)) {
-            unlink($targetFile);
-        }
-        imagepng ($tmp, $targetFile);
+      if (file_exists($targetFile)) {
+        unlink($targetFile);
+      }
+      imagepng ($tmp, $targetFile);
     }
 
     public function cambiaAvatar() {
 
-        if (Input::file('image')->isValid()) {
-            $targetFile = 'uploaded/avatares/'.Auth::user()->id . '.png';
-            $this->resize(200, $targetFile, Input::file('image')->getRealPath());
-            print url($targetFile);
-        } else {
-            print 0;
-        }
+      if (Input::file('image')->isValid()) {
+        $targetFile = 'uploaded/avatares/'.Auth::user()->id . '.png';
+        $this->resize(200, $targetFile, Input::file('image')->getRealPath());
+        print url($targetFile);
+      } else {
+        print 0;
+      }
     }
-
-    public function agregaMiLista(){
-
-
-      if(\Auth::user()) {
-
-
-
-        $id_usuario = \Auth::User() -> id;
-        $id_serie = filter_input (INPUT_GET, 'id');
-
-        $add = DB::table('edu_lista_usuario')->whereuser_id($id_usuario)->whereserie_id($id_serie)->get();
-
-        if( $add == NULL){
-
-          $exito = DB::table('edu_lista_usuario')->insert(
-            ['user_id' => $id_usuario, 'video_id' => 0, 'serie_id' => $id_serie]
-          );
-
-          if($exito == 1){
-            return "Agregada con exito.";
-          }
-
-
-        }
-
-        else  {
-          return "Esta serie ya esta agregada a tu lista";
-        }
-
-      }
-      else {
-        return "Inicia sesión para poder agregar la serie.";
-      }
-}
 
 }

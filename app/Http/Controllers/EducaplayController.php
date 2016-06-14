@@ -2,6 +2,16 @@
 
 namespace App\Http\Controllers;
 
+use DB;
+use Mail;
+use App\User;
+use Validator;
+use Illuminate\Support\Facades\Input;
+use Illuminate\Support\Facades\Redirect;
+use App\Http\Controllers\Controller;
+use App\Intereses_educativos;
+use Illuminate\Support\Facades\Session;
+use Illuminate\Support\Facades\URL;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Http\Request;
 use App\Http\Requests;
@@ -10,7 +20,7 @@ use App\Model\Educaplay\Edu_imagen;
 use App\Model\Educaplay\Edu_rating;
 use Illuminate\Support\Facades\Auth;
 use Laracasts\Flash\Flash;
-use DB;
+
 
 class EducaplayController extends Controller {
 
@@ -99,13 +109,13 @@ class EducaplayController extends Controller {
 			->first();
 		return $urlId->url_video;
 	}
-	
+
 	public function queryRate(){
 		$video_id = filter_input(INPUT_POST,'video_id');
 		$user_id = Auth::user ()->id;
 		$matchThese = ['user_id' => $user_id, 'video_id' => $video_id];
 		$rating = edu_rating::where($matchThese)->first();
-		
+
 		if($rating != null){
 			$valorDevuelto = $rating->rating;
 		}else{
@@ -113,7 +123,8 @@ class EducaplayController extends Controller {
 		}
 		return $valorDevuelto;
 	}
-	
+
+
 	public function guardaRating(){
 		$video_id = filter_input(INPUT_POST,'video_id');
 		$rating = filter_input(INPUT_POST,'rating');
@@ -121,6 +132,7 @@ class EducaplayController extends Controller {
 		$ratingSaved = Edu_rating::firstOrNew(['user_id'=>$user_id, 'video_id'=>$video_id]);
 		$ratingSaved->rating = $rating;
 		$ratingSaved->save();
+
 		if($ratingSaved!=null){
 			$regreso = $ratingSaved;
 		}
@@ -129,7 +141,7 @@ class EducaplayController extends Controller {
 		}
 		return $regreso;
 	}
-	
+
     function series($idSerie, $urlVideo) {
 		$episodiosSerie = DB::table('edu_serie')
 				->join('edu_imagen', 'edu_serie.id', '=', 'edu_imagen.serie_id')
@@ -165,4 +177,93 @@ class EducaplayController extends Controller {
 ////          $imagenVertical->toJson();
 ////        return '{{urlimagen 1}, {url imagen2}}';
 //    }
+
+
+public function agregaMiLista(){
+
+  if(\Auth::User()) {
+
+    $id_usuario = \Auth::User() -> id;
+    $id_serie = filter_input (INPUT_GET, 'id');
+    $add = DB::table('edu_lista_usuario')->whereuser_id($id_usuario)->whereserie_id($id_serie)->get();
+
+    if( $add == NULL){
+      $exito = DB::table('edu_lista_usuario')->insert(
+      ['user_id' => $id_usuario, 'video_id' => 0, 'serie_id' => $id_serie]
+    );
+
+    if($exito == 1){
+      return "Agregada con exito.";
+    }
+
+  }else  {
+    return "Esta serie ya esta agregada a tu lista.";
+  }
+
+}else {
+  return "Inicia sesión para poder agregar la serie.";
+}
+}
+
+// public function votacion(){
+//
+//   if(\Auth::User()) {
+//
+//     $id_usuario = \Auth::User() -> id;
+//     $nombre_serie = filter_input (INPUT_GET, 'name');
+//
+//
+//     if((DB::table('muestra_registro')->wherenombre_produccion($nombre_serie)->wherecategoria_id(2)->get()) == NULL ){
+//       return "Esta serie no esta concursando.";
+//     }
+//
+//
+//     $n_votos = DB::table('muestra_votacion')->whereemail($email)->count();
+//
+//     			if($n_votos < 5){
+//
+//     				$id_usuario = DB::table('users')->whereemail($email)->get();
+//
+//     				$id_muestra = 0;
+//
+//     				DB::table('muestra_votacion')->insert([
+//     					'muestra_id' => $id_muestra,
+//     					'user_id' => $id_usuario,
+//     				]);
+//
+//     	return 1;
+//
+//     }
+//     else {
+//     	return 0;
+//     }
+//
+//     	}
+//
+//
+//
+//
+//     $add = DB::table('edu_lista_usuario')->whereuser_id($id_usuario)->whereserie_id($id_serie)->get();
+//
+//     if( $add == NULL){
+//       $exito = DB::table('edu_lista_usuario')->insert(
+//       ['user_id' => $id_usuario, 'video_id' => 0, 'serie_id' => $id_serie]
+//     );
+//
+//     if($exito == 1){
+//       $n = 0;
+//       $votoexitoso = "Ya votaste, te quedan".$n." votos";
+//       return $votoexitoso;
+//     }
+//
+//   }else  {
+//     return "Esta serie ya esta agregada a tu lista.";
+//   }
+//
+// }else {
+//   return "Inicia sesión para poder agregar la serie.";
+// }
+//
+// }
+
 }

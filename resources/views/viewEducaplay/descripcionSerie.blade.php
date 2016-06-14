@@ -27,7 +27,7 @@
 							Temporada	<span class="caret"></span>
 						</button>
 						<ul class="dropdown-menu" aria-labelledby="btntemporada">
-				{{--*/ 
+				{{--*/
 					for($temp=1; $temp<= $primerDetalleSerie->temporadas_total; $temp++){
 						$urlTemporada = "educaplay/descripciones/temporada/".$primerDetalleSerie->id."/".$temp;
 						echo '<li><a href='.url($urlTemporada).' target="detalleSerie">'.$temp.'</a></li>';
@@ -68,9 +68,11 @@
         </div>
         <ul class="nav nav-tabs nav-justified">
             <li></li>
+
             <li class="active"><a data-toggle="tab" href="#descripcion1">DESCRIPCION GENERAL</a></li>
             <li><a data-toggle="tab" href="#similares1">CAPÍTULOS</a></li>
             <li><a data-toggle="tab" href="#detalles1">DETALLES</a></li>
+            <li><a onclick="votacion('{!!$primerDetalleSerie->titulo_serie!!}')">VOTAR POR ESTA SERIE</a></li>
             <li></li>
         </ul>
     </div>
@@ -80,3 +82,28 @@
 	</div>
 @endif
 @endsection
+<script>
+function votacion(nombre_serie){
+
+var r = confirm("Va de emitir un voto para esta categoria, ¿Está seguro?");
+
+if ( r == true){
+
+	var request = $.ajax({
+	  url: "{{ url ('votacion') }}",
+	  method: "GET",
+	  data: { name : nombre_serie },
+	  dataType: "html"
+	});
+
+	request.done(function( msg ) {
+	  // console.log (msg);
+	  alert(msg);
+
+	  });
+
+}
+
+
+};
+</script>
