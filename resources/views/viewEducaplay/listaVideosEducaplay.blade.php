@@ -1,10 +1,11 @@
+{{--*/ 	use App\Http\Controllers\EducaplayController; /*--}}
 @section('titleEducaplay')
 Educaplay
 @stop
 @extends('indexEducaplay')
 @section('menuEducaplay')
 	@include('viewVentana.encabezadoVentana')
-
+	<script src="{{asset ('js/bootstrap-rating-input.min.js')}}"></script>
 	<script>
 		$('#buscar').css('display','none');
 		$('#iconoBuscar').css('display','none');
@@ -18,24 +19,28 @@ Educaplay
 				$('#navegacionVentana').css('background','transparent');
 			}
 		});
-		function muestraVideo(urlVideo, idVideo){
-			var direccionVideo = "https://www.youtube.com/embed/" + urlVideo + "?autoplay=1";
-			//$("#star-rating").remove();
 
+		function refrescaRating(valRating){
+			$("#divRating").empty();
+			$("#divRating").append('<input type="number" name="rating" id="star-rating" data-icon-lib="fa" data-active-icon="fa-star" data-inactive-icon="fa-star-o" onchange="guardaRating(this.value)" value="'+ parseInt(valRating) +'"/>');
+			$("#star-rating").rating({value: parseInt(valRating)});
+		}		
+		function cargaRating(id_video){
 				$.ajax({
 					method: "POST",
 					url: "{{url('educaplay/queryRate')}}",
-					data: { video_id: idVideo, _token:"{{csrf_token()}}" },
+					data: { video_id: id_video, _token:"{{csrf_token()}}" },
 					error: function(ts) { 
-						console.log('Error');
-						//console.log (ts.responseText); 
+						console.log (ts.responseText); 
 					}})
 					.done(function( msg ) {
-						//console.log ( "Rating encontrado: " + msg );
-						$("#divRating").empty();
-						$("#divRating").append('<input type="number" name="rating" id="star-rating" data-icon-lib="fa" data-active-icon="fa-star" data-inactive-icon="fa-star-o" onchange="guardaRating(this.value)" value="'+ parseInt(msg) +'"/>');
-						$("#star-rating").rating({value: parseInt(msg)});
+						refrescaRating(msg);
 					});
+		}
+		
+		function muestraVideo(urlVideo, idVideo){
+			var direccionVideo = "https://www.youtube.com/embed/" + urlVideo + "?autoplay=1";
+			cargaRating(idVideo);
 			$('#episodio7').attr('src',direccionVideo);
 			$('#episodio8').css('display','block');
 			$('#episodio7').attr('name',idVideo)
@@ -56,6 +61,7 @@ Educaplay
 
 		}
 		$(document).ready( function (){
+
 			 /*$('#star-rating').change (function (){
 							});*/
 			/*function loadComments (id){
@@ -136,6 +142,7 @@ Educaplay
 			@else
 				<div id="episodio8" class="col-md-6 col-md-offset-3">
 				{{--*/ $srcUrlVideo = "https://www.youtube.com/embed/".$urlVideo."?autoplay=1";/*--}}
+				<input type="hidden" id="VideoReproduce" value="{{EducaplayController::consultaRatingXURL($urlVideo)}}"/>
 			@endif
 					<div class="col-md-12">
 						<iframe id="episodio7" src="{{$srcUrlVideo}}" frameborder="0" class="marcoVideo">
@@ -145,9 +152,11 @@ Educaplay
 					@if(Auth::check ())
 						<div id="divRating" class="pull-right" style="color:white;">
 							<input type="number" name="rating" id="star-rating" class="" data-icon-lib="fa" data-active-icon="fa-star" data-inactive-icon="fa-star-o" onchange="guardaRating(this.value)"/>
-							<!--input type="hidden" id="video-id" value="0" /-->
-							<!--input type="hidden" id="usuario" value="1" /-->
 						</div>
+						<script>
+							var tmpRating = $('#VideoReproduce').val();
+							refrescaRating(tmpRating);
+						</script>
 					@endif
 					</div>
 				</div>
@@ -160,7 +169,6 @@ Educaplay
 						<div class="caption estiloTxt">
 							<h4 class="estiloTxt"> Temporada: {{$serie->temporada}} Episodio: {{$serie->capitulo}}</h4>
 							<span class="estiloTxt">{{$serie->sinopsis}}</span><br>
-							<!--img class="estiloIconoMas tamanoIconoMas" src="{{url('imagenes/educaplay/flechaDetalle.png')}}" onclick="muestraDetalle(1,2)"/-->
 						</div>
 					</div>
 				</div>
@@ -171,5 +179,4 @@ Educaplay
 			{{--*/ $imprimeTitulo++; /*--}}
 	@endforeach
 			</div>
-			<script src="{{asset ('js/bootstrap-rating-input.min.js')}}"></script>
 @endsection
