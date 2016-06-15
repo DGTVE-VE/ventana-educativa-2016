@@ -34,7 +34,7 @@ class EducaplayController extends Controller {
         $primerDetalleSerie = DB::table('edu_serie')
 				->join('edu_imagen', 'edu_serie.id', '=', 'edu_imagen.serie_id')
 				->join('edu_video', 'edu_serie.id', '=', 'edu_video.serie_id')
-                ->select('edu_serie.id', 'edu_serie.titulo_serie', 'edu_serie.temporadas_total', 'edu_serie.clasificacion_id', 'edu_serie.descripcion', 'edu_imagen.url', 'edu_imagen.ubicacion_id', 'edu_video.sinopsis', 'edu_video.temporada', 'edu_video.capitulo', 'edu_video.url_video')
+                ->select('edu_serie.id', 'edu_serie.titulo_serie', 'edu_serie.temporadas_total', 'edu_serie.clasificacion_id',  'edu_serie.categoria_id', 'edu_serie.descripcion', 'edu_imagen.url', 'edu_imagen.ubicacion_id', 'edu_video.sinopsis', 'edu_video.temporada', 'edu_video.capitulo', 'edu_video.url_video')
 				->where('edu_serie.id','=',$serieId)
 				->where('edu_imagen.ubicacion_id','=',1)
 		        ->first();
@@ -128,7 +128,7 @@ class EducaplayController extends Controller {
     $video_id = filter_input(INPUT_POST,'video_id');
     $user_id = Auth::user ()->id;
     $matchThese = ['user_id' => $user_id, 'video_id' => $video_id];
-    $rating = edu_rating::where($matchThese)->first();
+    $rating = Edu_rating::where($matchThese)->first();
 
     if($rating != null){
       $valorDevuelto = $rating->rating;
