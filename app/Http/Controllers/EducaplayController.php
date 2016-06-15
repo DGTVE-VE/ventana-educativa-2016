@@ -128,7 +128,7 @@ class EducaplayController extends Controller {
     $video_id = filter_input(INPUT_POST,'video_id');
     $user_id = Auth::user ()->id;
     $matchThese = ['user_id' => $user_id, 'video_id' => $video_id];
-    $rating = edu_rating::where($matchThese)->first();
+    $rating = Edu_rating::where($matchThese)->first();
 
     if($rating != null){
       $valorDevuelto = $rating->rating;
