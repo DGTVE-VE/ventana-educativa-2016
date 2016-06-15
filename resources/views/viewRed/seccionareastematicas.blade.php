@@ -1,5 +1,5 @@
         <!--imagen oculta solo se usa para el compartir de facebook-->
-    {{ HTML::image('imagenes/red/compartirfacebook.jpg','REDMITE')}}
+    {{ HTML::image('imagenes/red/compartirfacebook.jpg','REDMITE', array('style'=>'display:none'))}}
 
 <div class="row fondo_Obscuro" style="margin-top:-1px;">
     <div class="col-md-12 text-center text-uppercase">
