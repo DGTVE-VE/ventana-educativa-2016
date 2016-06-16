@@ -120,11 +120,13 @@ Route::group(['middleware' => 'web'], function () {
 
     /*     * **************************Educaplay********************** */
     Route::get('educaplay', 'EducaplayController@educaplay');
-    Route::get('educaplay/detalleSeries/{serieId}/{urlVideo}', 'EducaplayController@series');
+    Route::get('educaplay/detalleSeries/{serieId}/{urlVideo}/{videoId}', 'EducaplayController@series');
 	Route::get('educaplay/descripciones/{serieId}', 'EducaplayController@descripciones');
 	Route::get('educaplay/descripciones/temporada/{serieId}/{temporada}', 'EducaplayController@temporada');
 	Route::get('educaplay/videoSerie', 'EducaplayController@videoSerie');
 	Route::post('educaplay/rate', 'EducaplayController@guardaRating');
+	Route::post('educaplay/guardaComentaVideo', 'EducaplayController@guardaComentaVideo');
+	Route::get('educaplay/comentarioVideo/{videoId}/{serieId}', 'EducaplayController@comentariosVideo');
 
   Route::any('agregaMiLista', 'EducaplayController@agregaMiLista');
   Route::any('votacion', 'EducaplayController@votacion');

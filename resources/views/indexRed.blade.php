@@ -14,6 +14,24 @@ and open the template in the editor.
         <meta name="keywords" content="Ventana Educativa, plataforma digital, contenidos educativos, multimedia, Canal Iberoamericano, Idiomas, Salud, Padres, Estudiantes, Educaplay, Docentes, Educamedia, Telesecundaria, Telebachillerato, Red Mesoamericana, Cultura, Biblioteca, MéxicoX">
         <meta http-equiv="X-UA-Compatible" content="IE=Edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
+        
+        <!--facebook metas-->
+
+        <meta property="og:url"                content="http://ventana.televisioneducativa.gob.mx/redmite" />
+        <meta property="og:type"               content="article" />
+        <meta property="og:title"              content="Red Mesoamericana de Investigación y Tecnología Educativa" />
+        <meta property="og:description"        content="La Red Mesoamericana de Investigación y Tecnología Educativa, 
+                                                        nace de las propuestas resultantes del Primer Encuentro de Investigadores,
+                                                        Evaluadores y Técnicos en el Diseño de Recursos Educativos,
+                                                        celebrado en Costa Rica, el pasado 2015; en donde se destacó la importancia
+                                                        de conformar un espacio para que los profesionales en educación realicen estudios,
+                                                        artículos, propuestas y análisis, en torno al uso de las TIC en la educación básica,
+                                                        su funcionamiento como medio articulador de la comunidad escolar, la renovación del
+                                                        papel docente, así como la identificación de mecanismos orientados a nuevas
+                                                        metodologías y modelos pedagógicos, que permitan ofrecer una calidad educativa en la
+                                                        región mesoamericana." />
+        <meta property="og:image"              content="http://ventana.televisioneducativa.gob.mx/imagenes/red/compartirfacebook.jpg" />
+        
         <link rel="stylesheet" href="{{asset('css/red/estiloredmesoamericana.css')}}">
         <link rel="shortcut icon" href="{{ asset('redmite.ico') }}" >
         <link rel="stylesheet" href="{{asset('css/red/estilored2.css')}}">

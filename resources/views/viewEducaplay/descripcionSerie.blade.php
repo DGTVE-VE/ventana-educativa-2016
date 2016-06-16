@@ -56,7 +56,7 @@
                 <div class="col-md-9">
 					<div class="row">
 						<div class="col-md-6 col-md-offset-1">
-							<p>Comentarios.</p>
+							<p>Comentarios a videos de esta serie.</p>
 						@if($comentarios!=null)
 							@foreach($comentarios as $elemComentario)
 								<p style="color:white;">Temporada {{$elemComentario->temporada}}. Capitulo {{$elemComentario->capitulo}}</p>
@@ -76,6 +76,9 @@
             <li class="active"><a data-toggle="tab" href="#descripcion1">DESCRIPCION GENERAL</a></li>
             <li><a data-toggle="tab" href="#similares1">CAPÍTULOS</a></li>
             <li><a data-toggle="tab" href="#detalles1">DETALLES</a></li>
+						@if( $primerDetalleSerie->categoria_id == 2)
+            <li><a type="button" onclick="votacion('{!!$primerDetalleSerie->titulo_serie!!}')" class="btn btn-danger btn-lg">VOTAR POR ESTA SERIE</a></li>
+						@endif
             <li></li>
         </ul>
     </div>

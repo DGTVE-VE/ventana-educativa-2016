@@ -20,6 +20,7 @@ use App\Model\Educaplay\Edu_imagen;
 use App\Model\Educaplay\Edu_rating;
 use App\Model\Educaplay\Edu_comments;
 use App\Model\Educaplay\Edu_clasificaciones;
+use App\Model\Educaplay\Edu_video;
 use Illuminate\Support\Facades\Auth;
 use Laracasts\Flash\Flash;
 
@@ -34,7 +35,7 @@ class EducaplayController extends Controller {
         $primerDetalleSerie = DB::table('edu_serie')
 				->join('edu_imagen', 'edu_serie.id', '=', 'edu_imagen.serie_id')
 				->join('edu_video', 'edu_serie.id', '=', 'edu_video.serie_id')
-                ->select('edu_serie.id', 'edu_serie.titulo_serie', 'edu_serie.temporadas_total', 'edu_serie.clasificacion_id', 'edu_serie.descripcion', 'edu_imagen.url', 'edu_imagen.ubicacion_id', 'edu_video.sinopsis', 'edu_video.temporada', 'edu_video.capitulo', 'edu_video.url_video')
+                ->select('edu_serie.id', 'edu_serie.titulo_serie', 'edu_serie.temporadas_total', 'edu_serie.clasificacion_id',  'edu_serie.categoria_id', 'edu_serie.descripcion', 'edu_imagen.url', 'edu_imagen.ubicacion_id', 'edu_video.sinopsis', 'edu_video.temporada', 'edu_video.capitulo', 'edu_video.url_video')
 				->where('edu_serie.id','=',$serieId)
 				->where('edu_imagen.ubicacion_id','=',1)
 		        ->first();
@@ -52,7 +53,7 @@ class EducaplayController extends Controller {
     $detallesSerie = DB::table('edu_serie')
     ->join('edu_imagen', 'edu_serie.id', '=', 'edu_imagen.serie_id')
     ->join('edu_video', 'edu_serie.id', '=', 'edu_video.serie_id')
-    ->select('edu_serie.id', 'edu_serie.titulo_serie', 'edu_serie.temporadas_total', 'edu_serie.clasificacion_id', 'edu_serie.descripcion', 'edu_imagen.url', 'edu_imagen.ubicacion_id', 'edu_video.sinopsis', 'edu_video.temporada', 'edu_video.capitulo', 'edu_video.url_video')
+    ->select('edu_serie.id', 'edu_serie.titulo_serie', 'edu_serie.temporadas_total', 'edu_serie.clasificacion_id', 'edu_serie.descripcion', 'edu_imagen.url', 'edu_imagen.ubicacion_id', 'edu_video.id AS videoId', 'edu_video.sinopsis', 'edu_video.temporada', 'edu_video.capitulo', 'edu_video.url_video')
     ->where('edu_serie.id','=',$serieId)
     ->where('edu_imagen.ubicacion_id','=',5)
     ->where('edu_video.temporada','=',$temporada)
@@ -117,18 +118,18 @@ class EducaplayController extends Controller {
 
   static function consultaUrlId($SerieId){
     $urlId = DB::table('edu_video')
-    ->select('edu_video.url_video')
-    ->where('edu_video.serie_id','=',$SerieId)
-    ->where('edu_video.capitulo','=',1)
+    ->select('url_video', 'id')
+    ->where('serie_id','=',$SerieId)
+    ->where('capitulo','=',1)
     ->first();
-    return $urlId->url_video;
+    return $urlId;
   }
 
   public function queryRate(){
     $video_id = filter_input(INPUT_POST,'video_id');
     $user_id = Auth::user ()->id;
     $matchThese = ['user_id' => $user_id, 'video_id' => $video_id];
-    $rating = edu_rating::where($matchThese)->first();
+    $rating = Edu_rating::where($matchThese)->first();
 
     if($rating != null){
       $valorDevuelto = $rating->rating;
@@ -137,7 +138,6 @@ class EducaplayController extends Controller {
     }
     return $valorDevuelto;
   }
-
 
   public function guardaRating(){
     $video_id = filter_input(INPUT_POST,'video_id');
@@ -170,8 +170,31 @@ class EducaplayController extends Controller {
 		return $devuelve;
 	}
 
+	function comentariosVideo($serieId, $videoId){
+		$matchThese = ['video_id' => $videoId, 'serie_id' => $serieId];
+		$comentarios = Edu_comments::where($matchThese)->get();
+		return view('viewEducaplay/comentariosVideo')->with('comentariosVideo',$comentarios);
+	}
+	
+	function guardaComentaVideo(){
+		$video_id = filter_input(INPUT_POST,'video_id');
+		$serie_id = filter_input(INPUT_POST,'serie_id');
+		$comenta = filter_input(INPUT_POST,'comenta');
+		$user_id = Auth::user ()->id;
+		$guardaComenta = Edu_comments::firstOrNew(['video_id'=>$video_id, 'serie_id'=>$serie_id, 'usuario_id'=>$user_id]);
+		$guardaComenta->comment = $comenta;
+		$guardaComenta->save();
 
-  function series($idSerie, $urlVideo) {
+		if($guardaComenta!=null){
+		  $regreso = $guardaComenta;
+		}
+		else{
+		  $regreso = 0;
+		}
+		return $regreso;
+	}
+  
+  function series($idSerie, $urlVideo, $idVideo) {
     $episodiosSerie = DB::table('edu_serie')
     ->join('edu_imagen', 'edu_serie.id', '=', 'edu_imagen.serie_id')
     ->join('edu_video', 'edu_serie.id', '=', 'edu_video.serie_id')
@@ -180,7 +203,7 @@ class EducaplayController extends Controller {
     ->where('edu_imagen.ubicacion_id','=',5)
     ->get();
     $menuEducaplay = $this->educaplayMenu();
-    return view('viewEducaplay/listaVideosEducaplay')->with('menuEducaplay', $menuEducaplay)->with('episodiosSerie', $episodiosSerie)->with('urlVideo', $urlVideo);
+    return view('viewEducaplay/listaVideosEducaplay')->with('menuEducaplay', $menuEducaplay)->with('episodiosSerie', $episodiosSerie)->with('urlVideo', $urlVideo)->with('idSerie',$idSerie)->with('idVideo', $idVideo)->with('idVideo',$idVideo);
   }
   function videoSerie() {
     return view('viewEducaplay/videoSerie');
@@ -200,6 +223,11 @@ class EducaplayController extends Controller {
 		else{
 			return 'No encontrada';
 		}
+	}
+
+	static function consultaDatosVideo($idVideoAct){
+		$infoVideo = Edu_video::find($idVideoAct);
+		return $infoVideo;
 	}
 
   ///////////////////////////////////////
