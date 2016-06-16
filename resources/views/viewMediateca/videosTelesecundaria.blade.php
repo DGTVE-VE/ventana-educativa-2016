@@ -62,7 +62,7 @@ Educamedia
                         <div id="player" align="center">    </div>
                     </div>                    
                     <div class="col-md-12">
-                        <div class="col-md-3">
+                        <div class="col-md-11 text-right">
                              <div 
                                 class="fb-share-button" 
                                 data-layout="button" 
