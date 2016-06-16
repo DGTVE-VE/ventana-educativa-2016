@@ -5,41 +5,41 @@ Educamedia
 @stop
 
 <style>
-    
-/* estilo en scrollbar*/
-::-webkit-scrollbar{
-  width: 10px;
-  background: #000;
-  border-radius: 20px
-}
-::-webkit-scrollbar-button{
-  width:8px;
-  height: 5px;
-}
-::-webkit-scrollbar-track{
-  background:#000;
-  border:thin solid #1a1f25;
-  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
-  -webkit-border-radius: 10px;
-  border-radius: 10px;
-}
-::-webkit-scrollbar-thumb{
-  background: -webkit-linear-gradient(top, #87688A, #c1B5C9);
-  -webkit-box-shadow:   inset 0 1px 0 rgba(255,255,225,.5),
-                inset 1px 0 0 rgba(255,255,255,.4),
-                inset 0 1px 2px rgba(255,255,255,.3);
- 
-  border:thin solid #754B7B;
-  border-radius: 10px;
-  -webkit-border-radius: 10px;
-}
-::-webkit-scrollbar-thumb:hover{
-    background: -webkit-linear-gradient(top, #754B7B, #73688B);
-}
-/* Pseudo-clase */
-::-webkit-scrollbar-thumb:window-inactive {
-  background: rgba(135,78,161,.6);
-}
+
+    /* estilo en scrollbar*/
+    ::-webkit-scrollbar{
+        width: 10px;
+        background: #000;
+        border-radius: 20px
+    }
+    ::-webkit-scrollbar-button{
+        width:8px;
+        height: 5px;
+    }
+    ::-webkit-scrollbar-track{
+        background:#000;
+        border:thin solid #1a1f25;
+        -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+        -webkit-border-radius: 10px;
+        border-radius: 10px;
+    }
+    ::-webkit-scrollbar-thumb{
+        background: -webkit-linear-gradient(top, #87688A, #c1B5C9);
+        -webkit-box-shadow:   inset 0 1px 0 rgba(255,255,225,.5),
+            inset 1px 0 0 rgba(255,255,255,.4),
+            inset 0 1px 2px rgba(255,255,255,.3);
+
+        border:thin solid #754B7B;
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+    }
+    ::-webkit-scrollbar-thumb:hover{
+        background: -webkit-linear-gradient(top, #754B7B, #73688B);
+    }
+    /* Pseudo-clase */
+    ::-webkit-scrollbar-thumb:window-inactive {
+        background: rgba(135,78,161,.6);
+    }
 </style>
 @section('menuMediateca')
 @include('viewMediateca.encabezadoMediateca')
@@ -47,10 +47,10 @@ Educamedia
 @section('cuerpoMediateca')
 <div class="container-fluid">
     <div class="row">    
-	<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center" style="padding:2%"></div>
-	<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center textoTitulo txtVideosRed">
-		<p>{{ generaBreadCrumbs() }}</p><br>
-	</div>
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center" style="padding:2%"></div>
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center textoTitulo txtVideosRed">
+            <p>{{ generaBreadCrumbs() }}</p><br>
+        </div>
 
         <div class="col-md-1"></div>
         <div class="col-md-10 contenedorVideo transparenciaVideos ">
@@ -61,6 +61,14 @@ Educamedia
                     <div id="player" align="center">    </div>
                 </div>
                 <div class="col-md-12">
+                    <!--<div class="col-md-12">-->
+                    <br>
+                        <div 
+                            class="fb-share-button pull-right col-md-4" 
+                            data-layout="button" 
+                            data-mobile-iframe="true">
+                        </div>
+                    <!--</div>-->
                     @if(Auth::check ())
                     <br>
                     <div class="col-md-3"></div>
@@ -68,6 +76,11 @@ Educamedia
 <!--                        <a href="#"><i class="fa fa-facebook-square fa-2x redesText"></i></a>
                         <a href="#"><i class="fa fa-twitter-square fa-2x redesText"></i></a>
                         <a href="#"><i class="fa fa-envelope-square fa-2x redesText"></i></a>                -->
+                        <div 
+                            class="fb-share-button" 
+                            data-layout="button" 
+                            data-mobile-iframe="true">
+                        </div>
                     </div>
                     <div class="col-md-3">                    
                         <input type="number" name="rating" id="star-rating" class="rating" data-icon-lib="fa" data-active-icon="fa-star" data-inactive-icon="fa-star-o"  />
@@ -92,14 +105,14 @@ Educamedia
                     <br>
                 </div>
                 <div class="col-md-12">                
-                 @if (Auth::check ())
+                    @if (Auth::check ())
                     <br>
                     <textarea id="comment" rows="3" placeholder="Comenta aquí..." class="form-control textareaTransparencia"></textarea>                
                     <a class="linkComentar" id="btn-comentar">Envíar Comentario </a>
                     <br><br>                    
                     <br> 
                     <div id="comentarios"></div> 
-                 @endif                    
+                    @endif                    
                 </div>
             </div>
             <br>
@@ -129,7 +142,7 @@ Educamedia
 @section('scripts')
 <script>
 //    $(document).ready(function(){
-       
+
 //    });    
 </script>
 <script src="{{asset ('js/jquery-ui.min.js')}}"></script>
@@ -138,131 +151,152 @@ Educamedia
 
 <!--https://github.com/javiertoledo/bootstrap-rating-input-->
 <script src="{{asset ('js/bootstrap-rating-input.min.js')}}"></script>
+<!--Facebook SDK-->
 <script>
-    $(document).ready( function (){
+    window.fbAsyncInit = function () {
+        FB.init({
+            appId: '1408909052733113',
+            xfbml: true,
+            version: 'v2.6'
+        });
+    };
+
+    (function (d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) {
+            return;
+        }
+        js = d.createElement(s);
+        js.id = id;
+        js.src = "//connect.facebook.net/en_US/sdk.js";
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+</script>
+<script>
+    $(document).ready(function () {
         /* Se guarda la información de los videos para cambiarla cuando dan click*/
-        var videos = {!!(string)$videos!!}        
+        var videos = {!!(string)$videos!!}
         var _videos = {};
-        for (i = 0; i<videos.length; i++){            
-            _videos[videos[i].id] = videos[i];
-        }        
-        loadComments ({{$videos[0]->id}});
-        $("massinopsis").collapse({toggle: false});
-        
-        $("botonmas").click(function(){
-            $("nomuestra").addClass("hidden");
-        });
-        
-        $('#star-rating').change (function (){
-            $.ajax({
-                method: "POST",
-                url: "{{url('educamedia/rate')}}",
-                data: { nivel: $("#nivel").val(), id: $("#video-id").val(), rating:$("#star-rating").val(), _token:"{{csrf_token()}}" },                
-                error: function(ts) { 
-                    console.log (ts.responseText); 
-                }})
-                .done(function( msg ) {
-                    console.log ( "Data Saved: " + msg );
-                    loadComments ($("#video-id").val());
+        for (i = 0; i < videos.length; i++) {
+        _videos[videos[i].id] = videos[i];
+        }
+        loadComments ({{$videos[0] -> id}});
+    $("massinopsis").collapse({toggle: false});
+
+    $("botonmas").click(function () {
+        $("nomuestra").addClass("hidden");
+    });
+
+    $('#star-rating').change(function () {
+        $.ajax({
+            method: "POST",
+            url: "{{url('educamedia/rate')}}",
+            data: {nivel: $("#nivel").val(), id: $("#video-id").val(), rating: $("#star-rating").val(), _token: "{{csrf_token()}}"},
+            error: function (ts) {
+                console.log(ts.responseText);
+            }})
+                .done(function (msg) {
+                    console.log("Data Saved: " + msg);
+                    loadComments($("#video-id").val());
                 });
-        });
-        
-        $('.item').click (function() {
-            $('#div-containter').fadeOut ();
-            data = $(this).attr ('data-id');
-            _id = $(this).attr ('_id');
-            player.loadVideoById(data);
-            $("#materia").html(_videos[_id].asignatura);
-            $("#video-id").val(_videos[_id].id);
-            $("#titulo_programa").html(_videos[_id].programa);
-            $("#subtitulo_serie").html(_videos[_id].subtitulo_serie);
-            $("#subtitulo_programa").html(_videos[_id].subtitulo_programa);
-            $("#grado").html(_videos[_id].grado);
-            $("#sinopsis").html(_videos[_id].sinopsis);
-            $("#sinopsis-250").html(_videos[_id].sinopsis.substring (0, 350));
-            $('#div-containter').fadeIn ();
-            loadComments (_id);
-        });
-         $(document).on('click', "a.linkComentar", function() {                                                        
-            var $element = $(this);
-            var partes = $element.attr ('id').split ('_');                                                        
-            var respuesta = $('#responde_'+partes[1]).val();
-            console.log (respuesta);
-            $.ajax({
-                method: "POST",
-                url: "{{url('educamedia/comment/telebachillerato')}}",
-                data: {comment: respuesta,
-                    video_id: $("#video-id").val(),
-                    comment_id: partes[1],
-                    _token: "{{csrf_token()}}"},
-                error: function (ts) {
-                    console.log(ts.responseText);
-                }})
-                    .done(function (msg) {
-                        $("#respuestas-"+partes[1]).prepend($(msg).fadeIn('slow'));
-                        $('#responde_'+partes[1]).val('');
-                        console.log("Data Saved: " + msg);
+    });
+
+    $('.item').click(function () {
+        $('#div-containter').fadeOut();
+        data = $(this).attr('data-id');
+        _id = $(this).attr('_id');
+        player.loadVideoById(data);
+        $("#materia").html(_videos[_id].asignatura);
+        $("#video-id").val(_videos[_id].id);
+        $("#titulo_programa").html(_videos[_id].programa);
+        $("#subtitulo_serie").html(_videos[_id].subtitulo_serie);
+        $("#subtitulo_programa").html(_videos[_id].subtitulo_programa);
+        $("#grado").html(_videos[_id].grado);
+        $("#sinopsis").html(_videos[_id].sinopsis);
+        $("#sinopsis-250").html(_videos[_id].sinopsis.substring(0, 350));
+        $('#div-containter').fadeIn();
+        loadComments(_id);
+    });
+    $(document).on('click', "a.linkComentar", function () {
+        var $element = $(this);
+        var partes = $element.attr('id').split('_');
+        var respuesta = $('#responde_' + partes[1]).val();
+        console.log(respuesta);
+        $.ajax({
+            method: "POST",
+            url: "{{url('educamedia/comment/telebachillerato')}}",
+            data: {comment: respuesta,
+                video_id: $("#video-id").val(),
+                comment_id: partes[1],
+                _token: "{{csrf_token()}}"},
+            error: function (ts) {
+                console.log(ts.responseText);
+            }})
+                .done(function (msg) {
+                    $("#respuestas-" + partes[1]).prepend($(msg).fadeIn('slow'));
+                    $('#responde_' + partes[1]).val('');
+                    console.log("Data Saved: " + msg);
                 });
-        });
-                                                    
-        $('#btn-comentar').click (function (){
-            
-            $.ajax({
-                method: "POST",
-                url: "{{url('educamedia/comment/telebachillerato')}}",
-                data: { comment: $("#comment").val(),                     
-                        video_id: $("#video-id").val(), 
-                        comment_id: 0, 
-                        _token:"{{csrf_token()}}" },                
-                error: function(ts) { 
-                    console.log (ts.responseText); 
-                }})
-                .done(function( msg ) {
+    });
+
+    $('#btn-comentar').click(function () {
+
+        $.ajax({
+            method: "POST",
+            url: "{{url('educamedia/comment/telebachillerato')}}",
+            data: {comment: $("#comment").val(),
+                video_id: $("#video-id").val(),
+                comment_id: 0,
+                _token: "{{csrf_token()}}"},
+            error: function (ts) {
+                console.log(ts.responseText);
+            }})
+                .done(function (msg) {
                     $("#comentarios").append(msg)
 //                    console.log ( "Data Saved: " + msg );
                 });
-        });
-        function loadComments (id){
-            var urlget = "{{url('educamedia/comments/telebachillerato')}}";
-            var _url = urlget + '/'+id;
-             $.ajax({
-                method: "GET",
-                url: _url,   
-                error: function(ts) { 
-                    console.log (ts.responseText); 
-                }})
-                .done(function( msg ) {
-                    console.log ('Comentarios cargados: '+id);
+    });
+    function loadComments(id) {
+        var urlget = "{{url('educamedia/comments/telebachillerato')}}";
+        var _url = urlget + '/' + id;
+        $.ajax({
+            method: "GET",
+            url: _url,
+            error: function (ts) {
+                console.log(ts.responseText);
+            }})
+                .done(function (msg) {
+                    console.log('Comentarios cargados: ' + id);
                     $("#comentarios").html(msg)
 //                    console.log ( "Data Saved: " + msg );
                 });
         }
-    });
-    
-    /** URL del api de ventana educativa*/
+    }
+    );
+            /** URL del api de ventana educativa*/
 //var api = "http://localhost/ventana-educativa/api/v1/";
-/** Tiempo transcurrido del video */
-var timeElapsed;
-/** Objeto de youtube reproductor de video */
-var player;
-/** Identificador del video (PK) obtenido del URL */
-var id;
+            /** Tiempo transcurrido del video */
+            var timeElapsed;
+    /** Objeto de youtube reproductor de video */
+    var player;
+    /** Identificador del video (PK) obtenido del URL */
+    var id;
 
-/**
- * La función se ejecuta cuando el usuario abandona la ventana (cuando cierra 
- * el navegador o cuando navega a otro sitio. Al salir de la ventana se almacena 
- * el tiempo transcurrido del video en la base de datos, para tener control del 
- * punto dónde se quedó el usuario. El almacenamiento se realiza a través de 
- * el api de la aplicación. Los datos del tiempo transcurrido y el id del video 
- * se envían por POST.
- * Los callbacks de éxito y error sólo muestran el mensaje de éxito o error
- * respectivamente.
- * La función DEBE regresar algo para funcionar, así que regresa NULL.
- * 
- * @param {Event} e 
- * @returns {null}
- */
-window.onbeforeunload = function (e) {
+    /**
+     * La función se ejecuta cuando el usuario abandona la ventana (cuando cierra 
+     * el navegador o cuando navega a otro sitio. Al salir de la ventana se almacena 
+     * el tiempo transcurrido del video en la base de datos, para tener control del 
+     * punto dónde se quedó el usuario. El almacenamiento se realiza a través de 
+     * el api de la aplicación. Los datos del tiempo transcurrido y el id del video 
+     * se envían por POST.
+     * Los callbacks de éxito y error sólo muestran el mensaje de éxito o error
+     * respectivamente.
+     * La función DEBE regresar algo para funcionar, así que regresa NULL.
+     * 
+     * @param {Event} e 
+     * @returns {null}
+     */
+    window.onbeforeunload = function (e) {
 
 //    var datos = {'timeElapsed': timeElapsed, 'idVideo': id};
 //    $.ajax({
@@ -279,11 +313,11 @@ window.onbeforeunload = function (e) {
 //        }
 //    });
 //    return null;
-}
+    }
 
-/* Se iba a obtener el capítulo a partir de una variable de sesión, pero 
- * al final cambió la estrategia para hacer la consulta directamente a la BD.
- * Se deja esta función como referencia*/
+    /* Se iba a obtener el capítulo a partir de una variable de sesión, pero 
+     * al final cambió la estrategia para hacer la consulta directamente a la BD.
+     * Se deja esta función como referencia*/
 //function getCapitulos() {
 //    var capitulos;
 //    $.ajax({
@@ -300,19 +334,19 @@ window.onbeforeunload = function (e) {
 //    return $.parseJSON(capitulos);
 //}
 
-/**
- * La función onYouTubePlayerAPIReady() que se especifica aquí se invoca 
- * automáticamente cuando se carga el código de la API del reproductor de IFrame. 
- * Obtiene de la URL el identificador del video, que es el último parámetro del
- * URL.
- * Posteriormente consulta el API para obtener la información del capítulo.
- * Al final inicializa el API de youtube con el ID del video a reproducir.
- * 
- * @see {@link https://developers.google.com/youtube/iframe_api_reference?hl=es|
- *      Youtube Player API}
- */
+    /**
+     * La función onYouTubePlayerAPIReady() que se especifica aquí se invoca 
+     * automáticamente cuando se carga el código de la API del reproductor de IFrame. 
+     * Obtiene de la URL el identificador del video, que es el último parámetro del
+     * URL.
+     * Posteriormente consulta el API para obtener la información del capítulo.
+     * Al final inicializa el API de youtube con el ID del video a reproducir.
+     * 
+     * @see {@link https://developers.google.com/youtube/iframe_api_reference?hl=es|
+     *      Youtube Player API}
+     */
 
-function onYouTubePlayerAPIReady() {
+    function onYouTubePlayerAPIReady() {
 //    pos = window.location.href.toString().lastIndexOf("/");
 //    id = window.location.href.toString().substring(pos + 1);
 //    $.getJSON(api + "vod/capitulo/" + id, function (data) {
@@ -332,78 +366,85 @@ function onYouTubePlayerAPIReady() {
 //        });
         initializeYoutube('{{$videos[0]->url}}', 0);
 //    });
-}
+    }
 
-/**
- * Inicializa el reproductor de Youtube a través del api. Establece el tamaño del 
- * reproductor a pantalla completa. 
- * 
- * @see {@link https://developers.google.com/youtube/player_parameters?hl=es | 
- * Youtube API}
- * @param {String} youtubeId ID de youtube del video.
- * @param {Seconds} time Tiempo en el que se quedó el video la última vez.
- * @returns {undefined}
- */
+    /**
+     * Inicializa el reproductor de Youtube a través del api. Establece el tamaño del 
+     * reproductor a pantalla completa. 
+     * 
+     * @see {@link https://developers.google.com/youtube/player_parameters?hl=es | 
+     * Youtube API}
+     * @param {String} youtubeId ID de youtube del video.
+     * @param {Seconds} time Tiempo en el que se quedó el video la última vez.
+     * @returns {undefined}
+     */
 
-function initializeYoutube(youtubeId, time) {
-    console.log(time);
-    player = new YT.Player('player', {
-        width: 640,
-        height: 390,
-        videoId: youtubeId,
-        playerVars: {
-            controls: 1, // Los controles no se muestran
-            playsinline: 0, // Reproducción a pantalla completa
-            iv_load_policy: 3, // Las anotaciones del video no se muestran 
-            modestbranding: 1, // Evita que el logo de youtube se muestre en la barra de control
-            showinfo: 0, // Evita que se muestre información del video antes de su reproducción
-            enablejsapi: 1, // Permite que el reproductor sea controlado por el API de Javascript
-            autoplay: 0, // Autoinicio habilitado
-            rel: 0, // Evita que muestre videos relacionados al finalizar.
-            start: time // Tiempo en el que debe iniciar el video
-        },
-        events: {
-            'onReady': onPlayerReady,
-            'onStateChange': onPlayerStateChange
-        }
-    });
-}
+    function initializeYoutube(youtubeId, time) {
+        console.log(time);
+        player = new YT.Player('player', {
+            width: 640,
+            height: 390,
+            videoId: youtubeId,
+            playerVars: {
+                controls: 1, // Los controles no se muestran
+                playsinline: 0, // Reproducción a pantalla completa
+                iv_load_policy: 3, // Las anotaciones del video no se muestran 
+                modestbranding: 1, // Evita que el logo de youtube se muestre en la barra de control
+                showinfo: 0, // Evita que se muestre información del video antes de su reproducción
+                enablejsapi: 1, // Permite que el reproductor sea controlado por el API de Javascript
+                autoplay: 0, // Autoinicio habilitado
+                rel: 0, // Evita que muestre videos relacionados al finalizar.
+                start: time // Tiempo en el que debe iniciar el video
+            },
+            events: {
+                'onReady': onPlayerReady,
+                'onStateChange': onPlayerStateChange
+            }
+        });
+    }
 
 
 
-function showProgress() {
-    timeElapsed = player.getCurrentTime();
-    document.getElementById("progress").innerHTML = timeElapsed;
-}
+    function showProgress() {
+        timeElapsed = player.getCurrentTime();
+        document.getElementById("progress").innerHTML = timeElapsed;
+    }
 
-/**
- * Se ejecuta una vez que el reproductor se encuentra listo. Inicia la 
- * reproducción del video y establece que cada 100 milisegundos se ejecutará la 
- * función  showProgress.
- * 
- * @param {Event} event
- * @returns {undefined}
- */
-function onPlayerReady(event) {
+    /**
+     * Se ejecuta una vez que el reproductor se encuentra listo. Inicia la 
+     * reproducción del video y establece que cada 100 milisegundos se ejecutará la 
+     * función  showProgress.
+     * 
+     * @param {Event} event
+     * @returns {undefined}
+     */
+    function onPlayerReady(event) {
 //    event.target.playVideo();
 //    setInterval(showProgress, 100);
-}
+    }
 
-/**
- * Se ejecuta cuando termina la reproducción del video, falta probar este método.
- * 
- * Cuando termina la reproducción se debe guardar el valor de visto = true en la 
- * base de datos.
- * 
- * @param {Event} event
- * @returns {undefined}
- */
-function onPlayerStateChange(event) {
+    /**
+     * Se ejecuta cuando termina la reproducción del video, falta probar este método.
+     * 
+     * Cuando termina la reproducción se debe guardar el valor de visto = true en la 
+     * base de datos.
+     * 
+     * @param {Event} event
+     * @returns {undefined}
+     */
+    function onPlayerStateChange(event) {
 //    if (event.data === 0) {
 //        id = window.location.href.toString().substring(pos + 1);
 ////         alert('done' + id);
 //        window.location.assign('vod/finish/' + id);    
 //    }
-}
+    }
 </script>
+<!--metadados para compartir en facebook-->
+<meta property="og:url" content="http://ventana.televisioneducativa.gob.mx/{{Request::path()}}" /> 
+<meta property="fb:app_id" content="1408909052733113" /> 
+<meta property="og:type" content="article" />                                  
+<meta property="og:title" content="{{$videos[0]->titulo_programa}}" /> 
+<meta property="og:image" content="http://img.youtube.com/vi/{{ $video->url }}/2.jpg" />                                             
+<meta property="og:description" content="{{ $videos[0]->sinopsis }}" />
 @endsection
