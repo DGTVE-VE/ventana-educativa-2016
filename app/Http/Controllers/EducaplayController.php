@@ -20,6 +20,7 @@ use App\Model\Educaplay\Edu_imagen;
 use App\Model\Educaplay\Edu_rating;
 use App\Model\Educaplay\Edu_comments;
 use App\Model\Educaplay\Edu_clasificaciones;
+use App\Model\Educaplay\Edu_video;
 use Illuminate\Support\Facades\Auth;
 use Laracasts\Flash\Flash;
 
@@ -202,7 +203,7 @@ class EducaplayController extends Controller {
     ->where('edu_imagen.ubicacion_id','=',5)
     ->get();
     $menuEducaplay = $this->educaplayMenu();
-    return view('viewEducaplay/listaVideosEducaplay')->with('menuEducaplay', $menuEducaplay)->with('episodiosSerie', $episodiosSerie)->with('urlVideo', $urlVideo)->with('idSerie',$idSerie)->with('idVideo', $idVideo);
+    return view('viewEducaplay/listaVideosEducaplay')->with('menuEducaplay', $menuEducaplay)->with('episodiosSerie', $episodiosSerie)->with('urlVideo', $urlVideo)->with('idSerie',$idSerie)->with('idVideo', $idVideo)->with('idVideo',$idVideo);
   }
   function videoSerie() {
     return view('viewEducaplay/videoSerie');
@@ -218,6 +219,16 @@ class EducaplayController extends Controller {
 		$clasificacion = Edu_clasificaciones::find($idCat);
 		if($clasificacion!= null){
 			return $clasificacion->clasifica;
+		}
+		else{
+			return 'No encontrada';
+		}
+	}
+
+	static function consultaDatosVideo($idVideoAct){
+		$infoVideo = Edu_video::find($idVideoAct);
+		if($infoVideo!= null){
+			return $infoVideo;
 		}
 		else{
 			return 'No encontrada';

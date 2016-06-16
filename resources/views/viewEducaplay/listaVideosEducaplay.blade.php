@@ -50,6 +50,9 @@ Educaplay
 				$('#episodio7').attr('src',direccionVideo);
 				$('#episodio8').css('display','block');
 				$('#episodio7').attr('name',idVideo);
+				$('#temporadaActual').text($('#temporadaSerie' + idVideo).val());
+				$('#capituloActual').text($('#episodioSerie' + idVideo).val());
+				$('#sinopsisActual').text($('#sinopsisSerie' + idVideo).val());
 			}
 			
 			function guardaRating(CalifRating){
@@ -178,13 +181,21 @@ Educaplay
 						@endif
 					</div>
 					<div class="col-md-4 col-md-offset-1">
+					{{--*/ $infoVideo = EducaplayController::consultaDatosVideo($idVideo); /*--}}
+						@if($infoVideo!='No encontrada')
+							<p> Temporada: <span id="temporadaActual">{{$infoVideo->temporada}}</span></p>
+							<p> Capítulo: <span id="capituloActual">{{$infoVideo->capitulo}}</span></p>
+							<p> Sinopsis: <span id="sinopsisActual">{{$infoVideo->sinopsis}}</span></p>
+						@else
+							<p> Temporada: <span id="temporadaActual"></span></p>
+							<p> Capítulo: <span id="capituloActual"></span></p>
+							<p> Sinopsis: <span id="sinopsisActual"></span></p>
+						@endif
 						@if(Auth::check ())
-							<p> Video: </p>
-							<p> Temporada: </p>
 							<textarea id="textoComenta" rows="4" cols="50" style="color: gray; background-color:transparent; border: solid 1px purple;" onfocus="quitaTexto(this.value)" onblur="ponTexto(this.value)">Escribe tu comentario</textarea><br>
 							<p style="color:white; cursor: pointer;" onclick="guardaComentario()">Envia tu Comentario </p>
 						@endif
-							<p>Comentarios para este video.</p>
+							<p>COMENTARIOS PARA ESTE VIDEO.</p>
 							{{--*/ $dirurlcoment = 'educaplay/comentarioVideo/'.$idVideo.'/'.$idSerie.'/'; $urlComent = url($dirurlcoment); /*--}}
 							<iframe id="comentarioVideo" src={{$urlComent}} frameborder="0">
 							</iframe>
@@ -200,6 +211,9 @@ Educaplay
 								<h4 class="estiloTxt"> Temporada: {{$serie->temporada}} Episodio: {{$serie->capitulo}}</h4>
 								<span class="estiloTxt">{{$serie->sinopsis}}</span><br>
 							</div>
+							<input type="hidden" id="temporadaSerie{{$serie->id}}" value="{{$serie->temporada}}" />
+							<input type="hidden" id="episodioSerie{{$serie->id}}" value="{{$serie->capitulo}}" />
+							<input type="hidden" id="sinopsisSerie{{$serie->id}}" value="{{$serie->sinopsis}}" />
 						</div>
 					</div>
 			@if($imprimeTitulo % 6 === 0 && $imprimeTitulo !== 0)
