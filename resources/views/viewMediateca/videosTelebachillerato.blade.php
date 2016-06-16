@@ -444,7 +444,7 @@ Educamedia
 <meta property="og:url" content="http://ventana.televisioneducativa.gob.mx/{{Request::path()}}" /> 
 <meta property="fb:app_id" content="1408909052733113" /> 
 <meta property="og:type" content="article" />                                  
-<meta property="og:title" content="{{$videos[0]->titulo_programa}}" /> 
+<meta property="og:title" content="{{$videos[0]->programa}}" /> 
 <meta property="og:image" content="http://img.youtube.com/vi/{{ $video->url }}/2.jpg" />                                             
 <meta property="og:description" content="{{ $videos[0]->sinopsis }}" />
 @endsection
