@@ -62,13 +62,15 @@ Educamedia
                         <div id="player" align="center">    </div>
                     </div>                    
                     <div class="col-md-12">
-                        <div class="col-md-11 text-right">
+<!--                        <div class="col-md-11 text-right">-->
+<br>
                              <div 
-                                class="fb-share-button" 
+                                class="fb-share-button pull-right col-md-4" 
                                 data-layout="button" 
-                                data-mobile-iframe="true">
+                                data-mobile-iframe="true"
+                                >
                             </div>
-                        </div>
+                        <!--</div>-->
                         @if(Auth::check ())
                         <br>
                         <div class="col-md-3"></div>
