@@ -384,7 +384,7 @@
 /*	----------	Manipula imagenes del centro del aro en telesecundaria	----------	*/
 
                 var gifs = [
-                @for ($i = 1; $i<= 16; $i++)
+                @for ($i = 1; $i<= 8; $i++)
                    "{{asset ('imagenes/mediateca/Inicio/gifs/'.$i.'.gif')}}",
                 @endfor
                 ];
@@ -394,7 +394,7 @@
                     var idImgCentro = "#" + idImg + "Centro";
                     console.log (prefijo);
                     if (prefijo === 'Inicio'){
-                        var random = Math.floor((Math.random() * 16));
+                        var random = Math.floor((Math.random() * 8));
                         $(idImgCentro).attr("src", gifs[random]);
                     }    
                     $(idImgCentro).addClass("bounceIn");
