@@ -182,22 +182,21 @@ Educaplay
 					</div>
 					<div class="col-md-4 col-md-offset-1">
 					{{--*/ $infoVideo = EducaplayController::consultaDatosVideo($idVideo); /*--}}
-						@if($infoVideo!='No encontrada')
-							<p> Temporada: <span id="temporadaActual">{{$infoVideo->temporada}}</span></p>
-							<p> Capítulo: <span id="capituloActual">{{$infoVideo->capitulo}}</span></p>
-							<p> Sinopsis: <span id="sinopsisActual">{{$infoVideo->sinopsis}}</span></p>
+						@if($infoVideo==null)
+							{{--*/ $infoTemporada = " "; $infoCapitulo = " "; $infoSinopsis = " "; /*--}}
 						@else
-							<p> Temporada: <span id="temporadaActual"></span></p>
-							<p> Capítulo: <span id="capituloActual"></span></p>
-							<p> Sinopsis: <span id="sinopsisActual"></span></p>
+							{{--*/ $infoTemporada = $infoVideo->temporada; $infoCapitulo = $infoVideo->capitulo; $infoSinopsis = $infoVideo->sinopsis; /*--}}
 						@endif
+						<p> Temporada: <span id="temporadaActual">{{$infoTemporada}}</span></p>
+						<p> Capítulo: <span id="capituloActual">{{$infoCapitulo}}</span></p>
+						<p> Sinopsis: <span id="sinopsisActual">{{$infoSinopsis}}</span></p>
 						@if(Auth::check ())
 							<textarea id="textoComenta" rows="4" cols="50" style="color: gray; background-color:transparent; border: solid 1px purple;" onfocus="quitaTexto(this.value)" onblur="ponTexto(this.value)">Escribe tu comentario</textarea><br>
 							<p style="color:white; cursor: pointer;" onclick="guardaComentario()">Envia tu Comentario </p>
 						@endif
 							<p>COMENTARIOS PARA ESTE VIDEO.</p>
 							{{--*/ $dirurlcoment = 'educaplay/comentarioVideo/'.$idVideo.'/'.$idSerie.'/'; $urlComent = url($dirurlcoment); /*--}}
-							<iframe id="comentarioVideo" src={{$urlComent}} frameborder="0">
+							<iframe id="comentarioVideo" src={{$urlComent}} frameborder="1" style="width:95%;">
 							</iframe>
 					</div>
 					</div>

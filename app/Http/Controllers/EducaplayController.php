@@ -227,12 +227,7 @@ class EducaplayController extends Controller {
 
 	static function consultaDatosVideo($idVideoAct){
 		$infoVideo = Edu_video::find($idVideoAct);
-		if($infoVideo!= null){
-			return $infoVideo;
-		}
-		else{
-			return 'No encontrada';
-		}
+		return $infoVideo;
 	}
 
   ///////////////////////////////////////
