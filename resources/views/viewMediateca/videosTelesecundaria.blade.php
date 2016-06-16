@@ -62,6 +62,13 @@ Educamedia
                         <div id="player" align="center">    </div>
                     </div>                    
                     <div class="col-md-12">
+                        <div class="col-md-3">
+                             <div 
+                                class="fb-share-button" 
+                                data-layout="button" 
+                                data-mobile-iframe="true">
+                            </div>
+                        </div>
                         @if(Auth::check ())
                         <br>
                         <div class="col-md-3"></div>
@@ -70,11 +77,12 @@ Educamedia
                             <a href="#"><i class="fa fa-twitter-square fa-2x redesText"></i></a>
                             <a href="#"><i class="fa fa-envelope-square fa-2x redesText"></i></a> -->
                             <!-- Your share button code -->
-                            <div class="fb-share-button" 
-                                 data-href="http://ventana.televisioneducativa.gob.mx/{{Request::path()}}" 
-                                 data-layout="button">
+                            <div 
+                                class="fb-share-button" 
+                                data-layout="button" 
+                                data-mobile-iframe="true">
                             </div>
-                            
+
                         </div>
                         <div class="col-md-3">                    
                             <input type="number" name="rating" id="star-rating" class="rating" data-icon-lib="fa" data-active-icon="fa-star" data-inactive-icon="fa-star-o"  />
@@ -154,24 +162,24 @@ Educamedia
                                                 <script src="{{asset ('js/bootstrap-rating-input.min.js')}}"></script>
                                                 <!--El siguiente fragmento de codigo es para el uso de Facebook en la aplicación-->
                                                 <script>
-                                                window.fbAsyncInit = function () {
-                                                    FB.init({
-                                                        appId: '1408909052733113',
-                                                        xfbml: true,
-                                                        version: 'v2.6'
-                                                    });
-                                                };
+window.fbAsyncInit = function () {
+    FB.init({
+        appId: '1408909052733113',
+        xfbml: true,
+        version: 'v2.6'
+    });
+};
 
-                                                (function (d, s, id) {
-                                                    var js, fjs = d.getElementsByTagName(s)[0];
-                                                    if (d.getElementById(id)) {
-                                                        return;
-                                                    }
-                                                    js = d.createElement(s);
-                                                    js.id = id;
-                                                    js.src = "//connect.facebook.net/en_US/sdk.js";
-                                                    fjs.parentNode.insertBefore(js, fjs);
-                                                }(document, 'script', 'facebook-jssdk'));
+(function (d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) {
+        return;
+    }
+    js = d.createElement(s);
+    js.id = id;
+    js.src = "//connect.facebook.net/en_US/sdk.js";
+    fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));
                                                 </script>
                                                 <!--fin codigo facebook-->
                                                 <script>
@@ -219,12 +227,12 @@ Educamedia
                                                         $('#div-containter').fadeIn();
                                                         loadComments(_id);
                                                     });
-                                                    
-                                                    $(document).on('click', "a.linkComentar", function() {                                                        
+
+                                                    $(document).on('click', "a.linkComentar", function () {
                                                         var $element = $(this);
-                                                        var partes = $element.attr ('id').split ('_');                                                        
-                                                        var respuesta = $('#responde_'+partes[1]).val();
-                                                        console.log (respuesta);
+                                                        var partes = $element.attr('id').split('_');
+                                                        var respuesta = $('#responde_' + partes[1]).val();
+                                                        console.log(respuesta);
                                                         $.ajax({
                                                             method: "POST",
                                                             url: "{{url('educamedia/comment/telesecundaria')}}",
@@ -236,12 +244,12 @@ Educamedia
                                                                 console.log(ts.responseText);
                                                             }})
                                                                 .done(function (msg) {
-                                                                    $("#respuestas-"+partes[1]).prepend($(msg).fadeIn('slow'));
-                                                                    $('#responde_'+partes[1]).val('');
+                                                                    $("#respuestas-" + partes[1]).prepend($(msg).fadeIn('slow'));
+                                                                    $('#responde_' + partes[1]).val('');
                                                                     console.log("Data Saved: " + msg);
-                                                            });
+                                                                });
                                                     });
-                                                    
+
                                                     $('#btn-comentar').click(function () {
                                                         console.log('si entro');
                                                         $.ajax({
@@ -273,8 +281,8 @@ Educamedia
                                                                     $("#comentarios").html(msg)
                                                                     //                    console.log ( "Data Saved: " + msg );
                                                                 });
-                                                        }
-                                                        console.log("http://ventana.televisioneducativa.gob.mx/{{Request::path()}}");
+                                                    }
+                                                    console.log("http://ventana.televisioneducativa.gob.mx/{{Request::path()}}");
                                                     }
                                                     );
                                                             /** URL del api de ventana educativa*/
@@ -444,9 +452,9 @@ Educamedia
                                                         //    }
                                                     }
                                                 </script>
-                                                
-                                               
-                                                
+
+
+
                                                 <!--metadados para compartir en facebook-->
                                                 <meta property="og:url" content="http://ventana.televisioneducativa.gob.mx/{{Request::path()}}" /> 
                                                 <meta property="fb:app_id" content="1408909052733113" /> 
@@ -454,5 +462,5 @@ Educamedia
                                                 <meta property="og:title" content="{{$videos[0]->titulo_programa}}" /> 
                                                 <meta property="og:image" content="http://img.youtube.com/vi/{{ $video->url }}/2.jpg" />                                             
                                                 <meta property="og:description" content="{{ $videos[0]->sinopsis }}" />
-                                                
+
                                                 @endsection
