@@ -278,5 +278,30 @@ public function votacion(){
 }
 
 
+public function guardaposicion(){
+
+  if(\Auth::User()) {
+
+    $id_usuario = \Auth::User() -> id;
+    $datos = filter_input (INPUT_GET, 'datos');
+    $tiempo = $datos->timeElapsed;
+    $url = $datos->urlVideo;
+    $id_video = DB::table('edu_video')->whereurl_video($url)->get();
+
+    $result = DB::table('edu_avance_visto')->insert(
+    ['user_id' => $id_usuario, 'video_id' => $id_video , 'minuto' => $tiempo]
+    );
+    if($result == 1){
+      return "Éxito";
+    }else {
+      return "No se realizo la operación con éxito";
+    }
+
+  }else {
+    return "No hay sesión iniciada";
+  }
+
+}
+
 
 }
