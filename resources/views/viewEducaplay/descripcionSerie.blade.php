@@ -56,7 +56,7 @@
                 <div class="col-md-9">
 					<div class="row">
 						<div class="col-md-6 col-md-offset-1">
-							<p>Comentarios.</p>
+							<p>Comentarios a videos de esta serie.</p>
 						@if($comentarios!=null)
 							@foreach($comentarios as $elemComentario)
 								<p style="color:white;">Temporada {{$elemComentario->temporada}}. Capitulo {{$elemComentario->capitulo}}</p>

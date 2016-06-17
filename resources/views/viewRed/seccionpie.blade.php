@@ -1,4 +1,24 @@
 ﻿<div class="row fondo_footer1" style="margin-top:-20px;">
+    <script>
+        window.fbAsyncInit = function () {
+            FB.init({
+                appId: '1408909052733113',
+                xfbml: true,
+                version: 'v2.6'
+            });
+        };
+
+        (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) {
+                return;
+            }
+            js = d.createElement(s);
+            js.id = id;
+            js.src = "//connect.facebook.net/en_US/sdk.js";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
     <div class="division">
     </div>
     <div class="col-xs-6 col-sm-6 col-md-2 col-md-offset-1 col-lg-2 col-lg-offset-1">
@@ -7,9 +27,15 @@
         <a href="https://twitter.com/Red_Mesoamerica" target="_blank">
             {{ HTML::image('imagenes/red/footer/icono-twetter-A.png','icono twitter', array('class'=>'img-responsive img-rounded','id'=>'imgIconoTwetter', 'style'=>'float:left; width:50px; height:50px; position: relative; left:15px;', 'onmouseenter'=>'imgResalta("twetter")', 'onmouseleave'=>'imgNormal("twetter")'))}}
         </a>
-        <a href="https://www.facebook.com/Red-Mesoamericana-de-Investigaci%C3%B3n-y-Tecnolog%C3%ADa-Educat%C3%ADva-930360840393101/" target="_blank">
-            {{ HTML::image('imagenes/red/footer/icono-face-A.png','icono facebook', array('class'=>'img-responsive img-rounded','id'=>'imgIconoFacebook', 'style'=>'float:left; width:50px; height:50px; position: relative; left:35px;', 'onmouseenter'=>'imgResalta("facebook")', 'onmouseleave'=>'imgNormal("facebook")'))}}
-        </a>
+        <!--        <a href="https://www.facebook.com/Red-Mesoamericana-de-Investigaci%C3%B3n-y-Tecnolog%C3%ADa-Educat%C3%ADva-930360840393101/" target="_blank">
+                    {{ HTML::image('imagenes/red/footer/icono-face-A.png','icono facebook', array('class'=>'img-responsive img-rounded','id'=>'imgIconoFacebook', 'style'=>'float:left; width:50px; height:50px; position: relative; left:35px;', 'onmouseenter'=>'imgResalta("facebook")', 'onmouseleave'=>'imgNormal("facebook")'))}}
+                </a>-->
+        <br>
+                <div 
+                    class="fb-share-button pull-right col-md-8" 
+                    data-layout="button" 
+                    data-mobile-iframe="true">
+                </div>
         <!--<img id="imgIconoYoutube" class="img-responsive img-rounded" style="float:left; width:50px; height:50px;" src="imagenes/red/footer/icono-youtube-A.png" onmouseenter="imgResalta('youtube')" onmouseleave="imgNormal('youtube')"/>-->
         <br>
     </div>
