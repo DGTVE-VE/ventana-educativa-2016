@@ -130,6 +130,7 @@ Route::group(['middleware' => 'web'], function () {
 
   Route::any('agregaMiLista', 'EducaplayController@agregaMiLista');
   Route::any('votacion', 'EducaplayController@votacion');
+  Route::any('guardaposicion', 'EducaplayController@guardaposicion');
 	Route::post('educaplay/queryRate', 'EducaplayController@queryRate');
 
     /*     * **************************Educaplay********************** */

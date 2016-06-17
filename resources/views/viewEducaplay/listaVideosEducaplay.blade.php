@@ -23,25 +23,24 @@ Educaplay
 					$('#navegacionVentana').css('background','transparent');
 				}
 			});
-
 			function refrescaRating(valRating){
 				$("#divRating").empty();
 				$("#divRating").append('<input type="number" name="rating" id="star-rating" data-icon-lib="fa" data-active-icon="fa-star" data-inactive-icon="fa-star-o" onchange="guardaRating(this.value)" value="'+ parseInt(valRating) +'"/>');
 				$("#star-rating").rating({value: parseInt(valRating)});
-			}		
+			}
 			function cargaRating(id_video){
 				$.ajax({
 					method: "POST",
 					url: "{{url('educaplay/queryRate')}}",
 					data: { video_id: id_video, _token:"{{csrf_token()}}" },
-					error: function(ts) { 
-						console.log (ts.responseText); 
+					error: function(ts) {
+						console.log (ts.responseText);
 				}})
 				.done(function( msg ) {
 					refrescaRating(msg);
 				});
 			}
-			
+
 			function muestraVideo(urlVideo, idVideo, serieId){
 				cargaRating(idVideo);
 				var direccionVideo = "https://www.youtube.com/embed/" + urlVideo + "?autoplay=1";
@@ -54,7 +53,7 @@ Educaplay
 				$('#capituloActual').text($('#episodioSerie' + idVideo).val());
 				$('#sinopsisActual').text($('#sinopsisSerie' + idVideo).val());
 			}
-			
+
 			function guardaRating(CalifRating){
 				var idVideo = $('#episodio7').attr('name');
 				$.ajax({
@@ -87,9 +86,8 @@ Educaplay
 						console.log ( "Data Saved: " + msg);
 					});
 				}
-
 			}
-			
+
 			function quitaTexto(txtComenta){
 				if(txtComenta=='Escribe tu comentario'){
 					$('#textoComenta').val('');
@@ -146,7 +144,7 @@ Educaplay
 				-o-transition: all 3s ease;
 			}
 		</style>
-		
+
 		@endsection
 		@section('cuerpoEducaplay')
 		<div class="row" style="height:100px;">
