@@ -49,18 +49,27 @@ class EducaplayController extends Controller {
         return view('viewEducaplay/descripcionSerie')->with('primerDetalleSerie', $primerDetalleSerie)->with('comentarios', $comentarios);
     }
 
-  public function temporada($serieId, $temporada) {
-	if($temporada=='1'){
-		$temporada='0';
-	}
-	$detallesSerie = DB::table('edu_serie')
-    ->join('edu_imagen', 'edu_serie.id', '=', 'edu_imagen.serie_id')
-    ->join('edu_video', 'edu_serie.id', '=', 'edu_video.serie_id')
-    ->select('edu_serie.id', 'edu_serie.titulo_serie', 'edu_serie.temporadas_total', 'edu_serie.clasificacion_id', 'edu_serie.descripcion', 'edu_imagen.url', 'edu_imagen.ubicacion_id', 'edu_video.id AS videoId', 'edu_video.sinopsis', 'edu_video.temporada', 'edu_video.capitulo', 'edu_video.url_video')
-    ->where('edu_serie.id','=',$serieId)
-    ->where('edu_imagen.ubicacion_id','=',5)
-    ->where('edu_video.temporada','=',$temporada)
-    ->get();
+	public function temporada($serieId, $temporada) {
+		$encuentraTemp = DB::table('edu_video')
+		->select('temporada')
+		->where('temporada', $temporada)
+		->get();
+		if($encuentraTemp==null){
+			  if($temporada==1){
+				$temporada=0;
+			  }
+			  else{
+				$temporada=1;
+			  }
+		}
+		$detallesSerie = DB::table('edu_serie')
+		->join('edu_imagen', 'edu_serie.id', '=', 'edu_imagen.serie_id')
+		->join('edu_video', 'edu_serie.id', '=', 'edu_video.serie_id')
+		->select('edu_serie.id', 'edu_serie.titulo_serie', 'edu_serie.temporadas_total', 'edu_serie.clasificacion_id', 'edu_serie.descripcion', 'edu_imagen.url', 'edu_imagen.ubicacion_id', 'edu_video.id AS videoId', 'edu_video.sinopsis', 'edu_video.temporada', 'edu_video.capitulo', 'edu_video.url_video')
+		->where('edu_serie.id','=',$serieId)
+		->where('edu_imagen.ubicacion_id','=',5)
+		->where('edu_video.temporada','=',$temporada)
+		->get();
     return view('viewEducaplay/carreteTemporada')->with('detallesSerie', $detallesSerie);
   }
 
