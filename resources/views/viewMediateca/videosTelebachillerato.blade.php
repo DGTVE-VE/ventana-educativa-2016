@@ -5,7 +5,6 @@ Educamedia
 @stop
 
 <style>
-
     /* estilo en scrollbar*/
     ::-webkit-scrollbar{
         width: 10px;
@@ -28,7 +27,6 @@ Educamedia
         -webkit-box-shadow:   inset 0 1px 0 rgba(255,255,225,.5),
             inset 1px 0 0 rgba(255,255,255,.4),
             inset 0 1px 2px rgba(255,255,255,.3);
-
         border:thin solid #754B7B;
         border-radius: 10px;
         -webkit-border-radius: 10px;
@@ -46,7 +44,7 @@ Educamedia
 @endsection
 @section('cuerpoMediateca')
 <div class="container-fluid">
-    <div class="row">    
+    <div class="row">
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center" style="padding:2%"></div>
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center textoTitulo txtVideosRed">
             <p>{{ generaBreadCrumbs() }}</p><br>
@@ -56,16 +54,16 @@ Educamedia
         <div class="col-md-10 contenedorVideo transparenciaVideos ">
             <div class="col-md-12 col-xs-12 col-lg-8 col-sm-12 txtVideosRed" id='div-containter'>
                 <div class="col-md-12" style="overflow: auto;">
-                    <h5 id="materia">{{$videos[0]->asignatura}}</h5>                
-                    <h4 id="titulo_programa">{{$videos[0]->programa}}</h4>                
+                    <h5 id="materia">{{$videos[0]->asignatura}}</h5>
+                    <h4 id="titulo_programa">{{$videos[0]->programa}}</h4>
                     <div id="player" align="center">    </div>
                 </div>
                 <div class="col-md-12">
                     <!--<div class="col-md-12">-->
                     <br>
-                        <div 
-                            class="fb-share-button pull-right col-md-4" 
-                            data-layout="button" 
+                        <div
+                            class="fb-share-button pull-right col-md-4"
+                            data-layout="button"
                             data-mobile-iframe="true">
                         </div>
                     <!--</div>-->
@@ -76,23 +74,23 @@ Educamedia
 <!--                        <a href="#"><i class="fa fa-facebook-square fa-2x redesText"></i></a>
                         <a href="#"><i class="fa fa-twitter-square fa-2x redesText"></i></a>
                         <a href="#"><i class="fa fa-envelope-square fa-2x redesText"></i></a>                -->
-                        <div 
-                            class="fb-share-button" 
-                            data-layout="button" 
+                        <div
+                            class="fb-share-button"
+                            data-layout="button"
                             data-mobile-iframe="true">
                         </div>
                     </div>
-                    <div class="col-md-3">                    
+                    <div class="col-md-3">
                         <input type="number" name="rating" id="star-rating" class="rating" data-icon-lib="fa" data-active-icon="fa-star" data-inactive-icon="fa-star-o"  />
                         <input type="hidden" id="video-id" value="{{ $videos[0]->id }}" />
                         <input type="hidden" id="nivel" value="{{ $nivel }}" />
                     </div>
-                    <div class="col-md-3"></div>                                        
-                    @endif     
+                    <div class="col-md-3"></div>
+                    @endif
                 </div>
                 <div class="col-md-12">
                     <li class="list-unstyled"><h5 id="subtitulo_serie">{{ $videos[0]->subtitulo_serie }}</h5></li>
-                    <li class="list-unstyled"><h5 id="subtitulo_programa">{{ $videos[0]->subtitulo_programa }}</h5></li>                                                
+                    <li class="list-unstyled"><h5 id="subtitulo_programa">{{ $videos[0]->subtitulo_programa }}</h5></li>
                     <li class="list-unstyled"><h5 id="grado">Semestre: {{ $videos[0]->semestre }}</h5></li>
 
                     <li class="list-unstyled text-justify" id="sinopsis" style="display: none;">{{ $videos[0]->sinopsis }}</li>
@@ -101,40 +99,40 @@ Educamedia
                     <div id="botonmas" data-toggle="collapse" data-target="#massinopsis" class="col-md-12 text-center">
 <!--                    <span>Más</span>
                     <span class="caret"></span>-->
-                    </div>  
+                    </div>
                     <br>
                 </div>
-                <div class="col-md-12">                
+                <div class="col-md-12">
                     @if (Auth::check ())
                     <br>
-                    <textarea id="comment" rows="3" placeholder="Comenta aquí..." class="form-control textareaTransparencia"></textarea>                
+                    <textarea id="comment" rows="3" placeholder="Comenta aquí..." class="form-control textareaTransparencia"></textarea>
                     <a class="linkComentar" id="btn-comentar">Envíar Comentario </a>
-                    <br><br>                    
-                    <br> 
-                    <div id="comentarios"></div> 
-                    @endif                    
+                    <br><br>
+                    <br>
+                    <div id="comentarios"></div>
+                    @endif
                 </div>
             </div>
             <br>
             <div class="col-md-12 col-xs-12 col-lg-4 col-sm-12 controls txtVideosRed" id="custom_controls">
                 <div class="col-md-12 listVideos">
-                    <table class="table table-responsive">                
+                    <table class="table table-responsive">
                         @foreach ($videos as $item => $video)
                         <tr>
                             <td data-target="#custom_carousel" data-slide-to="{{$item}}" class="item" data-id='{{ $video->url }}' _id="{{$video->id}}">
-                                <img src="http://img.youtube.com/vi/{{ $video->url }}/2.jpg" class='item-a' style="cursor:pointer;">                            
+                                <img src="http://img.youtube.com/vi/{{ $video->url }}/2.jpg" class='item-a' style="cursor:pointer;">
                             </td>
                             <td class="redesText">{{$video->programa}}</td>
-                        </tr>                
-                        @endforeach 
+                        </tr>
+                        @endforeach
                     </table>
                 </div>
-            </div>        
+            </div>
         </div>
         <div class="col-md-1"></div>
     </div>
 </div>
-@endsection                                                
+@endsection
 @section('estilos')
 <link rel="stylesheet" href="{{ asset('css/jquery-ui.min.css') }}" >
 @endsection
@@ -142,8 +140,7 @@ Educamedia
 @section('scripts')
 <script>
 //    $(document).ready(function(){
-
-//    });    
+//    });
 </script>
 <script src="{{asset ('js/jquery-ui.min.js')}}"></script>
 
@@ -160,7 +157,6 @@ Educamedia
             version: 'v2.6'
         });
     };
-
     (function (d, s, id) {
         var js, fjs = d.getElementsByTagName(s)[0];
         if (d.getElementById(id)) {
@@ -182,11 +178,9 @@ Educamedia
         }
         loadComments ({{$videos[0] -> id}});
     $("massinopsis").collapse({toggle: false});
-
     $("botonmas").click(function () {
         $("nomuestra").addClass("hidden");
     });
-
     $('#star-rating').change(function () {
         $.ajax({
             method: "POST",
@@ -200,7 +194,6 @@ Educamedia
                     loadComments($("#video-id").val());
                 });
     });
-
     $('.item').click(function () {
         $('#div-containter').fadeOut();
         data = $(this).attr('data-id');
@@ -238,9 +231,7 @@ Educamedia
                     console.log("Data Saved: " + msg);
                 });
     });
-
     $('#btn-comentar').click(function () {
-
         $.ajax({
             method: "POST",
             url: "{{url('educamedia/comment/telebachillerato')}}",
@@ -281,23 +272,21 @@ Educamedia
     var player;
     /** Identificador del video (PK) obtenido del URL */
     var id;
-
     /**
-     * La función se ejecuta cuando el usuario abandona la ventana (cuando cierra 
-     * el navegador o cuando navega a otro sitio. Al salir de la ventana se almacena 
-     * el tiempo transcurrido del video en la base de datos, para tener control del 
-     * punto dónde se quedó el usuario. El almacenamiento se realiza a través de 
-     * el api de la aplicación. Los datos del tiempo transcurrido y el id del video 
+     * La función se ejecuta cuando el usuario abandona la ventana (cuando cierra
+     * el navegador o cuando navega a otro sitio. Al salir de la ventana se almacena
+     * el tiempo transcurrido del video en la base de datos, para tener control del
+     * punto dónde se quedó el usuario. El almacenamiento se realiza a través de
+     * el api de la aplicación. Los datos del tiempo transcurrido y el id del video
      * se envían por POST.
      * Los callbacks de éxito y error sólo muestran el mensaje de éxito o error
      * respectivamente.
      * La función DEBE regresar algo para funcionar, así que regresa NULL.
-     * 
-     * @param {Event} e 
+     *
+     * @param {Event} e
      * @returns {null}
      */
     window.onbeforeunload = function (e) {
-
 //    var datos = {'timeElapsed': timeElapsed, 'idVideo': id};
 //    $.ajax({
 //        url: api + 'vodConsumido/update',
@@ -314,8 +303,7 @@ Educamedia
 //    });
 //    return null;
     }
-
-    /* Se iba a obtener el capítulo a partir de una variable de sesión, pero 
+    /* Se iba a obtener el capítulo a partir de una variable de sesión, pero
      * al final cambió la estrategia para hacer la consulta directamente a la BD.
      * Se deja esta función como referencia*/
 //function getCapitulos() {
@@ -333,19 +321,17 @@ Educamedia
 //    });
 //    return $.parseJSON(capitulos);
 //}
-
     /**
-     * La función onYouTubePlayerAPIReady() que se especifica aquí se invoca 
-     * automáticamente cuando se carga el código de la API del reproductor de IFrame. 
+     * La función onYouTubePlayerAPIReady() que se especifica aquí se invoca
+     * automáticamente cuando se carga el código de la API del reproductor de IFrame.
      * Obtiene de la URL el identificador del video, que es el último parámetro del
      * URL.
      * Posteriormente consulta el API para obtener la información del capítulo.
      * Al final inicializa el API de youtube con el ID del video a reproducir.
-     * 
+     *
      * @see {@link https://developers.google.com/youtube/iframe_api_reference?hl=es|
      *      Youtube Player API}
      */
-
     function onYouTubePlayerAPIReady() {
 //    pos = window.location.href.toString().lastIndexOf("/");
 //    id = window.location.href.toString().substring(pos + 1);
@@ -367,18 +353,16 @@ Educamedia
         initializeYoutube('{{$videos[0]->url}}', 0);
 //    });
     }
-
     /**
-     * Inicializa el reproductor de Youtube a través del api. Establece el tamaño del 
-     * reproductor a pantalla completa. 
-     * 
-     * @see {@link https://developers.google.com/youtube/player_parameters?hl=es | 
+     * Inicializa el reproductor de Youtube a través del api. Establece el tamaño del
+     * reproductor a pantalla completa.
+     *
+     * @see {@link https://developers.google.com/youtube/player_parameters?hl=es |
      * Youtube API}
      * @param {String} youtubeId ID de youtube del video.
      * @param {Seconds} time Tiempo en el que se quedó el video la última vez.
      * @returns {undefined}
      */
-
     function initializeYoutube(youtubeId, time) {
         console.log(time);
         player = new YT.Player('player', {
@@ -388,7 +372,7 @@ Educamedia
             playerVars: {
                 controls: 1, // Los controles no se muestran
                 playsinline: 0, // Reproducción a pantalla completa
-                iv_load_policy: 3, // Las anotaciones del video no se muestran 
+                iv_load_policy: 3, // Las anotaciones del video no se muestran
                 modestbranding: 1, // Evita que el logo de youtube se muestre en la barra de control
                 showinfo: 0, // Evita que se muestre información del video antes de su reproducción
                 enablejsapi: 1, // Permite que el reproductor sea controlado por el API de Javascript
@@ -402,19 +386,15 @@ Educamedia
             }
         });
     }
-
-
-
     function showProgress() {
         timeElapsed = player.getCurrentTime();
         document.getElementById("progress").innerHTML = timeElapsed;
     }
-
     /**
-     * Se ejecuta una vez que el reproductor se encuentra listo. Inicia la 
-     * reproducción del video y establece que cada 100 milisegundos se ejecutará la 
+     * Se ejecuta una vez que el reproductor se encuentra listo. Inicia la
+     * reproducción del video y establece que cada 100 milisegundos se ejecutará la
      * función  showProgress.
-     * 
+     *
      * @param {Event} event
      * @returns {undefined}
      */
@@ -422,13 +402,12 @@ Educamedia
 //    event.target.playVideo();
 //    setInterval(showProgress, 100);
     }
-
     /**
      * Se ejecuta cuando termina la reproducción del video, falta probar este método.
-     * 
-     * Cuando termina la reproducción se debe guardar el valor de visto = true en la 
+     *
+     * Cuando termina la reproducción se debe guardar el valor de visto = true en la
      * base de datos.
-     * 
+     *
      * @param {Event} event
      * @returns {undefined}
      */
@@ -436,15 +415,15 @@ Educamedia
 //    if (event.data === 0) {
 //        id = window.location.href.toString().substring(pos + 1);
 ////         alert('done' + id);
-//        window.location.assign('vod/finish/' + id);    
+//        window.location.assign('vod/finish/' + id);
 //    }
     }
 </script>
 <!--metadados para compartir en facebook-->
-<meta property="og:url" content="http://ventana.televisioneducativa.gob.mx/{{Request::path()}}" /> 
-<meta property="fb:app_id" content="1408909052733113" /> 
-<meta property="og:type" content="article" />                                  
-<meta property="og:title" content="{{$videos[0]->programa}}" /> 
-<meta property="og:image" content="http://img.youtube.com/vi/{{ $video->url }}/2.jpg" />                                             
+<meta property="og:url" content="http://ventana.televisioneducativa.gob.mx/{{Request::path()}}" />
+<meta property="fb:app_id" content="1408909052733113" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="{{$videos[0]->programa}}" />
+<meta property="og:image" content="http://img.youtube.com/vi/{{ $video->url }}/2.jpg" />
 <meta property="og:description" content="{{ $videos[0]->sinopsis }}" />
 @endsection
