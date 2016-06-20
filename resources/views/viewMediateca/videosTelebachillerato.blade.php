@@ -59,14 +59,26 @@ Educamedia
                     <div id="player" align="center">    </div>
                 </div>
                 <div class="col-md-12">
-                    <!--<div class="col-md-12">-->
-                    <br>
-                        <div
-                            class="fb-share-button pull-right col-md-4"
-                            data-layout="button"
-                            data-mobile-iframe="true">
+                    <div class="col-md-12">
+                        <br>
+                        <div class="pull-right col-md-5">
+                            <a href="https://twitter.com/share" class="twitter-share-button">Tweet</a> <script>!function (d, s, id) {
+                                    var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https';
+                                    if (!d.getElementById(id)) {
+                                        js = d.createElement(s);
+                                        js.id = id;
+                                        js.src = p + '://platform.twitter.com/widgets.js';
+                                        fjs.parentNode.insertBefore(js, fjs);
+                                    }
+                                }(document, 'script', 'twitter-wjs');</script> 
                         </div>
-                    <!--</div>-->
+                        <div 
+                            class="fb-share-button pull-right" 
+                            data-layout="button" 
+                            data-mobile-iframe="true"
+                            >
+                        </div>
+                    </div>
                     @if(Auth::check ())
                     <br>
                     <div class="col-md-3"></div>
@@ -168,6 +180,24 @@ Educamedia
         fjs.parentNode.insertBefore(js, fjs);
     }(document, 'script', 'facebook-jssdk'));
 </script>
+<!--sdk twitter-->
+<script>window.twttr = (function (d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0],
+                t = window.twttr || {};
+        if (d.getElementById(id))
+            return t;
+        js = d.createElement(s);
+        js.id = id;
+        js.src = "https://platform.twitter.com/widgets.js";
+        fjs.parentNode.insertBefore(js, fjs);
+
+        t._e = [];
+        t.ready = function (f) {
+            t._e.push(f);
+        };
+
+        return t;
+    }(document, "script", "twitter-wjs"));</script>
 <script>
     $(document).ready(function () {
         /* Se guarda la información de los videos para cambiarla cuando dan click*/
@@ -426,4 +456,12 @@ Educamedia
 <meta property="og:title" content="{{$videos[0]->programa}}" />
 <meta property="og:image" content="http://img.youtube.com/vi/{{ $video->url }}/2.jpg" />
 <meta property="og:description" content="{{ $videos[0]->sinopsis }}" />
+
+<!--twitter metas-->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@tveducativamx">
+<meta name="twitter:creator" content="@SarahMaslinNir">
+<meta name="twitter:title" content="{{$videos[0]->programa}}">
+<meta name="twitter:description" content="{{ $videos[0]->sinopsis }}">
+<meta name="twitter:image" content="http://img.youtube.com/vi/{{ $video->url }}/2.jpg">
 @endsection

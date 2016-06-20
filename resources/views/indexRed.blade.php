@@ -35,7 +35,7 @@ and open the template in the editor.
         <!--twitter metas-->
 
         <meta name="twitter:card" content="summary_large_image">
-        <meta name="twitter:site" content="@nytimes">
+        <meta name="twitter:site" content="@Red_Mesoamerica">
         <meta name="twitter:creator" content="@SarahMaslinNir">
         <meta name="twitter:title" content="Red Mesoamericana de Investigación y Tecnología Educativa">
         <meta name="twitter:description" content="La Red Mesoamericana de Investigación y Tecnología Educativa, 

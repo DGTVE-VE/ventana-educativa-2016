@@ -62,28 +62,39 @@ Educamedia
                         <div id="player" align="center">    </div>
                     </div>                    
                     <div class="col-md-12">
-<!--                        <div class="col-md-11 text-right">-->
-<br>
-                             <div 
-                                class="fb-share-button pull-right col-md-4" 
+                        <div class="col-md-12">
+                            <br>
+                            <div class="pull-right col-md-5">
+                                <a href="https://twitter.com/share" class="twitter-share-button">Tweet</a> <script>!function (d, s, id) {
+                                        var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https';
+                                        if (!d.getElementById(id)) {
+                                            js = d.createElement(s);
+                                            js.id = id;
+                                            js.src = p + '://platform.twitter.com/widgets.js';
+                                            fjs.parentNode.insertBefore(js, fjs);
+                                        }
+                                    }(document, 'script', 'twitter-wjs');</script> 
+                            </div>
+                            <div 
+                                class="fb-share-button pull-right" 
                                 data-layout="button" 
                                 data-mobile-iframe="true"
                                 >
                             </div>
-                        <!--</div>-->
+                        </div>                        
+
+
+
                         @if(Auth::check ())
                         <br>
                         <div class="col-md-3"></div>
                         <div class="col-md-3">
-<!--                            <a href="#"><i class="fa fa-facebook-square fa-2x redesText"></i></a>
-                            <a href="#"><i class="fa fa-twitter-square fa-2x redesText"></i></a>
-                            <a href="#"><i class="fa fa-envelope-square fa-2x redesText"></i></a> -->
-                            <!-- Your share button code -->
-                            <div 
-                                class="fb-share-button" 
-                                data-layout="button" 
-                                data-mobile-iframe="true">
-                            </div>
+
+                            <!--                            <div 
+                                                            class="fb-share-button" 
+                                                            data-layout="button" 
+                                                            data-mobile-iframe="true">
+                                                        </div>-->
 
                         </div>
                         <div class="col-md-3">                    
@@ -164,26 +175,44 @@ Educamedia
                                                 <script src="{{asset ('js/bootstrap-rating-input.min.js')}}"></script>
                                                 <!--El siguiente fragmento de codigo es para el uso de Facebook en la aplicación-->
                                                 <script>
-window.fbAsyncInit = function () {
-    FB.init({
-        appId: '1408909052733113',
-        xfbml: true,
-        version: 'v2.6'
-    });
-};
+                                window.fbAsyncInit = function () {
+                                    FB.init({
+                                        appId: '1408909052733113',
+                                        xfbml: true,
+                                        version: 'v2.6'
+                                    });
+                                };
 
-(function (d, s, id) {
-    var js, fjs = d.getElementsByTagName(s)[0];
-    if (d.getElementById(id)) {
-        return;
-    }
-    js = d.createElement(s);
-    js.id = id;
-    js.src = "//connect.facebook.net/en_US/sdk.js";
-    fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));
+                                (function (d, s, id) {
+                                    var js, fjs = d.getElementsByTagName(s)[0];
+                                    if (d.getElementById(id)) {
+                                        return;
+                                    }
+                                    js = d.createElement(s);
+                                    js.id = id;
+                                    js.src = "//connect.facebook.net/en_US/sdk.js";
+                                    fjs.parentNode.insertBefore(js, fjs);
+                                }(document, 'script', 'facebook-jssdk'));
                                                 </script>
                                                 <!--fin codigo facebook-->
+                                                <!--sdk twitter-->
+                                                <script>window.twttr = (function (d, s, id) {
+                                                        var js, fjs = d.getElementsByTagName(s)[0],
+                                                                t = window.twttr || {};
+                                                        if (d.getElementById(id))
+                                                            return t;
+                                                        js = d.createElement(s);
+                                                        js.id = id;
+                                                        js.src = "https://platform.twitter.com/widgets.js";
+                                                        fjs.parentNode.insertBefore(js, fjs);
+
+                                                        t._e = [];
+                                                        t.ready = function (f) {
+                                                            t._e.push(f);
+                                                        };
+
+                                                        return t;
+                                                    }(document, "script", "twitter-wjs"));</script>
                                                 <script>
                                                     $(document).ready(function () {
                                                         /* Se guarda la información de los videos para cambiarla cuando dan click*/
@@ -464,5 +493,13 @@ window.fbAsyncInit = function () {
                                                 <meta property="og:title" content="{{$videos[0]->titulo_programa}}" /> 
                                                 <meta property="og:image" content="http://img.youtube.com/vi/{{ $video->url }}/2.jpg" />                                             
                                                 <meta property="og:description" content="{{ $videos[0]->sinopsis }}" />
+
+                                                <!--twitter metas-->
+                                                <meta name="twitter:card" content="summary_large_image">
+                                                <meta name="twitter:site" content="@tveducativamx">
+                                                <meta name="twitter:creator" content="@SarahMaslinNir">
+                                                <meta name="twitter:title" content="{{$videos[0]->titulo_programa}}">
+                                                <meta name="twitter:description" content="{{ $videos[0]->sinopsis }}">
+                                                <meta name="twitter:image" content="http://img.youtube.com/vi/{{ $video->url }}/2.jpg">
 
                                                 @endsection
