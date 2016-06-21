@@ -39,7 +39,7 @@
 		<div class="row margenesFila margenInferior">
 			<div class="col-md-12 col-lg-12">
 				<div id="carreteSerie{{$tira}}" class="carousel slide" data-ride="carousel">
-					<div class="carousel-inner" role="listbox">
+                                    <div class="carousel-inner" role="listbox" id="dir-gral-tve">
 	@endif
 					@if($cuenta === 1)
 						<div class="item active">

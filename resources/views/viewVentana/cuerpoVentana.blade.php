@@ -16,7 +16,7 @@
     <!----------------------------------	Elementos para vistas en dispositivos grandes		--------------------------------->
     <div class="row visible-md-inline visible-lg-inline">
         <div>
-            <div style="padding:2%;">
+            <div style="padding:1%;">
             </div>
         </div>
 		<div class="col-md-9 col-md-offset-1" style="margin-top:10px;">
@@ -120,6 +120,15 @@
         <div class="visible-md-inline visible-lg-inline">
             <div style="padding:2%;">
             </div>
+        </div>
+        
+        <div class="col-md-12">  
+            <div class="col-md-9"></div>
+            <div  id="desplaza" class="col-md-3 text-center alert" style="margin-top: 7%;">                
+                <!--<div class="alert alert-danger alert-dismissible" role="alert">-->
+                <!--<button type="button" class="close" id="avanza"><span>×</span></button>-->
+                {{ HTML::image('imagenes/ventana/homeventana/alertaNav.png','alerta',['width'=>'100%','height'=>'100%']) }}
+                <!--</div>-->
         </div>
 
     </div>
@@ -344,6 +353,14 @@
     $(".alert").alert();
     window.setTimeout(function () {
         $(".alert").alert('close');
-    }, 7000);
+    }, 3000);
     
+
+//$(document).ready(function () {
+//        $("#avanza").click(function () {
+////                window.setTimeout(function () {
+//            $("#desplaza").animate({left: '450px'}, 1000);
+//        });
+//    });
+
 </script>
