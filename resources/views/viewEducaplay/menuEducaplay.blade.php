@@ -1,3 +1,4 @@
+{{--*/ $opcionMenu=1;/*--}}
 <nav id="menuVOD" class="navbar navbar-default navbar-fixed-top ancho-menu-vod">
     <div class="navbar-header">
         <button class="navbar-toggle fondo-menu-SM" type="button" data-toggle="collapse" data-target=".js-navbar-collapse">
@@ -16,7 +17,8 @@
                         <ul>
                             <li><a href="{{url('educaplay')}}">Inicio</a></li>
                             @foreach($menuEducaplay as $menuEducaplays)
-                            <li><a href="#">{{$menuEducaplays->categoria}}</a></li>
+                            <li><a href="#carreteSerie{{$opcionMenu}}">{{$menuEducaplays->categoria}}</a></li>
+                            {{--*/ $opcionMenu++; /*--}}
                             @endforeach 
                         </ul>
                     </li>
