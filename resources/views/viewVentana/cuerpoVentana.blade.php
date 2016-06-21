@@ -123,12 +123,10 @@
         </div>
         
         <div class="col-md-12">  
-            <div class="col-md-9"></div>
-            <div  id="desplaza" class="col-md-3 text-center alert" style="margin-top: 7%;">                
-                <!--<div class="alert alert-danger alert-dismissible" role="alert">-->
-                <!--<button type="button" class="close" id="avanza"><span>×</span></button>-->
-                {{ HTML::image('imagenes/ventana/homeventana/alertaNav.png','alerta',['width'=>'100%','height'=>'100%']) }}
-                <!--</div>-->
+            <div class="col-md-4"></div>
+            <div  id="desplaza" class="col-md-4 alert" style="margin-top: 5%; z-index: 1000;">                
+                {{ HTML::image('imagenes/ventana/homeventana/alertaNav.png','alerta',['width'=>'90%','height'=>'90%']) }}
+                <div class="col-md-4"></div>    
         </div>
 
     </div>
@@ -353,14 +351,5 @@
     $(".alert").alert();
     window.setTimeout(function () {
         $(".alert").alert('close');
-    }, 3000);
-    
-
-//$(document).ready(function () {
-//        $("#avanza").click(function () {
-////                window.setTimeout(function () {
-//            $("#desplaza").animate({left: '450px'}, 1000);
-//        });
-//    });
-
+    }, 3500);
 </script>
