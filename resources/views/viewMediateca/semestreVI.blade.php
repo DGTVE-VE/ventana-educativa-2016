@@ -23,8 +23,8 @@ Educamedia
 			{{HTML::image('imagenes/mediateca/tbachillerato/SemestreVI/FilosofiaHover.png','Telebachillerato Filosofia',['class'=>'resaltaImg img-responsive', 'id'=>'FilosofiaHover'])}}
 			{{HTML::image('imagenes/mediateca/tbachillerato/SemestreVI/MetodologiaHover.png','Telebachillerato Geografia',['class'=>'resaltaImg img-responsive', 'id'=>'MetodologiaHover'])}}
 			
-			{{HTML::image('imagenes/mediateca/tbachillerato/imgCentral/Ecologia.png','Telebachillerato Central',['class'=>' img-responsive iniImgCentro', 'id'=>'EcologiaCentro'])}}
-			{{HTML::image('imagenes/mediateca/tbachillerato/imgCentral/Filosofia.png','Telebachillerato Central',['class'=>' img-responsive iniImgCentro', 'id'=>'FilosofiaCentro'])}}
+			{{HTML::image('imagenes/mediateca/tbachillerato/imgCentral/EcologiaI.png','Telebachillerato Central',['class'=>' img-responsive iniImgCentro', 'id'=>'EcologiaCentro'])}}
+			{{HTML::image('imagenes/mediateca/tbachillerato/imgCentral/FilosofiaI.png','Telebachillerato Central',['class'=>' img-responsive iniImgCentro', 'id'=>'FilosofiaCentro'])}}
 			{{HTML::image('imagenes/mediateca/tbachillerato/imgCentral/Metodologia.png','Telebachillerato Central',['class'=>' img-responsive iniImgCentro', 'id'=>'MetodologiaCentro'])}}
 			
 			{{HTML::image('imagenes/mediateca/tbachillerato/SemestreVI/imgMapa.png','Telebachillerato',['class'=>'posicionMapa img-responsive', 'id'=>'telebachilleratoSEMII', 'usemap'=>'#mapaSemVI'])}}
