@@ -41,11 +41,14 @@ Educaplay
 				});
 			}
 
+			function cargaComentarios(idVideoFnc, serieIdFnc){
+				var dirComentarios = "{{url('educaplay/comentarioVideo')}}" + "/" + idVideoFnc + "/" + serieIdFnc;
+				$('#comentarioVideo').attr('src',dirComentarios);				
+			}
 			function muestraVideo(urlVideo, idVideo, serieId){
 				cargaRating(idVideo);
 				var direccionVideo = "https://www.youtube.com/embed/" + urlVideo + "?autoplay=1";
-				var dirComentarios = "{{url('educaplay/comentarioVideo')}}" + "/" + idVideo + "/" + serieId;
-				$('#comentarioVideo').attr('src',dirComentarios);
+				cargaComentarios(idVideo, serieId);
 				$('#episodio7').attr('src',direccionVideo);
 				$('#episodio8').css('display','block');
 				$('#episodio7').attr('name',idVideo);
@@ -73,17 +76,21 @@ Educaplay
 					alert('Escribe un comentario');
 				}else{
 					var urlFrameComent = $('#comentarioVideo').attr('src').split('/');
-					var idVideoCom = urlFrameComent.pop();
 					var idSerieCom = urlFrameComent.pop();
+					var idVideoCom = urlFrameComent.pop();
 					$.ajax({
 						method: "POST",
 						url: "{{url('educaplay/guardaComentaVideo')}}",
 						data: { video_id: idVideoCom, serie_id: idSerieCom, comenta: comentario, _token:"{{csrf_token()}}" },
 						error: function(ts) {
 							console.log (ts.responseText);
+							alert('Error al Guardar Comentario');
 					}})
 					.done(function( msg ) {
 						console.log ( "Data Saved: " + msg);
+						$('#textoComenta').val('Escribe tu comentario');
+						cargaComentarios(idVideoCom, idSerieCom);
+						alert('Comentario guardado correctamente');
 					});
 				}
 			}
@@ -185,15 +192,14 @@ Educaplay
 						@else
 							{{--*/ $infoTemporada = $infoVideo->temporada; $infoCapitulo = $infoVideo->capitulo; $infoSinopsis = $infoVideo->sinopsis; /*--}}
 						@endif
-						<p> Temporada: <span id="temporadaActual">{{$infoTemporada}}</span></p>
-						<p> Capítulo: <span id="capituloActual">{{$infoCapitulo}}</span></p>
+						<p style="font-size:1.2em;"> Temporada: <span id="temporadaActual">{{$infoTemporada}}</span> Capítulo: <span id="capituloActual">{{$infoCapitulo}}</span></p>
 						<p> Sinopsis: <span id="sinopsisActual">{{$infoSinopsis}}</span></p>
 						@if(Auth::check ())
 							<textarea id="textoComenta" rows="4" cols="50" style="color: gray; background-color:transparent; border: solid 1px purple;" onfocus="quitaTexto(this.value)" onblur="ponTexto(this.value)">Escribe tu comentario</textarea><br>
-							<p style="color:white; cursor: pointer;" onclick="guardaComentario()">Envia tu Comentario </p>
+							<p style="color:red; cursor: pointer; font-size:1.3em" class="text-uppercase" onclick="guardaComentario()">Envia tu Comentario </p>
 						@endif
 							<p>COMENTARIOS PARA ESTE VIDEO.</p>
-							{{--*/ $dirurlcoment = 'educaplay/comentarioVideo/'.$idVideo.'/'.$idSerie.'/'; $urlComent = url($dirurlcoment); /*--}}
+							{{--*/ $dirurlcoment = 'educaplay/comentarioVideo/'.$idVideo.'/'.$idSerie; $urlComent = url($dirurlcoment); /*--}}
 							<iframe id="comentarioVideo" src={{$urlComent}} frameborder="1" style="width:95%;">
 							</iframe>
 					</div>
@@ -203,7 +209,7 @@ Educaplay
 			@endif
 					<div class="col-xs-6 col-sm-6 col-md-2 col-lg-2 cambiaPadding">
 						<div class="thumbnail fondoTrans">
-							<img src="http://img.youtube.com/vi/{{ $serie->url_video}}/2.jpg" class='item-a' style="height:150px; cursor:pointer;" onclick="muestraVideo('{{$serie->url_video}}','{{$serie->id}}','{{$idVideo}}')"/>
+							<img src="http://img.youtube.com/vi/{{ $serie->url_video}}/2.jpg" class='item-a' style="height:150px; cursor:pointer;" onclick="muestraVideo('{{$serie->url_video}}','{{$serie->id}}','{{$idSerie}}')"/>
 							<div class="caption estiloTxt">
 								<h4 class="estiloTxt"> Temporada: {{$serie->temporada}} Episodio: {{$serie->capitulo}}</h4>
 								<span class="estiloTxt">{{$serie->sinopsis}}</span><br>

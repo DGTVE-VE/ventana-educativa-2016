@@ -50,17 +50,17 @@
 				<div class="col-md-12">
 				</div>
 				<div class="col-md-2 col-md-offset-1">
-					<p>{{$primerDetalleSerie->temporadas_total}} Temporadas.</p>
-					<p>Clasificaci&#243;n: {{EducaplayController::consultaClasificacion($primerDetalleSerie->clasificacion_id)}}</p>
+					<p class="lead">{{$primerDetalleSerie->temporadas_total}} Temporadas.</p>
+					<p class="lead">Clasificaci&#243;n: {{EducaplayController::consultaClasificacion($primerDetalleSerie->clasificacion_id)}}</p>
 				</div>
                 <div class="col-md-9">
 					<div class="row">
 						<div class="col-md-6 col-md-offset-1">
-							<p>Comentarios a videos de esta serie.</p>
+							<p class="text-center lead">Comentarios a videos de esta serie.</p>
 						@if($comentarios!=null)
 							@foreach($comentarios as $elemComentario)
-								<p style="color:white;">Temporada {{$elemComentario->temporada}}. Capitulo {{$elemComentario->capitulo}}</p>
-								<p style="color:white;">{{$elemComentario->comment}}</p>
+								<p> <span style="color:gray;" class="lead">Temporada {{$elemComentario->temporada}}. Capitulo {{$elemComentario->capitulo}}</span>
+								<br> <span style="color:white;">{{$elemComentario->comment}}</span></p><br>
 							@endforeach
 						@else
 							<p style="color:white;"> AUN NO HAY COMENTARIOS PARA ESTA SERIE</p>

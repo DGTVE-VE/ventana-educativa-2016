@@ -166,10 +166,14 @@ class EducaplayController extends Controller {
 		return $devuelve;
 	}
 
-	function comentariosVideo($serieId, $videoId){
-		$matchThese = ['video_id' => $videoId, 'serie_id' => $serieId];
-		$comentarios = Edu_comments::where($matchThese)->get();
-		return view('viewEducaplay/comentariosVideo')->with('comentariosVideo',$comentarios);
+	function comentariosVideo($videoId, $serieId){
+		$comentariosGuardados = DB::table('edu_comments')
+			->join('edu_video', 'edu_comments.video_id', '=', 'edu_video.id')
+			->select('edu_comments.comment', 'edu_video.temporada', 'edu_video.capitulo')
+			->where('edu_comments.video_id', $videoId)
+			->where('edu_comments.serie_id', $serieId)
+			->get();
+		return view('viewEducaplay/comentariosVideo')->with('comentariosVideo',$comentariosGuardados);
 	}
 	
 	function guardaComentaVideo(){
@@ -199,7 +203,7 @@ class EducaplayController extends Controller {
     ->where('edu_imagen.ubicacion_id','=',5)
     ->get();
     $menuEducaplay = $this->educaplayMenu();
-    return view('viewEducaplay/listaVideosEducaplay')->with('menuEducaplay', $menuEducaplay)->with('episodiosSerie', $episodiosSerie)->with('urlVideo', $urlVideo)->with('idSerie',$idSerie)->with('idVideo', $idVideo)->with('idVideo',$idVideo);
+    return view('viewEducaplay/listaVideosEducaplay')->with('menuEducaplay', $menuEducaplay)->with('episodiosSerie', $episodiosSerie)->with('idSerie',$idSerie)->with('urlVideo', $urlVideo)->with('idVideo', $idVideo);
   }
   function videoSerie() {
     return view('viewEducaplay/videoSerie');
