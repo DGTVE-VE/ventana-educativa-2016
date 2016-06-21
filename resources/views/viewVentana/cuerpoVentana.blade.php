@@ -123,10 +123,10 @@
         </div>
         
         <div class="col-md-12">  
-            <div class="col-md-4"></div>
+            <div class="col-md-8"></div>
             <div  id="desplaza" class="col-md-4 alert" style="margin-top: 5%; z-index: 1000;">                
                 {{ HTML::image('imagenes/ventana/homeventana/alertaNav.png','alerta',['width'=>'90%','height'=>'90%']) }}
-                <div class="col-md-4"></div>    
+                  
         </div>
 
     </div>
