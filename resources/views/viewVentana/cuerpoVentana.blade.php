@@ -27,7 +27,7 @@
 			<area alt="educaplay" title="" shape="poly" coords="932,511,681,764,933,1017,1185,766" onmouseover="cambiaImgFoto('06')" onmouseout="cambiaImgCubo('06')" href="#"/>
 			<area alt="conocenos" title="" shape="poly" coords="1215,226,934,508,1216,794,1497,510" onmouseover="cambiaImgFoto('07')" onmouseout="cambiaImgCubo('07')" href="{{url('presentacion')}}"/>
 			<area alt="Biblioteca" title="" shape="poly" coords="1496,1,1243,253,1497,507,1750,253" onmouseover="cambiaImgFoto('08')" onmouseout="cambiaImgCubo('08')" href="{{url('biblioteca')}}"/>
-			<area alt="educamedia" title="" shape="poly" coords="1498,513,1245,765,1497,1017,1751,765" onmouseover="cambiaImgFoto('09')" onmouseout="cambiaImgCubo('09')" href="{{url('educamedia')}}"/>
+			<area alt="educamedia" title="" shape="poly" coords="1498,513,1245,765,1497,1017,1751,765" onmouseover="cambiaImgFoto('09')" onmouseout="cambiaImgCubo('09')" href=""/>
 			<area alt="México X" title="" shape="poly" coords="1516,511,1753,274,1989,511,1753,748" onmouseover="cambiaImgFoto('10')" onmouseout="cambiaImgCubo('10')" href="http://mx.televisioneducativa.gob.mx/" target="_blank"/>
 			<area alt="Salud" title="" shape="poly" coords="1969,534,2171,736,1968,938,1766,738" onmouseover="cambiaImgFoto('12')" onmouseout="cambiaImgCubo('12')" href="http://www.promocion.salud.gob.mx/dgps/interior1/programas/escuela_salud.html" target="_blank"/>
 		</map>
@@ -156,10 +156,10 @@
                     <td>
                         {{HTML::image('imagenes/ventana/homeventana/FOTO-09.png','Mediateca',['id'=>'CUBOSM09','class'=>'imgColor oculta difumina Intervalo1 slideInRight foto9','usemap'=>'#mapacubosm09'])}}
                         <map name="mapacubosm09" id="mapacubosm09">
-                            <area shape="poly" coords="0,488,488,0,1020,500,510,1020" href="{{url('educamedia')}}"/>
+                            <area shape="poly" coords="0,488,488,0,1020,500,510,1020" href=""/>
                             <area shape="poly" coords="516,0,1030,0,1030,500" href="http://redmite.televisioneducativa.gob.mx/"/>
                         </map>
-                        <a href="{{url('educamedia')}}">
+                        <a href="">
                             {{HTML::image('imagenes/ventana/iconoSeccion/mediateca.png','Mediateca',['id'=>'iconoRombo09','class'=>'imgColor oculta difumina Intervalo1 slideInRight iconoFoto9'])}}
                         </a>
                     </td>
