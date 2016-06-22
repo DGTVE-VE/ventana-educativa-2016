@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Support\Facades\Redirect;
 use Illuminate\Support\Facades\Session;
 use Mail;
+use DB;
 use Illuminate\Http\Request;
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
@@ -16,12 +17,17 @@ use Illuminate\Support\Facades\Input;
 class RedmiteController extends Controller {
 
     public function __construct() {
-        
+
         $this->middleware('auth', ['only' => ['integrantes', 'guardaIntegrantes']]);
     }
-    
+
     public function redmite() {
-        return view('viewRed/redmite');
+
+      $banner = DB::table('red_banners')->whereactivo('1')->get();
+
+      //print_r($banner);
+
+        return view('viewRed/redmite')->with('banner', collect($banner));
     }
 
     public function publicaciones() {
@@ -59,7 +65,7 @@ class RedmiteController extends Controller {
     public function guardarProyecto(){
         return view('viewRed/frmproyectos');
     }
-    
+
     public function guardaCorreoNewsLetter() {
 
         $news = new \App\Model\Red\News();
@@ -109,14 +115,14 @@ class RedmiteController extends Controller {
         }
     }
 
-    public function guardaIntegrantes(Request $request) {        
-        
+    public function guardaIntegrantes(Request $request) {
+
         $colaborador = new Colaborador();
-        $colaborador->user_id = Auth::user()->id;            
+        $colaborador->user_id = Auth::user()->id;
         $colaborador->puesto = filter_input(INPUT_POST, 'puesto');
         $colaborador->area = filter_input(INPUT_POST, 'area');
         $colaborador->dependencia = filter_input(INPUT_POST, 'dependencia');
-        $colaborador->resena = filter_input(INPUT_POST, 'resena');            
+        $colaborador->resena = filter_input(INPUT_POST, 'resena');
         $colaborador->save();
         $colaborador->url_foto = $this->storeImage ($request, $colaborador->id);
         $colaborador->save();
@@ -125,58 +131,58 @@ class RedmiteController extends Controller {
     }
 
     public function storeImage ($request, $id){
-        $file = $request->file('imagen');  
+        $file = $request->file('imagen');
 //        $v = Input::file('imagen');
 //        var_dump ($v);
-        if (Input::file('imagen')->isValid()) {            
-            $targetFile = 'uploaded/redmite/integrantes/'.$id.'.png';  
-            $this->resize($targetFile, Input::file('imagen')->getRealPath());            
+        if (Input::file('imagen')->isValid()) {
+            $targetFile = 'uploaded/redmite/integrantes/'.$id.'.png';
+            $this->resize($targetFile, Input::file('imagen')->getRealPath());
             return $targetFile;
-        } else {           
+        } else {
             Log::error ('La imagen no es valida para subir: '.$file->getClientOriginalName());
             return null;
         }
     }
-    
+
     private function newImage ($originalFile){
         $info = getimagesize($originalFile);
         $mime = $info['mime'];
         switch ($mime) {
             case 'image/jpeg':
-                $img = imagecreatefromjpeg($originalFile);                
+                $img = imagecreatefromjpeg($originalFile);
                 break;
 
             case 'image/png':
-                $img = imagecreatefrompng($originalFile);                
+                $img = imagecreatefrompng($originalFile);
                 break;
 
             case 'image/gif':
-                $img = imagecreatefromgif($originalFile);                
+                $img = imagecreatefromgif($originalFile);
                 break;
 
             default:
                 throw new Exception('Unknown image type.');
         }
-        
+
         return $img;
     }
     /* ANCHO Y ALTO DE LAS FOTOS DE LOS INTEGRANTES DE LA RED*/
     public $widthImage = 150;
     public $heigtImage = 150;
-    
-    private function resize($targetFile, $originalFile) {        
-        $img = $this->newImage ($originalFile);        
+
+    private function resize($targetFile, $originalFile) {
+        $img = $this->newImage ($originalFile);
         list($width, $height) = getimagesize($originalFile);
-        
-        $tmp = imagecreatetruecolor($this->widthImage, $this->heigtImage);        
-      
-        imagecopyresampled($tmp, $img, 
+
+        $tmp = imagecreatetruecolor($this->widthImage, $this->heigtImage);
+
+        imagecopyresampled($tmp, $img,
                 0,              //dst_x
                 0,              //dst_y
                 0,              //src_x
                 0,              //src_y
                 $this->widthImage,      //dst_w
-                $this->heigtImage,     //dst_h  
+                $this->heigtImage,     //dst_h
                 $width,         //src_w
                 $height);       //src_h
 

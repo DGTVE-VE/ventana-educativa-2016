@@ -157,10 +157,10 @@
 				}
 
 		$(document).ready(function(){
-			
+
 		/*----------------------------------------------	Agrega efecto de velocidad lenta al subir al inicio de la página	-------------------*/
 			// Initialize Tooltip
-			$('[data-toggle="tooltip"]').tooltip(); 
+			$('[data-toggle="tooltip"]').tooltip();
 
 			// Add smooth scrolling to all links in navbar + footer link
 			$("footer a[href='#pag_principal']").on('click', function(event) {
@@ -176,7 +176,7 @@
 				$('html, body').animate({
 					scrollTop: $(hash).offset().top
 				}, 900, function(){
-   
+
 				// Add hash (#) to URL when done scrolling (default click behavior)
 				window.location.hash = hash;
 				});
@@ -184,7 +184,7 @@
 
 		/*  -------------------------------------    Permitir elementos HTML en elementos POPOVER  -----------------------------------------------*/
 			$('[data-toggle="popover"]').popover({html:true});
-		
+
 		/*  -------------------------------------    Activar efecto parallax en scroll   -----------------------------------------------*/
 			$(window).bind('scroll',function(e){
 				parallaxScroll();
@@ -195,7 +195,7 @@
 			});
 		/*-----------------------------------------------------------------------------------------------------------------------------------------------*/
 		})
-		
+
 	/*	---------------------------------------	Sección Usabilidad. Agregar animación de entrada a imagenes 	--------------------------------*/
         $(function(){
 			if(~is_safari){
@@ -217,7 +217,7 @@
 						//$(this).fadeOut();
 						$(this).removeClass("animated");
 					});
-					
+
 					//obtenemos las dimensiones de cada elemento y su posicion
 					if(is_chrome || is_safari){
 						divideAncho = 2;
@@ -231,7 +231,7 @@
 					var self_h = self.outerHeight()/divideAlto; //alto exterior
 					var self_l = self.offset().left; //coordenada izquierda
 					var self_t = self.offset().top; //coordenada arriba
-					
+
 					//asignamos un evento a window.scroll(), para cuando se haga scroll
 					//esta parte del script es algo inefectiva. No es bueno si son muchos los elementos a verificar.
 					$(window).scroll(function(){
@@ -249,7 +249,7 @@
 				});
 			}
         })
-		
+
 		/*  -------------------------------------    Activar efecto parallax en scroll   -----------------------------------------------*/
 		function parallaxScroll(){
 			var scrolled = $(window).scrollTop();
@@ -258,12 +258,29 @@
 				$('#parallaxcarouselSliderHome1').css('top',(0+(scrolled*0.3))+'px');
 				$('#parallaxcarouselSliderHome2').css('top',(0+(scrolled*0.3))+'px');
 				$('#parallaxcarouselSliderHome3').css('top',(0+(scrolled*0.3))+'px');
+				$('#parallaxcarouselSliderHome4').css('top',(0+(scrolled*0.3))+'px');
+				$('#parallaxcarouselSliderHome5').css('top',(0+(scrolled*0.3))+'px');
+				$('#parallaxcarouselSliderHome6').css('top',(0+(scrolled*0.3))+'px');
+				$('#parallaxcarouselSliderHome7').css('top',(0+(scrolled*0.3))+'px');
+				$('#parallaxcarouselSliderHome8').css('top',(0+(scrolled*0.3))+'px');
+				$('#parallaxcarouselSliderHome9').css('top',(0+(scrolled*0.3))+'px');
+				$('#parallaxcarouselSliderHome10').css('top',(0+(scrolled*0.3))+'px');
+				$('#parallaxcarouselSliderHome11').css('top',(0+(scrolled*0.3))+'px');
+
 			}
 			else{
 				$('#parallaxcarouselSliderHome').css('top',(0-(scrolled*0.7))+'px');
 				$('#parallaxcarouselSliderHome1').css('top',(0-(scrolled*0.7))+'px');
 				$('#parallaxcarouselSliderHome2').css('top',(0-(scrolled*0.7))+'px');
 				$('#parallaxcarouselSliderHome3').css('top',(0-(scrolled*0.7))+'px');
+				$('#parallaxcarouselSliderHome4').css('top',(0-(scrolled*0.7))+'px');
+				$('#parallaxcarouselSliderHome5').css('top',(0-(scrolled*0.7))+'px');
+				$('#parallaxcarouselSliderHome6').css('top',(0-(scrolled*0.7))+'px');
+				$('#parallaxcarouselSliderHome7').css('top',(0-(scrolled*0.7))+'px');
+				$('#parallaxcarouselSliderHome8').css('top',(0-(scrolled*0.7))+'px');
+				$('#parallaxcarouselSliderHome9').css('top',(0-(scrolled*0.7))+'px');
+				$('#parallaxcarouselSliderHome10').css('top',(0-(scrolled*0.7))+'px');
+				$('#parallaxcarouselSliderHome11').css('top',(0-(scrolled*0.7))+'px');
 			}
 		}
 		/*  -------------------------------------    Detectar si navegador es chrome   -----------------------------------------------*/
@@ -278,7 +295,7 @@
 		else{
 			$('.imgSliderHome').css('top','110'+'px');
 		}
-		
+
 		/*
 * rwdImageMaps jQuery plugin v1.5
 *
@@ -292,22 +309,22 @@
 ;(function($) {
 	$.fn.rwdImageMaps = function() {
 		var $img = this;
-		
+
 		var rwdImageMap = function() {
 			$img.each(function() {
 				if (typeof($(this).attr('usemap')) == 'undefined')
 					return;
-				
+
 				var that = this,
 					$that = $(that);
-				
+
 				// Since WebKit doesn't know the height until after the image has loaded, perform everything in an onload copy
 				$('<img />').load(function() {
 					var attrW = 'width',
 						attrH = 'height',
 						w = $that.attr(attrW),
 						h = $that.attr(attrH);
-					
+
 					if (!w || !h) {
 						var temp = new Image();
 						temp.src = $that.attr('src');
@@ -316,20 +333,20 @@
 						if (!h)
 							h = temp.height;
 					}
-					
+
 					var wPercent = $that.width()/100,
 						hPercent = $that.height()/100,
 						map = $that.attr('usemap').replace('#', ''),
 						c = 'coords';
-					
+
 					$('map[name="' + map + '"]').find('area').each(function() {
 						var $this = $(this);
 						if (!$this.data(c))
 							$this.data(c, $this.attr(c));
-						
+
 						var coords = $this.data(c).split(','),
 							coordsPercent = new Array(coords.length);
-						
+
 						for (var i = 0; i < coordsPercent.length; ++i) {
 							if (i % 2 === 0)
 								coordsPercent[i] = parseInt(((coords[i]/w)*100)*wPercent);
@@ -342,7 +359,7 @@
 			});
 		};
 		$(window).resize(rwdImageMap).trigger('resize');
-		
+
 		return this;
 	};
 })(jQuery);
