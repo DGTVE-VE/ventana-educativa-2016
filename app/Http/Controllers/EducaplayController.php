@@ -178,7 +178,10 @@ class EducaplayController extends Controller {
     }
     
     public function comentariosVideo($id){
-        $comments = Edu_comments::where('video_id', '=', $id)->where('comment_id', '=', 0)->orderBy('created_at','desc')->get();
+        $comments = Edu_comments::
+			where('video_id', $id)
+			->where('comment_id', 0)
+			->orderBy('created_at','desc')->get();
         return view('viewEducaplay/comments')->with('comments', $comments);
     }
 	

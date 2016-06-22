@@ -249,7 +249,7 @@ Educaplay
 				method: "GET",
 				url: _url,
 				error: function (ts) {
-					//console.log(ts.responseText);
+					console.log(ts.responseText);
 				}})
 					.done(function (msg) {
 						
