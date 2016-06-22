@@ -13,13 +13,17 @@
     </div>
     <!-- Imagnes proyectos -->
 
+    <?php $i = 0; ?>
+
     @foreach($proyectos as $key)
 
     <div class="col-sm-6 col-md-4">
-        <a href="{{url('redmite/proyectos#0')}}">
+        <a href="{{url('redmite/proyectos#'.$i)}}">
             {{ HTML::image($key->banner,$key->titulo, array('class'=>'img-responsive img-rounded imgAbajo10'))}}
         </a>
     </div>
+
+    <?php $i++; ?>
 
     @endforeach
 
