@@ -51,7 +51,7 @@ html,body {
     border: 1px solid #141414;
    }
 
-/*	*********************	Estilo página inicial	**********	*/
+/*	*********************	Estilo pï¿½gina inicial	**********	*/
     .fondoDegradadoMenuInicial{
         background: rgba(0, 0, 0, .3); /* For browsers that do not support gradients */
         background: -webkit-linear-gradient(rgba(0, 0, 0, .3), transparent); /* For Safari 5.1 to 6.0 */
@@ -97,7 +97,7 @@ html,body {
     }
     .margenMenuChico{
         padding-top:55px;
-    }11:36 a. m. 25/05/2016
+    }
     .estiloTab{
         height:350px; color:white;
     }
