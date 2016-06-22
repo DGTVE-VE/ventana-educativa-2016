@@ -23,15 +23,20 @@ Proyectos
 
                     <!-- Carousel items -->
                     <div class="carousel-inner">
+
+
                         <div class="active item" data-slide-number="0">
                            {{ HTML::image('imagenes/red/proyectos/bannersproyectos/1erencuentro.jpg','baner1 proyectos')}}
                         </div>
-                        <div class="item" data-slide-number="1">
-                            {{ HTML::image('imagenes/red/proyectos/bannersproyectos/ventanaeducativa.jpg','baner2 proyectos')}}
+
+                        @for($i = 1; $i < sizeof($proyectos); $i++)
+
+                        <div class="item" data-slide-number={{$i}}>
+                            {{ HTML::image($proyectos[$i]->thumbnail,$proyectos[$i]->titulo)}}
                         </div>
-                        <div class="item" data-slide-number="2">
-                            {{ HTML::image('imagenes/red/proyectos/bannersproyectos/pedagogiadigital.jpg','baner3 proyectos')}}
-                        </div>
+
+                        @endfor
+
                     </div><!-- Carousel nav -->
                 </div>
                 <a  data-slide="prev" href="{{url('#myCarouselProyecto')}}" class="left carousel-control circuloFlecha controlIzquierdoCarousel" >‹</a>
