@@ -41,22 +41,6 @@ Educaplay
 				});
 			}
 
-			function cargaComentarios(idVideoFnc, serieIdFnc){
-				var dirComentarios = "{{url('educaplay/comentarioVideo')}}" + "/" + idVideoFnc + "/" + serieIdFnc;
-				$('#comentarioVideo').attr('src',dirComentarios);				
-			}
-			function muestraVideo(urlVideo, idVideo, serieId){
-				cargaRating(idVideo);
-				var direccionVideo = "https://www.youtube.com/embed/" + urlVideo + "?autoplay=1";
-				cargaComentarios(idVideo, serieId);
-				$('#episodio7').attr('src',direccionVideo);
-				$('#episodio8').css('display','block');
-				$('#episodio7').attr('name',idVideo);
-				$('#temporadaActual').text($('#temporadaSerie' + idVideo).val());
-				$('#capituloActual').text($('#episodioSerie' + idVideo).val());
-				$('#sinopsisActual').text($('#sinopsisSerie' + idVideo).val());
-			}
-
 			function guardaRating(CalifRating){
 				var idVideo = $('#episodio7').attr('name');
 				$.ajax({
@@ -70,29 +54,18 @@ Educaplay
 					console.log ( "Data Saved: " + msg + ' ' + idVideo);
 				});
 			}
-			function guardaComentario(){
-				var comentario = $('#textoComenta').val();
-				if(comentario=='Escribe tu comentario'){
-					alert('Escribe un comentario');
-				}else{
-					var urlFrameComent = $('#comentarioVideo').attr('src').split('/');
-					var idSerieCom = urlFrameComent.pop();
-					var idVideoCom = urlFrameComent.pop();
-					$.ajax({
-						method: "POST",
-						url: "{{url('educaplay/guardaComentaVideo')}}",
-						data: { video_id: idVideoCom, serie_id: idSerieCom, comenta: comentario, _token:"{{csrf_token()}}" },
-						error: function(ts) {
-							console.log (ts.responseText);
-							alert('Error al Guardar Comentario');
-					}})
-					.done(function( msg ) {
-						console.log ( "Data Saved: " + msg);
-						$('#textoComenta').val('Escribe tu comentario');
-						cargaComentarios(idVideoCom, idSerieCom);
-						alert('Comentario guardado correctamente');
-					});
-				}
+
+			function muestraVideo(urlVideo, idVideo, serieId){
+				cargaRating(idVideo);
+				var direccionVideo = "https://www.youtube.com/embed/" + urlVideo + "?autoplay=1";
+				$('#episodio7').attr('src',direccionVideo);
+				$('#episodio8').css('display','block');
+				$('#episodio7').attr('name',idVideo);
+				$('#temporadaActual').text($('#temporadaSerie' + idVideo).val());
+				$('#capituloActual').text($('#episodioSerie' + idVideo).val());
+				$('#sinopsisActual').text($('#sinopsisSerie' + idVideo).val());
+				$('#video-id').val(idVideo);
+				loadComments(idVideo);
 			}
 
 			function quitaTexto(txtComenta){
@@ -107,8 +80,6 @@ Educaplay
 					$('#textoComenta').css('color','gray');
 				}
 			}
-			$(document).ready( function (){
-			});
 		</script>
 		<style>
 			.estiloTxt{
@@ -194,14 +165,13 @@ Educaplay
 						@endif
 						<p style="font-size:1.2em;"> Temporada: <span id="temporadaActual">{{$infoTemporada}}</span> Capítulo: <span id="capituloActual">{{$infoCapitulo}}</span></p>
 						<p> Sinopsis: <span id="sinopsisActual">{{$infoSinopsis}}</span></p>
-						@if(Auth::check ())
-							<textarea id="textoComenta" rows="4" cols="50" style="color: gray; background-color:transparent; border: solid 1px purple;" onfocus="quitaTexto(this.value)" onblur="ponTexto(this.value)">Escribe tu comentario</textarea><br>
-							<p style="color:red; cursor: pointer; font-size:1.3em" class="text-uppercase" onclick="guardaComentario()">Envia tu Comentario </p>
-						@endif
-							<p>COMENTARIOS PARA ESTE VIDEO.</p>
-							{{--*/ $dirurlcoment = 'educaplay/comentarioVideo/'.$idVideo.'/'.$idSerie; $urlComent = url($dirurlcoment); /*--}}
-							<iframe id="comentarioVideo" src={{$urlComent}} frameborder="1" style="width:95%;">
-							</iframe>
+						@if (Auth::check ())
+							<br>
+							<textarea id="comment" rows="3" placeholder="Comenta aquí..." class="form-control textareaTransparencia"></textarea>                
+							<a class="linkComentar" id="btn-comentar">Envíar Comentario </a>
+							<br><br>                                            
+							<div id="comentarios"></div>
+						@endif                        
 					</div>
 					</div>
 				</div>
@@ -217,6 +187,7 @@ Educaplay
 							<input type="hidden" id="temporadaSerie{{$serie->id}}" value="{{$serie->temporada}}" />
 							<input type="hidden" id="episodioSerie{{$serie->id}}" value="{{$serie->capitulo}}" />
 							<input type="hidden" id="sinopsisSerie{{$serie->id}}" value="{{$serie->sinopsis}}" />
+							<input type="hidden" id="video-id" value="{{$idVideo}}" />
 						</div>
 					</div>
 			@if($imprimeTitulo % 6 === 0 && $imprimeTitulo !== 0)
@@ -231,4 +202,61 @@ Educaplay
 			<p style="color:white;"> SIN DATOS PARA ESTA SERIE</p>
 		</div>
 	@endif
+	<script>
+		/*$(document).on('click', "a.linkComentar", function () {
+			var $element = $(this);
+			var partes = $element.attr('id').split('_');
+			var respuesta = $('#responde_' + partes[1]).val();
+			console.log(respuesta);
+			$.ajax({
+				method: "POST",
+				url: "{{url('educaplay/guardaComentaVideo')}}",
+				data: {comment: respuesta,
+					video_id: $("#video-id").val(),
+					comment_id: partes[1],
+					serie_id: "{{$idSerie}}",
+					_token: "{{csrf_token()}}"},
+				error: function (ts) {
+					console.log(ts.responseText);
+				}})
+					.done(function (msg) {
+						$("#respuestas-" + partes[1]).prepend($(msg).fadeIn('slow'));
+						$('#responde_' + partes[1]).val('');
+						console.log("Data Saved: " + msg);
+					});
+		});*/
+		$('#btn-comentar').click(function () {
+			$.ajax({
+				method: "POST",
+				url: "{{url('educaplay/guardaComentaVideo')}}",
+				data: {comment: $("#comment").val(),
+					video_id: $("#video-id").val(),
+					comment_id: 0,
+					serie_id: "{{$idSerie}}",
+					_token: "{{csrf_token()}}"},
+				error: function (ts) {
+					console.log(ts.responseText);
+				}})
+					.done(function (msg) {
+						$("#comentarios").prepend(msg);
+						console.log("Data Saved: " + msg);
+					});
+		});
+		function loadComments(id) {
+			var urlget = "{{url('educaplay/comentarioVideo')}}";
+			var _url = urlget + '/' + id;
+			$.ajax({
+				method: "GET",
+				url: _url,
+				error: function (ts) {
+					//console.log(ts.responseText);
+				}})
+					.done(function (msg) {
+						
+						console.log('Comentarios cargados: ' + id);
+						$("#comentarios").html(msg);
+						//                    console.log ( "Data Saved: " + msg );
+					});
+		}
+	</script>
 @endsection

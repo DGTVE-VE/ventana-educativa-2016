@@ -166,34 +166,22 @@ class EducaplayController extends Controller {
 		return $devuelve;
 	}
 
-	function comentariosVideo($videoId, $serieId){
-		$comentariosGuardados = DB::table('edu_comments')
-			->join('edu_video', 'edu_comments.video_id', '=', 'edu_video.id')
-			->select('edu_comments.comment', 'edu_video.temporada', 'edu_video.capitulo')
-			->where('edu_comments.video_id', $videoId)
-			->where('edu_comments.serie_id', $serieId)
-			->get();
-		return view('viewEducaplay/comentariosVideo')->with('comentariosVideo',$comentariosGuardados);
-	}
+    public function guardaComentaVideo(){
+        $comment = new Edu_comments;
+        $comment->comment_id = filter_input (INPUT_POST, 'comment_id');
+        $comment->usuario_id = Auth::user ()->id;
+        $comment->video_id = filter_input (INPUT_POST, 'video_id');        
+        $comment->comment = filter_input (INPUT_POST, 'comment');
+		$comment->serie_id = filter_input (INPUT_POST, 'serie_id');
+        $comment->save ();
+        return view('viewEducaplay/comment')->with('comment', $comment);
+    }
+    
+    public function comentariosVideo($id){
+        $comments = Edu_comments::where('video_id', '=', $id)->where('comment_id', '=', 0)->orderBy('created_at','desc')->get();
+        return view('viewEducaplay/comments')->with('comments', $comments);
+    }
 	
-	function guardaComentaVideo(){
-		$video_id = filter_input(INPUT_POST,'video_id');
-		$serie_id = filter_input(INPUT_POST,'serie_id');
-		$comenta = filter_input(INPUT_POST,'comenta');
-		$user_id = Auth::user ()->id;
-		$guardaComenta = Edu_comments::firstOrNew(['video_id'=>$video_id, 'serie_id'=>$serie_id, 'usuario_id'=>$user_id]);
-		$guardaComenta->comment = $comenta;
-		$guardaComenta->save();
-
-		if($guardaComenta!=null){
-		  $regreso = $guardaComenta;
-		}
-		else{
-		  $regreso = 0;
-		}
-		return $regreso;
-	}
-  
   function series($idSerie, $urlVideo, $idVideo) {
     $episodiosSerie = DB::table('edu_serie')
     ->join('edu_imagen', 'edu_serie.id', '=', 'edu_imagen.serie_id')
