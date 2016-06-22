@@ -25,9 +25,9 @@ class RedmiteController extends Controller {
 
       $banner = DB::table('red_banners')->whereactivo('1')->get();
 
-      //print_r($banner);
+      $proyectos = DB::table('red_proyectos')->whereactivo('1')->get();
 
-        return view('viewRed/redmite')->with('banner', collect($banner));
+        return view('viewRed/redmite')->with('banner', collect($banner))->with('proyectos', collect($proyectos));
     }
 
     public function publicaciones() {
@@ -43,7 +43,10 @@ class RedmiteController extends Controller {
     }
 
     public function proyectos() {
-        return view('viewRed/paginaproyectos');
+
+      $proyectos = DB::table('red_proyectos')->whereactivo('1')->get();
+
+        return view('viewRed/paginaproyectos')->with('proyectos', collect($proyectos));
     }
 
     public function areastematicas() {
