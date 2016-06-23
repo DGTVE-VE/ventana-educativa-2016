@@ -27,7 +27,26 @@ class RedmiteController extends Controller {
 
       $proyectos = DB::table('red_proyectos')->whereactivo('1')->get();
 
-        return view('viewRed/redmite')->with('banner', collect($banner))->with('proyectos', collect($proyectos));
+      $colaboradoresmx = DB::table('red_colaboradores')->join('users', 'users.id', '=', 'red_colaboradores.user_id')->wherepais('MX')->get(); //México
+      $colaboradorescr = DB::table('red_colaboradores')->join('users', 'users.id', '=', 'red_colaboradores.user_id')->wherepais('CR')->get(); //Costa Rica
+      $colaboradoresdo = DB::table('red_colaboradores')->join('users', 'users.id', '=', 'red_colaboradores.user_id')->wherepais('DO')->get(); //Republica Dominicana
+      $colaboradoressv = DB::table('red_colaboradores')->join('users', 'users.id', '=', 'red_colaboradores.user_id')->wherepais('SV')->get(); //El Salvador
+      $colaboradoresco = DB::table('red_colaboradores')->join('users', 'users.id', '=', 'red_colaboradores.user_id')->wherepais('CO')->get(); //Colombia
+      $colaboradorespa = DB::table('red_colaboradores')->join('users', 'users.id', '=', 'red_colaboradores.user_id')->wherepais('PA')->get(); //Panama
+      $colaboradoresni = DB::table('red_colaboradores')->join('users', 'users.id', '=', 'red_colaboradores.user_id')->wherepais('NI')->get(); //Nicaragua
+      $colaboradoresho = DB::table('red_colaboradores')->join('users', 'users.id', '=', 'red_colaboradores.user_id')->wherepais('HO')->get(); //Honduras
+      $colaboradoresgu = DB::table('red_colaboradores')->join('users', 'users.id', '=', 'red_colaboradores.user_id')->wherepais('GU')->get(); //Honduras
+
+        return view('viewRed/redmite')->with('banner', collect($banner))->with('proyectos', collect($proyectos))
+          ->with('colaboradoresmx', collect($colaboradoresmx))
+          ->with('colaboradorescr', collect($colaboradorescr))
+          ->with('colaboradoresdo', collect($colaboradoresdo))
+          ->with('colaboradoressv', collect($colaboradoressv))
+          ->with('colaboradoresco', collect($colaboradoresco))
+          ->with('colaboradorespa', collect($colaboradorespa))
+          ->with('colaboradoresni', collect($colaboradoresni))
+          ->with('colaboradoresho', collect($colaboradoresho))
+          ->with('colaboradoresgu', collect($colaboradoresgu));
     }
 
     public function publicaciones() {
