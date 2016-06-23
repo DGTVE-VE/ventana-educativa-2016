@@ -14,6 +14,66 @@ Educaplay
 	@if($episodiosSerie!=null)
 		<script src="{{asset ('js/bootstrap-rating-input.min.js')}}"></script>
 		<script>
+	//	*********************Funciones que guardan y consultan comentarios	*******************
+		$(document).on('click', "a.linkComentar", function () {
+			var $element = $(this);
+			var partes = $element.attr('id').split('_');
+			var respuesta = $('#responde_' + partes[1]).val();
+			console.log(respuesta);
+			$.ajax({
+				method: "POST",
+				url: "{{url('educaplay/guardaComentaVideo')}}",
+				data: {comment: respuesta,
+					video_id: $("#video-id").val(),
+					comment_id: partes[1],
+					serie_id: "{{$idSerie}}",
+					_token: "{{csrf_token()}}"},
+				error: function (ts) {
+					console.log(ts.responseText);
+				}})
+					.done(function (msg) {
+						$("#respuestas-" + partes[1]).prepend($(msg).fadeIn('slow'));
+						$('#responde_' + partes[1]).val('');
+						//alert('Sus comentarios han sido enviados');
+						console.log("Data Saved: " + msg);
+					});
+		});
+		$('#btn-comentar').click(function () {
+			$.ajax({
+				method: "POST",
+				url: "{{url('educaplay/guardaComentaVideo')}}",
+				data: {comment: $("#comment").val(),
+					video_id: $("#video-id").val(),
+					comment_id: 0,
+					serie_id: "{{$idSerie}}",
+					_token: "{{csrf_token()}}"},
+				error: function (ts) {
+					console.log(ts.responseText);
+				}})
+					.done(function (msg) {
+						$("#comentarios").prepend(msg);
+						console.log("Data Saved: " + msg);
+						ponTexto();
+						alert('Sus comentarios han sido enviados');
+					});
+		});
+		function loadComments(id) {
+			var urlget = "{{url('educaplay/comentarioVideo')}}";
+			var _url = urlget + '/' + id;
+			$.ajax({
+				method: "GET",
+				url: _url,
+				error: function (ts) {
+					console.log(ts.responseText);
+				}})
+					.done(function (msg) {
+						
+						console.log('Comentarios cargados: ' + id);
+						$("#comentarios").html(msg);
+						//                    console.log ( "Data Saved: " + msg );
+					});
+		}
+		//	********************* Cambia el estilo de la barra de navegación 	*******************
 			$(window).scroll(function(){
 				var scroll_v = this.pageYOffset;
 				if(scroll_v > 10){
@@ -23,6 +83,7 @@ Educaplay
 					$('#navegacionVentana').css('background','transparent');
 				}
 			});
+		//	********************* Funciones de Rating	*******************
 			function refrescaRating(valRating){
 				$("#divRating").empty();
 				$("#divRating").append('<input type="number" name="rating" id="star-rating" data-icon-lib="fa" data-active-icon="fa-star" data-inactive-icon="fa-star-o" onchange="guardaRating(this.value)" value="'+ parseInt(valRating) +'"/>');
@@ -55,6 +116,7 @@ Educaplay
 				});
 			}
 
+			//	*********************	*******************
 			function muestraVideo(urlVideo, idVideo, serieId){
 				cargaRating(idVideo);
 				var direccionVideo = "https://www.youtube.com/embed/" + urlVideo + "?autoplay=1";
@@ -68,18 +130,14 @@ Educaplay
 				loadComments(idVideo);
 			}
 
-			function quitaTexto(txtComenta){
-				if(txtComenta=='Escribe tu comentario'){
-					$('#textoComenta').val('');
-					$('#textoComenta').css('color','white');
-				}
+			function ponTexto(){
+				$('#comment').val('Comenta aquí...');
+				$('#comment').css('color','gray');
 			}
-			function ponTexto(txtComenta){
-				if(txtComenta==''){
-					$('#textoComenta').val('Escribe tu comentario');
-					$('#textoComenta').css('color','gray');
-				}
-			}
+			
+			$(document).ready(function(){
+				loadComments($("#video-id").val());
+			});
 		</script>
 		<style>
 			.estiloTxt{
@@ -121,6 +179,125 @@ Educaplay
 				-moz-transition: all 3s ease;
 				-o-transition: all 3s ease;
 			}
+			
+/*Estilo para el registro de usuario en el cambio de avatar*/
+.btn-file-avatar {
+    position: relative;
+    overflow: hidden;
+    background: #67b168;
+}
+.btn-file-avatar input[type=file] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    min-width: 100%;
+    min-height: 100%;
+    font-size: 100px;
+    text-align: right;
+    filter: alpha(opacity=0);
+    opacity: 0;
+    outline: none;
+    background: white;
+    cursor: inherit;
+    display: block;
+}
+
+/*estilo para los comentarios de los videos*/
+.panel-white{
+    background:rgba(0, 0, 0, .1);
+    border: 1px solid white;
+}
+
+.panel-white  .panel-heading {
+    color: #333;
+    background-color: #fff;
+    border-color: #ddd;
+}
+.panel-white  .panel-footer {
+    background-color: #fff;
+    border-color: #ddd;
+}
+
+.post .post-heading {
+    height: 95px;
+    padding: 20px 15px;
+}
+.post .post-heading .avatar {
+    width: 60px;
+    height: 60px;
+    display: block;
+    margin-right: 15px;
+    background: grey;
+}
+.post .post-heading .meta .title {
+    margin-bottom: 0;
+}
+.post .post-heading .meta .title a {
+    color: black;
+}
+.post .post-heading .meta .title a:hover {
+    color: #aaaaaa;
+}
+.post .post-heading .meta .time {
+    margin-top: 8px;
+    color: white;
+}
+.post .post-image .image {
+    width: 100%;
+    height: auto;
+}
+.post .post-description {
+    padding: 15px;
+}
+.post .post-description p {
+    font-size: 14px;
+}
+
+.post .post-footer {
+    border-top: 1px solid #ddd;
+    padding: 15px;
+}
+.post .post-footer .input-group-addon a {
+    color: #454545;
+}
+.post .post-footer .comments-list {
+    padding: 0;
+    margin-top: 20px;
+    list-style-type: none;
+}
+.post .post-footer .comments-list .comment {
+    display: block;
+    width: 100%;
+    margin: 20px 0;
+}
+.post .post-footer .comments-list .comment .avatar {
+    width: 35px;
+    height: 35px;
+}
+.post .post-footer .comments-list .comment .comment-heading {
+    display: block;
+    width: 100%;
+}
+.post .post-footer .comments-list .comment .comment-heading .user {
+    font-size: 14px;
+    font-weight: bold;
+    display: inline;
+    margin-top: 0;
+    margin-right: 10px;
+}
+.post .post-footer .comments-list .comment .comment-heading .time {
+    font-size: 12px;
+    color: #aaa;
+    margin-top: 0;
+    display: inline;
+}
+.post .post-footer .comments-list .comment .comment-body {
+    margin-left: 50px;
+}
+.post .post-footer .comments-list .comment > .comments-list {
+    margin-left: 50px;
+}
+/*fin de estilo para comentarios de videos*/
 		</style>
 
 		@endsection
@@ -202,61 +379,4 @@ Educaplay
 			<p style="color:white;"> SIN DATOS PARA ESTA SERIE</p>
 		</div>
 	@endif
-	<script>
-		/*$(document).on('click', "a.linkComentar", function () {
-			var $element = $(this);
-			var partes = $element.attr('id').split('_');
-			var respuesta = $('#responde_' + partes[1]).val();
-			console.log(respuesta);
-			$.ajax({
-				method: "POST",
-				url: "{{url('educaplay/guardaComentaVideo')}}",
-				data: {comment: respuesta,
-					video_id: $("#video-id").val(),
-					comment_id: partes[1],
-					serie_id: "{{$idSerie}}",
-					_token: "{{csrf_token()}}"},
-				error: function (ts) {
-					console.log(ts.responseText);
-				}})
-					.done(function (msg) {
-						$("#respuestas-" + partes[1]).prepend($(msg).fadeIn('slow'));
-						$('#responde_' + partes[1]).val('');
-						console.log("Data Saved: " + msg);
-					});
-		});*/
-		$('#btn-comentar').click(function () {
-			$.ajax({
-				method: "POST",
-				url: "{{url('educaplay/guardaComentaVideo')}}",
-				data: {comment: $("#comment").val(),
-					video_id: $("#video-id").val(),
-					comment_id: 0,
-					serie_id: "{{$idSerie}}",
-					_token: "{{csrf_token()}}"},
-				error: function (ts) {
-					console.log(ts.responseText);
-				}})
-					.done(function (msg) {
-						$("#comentarios").prepend(msg);
-						console.log("Data Saved: " + msg);
-					});
-		});
-		function loadComments(id) {
-			var urlget = "{{url('educaplay/comentarioVideo')}}";
-			var _url = urlget + '/' + id;
-			$.ajax({
-				method: "GET",
-				url: _url,
-				error: function (ts) {
-					console.log(ts.responseText);
-				}})
-					.done(function (msg) {
-						
-						console.log('Comentarios cargados: ' + id);
-						$("#comentarios").html(msg);
-						//                    console.log ( "Data Saved: " + msg );
-					});
-		}
-	</script>
 @endsection
