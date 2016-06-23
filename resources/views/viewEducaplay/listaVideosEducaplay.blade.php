@@ -357,9 +357,9 @@ Educaplay
 							<br>
 							<textarea id="comment" rows="3" placeholder="Comenta aquí..." class="form-control textareaTransparencia"></textarea>                
 							<a class="estiloEnviar" id="btn-comentar" onclick="guardaComentario()">Envíar Comentario </a>
-							<br><br>                                            
-							<div id="comentarios"></div>
-						@endif                        
+							<br><br>
+						@endif
+						<div id="comentarios"></div>
 					</div>
 					</div>
 				</div>
