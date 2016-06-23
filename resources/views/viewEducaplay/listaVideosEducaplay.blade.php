@@ -34,11 +34,12 @@ Educaplay
 					.done(function (msg) {
 						$("#respuestas-" + partes[1]).prepend($(msg).fadeIn('slow'));
 						$('#responde_' + partes[1]).val('');
-						//alert('Sus comentarios han sido enviados');
+						alert('Sus comentarios han sido enviados');
 						console.log("Data Saved: " + msg);
 					});
 		});
-		$('#btn-comentar').click(function () {
+
+		function guardaComentario() {
 			$.ajax({
 				method: "POST",
 				url: "{{url('educaplay/guardaComentaVideo')}}",
@@ -51,12 +52,13 @@ Educaplay
 					console.log(ts.responseText);
 				}})
 					.done(function (msg) {
-						$("#comentarios").prepend(msg);
 						console.log("Data Saved: " + msg);
+						$("#comentarios").prepend(msg);
 						ponTexto();
 						alert('Sus comentarios han sido enviados');
 					});
-		});
+		}
+		
 		function loadComments(id) {
 			var urlget = "{{url('educaplay/comentarioVideo')}}";
 			var _url = urlget + '/' + id;
@@ -178,6 +180,15 @@ Educaplay
 				-webkit-transition: all 3s ease;
 				-moz-transition: all 3s ease;
 				-o-transition: all 3s ease;
+			}
+			.estiloEnviar{
+				cursor:pointer;
+				color:white;
+			}
+			.estiloEnviar:hover{
+				text-decoration: none;
+				color: white;
+				font-size:1.1em;
 			}
 			
 /*Estilo para el registro de usuario en el cambio de avatar*/
@@ -345,7 +356,7 @@ Educaplay
 						@if (Auth::check ())
 							<br>
 							<textarea id="comment" rows="3" placeholder="Comenta aquí..." class="form-control textareaTransparencia"></textarea>                
-							<a class="linkComentar" id="btn-comentar">Envíar Comentario </a>
+							<a class="estiloEnviar" id="btn-comentar" onclick="guardaComentario()">Envíar Comentario </a>
 							<br><br>                                            
 							<div id="comentarios"></div>
 						@endif                        

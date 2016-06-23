@@ -20,10 +20,10 @@
                     {{--*/ $i = 0; /*--}} 
                     <?php
                     if ($comment instanceof \App\Model\Educaplay\Edu_comments){
-                        $stars = $comment->usuario->ratingTelesecundaria($comment->telesecundaria_id);
+                        $stars = $comment->usuario->ratingTelesecundaria($comment->video_id);
                     } else if ($comment instanceof \App\Model\Educaplay\Edu_comments){
-                        $stars = $comment->usuario->ratingTelebachillerato($comment->telebachillerato_id);
-                    }                    
+                        $stars = $comment->usuario->ratingTelebachillerato($comment->video_id);
+                    }
                     ?>
 <!--                    Pone las estrellas llenas-->
                     @for ($i=0; $i<$stars; $i++)
