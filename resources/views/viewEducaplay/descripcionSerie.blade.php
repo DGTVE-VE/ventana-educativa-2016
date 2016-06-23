@@ -57,14 +57,8 @@
 					<div class="row">
 						<div class="col-md-6 col-md-offset-1">
 							<p class="text-center lead">Comentarios a videos de esta serie.</p>
-						@if($comentarios!=null)
-							@foreach($comentarios as $elemComentario)
-								<p> <span style="color:gray;" class="lead">Temporada {{$elemComentario->temporada}}. Capitulo {{$elemComentario->capitulo}}</span>
-								<br> <span style="color:white;">{{$elemComentario->comment}}</span></p><br>
-							@endforeach
-						@else
-							<p style="color:white;"> AUN NO HAY COMENTARIOS PARA ESTA SERIE</p>
-						@endif
+							    <script src="{{asset ('js/jquery-ui.min.js')}}"></script>
+							<div id="comentariosDetalle" style="color:white; max-height:200px;"></div>
 						</div>
 					</div>
 				</div>
@@ -88,6 +82,9 @@
 	</div>
 @endif
 @endsection
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+	<link rel="stylesheet" href="{{ asset('css/jquery-ui.min.css') }}" >
+
 <script>
 function votacion(nombre_serie){
 
@@ -110,6 +107,25 @@ if ( r == true){
 
 }
 
-
-};
+}
+		function loadComments(id) {
+			var urlget = "{{url('educaplay/comentarioSerie')}}";
+			var _url = urlget + '/' + id;
+			$.ajax({
+				method: "GET",
+				url: _url,
+				error: function (ts) {
+					console.log(ts.responseText);
+				}})
+					.done(function (msg) {
+						
+						console.log('Comentarios cargados: ' + id);
+						$("#comentariosDetalle").html(msg);
+						//                    console.log ( "Data Saved: " + msg );
+					});
+		}
+		
+		$(document).ready(function(){
+			loadComments('{{$primerDetalleSerie->id}}');
+		});
 </script>

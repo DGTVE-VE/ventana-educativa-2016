@@ -53,6 +53,7 @@ Educaplay
 				}})
 					.done(function (msg) {
 						console.log("Data Saved: " + msg);
+						$("#sinComentarios").css('visibility', 'hidden');
 						$("#comentarios").prepend(msg);
 						ponTexto();
 						alert('Sus comentarios han sido enviados');
@@ -133,7 +134,7 @@ Educaplay
 			}
 
 			function ponTexto(){
-				$('#comment').val('Comenta aquí...');
+				$('#comment').val('');
 				$('#comment').css('color','gray');
 			}
 			
@@ -359,7 +360,7 @@ Educaplay
 							<a class="estiloEnviar" id="btn-comentar" onclick="guardaComentario()">Envíar Comentario </a>
 							<br><br>
 						@endif
-						<div id="comentarios"></div>
+						<div id="comentarios" style="color:white"></div>
 					</div>
 					</div>
 				</div>
