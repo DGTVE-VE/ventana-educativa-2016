@@ -16,14 +16,26 @@
         })
     });
     function muestraDetalle(numDiv,serieId) {
-        var nombreDivDetalle = '#detalleSerie' + numDiv;
-		var srcIframe = "educaplay/descripciones/"+ serieId;
-		$(nombreDivDetalle).attr('src', srcIframe);
-        $(nombreDivDetalle).css('display', 'block');
-		var btnCerrarDesc = '#btnCerrarDesc' + numDiv;
-        $(btnCerrarDesc).css('display', 'block');
-        var windowTop = $(nombreDivDetalle).offset().top - '300';
-        $(document).scrollTop(windowTop);
+		var nombreDivDetalle = '#detalleSerie' + numDiv;
+		var urlget = "educaplay/descripciones";
+		var _url = urlget + '/' + serieId;
+		$.ajax({
+			async: true,
+			method: "GET",
+			url: _url,
+			error: function (ts) {
+				console.log(ts.responseText);
+			}})
+			.done(function (msg) {
+				console.log('Comentarios cargados: ' + serieId);
+				$(nombreDivDetalle).html(msg);
+				$(nombreDivDetalle).css('display', 'block');
+				var btnCerrarDesc = '#btnCerrarDesc' + numDiv;
+				$(btnCerrarDesc).css('display', 'block');
+				var windowTop = $(nombreDivDetalle).offset().top - '300';
+				$(document).scrollTop(windowTop);
+				//                    console.log ( "Data Saved: " + msg );
+			});
     }
 
     function cierraDetalle(numDiv) {

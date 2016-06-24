@@ -391,6 +391,5 @@ Educaplay
 			<p style="color:white;"> SIN DATOS PARA ESTA SERIE</p>
 		</div>
 	@endif
-	 <link rel="stylesheet" href="{{ asset('css/jquery-ui.min.css') }}" >
-     <script src="{{asset ('js/jquery-ui.min.js')}}"></script>
+
 @endsection
