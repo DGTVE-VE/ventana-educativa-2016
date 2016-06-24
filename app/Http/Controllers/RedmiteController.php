@@ -35,7 +35,7 @@ class RedmiteController extends Controller {
       $colaboradorespa = DB::table('red_colaboradores')->join('users', 'users.id', '=', 'red_colaboradores.user_id')->wherepais('PA')->get(); //Panama
       $colaboradoresni = DB::table('red_colaboradores')->join('users', 'users.id', '=', 'red_colaboradores.user_id')->wherepais('NI')->get(); //Nicaragua
       $colaboradoresho = DB::table('red_colaboradores')->join('users', 'users.id', '=', 'red_colaboradores.user_id')->wherepais('HO')->get(); //Honduras
-      $colaboradoresgu = DB::table('red_colaboradores')->join('users', 'users.id', '=', 'red_colaboradores.user_id')->wherepais('GU')->get(); //Honduras
+      $colaboradoresgu = DB::table('red_colaboradores')->join('users', 'users.id', '=', 'red_colaboradores.user_id')->wherepais('GU')->get(); //Guatemala
 
         return view('viewRed/redmite')->with('banner', collect($banner))->with('proyectos', collect($proyectos))
           ->with('colaboradoresmx', collect($colaboradoresmx))
@@ -50,7 +50,30 @@ class RedmiteController extends Controller {
     }
 
     public function publicaciones() {
-        return view('viewRed/paginapublicaciones');
+
+
+        $publicaciones = DB::table('red_publicaciones')->orderBy('pais', 'desc')->get();//Todos
+        $publicacionesmx = DB::table('red_publicaciones')->wherepais('MX')->get();//México
+        $publicacionescr = DB::table('red_publicaciones')->wherepais('CR')->get();//Costa Rica
+        $publicacionesdo = DB::table('red_publicaciones')->wherepais('DO')->get();//Republica Dominicana
+        $publicacionessv = DB::table('red_publicaciones')->wherepais('SV')->get();//El Salvador
+        $publicacionesco = DB::table('red_publicaciones')->wherepais('CO')->get();//Colombia
+        $publicacionespa = DB::table('red_publicaciones')->wherepais('PA')->get();//Panama
+        $publicacionesni = DB::table('red_publicaciones')->wherepais('NI')->get();//Nicaragua
+        $publicacionesho = DB::table('red_publicaciones')->wherepais('HO')->get();//Honduras
+        $publicacionesgu = DB::table('red_publicaciones')->wherepais('GU')->get();//Guatemala
+
+        return view('viewRed/paginapublicaciones')
+          ->with('publicaciones', $publicaciones)
+          ->with('publicacionesmx', $publicacionesmx)
+          ->with('publicacionescr', $publicacionescr)
+          ->with('publicacionesdo', $publicacionesdo)
+          ->with('publicacionessv', $publicacionessv)
+          ->with('publicacionesco', $publicacionesco)
+          ->with('publicacionespa', $publicacionespa)
+          ->with('publicacionesni', $publicacionesni)
+          ->with('publicacionesho', $publicacionesho)
+          ->with('publicacionesgu', $publicacionesgu);
     }
 
     public function quienesSomos() {
