@@ -1,6 +1,10 @@
-@foreach ($comments as $comment)
-    @include('viewEducaplay.comment', ['comment'=>$comment])
-@endforeach 
+@if($comments!= '[]')
+	@foreach ($comments as $comment)
+		@include('viewEducaplay.comment', ['comment'=>$comment])
+	@endforeach 
+@else
+	<p id="sinComentarios" style="color:white;"> Aun no hay comentarios </p>
+@endif
 
 <script>
  $('.link-respuesta').click (function (){            

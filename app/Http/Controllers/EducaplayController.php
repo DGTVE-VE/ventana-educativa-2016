@@ -184,7 +184,13 @@ class EducaplayController extends Controller {
 			->orderBy('created_at','desc')->get();
         return view('viewEducaplay/comments')->with('comments', $comments);
     }
-	
+    public function comentariosSerie($id){
+        $comments = Edu_comments::
+			where('serie_id', $id)
+			->where('comment_id', 0)
+			->orderBy('created_at','desc')->get();
+        return view('viewEducaplay/comments')->with('comments', $comments);
+    }
   function series($idSerie, $urlVideo, $idVideo) {
     $episodiosSerie = DB::table('edu_serie')
     ->join('edu_imagen', 'edu_serie.id', '=', 'edu_imagen.serie_id')
