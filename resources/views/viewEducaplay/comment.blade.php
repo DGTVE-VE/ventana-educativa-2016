@@ -1,7 +1,7 @@
 @if ($comment->comment_id > 0)
-<div id="comment-{{$comment->id}}" class="col-md-12 panel panel-white post panel-shadow" style="border:none;"><!--Inicia comentario 1-->
+<div id="comment-{{$comment->id}}" class="col-md-6 panel panel-white post panel-shadow" style="border:none;"><!--Inicia comentario 1-->
 @else
-<div id="comment-{{$comment->id}}" class="col-md-6 panel panel-white post panel-shadow"><!--Inicia comentario 1-->
+<div id="comment-{{$comment->id}}" class="col-md-12 panel panel-white post panel-shadow"><!--Inicia comentario 1-->
 @endif
     <div class="">
         <div class="post-heading">
