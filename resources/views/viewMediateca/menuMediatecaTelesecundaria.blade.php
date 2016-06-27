@@ -10,6 +10,8 @@
                     <li><a data-toggle="modal" href="#myModal-calendario">Calendario</a></li>
                     <li><a data-toggle="modal" href="#myModal-materialEducativo">Materiales Impresos</a></li>
                     <li id="sinBorde"><a href="{{url('http://www.televisioneducativa.gob.mx/canales/telesecundaria#subenlaces')}}" target="_blank">Programación Televisiva</a></li>
+                    <li></li>                                        
+                    <li><a href="#">Mediateca Didáctica</a></li>                                                            
                 </ul>|
             </nav>
 
