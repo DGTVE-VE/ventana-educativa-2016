@@ -12,6 +12,6 @@ class Edu_comments extends Model
         return $this->belongsTo('App\User', 'usuario_id');
     }
     public function respuestas (){
-        return $this->hasMany ('App\Model\Mediateca\TelebachilleratoComments', 'comment_id')->orderBy ('created_at','DESC');
+        return $this->hasMany ('App\Model\Educaplay\Edu_comments', 'comment_id')->orderBy ('created_at','DESC');
     }
 }
