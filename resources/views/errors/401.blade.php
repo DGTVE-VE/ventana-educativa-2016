@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Error 503.</title>
+        <title>Error 401.</title>
 
         <link href="https://fonts.googleapis.com/css?family=Lato:100" rel="stylesheet" type="text/css">
 
@@ -40,8 +40,8 @@
     <body>
         <div class="container">
             <div class="content">
-                <div class="title">Servicio no disponible temporalmente.</div>
-                <h3>Disculpa las molestias</h3>
+                <div class="title">Página no autorizada.</div>
+                <h3>Tal vez no has iniciado sesión o tu tipo de usuario no tiene privilegios para acceder a esta sección.</h3>
             </div>
         </div>
     </body>
