@@ -153,6 +153,13 @@ Route::group(['middleware' => 'web'], function () {
     Route::get('docente/materialapoyo', 'DocenteController@materialapoyo');
     Route::get('docente/foros', 'DocenteController@foros');
     /*     * **************************Docente********************** */
+    
+    
+    /*     * **************************Administración********************** */
+    Route::get('admin', 'AdminController@admin');
+    /*     * **************************Administración********************** */
+    
+    
 });
 
 //Route::get ('api/getImagenes/{tipo}/{id}', '');

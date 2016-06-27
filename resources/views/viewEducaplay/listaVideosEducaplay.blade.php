@@ -13,6 +13,7 @@ Educaplay
 	</script>
 	@if($episodiosSerie!=null)
 		<script src="{{asset ('js/bootstrap-rating-input.min.js')}}"></script>
+		<script src="https://www.youtube.com/player_api"></script>
 		<script>
 	//	*********************Funciones que guardan y consultan comentarios	*******************
 		$(document).on('click', "a.linkComentar", function () {
@@ -119,11 +120,23 @@ Educaplay
 				});
 			}
 
+			function ponTexto(){
+				$('#comment').val('');
+				$('#comment').css('color','gray');
+			}
+			
+			$(document).ready(function(){
+				loadComments($("#video-id").val());
+			});
+			
+			var player;
+			var IdVideoYoutube;
 			//	*********************	*******************
+			
 			function muestraVideo(urlVideo, idVideo, serieId){
 				cargaRating(idVideo);
-				var direccionVideo = "https://www.youtube.com/embed/" + urlVideo + "?autoplay=1";
-				$('#episodio7').attr('src',direccionVideo);
+				IdVideoYoutube = urlVideo;
+				player.loadVideoById(urlVideo);
 				$('#episodio8').css('display','block');
 				$('#episodio7').attr('name',idVideo);
 				$('#temporadaActual').text($('#temporadaSerie' + idVideo).val());
@@ -133,14 +146,31 @@ Educaplay
 				loadComments(idVideo);
 			}
 
-			function ponTexto(){
-				$('#comment').val('');
-				$('#comment').css('color','gray');
+			function onYouTubePlayerAPIReady() {
+				initializeYoutube(IdVideoYoutube, 0);
 			}
-			
-			$(document).ready(function(){
-				loadComments($("#video-id").val());
-			});
+			function initializeYoutube(youtubeId, time) {
+				player = new YT.Player('player', {
+					width: 640,
+					height: 390,
+					videoId: youtubeId,
+					playerVars: {
+						controls: 0, // Los controles no se muestran
+						playsinline: 0, // Reproducción a pantalla completa
+						iv_load_policy: 3, // Las anotaciones del video no se muestran 
+						modestbranding: 1, // Evita que el logo de youtube se muestre en la barra de control
+						showinfo: 0, // Evita que se muestre información del video antes de su reproducción
+						enablejsapi: 1, // Permite que el reproductor sea controlado por el API de Javascript
+						autoplay: 1, // Autoinicio habilitado
+						rel: 0, // Evita que muestre videos relacionados al finalizar.
+						start: time // Tiempo en el que debe iniciar el video
+					},
+					events: {
+						//'onReady': onPlayerReady,
+						//'onStateChange': onPlayerStateChange
+					}
+				});
+			}
 		</script>
 		<style>
 			.estiloTxt{
@@ -192,124 +222,124 @@ Educaplay
 				font-size:1.1em;
 			}
 			
-/*Estilo para el registro de usuario en el cambio de avatar*/
-.btn-file-avatar {
-    position: relative;
-    overflow: hidden;
-    background: #67b168;
-}
-.btn-file-avatar input[type=file] {
-    position: absolute;
-    top: 0;
-    right: 0;
-    min-width: 100%;
-    min-height: 100%;
-    font-size: 100px;
-    text-align: right;
-    filter: alpha(opacity=0);
-    opacity: 0;
-    outline: none;
-    background: white;
-    cursor: inherit;
-    display: block;
-}
+			/*Estilo para el registro de usuario en el cambio de avatar*/
+			.btn-file-avatar {
+				position: relative;
+				overflow: hidden;
+				background: #67b168;
+			}
+			.btn-file-avatar input[type=file] {
+				position: absolute;
+				top: 0;
+				right: 0;
+				min-width: 100%;
+				min-height: 100%;
+				font-size: 100px;
+				text-align: right;
+				filter: alpha(opacity=0);
+				opacity: 0;
+				outline: none;
+				background: white;
+				cursor: inherit;
+				display: block;
+			}
 
-/*estilo para los comentarios de los videos*/
-.panel-white{
-    background:rgba(0, 0, 0, .1);
-    border: 1px solid white;
-}
+			/*estilo para los comentarios de los videos*/
+			.panel-white{
+				background:rgba(0, 0, 0, .1);
+				border: 1px solid white;
+			}
 
-.panel-white  .panel-heading {
-    color: #333;
-    background-color: #fff;
-    border-color: #ddd;
-}
-.panel-white  .panel-footer {
-    background-color: #fff;
-    border-color: #ddd;
-}
+			.panel-white  .panel-heading {
+				color: #333;
+				background-color: #fff;
+				border-color: #ddd;
+			}
+			.panel-white  .panel-footer {
+				background-color: #fff;
+				border-color: #ddd;
+			}
 
-.post .post-heading {
-    height: 95px;
-    padding: 20px 15px;
-}
-.post .post-heading .avatar {
-    width: 60px;
-    height: 60px;
-    display: block;
-    margin-right: 15px;
-    background: grey;
-}
-.post .post-heading .meta .title {
-    margin-bottom: 0;
-}
-.post .post-heading .meta .title a {
-    color: black;
-}
-.post .post-heading .meta .title a:hover {
-    color: #aaaaaa;
-}
-.post .post-heading .meta .time {
-    margin-top: 8px;
-    color: white;
-}
-.post .post-image .image {
-    width: 100%;
-    height: auto;
-}
-.post .post-description {
-    padding: 15px;
-}
-.post .post-description p {
-    font-size: 14px;
-}
+			.post .post-heading {
+				height: 95px;
+				padding: 20px 15px;
+			}
+			.post .post-heading .avatar {
+				width: 60px;
+				height: 60px;
+				display: block;
+				margin-right: 15px;
+				background: grey;
+			}
+			.post .post-heading .meta .title {
+				margin-bottom: 0;
+			}
+			.post .post-heading .meta .title a {
+				color: black;
+			}
+			.post .post-heading .meta .title a:hover {
+				color: #aaaaaa;
+			}
+			.post .post-heading .meta .time {
+				margin-top: 8px;
+				color: white;
+			}
+			.post .post-image .image {
+				width: 100%;
+				height: auto;
+			}
+			.post .post-description {
+				padding: 15px;
+			}
+			.post .post-description p {
+				font-size: 14px;
+			}
 
-.post .post-footer {
-    border-top: 1px solid #ddd;
-    padding: 15px;
-}
-.post .post-footer .input-group-addon a {
-    color: #454545;
-}
-.post .post-footer .comments-list {
-    padding: 0;
-    margin-top: 20px;
-    list-style-type: none;
-}
-.post .post-footer .comments-list .comment {
-    display: block;
-    width: 100%;
-    margin: 20px 0;
-}
-.post .post-footer .comments-list .comment .avatar {
-    width: 35px;
-    height: 35px;
-}
-.post .post-footer .comments-list .comment .comment-heading {
-    display: block;
-    width: 100%;
-}
-.post .post-footer .comments-list .comment .comment-heading .user {
-    font-size: 14px;
-    font-weight: bold;
-    display: inline;
-    margin-top: 0;
-    margin-right: 10px;
-}
-.post .post-footer .comments-list .comment .comment-heading .time {
-    font-size: 12px;
-    color: #aaa;
-    margin-top: 0;
-    display: inline;
-}
-.post .post-footer .comments-list .comment .comment-body {
-    margin-left: 50px;
-}
-.post .post-footer .comments-list .comment > .comments-list {
-    margin-left: 50px;
-}
-/*fin de estilo para comentarios de videos*/
+			.post .post-footer {
+				border-top: 1px solid #ddd;
+				padding: 15px;
+			}
+			.post .post-footer .input-group-addon a {
+				color: #454545;
+			}
+			.post .post-footer .comments-list {
+				padding: 0;
+				margin-top: 20px;
+				list-style-type: none;
+			}
+			.post .post-footer .comments-list .comment {
+				display: block;
+				width: 100%;
+				margin: 20px 0;
+			}
+			.post .post-footer .comments-list .comment .avatar {
+				width: 35px;
+				height: 35px;
+			}
+			.post .post-footer .comments-list .comment .comment-heading {
+				display: block;
+				width: 100%;
+			}
+			.post .post-footer .comments-list .comment .comment-heading .user {
+				font-size: 14px;
+				font-weight: bold;
+				display: inline;
+				margin-top: 0;
+				margin-right: 10px;
+			}
+			.post .post-footer .comments-list .comment .comment-heading .time {
+				font-size: 12px;
+				color: #aaa;
+				margin-top: 0;
+				display: inline;
+			}
+			.post .post-footer .comments-list .comment .comment-body {
+				margin-left: 50px;
+			}
+			.post .post-footer .comments-list .comment > .comments-list {
+				margin-left: 50px;
+			}
+			/*fin de estilo para comentarios de videos*/
 		</style>
 
 		@endsection
@@ -326,15 +356,15 @@ Educaplay
 				</div>
 				@if($urlVideo=='0')
 					<div id="episodio8" class="row efectoLento" style="color:white;">
-					{{--*/ $srcUrlVideo = ""; /*--}}
 				@else
 					<div id="episodio8" class="row" style="color:white;">
-					{{--*/ $srcUrlVideo = "https://www.youtube.com/embed/".$urlVideo."?autoplay=1";/*--}}
 					<input type="hidden" id="VideoReproduce" value="{{EducaplayController::consultaRatingXURL($urlVideo)}}"/>
+					<script>
+						player.loadVideoById('{{$urlVideo}}');
+					</script>
 				@endif
 					<div class="col-md-5 col-md-offset-1 text-right">
-						<iframe id="episodio7" src="{{$srcUrlVideo}}" frameborder="0" class="marcoVideo">
-						</iframe>
+						<div id="player" class="col-md-12" align="center">    </div>
 						@if(Auth::check ())
 							<div id="divRating">
 								<input type="number" name="rating" id="star-rating" class="" data-icon-lib="fa" data-active-icon="fa-star" data-inactive-icon="fa-star-o" onchange="guardaRating(this.value)"/>
