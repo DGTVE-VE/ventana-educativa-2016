@@ -1,3 +1,5 @@
+<script src="{{asset ('js/jquery-ui.min.js')}}"></script>
+<link rel="stylesheet" href="{{ asset('css/jquery-ui.min.css') }}" >
 @if($comments!= '[]')
 	@foreach ($comments as $comment)
 		@include('viewEducaplay.comment', ['comment'=>$comment])

@@ -1,6 +1,4 @@
-@extends('indexEducaplay')
-@section('cuerpoEducaplay')
-
+@if($detallesSerie != null)
 	<div id="carreteCapitulos" class="carousel slide" data-ride="carousel" data-interval="false">
 		<div class="carousel-inner" role="listbox">
 		{{--*/ $i=0; /*--}}
@@ -46,4 +44,8 @@
 			<span class="sr-only">Next</span>
 		</a>
 	</div>
-@endsection
+@else
+	<div class="col-md-3 col-md-offset-5" style="position: relative; top: 150px;">
+		<p style="color:white;"> NO SE ENCONTRARON VIDEOS PARA ESTA TEMPORADA</p>
+	</div>
+@endif
