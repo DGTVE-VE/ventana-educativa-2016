@@ -44,7 +44,7 @@ and open the template in the editor.
  
 #page-content-wrapper {
     position: absolute;
-    padding: 15px;
+    padding: 30px;
     width: 100%;  
     overflow-x: hidden; 
 }

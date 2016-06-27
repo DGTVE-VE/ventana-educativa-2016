@@ -2,7 +2,7 @@
 
 /* Wrappers  */
 .margensuperiormenuTS{
-  top: 20%;
+  top: 25%;
 }
 #wrapper {
     padding-left: 0; /*posición de la pestaña menú al inicio */
@@ -20,7 +20,7 @@
     z-index: 1000;
     left: 220px; /*ampliar contenedor de menú  220*/
     width: 0;
-    height: 36%; /*tamaño del contenedor de la lista de menú */
+    height: 42%; /*tamaño del contenedor de la lista de menú */
     margin-left: -220px;
     margin-top: 0; /*margen superior del menú*/ 
     overflow-y: auto;
