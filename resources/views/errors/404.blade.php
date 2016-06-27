@@ -41,7 +41,7 @@
         <div class="container">
             <div class="content">
                 <div class="title">Página no encontrada.</div>
-                <h3>Verifica la direccion que escribiste en la barra de direccones</h3>
+                <h3>Verifica la dirección que escribiste en la barra de direcciones</h3>
             </div>
         </div>
     </body>
