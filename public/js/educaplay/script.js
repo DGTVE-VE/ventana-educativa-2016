@@ -34,7 +34,8 @@
 			method: "GET",
 			url: _url,
 			error: function (ts) {
-				abreDivDetalle('<div class="col-md-4 col-md-offset-4" style="padding:100px;"><p style="color:white;"> SIN DATOS PARA ESTA SERIE</p></div>', numDiv);
+				var msjSinDatos = '<div class="col-md-4 col-md-offset-4" style="padding:100px;"><p style="color:white;"> SIN DATOS PARA ESTA SERIE</p></div>';
+				abreDivDetalle(msjSinDatos, numDiv);
 				console.log(ts.responseText);
 			}})
 			.done(function (msg) {
