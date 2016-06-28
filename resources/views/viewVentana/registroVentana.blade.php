@@ -63,7 +63,7 @@ Ventana Educativa
                         <select required id="countries_states1" name="pais"  class="form-control input-medium bfh-countries" data-country="MX"></select>
                     </div>
                     <div class="form-group col-md-6">
-                        <label for="ciudad">Estado:</label>
+                        <label for="ciudad">Estado/Región:</label>
                         <select required name="ciudad" class="input-medium bfh-states form-control" data-country="countries_states1"></select>
                     </div>
 
