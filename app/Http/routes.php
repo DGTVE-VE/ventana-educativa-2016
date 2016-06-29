@@ -13,7 +13,7 @@ Route::group(['middleware' => 'web'], function () {
     Route::resource('user', 'Api\User');
 
     Route::get('user/existEmail/{email}', ['as' => 'user.existEmail', 'uses' => 'Api\User@existEmail']);
-    Route::get('user/existNick/{nickname}', ['as' => 'user.existNick', 'uses' => 'Api\User@existNick']);
+//    Route::get('user/existNick/{nickname}', ['as' => 'user.existNick', 'uses' => 'Api\User@existNick']);
     Route::get('login', 'SessionsController@create');
     Route::get('logout', 'SessionsController@destroy');
     /* * ************************ Autenticación ************************ */

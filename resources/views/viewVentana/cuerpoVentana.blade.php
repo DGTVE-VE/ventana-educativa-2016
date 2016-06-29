@@ -14,34 +14,35 @@
         </div>
     </div>
     <!----------------------------------	Elementos para vistas en dispositivos grandes		--------------------------------->
+
     <div class="row visible-md-inline visible-lg-inline">
         <div>
             <div style="padding:1%;">
             </div>
         </div>
-		<div class="col-md-9 col-md-offset-1" style="margin-top:10px;">
-			<map name="mapaRombos" id="mapaRombos">
-				<area alt="Cultura" title="" shape="poly" coords="274,308,458,495,644,309,459,124" onmouseover="cambiaImgFoto('02')" onmouseout="cambiaImgCubo('02')"  href="{{url('cultura')}}"/>
-				<area alt="Canal IberoAmericano" title="" shape="poly" coords="442,511,680,750,918,512,681,274" onmouseover="cambiaImgFoto('04')" onmouseout="cambiaImgCubo('04')" href="http://www.ibe.tv/" target="_blank"/>
-				<area alt="Red MITE" title="" shape="poly" coords="933,1,680,253,933,506,1187,255" onmouseover="cambiaImgFoto('05')" onmouseout="cambiaImgCubo('05')" href="{{url('redmite')}}"/>
-				<area alt="educaplay" title="" shape="poly" coords="932,511,681,764,933,1017,1185,766" onmouseover="cambiaImgFoto('06')" onmouseout="cambiaImgCubo('06')" href="#"/>
-				<area alt="conocenos" title="" shape="poly" coords="1215,226,934,508,1216,794,1497,510" onmouseover="cambiaImgFoto('07')" onmouseout="cambiaImgCubo('07')" href="{{url('presentacion')}}"/>
-				<area alt="Biblioteca" title="" shape="poly" coords="1496,1,1243,253,1497,507,1750,253" onmouseover="cambiaImgFoto('08')" onmouseout="cambiaImgCubo('08')" href="{{url('biblioteca')}}"/>
-				<area alt="educamedia" title="" shape="poly" coords="1498,513,1245,765,1497,1017,1751,765" onmouseover="cambiaImgFoto('09')" onmouseout="cambiaImgCubo('09')" href=""/>
-				<area alt="México X" title="" shape="poly" coords="1516,511,1753,274,1989,511,1753,748" onmouseover="cambiaImgFoto('10')" onmouseout="cambiaImgCubo('10')" href="http://mx.televisioneducativa.gob.mx/" target="_blank"/>
-				<area alt="Salud" title="" shape="poly" coords="1969,534,2171,736,1968,938,1766,738" onmouseover="cambiaImgFoto('12')" onmouseout="cambiaImgCubo('12')" href="http://www.promocion.salud.gob.mx/dgps/interior1/programas/escuela_salud.html" target="_blank"/>
-			</map>
-			{{HTML::image('imagenes/ventana/homeventana/mapaRombos.png','mapaRombos',['name'=>'mapaRombos','id'=>'mapaRombos', 'class'=>'mapaRombos img-responsive', 'usemap'=>'#mapaRombos'])}}
-		</div>
-		<div class="col-md-12">
-		</div>
+        <div class="col-md-9 col-md-offset-1" style="margin-top:10px;">
+            <map name="mapaRombos" id="mapaRombos">
+                <area alt="Cultura" title="" shape="poly" coords="274,308,458,495,644,309,459,124" onmouseover="cambiaImgFoto('02')" onmouseout="cambiaImgCubo('02')"  href="{{url('cultura')}}"/>
+                <area alt="Canal IberoAmericano" title="" shape="poly" coords="442,511,680,750,918,512,681,274" onmouseover="cambiaImgFoto('04')" onmouseout="cambiaImgCubo('04')" href="http://www.ibe.tv/" target="_blank"/>
+                <area alt="Red MITE" title="" shape="poly" coords="933,1,680,253,933,506,1187,255" onmouseover="cambiaImgFoto('05')" onmouseout="cambiaImgCubo('05')" href="{{url('redmite')}}"/>
+                <area alt="educaplay" title="" shape="poly" coords="932,511,681,764,933,1017,1185,766" onmouseover="cambiaImgFoto('06')" onmouseout="cambiaImgCubo('06')" href="#"/>
+                <area alt="conocenos" title="" shape="poly" coords="1215,226,934,508,1216,794,1497,510" onmouseover="cambiaImgFoto('07')" onmouseout="cambiaImgCubo('07')" href="{{url('presentacion')}}"/>
+                <area alt="Biblioteca" title="" shape="poly" coords="1496,1,1243,253,1497,507,1750,253" onmouseover="cambiaImgFoto('08')" onmouseout="cambiaImgCubo('08')" href="{{url('biblioteca')}}"/>
+                <area alt="educamedia" title="" shape="poly" coords="1498,513,1245,765,1497,1017,1751,765" onmouseover="cambiaImgFoto('09')" onmouseout="cambiaImgCubo('09')" href=""/>
+                <area alt="México X" title="" shape="poly" coords="1516,511,1753,274,1989,511,1753,748" onmouseover="cambiaImgFoto('10')" onmouseout="cambiaImgCubo('10')" href="http://mx.televisioneducativa.gob.mx/" target="_blank"/>
+                <area alt="Salud" title="" shape="poly" coords="1969,534,2171,736,1968,938,1766,738" onmouseover="cambiaImgFoto('12')" onmouseout="cambiaImgCubo('12')" href="http://www.promocion.salud.gob.mx/dgps/interior1/programas/escuela_salud.html" target="_blank"/>
+            </map>
+            {{HTML::image('imagenes/ventana/homeventana/mapaRombos.png','mapaRombos',['name'=>'mapaRombos','id'=>'mapaRombos', 'class'=>'mapaRombos img-responsive', 'usemap'=>'#mapaRombos'])}}
+        </div>
+        <div class="col-md-12">
+        </div>
         <div class="col-md-1 col-lg-1 col-md-offset-1 col-lg-offset-1" style="padding-top: 8.9%; padding-left:0; padding-right:0;">
 
         </div>
         <div class="col-md-1 col-lg-1" style="padding:3%; padding-left:0px; padding-right:0px;">
             {{HTML::image('imagenes/ventana/homeventana/CUBO-02.png', 'Idiomas',['id'=>'CUBO02','class'=>'imgColor oculta difumina Intervalo3 slideInLeft rombo2'])}}
-			{{HTML::image('imagenes/ventana/iconoSeccion/cultura.png','Cultura',['id'=>'iconoRombo02','class'=>'imgColor oculta difumina Intervalo3 slideInLeft iconoIdiomas','onmouseover'=>'cambiaImgFoto("02")','onmouseout'=>'cambiaImgCubo("02")'])}}
-		</div>
+            {{HTML::image('imagenes/ventana/iconoSeccion/cultura.png','Cultura',['id'=>'iconoRombo02','class'=>'imgColor oculta difumina Intervalo3 slideInLeft iconoIdiomas','onmouseover'=>'cambiaImgFoto("02")','onmouseout'=>'cambiaImgCubo("02")'])}}
+        </div>
 
         <div class="col-md-1 col-lg-1" style="padding-top: 8.3%; padding-left:0px; padding-right:0px;">
             {{HTML::image('imagenes/ventana/homeventana/CUBO-04.png','Padres',['id'=>'CUBO04','class'=>'imgColor oculta difumina Intervalo2 slideInLeft rombo4'])}}
@@ -91,9 +92,9 @@
             <div class="col-md-8"></div>
             <div  id="desplaza" class="col-md-4 alert" style="margin-top: 5%; margin-left: 1%; z-index: 1000;">                
                 {{ HTML::image('imagenes/ventana/homeventana/alertaNav.png','alerta',['width'=>'90%','height'=>'90%']) }}
-			</div>
-		</div>
-	</div>
+            </div>
+        </div>
+    </div>
     <!----------------------------------	Elementos para vistas en dispositivos pequeños		--------------------------------->
     <div class="row visible-xs-inline visible-sm-inline">                            
         <div class="col-xs-10 col-sm-10 col-xs-offset-1 col-sm-offset-1" style="padding: 20%;">
@@ -192,9 +193,9 @@
                         <map name="mapacubosm2" id="mapacubosm2">
                             <area shape="poly" coords="0,356,356,0,708,360,360,708" href="{{url('cultura')}}"/>
                         </map>
-						<a href="{{url('cultura')}}">
-                        {{HTML::image('imagenes/ventana/iconoSeccion/cultura.png','Cultura',['id'=>'iconoRomboSM02','class'=>'imgColor oculta difumina Intervalo3 slideInLeft iconoFoto2'])}}
-						</a>
+                        <a href="{{url('cultura')}}">
+                            {{HTML::image('imagenes/ventana/iconoSeccion/cultura.png','Cultura',['id'=>'iconoRomboSM02','class'=>'imgColor oculta difumina Intervalo3 slideInLeft iconoFoto2'])}}
+                        </a>
                     </td>
                     <td></td>
                     <td>
@@ -219,13 +220,13 @@
             </div>
         </div>
     </div>
-	@if(Session::has('message'))
-	<div class="col-md-12" style="margin-top: 15%;">
-		<div class="col-md-3"></div>
-		<p class="alert col-md-6 text-center message-compatible {{ Session::get('alert-class', 'alert-info') }}">{{ Session::get('message') }}</p>
-		<div class="col-md-3"></div>
-	</div>
-	@endif    
+    @if(Session::has('message'))
+    <div class="col-md-12" style="margin-top: 15%;">
+        <div class="col-md-3"></div>
+        <p class="alert col-md-6 text-center message-compatible {{ Session::get('alert-class', 'alert-info') }}">{{ Session::get('message') }}</p>
+        <div class="col-md-3"></div>
+    </div>
+    @endif    
 </div>
 <script>
     $(".alert").alert();
