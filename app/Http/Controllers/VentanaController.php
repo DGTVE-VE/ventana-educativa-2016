@@ -34,8 +34,6 @@ class VentanaController extends Controller {
 
 
     $validator = Validator::make($request->all(), [
-
-      'nickname' => 'required|max:254',
       'name' => 'required|max:254',
       'email' => 'required|email|max:254|unique:users',
       'password' => 'required|max:60|min:6|confirmed',
@@ -43,6 +41,7 @@ class VentanaController extends Controller {
       'nacimiento' => 'required|date',
       'ciudad' => 'required|max:100',
       'pais' => 'required|max:100',
+      'condiciones' => 'required|accepted',
 
     ]);
 
@@ -53,7 +52,6 @@ class VentanaController extends Controller {
     }
 
     $users = new \App\User();
-    $users->nickname = filter_input(INPUT_POST, 'nickname');
     $users->name = filter_input(INPUT_POST, 'name');
     $users->email = filter_input(INPUT_POST, 'email');
     $users->password = bcrypt(filter_input(INPUT_POST, 'password'));
@@ -65,6 +63,7 @@ class VentanaController extends Controller {
     $users->is_teacher = (filter_input(INPUT_POST, 'is_teacher') == 'on')? 1 : 0;
     $users->is_student = (filter_input(INPUT_POST, 'is_student') == 'on')? 1 : 0;
     $users->is_parent =  (filter_input(INPUT_POST, 'is_parent') == 'on')? 1 : 0;
+    $users->condiciones = (filter_input(INPUT_POST, 'condiciones') == 'on')? 1 : 0;
 
     $users->save();
     return $this->enviaCorreoActivacion($users->email, md5($users->password), filter_input (INPUT_POST, 'back_url'));

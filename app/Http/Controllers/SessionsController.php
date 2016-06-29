@@ -50,13 +50,15 @@ class SessionsController extends Controller {
     }
 
     public function store(Request $request) {
-
-        if (Auth::attempt(Input::only('email', 'password'))) {
+        $email = Input::get('email');
+        $password = Input::get('password');
+        if (Auth::attempt(['email' => $email, 'password' => $password, 'activo' => 1])) {
+//        if (Auth::attempt(Input::only('email', 'password'))) {
 //            return Redirect::back();
             $url = $request->session()->get('url', '/');
             return redirect()->intended($url);
         }
-        return Redirect::back()->withInput();
+        return Redirect::back()->withInput()->withErrors(['¡Alerta!', 'Debe activar su cuenta']);;
     }
 
     public function destroy() {

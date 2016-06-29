@@ -20,6 +20,7 @@
         </div>
     </div>
     <!----------------------------------	Elementos para vistas en dispositivos grandes		--------------------------------->
+
     <div class="row visible-md-inline visible-lg-inline">
         <div>
             <div style="padding:1%;">
@@ -46,8 +47,8 @@
         </div>
         <div class="col-md-1 col-lg-1" style="padding:3%; padding-left:0px; padding-right:0px;">
             {{HTML::image('imagenes/ventana/homeventana/CUBO-02.png', 'Idiomas',['id'=>'CUBO02','class'=>'imgColor oculta difumina Intervalo3 slideInLeft rombo2'])}}
-			{{HTML::image('imagenes/ventana/iconoSeccion/cultura.png','Cultura',['id'=>'iconoRombo02','class'=>'imgColor oculta difumina Intervalo3 slideInLeft iconoIdiomas','onmouseover'=>'cambiaImgFoto("02")','onmouseout'=>'cambiaImgCubo("02")'])}}
-		</div>
+            {{HTML::image('imagenes/ventana/iconoSeccion/cultura.png','Cultura',['id'=>'iconoRombo02','class'=>'imgColor oculta difumina Intervalo3 slideInLeft iconoIdiomas','onmouseover'=>'cambiaImgFoto("02")','onmouseout'=>'cambiaImgCubo("02")'])}}
+        </div>
 
         <div class="col-md-1 col-lg-1" style="padding-top: 8.3%; padding-left:0px; padding-right:0px;">
             {{HTML::image('imagenes/ventana/homeventana/CUBO-04.png','Padres',['id'=>'CUBO04','class'=>'imgColor oculta difumina Intervalo2 slideInLeft rombo4'])}}
@@ -97,9 +98,9 @@
             <div class="col-md-8"></div>
             <div  id="desplaza" class="col-md-4 alert" style="margin-top: 5%; margin-left: 1%; z-index: 1000;">                
                 {{ HTML::image('imagenes/ventana/homeventana/alertaNav.png','alerta',['width'=>'90%','height'=>'90%']) }}
-			</div>
-		</div>
-	</div>
+            </div>
+        </div>
+    </div>
     <!----------------------------------	Elementos para vistas en dispositivos pequeños		--------------------------------->
     <div class="row visible-xs-inline visible-sm-inline">
 		<div class="col-xs-9 col-xs-offset-1">
@@ -163,13 +164,13 @@
             </div>
         </div>
     </div>
-	@if(Session::has('message'))
-	<div class="col-md-12" style="margin-top: 15%;">
-		<div class="col-md-3"></div>
-		<p class="alert col-md-6 text-center message-compatible {{ Session::get('alert-class', 'alert-info') }}">{{ Session::get('message') }}</p>
-		<div class="col-md-3"></div>
-	</div>
-	@endif    
+    @if(Session::has('message'))
+    <div class="col-md-12" style="margin-top: 15%;">
+        <div class="col-md-3"></div>
+        <p class="alert col-md-6 text-center message-compatible {{ Session::get('alert-class', 'alert-info') }}">{{ Session::get('message') }}</p>
+        <div class="col-md-3"></div>
+    </div>
+    @endif    
 </div>
 <script>
     $(".alert").alert();
