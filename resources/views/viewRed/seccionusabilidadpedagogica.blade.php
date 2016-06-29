@@ -294,5 +294,5 @@
             {{ HTML::image('imagenes/red/ModeloUsabilidad/texto4-01.png','text04', array('class'=>'estoy-visible slideInRight img-responsive'))}}
         </div>       
     </div>
-    <div class="col-md-12"><label class="textoTitulo pull-right">Modelo de Usabilidad Pedagógica de las TIC. SEP-Indautor. Registro Público: 03-2016-042011572200-01</label></div>
+    <div class="col-md-12" style="margin-top:-8%;"><label class="textoTitulo pull-left">Modelo de Usabilidad Pedagógica de las TIC. <br>SEP-Indautor.<br> Registro Público: 03-2016-042011572200-01</label></div>
 </div>
