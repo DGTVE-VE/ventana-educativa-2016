@@ -5,6 +5,12 @@
         left:2%;
         z-index:50;
     }
+	.mapaRombosCh{
+        position: absolute;
+        top:0.5%;
+        left:8%;
+        z-index:50;
+    }
 </style>
 <link rel="stylesheet" type="text/css" href="css/ventana/estiloventana.css"/>
 <script type="text/javascript" src="js/ventana/ventanaCuerpo.js"></script>
@@ -27,7 +33,7 @@
 				<area alt="educaplay" title="" shape="poly" coords="932,511,681,764,933,1017,1185,766" onmouseover="cambiaImgFoto('06')" onmouseout="cambiaImgCubo('06')" href="#"/>
 				<area alt="conocenos" title="" shape="poly" coords="1215,226,934,508,1216,794,1497,510" onmouseover="cambiaImgFoto('07')" onmouseout="cambiaImgCubo('07')" href="{{url('presentacion')}}"/>
 				<area alt="Biblioteca" title="" shape="poly" coords="1496,1,1243,253,1497,507,1750,253" onmouseover="cambiaImgFoto('08')" onmouseout="cambiaImgCubo('08')" href="{{url('biblioteca')}}"/>
-				<area alt="educamedia" title="" shape="poly" coords="1498,513,1245,765,1497,1017,1751,765" onmouseover="cambiaImgFoto('09')" onmouseout="cambiaImgCubo('09')" href=""/>
+				<area alt="educamedia" title="" shape="poly" coords="1498,513,1245,765,1497,1017,1751,765" onmouseover="cambiaImgFoto('09')" onmouseout="cambiaImgCubo('09')" href="#"/>
 				<area alt="México X" title="" shape="poly" coords="1516,511,1753,274,1989,511,1753,748" onmouseover="cambiaImgFoto('10')" onmouseout="cambiaImgCubo('10')" href="http://mx.televisioneducativa.gob.mx/" target="_blank"/>
 				<area alt="Salud" title="" shape="poly" coords="1969,534,2171,736,1968,938,1766,738" onmouseover="cambiaImgFoto('12')" onmouseout="cambiaImgCubo('12')" href="http://www.promocion.salud.gob.mx/dgps/interior1/programas/escuela_salud.html" target="_blank"/>
 			</map>
@@ -95,118 +101,56 @@
 		</div>
 	</div>
     <!----------------------------------	Elementos para vistas en dispositivos pequeños		--------------------------------->
-    <div class="row visible-xs-inline visible-sm-inline">                            
+    <div class="row visible-xs-inline visible-sm-inline">
+		<div class="col-xs-9 col-xs-offset-1">
+			{{HTML::image('imagenes/ventana/homeventana/mapaRombosCh.png','mapaRombosCh',['name'=>'mapaRombosCh','id'=>'mapaRombosCh', 'class'=>'mapaRombosCh img-responsive', 'usemap'=>'#mapaRombosCh'])}}
+			<map name="mapaRombosCh" id="mapaRombosCh">
+				<area title="" shape="poly" coords="129,119,247,239,364,119,244,2" alt="conocenos" href="{{url('presentacion')}}" />
+				<area title="" shape="poly" coords="7,244,126,123,243,244,123,361" alt="educamedia" href="#" />
+				<area title="" shape="poly" coords="251,245,367,125,484,245,368,363" alt="educaplay" href="#" />
+				<area title="" shape="poly" coords="247,243,365,363,247,480,128,362" alt="canal IberoAmericano" href="http://www.ibe.tv/" target="_blank" />
+				<area title="" shape="poly" coords="4,479,126,361,241,479,126,600" alt="biblioteca" href="{{url('biblioteca')}}" />
+				<area title="" shape="poly" coords="249,482,367,366,486,482,368,600" alt="RedMITE" href="{{url('redmite')}}" />
+				<area title="" shape="poly" coords="246,485,362,603,246,723,129,603" alt="México X" href="http://mx.televisioneducativa.gob.mx/" target="_blank"/>
+				<area title="" shape="poly" coords="127,603,7,720,125,845,242,720" alt="Cultura" href="{{url('cultura')}}" />
+				<area title="" shape="poly" coords="366,604,484,723,366,849,247,726" alt="Salud" href="http://www.promocion.salud.gob.mx/dgps/interior1/programas/escuela_salud.html" target="_blank"/>
+			</map>
+		</div>
         <div class="col-xs-10 col-sm-10 col-xs-offset-1 col-sm-offset-1" style="padding: 20%;">
             <table>
-                <tr><td></td>
-                    <td>
+                <tr><td></td><td>
                         {{HTML::image('imagenes/ventana/homeventana/FOTO-07.png','Ventana Educativa',['id'=>'CUBOSM07','class'=>'imgColor rombosm7','usemap'=>'#mapacubosm07'])}}
-                        <map name="mapacubosm07" id="mapacubosm07">
-                            <area shape="poly" coords="0,560,580,0,1140,544,544,1140" href="{{url('presentacion')}}"/>
-                            <area shape="poly" coords="0,0,570,0,0,548" href="#"/>
-                            <area shape="poly" coords="0,548,548,1160,0,1160" href="#"/>
-                            <area shape="poly" coords="548,0,1160,0,1160,548" href="#"/>
-                            <area shape="poly" coords="548,1160,1160,548,1160,1160" href="#"/>
-                        </map>
-                        <a href="{{url('presentacion')}}">
-                            {{HTML::image('imagenes/ventana/iconoSeccion/ventanaBco.png','ventana Educativa',['id'=>'iconoRomboSM07','class'=>'imgColor iconoRomboSM7'])}}
-                        </a>
+						{{HTML::image('imagenes/ventana/iconoSeccion/ventanaBco.png','ventana Educativa',['id'=>'iconoRomboSM07','class'=>'imgColor iconoRomboSM7'])}}
+                    </td><td></td>
+                </tr><tr><td>
+                        {{HTML::image('imagenes/ventana/homeventana/FOTO-09.png','Educaplay',['id'=>'CUBOSM08','class'=>'imgColor oculta difumina Intervalo1 slideInRight romboSM8','usemap'=>'#mapacubosm08'])}}
+						{{HTML::image('imagenes/ventana/iconoSeccion/mediateca.png','Educaplay',['id'=>'iconoRombosm08','class'=>'imgColor oculta difumina Intervalo1 slideInRight iconoDocentesSM'])}}
+                    </td><td></td><td>
+                        {{HTML::image('imagenes/ventana/homeventana/FOTO-06.png','Mediateca',['id'=>'CUBOSM09','class'=>'imgColor oculta difumina Intervalo1 slideInRight foto9','usemap'=>'#mapacubosm09'])}}
+						{{HTML::image('imagenes/ventana/iconoSeccion/vod.png','Mediateca',['id'=>'iconoRombo09','class'=>'imgColor oculta difumina Intervalo1 slideInRight iconoFoto9'])}}
+                    </td>
+                </tr><tr><td></td><td>
+                        {{HTML::image('imagenes/ventana/homeventana/FOTO-04.png','Canal IberoAmericano',['id'=>'CUBOSM10','class'=>'imgColor oculta difumina Intervalo2 slideInRight foto10','usemap'=>'#mapacubosm10'])}}
+						{{HTML::image('imagenes/ventana/iconoSeccion/canal_ibero.png','Canal IberoAmericano',['id'=>'iconoRombosm10','class'=>'imgColor oculta difumina Intervalo2 slideInRight iconoFoto10'])}}
                     </td><td></td>
                 </tr>
                 <tr><td>
-                        {{HTML::image('imagenes/ventana/homeventana/FOTO-09.png','Educaplay',['id'=>'CUBOSM08','class'=>'imgColor oculta difumina Intervalo1 slideInRight romboSM8','usemap'=>'#mapacubosm08'])}}
-                        <map name="mapacubosm08" id="mapacubosm08">
-                            <area shape="poly" coords="0,488,500,0,1020,500,500,1010" href="#"/>
-                            <area shape="poly" coords="440,1040,1040,520,1040,1040" href="http://redmite.televisioneducativa.gob.mx/"/>
-                        </map>
-                        <a href="#">
-                            {{HTML::image('imagenes/ventana/iconoSeccion/mediateca.png','Educaplay',['id'=>'iconoRombosm08','class'=>'imgColor oculta difumina Intervalo1 slideInRight iconoDocentesSM'])}}
-                        </a>
-                    </td>
-                    <td></td>
-                    <td>
-                        {{HTML::image('imagenes/ventana/homeventana/FOTO-06.png','Mediateca',['id'=>'CUBOSM09','class'=>'imgColor oculta difumina Intervalo1 slideInRight foto9','usemap'=>'#mapacubosm09'])}}
-                        <map name="mapacubosm09" id="mapacubosm09">
-                            <area shape="poly" coords="0,488,488,0,1020,500,510,1020" href=""/>
-                            <area shape="poly" coords="516,0,1030,0,1030,500" href="#"/>
-                        </map>
-                        <a href="#">
-                            {{HTML::image('imagenes/ventana/iconoSeccion/vod.png','Mediateca',['id'=>'iconoRombo09','class'=>'imgColor oculta difumina Intervalo1 slideInRight iconoFoto9'])}}
-                        </a>
-                    </td>
-                </tr>
-                <tr><td></td>
-                    <td>
-                        {{HTML::image('imagenes/ventana/homeventana/FOTO-04.png','Canal IberoAmericano',['id'=>'CUBOSM10','class'=>'imgColor oculta difumina Intervalo2 slideInRight foto10','usemap'=>'#mapacubosm10'])}}
-                        <map name="mapacubosm10"  id="mapacubosm10">
-                            <area shape="poly" coords="0,456,470,0,960,500,470,940" href="http://www.ibe.tv/" target="_blank"/>
-                            <area shape="poly" coords="456,0,980,0,980,480" />
-                            <area shape="poly" coords="456,960,960,456,960,960" />
-                        </map>
-                        <a href="http://www.ibe.tv/" target="_blank">
-                            {{HTML::image('imagenes/ventana/iconoSeccion/canal_ibero.png','Canal IberoAmericano',['id'=>'iconoRombosm10','class'=>'imgColor oculta difumina Intervalo2 slideInRight iconoFoto10'])}}
-                        </a>
-                    </td><td></td>
-                </tr>
-                <tr>
-                    <td>
                         {{HTML::image('imagenes/ventana/homeventana/FOTO-08.png','Biblioteca',['id'=>'CUBOSM05','class'=>'imgColor oculta difumina Intervalo1 slideInLeft foto5','usemap'=>'#mapacubosm05'])}}
-                        <map name="mapacubosm05" id="mapacubosm05">
-                            <area shape="poly" coords="0,488,488,0,976,488,488,976" href="{{url('biblioteca')}}"/>
-                            <area shape="poly" coords="0,524,490,1030,0,1030" href="#"/>
-                        </map>
-                        <a href="{{url('biblioteca')}}">
-                            {{HTML::image('imagenes/ventana/iconoSeccion/biblioteca.png','Biblioteca',['id'=>'iconoRomboSM05','class'=>'imgColor oculta difumina Intervalo1 slideInLeft iconoFoto5'])}}
-                        </a>
-                    </td>
-                    <td></td>
-                    <td>
+						{{HTML::image('imagenes/ventana/iconoSeccion/biblioteca.png','Biblioteca',['id'=>'iconoRomboSM05','class'=>'imgColor oculta difumina Intervalo1 slideInLeft iconoFoto5'])}}
+                    </td><td></td><td>
                         {{HTML::image('imagenes/ventana/homeventana/FOTO-05.png','Red Mesoamericana',['id'=>'CUBOSM06','class'=>'imgColor oculta difumina Intervalo1 slideInLeft foto6','usemap'=>'#mapacubosm06'])}}
-                        <map name="mapacubosm06" id="mapacubosm06">
-                            <area shape="poly" coords="0,488,488,0,1020,500,510,1020" href="http://redmite.televisioneducativa.gob.mx/"/>
-                            <area shape="poly" coords="0,0,488,0,0,488" href="#"/>
-                        </map>
-                        <a href="http://redmite.televisioneducativa.gob.mx/">
-                            {{HTML::image('imagenes/ventana/iconoSeccion/redmiteBco.png','Red Mesoamericana',['id'=>'iconoRomboSM06','class'=>'imgColor oculta difumina Intervalo1 slideInLeft iconoFoto6'])}}
-                        </a>
+						{{HTML::image('imagenes/ventana/iconoSeccion/redmiteBco.png','Red Mesoamericana',['id'=>'iconoRomboSM06','class'=>'imgColor oculta difumina Intervalo1 slideInLeft iconoFoto6'])}}
                     </td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td>
+                </tr><tr><td></td><td>
                         {{HTML::image('imagenes/ventana/homeventana/FOTO-10.png','Mexico X',['id'=>'CUBOSM13','class'=>'imgColor oculta difumina Intervalo4 slideInRight foto13','usemap'=>'#mapacubosm13'])}}
-                        <map name="mapacubosm13" id="mapacubosm13">
-                            <area shape="poly" coords="0,424,470,0,920,424,480,920" href="http://mx.televisioneducativa.gob.mx/"/>
-                            <area shape="poly" coords="0,0,0,400,400,0" />
-                            <area shape="poly" coords="0,460,0,920,430,920" />
-                        </map>
-                        <a href="http://mx.televisioneducativa.gob.mx/">
-                            {{HTML::image('imagenes/ventana/iconoSeccion/mexicoxBco.png','Mexico X',['id'=>'iconoRomboSM13','class'=>'imgColor oculta difumina Intervalo4 slideInRight iconoFoto13'])}}
-                        </a>
-                    </td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>
+						{{HTML::image('imagenes/ventana/iconoSeccion/mexicoxBco.png','Mexico X',['id'=>'iconoRomboSM13','class'=>'imgColor oculta difumina Intervalo4 slideInRight iconoFoto13'])}}
+                    </td><td></td>
+                </tr><tr><td>
                         {{HTML::image('imagenes/ventana/homeventana/FOTO-02.png','Cultura',['id'=>'CUBOSM02','class'=>'imgColor oculta difumina Intervalo3 slideInLeft foto2','usemap'=>'#mapacubosm2'])}}
-                        <map name="mapacubosm2" id="mapacubosm2">
-                            <area shape="poly" coords="0,356,356,0,708,360,360,708" href="{{url('cultura')}}"/>
-                        </map>
-						<a href="{{url('cultura')}}">
                         {{HTML::image('imagenes/ventana/iconoSeccion/cultura.png','Cultura',['id'=>'iconoRomboSM02','class'=>'imgColor oculta difumina Intervalo3 slideInLeft iconoFoto2'])}}
-						</a>
-                    </td>
-                    <td></td>
-                    <td>
+                    </td><td></td><td>
                         {{HTML::image('imagenes/ventana/homeventana/FOTO-12.png','Salud',['id'=>'CUBOSM04','class'=>'imgColor oculta difumina Intervalo2 slideInLeft foto4','usemap'=>'#mapacubosm4'])}}
-                        <map name="mapacubosm4"  id="mapacubosm4">
-                            <area shape="poly" coords="0,456,456,0,912,456,456,912" href="http://www.promocion.salud.gob.mx/dgps/interior1/programas/escuela_salud.html" target="_blank"/>
-                            <area shape="poly" coords="0,456,0,0,456,0" href="#"/>
-                            <area shape="poly" coords="-20,400,-20,960,520,960" />
-                        </map>
-                        <a href="http://www.promocion.salud.gob.mx/dgps/interior1/programas/escuela_salud.html" target="_blank">
-                            {{HTML::image('imagenes/ventana/iconoSeccion/salud.png','Salud',['id'=>'iconoRomboSM04','class'=>'imgColor oculta difumina Intervalo2 slideInLeft iconoFotoPadres'])}}
-                        </a>
+						{{HTML::image('imagenes/ventana/iconoSeccion/salud.png','Salud',['id'=>'iconoRomboSM04','class'=>'imgColor oculta difumina Intervalo2 slideInLeft iconoFotoPadres'])}}
                     </td>
                 </tr>
             </table>
