@@ -14,7 +14,6 @@
         </div>
     </div>
     <!----------------------------------	Elementos para vistas en dispositivos grandes		--------------------------------->
-
     <div class="row visible-md-inline visible-lg-inline">
         <div>
             <div style="padding:1%;">
