@@ -17,6 +17,11 @@
 <div class="container-fluid">
     <div class="row">        
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="padding:30px;">
+		@if($errors->any())
+			<div id='mensaje-error' class="alert alert-danger" style="margin-top: 5%; position:absolute;"-->
+				<h4 class="pull-right">{{$errors->first()}} Debe activar su cuenta</h4>
+			</div>
+		@endif
         </div>
     </div>
     <!----------------------------------	Elementos para vistas en dispositivos grandes		--------------------------------->
