@@ -292,7 +292,7 @@
         <div class="visible-sm-block text-justify" style="width:270px; position:relative; top:400px; left: -200px;">
             <!--p>Diseño del proceso de apropiación e incorporación de la tecnología como parte del contexto educativo del docente.</p-->
             {{ HTML::image('imagenes/red/ModeloUsabilidad/texto4-01.png','text04', array('class'=>'estoy-visible slideInRight img-responsive'))}}
-        </div>
-
+        </div>       
     </div>
+    <div class="col-md-12"><label class="textoTitulo pull-right">Modelo de Usabilidad Pedagógica de las TIC. SEP-Indautor. Registro Público: 03-2016-042011572200-01</label></div>
 </div>
