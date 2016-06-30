@@ -350,7 +350,7 @@ Educaplay
 		@foreach ($episodiosSerie as $serie)
 			@if($imprimeTitulo===1)
 				<div class="row margenesFila">
-					<div class="col-md-12 col-lg-12">
+					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 						<p class="txtTitulo">{{$serie->titulo_serie}}</p>
 					</div>
 				</div>
@@ -364,7 +364,7 @@ Educaplay
 					</script>
 				@endif
 					<div class="col-md-5 col-md-offset-1 text-right">
-						<div id="player" class="col-md-12" align="center">    </div>
+						<div id="player" class="col-xs-12 col-sm-12 col-md-12 col-lg-12" align="center">    </div>
 						@if(Auth::check ())
 							<div id="divRating">
 								<input type="number" name="rating" id="star-rating" class="" data-icon-lib="fa" data-active-icon="fa-star" data-inactive-icon="fa-star-o" onchange="guardaRating(this.value)"/>
@@ -396,7 +396,7 @@ Educaplay
 				</div>
 				<div class="row margenesFila">
 			@endif
-					<div class="col-xs-6 col-sm-6 col-md-2 col-lg-2 cambiaPadding">
+					<div class="col-xs-6 col-sm-4 col-md-2 col-lg-2 cambiaPadding">
 						<div class="thumbnail fondoTrans">
 							<img src="http://img.youtube.com/vi/{{ $serie->url_video}}/2.jpg" class='item-a' style="height:150px; cursor:pointer;" onclick="muestraVideo('{{$serie->url_video}}','{{$serie->id}}','{{$idSerie}}')"/>
 							<div class="caption estiloTxt">
@@ -409,15 +409,23 @@ Educaplay
 							<input type="hidden" id="video-id" value="{{$idVideo}}" />
 						</div>
 					</div>
+			@if($imprimeTitulo % 2 === 0 && $imprimeTitulo !== 0)
+				<div class="col-xs-12 visible-xs-block">
+				</div>
+			@endif
+			@if($imprimeTitulo % 3 === 0 && $imprimeTitulo !== 0)
+				<div class="col-sm-12 visible-sm-block">
+				</div>
+			@endif
 			@if($imprimeTitulo % 6 === 0 && $imprimeTitulo !== 0)
-					</div>
-				<div class="row margenesFila">
+				<div class="col-md-12 col-lg-12 hidden-xs hidden-sm">
+				</div>
 			@endif
 				{{--*/ $imprimeTitulo++; /*--}}
 		@endforeach
 				</div>
 	@else
-		<div class="col-md-3 col-md-offset-5" style="position: relative; top: 150px;">
+		<div class="col-xs-5 col-sm-5 col-md-3 col-xs-offset-3 col-sm-offset-3 col-md-offset-5" style="position: relative; top: 150px;">
 			<p style="color:white;"> SIN DATOS PARA ESTA SERIE</p>
 		</div>
 	@endif
