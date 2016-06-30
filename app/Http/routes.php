@@ -116,6 +116,10 @@ Route::group(['middleware' => 'web'], function () {
     Route::get('redmite/admin/integrantes', 'RedmiteController@integrantes');
     Route::post('redmite/admin/guardaIntegrantes', 'RedmiteController@guardaIntegrantes');
     Route::get('redmite/guardarProyecto', 'RedmiteController@guardarProyecto');
+	Route::get('redmite/administra', 'RedmiteController@administracion');
+	Route::get('redmite/administra/proyecto', 'RedmiteController@contenidoProyecto');
+	Route::get('redmite/administra/publicacion', 'RedmiteController@contenidoPublicacion');
+	
     /*     * **************************REDMITE********************** */
 
     /*     * **************************Educaplay********************** */
