@@ -6,15 +6,15 @@
 			@if($i===0)
 				<div class="item active">
 					<div class="row">
-						<div class="col-xs-1 col-sm-1 col-md-1">
+						<div class="hidden-xs hidden-sm col-md-1 col-lg-1">
 						</div>
 			@elseif(($i % 5 === 0 ) && ($i !==0))
 				<div class="item">
 					<div class="row">
-						<div class="col-xs-1 col-sm-1 col-md-1">
+						<div class="hidden-xs col-md-1 col-lg-1">
 						</div>
 			@endif
-						<div class="col-xs-4 col-sm-4 col-md-2 cambiaPadding">
+						<div class="col-xs-12 col-sm-4 col-md-2 cambiaPadding">
 							<div class="thumbnail fondoTrans">
 								{{--*/ $ligaDetalle = 'educaplay/detalleSeries/'.$detalle->id.'/'.$detalle->url_video.'/'.$detalle->videoId /*--}}
 								<a href="{{url($ligaDetalle)}}" target="_top"><img src="http://img.youtube.com/vi/{{ $detalle->url_video }}/2.jpg" class='item-a'></a>
