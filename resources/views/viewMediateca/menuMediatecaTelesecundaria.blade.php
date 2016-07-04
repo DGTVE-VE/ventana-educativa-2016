@@ -62,9 +62,9 @@
                                 <div class="col-lg-10"></div>
                             </div>
                         </div>
-                        <div class="modal-body">
+                        <div class="modal-body text-center">
                            <a href="{{url('http://telesecundaria.sep.gob.mx/assets/pdf/Mapa%20curricular%20para%20la%20educaci%C3%B3n%20secundaria.pdf')}}" target="_blank" >
-                                {{ HTML::image('imagenes/mediateca/tsecundaria/mapaCurricularTS.png','mapa curricular',['width'=>'100%','height'=> '100%']) }}
+                                {{ HTML::image('imagenes/mediateca/tsecundaria/mapaCurricularTS.png','mapa curricular',['width'=>'90%','height'=> '80%']) }}
                             </a>
                         </div>
                     </div>
