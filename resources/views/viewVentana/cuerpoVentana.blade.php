@@ -18,7 +18,7 @@
     <div class="row">        
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="padding:30px;">
 		@if($errors->any())
-			<div id='mensaje-error' class="alert alert-danger" style="margin-top: 5%; position:absolute;"-->
+			<div id='mensaje-error' class="alert alert-danger" style="margin-top: 5%; position:absolute;">
 				<h4 class="pull-right">{{$errors->first()}} Debe activar su cuenta</h4>
 			</div>
 		@endif
@@ -100,10 +100,10 @@
         </div>
 
         <div class="col-md-12">  
-            <div class="col-md-8"></div>
-            <div  id="desplaza" class="col-md-4 alert" style="margin-top: 5%; margin-left: 1%; z-index: 1000;">                
-                {{ HTML::image('imagenes/ventana/homeventana/alertaNav.png','alerta',['width'=>'90%','height'=>'90%']) }}
+            <div  class="col-md-3 alert" style="margin-top: 3%;">                
+                {{ HTML::image('imagenes/ventana/homeventana/alertaNav.png','alerta',['width'=>'100%','height'=>'100%'])}}
             </div>
+            <div class="col-md-8"></div>
         </div>
     </div>
     <!----------------------------------	Elementos para vistas en dispositivos pequeños		--------------------------------->
@@ -180,6 +180,7 @@
 <script>
     $(".alert").alert();
     window.setTimeout(function () {
-        $(".alert").alert('close');
-    }, 3500);
+        $(".alert").fadeIn(1000).delay(1000).fadeOut(2000);
+},3000);
+
 </script>
