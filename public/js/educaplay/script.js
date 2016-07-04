@@ -23,7 +23,7 @@
 		var btnCerrarDesc = '#btnCerrarDesc' + filaDiv;
 		$(btnCerrarDesc).css('display', 'block');
 		var windowTop = $(nombreDivDetalle).offset().top - '300';
-		$(document).scrollTop(windowTop);		
+		$(document).scrollTop(windowTop);
 	}
 	
     function muestraDetalle(numDiv,serieId) {

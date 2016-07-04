@@ -6,8 +6,8 @@
 @section('cuerpoEducaplay')
 
 @if($primerDetalleSerie !== null)
-	<div class="col-md-12" style="color:white; max-height:100px;">
-        <div class="tab-content estiloTab">
+	<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="color:white;">
+        <div class="tab-content estiloTab" style=" max-height:430px; overflow-y: scroll;">
             <div id="descripcion1" class="tab-pane fade in active">
 				<div class="col-md-10 col-md-offset-1">
 					<img src="{{url($primerDetalleSerie->url)}}" class="img-responsive" onclick="muestraDetalle('1')"/>
@@ -76,7 +76,7 @@
         </ul>
     </div>
 @else
-	<div class="col-md-3 col-md-offset-4">
+	<div class="col-xs-4 col-sm-4 col-md-3 col-md-offset-4">
 		<p style="color:white;"> SIN DATOS PARA ESTA SERIE</p>
 	</div>
 @endif

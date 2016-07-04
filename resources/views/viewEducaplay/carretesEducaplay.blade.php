@@ -23,20 +23,20 @@
 					</div>
 					<span id="btnCerrarDesc{{$tira - 1}}" class="glyphicon glyphicon-remove iconoCerrar" aria-hidden="true" onclick="cierraDetalle({{$tira - 1}})"></span>
 				</div>
-				<div id="detalleSerie{{$tira - 1}}" class="col-md-12" style="color:white; display: none;"></div>
+				<div id="detalleSerie{{$tira - 1}}" class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="color:white; display: none;"></div>
 			</div>
 		@endif
 		{{--*/ $consecutivo=1; 
 			$nombreCat = EducaplayController::consultaCategoria($elemento->categoria_id);
 		/*--}}
 		<div class="row margenesFila margenInferior">
-			<div class="col-md-12 col-lg-12 text-uppercase">
+			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-uppercase">
 				<p style="color:white; font-size:16px;"> {{$nombreCat}}</p>
 			</div>
 		</div>
 		{{--*/ $catAnterior = $elemento->categoria_id; /*--}}
 		<div class="row margenesFila margenInferior">
-			<div class="col-md-12 col-lg-12">
+			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 				<div id="carreteSerie{{$tira}}" class="carousel slide" data-ride="carousel">
                                     <div class="carousel-inner" role="listbox" id="dir-gral-tve">
 	@endif
@@ -47,7 +47,7 @@
 						<div class="item">
 							<div class="row">
 					@endif
-								<div class="col-xs-4 col-sm-4 col-md-2 cambiaPadding">
+								<div class="col-xs-6 col-sm-4 col-md-2 col-lg-2 cambiaPadding">
 									<div class="thumbnail fondoTrans" onmouseover="muestraTitulo({{$tira}}{{$consecutivo}})" onmouseout="ocultaTitulo({{$tira}}{{$consecutivo}})">
 										{{--*/ $ligaDetalle = 'educaplay/detalleSeries/'.$elemento->id.'/0/0' /*--}}
 										<a href="{{url($ligaDetalle)}}">
@@ -87,5 +87,5 @@
 					</div>
 					<span id="btnCerrarDesc{{$tira}}" class="glyphicon glyphicon-remove iconoCerrar" aria-hidden="true" onclick="cierraDetalle({{$tira}})"></span>
 				</div>
-				<div id="detalleSerie{{$tira}}" class="col-md-12" style="color:white; display: none;"></div>
+				<div id="detalleSerie{{$tira}}" class="col-xs-12 col-sm-12 col-md-12 col-md-12" style="color:white; display: none;"></div>
 			</div>

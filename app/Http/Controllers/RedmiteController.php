@@ -236,4 +236,16 @@ class RedmiteController extends Controller {
         }
         imagepng ($tmp, $targetFile);
     }
+    
+	public function administracion() {
+        return view('viewRed/adminRed/cambiaContenido');
+    }
+	
+	public function contenidoProyecto() {
+        return view('viewRed/adminRed/formularioProyecto');
+    }
+	
+	public function contenidoPublicacion() {
+        return view('viewRed/adminRed/formularioPublicacion');
+    }
 }
