@@ -88,8 +88,8 @@
                         </div>
                         <div class="modal-body text-justify">
                             <h2>Materiales Impresos</h2><br/>
-                            <p>Este espacio le ofrece una amplia gama de materiales educativos desarrollados para la Telesecundaria: libros digitales para alumnos y maestros, apuntes, videos de consulta, audios e interactivos, se encuentran a su disposición para consultarlos o descargarlos a su equipo.
-                                <a href="{{url('http://telesecundaria.sep.gob.mx/materiales_educativos_impresos.php')}}" target="_blank" > Consultar material...</a></p>
+                            <p>Este espacio le ofrece una amplia gama de materiales educativos desarrollados para la Telesecundaria: Libros digitalizados para alumnos y maestros, Apuntes, Cursos de Regularización y reforzamiento, así como el Curso Propedéutico. Todo ello se encuentra a su disposición para consultarlos o descargarlos.
+                                <a href="{{url('http://telesecundaria.sep.gob.mx/materiales_educativos_impresos.php')}}" target="_blank" > Para materiales impresos...</a></p>
                         </div>
                     </div>
                 </div>
