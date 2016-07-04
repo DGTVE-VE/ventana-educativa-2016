@@ -118,7 +118,13 @@ Route::group(['middleware' => 'web'], function () {
     Route::get('redmite/guardarProyecto', 'RedmiteController@guardarProyecto');
 	Route::get('redmite/administra', 'RedmiteController@administracion');
 	Route::get('redmite/administra/proyecto', 'RedmiteController@contenidoProyecto');
+	Route::post('redmite/administra/proyecto/alta', 'RedmiteController@altaProyecto');
+	Route::post('redmite/administra/proyecto/baja', 'RedmiteController@bajaProyecto');
+	Route::post('redmite/administra/proyecto/cambio', 'RedmiteController@cambioProyecto');
 	Route::get('redmite/administra/publicacion', 'RedmiteController@contenidoPublicacion');
+	Route::get('redmite/administra/publicacion/alta', 'RedmiteController@altaPublicacion');
+	Route::post('redmite/administra/publicacion/baja', 'RedmiteController@bajaPublicacion');
+	Route::post('redmite/administra/publicacion/cambio', 'RedmiteController@cambioPublicacion');
 	
     /*     * **************************REDMITE********************** */
 

@@ -6,6 +6,11 @@ Administracion Contenido
 @include('viewRed.seccionheader')
 @endsection
 @section('cuerpoRedmite')
+<style>
+	.opcionMenu{
+		cursor: pointer;
+	}
+</style>
 	<div class="row">
 		<div class="col-md-12 text-center bg-info">
 			<h4> ADMINISTRACION DE CONTENIDO EN REDMITE </h4>
@@ -17,9 +22,9 @@ Administracion Contenido
 				<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Proyectos
 				<span class="caret"></span></button>
 				<ul class="dropdown-menu">
-					<li><span onclick="muestraProyectos()">Alta</span></li>
-					<li><span onclick="muestraProyectos()">Baja</span></li>
-					<li><span onclick="muestraProyectos()">Modificacion</span></li>
+					<li><span class="opcionMenu" onclick="muestraProyectos()">Alta</span></li>
+					<li><span class="opcionMenu" onclick="muestraProyectos()">Baja</span></li>
+					<li><span class="opcionMenu" onclick="muestraProyectos()">Modificacion</span></li>
 				</ul>
 			</div>
 		</div>
@@ -28,18 +33,13 @@ Administracion Contenido
 				<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Publicaciones
 				<span class="caret"></span></button>
 				<ul class="dropdown-menu">
-					<li><span onclick="muestraPublicaciones()">Alta</span></li>
-					<li><span onclick="muestraPublicaciones()">Baja</span></li>
-					<li><span onclick="muestraPublicaciones()">Modificacion</span></li>
+					<li><span class="opcionMenu" onclick="muestraPublicaciones()">Alta</span></li>
+					<li><span class="opcionMenu" onclick="muestraPublicaciones()">Baja</span></li>
+					<li><span class="opcionMenu" onclick="muestraPublicaciones()">Modificacion</span></li>
 				</ul>
 			</div>
 		</div>
     </div>
-	<div class="row">
-		<div class="col-lg-6 col-lg-offset-3 text-center">
-			<h4>Seccion</h4>
-		</div>
-	</div>
 	<div class="row">
 		<div class="col-lg-6 col-lg-offset-3">
 			<div id="divFormulario"> </div>

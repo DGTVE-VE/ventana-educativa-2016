@@ -13,6 +13,7 @@ use App\Model\Red\Colaborador;
 use App\User;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Input;
+use App\Model\Red\Publicaciones;
 
 class RedmiteController extends Controller {
 
@@ -245,7 +246,40 @@ class RedmiteController extends Controller {
         return view('viewRed/adminRed/formularioProyecto');
     }
 	
+	public function altaProyecto() {
+        return view('viewRed/adminRed/formularioProyecto');
+    }
+	
+	public function bajaProyecto() {
+        return view('viewRed/adminRed/formularioProyecto');
+    }
+	
+	public function cambioProyecto() {
+        return view('viewRed/adminRed/formularioProyecto');
+    }
+	
 	public function contenidoPublicacion() {
+        return view('viewRed/adminRed/formularioPublicacion');
+    }
+	
+	public function altaPublicacion() {
+		$publicacion = new Publicaciones();
+        $publicacion->titulo = filter_input(INPUT_GET, 'titulo');
+        $publicacion->autor = filter_input(INPUT_GET, 'autor');
+        $publicacion->pais = filter_input(INPUT_GET, 'pais');
+		$publicacion->categoria = filter_input(INPUT_GET, 'categoria');
+		$publicacion->url_descarga = filter_input(INPUT_GET, 'archivoPdf');
+		$publicacion->imagen = filter_input(INPUT_GET, 'archivoImagen');
+        $publicacion->save();
+
+        return $publicacion;
+    }
+
+	public function bajaPublicacion() {
+        return view('viewRed/adminRed/formularioPublicacion');
+    }
+	
+	public function cambioPublicacion() {
         return view('viewRed/adminRed/formularioPublicacion');
     }
 }
