@@ -38,7 +38,7 @@
 				<area alt="educaplay" title="" shape="poly" coords="932,511,681,764,933,1017,1185,766" onmouseover="cambiaImgFoto('06')" onmouseout="cambiaImgCubo('06')" href="#"/>
 				<area alt="conocenos" title="" shape="poly" coords="1215,226,934,508,1216,794,1497,510" onmouseover="cambiaImgFoto('07')" onmouseout="cambiaImgCubo('07')" href="{{url('presentacion')}}"/>
 				<area alt="Biblioteca" title="" shape="poly" coords="1496,1,1243,253,1497,507,1750,253" onmouseover="cambiaImgFoto('08')" onmouseout="cambiaImgCubo('08')" href="{{url('biblioteca')}}"/>
-				<area alt="educamedia" title="" shape="poly" coords="1498,513,1245,765,1497,1017,1751,765" onmouseover="cambiaImgFoto('09')" onmouseout="cambiaImgCubo('09')" href="#"/>
+				<area alt="educamedia" title="" shape="poly" coords="1498,513,1245,765,1497,1017,1751,765" onmouseover="cambiaImgFoto('09')" onmouseout="cambiaImgCubo('09')" href="{{url('educamedia')}}"/>
 				<area alt="México X" title="" shape="poly" coords="1516,511,1753,274,1989,511,1753,748" onmouseover="cambiaImgFoto('10')" onmouseout="cambiaImgCubo('10')" href="http://mx.televisioneducativa.gob.mx/" target="_blank"/>
 				<area alt="Salud" title="" shape="poly" coords="1969,534,2171,736,1968,938,1766,738" onmouseover="cambiaImgFoto('12')" onmouseout="cambiaImgCubo('12')" href="http://www.promocion.salud.gob.mx/dgps/interior1/programas/escuela_salud.html" target="_blank"/>
 			</map>
@@ -111,7 +111,7 @@
 			{{HTML::image('imagenes/ventana/homeventana/mapaRombosCh.png','mapaRombosCh',['name'=>'mapaRombosCh','id'=>'mapaRombosCh', 'class'=>'mapaRombosCh img-responsive', 'usemap'=>'#mapaRombosCh'])}}
 			<map name="mapaRombosCh" id="mapaRombosCh">
 				<area title="" shape="poly" coords="129,119,247,239,364,119,244,2" alt="conocenos" href="{{url('presentacion')}}" />
-				<area title="" shape="poly" coords="7,244,126,123,243,244,123,361" alt="educamedia" href="#" />
+				<area title="" shape="poly" coords="7,244,126,123,243,244,123,361" alt="educamedia" href="{{url('educamedia')}}" />
 				<area title="" shape="poly" coords="251,245,367,125,484,245,368,363" alt="educaplay" href="#" />
 				<area title="" shape="poly" coords="247,243,365,363,247,480,128,362" alt="canal IberoAmericano" href="http://www.ibe.tv/" target="_blank" />
 				<area title="" shape="poly" coords="4,479,126,361,241,479,126,600" alt="biblioteca" href="{{url('biblioteca')}}" />
