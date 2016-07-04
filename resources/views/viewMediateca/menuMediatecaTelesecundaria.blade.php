@@ -63,8 +63,9 @@
                             </div>
                         </div>
                         <div class="modal-body">
-                            <h2>Mapa Curricular</h3>
-                                {{ HTML::image('imagenes/mediateca/tsecundaria/mapaCurricularts.png','mapa curricular',['width'=>'100%','height'=>'100%']) }}
+                           <a href="{{url('http://telesecundaria.sep.gob.mx/assets/pdf/Mapa%20curricular%20para%20la%20educaci%C3%B3n%20secundaria.pdf')}}" target="_blank" >
+                                {{ HTML::image('imagenes/mediateca/tsecundaria/mapaCurricularTS.png','mapa curricular',['width'=>'100%','height'=> '100%']) }}
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -112,8 +113,8 @@
                             </div>    
                         </div>
                         <div class="modal-body">
-                            <a href="{{url('http://telesecundaria.sep.gob.mx/assets/pdf/CALENDARIO%20TS%202015-16.pdf')}}" target="_blank">
-                                {{ HTML::image('imagenes/mediateca/tsecundaria/calendarioTS.jpg','calendario',['width'=>'90%','height'=>'90%']) }}
+                            <a href="{{url('http://telesecundaria.sep.gob.mx/assets/pdf/CALENDARIO%20TS%202015-16.pdf')}}" target="_blank" >
+                                {{ HTML::image('imagenes/mediateca/tsecundaria/calendarioTS.jpg','calendario',['width'=>'100%','height'=> '100%']) }}
                             </a>
                         </div>
                     </div>
