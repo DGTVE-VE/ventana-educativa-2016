@@ -38,6 +38,11 @@ Educamedia
     ::-webkit-scrollbar-thumb:window-inactive {
         background: rgba(135,78,161,.6);
     }
+	.btnDescarga{
+		font-size:1.5em;
+		cursor: pointer;
+		color: white;
+	}
 </style>
 @section('menuMediateca')
 @include('viewMediateca.encabezadoMediateca')
@@ -59,7 +64,7 @@ Educamedia
                     <div id="player" align="center">    </div>
                 </div>
                 <div class="col-md-12">
-                    <div class="col-md-12">
+                    <div class="col-md-11">
                         <br>
                         <div class="pull-right col-md-5">
                             <a href="https://twitter.com/share" class="twitter-share-button">Tweet</a> <script>!function (d, s, id) {
@@ -79,6 +84,10 @@ Educamedia
                             >
                         </div>
                     </div>
+					<div class="col-md-1">
+						<br>
+						<a id="ligaDescargaYoutube" href="{{ url('descarga/getvideo.php/yt/getvideo.mp4?videoid='.$videos[0]->url.'&format=best') }}"><span title="descarga video" class="glyphicon glyphicon-cloud-download btnDescarga" aria-hidden="true"></span></a>
+					</div>					
                     @if(Auth::check ())
                     <br>
                     <div class="col-md-3"></div>
@@ -239,6 +248,8 @@ Educamedia
         $("#sinopsis-250").html(_videos[_id].sinopsis.substring(0, 350));
         $('#div-containter').fadeIn();
         loadComments(_id);
+		var ligaDescargaVideo = '{{ url("descarga/getvideo.php")}}' + "/yt/getvideo.mp4?videoid=" + data + "&format=best";
+		$('#ligaDescargaYoutube').attr('href',ligaDescargaVideo);
     });
     $(document).on('click', "a.linkComentar", function () {
         var $element = $(this);

@@ -40,6 +40,11 @@ Educamedia
     ::-webkit-scrollbar-thumb:window-inactive {
         background: rgba(135,78,161,.6);
     }
+	.btnDescarga{
+		font-size:1.5em;
+		cursor: pointer;
+		color: white;
+	}
 </style>
 @section('menuMediateca')
 @include('viewMediateca.encabezadoMediateca')
@@ -61,8 +66,8 @@ Educamedia
                         <h4 id="titulo_programa">{{$videos[0]->titulo_programa}}</h4>                
                         <div id="player" align="center">    </div>
                     </div>                    
-                    <div class="col-md-12">
-                        <div class="col-md-12">
+                    <div class="col-md-11">
+                        <div class="col-md-11">
                             <br>
                             <div class="pull-right col-md-5">
                                 <a href="https://twitter.com/share" class="twitter-share-button">Tweet</a> <script>!function (d, s, id) {
@@ -82,9 +87,10 @@ Educamedia
                                 >
                             </div>
                         </div>                        
-
-
-
+						<div class="col-md-1">
+							<br>
+							<a id="ligaDescargaYoutube" href="{{ url('descarga/getvideo.php/yt/getvideo.mp4?videoid='.$videos[0]->url.'&format=best') }}"><span title="descarga video" class="glyphicon glyphicon-cloud-download btnDescarga" aria-hidden="true"></span></a>
+						</div>
                         @if(Auth::check ())
                         <br>
                         <div class="col-md-3"></div>
@@ -102,9 +108,10 @@ Educamedia
                             <input type="hidden" id="video-id" value="{{ $videos[0]->id }}" />
                             <input type="hidden" id="nivel" value="{{ $nivel }}" />
                         </div>
-                        <div class="col-md-3"></div>                                        
-                        @endif                    
+                        <!--div class="col-md-3"></div-->
+                        @endif
                     </div>
+
                     <div class="col-md-12">
                         <li class="list-unstyled"><h5 id="subtitulo_serie">{{ $videos[0]->subtitulo_serie }}<h5></li>
                                     <li class="list-unstyled"><h5 id="subtitulo_programa">{{ $videos[0]->subtitulo_programa }}<h5></li>                                                
@@ -257,6 +264,8 @@ Educamedia
                                                         $("#sinopsis-250").html(_videos[_id].sinopsis.substring(0, 350));
                                                         $('#div-containter').fadeIn();
                                                         loadComments(_id);
+														var ligaDescargaVideo = '{{ url("descarga/getvideo.php")}}' + "/yt/getvideo.mp4?videoid=" + data + "&format=best";
+														$('#ligaDescargaYoutube').attr('href',ligaDescargaVideo);
                                                     });
 
                                                     $(document).on('click', "a.linkComentar", function () {
