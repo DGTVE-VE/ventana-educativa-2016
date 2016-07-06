@@ -11,7 +11,7 @@
                     <li><a data-toggle="modal" href="#myModal-materialEducativo">Materiales Impresos</a></li>
                     <li id="sinBorde"><a href="{{url('http://www.televisioneducativa.gob.mx/canales/telesecundaria#subenlaces')}}" target="_blank">Programación Televisiva</a></li>
                     <li></li>                                        
-                    <li><a href="#">Mediateca Didáctica</a></li>                                                            
+                    <li><a data-toggle="modal" href="#modalDidactica">Mediateca Didáctica</a></li>
                 </ul>|
             </nav>
 
@@ -22,6 +22,30 @@
                 </button>
             </div> <!-- page-content-wrapper -->
 
+			<!--Modal para Mediateca Didáctica-->
+            <div class="modal fade" id="modalDidactica" role="dialog">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <div class="row">
+                                <div class="col-sm-1 col-md-1 col-lg-1">
+                                   {{ HTML::image('imagenes/mediateca/tsecundaria/logoTS.png','logo telesecundaria',['width'=>'160%','height'=>'160%'])}}
+                                </div>                
+                                <div class="col-sm-7 col-md-4 col-lg-4">
+                                    <h3><strong>Mediateca Didáctica</strong></h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-body text-justify" style="height:90%;">
+							<iframe style="width:100%; height:600px;" src="{{url('MediatecaDidactica/index.html')}}"></iframe>
+							<!--div id="contenidoDidactica"></div>
+							<script>$("#contenidoDidactica").load('{{url("MediatecaDidactica/index.html")}}');</script-->
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- Fin modal Mediateca Didáctica-->
+			
             <!--Modal para Misión-->
             <div class="modal fade" id="myModal-mision" role="dialog">
                 <div class="modal-dialog modal-lg">
