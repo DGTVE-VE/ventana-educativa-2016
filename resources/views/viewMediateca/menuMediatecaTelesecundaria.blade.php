@@ -29,13 +29,12 @@
                         <div class="modal-header">
                             <button type="button" class="close" data-dismiss="modal">&times;</button>
                             <div class="row">
-                                <div class="col-lg-1">
+                                <div class="col-sm-1 col-md-1 col-lg-1">
                                    {{ HTML::image('imagenes/mediateca/tsecundaria/logoTS.png','logo telesecundaria',['width'=>'160%','height'=>'160%'])}}
                                 </div>                
-                                <div class="col-lg-1 ">
+                                <div class="col-sm-7 col-md-4 col-lg-4">
                                     <h3><strong>Mediateca Didáctica</strong></h3>
                                 </div>
-                                <div class="col-lg-10"></div>
                             </div>
                         </div>
                         <div class="modal-body text-justify" style="height:90%;">
