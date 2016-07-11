@@ -110,12 +110,23 @@ class MediatecaController extends Controller {
             $paginacion[0]->bloque = 0;
         }
         
+                    /* Query para determinar si el uruario actual tiene rol de docente en ventana educativa */
+		$user_id = Auth::user ()->id;
+		$consultaDocente = \App\Model\Mediateca\docente::where('user_id',$user_id)->get();
+		if($consultaDocente!= '[]'){
+			$esDocente = true;
+		}
+		else{
+			$esDocente = false;
+		}
+		
         /* Envío de querys y variables a la vista */
         return view('viewMediateca/videosTelesecundaria')
                         ->with('videos', $videos)
                         ->with('paginacion', $paginacion)
                         ->with('url', $url)
-                        ->with('nivel', 'telesecundaria');
+                        ->with('nivel', 'telesecundaria')
+						->with('esDocente',$esDocente);
     }
     
     public function guardaRating (){
@@ -147,9 +158,19 @@ class MediatecaController extends Controller {
                     $sQL->where('semestre', '=', $grado);
                     $sQL->where('materia_id', '=', $materia);
             })->get();
-       
+			
+                    /* Query para determinar si el uruario actual tiene rol de docente en ventana educativa */
+		$user_id = Auth::user ()->id;
+		$consultaDocente = \App\Model\Mediateca\docente::where('user_id',$user_id)->get();
+		if($consultaDocente!= '[]'){
+			$esDocente = true;
+		}
+		else{
+			$esDocente = false;
+		}
+		
         /* Envío de querys y variables a la vista */
-        return view('viewMediateca/videosTelebachillerato')->with('videos', $videos)->with('nivel', 'telebachillerato');
+        return view('viewMediateca/videosTelebachillerato')->with('videos', $videos)->with('nivel', 'telebachillerato')->with('esDocente',$esDocente);
     }
 
     public function storeTelesecundariaComment (){

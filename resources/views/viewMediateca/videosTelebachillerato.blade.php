@@ -84,10 +84,12 @@ Educamedia
                             >
                         </div>
                     </div>
+					@if($esDocente)
 					<div class="col-md-1">
 						<br>
 						<a id="ligaDescargaYoutube" href="{{ url('descarga/getvideo.php/yt/getvideo.mp4?videoid='.$videos[0]->url.'&format=best') }}"><span title="descarga video" class="glyphicon glyphicon-cloud-download btnDescarga" aria-hidden="true"></span></a>
-					</div>					
+					</div>
+					@endif
                     @if(Auth::check ())
                     <br>
                     <div class="col-md-3"></div>
