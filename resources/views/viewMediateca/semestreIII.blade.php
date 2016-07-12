@@ -32,8 +32,8 @@
 			{{HTML::image('imagenes/mediateca/tbachillerato/imgCentral/LiteraturaI.png','Telebachillerato Central',['class'=>' img-responsive iniImgCentro', 'id'=>'LiteraturaICentro'])}}
 			{{HTML::image('imagenes/mediateca/tbachillerato/imgCentral/MatematicasIII.png','Telebachillerato Central',['class'=>' img-responsive iniImgCentro', 'id'=>'MatematicasIIICentro'])}}
 			{{HTML::image('imagenes/mediateca/tbachillerato/imgCentral/LenguaAdicionalIII.png','Telebachillerato Central',['class'=>' img-responsive iniImgCentro', 'id'=>'LenguaAdicionalIIICentro'])}}
-			{{HTML::image('imagenes/mediateca/tbachillerato/imgCentral/BiologiaI.png','Telebachillerato Central',['class'=>' img-responsive iniImgCentro', 'id'=>'BiologiaICentro'])}}
-			{{HTML::image('imagenes/mediateca/tbachillerato/imgCentral/FisicaI.png','Telebachillerato Central',['class'=>' img-responsive iniImgCentro', 'id'=>'FisicaICentro'])}}
+			{{HTML::image('imagenes/mediateca/tbachillerato/imgCentral/BiologiaI.gif','Telebachillerato Central',['class'=>' img-responsive iniImgCentro', 'id'=>'BiologiaICentro'])}}
+			{{HTML::image('imagenes/mediateca/tbachillerato/imgCentral/FisicaI.gif','Telebachillerato Central',['class'=>' img-responsive iniImgCentro', 'id'=>'FisicaICentro'])}}
 			{{HTML::image('imagenes/mediateca/tbachillerato/imgCentral/HistoriaMexicoII.png','Telebachillerato Central',['class'=>' img-responsive iniImgCentro', 'id'=>'HistoriaMexicoIICentro'])}}
 			
 			{{HTML::image('imagenes/mediateca/tbachillerato/SemestreIII/imgMapa.png','Telebachillerato',['class'=>'posicionMapa img-responsive', 'id'=>'telebachilleratoSEMIII', 'usemap'=>'#mapaSemIII'])}}
