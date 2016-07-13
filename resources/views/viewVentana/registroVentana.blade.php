@@ -36,11 +36,11 @@ Ventana Educativa
                     <input type="text" required name="name" id="nombre" class="form-control input-medium" placeholder="Nombre Completo">
                 </div>
                 <div class="form-group col-md-6">
-                    <label for="nombre">Apellido paterno:</label>
+                    <label for="ApPaterno">Apellido paterno:</label>
                     <input type="text" required name="ApPaterno" id="ApPaterno" class="form-control input-medium" placeholder="Apellido paterno">
                 </div>
                 <div class="form-group col-md-6">
-                    <label for="nombre">Apellido materno:</label>
+                    <label for="ApMaterno">Apellido materno:</label>
                     <input type="text" required name="ApMaterno" id="ApMaterno" class="form-control input-medium" placeholder="Apellido materno">
                 </div>
                 <div class="form-group col-md-6 has-error">
@@ -84,12 +84,20 @@ Ventana Educativa
                         <label><input type="checkbox" name='is_parent' id='is_parent'> Padre de familia</label>
                     </div>
                     <div class="checkbox">
-                        <label><input type="checkbox" name='is_teacher' id='is_teacher'> Docente</label>
+                        <label><input type="checkbox" name='is_teacher' id='is_teacher' onchange="muestraAdicional()"> Docente</label>
                     </div>
                     <div class="checkbox">
                         <label><input type="checkbox" name='is_student' id='is_student'> Estudiante</label>
                     </div>
                 </div>
+				<div class="form-group col-md-3" id="ocultaRFC"  style="display:none;">
+					<label for="rfcDocente">RFC:</label>
+					<input type="text" required name="rfcDocente" id="rfcDocente" class="form-control input-medium" placeholder="RFC" onblur="ValidaRfc(this.value)" >
+				</div>
+				<div class="form-group col-md-3" id="ocultaCCT" style="display:none;">
+					<label for="cct">CCT:</label>
+					<input type="text" required name="cct" id="cct" class="form-control input-medium" placeholder="CCT">
+				</div>
                 <div class="col-md-6 centered">
                     <br>
                         <label>
@@ -117,7 +125,33 @@ Ventana Educativa
 </div>
 
 <script>
-
+	/************ Valida formato RFC ****************************************************/
+	function ValidaRfc(rfcStr) {
+		var strCorrecta;
+		strCorrecta = rfcStr;	
+		if (rfcStr.length == 12){
+			var valid = '^(([A-Z]|[a-z]){3})([0-9]{6})((([A-Z]|[a-z]|[0-9]){3}))';
+		}else{
+			var valid = '^(([A-Z]|[a-z]|\s){1})(([A-Z]|[a-z]){3})([0-9]{6})((([A-Z]|[a-z]|[0-9]){3}))';
+		}
+			var validRfc=new RegExp(valid);
+			var matchArray=strCorrecta.match(validRfc);
+		if (matchArray==null) {
+			alert('Formato de RFC incorrecto');
+			$('#rfcDocente').val('');
+		}
+	}
+	/************ Muestra campos de RFC y CCT para docente ****************************************************/
+	function muestraAdicional(){
+		if($("#is_teacher").is(':checked')){
+			$("#ocultaRFC").css('display','block');
+			$("#ocultaCCT").css('display','block');
+		}
+		else{
+			$("#ocultaRFC").css('display','none');
+			$("#ocultaCCT").css('display','none');
+		}
+	}
 
     /************ Valida correo existente en el formulario ****************************************************/
     function muestraError(flag, mensaje, componente) {
