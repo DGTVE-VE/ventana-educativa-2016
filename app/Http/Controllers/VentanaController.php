@@ -35,6 +35,8 @@ class VentanaController extends Controller {
 
     $validator = Validator::make($request->all(), [
       'name' => 'required|max:254',
+	  'ApPaterno' => 'required|max:254',
+	  'ApMaterno' => 'required|max:254',
       'email' => 'required|email|max:254|unique:users',
       'password' => 'required|max:60|min:6|confirmed',
       'genero' => 'required',
@@ -53,6 +55,8 @@ class VentanaController extends Controller {
 
     $users = new \App\User();
     $users->name = filter_input(INPUT_POST, 'name');
+	$users->a_paterno = filter_input(INPUT_POST, 'ApPaterno');
+	$users->a_materno = filter_input(INPUT_POST, 'ApMaterno');
     $users->email = filter_input(INPUT_POST, 'email');
     $users->password = bcrypt(filter_input(INPUT_POST, 'password'));
     $users->genero = filter_input(INPUT_POST, 'genero');

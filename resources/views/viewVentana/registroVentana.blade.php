@@ -32,9 +32,16 @@ Ventana Educativa
                     @endif
                 </div>
                 <div class="form-group col-md-6">
-
                     <label for="nombre">Nombre Completo:</label>
                     <input type="text" required name="name" id="nombre" class="form-control input-medium" placeholder="Nombre Completo">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="nombre">Apellido paterno:</label>
+                    <input type="text" required name="ApPaterno" id="ApPaterno" class="form-control input-medium" placeholder="Apellido paterno">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="nombre">Apellido materno:</label>
+                    <input type="text" required name="ApMaterno" id="ApMaterno" class="form-control input-medium" placeholder="Apellido materno">
                 </div>
                 <div class="form-group col-md-6 has-error">
                     <label for="correo">Correo Electrónico:</label>
