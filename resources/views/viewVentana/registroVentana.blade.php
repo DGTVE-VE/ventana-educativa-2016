@@ -41,7 +41,7 @@ Ventana Educativa
                 </div>
                 <div class="form-group col-md-6">
                     <label for="ApMaterno">Apellido materno:</label>
-                    <input type="text" required name="ApMaterno" id="ApMaterno" class="form-control input-medium" placeholder="Apellido materno">
+                    <input type="text" name="ApMaterno" id="ApMaterno" class="form-control input-medium" placeholder="Apellido materno">
                 </div>
                 <div class="form-group col-md-6 has-error">
                     <label for="correo">Correo Electrónico:</label>
@@ -90,13 +90,13 @@ Ventana Educativa
                         <label><input type="checkbox" name='is_student' id='is_student'> Estudiante</label>
                     </div>
                 </div>
-				<div class="form-group col-md-3" id="ocultaRFC"  style="display:none;">
-					<label for="rfcDocente">RFC:</label>
-					<input type="text" required name="rfcDocente" id="rfcDocente" class="form-control input-medium" placeholder="RFC" onblur="ValidaRfc(this.value)" >
-				</div>
 				<div class="form-group col-md-3" id="ocultaCCT" style="display:none;">
-					<label for="cct">CCT:</label>
-					<input type="text" required name="cct" id="cct" class="form-control input-medium" placeholder="CCT">
+					<label for="cct">C C T :</label>
+					<input type="text" required name="cct" id="cct" class="form-control input-medium text-uppercase" placeholder="C C T">
+				</div>
+				<div class="form-group col-md-3" id="ocultaRFC"  style="display:none;">
+					<label for="rfcDocente">R F C :</label>
+					<input type="text" required name="rfcDocente" id="rfcDocente" class="form-control input-medium text-uppercase" placeholder="R F C" onblur="ValidaRfc(this.value)" disabled>
 				</div>
                 <div class="col-md-6 centered">
                     <br>
@@ -152,7 +152,41 @@ Ventana Educativa
 			$("#ocultaCCT").css('display','none');
 		}
 	}
-
+	/************ Valida si existe CCT capturado ****************************************************/
+    function resaltaCampo(flag, mensaje, componente) {
+        if (flag) {
+            document.getElementById(componente).style.backgroundColor = 'lightpink';
+            document.getElementById('mensaje-error').innerText = 'El ' + mensaje + ' no existe';
+            $('#mensaje-error').removeClass('hidden');
+            document.getElementById('btnEnviar').disabled = true;
+			document.getElementById('rfcDocente').disabled = true;
+        } else {
+            document.getElementById(componente).style.backgroundColor = 'white';
+            document.getElementById('mensaje-error').innerText = '';
+            document.getElementById('btnEnviar').disabled = false;
+			document.getElementById('rfcDocente').disabled = false;
+            $('#mensaje-error').addClass('hidden');
+        }
+    }
+    function consultaCCT(url, mensaje, componente) {
+        var xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function () {
+            if (xhttp.readyState == 4 && xhttp.status == 200) {
+				console.log('respuesta ' + xhttp.responseText);
+                if (xhttp.responseText == '[]') { // cct no existe
+                    resaltaCampo(true, mensaje, componente);
+                } else {
+                    resaltaCampo(false, mensaje, componente);
+                }
+            }
+        };
+        xhttp.open("GET", url, true);
+        xhttp.send();
+    }
+    $("#cct").focusout(function () {
+        var _url = "{{url('existeCCT')}}" + '/' + $('#cct').val();
+        consultaCCT(_url, 'cct', 'cct');
+    });
     /************ Valida correo existente en el formulario ****************************************************/
     function muestraError(flag, mensaje, componente) {
         console.log('entro a cambiar clase');
@@ -183,7 +217,6 @@ Ventana Educativa
         xhttp.open("GET", url, true);
         xhttp.send();
     }
-
     $("#email").focusout(function () {
         var _url = "{{url('user/existEmail')}}" + '/' + $('#email').val();
         console.log(_url);
