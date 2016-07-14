@@ -162,10 +162,15 @@ Ventana Educativa
 		if($("#is_teacher").is(':checked')){
 			$("#ocultaRFC").css('display','block');
 			$("#ocultaCCT").css('display','block');
+			$("#ocultaRFC").attr('required','true');
+			$("#ocultaCCT").attr('required','true');
+
 		}
 		else{
 			$("#ocultaRFC").css('display','none');
 			$("#ocultaCCT").css('display','none');
+			$("#ocultaRFC").attr('required','false');
+			$("#ocultaCCT").attr('required','false');
 		}
 	}
 	/************ Valida si existe CCT capturado ****************************************************/
