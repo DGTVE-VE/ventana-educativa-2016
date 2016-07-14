@@ -167,5 +167,9 @@ class VentanaController extends Controller {
         print 0;
       }
     }
-
+  
+	public function existeCCT($claveCCT){
+		$consultaCCT = \App\Model\Educaplay\Edu_cct::where('clave_cct',$claveCCT)->get();
+		return $consultaCCT;
+	}
 }
