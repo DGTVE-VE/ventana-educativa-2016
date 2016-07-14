@@ -95,8 +95,8 @@ Ventana Educativa
 					<input type="text" required name="cct" id="cct" class="form-control input-medium text-uppercase" placeholder="C C T">
 				</div>
 				<div class="form-group col-md-3" id="ocultaRFC"  style="display:none;">
-					<label for="rfcDocente">R F C :</label>
-					<input type="text" required name="rfcDocente" id="rfcDocente" class="form-control input-medium text-uppercase" placeholder="R F C" onblur="ValidaRfc(this.value)" disabled>
+					<label for="curpDocente">C U R P :</label>
+					<input type="text" required name="curpDocente" id="curpDocente" class="form-control input-medium text-uppercase" placeholder="C U R P" onblur="ValidaCURP(this.value)" disabled>
 				</div>
                 <div class="col-md-6 centered">
                     <br>
@@ -126,7 +126,7 @@ Ventana Educativa
 
 <script>
 	/************ Valida formato RFC ****************************************************/
-	    function mensajeRFC(flag, mensaje, componente) {
+	    function mensajeCURP(flag, mensaje, componente) {
         if (flag) {
             document.getElementById(componente).style.backgroundColor = 'lightpink';
             document.getElementById('mensaje-error').innerText = 'El ' + mensaje + ' tiene un formato incorrecto';
@@ -139,21 +139,22 @@ Ventana Educativa
             $('#mensaje-error').addClass('hidden');
         }
     }
-	function ValidaRfc(rfcStr) {
+	function ValidaCURP(curpStr) {
 		var strCorrecta;
-		strCorrecta = rfcStr;	
-		if (rfcStr.length == 12){
-			var valid = '^(([A-Z]|[a-z]){3})([0-9]{6})((([A-Z]|[a-z]|[0-9]){3}))';
-		}else{
-			var valid = '^(([A-Z]|[a-z]|\s){1})(([A-Z]|[a-z]){3})([0-9]{6})((([A-Z]|[a-z]|[0-9]){3}))';
-		}
-			var validRfc=new RegExp(valid);
-			var matchArray=strCorrecta.match(validRfc);
+		strCorrecta = curpStr;	
+		var valid = "[A-Z]{1}[AEIOU]{1}[A-Z]{2}[0-9]{2}" +
+			"(0[1-9]|1[0-2])(0[1-9]|1[0-9]|2[0-9]|3[0-1])" +
+			"[HM]{1}" +
+			"(AS|BC|BS|CC|CS|CH|CL|CM|DF|DG|GT|GR|HG|JC|MC|MN|MS|NT|NL|OC|PL|QT|QR|SP|SL|SR|TC|TS|TL|VZ|YN|ZS|NE)" +
+			"[B-DF-HJ-NP-TV-Z]{3}" +
+			"[0-9A-Z]{1}[0-9]{1}$";
+		var validRfc=new RegExp(valid);
+		var matchArray=strCorrecta.match(validRfc);
 		if (matchArray==null) {
-			mensajeRFC(true,'R F C','rfcDocente');
+			mensajeCURP(true,'C U R P','curpDocente');
 		}
 		else{
-			mensajeRFC(false,'R F C','rfcDocente');
+			mensajeCURP(false,'C U R P','curpDocente');
 		}
 	}
 	/************ Muestra campos de RFC y CCT para docente ****************************************************/
@@ -174,12 +175,12 @@ Ventana Educativa
             document.getElementById('mensaje-error').innerText = 'El ' + mensaje + ' no existe';
             $('#mensaje-error').removeClass('hidden');
             document.getElementById('btnEnviar').disabled = true;
-			document.getElementById('rfcDocente').disabled = true;
+			document.getElementById('curpDocente').disabled = true;
         } else {
             document.getElementById(componente).style.backgroundColor = 'white';
             document.getElementById('mensaje-error').innerText = '';
             document.getElementById('btnEnviar').disabled = false;
-			document.getElementById('rfcDocente').disabled = false;
+			document.getElementById('curpDocente').disabled = false;
             $('#mensaje-error').addClass('hidden');
         }
     }
