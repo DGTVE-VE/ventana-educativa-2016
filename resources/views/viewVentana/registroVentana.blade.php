@@ -126,6 +126,19 @@ Ventana Educativa
 
 <script>
 	/************ Valida formato RFC ****************************************************/
+	    function mensajeRFC(flag, mensaje, componente) {
+        if (flag) {
+            document.getElementById(componente).style.backgroundColor = 'lightpink';
+            document.getElementById('mensaje-error').innerText = 'El ' + mensaje + ' tiene un formato incorrecto';
+            $('#mensaje-error').removeClass('hidden');
+            document.getElementById('btnEnviar').disabled = true;
+        } else {
+            document.getElementById(componente).style.backgroundColor = 'white';
+            document.getElementById('mensaje-error').innerText = '';
+            document.getElementById('btnEnviar').disabled = false;
+            $('#mensaje-error').addClass('hidden');
+        }
+    }
 	function ValidaRfc(rfcStr) {
 		var strCorrecta;
 		strCorrecta = rfcStr;	
@@ -137,8 +150,10 @@ Ventana Educativa
 			var validRfc=new RegExp(valid);
 			var matchArray=strCorrecta.match(validRfc);
 		if (matchArray==null) {
-			alert('Formato de RFC incorrecto');
-			$('#rfcDocente').val('');
+			mensajeRFC(true,'R F C','rfcDocente');
+		}
+		else{
+			mensajeRFC(false,'R F C','rfcDocente');
 		}
 	}
 	/************ Muestra campos de RFC y CCT para docente ****************************************************/
