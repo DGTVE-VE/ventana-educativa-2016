@@ -22,5 +22,6 @@ class AdminController extends Controller
                 ->with('videosTotalTelebachillerato',$videosTotalTelebachillerato)
                 ;
     }
+   
 }
 
