@@ -18,8 +18,8 @@
 						<p>{{$colaborador->dependencia}}</p>
 						<p>{{$colaborador->resena}}</p>
 					</div>
-					<button type="button" class="btn btn-default">Acepta</button>
-					<button type="button" class="btn btn-default">Rechaza</button>
+					<button onclick="guardaDecision({{$colaborador->user_id}}, '1')" type="button" class="btn btn-default">Acepta</button>
+					<button onclick="guardaDecision({{$colaborador->user_id}}, '0')" type="button" class="btn btn-default">Rechaza</button>
 				</div>
 			</div>
 			{{--*/ $i++; /*--}}
@@ -31,3 +31,27 @@
 			@endif
 		@endforeach
 	</div>
+	<div id="alertaExito" class="alert alert-success" role="alert" style="position: fixed; top:50%; left: 45%; padding: 50px; display:none;">Registro modificado con exito</div>
+	<div id="alertaError" class="alert alert-warning" role="alert" style="position: fixed; top:50%; left: 45%; padding: 50px; display:none;">Error al modificar el registro</div>
+	<script>
+		function guardaDecision(id_usuario, decision){
+			var urlget = "{{url('redmite/administra/guardaDecision')}}";
+			_url = urlget + "/" + id_usuario + "/" + decision;
+			$.ajax({
+				method: "GET",
+				url: _url,
+				error: function (ts) {
+					$("#alertaError").css("display","block");
+					setTimeout(function(){
+						$("#alertaError").css("display","none");
+					},3000);
+					console.log('error al guardar ' + ts.responseText);
+			}})
+			.done(function (msg) {
+				$("#alertaExito").css("display","block");
+				setTimeout(function(){
+					$("#alertaExito").css("display","none");
+				},3000);
+			});
+		}
+	</script>

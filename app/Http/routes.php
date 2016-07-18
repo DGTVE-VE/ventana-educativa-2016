@@ -129,6 +129,8 @@ Route::group(['middleware' => 'web'], function () {
 	Route::resource('proyectos', 'ProyectosController');
 	Route::resource('publicaciones', 'PublicacionesController');
 	Route::get('redmite/administra/listaColabora', 'RedmiteController@listadoColaboradores');
+	Route::get('redmite/administra/listaColabora', 'RedmiteController@listadoColaboradores');
+	Route::get('redmite/administra/guardaDecision/{usuario}/{resultado}', 'RedmiteController@guardaDecisionColabora');
     /*     * **************************REDMITE********************** */
 
     /*     * **************************Educaplay********************** */

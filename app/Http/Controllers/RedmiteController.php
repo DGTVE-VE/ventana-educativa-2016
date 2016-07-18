@@ -290,4 +290,9 @@ class RedmiteController extends Controller {
 		->get();
 		return view('viewRed/adminRed/listaColaboradores')->with('colaboradores', $colaboradores);
 	}
+	
+	public function guardaDecisionColabora($usuario, $resultado){
+		$affectedRows = Colaborador::where('user_id', '=', $usuario)->update(array('colabora' => $resultado));
+		return $affectedRows;
+	}
 }
