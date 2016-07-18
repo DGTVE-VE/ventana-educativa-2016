@@ -1,4 +1,3 @@
-
 <br>
 <div id="contenidoPrincipal" class="container" style="color: black">
     <div class="col-xs-12 col-sm-6 col-lg-4">

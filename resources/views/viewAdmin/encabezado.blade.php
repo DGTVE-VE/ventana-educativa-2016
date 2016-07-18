@@ -132,7 +132,7 @@
     <div id="sidebar-wrapper">
         <ul class="sidebar-nav nav-pills nav-stacked" id="menu">
             <li class="active">
-                <a href="#"><span class="fa-stack fa-lg pull-left"><i class="fa  fa-home fa-stack-1x "></i></span> Inicio</a>
+                <a href="{{url('admin')}}"><span class="fa-stack fa-lg pull-left"><i class="fa  fa-home fa-stack-1x "></i></span> Inicio</a>
             </li>
             <li class="">
                 <a href="#"><span class="fa-stack fa-lg pull-left"><i class="fa  fa-book fa-stack-1x "></i></span> Biblioteca</a>

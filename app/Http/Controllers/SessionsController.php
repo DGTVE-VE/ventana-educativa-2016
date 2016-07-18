@@ -58,7 +58,7 @@ class SessionsController extends Controller {
             $url = $request->session()->get('url', '/');
             return redirect()->intended($url);
         }
-        return Redirect::back()->withInput()->withErrors(['¡Alerta!', 'Debe activar su cuenta']);;
+        return Redirect::back()->withInput()->withErrors(['¡Alerta!', 'Debe activar su cuenta']);
     }
 
     public function destroy() {
