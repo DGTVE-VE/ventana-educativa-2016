@@ -1,6 +1,6 @@
 
 <br>
-<div class="container" style="color: black">
+<div id="contenidoPrincipal" class="container" style="color: black">
     <div class="col-xs-12 col-sm-6 col-lg-4">
         <div class="box">							
             <div class="icon">
@@ -63,4 +63,3 @@
         </div> 
     </div>
 </div>
- 

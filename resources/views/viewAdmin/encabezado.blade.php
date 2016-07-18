@@ -176,8 +176,9 @@
             <li>
                 <a href="#"><span class="fa-stack fa-lg pull-left"><i class="fa fa-globe fa-stack-1x "></i></span> Redmite</a>
                 <ul class="nav-pills nav-stacked" style="list-style-type:none;">
-                    <li><a href="#"><span class="fa-stack fa-lg pull-left"><i class="fa fa-flag fa-stack-1x "></i></span>link1</a></li>
-                    <li><a href="#"><span class="fa-stack fa-lg pull-left"><i class="fa fa-flag fa-stack-1x "></i></span>link2</a></li>
+					<li onclick="muestraColaboradores()"><a href="#"><span class="fa-stack fa-lg pull-left"><i class="fa fa-flag fa-stack-1x "></i></span>Colaboradores</a></li>
+                    <li><a href="#"><span class="fa-stack fa-lg pull-left"><i class="fa fa-flag fa-stack-1x "></i></span>Publicaciones</a></li>
+                    <li><a href="#"><span class="fa-stack fa-lg pull-left"><i class="fa fa-flag fa-stack-1x "></i></span>Proyectos</a></li>
 
                 </ul>
             </li>                    
@@ -260,5 +261,20 @@
             }
             ;
         });
-        /************ CAMBIAR AVATAR **************/
+		/************ CAMBIAR AVATAR **************/
+		
+		/************ Carga lista colaboradores **************/
+	function muestraColaboradores(){
+		var urlget = "{{url('redmite/administra/listaColabora')}}";
+		$.ajax({
+			method: "GET",
+			url: urlget,
+			error: function (ts) {
+				console.log(ts.responseText);
+		}})
+		.done(function (msg) {
+			console.log('Colaboradores cargados: ');
+			$("#contenidoPrincipal").html(msg)
+		});
+	}
     </script>

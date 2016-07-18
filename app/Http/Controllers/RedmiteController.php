@@ -282,4 +282,12 @@ class RedmiteController extends Controller {
 	public function cambioPublicacion() {
         return view('viewRed/adminRed/formularioPublicacion');
     }
+	
+	public function listadoColaboradores(){
+		$colaboradores = DB::table('red_colaboradores')
+		->join('users', 'red_colaboradores.user_id', '=', 'users.id')
+		->where('colabora', '')
+		->get();
+		return view('viewRed/adminRed/listaColaboradores')->with('colaboradores', $colaboradores);
+	}
 }

@@ -125,7 +125,7 @@ Ventana Educativa
 </div>
 
 <script>
-	/************ Valida formato RFC ****************************************************/
+	/************ Valida formato CURP ****************************************************/
 	    function mensajeCURP(flag, mensaje, componente) {
         if (flag) {
             document.getElementById(componente).style.backgroundColor = 'lightpink';
@@ -140,24 +140,26 @@ Ventana Educativa
         }
     }
 	function ValidaCURP(curpStr) {
-		var strCorrecta;
-		strCorrecta = curpStr;	
-		var valid = "[A-Z]{1}[AEIOU]{1}[A-Z]{2}[0-9]{2}" +
-			"(0[1-9]|1[0-2])(0[1-9]|1[0-9]|2[0-9]|3[0-1])" +
-			"[HM]{1}" +
-			"(AS|BC|BS|CC|CS|CH|CL|CM|DF|DG|GT|GR|HG|JC|MC|MN|MS|NT|NL|OC|PL|QT|QR|SP|SL|SR|TC|TS|TL|VZ|YN|ZS|NE)" +
-			"[B-DF-HJ-NP-TV-Z]{3}" +
-			"[0-9A-Z]{1}[0-9]{1}$";
-		var validRfc=new RegExp(valid);
-		var matchArray=strCorrecta.match(validRfc);
-		if (matchArray==null) {
-			mensajeCURP(true,'C U R P','curpDocente');
-		}
-		else{
-			mensajeCURP(false,'C U R P','curpDocente');
+		if(curpStr!=''){
+			var strCorrecta;
+			strCorrecta = curpStr;	
+			var valid = "[A-Z]{1}[AEIOU]{1}[A-Z]{2}[0-9]{2}" +
+				"(0[1-9]|1[0-2])(0[1-9]|1[0-9]|2[0-9]|3[0-1])" +
+				"[HM]{1}" +
+				"(AS|BC|BS|CC|CS|CH|CL|CM|DF|DG|GT|GR|HG|JC|MC|MN|MS|NT|NL|OC|PL|QT|QR|SP|SL|SR|TC|TS|TL|VZ|YN|ZS|NE)" +
+				"[B-DF-HJ-NP-TV-Z]{3}" +
+				"[0-9A-Z]{1}[0-9]{1}$";
+			var validRfc=new RegExp(valid);
+			var matchArray=strCorrecta.match(validRfc);
+			if (matchArray==null) {
+				mensajeCURP(true,'C U R P','curpDocente');
+			}
+			else{
+				mensajeCURP(false,'C U R P','curpDocente');
+			}
 		}
 	}
-	/************ Muestra campos de RFC y CCT para docente ****************************************************/
+	/************ Muestra campos de CURP y CCT para docente ****************************************************/
 	function muestraAdicional(){
 		if($("#is_teacher").is(':checked')){
 			$("#ocultaRFC").css('display','block');
