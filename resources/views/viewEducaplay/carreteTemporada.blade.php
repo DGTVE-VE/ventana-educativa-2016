@@ -18,7 +18,7 @@
 							<div class="thumbnail fondoTrans">
 								{{--*/ $ligaDetalle = 'educaplay/detalleSeries/'.$detalle->id.'/'.$detalle->url_video.'/'.$detalle->videoId /*--}}
 								<a href="{{url($ligaDetalle)}}" target="_top"><img src="http://img.youtube.com/vi/{{ $detalle->url_video }}/2.jpg" class='item-a'></a>
-								<div id="titulo21" class="caption">
+								<div id="titulo21" class="caption text-justify">
 									<span class="estiloTxt">{{$detalle->sinopsis}}</span><br><br>
 									<p class="estiloTxt">Temporada: {{$detalle->temporada}}</p>
 								</div>
