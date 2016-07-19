@@ -90,16 +90,15 @@ Ventana Educativa
                         <label><input type="checkbox" name='is_student' id='is_student'> Estudiante</label>
                     </div>
                 </div>
-				<div class="form-group col-md-3" id="ocultaCCT" style="display:none;">
+				<div class="form-group col-md-3" id="ocultaCCT" style="visibility:hidden;">
 					<label for="cct">C C T :</label>
 					<input type="text" name="cct" id="cct" class="form-control input-medium text-uppercase" placeholder="C C T">
 				</div>
-				<div class="form-group col-md-3" id="ocultaRFC"  style="display:none;">
+				<div class="form-group col-md-3" id="ocultaRFC"  style="visibility:hidden;">
 					<label for="curpDocente">C U R P :</label>
 					<input type="text" name="curpDocente" id="curpDocente" class="form-control input-medium text-uppercase" placeholder="C U R P" onblur="ValidaCURP(this.value)" disabled>
 				</div>
                 <div class="col-md-6 centered">
-                    <br>
                         <label>
                             <input type="checkbox" name="condiciones" required> <a href="#" style="text-decoration: none; color: white;">Acepto los términos y condiciones</a>
                         </label>
@@ -162,17 +161,16 @@ Ventana Educativa
 	/************ Muestra campos de CURP y CCT para docente ****************************************************/
 	function muestraAdicional(){
 		if($("#is_teacher").is(':checked')){
-			$("#ocultaRFC").css('display','block');
-			$("#ocultaCCT").css('display','block');
-			$("#ocultaRFC").attr('required','true');
-			$("#ocultaCCT").attr('required','true');
-
+			$("#ocultaRFC").css('visibility','visible');
+			$("#ocultaCCT").css('visibility','visible');
+			document.getElementById("curpDocente").required = true;
+			document.getElementById("cct").required = true;
 		}
 		else{
-			$("#ocultaRFC").css('display','none');
-			$("#ocultaCCT").css('display','none');
-			$("#ocultaRFC").attr('required','false');
-			$("#ocultaCCT").attr('required','false');
+			document.getElementById("curpDocente").required = false;
+			document.getElementById("cct").required = false;
+			$("#ocultaRFC").css('visibility','hidden');
+			$("#ocultaCCT").css('visibility','hidden');
 		}
 	}
 	/************ Valida si existe CCT capturado ****************************************************/
