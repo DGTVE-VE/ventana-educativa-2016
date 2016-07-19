@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Support\Facades\Redirect;
 use Illuminate\Support\Facades\Session;
 use Mail;
+use File;
 use DB;
 use Illuminate\Http\Request;
 use App\Http\Requests;
@@ -293,6 +294,15 @@ class RedmiteController extends Controller {
 	
 	public function guardaDecisionColabora($usuario, $resultado){
 		$affectedRows = Colaborador::where('user_id', '=', $usuario)->update(array('colabora' => $resultado));
+		if($resultado==0){
+			$datosContacto = ['nombre','renecrapaud@gmail.com','asunto'];
+			$correo = 'renecrapaud@gmail.com';
+			$hash = md5(date('Y/m/d H:i:s'));
+			Mail::send('viewAdmin.mailRechazo', ['correo' => $correo, 'hash' => $hash, 'datosContacto' => $datosContacto], function ($m) use ($correo) {
+				$m->from('ventana@televisioneducativa.gob.mx', 'RedMITE');
+				$m->to($correo)->subject('RedMITE inscripcion colaboradores');
+			});
+		}
 		return $affectedRows;
 	}
 }

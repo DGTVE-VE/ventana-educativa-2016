@@ -92,11 +92,11 @@ Ventana Educativa
                 </div>
 				<div class="form-group col-md-3" id="ocultaCCT" style="display:none;">
 					<label for="cct">C C T :</label>
-					<input type="text" required name="cct" id="cct" class="form-control input-medium text-uppercase" placeholder="C C T">
+					<input type="text" name="cct" id="cct" class="form-control input-medium text-uppercase" placeholder="C C T">
 				</div>
 				<div class="form-group col-md-3" id="ocultaRFC"  style="display:none;">
 					<label for="curpDocente">C U R P :</label>
-					<input type="text" required name="curpDocente" id="curpDocente" class="form-control input-medium text-uppercase" placeholder="C U R P" onblur="ValidaCURP(this.value)" disabled>
+					<input type="text" name="curpDocente" id="curpDocente" class="form-control input-medium text-uppercase" placeholder="C U R P" onblur="ValidaCURP(this.value)" disabled>
 				</div>
                 <div class="col-md-6 centered">
                     <br>

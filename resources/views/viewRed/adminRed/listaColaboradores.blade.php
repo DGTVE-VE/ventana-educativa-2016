@@ -1,6 +1,6 @@
 	<div class="row">
 		<div class="col-lg-6 col-lg-offset-3 text-center">
-			<h4>Colaboradores</h4>
+			<h3 class="text-uppercase">Colaboradores</h3>
 		</div>
 	</div>
 	<div class="row">
