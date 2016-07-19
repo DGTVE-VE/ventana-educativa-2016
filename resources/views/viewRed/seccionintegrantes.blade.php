@@ -48,7 +48,7 @@
                         <!-- Integrante 1 -->
                         <div class="item active">
                             <div class="col-md-12 text-center">
-                               {{ HTML::image('imagenes/red/integrantes/fotos/mexico/RubenEdel.png','integrante mex1')}}                            </div>
+                                {{ HTML::image('imagenes/red/integrantes/fotos/mexico/RubenEdel.png','integrante mex1')}}                            </div>
                             <div class="col-md-12 carousel-caption carousel-captionInt">
                                 <h3>Rubén Edel Navarro</h3>
                                 <h4>Investigador de tiempo completo<br>
@@ -76,20 +76,15 @@
                                 {{ HTML::image('imagenes/red/integrantes/fotos/mexico/BrendaLuzColorado.png','integrante mex2')}}
                             </div>
                             <div class="col-md-12 carousel-caption carousel-captionInt">
-                                <h3>Brenda Luz Colorado Aguilar</h3>
-                                <h4>Asesora técnico pedagógico<br>
-                                    Secretaría de Educación de Veracruz (SEV)</h4>
+                                <h3>Dra. Brenda Luz Colorado Aguilar</h3>
+                                <h4>Profesor titular <br>
+                                    Benemérita Escuela Normal Veracruzana, Xalapa, Ver.</h4>
                                 <div class="row">
                                     <div class="col-md-1"></div>
                                     <div class="col-md-10">
-                                        <p class="text-justify">Asesora técnico pedagógico de la Secretaría de Educación de Veracruz (SEV)
-                                            y profesora de asignatura de la Universidad Veracruzana. Miembro de la Red Temática, Reto 3. Tecnologías
-                                            de Información y Comunicación del Consejo Nacional de Ciencia y Tecnología (CONACYT), experiencia en
-                                            impartición de cursos en el nivel de licenciatura, maestría y doctorado en ambientes presenciales y virtuales.
-                                            Como parte de su línea de investigación sobre la educación mediada por las TIC, ha publicado el libro
-                                            Usabilidad pedagógica de las TIC, artículos científicos y participado como ponente en congresos nacionales
-                                            e internacionales. Forma parte del equipo internacional de entrenadores profesionales del software de análisis
-                                            de datos cualitativos: MAXQDA.</p>
+                                        <p class="text-justify">Doctora en Sistemas y Ambientes Educativos. Docente de la Benemérita Escuela Normal Veracruzana, Xalapa, Ver. Profesor de asignatura de la Universidad Veracruzana. Miembro de la Red Temática, Reto 3. Tecnologías de Información y Comunicación del Consejo Nacional de Ciencia y Tecnología (CONACYT). Experiencia en impartición de cursos en el nivel de licenciatura y posgrado en ambientes presenciales y virtuales en diferentes instituciones de educación superior. Como parte de su línea de investigación sobre la educación mediada por las TIC, ha publicado el libro Usabilidad pedagógica de las TIC, artículos científicos y ha participado como conferencista y ponente en congresos nacionales e internacionales. Dictaminadora de revistas nacionales.
+                                            <br/>De manera independiente, forma parte del equipo internacional de entrenadores profesionales del software de análisis de datos cualitativos: MAXQDA.
+                                        </p>
                                     </div>
                                     <div class="col-md-1"></div>
                                 </div>
@@ -164,7 +159,7 @@
                                 </div>
                             </div>
                         </div>
-                         <!-- Integrante 6 -->
+                        <!-- Integrante 6 -->
                         <div class="item ">
                             <div class="col-md-12 text-center">
                                 {{ HTML::image('imagenes/red/integrantes/fotos/mexico/rosadelcarmenfloresmacias.png','integrante mex2')}}
@@ -321,7 +316,7 @@
                         <!--Colaborador 5-->
                         <div class="item">
                             <div class="col-md-12 text-center">
-                               {{ HTML::image('imagenes/red/integrantes/fotos/costarica/AlejandraSanchez.png','integrante cost5')}}
+                                {{ HTML::image('imagenes/red/integrantes/fotos/costarica/AlejandraSanchez.png','integrante cost5')}}
                             </div>
                             <div class="col-md-12 carousel-caption carousel-captionInt">
                                 <h3>Alejandra Sánchez Flores</h3>
@@ -340,7 +335,7 @@
                         <!--Colaborador 6-->
                         <div class="item">
                             <div class="col-md-12 text-center">
-                               {{ HTML::image('imagenes/red/integrantes/fotos/costarica/ElizabethFigueroa.png','integrante cost6')}}
+                                {{ HTML::image('imagenes/red/integrantes/fotos/costarica/ElizabethFigueroa.png','integrante cost6')}}
                             </div>
                             <div class="col-md-12 carousel-caption carousel-captionInt">
                                 <h3>Elizabeth Figueroa Fallas</h3>
@@ -408,7 +403,7 @@
                         <!--Colaborador 9-->
                         <div class="item">
                             <div class="col-md-12 text-center">
-                               {{ HTML::image('imagenes/red/integrantes/fotos/costarica/XiniaLizethZuñiga.png','integrante cost9')}}                            </div>
+                                {{ HTML::image('imagenes/red/integrantes/fotos/costarica/XiniaLizethZuñiga.png','integrante cost9')}}                            </div>
                             <div class="col-md-12 carousel-caption carousel-captionInt">
                                 <h3>Xinia Lizeth Zúñiga Esquivel</h3>
                                 <h4>Asesora de Matemáticas<br>
@@ -498,7 +493,7 @@
                                 </div>
                             </div>
                         </div>
-                        
+
                         <!-- Controls -->
                         <a class="left carousel-control" href="#carouselCostaRica" data-slide="prev">
                             <span class="glyphicon glyphicon-chevron-left"></span>
@@ -647,7 +642,7 @@
                         <!-- Colaborador 2 -->
                         <div class="item ">
                             <div class="col-md-12 text-center">
-                               {{ HTML::image('imagenes/red/integrantes/fotos/panama/MarielaMendoza.png','integrante pan2')}}
+                                {{ HTML::image('imagenes/red/integrantes/fotos/panama/MarielaMendoza.png','integrante pan2')}}
                             </div>
                             <div class="col-md-12 carousel-caption carousel-captionInt">
                                 <h3>Mariela Mendoza de Quezada</h3>
@@ -706,7 +701,7 @@
                         <!-- Colaborador 1 -->
                         <div class="item active">
                             <div class="col-md-12 text-center">
-                               {{ HTML::image('imagenes/red/integrantes/fotos/guatemala/CarlotaCalito.png','guatemala 1')}}
+                                {{ HTML::image('imagenes/red/integrantes/fotos/guatemala/CarlotaCalito.png','guatemala 1')}}
                             </div>
                             <div class="col-md-12 carousel-caption carousel-captionInt">
                                 <h3>Carlota Calito de Alfaro</h3>
@@ -730,10 +725,10 @@
                                 </div>
                             </div>
                         </div>
-                          <!-- Colaborador 2 -->
+                        <!-- Colaborador 2 -->
                         <div class="item ">
                             <div class="col-md-12 text-center">
-                               {{ HTML::image('imagenes/red/integrantes/fotos/guatemala/carlosLopez.png','guatemala 2')}}
+                                {{ HTML::image('imagenes/red/integrantes/fotos/guatemala/carlosLopez.png','guatemala 2')}}
                             </div>
                             <div class="col-md-12 carousel-caption carousel-captionInt">
                                 <h3>Carlos López</h3>
@@ -783,7 +778,7 @@
                     <div class="carousel-inner carousel-innerInt">
                         <div class="item active">
                             <div class="col-md-12 text-center">
-                               {{ HTML::image('imagenes/red/integrantes/fotos/honduras/GladisOndinaGalindo.png','integrante hon1')}}
+                                {{ HTML::image('imagenes/red/integrantes/fotos/honduras/GladisOndinaGalindo.png','integrante hon1')}}
                             </div>
                             <div class="col-md-12 carousel-caption carousel-captionInt">
                                 <h3>Gladis Ondina Galindo Velásquez</h3>
@@ -841,7 +836,7 @@
                     <div class="carousel-inner carousel-innerInt">
                         <div class="item active">
                             <div class="col-md-12 text-center">
-                               {{ HTML::image('imagenes/red/integrantes/fotos/elsalvador/carlosrodriguezrivas.png','el salvador1')}}
+                                {{ HTML::image('imagenes/red/integrantes/fotos/elsalvador/carlosrodriguezrivas.png','el salvador1')}}
                             </div>
                             <div class="col-md-12 carousel-caption carousel-captionInt">
                                 <h3>Carlos Rodríguez Rivas</h3>
