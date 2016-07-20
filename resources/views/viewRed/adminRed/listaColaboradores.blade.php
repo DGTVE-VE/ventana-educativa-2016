@@ -3,34 +3,31 @@
 			<h3 class="text-uppercase">Colaboradores</h3>
 		</div>
 	</div>
-	<div class="row">
-		<div class="col-md-2">
-		</div>
-		{{--*/ $i=0; /*--}}
 		@foreach($colaboradores as $colaborador)
-			<div class="col-md-3">
-				<div class="thumbnail">
-					<img src="{{$colaborador->url_foto}}" alt="Fotografia Colaborador">
-					<div class="caption text-justify">
-						<h4>{{$colaborador->name}} {{$colaborador->a_paterno}} {{$colaborador->a_materno}}</h4>
-						<p>{{$colaborador->puesto}}</p>
-						<p>{{$colaborador->area}}</p>
-						<p>{{$colaborador->dependencia}}</p>
-						<p>{{$colaborador->resena}}</p>
-					</div>
-					<button onclick="guardaDecision({{$colaborador->user_id}}, '1')" type="button" class="btn btn-default">Acepta</button>
-					<button onclick="guardaDecision({{$colaborador->user_id}}, '0')" type="button" class="btn btn-default">Rechaza</button>
+		<div class="row">
+			<div class="col-md-1">
+			</div>
+			<div class="col-md-11">
+				<div class="col-md-1">
+					<img src="{{$colaborador->url_foto}}" alt="Fotografia Colaborador" class="img-responsive">
+				</div>
+				<div class="col-md-3">
+					<h4>{{$colaborador->name}} {{$colaborador->a_paterno}} {{$colaborador->a_materno}}</h4>
+					<p>{{$colaborador->puesto}}</p>
+					<p>{{$colaborador->area}}</p>
+					<p>{{$colaborador->dependencia}}</p>
+				</div>
+				<div class="col-md-7 text-justify">
+					<p>{{$colaborador->resena}}</p>
+				</div>
+				<div class="col-md-1">
+					<button onclick="guardaDecision({{$colaborador->user_id}}, '1')" type="button" class="btn btn-default" style="width:90px;">Acepta</button>
+					<button onclick="guardaDecision({{$colaborador->user_id}}, '0')" type="button" class="btn btn-default" style="width:90px;">Rechaza</button>
 				</div>
 			</div>
-			{{--*/ $i++; /*--}}
-			@if($i % 3 == 0 && $i != 0)
-				</div>
-				<div class="row">
-					<div class="col-md-2">
-					</div>
-			@endif
+		</div>
 		@endforeach
-	</div>
+
 	<div id="alertaExito" class="alert alert-success" role="alert" style="position: fixed; top:50%; left: 45%; padding: 50px; display:none;">Registro modificado con exito</div>
 	<div id="alertaError" class="alert alert-warning" role="alert" style="position: fixed; top:50%; left: 45%; padding: 50px; display:none;">Error al modificar el registro</div>
 	<script>
