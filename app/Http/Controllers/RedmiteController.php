@@ -295,14 +295,17 @@ class RedmiteController extends Controller {
 	public function guardaDecisionColabora($usuario, $resultado){
 		$affectedRows = Colaborador::where('user_id', '=', $usuario)->update(array('colabora' => $resultado));
 		if($resultado==0){
-			$datosContacto = ['nombre','renecrapaud@gmail.com','asunto'];
-			$correo = 'renecrapaud@gmail.com';
+			$datosColaborador = DB::table('users')->where('id', $usuario)->get();
+			foreach($datosColaborador as $datos){
+				$datosContacto = [$datos->name,$datos->a_paterno,$datos->a_materno];
+				$correo = $datos->email;
+			}
 			$hash = md5(date('Y/m/d H:i:s'));
 			Mail::send('viewAdmin.mailRechazo', ['correo' => $correo, 'hash' => $hash, 'datosContacto' => $datosContacto], function ($m) use ($correo) {
 				$m->from('ventana@televisioneducativa.gob.mx', 'RedMITE');
 				$m->to($correo)->subject('RedMITE inscripcion colaboradores');
 			});
 		}
-		return $affectedRows;
+		return $correo;
 	}
 }
