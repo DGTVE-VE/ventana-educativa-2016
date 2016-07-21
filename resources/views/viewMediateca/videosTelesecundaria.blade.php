@@ -105,6 +105,11 @@ Educamedia
 							<a id="ligaDescargaYoutube" href="{{ url('descarga/getvideo.php/yt/getvideo.mp4?videoid='.$videos[0]->url.'&format=best') }}"><span title="descarga video" class="glyphicon glyphicon-cloud-download btnDescarga" aria-hidden="true"></span></a>
 							Descarga Video
 						</div>
+						@else
+						<div class="col-md-3">
+							<span class="glyphicon glyphicon-cloud-download btnDescarga" aria-hidden="true" title="Solo docentes telesecundaria"></span>
+							Descarga Video
+						</div>
 						@endif
                     </div>
 
