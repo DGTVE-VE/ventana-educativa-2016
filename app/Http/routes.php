@@ -143,7 +143,8 @@ Route::group(['middleware' => 'web'], function () {
 	Route::post('educaplay/guardaComentaVideo', 'EducaplayController@guardaComentaVideo');
 	Route::get('educaplay/comentarioVideo/{videoId}', 'EducaplayController@comentariosVideo');
 	Route::get('educaplay/comentarioSerie/{serieId}', 'EducaplayController@comentariosSerie');
-
+	Route::post('educaplay/guardaTranscurrido', 'EducaplayController@guardaTiempoTranscurrido');
+	
   Route::any('agregaMiLista', 'EducaplayController@agregaMiLista');
   Route::any('votacion', 'EducaplayController@votacion');
   Route::any('guardaposicion', 'EducaplayController@guardaposicion');

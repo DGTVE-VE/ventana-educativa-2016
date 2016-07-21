@@ -21,6 +21,7 @@ use App\Model\Educaplay\Edu_rating;
 use App\Model\Educaplay\Edu_comments;
 use App\Model\Educaplay\Edu_clasificaciones;
 use App\Model\Educaplay\Edu_video;
+use App\Model\Educaplay\Edu_avance_visto;
 use Illuminate\Support\Facades\Auth;
 use Laracasts\Flash\Flash;
 
@@ -320,5 +321,14 @@ class EducaplayController extends Controller {
             return "No hay sesión iniciada";
         }
     }
-
+	public function guardaTiempoTranscurrido(){
+		if (\Auth::User()){
+			$id_usuario = \Auth::User()->id;
+            $id_video = filter_input(INPUT_POST, 'video_id');
+			$tiempoTranscurrido = filter_input(INPUT_POST, 'transcurrido');
+			$avance_visto = Edu_avance_visto::firstOrNew(array('user_id' => $id_usuario , 'video_id' => $id_video));
+			$avance_visto->minuto = $tiempoTranscurrido;
+			$avance_visto->save();
+		}
+	}
 }

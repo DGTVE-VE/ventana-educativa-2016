@@ -129,45 +129,73 @@ loadComments($("#video-id").val());
 });
 var player;
 var IdVideoYoutube;
-//	*********************	*******************
 
-function muestraVideo(urlVideo, idVideo, serieId){
-cargaRating(idVideo);
-IdVideoYoutube = urlVideo;
-player.loadVideoById(urlVideo);
-$('#episodio8').css('display', 'block');
-$('#episodio7').attr('name', idVideo);
-$('#temporadaActual').text($('#temporadaSerie' + idVideo).val());
-$('#capituloActual').text($('#episodioSerie' + idVideo).val());
-$('#sinopsisActual').text($('#sinopsisSerie' + idVideo).val());
-$('#video-id').val(idVideo);
-loadComments(idVideo);
-}
+	//	*******************		 Funciones para guardar el tiempo de reproducción transcurrido para un video		********************
+	function guardaTiempoTranscurrido(){
+		$.ajax({
+		method: "POST",
+			url: "{{url('educaplay/guardaTranscurrido')}}",
+			data: { video_id: IdVideoYoutube, transcurrido: player.getCurrentTime(), _token:"{{csrf_token()}}" },
+			error: function(ts) {
+			console.log (ts.responseText);
+		}})
+			.done(function(msg) {
+			console.log ("Data Saved: " + msg + ' ' + idVideo);
+		});
+	}
+	
+	function compruebaGuardaTiempo(){			//		--------------		En video terminado o pausado guarda tiempo transcurrido
+		if( player.getPlayerState() == 0 || player.getPlayerState() == 2){
+			guardaTiempoTranscurrido();
+		}
+	}
+	
+	window.onbeforeunload = function(event) {			// 	---------- Antes de salir de página, guardar tiempo transcurrido
+		guardaTiempoTranscurrido();
+	};
+	
+	//	**************************	Carga el reproductor con un video nuevo		*************************************
+	function muestraVideo(urlVideo, idVideo, serieId){
+		cargaRating(idVideo);
+		IdVideoYoutube = urlVideo;
+		if(player.getPlayerState() == 1){		// Si estado de video es reproduiciendo, guarda tiempo transcurrido de video actual antes de cargar siguiente
+			guardaTiempoTranscurrido();	
+		}
+		player.loadVideoById(urlVideo);
+		$('#episodio8').css('display', 'block');
+		$('#episodio7').attr('name', idVideo);
+		$('#temporadaActual').text($('#temporadaSerie' + idVideo).val());
+		$('#capituloActual').text($('#episodioSerie' + idVideo).val());
+		$('#sinopsisActual').text($('#sinopsisSerie' + idVideo).val());
+		$('#video-id').val(idVideo);
+		loadComments(idVideo);
+	}
 
-function onYouTubePlayerAPIReady() {
-initializeYoutube(IdVideoYoutube, 0);
-}
-function initializeYoutube(youtubeId, time) {
-player = new YT.Player('player', {
-width: 640,
-    height: 390,
-    videoId: youtubeId,
-    playerVars: {
-    controls: 0, // Los controles no se muestran
-            playsinline: 0, // Reproducción a pantalla completa
-            iv_load_policy: 3, // Las anotaciones del video no se muestran 
-            modestbranding: 1, // Evita que el logo de youtube se muestre en la barra de control
-            showinfo: 0, // Evita que se muestre información del video antes de su reproducción
-            enablejsapi: 1, // Permite que el reproductor sea controlado por el API de Javascript
-            autoplay: 1, // Autoinicio habilitado
-            rel: 0, // Evita que muestre videos relacionados al finalizar.
-            start: time // Tiempo en el que debe iniciar el video
-    },
-    events: {
-    //'onReady': onPlayerReady,
-    //'onStateChange': onPlayerStateChange
-    }
-});
+	function onYouTubePlayerAPIReady() {
+		initializeYoutube(IdVideoYoutube, 0);
+	}
+	
+	function initializeYoutube(youtubeId, time) {
+		player = new YT.Player('player', {
+		width: 640,
+		height: 390,
+		videoId: youtubeId,
+		playerVars: {
+		controls: 0, // Los controles no se muestran
+				playsinline: 0, // Reproducción a pantalla completa
+				iv_load_policy: 3, // Las anotaciones del video no se muestran 
+				modestbranding: 1, // Evita que el logo de youtube se muestre en la barra de control
+				showinfo: 0, // Evita que se muestre información del video antes de su reproducción
+				enablejsapi: 1, // Permite que el reproductor sea controlado por el API de Javascript
+				autoplay: 1, // Autoinicio habilitado
+				rel: 0, // Evita que muestre videos relacionados al finalizar.
+				start: time // Tiempo en el que debe iniciar el video
+		},
+		events: {
+		//'onReady': onPlayerReady,
+		'onStateChange': compruebaGuardaTiempo
+		}
+	});
 }
 </script>
 <style>
