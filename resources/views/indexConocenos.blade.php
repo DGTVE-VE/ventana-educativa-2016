@@ -44,7 +44,7 @@ and open the template in the editor.
             @yield('cuerpoConocenos')
         </div>
         <!-- jQuery -->
-        
+        <script src="js/conocenos/conocenos.js"></script>
     </body>
 </html>
 <?php
