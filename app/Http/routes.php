@@ -175,6 +175,9 @@ Route::group(['middleware' => 'web'], function () {
     Route::get('admin', 'AdminController@admin');
     /*     * **************************Administración********************** */
     
+        /*     * **************************Conocenos********************** */
+    Route::get('conocenos', 'ConocenosController@conocenos');
+    /*     * **************************Conocenos********************** */
     
 });
 

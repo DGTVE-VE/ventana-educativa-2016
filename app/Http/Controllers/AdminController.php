@@ -24,6 +24,7 @@ class AdminController extends Controller {
                 $usuarioTotal = DB::table('users')->count();
                 /* Series en educamedia */
                 $seriesLista = DB::table('edu_serie')->select('titulo_serie')->get();
+                /*Videos totales en educaplay y educamedia*/
                 $videosTotalTelesecundaria = DB::table('med_telesecundaria')->count();
                 $videosTotalTelebachillerato = DB::table('med_telebachillerato')->count();
                 return view('viewAdmin/admin')

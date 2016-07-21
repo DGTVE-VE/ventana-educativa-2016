@@ -1,0 +1,10 @@
+@section('titleConocenos')
+Conocenos
+@stop
+@extends('indexConocenos')
+@section('menuConocenos')
+@include('viewConocenos.encabezado')
+@endsection
+@section('cuerpoConocenos')
+@include('viewConocenos.cuerpo')
+@endsection
