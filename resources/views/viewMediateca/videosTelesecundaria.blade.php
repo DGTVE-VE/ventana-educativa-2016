@@ -107,7 +107,7 @@ Educamedia
 						</div>
 						@else
 						<div class="col-md-3">
-							<span class="glyphicon glyphicon-cloud-download btnDescarga" aria-hidden="true" title="Solo docentes telesecundaria"></span>
+							<span class="glyphicon glyphicon-cloud-download btnDescarga" aria-hidden="true" onclick="alert('Solo docentes telesecundaria')" title="Solo docentes telesecundaria"></span>
 							Descarga Video
 						</div>
 						@endif
