@@ -12,11 +12,28 @@
 	<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 	<!-- Styles -->
 	<link rel="stylesheet" type="text/css" href="js/parallaxCapas/examples/styles/styles.css"/>
-
+	<link rel="stylesheet" type="text/css" href="css/red/animate.css"/>
+	<style>
+		.flechaBrinca{
+			width:60px; height:18px; position: absolute; cursor:pointer;
+		}
+		.divFlechaBrinca{
+			position: fixed; bottom: 50px; text-align: center;
+		}
+		#textoMarca{
+			-webkit-animation-duration: 4s;
+			-moz-animation-duration: 4s;
+			-MS-animation-duration: 4s;
+			-o-animation-duration: 4s;
+			-animation-duration: 4s;
+		}
+	</style>
 </head>
 <body>
-
 	<div id="container" class="container">
+		<img id="textoMarca" class="animated" src="imagenes/ventana/conocenos/marcaTransparente.png" onclick="agregaClasesAnimate()"/>
+	</div>
+	<!--div id="container" class="container">
 		<ul id="scene" class="scene">
 			<li class="layer" data-depth="1.00"><img src="imagenes/ventana/parallaxCapas/layer1.png"></li>
 			<li class="layer" data-depth="0.80"><img src="imagenes/ventana/parallaxCapas/layer2.png"></li>
@@ -25,10 +42,11 @@
 			<li class="layer" data-depth="0.20"><img src="imagenes/ventana/parallaxCapas/layer5.png"></li>
 			<li class="layer" data-depth="0.00"><img src="imagenes/ventana/parallaxCapas/layer6.png"></li>
 		</ul>
-	</div>
+	</div-->
 	<div class="container">
-		<div style="height:200px;">
-			<img id="flechaBrinca" src="imagenes/educaplay/flechaDetalle.png" style="width:100px; height:30px; position: absolute;"/>
+		<div style="" class="divFlechaBrinca">
+			SCROLL DOWN
+			<img id="flechaBrinca" class="flechaBrinca" src="imagenes/educaplay/flechaDetalle.png"/>
 		</div>
 	</div>
 	<!-- Scripts -->
@@ -36,8 +54,8 @@
 	<script>
 
 	// *************	Activa parallax		****************
-	var scene = document.getElementById('scene');
-	var parallax = new Parallax(scene);
+	/*var scene = document.getElementById('scene');
+	var parallax = new Parallax(scene);*/
 	
 	//	************	Efecto de salto de la flecha 	***********
 	function mueveFlecha(dir){
@@ -58,7 +76,17 @@
 	$( document ).ready(function() {
 		mueveFlecha('abajo');
 	});
+
+	var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
+	$('#textoMarca').on(animationEnd, function() {
+		$('#textoMarca').removeClass('slideOutUp');
+		$('#textoMarca').addClass('slideInDown');
+	});
 	
+	function agregaClasesAnimate(){
+		$('#textoMarca').removeClass('slideInDown');
+		$('#textoMarca').addClass('slideOutUp');
+	}
 	</script>
 
 </body>
