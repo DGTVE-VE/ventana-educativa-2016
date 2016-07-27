@@ -10,7 +10,7 @@
 				onLeave: 
 				function(index, nextIndex, direction){
 					var leavingSection = $(this);
-					if(index == 1 && nextIndex == 4){
+					if(index == 1 && nextIndex == 7){
 						if($('#textoProyectos').css('display') == 'none'){
 							muestraProyectos();
 							return false;
@@ -105,7 +105,11 @@
 		position: absolute; bottom: 150px; text-align: center;
 	}
 	.videoFondo{
-		position: absolute; left:0px; top:0px; width: 95%; height: 100%;
+		position: absolute; right: 0; bottom: 0;
+		min-width: 100%; min-height: 100%;
+		width: auto; height: auto; z-index: 0;
+		background: url(polina.jpg) no-repeat;
+		background-size: cover;
 	}
 	#textoProyectos{
 		visibility:hidden;
@@ -149,12 +153,17 @@
 						<img id="flechaBrinca" class="flechaBrinca" src="imagenes/educaplay/flechaDetalle.png"/>
 					</div>
 				</div>
-				<div class="section fondo2">Some section 2</div>
-				<div class="section fondo3">Some section 3</div>
-				<div class="section fondo4"> <div class="slide"> Slide 1 </div>
+				<div class="section fondo2">Colaboradores, antecedentes, alineación del proyecto</div>
+				<div class="section fondo4">Secciones
+					<div class="slide"> Slide 1 </div>
 					<div class="slide"> Slide 2 </div>
 					<div class="slide"> Slide 3 </div>
-					<div class="slide"> Slide 4 </div></div>
+					<div class="slide"> Slide 4 </div>
+				</div>
+				<div class="section fondo3">LINKS</div>
+				<div class="section fondo1">Comunidad Educativa</div>
+				<div class="section fondo2">Noticias, Redes Sociales</div>
+				<div class="section fondo3">Contacto</div>
 			</div>
         </div>
         <!-- /#wrapper -->
