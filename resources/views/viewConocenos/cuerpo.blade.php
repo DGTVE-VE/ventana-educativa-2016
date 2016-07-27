@@ -70,6 +70,17 @@
 			$('#textoProyectos').addClass('slideInDown');
 		}, 500);
 	}
+	
+	//	**********	Comenzar reproducción de video de fondo	***********	
+	
+	function reproduceVideo(){
+		document.getElementById('videoFondo').play();
+		document.getElementById('videoFondo').loop = true;
+	}
+	function bajaImgProyectos(){
+		$('#textoProyectos').css('visibility','visible');
+		$('#textoProyectos').addClass('slideInDown');
+	}
 </script>
 <style>
 	.fondo1{
@@ -91,7 +102,13 @@
 		width:60px; height:18px; position: absolute; cursor:pointer;
 	}
 	.divFlechaBrinca{
-		position: absolute; bottom: 50px; text-align: center;
+		position: absolute; bottom: 150px; text-align: center;
+	}
+	.videoFondo{
+		position: absolute; left:0px; top:0px; width: 95%; height: 100%;
+	}
+	#textoProyectos{
+		visibility:hidden;
 	}
 </style>
 
@@ -122,9 +139,12 @@
         <div class="container-fluid">
 			<div id="fullpage">
 				<div class="section fondo1">
-					<img id="textoObjetivos" class="oculta animated" src="imagenes/ventana/conocenos/objetivos.png"/>
+					<video data-keepplaying class="videoFondo" id="videoFondo" oncanplay="reproduceVideo()" onplay="bajaImgProyectos()">
+						<source src="imagenes/ventana/conocenos/DJI_0008.mp4" type="video/mp4"/>
+					</video>
 					<img id="textoProyectos" class="animated" src="imagenes/ventana/conocenos/proyecto.png"/>
-					<div style="" class="divFlechaBrinca">
+					<img id="textoObjetivos" class="oculta animated" src="imagenes/ventana/conocenos/objetivos.png"/>
+					<div class="divFlechaBrinca">
 						SCROLL DOWN
 						<img id="flechaBrinca" class="flechaBrinca" src="imagenes/educaplay/flechaDetalle.png"/>
 					</div>
