@@ -14,4 +14,8 @@ class ConocenosController extends Controller
     public function bannerInicial() {
         return view('viewConocenos/bannerInicial');
     }
+    
+    public function slider() {
+        return view('viewConocenos/slider');
+    }
 }
