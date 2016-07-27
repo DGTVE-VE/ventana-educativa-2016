@@ -118,6 +118,7 @@
             <span class="hamb-middle"></span>
             <span class="hamb-bottom"></span>
         </button>
+	<!--************** Dentro de este div va el contenido de la página *********************-->
         <div class="container-fluid">
 			<div id="fullpage">
 				<div class="section fondo1">
@@ -139,4 +140,3 @@
         <!-- /#wrapper -->
     </div>
 </div>
-    <script src="https://cdn.jsdelivr.net/jquery.fullpage/2.5.9/jquery.fullPage.min.js"></script>
