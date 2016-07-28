@@ -115,8 +115,7 @@
 		visibility:hidden;
 	}
 </style>
-
-<div id="wrapperConocenos">
+<div id="wrapperConocenos" style="position: relative; top:-75px;">
     <div class="overlayConocenos"></div>
     <!-- Sidebar -->
     <nav class="navbar navbar-inverse navbar-fixed-top" id="sidebar-wrapperConocenos" role="navigation">
@@ -133,14 +132,14 @@
     <!-- /#sidebar-wrapper -->
 
     <!-- Page Content -->
-    <div id="page-content-wrapperConocenos">
+    <div id="page-content-wrapperConocenos" style="padding:0;">
         <button type="button" class="hamburgerConocenos is-closed" data-toggle="offcanvas">
             <span class="hamb-top"></span>
             <span class="hamb-middle"></span>
             <span class="hamb-bottom"></span>
         </button>
 	<!--************** Dentro de este div va el contenido de la página *********************-->
-        <div class="container-fluid">
+        <div class="container-fluid" style="padding:0;">
 			<div id="fullpage">
 				<div class="section fondo1">
 					<video data-keepplaying class="videoFondo" id="videoFondo" oncanplay="reproduceVideo()" onplay="bajaImgProyectos()">
@@ -169,3 +168,12 @@
         <!-- /#wrapper -->
     </div>
 </div>
+<script>
+/*	**********	Modificacion de estilo de barra de navegación de ventana	**********	*/
+	$('#formaBuscar').css('visibility','hidden');
+	$('#imagenLogoVentana').css('position','relative');
+	$('#imagenLogoVentana').css('left','100px');
+	$('#navegacionVentana').removeClass('navbar-fixed-top');
+	$('#navegacionVentana').css('height','55px');
+	$('#navegacionVentana').css('zIndex','2');
+</script>
