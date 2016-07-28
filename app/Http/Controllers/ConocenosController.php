@@ -18,4 +18,7 @@ class ConocenosController extends Controller
     public function slider() {
         return view('viewConocenos/slider');
     }
+    public function noticias() {
+        return view('viewConocenos/noticias');
+    }
 }
