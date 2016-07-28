@@ -115,8 +115,7 @@
 		visibility:hidden;
 	}
 </style>
-
-<div id="wrapperConocenos">
+<div id="wrapperConocenos" style="position: relative; top:-75px;">
     <div class="overlayConocenos"></div>
     <!-- Sidebar -->
     <nav class="navbar navbar-inverse navbar-fixed-top" id="sidebar-wrapperConocenos" role="navigation">
@@ -133,7 +132,7 @@
     <!-- /#sidebar-wrapper -->
 
     <!-- Page Content -->
-    <div id="page-content-wrapperConocenos">
+    <div id="page-content-wrapperConocenos" style="padding:0;">
         <button type="button" class="hamburgerConocenos is-closed" data-toggle="offcanvas">
             <span class="hamb-top"></span>
             <span class="hamb-middle"></span>
