@@ -2,7 +2,7 @@
     <div id="wrapper">
         <div class="overlay"></div>
         <!-- Sidebar -->
-        <div class="margensuperiormenuTS">
+        <div class="col-sm-3 margensuperiormenuTS">
             <nav class="navbar navbar-inverse navbar-fixed-top margensuperiormenuTS" id="sidebar-wrapper" role="navigation">
                 <ul class="nav sidebar-nav">
                     <li><a href="{{url('http://www.dgb.sep.gob.mx/02-m1/02-subsistemas/telebachillerato/NORMATIVIDAD/DOCUMENTO_BASE_TBC_2015.pdf')}}" target="_blank">Normatividad</a></li>

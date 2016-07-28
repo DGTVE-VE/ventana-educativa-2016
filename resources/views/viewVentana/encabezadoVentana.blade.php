@@ -57,22 +57,17 @@
                                         </a>
                                     </td>                        
                                     <td class="divApp centered">
-                                        <a class="" href="#">
-                                            {{ HTML::image('imagenes/ventana/encabezado/appIdiomas.png','Idiomas')}}
-                                        </a>
-                                    </td>
-                                    <td class="divApp centered">
                                         <a class="" href="{{url('educamedia')}}">
                                             {{ HTML::image('imagenes/ventana/encabezado/appMediateca.png','Mediateca: Videos de telesecundaria')}}
                                         </a>
                                     </td>
-                                </tr>
-                                <tr>
                                     <td class="divApp centered">
                                         <a class="" href="http://www.promocion.salud.gob.mx/dgps/interior1/programas/escuela_salud.html"target="_blank">
                                             {{ HTML::image('imagenes/ventana/encabezado/appSalud.png','Salud')}}
                                         </a>
                                     </td>
+                                </tr>
+                                <tr>
                                     <td class="divApp centered">
                                         <a class="" href="{{url('cultura')}}">
                                             {{ HTML::image('imagenes/ventana/encabezado/appCultura.png','Cultura: Conoce las diversas páginas de cultura a nivel Centro América')}}
@@ -83,6 +78,29 @@
                                             {{ HTML::image('imagenes/ventana/encabezado/appBiblioteca.png','Bibliotecas de Centro América')}}
                                         </a>
                                     </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                    </td>
+                                    <td class="text-center">
+                                        <p class="iconoGde" onclick="muestraMasIconos(event)">M&aacute;s</p>
+                                    </td>
+                                    <td>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td class="divApp centered">
+                                        <a class="" href="http://www.ibe.tv/" target="_blank" >
+                                            {{ HTML::image('imagenes/ventana/encabezado/appIbero.png','Canal Iberoamericano',['class'=>'ocultaImgApp'])}}
+                                        </a>
+                                    </td>
+                                    <td class="divApp centered">
+                                        <a class="" href="http://mexicox.gob.mx" target="_blank">
+                                            {{ HTML::image('imagenes/ventana/encabezado/appMexico.png','MexicoX',['class'=>'ocultaImgApp'])}}
+                                        </a>
+                                    </td>
+                                    <td></td>
                                 </tr>
                             </table>                                       
                         </ul>
@@ -263,8 +281,9 @@
     function muestraMasIconos(event) {
         if (imgOculto) {
             event.stopPropagation();
-            $(".ocultaImgApp").css("width", "83px");
-            $(".ocultaImgApp").css("height", "83px");
+            $(".ocultaImgApp").css("margin-left", "-40px");
+            $(".ocultaImgApp").css("width", "45px");
+            $(".ocultaImgApp").css("height", "45px");
             $(".ocultaImgApp").css("visibility", "visible");
             imgOculto = false;
         } else {

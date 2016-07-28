@@ -21,4 +21,7 @@ class ConocenosController extends Controller
     public function noticias() {
         return view('viewConocenos/noticias');
     }
+    public function mapa() {
+        return view('viewConocenos/mapa');
+    }
 }

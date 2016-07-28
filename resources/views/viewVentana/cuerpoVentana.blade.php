@@ -116,7 +116,7 @@
 				<area title="" shape="poly" coords="247,243,365,363,247,480,128,362" alt="canal IberoAmericano" href="http://www.ibe.tv/" target="_blank" />
 				<area title="" shape="poly" coords="4,479,126,361,241,479,126,600" alt="biblioteca" href="{{url('biblioteca')}}" />
 				<area title="" shape="poly" coords="249,482,367,366,486,482,368,600" alt="RedMITE" href="{{url('redmite')}}" />
-				<area title="" shape="poly" coords="246,485,362,603,246,723,129,603" alt="México X" href="http://mx.televisioneducativa.gob.mx/" target="_blank"/>
+				<area title="" shape="poly" coords="246,485,362,603,246,723,129,603" alt="México X" href="http://mexicox.gob.mx" target="_blank"/>
 				<area title="" shape="poly" coords="127,603,7,720,125,845,242,720" alt="Cultura" href="{{url('cultura')}}" />
 				<area title="" shape="poly" coords="366,604,484,723,366,849,247,726" alt="Salud" href="http://www.promocion.salud.gob.mx/dgps/interior1/programas/escuela_salud.html" target="_blank"/>
 			</map>
