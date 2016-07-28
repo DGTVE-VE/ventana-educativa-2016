@@ -102,7 +102,7 @@
 		width:60px; height:18px; position: absolute; cursor:pointer;
 	}
 	.divFlechaBrinca{
-		position: absolute; bottom: 150px; text-align: center;
+		position: absolute; bottom: 50px;
 	}
 	.videoFondo{
 		position: absolute; right: 0; bottom: 0;
@@ -147,8 +147,12 @@
 					</video>
 					<img id="textoProyectos" class="animated" src="imagenes/ventana/conocenos/proyecto.png"/>
 					<img id="textoObjetivos" class="oculta animated" src="imagenes/ventana/conocenos/objetivos.png"/>
-					<div class="divFlechaBrinca">
-						SCROLL DOWN
+					<div class="col-md-12"></div>
+					<div class="divFlechaBrinca col-md-2 col-md-offset-4">
+						CONTINUA NAVEGANDO
+					</div>
+					<div class="col-md-12"></div>
+					<div class="divFlechaBrinca col-md-1 col-md-offset-4 text-center">
 						<img id="flechaBrinca" class="flechaBrinca" src="imagenes/educaplay/flechaDetalle.png"/>
 					</div>
 				</div>
