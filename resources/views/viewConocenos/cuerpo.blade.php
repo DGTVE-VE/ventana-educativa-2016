@@ -11,8 +11,12 @@
 				function(index, nextIndex, direction){
 					var leavingSection = $(this);
 					if(index == 1 && nextIndex == 7){
-						if($('#textoProyectos').css('display') == 'none'){
-							muestraProyectos();
+						if($('#textoObjetivos').css('display') == 'block'){
+							cambiaImagenesAbajo('textoProyectos','textoObjetivos');
+							return false;
+						}
+						else if($('#botonPlay').css('display') == 'block'){
+							cambiaImagenesAbajo('textoObjetivos','botonPlay');
 							return false;
 						}
 						else{
@@ -20,8 +24,12 @@
 						}
 					}
 					else if(index == 1 && nextIndex == 2){
-						if($('#textoObjetivos').css('display') == 'none'){
-							muestraObjetivos();
+						if($('#textoProyectos').css('display') == 'block'){
+							cambiaImagenesArriba('textoObjetivos','textoProyectos');
+							return false;
+						}
+						else if($('#textoObjetivos').css('display') == 'block'){
+							cambiaImagenesArriba('botonPlay','textoObjetivos');
 							return false;
 						}
 					}
@@ -50,24 +58,34 @@
 		mueveFlecha('abajo');
 	});
 
-	function muestraObjetivos(){
-		$('#textoObjetivos').removeClass('slideOutDown');
-		$('#textoProyectos').removeClass('slideInDown');
-		$('#textoProyectos').addClass('slideOutUp');
+	function cambiaImagenesArriba(imgEntrante, imgSaliente){
+		var imagenEntrante = '#' + imgEntrante;
+		var imagenSaliente = '#' + imgSaliente;
+		$(imagenEntrante).removeClass('slideOutDown');
+		$(imagenSaliente).removeClass('slideInDown');
+		$(imagenSaliente).addClass('slideOutUp');
+		$(imagenSaliente).removeClass('slideInUp');
 		setTimeout(function(){ 
-			$('#textoProyectos').addClass('oculta');
-			$('#textoObjetivos').removeClass('oculta');
-			$('#textoObjetivos').addClass('slideInUp'); 
+			$(imagenSaliente).removeClass('muestra');
+			$(imagenSaliente).addClass('oculta');
+			$(imagenEntrante).removeClass('oculta');
+			$(imagenEntrante).addClass('muestra'); 
+			$(imagenEntrante).addClass('slideInUp');
 		}, 500);
 	}
 
-	function muestraProyectos(){
-		$('#textoProyectos').removeClass('slideOutUp');
-		$('#textoObjetivos').removeClass('slideInUp');
-		$('#textoObjetivos').addClass('slideOutDown');
-		setTimeout(function(){ $('#textoObjetivos').addClass('oculta');
-			$('#textoProyectos').removeClass('oculta');
-			$('#textoProyectos').addClass('slideInDown');
+	function cambiaImagenesAbajo(imgEntrante, imgSaliente){
+		var imagenEntrante = '#' + imgEntrante;
+		var imagenSaliente = '#' + imgSaliente;
+		$(imagenEntrante).removeClass('slideOutUp');
+		$(imagenSaliente).removeClass('slideInUp');
+		$(imagenSaliente).addClass('slideOutDown');
+		setTimeout(function(){
+			$(imagenSaliente).removeClass('muestra');
+			$(imagenSaliente).addClass('oculta');
+			$(imagenEntrante).removeClass('oculta');
+			$(imagenEntrante).addClass('muestra');
+			$(imagenEntrante).addClass('slideInDown');
 		}, 500);
 	}
 	
@@ -97,6 +115,9 @@
 	}
 	.oculta{
 		display: none;
+	}
+	.muestra{
+		 display:block;
 	}
 	.flechaBrinca{
 		width:60px; height:18px; position: absolute; cursor:pointer;
@@ -145,8 +166,9 @@
 					<video data-keepplaying class="videoFondo" id="videoFondo" oncanplay="reproduceVideo()" onplay="bajaImgProyectos()">
 						<source src="imagenes/ventana/conocenos/DJI_0008.mp4" type="video/mp4"/>
 					</video>
-					<img id="textoProyectos" class="animated" src="imagenes/ventana/conocenos/proyecto.png"/>
+					<img id="textoProyectos" class="muestra animated" src="imagenes/ventana/conocenos/proyecto.png"/>
 					<img id="textoObjetivos" class="oculta animated" src="imagenes/ventana/conocenos/objetivos.png"/>
+					<img id="botonPlay" class="oculta animated" src="imagenes/ventana/conocenos/botonPlay.png"/>
 					<div class="col-md-12"></div>
 					<div class="divFlechaBrinca col-md-2 col-md-offset-4">
 						CONTINUA NAVEGANDO
