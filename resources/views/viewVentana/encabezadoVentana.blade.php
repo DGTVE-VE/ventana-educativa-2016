@@ -23,7 +23,7 @@
                         <span class="icon-bar"></span>
                     </button>    
                     <a href="{{url('ventana_educativa')}}">
-                        {{ HTML::image('imagenes/ventana/encabezado/logoventana.png','Ventana Educativa', ['class'=>'image-responsive imgLogo']) }}
+                        {{ HTML::image('imagenes/ventana/encabezado/logoventana.png','Ventana Educativa', ['class'=>'image-responsive imgLogo', 'id'=>'imagenLogoVentana']) }}
                     </a>
                 </div> 
             </div>
@@ -32,7 +32,7 @@
                 <ul class="nav navbar-nav collapse navbar-collapse collapseBarra">
                     <li class="liBuscar">
                         <form action="" class="search-form" style="width: 200px;">
-                            <div class="form-group has-feedback">
+                            <div class="form-group has-feedback" id="formaBuscar">
                                 <label for="search" class="sr-only">Buscar</label>
                                 <input type="text" class="form-control" name="buscar" id="buscar" placeholder="buscar">
                                 <span id="iconoBuscar" class="glyphicon glyphicon-search form-control-feedback spanbuscar"></span>

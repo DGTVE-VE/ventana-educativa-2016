@@ -34,14 +34,14 @@ and open the template in the editor.
 
         <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" type="text/javascript" rel="stylesheet">
         <link href="css/conocenos/conocenos.css" rel="stylesheet">
-
+<link rel="stylesheet" href="{{ asset('css/ventana/estiloventana2.css') }}" >
         @yield('scripts')
     </head>
     <body>
         <header>
-            @yield('menuAConocenos')
+            @yield('menuConocenos')
         </header>
-        <div class="container-fluid">
+        <div class="container-fluid" style="padding:0;">
             @yield('cuerpoConocenos')
         </div>
         <!-- jQuery -->

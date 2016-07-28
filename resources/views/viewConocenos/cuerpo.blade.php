@@ -140,7 +140,7 @@
             <span class="hamb-bottom"></span>
         </button>
 	<!--************** Dentro de este div va el contenido de la página *********************-->
-        <div class="container-fluid">
+        <div class="container-fluid" style="padding:0;">
 			<div id="fullpage">
 				<div class="section fondo1">
 					<video data-keepplaying class="videoFondo" id="videoFondo" oncanplay="reproduceVideo()" onplay="bajaImgProyectos()">
@@ -169,3 +169,12 @@
         <!-- /#wrapper -->
     </div>
 </div>
+<script>
+/*	**********	Modificacion de estilo de barra de navegación de ventana	**********	*/
+	$('#formaBuscar').css('visibility','hidden');
+	$('#imagenLogoVentana').css('position','relative');
+	$('#imagenLogoVentana').css('left','100px');
+	$('#navegacionVentana').removeClass('navbar-fixed-top');
+	$('#navegacionVentana').css('height','55px');
+	$('#navegacionVentana').css('zIndex','2');
+</script>
