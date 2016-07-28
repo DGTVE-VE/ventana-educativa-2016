@@ -180,6 +180,7 @@ Route::group(['middleware' => 'web'], function () {
 	Route::get('bannerInicial', 'ConocenosController@bannerInicial');
         Route::get('slider', 'ConocenosController@slider');
         Route::get('noticias', 'ConocenosController@noticias');
+        Route::get('mapa', 'ConocenosController@mapa');
     /*     * **************************Conocenos********************** */
     
 });
