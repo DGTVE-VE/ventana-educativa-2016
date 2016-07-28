@@ -7,8 +7,8 @@
 
 $(document).ready(function () {
     /*para el menú hamburguesa*/
-  var trigger = $('.hamburger'),
-      overlay = $('.overlay'),
+  var trigger = $('.hamburgerConocenos'),
+      overlay = $('.overlayConocenos'),
      isClosed = false;
 
     trigger.click(function () {
@@ -31,7 +31,7 @@ $(document).ready(function () {
   }
   
   $('[data-toggle="offcanvas"]').click(function () {
-        $('#wrapper').toggleClass('toggled');
+        $('#wrapperConocenos').toggleClass('toggled');
   }); 
   /*fin para el menú hamburguesa*/
   
