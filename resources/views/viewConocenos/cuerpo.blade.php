@@ -56,6 +56,7 @@
 	}
 	$( document ).ready(function() {
 		mueveFlecha('abajo');
+		return true;
 	});
 
 	function cambiaImagenesArriba(imgEntrante, imgSaliente){
@@ -98,6 +99,9 @@
 	function bajaImgProyectos(){
 		$('#textoProyectos').css('visibility','visible');
 		$('#textoProyectos').addClass('slideInDown');
+	}
+	function avanzaSeccion(seccion){
+		$('#fullPage').fullpage.moveTo(seccion);
 	}
 </script>
 <style>
@@ -168,14 +172,14 @@
 					</video>
 					<img id="textoProyectos" class="muestra animated" src="imagenes/ventana/conocenos/proyecto.png"/>
 					<img id="textoObjetivos" class="oculta animated" src="imagenes/ventana/conocenos/objetivos.png"/>
-					<img id="botonPlay" class="oculta animated" src="imagenes/ventana/conocenos/botonPlay.png"/>
+					<a href="#"><img id="botonPlay" class="oculta animated" src="imagenes/ventana/conocenos/botonPlay.png"/></a>
 					<div class="col-md-12"></div>
 					<div class="divFlechaBrinca col-md-2 col-md-offset-4">
 						CONTINUA NAVEGANDO
 					</div>
 					<div class="col-md-12"></div>
 					<div class="divFlechaBrinca col-md-1 col-md-offset-4 text-center">
-						<img id="flechaBrinca" class="flechaBrinca" src="imagenes/educaplay/flechaDetalle.png"/>
+						<img id="flechaBrinca" class="flechaBrinca" src="imagenes/educaplay/flechaDetalle.png" onclick="avanzaSeccion('2')"/>
 					</div>
 				</div>
 				<div class="section fondo2">Colaboradores, antecedentes, alineación del proyecto</div>
