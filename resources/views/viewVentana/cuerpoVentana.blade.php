@@ -33,13 +33,13 @@
 		<div class="col-md-9 col-md-offset-1" style="margin-top:10px;">
 			<map name="mapaRombos" id="mapaRombos">
 				<area alt="Cultura" title="" shape="poly" coords="274,308,458,495,644,309,459,124" onmouseover="cambiaImgFoto('02')" onmouseout="cambiaImgCubo('02')"  href="{{url('cultura')}}"/>
-				<area alt="Canal IberoAmericano" title="" shape="poly" coords="442,511,680,750,918,512,681,274" onmouseover="cambiaImgFoto('04')" onmouseout="cambiaImgCubo('04')" href="http://www.ibe.tv/" target="_blank"/>
+				<area alt="Canal IberoAmericano" title="" shape="poly" coords="442,511,680,750,918,512,681,274" onmouseover="cambiaImgFoto('04')" onmouseout="cambiaImgCubo('04')" href="http://www.ibe.tv/es/canal/iberoamericano/315/En-directo.htm" target="_blank"/>
 				<area alt="Red MITE" title="" shape="poly" coords="933,1,680,253,933,506,1187,255" onmouseover="cambiaImgFoto('05')" onmouseout="cambiaImgCubo('05')" href="{{url('redmite')}}"/>
 				<area alt="educaplay" title="" shape="poly" coords="932,511,681,764,933,1017,1185,766" onmouseover="cambiaImgFoto('06')" onmouseout="cambiaImgCubo('06')" href="#"/>
 				<area alt="conocenos" title="" shape="poly" coords="1215,226,934,508,1216,794,1497,510" onmouseover="cambiaImgFoto('07')" onmouseout="cambiaImgCubo('07')" href="{{url('presentacion')}}"/>
 				<area alt="Biblioteca" title="" shape="poly" coords="1496,1,1243,253,1497,507,1750,253" onmouseover="cambiaImgFoto('08')" onmouseout="cambiaImgCubo('08')" href="{{url('biblioteca')}}"/>
 				<area alt="educamedia" title="" shape="poly" coords="1498,513,1245,765,1497,1017,1751,765" onmouseover="cambiaImgFoto('09')" onmouseout="cambiaImgCubo('09')" href="{{url('educamedia')}}"/>
-				<area alt="México X" title="" shape="poly" coords="1516,511,1753,274,1989,511,1753,748" onmouseover="cambiaImgFoto('10')" onmouseout="cambiaImgCubo('10')" href="http://mx.televisioneducativa.gob.mx/" target="_blank"/>
+				<area alt="México X" title="" shape="poly" coords="1516,511,1753,274,1989,511,1753,748" onmouseover="cambiaImgFoto('10')" onmouseout="cambiaImgCubo('10')" href="http://mexicox.gob.mx/" target="_blank"/>
 				<area alt="Salud" title="" shape="poly" coords="1969,534,2171,736,1968,938,1766,738" onmouseover="cambiaImgFoto('12')" onmouseout="cambiaImgCubo('12')" href="http://www.promocion.salud.gob.mx/dgps/interior1/programas/escuela_salud.html" target="_blank"/>
 			</map>
 			{{HTML::image('imagenes/ventana/homeventana/mapaRombos.png','mapaRombos',['name'=>'mapaRombos','id'=>'mapaRombos', 'class'=>'mapaRombos img-responsive', 'usemap'=>'#mapaRombos'])}}
@@ -113,10 +113,10 @@
 				<area title="" shape="poly" coords="129,119,247,239,364,119,244,2" alt="conocenos" href="{{url('presentacion')}}" />
 				<area title="" shape="poly" coords="7,244,126,123,243,244,123,361" alt="educamedia" href="{{url('educamedia')}}" />
 				<area title="" shape="poly" coords="251,245,367,125,484,245,368,363" alt="educaplay" href="#" />
-				<area title="" shape="poly" coords="247,243,365,363,247,480,128,362" alt="canal IberoAmericano" href="http://www.ibe.tv/" target="_blank" />
+				<area title="" shape="poly" coords="247,243,365,363,247,480,128,362" alt="canal IberoAmericano" href="http://www.ibe.tv/es/canal/iberoamericano/315/En-directo.htm" target="_blank" />
 				<area title="" shape="poly" coords="4,479,126,361,241,479,126,600" alt="biblioteca" href="{{url('biblioteca')}}" />
 				<area title="" shape="poly" coords="249,482,367,366,486,482,368,600" alt="RedMITE" href="{{url('redmite')}}" />
-				<area title="" shape="poly" coords="246,485,362,603,246,723,129,603" alt="México X" href="http://mexicox.gob.mx" target="_blank"/>
+				<area title="" shape="poly" coords="246,485,362,603,246,723,129,603" alt="México X" href="http://mexicox.gob.mx/" target="_blank"/>
 				<area title="" shape="poly" coords="127,603,7,720,125,845,242,720" alt="Cultura" href="{{url('cultura')}}" />
 				<area title="" shape="poly" coords="366,604,484,723,366,849,247,726" alt="Salud" href="http://www.promocion.salud.gob.mx/dgps/interior1/programas/escuela_salud.html" target="_blank"/>
 			</map>
