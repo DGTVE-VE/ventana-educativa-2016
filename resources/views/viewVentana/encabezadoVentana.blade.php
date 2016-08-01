@@ -62,8 +62,8 @@
                                         </a>
                                     </td>
                                     <td class="divApp centered">
-                                        <a class="" href="http://www.promocion.salud.gob.mx/dgps/interior1/programas/escuela_salud.html"target="_blank">
-                                            {{ HTML::image('imagenes/ventana/encabezado/appSalud.png','Salud')}}
+                                        <a class="" href="{{url('redmite')}}">
+                                            {{ HTML::image('imagenes/ventana/encabezado/appRed.png','Redmite',['width'=>'60%', 'height'=>'60%'])}}
                                         </a>
                                     </td>
                                 </tr>
@@ -76,6 +76,11 @@
                                     <td class="divApp centered">
                                         <a class="" href="{{url('biblioteca')}}">
                                             {{ HTML::image('imagenes/ventana/encabezado/appBiblioteca.png','Bibliotecas de Centro América')}}
+                                        </a>
+                                    </td>
+                                     <td class="divApp centered">
+                                        <a class="" href="http://www.promocion.salud.gob.mx/dgps/interior1/programas/escuela_salud.html"target="_blank">
+                                            {{ HTML::image('imagenes/ventana/encabezado/appSalud.png','Salud')}}
                                         </a>
                                     </td>
                                 </tr>
@@ -91,7 +96,7 @@
                                 <tr>
                                     <td></td>
                                     <td class="divApp centered">
-                                        <a class="" href="http://www.ibe.tv/" target="_blank" >
+                                        <a class="" href="http://www.ibe.tv/es/canal/iberoamericano/315/En-directo.htm" target="_blank" >
                                             {{ HTML::image('imagenes/ventana/encabezado/appIbero.png','Canal Iberoamericano',['class'=>'ocultaImgApp'])}}
                                         </a>
                                     </td>
