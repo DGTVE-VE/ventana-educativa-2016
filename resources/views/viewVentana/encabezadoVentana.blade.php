@@ -101,7 +101,7 @@
                                         </a>
                                     </td>
                                     <td class="divApp centered">
-                                        <a class="" href="http://mexicox.gob.mx" target="_blank">
+                                        <a class="" href="http://mexicox.gob.mx/" target="_blank">
                                             {{ HTML::image('imagenes/ventana/encabezado/appMexico.png','MexicoX',['class'=>'ocultaImgApp'])}}
                                         </a>
                                     </td>
