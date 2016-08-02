@@ -3,7 +3,7 @@
         <!--<div class="overlay"></div>-->
         <!-- Sidebar -->
         <div class="margensuperiormenuTS">
-            <nav class="navbar navbar-inverse navbar-fixed-top margensuperiormenuTS" id="sidebar-wrapper" role="navigation">
+            <nav class="navbar navbar-inverse navbar-fixed-top margensuperiormenuTS" id="sidebar-wrapperTS" role="navigation">
                 <ul class="nav sidebar-nav">
                     <li><a data-toggle="modal" href="#myModal-mision">Misión</a></li>
                     <li><a data-toggle="modal" href="#myModal-mapaCurricular">Mapa Curricular</a></li>
