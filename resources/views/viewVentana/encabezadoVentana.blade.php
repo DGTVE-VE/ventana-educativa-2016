@@ -63,7 +63,7 @@
                                     </td>
                                     <td class="divApp centered">
                                         <a class="" href="{{url('redmite')}}">
-                                            {{ HTML::image('imagenes/ventana/encabezado/appRed.png','Redmite',['width'=>'60%', 'height'=>'60%'])}}
+                                            {{ HTML::image('imagenes/ventana/encabezado/appRed.png','Redmite',['width'=>'75%', 'height'=>'75%'])}}
                                         </a>
                                     </td>
                                 </tr>
@@ -287,8 +287,8 @@
         if (imgOculto) {
             event.stopPropagation();
             $(".ocultaImgApp").css("margin-left", "-40px");
-            $(".ocultaImgApp").css("width", "45px");
-            $(".ocultaImgApp").css("height", "45px");
+            $(".ocultaImgApp").css("width", "75px");
+            $(".ocultaImgApp").css("height", "75px");
             $(".ocultaImgApp").css("visibility", "visible");
             imgOculto = false;
         } else {
