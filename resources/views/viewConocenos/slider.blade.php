@@ -6,9 +6,13 @@ Conocenos
 <section id="carousel">    				
     <div class="container">
         <div class="row">
-            <div class="col-md-12">
+			<div class="col-md-8 col-md-offset-4">
+				<div style="position:absolute; " id="divFigura"></div>
+				<div style="position:absolute;" id="divTriangulo" class="trianguloArriba"></div>
+			</div>
+            <div class="col-md-12" style="position:relative; top:80px;">
                 <!--<div class="quote"><i class="fa fa-quote-left fa-4x"></i></div>-->
-                <div class="carousel slide" id="fade-quote-carousel" data-ride="carousel" data-interval="3000">
+                <div class="carousel slide" id="fade-quote-carousel" data-ride="carousel" data-interval="0" style="border: solid 3px;">
                     <div class="col-md-12">
                         <!-- Carousel indicators -->
                         <div class="col-md-2"></div>
@@ -21,21 +25,21 @@ Conocenos
                     </div>
                     
                     <!-- Carousel items -->
-                    <div class="carousel-inner">
+                    <div class="carousel-inner" style="position: relative; top:200px;">
                         <div class="item">
-                            <div class="profile-circle" style="background-color: rgba(0,0,0,.2);"></div>
+                            <!--div class="profile-circle" style="background-color: rgba(0,0,0,.2);"></div-->
                             <blockquote>
                                 <p>Aqui va el contenido de colaboradores.</p>
                             </blockquote>	
                         </div>
                         <div class="active item">
-                            <div class="profile-circle" style="background-color: rgba(77,5,51,.2);"></div>
+                            <!--div class="profile-circle" style="background-color: rgba(77,5,51,.2);"></div-->
                             <blockquote>
                                 <p>Aqui va el contenido de la sección antecedentes.</p>
                             </blockquote>
                         </div>
                         <div class="item">
-                            <div class="profile-circle" style="background-color: rgba(145,169,216,.2);"></div>
+                            <!--div class="profile-circle" style="background-color: rgba(145,169,216,.2);"></div-->
                             <blockquote>
                                 <p>Aqui va el contenido de alineación del proyecto.</p>
                             </blockquote>
@@ -48,13 +52,12 @@ Conocenos
 					width:300px;
 					height:300px;
 					border-radius:0%;
-					/*transition: border-radius 0.8s ease;*/
 					background-color: purple;
-					transition-duration: 1s;
+					transition-duration: 0.8s;
 				}
 				.circulo{
 					border-radius: 50% !important;
-					transition-duration: 1s;
+					transition-duration: 0.8s;
 				}
 				.trianguloArriba{
 					width:0 !important;
@@ -62,13 +65,9 @@ Conocenos
 					border-left:150px solid transparent !important;
 					border-right:150px solid transparent !important;
 					border-bottom:300px solid purple !important;
-					transition-duration: 1s;
+					transition-duration: 0.8s;
 				}
 			</style>
-			<div class="col-md-12">
-				<div style="position:absolute;" id="divFigura"></div>
-				<div style="position:absolute;" id="divTriangulo" class="trianguloArriba"></div>
-			</div>
 			<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 			<script>
 				$('#divTriangulo').css({transform:'scale(0.1, 0.1)'});
@@ -83,10 +82,8 @@ Conocenos
 								if(!$('#divFigura').hasClass('circulo')){
 									$('#divFigura').addClass('circulo');
 								}
-								$('#divFigura').css({transform:'rotate(90deg)'});
-								//$('#divFigura').css({transform:'scale(1, 1)'});
-								$('#divTriangulo').css({transform:'rotate(-90deg)'});
-								$('#divTriangulo').css({transform:'scale(0.1, 0.1)'});
+								$('#divFigura').css({transform:'rotate(-90deg)'});
+								$('#divTriangulo').css({transform:'rotate(-90deg) scale(0.1, 0.1)'});
 							}
 							actual =1;
 							break;
@@ -98,19 +95,15 @@ Conocenos
 								if($('#divFigura').hasClass('circulo')){
 									$('#divFigura').removeClass('circulo');
 								}
-								$('#divFigura').css({transform:'rotate(90deg)'});
-								//$('#divFigura').css({transform:'scale(1, 1)'});
-								$('#divTriangulo').css({transform:'rotate(-90deg)'});
-								$('#divTriangulo').css({transform:'scale(0.1, 0.1)'});
+								$('#divFigura').css({transform:'rotate(-90deg)'});
+								$('#divTriangulo').css({transform:'rotate(-90deg) scale(0.1, 0.1)'});
 							}
 							actual =2;
 							break;
 						case 3:	//triangulo
 							if(actual==1 || actual==2){
-								$('#divTriangulo').css({transform:'rotate(-90deg)'});
-								//$('#divTriangulo').css({transform:'scale(1, 1)'});
-								$('#divFigura').css({transform:'rotate(-90deg)'});
-								$('#divFigura').css({transform:'scale(0.1, 0.1)'});
+								$('#divTriangulo').css({transform:'rotate(90deg)'});
+								$('#divFigura').css({transform:'scale(0.1, 0.1) rotate(90deg)'});
 							}
 							actual =3;
 							break;
