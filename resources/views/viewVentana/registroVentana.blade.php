@@ -90,20 +90,19 @@ Ventana Educativa
                         <label><input type="checkbox" name='is_student' id='is_student'> Estudiante</label>
                     </div>
                 </div>
-				<div class="form-group col-md-3" id="ocultaCCT" style="visibility:hidden;">
-					<label for="cct">C C T :</label>
-					<input type="text" name="cct" id="cct" class="form-control input-medium text-uppercase" placeholder="C C T">
-				</div>
-				<div class="form-group col-md-3" id="ocultaRFC"  style="visibility:hidden;">
-					<label for="curpDocente">C U R P :</label>
-					<input type="text" name="curpDocente" id="curpDocente" class="form-control input-medium text-uppercase" placeholder="C U R P" onblur="ValidaCURP(this.value)" disabled>
-				</div>
-                <div class="col-md-6 centered">
-                        <label>
-                            <input type="checkbox" name="condiciones" required> <a href="#" style="text-decoration: none; color: white;">Acepto los términos y condiciones</a>
-                        </label>
+                <div class="form-group col-md-3" id="ocultaCCT" style="visibility:hidden;">
+                    <label for="cct">C C T :</label>
+                    <input type="text" name="cct" id="cct" class="form-control input-medium text-uppercase" placeholder="C C T">
                 </div>
-
+                <div class="form-group col-md-3" id="ocultaRFC"  style="visibility:hidden;">
+                    <label for="curpDocente">C U R P :</label>
+                    <input type="text" name="curpDocente" id="curpDocente" class="form-control input-medium text-uppercase" placeholder="C U R P" onblur="ValidaCURP(this.value)" disabled>
+                </div>
+                <div class="col-md-6 centered">
+                    <label>
+                        <input type="checkbox" name="condiciones" required> <a data-toggle="modal" href="#modal-terminos-conciciones" style="text-decoration: none; color: white;">Acepto los términos y condiciones</a>
+                    </label>
+                </div>
                 <div class="form-group col-md-12 text-center">
                     <div class="col-md-4"></div>
                     <div class="col-md-1">
@@ -115,17 +114,32 @@ Ventana Educativa
                         <div>
                             <div class="col-md-4"></div>
                         </div>
-
                     </div>
                 </div>
             </form>
         </div>
     </div>
+    <!--Modal para Términos y condiciones -->
+    <div class="modal fade" id="modal-terminos-conciciones" role="dialog">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Términos y Condiciones</h4>
+                </div>
+                <div class="modal-body">
+                    <a href="#">
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div> <!-- Fin modal Términos y condiciones-->
 </div>
 
 <script>
-	/************ Valida formato CURP ****************************************************/
-	    function mensajeCURP(flag, mensaje, componente) {
+    /************ Valida formato CURP ****************************************************/
+    function mensajeCURP(flag, mensaje, componente) {
         if (flag) {
             document.getElementById(componente).style.backgroundColor = 'lightpink';
             document.getElementById('mensaje-error').innerText = 'El ' + mensaje + ' tiene un formato incorrecto';
@@ -138,54 +152,52 @@ Ventana Educativa
             $('#mensaje-error').addClass('hidden');
         }
     }
-	function ValidaCURP(curpStr) {
-		if(curpStr!=''){
-			var strCorrecta;
-			strCorrecta = curpStr;	
-			var valid = "[A-Z]{1}[AEIOU]{1}[A-Z]{2}[0-9]{2}" +
-				"(0[1-9]|1[0-2])(0[1-9]|1[0-9]|2[0-9]|3[0-1])" +
-				"[HM]{1}" +
-				"(AS|BC|BS|CC|CS|CH|CL|CM|DF|DG|GT|GR|HG|JC|MC|MN|MS|NT|NL|OC|PL|QT|QR|SP|SL|SR|TC|TS|TL|VZ|YN|ZS|NE)" +
-				"[B-DF-HJ-NP-TV-Z]{3}" +
-				"[0-9A-Z]{1}[0-9]{1}$";
-			var validRfc=new RegExp(valid);
-			var matchArray=strCorrecta.match(validRfc);
-			if (matchArray==null) {
-				mensajeCURP(true,'C U R P','curpDocente');
-			}
-			else{
-				mensajeCURP(false,'C U R P','curpDocente');
-			}
-		}
-	}
-	/************ Muestra campos de CURP y CCT para docente ****************************************************/
-	function muestraAdicional(){
-		if($("#is_teacher").is(':checked')){
-			$("#ocultaRFC").css('visibility','visible');
-			$("#ocultaCCT").css('visibility','visible');
-			document.getElementById("curpDocente").required = true;
-			document.getElementById("cct").required = true;
-		}
-		else{
-			document.getElementById("curpDocente").required = false;
-			document.getElementById("cct").required = false;
-			$("#ocultaRFC").css('visibility','hidden');
-			$("#ocultaCCT").css('visibility','hidden');
-		}
-	}
-	/************ Valida si existe CCT capturado ****************************************************/
+    function ValidaCURP(curpStr) {
+        if (curpStr != '') {
+            var strCorrecta;
+            strCorrecta = curpStr;
+            var valid = "[A-Z]{1}[AEIOU]{1}[A-Z]{2}[0-9]{2}" +
+                    "(0[1-9]|1[0-2])(0[1-9]|1[0-9]|2[0-9]|3[0-1])" +
+                    "[HM]{1}" +
+                    "(AS|BC|BS|CC|CS|CH|CL|CM|DF|DG|GT|GR|HG|JC|MC|MN|MS|NT|NL|OC|PL|QT|QR|SP|SL|SR|TC|TS|TL|VZ|YN|ZS|NE)" +
+                    "[B-DF-HJ-NP-TV-Z]{3}" +
+                    "[0-9A-Z]{1}[0-9]{1}$";
+            var validRfc = new RegExp(valid);
+            var matchArray = strCorrecta.match(validRfc);
+            if (matchArray == null) {
+                mensajeCURP(true, 'C U R P', 'curpDocente');
+            } else {
+                mensajeCURP(false, 'C U R P', 'curpDocente');
+            }
+        }
+    }
+    /************ Muestra campos de CURP y CCT para docente ****************************************************/
+    function muestraAdicional() {
+        if ($("#is_teacher").is(':checked')) {
+            $("#ocultaRFC").css('visibility', 'visible');
+            $("#ocultaCCT").css('visibility', 'visible');
+            document.getElementById("curpDocente").required = true;
+            document.getElementById("cct").required = true;
+        } else {
+            document.getElementById("curpDocente").required = false;
+            document.getElementById("cct").required = false;
+            $("#ocultaRFC").css('visibility', 'hidden');
+            $("#ocultaCCT").css('visibility', 'hidden');
+        }
+    }
+    /************ Valida si existe CCT capturado ****************************************************/
     function resaltaCampo(flag, mensaje, componente) {
         if (flag) {
             document.getElementById(componente).style.backgroundColor = 'lightpink';
             document.getElementById('mensaje-error').innerText = 'El ' + mensaje + ' no existe';
             $('#mensaje-error').removeClass('hidden');
             document.getElementById('btnEnviar').disabled = true;
-			document.getElementById('curpDocente').disabled = true;
+            document.getElementById('curpDocente').disabled = true;
         } else {
             document.getElementById(componente).style.backgroundColor = 'white';
             document.getElementById('mensaje-error').innerText = '';
             document.getElementById('btnEnviar').disabled = false;
-			document.getElementById('curpDocente').disabled = false;
+            document.getElementById('curpDocente').disabled = false;
             $('#mensaje-error').addClass('hidden');
         }
     }
@@ -193,7 +205,7 @@ Ventana Educativa
         var xhttp = new XMLHttpRequest();
         xhttp.onreadystatechange = function () {
             if (xhttp.readyState == 4 && xhttp.status == 200) {
-				console.log('respuesta ' + xhttp.responseText);
+                console.log('respuesta ' + xhttp.responseText);
                 if (xhttp.responseText == '[]') { // cct no existe
                     resaltaCampo(true, mensaje, componente);
                 } else {
