@@ -11,19 +11,43 @@
     transition: all 0.5s ease;
 }
 @media (min-width: 2560px) {
-  #sidebar-wrapper  {
+  #sidebar-wrapperTS  {
      height: 24% !important;
   }  
 }
-#wrapper.toggled {
-    padding-left: 221px; /*separación de la pestaña menú con la lista  221*/
-}
 
-#sidebar-wrapper {
+#sidebar-wrapperTS {
     z-index: 1000;
     left: 220px; /*ampliar contenedor de menú  220*/
     width: 0;
-    height: 39%;/* tamaño del contenedor de la lista de menú */
+    height: 41%;/* tamaño del contenedor de la lista de menú */
+    margin-left: -220px;
+    margin-top: 0; /*margen superior del menú*/ 
+    line-height: 5%;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    /*background: #424242;*/
+    background: rgba(0, 0, 0, 0.5);
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+#wrapper.toggled #sidebar-wrapperTS {
+    width: 220px;
+}
+
+@media (min-width: 2560px) {
+  #sidebar-wrapperTB  {
+     height: 24% !important;
+  }  
+}
+
+#sidebar-wrapperTB {
+    z-index: 1000;
+    left: 220px; /*ampliar contenedor de menú  220*/
+    width: 0;
+    height: 35%;/* tamaño del contenedor de la lista de menú */
     margin-left: -220px;
     margin-top: 0; /*margen superior del menú*/ 
     line-height: 5%;
@@ -37,8 +61,12 @@
     transition: all 0.5s ease;
 }
 
-#wrapper.toggled #sidebar-wrapper {
+#wrapper.toggled #sidebar-wrapperTB {
     width: 220px;
+}
+
+#wrapper.toggled {
+    padding-left: 221px; /*separación de la pestaña menú con la lista  221*/
 }
 
 #page-content-wrapper {
