@@ -48,7 +48,7 @@
                 </div>
                 <div class="modal-body">
                     <a href="{{url('http://www.enba.sep.gob.mx/files/calendario2015-2016.pdf')}}" target="_blank">
-                        {{ HTML::image('imagenes/mediateca/tsecundaria/calendarioEscolar.jpg','calendario',['width'=>'100%','height'=>'100%']) }}
+                        {{ HTML::image('imagenes/mediateca/tbachillerato/calendarioTS.jpg','calendario',['width'=>'100%','height'=>'100%']) }}
                     </a>
                 </div>
             </div>
