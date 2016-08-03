@@ -1,6 +1,7 @@
 <?php
 	use App\Http\Controllers\BibliotecaController;
 	$clasificacionActual = BibliotecaController::obtieneClasificacion();
+        
         if($clasificacionActual =='Nacionales'){
            $imagenCat ='imagenes/biblioteca/tomos/nacionales.png'; 
         }else{
@@ -18,6 +19,11 @@
                         }else{
                             if($clasificacionActual=="Investigación"){
                                 $imagenCat = 'imagenes/biblioteca/tomos/investigacion.png';
+                            }else{
+                                if($clasificacionActual=="Todos"){
+                                    $imagenCat = '';
+                                    print 'Todos';
+                                }
                             }
                         }
                     }
