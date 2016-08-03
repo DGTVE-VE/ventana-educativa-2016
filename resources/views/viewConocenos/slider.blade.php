@@ -20,7 +20,7 @@ Conocenos
         <div class="row">
 			<div class="col-md-8 col-md-offset-4">
 				<div style="position:absolute; top:70px; left:-80px; border: solid 3px; width:500px; height:180px;"></div>
-				<div style="position:absolute;" id="divTriangulo" class="trianguloArriba"></div>
+				<div style="position:absolute; top:-30px; left: 50px; " id="divTriangulo" class="trianguloArriba"></div>
 				<div style="position:absolute; " id="divFigura"></div>
 			</div>
             <div class="col-md-12" style="position:relative; top:100px;">
@@ -72,6 +72,9 @@ Conocenos
 					background: linear-gradient(#33ffff, #ccffff); /* Standard syntax */
 					transition-duration: 0.8s;
 				}
+				.homologaColor{
+					z-index:-1;
+				}
 				.circulo{
 					border-radius: 50% !important;
 					transition-duration: 0.8s;
@@ -99,6 +102,9 @@ Conocenos
 								$('#divFigura').css({transform:'rotate(-90deg)'});
 								$('#divFigura').addClass('circulo');
 							}else if(actual==3){
+								if($('#divFigura').hasClass('homologaColor')){
+									$('#divFigura').removeClass('homologaColor');
+								}
 								if(!$('#divFigura').hasClass('circulo')){
 									$('#divFigura').addClass('circulo');
 								}
@@ -112,6 +118,9 @@ Conocenos
 								$('#divFigura').css({transform:'rotate(90deg)'});
 								$('#divFigura').removeClass('circulo');
 							}else if(actual==3){
+								if($('#divFigura').hasClass('homologaColor')){
+									$('#divFigura').removeClass('homologaColor');
+								}
 								if($('#divFigura').hasClass('circulo')){
 									$('#divFigura').removeClass('circulo');
 								}
@@ -122,11 +131,14 @@ Conocenos
 							break;
 						case 3:	//triangulo
 							if(actual==1 || actual==2){
-								$('#divTriangulo').css({transform:'rotate(60deg)'});
+								$('#divTriangulo').css({transform:'rotate(45deg)'});
 								if($('#divFigura').hasClass('circulo')){
 									$('#divFigura').removeClass('circulo');
 								}
 								$('#divFigura').css({transform:'scale(0.3, 0.1) rotate(70deg)'});
+								if(!$('#divFigura').hasClass('homologaColor')){
+									setTimeout($('#divFigura').addClass('homologaColor'),1000);
+								}
 							}
 							actual =3;
 							break;
