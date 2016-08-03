@@ -30,13 +30,16 @@ class BibliotecaController extends Controller {
 
 	public static function obtieneClasificacion(){
 		$uri = $_SERVER['REQUEST_URI'];
-		$uriActual = explode('/', $uri);
-		$elemsURI = count($uriActual);
-		$j = $elemsURI - 1;
+		$uriActual = explode('/', $uri);                
+		$elemsURI = count($uriActual);                
+		$j = $elemsURI - 1;                
 		if($uriActual[$j]==0){
 			$nombreClasifica = "";
 		}else{
 			$clasificaActual = DB::table('bib_clasifica')->select('nombre')->where('id','=',$uriActual[$j])->get();
+                        if($uriActual[$j] == 1){
+                            $imagenCat="Nacionales";
+                        }
 			
 			$cuenta=0;
 			foreach($clasificaActual as $actual){

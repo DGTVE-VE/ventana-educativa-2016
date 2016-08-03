@@ -1,6 +1,29 @@
 <?php
 	use App\Http\Controllers\BibliotecaController;
 	$clasificacionActual = BibliotecaController::obtieneClasificacion();
+        if($clasificacionActual =='Nacionales'){
+           $imagenCat ='imagenes/biblioteca/tomos/nacionales.png'; 
+        }else{
+            if($clasificacionActual=="Universitarias"){
+                $imagenCat = 'imagenes/biblioteca/tomos/universitarias.png';
+            }else{
+                if($clasificacionActual=="Escolares"){
+                    $imagenCat = 'imagenes/biblioteca/tomos/escolares.png';
+                }else{
+                    if($clasificacionActual=="Públicas"){
+                        $imagenCat = 'imagenes/biblioteca/tomos/publicas.png';
+                    }else{
+                        if($clasificacionActual=="Especializadas"){
+                            $imagenCat = 'imagenes/biblioteca/tomos/especializadas.png';
+                        }else{
+                            if($clasificacionActual=="Investigación"){
+                                $imagenCat = 'imagenes/biblioteca/tomos/investigacion.png';
+                            }
+                        }
+                    }
+                }
+            }
+        }
 ?>
 @section('titleBiblioteca')
 	Biblioteca
@@ -10,7 +33,7 @@
 @include('viewVentana.encabezadoVentana')
 <style>
     .fondoDegradadoMenuInicial{
-        background: rgba(0, 0, 0, .7);
+        background: rgba(0, 0, 0, .5);
         /*background: #000;*/
         border: none;
     }
@@ -134,24 +157,25 @@
 				@endif
 				@if(($item % 2 === 0) && $item!=0)
 					<div class="visible-xs-block col-xs-12 posiciona">
-						<img src="{{ asset('imagenes/biblioteca/tomos/plecaMadera.png') }}" class="imgMadera"/>
-						<div class="textoEstante estanteSuperior text-uppercase"> {{$clasificacionActual}}</div>
+						<img src="{{ asset('imagenes/biblioteca/tomos/plecaMadera1.jpg') }}" class="imgMadera"/>
+						<div class="textoEstante estanteSuperior text-uppercase"> <img src="{{asset($imagenCat)}}"style="width:18%;"></div>
 					</div>
 				@endif
 				@if(($item % 4 === 0) && $item!=0)
 					<div class="visible-sm-block col-sm-12 posiciona">
-						<img src="{{ asset('imagenes/biblioteca/tomos/plecaMadera.png') }}" class="imgMadera"/>
-						<div class="textoEstante estanteSuperior text-uppercase"> {{$clasificacionActual}}</div>
+						<img src="{{ asset('imagenes/biblioteca/tomos/plecaMadera1.jpg') }}" class="imgMadera"/>
+						<div class="textoEstante estanteSuperior text-uppercase"> <img src="{{asset($imagenCat)}}"style="width:18%;"></div>
 					</div>
 				@endif
 					<div id="contenedor{{$i}}{{$item}}" class="col-xs-3 col-sm-2 col-md-1 col-lg-1 contenedor" onmouseenter="muestraDescripcion({{$i}},{{$item}})" onmouseleave="ocultaDescripcion({{$i}},{{$item}})">
-						<a id="ligaBiblioteca{{$i}}{{$item}}" href="{{$tomo->link_consulta}}" class="textoLigaBiblio" target="_blank">Ir a la biblioteca</a>
+						<a id="ligaBiblioteca{{$i}}{{$item}}" href="{{$tomo->link_consulta}}" class="textoLigaBiblio" target="_blank">
+                                                    <img src="{{ asset('imagenes/biblioteca/tomos/ir_biblioteca.png')}}" alt="Ir a la Biblioteca"></a>
 						<img id="imagenLomo{{$i}}" src="{{url($tomo->url_tomo)}}" class="img-responsive imagenLomo" alt="...">
 						<img id="descripcion{{$i}}{{$item}}" src="{{url($tomo->url_descripcion)}}" class="img-responsive imagenDescribe" alt="...">
 					</div>
 				@if(($item+1) % 10 === 0)
-					<img src="{{ asset('imagenes/biblioteca/tomos/plecaMadera.png') }}" class="hidden-xs imgMadera"/>
-					<div class="textoEstante estanteSuperior text-uppercase"> {{$clasificacionActual}}</div>
+					<img src="{{ asset('imagenes/biblioteca/tomos/plecaMadera1.jpg') }}" class="hidden-xs imgMadera"/>
+                                        <div class="textoEstante estanteSuperior text-uppercase"> <img src="{{asset($imagenCat)}}" style="width:18%;"></div>
 					</div>
 					
 				@endif
@@ -160,8 +184,8 @@
 		@if($i===0)
 			<div class="textoEstante text-uppercase" style="color:black;"> NO HAY BIBLIOTECAS PARA ESTA CLASIFICACI&#211;N </div>
 		@else
-			<img src="{{ asset('imagenes/biblioteca/tomos/plecaMadera.png') }}" class="imgMadera"/>
-			<div class="textoEstante estanteInferior text-uppercase"> {{$clasificacionActual}}</div>
+			<img src="{{ asset('imagenes/biblioteca/tomos/plecaMadera1.jpg') }}" class="imgMadera"/>
+                        <div class="textoEstante estanteInferior text-uppercase"><img src="{{asset($imagenCat)}}"style="width:18%;" ></div>
 		@endif
 	</div>
 </div>
