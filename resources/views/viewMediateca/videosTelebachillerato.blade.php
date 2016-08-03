@@ -38,6 +38,11 @@ Educamedia
     ::-webkit-scrollbar-thumb:window-inactive {
         background: rgba(135,78,161,.6);
     }
+	.btnDescarga{
+		font-size:1.5em;
+		cursor: pointer;
+		color: white;
+	}
 </style>
 @section('menuMediateca')
 @include('viewMediateca.encabezadoMediateca')
@@ -58,10 +63,29 @@ Educamedia
                     <h4 id="titulo_programa">{{$videos[0]->programa}}</h4>
                     <div id="player" align="center">    </div>
                 </div>
-                <div class="col-md-12">
-                    <div class="col-md-12">
-                        <br>
-                        <div class="pull-right col-md-5">
+				<div class="row">
+					<div class="col-md-12">
+					<br>
+					</div>
+				</div>
+                <div class="row">
+                    @if(Auth::check ())
+                    <div class="col-md-1"></div>
+                    <div class="col-md-2">
+                        <input type="number" name="rating" id="star-rating" class="rating" data-icon-lib="fa" data-active-icon="fa-star" data-inactive-icon="fa-star-o"  />
+                        <input type="hidden" id="video-id" value="{{ $videos[0]->id }}" />
+                        <input type="hidden" id="nivel" value="{{ $nivel }}" />
+                    </div>
+                    <div class="col-md-2">
+                        <div
+                            class="fb-share-button"
+                            data-layout="button"
+                            data-mobile-iframe="true">
+                        </div>
+                    </div>
+                    @endif
+                    <div class="col-md-2">
+                        <div class="col-md-5">
                             <a href="https://twitter.com/share" class="twitter-share-button">Tweet</a> <script>!function (d, s, id) {
                                     var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https';
                                     if (!d.getElementById(id)) {
@@ -72,33 +96,20 @@ Educamedia
                                     }
                                 }(document, 'script', 'twitter-wjs');</script> 
                         </div>
-                        <div 
-                            class="fb-share-button pull-right" 
-                            data-layout="button" 
-                            data-mobile-iframe="true"
-                            >
-                        </div>
                     </div>
-                    @if(Auth::check ())
-                    <br>
-                    <div class="col-md-3"></div>
-                    <div class="col-md-3">
-<!--                        <a href="#"><i class="fa fa-facebook-square fa-2x redesText"></i></a>
-                        <a href="#"><i class="fa fa-twitter-square fa-2x redesText"></i></a>
-                        <a href="#"><i class="fa fa-envelope-square fa-2x redesText"></i></a>                -->
-                        <div
-                            class="fb-share-button"
-                            data-layout="button"
-                            data-mobile-iframe="true">
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <input type="number" name="rating" id="star-rating" class="rating" data-icon-lib="fa" data-active-icon="fa-star" data-inactive-icon="fa-star-o"  />
-                        <input type="hidden" id="video-id" value="{{ $videos[0]->id }}" />
-                        <input type="hidden" id="nivel" value="{{ $nivel }}" />
-                    </div>
-                    <div class="col-md-3"></div>
-                    @endif
+					@if($esDocente)
+					<div class="col-md-3">
+						<!--br-->
+						<a id="ligaDescargaYoutube" href="{{ url('descarga/getvideo.php/yt/getvideo.mp4?videoid='.$videos[0]->url.'&format=best') }}"><span title="descarga video" class="glyphicon glyphicon-cloud-download btnDescarga" aria-hidden="true"></span></a>
+						Descarga Video
+					</div>
+					@else
+					<div class="col-md-3">
+						<span class="glyphicon glyphicon-cloud-download btnDescarga" aria-hidden="true" onclick="alert('Solo docentes telebachillerato')" title="Solo docentes telebachillerato"></span>
+						Descarga Video
+					</div>
+					@endif
+
                 </div>
                 <div class="col-md-12">
                     <li class="list-unstyled"><h5 id="subtitulo_serie">{{ $videos[0]->subtitulo_serie }}</h5></li>
@@ -239,6 +250,8 @@ Educamedia
         $("#sinopsis-250").html(_videos[_id].sinopsis.substring(0, 350));
         $('#div-containter').fadeIn();
         loadComments(_id);
+		var ligaDescargaVideo = '{{ url("descarga/getvideo.php")}}' + "/yt/getvideo.mp4?videoid=" + data + "&format=best";
+		$('#ligaDescargaYoutube').attr('href',ligaDescargaVideo);
     });
     $(document).on('click', "a.linkComentar", function () {
         var $element = $(this);

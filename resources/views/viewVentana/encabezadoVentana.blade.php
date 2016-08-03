@@ -23,7 +23,7 @@
                         <span class="icon-bar"></span>
                     </button>    
                     <a href="{{url('ventana_educativa')}}">
-                        {{ HTML::image('imagenes/ventana/encabezado/logoventana.png','Ventana Educativa', ['class'=>'image-responsive imgLogo']) }}
+                        {{ HTML::image('imagenes/ventana/encabezado/logoventana.png','Ventana Educativa', ['class'=>'image-responsive imgLogo', 'id'=>'imagenLogoVentana']) }}
                     </a>
                 </div> 
             </div>
@@ -32,7 +32,7 @@
                 <ul class="nav navbar-nav collapse navbar-collapse collapseBarra">
                     <li class="liBuscar">
                         <form action="" class="search-form" style="width: 200px;">
-                            <div class="form-group has-feedback">
+                            <div class="form-group has-feedback" id="formaBuscar">
                                 <label for="search" class="sr-only">Buscar</label>
                                 <input type="text" class="form-control" name="buscar" id="buscar" placeholder="buscar">
                                 <span id="iconoBuscar" class="glyphicon glyphicon-search form-control-feedback spanbuscar"></span>
@@ -57,22 +57,17 @@
                                         </a>
                                     </td>                        
                                     <td class="divApp centered">
-                                        <a class="" href="#">
-                                            {{ HTML::image('imagenes/ventana/encabezado/appIdiomas.png','Idiomas')}}
-                                        </a>
-                                    </td>
-                                    <td class="divApp centered">
                                         <a class="" href="{{url('educamedia')}}">
                                             {{ HTML::image('imagenes/ventana/encabezado/appMediateca.png','Mediateca: Videos de telesecundaria')}}
                                         </a>
                                     </td>
-                                </tr>
-                                <tr>
                                     <td class="divApp centered">
-                                        <a class="" href="http://www.promocion.salud.gob.mx/dgps/interior1/programas/escuela_salud.html"target="_blank">
-                                            {{ HTML::image('imagenes/ventana/encabezado/appSalud.png','Salud')}}
+                                        <a class="" href="{{url('redmite')}}">
+                                            {{ HTML::image('imagenes/ventana/encabezado/appRed.png','Redmite',['width'=>'75%', 'height'=>'75%'])}}
                                         </a>
                                     </td>
+                                </tr>
+                                <tr>
                                     <td class="divApp centered">
                                         <a class="" href="{{url('cultura')}}">
                                             {{ HTML::image('imagenes/ventana/encabezado/appCultura.png','Cultura: Conoce las diversas páginas de cultura a nivel Centro América')}}
@@ -83,6 +78,34 @@
                                             {{ HTML::image('imagenes/ventana/encabezado/appBiblioteca.png','Bibliotecas de Centro América')}}
                                         </a>
                                     </td>
+                                     <td class="divApp centered">
+                                        <a class="" href="http://www.promocion.salud.gob.mx/dgps/interior1/programas/escuela_salud.html"target="_blank">
+                                            {{ HTML::image('imagenes/ventana/encabezado/appSalud.png','Salud')}}
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                    </td>
+                                    <td class="text-center">
+                                        <p class="iconoGde" onclick="muestraMasIconos(event)">M&aacute;s</p>
+                                    </td>
+                                    <td>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td class="divApp centered">
+                                        <a class="" href="http://www.ibe.tv/es/canal/iberoamericano/315/En-directo.htm" target="_blank" >
+                                            {{ HTML::image('imagenes/ventana/encabezado/appIbero.png','Canal Iberoamericano',['class'=>'ocultaImgApp'])}}
+                                        </a>
+                                    </td>
+                                    <td class="divApp centered">
+                                        <a class="" href="http://mexicox.gob.mx/" target="_blank">
+                                            {{ HTML::image('imagenes/ventana/encabezado/appMexico.png','MexicoX',['class'=>'ocultaImgApp'])}}
+                                        </a>
+                                    </td>
+                                    <td></td>
                                 </tr>
                             </table>                                       
                         </ul>
@@ -263,8 +286,9 @@
     function muestraMasIconos(event) {
         if (imgOculto) {
             event.stopPropagation();
-            $(".ocultaImgApp").css("width", "83px");
-            $(".ocultaImgApp").css("height", "83px");
+            $(".ocultaImgApp").css("margin-left", "-40px");
+            $(".ocultaImgApp").css("width", "75px");
+            $(".ocultaImgApp").css("height", "75px");
             $(".ocultaImgApp").css("visibility", "visible");
             imgOculto = false;
         } else {

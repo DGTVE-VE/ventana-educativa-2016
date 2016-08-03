@@ -7,7 +7,7 @@ Publicaciones
 @endsection
 @section('cuerpoRedmite')
 
-<div class="row">  <!--row inicial -->       
+<div class="row">  <!--row inicial -->
     <div class="col-md-12 fondo_Obscuro text-center text-uppercase">
         <p class="pleca">Publicaciones</p>
     </div>
@@ -31,481 +31,363 @@ Publicaciones
             </div>
             <div class="panel-body">
                 <div class="tab-content">
+
                     <!--TODOS-->
-                    <div class="tab-pane fade in active" id="todos">                        
-                        <!--Mexico-->
-                        <div class="row">
-                            <br>
+                    <div class="tab-pane fade in active" id="todos">
+
+                        @for($i = 0; $i < sizeof($publicaciones); $i++)
+
+                          @if($i == 0)
+                            <div class="row">
+                          @endif
+
                             <div class="col-md-4 hvr-pulse-grow animated bounceIn">
-                                <a href="{{url('publicacionesRed/mexico/cienciastecnologiasculturas.pdf')}}"  target="_blank">
-                                    {{ HTML::image('publicacionesRed/mexico/imagenesthumbnails/mexico01.jpg','tecnologías y cultura', array('class'=>'image-responsive tamaho-thumbnail-publicaciones'))}}
+                                <a href="{{url($publicaciones[$i]->url_descarga)}}"  target="_blank">
+                                    {{ HTML::image($publicaciones[$i]->imagen, $publicaciones[$i]->titulo, array('class'=>'image-responsive tamaho-thumbnail-publicaciones'))}}
                                 </a>
                                 <ul class="list-group list-group-flush text-center">
-                                    <li class="list-group-item text-justify">Título: Ciencias, tecnologías y culturas</li>
-                                    <li class="list-group-item text-justify">Autor: Silvia Fridman, Rubén Edel Navarro</li>
-                                    <li class="list-group-item text-justify">Categoría: Educación y nuevas tecnologías</li>
-                                    <li class="list-group-item text-justify"><a href="{{url('publicacionesRed/mexico/cienciastecnologiasculturas.pdf')}}" download="cienciasTecnologiasCulturas.pdf">
+                                    <li class="list-group-item text-justify">Título: {{$publicaciones[$i]->titulo}}</li>
+                                    <li class="list-group-item text-justify">Autor: {{$publicaciones[$i]->autor}}</li>
+                                    <li class="list-group-item text-justify">Categoría: {{$publicaciones[$i]->categoria}}</li>
+                                    <li class="list-group-item text-justify"><a href="{{url($publicaciones[$i]->url_descarga)}}" download="">
                                             Material de descarga</a></li>
                                 </ul>
                             </div>
 
-                            <div class="col-md-4 hvr-pulse-grow animated bounceIn">
-                                <a href="{{url('publicacionesRed/mexico/forointerregionalinvestigacionsobreeva.pdf')}}" target="_blank">
-                                    {{ HTML::image('publicacionesRed/mexico/imagenesthumbnails/mexico02.jpg','foro interregional', array('class'=>'image-responsive tamaho-thumbnail-publicaciones'))}}
-                                </a>
-                                <ul class="list-group list-group-flush text-center">
-                                    <li class="list-group-item text-justify">Título: Foro Interregional de investigación sobre EVA</li>
-                                    <li class="list-group-item text-justify">Autor: Rubén Edel Navarro, Manuel Juarez Pacheco, Yadira Navarro Rangel, María Soledad Ramírez Montoya </li>
-                                    <li class="list-group-item text-justify">Categoría: Redes Académicas y Tecnológicas</li>
-                                    <li class="list-group-item text-justify"><a href="{{url('publicacionesRed/mexico/forointerregionalinvestigacionsobreeva.pdf')}}" download="foroInterRegionalInvEVA.pdf">
-                                            Material de descarga</a></li>
-                                </ul>
+                            @if(($i+1)%3 == 0)
                             </div>
+                              <div class="row">
+                            @endif
 
-                            <div class="col-md-4 hvr-pulse-grow animated bounceIn">
-                                <a href="{{url('publicacionesRed/mexico/modelostecnoeducativos.pdf')}}" target="_blank">
-                                    {{ HTML::image('publicacionesRed/mexico/imagenesthumbnails/mexico03.jpg','modelos educativos', array('class'=>'image-responsive tamaho-thumbnail-publicaciones'))}}
-                                </a>
-                                <ul class="list-group list-group-flush text-center">
-                                    <li class="list-group-item text-justify">Título: Los modelos TecnoEducativos</li>
-                                    <li class="list-group-item text-justify">Autor: Ismael Esquivel Gómez</li>
-                                    <li class="list-group-item text-justify">Categoría: Aprendizaje del siglo XXI</li>
-                                    <li class="list-group-item text-justify"><a href="{{url('publicacionesRed/mexico/modelostecnoeducativos.pdf')}}" download="modelosTecnoEducativos.pdf">
-                                            Material de descarga</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <br>
+                            @if($i == sizeof($publicaciones)-1)
+                              </div>
+                            @endif
 
-                        <!--Row 2 -->  
-                        <div class="row">
-                            <div class="col-md-4 hvr-pulse-grow animated bounceIn">
-                                <a href="{{url('publicacionesRed/mexico/territorioseducación.pdf')}}" target="_blank">
-                                    {{ HTML::image('publicacionesRed/mexico/imagenesthumbnails/mexico04.jpg','territorios educativos', array('class'=>'image-responsive tamaho-thumbnail-publicaciones'))}}
-                                </a>
-                                <ul class="list-group list-group-flush text-center">
-                                    <li class="list-group-item text-justify">Título: Territorios de la Educación</li>
-                                    <li class="list-group-item text-justify">Autor: Genaro Aguirre Aguilar, Rubén Edel Navarro</li>
-                                    <li class="list-group-item text-justify">Categoría: Ambientes Educativos</li>
-                                    <li class="list-group-item text-justify"><a href="{{url('publicacionesRed/mexico/territorioseducacion.pdf')}}" download="territoriosEducación.pdf">
-                                            Material de descarga</a></li>
-                                </ul>
-                            </div>
-
-                            <div class="col-md-4 hvr-pulse-grow animated bounceIn">
-                                <a href="{{url('publicacionesRed/mexico/usabilidadpedagogicatic.pdf')}}" target="_blank">
-                                    {{ HTML::image('publicacionesRed/mexico/imagenesthumbnails/mexico05.jpg','usabilidad pedagogica', array('class'=>'image-responsive tamaho-thumbnail-publicaciones'))}}
-                                </a>
-                                <ul class="list-group list-group-flush text-center">
-                                    <li class="list-group-item text-justify">Título: Usabilidad Pedagógica de las TIC</li>
-                                    <li class="list-group-item text-justify">Autor: Brenda Luz Colorado Aguilar,Rubén Edel Navarro</li>
-                                    <li class="list-group-item text-justify">Categoría: Tecnologías de la Información y Comunicación</li>
-                                    <li class="list-group-item text-justify"><a href="{{url('publicacionesRed/mexico/usabilidadpedagogicatic.pdf')}}" download="usabilidadPedagogicaTIC.pdf">
-                                            Material de descarga</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <hr>
-                        <!--Fin México-->
-                        <!--Guatemala-->
-                        <div class="row">
-                            <br>
-                            <div class="col-md-4 hvr-pulse-grow animated bounceIn">
-                                <a href="{{url('publicacionesRed/guatemala/contemosjuntosprogramanacionalmatematica.pdf')}}" target="_blank">
-                                    {{ HTML::image('publicacionesRed/guatemala/imagenesthumbnails/guatemala01.jpg','programacin matematica', array('class'=>'image-responsive tamaho-thumbnail-publicaciones'))}}   
-                                </a>
-                                <ul class="list-group list-group-flush text-center">
-                                    <li class="list-group-item text-justify">Título: Contemos Juntos_Programa Nacional de Matemática</li>
-                                    <li class="list-group-item text-justify">Autor: Ministerio de Educación Guatemala</li>
-                                    <li class="list-group-item text-justify">Categoría: Matemática</li>
-                                    <li class="list-group-item text-justify"><a href="{{url('publicacionesRed/guatemala/contemosjuntosprogramanacionalmatematica.pdf')}}" download="contemosJuntosProgramanacioNacionalMatematica.pdf">
-                                            Material de descarga</a></li>
-                                </ul>
-                            </div>
-                            <div class="col-md-4 hvr-pulse-grow animated bounceIn">
-                                <a href="{{url('publicacionesRed/guatemala/enseñanzaaprendizajelectura.pdf')}}" target="_blank">
-                                    {{ HTML::image('publicacionesRed/guatemala/imagenesthumbnails/guatemala02.jpg','aprendizaje lectura', array('class'=>'image-responsive tamaho-thumbnail-publicaciones'))}}   
-                                </a>
-                                <ul class="list-group list-group-flush text-center">
-                                    <li class="list-group-item text-justify">Título: Enseñanza - aprendizaje de la lectura</li>
-                                    <li class="list-group-item text-justify">Autor: Ministerio de Educación Guatemala</li>
-                                    <li class="list-group-item text-justify">Categoría: Español</li>
-                                    <li class="list-group-item text-justify"><a href="{{url('publicacionesRed/guatemala/enseñanzaaprendizajelectura.pdf')}}" download="enseñanzaAprendizajeLectura.pdf">
-                                            Material de descarga</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <hr> 
-                        <!--Fin Guatemala-->
-                        <!--El Salvador-->
-                        <div class="row">
-                            <br>
-                            <div class="col-md-4 hvr-pulse-grow animated bounceIn">
-                                <a href="{{url('publicacionesRed/elsalvador/enseñanzaaprendizajelectura.pdf')}}" target="_blank">
-                                    {{ HTML::image('publicacionesRed/elsalvador/imagenesthumbnails/elsalvador01.jpg','aprendizaje lectura', array('class'=>'image-responsive tamaho-thumbnail-publicaciones'))}}
-                                </a>
-                                <ul class="list-group list-group-flush text-center">
-                                    <li class="list-group-item text-justify">Título: Enseñanza - Aprendizaje de la Lectura</li>
-                                    <li class="list-group-item text-justify">Autor: Ministerio de Educación El Salvador</li>
-                                    <li class="list-group-item text-justify">Categoría: Español</li>
-                                    <li class="list-group-item text-justify"><a href="{{url('publicacionesRed/elsalvador/enseñanzaaprendizajelectura.pdf')}}" download="enseñanzaAprendizajeLectura.pdf">
-                                            Material de descarga</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <hr>
-                        <!--Fin El Salvador-->
-                        <!--Honduras-->
-                        <div class="row">
-                            <br>
-                            <div class="col-md-4 hvr-pulse-grow animated bounceIn">
-                                <a href="{{url('publicacionesRed/honduras/expresioncomprensionlectora.pdf')}}" target="_blank">
-                                    {{ HTML::image('publicacionesRed/honduras/imagenesthumbnails/honduras01.jpg','comprension lectora', array('class'=>'image-responsive tamaho-thumbnail-publicaciones'))}}
-                                </a>
-                                <ul class="list-group list-group-flush text-center">
-                                    <li class="list-group-item text-justify">Título: Expresión y comprensión lectora</li>
-                                    <li class="list-group-item text-justify">Autor: Gladis O. Galindo</li>
-                                    <li class="list-group-item text-justify">Categoría: Español</li>
-                                    <li class="list-group-item text-justify"><a href="{{url('publicacionesRed/honduras/expresioncomprensionlectora.pdf')}}" download="expresionComprensionLectora.pdf">
-                                            Material de descarga</a></li>
-                                </ul>
-                            </div>
-                            <div class="col-md-4 hvr-pulse-grow animated bounceIn">
-                                <a href="{{url('publicacionesRed/honduras/enseñanzaaprendizajematematicas.pdf')}}" target="_blank">
-                                    {{ HTML::image('publicacionesRed/honduras/imagenesthumbnails/honduras02.jpg','enseñanza matematica', array('class'=>'image-responsive tamaho-thumbnail-publicaciones'))}}
-                                </a>
-                                <ul class="list-group list-group-flush text-center">
-                                    <li class="list-group-item text-justify">Título: Enseñanza - aprendizaje de la matemática</li>
-                                    <li class="list-group-item text-justify">Autor: Honduras</li>
-                                    <li class="list-group-item text-justify">Categoría: Matemáticas</li>
-                                    <li class="list-group-item text-justify"><a href="{{url('publicacionesRed/honduras/enseñanzaaprendizajematematicas.pdf')}}" download="enseñanzaAprendizajeMatemáticas.pdf">
-                                            Material de descarga</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <hr>
-                        <!--Fin Honduras-->
-
-                        <!----------- ******  Opción Nicaragua ****** -----> 
-                        <!----------- ****** Termina Opción Nicaragua ****** -----> 
-
-
-                        <!----------- ******  Opción Costa rica ****** -----> 
-                        <!----------- ****** Termina Opción Costa Rica ****** -----> 
-
-
-                        <!----------- ****** Panamá ****** ----->  
-                        <div class="row">
-                            <br>
-                            <div class="col-md-4 hvr-pulse-grow animated bounceIn">
-                                <a href="{{url('publicacionesRed/panama/españolmatematica.pdf')}}" target="_blank">
-                                    {{ HTML::image('publicacionesRed/panama/imagenesthumbnails/panama01.jpg','español-matematica', array('class'=>'image-responsive tamaho-thumbnail-publicaciones'))}}
-                                </a>
-                                <ul class="list-group list-group-flush text-center">
-                                    <li class="list-group-item text-justify">Título: Español y matemática</li>
-                                    <li class="list-group-item text-justify">Autor: Gibzka de vernier, Mariela M. de Quezada</li>
-                                    <li class="list-group-item text-justify">Categoría: Educación Básica</li>
-                                    <li class="list-group-item text-justify"><a href="{{url('publicacionesRed/panama/españolmatematica.pdf')}}" download="españolMatematica.pdf">
-                                            Material de descarga</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <hr>
-                        <!----------- ****** Fin Panamá ****** ----->  
-                        <!----------- ******  Opción Colombia ****** ----->  
-                        <!----------- ****** Termina Opción Colombia ****** ----->    
-
-
-                        <!----------- ******  Rep. Dominicana ****** ----->    
-                        <div class="row">
-                            <br>
-                            <div class="col-md-4 hvr-pulse-grow animated bounceIn">
-                                <a href="{{url('publicacionesRed/repdominicana/compresionlectora.pdf')}}" target="_blank">
-                                    {{ HTML::image('publicacionesRed/repdominicana/imagenesthumbnails/repdominicana01.jpg','comprension lectora', array('class'=>'image-responsive tamaho-thumbnail-publicaciones'))}}
-                                </a>
-                                <ul class="list-group list-group-flush text-center">
-                                    <li class="list-group-item text-justify">Título: Comprensión lectora</li>
-                                    <li class="list-group-item text-justify">Autor: Ma. Eunice I. Vicioso</li>
-                                    <li class="list-group-item text-justify">Categoría: Español</li>
-                                    <li class="list-group-item text-justify"><a href="{{url('publicacionesRed/panama/españolmatematica.pdf')}}" download="españolMatematica.pdf">
-                                            Material de descarga</a></li>
-                                </ul>
-                            </div>
-                            <div class="col-md-4 hvr-pulse-grow animated bounceIn">
-                                <a href="{{url('publicacionesRed/repdominicana/enseñanzaaprendizajematematica.pdf')}}" target="_blank">
-                                    {{ HTML::image('publicacionesRed/repdominicana/imagenesthumbnails/repdominicana02.jpg','aprendizaje matematica', array('class'=>'image-responsive tamaho-thumbnail-publicaciones'))}}
-                                </a>
-                                <ul class="list-group list-group-flush text-center">
-                                    <li class="list-group-item text-justify">Título: Enseñanza - aprendizaje de la matemática</li>
-                                    <li class="list-group-item text-justify">Autor: Rafael David Francisco Ventura</li>
-                                    <li class="list-group-item text-justify">Categoría: Matemática</li>
-                                    <li class="list-group-item text-justify"><a href="{{url('publicacionesRed/repdominicana/enseñanzaaprendizajematematica.pdf')}}" download="enseñanzaAprendizajeMatemáticas.pdf">
-                                            Material de descarga</a></li>
-                                </ul>
-                            </div>
-
-                            <div class="col-md-1"></div> <!-- cierra table 2 -->
-                        </div>
-
-                        <!----------- ******  Fin Rep. Dominicana ****** ----->    
+                        @endfor
                     </div>
                     <!--FIN TODOS-->
 
-                    <!--México-->
-                    <div class="tab-pane fade" id="mexico">     
-                        <div class="row">
-                            <br>
+                    <!--Mexico-->
+                    <div class="tab-pane fade" id="mexico">
+
+                        @for($i = 0; $i < sizeof($publicacionesmx); $i++)
+
+                          @if($i == 0)
+                            <div class="row">
+                          @endif
+
                             <div class="col-md-4 hvr-pulse-grow animated bounceIn">
-                                <a href="{{url('publicacionesRed/mexico/cienciastecnologiasculturas.pdf')}}"  target="_blank">
-                                    {{ HTML::image('publicacionesRed/mexico/imagenesthumbnails/mexico01.jpg','tecnologías y cultura', array('class'=>'image-responsive tamaho-thumbnail-publicaciones'))}}
+                                <a href="{{url($publicacionesmx[$i]->url_descarga)}}"  target="_blank">
+                                    {{ HTML::image($publicacionesmx[$i]->imagen, $publicacionesmx[$i]->titulo, array('class'=>'image-responsive tamaho-thumbnail-publicaciones'))}}
                                 </a>
                                 <ul class="list-group list-group-flush text-center">
-                                    <li class="list-group-item text-justify">Título: Ciencias, tecnologías y culturas</li>
-                                    <li class="list-group-item text-justify">Autor: Silvia Fridman, Rubén Edel Navarro</li>
-                                    <li class="list-group-item text-justify">Categoría: Educación y nuevas tecnologías</li>
-                                    <li class="list-group-item text-justify"><a href="{{url('publicacionesRed/mexico/cienciastecnologiasculturas.pdf')}}" download="cienciasTecnologiasCulturas.pdf">
+                                    <li class="list-group-item text-justify">Título: {{$publicacionesmx[$i]->titulo}}</li>
+                                    <li class="list-group-item text-justify">Autor: {{$publicacionesmx[$i]->autor}}</li>
+                                    <li class="list-group-item text-justify">Categoría: {{$publicacionesmx[$i]->categoria}}</li>
+                                    <li class="list-group-item text-justify"><a href="{{url($publicacionesmx[$i]->url_descarga)}}" download="">
                                             Material de descarga</a></li>
                                 </ul>
                             </div>
 
-                            <div class="col-md-4 hvr-pulse-grow animated bounceIn">
-                                <a href="{{url('publicacionesRed/mexico/forointerregionalinvestigacionsobreeva.pdf')}}" target="_blank">
-                                    {{ HTML::image('publicacionesRed/mexico/imagenesthumbnails/mexico02.jpg','foro interregional', array('class'=>'image-responsive tamaho-thumbnail-publicaciones'))}}
-                                </a>
-                                <ul class="list-group list-group-flush text-center">
-                                    <li class="list-group-item text-justify">Título: Foro Interregional de investigación sobre EVA</li>
-                                    <li class="list-group-item text-justify">Autor: Rubén Edel Navarro, Manuel Juarez Pacheco, Yadira Navarro Rangel, María Soledad Ramírez Montoya </li>
-                                    <li class="list-group-item text-justify">Categoría: Redes Académicas y Tecnológicas</li>
-                                    <li class="list-group-item text-justify"><a href="{{url('publicacionesRed/mexico/forointerregionalinvestigacionsobreeva.pdf')}}" download="foroInterRegionalInvEVA.pdf">
-                                            Material de descarga</a></li>
-                                </ul>
+                            @if(($i+1)%3 == 0)
                             </div>
+                              <div class="row">
+                            @endif
 
-                            <div class="col-md-4 hvr-pulse-grow animated bounceIn">
-                                <a href="{{url('publicacionesRed/mexico/modelostecnoeducativos.pdf')}}" target="_blank">
-                                    {{ HTML::image('publicacionesRed/mexico/imagenesthumbnails/mexico03.jpg','modelos educativos', array('class'=>'image-responsive tamaho-thumbnail-publicaciones'))}}
-                                </a>
-                                <ul class="list-group list-group-flush text-center">
-                                    <li class="list-group-item text-justify">Título: Los modelos Tecno-Educativos</li>
-                                    <li class="list-group-item text-justify">Autor: Ismael Esquivel Gómez</li>
-                                    <li class="list-group-item text-justify">Categoría: Aprendizaje del siglo XXI</li>
-                                    <li class="list-group-item text-justify"><a href="{{url('publicacionesRed/mexico/modelostecnoeducativos.pdf')}}" download="modelosTecnoEducativos.pdf">
-                                            Material de descarga</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <br>
+                            @if($i == sizeof($publicacionesmx)-1)
+                              </div>
+                            @endif
 
-                        <!--Row 2 -->  
-                        <div class="row">
-                            <div class="col-md-4 hvr-pulse-grow animated bounceIn">
-                                <a href="{{url('publicacionesRed/mexico/territorioseducación.pdf')}}" target="_blank">
-                                    {{ HTML::image('publicacionesRed/mexico/imagenesthumbnails/mexico04.jpg','territorios educativos', array('class'=>'image-responsive tamaho-thumbnail-publicaciones'))}}
-                                </a>
-                                <ul class="list-group list-group-flush text-center">
-                                    <li class="list-group-item text-justify">Título: Territorios de la Educación</li>
-                                    <li class="list-group-item text-justify">Autor: Genaro Aguirre Aguilar, Rubén Edel Navarro</li>
-                                    <li class="list-group-item text-justify">Categoría: Ambientes Educativos</li>
-                                    <li class="list-group-item text-justify"><a href="{{url('publicacionesRed/mexico/territorioseducacion.pdf')}}" download="territoriosEducación.pdf">
-                                            Material de descarga</a></li>
-                                </ul>
-                            </div>
-
-                            <div class="col-md-4 hvr-pulse-grow animated bounceIn">
-                                <a href="{{url('publicacionesRed/mexico/usabilidadpedagogicatic.pdf')}}" target="_blank">
-                                    {{ HTML::image('publicacionesRed/mexico/imagenesthumbnails/mexico05.jpg','usabilidad pedagogica', array('class'=>'image-responsive tamaho-thumbnail-publicaciones'))}}
-                                </a>
-                                <ul class="list-group list-group-flush text-center">
-                                    <li class="list-group-item text-justify">Título: Usabilidad Pedagógica de las TIC</li>
-                                    <li class="list-group-item text-justify">Autor: Brenda Luz Colorado Aguilar,Rubén Edel Navarro</li>
-                                    <li class="list-group-item text-justify">Categoría: Tecnologías de la Información y Comunicación</li>
-                                    <li class="list-group-item text-justify"><a href="{{url('publicacionesRed/mexico/usabilidadpedagogicatic.pdf')}}" download="usabilidadPedagogicaTIC.pdf">
-                                            Material de descarga</a></li>
-                                </ul>
-                            </div>
-                        </div>
+                        @endfor
                     </div>
-                    <!--Fin MÉXICO-->
+                    <!--FIN México-->
 
                     <!--Guatemala-->
-                    <div class="tab-pane fade" id="guatemala">        
-                        <div class="row">
-                            <br>
+                    <div class="tab-pane fade" id="guatemala">
+
+                        @for($i = 0; $i < sizeof($publicacionesgu); $i++)
+
+                          @if($i == 0)
+                            <div class="row">
+                          @endif
+
                             <div class="col-md-4 hvr-pulse-grow animated bounceIn">
-                                <a href="{{url('publicacionesRed/guatemala/contemosjuntosprogramanacionalmatematica.pdf')}}" target="_blank">
-                                    {{ HTML::image('publicacionesRed/guatemala/imagenesthumbnails/guatemala01.jpg','programacin matematica', array('class'=>'image-responsive tamaho-thumbnail-publicaciones'))}}   
+                                <a href="{{url($publicacionesgu[$i]->url_descarga)}}"  target="_blank">
+                                    {{ HTML::image($publicacionesgu[$i]->imagen, $publicacionesgu[$i]->titulo, array('class'=>'image-responsive tamaho-thumbnail-publicaciones'))}}
                                 </a>
                                 <ul class="list-group list-group-flush text-center">
-                                    <li class="list-group-item text-justify">Título: Contemos Juntos_Programa Nacional de Matemática</li>
-                                    <li class="list-group-item text-justify">Autor: Ministerio de Educación Guatemala</li>
-                                    <li class="list-group-item text-justify">Categoría: Matemática</li>
-                                    <li class="list-group-item text-justify"><a href="{{url('publicacionesRed/guatemala/contemosjuntosprogramanacionalmatematica.pdf')}}" download="contemosJuntosProgramanacioNacionalMatematica.pdf">
+                                    <li class="list-group-item text-justify">Título: {{$publicacionesgu[$i]->titulo}}</li>
+                                    <li class="list-group-item text-justify">Autor: {{$publicacionesgu[$i]->autor}}</li>
+                                    <li class="list-group-item text-justify">Categoría: {{$publicacionesgu[$i]->categoria}}</li>
+                                    <li class="list-group-item text-justify"><a href="{{url($publicacionesgu[$i]->url_descarga)}}" download="">
                                             Material de descarga</a></li>
                                 </ul>
                             </div>
-                            <div class="col-md-4 hvr-pulse-grow animated bounceIn">
-                                <a href="{{url('publicacionesRed/guatemala/enseñanzaaprendizajelectura.pdf')}}" target="_blank">
-                                    {{ HTML::image('publicacionesRed/guatemala/imagenesthumbnails/guatemala02.jpg','aprendizaje lectura', array('class'=>'image-responsive tamaho-thumbnail-publicaciones'))}}   
-                                </a>
-                                <ul class="list-group list-group-flush text-center">
-                                    <li class="list-group-item text-justify">Título: Enseñanza - aprendizaje de la lectura</li>
-                                    <li class="list-group-item text-justify">Autor: Ministerio de Educación Guatemala</li>
-                                    <li class="list-group-item text-justify">Categoría: Español</li>
-                                    <li class="list-group-item text-justify"><a href="{{url('publicacionesRed/guatemala/enseñanzaaprendizajelectura.pdf')}}" download="enseñanzaAprendizajeLectura.pdf">
-                                            Material de descarga</a></li>
-                                </ul>
+
+                            @if(($i+1)%3 == 0)
                             </div>
-                        </div>
+                              <div class="row">
+                            @endif
+
+                            @if($i == sizeof($publicacionesgu)-1)
+                              </div>
+                            @endif
+
+                        @endfor
                     </div>
-                    <!--Fin Guatemala-->
+                    <!--FIN Guatemala-->
 
                     <!--El Salvador-->
-                    <div class="tab-pane fade" id="elsalvador">                        
-                        <div class="row">
-                            <br>
+                    <div class="tab-pane fade" id="elsalvador">
+
+                        @for($i = 0; $i < sizeof($publicacionessv); $i++)
+
+                          @if($i == 0)
+                            <div class="row">
+                          @endif
+
                             <div class="col-md-4 hvr-pulse-grow animated bounceIn">
-                                <a href="{{url('publicacionesRed/elsalvador/enseñanzaaprendizajelectura.pdf')}}" target="_blank">
-                                    {{ HTML::image('publicacionesRed/elsalvador/imagenesthumbnails/elsalvador01.jpg','aprendizaje lectura', array('class'=>'image-responsive tamaho-thumbnail-publicaciones'))}}
+                                <a href="{{url($publicacionessv[$i]->url_descarga)}}"  target="_blank">
+                                    {{ HTML::image($publicacionessv[$i]->imagen, $publicacionessv[$i]->titulo, array('class'=>'image-responsive tamaho-thumbnail-publicaciones'))}}
                                 </a>
                                 <ul class="list-group list-group-flush text-center">
-                                    <li class="list-group-item text-justify">Título: Enseñanza - Aprendizaje de la Lectura</li>
-                                    <li class="list-group-item text-justify">Autor: Ministerio de Educación El Salvador</li>
-                                    <li class="list-group-item text-justify">Categoría: Español</li>
-                                    <li class="list-group-item text-justify"><a href="{{url('publicacionesRed/elsalvador/enseñanzaaprendizajelectura.pdf')}}" download="enseñanzaAprendizajeLectura.pdf">
+                                    <li class="list-group-item text-justify">Título: {{$publicacionessv[$i]->titulo}}</li>
+                                    <li class="list-group-item text-justify">Autor: {{$publicacionessv[$i]->autor}}</li>
+                                    <li class="list-group-item text-justify">Categoría: {{$publicacionessv[$i]->categoria}}</li>
+                                    <li class="list-group-item text-justify"><a href="{{url($publicacionessv[$i]->url_descarga)}}" download="">
                                             Material de descarga</a></li>
                                 </ul>
                             </div>
-                        </div>
-                    </div>
-                    <!--Fin El Salvador-->
 
-                    <!--Honduras-->
-                    <div class="tab-pane fade" id="honduras">                        
-                        <div class="row">
-                            <br>
+                            @if(($i+1)%3 == 0)
+                            </div>
+                              <div class="row">
+                            @endif
+
+                            @if($i == sizeof($publicacionessv)-1)
+                              </div>
+                            @endif
+
+                        @endfor
+                    </div>
+                    <!--FIN El Salvador-->
+
+                    <!-- Honduras-->
+                    <div class="tab-pane fade" id="honduras">
+
+                        @for($i = 0; $i < sizeof($publicacionesho); $i++)
+
+                          @if($i == 0)
+                            <div class="row">
+                          @endif
+
                             <div class="col-md-4 hvr-pulse-grow animated bounceIn">
-                                <a href="{{url('publicacionesRed/honduras/expresioncomprensionlectora.pdf')}}" target="_blank">
-                                    {{ HTML::image('publicacionesRed/honduras/imagenesthumbnails/honduras01.jpg','comprension lectora', array('class'=>'image-responsive tamaho-thumbnail-publicaciones'))}}
+                                <a href="{{url($publicacionesho[$i]->url_descarga)}}"  target="_blank">
+                                    {{ HTML::image($publicacionesho[$i]->imagen, $publicacionesho[$i]->titulo, array('class'=>'image-responsive tamaho-thumbnail-publicaciones'))}}
                                 </a>
                                 <ul class="list-group list-group-flush text-center">
-                                    <li class="list-group-item text-justify">Título: Expresión y comprensión lectora</li>
-                                    <li class="list-group-item text-justify">Autor: Gladis O. Galindo</li>
-                                    <li class="list-group-item text-justify">Categoría: Español</li>
-                                    <li class="list-group-item text-justify"><a href="{{url('publicacionesRed/honduras/expresioncomprensionlectora.pdf')}}" download="expresionComprensionLectora.pdf">
+                                    <li class="list-group-item text-justify">Título: {{$publicacionesho[$i]->titulo}}</li>
+                                    <li class="list-group-item text-justify">Autor: {{$publicacionesho[$i]->autor}}</li>
+                                    <li class="list-group-item text-justify">Categoría: {{$publicacionesho[$i]->categoria}}</li>
+                                    <li class="list-group-item text-justify"><a href="{{url($publicacionesho[$i]->url_descarga)}}" download="">
                                             Material de descarga</a></li>
                                 </ul>
                             </div>
+
+                            @if(($i+1)%3 == 0)
+                            </div>
+                              <div class="row">
+                            @endif
+
+                            @if($i == sizeof($publicacionesho)-1)
+                              </div>
+                            @endif
+
+                        @endfor
+                    </div>
+                    <!--FIN Honduras-->
+
+                    <!-- Nicaragua-->
+                    <div class="tab-pane fade" id="nicaragua">
+
+                        @for($i = 0; $i < sizeof($publicacionesni); $i++)
+
+                          @if($i == 0)
+                            <div class="row">
+                          @endif
+
                             <div class="col-md-4 hvr-pulse-grow animated bounceIn">
-                                <a href="{{url('publicacionesRed/honduras/enseñanzaaprendizajematematicas.pdf')}}" target="_blank">
-                                    {{ HTML::image('publicacionesRed/honduras/imagenesthumbnails/honduras02.jpg','enseñanza matematica', array('class'=>'image-responsive tamaho-thumbnail-publicaciones'))}}
+                                <a href="{{url($publicacionesni[$i]->url_descarga)}}"  target="_blank">
+                                    {{ HTML::image($publicacionesni[$i]->imagen, $publicacionesni[$i]->titulo, array('class'=>'image-responsive tamaho-thumbnail-publicaciones'))}}
                                 </a>
                                 <ul class="list-group list-group-flush text-center">
-                                    <li class="list-group-item text-justify">Título: Enseñanza - aprendizaje de la matemática</li>
-                                    <li class="list-group-item text-justify">Autor: Honduras</li>
-                                    <li class="list-group-item text-justify">Categoría: Matemáticas</li>
-                                    <li class="list-group-item text-justify"><a href="{{url('publicacionesRed/honduras/enseñanzaaprendizajematematicas.pdf')}}" download="enseñanzaAprendizajeMatemáticas.pdf">
+                                    <li class="list-group-item text-justify">Título: {{$publicacionesni[$i]->titulo}}</li>
+                                    <li class="list-group-item text-justify">Autor: {{$publicacionesni[$i]->autor}}</li>
+                                    <li class="list-group-item text-justify">Categoría: {{$publicacionesni[$i]->categoria}}</li>
+                                    <li class="list-group-item text-justify"><a href="{{url($publicacionesni[$i]->url_descarga)}}" download="">
                                             Material de descarga</a></li>
                                 </ul>
                             </div>
-                        </div>
-                    </div>     
-                    <!--Fin Honduras-->
 
-                    <!--Nicaragua-->
-                    <div class="tab-pane fade" id="nicaragua">                        
-                        <div class="row">
-                            <br><br><br><br>
-                            <br><br><br><br>
-                            <br><br><br><br>
-                            <br><br><br><br>
-                            <br><br><br><br>
-                            <br><br>
-                        </div>
+                            @if(($i+1)%3 == 0)
+                            </div>
+                              <div class="row">
+                            @endif
+
+                            @if($i == sizeof($publicacionesni)-1)
+                              </div>
+                            @endif
+
+                        @endfor
                     </div>
-                    <!--Fin Nicaragua-->
+                    <!--FIN Nicaragua-->
 
-                    <!--Costa Rica-->
-                    <div class="tab-pane fade" id="costarica">                        
-                        <div class="row">
-                            <br><br><br><br>
-                            <br><br><br><br>
-                            <br><br><br><br>
-                            <br><br><br><br>
-                            <br><br><br><br>
-                            <br><br>
-                        </div>
+                    <!-- Costa Rica-->
+                    <div class="tab-pane fade" id="costarica">
+
+                        @for($i = 0; $i < sizeof($publicacionescr); $i++)
+
+                          @if($i == 0)
+                            <div class="row">
+                          @endif
+
+                            <div class="col-md-4 hvr-pulse-grow animated bounceIn">
+                                <a href="{{url($publicacionescr[$i]->url_descarga)}}"  target="_blank">
+                                    {{ HTML::image($publicacionescr[$i]->imagen, $publicacionescr[$i]->titulo, array('class'=>'image-responsive tamaho-thumbnail-publicaciones'))}}
+                                </a>
+                                <ul class="list-group list-group-flush text-center">
+                                    <li class="list-group-item text-justify">Título: {{$publicacionescr[$i]->titulo}}</li>
+                                    <li class="list-group-item text-justify">Autor: {{$publicacionescr[$i]->autor}}</li>
+                                    <li class="list-group-item text-justify">Categoría: {{$publicacionescr[$i]->categoria}}</li>
+                                    <li class="list-group-item text-justify"><a href="{{url($publicacionescr[$i]->url_descarga)}}" download="">
+                                            Material de descarga</a></li>
+                                </ul>
+                            </div>
+
+                            @if(($i+1)%3 == 0)
+                            </div>
+                              <div class="row">
+                            @endif
+
+                            @if($i == sizeof($publicacionescr)-1)
+                              </div>
+                            @endif
+
+                        @endfor
                     </div>
-                    <!--Fin Costa Rica-->
+                    <!--FIN Costa Rica-->
 
-                    <!--Panama-->
+                    <!-- Panama-->
                     <div class="tab-pane fade" id="panama">
-                        <div class="row">
-                            <br>
+
+                        @for($i = 0; $i < sizeof($publicacionespa); $i++)
+
+                          @if($i == 0)
+                            <div class="row">
+                          @endif
+
                             <div class="col-md-4 hvr-pulse-grow animated bounceIn">
-                                <a href="{{url('publicacionesRed/panama/españolmatematica.pdf')}}" target="_blank">
-                                    {{ HTML::image('publicacionesRed/panama/imagenesthumbnails/panama01.jpg','español-matematica', array('class'=>'image-responsive tamaho-thumbnail-publicaciones'))}}
+                                <a href="{{url($publicacionespa[$i]->url_descarga)}}"  target="_blank">
+                                    {{ HTML::image($publicacionespa[$i]->imagen, $publicacionespa[$i]->titulo, array('class'=>'image-responsive tamaho-thumbnail-publicaciones'))}}
                                 </a>
                                 <ul class="list-group list-group-flush text-center">
-                                    <li class="list-group-item text-justify">Título: Español y matemática</li>
-                                    <li class="list-group-item text-justify">Autor: Gibzka de vernier, Mariela M. de Quezada</li>
-                                    <li class="list-group-item text-justify">Categoría: Educación Básica</li>
-                                    <li class="list-group-item text-justify"><a href="{{url('publicacionesRed/panama/españolmatematica.pdf')}}" download="españolMatematica.pdf">
+                                    <li class="list-group-item text-justify">Título: {{$publicacionespa[$i]->titulo}}</li>
+                                    <li class="list-group-item text-justify">Autor: {{$publicacionespa[$i]->autor}}</li>
+                                    <li class="list-group-item text-justify">Categoría: {{$publicacionespa[$i]->categoria}}</li>
+                                    <li class="list-group-item text-justify"><a href="{{url($publicacionespa[$i]->url_descarga)}}" download="">
                                             Material de descarga</a></li>
                                 </ul>
                             </div>
-                        </div>
-                    </div>
-                    <!--Fin Panama-->
 
-                    <!--Colombia-->
-                    <div class="tab-pane fade" id="colombia">                        
-                        <div class="row">
-                            <br><br><br><br>
-                            <br><br><br><br>
-                            <br><br><br><br>
-                            <br><br><br><br>
-                            <br><br><br><br>
-                            <br><br>
-                        </div>
-                    </div>
-                    <!--Fin Colombia-->  
+                            @if(($i+1)%3 == 0)
+                            </div>
+                              <div class="row">
+                            @endif
 
-                    <!--Repúblcia Dominicana-->
+                            @if($i == sizeof($publicacionespa)-1)
+                              </div>
+                            @endif
+
+                        @endfor
+                    </div>
+                    <!--FIN Panama-->
+
+
+                    <!-- Colombia-->
+                    <div class="tab-pane fade" id="colombia">
+
+                        @for($i = 0; $i < sizeof($publicacionesco); $i++)
+
+                          @if($i == 0)
+                            <div class="row">
+                          @endif
+
+                            <div class="col-md-4 hvr-pulse-grow animated bounceIn">
+                                <a href="{{url($publicacionesco[$i]->url_descarga)}}"  target="_blank">
+                                    {{ HTML::image($publicacionesco[$i]->imagen, $publicacionesco[$i]->titulo, array('class'=>'image-responsive tamaho-thumbnail-publicaciones'))}}
+                                </a>
+                                <ul class="list-group list-group-flush text-center">
+                                    <li class="list-group-item text-justify">Título: {{$publicacionesco[$i]->titulo}}</li>
+                                    <li class="list-group-item text-justify">Autor: {{$publicacionesco[$i]->autor}}</li>
+                                    <li class="list-group-item text-justify">Categoría: {{$publicacionesco[$i]->categoria}}</li>
+                                    <li class="list-group-item text-justify"><a href="{{url($publicacionesco[$i]->url_descarga)}}" download="">
+                                            Material de descarga</a></li>
+                                </ul>
+                            </div>
+
+                            @if(($i+1)%3 == 0)
+                            </div>
+                              <div class="row">
+                            @endif
+
+                            @if($i == sizeof($publicacionesco)-1)
+                              </div>
+                            @endif
+
+                        @endfor
+                    </div>
+                    <!--FIN Colombia-->
+
+                    <!-- Republica Dominicana-->
                     <div class="tab-pane fade" id="repdominicana">
-                        <div class="row">
-                            <br>
+
+                        @for($i = 0; $i < sizeof($publicacionesdo); $i++)
+
+                          @if($i == 0)
+                            <div class="row">
+                          @endif
+
                             <div class="col-md-4 hvr-pulse-grow animated bounceIn">
-                                <a href="{{url('publicacionesRed/repdominicana/compresionlectora.pdf')}}" target="_blank">
-                                    {{ HTML::image('publicacionesRed/repdominicana/imagenesthumbnails/repdominicana01.jpg','comprension lectora', array('class'=>'image-responsive tamaho-thumbnail-publicaciones'))}}
+                                <a href="{{url($publicacionesdo[$i]->url_descarga)}}"  target="_blank">
+                                    {{ HTML::image($publicacionesdo[$i]->imagen, $publicacionesdo[$i]->titulo, array('class'=>'image-responsive tamaho-thumbnail-publicaciones'))}}
                                 </a>
                                 <ul class="list-group list-group-flush text-center">
-                                    <li class="list-group-item text-justify">Título: Comprensión lectora</li>
-                                    <li class="list-group-item text-justify">Autor: Ma. Eunice I. Vicioso</li>
-                                    <li class="list-group-item text-justify">Categoría: Español</li>
-                                    <li class="list-group-item text-justify"><a href="{{url('publicacionesRed/panama/españolmatematica.pdf')}}" download="españolMatematica.pdf">
+                                    <li class="list-group-item text-justify">Título: {{$publicacionesdo[$i]->titulo}}</li>
+                                    <li class="list-group-item text-justify">Autor: {{$publicacionesdo[$i]->autor}}</li>
+                                    <li class="list-group-item text-justify">Categoría: {{$publicacionesdo[$i]->categoria}}</li>
+                                    <li class="list-group-item text-justify"><a href="{{url($publicacionesdo[$i]->url_descarga)}}" download="">
                                             Material de descarga</a></li>
                                 </ul>
                             </div>
-                            <div class="col-md-4 hvr-pulse-grow animated bounceIn">
-                                <a href="{{url('publicacionesRed/repdominicana/enseñanzaaprendizajematematica.pdf')}}" target="_blank">
-                                    {{ HTML::image('publicacionesRed/repdominicana/imagenesthumbnails/repdominicana02.jpg','aprendizaje matematica', array('class'=>'image-responsive tamaho-thumbnail-publicaciones'))}}
-                                </a>
-                                <ul class="list-group list-group-flush text-center">
-                                    <li class="list-group-item text-justify">Título: Enseñanza - aprendizaje de la matemática</li>
-                                    <li class="list-group-item text-justify">Autor: Rafael David Francisco Ventura</li>
-                                    <li class="list-group-item text-justify">Categoría: Matemática</li>
-                                    <li class="list-group-item text-justify"><a href="{{url('publicacionesRed/repdominicana/enseñanzaaprendizajematematica.pdf')}}" download="enseñanzaAprendizajeMatemáticas.pdf">
-                                            Material de descarga</a></li>
-                                </ul>
+
+                            @if(($i+1)%3 == 0)
                             </div>
-                        </div>
+                              <div class="row">
+                            @endif
+
+                            @if($i == sizeof($publicacionesdo)-1)
+                              </div>
+                            @endif
+
+                        @endfor
                     </div>
-                    <!--Fin Repúblcia Dominicana-->
+                    <!--FIN Republica Dominicana-->
+
 
                 </div>
             </div>
         </div>
-    </div> 
+    </div>
     <div class="col-md-1"></div>
 </div>
 

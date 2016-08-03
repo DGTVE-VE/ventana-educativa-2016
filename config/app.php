@@ -140,10 +140,11 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
         Collective\Html\HtmlServiceProvider::class,
-         Alaouy\Youtube\YoutubeServiceProvider::class,
-        /*messages */
-         Laracasts\Flash\FlashServiceProvider::class,
+        Alaouy\Youtube\YoutubeServiceProvider::class,
+        /* messages */
+        Laracasts\Flash\FlashServiceProvider::class,
 //        MaddHatter\LaravelFullcalendar\ServiceProvider::class,
+        Appzcoder\CrudGenerator\CrudGeneratorServiceProvider::class,
     ],
     /*
       |--------------------------------------------------------------------------
@@ -189,9 +190,11 @@ return [
         'View' => Illuminate\Support\Facades\View::class,
 //        'Form' => Collective\Html\FormFacade::class,
 //        'Html' => Collective\Html\HtmlFacade::class,
-        'Form'=> Illuminate\Html\FormFacade::class,
-        'HTML'=> Illuminate\Html\HtmlFacade::class,
+        'Form' => Illuminate\Html\FormFacade::class,
+        'HTML' => Illuminate\Html\HtmlFacade::class,
         'Flash' => Laracasts\Flash\Flash::class,
 //        'Calendar' => MaddHatter\LaravelFullcalendar\Facades\Calendar::class,
+        'FormCollective' => Collective\Html\FormFacade::class,
+        'HTMLCollective' => Collective\Html\HtmlFacade::class,
     ],
 ];

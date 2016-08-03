@@ -6,8 +6,8 @@
 @section('cuerpoEducaplay')
 
 @if($primerDetalleSerie !== null)
-	<div class="col-md-12" style="color:white;">
-        <div class="tab-content estiloTab">
+	<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="color:white;">
+        <div class="tab-content estiloTab" style=" max-height:430px; overflow-y: scroll;">
             <div id="descripcion1" class="tab-pane fade in active">
 				<div class="col-md-10 col-md-offset-1">
 					<img src="{{url($primerDetalleSerie->url)}}" class="img-responsive" onclick="muestraDetalle('1')"/>
@@ -30,19 +30,18 @@
 						<ul class="dropdown-menu" aria-labelledby="btntemporada">
 				{{--*/
 					for($temp=1; $temp<= $primerDetalleSerie->temporadas_total; $temp++){
-						$urlTemporada = "educaplay/descripciones/temporada/".$primerDetalleSerie->id."/".$temp;
-						echo '<li><a href='.url($urlTemporada).' target="detalleSerie">'.$temp.'</a></li>';
+						$urlTemporada = "cargaTemporada('".$primerDetalleSerie->id."','".$temp."')";
+						echo '<li><span onclick="'.$urlTemporada.'" class="text-center" style="color:black; cursor:pointer;">'.$temp.'</span></li>';
 					}
 				/*--}}
 						</ul>
 					</div>
 				</div>
 				<div class="col-md-11">
-					<iframe name="detalleSerie" id="detalleSerie" src="{{url('educaplay/descripciones/temporada/'.$primerDetalleSerie->id.'/0')}}" frameborder="0" class="col-md-12" style="height:300px;">
-					</iframe>
+					<div name="detalleSerie" id="detalleSerie" class="col-md-12"></div>
 				</div>
             </div>
-            <div id="detalles1" class="tab-pane fade" style="height:300px;">
+            <div id="detalles1" class="tab-pane fade">
 				<div class="col-md-10 col-md-offset-1">
 					<h3>{{$primerDetalleSerie->titulo_serie}}</h3>
 					<br>
@@ -50,21 +49,15 @@
 				<div class="col-md-12">
 				</div>
 				<div class="col-md-2 col-md-offset-1">
-					<p>{{$primerDetalleSerie->temporadas_total}} Temporadas.</p>
-					<p>Clasificaci&#243;n: {{EducaplayController::consultaClasificacion($primerDetalleSerie->clasificacion_id)}}</p>
+					<p class="lead">{{$primerDetalleSerie->temporadas_total}} Temporadas.</p>
+					<p class="lead">Clasificaci&#243;n: {{EducaplayController::consultaClasificacion($primerDetalleSerie->clasificacion_id)}}</p>
 				</div>
                 <div class="col-md-9">
 					<div class="row">
 						<div class="col-md-6 col-md-offset-1">
-							<p>Comentarios a videos de esta serie.</p>
-						@if($comentarios!=null)
-							@foreach($comentarios as $elemComentario)
-								<p style="color:white;">Temporada {{$elemComentario->temporada}}. Capitulo {{$elemComentario->capitulo}}</p>
-								<p style="color:white;">{{$elemComentario->comment}}</p>
-							@endforeach
-						@else
-							<p style="color:white;"> AUN NO HAY COMENTARIOS PARA ESTA SERIE</p>
-						@endif
+							<p class="text-center lead">Comentarios a videos de esta serie.</p>
+							<script src="{{asset ('js/jquery-ui.min.js')}}"></script>
+							<div id="comentariosDetalle" style="color:white;"></div>
 						</div>
 					</div>
 				</div>
@@ -83,11 +76,18 @@
         </ul>
     </div>
 @else
-	<div class="col-md-3 col-md-offset-4">
+	<div class="col-xs-4 col-sm-4 col-md-3 col-md-offset-4">
 		<p style="color:white;"> SIN DATOS PARA ESTA SERIE</p>
 	</div>
 @endif
 @endsection
+	
+	<!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+	<!-- Latest compiled JavaScript -->
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+	 <link rel="stylesheet" href="{{ asset('css/jquery-ui.min.css') }}" >
+     <script src="{{asset ('js/jquery-ui.min.js')}}"></script>
 <script>
 function votacion(nombre_serie){
 
@@ -110,6 +110,62 @@ if ( r == true){
 
 }
 
+}
+	function cargaTemporadaCompl(serieId){
+		var urlget = "{{url('educaplay/descripciones/temporada')}}";
+		var _url = urlget + '/' + serieId + '/0';
+		$.ajax({
+			method: "GET",
+			url: _url,
+			error: function (ts) {
+				console.log(ts.responseText);
+			}})
+			.done(function (msg) {
+				console.log('Videos temporada cargados: ' + serieId);
+				$("#detalleSerie").html(msg);
+				//                    console.log ( "Data Saved: " + msg );
+			});
+	}
+	
+	function cargaTemporada(serieId, idTemp){
+		/*if(idTemp==1){
+			idTemp=0;
+		}*/
+		var urlget = "{{url('educaplay/descripciones/temporada')}}";
+		var _url = urlget + '/' + serieId + '/' + idTemp ;
+		$.ajax({
+			async:false,
+			method: "GET",
+			url: _url,
+			error: function (ts) {
+				console.log(ts.responseText);
+			}})
+			.done(function (msg) {
+				console.log('Videos temporada cargados: ' + idTemp);
+				$("#detalleSerie").html(msg);
+				//                    console.log ( "Data Saved: " + msg );
+			});
+	}
 
-};
+	function loadComments(id) {
+		var urlget = "{{url('educaplay/comentarioSerie')}}";
+		var _url = urlget + '/' + id;
+		$.ajax({
+			async: true,
+			method: "GET",
+			url: _url,
+			error: function (ts) {
+				console.log(ts.responseText);
+			}})
+			.done(function (msg) {
+				console.log('Comentarios cargados: ' + id);
+				$("#comentariosDetalle").html(msg);
+				//                    console.log ( "Data Saved: " + msg );
+			});
+	}
+	
+	$(document).ready(function(){
+		cargaTemporadaCompl('{{$primerDetalleSerie->id}}');
+		loadComments('{{$primerDetalleSerie->id}}');
+	});
 </script>

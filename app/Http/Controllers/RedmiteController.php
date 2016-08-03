@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use Illuminate\Support\Facades\Redirect;
 use Illuminate\Support\Facades\Session;
 use Mail;
+use File;
+use DB;
 use Illuminate\Http\Request;
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
@@ -12,20 +14,68 @@ use App\Model\Red\Colaborador;
 use App\User;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Input;
+use App\Model\Red\Publicaciones;
 
 class RedmiteController extends Controller {
 
     public function __construct() {
-        
+
         $this->middleware('auth', ['only' => ['integrantes', 'guardaIntegrantes']]);
     }
-    
+
     public function redmite() {
-        return view('viewRed/redmite');
+
+      $banner = DB::table('red_banners')->whereactivo('1')->get();
+
+      $proyectos = DB::table('red_proyectos')->whereactivo('1')->get();
+
+      $colaboradoresmx = DB::table('red_colaboradores')->join('users', 'users.id', '=', 'red_colaboradores.user_id')->wherepais('MX')->get(); //México
+      $colaboradorescr = DB::table('red_colaboradores')->join('users', 'users.id', '=', 'red_colaboradores.user_id')->wherepais('CR')->get(); //Costa Rica
+      $colaboradoresdo = DB::table('red_colaboradores')->join('users', 'users.id', '=', 'red_colaboradores.user_id')->wherepais('DO')->get(); //Republica Dominicana
+      $colaboradoressv = DB::table('red_colaboradores')->join('users', 'users.id', '=', 'red_colaboradores.user_id')->wherepais('SV')->get(); //El Salvador
+      $colaboradoresco = DB::table('red_colaboradores')->join('users', 'users.id', '=', 'red_colaboradores.user_id')->wherepais('CO')->get(); //Colombia
+      $colaboradorespa = DB::table('red_colaboradores')->join('users', 'users.id', '=', 'red_colaboradores.user_id')->wherepais('PA')->get(); //Panama
+      $colaboradoresni = DB::table('red_colaboradores')->join('users', 'users.id', '=', 'red_colaboradores.user_id')->wherepais('NI')->get(); //Nicaragua
+      $colaboradoresho = DB::table('red_colaboradores')->join('users', 'users.id', '=', 'red_colaboradores.user_id')->wherepais('HO')->get(); //Honduras
+      $colaboradoresgu = DB::table('red_colaboradores')->join('users', 'users.id', '=', 'red_colaboradores.user_id')->wherepais('GU')->get(); //Guatemala
+
+        return view('viewRed/redmite')->with('banner', collect($banner))->with('proyectos', collect($proyectos))
+          ->with('colaboradoresmx', collect($colaboradoresmx))
+          ->with('colaboradorescr', collect($colaboradorescr))
+          ->with('colaboradoresdo', collect($colaboradoresdo))
+          ->with('colaboradoressv', collect($colaboradoressv))
+          ->with('colaboradoresco', collect($colaboradoresco))
+          ->with('colaboradorespa', collect($colaboradorespa))
+          ->with('colaboradoresni', collect($colaboradoresni))
+          ->with('colaboradoresho', collect($colaboradoresho))
+          ->with('colaboradoresgu', collect($colaboradoresgu));
     }
 
     public function publicaciones() {
-        return view('viewRed/paginapublicaciones');
+
+
+        $publicaciones = DB::table('red_publicaciones')->orderBy('pais', 'desc')->get();//Todos
+        $publicacionesmx = DB::table('red_publicaciones')->wherepais('MX')->get();//México
+        $publicacionescr = DB::table('red_publicaciones')->wherepais('CR')->get();//Costa Rica
+        $publicacionesdo = DB::table('red_publicaciones')->wherepais('DO')->get();//Republica Dominicana
+        $publicacionessv = DB::table('red_publicaciones')->wherepais('SV')->get();//El Salvador
+        $publicacionesco = DB::table('red_publicaciones')->wherepais('CO')->get();//Colombia
+        $publicacionespa = DB::table('red_publicaciones')->wherepais('PA')->get();//Panama
+        $publicacionesni = DB::table('red_publicaciones')->wherepais('NI')->get();//Nicaragua
+        $publicacionesho = DB::table('red_publicaciones')->wherepais('HO')->get();//Honduras
+        $publicacionesgu = DB::table('red_publicaciones')->wherepais('GU')->get();//Guatemala
+
+        return view('viewRed/paginapublicaciones')
+          ->with('publicaciones', $publicaciones)
+          ->with('publicacionesmx', $publicacionesmx)
+          ->with('publicacionescr', $publicacionescr)
+          ->with('publicacionesdo', $publicacionesdo)
+          ->with('publicacionessv', $publicacionessv)
+          ->with('publicacionesco', $publicacionesco)
+          ->with('publicacionespa', $publicacionespa)
+          ->with('publicacionesni', $publicacionesni)
+          ->with('publicacionesho', $publicacionesho)
+          ->with('publicacionesgu', $publicacionesgu);
     }
 
     public function quienesSomos() {
@@ -37,7 +87,10 @@ class RedmiteController extends Controller {
     }
 
     public function proyectos() {
-        return view('viewRed/paginaproyectos');
+
+      $proyectos = DB::table('red_proyectos')->whereactivo('1')->get();
+
+        return view('viewRed/paginaproyectos')->with('proyectos', collect($proyectos));
     }
 
     public function areastematicas() {
@@ -59,7 +112,7 @@ class RedmiteController extends Controller {
     public function guardarProyecto(){
         return view('viewRed/frmproyectos');
     }
-    
+
     public function guardaCorreoNewsLetter() {
 
         $news = new \App\Model\Red\News();
@@ -109,14 +162,14 @@ class RedmiteController extends Controller {
         }
     }
 
-    public function guardaIntegrantes(Request $request) {        
-        
+    public function guardaIntegrantes(Request $request) {
+
         $colaborador = new Colaborador();
-        $colaborador->user_id = Auth::user()->id;            
+        $colaborador->user_id = Auth::user()->id;
         $colaborador->puesto = filter_input(INPUT_POST, 'puesto');
         $colaborador->area = filter_input(INPUT_POST, 'area');
         $colaborador->dependencia = filter_input(INPUT_POST, 'dependencia');
-        $colaborador->resena = filter_input(INPUT_POST, 'resena');            
+        $colaborador->resena = filter_input(INPUT_POST, 'resena');
         $colaborador->save();
         $colaborador->url_foto = $this->storeImage ($request, $colaborador->id);
         $colaborador->save();
@@ -125,58 +178,58 @@ class RedmiteController extends Controller {
     }
 
     public function storeImage ($request, $id){
-        $file = $request->file('imagen');  
+        $file = $request->file('imagen');
 //        $v = Input::file('imagen');
 //        var_dump ($v);
-        if (Input::file('imagen')->isValid()) {            
-            $targetFile = 'uploaded/redmite/integrantes/'.$id.'.png';  
-            $this->resize($targetFile, Input::file('imagen')->getRealPath());            
+        if (Input::file('imagen')->isValid()) {
+            $targetFile = 'uploaded/redmite/integrantes/'.$id.'.png';
+            $this->resize($targetFile, Input::file('imagen')->getRealPath());
             return $targetFile;
-        } else {           
+        } else {
             Log::error ('La imagen no es valida para subir: '.$file->getClientOriginalName());
             return null;
         }
     }
-    
+
     private function newImage ($originalFile){
         $info = getimagesize($originalFile);
         $mime = $info['mime'];
         switch ($mime) {
             case 'image/jpeg':
-                $img = imagecreatefromjpeg($originalFile);                
+                $img = imagecreatefromjpeg($originalFile);
                 break;
 
             case 'image/png':
-                $img = imagecreatefrompng($originalFile);                
+                $img = imagecreatefrompng($originalFile);
                 break;
 
             case 'image/gif':
-                $img = imagecreatefromgif($originalFile);                
+                $img = imagecreatefromgif($originalFile);
                 break;
 
             default:
                 throw new Exception('Unknown image type.');
         }
-        
+
         return $img;
     }
     /* ANCHO Y ALTO DE LAS FOTOS DE LOS INTEGRANTES DE LA RED*/
     public $widthImage = 150;
     public $heigtImage = 150;
-    
-    private function resize($targetFile, $originalFile) {        
-        $img = $this->newImage ($originalFile);        
+
+    private function resize($targetFile, $originalFile) {
+        $img = $this->newImage ($originalFile);
         list($width, $height) = getimagesize($originalFile);
-        
-        $tmp = imagecreatetruecolor($this->widthImage, $this->heigtImage);        
-      
-        imagecopyresampled($tmp, $img, 
+
+        $tmp = imagecreatetruecolor($this->widthImage, $this->heigtImage);
+
+        imagecopyresampled($tmp, $img,
                 0,              //dst_x
                 0,              //dst_y
                 0,              //src_x
                 0,              //src_y
                 $this->widthImage,      //dst_w
-                $this->heigtImage,     //dst_h  
+                $this->heigtImage,     //dst_h
                 $width,         //src_w
                 $height);       //src_h
 
@@ -185,4 +238,74 @@ class RedmiteController extends Controller {
         }
         imagepng ($tmp, $targetFile);
     }
+    
+	public function administracion() {
+        return view('viewRed/adminRed/cambiaContenido');
+    }
+	
+	public function contenidoProyecto() {
+        return view('viewRed/adminRed/formularioProyecto');
+    }
+	
+	public function altaProyecto() {
+        return view('viewRed/adminRed/formularioProyecto');
+    }
+	
+	public function bajaProyecto() {
+        return view('viewRed/adminRed/formularioProyecto');
+    }
+	
+	public function cambioProyecto() {
+        return view('viewRed/adminRed/formularioProyecto');
+    }
+	
+	public function contenidoPublicacion() {
+        return view('viewRed/adminRed/formularioPublicacion');
+    }
+	
+	public function altaPublicacion() {
+		$publicacion = new Publicaciones();
+        $publicacion->titulo = filter_input(INPUT_GET, 'titulo');
+        $publicacion->autor = filter_input(INPUT_GET, 'autor');
+        $publicacion->pais = filter_input(INPUT_GET, 'pais');
+		$publicacion->categoria = filter_input(INPUT_GET, 'categoria');
+		$publicacion->url_descarga = filter_input(INPUT_GET, 'archivoPdf');
+		$publicacion->imagen = filter_input(INPUT_GET, 'archivoImagen');
+        $publicacion->save();
+
+        return $publicacion;
+    }
+
+	public function bajaPublicacion() {
+        return view('viewRed/adminRed/formularioPublicacion');
+    }
+	
+	public function cambioPublicacion() {
+        return view('viewRed/adminRed/formularioPublicacion');
+    }
+	
+	public function listadoColaboradores(){
+		$colaboradores = DB::table('red_colaboradores')
+		->join('users', 'red_colaboradores.user_id', '=', 'users.id')
+		->where('colabora', '')
+		->get();
+		return view('viewRed/adminRed/listaColaboradores')->with('colaboradores', $colaboradores);
+	}
+	
+	public function guardaDecisionColabora($usuario, $resultado){
+		$affectedRows = Colaborador::where('user_id', '=', $usuario)->update(array('colabora' => $resultado));
+		if($resultado==0){
+			$datosColaborador = DB::table('users')->where('id', $usuario)->get();
+			foreach($datosColaborador as $datos){
+				$datosContacto = [$datos->name,$datos->a_paterno,$datos->a_materno];
+				$correo = $datos->email;
+			}
+			$hash = md5(date('Y/m/d H:i:s'));
+			Mail::send('viewAdmin.mailRechazo', ['correo' => $correo, 'hash' => $hash, 'datosContacto' => $datosContacto], function ($m) use ($correo) {
+				$m->from('ventana@televisioneducativa.gob.mx', 'RedMITE');
+				$m->to($correo)->subject('RedMITE inscripcion colaboradores');
+			});
+		}
+		return $correo;
+	}
 }

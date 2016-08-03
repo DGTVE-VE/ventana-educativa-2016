@@ -23,23 +23,22 @@
 					</div>
 					<span id="btnCerrarDesc{{$tira - 1}}" class="glyphicon glyphicon-remove iconoCerrar" aria-hidden="true" onclick="cierraDetalle({{$tira - 1}})"></span>
 				</div>
-				<iframe id="detalleSerie{{$tira - 1}}" src="" frameborder="0" class="col-md-12" style="display: none; height:500px;">
-				</iframe>
+				<div id="detalleSerie{{$tira - 1}}" class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="color:white; display: none;"></div>
 			</div>
 		@endif
 		{{--*/ $consecutivo=1; 
 			$nombreCat = EducaplayController::consultaCategoria($elemento->categoria_id);
 		/*--}}
 		<div class="row margenesFila margenInferior">
-			<div class="col-md-12 col-lg-12 text-uppercase">
+			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-uppercase">
 				<p style="color:white; font-size:16px;"> {{$nombreCat}}</p>
 			</div>
 		</div>
 		{{--*/ $catAnterior = $elemento->categoria_id; /*--}}
 		<div class="row margenesFila margenInferior">
-			<div class="col-md-12 col-lg-12">
+			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 				<div id="carreteSerie{{$tira}}" class="carousel slide" data-ride="carousel">
-					<div class="carousel-inner" role="listbox">
+                                    <div class="carousel-inner" role="listbox" id="dir-gral-tve">
 	@endif
 					@if($cuenta === 1)
 						<div class="item active">
@@ -48,10 +47,9 @@
 						<div class="item">
 							<div class="row">
 					@endif
-								<div class="col-xs-4 col-sm-4 col-md-2 cambiaPadding">
+								<div class="col-xs-6 col-sm-4 col-md-2 col-lg-2 cambiaPadding">
 									<div class="thumbnail fondoTrans" onmouseover="muestraTitulo({{$tira}}{{$consecutivo}})" onmouseout="ocultaTitulo({{$tira}}{{$consecutivo}})">
 										{{--*/ $ligaDetalle = 'educaplay/detalleSeries/'.$elemento->id.'/0/0' /*--}}
-										 <!--$ligaDetalle = 'educaplay/detalleSeries/2/0' /*-->
 										<a href="{{url($ligaDetalle)}}">
 											<img id="imagen{{$tira}}{{$consecutivo}}" class="img-responsive thumbnailVertical" src="{{url($elemento->url)}}" alt="Imagen Serie">
 										</a>
@@ -63,9 +61,7 @@
 												{{$elemento->titulo_serie}}
 											@endif
 											</h4><br>
-											<!--span class="estiloTxt">{{$elemento->descripcion}}</span-->
 											<img class="estiloIconoMas divIconoMas" src="{{url('imagenes/educaplay/flechaDetalle.png')}}" onclick="muestraDetalle({{$tira}},{{$elemento->id}})"/>
-											<!--img class="estiloIconoMas divIconoMas" src="{{url('imagenes/educaplay/flechaDetalle.png')}}" onclick="muestraDetalle({{$tira}},2)"/-->
 										</div>
 									</div>
 								</div>
@@ -91,6 +87,5 @@
 					</div>
 					<span id="btnCerrarDesc{{$tira}}" class="glyphicon glyphicon-remove iconoCerrar" aria-hidden="true" onclick="cierraDetalle({{$tira}})"></span>
 				</div>
-				<iframe id="detalleSerie{{$tira}}" src="" frameborder="0" class="col-md-12" style="display: none; height:500px;">
-				</iframe>
+				<div id="detalleSerie{{$tira}}" class="col-xs-12 col-sm-12 col-md-12 col-md-12" style="color:white; display: none;"></div>
 			</div>

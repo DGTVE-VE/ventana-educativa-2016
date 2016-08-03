@@ -34,15 +34,16 @@ class VentanaController extends Controller {
 
 
     $validator = Validator::make($request->all(), [
-
-      'nickname' => 'required|max:254',
       'name' => 'required|max:254',
+	  'ApPaterno' => 'required|max:254',
+	  'ApMaterno' => 'required|max:254',
       'email' => 'required|email|max:254|unique:users',
       'password' => 'required|max:60|min:6|confirmed',
       'genero' => 'required',
       'nacimiento' => 'required|date',
       'ciudad' => 'required|max:100',
       'pais' => 'required|max:100',
+      'condiciones' => 'required|accepted',
 
     ]);
 
@@ -53,8 +54,9 @@ class VentanaController extends Controller {
     }
 
     $users = new \App\User();
-    $users->nickname = filter_input(INPUT_POST, 'nickname');
     $users->name = filter_input(INPUT_POST, 'name');
+	$users->a_paterno = filter_input(INPUT_POST, 'ApPaterno');
+	$users->a_materno = filter_input(INPUT_POST, 'ApMaterno');
     $users->email = filter_input(INPUT_POST, 'email');
     $users->password = bcrypt(filter_input(INPUT_POST, 'password'));
     $users->genero = filter_input(INPUT_POST, 'genero');
@@ -65,6 +67,7 @@ class VentanaController extends Controller {
     $users->is_teacher = (filter_input(INPUT_POST, 'is_teacher') == 'on')? 1 : 0;
     $users->is_student = (filter_input(INPUT_POST, 'is_student') == 'on')? 1 : 0;
     $users->is_parent =  (filter_input(INPUT_POST, 'is_parent') == 'on')? 1 : 0;
+    $users->condiciones = (filter_input(INPUT_POST, 'condiciones') == 'on')? 1 : 0;
 
     $users->save();
     return $this->enviaCorreoActivacion($users->email, md5($users->password), filter_input (INPUT_POST, 'back_url'));
@@ -164,5 +167,9 @@ class VentanaController extends Controller {
         print 0;
       }
     }
-
+  
+	public function existeCCT($claveCCT){
+		$consultaCCT = \App\Model\Educaplay\Edu_cct::where('clave_cct',$claveCCT)->get();
+		return $consultaCCT;
+	}
 }

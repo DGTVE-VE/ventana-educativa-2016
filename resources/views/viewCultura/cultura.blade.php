@@ -68,7 +68,7 @@ Cultura
                 <thead></thead>
                 <tbody>
                     <tr>
-                        <td><a href="http://www.moe.gov.bz/" class="hvr-push"><br><img class="animated zoomIn img-responsive" src="{{asset('imagenes/cultura/pais/belice.png')}}"/></a><br><br></td>                                                
+                        <td><a href="http://www.moe.gov.bz/" target="_blank" class="hvr-push"><br><img class="animated zoomIn img-responsive" src="{{asset('imagenes/cultura/pais/belice.png')}}"/></a><br><br></td>                                                
                         <td><a href="http://www.mcj.go.cr/" target="_blank" class="hvr-push"><br><img class="animated zoomIn img-responsive" src="{{asset('imagenes/cultura/pais/costarica.png')}}"/></a><br><br></td>                        
                         <td><a href="http://www.mincultura.gov.co/" class="hvr-push" target="_blank" ><br><img class="animated zoomIn img-responsive" src="{{asset('imagenes/cultura/pais/colombia.png')}}"/></a><br><br></td>                                                
                         <td><a href="http://www.cultura.gob.sv/" target="_blank"  class="hvr-push"><br><img class="animated zoomIn img-responsive" src="{{asset('imagenes/cultura/pais/elsalvador.png')}}"/></a><br><br></td>                        

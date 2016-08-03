@@ -13,7 +13,8 @@ Route::group(['middleware' => 'web'], function () {
     Route::resource('user', 'Api\User');
 
     Route::get('user/existEmail/{email}', ['as' => 'user.existEmail', 'uses' => 'Api\User@existEmail']);
-    Route::get('user/existNick/{nickname}', ['as' => 'user.existNick', 'uses' => 'Api\User@existNick']);
+	Route::get('existeCCT/{cct}', 'VentanaController@existeCCT');
+//    Route::get('user/existNick/{nickname}', ['as' => 'user.existNick', 'uses' => 'Api\User@existNick']);
     Route::get('login', 'SessionsController@create');
     Route::get('logout', 'SessionsController@destroy');
     /* * ************************ Autenticación ************************ */
@@ -116,6 +117,20 @@ Route::group(['middleware' => 'web'], function () {
     Route::get('redmite/admin/integrantes', 'RedmiteController@integrantes');
     Route::post('redmite/admin/guardaIntegrantes', 'RedmiteController@guardaIntegrantes');
     Route::get('redmite/guardarProyecto', 'RedmiteController@guardarProyecto');
+	Route::get('redmite/administra', 'RedmiteController@administracion');
+	Route::get('redmite/administra/proyecto', 'RedmiteController@contenidoProyecto');
+	Route::get('redmite/administra/proyecto/alta', 'RedmiteController@altaProyecto');
+	Route::post('redmite/administra/proyecto/baja', 'RedmiteController@bajaProyecto');
+	Route::post('redmite/administra/proyecto/cambio', 'RedmiteController@cambioProyecto');
+	Route::get('redmite/administra/publicacion', 'RedmiteController@contenidoPublicacion');
+	Route::get('redmite/administra/publicacion/alta', 'RedmiteController@altaPublicacion');
+	Route::post('redmite/administra/publicacion/baja', 'RedmiteController@bajaPublicacion');
+	Route::post('redmite/administra/publicacion/cambio', 'RedmiteController@cambioPublicacion');
+	Route::resource('proyectos', 'ProyectosController');
+	Route::resource('publicaciones', 'PublicacionesController');
+	Route::get('redmite/administra/listaColabora', 'RedmiteController@listadoColaboradores');
+	Route::get('redmite/administra/listaColabora', 'RedmiteController@listadoColaboradores');
+	Route::get('redmite/administra/guardaDecision/{usuario}/{resultado}', 'RedmiteController@guardaDecisionColabora');
     /*     * **************************REDMITE********************** */
 
     /*     * **************************Educaplay********************** */
@@ -126,8 +141,10 @@ Route::group(['middleware' => 'web'], function () {
 	Route::get('educaplay/videoSerie', 'EducaplayController@videoSerie');
 	Route::post('educaplay/rate', 'EducaplayController@guardaRating');
 	Route::post('educaplay/guardaComentaVideo', 'EducaplayController@guardaComentaVideo');
-	Route::get('educaplay/comentarioVideo/{videoId}/{serieId}', 'EducaplayController@comentariosVideo');
-
+	Route::get('educaplay/comentarioVideo/{videoId}', 'EducaplayController@comentariosVideo');
+	Route::get('educaplay/comentarioSerie/{serieId}', 'EducaplayController@comentariosSerie');
+	Route::post('educaplay/guardaTranscurrido', 'EducaplayController@guardaTiempoTranscurrido');
+	
   Route::any('agregaMiLista', 'EducaplayController@agregaMiLista');
   Route::any('votacion', 'EducaplayController@votacion');
   Route::any('guardaposicion', 'EducaplayController@guardaposicion');
@@ -152,6 +169,20 @@ Route::group(['middleware' => 'web'], function () {
     Route::get('docente/materialapoyo', 'DocenteController@materialapoyo');
     Route::get('docente/foros', 'DocenteController@foros');
     /*     * **************************Docente********************** */
+    
+    
+    /*     * **************************Administración********************** */
+    Route::get('admin', 'AdminController@admin');
+    /*     * **************************Administración********************** */
+    
+        /*     * **************************Conocenos********************** */
+    Route::get('conocenos', 'ConocenosController@conocenos');
+	Route::get('bannerInicial', 'ConocenosController@bannerInicial');
+        Route::get('slider', 'ConocenosController@slider');
+        Route::get('noticias', 'ConocenosController@noticias');
+        Route::get('mapa', 'ConocenosController@mapa');
+    /*     * **************************Conocenos********************** */
+    
 });
 
 //Route::get ('api/getImagenes/{tipo}/{id}', '');

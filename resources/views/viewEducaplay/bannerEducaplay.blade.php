@@ -27,14 +27,14 @@ namespace App\Http\Controllers; ?>
 
 
                 <div class="carousel-caption posicionDescripcion">
-                    <div class="col-sm-8 col-md-8 col-md-8">
+                    <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
                         <p class="text-justify">
                             {{$bannerImagen->descripcion}}
                         </p>
                     </div>
                 </div>
                 <div class="carousel-caption posicionBotones">
-                    <div class="col-sm-12 col-md-12 col-lg-12">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 						{{--*/ $url_video = EducaplayController::consultaUrlId($bannerImagen->id); $ligaDetalle = 'educaplay/detalleSeries/'.$bannerImagen->id.'/'.$url_video->url_video.'/'.$url_video->id /*--}}
                         <a href="{{url($ligaDetalle)}}"><div class="btn btn-danger text-uppercase anchoBtnRep textoPeque"><span class="fa fa-play hidden-xs" aria-hidden="true"></span><span class="hidden-xs">&nbsp;&nbsp;</span>Reproducir</div></a>
                         <div class="btn btn-info text-uppercase anchoBtnLista textoPeque" id = "addSerie" onclick="addmilista({{$bannerImagen->id}});"><span class="fa fa fa-plus hidden-xs" aria-hidden="true"></span><span class="hidden-xs">&nbsp;&nbsp;</span>Mi lista</div>
@@ -46,15 +46,15 @@ namespace App\Http\Controllers; ?>
             <div class="item">
                 <img src="{{$bannerImagen->url}}" alt="Imagen banner">
                 <div class="carousel-caption posicionDescripcion">
-                    <div class="col-sm-6 col-md-6">
+                    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
                         <p class="text-justify">
                             {{$bannerImagen->descripcion}}
                         </p>
                     </div>
-                    <div class="col-md-6 col-sm-6"></div>
+                    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6"></div>
                 </div>
                 <div class="carousel-caption posicionBotones">
-                    <div class="col-sm-12 col-md-12 col-lg-12">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 						{{--*/ $url_video = EducaplayController::consultaUrlId($bannerImagen->id); $ligaDetalle = 'educaplay/detalleSeries/'.$bannerImagen->id.'/'.$url_video->url_video.'/'.$url_video->id /*--}}
                         <a href="{{url($ligaDetalle)}}"><div class="btn btn-danger text-uppercase anchoBtnRep textoPeque"><span class="fa fa-play hidden-xs" aria-hidden="true"></span><span class="hidden-xs">&nbsp;&nbsp;</span>Reproducir</div></a>
                         <div class="btn btn-info text-uppercase anchoBtnLista textoPeque" id = "addSerie" onclick="addmilista({{$bannerImagen->id}});"><span class="fa fa fa-plus hidden-xs" aria-hidden="true"></span>
