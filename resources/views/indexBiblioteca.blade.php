@@ -45,7 +45,7 @@ and open the template in the editor.
         @yield ('scripts')
 
     </head>
-    <body style="background-image:url('{{ asset('imagenes/biblioteca/backgroundBiblioteca.jpg') }}');">     
+    <body style="background-image:url('{{ asset('imagenes/biblioteca/back_biblioteca.jpg') }}');">     
         <header>
             @yield('menuBiblioteca')
         </header>
