@@ -5,7 +5,7 @@
         <div class="margensuperiormenuBib">
             <nav class="navbar navbar-inverse navbar-fixed-top margensuperiormenuBib" id="sidebar-wrapper-biblioteca" role="navigation">
                 <ul class="nav sidebar-nav">
-                    <li><a href="{{url('biblioteca/tomos/0')}}">Inicio</a></li>
+                    <li><a href="{{url('biblioteca/')}}">Inicio</a></li>
                     @foreach($bibliotecaMenu as $bibliotecaMenu)
                         <li><a href="{{url('biblioteca/tomos/'.$bibliotecaMenu->id)}}">{{$bibliotecaMenu->nombre}}</a></li>
                     @endforeach 
@@ -23,28 +23,38 @@
 </div>
 
 <script>
-
     $(document).ready(function () {
         var trigger = $('.hamburger-biblioteca'),
-                overlay = $('.overlay'),
-                isClosed = false;
+			overlay = $('.overlay'),
+			isClosed = true, abierto = 'is-closed';
+			
+		function cerrarMenuHamb(){
+			overlay.show();
+			trigger.removeClass(abierto);
+			isClosed = true;
+		}
+		
+		function abrirMenuHamb(){
+			overlay.hide();
+			trigger.addClass(abierto);
+			isClosed = false;
+		}
 
-        trigger.click(function () {
+		trigger.click(function () {
             hamburger_cross();
+        });
+		
+		$('#sidebar-wrapper-biblioteca').mouseleave(function () {
+			$('#wrapper-biblioteca').toggleClass('toggled');
+            cerrarMenuHamb();
+
         });
 
         function hamburger_cross() {
-
             if (isClosed == true) {
-                overlay.hide();
-//                        trigger.removeClass('is-open');
-                trigger.addClass('is-closed');
-                isClosed = false;
+				abrirMenuHamb();
             } else {
-                overlay.show();
-                trigger.removeClass('is-closed');
-//                        trigger.addClass('is-open');
-                isClosed = true;
+				cerrarMenuHamb();
             }
         }
 
@@ -54,6 +64,3 @@
     });
 
 </script>
-
-
-

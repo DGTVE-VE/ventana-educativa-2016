@@ -8,11 +8,11 @@
         "php": ">=5.5.9",
         "laravel/framework": "5.2.*",
         "laravelcollective/html": "5.2.*",
-        "illuminate/html": "^5.0",
         "creitive/laravel5-breadcrumbs": "^2.0",
         "alaouy/youtube": "dev-master",
-        "laracasts/flash": "^2.0",
-        "appzcoder/crud-generator": "^1.1"
+        "illuminate/html": "5.0.*",
+        "laracasts/flash": "^2.0"
+
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",

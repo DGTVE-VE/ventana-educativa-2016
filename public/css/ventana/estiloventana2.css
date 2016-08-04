@@ -7,7 +7,7 @@ body{background-repeat:no-repeat;background-position:center center;background-at
 #login-submit{background-color:#ccc;border-radius:25px 25px 25px 25px;}
 #login-submit:hover{background-color:#888;border:1px solid white;color:#000 !important;}
 .menuVentanaApps{background:transparent;border:none;}
-.mueveTabla{background:rgba(0, 0, 0, .3) !important;position:fixed;right:3%;box-shadow:5px 5px 1px rgba(0, 0, 0, .2);}
+.mueveTabla{background:rgba(0, 0, 0, .3) !important;position:fixed;right:3%;}
 .etiquetaApp{font-weight:normal;color:#fff;font-family:Ubuntu;}
 .divApp{padding:10px;}
 .divApp .img-responsive{margin:0 auto;}

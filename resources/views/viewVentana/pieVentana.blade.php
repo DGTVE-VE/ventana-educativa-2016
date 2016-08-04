@@ -1,6 +1,6 @@
 <!--	-----------------	Barra colaboradores para resoluciones grandes	----------------	-->
 <div class="row visible-md-block visible-lg-block">
-    <div id="barraNavegacionColabora" class="col-md-12 col-lg-12 tabs_holder navbar-fixed-bottom quitaPad" onmouseenter="ocultaPestana()" onmouseleave="muestraPestana()">
+    <div id="barraNavegacionColabora" class="col-md-12 col-lg-12 tabs_holder navbar-fixed-bottom quitaPad" onmouseover="ocultaPestana()" onmouseleave="muestraPestana()">
 		<div id="pestanaColabora" class="fondoColabora" ><a href="#"><p id="textoColabora" class="txtPestana" id="desplegar">COLABORADORES</p></a></div>
         <div id="efectobarramenu" class="quitaPad">
 			<div id="fondoTablaColabora" class="fondoTablaColabora">
@@ -126,7 +126,8 @@
 </div>
 
 <script>
-
+	programaSubir = 0;
+	programaBajar = 0;
 	$(document).ready(function() {
 		$("#fondoTablaColabora").slideToggle("fast");
 		$('#desplegar1').click(function() {
@@ -138,9 +139,17 @@
 		$('#efectobarramenu2').css('display','none');
 	});
 	function ocultaPestana(){
-		$("#fondoTablaColabora").slideDown("slow");
+		if(programaSubir != 0){
+			clearTimeout(programaSubir);
+			programaSubir =0;
+		}
+		programaBajar = setTimeout(function(){$("#fondoTablaColabora").slideDown("slow"); }, 300);
 	}
 	function muestraPestana(){
-		$("#fondoTablaColabora").slideUp("slow");
+		if(programaBajar != 0){
+			clearTimeout(programaBajar);
+			programaBajar = 0;
+		}
+		programaSubir = setTimeout(function(){$("#fondoTablaColabora").slideUp("slow"); }, 1000);
 	}
 </script>

@@ -15,7 +15,16 @@ class BibliotecaController extends Controller {
 
     public function tomos($categoria) {
 		if($categoria==0){
-			$tomos = DB::table('biblioteca')->select('url_tomo','url_descripcion','clasifica_id','pais','link_consulta')->get();
+			$tomos = DB::table('biblioteca')->select('url_tomo','url_descripcion','clasifica_id','pais','link_consulta')->orderby('clasifica_id')->get();
+                        $tomosNacionales = [];
+//                        var_dump($tomos);
+                        foreach($tomos as $libro){
+                            if($libro->clasifica_id==1){
+                                array_push($tomosNacionales, $libro);                    
+                            }
+                        }
+                        $numNacionales = count($tomosNacionales);
+                        print $numNacionales;
 		}
 		else{
 			$tomos = DB::table('biblioteca')->select('url_tomo','url_descripcion','clasifica_id','pais','link_consulta')->where('clasifica_id','=',$categoria)->get();
@@ -30,14 +39,13 @@ class BibliotecaController extends Controller {
 
 	public static function obtieneClasificacion(){
 		$uri = $_SERVER['REQUEST_URI'];
-		$uriActual = explode('/', $uri);
-		$elemsURI = count($uriActual);
-		$j = $elemsURI - 1;
+		$uriActual = explode('/', $uri);                
+		$elemsURI = count($uriActual);                
+		$j = $elemsURI - 1;                
 		if($uriActual[$j]==0){
-			$nombreClasifica = "";
+			$nombreClasifica = "Todos";
 		}else{
-			$clasificaActual = DB::table('bib_clasifica')->select('nombre')->where('id','=',$uriActual[$j])->get();
-			
+			$clasificaActual = DB::table('bib_clasifica')->select('nombre')->where('id','=',$uriActual[$j])->get();                        			
 			$cuenta=0;
 			foreach($clasificaActual as $actual){
 				$nombreClasifica = $actual->nombre;
