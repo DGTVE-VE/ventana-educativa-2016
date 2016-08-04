@@ -32,15 +32,16 @@ class VentanaController extends Controller {
 
   public function registraUsuario(Request $request) {
 
+    if($request->is_teacher != 'on'){
 
     $validator = Validator::make($request->all(), [
       'name' => 'required|max:254',
-	  'ApPaterno' => 'required|max:254',
-	  'ApMaterno' => 'required|max:254',
+	    'ApPaterno' => 'required|max:254',
+	    'ApMaterno' => 'required|max:254',
       'email' => 'required|email|max:254|unique:users',
       'password' => 'required|max:60|min:6|confirmed',
       'genero' => 'required',
-      'nacimiento' => 'required|date',
+      'nacimiento' => 'required',
       'ciudad' => 'required|max:100',
       'pais' => 'required|max:100',
       'condiciones' => 'required|accepted',
@@ -53,10 +54,42 @@ class VentanaController extends Controller {
       ->withInput();
     }
 
+
+  }elseif ($request->is_teacher == 'on' && $request->tipo_docente == 'telesecundaria') {
+
+    $validator = Validator::make($request->all(), [
+
+    'name' => 'required|max:254',
+    'ApPaterno' => 'required|max:254',
+    'ApMaterno' => 'required|max:254',
+    'email' => 'required|email|max:254|unique:users',
+    'password' => 'required|max:60|min:6|confirmed',
+    'genero' => 'required',
+    'nacimiento' => 'required',
+    'ciudad' => 'required|max:100',
+    'pais' => 'required|max:100',
+    'condiciones' => 'required|accepted',
+    'cct' => 'required',
+    'curpDocente' => 'required',
+
+      ]);
+
+      if ($validator->fails()) {
+        return redirect('registro')
+        ->withErrors($validator)
+        ->withInput();
+      }
+
+  }
+
+
     $users = new \App\User();
+
+
+
     $users->name = filter_input(INPUT_POST, 'name');
-	$users->a_paterno = filter_input(INPUT_POST, 'ApPaterno');
-	$users->a_materno = filter_input(INPUT_POST, 'ApMaterno');
+	  $users->a_paterno = filter_input(INPUT_POST, 'ApPaterno');
+	  $users->a_materno = filter_input(INPUT_POST, 'ApMaterno');
     $users->email = filter_input(INPUT_POST, 'email');
     $users->password = bcrypt(filter_input(INPUT_POST, 'password'));
     $users->genero = filter_input(INPUT_POST, 'genero');
@@ -70,6 +103,33 @@ class VentanaController extends Controller {
     $users->condiciones = (filter_input(INPUT_POST, 'condiciones') == 'on')? 1 : 0;
 
     $users->save();
+
+    if ($request->is_teacher == 'on') {
+
+      $med_docente = new \App\Model\Docente\Med_Docente();
+      $med_docente->user_id = \App\User::whereemail($request->email)->first()->id;
+
+      if($request->tipo_docente == 'telesecundaria'){
+
+        $med_docente->clavecct = $request->cct;
+        $med_docente->rfc = $request->curpDocente;
+        $med_docente->tipo_docente = '1';
+
+      }elseif ($request->tipo_docente == 'basica') {
+
+        $med_docente->tipo_docente = '2';
+
+      }
+      else {
+
+        $med_docente->tipo_docente = '3';
+
+      }
+
+      $med_docente->save();
+
+    }
+
     return $this->enviaCorreoActivacion($users->email, md5($users->password), filter_input (INPUT_POST, 'back_url'));
 
   }
@@ -167,9 +227,18 @@ class VentanaController extends Controller {
         print 0;
       }
     }
-  
+
 	public function existeCCT($claveCCT){
-		$consultaCCT = \App\Model\Educaplay\Edu_cct::where('clave_cct',$claveCCT)->get();
-		return $consultaCCT;
+
+		$consultaCCT = \App\Model\Educaplay\Edu_cct::where('clave_cct',$claveCCT)->first();
+
+    if ( isset($consultaCCT) ) {
+      return $consultaCCT->nombre_cct;
+    }
+
+    else {
+      return 0;
+    }
+
 	}
 }
