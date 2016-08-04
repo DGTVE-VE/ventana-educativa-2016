@@ -21,8 +21,7 @@
                                 $imagenCat = 'imagenes/biblioteca/tomos/investigacion.png';
                             }else{
                                 if($clasificacionActual=="Todos"){
-                                    $imagenCat = '';
-                                    print 'Todos';
+                                    $imagenCat = 'imagenes/biblioteca/tomos/mexico.png';                                    
                                 }
                             }
                         }
@@ -39,12 +38,12 @@
 @include('viewVentana.encabezadoVentana')
 <style>
     .fondoDegradadoMenuInicial{
-        background: rgba(0, 0, 0, .5);
+        background: rgba(0, 0, 0, .3);
         /*background: #000;*/
         border: none;
     }
     .fondoDegradadoMenu{
-        background: rgba(0, 0, 0, .7);
+        background: rgba(0, 0, 0, .3);
         border: none;
     }
     .reduceFlecha{
@@ -75,6 +74,7 @@
 	}
 	.imgMadera{
 		width:100%;
+                margin-bottom: .4%;
 	}
 	.posiciona{
 		position:relative;
@@ -88,6 +88,9 @@
 	.textoLigaBiblio{
 		 position: absolute; bottom:5%; right: 7%; display:none;
 	}
+        .plecaLaton{
+            margin-top: 20%;
+        }
 </style>
 <script>
     $('#buscar').css('display', 'none');
@@ -191,7 +194,7 @@
 			<div class="textoEstante text-uppercase" style="color:black;"> NO HAY BIBLIOTECAS PARA ESTA CLASIFICACI&#211;N </div>
 		@else
 			<img src="{{ asset('imagenes/biblioteca/tomos/plecaMadera1.jpg') }}" class="imgMadera"/>
-                        <div class="textoEstante estanteInferior text-uppercase"><img src="{{asset($imagenCat)}}"style="width:18%;" ></div>
+                        <div class="textoEstante estanteInferior text-uppercase"><img src="{{asset($imagenCat)}}"style="width:18%;"class="plecaLaton" ></div>
 		@endif
 	</div>
 </div>

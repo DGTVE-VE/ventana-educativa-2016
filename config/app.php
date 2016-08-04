@@ -143,8 +143,7 @@ return [
         Alaouy\Youtube\YoutubeServiceProvider::class,
         /* messages */
         Laracasts\Flash\FlashServiceProvider::class,
-//        MaddHatter\LaravelFullcalendar\ServiceProvider::class,
-        Appzcoder\CrudGenerator\CrudGeneratorServiceProvider::class,
+        
     ],
     /*
       |--------------------------------------------------------------------------
@@ -193,8 +192,5 @@ return [
         'Form' => Illuminate\Html\FormFacade::class,
         'HTML' => Illuminate\Html\HtmlFacade::class,
         'Flash' => Laracasts\Flash\Flash::class,
-//        'Calendar' => MaddHatter\LaravelFullcalendar\Facades\Calendar::class,
-        'FormCollective' => Collective\Html\FormFacade::class,
-        'HTMLCollective' => Collective\Html\HtmlFacade::class,
     ],
 ];

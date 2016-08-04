@@ -11,7 +11,9 @@
 =======
         <group>
             <file>file:/C:/xampp/htdocs/ventanaEducativa/resources/views/viewMediateca/menuMediatecaTelebachillerato.blade.php</file>
-            <file>file:/C:/xampp/htdocs/ventanaEducativa/resources/views/viewVentana/registroVentana.blade.php</file>
+            <file>file:/C:/xampp/htdocs/ventanaEducativa/public/css/mediateca/estilomediateca3.css</file>
+            <file>file:/C:/xampp/htdocs/ventanaEducativa/resources/views/viewMediateca/menuMediatecaTelesecundaria.blade.php</file>
+            <file>file:/C:/xampp/htdocs/ventanaEducativa/public/css/mediateca/estilomediateca2.css</file>
         </group>
 >>>>>>> 873679e48dffa0ac11eee88129fc873f6cd6d6ee
     </open-files>
