@@ -7,7 +7,7 @@ and open the template in the editor.
 <html lang='en'>
     <head>
         <title>@yield('titleVentana','Venatana Educativa')</title>
-                
+
         <!--  App Descripción  -->
         <meta charset="utf-8"/>
         <meta name="author" content="Ecosistema Digital de Aprendizaje (DGTVE)"/>
@@ -17,7 +17,7 @@ and open the template in the editor.
         <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
 
         <link rel="shortcut icon" href="{{ asset('redmite1.ico') }}" >
-		
+
         <!-- jQuery library -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 
@@ -30,13 +30,14 @@ and open the template in the editor.
 		<!-- Latest compiled and minified CSS -->
         <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="http://ajax.aspnetcdn.com/ajax/jquery.ui/1.10.0/themes/black-tie/jquery-ui.css">
 
 		<style type="text/css">
 		/* this would probably be in a CSS file */
 			#browserWarning { display:none; }
 		</style>
     </head>
-    <body style="background-image:url('{{ asset('imagenes/ventana/background/backgroundDefault.jpg') }}');">     
+    <body style="background-image:url('{{ asset('imagenes/ventana/background/backgroundDefault.jpg') }}');">
         <script>
 			(function (i, s, o, g, r, a, m) {
 				i['GoogleAnalyticsObject'] = r;
@@ -67,7 +68,7 @@ and open the template in the editor.
 
 <!-- Carga de Scripts y estilos al final de los elementos para acelerar la respuesta de la página -->
 	<link rel="stylesheet" href="{{ asset('css/red/estiloredmesoamericana.css') }}" >
-	
+
 	<!--	-------------------------- Fuentes de google fonts ------------------------------------		-->
 	<link href='https://fonts.googleapis.com/css?family=Ubuntu:400,300,500,700' rel='stylesheet' type='text/css'>
 
@@ -78,7 +79,7 @@ and open the template in the editor.
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-formhelpers/2.3.0/css/bootstrap-formhelpers.css" rel="stylesheet"/>
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-formhelpers/2.3.0/css/bootstrap-formhelpers.min.css" rel="stylesheet"/>
 	<!--fin FormHelpers -->
-	
+
 	<link rel="stylesheet" href="{{ asset('css/red/ihover.css') }}" >
 	<link rel="stylesheet" href="{{ asset('css/red/animate.css') }}" >
 
@@ -90,17 +91,17 @@ and open the template in the editor.
 	}
 </script>
 
-<script> 
+<script>
     /*Scriopt para mensaje emergente de actualización de navegador*/
-	var $buoop = {c:2}; 
-	function $buo_f(){ 
-	 var e = document.createElement("script"); 
-	 e.src = "//browser-update.org/update.min.js"; 
+	var $buoop = {c:2};
+	function $buo_f(){
+	 var e = document.createElement("script");
+	 e.src = "//browser-update.org/update.min.js";
 	 document.body.appendChild(e);
 	};
 	try {document.addEventListener("DOMContentLoaded", $buo_f,false)}
 	catch(e){window.attachEvent("onload", $buo_f)}
-</script> 
-<?php 
+</script>
+<?php
 	Log::info('Memory Usage:'.Request::path()." - " . (memory_get_peak_usage (true)/1024/1024));
 ?>
