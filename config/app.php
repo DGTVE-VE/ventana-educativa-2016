@@ -143,7 +143,8 @@ return [
         Alaouy\Youtube\YoutubeServiceProvider::class,
         /* messages */
         Laracasts\Flash\FlashServiceProvider::class,
-        
+        Appzcoder\CrudGenerator\CrudGeneratorServiceProvider::class,
+        Collective\Html\HtmlServiceProvider::class,
     ],
     /*
       |--------------------------------------------------------------------------
@@ -189,8 +190,10 @@ return [
         'View' => Illuminate\Support\Facades\View::class,
 //        'Form' => Collective\Html\FormFacade::class,
 //        'Html' => Collective\Html\HtmlFacade::class,
-        'Form' => Illuminate\Html\FormFacade::class,
-        'HTML' => Illuminate\Html\HtmlFacade::class,
+        'FormIlluminate' => Illuminate\Html\FormFacade::class,
+        'HTMLIlluminate' => Illuminate\Html\HtmlFacade::class,
         'Flash' => Laracasts\Flash\Flash::class,
+        'Form' => Collective\Html\FormFacade::class,
+        'HTML' => Collective\Html\HtmlFacade::class,
     ],
 ];
