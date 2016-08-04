@@ -29,13 +29,13 @@
 			isClosed = true, abierto = 'is-closed';
 			
 		function cerrarMenuHamb(){
-			overlay.show();
+			overlay.hide();
 			trigger.removeClass(abierto);
 			isClosed = true;
 		}
 		
 		function abrirMenuHamb(){
-			overlay.hide();
+			overlay.show();
 			trigger.addClass(abierto);
 			isClosed = false;
 		}

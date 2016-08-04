@@ -24,7 +24,6 @@ class BibliotecaController extends Controller {
                             }
                         }
                         $numNacionales = count($tomosNacionales);
-                        print $numNacionales;
 		}
 		else{
 			$tomos = DB::table('biblioteca')->select('url_tomo','url_descripcion','clasifica_id','pais','link_consulta')->where('clasifica_id','=',$categoria)->get();
