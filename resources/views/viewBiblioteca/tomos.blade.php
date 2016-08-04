@@ -38,12 +38,12 @@
 @include('viewVentana.encabezadoVentana')
 <style>
     .fondoDegradadoMenuInicial{
-        background: rgba(0, 0, 0, .5);
+        background: rgba(0, 0, 0, .3);
         /*background: #000;*/
         border: none;
     }
     .fondoDegradadoMenu{
-        background: rgba(0, 0, 0, .7);
+        background: rgba(0, 0, 0, .3);
         border: none;
     }
     .reduceFlecha{
