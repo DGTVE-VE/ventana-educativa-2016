@@ -15,7 +15,16 @@ class BibliotecaController extends Controller {
 
     public function tomos($categoria) {
 		if($categoria==0){
-			$tomos = DB::table('biblioteca')->select('url_tomo','url_descripcion','clasifica_id','pais','link_consulta')->get();
+			$tomos = DB::table('biblioteca')->select('url_tomo','url_descripcion','clasifica_id','pais','link_consulta')->orderby('clasifica_id')->get();
+                        $tomosNacionales = [];
+//                        var_dump($tomos);
+                        foreach($tomos as $libro){
+                            if($libro->clasifica_id==1){
+                                array_push($tomosNacionales, $libro);                    
+                            }
+                        }
+                        $numNacionales = count($tomosNacionales);
+                        print $numNacionales;
 		}
 		else{
 			$tomos = DB::table('biblioteca')->select('url_tomo','url_descripcion','clasifica_id','pais','link_consulta')->where('clasifica_id','=',$categoria)->get();

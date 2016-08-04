@@ -21,8 +21,7 @@
                                 $imagenCat = 'imagenes/biblioteca/tomos/investigacion.png';
                             }else{
                                 if($clasificacionActual=="Todos"){
-                                    $imagenCat = '';
-                                    print 'Todos';
+                                    $imagenCat = 'imagenes/biblioteca/tomos/mexico.png';                                    
                                 }
                             }
                         }
