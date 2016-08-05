@@ -13,11 +13,13 @@ class BibliotecaController extends Controller {
         return view('viewBiblioteca/biblioteca');
     }
 
-    public function tomos($categoria) {
+    public function tomos($pais, $categoria) {
 		if($categoria==0){
-			$tomos = DB::table('biblioteca')->select('url_tomo','url_descripcion','clasifica_id','pais','link_consulta')->orderby('clasifica_id')->get();
+			$tomos = DB::table('biblioteca')->select('url_tomo','url_descripcion','clasifica_id','pais','link_consulta')
+				->where('pais','=',$pais)
+				->orderby('clasifica_id')
+				->get();
                         $tomosNacionales = [];
-//                        var_dump($tomos);
                         foreach($tomos as $libro){
                             if($libro->clasifica_id==1){
                                 array_push($tomosNacionales, $libro);                    
@@ -26,13 +28,14 @@ class BibliotecaController extends Controller {
                         $numNacionales = count($tomosNacionales);
 		}
 		else{
-			$tomos = DB::table('biblioteca')->select('url_tomo','url_descripcion','clasifica_id','pais','link_consulta')->where('clasifica_id','=',$categoria)->get();
+			$tomos = DB::table('biblioteca')->select('url_tomo','url_descripcion','clasifica_id','pais','link_consulta')
+				->where('pais','=',$pais)
+				->where('clasifica_id','=',$categoria)
+				->get();
 		}
-        
-//        dd($tomos);
         $bibliotecaMenu = $this->menuBiblioteca();
       
-        return view('viewBiblioteca/tomos')->with('tomos',$tomos)->with('bibliotecaMenu',$bibliotecaMenu);
+        return view('viewBiblioteca/tomos')->with('tomos',$tomos)->with('bibliotecaMenu',$bibliotecaMenu)->with('pais',$pais);
         
     }
 

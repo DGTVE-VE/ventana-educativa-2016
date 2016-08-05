@@ -43,12 +43,12 @@ Biblioteca
         <br>
         <div class="accordionBiblio">
             <ul id="tomosBiblioteca">
-                <li style="background-image: url('{{asset('imagenes/biblioteca/pais/costarica.jpg')}}')"></li>
+                <li onclick="location.href='{{asset('biblioteca/tomos/CR/0')}}'" class="hoverLiBiblioteca" style="background-image: url('{{asset('imagenes/biblioteca/pais/costarica.jpg')}}')"></li>
                 <li style="background-image: url('{{asset('imagenes/biblioteca/pais/colombia.jpg')}}')"></li>
                 <li style="background-image: url('{{asset('imagenes/biblioteca/pais/dominicana.jpg')}}')"></li>
                 <li style="background-image: url('{{asset('imagenes/biblioteca/pais/guatemala.jpg')}}')"></li>
                 <li style="background-image: url('{{asset('imagenes/biblioteca/pais/honduras.jpg')}}')"></li>
-                <li class="hoverLiBiblioteca" onclick="location.href='{{asset('biblioteca/tomos/0')}}'" style="background-image: url('{{asset('imagenes/biblioteca/pais/mexico.jpg')}}')"></li>
+                <li onclick="location.href='{{asset('biblioteca/tomos/MX/0')}}'" class="hoverLiBiblioteca" style="background-image: url('{{asset('imagenes/biblioteca/pais/mexico.jpg')}}')"></li>
                 <li style="background-image: url('{{asset('imagenes/biblioteca/pais/nicaragua.jpg')}}')"></li>
                 <li style="background-image: url('{{asset('imagenes/biblioteca/pais/panama.jpg')}}')"></li>                
                 <li style="background-image: url('{{asset('imagenes/biblioteca/pais/salvador.jpg')}}')"></li>

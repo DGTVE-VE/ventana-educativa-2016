@@ -7,7 +7,7 @@
                 <ul class="nav sidebar-nav">
                     <li><a href="{{url('biblioteca/')}}">Inicio</a></li>
                     @foreach($bibliotecaMenu as $bibliotecaMenu)
-                        <li><a href="{{url('biblioteca/tomos/'.$bibliotecaMenu->id)}}">{{$bibliotecaMenu->nombre}}</a></li>
+                        <li><a href="{{url('biblioteca/tomos/'.$pais.'/'.$bibliotecaMenu->id)}}">{{$bibliotecaMenu->nombre}}</a></li>
                     @endforeach 
                 </ul>
             </nav>

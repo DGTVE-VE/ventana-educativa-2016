@@ -21,7 +21,15 @@
                                 $imagenCat = 'imagenes/biblioteca/tomos/investigacion.png';
                             }else{
                                 if($clasificacionActual=="Todos"){
-                                    $imagenCat = 'imagenes/biblioteca/tomos/mexico.png';                                    
+									if($pais=='MX'){
+										$imagenCat = 'imagenes/biblioteca/placas/mexico.png';
+									}
+									else if($pais=='CR'){
+										$imagenCat = 'imagenes/biblioteca/placas/costa_rica.png';
+									}
+									else{
+										$imagenCat = 'imagenes/biblioteca/placas/mexico.png';
+									}
                                 }
                             }
                         }
@@ -39,7 +47,6 @@
 <style>
     .fondoDegradadoMenuInicial{
         background: rgba(0, 0, 0, .3);
-        /*background: #000;*/
         border: none;
     }
     .fondoDegradadoMenu{
@@ -50,10 +57,10 @@
         width:20px;
     }
     .contenedor{
-        -webkit-transition: all 0.5s ease;
-        -moz-transition: all 0.5s ease;
-        -o-transition: all 0.5s ease;
-        transition: all 0.5s ease;
+        -webkit-transition: all 0.3s ease;
+        -moz-transition: all 0.3s ease;
+        -o-transition: all 0.3s ease;
+        transition: all 0.3s ease;
     }
     .imagenDescribe{
         position:absolute; top:0px; left: 25%; display: none; z-index:-1;
@@ -74,7 +81,7 @@
 	}
 	.imgMadera{
 		width:100%;
-                margin-bottom: .4%;
+		margin-bottom: .4%;
 	}
 	.posiciona{
 		position:relative;
@@ -88,9 +95,9 @@
 	.textoLigaBiblio{
 		 position: absolute; bottom:5%; right: 7%; display:none;
 	}
-        .plecaLaton{
-            margin-top: 20%;
-        }
+	.plecaLaton{
+		/*position:relative; top:8px;*/
+	}
 </style>
 <script>
     $('#buscar').css('display', 'none');
@@ -112,9 +119,10 @@
         }
     });
     $(document).ready(function () {
+		activaAnimacion = true;
         var contenedor = '#contenedor11';
         anchoCol = $(contenedor).width() * 1.3;
-        anchoAumenta = anchoCol * 3.2;
+        anchoAumenta = anchoCol * 3.17;
         altoLomos = $('#imagenLomo1').height();
         anchoLomos = $('#imagenLomo1').width();
         $('.imagenLomo').css('height', altoLomos);
@@ -122,24 +130,42 @@
         $('.imagenDescribe').css('height', altoLomos);
     });
     function muestraDescripcion(elem, libro) {
-        var contenedor = '#contenedor' + elem + libro;
-        $(contenedor).css('width', anchoAumenta);
-        var colMargen = '#columnaMargen' + elem;
-        $(colMargen).css('display', 'none');
-        var contenedorDescr = '#descripcion' + elem + libro;
-        $(contenedorDescr).css('display', 'block');
-		var textoLigaBiblio = '#ligaBiblioteca' + elem + libro;
-        $(textoLigaBiblio).css('display', 'block');
+		if(activaAnimacion){
+			var contenedor = '#contenedor' + elem + libro;
+			$(contenedor).css('width', anchoAumenta);
+			var colMargen = '#columnaMargen' + elem;
+			$(colMargen).css('display', 'none');
+			var contenedorDescr = '#descripcion' + elem + libro;
+			$(contenedorDescr).css('display', 'block');
+			var textoLigaBiblio = '#ligaBiblioteca' + elem + libro;
+			$(textoLigaBiblio).css('display', 'block');
+			//activaAnimacion = false;
+			//setTimeout(function(){activaAnimacion=true;},500);
+			//$(contenedor).one("webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend",function(event) {activaAnimacion=true;});
+			//$(contenedor).one('webkitAnimationEnd oanimationend msAnimationEnd animationend', function(){activaAnimacion=true; alert('terminó');});	// Code for Chrome, Safari and Opera
+			//$(contenedor).on("", function(){activaAnimacion=true;});	// Standard syntax
+		}
     }
     function ocultaDescripcion(elem, libro) {
-        var contenedor = '#contenedor' + elem + libro;
-        $(contenedor).css('width', anchoCol);
-        var colMargen = '#columnaMargen' + elem;
-        $(colMargen).css('display', 'block');
-        var contenedorDescr = '#descripcion' + elem + libro;
-        $(contenedorDescr).css('display', 'none');
-		var textoLigaBiblio = '#ligaBiblioteca' + elem + libro;
-        $(textoLigaBiblio).css('display', 'none');
+		/*if(!activaAnimacion){
+			//$(contenedor).one("webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend",function(event) { activaAnimacion=true; ocultaDescripcion(elem, libro);});
+			setTimeout(function(){ocultaDescripcion(elem, libro);},300);
+		}
+		else{*/
+		if(activaAnimacion){
+			var contenedor = '#contenedor' + elem + libro;
+			$(contenedor).css('width', anchoCol);
+			var colMargen = '#columnaMargen' + elem;
+			$(colMargen).css('display', 'block');
+			var contenedorDescr = '#descripcion' + elem + libro;
+			$(contenedorDescr).css('display', 'none');
+			var textoLigaBiblio = '#ligaBiblioteca' + elem + libro;
+			$(textoLigaBiblio).css('display', 'none');
+			//activaAnimacion = false;
+			//$(contenedor).one("webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend",function(event) {ocultaDescripcion(elem, libro); activaAnimacion=true;});
+			//$(contenedor).one('webkitAnimationEnd animationend', function(){activaAnimacion=true;});	// Code for Chrome, Safari and Opera
+			//$(contenedor).on("animationend", function(){activaAnimacion=true;});	// Standard syntax
+		}
     }
 </script>        
 
@@ -183,8 +209,10 @@
 						<img id="descripcion{{$i}}{{$item}}" src="{{url($tomo->url_descripcion)}}" class="img-responsive imagenDescribe" alt="...">
 					</div>
 				@if(($item+1) % 10 === 0)
-					<img src="{{ asset('imagenes/biblioteca/tomos/plecaMadera1.jpg') }}" class="hidden-xs imgMadera"/>
-                                        <div class="textoEstante estanteSuperior text-uppercase"> <img src="{{asset($imagenCat)}}" style="width:18%;"></div>
+						<img src="{{ asset('imagenes/biblioteca/tomos/plecaMadera1.jpg') }}" class="hidden-xs imgMadera"/>
+						<div class="textoEstante estanteSuperior text-uppercase">
+							<img src="{{asset($imagenCat)}}" style="width:18%;"/>
+						</div>
 					</div>
 					
 				@endif
@@ -194,7 +222,7 @@
 			<div class="textoEstante text-uppercase" style="color:black;"> NO HAY BIBLIOTECAS PARA ESTA CLASIFICACI&#211;N </div>
 		@else
 			<img src="{{ asset('imagenes/biblioteca/tomos/plecaMadera1.jpg') }}" class="imgMadera"/>
-                        <div class="textoEstante estanteInferior text-uppercase"><img src="{{asset($imagenCat)}}"style="width:18%;"class="plecaLaton" ></div>
+			<div class="textoEstante estanteInferior text-uppercase"><img src="{{asset($imagenCat)}}"style="width:18%;"class="plecaLaton" ></div>
 		@endif
 	</div>
 </div>
