@@ -245,3 +245,5 @@ function generaBreadCrumbs() {
         }
     }
 }
+
+Route::resource('Admin/biblioteca', 'Admin\\bibliotecaController');
