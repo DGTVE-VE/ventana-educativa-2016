@@ -14,11 +14,11 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
-                    </button>    
+                    </button>
                     <a href="{{url('ventana_educativa')}}">
                         {{ HTML::image('imagenes/ventana/encabezado/logoventana.png','Ventana Educativa', ['class'=>'image-responsive imgLogo']) }}
                     </a>
-                </div> 
+                </div>
             </div>
 
             <div class="col-md-2"></div>
@@ -27,8 +27,8 @@
                     <li id="li-R" class="dropdown col-md-12">
                         <div class=" divli dropdown-toggle" data-toggle="dropdown">
                             @if (Auth::guest())
-                            {{ HTML::image('imagenes/ventana/encabezado/usuario.png','Usuario',['class'=>'img-circle iconoApp', 'id'=>'img-usuario'] )}}                        
-                            @elseif (File::exists ('uploaded/avatares/'.Auth::user()->id.'.png'))                        
+                            {{ HTML::image('imagenes/ventana/encabezado/usuario.png','Usuario',['class'=>'img-circle iconoApp', 'id'=>'img-usuario'] )}}
+                            @elseif (File::exists ('uploaded/avatares/'.Auth::user()->id.'.png'))
                             {{ HTML::image('uploaded/avatares/'.Auth::user()->id.'.png', 'Avatar usuario', ['class'=>'img-circle iconoApp', 'id'=>'img-usuario', 'width'=>'35px'] )}}
                             @else
                             {{ HTML::image('imagenes/ventana/encabezado/usuario.png','Usuario',['class'=>'img-circle iconoApp', 'id'=>'img-usuario'] )}}
@@ -65,12 +65,12 @@
                                                 </div>
                                             </div>
                                         </form>
-                                        @else 
+                                        @else
 
                                         <h5 style="color: white;" class="text-center">
-                                            <!--Iniciaste sesión como:--> 
+                                            <!--Iniciaste sesión como:-->
                                         </h5>
-                                        <h4 style="color: white;" class="text-center">{{Auth::user()->email}}</h4>                            
+                                        <h4 style="color: white;" class="text-center">{{Auth::user()->email}}</h4>
 
                                         <div class="col-md-6 text-center">
                                             <a href="{{url('logout')}}" tabindex="5" style="color: red; font-weight: bold;" class="forgot-password">
@@ -104,11 +104,11 @@
                                                         <!--<label for="file">Selecciona tu imagen</label><br/>-->
                                                         <span class="btn btn-file-avatar">
                                                             Seleccionar imagen <input type="file" name="image" class="inputLogin" id="file" required />
-                                                        </span>                                                    
-                                                        <br><br>                                      
+                                                        </span>
+                                                        <br><br>
                                                         <input type="submit" value="Subir Imagen" class="submit btn btn-info" />
                                                         <!--<h4 id='loading' >Cargando...</h4>-->
-                                                    </div>  
+                                                    </div>
 
                                                 </form>
                                             </div>
@@ -148,7 +148,7 @@
                     <li><a href="#"><span class="fa-stack fa-lg pull-left"><i class="fa fa-flag fa-stack-1x "></i></span>link2</a></li>
 
                 </ul>
-            </li>                    
+            </li>
             <li>
                 <a href="#"><span class="fa-stack fa-lg pull-left"><i class="fa fa-flag fa-stack-1x "></i></span> Cultura</a>
                 <ul class="nav-pills nav-stacked" style="list-style-type:none;">
@@ -164,7 +164,7 @@
                     <li><a href="#"><span class="fa-stack fa-lg pull-left"><i class="fa fa-flag fa-stack-1x "></i></span>link2</a></li>
 
                 </ul>
-            </li> 
+            </li>
             <li>
                 <a href="#"><span class="fa-stack fa-lg pull-left"><i class="fa fa-film fa-stack-1x "></i></span> Educaplay</a>
                 <ul class="nav-pills nav-stacked" style="list-style-type:none;">
@@ -172,7 +172,7 @@
                     <li><a href="#"><span class="fa-stack fa-lg pull-left"><i class="fa fa-flag fa-stack-1x "></i></span>link2</a></li>
 
                 </ul>
-            </li>                    
+            </li>
             <li>
                 <a href="#"><span class="fa-stack fa-lg pull-left"><i class="fa fa-globe fa-stack-1x "></i></span> Redmite</a>
                 <ul class="nav-pills nav-stacked" style="list-style-type:none;">
@@ -181,7 +181,7 @@
                     <li><a href="#"><span class="fa-stack fa-lg pull-left"><i class="fa fa-flag fa-stack-1x "></i></span>Proyectos</a></li>
 
                 </ul>
-            </li>                    
+            </li>
             <li>
                 <a href="#"><span class="fa-stack fa-lg pull-left"><i class="fa fa-user-md fa-stack-1x "></i></span> Salud</a>
                 <ul class="nav-pills nav-stacked" style="list-style-type:none;">
@@ -189,7 +189,7 @@
                     <li><a href="#"><span class="fa-stack fa-lg pull-left"><i class="fa fa-flag fa-stack-1x "></i></span>link2</a></li>
 
                 </ul>
-            </li>                    
+            </li>
         </ul>
     </div><!-- /#sidebar-wrapper -->
 </div>
@@ -262,7 +262,7 @@
             ;
         });
 		/************ CAMBIAR AVATAR **************/
-		
+
 		/************ Carga lista colaboradores **************/
 	function muestraColaboradores(){
 		var urlget = "{{url('redmite/administra/listaColabora')}}";
