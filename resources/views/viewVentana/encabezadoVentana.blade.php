@@ -21,11 +21,11 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
-                    </button>    
+                    </button>
                     <a href="{{url('ventana_educativa')}}">
                         {{ HTML::image('imagenes/ventana/encabezado/logoventana.png','Ventana Educativa', ['class'=>'image-responsive imgLogo', 'id'=>'imagenLogoVentana']) }}
                     </a>
-                </div> 
+                </div>
             </div>
             <!--<div class="col-md-1"></div>-->
             <div class="col-md-3">
@@ -44,7 +44,7 @@
             <div class="col-md-2"></div>
             <div class="col-md-5">
                 <ul class="nav navbar-nav navbar-right collapse navbar-collapse collapseBarra">
-                    <li class="dropdown col-md-6">
+                    <li class="dropdown col-md-6" style="padding-left: 25%;">
                         <div class="dropdown-toggle" data-toggle="dropdown">
                             {{ HTML::image('imagenes/ventana/encabezado/iconoApps.png','Diversas aplicaciones de contenido educativo',['width'=>'30px','height'=>'20px','class'=>'iconoApp appsLogo'])}}
                         </div>
@@ -55,7 +55,7 @@
                                         <a class="" href="#">
                                             {{ HTML::image('imagenes/ventana/encabezado/appVOD.png','Educaplay: Videos educativos')}}
                                         </a>
-                                    </td>                        
+                                    </td>
                                     <td class="divApp centered">
                                         <a class="" href="{{url('educamedia')}}">
                                             {{ HTML::image('imagenes/ventana/encabezado/appMediateca.png','Mediateca: Videos de telesecundaria')}}
@@ -107,14 +107,15 @@
                                     </td>
                                     <td></td>
                                 </tr>
-                            </table>                                       
+                            </table>
                         </ul>
                     </li>
                     <li id="li-R" class="dropdown col-md-6">
                         <div class=" divli dropdown-toggle" data-toggle="dropdown">
                             @if (Auth::guest())
-                            {{ HTML::image('imagenes/ventana/encabezado/usuario.png','Usuario',['class'=>'img-circle iconoApp', 'id'=>'img-usuario'] )}}                        
-                            @elseif (File::exists ('uploaded/avatares/'.Auth::user()->id.'.png'))                        
+                          <button type="button" class="btn btn-default" class="img-circle">Ingresar <span class="glyphicon glyphicon-log-in" aria-hidden="true"></span></button>
+                            <!-- {{ HTML::image('imagenes/ventana/encabezado/usuario.png','Usuario',['class'=>'img-circle iconoApp', 'id'=>'img-usuario'] )}} -->
+                            @elseif (File::exists ('uploaded/avatares/'.Auth::user()->id.'.png'))
                             {{ HTML::image('uploaded/avatares/'.Auth::user()->id.'.png', 'Avatar usuario', ['class'=>'img-circle iconoApp', 'id'=>'img-usuario', 'width'=>'35px'] )}}
                             @else
                             {{ HTML::image('imagenes/ventana/encabezado/usuario.png','Usuario',['class'=>'img-circle iconoApp', 'id'=>'img-usuario'] )}}
@@ -151,12 +152,12 @@
                                                 </div>
                                             </div>
                                         </form>
-                                        @else 
+                                        @else
 
                                         <h5 style="color: white;" class="text-center">
-                                            <!--Iniciaste sesión como:--> 
+                                            <!--Iniciaste sesión como:-->
                                         </h5>
-                                        <h4 style="color: white;" class="text-center">{{Auth::user()->email}}</h4>                            
+                                        <h4 style="color: white;" class="text-center">{{Auth::user()->email}}</h4>
 
                                         <div class="col-md-6 text-center">
                                             <a href="{{url('logout')}}" tabindex="5" style="color: red; font-weight: bold;" class="forgot-password">
@@ -190,11 +191,11 @@
                                                         <!--<label for="file">Selecciona tu imagen</label><br/>-->
                                                         <span class="btn btn-file-avatar">
                                                             Seleccionar imagen <input type="file" name="image" class="inputLogin" id="file" required />
-                                                        </span>                                                    
-                                                        <br><br>                                      
+                                                        </span>
+                                                        <br><br>
                                                         <input type="submit" value="Subir Imagen" class="submit btn btn-info" />
                                                         <!--<h4 id='loading' >Cargando...</h4>-->
-                                                    </div>  
+                                                    </div>
 
                                                 </form>
                                             </div>

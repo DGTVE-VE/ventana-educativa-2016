@@ -11,7 +11,9 @@
         <h3 class = "panel-title tituloRegistro text-center text-uppercase">
             Acceso
         </h3>
-        
+
+        <h1>Hola</h1>
+
         <li class="panel-body list-unstyled">
             <div class="row">
                 <div class="col-lg-12 col-md-12">
@@ -41,12 +43,12 @@
                             </div>
                         </div>
                     </form>
-                    @else 
+                    @else
 
                     <h5 style="color: white;" class="text-center">
-                        <!--Iniciaste sesión como:--> 
+                        <!--Iniciaste sesión como:-->
                     </h5>
-                    <h4 style="color: white;" class="text-center">{{Auth::user()->email}}</h4>                            
+                    <h4 style="color: white;" class="text-center">{{Auth::user()->email}}</h4>
 
                     <div class="col-md-6 text-center">
                         <a href="{{url('logout')}}" tabindex="5" style="color: red; font-weight: bold;" class="forgot-password">
@@ -80,11 +82,11 @@
                                     <!--<label for="file">Selecciona tu imagen</label><br/>-->
                                     <span class="btn btn-file-avatar">
                                         Seleccionar imagen <input type="file" name="image" class="inputLogin" id="file" required />
-                                    </span>                                                    
-                                    <br><br>                                      
+                                    </span>
+                                    <br><br>
                                     <input type="submit" value="Subir Imagen" class="submit btn btn-info" />
                                     <!--<h4 id='loading' >Cargando...</h4>-->
-                                </div>  
+                                </div>
 
                             </form>
                         </div>
@@ -100,4 +102,4 @@
 @endsection
 @section('pieMediateca')
 
-@endsection        
+@endsection

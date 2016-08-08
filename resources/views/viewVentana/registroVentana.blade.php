@@ -114,23 +114,25 @@ Ventana Educativa
                   </div>
 
                     <div class="radio col-md-9">
-                        <label class="checkbox col-md-5"><input type="radio" required name="tipo_docente" value="basica" id="basica" onclick="ocultaAdicional()" value="2">Educación Básica</label>
-                        <label class="checkbox col-md-4"><input type="radio" required name="tipo_docente" value="telesecundaria" id="telesecundaria" onclick="muestraAdicional()" value="1">Telesecundaria</label>
-                        <label class="checkbox col-md-3"><input type="radio" required name="tipo_docente" value="otro" id="otro" onclick="ocultaAdicional()" value="3">Otro</label>
+                        <label class="checkbox col-md-5"><input type="radio" name="tipo_docente" value="basica" id="basica" onclick="ocultaAdicional()" value="2">Educación Básica</label>
+                        <label class="checkbox col-md-4"><input type="radio" name="tipo_docente" value="telesecundaria" id="telesecundaria" onclick="muestraAdicional()" value="1">Telesecundaria</label>
+                        <label class="checkbox col-md-3"><input type="radio" name="tipo_docente" value="otro" id="otro" onclick="ocultaAdicional()" value="3">Otro</label>
                     </div>
                 </div>
 
                 <!--  -->
                 <div class="form-inline col-md-12" id="ocultaDiv" style="visibility:hidden;">
-                  <br>
+
                 <div class="col-md-6">
+                  <br>
                     <label for="cct">CCT: </label>
                     <input type="text" name="cct" id="cct" class="form-control input-medium text-uppercase" oninput="VerificaCCT()" placeholder="C C T">
                 </div>
                 <div class="col-md-6">
-                  <a href="https://consultas.curp.gob.mx/CurpSP/"  target="_blank" style="color:white;" title="Consulta tu CURP <a href='https://consultas.curp.gob.mx/CurpSP/'  target='_blank'>aquí</a>"><span class="glyphicon glyphicon-question-sign"></span></a>
+                  <br>
                     <label for="curpDocente">CURP: </label>
                     <input type="text" name="curpDocente" id="curpDocente" class="form-control input-medium text-uppercase" placeholder="C U R P" onblur="ValidaCURP(this.value)" disabled>
+                    <a href="https://consultas.curp.gob.mx/CurpSP/"  target="_blank" style="color:white;" title="Consulta tu CURP <a href='https://consultas.curp.gob.mx/CurpSP/'  target='_blank'>aquí</a>"><span class="glyphicon glyphicon-question-sign"></span></a>
                 </div>
                 </div>
 
@@ -223,11 +225,13 @@ Ventana Educativa
         if ($("#is_teacher").is(':checked')) {
             $("#ocultaDocente").css('visibility', 'visible');
             document.getElementById("ocultaDocente").required = true;
+            document.getElementById('basica').required = true;
         } else {
             document.getElementById("ocultaDocente").required = false;
             $("#ocultaDocente").css('visibility', 'hidden');
             $("#ocultaDiv").css('visibility', 'hidden');
             document.getElementById('OcultaNombreCCT').style.visibility = "hidden";
+            document.getElementById('basica').required = false;
         }
     }
     function muestraAdicional() {
