@@ -62,8 +62,14 @@
         -o-transition: all 0.3s ease;
         transition: all 0.3s ease;
     }
+    .contenedorDescribe{
+        -webkit-transition: all 0.5s ease;
+        -moz-transition: all 0.5s ease;
+        -o-transition: all 0.5s ease;
+        transition: all 0.5s ease;
+    }
     .imagenDescribe{
-        position:absolute; top:0px; left: 25%; display: none; z-index:-1;
+        position:absolute; top:0px; left: 25%; z-index:-1;
     }
 	.textoEstante{
 		position: absolute;
@@ -95,8 +101,8 @@
 	.textoLigaBiblio{
 		 position: absolute; bottom:5%; right: 7%; display:none;
 	}
-	.plecaLaton{
-		/*position:relative; top:8px;*/
+	.ocultaImgDescribe{
+		display: none;
 	}
 </style>
 <script>
@@ -128,44 +134,29 @@
         $('.imagenLomo').css('height', altoLomos);
         $('.imagenLomo').css('width', anchoLomos);
         $('.imagenDescribe').css('height', altoLomos);
+		anchoMargen = $('#columnaMargen1').width();
     });
     function muestraDescripcion(elem, libro) {
-		if(activaAnimacion){
 			var contenedor = '#contenedor' + elem + libro;
 			$(contenedor).css('width', anchoAumenta);
 			var colMargen = '#columnaMargen' + elem;
-			$(colMargen).css('display', 'none');
+			$(colMargen).css('width', '0px');
 			var contenedorDescr = '#descripcion' + elem + libro;
-			$(contenedorDescr).css('display', 'block');
+			$(contenedorDescr).removeClass('ocultaImgDescribe');
 			var textoLigaBiblio = '#ligaBiblioteca' + elem + libro;
 			$(textoLigaBiblio).css('display', 'block');
-			//activaAnimacion = false;
-			//setTimeout(function(){activaAnimacion=true;},500);
-			//$(contenedor).one("webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend",function(event) {activaAnimacion=true;});
-			//$(contenedor).one('webkitAnimationEnd oanimationend msAnimationEnd animationend', function(){activaAnimacion=true; alert('terminó');});	// Code for Chrome, Safari and Opera
-			//$(contenedor).on("", function(){activaAnimacion=true;});	// Standard syntax
-		}
     }
     function ocultaDescripcion(elem, libro) {
-		/*if(!activaAnimacion){
-			//$(contenedor).one("webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend",function(event) { activaAnimacion=true; ocultaDescripcion(elem, libro);});
-			setTimeout(function(){ocultaDescripcion(elem, libro);},300);
-		}
-		else{*/
-		if(activaAnimacion){
+			activaAnimacion=false;
 			var contenedor = '#contenedor' + elem + libro;
 			$(contenedor).css('width', anchoCol);
 			var colMargen = '#columnaMargen' + elem;
-			$(colMargen).css('display', 'block');
+			$(colMargen).css('width', anchoMargen);
 			var contenedorDescr = '#descripcion' + elem + libro;
-			$(contenedorDescr).css('display', 'none');
+			$(contenedorDescr).addClass('ocultaImgDescribe');
 			var textoLigaBiblio = '#ligaBiblioteca' + elem + libro;
 			$(textoLigaBiblio).css('display', 'none');
-			//activaAnimacion = false;
-			//$(contenedor).one("webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend",function(event) {ocultaDescripcion(elem, libro); activaAnimacion=true;});
-			//$(contenedor).one('webkitAnimationEnd animationend', function(){activaAnimacion=true;});	// Code for Chrome, Safari and Opera
-			//$(contenedor).on("animationend", function(){activaAnimacion=true;});	// Standard syntax
-		}
+			setTimeout(function(){ activaAnimacion = true; }, 800);
     }
 </script>        
 
@@ -184,10 +175,10 @@
     <div class="col-xs-10 col-xs-offset-1 col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1 posiciona">
 		<?php $i=0; ?>
 			@foreach ($tomos as $item => $tomo)
-				@if($item % 10 === 0)
+				@if($item % 9 === 0)
 					<?php $i++; ?>
 					<div class="row posiciona">
-						<div class="hidden-xs hidden-sm col-sm-1 col-md-1" id="columnaMargen{{$i}}">
+						<div class="hidden-xs hidden-sm col-md-2 contenedorDescribe" id="columnaMargen{{$i}}">
 						</div>
 				@endif
 				@if(($item % 2 === 0) && $item!=0)
@@ -204,11 +195,11 @@
 				@endif
 					<div id="contenedor{{$i}}{{$item}}" class="col-xs-3 col-sm-2 col-md-1 col-lg-1 contenedor" onmouseenter="muestraDescripcion({{$i}},{{$item}})" onmouseleave="ocultaDescripcion({{$i}},{{$item}})">
 						<a id="ligaBiblioteca{{$i}}{{$item}}" href="{{$tomo->link_consulta}}" class="textoLigaBiblio" target="_blank">
-                                                    <img src="{{ asset('imagenes/biblioteca/tomos/ir_biblioteca.png')}}" alt="Ir a la Biblioteca"></a>
+                        <img src="{{ asset('imagenes/biblioteca/tomos/ir_biblioteca.png')}}" alt="Ir a la Biblioteca"></a>
 						<img id="imagenLomo{{$i}}" src="{{url($tomo->url_tomo)}}" class="img-responsive imagenLomo" alt="...">
-						<img id="descripcion{{$i}}{{$item}}" src="{{url($tomo->url_descripcion)}}" class="img-responsive imagenDescribe" alt="...">
+						<img id="descripcion{{$i}}{{$item}}" src="{{url($tomo->url_descripcion)}}" class="img-responsive imagenDescribe contenedorDescribe ocultaImgDescribe" alt="...">
 					</div>
-				@if(($item+1) % 10 === 0)
+				@if(($item+1) % 9 === 0)
 						<img src="{{ asset('imagenes/biblioteca/tomos/plecaMadera1.jpg') }}" class="hidden-xs imgMadera"/>
 						<div class="textoEstante estanteSuperior text-uppercase">
 							<img src="{{asset($imagenCat)}}" style="width:18%;"/>
@@ -222,7 +213,7 @@
 			<div class="textoEstante text-uppercase" style="color:black;"> NO HAY BIBLIOTECAS PARA ESTA CLASIFICACI&#211;N </div>
 		@else
 			<img src="{{ asset('imagenes/biblioteca/tomos/plecaMadera1.jpg') }}" class="imgMadera"/>
-			<div class="textoEstante estanteInferior text-uppercase"><img src="{{asset($imagenCat)}}"style="width:18%;"class="plecaLaton" ></div>
+			<div class="textoEstante estanteInferior text-uppercase"><img src="{{asset($imagenCat)}}"style="width:18%;"></div>
 		@endif
 	</div>
 </div>
