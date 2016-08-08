@@ -11,8 +11,8 @@
 		font-size:14px;
 		cursor:pointer;
 	}
-	
-	@media (min-width: 250px) { 
+
+	@media (min-width: 250px) {
 		.logoBarraTVE{
 			width: 33px;
 			height: 13px;
@@ -33,7 +33,7 @@
 		.imgTelesecCentro{
 			position: absolute; top:75px; left:65px; width: 150px; height: 150px; z-index:0; visibility: hidden;
 		}
-	/*	----------	Estilo pagina Inicio Educamedia	----------	*/	
+	/*	----------	Estilo pagina Inicio Educamedia	----------	*/
 		.iniImgCentro{
 			position: absolute; top:57px; left:58px; width:170px; height:169px; z-index:0; visibility: hidden;
 		}
@@ -64,7 +64,7 @@
 		.imgTelesecCentro{
 			position: absolute; top:75px; left:65px; width: 150px; height: 150px; z-index:0; visibility: hidden;
 		}
-	/*	----------	Estilo pagina Inicio Educamedia	----------	*/	
+	/*	----------	Estilo pagina Inicio Educamedia	----------	*/
 		.iniImgCentro{
 			position: absolute; top:57px; left:58px; width:170px; height:169px; z-index:0; visibility: hidden;
 		}
@@ -73,7 +73,7 @@
 			position: absolute; top:95px; left:95px; width:100px; height: 100px; z-index:0; visibility: hidden;
 		}
 	}
-	@media (min-width: 768px) { 
+	@media (min-width: 768px) {
 		.logoBarraTVE{
 			width: 65px;
 			height: 25px;
@@ -94,7 +94,7 @@
 		.imgTelesecCentro{
 			position: absolute; top:150px; left:130px; width: 230px; height: 230px; z-index:0; visibility: hidden;
 		}
-	/*	----------	Estilo pagina Inicio Educamedia	----------	*/	
+	/*	----------	Estilo pagina Inicio Educamedia	----------	*/
 		.iniImgCentro{
 			position: absolute; top:95px; left:98px; width:288px; height:292px; z-index:0; visibility: hidden;
 		}
@@ -106,7 +106,7 @@
 
 	@media (min-width: 1024px) {
 		.logoBarraTVE{
-			width: 65px; 
+			width: 65px;
 			height: 25px;
 		}
 		.logoBarraSEP{
@@ -125,7 +125,7 @@
 		.imgTelesecCentro{
 			position: absolute; top:150px; left:130px; width: 230px; height: 230px; z-index:0; visibility: hidden;
 		}
-	/*	----------	Estilo pagina Inicio Educamedia	----------	*/	
+	/*	----------	Estilo pagina Inicio Educamedia	----------	*/
 		.iniImgCentro{
 			position: absolute; top:95px; left:98px; width:286px; height:292px; z-index:0; visibility: hidden;
 		}
@@ -148,10 +148,10 @@
 			width:483px; height:483px; margin:auto; position: relative;
 		}
 	/*	----------	Estilo pagina Inicio telesecundaria	----------	*/
-		.imgTelesecCentro{ 
+		.imgTelesecCentro{
 			position: absolute; top:150px; left:130px; width: 230px; height: 230px; z-index:0; visibility: hidden;
 		}
-	/*	----------	Estilo pagina Inicio Educamedia	----------	*/	
+	/*	----------	Estilo pagina Inicio Educamedia	----------	*/
 		.iniImgCentro{
 			position: absolute; top:95px; left:98px; width:286px; height:292px; z-index:0; visibility: hidden;
 		}
@@ -165,19 +165,19 @@
 		position: absolute; top:0; left:0; z-index:2;
 	}
 	.resaltaImg{
-		position: absolute; top:0; left:0; z-index:3; visibility: hidden; 
+		position: absolute; top:0; left:0; z-index:3; visibility: hidden;
 	}
 	.posicionMapa{
 		position: absolute; top:0; left:0; z-index:5;
 	}
 
 
-/*	----------	Estilo pagina Inicio Educamedia	----------	*/	
+/*	----------	Estilo pagina Inicio Educamedia	----------	*/
 	.telesecundaria{
 		position: absolute; top:0px; left:15px;  z-index:5; visibility: hidden;
 	}
 	.telebachillerato{
-		position: absolute; top:240px; left:15px; z-index:5; visibility: hidden; 
+		position: absolute; top:240px; left:15px; z-index:5; visibility: hidden;
 	}
 
 </style>
@@ -190,11 +190,11 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
-                    </button-->    
+                    </button-->
                     <a href="{{url('ventana_educativa')}}">
                         {{ HTML::image('imagenes/mediateca/encabezado/logoventana.png','Logo Ventana Educativa', ['class'=>'image-responsive imgLogo']) }}
                     </a>
-                </div> 
+                </div>
             </div>
             <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 text-center">
                 <a href="http://www.gob.mx/sep" target="_blank">
@@ -211,8 +211,9 @@
                     <li id="li-R" class="dropdown col-xs-6 col-sm-6 col-md-6" style="float:right;">
                         <div class=" divli dropdown-toggle" data-toggle="dropdown">
                             @if (Auth::guest())
-                            {{ HTML::image('imagenes/mediateca/encabezado/usuario.png','Logo Usuario',['class'=>'img-circle iconoApp', 'id'=>'img-usuario'] )}}
-                            @elseif (File::exists ('uploaded/avatares/'.Auth::user()->id.'.png'))                        
+														<button type="button" class="btn btn-default" class="img-circle">Ingresar <span class="glyphicon glyphicon-log-in" aria-hidden="true"></span></button>
+                            <!-- {{ HTML::image('imagenes/mediateca/encabezado/usuario.png','Logo Usuario',['class'=>'img-circle iconoApp', 'id'=>'img-usuario'] )}} -->
+                            @elseif (File::exists ('uploaded/avatares/'.Auth::user()->id.'.png'))
                             {{ HTML::image('uploaded/avatares/'.Auth::user()->id.'.png', 'Avatar usuario', ['class'=>'img-circle iconoApp', 'id'=>'img-usuario'] )}}
                             @else
                             {{ HTML::image('imagenes/mediateca/encabezado/usuario.png','Logo Usuario',['class'=>'img-circle iconoApp', 'id'=>'img-usuario'] )}}
@@ -249,12 +250,12 @@
                                                 </div>
                                             </div>
                                         </form>
-                                        @else 
+                                        @else
 
                                         <h5 style="color: white;" class="text-center">
-                                            <!--Iniciaste sesión como:--> 
+                                            <!--Iniciaste sesión como:-->
                                         </h5>
-                                        <h4 style="color: white;" class="text-center">{{Auth::user()->email}}</h4>                            
+                                        <h4 style="color: white;" class="text-center">{{Auth::user()->email}}</h4>
 
                                         <div class="col-md-6 text-center">
                                             <a href="{{url('logout')}}" tabindex="5" style="color: red; font-weight: bold;" class="forgot-password">
@@ -288,11 +289,11 @@
                                                         <!--<label for="file">Selecciona tu imagen</label><br/>-->
                                                         <span class="btn btn-file-avatar">
                                                             Seleccionar imagen <input type="file" name="image" class="inputLogin" id="file" required />
-                                                        </span>                                                    
-                                                        <br><br>                                      
+                                                        </span>
+                                                        <br><br>
                                                         <input type="submit" value="Subir Imagen" class="submit btn btn-info" />
                                                         <!--<h4 id='loading' >Cargando...</h4>-->
-                                                    </div>  
+                                                    </div>
 
                                                 </form>
                                             </div>
@@ -380,7 +381,7 @@
         ;
     });
     /************ CAMBIAR AVATAR **************/
-	
+
 /*	----------	Manipula imagenes del centro del aro en telesecundaria	----------	*/
 
                 var gifs = [
@@ -389,14 +390,14 @@
                 @endfor
                 ];
 		function resaltaImgSecu(prefijo, idImg){
-                    var idImgHover = "#" + idImg + "Hover";                        
+                    var idImgHover = "#" + idImg + "Hover";
                     $(idImgHover).css("visibility", "visible");
                     var idImgCentro = "#" + idImg + "Centro";
                     console.log (prefijo);
                     if (prefijo === 'Inicio'){
                         var random = Math.floor((Math.random() * 8));
                         $(idImgCentro).attr("src", gifs[random]);
-                    }    
+                    }
                     $(idImgCentro).addClass("bounceIn");
                     $(idImgCentro).addClass("animated");
                     $(idImgCentro).css("visibility", "visible");
