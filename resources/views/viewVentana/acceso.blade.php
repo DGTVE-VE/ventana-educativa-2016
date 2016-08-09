@@ -12,8 +12,6 @@
             Acceso
         </h3>
 
-        <h1>Hola</h1>
-
         <li class="panel-body list-unstyled">
             <div class="row">
                 <div class="col-lg-12 col-md-12">

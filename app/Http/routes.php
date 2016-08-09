@@ -144,7 +144,7 @@ Route::group(['middleware' => 'web'], function () {
 	Route::get('educaplay/comentarioVideo/{videoId}', 'EducaplayController@comentariosVideo');
 	Route::get('educaplay/comentarioSerie/{serieId}', 'EducaplayController@comentariosSerie');
 	Route::post('educaplay/guardaTranscurrido', 'EducaplayController@guardaTiempoTranscurrido');
-	
+
   Route::any('agregaMiLista', 'EducaplayController@agregaMiLista');
   Route::any('votacion', 'EducaplayController@votacion');
   Route::any('guardaposicion', 'EducaplayController@guardaposicion');
@@ -169,12 +169,12 @@ Route::group(['middleware' => 'web'], function () {
     Route::get('docente/materialapoyo', 'DocenteController@materialapoyo');
     Route::get('docente/foros', 'DocenteController@foros');
     /*     * **************************Docente********************** */
-    
-    
+
+
     /*     * **************************Administración********************** */
     Route::get('admin', 'AdminController@admin');
     /*     * **************************Administración********************** */
-    
+
         /*     * **************************Conocenos********************** */
     Route::get('conocenos', 'ConocenosController@conocenos');
 	Route::get('bannerInicial', 'ConocenosController@bannerInicial');
@@ -182,7 +182,7 @@ Route::group(['middleware' => 'web'], function () {
         Route::get('noticias', 'ConocenosController@noticias');
         Route::get('mapa', 'ConocenosController@mapa');
     /*     * **************************Conocenos********************** */
-    
+
 });
 
 //Route::get ('api/getImagenes/{tipo}/{id}', '');
