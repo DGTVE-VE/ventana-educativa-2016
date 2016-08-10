@@ -10,16 +10,11 @@
     -o-transition: all 0.5s ease;
     transition: all 0.5s ease;
 }
-@media (min-width: 2560px) {
-  #sidebar-wrapperTS  {
-     height: 24% !important;
-  }  
-}
 #sidebar-wrapperTS {
     z-index: 1000;
     left: 220px; /*ampliar contenedor de menú  220*/
     width: 0;
-    height: 41%;/* tamaño del contenedor de la lista de menú */
+    height: 314px; /*tamaño del contenedor de la lista de menú */
     margin-left: -220px;
     margin-top: 0; /*margen superior del menú*/ 
     line-height: 5%;
@@ -32,13 +27,51 @@
     -o-transition: all 0.5s ease;
     transition: all 0.5s ease;
 }
+/*@media (min-width: 240px) {
+	#sidebar-wrapperTS {
+		height: 314px !important;/* altura del contenedor de la lista de menú */
+		line-height: 2%;
+		/*font-size:0.7em;*/
+	}
+}
+@media (min-width: 300px) {
+	#sidebar-wrapperTS {
+		height: 314px !important;/* altura del contenedor de la lista de menú */
+	}
+}
+@media (min-width: 480px) {
+	#sidebar-wrapperTS {
+		height: 314px !important;/* altura del contenedor de la lista de menú */
+	}
+}
+@media (min-width: 750px) {
+	#sidebar-wrapperTS {
+		height: 314px !important;/* altura del contenedor de la lista de menú */
+	}
+}
+@media (min-width: 992px) {
+	#sidebar-wrapperTS {
+		height: 314px !important;/* altura del contenedor de la lista de menú */
+	}
+}
+@media (min-width: 1500px) {
+	#sidebar-wrapperTS {
+		height: 314px !important;/* altura del contenedor de la lista de menú */
+	}
+}
+@media (min-width: 2560px) {
+  #sidebar-wrapperTS  {
+     height: 25% !important;
+  } 
+}*/
+
 #wrapper.toggled #sidebar-wrapperTS {
     width: 220px;
 }
 
 @media (min-width: 2560px) {
   #sidebar-wrapperTB  {
-     height: 24% !important;
+     height: 314px !important;
   }  
 }
 
@@ -46,7 +79,7 @@
     z-index: 1000;
     left: 220px; /*ampliar contenedor de menú  220*/
     width: 0;
-    height: 35%;/* tamaño del contenedor de la lista de menú */
+    height: 260px;/* tamaño del contenedor de la lista de menú */
     margin-left: -220px;
     margin-top: 0; /*margen superior del menú*/ 
     line-height: 5%;
