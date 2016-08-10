@@ -1,4 +1,4 @@
-/* Estilo para los menu de Biblioteca */
+﻿/* Estilo para los menu de Biblioteca */
 
 /* Wrappers  */
 .margensuperiormenuBib{
@@ -20,10 +20,10 @@
     z-index: 1000;
     left: 220px; /*ampliar contenedor de menú  220*/
     width: 0;
-    height: 44%; /*41tamaño del contenedor de la lista de menú */ 
+    height: 325px; /*41tamaño del contenedor de la lista de menú */ 
     margin-left: -220px;
     margin-top: 0; /*margen superior del menú*/ 
-    overflow-y: auto;
+    overflow-y: hidden;
     overflow-x: hidden;
     /*background: #424242;*/
     background: rgba(0, 0, 0, 0.5);

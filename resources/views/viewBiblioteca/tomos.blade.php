@@ -121,7 +121,7 @@
     $(document).ready(function () {
 		activaAnimacion = true;
         var contenedor = '#contenedor11';
-        anchoCol = $(contenedor).width() * 1.3;
+        anchoCol = $(contenedor).width() * 1.25;
         anchoAumenta = anchoCol * 3.17;
         altoLomos = $('#imagenLomo1').height();
         anchoLomos = $('#imagenLomo1').width();
@@ -142,8 +142,9 @@
     }
     function ocultaDescripcion(elem, libro) {
 			activaAnimacion=false;
+			recuperaAncho = anchoCol * 1.5;
 			var contenedor = '#contenedor' + elem + libro;
-			$(contenedor).css('width', anchoCol);
+			$(contenedor).css('width', recuperaAncho);
 			var colMargen = '#columnaMargen' + elem;
 			$(colMargen).css('width', anchoMargen);
 			var contenedorDescr = '#descripcion' + elem + libro;
