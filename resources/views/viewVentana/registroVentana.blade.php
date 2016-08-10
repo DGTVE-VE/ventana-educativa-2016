@@ -432,6 +432,9 @@ Ventana Educativa
                     queja o denuncia correspondiente ante el IFAI, para mayor información visite www.ifai.org.mx
                 </p>
             </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+            </div>
         </div>
     </div>
 </div> <!-- Fin modal Términos y condiciones-->
