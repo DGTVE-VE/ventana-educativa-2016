@@ -39,7 +39,7 @@ Educamedia
 			{{HTML::image('imagenes/mediateca/tbachillerato/imgCentral/CienciasComunicacionII.png','Telebachillerato Central',['class'=>' img-responsive iniImgCentro', 'id'=>'CienciasComunicacionIICentro'])}}
 			{{HTML::image('imagenes/mediateca/tbachillerato/imgCentral/ProbabilidadI.png','Telebachillerato Central',['class'=>' img-responsive iniImgCentro', 'id'=>'ProbabilidadICentro'])}}
 			{{HTML::image('imagenes/mediateca/tbachillerato/imgCentral/ProbabilidadII.png','Telebachillerato Central',['class'=>' img-responsive iniImgCentro', 'id'=>'ProbabilidadIICentro'])}}
-			{{HTML::image('imagenes/mediateca/tbachillerato/imgCentral/PsicologiaI.png','Telebachillerato Central',['class'=>' img-responsive iniImgCentro', 'id'=>'PsicologiaICentro'])}}
+			{{HTML::image('imagenes/mediateca/tbachillerato/imgCentral/PsicologiaI.gif','Telebachillerato Central',['class'=>' img-responsive iniImgCentro', 'id'=>'PsicologiaICentro'])}}
 			{{HTML::image('imagenes/mediateca/tbachillerato/imgCentral/PsicologiaII.png','Telebachillerato Central',['class'=>' img-responsive iniImgCentro', 'id'=>'PsicologiaIICentro'])}}
 			
 			{{HTML::image('imagenes/mediateca/tbachillerato/componente/imgMapa.png','Telebachillerato',['class'=>'posicionMapa img-responsive', 'id'=>'telebachilleratoSEMII', 'usemap'=>'#mapaSemPedagogico'])}}
