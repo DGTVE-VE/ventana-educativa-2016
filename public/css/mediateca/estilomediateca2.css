@@ -7,11 +7,20 @@ and open the template in the editor.
     Created on : 29/03/2016, 01:33:18 PM
     Author     : SMARTINEZ
 */
-
+.backRegistro{
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 200px;
+    width: 100%;
+        -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; 
+}
 .mueveTabla{
     background:rgba(0, 0, 0, .3) !important;
     position: fixed; right:3%;
-/*    box-shadow: 5px 5px 1px rgba(0, 0, 0, .2);*/
+    /*    box-shadow: 5px 5px 1px rgba(0, 0, 0, .2);*/
 }
 
 .textoBlanco{
