@@ -57,16 +57,10 @@
         width:20px;
     }
     .contenedor{
-        -webkit-transition: all 0.3s ease;
-        -moz-transition: all 0.3s ease;
-        -o-transition: all 0.3s ease;
-        transition: all 0.3s ease;
-    }
-    .contenedorDescribe{
-        -webkit-transition: all 0.5s ease;
-        -moz-transition: all 0.5s ease;
-        -o-transition: all 0.5s ease;
-        transition: all 0.5s ease;
+        -webkit-transition: all 0.6s ease;
+        -moz-transition: all 0.6s ease;
+        -o-transition: all 0.6s ease;
+        transition: all 0.6s ease;
     }
     .imagenDescribe{
         position:absolute; top:0px; left: 25%; z-index:-1;
@@ -178,7 +172,7 @@
 				@if($item % 9 === 0)
 					<?php $i++; ?>
 					<div class="row posiciona">
-						<div class="hidden-xs hidden-sm col-md-2 contenedorDescribe" id="columnaMargen{{$i}}">
+						<div class="hidden-xs hidden-sm col-md-2 contenedor" id="columnaMargen{{$i}}">
 						</div>
 				@endif
 				@if(($item % 2 === 0) && $item!=0)
@@ -197,7 +191,7 @@
 						<a id="ligaBiblioteca{{$i}}{{$item}}" href="{{$tomo->link_consulta}}" class="textoLigaBiblio" target="_blank">
                         <img src="{{ asset('imagenes/biblioteca/tomos/ir_biblioteca.png')}}" alt="Ir a la Biblioteca"></a>
 						<img id="imagenLomo{{$i}}" src="{{url($tomo->url_tomo)}}" class="img-responsive imagenLomo" alt="...">
-						<img id="descripcion{{$i}}{{$item}}" src="{{url($tomo->url_descripcion)}}" class="img-responsive imagenDescribe contenedorDescribe ocultaImgDescribe" alt="...">
+						<img id="descripcion{{$i}}{{$item}}" src="{{url($tomo->url_descripcion)}}" class="img-responsive imagenDescribe contenedor ocultaImgDescribe" alt="...">
 					</div>
 				@if(($item+1) % 9 === 0)
 						<img src="{{ asset('imagenes/biblioteca/tomos/plecaMadera1.jpg') }}" class="hidden-xs imgMadera"/>

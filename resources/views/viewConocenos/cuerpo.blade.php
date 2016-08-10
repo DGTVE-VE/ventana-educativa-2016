@@ -35,11 +35,8 @@
 				<div class="section">
 					@include('viewConocenos.slider')
 				</div>
-				<div class="section fondo4">Secciones
-					<div class="slide"> Slide 1 </div>
-					<div class="slide"> Slide 2 </div>
-					<div class="slide"> Slide 3 </div>
-					<div class="slide"> Slide 4 </div>
+				<div class="section fondo4">
+					@include('viewConocenos.secciones')
 				</div>
 				<div class="section fondo3">LINKS</div>
 				<div class="section fondo1">Comunidad Educativa</div>
