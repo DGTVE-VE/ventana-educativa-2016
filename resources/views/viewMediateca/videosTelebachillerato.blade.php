@@ -100,34 +100,35 @@ Educamedia
                                 }(document, 'script', 'twitter-wjs');</script> 
                         </div>
                     </div>
-					@if($esDocente)
-					<div class="col-md-3">
-						<!--br-->
-						<a id="ligaDescargaYoutube" href="{{ url('descarga/getvideo.php/yt/getvideo.mp4?videoid='.$videos[0]->url.'&format=best') }}"><span title="descarga video" class="glyphicon glyphicon-cloud-download btnDescarga" aria-hidden="true"></span></a>
-						Descarga Video
-					</div>
-					@else
-					<div class="col-md-3">
-						<span class="glyphicon glyphicon-cloud-download btnDescarga"  data-toggle="modal" data-target="#myModal"></span>Descarga Video
-						<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-							<div class="modal-dialog" role="document">
-								<div class="modal-content">
-									<div class="modal-header">
-										<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-										<h4 class="modal-title txtNegro">Registro</h4>
-									</div>
-									<div class="modal-body">
-										<p class="txtNegro">¡Registrate! (Función solo habilitada para docentes telesecundaria)</p>
-									</div>
-									<div class="modal-footer">
-										<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					@if (Auth::check ())
+						@if($esDocente)
+						<div class="col-md-3">
+							<!--br-->
+							<a id="ligaDescargaYoutube" href="{{ url('descarga/getvideo.php/yt/getvideo.mp4?videoid='.$videos[0]->url.'&format=best') }}"><span title="descarga video" class="glyphicon glyphicon-cloud-download btnDescarga" aria-hidden="true"></span></a>
+							Descarga Video
+						</div>
+						@else
+						<div class="col-md-3">
+							<span class="glyphicon glyphicon-cloud-download btnDescarga"  data-toggle="modal" data-target="#myModal"></span>Descarga Video
+							<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+								<div class="modal-dialog" role="document">
+									<div class="modal-content">
+										<div class="modal-header">
+											<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+											<h4 class="modal-title txtNegro">Registro</h4>
+										</div>
+										<div class="modal-body">
+											<a href="{{url('registro')}}"><img src="{{url('imagenes/mediateca/tsecundaria/registrate.png')}}"/></a>
+										</div>
+										<div class="modal-footer">
+											<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+										</div>
 									</div>
 								</div>
 							</div>
 						</div>
-					</div>
+						@endif
 					@endif
-
                 </div>
                 <div class="col-md-12">
                     <li class="list-unstyled"><h5 id="subtitulo_serie">{{ $videos[0]->subtitulo_serie }}</h5></li>
