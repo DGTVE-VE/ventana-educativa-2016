@@ -1,184 +1,184 @@
 ﻿<!--nuevo encabezado-->
 <style>
-/*	----------	Estilo encabezado	----------*/
-	.ocultaImgApp{
-		visibility:hidden;
-		width:0px;
-		height:0px;
-	}
-	.iconoGde{
-		color:white;
-		font-size:14px;
-		cursor:pointer;
-	}
+    /*	----------	Estilo encabezado	----------*/
+    .ocultaImgApp{
+        visibility:hidden;
+        width:0px;
+        height:0px;
+    }
+    .iconoGde{
+        color:white;
+        font-size:14px;
+        cursor:pointer;
+    }
 
-	@media (min-width: 250px) {
-		.logoBarraTVE{
-			width: 33px;
-			height: 13px;
-		}
-		.logoBarraSEP{
-			width: 33px;
-			height: 10px;
-		}
-		.textoTitulo{
-			color: black;
-			font-family:'Ubuntu';
-			font-size:10px;
-		}
-		.contenedorAro{
-			width:283px; height:283px; margin:auto; position: relative;
-		}
-	/*	----------	Estilo pagina Inicio telesecundaria	----------	*/
-		.imgTelesecCentro{
-			position: absolute; top:75px; left:65px; width: 150px; height: 150px; z-index:0; visibility: hidden;
-		}
-	/*	----------	Estilo pagina Inicio Educamedia	----------	*/
-		.iniImgCentro{
-			position: absolute; top:57px; left:58px; width:170px; height:169px; z-index:0; visibility: hidden;
-		}
-	/*	----------	Estilo General todos los grados	----------*/
-		.imgPrimeroCentral{
-			position: absolute; top:95px; left:95px; width:100px; height: 100px; z-index:0; visibility: hidden;
-		}
-	}
+    @media (min-width: 250px) {
+        .logoBarraTVE{
+            width: 33px;
+            height: 13px;
+        }
+        .logoBarraSEP{
+            width: 33px;
+            height: 10px;
+        }
+        .textoTitulo{
+            color: black;
+            font-family:'Ubuntu';
+            font-size:10px;
+        }
+        .contenedorAro{
+            width:283px; height:283px; margin:auto; position: relative;
+        }
+        /*	----------	Estilo pagina Inicio telesecundaria	----------	*/
+        .imgTelesecCentro{
+            position: absolute; top:75px; left:65px; width: 150px; height: 150px; z-index:0; visibility: hidden;
+        }
+        /*	----------	Estilo pagina Inicio Educamedia	----------	*/
+        .iniImgCentro{
+            position: absolute; top:57px; left:58px; width:170px; height:169px; z-index:0; visibility: hidden;
+        }
+        /*	----------	Estilo General todos los grados	----------*/
+        .imgPrimeroCentral{
+            position: absolute; top:95px; left:95px; width:100px; height: 100px; z-index:0; visibility: hidden;
+        }
+    }
 
-	@media (min-width: 350px) {
-		.logoBarraTVE{
-			width: 33px;
-			height: 13px;
-		}
-		.logoBarraSEP{
-			width: 33px;
-			height: 10px;
-		}
-		.textoTitulo{
-			color: black;
-			font-family:'Ubuntu';
-			font-size:10px;
-		}
-		.contenedorAro{
-			width:283px; height:283px; margin:auto; position: relative;
-		}
-	/*	----------	Estilo pagina Inicio telesecundaria	----------	*/
-		.imgTelesecCentro{
-			position: absolute; top:75px; left:65px; width: 150px; height: 150px; z-index:0; visibility: hidden;
-		}
-	/*	----------	Estilo pagina Inicio Educamedia	----------	*/
-		.iniImgCentro{
-			position: absolute; top:57px; left:58px; width:170px; height:169px; z-index:0; visibility: hidden;
-		}
-	/*	----------	Estilo General todos los grados	----------*/
-		.imgPrimeroCentral{
-			position: absolute; top:95px; left:95px; width:100px; height: 100px; z-index:0; visibility: hidden;
-		}
-	}
-	@media (min-width: 768px) {
-		.logoBarraTVE{
-			width: 65px;
-			height: 25px;
-		}
-		.logoBarraSEP{
-			width: 65px;
-			height: 20px;
-		}
-			.textoTitulo{
-			color: black;
-			font-family:'Ubuntu';
-			font-size:16px;
-		}
-		.contenedorAro{
-			width:483px; height:483px; margin:auto; position: relative;
-		}
-	/*	----------	Estilo pagina Inicio telesecundaria	----------	*/
-		.imgTelesecCentro{
-			position: absolute; top:150px; left:130px; width: 230px; height: 230px; z-index:0; visibility: hidden;
-		}
-	/*	----------	Estilo pagina Inicio Educamedia	----------	*/
-		.iniImgCentro{
-			position: absolute; top:95px; left:98px; width:288px; height:292px; z-index:0; visibility: hidden;
-		}
-	/*	----------	Estilo General todos los grados	----------*/
-		.imgPrimeroCentral{
-			position: absolute; top:130px; left:130px; width:225px; height: 225px; z-index:0; visibility: hidden;
-		}
-	}
+    @media (min-width: 350px) {
+        .logoBarraTVE{
+            width: 33px;
+            height: 13px;
+        }
+        .logoBarraSEP{
+            width: 33px;
+            height: 10px;
+        }
+        .textoTitulo{
+            color: black;
+            font-family:'Ubuntu';
+            font-size:10px;
+        }
+        .contenedorAro{
+            width:283px; height:283px; margin:auto; position: relative;
+        }
+        /*	----------	Estilo pagina Inicio telesecundaria	----------	*/
+        .imgTelesecCentro{
+            position: absolute; top:75px; left:65px; width: 150px; height: 150px; z-index:0; visibility: hidden;
+        }
+        /*	----------	Estilo pagina Inicio Educamedia	----------	*/
+        .iniImgCentro{
+            position: absolute; top:57px; left:58px; width:170px; height:169px; z-index:0; visibility: hidden;
+        }
+        /*	----------	Estilo General todos los grados	----------*/
+        .imgPrimeroCentral{
+            position: absolute; top:95px; left:95px; width:100px; height: 100px; z-index:0; visibility: hidden;
+        }
+    }
+    @media (min-width: 768px) {
+        .logoBarraTVE{
+            width: 65px;
+            height: 25px;
+        }
+        .logoBarraSEP{
+            width: 65px;
+            height: 20px;
+        }
+        .textoTitulo{
+            color: black;
+            font-family:'Ubuntu';
+            font-size:16px;
+        }
+        .contenedorAro{
+            width:483px; height:483px; margin:auto; position: relative;
+        }
+        /*	----------	Estilo pagina Inicio telesecundaria	----------	*/
+        .imgTelesecCentro{
+            position: absolute; top:150px; left:130px; width: 230px; height: 230px; z-index:0; visibility: hidden;
+        }
+        /*	----------	Estilo pagina Inicio Educamedia	----------	*/
+        .iniImgCentro{
+            position: absolute; top:95px; left:98px; width:288px; height:292px; z-index:0; visibility: hidden;
+        }
+        /*	----------	Estilo General todos los grados	----------*/
+        .imgPrimeroCentral{
+            position: absolute; top:130px; left:130px; width:225px; height: 225px; z-index:0; visibility: hidden;
+        }
+    }
 
-	@media (min-width: 1024px) {
-		.logoBarraTVE{
-			width: 65px;
-			height: 25px;
-		}
-		.logoBarraSEP{
-			width: 65px;
-			height: 20px;
-		}
-		.textoTitulo{
-			color: black;
-			font-family:'Ubuntu';
-			font-size:19px;
-		}
-		.contenedorAro{
-			width:483px; height:483px; margin:auto; position: relative;
-		}
-	/*	----------	Estilo pagina Inicio telesecundaria	----------	*/
-		.imgTelesecCentro{
-			position: absolute; top:150px; left:130px; width: 230px; height: 230px; z-index:0; visibility: hidden;
-		}
-	/*	----------	Estilo pagina Inicio Educamedia	----------	*/
-		.iniImgCentro{
-			position: absolute; top:95px; left:98px; width:286px; height:292px; z-index:0; visibility: hidden;
-		}
-	/*	----------	Estilo General todos los grados	----------*/
-		.imgPrimeroCentral{
-			position: absolute; top:130px; left:130px; width:225px; height: 225px; z-index:0; visibility: hidden;
-		}
-	}
+    @media (min-width: 1024px) {
+        .logoBarraTVE{
+            width: 65px;
+            height: 25px;
+        }
+        .logoBarraSEP{
+            width: 65px;
+            height: 20px;
+        }
+        .textoTitulo{
+            color: black;
+            font-family:'Ubuntu';
+            font-size:19px;
+        }
+        .contenedorAro{
+            width:483px; height:483px; margin:auto; position: relative;
+        }
+        /*	----------	Estilo pagina Inicio telesecundaria	----------	*/
+        .imgTelesecCentro{
+            position: absolute; top:150px; left:130px; width: 230px; height: 230px; z-index:0; visibility: hidden;
+        }
+        /*	----------	Estilo pagina Inicio Educamedia	----------	*/
+        .iniImgCentro{
+            position: absolute; top:95px; left:98px; width:286px; height:292px; z-index:0; visibility: hidden;
+        }
+        /*	----------	Estilo General todos los grados	----------*/
+        .imgPrimeroCentral{
+            position: absolute; top:130px; left:130px; width:225px; height: 225px; z-index:0; visibility: hidden;
+        }
+    }
 
-	@media (min-width: 1200px) {
-		.logoBarraTVE{
-			width: 131px;
-			height: 50px;
-		}
-		.logoBarraSEP{
-			width: 166px;
-			height: 50px;
-		}
-		.contenedorAro{
-			width:483px; height:483px; margin:auto; position: relative;
-		}
-	/*	----------	Estilo pagina Inicio telesecundaria	----------	*/
-		.imgTelesecCentro{
-			position: absolute; top:150px; left:130px; width: 230px; height: 230px; z-index:0; visibility: hidden;
-		}
-	/*	----------	Estilo pagina Inicio Educamedia	----------	*/
-		.iniImgCentro{
-			position: absolute; top:95px; left:98px; width:286px; height:292px; z-index:0; visibility: hidden;
-		}
-	/*	----------	Estilo General todos los grados	----------*/
-		.imgPrimeroCentral{
-			position: absolute; top:130px; left:130px; width:225px; height: 225px; z-index:0; visibility: hidden;
-		}
-	}
-/*	----------	Estilo General todos los grados	----------*/
-	.posicionInicial{
-		position: absolute; top:0; left:0; z-index:2;
-	}
-	.resaltaImg{
-		position: absolute; top:0; left:0; z-index:3; visibility: hidden;
-	}
-	.posicionMapa{
-		position: absolute; top:0; left:0; z-index:5;
-	}
+    @media (min-width: 1200px) {
+        .logoBarraTVE{
+            width: 131px;
+            height: 50px;
+        }
+        .logoBarraSEP{
+            width: 166px;
+            height: 50px;
+        }
+        .contenedorAro{
+            width:483px; height:483px; margin:auto; position: relative;
+        }
+        /*	----------	Estilo pagina Inicio telesecundaria	----------	*/
+        .imgTelesecCentro{
+            position: absolute; top:150px; left:130px; width: 230px; height: 230px; z-index:0; visibility: hidden;
+        }
+        /*	----------	Estilo pagina Inicio Educamedia	----------	*/
+        .iniImgCentro{
+            position: absolute; top:95px; left:98px; width:286px; height:292px; z-index:0; visibility: hidden;
+        }
+        /*	----------	Estilo General todos los grados	----------*/
+        .imgPrimeroCentral{
+            position: absolute; top:130px; left:130px; width:225px; height: 225px; z-index:0; visibility: hidden;
+        }
+    }
+    /*	----------	Estilo General todos los grados	----------*/
+    .posicionInicial{
+        position: absolute; top:0; left:0; z-index:2;
+    }
+    .resaltaImg{
+        position: absolute; top:0; left:0; z-index:3; visibility: hidden;
+    }
+    .posicionMapa{
+        position: absolute; top:0; left:0; z-index:5;
+    }
 
 
-/*	----------	Estilo pagina Inicio Educamedia	----------	*/
-	.telesecundaria{
-		position: absolute; top:0px; left:15px;  z-index:5; visibility: hidden;
-	}
-	.telebachillerato{
-		position: absolute; top:240px; left:15px; z-index:5; visibility: hidden;
-	}
+    /*	----------	Estilo pagina Inicio Educamedia	----------	*/
+    .telesecundaria{
+        position: absolute; top:0px; left:15px;  z-index:5; visibility: hidden;
+    }
+    .telebachillerato{
+        position: absolute; top:240px; left:15px; z-index:5; visibility: hidden;
+    }
 
 </style>
 <nav id="navegacionMediateca" class="navbar navbar-default navbar-fixed-top lo menuVentana" role="navigation">
@@ -208,10 +208,10 @@
             </div>
             <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
                 <ul class="nav navbar-nav navbar-right">
-                    <li id="li-R" class="dropdown col-xs-6 col-sm-6 col-md-6" style="float:right;">
+                    <li id="li-R" class="dropdown col-xs-6 col-sm-6 col-md-6" style="float:left;">
                         <div class=" divli dropdown-toggle" data-toggle="dropdown">
                             @if (Auth::guest())
-														<button type="button" class="btn btn-default" class="img-circle">Ingresar <span class="glyphicon glyphicon-log-in" aria-hidden="true"></span></button>
+                            <button type="button" class="btn btn-default" class="img-circle">Ingresar <span class="glyphicon glyphicon-log-in" aria-hidden="true"></span></button>
                             <!-- {{ HTML::image('imagenes/mediateca/encabezado/usuario.png','Logo Usuario',['class'=>'img-circle iconoApp', 'id'=>'img-usuario'] )}} -->
                             @elseif (File::exists ('uploaded/avatares/'.Auth::user()->id.'.png'))
                             {{ HTML::image('uploaded/avatares/'.Auth::user()->id.'.png', 'Avatar usuario', ['class'=>'img-circle iconoApp', 'id'=>'img-usuario'] )}}
@@ -339,8 +339,8 @@
                     $("#form-avatar").addClass('hidden');
 //                    $("#message").html(data);
                     $('#img-usuario').attr('src', data + '?' + (new Date()));
-                   /*$('#img-usuario').attr('width', '30px');
-                    $('#img-usuario').attr('height', '30px');*/
+                    /*$('#img-usuario').attr('width', '30px');
+                     $('#img-usuario').attr('height', '30px');*/
                 },
                 error: function (data)
                 {
@@ -354,7 +354,7 @@
             $("#file").change(function () {
                 $("#message").empty(); // To remove the previous error message
                 var file = this.files[0];
-                var imagefile = file.type;
+                        var imagefile = file.type;
                 var match = ["image/jpeg", "image/png", "image/jpg"];
                 // Si la imagen no es de tipo válido
                 if (match.indexOf(imagefile) === -1)
@@ -382,46 +382,48 @@
     });
     /************ CAMBIAR AVATAR **************/
 
-/*	----------	Manipula imagenes del centro del aro en telesecundaria	----------	*/
+    /*	----------	Manipula imagenes del centro del aro en telesecundaria	----------	*/
 
-                var gifs = [
-                @for ($i = 1; $i<= 8; $i++)
-                   "{{asset ('imagenes/mediateca/Inicio/gifs/'.$i.'.gif')}}",
-                @endfor
-                ];
-		function resaltaImgSecu(prefijo, idImg){
-                    var idImgHover = "#" + idImg + "Hover";
-                    $(idImgHover).css("visibility", "visible");
-                    var idImgCentro = "#" + idImg + "Centro";
-                    console.log (prefijo);
-                    if (prefijo === 'Inicio'){
-                        var random = Math.floor((Math.random() * 8));
-                        $(idImgCentro).attr("src", gifs[random]);
-                    }
-                    $(idImgCentro).addClass("bounceIn");
-                    $(idImgCentro).addClass("animated");
-                    $(idImgCentro).css("visibility", "visible");
-                    $(idImgCentro).fadeIn();
-		}
-		function normalImgSecu(prefijo, idImg){
-			var idImgHover = "#" + idImg + "Hover";
-			$(idImgHover).css("visibility", "hidden");
-			var idImgCentro = "#" + idImg + "Centro";
-			$(idImgCentro).css("visibility", "hidden");
-			$(idImgCentro).fadeOut();
-			$(idImgCentro).removeClass("animated");
-			$(idImgCentro).removeClass("bounceIn");
-		}
-            /* rwdImageMaps jQuery plugin v1.5
-             *
-             * Allows image maps to be used in a responsive design by recalculating the area coordinates to match the actual image size on load and window.resize
-             *
-             * Copyright (c) 2013 Matt Stow
-             * https://github.com/stowball/jQuery-rwdImageMaps
-             * http://mattstow.com
-             * Licensed under the MIT license
-             */
-            ;
+    var gifs = [
+            @for ($i = 1; $i <= 8;
+            $i++
+            )
+            "{{asset ('imagenes/mediateca/Inicio/gifs/'.$i.'.gif')}}",
+            @endfor
+    ];
+            function resaltaImgSecu(prefijo, idImg) {
+                var idImgHover = "#" + idImg + "Hover";
+                $(idImgHover).css("visibility", "visible");
+                var idImgCentro = "#" + idImg + "Centro";
+                console.log(prefijo);
+                if (prefijo === 'Inicio') {
+                    var random = Math.floor((Math.random() * 8));
+                    $(idImgCentro).attr("src", gifs[random]);
+                }
+                $(idImgCentro).addClass("bounceIn");
+                $(idImgCentro).addClass("animated");
+                $(idImgCentro).css("visibility", "visible");
+                $(idImgCentro).fadeIn();
+            }
+    function normalImgSecu(prefijo, idImg) {
+        var idImgHover = "#" + idImg + "Hover";
+        $(idImgHover).css("visibility", "hidden");
+        var idImgCentro = "#" + idImg + "Centro";
+        $(idImgCentro).css("visibility", "hidden");
+        $(idImgCentro).fadeOut();
+        $(idImgCentro).removeClass("animated");
+        $(idImgCentro).removeClass("bounceIn");
+    }
+    /* rwdImageMaps jQuery plugin v1.5
+     *
+     * Allows image maps to be used in a responsive design by recalculating the area coordinates to match the actual image size on load and window.resize
+     *
+     * Copyright (c) 2013 Matt Stow
+     * https://github.com/stowball/jQuery-rwdImageMaps
+     * http://mattstow.com
+     * Licensed under the MIT license
+     */
+    ;
     (function ($) {
         $.fn.rwdImageMaps = function () {
             var $img = this;
@@ -481,8 +483,8 @@
     })(jQuery);
 //* End image maps to be used in a responsive design by recalculating the area coordinates**//
 
-	/* ------    Se llama la función que redimensiona mapas de imagenes responsivas -----  */
-	$(document).ready(function (e) {
-		$('img[usemap]').rwdImageMaps();
-	});
+    /* ------    Se llama la función que redimensiona mapas de imagenes responsivas -----  */
+    $(document).ready(function (e) {
+        $('img[usemap]').rwdImageMaps();
+    });
 </script>
