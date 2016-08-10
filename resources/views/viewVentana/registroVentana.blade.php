@@ -33,7 +33,7 @@ Ventana Educativa
                     @endif
                 </div>
                 <div class="form-group col-md-6">
-                    <label for="nombre">Nombre Completo:</label>
+                    <label for="nombre">Nombre(s):</label>
                     <input type="text" required name="name" id="nombre" class="form-control input-medium" placeholder="Nombre Completo">
                 </div>
                 <div class="form-group col-md-6">
