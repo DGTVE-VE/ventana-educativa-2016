@@ -38,14 +38,14 @@ Educamedia
     ::-webkit-scrollbar-thumb:window-inactive {
         background: rgba(135,78,161,.6);
     }
-	.btnDescarga{
-		font-size:1.5em;
-		cursor: pointer;
-		color: white;
-	}
-	.txtNegro{
-		color: black;
-	}
+    .btnDescarga{
+        font-size:1.5em;
+        cursor: pointer;
+        color: white;
+    }
+    .txtNegro{
+        color: black;
+    }
 </style>
 @section('menuMediateca')
 @include('viewMediateca.encabezadoMediateca')
@@ -66,70 +66,68 @@ Educamedia
                     <h4 id="titulo_programa">{{$videos[0]->programa}}</h4>
                     <div id="player" align="center">    </div>
                 </div>
-				<div class="row">
-					<div class="col-md-12">
-					<br>
-					</div>
-				</div>
                 <div class="row">
-                    @if(Auth::check ())
-                    <div class="col-md-1"></div>
-                    <div class="col-md-2">
-                        <input type="number" name="rating" id="star-rating" class="rating" data-icon-lib="fa" data-active-icon="fa-star" data-inactive-icon="fa-star-o"  />
-                        <input type="hidden" id="video-id" value="{{ $videos[0]->id }}" />
-                        <input type="hidden" id="nivel" value="{{ $nivel }}" />
+                    <div class="col-md-12">
+                        <br>
                     </div>
-                    <div class="col-md-2">
-                        <div
-                            class="fb-share-button"
-                            data-layout="button"
-                            data-mobile-iframe="true">
-                        </div>
-                    </div>
-                    @endif
-                    <div class="col-md-2">
-                        <div class="col-md-5">
-                            <a href="https://twitter.com/share" class="twitter-share-button">Tweet</a> <script>!function (d, s, id) {
-                                    var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https';
-                                    if (!d.getElementById(id)) {
-                                        js = d.createElement(s);
-                                        js.id = id;
-                                        js.src = p + '://platform.twitter.com/widgets.js';
-                                        fjs.parentNode.insertBefore(js, fjs);
-                                    }
-                                }(document, 'script', 'twitter-wjs');</script> 
-                        </div>
-                    </div>
-					@if (Auth::check ())
-						@if($esDocente)
-						<div class="col-md-3">
-							<!--br-->
-							<a id="ligaDescargaYoutube" href="{{ url('descarga/getvideo.php/yt/getvideo.mp4?videoid='.$videos[0]->url.'&format=best') }}"><span title="descarga video" class="glyphicon glyphicon-cloud-download btnDescarga" aria-hidden="true"></span></a>
-							Descarga Video
-						</div>
-						@else
-						<div class="col-md-3">
-							<span class="glyphicon glyphicon-cloud-download btnDescarga"  data-toggle="modal" data-target="#myModal"></span>Descarga Video
-							<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-								<div class="modal-dialog" role="document">
-									<div class="modal-content">
-										<div class="modal-header">
-											<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-											<h4 class="modal-title txtNegro">Registro</h4>
-										</div>
-										<div class="modal-body">
-											<a href="{{url('registro')}}"><img src="{{url('imagenes/mediateca/tsecundaria/registrate.png')}}"/></a>
-										</div>
-										<div class="modal-footer">
-											<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						@endif
-					@endif
                 </div>
+                @if(Auth::check ())
+                <div class="col-md-3">
+                    <input type="number" name="rating" id="star-rating" class="rating" data-icon-lib="fa" data-active-icon="fa-star" data-inactive-icon="fa-star-o"  />
+                    <input type="hidden" id="video-id" value="{{ $videos[0]->id }}" />
+                    <input type="hidden" id="nivel" value="{{ $nivel }}" />
+                </div>
+                <div class="col-md-1">
+                    <div
+                        class="fb-share-button"
+                        data-layout="button"
+                        data-mobile-iframe="true">
+                    </div>
+                </div>
+                @endif
+                <div class="col-md-2">
+                    <div class="col-md-5">
+                        <a href="https://twitter.com/share" class="twitter-share-button">Tweet</a> <script>!function (d, s, id) {
+                                var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https';
+                                if (!d.getElementById(id)) {
+                                    js = d.createElement(s);
+                                    js.id = id;
+                                    js.src = p + '://platform.twitter.com/widgets.js';
+                                    fjs.parentNode.insertBefore(js, fjs);
+                                }
+                            }(document, 'script', 'twitter-wjs');</script> 
+                    </div>
+                </div>
+                <div class="col-md-1"></div>
+                @if (Auth::check ())
+                @if($esDocente)
+                <div class="col-md-3">
+                    <!--br-->
+                    <a id="ligaDescargaYoutube" href="{{ url('descarga/getvideo.php/yt/getvideo.mp4?videoid='.$videos[0]->url.'&format=best') }}"><span title="descarga video" class="glyphicon glyphicon-cloud-download btnDescarga" aria-hidden="true"></span></a>
+                    Descarga Video
+                </div>
+                @else
+                <div class="col-md-3">
+                    <span class="glyphicon glyphicon-cloud-download btnDescarga"  data-toggle="modal" data-target="#myModal"></span>Descarga Video
+                    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                    <h4 class="modal-title txtNegro">Registro</h4>
+                                </div>
+                                <div class="modal-body">
+                                    <a href="{{url('registro')}}"><img src="{{url('imagenes/mediateca/tsecundaria/registrate.png')}}"/></a>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                @endif
+                @endif
                 <div class="col-md-12">
                     <li class="list-unstyled"><h5 id="subtitulo_serie">{{ $videos[0]->subtitulo_serie }}</h5></li>
                     <li class="list-unstyled"><h5 id="subtitulo_programa">{{ $videos[0]->subtitulo_programa }}</h5></li>
@@ -194,72 +192,69 @@ Educamedia
 <script>
     window.fbAsyncInit = function () {
         FB.init({
-            appId: '1408909052733113',
+    appId: '1408909052733113',
             xfbml: true,
             version: 'v2.6'
-        });
+            });
     };
-    (function (d, s, id) {
-        var js, fjs = d.getElementsByTagName(s)[0];
+            (function (d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
         if (d.getElementById(id)) {
             return;
         }
-        js = d.createElement(s);
+            js = d.createElement(s);
         js.id = id;
         js.src = "//connect.facebook.net/en_US/sdk.js";
         fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));
+        }(document, 'script', 'facebook-jssdk'));
 </script>
 <!--sdk twitter-->
 <script>window.twttr = (function (d, s, id) {
-        var js, fjs = d.getElementsByTagName(s)[0],
-                t = window.twttr || {};
-        if (d.getElementById(id))
+    var js, fjs = d.getElementsByTagName(s)[0],
+        t = window.twttr || {};
+                if (d.getElementById(id))
             return t;
         js = d.createElement(s);
-        js.id = id;
+            js.id = id;
         js.src = "https://platform.twitter.com/widgets.js";
         fjs.parentNode.insertBefore(js, fjs);
 
         t._e = [];
         t.ready = function (f) {
-            t._e.push(f);
+        t._e.push(f);
         };
 
         return t;
-    }(document, "script", "twitter-wjs"));</script>
+        }(document, "script", "twitter-wjs"));</script>
 <script>
     $(document).ready(function () {
         /* Se guarda la información de los videos para cambiarla cuando dan click*/
         var videos = {!!(string)$videos!!}
-        var _videos = {};
-        for (i = 0; i < videos.length; i++) {
+        var _videos = {};         for (i = 0; i < videos.length; i++) {
         _videos[videos[i].id] = videos[i];
         }
         loadComments ({{$videos[0] -> id}});
-    $("massinopsis").collapse({toggle: false});
+        $("massinopsis").collapse({toggle: false});
     $("botonmas").click(function () {
-        $("nomuestra").addClass("hidden");
+    $("nomuestra").addClass("hidden");
     });
-    $('#star-rating').change(function () {
-        $.ajax({
+        $('#star-rating').change(function () {
+    $.ajax({
             method: "POST",
             url: "{{url('educamedia/rate')}}",
             data: {nivel: $("#nivel").val(), id: $("#video-id").val(), rating: $("#star-rating").val(), _token: "{{csrf_token()}}"},
             error: function (ts) {
-                console.log(ts.responseText);
-            }})
+            console.log(ts.responseText);
+                }})
                 .done(function (msg) {
-                    console.log("Data Saved: " + msg);
-                    loadComments($("#video-id").val());
-                });
+                    console.log("Data Saved: " + msg);                     loadComments($("#video-id").val());
+                    });
     });
-    $('.item').click(function () {
-        $('#div-containter').fadeOut();
+                $('.item').click(function () {
+    $('#div-containter').fadeOut();
         data = $(this).attr('data-id');
         _id = $(this).attr('_id');
-        player.loadVideoById(data);
-        $("#materia").html(_videos[_id].asignatura);
+        player.loadVideoById(data);         $("#materia").html(_videos[_id].asignatura);
         $("#video-id").val(_videos[_id].id);
         $("#titulo_programa").html(_videos[_id].programa);
         $("#subtitulo_serie").html(_videos[_id].subtitulo_serie);
@@ -269,68 +264,68 @@ Educamedia
         $("#sinopsis-250").html(_videos[_id].sinopsis.substring(0, 350));
         $('#div-containter').fadeIn();
         loadComments(_id);
-		var ligaDescargaVideo = '{{ url("descarga/getvideo.php")}}' + "/yt/getvideo.mp4?videoid=" + data + "&format=best";
-		$('#ligaDescargaYoutube').attr('href',ligaDescargaVideo);
+        var ligaDescargaVideo = '{{ url("descarga/getvideo.php")}}' + "/yt/getvideo.mp4?videoid=" + data + "&format=best";
+        $('#ligaDescargaYoutube').attr('href',ligaDescargaVideo);
     });
-    $(document).on('click', "a.linkComentar", function () {
+    $(document).on('click', " a.linkComentar", function () {
         var $element = $(this);
         var partes = $element.attr('id').split('_');
         var respuesta = $('#responde_' + partes[1]).val();
         console.log(respuesta);
         $.ajax({
-            method: "POST",
+        method: "POST",
             url: "{{url('educamedia/comment/telebachillerato')}}",
             data: {comment: respuesta,
-                video_id: $("#video-id").val(),
+            video_id: $("#video-id").val(),
                 comment_id: partes[1],
                 _token: "{{csrf_token()}}"},
-            error: function (ts) {
-                console.log(ts.responseText);
-            }})
+                error: function (ts) {
+            console.log(ts.responseText);
+                }})
                 .done(function (msg) {
                     $("#respuestas-" + partes[1]).prepend($(msg).fadeIn('slow'));
                     $('#responde_' + partes[1]).val('');
                     console.log("Data Saved: " + msg);
-                });
+                    });
     });
-    $('#btn-comentar').click(function () {
-        $.ajax({
+                $('#btn-comentar').click(function () {
+    $.ajax({
             method: "POST",
             url: "{{url('educamedia/comment/telebachillerato')}}",
             data: {comment: $("#comment").val(),
-                video_id: $("#video-id").val(),
+            video_id: $("#video-id").val(),
                 comment_id: 0,
                 _token: "{{csrf_token()}}"},
-            error: function (ts) {
-                console.log(ts.responseText);
-            }})
+                error: function (ts) {
+            console.log(ts.responseText);
+                }})
                 .done(function (msg) {
-                    $("#comentarios").append(msg)
-//                    console.log ( "Data Saved: " + msg );
+                $("#comentarios").append(msg)
+                    //                    console.log ( "Data Saved: " + msg );
                 });
     });
-    function loadComments(id) {
+                function loadComments(id) {
         var urlget = "{{url('educamedia/comments/telebachillerato')}}";
         var _url = urlget + '/' + id;
         $.ajax({
-            method: "GET",
-            url: _url,
+        method: "GET",
+        url: _url,
             error: function (ts) {
-                console.log(ts.responseText);
-            }})
+            console.log(ts.responseText);
+                }})
                 .done(function (msg) {
                     console.log('Comentarios cargados: ' + id);
                     $("#comentarios").html(msg)
-//                    console.log ( "Data Saved: " + msg );
+                    //                    console.log ( "Data Saved: " + msg );
                 });
         }
     }
     );
-            /** URL del api de ventana educativa*/
-//var api = "http://localhost/ventana-educativa/api/v1/";
+    /** URL del api de ventana educativa*/
+            //var api = "http://localhost/ventana-educativa/api/v1/";
             /** Tiempo transcurrido del video */
             var timeElapsed;
-    /** Objeto de youtube reproductor de video */
+            /** Objeto de youtube reproductor de video */
     var player;
     /** Identificador del video (PK) obtenido del URL */
     var id;
@@ -348,8 +343,8 @@ Educamedia
      * @param {Event} e
      * @returns {null}
      */
-    window.onbeforeunload = function (e) {
-//    var datos = {'timeElapsed': timeElapsed, 'idVideo': id};
+     window.onbeforeunload = function (e) {
+    //    var datos = {'timeElapsed': timeElapsed, 'idVideo': id};
 //    $.ajax({
 //        url: api + 'vodConsumido/update',
 //        type: 'POST',
@@ -368,7 +363,7 @@ Educamedia
     /* Se iba a obtener el capítulo a partir de una variable de sesión, pero
      * al final cambió la estrategia para hacer la consulta directamente a la BD.
      * Se deja esta función como referencia*/
-//function getCapitulos() {
+     //function getCapitulos() {
 //    var capitulos;
 //    $.ajax({
 //        url: '/session/get/capitulos',
@@ -394,8 +389,8 @@ Educamedia
      * @see {@link https://developers.google.com/youtube/iframe_api_reference?hl=es|
      *      Youtube Player API}
      */
-    function onYouTubePlayerAPIReady() {
-//    pos = window.location.href.toString().lastIndexOf("/");
+     function onYouTubePlayerAPIReady() {
+    //    pos = window.location.href.toString().lastIndexOf("/");
 //    id = window.location.href.toString().substring(pos + 1);
 //    $.getJSON(api + "vod/capitulo/" + id, function (data) {
 //        capitulo = data;
@@ -413,7 +408,7 @@ Educamedia
 //            }
 //        });
         initializeYoutube('{{$videos[0]->url}}', 0);
-//    });
+        //    });
     }
     /**
      * Inicializa el reproductor de Youtube a través del api. Establece el tamaño del
@@ -425,10 +420,10 @@ Educamedia
      * @param {Seconds} time Tiempo en el que se quedó el video la última vez.
      * @returns {undefined}
      */
-    function initializeYoutube(youtubeId, time) {
-        console.log(time);
+     function initializeYoutube(youtubeId, time) {
+    console.log(time);
         player = new YT.Player('player', {
-            width: 640,
+        width: 640,
             height: 390,
             videoId: youtubeId,
             playerVars: {
@@ -443,13 +438,13 @@ Educamedia
                 start: time // Tiempo en el que debe iniciar el video
             },
             events: {
-                'onReady': onPlayerReady,
+            'onReady': onPlayerReady,
                 'onStateChange': onPlayerStateChange
-            }
+                }
         });
     }
-    function showProgress() {
-        timeElapsed = player.getCurrentTime();
+            function showProgress() {
+    timeElapsed = player.getCurrentTime();
         document.getElementById("progress").innerHTML = timeElapsed;
     }
     /**
@@ -460,8 +455,8 @@ Educamedia
      * @param {Event} event
      * @returns {undefined}
      */
-    function onPlayerReady(event) {
-//    event.target.playVideo();
+     function onPlayerReady(event) {
+    //    event.target.playVideo();
 //    setInterval(showProgress, 100);
     }
     /**
@@ -473,8 +468,8 @@ Educamedia
      * @param {Event} event
      * @returns {undefined}
      */
-    function onPlayerStateChange(event) {
-//    if (event.data === 0) {
+     function onPlayerStateChange(event) {
+    //    if (event.data === 0) {
 //        id = window.location.href.toString().substring(pos + 1);
 ////         alert('done' + id);
 //        window.location.assign('vod/finish/' + id);
