@@ -7,6 +7,12 @@ Ventana Educativa
 @endsection
 @section('cuerpoVentana')
 
+<style media="screen">
+.ui-datepicker-year{
+  color:black;
+}
+</style>
+
 <div class="container">
 
     <div class = "frmRegistro col-lg-offset-2 col-md-8">
@@ -364,6 +370,7 @@ Ventana Educativa
 });
 
 $(function($){
+
     $.datepicker.regional['es'] = {
         closeText: 'Cerrar',
         prevText: '<Ant',
@@ -379,6 +386,8 @@ $(function($){
         firstDay: 1,
         isRTL: false,
         showMonthAfterYear: false,
+        changeYear: true,
+        yearRange: 'c-100:c',
         yearSuffix: ''
     };
     $.datepicker.setDefaults($.datepicker.regional['es']);
