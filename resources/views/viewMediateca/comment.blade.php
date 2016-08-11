@@ -25,8 +25,9 @@
                         $stars = $comment->usuario->ratingTelebachillerato($comment->telebachillerato_id);
                     }    
                     else{
-                        $stars = 0;
+                        $stars = 0;                        
                     }
+                    
                     ?>
 <!--                    Pone las estrellas llenas-->
                     @for ($i=0; $i<$stars; $i++)
