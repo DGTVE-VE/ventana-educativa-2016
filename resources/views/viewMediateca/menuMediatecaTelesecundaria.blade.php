@@ -125,23 +125,49 @@
     <div class="modal fade" id="myModal-calendario" role="dialog">
         <div class="modal-dialog modal-lg">
             <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    <div class="row">
-                        <div class="col-lg-1">
-                            {{ HTML::image('imagenes/mediateca/tsecundaria/logoTS.png','logo telesecundaria',['width'=>'160%','height'=>'160%'])}}
-                        </div>                
-                        <div class="col-lg-1 ">
-                            <h3><strong>Telesecundaria</strong></h3>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <br>
+                        <div class="pull-left">
+                            <!-- Tabs -->
+                            <ul class="nav panel-tabs">
+                                <li class="active"><a href="#tab1" data-toggle="tab">Calendario escolar de 185 días</a></li>
+                                <li><a href="#tab2" data-toggle="tab">Calendario escolar de 200 días</a></li>
+                            </ul>
                         </div>
-                        <div class="col-lg-10"></div>
-                    </div>    
+                    </div>
+                    <div class="panel-body">
+                        <div class="tab-content">
+                            <div class="tab-pane active" id="tab1">
+                                <embed width="100%" height="500px" src="{{url('http://telesecundaria.sep.gob.mx/assets/pdf/pdf_calendario/calendario_185.pdf')}}" type="application/pdf"></embed>
+                                 <!--<iframe src="http://docs.google.com/gview?url=http://telesecundaria.sep.gob.mx/assets/pdf/pdf_calendario/calendario_200.pdf&embedded=true" style="width:100%; height:500%;" frameborder="0"></iframe>-->
+                            </div>
+                            <div class="tab-pane" id="tab2">
+                                <embed width="100%" height="500px" src="{{url('http://telesecundaria.sep.gob.mx/assets/pdf/pdf_calendario/calendario_200.pdf')}}" type="application/pdf"></embed>
+                                 <!--<iframe src="pdf/mediateca/calendario_185.pdf" style="width:100%; height:500px;" frameborder="0"></iframe>-->
+                            </div>
+
+                        </div>
+                    </div>
                 </div>
-                <div class="modal-body">
-                    <a href="{{url('http://telesecundaria.sep.gob.mx/assets/pdf/CALENDARIO%20TS%202015-16.pdf')}}" target="_blank" >
-                        {{ HTML::image('imagenes/mediateca/tsecundaria/calendarioTS.jpg','calendario',['width'=>'100%','height'=> '100%']) }}
-                    </a>
-                </div>
+                <!--                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    <div class="row">
+                                        <div class="col-lg-1">
+                                            {{ HTML::image('imagenes/mediateca/tsecundaria/logoTS.png','logo telesecundaria',['width'=>'160%','height'=>'160%'])}}
+                                        </div>                
+                                        <div class="col-lg-1 ">
+                                            <h3><strong>Telesecundaria</strong></h3>
+                                        </div>
+                                        <div class="col-lg-10"></div>
+                                    </div>    
+                                </div>
+                                <div class="modal-body">
+                                    <a href="{{url('http://telesecundaria.sep.gob.mx/assets/pdf/CALENDARIO%20TS%202015-16.pdf')}}" target="_blank" >
+                                        {{ HTML::image('imagenes/mediateca/tsecundaria/calendarioTS.jpg','calendario',['width'=>'100%','height'=> '100%']) }}
+                                    </a>
+                                </div>-->
             </div>
         </div>
     </div> <!-- Fin modal calendario escolar-->
