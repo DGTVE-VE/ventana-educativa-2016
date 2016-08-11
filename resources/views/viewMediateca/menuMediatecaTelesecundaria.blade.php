@@ -65,7 +65,7 @@
                 </div>
                 <div class="modal-body text-justify">
                     <h2>Misión</h2><br/>
-                    <p>Garantizar el derecho a la educación básica pública y gratuita, estipulado en el Artículo tercero constitucional, a adolescentes mexicanos en edad de cursar la educación secundaria, que radican en poblaciones rurales y semiurbanas de 2, 500 habitantes o menos, asegurando con ello, la igualdad de oportunidades para acceder a una educación básica de calidad, donde adquieran los conocimientos y habilidades necesarios que les permitan lograr una trayectoria escolar exitosa y una formación humana integral.</p>
+                    <p>Garantizar el derecho a la educación básica pública y gratuita, estipulado en el Artículo tercero constitucional, a adolescentes mexicanos en edad de cursar la educación secundaria, que radican en poblaciones rurales y semiurbanas de 2,500 habitantes o menos, asegurando con ello, la igualdad de oportunidades para acceder a una educación básica de calidad, donde adquieran los conocimientos y habilidades necesarios que les permitan lograr una trayectoria escolar exitosa y una formación humana integral.</p>
                 </div>
             </div>
         </div>
