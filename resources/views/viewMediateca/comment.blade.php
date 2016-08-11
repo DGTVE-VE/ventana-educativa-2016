@@ -19,9 +19,9 @@
                     <p>{{$comment->usuario->name}}</p>
                     {{--*/ $i = 0; /*--}} 
                     <?php
-                    if ($comment instanceof \App\Model\Educaplay\TelesecundariaComments){
+                    if ($comment instanceof \App\Model\Mediateca\TelesecundariaComments){
                         $stars = $comment->usuario->ratingTelesecundaria($comment->telesecundaria_id);
-                    } else if ($comment instanceof \App\Model\Educaplay\TelebachilleratoComments){
+                    } else if ($comment instanceof \App\Model\Mediateca\TelebachilleratoComments){
                         $stars = $comment->usuario->ratingTelebachillerato($comment->telebachillerato_id);
                     }    
                     else{
