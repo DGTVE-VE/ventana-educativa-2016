@@ -7,6 +7,12 @@ Ventana Educativa
 @endsection
 @section('cuerpoVentana')
 
+<style media="screen">
+.ui-datepicker-year{
+  color:black;
+}
+</style>
+
 <div class="container">
 
     <div class = "frmRegistro col-lg-offset-2 col-md-8">
@@ -193,7 +199,7 @@ Ventana Educativa
                 </p>
                 <p>
                     ¿Qué datos personales utilizaremos para estos fines?
-                </p>                    
+                </p>
                 <p>
                     Para llevar a cabo las finalidades descritas en el presente aviso de privacidad, utilizaremos los
                     siguientes datos personales:
@@ -201,7 +207,7 @@ Ventana Educativa
                 <p>
                 <li>Nombre completo</li>
                 <li>Clave única de Registro de Población (CURP)  </li>
-                <ol>Opcional</ol>                  
+                <ol>Opcional</ol>
                 <li>Correo electrónico</li>
                 <li>Fecha de Nacimiento</li>
                 <li>Genero</li>
@@ -234,7 +240,7 @@ Ventana Educativa
                     Dirección General de Televisión Educativa
                     <br>
                     Lugar: Av. Circunvalación S/n esquina Tabiqueros, Col. Morelos, Delegación Venustiano
-                    <br>    
+                    <br>
                     Carranza, C.P. 15270, México, CDMX. E-Mail: ventana@televisioneducativa.gob.mx
                     <br>
 
@@ -249,7 +255,7 @@ Ventana Educativa
                 <p class="text-center">
                     <a href="http://inicio.ifai.org.mx/Publicaciones/01GuiaPracticaEjercerelDerecho.pdf" target="_blank">http://inicio.ifai.org.mx/Publicaciones/01GuiaPracticaEjercerelDerecho.pdf</a>
                 </p>
-                <p>   
+                <p>
                     Usted puede revocar el consentimiento que, en su caso, nos haya otorgado para el tratamiento de
 
                     sus datos personales. Sin embargo, es importante que tenga en cuenta que no en todos los casos
@@ -292,9 +298,9 @@ Ventana Educativa
 
                     documentos siguientes:</ol>
                 <p>
-                <ol>a). Original de la credencial para votar;</ol>                        
-                <ol>b). Pasaporte;</ol>             
-                <ol>c). Cédula profesional;</ol>                 
+                <ol>a). Original de la credencial para votar;</ol>
+                <ol>b). Pasaporte;</ol>
+                <ol>c). Cédula profesional;</ol>
                 <ol>d). Cartilla militar.</ol>
                 </p>
                 <p>
@@ -632,6 +638,8 @@ Ventana Educativa
                                     firstDay: 1,
                                     isRTL: false,
                                     showMonthAfterYear: false,
+                                    changeYear: true,
+                                    yearRange: 'c-100:c',
                                     yearSuffix: ''
                                 };
                                 $.datepicker.setDefaults($.datepicker.regional['es']);

@@ -75,8 +75,10 @@ Educamedia
                         </div>
                     </div>
                         @if(Auth::check ())
-                        <div class="col-md-3">                    
-                            <input type="number" name="rating" id="star-rating" class="rating" data-icon-lib="fa" data-active-icon="fa-star" data-inactive-icon="fa-star-o"  />
+                        <div class="col-md-3">         
+                            <div id="divRating">
+                            <input type="number" data-max="5" data-min="1" name="rating" value="4" id="star-rating" class="rating"  data-icon-lib="fa" data-active-icon="fa-star" data-inactive-icon="fa-star-o"  />
+                            </div>
                             <input type="hidden" id="video-id" value="{{ $videos[0]->id }}" />
                             <input type="hidden" id="nivel" value="{{ $nivel }}" />
                         </div>
@@ -234,6 +236,9 @@ Educamedia
                                                     }(document, "script", "twitter-wjs"));</script>
                                                 <script>
                                                     $(document).ready(function () {
+                                                        @if(Auth::check())
+                                                        refrescaRating({!! Auth::user()->ratingTelesecundaria ($videos[0] -> id) !!});
+                                                        @endif
                                                         /* Se guarda la información de los videos para cambiarla cuando dan click*/
                                                         var videos = {!!(string)$videos!!}
                                                         var _videos = {};
@@ -246,6 +251,13 @@ Educamedia
                                                     $("botonmas").click(function () {
                                                         $("nomuestra").addClass("hidden");
                                                     });
+                                                    
+                                                    function refrescaRating(valRating){
+                                                        
+                                                    $("#divRating").empty();
+                                                    $("#divRating").append('<input type="number" name="rating" id="star-rating" data-icon-lib="fa" data-active-icon="fa-star" data-inactive-icon="fa-star-o" onchange="guardaRating(this.value)" value="' + parseInt(valRating) + '"/>');
+                                                    $("#star-rating").rating({value: parseInt(valRating)});
+                                                    }
 
                                                     $('#star-rating').change(function () {
                                                         $.ajax({
@@ -333,6 +345,7 @@ Educamedia
                                                                     $("#comentarios").html(msg)
                                                                     //                    console.log ( "Data Saved: " + msg );
                                                                 });
+
                                                     }
                                                     console.log("http://ventana.televisioneducativa.gob.mx/{{Request::path()}}");
                                                     }
