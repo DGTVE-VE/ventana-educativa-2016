@@ -21,7 +21,7 @@
                     <?php
                     if ($comment instanceof \App\Model\Educaplay\TelesecundariaComments){
                         $stars = $comment->usuario->ratingTelesecundaria($comment->telesecundaria_id);
-                    } else if ($comment instanceof \App\Model\Mediateca\TelebachilleratoComments){
+                    } else if ($comment instanceof \App\Model\Educaplay\TelebachilleratoComments){
                         $stars = $comment->usuario->ratingTelebachillerato($comment->telebachillerato_id);
                     }                    
                     ?>
