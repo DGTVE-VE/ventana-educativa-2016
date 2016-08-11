@@ -31,7 +31,7 @@
 			
 			{{HTML::image('imagenes/mediateca/tbachillerato/imgCentral/LiteraturaI.png','Telebachillerato Central',['class'=>' img-responsive iniImgCentro', 'id'=>'LiteraturaICentro'])}}
 			{{HTML::image('imagenes/mediateca/tbachillerato/imgCentral/MatematicasIII.png','Telebachillerato Central',['class'=>' img-responsive iniImgCentro', 'id'=>'MatematicasIIICentro'])}}
-			{{HTML::image('imagenes/mediateca/tbachillerato/imgCentral/LenguaAdicionalIII.png','Telebachillerato Central',['class'=>' img-responsive iniImgCentro', 'id'=>'LenguaAdicionalIIICentro'])}}
+			{{HTML::image('imagenes/mediateca/tbachillerato/imgCentral/LenguaAdicionalIII.gif','Telebachillerato Central',['class'=>' img-responsive iniImgCentro', 'id'=>'LenguaAdicionalIIICentro'])}}
 			{{HTML::image('imagenes/mediateca/tbachillerato/imgCentral/BiologiaI.gif','Telebachillerato Central',['class'=>' img-responsive iniImgCentro', 'id'=>'BiologiaICentro'])}}
 			{{HTML::image('imagenes/mediateca/tbachillerato/imgCentral/FisicaI.gif','Telebachillerato Central',['class'=>' img-responsive iniImgCentro', 'id'=>'FisicaICentro'])}}
 			{{HTML::image('imagenes/mediateca/tbachillerato/imgCentral/HistoriaMexicoII.png','Telebachillerato Central',['class'=>' img-responsive iniImgCentro', 'id'=>'HistoriaMexicoIICentro'])}}
@@ -41,6 +41,6 @@
 	</div>
 	@include('viewMediateca.barraSociales')
 @endsection
-@section('pieMediateca')
+{{--@section('pieMediateca')
     @include('viewMediateca.menuMediatecaTelebachillerato')
-@endsection
+@endsection--}}

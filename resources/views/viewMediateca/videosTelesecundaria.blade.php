@@ -40,14 +40,14 @@ Educamedia
     ::-webkit-scrollbar-thumb:window-inactive {
         background: rgba(135,78,161,.6);
     }
-	.btnDescarga{
-		font-size:1.5em;
-		cursor: pointer;
-		color: white;
-	}
-	.txtNegro{
-		color: black;
-	}
+    .btnDescarga{
+        font-size:1.5em;
+        cursor: pointer;
+        color: white;
+    }
+    .txtNegro{
+        color: black;
+    }
 </style>
 @section('menuMediateca')
 @include('viewMediateca.encabezadoMediateca')
@@ -69,68 +69,63 @@ Educamedia
                         <h4 id="titulo_programa">{{$videos[0]->titulo_programa}}</h4>                
                         <div id="player" align="center">    </div>
                     </div>
-					<div class="row">
-						<div class="col-md-12">
-							<br>
-						</div>
-					</div>
                     <div class="row">
-						@if(Auth::check ())
-						<div class="col-md-1">
-						</div>
-						<div class="col-md-2">                    
-                            <input type="number" name="rating" id="star-rating" class="rating" data-icon-lib="fa" data-active-icon="fa-star" data-inactive-icon="fa-star-o"  />
+                        <div class="col-md-12">
+                            <br>
+                        </div>
+                    </div>
+                        @if(Auth::check ())
+                        <div class="col-md-3">         
+                            <div id="divRating">
+                            <input type="number" data-max="5" data-min="1" name="rating" value="4" id="star-rating" class="rating"  data-icon-lib="fa" data-active-icon="fa-star" data-inactive-icon="fa-star-o"  />
+                            </div>
                             <input type="hidden" id="video-id" value="{{ $videos[0]->id }}" />
                             <input type="hidden" id="nivel" value="{{ $nivel }}" />
                         </div>
-                        <div class="col-md-2">
+                        <div class="col-md-1">
                             <a href="https://twitter.com/share" class="twitter-share-button">Tweet</a> <script>!function (d, s, id) {
-								var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https';
-								if (!d.getElementById(id)) {
-									js = d.createElement(s);
-									js.id = id;
-									js.src = p + '://platform.twitter.com/widgets.js';
-									fjs.parentNode.insertBefore(js, fjs);
-								}
-							}(document, 'script', 'twitter-wjs');</script>
+                                    var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https';
+                                    if (!d.getElementById(id)) {
+                                        js = d.createElement(s);
+                                        js.id = id;
+                                        js.src = p + '://platform.twitter.com/widgets.js';
+                                        fjs.parentNode.insertBefore(js, fjs);
+                                    }
+                                }(document, 'script', 'twitter-wjs');</script>
                         </div>
-						<div class="col-md-2">
-							<div 
-								class="fb-share-button" 
-								data-layout="button" 
-								data-mobile-iframe="true"
-								>
-							</div>
-						</div>
-						@endif
-						@if($esDocente)
-						<div class="col-md-3">
-							<a id="ligaDescargaYoutube" href="{{ url('descarga/getvideo.php/yt/getvideo.mp4?videoid='.$videos[0]->url.'&format=best') }}"><span title="descarga video" class="glyphicon glyphicon-cloud-download btnDescarga" aria-hidden="true"></span></a>
-							Descarga Video
-						</div>
-						@else
-						<div class="col-md-3">
-							<span class="glyphicon glyphicon-cloud-download btnDescarga"  data-toggle="modal" data-target="#myModal"></span>Descarga Video
-							<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-								<div class="modal-dialog" role="document">
-									<div class="modal-content">
-										<div class="modal-header">
-											<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-											<h4 class="modal-title txtNegro">Registro</h4>
-										</div>
-										<div class="modal-body">
-											<p class="txtNegro">¡Registrate! (Función solo habilitada para docentes telesecundaria)</p>
-										</div>
-										<div class="modal-footer">
-											<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						@endif
-                    </div>
-
+                        <div class="col-md-2">
+                            <div 
+                                class="fb-share-button" 
+                                data-layout="button" 
+                                data-mobile-iframe="true"
+                                >
+                            </div>
+                        </div>
+                        <div class="col-md-1"></div>
+                        @endif
+                        @if (Auth::check ())
+                        @if($esDocente)
+                        <div class="col-md-3">
+                            <a id="ligaDescargaYoutube" href="{{ url('descarga/getvideo.php/yt/getvideo.mp4?videoid='.$videos[0]->url.'&format=best') }}"><span title="descarga video" class="glyphicon glyphicon-cloud-download btnDescarga" aria-hidden="true"></span></a>
+                            Descarga Video
+                        </div>
+                        @else
+                        <div class="col-md-3">
+                            <span class="glyphicon glyphicon-cloud-download btnDescarga"  data-toggle="modal" data-target="#myModal"></span>Descarga Video
+                            <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-body backRegistro" style="background-image:url('{{ asset('imagenes/mediateca/tsecundaria/registrate.png') }}');">
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                            <br><br><br><br><br><br><br><br>
+                                            <a href="{{url('registro')}}"><img class="pull-right" src="{{url('imagenes/mediateca/tsecundaria/iraregistro.png')}}"/></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        @endif
+                        @endif
                     <div class="col-md-12">
                         <li class="list-unstyled"><h5 id="subtitulo_serie">{{ $videos[0]->subtitulo_serie }}<h5></li>
                                     <li class="list-unstyled"><h5 id="subtitulo_programa">{{ $videos[0]->subtitulo_programa }}<h5></li>                                                
@@ -241,6 +236,9 @@ Educamedia
                                                     }(document, "script", "twitter-wjs"));</script>
                                                 <script>
                                                     $(document).ready(function () {
+                                                        @if(Auth::check())
+                                                        refrescaRating({!! Auth::user()->ratingTelesecundaria ($videos[0] -> id) !!});
+                                                        @endif
                                                         /* Se guarda la información de los videos para cambiarla cuando dan click*/
                                                         var videos = {!!(string)$videos!!}
                                                         var _videos = {};
@@ -253,6 +251,13 @@ Educamedia
                                                     $("botonmas").click(function () {
                                                         $("nomuestra").addClass("hidden");
                                                     });
+                                                    
+                                                    function refrescaRating(valRating){
+                                                        
+                                                    $("#divRating").empty();
+                                                    $("#divRating").append('<input type="number" name="rating" id="star-rating" data-icon-lib="fa" data-active-icon="fa-star" data-inactive-icon="fa-star-o" onchange="guardaRating(this.value)" value="' + parseInt(valRating) + '"/>');
+                                                    $("#star-rating").rating({value: parseInt(valRating)});
+                                                    }
 
                                                     $('#star-rating').change(function () {
                                                         $.ajax({
@@ -283,8 +288,8 @@ Educamedia
                                                         $("#sinopsis-250").html(_videos[_id].sinopsis.substring(0, 350));
                                                         $('#div-containter').fadeIn();
                                                         loadComments(_id);
-														var ligaDescargaVideo = '{{ url("descarga/getvideo.php")}}' + "/yt/getvideo.mp4?videoid=" + data + "&format=best";
-														$('#ligaDescargaYoutube').attr('href',ligaDescargaVideo);
+                                                        var ligaDescargaVideo = '{{ url("descarga/getvideo.php")}}' + "/yt/getvideo.mp4?videoid=" + data + "&format=best";
+                                                        $('#ligaDescargaYoutube').attr('href', ligaDescargaVideo);
                                                     });
 
                                                     $(document).on('click', "a.linkComentar", function () {
@@ -340,6 +345,7 @@ Educamedia
                                                                     $("#comentarios").html(msg)
                                                                     //                    console.log ( "Data Saved: " + msg );
                                                                 });
+
                                                     }
                                                     console.log("http://ventana.televisioneducativa.gob.mx/{{Request::path()}}");
                                                     }

@@ -78,7 +78,9 @@ function is_session_started()
 //}
 
 if ($request->getSession() !== null){
-    if ($request->path() !== 'acceso' && $request->path() !== 'login'){ // Para que la vista de acceso no sobreescriba la url anterior.
+    if ($request->path() !== 'acceso' 
+            && $request->path() !== 'login'
+            && $request->path){ // Para que la vista de acceso no sobreescriba la url anterior.
         $request->session()->put('url', $request->path());        
     }
 }

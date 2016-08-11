@@ -34,9 +34,9 @@
 			{{HTML::image('imagenes/mediateca/tbachillerato/imgCentral/IntroCS.png','Telebachillerato Central',['class'=>' img-responsive iniImgCentro', 'id'=>'IntroCSCentro'])}}
 			{{HTML::image('imagenes/mediateca/tbachillerato/imgCentral/EticaValoresI.png','Telebachillerato Central',['class'=>' img-responsive iniImgCentro', 'id'=>'EticaValoresICentro'])}}
 			{{HTML::image('imagenes/mediateca/tbachillerato/imgCentral/Matematicas.png','Telebachillerato Central',['class'=>' img-responsive iniImgCentro', 'id'=>'MatematicasICentro'])}}
-			{{HTML::image('imagenes/mediateca/tbachillerato/imgCentral/LenguaAdicionalI.png','Telebachillerato Central',['class'=>' img-responsive iniImgCentro', 'id'=>'LenguaAdicionalICentro'])}}
-			{{HTML::image('imagenes/mediateca/tbachillerato/imgCentral/QuimicaI.png','Telebachillerato Central',['class'=>' img-responsive iniImgCentro', 'id'=>'QuimicaICentro'])}}
-			{{HTML::image('imagenes/mediateca/tbachillerato/imgCentral/InformaticaI.png','Telebachillerato Central',['class'=>' img-responsive iniImgCentro', 'id'=>'InformaticaICentro'])}}
+			{{HTML::image('imagenes/mediateca/tbachillerato/imgCentral/LenguaAdicionalI.gif','Telebachillerato Central',['class'=>' img-responsive iniImgCentro', 'id'=>'LenguaAdicionalICentro'])}}
+			{{HTML::image('imagenes/mediateca/tbachillerato/imgCentral/QuimicaI.gif','Telebachillerato Central',['class'=>' img-responsive iniImgCentro', 'id'=>'QuimicaICentro'])}}
+			{{HTML::image('imagenes/mediateca/tbachillerato/imgCentral/InformaticaI.gif','Telebachillerato Central',['class'=>' img-responsive iniImgCentro', 'id'=>'InformaticaICentro'])}}
 			{{HTML::image('imagenes/mediateca/tbachillerato/imgCentral/TallerLectura.png','Telebachillerato Central',['class'=>' img-responsive iniImgCentro', 'id'=>'TallerLecturaCentro'])}}
 			
 			{{HTML::image('imagenes/mediateca/tbachillerato/SemestreI/imgMapa.png','Telebachillerato Semestre I',['class'=>'posicionMapa img-responsive', 'id'=>'telebachilleratoSEMI', 'usemap'=>'#mapaSemI'])}}
@@ -44,6 +44,6 @@
 	</div>
     @include('viewMediateca.barraSociales')
 @endsection
-@section('pieMediateca')
+{{--@section('pieMediateca')
     @include('viewMediateca.menuMediatecaTelebachillerato')
-@endsection
+@endsection--}}
