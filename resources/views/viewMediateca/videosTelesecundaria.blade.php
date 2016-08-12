@@ -48,6 +48,12 @@ Educamedia
     .txtNegro{
         color: black;
     }
+	.oculto{
+		display: none;
+	}
+	.punteroMano{
+		cursor:pointer;
+	}
 </style>
 @section('menuMediateca')
 @include('viewMediateca.encabezadoMediateca')
@@ -106,7 +112,7 @@ Educamedia
                         @if (Auth::check ())
                         @if($esDocente)
                         <div class="col-md-3">
-                            <a id="ligaDescargaYoutube" href="{{ url('descarga/getvideo.php/yt/getvideo.mp4?videoid='.$videos[0]->url.'&format=best') }}"><span title="descarga video" class="glyphicon glyphicon-cloud-download btnDescarga" aria-hidden="true"></span></a>
+                            <a id="ligaDescargaYoutube" href="{{ url('descarga/getvideo.php/yt/getvideo.mp4?videoid='.$videos[0]->url.'&format=best') }}" target="_self"><span title="descarga video" class="glyphicon glyphicon-cloud-download btnDescarga" aria-hidden="true"></span></a>
                             Descarga Video
                         </div>
                         @else
@@ -127,7 +133,7 @@ Educamedia
                         @endif
                         @endif
                     <div class="col-md-12">
-                        <li class="list-unstyled"><h5 id="subtitulo_serie">{{ $videos[0]->subtitulo_serie }}<h5></li>
+                            <li class="list-unstyled"><h5 id="subtitulo_serie">{{ $videos[0]->subtitulo_serie }}<h5></li>
                                     <li class="list-unstyled"><h5 id="subtitulo_programa">{{ $videos[0]->subtitulo_programa }}<h5></li>                                                
                                                 <li class="list-unstyled"><h5 id="grado">Grado: {{ $videos[0]->grado }}</h5></li>
 
@@ -356,9 +362,6 @@ fjs.parentNode.insertBefore(js, fjs);
                     console.log(ts.responseText);
                 }})
                     .done(function (msg) {
-                        $("#respuestas-" + partes[1]).prepend($(msg).fadeIn('slow'));
-                        $('#responde_' + partes[1]).val('');
-                        console.log("Data Saved: " + msg);
                     });
         });
 

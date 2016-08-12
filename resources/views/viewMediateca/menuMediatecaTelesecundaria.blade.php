@@ -132,8 +132,8 @@
                         <div class="pull-left">
                             <!-- Tabs -->
                             <ul class="nav panel-tabs">
-                                <li class="active"><a href="#tab1" data-toggle="tab">Calendario escolar de 185 días</a></li>
-                                <li><a href="#tab2" data-toggle="tab">Calendario escolar de 200 días</a></li>
+                                <li class="active"><a href="#tab1" data-toggle="tab"><i class="fa fa-calendar" aria-hidden="true"></i>&ensp;Calendario escolar de 185 días</a></li>
+                                <li><a href="#tab2" data-toggle="tab"><i class="fa fa-calendar" aria-hidden="true"></i>&ensp;Calendario escolar de 200 días</a></li>
                             </ul>
                         </div>
                     </div>
