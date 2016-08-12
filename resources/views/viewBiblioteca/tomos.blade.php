@@ -142,7 +142,7 @@
     }
     function ocultaDescripcion(elem, libro) {
 			activaAnimacion=false;
-			recuperaAncho = anchoCol * 1.5;
+			recuperaAncho = anchoCol * 1.20;
 			var contenedor = '#contenedor' + elem + libro;
 			$(contenedor).css('width', recuperaAncho);
 			var colMargen = '#columnaMargen' + elem;

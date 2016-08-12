@@ -5,11 +5,12 @@
         <div class="margensuperiormenuTS">
             <nav class="navbar navbar-inverse navbar-fixed-top margensuperiormenuTS" id="sidebar-wrapperTB" role="navigation">
                 <ul class="nav sidebar-nav">
-                    <li><a href="{{url('http://www.dgb.sep.gob.mx/02-m1/02-subsistemas/telebachillerato/NORMATIVIDAD/DOCUMENTO_BASE_TBC_2015.pdf')}}" target="_blank">Normatividad</a></li>
+                    <li><a href="{{url('http://www.dgb.sep.gob.mx/servicios-educativos/telebachillerato/normatividad/DOCUMENTO_BASE_TBC_2015.pdf')}}" target="_blank">Normatividad</a></li>
                     <li><a data-toggle="modal" href="#myModal-mapaCurricular-tb">Mapa Curricular</a></li>
-                    <li><a data-toggle="modal" href="#myModal-calendario-tb">Calendario</a></li>
-                    <li><a href="{{url('http://www.dgb.sep.gob.mx/02-m1/02-subsistemas/telebachillerato.php?id=materiales_audiovisuales')}}" target="_blank">Materiales Audiovisuales</a></li>
-                    <li id="sinBorde"><a href="{{url('http://www.dgb.sep.gob.mx/02-m1/02-subsistemas/telebachillerato.php?id=materiales_impresos')}}" target="_blank">Material Impreso</a></li>
+                    <!--<li><a data-toggle="modal" href="#myModal-calendario-tb">Calendario</a></li>-->
+                    <li><a href="{{url('http://www.dgb.sep.gob.mx/bachillerato.php')}}" target="_blank">Calendario</a></li>
+                    <li><a href="{{url('http://www.tuprepaenvideos.sep.gob.mx/')}}" target="_blank">Materiales Audiovisuales</a></li>
+                    <li id="sinBorde"><a href="{{url('http://www.dgb.sep.gob.mx/servicios-educativos/telebachillerato/materiales_impresos.php')}}" target="_blank">Material Impreso</a></li>
                 </ul>
             </nav>
 
@@ -29,17 +30,15 @@
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                     <h4 class="modal-title">Telebachillerato</h4>
                 </div>
-                <div class="modal-body">
-                    <a href="{{url('http://www.dgb.sep.gob.mx/02-m1/02-subsistemas/telebachillerato/NORMATIVIDAD/Mapa_CURRICULAR_tbc_2014.pdf')}}" target="_blank">
-                        {{ HTML::image('imagenes/mediateca/tbachillerato/mapaCurriculartb.png','mapa curricular',['width'=>'100%','height'=>'100%'])}}
-                    </a>
+                <div class="modal-body">                    
+                    <embed width="100%" height="600px" src="{{url('http://www.dgb.sep.gob.mx/servicios-educativos/telebachillerato/normatividad/Mapa_CURRICULAR_tbc_2014.pdf')}}" type="application/pdf"></embed>
                 </div>
             </div>
         </div>
     </div> <!-- Fin modal Mapa curricular-->
 
     <!--Modal para calendario escolar -->
-    <div class="modal fade" id="myModal-calendario-tb" role="dialog">
+<!--    <div class="modal fade" id="myModal-calendario-tb" role="dialog">
         <div class="modal-dialog modal-lg">
             <div class="modal-content">
                 <div class="modal-header">
@@ -53,7 +52,7 @@
                 </div>
             </div>
         </div>
-    </div> <!-- Fin modal calendario escolar-->
+    </div>  Fin modal calendario escolar-->
 </div>
 
 <script>
