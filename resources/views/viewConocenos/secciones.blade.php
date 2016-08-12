@@ -21,7 +21,7 @@
 					<p>tick. tack.</p>
 					<a href="#" class="viewsource">view source</a>
 				</div>
-				<div id="animate6" class="box1 skin" style="left: -100px;">
+				<div id="animate6" class="box1 skin" style="left: -50px;">
 					<p>tick. tack.</p>
 					<a href="#" class="viewsource">view source</a>
 				</div>
@@ -32,7 +32,7 @@
 					<p>tick. tack.</p>
 					<a href="#" class="viewsource">view source</a>
 				</div>
-				<div id="animateTxt1" class="box1 skin" style="left: -100px;">
+				<div id="animateTxt1" class="box1 skin" style="left: -50px;">
 					<p> Cultura </p>
 					<a href="#" class="viewsource">view source</a>
 				</div>
@@ -129,12 +129,12 @@
 <script>
 	// build tween Cultura	****************************
 	var tween = TweenMax.fromTo("#animateImg1", 1,
-								{left: -500},
-								{left: -50, repeat: 0, yoyo: true, ease: Circ.easeInOut}
+								{top: 200},
+								{top: -100, repeat: 0, yoyo: true, ease: Circ.easeInOut}
 							);
 	var tween2 = TweenMax.fromTo("#animateTxt1", 1,
-								{left: 500},
-								{left: 50, repeat: 0, yoyo: true, ease: Circ.easeInOut}
+								{top: 200},
+								{top: -100, repeat: 0, yoyo: true, ease: Circ.easeInOut}
 							);
 		// build scene
 	var scene = new ScrollMagic.Scene({triggerElement: "#trigger1", duration: 200, offset: -50})
