@@ -140,7 +140,7 @@ Educamedia
 						<li class="list-unstyled text-justify" id="sinopsis">{{ $videos[0]->sinopsis }}</li>
 					@else
 						<li class="list-unstyled text-justify oculto" id="sinopsis">{{ $videos[0]->sinopsis }}</li>
-						<li class="list-unstyled text-justify" id="sinopsis-250">{{ substr($videos[0]->sinopsis, 0, 350).'...'}} ... </li>
+						<li class="list-unstyled text-justify" id="sinopsis-250">{{ substr($videos[0]->sinopsis, 0, 350).'...'}}</li>
 						<div  id="botonmas" data-toggle="collapse" data-target="#massinopsis" class="col-md-12 text-center">
 							<span class="punteroMano">Mas </span><span class="glyphicon glyphicon-triangle-bottom punteroMano"></span>
 						</div>
@@ -306,11 +306,19 @@ Educamedia
             _videos[videos[i].id] = videos[i];
             }
             loadComments ({{$videos[0] -> id}});
-        $("massinopsis").collapse({toggle: false});
 
-        $("botonmas").click(function () {
-            $("nomuestra").addClass("hidden");
-        });
+			$("#botonmas").click(function () {
+				$("#sinopsis").removeClass("oculto");
+				$("#sinopsis-250").addClass("oculto");
+				$("#botonmenos").removeClass("oculto");
+				$("#botonmas").addClass("oculto");
+			});
+			$("#botonmenos").click(function () {
+				$("#sinopsis-250").removeClass("oculto");
+				$("#sinopsis").addClass("oculto");
+				$("#botonmas").removeClass("oculto");
+				$("#botonmenos").addClass("oculto");
+			});
 
         
 
