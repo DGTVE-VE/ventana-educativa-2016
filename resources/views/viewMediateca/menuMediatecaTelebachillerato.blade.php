@@ -7,7 +7,8 @@
                 <ul class="nav sidebar-nav">
                     <li><a href="{{url('http://www.dgb.sep.gob.mx/servicios-educativos/telebachillerato/normatividad/DOCUMENTO_BASE_TBC_2015.pdf')}}" target="_blank">Normatividad</a></li>
                     <li><a data-toggle="modal" href="#myModal-mapaCurricular-tb">Mapa Curricular</a></li>
-                    <li><a data-toggle="modal" href="#myModal-calendario-tb">Calendario</a></li>
+                    <!--<li><a data-toggle="modal" href="#myModal-calendario-tb">Calendario</a></li>-->
+                    <li><a href="{{url('http://www.dgb.sep.gob.mx/bachillerato.php')}}" target="_blank">Calendario</a></li>
                     <li><a href="{{url('http://www.tuprepaenvideos.sep.gob.mx/')}}" target="_blank">Materiales Audiovisuales</a></li>
                     <li id="sinBorde"><a href="{{url('http://www.dgb.sep.gob.mx/servicios-educativos/telebachillerato/materiales_impresos.php')}}" target="_blank">Material Impreso</a></li>
                 </ul>
@@ -39,7 +40,7 @@
     </div> <!-- Fin modal Mapa curricular-->
 
     <!--Modal para calendario escolar -->
-    <div class="modal fade" id="myModal-calendario-tb" role="dialog">
+<!--    <div class="modal fade" id="myModal-calendario-tb" role="dialog">
         <div class="modal-dialog modal-lg">
             <div class="modal-content">
                 <div class="modal-header">
@@ -53,7 +54,7 @@
                 </div>
             </div>
         </div>
-    </div> <!-- Fin modal calendario escolar-->
+    </div>  Fin modal calendario escolar-->
 </div>
 
 <script>
