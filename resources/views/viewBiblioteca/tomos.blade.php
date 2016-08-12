@@ -1,9 +1,9 @@
 <?php
 	use App\Http\Controllers\BibliotecaController;
 	$clasificacionActual = BibliotecaController::obtieneClasificacion();
-        
+
         if($clasificacionActual =='Nacionales'){
-           $imagenCat ='imagenes/biblioteca/tomos/nacionales.png'; 
+           $imagenCat ='imagenes/biblioteca/tomos/nacionales.png';
         }else{
             if($clasificacionActual=="Universitarias"){
                 $imagenCat = 'imagenes/biblioteca/tomos/universitarias.png';
@@ -153,7 +153,7 @@
 			$(textoLigaBiblio).css('display', 'none');
 			setTimeout(function(){ activaAnimacion = true; }, 800);
     }
-</script>        
+</script>
 
 @endsection
 @section('cuerpoBiblioteca')
@@ -200,7 +200,7 @@
 							<img src="{{asset($imagenCat)}}" style="width:18%;"/>
 						</div>
 					</div>
-					
+
 				@endif
 			@endforeach
 		</div>
