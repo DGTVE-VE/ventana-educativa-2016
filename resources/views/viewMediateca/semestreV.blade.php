@@ -29,6 +29,6 @@ Educamedia
 	</div>
 @include('viewMediateca.barraSociales')
 @endsection
-{{--@section('pieMediateca')
+@section('pieMediateca')
     @include('viewMediateca.menuMediatecaTelebachillerato')
-@endsection--}}
+@endsection

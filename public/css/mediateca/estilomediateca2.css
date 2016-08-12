@@ -175,7 +175,7 @@ body{
     }
     .contenedorVideo{
         /*margin-top: 10px !important;*/
-        max-height:600px;
+        max-height:620px;
         overflow-x: hidden;
     }
 }

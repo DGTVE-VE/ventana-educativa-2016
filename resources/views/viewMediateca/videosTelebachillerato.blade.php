@@ -236,6 +236,58 @@ Educamedia
         return t;
         }(document, "script", "twitter-wjs"));</script>
 <script>
+    function guardaRating(val){
+            console.log('guardando rating'+val);
+            $.ajax({
+                method: "POST",
+                url: "{{url('educamedia/rate')}}",
+                data: {nivel: $("#nivel").val(), id: $("#video-id").val(), rating: val, _token: "{{csrf_token()}}"},
+                error: function (ts) {
+                    console.log(ts.responseText);
+                }})
+                    .done(function (msg) {
+                        console.log("Data Saved: " + msg);
+                        loadComments($("#video-id").val());
+                });
+        }
+
+    function refrescaRating(valRating){
+                                                        
+        $("#divRating").empty();
+        $("#divRating").append('<input type="number" name="rating" id="star-rating" data-icon-lib="fa" data-active-icon="fa-star" data-inactive-icon="fa-star-o" onchange="guardaRating(this.value)" value="' + parseInt(valRating) + '"/>');
+        $("#star-rating").rating({value: parseInt(valRating)});
+    }
+    function loadComments(id) {
+        var urlget = "{{url('educamedia/comments/telebachillerato')}}";
+        var _url = urlget + '/' + id;
+        $.ajax({
+        method: "GET",
+        url: _url,
+            error: function (ts) {
+            console.log(ts.responseText);
+                }})
+                .done(function (msg) {
+                    console.log('Comentarios cargados: ' + id);
+                    $("#comentarios").html(msg)
+                    //                    console.log ( "Data Saved: " + msg );
+                });
+        var urlget2 = "{{url('educamedia/rating/telebachillerato')}}";
+            var _url2 = urlget2 + '/' + id;
+            $.ajax({
+                method: "GET",
+                url: _url2,
+                error: function (ts) {
+                    console.log(ts.responseText);
+                }}).done(function (msg) {
+                    console.log('Refrescando rating');                                                                
+                    @if(Auth::check())
+                    refrescaRating(msg);
+                    @endif
+            });
+        }
+    
+    
+    
     $(document).ready(function () {
         @if(Auth::check())
         refrescaRating({!! Auth::user()->ratingTelesecundaria ($videos[0] -> id) !!});
@@ -259,27 +311,23 @@ Educamedia
 			$("#botonmenos").addClass("oculto");
 		});
     
-    function refrescaRating(valRating){
-                                                        
-        $("#divRating").empty();
-        $("#divRating").append('<input type="number" name="rating" id="star-rating" data-icon-lib="fa" data-active-icon="fa-star" data-inactive-icon="fa-star-o" onchange="guardaRating(this.value)" value="' + parseInt(valRating) + '"/>');
-        $("#star-rating").rating({value: parseInt(valRating)});
-    }
+    
                                                     
-        $('#star-rating').change(function () {
-    $.ajax({
-            method: "POST",
-            url: "{{url('educamedia/rate')}}",
-            data: {nivel: $("#nivel").val(), id: $("#video-id").val(), rating: $("#star-rating").val(), _token: "{{csrf_token()}}"},
-            error: function (ts) {
-            console.log(ts.responseText);
-                }})
-                .done(function (msg) {
-                    console.log("Data Saved: " + msg);                     loadComments($("#video-id").val());
-                    });
-    });
-                $('.item').click(function () {
-    $('#div-containter').fadeOut();
+//        $('#star-rating').change(function () {
+//    $.ajax({
+//            method: "POST",
+//            url: "{{url('educamedia/rate')}}",
+//            data: {nivel: $("#nivel").val(), id: $("#video-id").val(), rating: $("#star-rating").val(), _token: "{{csrf_token()}}"},
+//            error: function (ts) {
+//            console.log(ts.responseText);
+//                }})
+//                .done(function (msg) {
+//                    console.log("Data Saved: " + msg);                     loadComments($("#video-id").val());
+//                    });
+//    });
+    
+    $('.item').click(function () {
+        $('#div-containter').fadeOut();
         data = $(this).attr('data-id');
         _id = $(this).attr('_id');
         player.loadVideoById(data);         $("#materia").html(_videos[_id].asignatura);
@@ -332,23 +380,7 @@ Educamedia
                     //                    console.log ( "Data Saved: " + msg );
                 });
     });
-                function loadComments(id) {
-        var urlget = "{{url('educamedia/comments/telebachillerato')}}";
-        var _url = urlget + '/' + id;
-        $.ajax({
-        method: "GET",
-        url: _url,
-            error: function (ts) {
-            console.log(ts.responseText);
-                }})
-                .done(function (msg) {
-                    console.log('Comentarios cargados: ' + id);
-                    $("#comentarios").html(msg)
-                    //                    console.log ( "Data Saved: " + msg );
-                });
-        }
-    }
-    );
+    });     
     /** URL del api de ventana educativa*/
             //var api = "http://localhost/ventana-educativa/api/v1/";
             /** Tiempo transcurrido del video */
