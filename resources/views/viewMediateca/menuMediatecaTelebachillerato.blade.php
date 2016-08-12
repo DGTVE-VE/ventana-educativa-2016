@@ -30,10 +30,8 @@
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                     <h4 class="modal-title">Telebachillerato</h4>
                 </div>
-                <div class="modal-body">
-                    <a href="{{url('http://www.dgb.sep.gob.mx/servicios-educativos/telebachillerato/normatividad/Mapa_CURRICULAR_tbc_2014.pdf')}}" target="_blank">
-                        {{ HTML::image('imagenes/mediateca/tbachillerato/mapa_curric_2008.gif','mapa curricular',['width'=>'100%','height'=>'100%'])}}
-                    </a>
+                <div class="modal-body">                    
+                    <embed width="100%" height="600px" src="{{url('http://www.dgb.sep.gob.mx/servicios-educativos/telebachillerato/normatividad/Mapa_CURRICULAR_tbc_2014.pdf')}}" type="application/pdf"></embed>
                 </div>
             </div>
         </div>
