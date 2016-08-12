@@ -46,6 +46,12 @@ Educamedia
     .txtNegro{
         color: black;
     }
+	.oculto{
+		display: none;
+	}
+	.punteroMano{
+		cursor:pointer;
+	}
 </style>
 @section('menuMediateca')
 @include('viewMediateca.encabezadoMediateca')
@@ -86,7 +92,6 @@ Educamedia
                         data-mobile-iframe="true">
                     </div>
                 </div>
-                @endif
                 <div class="col-md-2">
                     <div class="col-md-5">
                         <a href="https://twitter.com/share" class="twitter-share-button">Tweet</a> <script>!function (d, s, id) {
@@ -100,6 +105,7 @@ Educamedia
                             }(document, 'script', 'twitter-wjs');</script> 
                     </div>
                 </div>
+                @endif
                 <div class="col-md-1"></div>
                 @if (Auth::check ())
                 @if($esDocente)
@@ -131,13 +137,13 @@ Educamedia
                     <li class="list-unstyled"><h5 id="subtitulo_serie">{{ $videos[0]->subtitulo_serie }}</h5></li>
                     <li class="list-unstyled"><h5 id="subtitulo_programa">{{ $videos[0]->subtitulo_programa }}</h5></li>
                     <li class="list-unstyled"><h5 id="grado">Semestre: {{ $videos[0]->semestre }}</h5></li>
-
-                    <li class="list-unstyled text-justify" id="sinopsis" style="display: none;">{{ $videos[0]->sinopsis }}</li>
-
+                    <li class="list-unstyled text-justify oculto" id="sinopsis">{{ $videos[0]->sinopsis }}</li>
                     <li class="list-unstyled text-justify" id="sinopsis-250">{{ substr($videos[0]->sinopsis, 0, 350).'...'}}</li>
-                    <div id="botonmas" data-toggle="collapse" data-target="#massinopsis" class="col-md-12 text-center">
-<!--                    <span>Más</span>
-                    <span class="caret"></span>-->
+                    <div  id="botonmas" data-toggle="collapse" data-target="#massinopsis" class="col-md-12 text-center">
+						<span class="punteroMano">Mas </span><span class="glyphicon glyphicon-triangle-bottom punteroMano"></span>
+                    </div>
+					<div  id="botonmenos" data-toggle="collapse" data-target="#massinopsis" class="col-md-12 text-center oculto">
+						<span class="punteroMano">Menos </span><span class="glyphicon glyphicon-triangle-top punteroMano"></span>
                     </div>
                     <br>
                 </div>
@@ -159,7 +165,7 @@ Educamedia
                         @foreach ($videos as $item => $video)
                         <tr>
                             <td data-target="#custom_carousel" data-slide-to="{{$item}}" class="item" data-id='{{ $video->url }}' _id="{{$video->id}}">
-                                <img src="http://img.youtube.com/vi/{{ $video->url }}/2.jpg" class='item-a' style="cursor:pointer;">
+                                <img src="http://img.youtube.com/vi/{{ $video->url }}/2.jpg" class='item-a punteroMano'>
                             </td>
                             <td class="redesText">{{$video->programa}}</td>
                         </tr>
@@ -236,10 +242,18 @@ Educamedia
         _videos[videos[i].id] = videos[i];
         }
         loadComments ({{$videos[0] -> id}});
-        $("massinopsis").collapse({toggle: false});
-    $("botonmas").click(function () {
-    $("nomuestra").addClass("hidden");
-    });
+		$("#botonmas").click(function () {
+			$("#sinopsis").removeClass("oculto");
+			$("#sinopsis-250").addClass("oculto");
+			$("#botonmenos").removeClass("oculto");
+			$("#botonmas").addClass("oculto");
+		});
+		$("#botonmenos").click(function () {
+			$("#sinopsis-250").removeClass("oculto");
+			$("#sinopsis").addClass("oculto");
+			$("#botonmas").removeClass("oculto");
+			$("#botonmenos").addClass("oculto");
+		});
     
     function refrescaRating(valRating){
                                                         
