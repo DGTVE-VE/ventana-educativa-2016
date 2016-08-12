@@ -8,6 +8,7 @@ use App\Http\Requests;
 use App\Model\Mediateca\Telesecundaria;
 use App\Model\Mediateca\Telebachillerato;
 use App\Model\Mediateca\RatingTelesecundaria;
+use App\Model\Mediateca\RatingTelebachillerato;
 use \Alaouy\Youtube\Facades\Youtube;
 use Illuminate\Support\Facades\Auth;
 use Laracasts\Flash\Flash;
@@ -155,6 +156,24 @@ class MediatecaController extends Controller {
             $ratingSaved->save ();
         }
         return 'rating guardado';
+    }
+    
+    public function getRatingTelesecundaria ($id){
+        $rating = RatingTelesecundaria::where ('telesecundaria_id', $id)
+            -> where ('user_id',Auth::user()->id)->first();
+        if ($rating == NULL)
+            print 0;
+        else
+            print $rating->rating;
+    }
+    
+    public function getRatingTelebachillerato ($id){
+        $rating = RatingTelebachillerato::where ('telebachillerato_id', $id)
+            -> where ('user_id',Auth::user()->id)->first();
+        if ($rating == NULL)
+            print 0;
+        else
+            print $rating->rating;
     }
 
     public function getVideosTelebachillerato($grado, $materia) {
