@@ -37,6 +37,11 @@ and open the template in the editor.
         <link rel="stylesheet" href="{{ asset('css/ventana/estiloventana2.css') }}" >
         @yield('scripts')
     </head>
+	<style>
+		body{
+			font-family: 'Oxygen', sans-serif;
+		}
+	</style>
     <body>
         <header>
             @yield('menuConocenos')

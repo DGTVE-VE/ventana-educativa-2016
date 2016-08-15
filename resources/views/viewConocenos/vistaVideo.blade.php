@@ -1,16 +1,41 @@
 	<video data-keepplaying class="videoFondo" id="videoFondo" oncanplay="reproduceVideo()" onplay="bajaImgProyectos()">
-		<source src="imagenes/ventana/conocenos/DJI_0008.mp4" type="video/mp4"/>
+		<source src="imagenes/ventana/conocenos/presentacion/DJI_0008.mp4" type="video/mp4"/>
 	</video>
-	<img id="textoProyectos" class="muestra animated" src="imagenes/ventana/conocenos/proyecto.png"/>
-	<img id="textoObjetivos" class="oculta animated" src="imagenes/ventana/conocenos/objetivos.png"/>
-	<a href="#"><img id="botonPlay" class="oculta animated" src="imagenes/ventana/conocenos/botonPlay.png"/></a>
-	<div class="col-md-12"></div>
-	<div class="divFlechaBrinca col-md-2 col-md-offset-4">
-		CONTINUA NAVEGANDO
+	<div class="row">
+		<div class="col-md-12">
+			<img id="textoProyectos" class="muestra animated centra img-responsive" src="imagenes/ventana/conocenos/presentacion/proyecto.png"/>
+			<img id="textoObjetivos" class="oculta animated centra img-responsive" src="imagenes/ventana/conocenos/presentacion/objetivos.png"/>
+			<a href="#" data-toggle="modal" data-target="#modalVideo" onfocus="this.blur()">
+				<img id="botonPlay" class="oculta animated centra img-responsive" src="imagenes/ventana/conocenos/presentacion/botonPlay.png"/>
+			</a>
+		</div>
+		<div class="col-md-12"></div>
+		<div class="divFlechaBrinca col-md-12">
+			<div class="txtContinua text-center">
+				CONTINUA NAVEGANDO
+			</div>
+		</div>
+		<div class="col-md-12"></div>
+		<div class="divFlechaBrinca col-md-12 text-center">
+			<img id="flechaBrinca" class="flechaBrinca" src="imagenes/educaplay/flechaDetalle.png" onclick="avanzaSeccion('2')"/>
+		</div>
 	</div>
-	<div class="col-md-12"></div>
-	<div class="divFlechaBrinca col-md-1 col-md-offset-4 text-center">
-		<img id="flechaBrinca" class="flechaBrinca" src="imagenes/educaplay/flechaDetalle.png" onclick="avanzaSeccion('2')"/>
+	<div class="modal fade" id="modalVideo" tabindex="-1" role="dialog" aria-labelledby="etiquetaModalVideo" data-backdrop="false">
+		<div class="modal-dialog modal-lg" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h4 class="modal-title" id="etiquetaModalVideo">Conocenos</h4>
+				</div>
+				<div clas="modal-body">
+					<video style="width:100%;" controls>
+						<source src="imagenes/ventana/conocenos/DJI_0008.mp4" type="video/mp4"/>
+					</video>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+		</div>
 	</div>
 	<script>
 		$(document).ready(function() {
@@ -137,7 +162,15 @@
 			width:60px; height:18px; position: absolute; cursor:pointer;
 		}
 		.divFlechaBrinca{
-			position: absolute; bottom: 50px;
+			position: absolute; bottom: 80px;
+		}
+		.txtContinua{
+			font-size:1.2em;
+			position: relative;
+			left: 25px;
+			width:200px;
+			margin: 0 auto;
+			color: white;
 		}
 		.videoFondo{
 			position: absolute; right: 0; bottom: 0;
@@ -148,5 +181,11 @@
 		}
 		#textoProyectos{
 			visibility:hidden;
+		}
+		.centra{
+			position: relative;
+			top:-30px;
+			max-width:1250px;
+			margin: 0 auto;
 		}
 	</style>

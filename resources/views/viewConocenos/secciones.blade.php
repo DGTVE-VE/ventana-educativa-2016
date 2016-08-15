@@ -1,5 +1,5 @@
 <!--	********* Incluir Jquery	***************	-->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<!--script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script-->
 <script src="js/ScrollMagic/scrollmagic/uncompressed/ScrollMagic.js"></script>
 <script src="js/ScrollMagic/js/lib/greensock/plugins/debug.addIndicators.js" ></script>
 <script src="js/ScrollMagic/js/lib/greensock/TweenMax.min.js"></script>
@@ -119,6 +119,8 @@
 					<p>salud</p>
 					<a href="#" class="viewsource">view source</a>
 				</div>
+				<div class="spacer s2"></div>
+				<div class="spacer s2"></div>
 				<div class="spacer s2"></div>
 				<div class="spacer s2"></div>
 				<div class="spacer s2"></div>

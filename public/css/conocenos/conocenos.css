@@ -1,4 +1,4 @@
-/*
+﻿/*
 To change this license header, choose License Headers in Project Properties.
 To change this template file, choose Tools | Templates
 and open the template in the editor.
@@ -67,6 +67,7 @@ html { height: 100%;}
 
 #wrapperConocenos.toggled #page-content-wrapperConocenos {
     position: absolute;
+    top:70px;
     margin-right: -220px;
 }
 
@@ -211,7 +212,7 @@ html { height: 100%;}
 .hamburgerConocenos.is-closed .hamb-top,
 .hamburgerConocenos.is-closed .hamb-middle,
 .hamburgerConocenos.is-closed .hamb-bottom {
-    background-color: #1a1a1a;
+    background-color: #f2f2f2;
 }
 .hamburgerConocenos.is-closed .hamb-top { 
     top: 5px; 
