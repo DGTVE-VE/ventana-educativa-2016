@@ -399,6 +399,10 @@ a.first:after{
 a.before:hover:before,a.after:hover:after{
   width:100%;
 }
+#modalVideo{
+	position: absolute;
+	top:35px;
+}
 /*-------------------------------*/
 /*  Fin Slider segunda sección   */
 /*-------------------------------*/
