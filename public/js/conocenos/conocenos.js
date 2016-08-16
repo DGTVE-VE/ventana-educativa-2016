@@ -14,6 +14,12 @@ $(document).ready(function () {
     trigger.click(function () {
       hamburger_cross();      
     });
+	
+	overlay.click(function () {
+	  isClosed = true;
+      hamburger_cross();
+	  $('#wrapperConocenos').toggleClass('toggled');
+    });
 
     function hamburger_cross() {
 
