@@ -20,14 +20,14 @@
     <!-- /#sidebar-wrapper -->
 
     <!-- Page Content -->
-    <div id="page-content-wrapperConocenos" style="padding:0;">
-        <button type="button" class="hamburgerConocenos is-closed" data-toggle="offcanvas" style="position: relative; top:75px; left:50px">
-            <span class="hamb-top" style="color:white;"></span>
+    <div id="page-content-wrapperConocenos">
+        <button type="button" class="hamburgerConocenos is-closed" data-toggle="offcanvas">
+            <span class="hamb-top"></span>
             <span class="hamb-middle"></span>
             <span class="hamb-bottom"></span>
         </button>
 	<!--************** Dentro de este div va el contenido de la página *********************-->
-        <div class="container-fluid" style="padding:0; position: relative; top:-35px;">
+        <div class="container-fluid sinPaddingLateral">
 			<div id="fullpage">
 				<div class="section fondo1">
 					@include('viewConocenos.vistaVideo')
