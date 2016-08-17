@@ -5,9 +5,12 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <!-- Styles -->
 <!--link rel="stylesheet" type="text/css" href="js/parallaxCapas/examples/styles/styles.css"/-->
-		<ul id="scene" class="scene" style="position:absolute; width:80%">
-			<li class="layer" data-depth="0.80"><img src="js/parallaxCapas/examples/images/layer2.png" style="height:70%; width:90%;"></li>
-		</ul>
+	<ul id="scene" class="scene" style="position:absolute; top:0px; width:100%">
+		<li class="layer" data-depth="0.70"><img src="imagenes/ventana/conocenos/slider/red1.png" style="height:70%; width:90%;"></li>
+	</ul>
+	<ul id="scene2" class="scene" style="position:absolute; top:0px; width:100%">
+		<li class="layer" data-depth="1"><img src="imagenes/ventana/conocenos/slider/red2.png" style="height:70%; width:90%;"></li>
+	</ul>
 	<section id="carousel" style="position:relative; top:0px;">
         <div class="row">
 			<div class="col-md-8 col-md-offset-4" style="position: absolute; top:0px;">
@@ -150,5 +153,7 @@
 		
 		<!--	***********	Activar parallax fondo	*************	-->
 		var scene = document.getElementById('scene');
+		var parallax = new Parallax(scene);
+		var scene = document.getElementById('scene2');
 		var parallax = new Parallax(scene);
 	</script>
