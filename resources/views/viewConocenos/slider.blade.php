@@ -3,13 +3,11 @@
 <!-- Behavioral Meta Data -->
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<!-- Styles -->
-<!--link rel="stylesheet" type="text/css" href="js/parallaxCapas/examples/styles/styles.css"/-->
-	<ul id="scene" class="scene" style="position:absolute; top:0px; width:100%">
-		<li class="layer" data-depth="0.70"><img src="imagenes/ventana/conocenos/slider/red1.png" style="height:70%; width:90%;"></li>
+	<ul id="scene" class="scene" style="position:absolute; top:-50px; left:-100px; width:100%">
+		<li class="layer" data-depth="0.20"><img src="imagenes/ventana/conocenos/slider/red1.png" style="height:70%; width:90%;"></li>
 	</ul>
-	<ul id="scene2" class="scene" style="position:absolute; top:0px; width:100%">
-		<li class="layer" data-depth="1"><img src="imagenes/ventana/conocenos/slider/red2.png" style="height:70%; width:90%;"></li>
+	<ul id="scene2" class="scene" style="position:absolute; top:0px; left:250px; width:100%">
+		<li class="layer" data-depth="0.40"><img src="imagenes/ventana/conocenos/slider/red2.png" style="height:70%; width:90%;"></li>
 	</ul>
 	<section id="carousel" style="position:relative; top:0px;">
         <div class="row">
@@ -20,7 +18,6 @@
 			</div>
 
             <div class="col-md-12" >
-                <!--<div class="quote"><i class="fa fa-quote-left fa-4x"></i></div>-->
                 <div class="carousel" id="fade-quote-carousel" data-ride="carousel" data-interval="0">
                     <div class="col-md-12">
                         <!-- Carousel indicators -->
@@ -63,8 +60,11 @@
 			position:absolute; left:80px;
 			width:300px;	height:300px;
 			border-radius:0%;
-			background: #33ffff; /* For browsers that do not support gradients */
+			background: #6bebcf; /* For browsers that do not support gradients */
 			transition: visibility 0.3s, border-radius 0.8s, transform 0.8s;
+			-webkit-transform: rotate(45deg);
+			-ms-transform: rotate(45deg);
+			transform: rotate(45deg);
 		}
 		.homologaColor{
 			visibility:hidden;
@@ -74,15 +74,15 @@
 			transition: border-radius 0.8s;
 		}
 		.trianguloArriba{
-			position:absolute; top:-30px; left: 120px;
+			position:absolute; top:50px; left: 30px;
 			width:0 !important;	height:0 !important;
-			border-left:150px solid transparent !important;
-			border-right:150px solid transparent !important;
-			border-bottom:300px solid #33ffff !important;
+			border-top:150px solid transparent !important;
+			border-bottom:150px solid transparent !important;
+			border-left:300px solid #6bebcf !important;
 			transition: visibility 0.3s, transform 0.8s;
 		}
 		.opaco{
-			opacity: 0.5;
+			opacity: 0.9;
 			transition: opacity:0.3s;
 		}
 	</style>
@@ -98,7 +98,7 @@
 				case 1:	//circulo
 					if(actual==2){
 						$('#divFigura').removeClass('opaco');
-						$('#divFigura').css({transform:'rotate(-90deg)'});
+						$('#divFigura').css({transform:'rotate(-135deg)'});
 						$('#divFigura').addClass('circulo');
 					}else if(actual==3){
 						$('#divTriangulo').removeClass('opaco');
@@ -116,7 +116,7 @@
 				case 2:	//cuadrado
 					if(actual==1){
 						$('#divFigura').removeClass('opaco');
-						$('#divFigura').css({transform:'rotate(90deg)'});
+						$('#divFigura').css({transform:'rotate(45deg)'});
 						$('#divFigura').removeClass('circulo');
 					}else if(actual==3){
 						$('#divTriangulo').removeClass('opaco');
@@ -125,8 +125,8 @@
 						if($('#divFigura').hasClass('circulo')){
 							$('#divFigura').removeClass('circulo');
 						}
-						$('#divFigura').css({transform:'rotate(-90deg)'});
-						$('#divTriangulo').css({transform:'rotate(-45deg) scale(0.1, 0.1)'});
+						$('#divFigura').css({transform:'rotate(-45deg)'});
+						$('#divTriangulo').css({transform:'rotate(0deg) scale(0.1, 0.1)'});
 					}
 					setTimeout(function(){$('#divFigura').addClass('opaco');},300);
 					actual =2;
@@ -137,11 +137,11 @@
 						$('#divTriangulo').removeClass('opaco');
 						$('#divTriangulo').removeClass('homologaColor');
 						$('#divFigura').addClass('homologaColor');
-						$('#divTriangulo').css({transform:'rotate(45deg)'});
+						$('#divTriangulo').css({transform:'rotate(125deg)'});
 						if($('#divFigura').hasClass('circulo')){
 							$('#divFigura').removeClass('circulo');
 						}
-						$('#divFigura').css({transform:'scale(0.3, 0.1) rotate(70deg)'});
+						$('#divFigura').css({transform:'scale(0.3, 0.1) rotate(-270deg)'});
 						$('#divTriangulo').addClass('opaco');
 					}
 					actual =3;
