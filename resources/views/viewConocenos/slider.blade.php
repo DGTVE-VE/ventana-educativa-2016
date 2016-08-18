@@ -4,15 +4,16 @@
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 	<ul id="scene" class="scene" style="position:absolute; top:-50px; left:-100px; width:100%">
-		<li class="layer" data-depth="0.20"><img src="imagenes/ventana/conocenos/slider/red1.png" style="height:70%; width:90%;"></li>
+		<li class="layer" data-depth="0.20"><img src="imagenes/ventana/conocenos/slider/red1.png" style="height:70%; width:90%;"/></li>
 	</ul>
 	<ul id="scene2" class="scene" style="position:absolute; top:0px; left:250px; width:100%">
-		<li class="layer" data-depth="0.40"><img src="imagenes/ventana/conocenos/slider/red2.png" style="height:70%; width:90%;"></li>
+		<li class="layer" data-depth="0.40"><img src="imagenes/ventana/conocenos/slider/red2.png" style="height:70%; width:90%;"/></li>
 	</ul>
 	<section id="carousel" style="position:relative; top:0px;">
         <div class="row">
 			<div class="col-md-8 col-md-offset-4" style="position: absolute; top:0px;">
 				<div style="position:absolute; top:70px; left:-80px; border: solid 3px; width:620px; height:180px;"></div>
+				<img id="imgApartadoEdificio" src="imagenes/ventana/conocenos/slider/antecedentes.png" style="position: absolute; top:-115px; left:-70px; max-width:56%"/>
 				<div id="divTriangulo" class="trianguloArriba opaco homologaColor"></div>
 				<div id="divFigura" class="opaco"></div>
 			</div>
@@ -38,7 +39,9 @@
                         <div class="item">
                             <blockquote>
                                 <p>Aqui va el contenido de colaboradores.</p>
-                            </blockquote>	
+								<!--img src="imagenes/ventana/conocenos/slider/antecedentes.png" style="max-width:30%"/-->
+                            </blockquote>
+							
                         </div>
                         <div class="active item">
                             <blockquote>
@@ -96,6 +99,7 @@
 		function tranformaFigura(seccion){
 			switch(seccion){
 				case 1:	//circulo
+					$('#imgApartadoEdificio').attr('src','imagenes/ventana/conocenos/slider/antecedentes.png');
 					if(actual==2){
 						$('#divFigura').removeClass('opaco');
 						$('#divFigura').css({transform:'rotate(-135deg)'});
@@ -114,6 +118,7 @@
 					actual =1;
 					break;
 				case 2:	//cuadrado
+					$('#imgApartadoEdificio').attr('src','imagenes/ventana/conocenos/slider/antecedentes.png');
 					if(actual==1){
 						$('#divFigura').removeClass('opaco');
 						$('#divFigura').css({transform:'rotate(45deg)'});
@@ -132,6 +137,7 @@
 					actual =2;
 					break;
 				case 3:	//triangulo
+					$('#imgApartadoEdificio').attr('src','imagenes/ventana/conocenos/slider/alineacionProyecto.png');
 					if(actual==1 || actual==2){
 						$('#divFigura').removeClass('opaco');
 						$('#divTriangulo').removeClass('opaco');
