@@ -10,12 +10,14 @@
 		<li class="layer" data-depth="0.40"><img src="imagenes/ventana/conocenos/slider/red2.png" style="height:70%; width:90%;"/></li>
 	</ul>
 	<section id="carousel" style="position:relative; top:0px;">
-        <div class="row">
-			<div class="col-md-8 col-md-offset-4" style="position: absolute; top:0px;">
-				<div style="position:absolute; top:70px; left:-80px; border: solid 3px; width:620px; height:180px;"></div>
-				<img id="imgApartadoEdificio" src="imagenes/ventana/conocenos/slider/antecedentes.png" style="position: absolute; top:-115px; left:-70px; max-width:56%"/>
+        <div class="row" style="margin:0px;">
+			<div class="col-md-8 col-md-offset-4" style="position: absolute; top:0px; height:100%;">
+				<!--div style="position:absolute; top:70px; left:-80px; border: solid 3px; width:60%; height:180px;"></div-->
+				<img class="img-responsive" id="imgMarcoNegro" src="imagenes/ventana/conocenos/slider/marcoNegro.png" style="position: absolute; top:-12.5%; left:-5.5%; max-width:62%;"/>
+				<img class="img-responsive" id="imgApartadoEdificio" src="imagenes/ventana/conocenos/slider/antecedentes.png" style="position: absolute; top:-12%; left:-5%; max-width:60%;"/>
 				<div id="divTriangulo" class="trianguloArriba opaco homologaColor"></div>
 				<div id="divFigura" class="opaco"></div>
+				<!--img id="imgApartadoEdificio" src="imagenes/ventana/conocenos/slider/antecedentes.png" /-->
 			</div>
 
             <div class="col-md-12" >
@@ -35,22 +37,25 @@
                     </div>
                     
                     <!-- Carousel items -->
-                    <div class="carousel-inner" style="position: relative; top:150px;">
+                    <div class="carousel-inner" style="position: relative; top:200px;">
                         <div class="item">
                             <blockquote>
-                                <p>Aqui va el contenido de colaboradores.</p>
-								<!--img src="imagenes/ventana/conocenos/slider/antecedentes.png" style="max-width:30%"/-->
+                                <!--p>Aqui va el contenido de colaboradores.</p-->
+								<!--div style="border: solid 3px; width:50%; height:50%; position:absolute; top:-10%;"></div-->
+								<img class="img-responsive" src="imagenes/ventana/conocenos/slider/textoAntecedentes.png" style="margin: auto;"/>
                             </blockquote>
 							
                         </div>
                         <div class="active item">
                             <blockquote>
-                                <p>Aqui va el contenido de la sección antecedentes.</p>
+                                <!--p>Aqui va el contenido de la sección antecedentes.</p-->
+								<img class="img-responsive" src="imagenes/ventana/conocenos/slider/textoAntecedentes.png" style="margin: auto;"/>
                             </blockquote>
                         </div>
                         <div class="item">
                             <blockquote>
-                                <p>Aqui va el contenido de alineación del proyecto.</p>
+                                <!--p>Aqui va el contenido de alineación del proyecto.</p-->
+								<img class="img-responsive" src="imagenes/ventana/conocenos/slider/textoAntecedentes.png" style="margin: auto;"/>
                             </blockquote>
                         </div>
                     </div>                    
@@ -60,7 +65,7 @@
 	</section>
 	<style>
 		#divFigura{
-			position:absolute; left:80px;
+			position:absolute; top:3%; left:7%;
 			width:300px;	height:300px;
 			border-radius:0%;
 			background: #6bebcf; /* For browsers that do not support gradients */
@@ -77,11 +82,11 @@
 			transition: border-radius 0.8s;
 		}
 		.trianguloArriba{
-			position:absolute; top:50px; left: 30px;
+			position:absolute; top:11%; left: 1%;
 			width:0 !important;	height:0 !important;
-			border-top:150px solid transparent !important;
-			border-bottom:150px solid transparent !important;
-			border-left:300px solid #6bebcf !important;
+			border-top:170px solid transparent !important;
+			border-bottom:170px solid transparent !important;
+			border-left:340px solid #6bebcf !important;
 			transition: visibility 0.3s, transform 0.8s;
 		}
 		.opaco{

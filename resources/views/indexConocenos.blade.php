@@ -39,7 +39,7 @@ and open the template in the editor.
     </head>
 	<style>
 		body{
-			font-family: 'Oxygen', sans-serif;
+			font-family: 'Exo', sans-serif;
 		}
 	</style>
     <body>
