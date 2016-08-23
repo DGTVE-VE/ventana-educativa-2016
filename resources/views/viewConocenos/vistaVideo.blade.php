@@ -65,6 +65,16 @@
 								cambiaImagenesArriba('botonPlay','textoObjetivos');
 								return false;
 							}
+							else{
+								$('#imagenLogoVentana').attr('src','imagenes/ventana/encabezado/logoNegro/logoventana.png');
+								$('#iconoManuApps').attr('src','imagenes/ventana/encabezado/logoNegro/iconoApps.png');
+								$('.hamburgerConocenos.is-closed .hamb-top, .hamburgerConocenos.is-closed .hamb-middle, .hamburgerConocenos.is-closed .hamb-bottom').css('background-color','#1a1a1a');
+							}
+						}
+						else if(index == 2 && nextIndex == 1){
+							$('#imagenLogoVentana').attr('src','imagenes/ventana/encabezado/logoventana.png');
+							$('#iconoManuApps').attr('src','imagenes/ventana/encabezado/iconoApps.png');
+							$('.hamburgerConocenos.is-closed .hamb-top, .hamburgerConocenos.is-closed .hamb-middle, .hamburgerConocenos.is-closed .hamb-bottom').css('background-color','#f2f2f2');
 						}
 					}
 				}

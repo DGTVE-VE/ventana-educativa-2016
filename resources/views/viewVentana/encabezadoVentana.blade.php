@@ -46,7 +46,7 @@
                 <ul class="nav navbar-nav navbar-right collapse navbar-collapse collapseBarra">
                     <li class="dropdown col-md-6" style="padding-left: 25%;">
                         <div class="dropdown-toggle" data-toggle="dropdown">
-                            {{ HTML::image('imagenes/ventana/encabezado/iconoApps.png','Diversas aplicaciones de contenido educativo',['width'=>'30px','height'=>'20px','class'=>'iconoApp appsLogo'])}}
+                            {{ HTML::image('imagenes/ventana/encabezado/iconoApps.png','Diversas aplicaciones de contenido educativo',['width'=>'30px','height'=>'20px','class'=>'iconoApp appsLogo','id'=>'iconoManuApps'])}}
                         </div>
                         <ul id="menuVentanaApps" class="dropdown-menu img-responsive menuVentanaApps">
                             <table id="mueveTablaApps" class="mueveTabla">

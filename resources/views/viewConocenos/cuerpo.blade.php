@@ -7,7 +7,7 @@
     <div class="overlayConocenos"></div>
     <!-- Sidebar -->
     <nav class="navbar navbar-inverse navbar-fixed-top" id="sidebar-wrapperConocenos" role="navigation">
-        <ul class="nav sidebar-nav" style="color:white;">
+        <ul class="nav sidebar-nav">
             <h4 class="etiquetaMenu">MENÚ</h4>
             <li>
                 <a href="#">BLOG</a>
