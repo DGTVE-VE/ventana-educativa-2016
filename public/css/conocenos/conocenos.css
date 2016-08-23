@@ -169,6 +169,7 @@ html { height: 100%;}
 .hamburgerConocenos {
     position: fixed;
     top: 75px;
+    left: 35px;
     z-index: 999;
     display: block;
     width: 32px;
@@ -208,7 +209,7 @@ html { height: 100%;}
 .hamburgerConocenos.is-open .hamb-middle,
 .hamburgerConocenos.is-open .hamb-bottom {
     position: absolute;
-    left: 35px;
+    left: 0px;
     height: 4px;
     width: 100%;
 }
