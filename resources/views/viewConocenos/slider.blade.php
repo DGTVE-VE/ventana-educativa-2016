@@ -22,16 +22,15 @@
                 <div class="carousel" id="fade-quote-carousel" data-ride="carousel" data-interval="0">
                     <div class="col-md-12">
                         <!-- Carousel indicators -->
-                        <!--div class="col-md-1"></div-->
                         <div class=" col-md-4 text-center" data-target="#fade-quote-carousel" data-slide-to="0" onclick="tranformaFigura(1)">
-							<a class="first after txtNegro" href="#">Colaboradores</a></div>
-                        <!--div class="col-md-1"></div-->
+							<a class="first after txtNegro" href="#">Colaboradores</a>
+						</div>
                         <div class=" col-md-4 text-center" data-target="#fade-quote-carousel" data-slide-to="1" onclick="tranformaFigura(2)">
-							<a class="first after txtNegro" href="#">Antecedentes</a></div>
-                        <!--div class="col-md-1"></div-->
+							<a class="first after txtNegro" href="#">Antecedentes</a>
+						</div>
                         <div class=" col-md-4 text-center" data-target="#fade-quote-carousel" data-slide-to="2" onclick="tranformaFigura(3)">
-							<a class="first after txtNegro" href="#">Alineación del Proyecto</a></div>
-                        <!--div class="col-md-1"></div-->
+							<a class="first after txtNegro" href="#">Alineación del Proyecto</a>
+						</div>
                     </div>
                     
                     <!-- Carousel items -->
@@ -103,7 +102,12 @@
 		function tranformaFigura(seccion){
 			switch(seccion){
 				case 1:	//circulo
-					$('#imgApartadoEdificio').attr('src','imagenes/ventana/conocenos/slider/antecedentes.png');
+					$('#imgApartadoEdificio').fadeOut();
+					setTimeout(function(){
+					$('#imgApartadoEdificio').attr('src','imagenes/ventana/conocenos/slider/alineacionProyecto.png');
+						$('#imgApartadoEdificio').addClass('animate fadeInUp');
+						$('#imgApartadoEdificio').fadeIn();
+					},400);
 					if(actual==2){
 						$('#divFigura').removeClass('opaco');
 						$('#divFigura').css({transform:'rotate(-135deg)'});
@@ -122,7 +126,12 @@
 					actual =1;
 					break;
 				case 2:	//cuadrado
-					$('#imgApartadoEdificio').attr('src','imagenes/ventana/conocenos/slider/antecedentes.png');
+					$('#imgApartadoEdificio').fadeOut();
+					setTimeout(function(){
+						$('#imgApartadoEdificio').attr('src','imagenes/ventana/conocenos/slider/antecedentes.png');
+						$('#imgApartadoEdificio').addClass('animate fadeInUp');
+						$('#imgApartadoEdificio').fadeIn();
+					},400);
 					if(actual==1){
 						$('#divFigura').removeClass('opaco');
 						$('#divFigura').css({transform:'rotate(45deg)'});
@@ -141,7 +150,12 @@
 					actual =2;
 					break;
 				case 3:	//triangulo
+					$('#imgApartadoEdificio').fadeOut();
+					setTimeout(function(){
 					$('#imgApartadoEdificio').attr('src','imagenes/ventana/conocenos/slider/alineacionProyecto.png');
+						$('#imgApartadoEdificio').addClass('animate fadeInUp');
+						$('#imgApartadoEdificio').fadeIn();
+					},400);
 					if(actual==1 || actual==2){
 						$('#divFigura').removeClass('opaco');
 						$('#divTriangulo').removeClass('opaco');
