@@ -11,28 +11,26 @@
 	</ul>
 	<section id="carousel" style="position:relative; top:0px;">
         <div class="row" style="margin:0px;">
-			<div class="col-md-8 col-md-offset-4" style="position: absolute; top:0px; height:100%;">
-				<!--div style="position:absolute; top:70px; left:-80px; border: solid 3px; width:60%; height:180px;"></div-->
-				<img class="img-responsive" id="imgMarcoNegro" src="imagenes/ventana/conocenos/slider/marcoNegro.png" style="position: absolute; top:-12.5%; left:-5.5%; max-width:62%;"/>
-				<img class="img-responsive" id="imgApartadoEdificio" src="imagenes/ventana/conocenos/slider/antecedentes.png" style="position: absolute; top:-12%; left:-5%; max-width:60%;"/>
-				<div id="divTriangulo" class="trianguloArriba opaco homologaColor"></div>
+			<div class="col-md-4 col-md-offset-4" style="position: absolute; top:0px; height:100%;">
+				<img class="img-responsive" id="imgMarcoNegro" src="imagenes/ventana/conocenos/slider/marcoNegro.png" style="position: absolute; top:-10%; left:-5%; max-width:110%;"/>
+				<img class="img-responsive" id="imgApartadoEdificio" src="imagenes/ventana/conocenos/slider/antecedentes.png" style="position: absolute; top:-10%; left:-4%; max-width:107.5%;"/>
+				<div id="divTriangulo" class="trianguloDerecha opaco homologaColor"></div>
 				<div id="divFigura" class="opaco"></div>
-				<!--img id="imgApartadoEdificio" src="imagenes/ventana/conocenos/slider/antecedentes.png" /-->
 			</div>
 
             <div class="col-md-12" >
                 <div class="carousel" id="fade-quote-carousel" data-ride="carousel" data-interval="0">
                     <div class="col-md-12">
                         <!-- Carousel indicators -->
-                        <div class="col-md-1"></div>
-                        <div class=" col-md-3" data-target="#fade-quote-carousel" data-slide-to="0" onclick="tranformaFigura(1)">
-							<a class="first after" href="#">Colaboradores</a></div>
-                        <div class="col-md-1"></div>
-                        <div class=" col-md-3" data-target="#fade-quote-carousel" data-slide-to="1" onclick="tranformaFigura(2)">
-							<a class="first after" href="#">Antecedentes</a></div>
-                        <div class="col-md-1"></div>
-                        <div class=" col-md-3" data-target="#fade-quote-carousel" data-slide-to="2" onclick="tranformaFigura(3)">
-							<a class="first after" href="#">Alineación del Proyecto</a></div>
+                        <!--div class="col-md-1"></div-->
+                        <div class=" col-md-4 text-center" data-target="#fade-quote-carousel" data-slide-to="0" onclick="tranformaFigura(1)">
+							<a class="first after txtNegro" href="#">Colaboradores</a></div>
+                        <!--div class="col-md-1"></div-->
+                        <div class=" col-md-4 text-center" data-target="#fade-quote-carousel" data-slide-to="1" onclick="tranformaFigura(2)">
+							<a class="first after txtNegro" href="#">Antecedentes</a></div>
+                        <!--div class="col-md-1"></div-->
+                        <div class=" col-md-4 text-center" data-target="#fade-quote-carousel" data-slide-to="2" onclick="tranformaFigura(3)">
+							<a class="first after txtNegro" href="#">Alineación del Proyecto</a></div>
                         <!--div class="col-md-1"></div-->
                     </div>
                     
@@ -40,21 +38,19 @@
                     <div class="carousel-inner" style="position: relative; top:200px;">
                         <div class="item">
                             <blockquote>
-                                <!--p>Aqui va el contenido de colaboradores.</p-->
-								<!--div style="border: solid 3px; width:50%; height:50%; position:absolute; top:-10%;"></div-->
+								<br>
 								<img class="img-responsive" src="imagenes/ventana/conocenos/slider/textoAntecedentes.png" style="margin: auto;"/>
                             </blockquote>
-							
                         </div>
                         <div class="active item">
                             <blockquote>
-                                <!--p>Aqui va el contenido de la sección antecedentes.</p-->
+								<br>
 								<img class="img-responsive" src="imagenes/ventana/conocenos/slider/textoAntecedentes.png" style="margin: auto;"/>
                             </blockquote>
                         </div>
                         <div class="item">
                             <blockquote>
-                                <!--p>Aqui va el contenido de alineación del proyecto.</p-->
+								<br>
 								<img class="img-responsive" src="imagenes/ventana/conocenos/slider/textoAntecedentes.png" style="margin: auto;"/>
                             </blockquote>
                         </div>
@@ -65,8 +61,8 @@
 	</section>
 	<style>
 		#divFigura{
-			position:absolute; top:3%; left:7%;
-			width:300px;	height:300px;
+			position:absolute; top:7%; left:24%;
+			width:250px;	height:250px;
 			border-radius:0%;
 			background: #6bebcf; /* For browsers that do not support gradients */
 			transition: visibility 0.3s, border-radius 0.8s, transform 0.8s;
@@ -81,17 +77,20 @@
 			border-radius: 50% !important;
 			transition: border-radius 0.8s;
 		}
-		.trianguloArriba{
-			position:absolute; top:11%; left: 1%;
+		.trianguloDerecha{
+			position:absolute; top:10%; left: 8%;
 			width:0 !important;	height:0 !important;
-			border-top:170px solid transparent !important;
-			border-bottom:170px solid transparent !important;
-			border-left:340px solid #6bebcf !important;
+			border-top:153px solid transparent !important;
+			border-bottom:153px solid transparent !important;
+			border-left:306px solid #6bebcf !important;
 			transition: visibility 0.3s, transform 0.8s;
 		}
 		.opaco{
 			opacity: 0.9;
 			transition: opacity:0.3s;
+		}
+		txtNegro{
+			color:black;
 		}
 	</style>
 	<!--	********* Incluir Jquery	***************	-->
