@@ -11,21 +11,21 @@
 	</ul>
         <div class="row" style="margin:0px;">
 			<div class="col-md-4 col-md-offset-4">
-				<img class="img-responsive" id="imgMarcoNegro" src="imagenes/ventana/conocenos/slider/marcoNegro.png" style="position: relative; top:-10%; left:-2%; max-width:110%;"/>
-				<img class="img-responsive" id="imgApartadoEdificio" src="imagenes/ventana/conocenos/slider/antecedentes.png" style="position: absolute; top:-0.6%; left:1.5%; max-width:102.1%;"/>
+				<img class="img-responsive marcoNegro" id="imgMarcoNegro" src="imagenes/ventana/conocenos/slider/marcoNegro.png"/>
+				<img class="img-responsive imgEdificio" id="imgApartadoEdificio" src="imagenes/ventana/conocenos/slider/antecedentes.png"/>
 				<div id="divTriangulo" class="trianguloDerecha opaco homologaColor"></div>
 				<div id="divFigura" class="opaco"></div>
 			</div>
 		</div>
         <div class="row" style="margin:0px;">
-			 <div class="col-md-4 altura50Celda" onclick="tranformaFigura(1)">
-				<a class="first after txtNegro acomodaLigas">Colaboradores</a>
+			 <div class="col-md-4 altura50Celda" onclick="tranformaFigura(1)" id="contenedorClic1">
+				<a class="first after txtNegro acomodaLigas punteroMano" id="contenedorTxt1">Colaboradores</a>
 			</div>
-			<div class="col-md-4 altura50Celda" onclick="tranformaFigura(2)">
-				<a class="first after txtNegro acomodaLigas">Antecedentes</a>
+			<div class="col-md-4 altura50Celda" onclick="tranformaFigura(2)" id="contenedorClic2">
+				<a class="first after txtNegro acomodaLigas punteroMano" id="contenedorTxt2">Antecedentes</a>
 			</div>
-			<div class="col-md-4 altura50Celda" onclick="tranformaFigura(3)">
-				<a class="first after txtNegro acomodaLigas">Alineación del Proyecto</a>
+			<div class="col-md-4 altura50Celda" onclick="tranformaFigura(3)" id="contenedorClic3">
+				<a class="first after txtNegro acomodaLigas punteroMano" id="contenedorTxt3">Alineación del Proyecto</a>
 			</div>
 		</div>
         <div class="row" style="margin:0px; position:relative; top:0px;">
@@ -34,56 +34,14 @@
 					<img class="img-responsive" src="imagenes/ventana/conocenos/slider/textoAntecedentes.png" style="margin: auto; width:90%;"/>
 			</div>
 		</div>
-	<!--section id="carousel" style="position:relative; top:0px;">
-        <div class="row" style="margin:0px;">
-			<div class="col-md-4 col-md-offset-4" style="position: absolute; top:0px; height:100%;">
-				<img class="img-responsive" id="imgMarcoNegro" src="imagenes/ventana/conocenos/slider/marcoNegro.png" style="position: absolute; top:-10%; left:-5%; max-width:110%;"/>
-				<img class="img-responsive" id="imgApartadoEdificio" src="imagenes/ventana/conocenos/slider/antecedentes.png" style="position: absolute; top:-10%; left:-4%; max-width:107.5%;"/>
-				<div id="divTriangulo" class="trianguloDerecha opaco homologaColor"></div>
-				<div id="divFigura" class="opaco"></div>
-			</div>
 
-            <div class="col-md-12" >
-                <div class="carousel" id="fade-quote-carousel" data-ride="carousel" data-interval="0">
-                    <div class="col-md-12">
-
-                        <div class="col-md-4 text-center" data-target="#fade-quote-carousel" data-slide-to="0" onclick="tranformaFigura(1)">
-							<a class="first after txtNegro" href="#">Colaboradores</a>
-						</div>
-                        <div class="col-md-4 text-center" data-target="#fade-quote-carousel" data-slide-to="1" onclick="tranformaFigura(2)">
-							<a class="first after txtNegro" href="#">Antecedentes</a>
-						</div>
-                        <div class="col-md-4 text-center" data-target="#fade-quote-carousel" data-slide-to="2" onclick="tranformaFigura(3)">
-							<a class="first after txtNegro" href="#">Alineación del Proyecto</a>
-						</div>
-                    </div>
-                    
-
-                    <div class="carousel-inner" style="position: relative; top:200px;">
-                        <div class="item">
-                            <blockquote>
-								<br>
-								<img class="img-responsive" src="imagenes/ventana/conocenos/slider/textoAntecedentes.png" style="margin: auto;"/>
-                            </blockquote>
-                        </div>
-                        <div class="active item">
-                            <blockquote>
-								<br>
-								<img class="img-responsive" src="imagenes/ventana/conocenos/slider/textoAntecedentes.png" style="margin: auto;"/>
-                            </blockquote>
-                        </div>
-                        <div class="item">
-                            <blockquote>
-								<br>
-								<img class="img-responsive" src="imagenes/ventana/conocenos/slider/textoAntecedentes.png" style="margin: auto;"/>
-                            </blockquote>
-                        </div>
-                    </div>                    
-                </div>
-            </div>
-        </div>
-	</section-->
 	<style>
+		.marcoNegro{
+			position: relative; top:-10%; left:-2%; max-width:110%;
+		}
+		.imgEdificio{
+			position: absolute; top:-0.6%; left:1.5%; max-width:102.1%;
+		}
 		#divFigura{
 			position:absolute; top:23%; left:30%;
 			width:240px;	height:240px;
@@ -116,9 +74,19 @@
 		.txtNegro{
 			color:black;
 		}
+		.punteroMano{
+			cursor: pointer;
+		}
 		.acomodaLigas{
 			position: absolute; left:40%;
 		}
+		.altura50Celda{
+			height:50px;
+		}
+		.marcoNegro{
+			position: relative; top:-10%; left:-2%; max-width:110%;
+		}
+				/*		*********	Media Queries	*****	*/
 		@media (min-width:992px ){
 			.acomodaLigas{
 				position: absolute; top:-200%; left:40%;
@@ -140,6 +108,9 @@
 				border-bottom:123px solid transparent !important;
 				border-left:247px solid #6bebcf !important;
 				transition: visibility 0.3s, transform 0.8s;
+			}
+			.imgEdificio{
+				position: absolute; top:-0.6%; left:1.7%; max-width:101%;
 			}
 		}
 		@media (min-width: 1300px){
@@ -164,6 +135,10 @@
 				border-left:260px solid #6bebcf !important;
 				transition: visibility 0.3s, transform 0.8s;
 			}
+			.imgEdificio{
+				position: absolute; top:-0.6%; left:1.5%; max-width:102.1%;
+			}
+
 		}
 		@media (min-width: 1500px){
 			.acomodaLigas{
@@ -187,9 +162,10 @@
 				border-left:306px solid #6bebcf !important;
 				transition: visibility 0.3s, transform 0.8s;
 			}
-		}
-		.altura50Celda{
-			height:50px;
+			.imgEdificio{
+				position: absolute; top:-0.4%; left:1.5%; max-width:102.1%;
+			}
+
 		}
 	</style>
 	<!--	********* Incluir Jquery	***************	-->
@@ -199,16 +175,70 @@
 	<script>
 		$('#divTriangulo').css({transform:'scale(0.1, 0.1)'});
 		actual = 2;
+		
+		function cambiaImgFondo(numEdificio){
+			switch(numEdificio){
+				case 1:
+					var rutaImg = 'imagenes/ventana/conocenos/slider/alineacionProyecto.png';
+					break;
+				case 2:
+					var rutaImg = 'imagenes/ventana/conocenos/slider/antecedentes.png';
+					break;
+				case 3:
+					var rutaImg = 'imagenes/ventana/conocenos/slider/alineacionProyecto.png';
+					break;
+				default:
+					var rutaImg = 'imagenes/ventana/conocenos/slider/alineacionProyecto.png';
+					break;
+			}
+			var imgEdificio = $('#imgApartadoEdificio');
+			imgEdificio.fadeOut();
+			setTimeout(function(){
+				imgEdificio.attr('src',rutaImg);
+				imgEdificio.addClass('animate fadeInUp');
+				imgEdificio.fadeIn();
+			},400);
+		}
+		
+		function cambiaEtiqueta(numEtiqueta){
+			var contTxt1 = $('#contenedorTxt1');
+			var contTxt2 = $('#contenedorTxt2');
+			var contTxt3 = $('#contenedorTxt3');
+			switch(numEtiqueta){
+				case 1:
+					var contEtiqueta1 = "Alineación del Proyecto"; var contEtiqueta2 = "Colaboradores";	var contEtiqueta3 = "Antecedentes";
+					var functransfFig1 = 'tranformaFigura(3)'; var functransfFig2 = 'tranformaFigura(1)'; var functransfFig3 = 'tranformaFigura(2)';
+					break;
+				case 2:
+					var contEtiqueta1 = "Colaboradores"; var contEtiqueta2 = "Antecedentes";	var contEtiqueta3 = "Alineación del Proyecto";
+					var functransfFig1 = 'tranformaFigura(1)'; var functransfFig2 = 'tranformaFigura(2)'; var functransfFig3 = 'tranformaFigura(3)';
+					break;
+				case 3:
+					var contEtiqueta1 = "Antecedentes"; var contEtiqueta2 = "Alineación del Proyecto";	var contEtiqueta3 = "Colaboradores";
+					var functransfFig1 = 'tranformaFigura(2)'; var functransfFig2 = 'tranformaFigura(3)'; var functransfFig3 = 'tranformaFigura(1)';
+					break;
+				default:
+					var contEtiqueta1 = "Colaboradores"; var contEtiqueta2 = "Antecedentes";	var contEtiqueta3 = "Alineación del Proyecto";
+					var functransfFig1 = 'tranformaFigura(1)'; var functransfFig2 = 'tranformaFigura(2)'; var functransfFig3 = 'tranformaFigura(3)';
+					break;
+			}
+			contTxt1.fadeOut();
+			setTimeout(function(){
+				contTxt1.text(contEtiqueta1); $('#contenedorClic1').attr('onclick',functransfFig1); contTxt1.fadeIn(); },400);
+			contTxt2.fadeOut(); 
+			setTimeout(function(){
+				contTxt2.text(contEtiqueta2); $('#contenedorClic2').attr('onclick',functransfFig2); contTxt2.fadeIn(); },400);
+			contTxt3.fadeOut(); 
+			setTimeout(function(){
+				contTxt3.text(contEtiqueta3); $('#contenedorClic3').attr('onclick',functransfFig3); contTxt3.fadeIn(); },400);
+		}
+
 		function tranformaFigura(seccion){
 			switch(seccion){
 				case 1:	//circulo
 					if(actual!=1){
-						$('#imgApartadoEdificio').fadeOut();
-						setTimeout(function(){
-						$('#imgApartadoEdificio').attr('src','imagenes/ventana/conocenos/slider/alineacionProyecto.png');
-							$('#imgApartadoEdificio').addClass('animate fadeInUp');
-							$('#imgApartadoEdificio').fadeIn();
-						},400);
+						cambiaImgFondo(1);
+						cambiaEtiqueta(1);
 					}
 					if(actual==2){
 						$('#divFigura').removeClass('opaco');
@@ -229,12 +259,8 @@
 					break;
 				case 2:	//cuadrado
 					if(actual!=2){
-						$('#imgApartadoEdificio').fadeOut();
-						setTimeout(function(){
-							$('#imgApartadoEdificio').attr('src','imagenes/ventana/conocenos/slider/antecedentes.png');
-							$('#imgApartadoEdificio').addClass('animate fadeInUp');
-							$('#imgApartadoEdificio').fadeIn();
-						},400);
+						cambiaImgFondo(2);
+						cambiaEtiqueta(2);
 					}
 					if(actual==1){
 						$('#divFigura').removeClass('opaco');
@@ -255,12 +281,8 @@
 					break;
 				case 3:	//triangulo
 					if(actual!=3){
-						$('#imgApartadoEdificio').fadeOut();
-						setTimeout(function(){
-						$('#imgApartadoEdificio').attr('src','imagenes/ventana/conocenos/slider/alineacionProyecto.png');
-							$('#imgApartadoEdificio').addClass('animate fadeInUp');
-							$('#imgApartadoEdificio').fadeIn();
-						},400);
+						cambiaImgFondo(3);
+						cambiaEtiqueta(3);
 					}
 					if(actual==1 || actual==2){
 						$('#divFigura').removeClass('opaco');
