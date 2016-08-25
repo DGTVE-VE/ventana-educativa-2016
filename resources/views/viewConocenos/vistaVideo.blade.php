@@ -1,4 +1,4 @@
-	<video data-keepplaying class="videoFondo" id="videoFondo" oncanplay="reproduceVideo()" onplay="bajaImgProyectos()">
+	<video data-keepplaying class="videoFondo" id="videoFondo" oncanplay="reproduceVideo()">
 		<source src="imagenes/ventana/conocenos/presentacion/DJI_0008.mp4" type="video/mp4"/>
 	</video>
 	<div class="row">
@@ -79,6 +79,7 @@
 					}
 				}
 			);
+			bajaImgProyectos()
 		});
 
 		//	************	Efecto de salto de la flecha 	***********
