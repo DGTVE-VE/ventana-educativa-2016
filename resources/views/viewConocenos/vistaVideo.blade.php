@@ -2,21 +2,21 @@
 		<source src="imagenes/ventana/conocenos/presentacion/DJI_0008.mp4" type="video/mp4"/>
 	</video>
 	<div class="row">
-		<div class="col-md-12">
+		<div class="col-sm-12 col-md-12 col-lg-12">
 			<img id="textoProyectos" class="muestra animated centra img-responsive" src="imagenes/ventana/conocenos/presentacion/proyecto.png"/>
 			<img id="textoObjetivos" class="oculta animated centra img-responsive" src="imagenes/ventana/conocenos/presentacion/objetivos.png"/>
 			<a href="#" data-toggle="modal" data-target="#modalVideo" onfocus="this.blur()">
 				<img id="botonPlay" class="oculta animated centra img-responsive" src="imagenes/ventana/conocenos/presentacion/botonPlay.png"/>
 			</a>
 		</div>
-		<div class="col-md-12"></div>
-		<div class="divFlechaBrinca col-md-12">
+		<div class="col-sm-12 col-md-12 col-lg-12"></div>
+		<div class="divFlechaBrinca col-sm-12 col-md-12 col-lg-12">
 			<div class="txtContinua text-center">
 				CONTINUA NAVEGANDO
 			</div>
 		</div>
-		<div class="col-md-12"></div>
-		<div class="divFlechaBrinca col-md-12 text-center">
+		<div class="col-sm-12 col-md-12 col-lg-12"></div>
+		<div class="divFlechaBrinca col-sm-12 col-md-12 col-lg-12 text-center">
 			<img id="flechaBrinca" class="flechaBrinca" src="imagenes/educaplay/flechaDetalle.png" onclick="avanzaSeccion('2')"/>
 		</div>
 	</div>
@@ -193,7 +193,7 @@
 		.centra{
 			position: relative;
 			top:-30px;
-			max-width:1250px;
+			max-width:100%;
 			margin: 0 auto;
 		}
 	</style>

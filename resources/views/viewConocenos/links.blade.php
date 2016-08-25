@@ -28,10 +28,48 @@
 				<a class="first after txtNegro acomodaLigas punteroMano" id="contenedorTxt3">Alineación del Proyecto</a>
 			</div>
 		</div>
-		<div class="row" style="position:relative; top:0px;">
-			<div class="col-sm-6 col-sm-offset-3 col-md-8 col-md-offset-1 col-lg-8 col-lg-offset-1">
+        <div class="row">
+			<div class="col-sm-6 col-sm-offset-3 col-md-6 col-md-offset-3 col-lg-6 col-lg-offset-3">
+			  <section class="slider">
+				<div class="flexslider">
+				  <ul class="slides">
+					<li>
+						<div class="col-md-4">
+							<img src="imagenes/ventana/conocenos/slider/contenidos/amexcid.png" alt="..." class="img-responsive">
+						</div>
+						<div class="col-md-4">
+							<img src="imagenes/ventana/conocenos/slider/contenidos/canal6.png" alt="..." class="img-responsive">
+						</div>
+						<div class="col-md-4">
+							<img src="imagenes/ventana/conocenos/slider/contenidos/csuca.png" alt="..." class="img-responsive">
+						</div>
+					</li>
+					<li>
+						<div class="col-md-4">
+							<img src="imagenes/ventana/conocenos/slider/contenidos/sica.png" alt="..." class="img-responsive">
+						</div>
+						<div class="col-md-4">
+							<img src="imagenes/ventana/conocenos/slider/contenidos/suyapa.png" alt="..." class="img-responsive">
+						</div>
+						<div class="col-md-4">
+							<img src="imagenes/ventana/conocenos/slider/contenidos/UVeracruzana.png" alt="..." class="img-responsive">
+						</div>
+					</li>
+				  </ul>
+				</div>
+			  </section>
+		  </div>
+		</div>
+		<div class="row oculto" style="position:relative; top:0px;">
+			<div class="col-sm-6 col-sm-offset-3 col-md-6 col-md-offset-3 col-lg-6 col-lg-offset-3">
 					<br>
-					<img id="imgTextoDescribe" class="img-responsive" src="imagenes/ventana/conocenos/slider/contenidos/textoAntecedentes.png" style="margin: auto; width:90%;"/>
+					<img class="img-responsive" src="imagenes/ventana/conocenos/slider/contenidos/textoAntecedentes.png" style="margin: auto; width:90%;"/>
+			</div>
+		</div>
+		<div class="row  oculto" style="position:relative; top:0px;">
+			<div class="col-sm-6 col-sm-offset-3 col-md-6 col-md-offset-3 col-lg-6 col-lg-offset-3">
+					<br>
+					<img class="img-responsive" src="imagenes/ventana/conocenos/slider/contenidos/textoAntecedentes.png" style="margin: auto; width:90%;"/>
 			</div>
 		</div>
 
@@ -175,6 +213,9 @@
 		}
 	</style>
 	
+	<!--	********* Incluir libreria flexslider	***************	-->
+	<link rel="stylesheet" href="js/FlexSlider/flexslider.css" type="text/css" media="screen"/>
+	<script src="js/FlexSlider/jquery.flexslider.js"></script>
 	<!--	********* Incluir Jquery	***************	-->
 	<!--script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script-->
 	<!--	********* Incluir libreria parallax	***************	-->
@@ -187,19 +228,15 @@
 			switch(numEdificio){
 				case 1:
 					var rutaImg = 'imagenes/ventana/conocenos/slider/alineacionProyecto.png';
-					var rutaTxtDescr = 'imagenes/ventana/conocenos/slider/contenidos/textoColaboradores.png';
 					break;
 				case 2:
 					var rutaImg = 'imagenes/ventana/conocenos/slider/antecedentes.png';
-					var rutaTxtDescr = 'imagenes/ventana/conocenos/slider/contenidos/textoAntecedentes.png';
 					break;
 				case 3:
 					var rutaImg = 'imagenes/ventana/conocenos/slider/alineacionProyecto.png';
-					var rutaTxtDescr = 'imagenes/ventana/conocenos/slider/contenidos/textoColaboradores.png';
 					break;
 				default:
 					var rutaImg = 'imagenes/ventana/conocenos/slider/alineacionProyecto.png';
-					var rutaTxtDescr = 'imagenes/ventana/conocenos/slider/contenidos/textoAntecedentes.png';
 					break;
 			}
 			var imgEdificio = $('#imgApartadoEdificio');
@@ -209,7 +246,6 @@
 				imgEdificio.addClass('animate fadeInUp');
 				imgEdificio.fadeIn();
 			},400);
-			$('#imgTextoDescribe').attr('src',rutaTxtDescr);
 		}
 		
 		function cambiaEtiqueta(numEtiqueta){
@@ -320,5 +356,13 @@
 		var parallax = new Parallax(scene);
 		var scene = document.getElementById('scene2');
 		var parallax = new Parallax(scene);
-	
+		
+		<!--	***********	Activar slider colaboradores	*************	-->
+		$('.flexslider').flexslider({
+        animation: "slide",
+        start: function(slider){
+          $('body').removeClass('loading');
+		  $('.flexslider').flexslider("stop");
+        }
+      });
 	</script>
