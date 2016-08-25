@@ -69,12 +69,14 @@
 								$('#imagenLogoVentana').attr('src','imagenes/ventana/encabezado/logoNegro/logoventana.png');
 								$('#iconoManuApps').attr('src','imagenes/ventana/encabezado/logoNegro/iconoApps.png');
 								$('.hamburgerConocenos.is-closed .hamb-top, .hamburgerConocenos.is-closed .hamb-middle, .hamburgerConocenos.is-closed .hamb-bottom').css('background-color','#1a1a1a');
+								$('#scene').css('top','-50px');
 							}
 						}
 						else if(index == 2 && nextIndex == 1){
 							$('#imagenLogoVentana').attr('src','imagenes/ventana/encabezado/logoventana.png');
 							$('#iconoManuApps').attr('src','imagenes/ventana/encabezado/iconoApps.png');
 							$('.hamburgerConocenos.is-closed .hamb-top, .hamburgerConocenos.is-closed .hamb-middle, .hamburgerConocenos.is-closed .hamb-bottom').css('background-color','#f2f2f2');
+							$('#scene').css('top','50px');
 						}
 					}
 				}
@@ -185,7 +187,7 @@
 			position: absolute; right: 0; bottom: 0;
 			min-width: 100%; min-height: 100%;
 			width: auto; height: auto; z-index: 0;
-			background: url(polina.jpg) no-repeat;
+			/*background: url(polina.jpg) no-repeat;*/
 			background-size: cover;
 		}
 		#textoProyectos{

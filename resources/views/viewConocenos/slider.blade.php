@@ -3,11 +3,11 @@
 <!-- Behavioral Meta Data -->
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-	<ul id="scene" class="scene" style="position:absolute; top:-50px; left:-100px; width:100%">
+	<ul id="scene" class="scene" style="position:absolute; top:50px; left:-100px; width:100%">
 		<li class="layer" data-depth="0.20"><img src="imagenes/ventana/conocenos/slider/red1.png" style="height:70%; width:90%;"/></li>
 	</ul>
-	<ul id="scene2" class="scene" style="position:absolute; top:0px; left:250px; width:100%">
-		<li class="layer" data-depth="0.40"><img src="imagenes/ventana/conocenos/slider/red2.png" style="height:70%; width:90%;"/></li>
+	<ul id="scene2" class="scene" style="position:absolute; top:100px; left:250px; width:100%">
+		<li class="layer" data-depth="0.40"><img src="imagenes/ventana/conocenos/slider/red2.png" style="height:90%; width:90%;"/></li>
 	</ul>
         <div class="row" style="margin:0px;">
 			<div class="col-sm-4 col-sm-offset-4 col-md-4 col-md-offset-4 col-lg-4 col-lg-offset-4">
