@@ -22,16 +22,17 @@
 				<a class="first after txtNegro acomodaLigas punteroMano" id="contenedorTxt1">Colaboradores</a>
 			</div>
 			<div class="col-sm-4 col-md-4 col-lg-4 altura50Celda" onclick="tranformaFigura(2)" id="contenedorClic2">
-				<a class="first after txtNegro acomodaLigas punteroMano" id="contenedorTxt2">Antecedentes</a>
+				<a class="first after txtNegro acomodaLigas punteroMano enfasis" id="contenedorTxt2">Antecedentes</a>
 			</div>
 			<div class="col-sm-4 col-md-4 col-lg-4 altura50Celda" onclick="tranformaFigura(3)" id="contenedorClic3">
 				<a class="first after txtNegro acomodaLigas punteroMano" id="contenedorTxt3">Alineación del Proyecto</a>
 			</div>
 		</div>
 		<div class="row" style="position:relative; top:0px;">
-			<div class="col-sm-6 col-sm-offset-3 col-md-8 col-md-offset-1 col-lg-8 col-lg-offset-1">
-					<br>
+			<div class="col-sm-8 col-sm-offset-1 col-md-8 col-md-offset-1 col-lg-8 col-lg-offset-1">
+					<br><br><br><br>
 					<img id="imgTextoDescribe" class="img-responsive" src="imagenes/ventana/conocenos/slider/contenidos/textoAntecedentes.png" style="margin: auto; width:90%;"/>
+					<br><br><br><br>
 			</div>
 		</div>
 
@@ -89,10 +90,16 @@
 		.marcoNegro{
 			position: relative; top:-10%; left:-2%; max-width:110%;
 		}
+		.enfasis{
+			font-size: 1.7em;
+			font-style: bold;
+			text-decoration: underline;
+			
+		}
 				/*		*********	Media Queries	*****	*/
 		@media (min-width:992px ){
 			.acomodaLigas{
-				position: absolute; top:-200%; left:40%;
+				position: absolute; top:-228%; left:39%;
 			}
 			#divFigura{
 				position:absolute; top:23%; left:30%;
@@ -105,11 +112,11 @@
 				transform: rotate(45deg);
 			}
 			.trianguloDerecha{
-				position:absolute; top:33%; left: 17%;
+				position:absolute; top:15%; left: 19%;
 				width:0 !important;	height:0 !important;
-				border-top:123px solid transparent !important;
-				border-bottom:123px solid transparent !important;
-				border-left:247px solid #6bebcf !important;
+				border-top:160px solid transparent !important;
+				border-bottom:160px solid transparent !important;
+				border-left:280px solid #6bebcf !important;
 				transition: visibility 0.3s, transform 0.8s;
 			}
 			.imgEdificio{
@@ -118,7 +125,7 @@
 		}
 		@media (min-width: 1300px){
 			.acomodaLigas{
-				position: absolute; top:-220%; left:40%;
+				position: absolute; top:-230%; left:38%;
 			}
 			#divFigura{
 				position:absolute; top:23%; left:28%;
@@ -131,11 +138,11 @@
 				transform: rotate(45deg);
 			}
 			.trianguloDerecha{
-				position:absolute; top:32%; left: 17%;
+				position:absolute; top:20%; left: 19%;
 				width:0 !important;	height:0 !important;
-				border-top:130px solid transparent !important;
-				border-bottom:130px solid transparent !important;
-				border-left:260px solid #6bebcf !important;
+				border-top:170px solid transparent !important;
+				border-bottom:170px solid transparent !important;
+				border-left:300px solid #6bebcf !important;
 				transition: visibility 0.3s, transform 0.8s;
 			}
 			.imgEdificio{
@@ -145,7 +152,7 @@
 		}
 		@media (min-width: 1500px){
 			.acomodaLigas{
-				position: absolute; top:-270%; left:40%;
+				position: absolute; top:-268%; left:38%;
 			}
 			#divFigura{
 				position:absolute; top:25%; left:27%;
@@ -158,11 +165,11 @@
 				transform: rotate(45deg);
 			}
 			.trianguloDerecha{
-				position:absolute; top:30%; left: 15%;
+				position:absolute; top:28%; left: 18%;
 				width:0 !important;	height:0 !important;
-				border-top:153px solid transparent !important;
-				border-bottom:153px solid transparent !important;
-				border-left:306px solid #6bebcf !important;
+				border-top:165px solid transparent !important;
+				border-bottom:165px solid transparent !important;
+				border-left:310px solid #6bebcf !important;
 				transition: visibility 0.3s, transform 0.8s;
 			}
 			.imgEdificio{
@@ -186,7 +193,7 @@
 		function cambiaImgFondo(numEdificio){
 			switch(numEdificio){
 				case 1:
-					var rutaImg = 'imagenes/ventana/conocenos/slider/alineacionProyecto.png';
+					var rutaImg = 'imagenes/ventana/conocenos/slider/colaboradores.png';
 					var rutaTxtDescr = 'imagenes/ventana/conocenos/slider/contenidos/textoColaboradores.png';
 					break;
 				case 2:
@@ -195,7 +202,7 @@
 					break;
 				case 3:
 					var rutaImg = 'imagenes/ventana/conocenos/slider/alineacionProyecto.png';
-					var rutaTxtDescr = 'imagenes/ventana/conocenos/slider/contenidos/textoColaboradores.png';
+					var rutaTxtDescr = 'imagenes/ventana/conocenos/slider/contenidos/textoAlineacion.png';
 					break;
 				default:
 					var rutaImg = 'imagenes/ventana/conocenos/slider/alineacionProyecto.png';

@@ -35,8 +35,9 @@
 				<div class="section">
 					@include('viewConocenos.slider')
 				</div>
-				<div class="section fondo4 fp-auto-height">
-					
+				<div class="section fp-auto-height"></div>
+				<div class="section fondo4">
+					Secciones
 				</div>
 				<div class="section fondo3">LINKS</div>
 				<div class="section fondo1">Comunidad Educativa</div>

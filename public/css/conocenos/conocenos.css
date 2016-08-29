@@ -386,20 +386,20 @@ a.before:before,a.after:after{
 }
 
 a.after:after{
-/*  bottom:-0.25em;*/
+  bottom:-0.25em;
 }
 a.before:before,a.after:after{
   height:5px;
   height:0.65rem;
   width:0;
-  /*background:black;*/
+  background:black;
 }
 a.first:after{
   left:0;
 }
 
 a.before:hover:before,a.after:hover:after{
-  width:100%;
+  /*width:100%;*/
 }
 #modalVideo{
 	position: absolute;

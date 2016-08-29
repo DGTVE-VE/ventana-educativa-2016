@@ -39,11 +39,11 @@
 		$(document).ready(function() {
 		//	************	Activación de elemento fullPage (desplazamiento vertical) 	***********
 			$('#fullpage').fullpage(
-				{navigation:true, scrollOverflow:true, loopTop:true, 
+				{navigation:true, scrollOverflow:false, loopTop:true, setAutoScrolling: false, setFitToSection: true, bigSectionsDestination:top,
 					onLeave: 
 					function(index, nextIndex, direction){
 						var leavingSection = $(this);
-						if(index == 1 && nextIndex == 7){
+						if(index == 1 && nextIndex == 8){
 							if($('#textoObjetivos').css('display') == 'block'){
 								cambiaImagenesAbajo('textoProyectos','textoObjetivos');
 								return false;
@@ -77,6 +77,16 @@
 							$('#iconoManuApps').attr('src','imagenes/ventana/encabezado/iconoApps.png');
 							$('.hamburgerConocenos.is-closed .hamb-top, .hamburgerConocenos.is-closed .hamb-middle, .hamburgerConocenos.is-closed .hamb-bottom').css('background-color','#f2f2f2');
 							$('#scene').css('top','50px');
+							$('#fullpage').fullpage.setFitToSection(true);
+						}
+						else if(index== 2 && nextIndex == 3){
+							$('#fullpage').fullpage.setFitToSection(false);
+						}
+						else if(index== 3 && nextIndex == 4){
+							$('#fullpage').fullpage.setFitToSection(false);
+						}
+						else if(index== 3 && nextIndex == 2){
+							$('#fullpage').fullpage.setFitToSection(true);
 						}
 					}
 				}
