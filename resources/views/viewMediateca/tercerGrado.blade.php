@@ -29,11 +29,11 @@
 			{{HTML::image('imagenes/mediateca/tsecundaria/tercerGrado/quimicaHover.png','Telesecundaria Ciencias III quimica',['class'=>'resaltaImg img-responsive', 'id'=>'quimicaHover'])}}
 			{{HTML::image('imagenes/mediateca/tsecundaria/tercerGrado/lenguaIIIHover.png','Telesecundaria InglesIII',['class'=>'resaltaImg img-responsive', 'id'=>'lenguaIIIHover'])}}
 
-			{{HTML::image('imagenes/mediateca/tsecundaria/iconoCentral/formacionCivicaIICentro.png','Telesecundaria central tecnologia',['class'=>'imgPrimeroCentral', 'id'=>'formacionCivicaIICentro'])}}
+			{{HTML::image('imagenes/mediateca/tsecundaria/iconoCentral/formacionCivicaIICentro.gif','Telesecundaria central tecnologia',['class'=>'imgPrimeroCentral', 'id'=>'formacionCivicaIICentro'])}}
 			{{HTML::image('imagenes/mediateca/tsecundaria/iconoCentral/historiaIICentro.gif','Telesecundaria central geografia',['class'=>'imgPrimeroCentral', 'id'=>'historiaIICentro'])}}
-			{{HTML::image('imagenes/mediateca/tsecundaria/iconoCentral/espanolIIICentro.png','Telesecundaria central espanol',['class'=>'imgPrimeroCentral', 'id'=>'espanolIIICentro'])}}
+			{{HTML::image('imagenes/mediateca/tsecundaria/iconoCentral/espanolIIICentro.gif','Telesecundaria central espanol',['class'=>'imgPrimeroCentral', 'id'=>'espanolIIICentro'])}}
 			{{HTML::image('imagenes/mediateca/tsecundaria/iconoCentral/matematicasIIICentro.gif','Telesecundaria central matematicasIII',['class'=>'imgPrimeroCentral', 'id'=>'matematicasIIICentro'])}}
-			{{HTML::image('imagenes/mediateca/tsecundaria/iconoCentral/quimicaCentro.png','Telesecundaria central quimica',['class'=>'imgPrimeroCentral', 'id'=>'quimicaCentro'])}}
+			{{HTML::image('imagenes/mediateca/tsecundaria/iconoCentral/quimicaCentro.gif','Telesecundaria central quimica',['class'=>'imgPrimeroCentral', 'id'=>'quimicaCentro'])}}
 			{{HTML::image('imagenes/mediateca/tsecundaria/iconoCentral/lenguaIIICentro.gif','Telesecundaria central lenguaIII',['class'=>'imgPrimeroCentral', 'id'=>'lenguaIIICentro'])}}
 			{{HTML::image('imagenes/mediateca/tsecundaria/tercerGrado/imgMapa.png','telesecundaria',['class'=>'posicionMapa img-responsive', 'id'=>'telebachilleratoSEMII', 'usemap'=>'#mapaTercerGdo'])}}
 		</div>
