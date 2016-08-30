@@ -23,7 +23,7 @@
                         <span class="icon-bar"></span>
                     </button>
                     <a href="{{url('ventana_educativa')}}">
-                        {{ HTML::image('imagenes/ventana/encabezado/logoventana.png','Ventana Educativa', ['class'=>'image-responsive imgLogo', 'id'=>'imagenLogoVentana']) }}
+                        {{ HTML::image('imagenes/ventana/encabezado/logoventana.gif','Ventana Educativa', ['class'=>'image-responsive imgLogo', 'id'=>'imagenLogoVentana']) }}
                     </a>
                 </div>
             </div>
