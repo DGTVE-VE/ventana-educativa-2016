@@ -1,5 +1,5 @@
 	<video data-keepplaying class="videoFondo" id="videoFondo" oncanplay="reproduceVideo()">
-		<source src="imagenes/ventana/conocenos/presentacion/DJI_0008.mp4" type="video/mp4"/>
+		<source src="imagenes/ventana/conocenos/presentacion/institucional-bn.mp4" type="video/mp4"/>
 	</video>
 	<div class="row">
 		<div class="col-sm-12 col-md-12 col-lg-12">
@@ -29,7 +29,7 @@
 				</div>
 				<div clas="modal-body">
 					<video style="width:100%;" controls>
-						<source src="imagenes/ventana/conocenos/DJI_0008.mp4" type="video/mp4"/>
+						<source src="imagenes/ventana/conocenos/presentacion/institucional.mp4" type="video/mp4"/>
 					</video>
 				</div>
 			</div>
