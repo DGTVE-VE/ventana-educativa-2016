@@ -245,7 +245,6 @@ Educamedia
         }(document, "script", "twitter-wjs"));</script>
     <script>
         function guardaRating(val){
-            console.log('guardando rating'+val);
             $.ajax({
                 method: "POST",
                 url: "{{url('educamedia/rate')}}",
@@ -280,9 +279,8 @@ Educamedia
                 error: function (ts) {
                     console.log(ts.responseText);
                 }}).done(function (msg) {
-                    console.log('Refrescando rating');                                                                
                     @if(Auth::check())
-                    refrescaRating(msg);
+						refrescaRating(msg);
                     @endif
             });
 
@@ -297,7 +295,7 @@ Educamedia
         
         $(document).ready(function () {
             @if(Auth::check())
-            refrescaRating({!! Auth::user()->ratingTelesecundaria ($videos[0] -> id) !!});
+				refrescaRating({!! Auth::user()->ratingTelesecundaria ($videos[0] -> id) !!});
             @endif
             /* Se guarda la información de los videos para cambiarla cuando dan click*/
             var videos = {!!(string)$videos!!}
@@ -305,7 +303,9 @@ Educamedia
             for (i = 0; i < videos.length; i++) {
             _videos[videos[i].id] = videos[i];
             }
-            loadComments ({{$videos[0] -> id}});
+			@if(Auth::check())
+				loadComments ({{$videos[0] -> id}});
+			@endif
 
 			$("#botonmas").click(function () {
 				$("#sinopsis").removeClass("oculto");
@@ -352,7 +352,9 @@ Educamedia
             $("#sinopsis").html(_videos[_id].sinopsis);
             $("#sinopsis-250").html(_videos[_id].sinopsis.substring(0, 350));
             $('#div-containter').fadeIn();
-            loadComments(_id);
+			@if(Auth::check())
+				loadComments(_id);
+			@endif
             var ligaDescargaVideo = '{{ url("descarga/getvideo.php")}}' + "/yt/getvideo.mp4?videoid=" + data + "&format=best";
             $('#ligaDescargaYoutube').attr('href', ligaDescargaVideo);
         });
@@ -361,7 +363,6 @@ Educamedia
             var $element = $(this);
             var partes = $element.attr('id').split('_');
             var respuesta = $('#responde_' + partes[1]).val();
-            console.log(respuesta);
             $.ajax({
                 method: "POST",
                 url: "{{url('educamedia/comment/telesecundaria')}}",
@@ -377,7 +378,6 @@ Educamedia
         });
 
         $('#btn-comentar').click(function () {
-            console.log('si entro');
             $.ajax({
                 method: "POST",
                 url: "{{url('educamedia/comment/telesecundaria')}}",
@@ -394,7 +394,7 @@ Educamedia
                     });
         });
        
-        console.log("http://ventana.televisioneducativa.gob.mx/{{Request::path()}}");
+        //console.log("http://ventana.televisioneducativa.gob.mx/{{Request::path()}}");
         }
         );
                 /** URL del api de ventana educativa*/
@@ -504,7 +504,6 @@ Educamedia
          */
 
         function initializeYoutube(youtubeId, time) {
-            console.log(time);
             player = new YT.Player('player', {
                 width: 640,
                 height: 390,

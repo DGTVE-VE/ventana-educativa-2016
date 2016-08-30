@@ -283,7 +283,7 @@
                                                     @if (File::exists ('uploaded/avatares/'.Auth::user()->id.'.png'))
                                                     <div class="col-md-5" id="image_preview"><img height="100px" id="previewing" src="{{url('uploaded/avatares/'.Auth::user()->id.'.png')}}" /></div>
                                                     @else
-                                                    <div class="col-md-5" id="image_preview"><img height="100px" id="previewing" src="imagenes/ventana/encabezado/noimage.png" /></div>
+                                                    <div class="col-md-5" id="image_preview"><img height="100px" id="previewing" src="{{url('imagenes/ventana/encabezado/noimage.png')}}" /></div>
                                                     @endif
                                                     <div class="col-md-7" id="selectImage">
                                                         <!--<label for="file">Selecciona tu imagen</label><br/>-->
@@ -359,7 +359,7 @@
                 // Si la imagen no es de tipo válido
                 if (match.indexOf(imagefile) === -1)
                 {
-                    $('#previewing').attr('src', 'imagenes/ventana/encabezado/noimage.png');
+                    $('#previewing').attr('src', '{{url("imagenes/ventana/encabezado/noimage.png")}}');
                     $("#message").html("<p id='error'>Por favor seleccione un tipo de imagen correcto" + "<br>  Nota: Solo se pueden usar imágenes en formato jpeg, jpg y png.</p>");
                     return false;
                 }
