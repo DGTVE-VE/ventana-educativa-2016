@@ -272,7 +272,7 @@ Route::get('mail/test', function () {
     ;
 
 //Create the Transport
-    $transport = Swift_SmtpTransport::newInstance('52.34.174.9', 25);
+    $transport = Swift_SmtpTransport::newInstance('10.16.0.69', 25);
 //Create the Mailer using your created Transport
     $mailer = Swift_Mailer::newInstance($transport);
 
