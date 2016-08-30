@@ -250,15 +250,35 @@ Route::resource('Admin/biblioteca', 'Admin\\bibliotecaController');
  */
 
 Route::get('mail/test', function () {
-    
-    print Mail::send('mail_templates.test', array(), function( $message )  {
-        $message->from('ventana@televisioneducativa.gob.mx', 'Test Ventana Educativa');
-        $message->to(
-        Illuminate\Support\Facades\Input::get('email'), null
-        )->subject('Test Ventana Educativa!');
-    }
-    );
-    
+//    print Illuminate\Support\Facades\Input::get('email');
+//    print Mail::send('mail_templates.test', array(), function( $message )  {
+//        $message->from('ventana@televisioneducativa.gob.mx', 'Test Ventana Educativa');
+//        $message->to(
+//        Illuminate\Support\Facades\Input::get('email'), 'usuario'
+//        )->subject('Test Ventana Educativa!');
+//    }
+//    );
+    $message = Swift_Message::newInstance()
+            //Give the message a subject
+            ->setSubject('Test ventana')
+            //Set the From address with an associative array
+            ->setFrom(array('ventana@televisioneducativa.gob.mx' => 'Ventana'))
+            //Set the To addresses with an associative array
+            ->setTo(array('j.israel.toledo@gmail.com'))
+            //Give it a body
+            ->setBody('My Message')
+    //And optionally an alternative body
+    //->addPart('<q>Here is the message itself</q>', 'text/html')
+    ;
+
+//Create the Transport
+    $transport = Swift_SmtpTransport::newInstance('52.34.174.9', 25);
+//Create the Mailer using your created Transport
+    $mailer = Swift_Mailer::newInstance($transport);
+
+//Send the message
+    $result = $mailer->send($message);
+    var_dump  ($result);
 });
 
 /******************************/
