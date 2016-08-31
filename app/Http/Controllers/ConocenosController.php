@@ -24,4 +24,7 @@ class ConocenosController extends Controller
     public function mapa() {
         return view('viewConocenos/mapa');
     }
+    public function pie(){
+        return view('viewConocenos/pie');
+    }
 }

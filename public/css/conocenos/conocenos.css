@@ -62,7 +62,7 @@ html { height: 100%;}
 
 #page-content-wrapperConocenos {
     width: 100%;
-	padding:0;
+    padding:0;
 }
 
 #wrapperConocenos.toggled #page-content-wrapperConocenos {
@@ -71,8 +71,8 @@ html { height: 100%;}
 }
 
 .sinPaddingLateral{
-	padding-right:0;
-	padding-left:0;
+    padding-right:0;
+    padding-left:0;
 }
 /*-------------------------------*/
 /*     Sidebar nav styles        */
@@ -252,13 +252,13 @@ html { height: 100%;}
 .hamburgerConocenos.is-open .hamb-top { 
     /*-webkit-transform: rotate(45deg);
     -webkit-transition: -webkit-transform .2s cubic-bezier(.73,1,.28,.08);*/
-	display: none;
+    display: none;
 }
 .hamburgerConocenos.is-open .hamb-middle { display: none; }
 .hamburgerConocenos.is-open .hamb-bottom {
     /*-webkit-transform: rotate(-45deg);
     -webkit-transition: -webkit-transform .2s cubic-bezier(.73,1,.28,.08);*/
-	display: none;
+    display: none;
 }
 .hamburgerConocenos.is-open:before {
     content: '';
@@ -366,45 +366,107 @@ section {
 
 
 a,a:visited,a:hover,a:active{
-  -webkit-backface-visibility:hidden;
-          backface-visibility:hidden;
-	position:relative;
-  transition:0.5s color ease;
-	text-decoration:none;
-	color:black;
-	font-size:20px;
+    -webkit-backface-visibility:hidden;
+    backface-visibility:hidden;
+    position:relative;
+    transition:0.5s color ease;
+    text-decoration:none;
+    color:black;
+    font-size:20px;
 }
 a:hover{
-	color:black;
+    color:black;
 }
 a.before:before,a.after:after{
-  content: "";
-  transition:0.5s all ease;
-  -webkit-backface-visibility:hidden;
-          backface-visibility:hidden;
-  position:absolute;
+    content: "";
+    transition:0.5s all ease;
+    -webkit-backface-visibility:hidden;
+    backface-visibility:hidden;
+    position:absolute;
 }
 
 a.after:after{
-  bottom:-0.25em;
+    bottom:-0.25em;
 }
 a.before:before,a.after:after{
-  height:5px;
-  height:0.65rem;
-  width:0;
-  background:black;
+    height:5px;
+    height:0.65rem;
+    width:0;
+    background:black;
 }
 a.first:after{
-  left:0;
+    left:0;
 }
 
 a.before:hover:before,a.after:hover:after{
-  /*width:100%;*/
+    /*width:100%;*/
 }
 #modalVideo{
-	position: absolute;
-	top:35px;
+    position: absolute;
+    top:35px;
 }
 /*-------------------------------*/
 /*  Fin Slider segunda sección   */
 /*-------------------------------*/
+
+/*sección noticias*/
+.vermas{
+    border: 2px solid white; width: 130px; height: 40px; margin-left: 15px; position: relative; border-radius: 10px; padding: 1%; color: white; margin-top: -15%;
+}
+.vermas:hover{background: white; color: black;}
+
+/*sección mapa*/
+.contactoConocenos{
+    /*border: 1px solid red;*/
+    z-index: 1000;
+    position: absolute;
+    width: 40%;
+}
+
+.contenedorMapa{
+    background-color: #f1f1f1;
+}
+.form-conocenos{
+    border-radius: 5px;
+    border: 1px solid black;
+}
+.tableContacto td{
+    border-bottom: 1px solid white;
+    width: 50% !important;
+    table-layout: auto;
+}
+.btnContacto{
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+}
+.btnContacto:hover{
+    color: white;
+}
+.btntd{
+    border: 1px solid white !important;
+}
+
+.triangulo {
+  position: absolute;
+  width: 600px;
+  z-index: 100;
+  margin-top: 3.4%;
+  margin-left: -3%;
+}
+.triangulo:after {
+  border-top:25.8em solid white;
+  border-right:3.4641em solid transparent;
+  /*border-left:3.4641em solid transparent;*/
+  /*bottom:-2em;*/
+  content: '';
+  /*height:700px;*/
+  left: 0;
+  position: absolute;
+  right: 0;
+  /*width:0;*/  
+}
+
+.pieConocenos{color: white}
+
+.derechos{font-size: 12px;}
