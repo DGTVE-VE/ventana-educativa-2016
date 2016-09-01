@@ -43,7 +43,7 @@
 					onLeave: 
 					function(index, nextIndex, direction){
 						var leavingSection = $(this);
-						if(index == 1 && nextIndex == 8){
+						if(index == 1 && nextIndex == 7){
 							if($('#textoObjetivos').css('display') == 'block'){
 								cambiaImagenesAbajo('textoProyectos','textoObjetivos');
 								return false;
