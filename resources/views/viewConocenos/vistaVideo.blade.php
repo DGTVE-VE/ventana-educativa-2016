@@ -175,8 +175,11 @@
 		.fondo3{
 			background:#79738c;
 		}
+                .fondo5{
+			background:#f1f1f1;
+		}
 		.fondo4{
-			background:#bf4060;
+			background:white;
 		}
 		.oculta{
 			display: none;
