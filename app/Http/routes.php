@@ -179,6 +179,7 @@ Route::group(['middleware' => 'web'], function () {
     Route::get('noticias', 'ConocenosController@noticias');
     Route::get('mapa', 'ConocenosController@mapa');
     Route::get('pie','ConocenosController@pie');
+    Route::get('cubos','ConocenosController@cubos');
     /*     * **************************Conocenos********************** */
 });
 
