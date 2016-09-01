@@ -3,31 +3,7 @@
 <!-- Behavioral Meta Data -->
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-	<ul id="scene" class="scene" style="position:absolute; top:-50px; left:-100px; width:100%">
-		<li class="layer" data-depth="0.20"><img src="imagenes/ventana/conocenos/slider/red1.png" style="height:70%; width:90%;"/></li>
-	</ul>
-	<ul id="scene2" class="scene" style="position:absolute; top:0px; left:250px; width:100%">
-		<li class="layer" data-depth="0.40"><img src="imagenes/ventana/conocenos/slider/red2.png" style="height:70%; width:90%;"/></li>
-	</ul>
-        <div class="row" style="margin:0px;">
-			<div class="col-sm-4 col-sm-offset-4 col-md-4 col-md-offset-4 col-lg-4 col-lg-offset-4">
-				<img class="img-responsive marcoNegro" id="imgMarcoNegro" src="imagenes/ventana/conocenos/slider/marcoNegro.png"/>
-				<img class="img-responsive imgEdificio" id="imgApartadoEdificio" src="imagenes/ventana/conocenos/slider/antecedentes.png"/>
-				<div id="divTriangulo" class="trianguloDerecha opaco homologaColor"></div>
-				<div id="divFigura" class="opaco"></div>
-			</div>
-		</div>
-        <div class="row" style="margin:0px;">
-			 <div class="col-sm-4 col-md-4 col-lg-4 altura50Celda" onclick="tranformaFigura(1)" id="contenedorClic1">
-				<a class="first after txtNegro acomodaLigas punteroMano" id="contenedorTxt1">Colaboradores</a>
-			</div>
-			<div class="col-sm-4 col-md-4 col-lg-4 altura50Celda" onclick="tranformaFigura(2)" id="contenedorClic2">
-				<a class="first after txtNegro acomodaLigas punteroMano" id="contenedorTxt2">Antecedentes</a>
-			</div>
-			<div class="col-sm-4 col-md-4 col-lg-4 altura50Celda" onclick="tranformaFigura(3)" id="contenedorClic3">
-				<a class="first after txtNegro acomodaLigas punteroMano" id="contenedorTxt3">Alineación del Proyecto</a>
-			</div>
-		</div>
+
         <div class="row">
 			<div class="col-sm-6 col-sm-offset-3 col-md-6 col-md-offset-3 col-lg-6 col-lg-offset-3">
 			  <section class="slider">
@@ -35,42 +11,30 @@
 				  <ul class="slides">
 					<li>
 						<div class="col-md-4">
-							<img src="imagenes/ventana/conocenos/slider/contenidos/amexcid.png" alt="..." class="img-responsive">
+							<img src="imagenes/ventana/conocenos/links/amexcid.png" alt="..." class="img-responsive">
 						</div>
 						<div class="col-md-4">
-							<img src="imagenes/ventana/conocenos/slider/contenidos/canal6.png" alt="..." class="img-responsive">
+							<img src="imagenes/ventana/conocenos/links/canal6.png" alt="..." class="img-responsive">
 						</div>
 						<div class="col-md-4">
-							<img src="imagenes/ventana/conocenos/slider/contenidos/csuca.png" alt="..." class="img-responsive">
+							<img src="imagenes/ventana/conocenos/links/csuca.png" alt="..." class="img-responsive">
 						</div>
 					</li>
 					<li>
 						<div class="col-md-4">
-							<img src="imagenes/ventana/conocenos/slider/contenidos/sica.png" alt="..." class="img-responsive">
+							<img src="imagenes/ventana/conocenos/links/sica.png" alt="..." class="img-responsive">
 						</div>
 						<div class="col-md-4">
-							<img src="imagenes/ventana/conocenos/slider/contenidos/suyapa.png" alt="..." class="img-responsive">
+							<img src="imagenes/ventana/conocenos/links/suyapa.png" alt="..." class="img-responsive">
 						</div>
 						<div class="col-md-4">
-							<img src="imagenes/ventana/conocenos/slider/contenidos/UVeracruzana.png" alt="..." class="img-responsive">
+							<img src="imagenes/ventana/conocenos/links/UVeracruzana.png" alt="..." class="img-responsive">
 						</div>
 					</li>
 				  </ul>
 				</div>
 			  </section>
 		  </div>
-		</div>
-		<div class="row oculto" style="position:relative; top:0px;">
-			<div class="col-sm-6 col-sm-offset-3 col-md-6 col-md-offset-3 col-lg-6 col-lg-offset-3">
-					<br>
-					<img class="img-responsive" src="imagenes/ventana/conocenos/slider/contenidos/textoAntecedentes.png" style="margin: auto; width:90%;"/>
-			</div>
-		</div>
-		<div class="row  oculto" style="position:relative; top:0px;">
-			<div class="col-sm-6 col-sm-offset-3 col-md-6 col-md-offset-3 col-lg-6 col-lg-offset-3">
-					<br>
-					<img class="img-responsive" src="imagenes/ventana/conocenos/slider/contenidos/textoAntecedentes.png" style="margin: auto; width:90%;"/>
-			</div>
 		</div>
 
 	<style>

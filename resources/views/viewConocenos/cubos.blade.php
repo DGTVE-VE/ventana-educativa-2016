@@ -1,16 +1,11 @@
-@section('titleConocenos')
-Conocenos
-@stop
-<script  src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<!--script  src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script-->
 <script  src="js/conocenos/jquery.imagecube.js"></script>
-<script src="js/conocenos/jquery.plugin.js"></script>
+<!--script src="js/conocenos/jquery.plugin.js"></script-->
 <script>
     $(function () {
         $('#defaultCube').imagecube();
     });
 </script>
-@extends('indexConocenos')
-@section('cuerpoConocenos')
 <div class="container">
     <div class="row">
         <div class="col-md-4" id="defaultCube">
@@ -25,4 +20,4 @@ Conocenos
         </div>        
     </div>
 </div>
-@endsection
+

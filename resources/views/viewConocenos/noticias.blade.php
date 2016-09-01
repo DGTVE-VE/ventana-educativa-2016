@@ -1,8 +1,3 @@
-@section('titleConocenos')
-Conocenos
-@stop
-@extends('indexConocenos')
-@section('cuerpoConocenos')
 <div class="container">
     <div class="row">
         <div class="col-md-6">
@@ -21,7 +16,6 @@ Conocenos
         </div>
     </div>
 </div>
-@endsection
 
 <!--Facebook-->
 <div id="fb-root"></div>

@@ -1,8 +1,3 @@
-@section('titleConocenos')
-Conocenos
-@stop
-@extends('indexConocenos')
-@section('cuerpoConocenos')
 <div class="footer navbar-fixed-bottom navbar-inverse pieConocenos">
     <div class="col-md-2">
         <br>
@@ -44,8 +39,6 @@ Conocenos
     </div>
     <div class="col-md-2"><h5>Blog</h5></div>
 </div>
-@endsection
-
 
 <!--sdk twitter-->
 <script>window.twttr = (function (d, s, id) {

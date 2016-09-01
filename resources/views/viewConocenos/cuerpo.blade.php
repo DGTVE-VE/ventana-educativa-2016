@@ -39,10 +39,10 @@
 				<div class="section fp-auto-height">
 					@include('viewConocenos.secciones')
 				</div>
-				<div class="section fondo3">LINKS</div>
-				<div class="section fondo1">Comunidad Educativa</div>
-				<div class="section fondo2">Noticias, Redes Sociales</div>
-				<div class="section fondo3">Contacto</div>
+				<div class="section fondo3">@include('viewConocenos.links')</div>
+				<div class="section fondo1">@include('viewConocenos.cubos')</div>
+				<div class="section fondo2">@include('viewConocenos.noticias')</div>
+				<div class="section fondo3">@include('viewConocenos.mapa')@include('viewConocenos.pie')</div>
 			</div>
         </div>
         <!-- /#wrapper -->

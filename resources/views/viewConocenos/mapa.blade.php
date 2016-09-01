@@ -1,8 +1,3 @@
-@section('titleConocenos')
-Conocenos
-@stop
-@extends('indexConocenos')
-@section('cuerpoConocenos')
 <div class="container">
     <div class="row">
         <div class="col-md-12 contenedorMapa">
@@ -52,4 +47,3 @@ Conocenos
 </div>
   
 <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyBc5-sIZ0xVCNqOD5orQ2pIKlXaFgT9-Ms "></script> 
-@endsection
