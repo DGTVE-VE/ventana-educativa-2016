@@ -258,6 +258,7 @@
 					if(actual!=1){
 						cambiaImgFondo(1);
 						cambiaEtiqueta(1);
+						$('#seccionVariable').removeClass('fp-auto-height');
 					}
 					if(actual==2){
 						$('#divFigura').removeClass('opaco');
@@ -280,6 +281,7 @@
 					if(actual!=2){
 						cambiaImgFondo(2);
 						cambiaEtiqueta(2);
+						$('#seccionVariable').removeClass('fp-auto-height');
 					}
 					if(actual==1){
 						$('#divFigura').removeClass('opaco');
@@ -314,6 +316,7 @@
 						}
 						$('#divFigura').css({transform:'scale(0.3, 0.1) rotate(-270deg)'});
 						$('#divTriangulo').addClass('opaco');
+						$('#seccionVariable').addClass('fp-auto-height');
 					}
 					actual =3;
 					break;

@@ -43,7 +43,7 @@
 					onLeave: 
 					function(index, nextIndex, direction){
 						var leavingSection = $(this);
-						if(index == 1 && nextIndex == 7){
+						if(index == 1 && nextIndex == 6){
 							if($('#textoObjetivos').css('display') == 'block'){
 								cambiaImagenesAbajo('textoProyectos','textoObjetivos');
 								return false;
@@ -80,7 +80,7 @@
 							$('#fullpage').fullpage.setFitToSection(true);
 							$('#fullpage').fullpage.setAutoScrolling(true);
 						}
-						else if(index== 5 && nextIndex == 4){
+						else if(index== 4 && nextIndex == 3){
 							$('#fullpage').fullpage.setFitToSection(false);
 							//$('#fullpage').fullpage.setAutoScrolling(false);
 						}
@@ -88,7 +88,7 @@
 							$('#fullpage').fullpage.setFitToSection(false);
 							$('#fullpage').fullpage.setAutoScrolling(false);
 						}
-						else if(index== 4 && nextIndex == 5){
+						else if(index== 3 && nextIndex == 4){
 							$('#fullpage').fullpage.setFitToSection(true);
 							//$('#fullpage').fullpage.setAutoScrolling(true);
 						}

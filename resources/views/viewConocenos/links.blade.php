@@ -1,11 +1,8 @@
-
-<!--	********	Parallax Capas	***********	-->
-<!-- Behavioral Meta Data -->
-<meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-
         <div class="row">
-			<div class="col-sm-6 col-sm-offset-3 col-md-6 col-md-offset-3 col-lg-6 col-lg-offset-3">
+			<div class="col-sm-12 col-md-12 col-lg-12 contenedorMapa">
+				<div class="text-center"><h4>LINKS</h4></div>
+			</div>
+			<div class="col-sm-12 col-md-12 col-lg-12">
 			  <section class="slider">
 				<div class="flexslider">
 				  <ul class="slides">
@@ -40,6 +37,8 @@
 	<style>
 		.slider{
 			padding:50px !important;
+			padding-bottom:0px !important;
+			padding-top:0px !important;
 		}
 	</style>
 	
