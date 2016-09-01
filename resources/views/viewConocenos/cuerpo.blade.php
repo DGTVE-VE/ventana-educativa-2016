@@ -40,8 +40,8 @@
 					@include('viewConocenos.secciones')
 				</div>
 				<div class="section fondo3">@include('viewConocenos.links')@include('viewConocenos.cubos')</div>
-				<div class="section fondo2">@include('viewConocenos.noticias')</div>
-				<div class="section fondo3">@include('viewConocenos.mapa')@include('viewConocenos.pie')</div>
+				<div class="section fondo4">@include('viewConocenos.noticias')</div>
+				<div class="section fondo5">@include('viewConocenos.mapa')@include('viewConocenos.pie')</div>
 			</div>
         </div>
         <!-- /#wrapper -->
