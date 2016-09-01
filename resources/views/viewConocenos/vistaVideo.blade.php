@@ -39,7 +39,7 @@
 		$(document).ready(function() {
 		//	************	Activación de elemento fullPage (desplazamiento vertical) 	***********
 			$('#fullpage').fullpage(
-				{navigation:true, scrollOverflow:false, loopTop:true, setAutoScrolling: false, setFitToSection: true, bigSectionsDestination:top,
+				{navigation:true, scrollOverflow:false, loopTop:true, 
 					onLeave: 
 					function(index, nextIndex, direction){
 						var leavingSection = $(this);
@@ -78,19 +78,24 @@
 							$('.hamburgerConocenos.is-closed .hamb-top, .hamburgerConocenos.is-closed .hamb-middle, .hamburgerConocenos.is-closed .hamb-bottom').css('background-color','#f2f2f2');
 							$('#scene').css('top','50px');
 							$('#fullpage').fullpage.setFitToSection(true);
+							$('#fullpage').fullpage.setAutoScrolling(true);
+						}
+						else if(index== 5 && nextIndex == 4){
+							$('#fullpage').fullpage.setFitToSection(false);
+							//$('#fullpage').fullpage.setAutoScrolling(false);
 						}
 						else if(index== 2 && nextIndex == 3){
 							$('#fullpage').fullpage.setFitToSection(false);
+							$('#fullpage').fullpage.setAutoScrolling(false);
 						}
-						else if(index== 3 && nextIndex == 4){
-							$('#fullpage').fullpage.setFitToSection(false);
-						}
-						else if(index== 3 && nextIndex == 2){
+						else if(index== 4 && nextIndex == 5){
 							$('#fullpage').fullpage.setFitToSection(true);
+							//$('#fullpage').fullpage.setAutoScrolling(true);
 						}
 					}
 				}
 			);
+			//$('#fullpage').fullpage.setAutoScrolling(false);
 			bajaImgProyectos()
 		});
 
