@@ -110,7 +110,7 @@
 		}
 		.opaco{
 			opacity: 0.9;
-			transition: opacity:0.3s;
+			/*transition: opacity:0.3s;*/
 		}
 		.txtNegro{
 			color:black;
