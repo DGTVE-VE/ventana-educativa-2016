@@ -165,7 +165,7 @@
 			background-color:gray;
 		}
 		.fondo2{
-			background:#00ff80;
+			background:white;
 		}
 		.fondo3{
 			background:#79738c;
