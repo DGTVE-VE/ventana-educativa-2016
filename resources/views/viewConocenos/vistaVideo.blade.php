@@ -74,19 +74,24 @@
 								$('#fullpage').fullpage.setAutoScrolling(false);
 							}
 						}
+						else if(index== 4 && nextIndex == 3){
+							$('#fullpage').fullpage.setFitToSection(false);
+						}
+						else if(index== 3 && nextIndex == 2){
+							$('#fullpage').fullpage.setFitToSection(true);
+						}
 						else if(index == 2 && nextIndex == 1){
 							$('#imagenLogoVentana').attr('src','imagenes/ventana/encabezado/logoventana.png');
 							$('#iconoManuApps').attr('src','imagenes/ventana/encabezado/iconoApps.png');
 							$('.hamburgerConocenos.is-closed .hamb-top, .hamburgerConocenos.is-closed .hamb-middle, .hamburgerConocenos.is-closed .hamb-bottom').css('background-color','#f2f2f2');
 							$('#scene').css('top','50px');
-							$('#fullpage').fullpage.setFitToSection(true);
 							$('#fullpage').fullpage.setAutoScrolling(true);
-						}
-						else if(index== 4 && nextIndex == 3){
-							$('#fullpage').fullpage.setFitToSection(false);
 						}
 						else if(index== 3 && nextIndex == 4){
 							$('#fullpage').fullpage.setFitToSection(true);
+						}
+						else if(index== 2 && nextIndex == 3){
+							$('#fullpage').fullpage.setFitToSection(false);
 						}
 					}
 				}

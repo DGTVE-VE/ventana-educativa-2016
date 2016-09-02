@@ -10,6 +10,11 @@
 	// init controller
 	var controller = new ScrollMagic.Controller();
 </script>
+	<div class="row">
+		<div class="col-sm-12 col-md-12 col-lg-12 contenedorMapa">
+			<div class="text-center"><h4>SECCIONES</h4></div>
+		</div>
+	</div>
 <div id="content-wrapper" style="background-color:white;">
 	<div id="example-wrapper">
 		<div class="scrollContent" style="overflow-x: hidden;">

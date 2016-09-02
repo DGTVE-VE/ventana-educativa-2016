@@ -259,6 +259,7 @@
 						cambiaImgFondo(1);
 						cambiaEtiqueta(1);
 						$('#seccionVariable').removeClass('fp-auto-height');
+						$('#fullpage').fullpage.setFitToSection(true);
 					}
 					if(actual==2){
 						$('#divFigura').removeClass('opaco');
@@ -282,6 +283,7 @@
 						cambiaImgFondo(2);
 						cambiaEtiqueta(2);
 						$('#seccionVariable').removeClass('fp-auto-height');
+						$('#fullpage').fullpage.setFitToSection(true);
 					}
 					if(actual==1){
 						$('#divFigura').removeClass('opaco');
@@ -304,6 +306,7 @@
 					if(actual!=3){
 						cambiaImgFondo(3);
 						cambiaEtiqueta(3);
+						$('#fullpage').fullpage.setFitToSection(false);
 					}
 					if(actual==1 || actual==2){
 						$('#divFigura').removeClass('opaco');
