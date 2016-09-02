@@ -54,7 +54,7 @@
 
 		<!--	****** Cultura 	/	Canal Iberoamericano *****		-->
 				<div class="imgBkgd" style="background-image: url({{url('imagenes/ventana/conocenos/secciones/backCultura.jpg')}}), url({{url('imagenes/ventana/conocenos/secciones/backIbero.jpg')}});">
-					<div class="spacer s1"></div>
+					<!--div class="spacer s1"></div-->
 					<div id="trigger1" class="spacer s0"></div>
 					<div id="animateImg1" class="box1 contenedor1">
 						{{ HTML::image('imagenes/ventana/conocenos/secciones/iconoCultura.png','Cultura', ['class'=>'image-responsive imgLogoSeccion', 'id'=>'imgLogoCultura']) }}
@@ -64,12 +64,12 @@
 						{{ HTML::image('imagenes/ventana/conocenos/secciones/iconoCanalIbero.png','Canal Iberoamericano', ['class'=>'image-responsive imgLogoSeccion', 'id'=>'imgLogoCanalIbero']) }}
 						{{ HTML::image('imagenes/ventana/conocenos/secciones/txtIbero.png','Canal Iberoamericano', ['class'=>'image-responsive imgTxtDescr', 'id'=>'imgLogoCanalIbero']) }}
 					</div>
-					<div class="spacer s1"></div>
+					<!--div class="spacer s1"></div-->
 				</div>
 
 		<!--	***** Educaplay	/	RedMite ******		-->
 				<div class="imgBkgd" style="background-image: url({{url('imagenes/ventana/conocenos/secciones/backEducaplay.jpg')}}), url({{url('imagenes/ventana/conocenos/secciones/backRedmite.jpg')}});">
-					<div class="spacer s1"></div>
+					<!--div class="spacer s1"></div-->
 					<div id="trigger2" class="spacer s0"></div>
 					<div id="animateImg2" class="box1 contenedor1">
 						{{ HTML::image('imagenes/ventana/conocenos/secciones/iconoEducaplay.png','Canal Iberoamericano', ['class'=>'image-responsive imgLogoSeccion', 'id'=>'imgLogoCultura']) }}
@@ -79,12 +79,12 @@
 						{{ HTML::image('imagenes/ventana/conocenos/secciones/iconoRedmite.png','Canal Iberoamericano', ['class'=>'image-responsive imgLogoSeccion', 'id'=>'imgLogoCultura']) }}
 						{{ HTML::image('imagenes/ventana/conocenos/secciones/txtRedmite.png','Canal Iberoamericano', ['class'=>'image-responsive imgTxtDescr', 'id'=>'imgLogoCultura']) }}
 					</div>
-					<div class="spacer s1"></div>
+					<!--div class="spacer s1"></div-->
 				</div>
 		
 		<!--	***** Educamedia	/	Biblioteca ******		-->
 				<div class="imgBkgd" style="background-image: url({{url('imagenes/ventana/conocenos/secciones/backEducamedia.jpg')}}), url({{url('imagenes/ventana/conocenos/secciones/backBiblioteca.jpg')}});">
-					<div class="spacer s1"></div>
+					<!--div class="spacer s1"></div-->
 					<div id="trigger3" class="spacer s0"></div>
 					<div id="animateImg3" class="box1 contenedor1">
 						{{ HTML::image('imagenes/ventana/conocenos/secciones/iconoEducamedia.png','Canal Iberoamericano', ['class'=>'image-responsive imgLogoSeccion', 'id'=>'imgLogoCultura']) }}
@@ -94,12 +94,12 @@
 						{{ HTML::image('imagenes/ventana/conocenos/secciones/iconoBilbio.png','Canal Iberoamericano', ['class'=>'image-responsive imgLogoSeccion', 'id'=>'imgLogoCultura']) }}
 						{{ HTML::image('imagenes/ventana/conocenos/secciones/txtBiblioteca.png','Canal Iberoamericano', ['class'=>'image-responsive imgTxtDescr', 'id'=>'imgLogoCultura']) }}
 					</div>
-					<div class="spacer s1"></div>
+					<!--div class="spacer s1"></div-->
 				</div>
 
 		<!--	***** Mexico X	/	Salud ******		-->
 				<div class="imgBkgd" style="background-image: url({{url('imagenes/ventana/conocenos/secciones/backMexX.jpg')}}), url({{url('imagenes/ventana/conocenos/secciones/backSalud.jpg')}});">
-					<div class="spacer s1"></div>
+					<!--div class="spacer s1"></div-->
 					<div id="trigger4" class="spacer s0"></div>
 					<div id="animateImg4" class="box1 contenedor1">
 						{{ HTML::image('imagenes/ventana/conocenos/secciones/iconoMexX.png','Canal Iberoamericano', ['class'=>'image-responsive imgLogoSeccion', 'id'=>'imgLogoCultura']) }}
@@ -109,7 +109,7 @@
 						{{ HTML::image('imagenes/ventana/conocenos/secciones/iconoSalud.png','Canal Iberoamericano', ['class'=>'image-responsive imgLogoSeccion', 'id'=>'imgLogoCultura']) }}
 						{{ HTML::image('imagenes/ventana/conocenos/secciones/txtSalud.png','Canal Iberoamericano', ['class'=>'image-responsive imgTxtDescr', 'id'=>'imgLogoCultura']) }}
 					</div>
-					<div class="spacer s1"></div>
+					<!--div class="spacer s1"></div-->
 				</div>
 			</section>
 		</div>
