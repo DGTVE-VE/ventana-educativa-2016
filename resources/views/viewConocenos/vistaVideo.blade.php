@@ -70,6 +70,8 @@
 								$('#iconoManuApps').attr('src','imagenes/ventana/encabezado/logoNegro/iconoApps.png');
 								$('.hamburgerConocenos.is-closed .hamb-top, .hamburgerConocenos.is-closed .hamb-middle, .hamburgerConocenos.is-closed .hamb-bottom').css('background-color','#1a1a1a');
 								$('#scene').css('top','-50px');
+								$('#fullpage').fullpage.setFitToSection(false);
+								$('#fullpage').fullpage.setAutoScrolling(false);
 							}
 						}
 						else if(index == 2 && nextIndex == 1){
@@ -82,20 +84,13 @@
 						}
 						else if(index== 4 && nextIndex == 3){
 							$('#fullpage').fullpage.setFitToSection(false);
-							//$('#fullpage').fullpage.setAutoScrolling(false);
-						}
-						else if(index== 2 && nextIndex == 3){
-							$('#fullpage').fullpage.setFitToSection(false);
-							$('#fullpage').fullpage.setAutoScrolling(false);
 						}
 						else if(index== 3 && nextIndex == 4){
 							$('#fullpage').fullpage.setFitToSection(true);
-							//$('#fullpage').fullpage.setAutoScrolling(true);
 						}
 					}
 				}
 			);
-			//$('#fullpage').fullpage.setAutoScrolling(false);
 			bajaImgProyectos()
 		});
 
