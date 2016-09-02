@@ -6,7 +6,7 @@
 		padding-left: 0px; padding-right:0px;
 	}
 	.medidaCubo{
-		width: 105%; height: 310px;
+		width: 101%; height: 310px;
 	}
 </style>
     <div class="row">

@@ -18,7 +18,7 @@ class ConocenosController extends Controller {
     }
 
     public function slider() {
-        return view('viewConocenos/cubos');
+        return view('viewConocenos/secciones');
     }
 
     public function noticias() {

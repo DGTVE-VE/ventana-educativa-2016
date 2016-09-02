@@ -1,15 +1,20 @@
-<!--	********* Incluir Jquery	***************	-->
-<!--script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script-->
-<script src="js/ScrollMagic/scrollmagic/uncompressed/ScrollMagic.js"></script>
-<!--script src="js/ScrollMagic/js/lib/greensock/plugins/debug.addIndicators.js" ></script-->
-<script src="js/ScrollMagic/js/lib/greensock/TweenMax.min.js"></script>
-<script src="js/ScrollMagic/js/lib/greensock/plugins/animation.gsap.js" ></script>
-<!--link rel="stylesheet" href="js/ScrollMagic/css/style.css" type="text/css"-->
-<link rel="stylesheet" href="js/ScrollMagic/css/examples.css" type="text/css">
-<script>
-	// init controller
-	var controller = new ScrollMagic.Controller();
-</script>
+
+	<!-- Latest compiled and minified CSS -->
+        <!--link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"-->
+    <!--	********* Incluir Jquery	***************	-->
+		<!--script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script-->
+		
+    <!-- Latest compiled JavaScript -->
+        <!--script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script-->
+
+	<script src="js/ScrollMagic/scrollmagic/uncompressed/ScrollMagic.js"></script>
+	<script src="js/ScrollMagic/js/lib/greensock/TweenMax.min.js"></script>
+	<script src="js/ScrollMagic/js/lib/greensock/plugins/animation.gsap.js" ></script>
+	<link rel="stylesheet" href="js/ScrollMagic/css/examples.css" type="text/css">
+	<script>
+		// init controller
+		var controller = new ScrollMagic.Controller();
+	</script>
 	<div class="row">
 		<div class="col-sm-12 col-md-12 col-lg-12 contenedorMapa">
 			<div class="text-center"><h4>SECCIONES</h4></div>
@@ -142,11 +147,9 @@
 		// build scene
 	var scene = new ScrollMagic.Scene({triggerElement: "#trigger1", duration: 200, offset: -50})
 					.setTween(tween)
-					//.addIndicators({name: "loop"}) // add indicators (requires plugin)
 					.addTo(controller);
 	var scene = new ScrollMagic.Scene({triggerElement: "#trigger1", duration: 200, offset: -50})
 					.setTween(tween2)
-					//.addIndicators({name: "loop"}) // add indicators (requires plugin)
 					.addTo(controller);
 
 	// build tween Canal Iberoamericano	****************************
@@ -161,11 +164,9 @@
 		// build scene
 	var scene = new ScrollMagic.Scene({triggerElement: "#trigger2", duration: 200, offset: -50})
 					.setTween(tween3)
-					//.addIndicators({name: "loop"}) // add indicators (requires plugin)
 					.addTo(controller);
 	var scene = new ScrollMagic.Scene({triggerElement: "#trigger2", duration: 200, offset: -50})
 					.setTween(tween4)
-					//.addIndicators({name: "loop"}) // add indicators (requires plugin)
 					.addTo(controller);
 
 	// build tween Educaplay	****************************
@@ -180,11 +181,9 @@
 		// build scene
 	var scene = new ScrollMagic.Scene({triggerElement: "#trigger3", duration: 200, offset: -50})
 					.setTween(tween5)
-					//.addIndicators({name: "loop"}) // add indicators (requires plugin)
 					.addTo(controller);
 	var scene = new ScrollMagic.Scene({triggerElement: "#trigger3", duration: 200, offset: -50})
 					.setTween(tween6)
-					//.addIndicators({name: "loop"}) // add indicators (requires plugin)
 					.addTo(controller);
 
 	// build tween Redmite	****************************
@@ -199,11 +198,9 @@
 		// build scene
 	var scene = new ScrollMagic.Scene({triggerElement: "#trigger4", duration: 200, offset: -50})
 					.setTween(tween7)
-					//.addIndicators({name: "loop"}) // add indicators (requires plugin)
 					.addTo(controller);
 	var scene = new ScrollMagic.Scene({triggerElement: "#trigger4", duration: 200, offset: -50})
 					.setTween(tween8)
-					//.addIndicators({name: "loop"}) // add indicators (requires plugin)
 					.addTo(controller);
 					
 	// build tween Educamedia	****************************
@@ -218,11 +215,9 @@
 		// build scene
 	var scene = new ScrollMagic.Scene({triggerElement: "#trigger5", duration: 200, offset: -50})
 					.setTween(tween9)
-					//.addIndicators({name: "loop"}) // add indicators (requires plugin)
 					.addTo(controller);
 	var scene = new ScrollMagic.Scene({triggerElement: "#trigger5", duration: 200, offset: -50})
 					.setTween(tween10)
-					//.addIndicators({name: "loop"}) // add indicators (requires plugin)
 					.addTo(controller);
 					
 	// build tween Biblioteca	****************************
@@ -237,11 +232,9 @@
 		// build scene
 	var scene = new ScrollMagic.Scene({triggerElement: "#trigger6", duration: 200, offset: -50})
 					.setTween(tween11)
-					//.addIndicators({name: "loop"}) // add indicators (requires plugin)
 					.addTo(controller);
 	var scene = new ScrollMagic.Scene({triggerElement: "#trigger6", duration: 200, offset: -50})
 					.setTween(tween12)
-					//.addIndicators({name: "loop"}) // add indicators (requires plugin)
 					.addTo(controller);
 					
 	// build tween México X	****************************
@@ -256,11 +249,9 @@
 		// build scene
 	var scene = new ScrollMagic.Scene({triggerElement: "#trigger7", duration: 200, offset: -50})
 					.setTween(tween13)
-					//.addIndicators({name: "loop"}) // add indicators (requires plugin)
 					.addTo(controller);
 	var scene = new ScrollMagic.Scene({triggerElement: "#trigger7", duration: 200, offset: -50})
 					.setTween(tween14)
-					//.addIndicators({name: "loop"}) // add indicators (requires plugin)
 					.addTo(controller);
 
 	// build tween Salud	****************************
@@ -275,10 +266,8 @@
 		// build scene
 	var scene = new ScrollMagic.Scene({triggerElement: "#trigger8", duration: 200, offset: -50})
 					.setTween(tween15)
-					//.addIndicators({name: "loop"}) // add indicators (requires plugin)
 					.addTo(controller);
 	var scene = new ScrollMagic.Scene({triggerElement: "#trigger8", duration: 200, offset: -50})
 					.setTween(tween16)
-					//.addIndicators({name: "loop"}) // add indicators (requires plugin)
 					.addTo(controller);
 </script>
