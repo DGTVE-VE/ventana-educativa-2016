@@ -17,36 +17,44 @@
 		<div class="col-sm-12 col-md-12 col-lg-12"><br><br></div>
 		<div class="col-md-4 padLado">
 			<div id="Cubo1" class="medidaCubo">
-				<img src="imagenes/conocenos/cubos/docentes.png" alt="" title="docentes1"/>
+				<img src="imagenes/conocenos/cubos/docentes2.png" alt="" title="docentes1"/>
 				<img src="imagenes/conocenos/cubos/docentes2.png" alt="" title="docentes2"/>
 			</div>
 		</div>
 		<div class="col-md-4 padLado">
 			<div id="Cubo2" class="medidaCubo">
-				<img src="imagenes/conocenos/cubos/estudiantes1.png" alt="" title="estudiantes1"/>
+				<img src="imagenes/conocenos/cubos/estudiantes2.png" alt="" title="estudiantes1"/>
 				<img src="imagenes/conocenos/cubos/estudiantes2.png" alt="" title="estudiantes2"/>
 			</div>
 		</div>
 		<div class="col-md-4 padLado">
 			<div id="Cubo3" class="medidaCubo">
-				<img src="imagenes/conocenos/cubos/padres1.png" alt="" title="padres1"/>
+				<img src="imagenes/conocenos/cubos/padres2.png" alt="" title="padres1"/>
 				<img src="imagenes/conocenos/cubos/padres2.png" alt="" title="padres2"/>
 			</div>
 		</div>
     </div>
 
 <script>
-        $('#Cubo1').imagecube({direction: 'up', repeat: false});
-		$('#Cubo1').click(function() { 
+        $('#Cubo1').imagecube({direction: 'up', repeat: false, full3D: false});
+		$('#Cubo1').mouseenter(function() { 
 			var cube = $('#Cubo1'); 
 			var next = parseInt($('#next').val(), 10); 
-			cube.imagecube('option', {direction: $('#direction').val()}). 
+			cube.imagecube('option', {direction: 'up'}). 
 				imagecube('rotate', next, function() { 
 					$('#current').text($(cube.imagecube('current')).attr('title')); 
 				}); 
 		});
-        $('#Cubo2').imagecube({direction: 'up', repeat: false});
-		$('#Cubo2').click(function() { 
+		$('#Cubo1').mouseleave(function() { 
+			var cube = $('#Cubo1'); 
+			var next = parseInt($('#next').val(), 10); 
+			cube.imagecube('option', {direction: 'down'}). 
+				imagecube('rotate', next, function() { 
+					$('#current').text($(cube.imagecube('current')).attr('title')); 
+				}); 
+		});
+        $('#Cubo2').imagecube({direction: 'up', repeat: false, full3D: false});
+		$('#Cubo2').hover(function() { 
 			var cube = $('#Cubo2');
 			var next = parseInt($('#next').val(), 10); 
 			cube.imagecube('option', {direction: $('#direction').val()}). 
@@ -54,8 +62,8 @@
 					$('#current').text($(cube.imagecube('current')).attr('title')); 
 				}); 
 		});
-        $('#Cubo3').imagecube({direction: 'up', repeat: false});
-		$('#Cubo3').click(function() { 
+        $('#Cubo3').imagecube({direction: 'up', repeat: false, full3D: false});
+		$('#Cubo3').hover(function() { 
 			var cube = $('#Cubo3'); 
 			var next = parseInt($('#next').val(), 10); 
 			cube.imagecube('option', {direction: $('#direction').val()}). 
