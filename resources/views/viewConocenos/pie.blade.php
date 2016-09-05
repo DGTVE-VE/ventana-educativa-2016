@@ -1,43 +1,69 @@
 <div class="footer navbar-fixed-bottom navbar-inverse pieConocenos">
     <div class="col-md-2">
         <br>
-        {{HTML::image('imagenes/ventana/encabezado/logoventana.png','Logo Ventana',array( 'width' => '60%'))}}
+        <div class="col-md-12">{{HTML::image('imagenes/ventana/encabezado/logoventana.png','Logo Ventana',array( 'width' => '60%'))}}</div>        
         <br><br><br><br>
-        <p class="text-muted derechos">&copy; Televisión Educativa. Todos los derechos reservados.</p>
+        <div class="col-md-6">
+            <a href="https://twitter.com/share" class="twitter-share-button">Tweet</a> <script>!function (d, s, id) {
+                    var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https';
+                    if (!d.getElementById(id)) {
+                        js = d.createElement(s);
+                        js.id = id;
+                        js.src = p + '://platform.twitter.com/widgets.js';
+                        fjs.parentNode.insertBefore(js, fjs);
+                    }
+                }(document, 'script', 'twitter-wjs');</script>  
+        </div>
+        <div class="col-md-6"><div 
+                class="fb-share-button" 
+                data-layout="button" 
+                data-mobile-iframe="true">
+            </div></div>
     </div>
-    <div class="col-md-2">
-        <h5>Dirección</h5>
-        <address class="text-justify">Av. Circunvalación s/n esquina Tabiqueros, Col. Morelos, Delegación Venustiano Carranza, C.P. 15270, México, CDMX.</address>
-    </div>    
-    <div class="col-md-2">
-        <h5>Teléfonos</h5>
-        <p>Conmutador: 3601 8100</p>
-        <p>Lada nacional: 01800 2284 883</p>
-        <p>Internacional: 01866572983</p>
-    </div>
-    <div class="col-md-2">
-        <h5>E-mail</h5>
-        <p>ventana@televisioneducativa.gob.mx</p>
-    </div>
-    <div class="col-md-2">
-        <h5>Redes Sociales</h5>
-        <a href="https://twitter.com/share" class="twitter-share-button">Tweet</a> <script>!function (d, s, id) {
-                var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https';
-                if (!d.getElementById(id)) {
-                    js = d.createElement(s);
-                    js.id = id;
-                    js.src = p + '://platform.twitter.com/widgets.js';
-                    fjs.parentNode.insertBefore(js, fjs);
-                }
-            }(document, 'script', 'twitter-wjs');</script>  
-                <br><br>
-        <div 
-            class="fb-share-button" 
-            data-layout="button" 
-            data-mobile-iframe="true">
+    <div class="col-md-10">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            <br>
+            <h4 class="text-uppercase">Contáctanos</h4>
+            <table>
+                <tr>
+                    <td class="imgTecho" style="padding:26px;">
+                        {{ HTML::image('imagenes/red/footer/localizacion.png','Localización', array('class'=>'img-responsive','style'=>'align:flex-start; width:14px; height:20px;)'))}}
+                    </td>
+                    <td>
+                        <p>Av. Circunvalación s/n, esquina Tabiqueros,<br>
+                            Col. Morelos, Del. Venustiano Carranza.<br>
+                            C.P. 15270, Ciudad de México.</p>
+                    </td>
+                    <td class="imgTecho" style="padding:26px;">
+                        {{ HTML::image('imagenes/red/footer/telefono.png','Teléfono', array('class'=>'img-responsive','style'=>'align:flex-start; width:20px; height:20px;)'))}}
+                    </td>
+                    <td>
+                        <p>(55) 3601 8100 <br>
+                            01 800 2284 883 <br>
+                            01 866 5729 837
+                        </p>							
+                    </td>
+                    <td class="imgTecho" style="padding:26px;">
+                        {{ HTML::image('imagenes/red/footer/mail.png','Correo', array('class'=>'img-responsive','style'=>'align:flex-start; width:20px; height:15px;)'))}}
+                    </td>
+                    <td>
+                        <p> redmite@televisioneducativa.gob.mx</p>
+                    </td>
+                    <td class="imgTecho" style="padding:26px;">
+                        <h4>Mantente informado. Suscríbete.</h4>
+                        <form class="form-inline" action="conocenos/guardaCorreoNewsLetterConocenos" method="POST">
+                            <div class="form-group col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                <input type="email" required name="correo_newsletter" class="form-control" id="correoElectronico" placeholder="direccion@servidor.com"  style="width:80%">
+                                {!!csrf_field()!!}
+                                <button type="submit" class="btn btn-primary"><span class="glyphicon glyphicon-send"></span></button>
+                            </div>
+                        </form>
+                    </td>
+                </tr>
+            </table>
         </div>
     </div>
-    <div class="col-md-2"><h5>Blog</h5></div>
+    <div class="col-md-12"><p class="text-muted derechos">&copy; Televisión Educativa. Todos los derechos reservados.</p></div>
 </div>
 
 <!--sdk twitter-->
