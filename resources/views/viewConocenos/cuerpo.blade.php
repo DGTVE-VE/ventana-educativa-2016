@@ -26,30 +26,29 @@
             <span class="hamb-middle"></span>
             <span class="hamb-bottom"></span>
         </button>
-	<!--************** Dentro de este div va el contenido de la página *********************-->
+        <!--************** Dentro de este div va el contenido de la página *********************-->
         <div class="container-fluid sinPaddingLateral">
-			<div id="fullpage">
-				<div class="section fondo1">
-					@include('viewConocenos.vistaVideo')
-				</div>
-				<div id="seccionVariable" class="section">
-					@include('viewConocenos.slider')
-				</div>
-				<div class="section fp-auto-height">
-					@include('viewConocenos.secciones')
-				</div>
-				<div class="section">@include('viewConocenos.links')@include('viewConocenos.cubos')</div>
-				<div class="section fondo2">@include('viewConocenos.noticias')</div>
-				<div class="section fondo2">@include('viewConocenos.mapa')@include('viewConocenos.pie')</div>
-			</div>
+            <div id="fullpage">
+                <div class="section fondo1">
+                    @include('viewConocenos.vistaVideo')
+                </div>
+                <div id="seccionVariable" class="section">
+                    @include('viewConocenos.slider')
+                </div>
+                <div class="section fp-auto-height">
+                    @include('viewConocenos.secciones')
+                </div>
+                <div class="section">@include('viewConocenos.links')@include('viewConocenos.cubos')</div>
+                <div class="section fondo2">@include('viewConocenos.noticias')</div>
+                <div class="section fondo2">@include('viewConocenos.mapa')@include('viewConocenos.pie')</div>
+            </div>
         </div>
         <!-- /#wrapper -->
     </div>
 </div>
 <script>
-	$(document).ready(function(){
-		
-	});
+$(document).ready(function(){
+});
 /*	**********	Modificacion de estilo de barra de navegación de ventana	**********	*/
-	$('#formaBuscar').css('visibility','hidden');
+$('#formaBuscar').css('visibility', 'hidden');
 </script>

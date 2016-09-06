@@ -473,14 +473,13 @@ a.before:hover:before,a.after:hover:after{
 
 
 .derechos{font-size: 12px;}
-.imgNoticias{
-    padding-bottom: 3%;
-    padding-top: 3%;
-    padding-left: 0 !important;
-    padding-right: .8% !important;    
-}
-.widgetNoticias{margin-top: 8%;}
+
+/*.widgetNoticias{margin-top: 8%;}*/
 
 @media (min-width: 2256px) { 
   .pieConocenos{height: 400px;} 
+  /*.noticias{height: 500px;}*/
 }
+
+.noticias{height: 695px;}
+
