@@ -40,6 +40,14 @@
 		.imgBkgd{
 			 background-repeat:no-repeat; background-position:left top, right top; background-size:51% 100%;
 		}
+		@media(min-width:1800px){
+			.imgBkgd{
+				height:200px;
+			}
+			.contenedor2{
+				left: 200px; top:50px;
+			}
+		}
 	</style>
 	
 	<div class="row">
@@ -118,9 +126,9 @@
 <script>
 	// build tween Cultura 	/	Canal Iberoamericano	****************************
 	var animateLeft11 = -1000;
-	var animateLeft12 = -400;
+	var animateLeft12 = -300;
 	var animateLeft21 = 1000;
-	var animateLeft22 = 400;
+	var animateLeft22 = 300;
 	var tween = TweenMax.fromTo("#animateImg1", 1,
 								{left: animateLeft11},
 								{left: animateLeft12, repeat: 0, yoyo: true, ease: Circ.easeInOut}
