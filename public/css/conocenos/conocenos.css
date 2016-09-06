@@ -471,10 +471,16 @@ a.before:hover:before,a.after:hover:after{
 
 .pieConocenos{color: white}
 
-.derechos{font-size: 12px;}
 
-.noticiaImg{
-    padding: 0 !important;
-    margin-left: -1% !important;
-    margin-top: -2% !important;
+.derechos{font-size: 12px;}
+.imgNoticias{
+    padding-bottom: 3%;
+    padding-top: 3%;
+    padding-left: 0 !important;
+    padding-right: .8% !important;    
+}
+.widgetNoticias{margin-top: 8%;}
+
+@media (min-width: 2256px) { 
+  .pieConocenos{height: 400px;} 
 }

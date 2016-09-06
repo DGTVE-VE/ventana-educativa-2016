@@ -181,6 +181,9 @@ Route::group(['middleware' => 'web'], function () {
     Route::get('pie','ConocenosController@pie');
     Route::get('cubos','ConocenosController@cubos');
     Route::post('guardaContactoConocenos', 'ConocenosController@guardaContactoConocenos');
+    Route::post('conocenos/guardaCorreoNewsLetterConocenos', 'ConocenosController@guardaCorreoNewsLetterConocenos');
+    Route::get('conocenos/activaCorreo/{correo}/{hash}', 'ConocenosController@activaCorreoNews');
+    
     /*     * **************************Conocenos********************** */
 });
 
