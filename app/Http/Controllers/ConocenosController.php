@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Http\Requests;
 use DB;
 use App\Model\Conocenos\Con_contacto;
+use App\Model\Conocenos\Con_news;
 
 class ConocenosController extends Controller {
 
@@ -46,5 +47,34 @@ class ConocenosController extends Controller {
         $contacto->save();
         return redirect('conocenos');
     }
+    
+    public function guardaCorreoNewsLetterConocenos() {
+        $news = new Con_news();
+        $news->correo = filter_input(INPUT_POST, 'correo_newsletter');
+        $news->hash = md5(date('Y/m/d H:i:s'));
+        $news->save();
+        $this->enviaCorreoActivacionConocenos($news->correo, $news->hash);
+        return redirect('conocenos');
+    }
 
+    public function enviaCorreoActivacionConocenos($correo, $hash) {
+        Mail::send('viewConocenos.mailActivacion', ['correo' => $correo, 'hash' => $hash], function ($m) use ($correo) {
+            $m->from('ventana@televisioneducativa.gob.mx', 'Ventana Educativa');
+            $m->to($correo)->subject('Activación de correo!');
+        });
+        return redirect('viewConocenos/correoValidado');
+    }
+    
+    public function activaCorreoNews(Request $request, $correo, $hash) {
+
+        $news = Con_news::where('correo', '=', $correo)->first();
+
+        if ($news->hash == $hash) {
+            $news->validado = 1;
+            $news->save();
+            return redirect('viewConocenos/correoValidado');
+        } else {
+            print 'error';
+        }
+    }
 }

@@ -68,8 +68,8 @@
         <h4 class="text-uppercase">Contáctanos</h4>
         <table>
             <tr>
-                <td class="imgTecho" style="padding:5px;">
-                    {{ HTML::image('imagenes/red/footer/localizacion.png','logo localizacion', array('class'=>'img-responsive','style'=>'align:flex-start; width:14px; height:20px;)'))}}
+                <td class="imgTecho" style="padding-right: 15px;">
+                    {{ HTML::image('imagenes/red/footer/localizacion.png','logo localizacion', array('class'=>'img-responsive','style'=>' width:20px; height:20px;)'))}}
                 </td>
                 <td>
                     <p>Av. Circunvalación s/n, esquina Tabiqueros,<br>
@@ -83,7 +83,7 @@
         <br><br>
         <table>
             <tr>
-                <td class="imgTecho" style="padding:5px;">
+                <td class="imgTecho" style="padding:15px;">
                     {{ HTML::image('imagenes/red/footer/telefono.png','logo telefono', array('class'=>'img-responsive','style'=>'align:flex-start; width:20px; height:20px;)'))}}
                 </td>
                 <td>
@@ -100,7 +100,7 @@
         <br>
         <table>
             <tr>
-                <td class="imgTecho" style="padding:5px;">
+                <td class="imgTecho" style="padding:15px;">
                     {{ HTML::image('imagenes/red/footer/mail.png','logo mail', array('class'=>'img-responsive','style'=>'align:flex-start; width:20px; height:15px;)'))}}
                 </td>
                 <td>
@@ -110,12 +110,12 @@
         </table>
     </div>
     <div class="col-xs-12 col-sm-6 col-md-3 col-lg-2">
-        <h4>Mantente informado. Suscríbete.</h4>
-        <form class="form-inline" action="redmite/guardaCorreoNewsLetter" method="POST">
+        <h3>Mantente informado. Suscríbete.</h3>
+        <form class="form-inline" action="conocenos/guardaCorreoNewsLetterConocenos" method="POST">
             <div class="form-group">
                 <input type="email" required name="correo_newsletter" class="form-control" id="correoElectronico" placeholder="direccion@servidor.com"  style="width:80%">
                 {!!csrf_field()!!}
-                <button type="submit" class="btn btn-primary"><span class="glyphicon glyphicon-send"></span></button>
+                <button type="submit"  disabled="disabled" class="btn btn-primary"><span class="glyphicon glyphicon-send"></span></button>
             </div>
         </form>
     </div>
