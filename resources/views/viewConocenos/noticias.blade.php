@@ -39,11 +39,11 @@
             <div class="col-md-12 paddAbajo">
                 <div class="col-md-6 padDiv10px">
                         {{HTML::image('imagenes/conocenos/noticia1.jpg','Noticia Conocenos',array( 'class'=>'imgNoticia img-responsive'))}}
-                        <a><div class="text-center vermas">Ver más</div></a>                                                        
+                        <!--a><div class="text-center vermas">Ver más</div></a--> 
                 </div>
                 <div class="col-md-6 padDiv10px">
                         {{HTML::image('imagenes/conocenos/noticia2.jpg','Noticia Conocenos',array( 'class'=>'imgNoticia img-responsive'))}}
-                        <a><div class="text-center vermas">Ver más</div></a>                                                        
+                        <!--a><div class="text-center vermas">Ver más</div></a-->
                 </div>                
             </div>
 			<div class="col-md-12 ">
@@ -52,11 +52,11 @@
             <div class="col-md-12">
                 <div class="col-md-6 padDiv10px">
                         {{HTML::image('imagenes/conocenos/noticia3.jpg','Noticia Conocenos',array( 'class'=>'imgNoticia img-responsive'))}}
-                        <a><div class="text-center vermas">Ver más</div></a>                                                        
+                        <!--a><div class="text-center vermas">Ver más</div></a-->
                 </div>
                 <div class="col-md-6 padDiv10px">
                         {{HTML::image('imagenes/conocenos/noticia4.jpg','Noticia Conocenos',array( 'class'=>'imgNoticia img-responsive'))}}
-                        <a><div class="text-center vermas">Ver más</div></a>                                                        
+                        <!--a><div class="text-center vermas">Ver más</div></a-->
                 </div>                
             </div>
         </div>
