@@ -411,7 +411,10 @@ a.before:hover:before,a.after:hover:after{
 
 /*sección noticias*/
 .vermas{
-    border: 2px solid white; width: 130px; height: 40px; margin-left: 12px; position: relative; border-radius: 10px; padding: 1%; color: white; margin-top: -20%;
+    border: 2px solid white; width: 130px; height: 40px; margin-left: 12px; border-radius: 10px; padding: 1%; color: white;
+}
+.posicionVerMas{
+    position: absolute; bottom: 20px; left:20px;
 }
 .vermas:hover{background: white; color: black;}
 
@@ -480,6 +483,4 @@ a.before:hover:before,a.after:hover:after{
   .pieConocenos{height: 400px;} 
   /*.noticias{height: 500px;}*/
 }
-
-/*.noticias{height: 695px;}*/
 

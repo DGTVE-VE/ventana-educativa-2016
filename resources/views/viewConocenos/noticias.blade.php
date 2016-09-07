@@ -1,11 +1,12 @@
 <style>
-	.imgNoticia{
-
-	}
 	.padDiv10px{
-		padding: 5px;
+		padding-left: 3px;
+		padding-right: 3px;
 	}
-
+	.paddAbajo{
+		padding-bottom:5px;
+		padding-top:5px;
+	}
 	@media(min-width:750px){
 		.imgNoticia{
 			max-height:250px;
@@ -14,59 +15,50 @@
 	@media(min-width:992px){
 		.imgNoticia{
 			min-width:100%;
-			max-width:100%; /*450px;*/
-			max-height:350px;
-		}
-		.paddAbajo{
-			padding-bottom:20px;
+			max-width:100%; 
+			max-height:360px;
 		}
 	}
 	@media(min-width:1800px){
 		.imgNoticia{
 			min-width:100%;
-			max-width:100%; /*450px;*/
+			max-width:100%; 
 			max-height:460px;
-		}
-		.paddAbajo{
-			padding-bottom:90px;
 		}
 	}
 </style>
 
 <div class="row">
-    <div class="col-md-12 ">
-        <div class="col-md-7">
-            <div class="col-md-12 paddAbajo">
-                <div class="col-md-6 padDiv10px">
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 ">
+        <div class="col-xs-7 col-sm-7 col-md-7 col-lg-7">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 paddAbajo">
+                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 padDiv10px">
                         {{HTML::image('imagenes/conocenos/noticia1.jpg','Noticia Conocenos',array( 'class'=>'imgNoticia img-responsive'))}}
-                        <!--a><div class="text-center vermas">Ver más</div></a--> 
+                        <div class="posicionVerMas"><a><div class="text-center vermas">Ver más</div></a></div>
                 </div>
-                <div class="col-md-6 padDiv10px">
+                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 padDiv10px">
                         {{HTML::image('imagenes/conocenos/noticia2.jpg','Noticia Conocenos',array( 'class'=>'imgNoticia img-responsive'))}}
-                        <!--a><div class="text-center vermas">Ver más</div></a-->
+                        <div class="posicionVerMas"><a><div class="text-center vermas">Ver más</div></a></div>
                 </div>                
             </div>
-			<div class="col-md-12 ">
-				<br>
-			</div>
-            <div class="col-md-12">
-                <div class="col-md-6 padDiv10px">
-                        {{HTML::image('imagenes/conocenos/noticia3.jpg','Noticia Conocenos',array( 'class'=>'imgNoticia img-responsive'))}}
-                        <!--a><div class="text-center vermas">Ver más</div></a-->
-                </div>
-                <div class="col-md-6 padDiv10px">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 padDiv10px">
                         {{HTML::image('imagenes/conocenos/noticia4.jpg','Noticia Conocenos',array( 'class'=>'imgNoticia img-responsive'))}}
-                        <!--a><div class="text-center vermas">Ver más</div></a-->
+                        <div class="posicionVerMas"><a><div class="text-center vermas">Ver más</div></a></div>
+                </div>
+                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 padDiv10px">
+						{{HTML::image('imagenes/conocenos/noticia3.jpg','Noticia Conocenos',array( 'class'=>'imgNoticia img-responsive'))}}
+                        <div class="posicionVerMas"><a><div class="text-center vermas">Ver más</div></a></div>
                 </div>                
             </div>
         </div>
-        <div class="col-md-5">
+        <div class="col-xs-5 col-sm-5 col-md-5 col-lg-5">
             <!--Widget face y twitter-->       
-            <div class="col-md-12">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                 {{ HTML::image('imagenes/red/Logotipos/facebook.png','facebook', array('class'=>'img-responsive img-rounded', 'style'=>'width:100px; height:40px;'))}}
                 <div class="fb-page" data-href="https://www.facebook.com/TvEducativaMx" data-tabs="timeline" data-width="500" data-height="350" data-small-header="false" data-adapt-container-width="false" data-hide-cover="false" data-show-facepile="false"><blockquote cite="https://www.facebook.com/TvEducativaMx" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/TvEducativaMx">Televisión Educativa Mx</a></blockquote></div>
             </div>
-            <div class="col-md-12">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                 <a class="twitter-timeline" data-lang="en" data-width="500" data-height="350" data-theme="light" href="https://twitter.com/tveducativamx">Tweets by tveducativamx</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
             </div>
         </div>
