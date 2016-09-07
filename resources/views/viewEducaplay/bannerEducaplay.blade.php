@@ -23,7 +23,7 @@ namespace App\Http\Controllers; ?>
             <!-- Wrapper for slides -->
 
             <div class="item active" >
-                <img src="{{$bannerImagen->url}}" alt="..." id="imgactive{{$bannerImagen->id}}">
+                <img src="{{$bannerImagen->url}}" alt="..." id="imgactive{{$bannerImagen->id}}" style="min-width:100%;">
 
 
                 <div class="carousel-caption posicionDescripcion">
@@ -44,7 +44,7 @@ namespace App\Http\Controllers; ?>
             @elseif($item1 != 0)
             <!-- Wrapper for slides -->
             <div class="item">
-                <img src="{{$bannerImagen->url}}" alt="Imagen banner">
+                <img src="{{$bannerImagen->url}}" alt="Imagen banner" style="min-width:100%;">
                 <div class="carousel-caption posicionDescripcion">
                     <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
                         <p class="text-justify">
