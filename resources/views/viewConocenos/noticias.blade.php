@@ -1,23 +1,61 @@
+<style>
+	.imgNoticia{
+
+	}
+	.padDiv10px{
+		padding: 5px;
+	}
+
+	@media(min-width:750px){
+		.imgNoticia{
+			max-height:250px;
+		}
+	}
+	@media(min-width:992px){
+		.imgNoticia{
+			min-width:100%;
+			max-width:100%; /*450px;*/
+			max-height:350px;
+		}
+		.paddAbajo{
+			padding-bottom:20px;
+		}
+	}
+	@media(min-width:1800px){
+		.imgNoticia{
+			min-width:100%;
+			max-width:100%; /*450px;*/
+			max-height:460px;
+		}
+		.paddAbajo{
+			padding-bottom:90px;
+		}
+	}
+</style>
+
 <div class="row">
-    <div class="col-md-12 noticias">
+    <div class="col-md-12 ">
         <div class="col-md-7">
-            <div class="col-md-12">
-                <div class="col-md-6">
-                        {{HTML::image('imagenes/conocenos/noticia1.jpg','Noticia Conocenos',array( 'class'=>'img-responsive'))}}
+            <div class="col-md-12 paddAbajo">
+                <div class="col-md-6 padDiv10px">
+                        {{HTML::image('imagenes/conocenos/noticia1.jpg','Noticia Conocenos',array( 'class'=>'imgNoticia img-responsive'))}}
                         <a><div class="text-center vermas">Ver más</div></a>                                                        
                 </div>
-                <div class="col-md-6">
-                        {{HTML::image('imagenes/conocenos/noticia2.jpg','Noticia Conocenos',array( 'class'=>'img-responsive'))}}
+                <div class="col-md-6 padDiv10px">
+                        {{HTML::image('imagenes/conocenos/noticia2.jpg','Noticia Conocenos',array( 'class'=>'imgNoticia img-responsive'))}}
                         <a><div class="text-center vermas">Ver más</div></a>                                                        
                 </div>                
             </div>
+			<div class="col-md-12 ">
+				<br>
+			</div>
             <div class="col-md-12">
-                <div class="col-md-6">
-                        {{HTML::image('imagenes/conocenos/noticia3.jpg','Noticia Conocenos',array( 'class'=>'img-responsive'))}}
+                <div class="col-md-6 padDiv10px">
+                        {{HTML::image('imagenes/conocenos/noticia3.jpg','Noticia Conocenos',array( 'class'=>'imgNoticia img-responsive'))}}
                         <a><div class="text-center vermas">Ver más</div></a>                                                        
                 </div>
-                <div class="col-md-6">
-                        {{HTML::image('imagenes/conocenos/noticia4.jpg','Noticia Conocenos',array( 'class'=>'img-responsive'))}}
+                <div class="col-md-6 padDiv10px">
+                        {{HTML::image('imagenes/conocenos/noticia4.jpg','Noticia Conocenos',array( 'class'=>'imgNoticia img-responsive'))}}
                         <a><div class="text-center vermas">Ver más</div></a>                                                        
                 </div>                
             </div>
