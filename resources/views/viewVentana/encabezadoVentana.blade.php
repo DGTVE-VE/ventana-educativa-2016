@@ -52,7 +52,7 @@
                             <table id="mueveTablaApps" class="mueveTabla">
                                 <tr>
                                     <td class="divApp centered center-block">
-                                        <a class="" href="#">
+                                        <a class="" href="{{url('educaplay')}}">
                                             {{ HTML::image('imagenes/ventana/encabezado/appVOD.png','Educaplay: Videos educativos')}}
                                         </a>
                                     </td>
