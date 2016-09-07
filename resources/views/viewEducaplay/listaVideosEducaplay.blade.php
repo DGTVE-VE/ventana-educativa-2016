@@ -409,7 +409,7 @@ var IdVideoYoutube;
             @else
             {{--*/ $infoTemporada = $infoVideo->temporada; $infoCapitulo = $infoVideo->capitulo; $infoSinopsis = $infoVideo->sinopsis; /*--}}
             @endif
-            <p style="font-size:1.2em;"> Temporada: <span id="temporadaActual">{{$infoTemporada}}</span> Programa: <span id="capituloActual">{{$infoCapitulo}}</span></p>
+            <p style="font-size:1.2em;"> Temporada: <span id="temporadaActual">{{$infoTemporada}}</span></p> <span style="font-size:1.2em;"> Programa: </span><span id="capituloActual" style="font-size:1.2em;">{{$infoCapitulo}}</span></p>
             <p class="text-justify"> Sinopsis: <span id="sinopsisActual">{{$infoSinopsis}}</span></p>
             @if (Auth::check ())
             <br>
@@ -427,7 +427,7 @@ var IdVideoYoutube;
         <div class="thumbnail fondoTrans">
             <img src="http://img.youtube.com/vi/{{ $serie->url_video}}/2.jpg" class='item-a' style="height:150px; cursor:pointer;" onclick="muestraVideo('{{$serie->url_video}}','{{$serie->id}}','{{$idSerie}}')"/>
             <div class="caption estiloTxt text-justify">
-                <h4 class="estiloTxt"> Temporada: {{$serie->temporada}} Programa: {{$serie->capitulo}}</h4>
+                <h4 class="estiloTxt"> Programa: {{$serie->capitulo}}</h4>
                 @if($longCadena = strlen($serie->sinopsis) < 100)
                 <span class="estiloTxt">{{$serie->sinopsis}}</span><br>                                                                
                 @else
