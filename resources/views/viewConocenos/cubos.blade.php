@@ -13,6 +13,11 @@
 			height: 150px;
 		}
 	}
+	@media(min-width:1800px){
+		.medidaCubo{
+			height: 400px;
+		}
+	}
 	.medidaFrente{
 		width: 100%;
 		position: absolute;
