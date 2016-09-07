@@ -33,8 +33,9 @@ and open the template in the editor.
         <link href='https://fonts.googleapis.com/css?family=Exo:400,600,300,700'rel='stylesheet' type='text/css'>
 
         <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" type="text/javascript" rel="stylesheet">
-        <link href="css/conocenos/conocenos.css" rel="stylesheet">
+
         <link rel="stylesheet" href="{{ asset('css/ventana/estiloventana2.css') }}" >
+        <link href="css/conocenos/conocenos.css" rel="stylesheet">        
         @yield('scripts')
     </head>
     <style>
