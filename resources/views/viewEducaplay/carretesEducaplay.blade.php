@@ -27,11 +27,12 @@
 			</div>
 		@endif
 		{{--*/ $consecutivo=1; 
-			$nombreCat = EducaplayController::consultaCategoria($elemento->categoria_id);
+			$imgCat = 'imagenes/educaplay/categorias/imgCategorias/'.EducaplayController::consultaCategoria($elemento->categoria_id).'.png';
+			$imagenCategoria = url($imgCat);
 		/*--}}
 		<div class="row margenesFila margenInferior">
 			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-uppercase">
-				<p style="color:white; font-size:16px;"> {{$nombreCat}}</p>
+				<p style="color:white; font-size:16px;"> <img src="{{$imagenCategoria}}" /> </p>
 			</div>
 		</div>
 		{{--*/ $catAnterior = $elemento->categoria_id; /*--}}

@@ -100,11 +100,11 @@ class EducaplayController extends Controller {
 
     public static function consultaCategoria($cat) {
         $categoria = DB::table('edu_categorias')
-                ->select('edu_categorias.categoria')
+                ->select('edu_categorias.imgCategoria')
                 ->where('edu_categorias.id', '=', $cat)
                 ->first();
         if ($categoria != null) {
-            return $categoria->categoria;
+            return $categoria->imgCategoria;
         } else {
             return 'Categoria no encontrada';
         }
