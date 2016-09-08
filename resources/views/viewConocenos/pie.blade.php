@@ -1,4 +1,4 @@
-﻿<div class="navbar navbar-fixed-bottom navbar-inverse pieConocenos" style="color: white; height: 200px;">
+﻿<div class="navbar navbar-inverse pieConocenos" style="color: white; height: 200px; position: absolute; bottom:-20px; z-index:1001; width:100%;">
     <!--sdk twitter-->
     <script>window.twttr = (function (d, s, id) {
             var js, fjs = d.getElementsByTagName(s)[0],

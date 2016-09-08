@@ -47,7 +47,7 @@ and open the template in the editor.
         <header>
             @yield('menuConocenos')
         </header>
-        <div class="container-fluid" style="padding:0; overflow-x:hidden;">
+        <div class="container-fluid" style="padding:0; overflow:hidden;">
             @yield('cuerpoConocenos')
         </div>
         <!-- jQuery -->

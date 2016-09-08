@@ -53,7 +53,7 @@
 			
 		//	************	Activación de elemento fullPage (desplazamiento vertical) 	***********
 			$('#fullpage').fullpage(
-				{navigation:true, scrollOverflow:false, loopTop:true, 
+				{navigation:true, scrollOverflow:false, loopTop:true, scrollBar: true,
 					onLeave: 
 					function(index, nextIndex, direction){
 						var leavingSection = $(this);
