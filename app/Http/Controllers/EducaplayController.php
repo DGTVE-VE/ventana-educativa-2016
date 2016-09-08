@@ -116,7 +116,12 @@ class EducaplayController extends Controller {
                 ->where('serie_id', '=', $SerieId)
                 ->where('capitulo', '=', 1)
                 ->first();
-        return $urlId;
+		if ($urlId == null) {
+            $urlId = new Edu_video();
+			$urlId->url_video = '000000';
+			$urlId->id = '000000';
+        }
+		return $urlId;
     }
 
     public function queryRate() {
