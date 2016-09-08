@@ -16,9 +16,7 @@ body {
     overflow-x:hidden; overflow-y:scroll;
 
 }
- #liaddshapes::-webkit-scrollbar {
-        width: 0 !important;
-    }
+
 ::-webkit-scrollbar {
       width: 1px !important;
 }
