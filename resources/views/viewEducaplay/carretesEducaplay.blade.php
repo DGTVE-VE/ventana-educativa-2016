@@ -32,7 +32,7 @@
 		/*--}}
 		<div class="row margenesFila margenInferior">
 			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-uppercase">
-				<p style="color:white; font-size:16px;"> <img src="{{$imagenCategoria}}" /> </p>
+				<img src="{{$imagenCategoria}}" class="img-responsive"/>
 			</div>
 		</div>
 		{{--*/ $catAnterior = $elemento->categoria_id; /*--}}
