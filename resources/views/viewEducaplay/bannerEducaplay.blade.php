@@ -24,10 +24,8 @@ namespace App\Http\Controllers; ?>
 
             <div class="item active" >
                 <img src="{{$bannerImagen->url}}" alt="..." id="imgactive{{$bannerImagen->id}}" style="min-width:100%;">
-
-
                 <div class="carousel-caption posicionDescripcion">
-                    <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
+                    <div class="col-xs-5 col-sm-5 col-md-5 col-lg-5">
                         <p class="text-justify">
                             {{$bannerImagen->descripcion}}
                         </p>
@@ -46,7 +44,7 @@ namespace App\Http\Controllers; ?>
             <div class="item">
                 <img src="{{$bannerImagen->url}}" alt="Imagen banner" style="min-width:100%;">
                 <div class="carousel-caption posicionDescripcion">
-                    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                    <div class="col-xs-5 col-sm-5 col-md-5 col-lg-5">
                         <p class="text-justify">
                             {{$bannerImagen->descripcion}}
                         </p>
