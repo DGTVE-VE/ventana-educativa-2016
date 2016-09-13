@@ -1,5 +1,16 @@
 <?php
 namespace App\Http\Controllers; ?>
+{{--*/
+	function recortaDescripcion($txtDescribe, $tamCadena){
+		if(strlen($txtDescribe) > $tamCadena){
+			$textoDescribe = substr($txtDescribe, 0, $tamCadena).'...';
+			return $textoDescribe;
+		}
+		else{
+			return $txtDescribe;
+		}
+	}
+/*--}}
 <form accept-charset="utf-8" method="POST">
 <div class="row visible-xs margenMenuChico">
 </div>
@@ -27,7 +38,7 @@ namespace App\Http\Controllers; ?>
                 <div class="carousel-caption posicionDescripcion">
                     <div class="col-xs-5 col-sm-5 col-md-5 col-lg-5">
                         <p class="text-justify">
-                            {{$bannerImagen->descripcion}}
+                            {{recortaDescripcion($bannerImagen->descripcion, 200)}}
                         </p>
                     </div>
                 </div>
@@ -46,7 +57,7 @@ namespace App\Http\Controllers; ?>
                 <div class="carousel-caption posicionDescripcion">
                     <div class="col-xs-5 col-sm-5 col-md-5 col-lg-5">
                         <p class="text-justify">
-                            {{$bannerImagen->descripcion}}
+                            {{recortaDescripcion($bannerImagen->descripcion, 200)}}
                         </p>
                     </div>
                     <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6"></div>
