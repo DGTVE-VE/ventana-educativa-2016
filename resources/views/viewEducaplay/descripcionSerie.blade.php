@@ -11,7 +11,7 @@
             <div id="descripcion1" class="tab-pane fade in active">
 				<div class="col-md-10 col-md-offset-1">
 					<img src="{{url($primerDetalleSerie->url)}}" class="img-responsive" onclick="muestraDetalle('1')"/>
-					<div style="position: absolute; top: 70%; left:2%; width:35%;">
+					<div  class="text-justify" style="position: absolute; top: 70%; left:2%; width:30%;">
 						<p>{{$primerDetalleSerie->descripcion}}</p>
 					</div>
 				</div>

@@ -1,16 +1,6 @@
 <?php
 namespace App\Http\Controllers; ?>
-{{--*/
-	function recortaDescripcion($txtDescribe, $tamCadena){
-		if(strlen($txtDescribe) > $tamCadena){
-			$textoDescribe = substr($txtDescribe, 0, $tamCadena).'...';
-			return $textoDescribe;
-		}
-		else{
-			return $txtDescribe;
-		}
-	}
-/*--}}
+
 <form accept-charset="utf-8" method="POST">
 <div class="row visible-xs margenMenuChico">
 </div>
