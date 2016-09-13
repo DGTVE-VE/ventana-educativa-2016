@@ -50,6 +50,6 @@
 </div>
 @else
 <div class="col-md-3 col-md-offset-5" style="position: relative; top: 150px;">
-    <p style="color:white;"> NO SE ENCONTRARON VIDEOS PARA ESTA TEMPORADA</p>
+    <p style="color:white; font-size:2em;"> P R Ó X I M A M E N T E </p>
 </div>
 @endif

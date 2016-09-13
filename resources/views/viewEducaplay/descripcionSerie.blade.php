@@ -77,7 +77,7 @@
     </div>
 @else
 	<div class="col-xs-4 col-sm-4 col-md-3 col-md-offset-4">
-		<p style="color:white;"> SIN DATOS PARA ESTA SERIE</p>
+		<p style="color:white; font-size:2em;"> P R Ó X I M A M E N T E </p>
 	</div>
 @endif
 @endsection

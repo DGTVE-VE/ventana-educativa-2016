@@ -457,7 +457,7 @@ var IdVideoYoutube;
 </div>
 @else
 <div class="col-xs-5 col-sm-5 col-md-3 col-xs-offset-3 col-sm-offset-3 col-md-offset-5" style="position: relative; top: 150px;">
-    <p style="color:white;"> SIN DATOS PARA ESTA SERIE</p>
+    <p style="color:white; font-size:2em;"> P R Ó X I M A M E N T E </p>
 </div>
 @endif
 
