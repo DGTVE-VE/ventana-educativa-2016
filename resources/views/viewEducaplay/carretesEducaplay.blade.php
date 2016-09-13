@@ -56,11 +56,12 @@
 										</a>
 										<div id="titulo{{$tira}}{{$consecutivo}}" class="caption txtSobreImg escondeTitulo">
 											<h4 class="estiloTxt">
-											@if(strlen($elemento->titulo_serie)>60)
+											<p><br><br></p>
+											<!--if(strlen($elemento->titulo_serie)>60)
 												{{substr($elemento->titulo_serie,0,60).'...'}}
-											@else
+											else
 												{{$elemento->titulo_serie}}
-											@endif
+											endif-->
 											</h4><br>
 											<img class="estiloIconoMas divIconoMas" src="{{url('imagenes/educaplay/flechaDetalle.png')}}" onclick="muestraDetalle({{$tira}},{{$elemento->id}})"/>
 										</div>
