@@ -128,38 +128,38 @@
 						{{HTML::image('imagenes/ventana/iconoSeccion/ventanaBco.png','ventana Educativa',['id'=>'iconoRomboSM07','class'=>'imgColor iconoRomboSM7'])}}
                     </td><td></td>
                 </tr><tr><td>
-                        {{HTML::image('imagenes/ventana/homeventana/FOTO-09.png','Educaplay',['id'=>'CUBOSM08','class'=>'imgColor oculta difumina Intervalo1 slideInRight romboSM8','usemap'=>'#mapacubosm08'])}}
-						{{HTML::image('imagenes/ventana/iconoSeccion/mediateca.png','Educaplay',['id'=>'iconoRombosm08','class'=>'imgColor oculta difumina Intervalo1 slideInRight iconoDocentesSM'])}}
+                        {{HTML::image('imagenes/ventana/homeventana/FOTO-09.png','Educaplay',['id'=>'CUBOSM08','class'=>'imgColor oculta difumina Intervalo2 slideInLeft romboSM8','usemap'=>'#mapacubosm08'])}}
+						{{HTML::image('imagenes/ventana/iconoSeccion/mediateca.png','Educaplay',['id'=>'iconoRombosm08','class'=>'imgColor oculta difumina Intervalo2 slideInLeft iconoDocentesSM'])}}
                     </td><td></td><td>
-                        {{HTML::image('imagenes/ventana/homeventana/FOTO-06.png','Mediateca',['id'=>'CUBOSM09','class'=>'imgColor oculta difumina Intervalo1 slideInRight foto9','usemap'=>'#mapacubosm09'])}}
-						{{HTML::image('imagenes/ventana/iconoSeccion/vod.png','Mediateca',['id'=>'iconoRombo09','class'=>'imgColor oculta difumina Intervalo1 slideInRight iconoFoto9'])}}
+                        {{HTML::image('imagenes/ventana/homeventana/FOTO-06.png','Mediateca',['id'=>'CUBOSM09','class'=>'imgColor oculta difumina Intervalo2 slideInRight foto9','usemap'=>'#mapacubosm09'])}}
+						{{HTML::image('imagenes/ventana/iconoSeccion/vod.png','Mediateca',['id'=>'iconoRombo09','class'=>'imgColor oculta difumina Intervalo2 slideInRight iconoFoto9'])}}
                     </td>
                 </tr><tr><td></td><td>
-                        {{HTML::image('imagenes/ventana/homeventana/FOTO-04.png','Canal IberoAmericano',['id'=>'CUBOSM10','class'=>'imgColor oculta difumina Intervalo2 slideInRight foto10','usemap'=>'#mapacubosm10'])}}
-						{{HTML::image('imagenes/ventana/iconoSeccion/canal_ibero.png','Canal IberoAmericano',['id'=>'iconoRombosm10','class'=>'imgColor oculta difumina Intervalo2 slideInRight iconoFoto10'])}}
+                        {{HTML::image('imagenes/ventana/homeventana/FOTO-04.png','Canal IberoAmericano',['id'=>'CUBOSM10','class'=>'imgColor oculta difumina Intervalo1 slideInLeft foto10','usemap'=>'#mapacubosm10'])}}
+						{{HTML::image('imagenes/ventana/iconoSeccion/canal_ibero.png','Canal IberoAmericano',['id'=>'iconoRombosm10','class'=>'imgColor oculta difumina Intervalo1 slideInLeft iconoFoto10'])}}
                     </td><td></td>
                 </tr>
                 <tr><td>
-                        {{HTML::image('imagenes/ventana/homeventana/FOTO-08.png','Biblioteca',['id'=>'CUBOSM05','class'=>'imgColor oculta difumina Intervalo1 slideInLeft foto5','usemap'=>'#mapacubosm05'])}}
-						{{HTML::image('imagenes/ventana/iconoSeccion/biblioteca.png','Biblioteca',['id'=>'iconoRomboSM05','class'=>'imgColor oculta difumina Intervalo1 slideInLeft iconoFoto5'])}}
+                        {{HTML::image('imagenes/ventana/homeventana/FOTO-08.png','Biblioteca',['id'=>'CUBOSM05','class'=>'imgColor oculta difumina Intervalo3 slideInLeft foto5','usemap'=>'#mapacubosm05'])}}
+						{{HTML::image('imagenes/ventana/iconoSeccion/biblioteca.png','Biblioteca',['id'=>'iconoRomboSM05','class'=>'imgColor oculta difumina Intervalo3 slideInLeft iconoFoto5'])}}
                     </td><td></td><td>
-                        {{HTML::image('imagenes/ventana/homeventana/FOTO-05.png','Red Mesoamericana',['id'=>'CUBOSM06','class'=>'imgColor oculta difumina Intervalo1 slideInLeft foto6','usemap'=>'#mapacubosm06'])}}
-						{{HTML::image('imagenes/ventana/iconoSeccion/redmiteBco.png','Red Mesoamericana',['id'=>'iconoRomboSM06','class'=>'imgColor oculta difumina Intervalo1 slideInLeft iconoFoto6'])}}
+                        {{HTML::image('imagenes/ventana/homeventana/FOTO-05.png','Red Mesoamericana',['id'=>'CUBOSM06','class'=>'imgColor oculta difumina Intervalo3 slideInRight foto6','usemap'=>'#mapacubosm06'])}}
+						{{HTML::image('imagenes/ventana/iconoSeccion/redmiteBco.png','Red Mesoamericana',['id'=>'iconoRomboSM06','class'=>'imgColor oculta difumina Intervalo3 slideInRight iconoFoto6'])}}
                     </td>
                 </tr><tr><td></td><td>
-                        {{HTML::image('imagenes/ventana/homeventana/FOTO-10.png','Mexico X',['id'=>'CUBOSM13','class'=>'imgColor oculta difumina Intervalo4 slideInRight foto13','usemap'=>'#mapacubosm13'])}}
-						{{HTML::image('imagenes/ventana/iconoSeccion/mexicoxBco.png','Mexico X',['id'=>'iconoRomboSM13','class'=>'imgColor oculta difumina Intervalo4 slideInRight iconoFoto13'])}}
+                        {{HTML::image('imagenes/ventana/homeventana/FOTO-10.png','Mexico X',['id'=>'CUBOSM13','class'=>'imgColor oculta difumina Intervalo1 slideInRight foto13','usemap'=>'#mapacubosm13'])}}
+						{{HTML::image('imagenes/ventana/iconoSeccion/mexicoxBco.png','Mexico X',['id'=>'iconoRomboSM13','class'=>'imgColor oculta difumina Intervalo1 slideInRight iconoFoto13'])}}
                     </td><td></td>
                 </tr><tr><td>
-                        {{HTML::image('imagenes/ventana/homeventana/FOTO-02.png','Cultura',['id'=>'CUBOSM02','class'=>'imgColor oculta difumina Intervalo3 slideInLeft foto2','usemap'=>'#mapacubosm2'])}}
-                        {{HTML::image('imagenes/ventana/iconoSeccion/cultura.png','Cultura',['id'=>'iconoRomboSM02','class'=>'imgColor oculta difumina Intervalo3 slideInLeft iconoFoto2'])}}
+                        {{HTML::image('imagenes/ventana/homeventana/FOTO-02.png','Cultura',['id'=>'CUBOSM02','class'=>'imgColor oculta difumina Intervalo4 slideInLeft foto2','usemap'=>'#mapacubosm2'])}}
+                        {{HTML::image('imagenes/ventana/iconoSeccion/cultura.png','Cultura',['id'=>'iconoRomboSM02','class'=>'imgColor oculta difumina Intervalo4 slideInLeft iconoFoto2'])}}
                     </td><td></td><td>
-                        {{HTML::image('imagenes/ventana/homeventana/FOTO-12.png','Salud',['id'=>'CUBOSM04','class'=>'imgColor oculta difumina Intervalo2 slideInLeft foto4','usemap'=>'#mapacubosm4'])}}
-						{{HTML::image('imagenes/ventana/iconoSeccion/salud.png','Salud',['id'=>'iconoRomboSM04','class'=>'imgColor oculta difumina Intervalo2 slideInLeft iconoFotoPadres'])}}
+                        {{HTML::image('imagenes/ventana/homeventana/FOTO-12.png','Salud',['id'=>'CUBOSM04','class'=>'imgColor oculta difumina Intervalo4 slideInRight foto4','usemap'=>'#mapacubosm4'])}}
+						{{HTML::image('imagenes/ventana/iconoSeccion/salud.png','Salud',['id'=>'iconoRomboSM04','class'=>'imgColor oculta difumina Intervalo4 slideInRight iconoFotoPadres'])}}
                     </td>
                 </tr>
             </table>
-            <div class="derechaSociales" style="position:fixed; top: 50%; left:80%;">
+            <div class="derechaSociales" style="position:fixed; bottom: 10%; right:5%;">
                 <ul class="sociales">
                     <li><a href="https://twitter.com/tveducativamx" target="_blank" class="cambiacolorredesSociales"><span><i class="fa fa-twitter fa-2x " id="ct"></i></span></a></li><br/>
                     <li><a href="https://www.facebook.com/TvEducativaMx" target="_blank" class="cambiacolorredesSociales"><span><i class="fa fa-facebook fa-2x" id="cf"></i></span></a></li><br/>
