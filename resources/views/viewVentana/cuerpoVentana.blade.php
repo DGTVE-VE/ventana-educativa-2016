@@ -3,13 +3,13 @@
         position: absolute;
         top:1%;
         left:2%;
-        z-index:50;
+        z-index:10;
     }
 	.mapaRombosCh{
         position: absolute;
         top:0.5%;
         left:8%;
-        z-index:50;
+        z-index:10;
     }
 </style>
 <link rel="stylesheet" type="text/css" href="css/ventana/estiloventana.css"/>
@@ -110,15 +110,15 @@
 		<div class="col-xs-9 col-xs-offset-1">
 			{{HTML::image('imagenes/ventana/homeventana/mapaRombosCh.png','mapaRombosCh',['name'=>'mapaRombosCh','id'=>'mapaRombosCh', 'class'=>'mapaRombosCh img-responsive', 'usemap'=>'#mapaRombosCh'])}}
 			<map name="mapaRombosCh" id="mapaRombosCh">
-				<area title="" shape="poly" coords="129,119,247,239,364,119,244,2" alt="conocenos" href="{{url('conocenos')}}" />
-				<area title="" shape="poly" coords="7,244,126,123,243,244,123,361" alt="educamedia" href="{{url('educamedia')}}" />
-				<area title="" shape="poly" coords="251,245,367,125,484,245,368,363" alt="educaplay" href="{{url('educaplay')}}" />
-				<area title="" shape="poly" coords="247,243,365,363,247,480,128,362" alt="canal IberoAmericano" href="http://www.ibe.tv/es/canal/iberoamericano/315/En-directo.htm" target="_blank" />
-				<area title="" shape="poly" coords="4,479,126,361,241,479,126,600" alt="biblioteca" href="{{url('biblioteca')}}" />
-				<area title="" shape="poly" coords="249,482,367,366,486,482,368,600" alt="RedMITE" href="{{url('redmite')}}" />
-				<area title="" shape="poly" coords="246,485,362,603,246,723,129,603" alt="México X" href="http://mexicox.gob.mx/" target="_blank"/>
-				<area title="" shape="poly" coords="127,603,7,720,125,845,242,720" alt="Cultura" href="{{url('cultura')}}" />
-				<area title="" shape="poly" coords="366,604,484,723,366,849,247,726" alt="Salud" href="http://www.promocion.salud.gob.mx/dgps/interior1/programas/escuela_salud.html" target="_blank"/>
+				<area title="" shape="poly" coords="119,139,237,259,354,139,234,22" alt="conocenos" href="{{url('conocenos')}}" />
+				<area title="" shape="poly" coords="5,254,124,133,241,254,121,371" alt="educamedia" href="{{url('educamedia')}}" />
+				<area title="" shape="poly" coords="241,260,350,150,460,260,350,370" alt="educaplay" href="{{url('educaplay')}}" />
+				<area title="" shape="poly" coords="237,253,350,365,240,480,125,367" alt="canal IberoAmericano" href="http://www.ibe.tv/es/canal/iberoamericano/315/En-directo.htm" target="_blank" />
+				<area title="" shape="poly" coords="0,479,121,361,236,479,121,600" alt="biblioteca" href="{{url('biblioteca')}}" />
+				<area title="" shape="poly" coords="235,482,350,370,460,482,348,590" alt="RedMITE" href="{{url('redmite')}}" />
+				<area title="" shape="poly" coords="230,485,340,590,230,700,120,590" alt="México X" href="http://mexicox.gob.mx/" target="_blank"/>
+				<area title="" shape="poly" coords="120,595,5,705,120,810,235,705" alt="Cultura" href="{{url('cultura')}}" />
+				<area title="" shape="poly" coords="346,590,460,703,346,820,230,703" alt="Salud" href="http://www.promocion.salud.gob.mx/dgps/interior1/programas/escuela_salud.html" target="_blank"/>
 			</map>
 		</div>
         <div class="col-xs-10 col-sm-10 col-xs-offset-1 col-sm-offset-1" style="padding: 20%;">

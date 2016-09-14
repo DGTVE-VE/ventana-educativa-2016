@@ -9,31 +9,31 @@
 				<table class="table tablaCOlaboradores"   >
 					<tr>
 						<td>
-							<a href=" http://www.gob.mx/sep" target="_blank" onMouseOver="document.logosep.src = 'imagenes/ventana/pieventana/sepcolor.png';"
+							<a href="http://www.gob.mx/sep" target="_blank" onMouseOver="document.logosep.src = 'imagenes/ventana/pieventana/sepcolor.png';"
 							   onMouseOut="document.logosep.src = 'imagenes/ventana/pieventana/sep.png';">
 								{{ HTML::image('imagenes/ventana/pieventana/sep.png','Secretaria de Educación Pública',  ['style'=>'margin-left: 10% !important;', 'name'=>'logosep', 'class'=>'img-responsive'])}}
 							</a> 
 						</td>
 						<td>
-							<a href=" http://www.televisioneducativa.gob.mx/" target="_blank" onMouseOver="document.logotve.src = 'imagenes/ventana/pieventana/tvecolor.png';"
+							<a href="http://www.televisioneducativa.gob.mx/" target="_blank" onMouseOver="document.logotve.src = 'imagenes/ventana/pieventana/tvecolor.png';"
 							   onMouseOut="document.logotve.src = 'imagenes/ventana/pieventana/tve.png';">
 								{{ HTML::image('imagenes/ventana/pieventana/tve.png','Televisión Educativa',  ['style'=>'margin-left: -9% !important;', 'name'=>'logotve','class'=>'img-responsive'])}}     
 							</a> 
 						</td>
 						<td>
-							<a href=" http://www.csuca.org/" target="_blank" onMouseOver="document.logocsuca.src = 'imagenes/ventana/pieventana/csucacolor.png';"
+							<a href="http://www.csuca.org/" target="_blank" onMouseOver="document.logocsuca.src = 'imagenes/ventana/pieventana/csucacolor.png';"
 							   onMouseOut="document.logocsuca.src = 'imagenes/ventana/pieventana/csuca.png';">                            
 								{{ HTML::image('imagenes/ventana/pieventana/csuca.png','Consejo Superior Universitario Centroamericano',  ['style'=>'margin-left: -30% !important;', 'name'=>'logocsuca','class'=>'img-responsive'])}}
 							</a>       
 						</td>
 						<td>
-							<a href=" http://ceducar.info/ceducar/" target="_blank" onMouseOver="document.logoceccsica.src = 'imagenes/ventana/pieventana/ceccsicacolor.png';"
+							<a href="http://ceducar.info/ceducar/" target="_blank" onMouseOver="document.logoceccsica.src = 'imagenes/ventana/pieventana/ceccsicacolor.png';"
 							   onMouseOut="document.logoceccsica.src = 'imagenes/ventana/pieventana/ceccsica.png';">
 								{{ HTML::image('imagenes/ventana/pieventana/ceccsica.png','Coordinación Educativa y Cultural Centroamericana',  ['style'=>'margin-left: 30% !important;', 'name'=>'logoceccsica','class'=>'img-responsive'])}}
 							</a>    
 						</td>
 						<td>
-							<a href=" https://www.unah.edu.hn/" target="_blank" onMouseOver="document.logounah.src = 'imagenes/ventana/pieventana/unahcolor.png';"
+							<a href="https://www.unah.edu.hn/" target="_blank" onMouseOver="document.logounah.src = 'imagenes/ventana/pieventana/unahcolor.png';"
 							   onMouseOut="document.logounah.src = 'imagenes/ventana/pieventana/logounah.png';">
 								{{ HTML::image('imagenes/ventana/pieventana/logounah.png','Universidad Nacional Autónoma de Honduras',  ['style'=>'margin-left: 45% !important;', 'name'=>'logounah','class'=>'img-responsive'])}}
 							</a> 
@@ -45,7 +45,7 @@
 							</a> 
 						</td>
 						<td>
-							<a href=" http://amexcid.gob.mx/" target="_blank" onMouseOver="document.logoamexcid.src = 'imagenes/ventana/pieventana/amexcidcolor.png';"
+							<a href="http://amexcid.gob.mx/" target="_blank" onMouseOver="document.logoamexcid.src = 'imagenes/ventana/pieventana/amexcidcolor.png';"
 							   onMouseOut="document.logoamexcid.src = 'imagenes/ventana/pieventana/amexcid.png';">
 								{{ HTML::image('imagenes/ventana/pieventana/amexcid.png','Agencia Mexicana de Cooperación Internacional para el Desarrollo',  ['style'=>'margin-left: 35% !important;', 'name'=>'logoamexcid','class'=>'img-responsive','width'=>'40%', 'height'=>'40%'])}}
 							</a> 
@@ -60,42 +60,42 @@
 </div>
 <!--	-----------------	Barra colaboradores para resoluciones pequeñas	----------------	-->
 <div class="visible-xs-block visible-sm-block">
-    <div class="tabs_holder f1SM " style="position:fixed; top:90px; left:0px; width:120px;">
+    <div class="tabs_holder f1SM " style="position:fixed; top:90px; left:0px; width:120px; z-index:11;">
 		<table>
 		<tr><td>
 			<div id="efectobarramenu2" style="width:80px;">
 				<table class="table tablaColaboraSM" id="efectobarramenu2">
 					<tr>
 						<td>
-							<a href=" http://www.gob.mx/sep" target="_blank" onMouseOver="document.logosepsm.src = 'imagenes/ventana/pieventana/sepcolor.png';"
+							<a href="http://www.gob.mx/sep" target="_blank" onMouseOver="document.logosepsm.src = 'imagenes/ventana/pieventana/sepcolor.png';"
 							   onMouseOut="document.logosepsm.src = 'imagenes/ventana/pieventana/sep.png';">
 								{{ HTML::image('imagenes/ventana/pieventana/sep.png','Secretaria de Educación Pública',  ['name'=>'logosepsm', 'class'=>'img-responsive', 'style'=>'width:60px; height:18px;'])}}
 							</a> 
 						</td>
 					</tr><tr>
 						<td>
-							<a href=" http://www.televisioneducativa.gob.mx/" target="_blank" onMouseOver="document.logotvesm.src = 'imagenes/ventana/pieventana/tvecolor.png';"
+							<a href="http://www.televisioneducativa.gob.mx/" target="_blank" onMouseOver="document.logotvesm.src = 'imagenes/ventana/pieventana/tvecolor.png';"
 							   onMouseOut="document.logotvesm.src = 'imagenes/ventana/pieventana/tve.png';">
 								{{ HTML::image('imagenes/ventana/pieventana/tve.png','Dirección General de Televisión Educativa',  ['name'=>'logotvesm','class'=>'img-responsive', 'style'=>'width:60px; height:23px;'])}}     
 							</a> 
 						</td>
 					</tr><tr>
 						<td>
-							<a href=" http://www.csuca.org/" target="_blank" onMouseOver="document.logocsucasm.src = 'imagenes/ventana/pieventana/csucacolor.png';"
+							<a href="http://www.csuca.org/" target="_blank" onMouseOver="document.logocsucasm.src = 'imagenes/ventana/pieventana/csucacolor.png';"
 							   onMouseOut="document.logocsucasm.src = 'imagenes/ventana/pieventana/csuca.png';">                            
 								{{ HTML::image('imagenes/ventana/pieventana/csuca.png','Consejo Superior Universitario Centroamericano',  ['name'=>'logocsucasm','class'=>'img-responsive', 'style'=>'width:40px; height:40px;'])}}
 							</a>       
 						</td>
 					</tr><tr>
 						<td>
-							<a href=" http://ceducar.info/ceducar/" target="_blank" onMouseOver="document.logoceccsicasm.src = 'imagenes/ventana/pieventana/ceccsicacolor.png';"
+							<a href="http://ceducar.info/ceducar/" target="_blank" onMouseOver="document.logoceccsicasm.src = 'imagenes/ventana/pieventana/ceccsicacolor.png';"
 							   onMouseOut="document.logoceccsicasm.src = 'imagenes/ventana/pieventana/ceccsica.png';">
 								{{ HTML::image('imagenes/ventana/pieventana/ceccsica.png','Coordinación Educativa y Cultural Centroamericana',  ['name'=>'logoceccsicasm','class'=>'img-responsive', 'style'=>'width:40px; height:40px;'])}}
 							</a>    
 						</td>
 					</tr><tr>
 						<td>
-							<a href=" https://www.unah.edu.hn/va" target="_blank" onMouseOver="document.logounahsm.src = 'imagenes/ventana/pieventana/unahcolor.png';"
+							<a href="https://www.unah.edu.hn/va" target="_blank" onMouseOver="document.logounahsm.src = 'imagenes/ventana/pieventana/unahcolor.png';"
 							   onMouseOut="document.logounahsm.src = 'imagenes/ventana/pieventana/logounah.png';">
 								{{ HTML::image('imagenes/ventana/pieventana/logounah.png','Universidad Nacional Autónoma de Honduras',  ['name'=>'logounahsm','class'=>'img-responsive', 'style'=>'width:60px; height:38px;'])}}
 							</a> 
@@ -109,7 +109,7 @@
 						</td>
 					</tr><tr>
 						<td>
-							<a href=" http://amexcid.gob.mx/" target="_blank" onMouseOver="document.logoamexcidsm.src = 'imagenes/ventana/pieventana/amexcidcolor.png';"
+							<a href="http://amexcid.gob.mx/" target="_blank" onMouseOver="document.logoamexcidsm.src = 'imagenes/ventana/pieventana/amexcidcolor.png';"
 							   onMouseOut="document.logoamexcidsm.src = 'imagenes/ventana/pieventana/amexcid.png';">
 								{{ HTML::image('imagenes/ventana/pieventana/amexcid.png','Agencia Mexicana de Cooperación Internacional para el Desarrollo',  ['name'=>'logoamexcidsm','class'=>'img-responsive', 'style'=>'width:60px; height:15px;'])}}
 							</a> 
