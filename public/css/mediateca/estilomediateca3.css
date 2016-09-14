@@ -211,15 +211,41 @@
 /* Estilos para iconos redes sociales */
 .derechaSociales{
     position: fixed;
-    right: 2%;
-    top: 35%;
-    
+    right: 5%;
+    bottom: 5%;
 }
 .sociales{
-    list-style: none;
+	list-style-type: none;
 }
+@media(min-width:992px){
+   .margenAbajo{
+      margin-bottom:15px;
+   }
+   .derechaSociales{
+       position: fixed;
+       right: 5%;
+       bottom: 35%;
+   }
+}
+@media(max-width:991px){
+   li{
+      float: left;
+   }
+   .padRight{
+      padding-right:15px;
+   }
+   .derechaSociales{
+       position: fixed;
+       right: 5%;
+       bottom: 5%;
+   }
+}
+
 .cambiacolorredesSociales{
     color: #000000;
+}
+.iconoBlanco{
+   color:white;
 }
 #ct:hover{
     color:#00B6F1;

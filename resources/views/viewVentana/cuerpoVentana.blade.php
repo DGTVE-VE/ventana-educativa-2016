@@ -3,7 +3,7 @@
         position: absolute;
         top:1%;
         left:2%;
-        z-index:10;
+        z-index:12;
     }
 	.mapaRombosCh{
         position: absolute;
