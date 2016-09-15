@@ -1,4 +1,4 @@
-/*
+﻿/*
 To change this license header, choose License Headers in Project Properties.
 To change this template file, choose Tools | Templates
 and open the template in the editor.
@@ -33,16 +33,27 @@ and open the template in the editor.
 }
 
 /**{border: 2px solbuscar red;}*/
-body{
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-attachment: fixed; 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;    
+@media(min-width:992px){
+    body{
+        background-repeat: no-repeat;
+        background-position: center top;
+        background-attachment: fixed; 
+        -webkit-background-size: cover !important;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;    
+    }
 }
-
+@media(max-width:991px){
+    body{
+        background-repeat: repeat-y;
+        background-position: center top;
+        -webkit-background-size: cover !important;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;    
+    }
+}
 .frmRegistro input{border-radius:15px 15px 15px 15px;}
 .frmRegistro select{border-radius:15px 15px 15px 15px;}
 .tituloRegistro{font-weight:bold;}
