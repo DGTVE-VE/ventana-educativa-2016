@@ -26,8 +26,4 @@ Educamedia
     </div>
 </div>
 @include('viewMediateca.barraSociales')
-<script>
-	$('.cambiacolorredesSociales').addClass('iconoBlanco');
-	$('.cambiacolorredesSociales').removeClass('cambiacolorredesSociales');
-</script>
 @endsection
