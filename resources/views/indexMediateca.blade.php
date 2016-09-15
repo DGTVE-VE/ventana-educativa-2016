@@ -76,9 +76,17 @@ and open the template in the editor.
 ga('create', 'UA-75232922-1', 'auto');
 ga('send', 'pageview');
 
-	$('.cambiacolorredesSociales').addClass('iconoBlanco');
-	$('.cambiacolorredesSociales').removeClass('cambiacolorredesSociales');
+	/*		*****	Cambio de color iconos redes sociales		*****		*/
+	if (navigator.userAgent.toLowerCase().indexOf('chrome') > -1 ){
+		document.body.style.backgroundAttachment = 'scroll';
+	}else{
+		if($(window).width()<'992'){
+			$('.cambiacolorredesSociales').addClass('iconoBlanco');
+			$('.cambiacolorredesSociales').removeClass('cambiacolorredesSociales');
+		}
+	}
 </script>
+
 <?php 
 Log::info('Memory Usage:'.Request::path()." - " . (memory_get_peak_usage (true)/1024/1024));
 ?>
