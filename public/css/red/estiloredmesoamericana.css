@@ -134,3 +134,81 @@
 		max-height:650px;
 	}
 }
+@media(min-width:1800px){
+	#parallaxcarouselSliderHome, #parallaxcarouselSliderHome1,
+	#parallaxcarouselSliderHome2, #parallaxcarouselSliderHome3,
+	#parallaxcarouselSliderHome4,	#parallaxcarouselSliderHome5,
+	#parallaxcarouselSliderHome6, #parallaxcarouselSliderHome7,
+	#parallaxcarouselSliderHome8, #parallaxcarouselSliderHome9,
+	#parallaxcarouselSliderHome9, #parallaxcarouselSliderHome11{
+		position:fixed;
+		top:10px;
+		left:30%;
+		margin-left:-600px;
+		z-index:-1;
+	}
+	.imgSliderHome{
+		position:relative;
+		top:80px;
+		left:0px;
+		z-index:-1;
+		min-width:2000px;
+		min-height:800px;
+	}
+	.tamMin{
+		min-width:2000px;
+		min-height:800px;
+	}
+}
+@media(min-width:2100px){
+	#parallaxcarouselSliderHome, #parallaxcarouselSliderHome1,
+	#parallaxcarouselSliderHome2, #parallaxcarouselSliderHome3,
+	#parallaxcarouselSliderHome4,	#parallaxcarouselSliderHome5,
+	#parallaxcarouselSliderHome6, #parallaxcarouselSliderHome7,
+	#parallaxcarouselSliderHome8, #parallaxcarouselSliderHome9,
+	#parallaxcarouselSliderHome9, #parallaxcarouselSliderHome11{
+		position:fixed;
+		top:0px;
+		left:30%;
+		margin-left:-690px;
+		z-index:-1;
+	}
+	.imgSliderHome{
+		position:relative;
+		top:80px;
+		left:0px;
+		z-index:-1;
+		min-width:2300px;
+		min-height:920px;
+	}
+	.tamMin{
+		min-width:2300px;
+		min-height:920px;
+	}
+}
+@media(min-width:2300px){
+	#parallaxcarouselSliderHome, #parallaxcarouselSliderHome1,
+	#parallaxcarouselSliderHome2, #parallaxcarouselSliderHome3,
+	#parallaxcarouselSliderHome4,	#parallaxcarouselSliderHome5,
+	#parallaxcarouselSliderHome6, #parallaxcarouselSliderHome7,
+	#parallaxcarouselSliderHome8, #parallaxcarouselSliderHome9,
+	#parallaxcarouselSliderHome9, #parallaxcarouselSliderHome11{
+		position:fixed;
+		top:0px;
+		left:30%;
+		margin-left:-780px;
+		z-index:-1;
+	}
+	.imgSliderHome{
+		position:relative;
+		top:80px;
+		left:0px;
+		z-index:-1;
+		min-width:2600px;
+		min-height:1040px;
+	}
+	.tamMin{
+		min-width:2600px;
+		min-height:1040px;
+	}
+}

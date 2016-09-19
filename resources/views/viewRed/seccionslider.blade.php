@@ -19,7 +19,7 @@
           <div class="visible-xs-block visible-sm-block">
             {{ HTML::image($banner[0]->url_archivo,'bannerSlider1', array('id'=>'imgSliderHomeSM','class'=>'img-responsive'))}}
           </div>
-          {{ HTML::image('imagenes/red/Banners/imgTransparente.png','bannerSlider1', array('class'=>'img-responsive visible-md-block visible-lg-block'))}}
+          {{ HTML::image('imagenes/red/Banners/imgTransparente.png','bannerSlider1', array('class'=>'img-responsive visible-md-block visible-lg-block tamMin'))}}
         </div>
 
         @for($i = 1; $i < sizeof($banner); $i++)
@@ -30,7 +30,7 @@
           <div class="visible-xs-block visible-sm-block">
             {{ HTML::image($banner[$i]->url_archivo,'bannerSlider', array('id'=>'imgSliderHomeSM','class'=>'img-responsive'))}}
           </div>
-          {{ HTML::image('imagenes/red/Banners/imgTransparente.png','bannerSlider1', array('class'=>'img-responsive visible-md-block visible-lg-block'))}}
+          {{ HTML::image('imagenes/red/Banners/imgTransparente.png','bannerSlider1', array('class'=>'img-responsive visible-md-block visible-lg-block tamMin'))}}
         </div>
 
         @endfor
