@@ -1,36 +1,7 @@
-<!--script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script-->
+<link rel="stylesheet" type="text/css" href="css/conocenos/cubos.css"/>
 <script src="js/conocenos/jquery.plugin.js"></script>
 <script src="js/conocenos/jquery.imagecube.js"></script>
-<style>
-	.padLado{
-		padding-left: 0px; padding-right:0px; padding-top:5%;
-	}
-	.medidaCubo{
-		width: 101%; height: 250px; z-index:1;
-	}
-	@media(max-width:991px){
-		.medidaCubo{
-			height: 150px;
-		}
-	}
-	@media(min-width:1800px){
-		.medidaCubo{
-			height: 400px;
-		}
-	}
-	.medidaFrente{
-		width: 100%;
-		position: absolute;
-		top:0px;
-		z-index:1;
-	}
-	.detectaEvento{
-		position: absolute;
-		top:0px;
-		min-width: 100%;
-		z-index:2;
-	}
-</style>
+
     <div class="row">
 	
 		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 contenedorMapa">
@@ -61,59 +32,4 @@
 			<img id="eventoPadres" src="imagenes/conocenos/cubos/frenteEvento.png" alt="" class="detectaEvento img-responsive" title="padresFrente"/>
 		</div>
     </div>
-
-<script>
-
-	/*		*********	Activar giro de cubo con imagenes de fondo 	*********		*/
-	function giraCubo(cubo, direccion){
-		var cube = $(cubo); 
-		var next = parseInt($('#next').val(), 10); 
-		cube.imagecube('option', {direction: direccion}). 
-			imagecube('rotate', next, function() { 
-				$('#current').text($(cube.imagecube('current')).attr('title')); 
-			}); 		
-	}
-	
-	/*		*********	Girar imagen de frente con texto	*********		*/
-	function flip(imgFrente) {
-		var j = document.getElementById(imgFrente);
-		j.style.transform = "translateY(-80px) rotatex(90deg) ";
-		j.style.transitionDuration = "0.6s";
-	}
-
-	/*		*********	Regresar imagen de frente con texto	*********		*/
-	function unflip(imgFrente) {
-		var j = document.getElementById(imgFrente);
-		j.style.transform = "translateY(0px) rotatex(0deg)";
-		j.style.transitionDuration = "0.5s";
-	}
-	
-	/*		*********	Activar funciones en eventos mouseenter y mouseleave	*********		*/
-	$('#Cubo1').imagecube({repeat: false, full3D: false, speed:500});
-	$('#eventoDocentes').mouseenter(function() { 
-		giraCubo('#Cubo1','up');
-		flip('frenteDocentes');
-	});
-	$('#eventoDocentes').mouseleave(function() { 
-		giraCubo('#Cubo1','down');
-		unflip('frenteDocentes');
-	});
-	$('#Cubo2').imagecube({repeat: false, full3D: false, speed:500});
-	$('#eventoEstudiantes').mouseenter(function() { 
-		giraCubo('#Cubo2','up');
-		flip('frenteEstudiantes');
-	});
-	$('#eventoEstudiantes').mouseleave(function() {
-		giraCubo('#Cubo2','down');
-		unflip('frenteEstudiantes');
-	});
-	$('#Cubo3').imagecube({repeat: false, full3D: false, speed:500});
-	$('#eventoPadres').mouseenter(function() { 
-		giraCubo('#Cubo3','up');
-		flip('frentePadres');
-	});
-	$('#eventoPadres').mouseleave(function() { 
-		giraCubo('#Cubo3','down');
-		unflip('frentePadres');
-	});
-</script>
+<script src="js/conocenos/cubos.js"></script>

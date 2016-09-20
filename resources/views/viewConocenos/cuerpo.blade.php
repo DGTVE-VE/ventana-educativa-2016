@@ -46,9 +46,3 @@
         <!-- /#wrapper -->
     </div>
 </div>
-<script>
-$(document).ready(function(){
-});
-/*	**********	Modificacion de estilo de barra de navegación de ventana	**********	*/
-$('#formaBuscar').css('visibility', 'hidden');
-</script>

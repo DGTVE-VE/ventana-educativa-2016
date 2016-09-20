@@ -1,12 +1,14 @@
+	<link rel="stylesheet" type="text/css" href="css/conocenos/secciones.css"/>
 	<script src="js/ScrollMagic/scrollmagic/uncompressed/ScrollMagic.js"></script>
 	<script src="js/ScrollMagic/js/lib/greensock/TweenMax.min.js"></script>
 	<script src="js/ScrollMagic/js/lib/greensock/plugins/animation.gsap.js" ></script>
 	<link rel="stylesheet" href="js/ScrollMagic/css/examples.css" type="text/css">
+
 	<script>
 		// init controller
 		var controller = new ScrollMagic.Controller();
 	</script>
-	
+
 	<div class="row">
 		<div class="col-sm-12 col-md-12 col-lg-12 contenedorMapa">
 			<div class="text-center"><h4>SECCIONES</h4></div>
@@ -90,3 +92,5 @@
 		</div>
 	</div>
 </div>
+
+<script src="js/conocenos/secciones.js"></script>

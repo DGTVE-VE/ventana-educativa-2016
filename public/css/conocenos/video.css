@@ -1,0 +1,52 @@
+﻿				/*	********	*****		Apartado Inicial Video	********	*****		*/
+		.fondo1{
+			background-color:gray;
+		}
+		.fondo2{
+			background:white;
+		}
+		.fondo3{
+			background:#79738c;
+		}
+                .fondo5{
+			background:#f1f1f1;
+		}
+		.fondo4{
+			background:white;
+		}
+		.oculta{
+			display: none;
+		}
+		.muestra{
+			 display:block;
+		}
+		.flechaBrinca{
+			width:60px; height:18px; position: absolute; cursor:pointer;
+		}
+		.divFlechaBrinca{
+			position: absolute; bottom: 80px;
+		}
+		.txtContinua{
+			font-size:1.2em;
+			position: relative;
+			left: 25px;
+			width:200px;
+			margin: 0 auto;
+			color: white;
+		}
+		.videoFondo{
+			position: absolute; right: 0; bottom: 0;
+			min-width: 100%; min-height: 100%;
+			width: auto; height: auto; z-index: 0;
+			/*background: url(polina.jpg) no-repeat;*/
+			background-size: cover;
+		}
+		#textoProyectos{
+			visibility:hidden;
+		}
+		.centra{
+			position: relative;
+			top:-30px;
+			max-width:100%;
+			margin: 0 auto;
+		}

@@ -1,3 +1,5 @@
+	<link rel="stylesheet" type="text/css" href="css/conocenos/video.css"/>
+	<script type="text/javascript" src="js/conocenos/video.js"></script>
 	<video data-keepplaying class="videoFondo" id="videoFondo" oncanplay="reproduceVideo()">
 		<source src="imagenes/ventana/conocenos/presentacion/institucional-bn.mp4" type="video/mp4"/>
 	</video>

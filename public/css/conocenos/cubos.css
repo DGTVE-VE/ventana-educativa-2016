@@ -1,0 +1,28 @@
+﻿	.padLado{
+		padding-left: 0px; padding-right:0px; padding-top:5%;
+	}
+	.medidaCubo{
+		width: 101%; height: 250px; z-index:1;
+	}
+	@media(max-width:991px){
+		.medidaCubo{
+			height: 150px;
+		}
+	}
+	@media(min-width:1800px){
+		.medidaCubo{
+			height: 400px;
+		}
+	}
+	.medidaFrente{
+		width: 100%;
+		position: absolute;
+		top:0px;
+		z-index:1;
+	}
+	.detectaEvento{
+		position: absolute;
+		top:0px;
+		min-width: 100%;
+		z-index:2;
+	}
