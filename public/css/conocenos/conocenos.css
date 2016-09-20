@@ -489,3 +489,145 @@ a.before:hover:before,a.after:hover:after{
   /*.noticias{height: 500px;}*/
 }
 
+						/*	********	*****		Apartado secciones	********	*****		*/
+
+		.fondoBlanco{
+			background-color:white;
+		}
+		.quitaPadding{
+			padding-top: 0px; padding-bottom:0px;
+		}
+		.imgBkgd{
+			 background-repeat:no-repeat; background-position:left top; background-size:100%;
+		}
+		@media(min-width:220px){
+			.imgLogoSeccion{
+				width:15%;
+			}
+			.imgTxtDescr{
+				width:65%;
+				position: relative;
+				left:20px;
+			}
+			.imgBkgd{
+				 min-height:50px;
+			}
+			.padTop{
+				 padding-top:15px;
+			}
+		}
+		@media(min-width:768px){
+			.imgLogoSeccion{
+				width:10%;
+			}
+			.imgTxtDescr{
+				width:35%;
+				position: relative;
+				left:20px;
+			}
+			.imgBkgd{
+				 min-height:100px;
+			}
+			.padTop{
+				 padding-top:30px;
+			}
+		}
+		@media(min-width:992px){
+			.imgLogoSeccion{
+				width:10%;
+			}
+			.imgTxtDescr{
+				width:40%;
+			}
+			.imgBkgd{
+				 min-height:130px;
+			}
+			.padTop{
+				 padding-top:30px;
+			}
+		}
+		@media(min-width:1500px){
+			.imgLogoSeccion{
+				width:15%;
+			}
+			.imgTxtDescr{
+				width:50%;
+				position: relative;
+				left:20px;
+			}
+			.imgBkgd{
+				 min-height:215px;
+			}
+			.padTop{
+				 padding-top:30px;
+			}
+		}
+		@media(min-width:2100px){
+			.imgLogoSeccion{
+				width:20%;
+			}
+			.imgTxtDescr{
+				width:70%;
+				position: relative;
+				left:20px;
+			}
+			.imgBkgd{
+				 min-height:290px;
+			}
+			.padTop{
+				 padding-top:50px;
+			}
+		}
+
+						/*	********	*****		Apartado Inicial Video	********	*****		*/
+		.fondo1{
+			background-color:gray;
+		}
+		.fondo2{
+			background:white;
+		}
+		.fondo3{
+			background:#79738c;
+		}
+                .fondo5{
+			background:#f1f1f1;
+		}
+		.fondo4{
+			background:white;
+		}
+		.oculta{
+			display: none;
+		}
+		.muestra{
+			 display:block;
+		}
+		.flechaBrinca{
+			width:60px; height:18px; position: absolute; cursor:pointer;
+		}
+		.divFlechaBrinca{
+			position: absolute; bottom: 80px;
+		}
+		.txtContinua{
+			font-size:1.2em;
+			position: relative;
+			left: 25px;
+			width:200px;
+			margin: 0 auto;
+			color: white;
+		}
+		.videoFondo{
+			position: absolute; right: 0; bottom: 0;
+			min-width: 100%; min-height: 100%;
+			width: auto; height: auto; z-index: 0;
+			/*background: url(polina.jpg) no-repeat;*/
+			background-size: cover;
+		}
+		#textoProyectos{
+			visibility:hidden;
+		}
+		.centra{
+			position: relative;
+			top:-30px;
+			max-width:100%;
+			margin: 0 auto;
+		}
