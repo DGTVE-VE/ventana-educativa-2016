@@ -34,8 +34,46 @@ class BibliotecaController extends Controller {
 				->get();
 		}
         $bibliotecaMenu = $this->menuBiblioteca();
+		
+		$clasificacionActual = BibliotecaController::obtieneClasificacion();
+        if($clasificacionActual =='Nacionales'){
+           $imagenCat ='imagenes/biblioteca/tomos/nacionales.png';
+        }else{
+			if($clasificacionActual=="Universitarias"){
+                $imagenCat = 'imagenes/biblioteca/tomos/universitarias.png';
+            }else{
+				if($clasificacionActual=="Escolares"){
+                    $imagenCat = 'imagenes/biblioteca/tomos/escolares.png';
+                }else{
+					if($clasificacionActual=="Públicas"){
+                        $imagenCat = 'imagenes/biblioteca/tomos/publicas.png';
+                    }else{
+						if($clasificacionActual=="Especializadas"){
+                            $imagenCat = 'imagenes/biblioteca/tomos/especializadas.png';
+                        }else{
+							if($clasificacionActual=="Investigación"){
+                                $imagenCat = 'imagenes/biblioteca/tomos/investigacion.png';
+                            }else{
+								if($clasificacionActual=="Todos"){
+									if($pais=='MX'){
+										$imagenCat = 'imagenes/biblioteca/placas/mexico.png';
+										}
+									else 
+										if($pais=='CR'){
+											$imagenCat = 'imagenes/biblioteca/placas/costa_rica.png';
+										}
+									else{
+										$imagenCat = 'imagenes/biblioteca/placas/mexico.png';
+										}
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
       
-        return view('viewBiblioteca/tomos')->with('tomos',$tomos)->with('bibliotecaMenu',$bibliotecaMenu)->with('pais',$pais);
+        return view('viewBiblioteca/tomos')->with('tomos',$tomos)->with('bibliotecaMenu',$bibliotecaMenu)->with('pais',$pais)->with('imagenCat',$imagenCat);
         
     }
 

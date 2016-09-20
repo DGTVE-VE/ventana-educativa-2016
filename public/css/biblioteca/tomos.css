@@ -1,0 +1,53 @@
+﻿    .fondoDegradadoMenuInicial{
+        background: rgba(0, 0, 0, .3);
+        border: none;
+    }
+    .fondoDegradadoMenu{
+        background: rgba(0, 0, 0, .3);
+        border: none;
+    }
+    .reduceFlecha{
+        width:20px;
+    }
+    .contenedor{
+        -webkit-transition: all 0.6s ease;
+        -moz-transition: all 0.6s ease;
+        -o-transition: all 0.6s ease;
+        transition: all 0.6s ease;
+    }
+    .imagenDescribe{
+        position:absolute; top:0px; left: 25%; z-index:-1;
+    }
+	.textoEstante{
+		position: absolute;
+		left: 0;
+		width: 100%;
+		text-align: center;
+		font-size: 18px;
+		color:white;
+	}
+	.estanteSuperior{
+		bottom: 4%;
+	}
+	.estanteInferior{
+		bottom: 2%;
+	}
+	.imgMadera{
+		width:100%;
+		margin-bottom: .4%;
+	}
+	.posiciona{
+		position:relative;
+	}
+	.padTop55px{
+		padding-top:55px;
+	}
+	.pad10px{
+		padding:10px;
+	}
+	.textoLigaBiblio{
+		 position: absolute; bottom:5%; right: 7%; display:none;
+	}
+	.ocultaImgDescribe{
+		display: none;
+	}
