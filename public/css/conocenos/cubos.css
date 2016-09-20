@@ -4,6 +4,16 @@
 	.medidaCubo{
 		width: 101%; height: 250px; z-index:1;
 	}
+	@media(max-width:250px){
+		.medidaCubo{
+			height: 100px;
+		}
+	}
+	@media(max-width:768px){
+		.medidaCubo{
+			height: 100px;
+		}
+	}
 	@media(max-width:991px){
 		.medidaCubo{
 			height: 150px;
@@ -16,6 +26,7 @@
 	}
 	.medidaFrente{
 		width: 100%;
+		height:99%;
 		position: absolute;
 		top:0px;
 		z-index:1;
