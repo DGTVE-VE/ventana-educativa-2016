@@ -99,7 +99,7 @@
         </div>
 
         <div class="col-md-12">  
-            <div  class="col-md-3 alert" style="margin-top: 3%;">                
+            <div id="browserWarning" class="col-md-3 alert" style="margin-top: 3%;">                
                 {{ HTML::image('imagenes/ventana/homeventana/alertaNav.png','alerta',['width'=>'100%','height'=>'100%'])}}
             </div>
             <div class="col-md-8"></div>
@@ -176,10 +176,3 @@
     </div>
     @endif    
 </div>
-<script>
-    $(".alert").alert();
-    window.setTimeout(function () {
-        $(".alert").fadeIn(1000).delay(1000).fadeOut(2000);
-},3000);
-
-</script>

@@ -84,10 +84,11 @@ and open the template in the editor.
 	<link rel="stylesheet" href="{{ asset('css/red/animate.css') }}" >
 
 <script type="text/javascript">
-	// check if browser is IE6 (when IE) or not FF6 (when FF)
-	if ((jQuery.browser.msie) && (parseInt(jQuery.browser.version) < 7)
-		|| ($.browser.mozilla && $.browser.version.substr(0,1) != '3')) {
-			$('#browserWarning').show();
+	// check if browser is not chrome nor firefox
+	if (navigator.userAgent.toLowerCase().indexOf('chrome') < 0 && navigator.userAgent.toLowerCase().indexOf('firefox') < 0){
+		window.setTimeout(function () {
+			$("#browserWarning").fadeIn(1000).delay(3000).fadeOut(2000);
+		},3000);
 	}
 </script>
 
