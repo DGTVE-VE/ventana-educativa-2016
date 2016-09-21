@@ -4,7 +4,7 @@
 <nav id="navegacionVentana" class="navbar navbar-default navbar-fixed-top  menuVentana" role="navigation">
     <div class="container-fluid">
         <div class="row">
-            <div class="col-md-2">
+            <div class="col-sm-2 col-md-2">
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                         <span class="icon-bar"></span>
@@ -17,7 +17,8 @@
                 </div>
             </div>
             <!--<div class="col-md-1"></div>-->
-            <div class="col-md-3" id="frmBuscarMenu">
+
+            <div class="col-md-3 col-sm-4" id="frmBuscarMenu">
                 <ul class="nav navbar-nav collapse navbar-collapse collapseBarra margenNav">
                     <li class="liBuscar">
                         <form action="" class="search-form" style="width: 200px;">
@@ -30,9 +31,9 @@
                     </li>
                 </ul>
             </div>
-            <div class="col-md-5">
+            <div class="col-xs-12 col-sm-6 col-md-5">
                 <ul class="nav navbar-nav navbar-right collapse navbar-collapse collapseBarra margenNav">
-                    <li class="dropdown col-md-6 paddDropdown">
+                    <li class="dropdown col-xs-12 col-sm-3 col-md-6 paddDropdown">
                         <div class="dropdown-toggle" data-toggle="dropdown">
                             {{ HTML::image('imagenes/ventana/encabezado/iconoApps.png','Diversas aplicaciones de contenido educativo',['width'=>'30px','height'=>'20px','class'=>'iconoApp appsLogo','id'=>'iconoManuApps'])}}
                         </div>
@@ -98,8 +99,8 @@
                             </table>
                         </ul>
                     </li>
-                    <li id="li-R" class="dropdown col-xs-12 col-md-6">
-                        <div class=" divli dropdown-toggle col-xs-5 col-xs-offset-7" data-toggle="dropdown">
+                    <li id="li-R" class="dropdown col-xs-12 col-sm-7 col-md-6">
+                        <div class=" divli dropdown-toggle col-xs-5 col-sm-6 col-xs-offset-7" data-toggle="dropdown">
                             @if (Auth::guest())
                           <button type="button" class="btn btn-default" class="img-circle">Ingresar <span class="glyphicon glyphicon-log-in" aria-hidden="true"></span></button>
                             <!-- {{ HTML::image('imagenes/ventana/encabezado/usuario.png','Usuario',['class'=>'img-circle iconoApp', 'id'=>'img-usuario'] )}} -->
@@ -194,7 +195,6 @@
                                 </div>
                             </li>
                         </ul>
-
                     </li>
                 </ul>
             </div>
