@@ -17,7 +17,7 @@
                 </div>
             </div>
             <!--<div class="col-md-1"></div>-->
-            <div class="col-md-3">
+            <div class="col-md-3" id="frmBuscarMenu">
                 <ul class="nav navbar-nav collapse navbar-collapse collapseBarra margenNav">
                     <li class="liBuscar">
                         <form action="" class="search-form" style="width: 200px;">

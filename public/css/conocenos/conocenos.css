@@ -18,7 +18,7 @@ body {
 }
 
 ::-webkit-scrollbar {
-      width: 1px !important;
+    width: 1px !important;
 }
 body,
 html { height: 100%;}
@@ -458,23 +458,23 @@ a.before:hover:before,a.after:hover:after{
 }
 
 .triangulo {
-  position: absolute;
-  width: 600px;
-  z-index: 100;
-  margin-top: 2.5%;
-  margin-left: -3%;
+    position: absolute;
+    width: 600px;
+    z-index: 100;
+    margin-top: 2.5%;
+    margin-left: -3%;
 }
 .triangulo:after {
-  border-top:40.8em solid white;
-  border-right:15.4641em solid transparent;
-  /*border-left:3.4641em solid transparent;*/
-  /*bottom:-2em;*/
-  content: '';
-  /*height:700px;*/
-  left: 0;
-  position: absolute;
-  right: 0;
-  /*width:0;*/  
+    border-top:40.8em solid white;
+    border-right:15.4641em solid transparent;
+    /*border-left:3.4641em solid transparent;*/
+    /*bottom:-2em;*/
+    content: '';
+    /*height:700px;*/
+    left: 0;
+    position: absolute;
+    right: 0;
+    /*width:0;*/  
 }
 
 .pieConocenos{color: white}
@@ -485,6 +485,8 @@ a.before:hover:before,a.after:hover:after{
 /*.widgetNoticias{margin-top: 8%;}*/
 
 @media (min-width: 2256px) { 
-  .pieConocenos{height: 400px;} 
-  /*.noticias{height: 500px;}*/
+    .pieConocenos{height: 400px;} 
+    /*.noticias{height: 500px;}*/
 }
+
+

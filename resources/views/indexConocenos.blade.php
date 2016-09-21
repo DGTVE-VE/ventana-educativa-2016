@@ -54,6 +54,7 @@ and open the template in the editor.
         <script src="js/conocenos/conocenos.js"></script>
     </body>
 </html>
+<script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyCKFRHjU3HCfrtam4fusUFE52wbVvRbCKM"></script> 
 <script>
 (function (i, s, o, g, r, a, m) {
     i['GoogleAnalyticsObject'] = r;

@@ -178,13 +178,18 @@ Route::group(['middleware' => 'web'], function () {
     Route::get('slider', 'ConocenosController@slider');
     Route::get('noticias', 'ConocenosController@noticias');
     Route::get('mapa', 'ConocenosController@mapa');
-    Route::get('pie','ConocenosController@pie');
-    Route::get('cubos','ConocenosController@cubos');
+    Route::get('pie', 'ConocenosController@pie');
+    Route::get('cubos', 'ConocenosController@cubos');
     Route::post('guardaContactoConocenos', 'ConocenosController@guardaContactoConocenos');
     Route::post('conocenos/guardaCorreoNewsLetterConocenos', 'ConocenosController@guardaCorreoNewsLetterConocenos');
     Route::get('conocenos/activaCorreo/{correo}/{hash}', 'ConocenosController@activaCorreoNews');
-    
-    /*     * **************************Conocenos********************** */
+
+    /*blog conocenos*/
+    Route::resource('conocenos/blog', 'ConocenosBlogController');
+    Route::post('conocenos/blog/comment', 'ConocenosBlogController@comment');
+    /**/
+
+    /*     * **************************Fin Conocenos********************** */
 });
 
 //Route::get ('api/getImagenes/{tipo}/{id}', '');
@@ -265,14 +270,14 @@ Route::get('mail/test', function () {
 //    }
 //    );
     $message = Swift_Message::newInstance()
-            //Give the message a subject
-            ->setSubject('Test ventana')
-            //Set the From address with an associative array
-            ->setFrom(array('ventana@televisioneducativa.gob.mx' => 'Ventana'))
-            //Set the To addresses with an associative array
-            ->setTo(array('j.israel.toledo@gmail.com'))
-            //Give it a body
-            ->setBody('My Message')
+        //Give the message a subject
+        ->setSubject('Test ventana')
+        //Set the From address with an associative array
+        ->setFrom(array('ventana@televisioneducativa.gob.mx' => 'Ventana'))
+        //Set the To addresses with an associative array
+        ->setTo(array('j.israel.toledo@gmail.com'))
+        //Give it a body
+        ->setBody('My Message')
     //And optionally an alternative body
     //->addPart('<q>Here is the message itself</q>', 'text/html')
     ;
@@ -284,7 +289,7 @@ Route::get('mail/test', function () {
 
 //Send the message
     $result = $mailer->send($message);
-    var_dump  ($result);
+    var_dump($result);
 });
 
 /******************************/
