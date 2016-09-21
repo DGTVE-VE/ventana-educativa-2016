@@ -1,17 +1,6 @@
 <!--nuevo encabezado-->
 
-<style>
-    .ocultaImgApp{
-        visibility:hidden;
-        width:0px;
-        height:0px;
-    }
-    .iconoGde{
-        color:white;
-        font-size:14px;
-        cursor:pointer;
-    }
-</style>
+<link rel="stylesheet" type="text/css" href="{{url('css/ventana/menuVentana.css')}}"/>
 <nav id="navegacionVentana" class="navbar navbar-default navbar-fixed-top  menuVentana" role="navigation">
     <div class="container-fluid">
         <div class="row">
@@ -29,7 +18,7 @@
             </div>
             <!--<div class="col-md-1"></div>-->
             <div class="col-md-3">
-                <ul class="nav navbar-nav collapse navbar-collapse collapseBarra">
+                <ul class="nav navbar-nav collapse navbar-collapse collapseBarra margenNav">
                     <li class="liBuscar">
                         <form action="" class="search-form" style="width: 200px;">
                             <div class="form-group has-feedback" id="formaBuscar">
@@ -41,10 +30,9 @@
                     </li>
                 </ul>
             </div>
-            <div class="col-md-2"></div>
             <div class="col-md-5">
-                <ul class="nav navbar-nav navbar-right collapse navbar-collapse collapseBarra">
-                    <li class="dropdown col-md-6" style="padding-left: 25%;">
+                <ul class="nav navbar-nav navbar-right collapse navbar-collapse collapseBarra margenNav">
+                    <li class="dropdown col-md-6 paddDropdown">
                         <div class="dropdown-toggle" data-toggle="dropdown">
                             {{ HTML::image('imagenes/ventana/encabezado/iconoApps.png','Diversas aplicaciones de contenido educativo',['width'=>'30px','height'=>'20px','class'=>'iconoApp appsLogo','id'=>'iconoManuApps'])}}
                         </div>
@@ -88,7 +76,7 @@
                                     <td>
                                     </td>
                                     <td class="text-center">
-                                        <p class="iconoGde" onclick="muestraMasIconos(event)">M&aacute;s</p>
+                                        <p class="iconoGde" onclick="muestraMasIconos(event)"><span id="etiquetaMas">M&aacute;s</span></p>
                                     </td>
                                     <td>
                                     </td>
@@ -110,8 +98,8 @@
                             </table>
                         </ul>
                     </li>
-                    <li id="li-R" class="dropdown col-md-6">
-                        <div class=" divli dropdown-toggle" data-toggle="dropdown">
+                    <li id="li-R" class="dropdown col-xs-12 col-md-6">
+                        <div class=" divli dropdown-toggle col-xs-5 col-xs-offset-7" data-toggle="dropdown">
                             @if (Auth::guest())
                           <button type="button" class="btn btn-default" class="img-circle">Ingresar <span class="glyphicon glyphicon-log-in" aria-hidden="true"></span></button>
                             <!-- {{ HTML::image('imagenes/ventana/encabezado/usuario.png','Usuario',['class'=>'img-circle iconoApp', 'id'=>'img-usuario'] )}} -->
@@ -122,10 +110,10 @@
                             @endif
 
                         </div>
-                        <ul id="menuVentanaRegistro" class="dropdown-menu fondoRegistro">
+                        <ul id="menuVentanaRegistro" class="dropdown-menu fondoRegistro col-xs-12">
                             <li class="panel-body">
                                 <div class="row">
-                                    <div class="col-lg-12 col-md-12">
+                                    <div class="col-lg-12 col-md-12 bajaRegistro">
                                         @if (Auth::guest ())
                                         <form id="login-form" action="{{url('sessions')}}" method="POST" role="form" style="display: block;">
                                             <input type="hidden" name="_token" value="{{ csrf_token() }}" />
@@ -291,12 +279,14 @@
             $(".ocultaImgApp").css("width", "75px");
             $(".ocultaImgApp").css("height", "75px");
             $(".ocultaImgApp").css("visibility", "visible");
+			$("#etiquetaMas").html("Menos");
             imgOculto = false;
         } else {
             event.stopPropagation();
             $(".ocultaImgApp").css("width", "0px");
             $(".ocultaImgApp").css("height", "0px");
             $(".ocultaImgApp").css("visibility", "hidden");
+			$("#etiquetaMas").html("M&aacute;s");
             imgOculto = true;
         }
     }

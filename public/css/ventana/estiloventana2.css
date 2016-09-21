@@ -21,6 +21,14 @@
         background-size: cover;    
     }
 }
+@media(max-width:668px){
+    .mueveTabla{
+        top:180px;
+     }
+    .bajaRegistro{
+        top:10px;
+    }
+}
 .frmRegistro input{border-radius:15px 15px 15px 15px;}
 .frmRegistro select{border-radius:15px 15px 15px 15px;}
 .tituloRegistro{font-weight:bold;}
