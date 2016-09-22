@@ -1,159 +1,4 @@
-@extends('indexMediateca')
-
-@section('titleMediateca')
-Educamedia
-@stop
-
-@section('menuMediateca')
-@include('viewMediateca.encabezadoMediateca')
-@endsection
-@section('cuerpoMediateca')
-<link rel="stylesheet" href="{{ asset('css/mediateca/videosTelesecundaria.css') }}" >
-<div class="container-fluid">
-    <div class="row">
-        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center" style="padding:2%"></div>
-        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center textoTitulo txtVideosRed">
-            <p id="parrafoBreadcrumb"> </p><br>
-        </div>
-        <div class="col-md-1"></div>
-        <div class="col-md-10 contenedorVideo transparenciaVideos">
-            <div class="row" id='div-containter'>
-                <div class="col-md-8 txtVideosRed">
-                    <div class="col-md-12" style="overflow: auto;">
-                        <h5 id="materia">{{$videos[0]->materia}}</h5>                
-                        <h4 id="titulo_programa">{{$videos[0]->titulo_programa}}</h4>                
-                        <div id="player" align="center">    </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-12">
-                            <br>
-                        </div>
-                    </div>
-                        @if(Auth::check ())
-                        <div class="col-md-3">         
-                            <div id="divRating">
-                            <input type="number" data-max="5" data-min="1" name="rating" value="4" id="star-rating" class="rating"  data-icon-lib="fa" data-active-icon="fa-star" data-inactive-icon="fa-star-o"  />
-                            </div>
-                            <input type="hidden" id="video-id" value="{{ $videos[0]->id }}" />
-                            <input type="hidden" id="nivel" value="{{ $nivel }}" />
-                        </div>
-                        <div class="col-md-1">
-                            <a href="https://twitter.com/share" class="twitter-share-button">Tweet</a> <script>!function (d, s, id) {
-                                    var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https';
-                                    if (!d.getElementById(id)) {
-                                        js = d.createElement(s);
-                                        js.id = id;
-                                        js.src = p + '://platform.twitter.com/widgets.js';
-                                        fjs.parentNode.insertBefore(js, fjs);
-                                    }
-                                }(document, 'script', 'twitter-wjs');</script>
-                        </div>
-                        <div class="col-md-2">
-                            <div 
-                                class="fb-share-button" 
-                                data-layout="button" 
-                                data-mobile-iframe="true"
-                                >
-                            </div>
-                        </div>
-                        <div class="col-md-1"></div>
-                        @endif
-                        @if (Auth::check ())
-                        @if($esDocente)
-                        <div class="col-md-3">
-                            <a id="ligaDescargaYoutube" href="{{ url('descarga/getvideo.php/yt/getvideo.mp4?videoid='.$videos[0]->url.'&format=best') }}" target="_self"><span title="descarga video" class="glyphicon glyphicon-cloud-download btnDescarga" aria-hidden="true"></span></a>
-                            Descarga Video
-                        </div>
-                        @else
-                        <div class="col-md-3">
-                            <span class="glyphicon glyphicon-cloud-download btnDescarga"  data-toggle="modal" data-target="#myModal"></span>Descarga Video
-                            <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-                                <div class="modal-dialog" role="document">
-                                    <div class="modal-content">
-                                        <div class="modal-body backRegistro" style="background-image:url('{{ asset('imagenes/mediateca/tsecundaria/registrate.png') }}');">
-                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                                            <br><br><br><br><br><br><br><br>
-                                            <a href="{{url('registro')}}"><img class="pull-right" src="{{url('imagenes/mediateca/tsecundaria/iraregistro.png')}}"/></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        @endif
-                        @endif
-                    <div class="col-md-12">
-						<li class="list-unstyled"><h5 id="subtitulo_serie">{{ $videos[0]->subtitulo_serie }}<h5></li>
-						<li class="list-unstyled"><h5 id="subtitulo_programa">{{ $videos[0]->subtitulo_programa }}<h5></li>                                                
-						<li class="list-unstyled"><h5 id="grado">Grado: {{ $videos[0]->grado }}</h5></li>
-					@if(strlen($videos[0]->sinopsis) < 350)
-						<li class="list-unstyled text-justify" id="sinopsis">{{ $videos[0]->sinopsis }}</li>
-					@else
-						<li class="list-unstyled text-justify oculto" id="sinopsis">{{ $videos[0]->sinopsis }}</li>
-						<li class="list-unstyled text-justify" id="sinopsis-250">{{ substr($videos[0]->sinopsis, 0, 350).'...'}}</li>
-						<div  id="botonmas" data-toggle="collapse" data-target="#massinopsis" class="col-md-12 text-center">
-							<span class="punteroMano">Mas </span><span class="glyphicon glyphicon-triangle-bottom punteroMano"></span>
-						</div>
-						<div  id="botonmenos" data-toggle="collapse" data-target="#massinopsis" class="col-md-12 text-center oculto">
-							<span class="punteroMano">Menos </span><span class="glyphicon glyphicon-triangle-top punteroMano"></span>
-						</div>
-					@endif
-					<br>
-					</div>
-					<div class="col-md-12">
-						@if (Auth::check ())                    
-						<br>
-						<textarea id="comment" rows="3" placeholder="Comenta aquí..." class="form-control textareaTransparencia"></textarea>                
-						<a class="linkComentar" id="btn-comentar">Envíar Comentario </a>
-						<br><br>                                            
-						<div id="comentarios"></div>
-						@endif
-					</div>
-				</div>                
-				<div class="col-md-4 pager txtVideosRed" id="custom_controls">
-					<div class="col-md-12 ">                    
-						<h5 class="col-md-2">Bloque</h5>
-						<div class="col-md-10">
-							@foreach ($paginacion as $item => $bloquePagina)
-							@if($bloquePagina->bloque!='0')
-							<li class="list-inline">                                
-								<a class="bloqueMed" href="{{url($url.'/'.$bloquePagina->bloque)}}">
-									{{$bloquePagina->bloque}}   
-								</a>                                    
-							</li>                        
-							&nbsp;&nbsp;&nbsp;
-							@endif
-							@endforeach
-						</div>
-					</div>
-					<div class="col-md-12 listVideos">
-						<table class="table table-responsive">                
-							@foreach ($videos as $item => $video)
-							<tr>
-								<td data-target="#custom_carousel" data-slide-to="{{$item}}" class="item" data-id='{{ $video->url }}' _id="{{$video->id}}">
-									<img src="http://img.youtube.com/vi/{{ $video->url }}/2.jpg" class='item-a' style="cursor:pointer;">                            
-								</td>
-								<td class="redesText">{{$video->titulo_programa}}</td>
-							</tr>                
-							@endforeach 
-						</table>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="col-md-1"></div>
-	</div>
-</div>
-@endsection
-@section('estilos')
-	<link rel="stylesheet" href="{{ asset('css/jquery-ui.min.css') }}" >
-@endsection
-@section('scripts')
-	<script src="{{asset ('js/jquery-ui.min.js')}}"></script>
-	<script src="https://www.youtube.com/player_api"></script>
-	<!--https://github.com/javiertoledo/bootstrap-rating-input-->
-	<script src="{{asset ('js/bootstrap-rating-input.min.js')}}"></script>
-	<!--El siguiente fragmento de codigo es para el uso de Facebook en la aplicación-->
-	<script>
+		//		*****	*****		El siguiente fragmento de codigo es para el uso de Facebook en la aplicación		*****	*****
 		window.fbAsyncInit = function () {
 		FB.init({
 		appId: '1408909052733113',
@@ -172,10 +17,10 @@ Educamedia
 		js.src = "//connect.facebook.net/en_US/sdk.js";
 		fjs.parentNode.insertBefore(js, fjs);
 		}(document, 'script', 'facebook-jssdk'));
-    </script>
-    <!--fin codigo facebook-->
-    <!--sdk twitter-->
-    <script>window.twttr = (function (d, s, id) {
+
+		//		*****	*****	sdk twitter		*****
+		
+		window.twttr = (function (d, s, id) {
             var js, fjs = d.getElementsByTagName(s)[0],
                     t = window.twttr || {};
             if (d.getElementById(id))
@@ -191,8 +36,9 @@ Educamedia
             };
 
             return t;
-        }(document, "script", "twitter-wjs"));</script>
-    <script>
+        }(document, "script", "twitter-wjs"));
+
+		//		*****	*****	sdk twitter		*****
         function guardaRating(val){
             $.ajax({
                 method: "POST",
@@ -511,22 +357,3 @@ Educamedia
             //        window.location.assign('vod/finish/' + id);    
             //    }
         }
-    </script>
-
-	<!--metadados para compartir en facebook-->
-	<meta property="og:url" content="http://ventana.televisioneducativa.gob.mx/{{Request::path()}}" /> 
-	<meta property="fb:app_id" content="1408909052733113" /> 
-	<meta property="og:type" content="article" />                                  
-	<meta property="og:title" content="{{$videos[0]->titulo_programa}}" /> 
-	<meta property="og:image" content="http://img.youtube.com/vi/{{ $video->url }}/2.jpg" />                                             
-	<meta property="og:description" content="{{ $videos[0]->sinopsis }}" />
-
-	<!--twitter metas-->
-	<meta name="twitter:card" content="summary_large_image">
-	<meta name="twitter:site" content="@tveducativamx">
-	<meta name="twitter:creator" content="@SarahMaslinNir">
-	<meta name="twitter:title" content="{{$videos[0]->titulo_programa}}">
-	<meta name="twitter:description" content="{{ $videos[0]->sinopsis }}">
-	<meta name="twitter:image" content="http://img.youtube.com/vi/{{ $video->url }}/2.jpg">
-
-@endsection
