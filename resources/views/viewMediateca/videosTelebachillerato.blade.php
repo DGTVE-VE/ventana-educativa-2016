@@ -4,55 +4,7 @@
 Educamedia
 @stop
 
-<style>
-    /* estilo en scrollbar*/
-    ::-webkit-scrollbar{
-        width: 10px;
-        background: #000;
-        border-radius: 20px
-    }
-    ::-webkit-scrollbar-button{
-        width:8px;
-        height: 5px;
-    }
-    ::-webkit-scrollbar-track{
-        background:#000;
-        border:thin solid #1a1f25;
-        -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
-        -webkit-border-radius: 10px;
-        border-radius: 10px;
-    }
-    ::-webkit-scrollbar-thumb{
-        background: -webkit-linear-gradient(top, #87688A, #c1B5C9);
-        -webkit-box-shadow:   inset 0 1px 0 rgba(255,255,225,.5),
-            inset 1px 0 0 rgba(255,255,255,.4),
-            inset 0 1px 2px rgba(255,255,255,.3);
-        border:thin solid #754B7B;
-        border-radius: 10px;
-        -webkit-border-radius: 10px;
-    }
-    ::-webkit-scrollbar-thumb:hover{
-        background: -webkit-linear-gradient(top, #754B7B, #73688B);
-    }
-    /* Pseudo-clase */
-    ::-webkit-scrollbar-thumb:window-inactive {
-        background: rgba(135,78,161,.6);
-    }
-    .btnDescarga{
-        font-size:1.5em;
-        cursor: pointer;
-        color: white;
-    }
-    .txtNegro{
-        color: black;
-    }
-	.oculto{
-		display: none;
-	}
-	.punteroMano{
-		cursor:pointer;
-	}
-</style>
+<link rel="stylesheet" href="{{ asset('css/mediateca/videosTelebachillerato.css') }}" >
 @section('menuMediateca')
 @include('viewMediateca.encabezadoMediateca')
 @endsection
@@ -61,7 +13,7 @@ Educamedia
     <div class="row">
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center" style="padding:2%"></div>
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center textoTitulo txtVideosRed">
-            <p>{{ generaBreadCrumbs() }}</p><br>
+            <p id="parrafoBreadcrumb"> </p><br>
         </div>
 
         <div class="col-md-1"></div>
@@ -187,10 +139,6 @@ Educamedia
 @endsection
 
 @section('scripts')
-<script>
-//    $(document).ready(function(){
-//    });
-</script>
 <script src="{{asset ('js/jquery-ui.min.js')}}"></script>
 
 <script src="https://www.youtube.com/player_api"></script>
@@ -284,8 +232,6 @@ Educamedia
                     @endif
             });
         }
-    
-    
     
     $(document).ready(function () {
         @if(Auth::check())

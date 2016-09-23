@@ -9,7 +9,7 @@ Educamedia
 	<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center" style="padding:4%">
 	</div>
 	<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center textoTitulo">
-		<p> {{ generaBreadCrumbs() }} </p><br>
+		<p><a href="{{ url('educamedia') }}"> EDUCAMEDIA </a> / <a href="{{url('educamedia/telebachillerato')}}"> TELEBACHILLERATO </a> / <a href="{{ url('educamedia/telebachillerato/Propedéutico') }}">{{ strtoupper($breadcrumbs) }}</a></p><br>
 	</div>
 	<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 		<map name="mapaSemPedagogico" id="mapaSemPedagogico">

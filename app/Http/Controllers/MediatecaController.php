@@ -30,55 +30,68 @@ class MediatecaController extends Controller {
     }
 
     public function mediateca() {
-        return view('viewMediateca/mediateca');
+		$breadcrumbs = 'educamedia';
+        return view('viewMediateca/mediateca')->with('breadcrumbs', $breadcrumbs);
     }
 
     public function telesecundaria() {
-        return view('viewMediateca/telesecundaria');
+		$breadcrumbs = 'telesecundaria';
+        return view('viewMediateca/telesecundaria')->with('breadcrumbs', $breadcrumbs);
     }
 
     public function telebachillerato() {
-        return view('viewMediateca/telebachillerato');
+		$breadcrumbs = 'telebachillerato';
+        return view('viewMediateca/telebachillerato')->with('breadcrumbs', $breadcrumbs);
     }
 
     public function primergrado() {
-        return view('viewMediateca/primerGrado');
+		$breadcrumbs = 'primergrado';
+        return view('viewMediateca/primerGrado')->with('breadcrumbs', $breadcrumbs);
     }
 
     public function segundogrado() {
-        return view('viewMediateca/segundoGrado');
+		$breadcrumbs = 'segundogrado';
+        return view('viewMediateca/segundoGrado')->with('breadcrumbs', $breadcrumbs);
     }
 
     public function tercergrado() {
-        return view('viewMediateca/tercerGrado');
+		$breadcrumbs = 'tercergrado';
+        return view('viewMediateca/tercerGrado')->with('breadcrumbs', $breadcrumbs);
     }
 
     public function semestreI() {
-        return view('viewMediateca/semestreI');
+		$breadcrumbs = 'semestreI';
+        return view('viewMediateca/semestreI')->with('breadcrumbs', $breadcrumbs);
     }
 
     public function semestreII() {
-        return view('viewMediateca/semestreII');
+		$breadcrumbs = 'semestreII';
+        return view('viewMediateca/semestreII')->with('breadcrumbs', $breadcrumbs);
     }
 
     public function semestreIII() {
-        return view('viewMediateca/semestreIII');
+		$breadcrumbs = 'semestreIII';
+        return view('viewMediateca/semestreIII')->with('breadcrumbs', $breadcrumbs);
     }
 
     public function semestreIV() {
-        return view('viewMediateca/semestreIV');
+		$breadcrumbs = 'semestreIV';
+        return view('viewMediateca/semestreIV')->with('breadcrumbs', $breadcrumbs);
     }
 
     public function semestreV() {
-        return view('viewMediateca/semestreV');
+		$breadcrumbs = 'semestreV';
+        return view('viewMediateca/semestreV')->with('breadcrumbs', $breadcrumbs);
     }
 
     public function semestreVI() {
-        return view('viewMediateca/semestreVI');
+		$breadcrumbs = 'semestreVI';
+        return view('viewMediateca/semestreVI')->with('breadcrumbs', $breadcrumbs);
     }
 
     public function componente() {
-        return view('viewMediateca/componente');
+		$breadcrumbs = 'Proped&#201;utico';
+        return view('viewMediateca/componente')->with('breadcrumbs', $breadcrumbs);
     }
 
     public function videos() {
@@ -240,4 +253,65 @@ class MediatecaController extends Controller {
                 ->orderBy('created_at','DESC')->get();
         return view('viewMediateca/comments')->with('comments', $comments);
     }
+	
+	/* 	------------	Función que extrae e imprime breadcrumbs	-----------	 */
+
+	function seleccionaGrado($grado) {
+		switch ($grado) {
+			case '1': $grado = 'primergrado';
+				break;
+			case '2': $grado = 'segundogrado';
+				break;
+			case '3': $grado = 'tercergrado';
+				break;
+			case 'I': $grado = 'semestreI';
+				break;
+			case 'II': $grado = 'semestreII';
+				break;
+			case 'III': $grado = 'semestreIII';
+				break;
+			case 'IV': $grado = 'semestreIV';
+				break;
+			case 'V': $grado = 'semestreV';
+				break;
+			case 'VI': $grado = 'semestreVI';
+				break;
+		}
+		return $grado;
+	}
+
+	public function generaBreadCrumbs() {
+		$breadcrumb = "";
+		$uri = filter_input(INPUT_GET, 'url');
+		$uriActual = explode('/', $uri);
+		$elemsURI = count($uriActual);
+		$j = $elemsURI - 1;
+		$termina = false;
+		while ($uriActual[$j] != 'educamedia') {
+			$j--;
+		}
+		$breadcrumb = $breadcrumb . '<a href=' . url($uriActual[$j]);
+		$breadcrumb = $breadcrumb . '>' . strtoupper($uriActual[$j]) . '</a>';
+		$hrefCompleta = $uriActual[$j];
+		$j++;
+		for ($i = $j; $i < $elemsURI; $i++) {
+			if (strlen($uriActual[$i]) < 4) {
+				$gradoURI = MediatecaController::seleccionaGrado($uriActual[$i]);
+				$termina = true;
+			} else {
+				$gradoURI = $uriActual[$i];
+			}
+			$hrefCompleta = url($hrefCompleta . "/" . $gradoURI);
+			$breadcrumb = $breadcrumb . ' / <a href="' . $hrefCompleta;
+			if (strpos($uriActual[$i], '%C3%A9') !== false) {
+				$gradoURI = 'Proped&#201;utico';
+				$termina = true;
+			}
+			$breadcrumb = $breadcrumb . '">' . strtoupper($gradoURI) . '</a>';
+			if ($termina == true) {
+				break;
+			}
+		}
+		return $breadcrumb;
+	}
 }
