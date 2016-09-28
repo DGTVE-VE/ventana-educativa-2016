@@ -429,9 +429,19 @@ Educamedia
      * @returns {undefined}
      */
      function initializeYoutube(youtubeId, time) {
+            AltoReproductor = 250;
+			if($(window).width() > 1599){
+				AltoReproductor = 700;
+			}
+			else if($(window).width() > 991){
+				AltoReproductor = 500;
+			}
+			else if($(window).width() > 767){
+				AltoReproductor = 350;
+			}
         player = new YT.Player('player', {
         width: 640,
-            height: 390,
+            height: AltoReproductor,
             videoId: youtubeId,
             playerVars: {
                 controls: 1, // Los controles no se muestran

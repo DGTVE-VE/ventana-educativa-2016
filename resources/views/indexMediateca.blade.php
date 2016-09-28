@@ -51,6 +51,8 @@ and open the template in the editor.
             @yield('menuMediateca')
         </header>
         <div class="container-fluid">
+			<div class="col-xs-12 visible-xs-block" style="padding:4%"></div>
+			<div class="col-sm-12 visible-sm-block" style="padding:2%"></div>
             @yield('cuerpoMediateca')
         </div>
         <div class="container-fluid">

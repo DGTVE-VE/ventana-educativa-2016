@@ -125,6 +125,7 @@ Educamedia
 							@endforeach
 						</div>
 					</div>
+					<div class="col-xs-12 col-sm-12 visible-xs-block visible-sm-block" style="padding:10px"></div>
 					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 listVideos">
 						<table class="table table-responsive">                
 							@foreach ($videos as $item => $video)
@@ -453,9 +454,19 @@ Educamedia
          */
 
         function initializeYoutube(youtubeId, time) {
-            player = new YT.Player('player', {
+			AltoReproductor = 250;
+			if($(window).width() > 1599){
+				AltoReproductor = 700;
+			}
+			else if($(window).width() > 991){
+				AltoReproductor = 500;
+			}
+			else if($(window).width() > 767){
+				AltoReproductor = 350;
+			}
+		    player = new YT.Player('player', {
                 width: 640,
-                height: 390,
+                height: AltoReproductor,
                 videoId: youtubeId,
                 playerVars: {
                     controls: 2, // Los controles no se muestran
