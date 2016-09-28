@@ -22,7 +22,7 @@ Educamedia
                 <div class="col-md-12" style="overflow: auto;">
                     <h5 id="materia">{{$videos[0]->asignatura}}</h5>
                     <h4 id="titulo_programa">{{$videos[0]->programa}}</h4>
-                    <div id="player" align="center">    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-10 col-lg-offset-1" id="player" align="center">    </div>
                 </div>
                 <div class="row">
                     <div class="col-md-12">
@@ -115,13 +115,13 @@ Educamedia
                 </div>
             </div>
             <br>
-            <div class="col-md-12 col-xs-12 col-lg-4 col-sm-12 controls txtVideosRed" id="custom_controls">
-                <div class="col-md-12 listVideos">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4 controls txtVideosRed" id="custom_controls">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 listVideos">
                     <table class="table table-responsive">
                         @foreach ($videos as $item => $video)
                         <tr>
                             <td data-target="#custom_carousel" data-slide-to="{{$item}}" class="item" data-id='{{ $video->url }}' _id="{{$video->id}}">
-                                <img src="http://img.youtube.com/vi/{{ $video->url }}/2.jpg" class='item-a punteroMano'>
+                                <img src="http://img.youtube.com/vi/{{ $video->url }}/2.jpg" class='item-a punteroMano'/>
                             </td>
                             <td class="redesText">{{$video->programa}}</td>
                         </tr>

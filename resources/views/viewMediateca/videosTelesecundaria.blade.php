@@ -22,7 +22,7 @@ Educamedia
                     <div class="col-md-12" style="overflow: auto;">
                         <h5 id="materia">{{$videos[0]->materia}}</h5>                
                         <h4 id="titulo_programa">{{$videos[0]->titulo_programa}}</h4>                
-                        <div id="player" align="center">    </div>
+                        <div  class="col-xs-12 col-sm-12 col-md-12 col-lg-10 col-lg-offset-1" id="player" align="center">    </div>
                     </div>
                     <div class="row">
                         <div class="col-md-12">
@@ -110,7 +110,7 @@ Educamedia
 					</div>
 				</div>                
 				<div class="col-md-4 pager txtVideosRed" id="custom_controls">
-					<div class="col-md-12 ">                    
+					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">                    
 						<h5 class="col-md-2">Bloque</h5>
 						<div class="col-md-10">
 							@foreach ($paginacion as $item => $bloquePagina)
@@ -125,7 +125,7 @@ Educamedia
 							@endforeach
 						</div>
 					</div>
-					<div class="col-md-12 listVideos">
+					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 listVideos">
 						<table class="table table-responsive">                
 							@foreach ($videos as $item => $video)
 							<tr>
