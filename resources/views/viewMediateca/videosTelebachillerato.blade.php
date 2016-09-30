@@ -418,7 +418,21 @@ Educamedia
         initializeYoutube('{{$videos[0]->url}}', 0);
         //    });
     }
-    /**
+    
+	function determinaAltoRep(){
+		nuevoAlto = 250;
+		if($(window).width() > 1599){
+			nuevoAlto = 700;
+		}
+		else if($(window).width() > 991){
+			nuevoAlto = 500;
+		}
+		else if($(window).width() > 767){
+			nuevoAlto = 350;
+		}
+		return nuevoAlto;
+	}
+	/**
      * Inicializa el reproductor de Youtube a través del api. Establece el tamaño del
      * reproductor a pantalla completa.
      *
@@ -429,19 +443,9 @@ Educamedia
      * @returns {undefined}
      */
      function initializeYoutube(youtubeId, time) {
-            AltoReproductor = 250;
-			if($(window).width() > 1599){
-				AltoReproductor = 700;
-			}
-			else if($(window).width() > 991){
-				AltoReproductor = 500;
-			}
-			else if($(window).width() > 767){
-				AltoReproductor = 350;
-			}
         player = new YT.Player('player', {
-        width: 640,
-            height: AltoReproductor,
+			width: 640,
+            height: determinaAltoRep(),
             videoId: youtubeId,
             playerVars: {
                 controls: 1, // Los controles no se muestran

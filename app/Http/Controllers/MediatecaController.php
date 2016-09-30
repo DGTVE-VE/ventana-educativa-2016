@@ -43,6 +43,11 @@ class MediatecaController extends Controller {
 		$breadcrumbs = 'telebachillerato';
         return view('viewMediateca/telebachillerato')->with('breadcrumbs', $breadcrumbs);
     }
+	
+	public function sea() {
+		$breadcrumbs = 'sea';
+        return view('viewMediateca/sea')->with('breadcrumbs', $breadcrumbs);
+    }
 
     public function primergrado() {
 		$breadcrumbs = 'primergrado';
