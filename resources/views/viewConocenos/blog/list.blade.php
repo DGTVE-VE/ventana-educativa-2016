@@ -6,12 +6,15 @@ Ventana Educativa / Conocenos
 @include('viewConocenos.encabezado')
 @endsection
 @section('cuerpoConocenos')
-
-
-<div class="container-fluid sinPaddingLateral">
-    <div id="fullpage">
-        <div class="col-md-1"></div>
-        <div class="col-md-7 txtBlogRed">
+<div class="menuBlog"> 
+    <a href="{{url('conocenos')}}" class="text-center">
+        <h4 class="glyphicon glyphicon-home" style="color: white;"></h4><br/>
+    </a>
+</div>
+<div class="container">
+    <div class="row">
+        <!--inicia blog list-->
+        <div class="col-md-9 txtBlogRed">
             @foreach ($blogs as $blog)
             <br>
             <div class="row bordeBlog text-justify">
@@ -99,11 +102,6 @@ Ventana Educativa / Conocenos
                 </div>
             </div>
             <br>
-            <h4><strong>Tags</strong></h4>
-            <div class="bordeBlog">
-                <!--Aquí las tags-->
-            </div>
-            <br>
             @if (Auth::guest ())
             @else
             @if (Auth::user()->is_researcher)
@@ -118,17 +116,19 @@ Ventana Educativa / Conocenos
             @endif
             @endif 
         </div>
-        <div class="col-md-1"></div>
+        <!--fin blog list-->
+
     </div>
 </div>
-<!-- /#wrapper -->
-</div>
 
-<script>
-    $('#myTabs a').click(function (e) {
-        e.preventDefault()
-        $(this).tab('show')
-    });
+<script src="{{asset('js/conocenos/jquery-3.1.1.min.js')}}"></script>
+<script type="text/javascript">
+
+$('#myTabs a').click(function (e) {
+    e.preventDefault()
+    $(this).tab('show')
+});
+
 </script>
-@endsection
 @include('viewConocenos.pie')
+@endsection

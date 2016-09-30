@@ -83,7 +83,7 @@ class ConocenosBlogController extends Controller
     }
     
     public function show ($id_blog){
-        $blog = Blog::find ($id_blog);
+   $blog = Blog::find ($id_blog);
         $blog->visitas ++;
         $blog->save ();
         
@@ -91,8 +91,8 @@ class ConocenosBlogController extends Controller
         $leidos = Blog::orderBy ('visitas', 'desc')->take (5)->get ();
         $comentados = $this->geBlogstMasComentados (5);
         $colaborador = Colaborador::find ($blog->colaborador_id);
-        return view('viewConocenos/blog/show', compact('blog', 'colaborador', 'leidos', 'recientes', 'comentados'));
-    }
+//        dd($colaborador);
+        return view('viewRed/blog/show', compact('blog', 'colaborador', 'leidos', 'recientes', 'comentados'));    }
     
     public function destroy ($blog){
         
@@ -165,6 +165,7 @@ class ConocenosBlogController extends Controller
         $numComments = DB::table ('con_blog_comments')
                 ->select ('id_blog', DB::raw ('count(*) as total'))
                 ->groupBy ('id_blog')->take ($cuantos)->get ();
+//                print($numComments);
         $ids = array ();
         foreach ($numComments as $num){
             $ids [] = $num->id_blog;

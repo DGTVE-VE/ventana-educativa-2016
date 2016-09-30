@@ -1,8 +1,11 @@
-@extends ('indexConocenos')
+@section('titleConocenos')
+Ventana Educativa / Conocenos
+@stop
+@extends('indexConocenos')
 @section('menuConocenos')
-@include ('viewConocenos.encabezado')
+@include('viewConocenos.encabezado')
 @endsection
-@section ('cuerpoConocenos')
+@section('cuerpoConocenos')
 <div class="row">
     <div class='col-md-2'></div>
     <div class='col-md-5 txtBlogRed'>
@@ -19,7 +22,8 @@
             {!!$blog->cuerpo!!}
         </div>
         <h3>Conversación de expertos </h3>
-        @if(Auth::check())        
+        @if(Auth::check())
+        @if (Auth::user ()->is_researcher)
         <form action="{{url ('conocenos/blog/comment')}}" method="POST" enctype="multipart/form-data">
             <input type="hidden" name="_token" value="{{ csrf_token() }}" />    
             <input type="hidden" name="id_colaborador" value="{{$colaborador->id}}" />    
@@ -28,13 +32,13 @@
             <textarea name="comment"></textarea>
             <button type="submit" class="btn btn-default"> Comentar </button>
         </form>
-
+        @endif
         @endif
         <div>
             @foreach ($blog->comments as $comment)
             @if ($comment->id_comment == 0) 
             <div class="fondo_Claro text-justify">
-                @include('viewConocenos.blog.comments', ['comment'=>$comment])  
+                @include('viewRed.blog.comments', ['comment'=>$comment])  
             </div>
             <hr>
             @endif
@@ -115,11 +119,9 @@
                     <div id="comentados" class="panel-collapse collapse">
                         <div class="panel-body">
                             <ol>
-                                @if (isset($comentados))
                                 @foreach ($comentados as $comentado)
                                 <li> <a href="{{url("conocenos/blog/$comentado->id")}}"> {{$comentado->titulo}}</a></li>
                                 @endforeach                       
-                                @endif
                             </ol>
                         </div>
                     </div>                   
@@ -132,10 +134,10 @@
 
 <script src="{{asset ('tinymce/tinymce.min.js')}}"></script>
 <script>
-tinymce.init({
-    selector: 'textarea',
-    language: 'es_MX'
-});
+    tinymce.init({        
+        selector: 'textarea',
+        language: 'es_MX'
+    });
 
 </script>
 <!-- /TinyMCE -->
@@ -146,6 +148,6 @@ tinymce.init({
         $(this).next().slideToggle();
     });
 </script>
-@endsection
+
 @include('viewConocenos.pie')
-@stop
+@endsection
