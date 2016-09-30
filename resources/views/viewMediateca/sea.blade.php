@@ -12,20 +12,22 @@
 		<p id="parrafoBreadcrumb"> </p><br>
 	</div>
 	<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-		<map name="telesecGrados" id="telesecGrados">
-			<area alt="primerGrado" href="{{url('educamedia/telesecundaria/primergrado')}}" onmouseover="resaltaImgSecu('telesecundaria', 'primerGrado')" onmouseout="normalImgSecu('Inicio', 'primerGrado')" title="" shape="poly" coords="0,268,1,207,8,173,28,125,58,84,101,44,160,14,208,2,272,1,316,12,346,23,300,111,251,95,204,97,166,114,129,154,112,183,102,209,100,257"/>
-			<area alt="segundoGrado" href="{{url('educamedia/telesecundaria/segundogrado')}}" onmouseover="resaltaImgSecu('telesecundaria', 'segundoGrado')" onmouseout="normalImgSecu('telesecundaria', 'segundoGrado')" title="" shape="poly" coords="328,358,383,437,440,381,461,345,479,282,482,263,481,215,475,170,460,136,437,95,410,65,370,35,347,22,302,111,333,133,360,162,379,200,385,260,372,302,353,331"/>
-			<area alt="tercerGrado" href="{{url('educamedia/telesecundaria/tercergrado')}}" onmouseover="resaltaImgSecu('telesecundaria', 'tercerGrado')" onmouseout="normalImgSecu('telesecundaria', 'tercerGrado')" title="" shape="poly" coords="0,269,98,258,122,316,166,365,216,383,252,384,295,374,327,359,382,438,333,467,286,480,264,481,214,481,162,471,109,449,60,405,22,356"/>
+		<map name="seaGrados" id="seaGrados">
+			<area alt="Cálculo y resolución" href="{{url('educamedia/sea/calculo')}}" onmouseover="resaltaImgSecu('sea', 'calculo')" onmouseout="normalImgSecu('sea', 'calculo')" title="" shape="poly" coords="191,6,213,106,249,102,275,106,304,116,336,138,364,168,378,203,381,216,482,195,464,135,428,84,391,48,337,18,284,4,276,3,212,2"/>
+			<area alt="Salud y ambiente" href="{{url('educamedia/sea/salud')}}" onmouseover="resaltaImgSecu('sea', 'salud')" onmouseout="normalImgSecu('sea', 'salud')" title="" shape="poly" coords="381,218,481,197,486,220,486,268,477,317,453,368,420,412,370,454,296,481,274,381,307,370,348,337,372,299,384,261"/>
+			<area alt="familia, comunidad y sociedad" href="{{url('educamedia/sea/familia')}}" onmouseover="resaltaImgSecu('sea', 'familia')" onmouseout="normalImgSecu('sea', 'familia')" title="" shape="poly" coords="274,382,296,481,264,486,205,485,156,472,95,436,55,400,27,356,7,298,108,275,126,322,153,352,189,374,224,384"/>
+			<area alt="Lengua y comunicación" href="{{url('educamedia/sea/lengua')}}" onmouseover="resaltaImgSecu('sea', 'lengua')" onmouseout="normalImgSecu('sea', 'lengua')" title="" shape="poly" coords="106,275,6,296,1,264,2,212,16,159,36,115,63,78,100,45,141,22,192,5,213,105,172,119,129,153,113,186,101,226"/>
 		</map>
 		<div class="contenedorAro">
-			{{HTML::image('imagenes/mediateca/tsecundaria/Inicio/telesecundaria.png','Telesecundaria Primero',['class'=>'posicionInicial img-responsive','id'=>'primerGrado'])}}
-			{{HTML::image('imagenes/mediateca/tsecundaria/Inicio/primerGradoHover.png','Telesecundaria Primero',['class'=>'resaltaImg img-responsive', 'id'=>'primerGradoHover'])}}
-			{{HTML::image('imagenes/mediateca/tsecundaria/Inicio/segundoGradoHover.png','Telesecundaria Segundo',['class'=>'resaltaImg img-responsive', 'id'=>'segundoGradoHover'])}}
-			{{HTML::image('imagenes/mediateca/tsecundaria/Inicio/tercerGradoHover.png','Telesecundaria Tercero',['class'=>'resaltaImg img-responsive', 'id'=>'tercerGradoHover'])}}
-			{{HTML::image('imagenes/mediateca/tsecundaria/iconoCentral/centralPrimero.png','Telesecundaria central Primero',['class'=>'imgTelesecCentro', 'id'=>'primerGradoCentro'])}}
-			{{HTML::image('imagenes/mediateca/tsecundaria/iconoCentral/centralSegundo.png','Telesecundaria central Segundo',['class'=>'imgTelesecCentro', 'id'=>'segundoGradoCentro'])}}
-			{{HTML::image('imagenes/mediateca/tsecundaria/iconoCentral/centralTercero.png','Telesecundaria central Tercero',['class'=>'imgTelesecCentro', 'id'=>'tercerGradoCentro'])}}
-			{{HTML::image('imagenes/mediateca/tsecundaria/Inicio/imgMapa.png','telesecundaria',['class'=>'posicionMapa img-responsive', 'id'=>'telebachilleratoSEMII', 'usemap'=>'#telesecGrados'])}}
+			{{HTML::image('imagenes/mediateca/sea/Inicio/materias.png','sea Materias',['class'=>'posicionInicial img-responsive','id'=>'seaInicio'])}}
+			{{HTML::image('imagenes/mediateca/sea/Inicio/calculoHover.png','calculo y resolucion',['class'=>'resaltaImg img-responsive', 'id'=>'calculoHover'])}}
+			{{HTML::image('imagenes/mediateca/sea/Inicio/saludHover.png','Salud y ambiente',['class'=>'resaltaImg img-responsive', 'id'=>'saludHover'])}}
+			{{HTML::image('imagenes/mediateca/sea/Inicio/familiaHover.png','Familia, comunidad y sociedad',['class'=>'resaltaImg img-responsive', 'id'=>'familiaHover'])}}
+			{{HTML::image('imagenes/mediateca/sea/Inicio/lenguaHover.png','Lengua y comunicación',['class'=>'resaltaImg img-responsive', 'id'=>'lenguaHover'])}}
+			{{HTML::image('imagenes/mediateca/sea/iconoCentral/centralPrimero.png','Telesecundaria central Primero',['class'=>'imgTelesecCentro', 'id'=>'primerGradoCentro'])}}
+			{{HTML::image('imagenes/mediateca/sea/iconoCentral/centralSegundo.png','Telesecundaria central Segundo',['class'=>'imgTelesecCentro', 'id'=>'segundoGradoCentro'])}}
+			{{HTML::image('imagenes/mediateca/sea/iconoCentral/centralTercero.png','Telesecundaria central Tercero',['class'=>'imgTelesecCentro', 'id'=>'tercerGradoCentro'])}}
+			{{HTML::image('imagenes/mediateca/sea/Inicio/imgMapa.png','Materias SEA',['class'=>'posicionMapa img-responsive', 'id'=>'seaAreas', 'usemap'=>'#seaGrados'])}}
 		</div>
 	</div>
 	 @include('viewMediateca.barraSociales')

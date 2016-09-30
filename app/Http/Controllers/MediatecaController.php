@@ -98,6 +98,26 @@ class MediatecaController extends Controller {
 		$breadcrumbs = 'Proped&#201;utico';
         return view('viewMediateca/componente')->with('breadcrumbs', $breadcrumbs);
     }
+	
+    public function SEAcalculo() {
+		$breadcrumbs = 'calculo';
+        return view('viewMediateca/seacalculo')->with('breadcrumbs', $breadcrumbs);
+    }
+	
+    public function SEAsalud() {
+		$breadcrumbs = 'salud';
+        return view('viewMediateca/seasalud')->with('breadcrumbs', $breadcrumbs);
+    }
+	
+    public function SEAfamilia() {
+		$breadcrumbs = 'familia';
+        return view('viewMediateca/seafamilia')->with('breadcrumbs', $breadcrumbs);
+    }
+	
+    public function SEAlengua() {
+		$breadcrumbs = 'lengua';
+        return view('viewMediateca/sealengua')->with('breadcrumbs', $breadcrumbs);
+    }
 
     public function videos() {
 //        $thumbnail = "https://i.ytimg.com/vi/".$video1."/default.jpg";

@@ -74,6 +74,10 @@ Route::group(['middleware' => 'web'], function () {
     Route::get('educamedia/telebachillerato/semestreIV', 'MediatecaController@semestreIV');
     Route::get('educamedia/telebachillerato/semestreV', 'MediatecaController@semestreV');
     Route::get('educamedia/telebachillerato/semestreVI', 'MediatecaController@semestreVI');
+	Route::get('educamedia/sea/calculo', 'MediatecaController@SEAcalculo');
+	Route::get('educamedia/sea/salud', 'MediatecaController@SEAsalud');
+	Route::get('educamedia/sea/familia', 'MediatecaController@SEAfamilia');
+	Route::get('educamedia/sea/lengua', 'MediatecaController@SEAlengua');
 
     Route::get('educamedia/telebachillerato/Propedéutico', 'MediatecaController@componente');
 	Route::get('educamedia/breadcrumbs', 'MediatecaController@generaBreadCrumbs');
