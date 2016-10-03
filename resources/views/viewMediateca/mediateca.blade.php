@@ -25,6 +25,7 @@ Educamedia
 		{{HTML::image('imagenes/mediateca/Inicio/seaHover.png','SEA',['class'=>'resaltaImg img-responsive', 'id'=>'seaHover'])}}
         {{HTML::image('imagenes/mediateca/Inicio/gifs/1.gif','Telebachillerato Central',['class'=>' img-responsive iniImgCentro img-circle', 'id'=>'telebachCentro'])}}
         {{HTML::image('imagenes/mediateca/Inicio/gifs/8.gif','Telesecundaria Central',['class'=>'img-responsive iniImgCentro img-circle', 'id'=>'telesecCentro'])}}
+		{{HTML::image('imagenes/mediateca/Inicio/gifs/6.gif','SEA Central',['class'=>'img-responsive iniImgCentro img-circle', 'id'=>'seaCentro'])}}
         {{HTML::image('imagenes/mediateca/Inicio/imgMapa.png','Telebachillerato',['class'=>'posicionMapa img-responsive', 'id'=>'educamediaIni', 'usemap'=>'#inicioEducamedia'])}}
     </div>
 </div>
