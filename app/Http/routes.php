@@ -196,12 +196,13 @@ Route::group(['middleware' => 'web'], function () {
     /**/
 
     /*     * **************************Fin Conocenos********************** */
+Route::resource('Admin/biblioteca', 'Admin\\bibliotecaController');
+Route::resource('admin/proyectos', 'Admin\\ProyectosController');
+Route::resource('admin/publicaciones', 'Admin\\PublicacionesController');
 });
 
 //Route::get ('api/getImagenes/{tipo}/{id}', '');
 
-
-Route::resource('Admin/biblioteca', 'Admin\\bibliotecaController');
 
 /* * **********************
  * 
@@ -240,4 +241,3 @@ Route::get('mail/test', function () {
     var_dump($result);
 });
 
-/******************************/
