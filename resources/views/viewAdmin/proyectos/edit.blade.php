@@ -1,7 +1,10 @@
-@extends('layouts.app')
+@extends('indexAdmin')
 
-@section('content')
-<div class="container">
+@section('menuAdmin')
+	@include('viewAdmin.encabezado')
+@endsection
+@section('cuerpoAdmin')
+<div class="container" style="padding-left:80px;">
 
     <h1>Edit Proyecto {{ $proyecto->id }}</h1>
 

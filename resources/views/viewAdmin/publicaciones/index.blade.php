@@ -1,7 +1,10 @@
-@extends('layouts.app')
+@extends('indexAdmin')
 
-@section('content')
-<div class="container">
+@section('menuAdmin')
+	@include('viewAdmin.encabezado')
+@endsection
+@section('cuerpoAdmin')
+<div class="container" style="padding-left:80px;">
 
     <h1>Publicaciones <a href="{{ url('/admin/publicaciones/create') }}" class="btn btn-primary btn-xs" title="Add New Publicacione"><span class="glyphicon glyphicon-plus" aria-hidden="true"/></a></h1>
     <div class="table">

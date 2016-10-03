@@ -177,8 +177,8 @@
                 <a href="#"><span class="fa-stack fa-lg pull-left"><i class="fa fa-globe fa-stack-1x "></i></span> Redmite</a>
                 <ul class="nav-pills nav-stacked" style="list-style-type:none;">
 					<li onclick="muestraColaboradores()"><a href="#"><span class="fa-stack fa-lg pull-left"><i class="fa fa-flag fa-stack-1x "></i></span>Colaboradores</a></li>
-                    <li><a href="#"><span class="fa-stack fa-lg pull-left"><i class="fa fa-flag fa-stack-1x "></i></span>Publicaciones</a></li>
-                    <li><a href="#"><span class="fa-stack fa-lg pull-left"><i class="fa fa-flag fa-stack-1x "></i></span>Proyectos</a></li>
+                    <li><a href="{{url('admin/publicaciones')}}"><span class="fa-stack fa-lg pull-left"><i class="fa fa-flag fa-stack-1x "></i></span>Publicaciones</a></li>
+                    <li><a href="{{url('admin/proyectos')}}"><span class="fa-stack fa-lg pull-left"><i class="fa fa-flag fa-stack-1x "></i></span>Proyectos</a></li>
 
                 </ul>
             </li>

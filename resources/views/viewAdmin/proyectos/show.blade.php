@@ -1,7 +1,10 @@
-@extends('layouts.app')
+@extends('indexAdmin')
 
-@section('content')
-<div class="container">
+@section('menuAdmin')
+	@include('viewAdmin.encabezado')
+@endsection
+@section('cuerpoAdmin')
+<div class="container" style="padding-left:80px;">
 
     <h1>Proyecto {{ $proyecto->id }}
         <a href="{{ url('admin/proyectos/' . $proyecto->id . '/edit') }}" class="btn btn-primary btn-xs" title="Edit Proyecto"><span class="glyphicon glyphicon-pencil" aria-hidden="true"/></a>

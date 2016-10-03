@@ -1,7 +1,10 @@
-@extends('layouts.app')
+@extends('indexAdmin')
 
-@section('content')
-<div class="container">
+@section('menuAdmin')
+	@include('viewAdmin.encabezado')
+@endsection
+@section('cuerpoAdmin')
+<div class="container" style="padding-left:80px;">
 
     <h1>Proyectos <a href="{{ url('/admin/proyectos/create') }}" class="btn btn-primary btn-xs" title="Add New Proyecto"><span class="glyphicon glyphicon-plus" aria-hidden="true"/></a></h1>
     <div class="table">
