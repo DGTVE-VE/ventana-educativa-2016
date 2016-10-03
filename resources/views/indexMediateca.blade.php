@@ -15,7 +15,7 @@ and open the template in the editor.
         <meta http-equiv="X-UA-Compatible" content="IE=Edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
         <!--metadatos para facebook-->
-               
+
         <link rel="shortcut icon" href="{{ asset('redmite1.ico') }}" >
 
         <!-- Bootstrap CSS -->
@@ -46,26 +46,53 @@ and open the template in the editor.
         @yield ('scripts')
 
     </head>
-    <body style="background-image:url('{{ asset('imagenes/mediateca/background/backgroundAzul.jpg') }}');">     
+    <body class="bodyEducamedia" style="background-image:url('{{ asset('imagenes/mediateca/background/backgroundAzul.jpg')  }}');">     
         <header>
             @yield('menuMediateca')
         </header>
         <div class="container-fluid">
-			<div class="col-xs-12 visible-xs-block" style="padding:4%"></div>
-			<div class="col-sm-12 visible-sm-block" style="padding:2%"></div>
+            <div class="col-xs-12 visible-xs-block" style="padding:4%"></div>
+            <div class="col-sm-12 visible-sm-block" style="padding:2%"></div>
             @yield('cuerpoMediateca')
         </div>
         <div class="container-fluid">
             @yield('pieMediateca')
         </div>
+        <div class="col-md-12 divInvisible" style="height: 350px;"></div>
     </body>
 </html>
 
 <script src="{{url('js/mediateca/index.js')}}"></script>
 <script>
-	/*		*****	Función que genera breadcrumbs		*****		*/
+	(function (i, s, o, g, r, a, m) {
+		i['GoogleAnalyticsObject'] = r;
+		i[r] = i[r] || function () {
+			(i[r].q = i[r].q || []).push(arguments)
+		}, i[r].l = 1 * new Date();
+		a = s.createElement(o),
+				m = s.getElementsByTagName(o)[0];
+		a.async = 1;
+		a.src = g;
+		m.parentNode.insertBefore(a, m)
+	})(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+	ga('create', 'UA-75232922-1', 'auto');
+	ga('send', 'pageview');
+
+	/*		*****	Cambio de color iconos redes sociales		*****		*/
+	if (navigator.userAgent.toLowerCase().indexOf('chrome') > -1 ){
+		document.body.style.backgroundAttachment = 'scroll';
+	}else{
+		if($(window).width()<'992'){
+			$('.cambiacolorredesSociales').addClass('iconoBlanco');
+			$('.cambiacolorredesSociales').removeClass('cambiacolorredesSociales');
+		}
+	}
+	
+	/*		*****	Función que llama función que genera breadcrumbs		*****		*/
 	function imprimeBreadCrumbs(){
-	var paginaActual = window.location.href;		
+		var paginaActual = window.location.href;
+		console.log(paginaActual);
 		$.ajax({
 			method: "GET",
 			url: "{{url('educamedia/breadcrumbs')}}",
@@ -79,8 +106,10 @@ and open the template in the editor.
 			});
 	}
 	imprimeBreadCrumbs();
+
+
 </script>
 
-<?php 
-Log::info('Memory Usage:'.Request::path()." - " . (memory_get_peak_usage (true)/1024/1024));
+<?php
+Log::info('Memory Usage:' . Request::path() . " - " . (memory_get_peak_usage(true) / 1024 / 1024));
 ?>
