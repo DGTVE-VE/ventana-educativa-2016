@@ -56,20 +56,6 @@
                     {!! $errors->first('pais', '<p class="help-block">:message</p>') !!}
                 </div>
             </div>
-            <div class="form-group {{ $errors->has('created_at') ? 'has-error' : ''}}">
-                {!! Form::label('created_at', 'Created At', ['class' => 'col-sm-3 control-label']) !!}
-                <div class="col-sm-6">
-                    {!! Form::input('datetime-local', 'created_at', null, ['class' => 'form-control']) !!}
-                    {!! $errors->first('created_at', '<p class="help-block">:message</p>') !!}
-                </div>
-            </div>
-            <div class="form-group {{ $errors->has('updated_at') ? 'has-error' : ''}}">
-                {!! Form::label('updated_at', 'Updated At', ['class' => 'col-sm-3 control-label']) !!}
-                <div class="col-sm-6">
-                    {!! Form::input('datetime-local', 'updated_at', null, ['class' => 'form-control']) !!}
-                    {!! $errors->first('updated_at', '<p class="help-block">:message</p>') !!}
-                </div>
-            </div>
 
 
     <div class="form-group">

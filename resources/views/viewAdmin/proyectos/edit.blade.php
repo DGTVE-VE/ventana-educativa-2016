@@ -28,11 +28,11 @@
                     {!! $errors->first('banner', '<p class="help-block">:message</p>') !!}
                 </div>
             </div>
-            <div class="form-group {{ $errors->has('descripción') ? 'has-error' : ''}}">
-                {!! Form::label('descripción', 'Descripción', ['class' => 'col-sm-3 control-label']) !!}
+            <div class="form-group {{ $errors->has('descripcion') ? 'has-error' : ''}}">
+                {!! Form::label('descripcion', 'Descripcion', ['class' => 'col-sm-3 control-label']) !!}
                 <div class="col-sm-6">
-                    {!! Form::textarea('descripción', null, ['class' => 'form-control', 'required' => 'required']) !!}
-                    {!! $errors->first('descripción', '<p class="help-block">:message</p>') !!}
+                    {!! Form::textarea('descripcion', null, ['class' => 'form-control', 'required' => 'required']) !!}
+                    {!! $errors->first('descripcion', '<p class="help-block">:message</p>') !!}
                 </div>
             </div>
             <div class="form-group {{ $errors->has('thumbnail') ? 'has-error' : ''}}">
@@ -54,20 +54,6 @@
                 <div class="col-sm-6">
                     {!! Form::text('liga', null, ['class' => 'form-control', 'required' => 'required']) !!}
                     {!! $errors->first('liga', '<p class="help-block">:message</p>') !!}
-                </div>
-            </div>
-            <div class="form-group {{ $errors->has('created_at') ? 'has-error' : ''}}">
-                {!! Form::label('created_at', 'Created At', ['class' => 'col-sm-3 control-label']) !!}
-                <div class="col-sm-6">
-                    {!! Form::input('datetime-local', 'created_at', null, ['class' => 'form-control']) !!}
-                    {!! $errors->first('created_at', '<p class="help-block">:message</p>') !!}
-                </div>
-            </div>
-            <div class="form-group {{ $errors->has('updated_at') ? 'has-error' : ''}}">
-                {!! Form::label('updated_at', 'Updated At', ['class' => 'col-sm-3 control-label']) !!}
-                <div class="col-sm-6">
-                    {!! Form::input('datetime-local', 'updated_at', null, ['class' => 'form-control']) !!}
-                    {!! $errors->first('updated_at', '<p class="help-block">:message</p>') !!}
                 </div>
             </div>
 

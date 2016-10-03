@@ -25,5 +25,5 @@ class Proyecto extends Model
      *
      * @var array
      */
-    protected $fillable = ['titulo', 'banner', 'descripción', 'thumbnail', 'activo', 'liga', 'created_at', 'updated_at'];
+    protected $fillable = ['titulo', 'banner', 'descripcion', 'thumbnail', 'activo', 'liga'];
 }

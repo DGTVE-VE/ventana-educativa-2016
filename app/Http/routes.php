@@ -187,7 +187,7 @@ Route::group(['middleware' => 'web'], function () {
 
     /*     * **************************Fin Conocenos********************** */
     Route::resource('Admin/biblioteca', 'Admin\\bibliotecaController');
-    Route::resource('admin/proyectos', 'Admin\\ProyectosController');
+	Route::resource('admin/proyectos', 'Admin\\ProyectosController');
     Route::resource('admin/publicaciones', 'Admin\\PublicacionesController');
 });
 

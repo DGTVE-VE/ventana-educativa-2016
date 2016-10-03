@@ -41,7 +41,7 @@ class ProyectosController extends Controller
      */
     public function store(Request $request)
     {
-        $this->validate($request, ['titulo' => 'required', 'banner' => 'required', 'descripción' => 'required', 'thumbnail' => 'required', 'activo' => 'required', 'liga' => 'required', ]);
+        $this->validate($request, ['titulo' => 'required', 'banner' => 'required', 'descripcion' => 'required', 'thumbnail' => 'required', 'activo' => 'required', 'liga' => 'required', ]);
 
         Proyecto::create($request->all());
 
@@ -87,7 +87,7 @@ class ProyectosController extends Controller
      */
     public function update($id, Request $request)
     {
-        $this->validate($request, ['titulo' => 'required', 'banner' => 'required', 'descripción' => 'required', 'thumbnail' => 'required', 'activo' => 'required', 'liga' => 'required', ]);
+        $this->validate($request, ['titulo' => 'required', 'banner' => 'required', 'descripcion' => 'required', 'thumbnail' => 'required', 'activo' => 'required', 'liga' => 'required', ]);
 
         $proyecto = Proyecto::findOrFail($id);
         $proyecto->update($request->all());

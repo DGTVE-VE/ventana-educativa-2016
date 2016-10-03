@@ -27,7 +27,7 @@
                 <tr>
                     <th>ID</th><td>{{ $proyecto->id }}</td>
                 </tr>
-                <tr><th> Titulo </th><td> {{ $proyecto->titulo }} </td></tr><tr><th> Banner </th><td> {{ $proyecto->banner }} </td></tr><tr><th> Descripción </th><td> {{ $proyecto->descripción }} </td></tr>
+                <tr><th> Titulo </th><td> {{ $proyecto->titulo }} </td></tr><tr><th> Banner </th><td> {{ $proyecto->banner }} </td></tr><tr><th> Descripcion </th><td> {{ $proyecto->descripcion }} </td></tr>
             </tbody>
         </table>
     </div>

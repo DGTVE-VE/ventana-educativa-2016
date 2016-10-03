@@ -11,7 +11,7 @@
         <table class="table table-bordered table-striped table-hover">
             <thead>
                 <tr>
-                    <th>S.No</th><th> Titulo </th><th> Banner </th><th> Descripción </th><th>Actions</th>
+                    <th>S.No</th><th> Titulo </th><th> Banner </th><th> Descripcion </th><th>Actions</th>
                 </tr>
             </thead>
             <tbody>
@@ -20,7 +20,7 @@
                 {{-- */$x++;/* --}}
                 <tr>
                     <td>{{ $x }}</td>
-                    <td>{{ $item->titulo }}</td><td>{{ $item->banner }}</td><td>{{ $item->descripción }}</td>
+                    <td>{{ $item->titulo }}</td><td>{{ $item->banner }}</td><td>{{ $item->descripcion }}</td>
                     <td>
                         <a href="{{ url('/admin/proyectos/' . $item->id) }}" class="btn btn-success btn-xs" title="View Proyecto"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"/></a>
                         <a href="{{ url('/admin/proyectos/' . $item->id . '/edit') }}" class="btn btn-primary btn-xs" title="Edit Proyecto"><span class="glyphicon glyphicon-pencil" aria-hidden="true"/></a>
