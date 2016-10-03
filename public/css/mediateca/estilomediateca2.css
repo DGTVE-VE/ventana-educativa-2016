@@ -31,28 +31,39 @@ and open the template in the editor.
     max-height:600px;
     overflow-y: scroll;
 }
-
-/**{border: 2px solbuscar red;}*/
+.bodyEducamedia{
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: 100%; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    overflow-y: hidden;
+}
 @media(min-width:992px){
     body{
-        background-repeat: no-repeat;
-        background-position: center top;
-        background-attachment: fixed;
-        -webkit-background-size: cover !important;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover;    
+        /*        background-repeat: no-repeat;
+                background-position: center top;
+                background-attachment: fixed;
+                -webkit-background-size: cover !important;
+                -moz-background-size: cover;
+                -o-background-size: cover;
+                background-size: cover;    */
     }
 }
 @media(max-width:991px){
     body{
-        background-repeat: repeat-y;
-        background-position: center top;
-        background-attachment: fixed;
-        -webkit-background-size: cover !important;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover;    
+        /*        position: relative;
+               background-origin: padding-box, content-box;
+               background-position:0 0;
+                background-size: inherit;
+                background-attachment: fixed;
+                -webkit-background-size: cover !important;
+                -moz-background-size: cover;
+                -o-background-size: cover;
+                background-size: cover;    */
     }
 }
 .frmRegistro input{border-radius:15px 15px 15px 15px;}
