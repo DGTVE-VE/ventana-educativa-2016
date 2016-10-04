@@ -6,7 +6,7 @@
 @section('cuerpoAdmin')
 <div class="container" style="padding-left:80px;">
 
-    <h1>Create New biblioteca</h1>
+    <h1>Agregar nueva biblioteca</h1>
     <hr/>
 
     {!! Form::open(['url' => '/Admin/biblioteca', 'class' => 'form-horizontal']) !!}

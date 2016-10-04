@@ -6,7 +6,7 @@
 @section('cuerpoAdmin')
 <div class="container" style="padding-left:80px;">
 
-    <h1>Publicaciones <a href="{{ url('/admin/publicaciones/create') }}" class="btn btn-primary btn-xs" title="Add New Publicacione"><span class="glyphicon glyphicon-plus" aria-hidden="true"/></a></h1>
+    <h1>Publicaciones <a href="{{ url('/admin/publicaciones/create') }}" class="btn btn-primary btn-xs" title="Agregar Publicación"><span class="glyphicon glyphicon-plus" aria-hidden="true"/></a></h1>
     <div class="table">
         <table class="table table-bordered table-striped table-hover">
             <thead>
@@ -22,18 +22,18 @@
                     <td>{{ $x }}</td>
                     <td>{{ $item->imagen }}</td><td>{{ $item->titulo }}</td><td>{{ $item->autor }}</td>
                     <td>
-                        <a href="{{ url('/admin/publicaciones/' . $item->id) }}" class="btn btn-success btn-xs" title="View Publicacione"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"/></a>
-                        <a href="{{ url('/admin/publicaciones/' . $item->id . '/edit') }}" class="btn btn-primary btn-xs" title="Edit Publicacione"><span class="glyphicon glyphicon-pencil" aria-hidden="true"/></a>
+                        <a href="{{ url('/admin/publicaciones/' . $item->id) }}" class="btn btn-success btn-xs" title="Ver Publicación"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"/></a>
+                        <a href="{{ url('/admin/publicaciones/' . $item->id . '/edit') }}" class="btn btn-primary btn-xs" title="Modifica Publicación"><span class="glyphicon glyphicon-pencil" aria-hidden="true"/></a>
                         {!! Form::open([
                             'method'=>'DELETE',
                             'url' => ['/admin/publicaciones', $item->id],
                             'style' => 'display:inline'
                         ]) !!}
-                            {!! Form::button('<span class="glyphicon glyphicon-trash" aria-hidden="true" title="Delete Publicacione" />', array(
+                            {!! Form::button('<span class="glyphicon glyphicon-trash" aria-hidden="true" title="Elimina Publicación" />', array(
                                     'type' => 'submit',
                                     'class' => 'btn btn-danger btn-xs',
                                     'title' => 'Delete Publicacione',
-                                    'onclick'=>'return confirm("Confirm delete?")'
+                                    'onclick'=>'return confirm("Desea eliminar Publicación?")'
                             ));!!}
                         {!! Form::close() !!}
                     </td>

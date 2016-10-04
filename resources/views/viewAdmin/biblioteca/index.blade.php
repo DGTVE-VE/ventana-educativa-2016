@@ -6,7 +6,7 @@
 @section('cuerpoAdmin')
 <div class="container" style="padding-left:80px;">
 
-    <h1>Biblioteca <a href="{{ url('/Admin/biblioteca/create') }}" class="btn btn-primary btn-xs" title="Add New biblioteca"><span class="glyphicon glyphicon-plus" aria-hidden="true"/></a></h1>
+    <h1>Bibliotecas <a href="{{ url('/Admin/biblioteca/create') }}" class="btn btn-primary btn-xs" title="Add New biblioteca"><span class="glyphicon glyphicon-plus" aria-hidden="true"/></a></h1>
     <div class="table">
         <table class="table table-bordered table-striped table-hover">
             <thead>
@@ -33,7 +33,7 @@
                                     'type' => 'submit',
                                     'class' => 'btn btn-danger btn-xs',
                                     'title' => 'Delete biblioteca',
-                                    'onclick'=>'return confirm("Confirm delete?")'
+                                    'onclick'=>'return confirm("Desea borrar elemento?")'
                             ));!!}
                         {!! Form::close() !!}
                     </td>

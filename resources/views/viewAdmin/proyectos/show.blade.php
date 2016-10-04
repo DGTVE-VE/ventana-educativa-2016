@@ -6,8 +6,8 @@
 @section('cuerpoAdmin')
 <div class="container" style="padding-left:80px;">
 
-    <h1>Proyecto {{ $proyecto->id }}
-        <a href="{{ url('admin/proyectos/' . $proyecto->id . '/edit') }}" class="btn btn-primary btn-xs" title="Edit Proyecto"><span class="glyphicon glyphicon-pencil" aria-hidden="true"/></a>
+    <h1>Proyecto Id: {{ $proyecto->id }}
+        <a href="{{ url('admin/proyectos/' . $proyecto->id . '/edit') }}" class="btn btn-primary btn-xs" title="Modifica Proyecto"><span class="glyphicon glyphicon-pencil" aria-hidden="true"/></a>
         {!! Form::open([
             'method'=>'DELETE',
             'url' => ['admin/proyectos', $proyecto->id],
@@ -16,8 +16,8 @@
             {!! Form::button('<span class="glyphicon glyphicon-trash" aria-hidden="true"/>', array(
                     'type' => 'submit',
                     'class' => 'btn btn-danger btn-xs',
-                    'title' => 'Delete Proyecto',
-                    'onclick'=>'return confirm("Confirm delete?")'
+                    'title' => 'Eliminar Proyecto',
+                    'onclick'=>'return confirm("Desea eliminar proyecto?")'
             ));!!}
         {!! Form::close() !!}
     </h1>

@@ -6,7 +6,7 @@
 @section('cuerpoAdmin')
 <div class="container" style="padding-left:80px;">
 
-    <h1>biblioteca {{ $biblioteca->id }}
+    <h1>Biblioteca Id: {{ $biblioteca->id }}
         <a href="{{ url('Admin/biblioteca/' . $biblioteca->id . '/edit') }}" class="btn btn-primary btn-xs" title="Edit biblioteca"><span class="glyphicon glyphicon-pencil" aria-hidden="true"/></a>
         {!! Form::open([
             'method'=>'DELETE',

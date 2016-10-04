@@ -6,7 +6,7 @@
 @section('cuerpoAdmin')
 <div class="container" style="padding-left:80px;">
 
-    <h1>Edit Proyecto {{ $proyecto->id }}</h1>
+    <h1>Modifica Proyecto {{ $proyecto->id }}</h1>
 
     {!! Form::model($proyecto, [
         'method' => 'PATCH',
@@ -60,7 +60,7 @@
 
     <div class="form-group">
         <div class="col-sm-offset-3 col-sm-3">
-            {!! Form::submit('Update', ['class' => 'btn btn-primary form-control']) !!}
+            {!! Form::submit('Actualiza', ['class' => 'btn btn-primary form-control']) !!}
         </div>
     </div>
     {!! Form::close() !!}

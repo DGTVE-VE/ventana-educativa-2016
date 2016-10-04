@@ -6,7 +6,7 @@
 @section('cuerpoAdmin')
 <div class="container" style="padding-left:80px;">
 
-    <h1>Create New Publicacion</h1>
+    <h1>Agregar Nueva Publicación</h1>
     <hr/>
 
     {!! Form::open(['url' => '/admin/publicaciones', 'class' => 'form-horizontal']) !!}
@@ -56,7 +56,7 @@
 
     <div class="form-group">
         <div class="col-sm-offset-3 col-sm-3">
-            {!! Form::submit('Create', ['class' => 'btn btn-primary form-control']) !!}
+            {!! Form::submit('Agregar', ['class' => 'btn btn-primary form-control']) !!}
         </div>
     </div>
     {!! Form::close() !!}

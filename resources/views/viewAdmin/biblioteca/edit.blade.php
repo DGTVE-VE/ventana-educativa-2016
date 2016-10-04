@@ -6,7 +6,7 @@
 @section('cuerpoAdmin')
 <div class="container" style="padding-left:80px;">
 
-    <h1>Edit biblioteca {{ $biblioteca->id }}</h1>
+    <h1>Modifica biblioteca {{ $biblioteca->id }}</h1>
 
     {!! Form::model($biblioteca, [
         'method' => 'PATCH',
