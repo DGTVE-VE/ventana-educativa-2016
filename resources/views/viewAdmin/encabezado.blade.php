@@ -137,8 +137,8 @@
             <li class="">
                 <a href="#"><span class="fa-stack fa-lg pull-left"><i class="fa  fa-book fa-stack-1x "></i></span> Biblioteca</a>
                 <ul class="nav-pills nav-stacked" style="list-style-type:none;">
-                    <li><a href="#">link1</a></li>
-                    <li><a href="#">link2</a></li>
+                    <li><a href="{{url('Admin/biblioteca')}}">Bibliotecas</a></li>
+                    <!--li><a href="#">link2</a></li-->
                 </ul>
             </li>
             <li>
