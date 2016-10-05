@@ -4,35 +4,22 @@ Biblioteca
 @extends('indexBiblioteca')
 @section('menuBiblioteca')
 @include('viewVentana.encabezadoVentana')
-<style>
-.fondoDegradadoMenuInicial{
-	background: rgba(0, 0, 0, .3);
-	border: none;
-}
-.fondoDegradadoMenu{
-	background: rgba(0, 0, 0, .3);
-	border: none;
-}
-</style>
+<link rel="stylesheet" href="{{asset('css/biblioteca/biblioteca.css')}}"/>
 <script src="{{url('js/biblioteca/biblioteca.js')}}"></script>
 <script>
-$('.imgLogo').attr('src','{{url("imagenes/biblioteca/imgMenu/ventanaEducativa.png")}}');
-$('.appsLogo').attr('src','{{url("imagenes/biblioteca/imgMenu/menu.png")}}');
-if(	<?php if(Auth::guest()){ echo "0";}else{echo "1";}?>){
-	if( <?php if(Auth::user() && !File::exists ('uploaded/avatares/'.Auth::user()->id.'.png') ){ echo "1";}else{echo "0";}?> == 1){
-		$('#img-usuario').attr('src','{{url("imagenes/biblioteca/imgMenu/registro.png")}}');
+	if(	<?php if(Auth::guest()){ echo "0";}else{echo "1";}?>){
+		if( <?php if(Auth::user() && !File::exists ('uploaded/avatares/'.Auth::user()->id.'.png') ){ echo "1";}else{echo "0";}?> == 1){
+			$('#img-usuario').attr('src','{{url("imagenes/biblioteca/imgMenu/registro.png")}}');
+		}
 	}
-}
 </script>
-
 @endsection
 @section('cuerpoBiblioteca')
 
 <div class="container">
 	<div class="row">
-		<br><br>
-		<h2 class="text-center">Biblioteca</h2>
-		<br>
+		<div class="separaMenu"></div>
+		<h2 class="text-center">Biblioteca</h2><br>
 		<div class="accordionBiblio">
 			<ul id="tomosBiblioteca">
 				<li onclick="location.href='{{asset('biblioteca/tomos/CR/0')}}'" class="hoverLiBiblioteca" style="background-image: url('{{asset('imagenes/biblioteca/pais/costarica.jpg')}}')"></li>
@@ -44,7 +31,6 @@ if(	<?php if(Auth::guest()){ echo "0";}else{echo "1";}?>){
 				<li style="background-image: url('{{asset('imagenes/biblioteca/pais/nicaragua.jpg')}}')"></li>
 				<li style="background-image: url('{{asset('imagenes/biblioteca/pais/panama.jpg')}}')"></li>
 				<li style="background-image: url('{{asset('imagenes/biblioteca/pais/salvador.jpg')}}')"></li>
-
 			</ul>
 		</div>
 	</div>

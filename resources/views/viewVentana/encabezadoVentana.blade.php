@@ -12,7 +12,7 @@
                         <span class="icon-bar"></span>
                     </button>
                     <a href="{{url('ventana_educativa')}}">
-                        {{ HTML::image('imagenes/ventana/encabezado/logoventana.png','Ventana Educativa', ['class'=>'image-responsive imgLogo', 'id'=>'imagenLogoVentana']) }}
+                        {{ HTML::image('imagenes/ventana/encabezado/logoventana.png','Ventana Educativa', ['class'=>'img-responsive imgLogo', 'id'=>'imagenLogoVentana']) }}
                     </a>
                 </div>
             </div>
@@ -35,7 +35,7 @@
                 <ul class="nav navbar-nav navbar-right collapse navbar-collapse collapseBarra margenNav">
                     <li class="dropdown col-xs-12 col-sm-3 col-md-6 paddDropdown">
                         <div class="dropdown-toggle" data-toggle="dropdown">
-                            {{ HTML::image('imagenes/ventana/encabezado/iconoApps.png','Diversas aplicaciones de contenido educativo',['width'=>'30px','height'=>'20px','class'=>'iconoApp appsLogo','id'=>'iconoManuApps'])}}
+                            {{ HTML::image('imagenes/ventana/encabezado/iconoApps.png','Diversas aplicaciones de contenido educativo',['class'=>'iconoApp appsLogo','id'=>'iconoManuApps'])}}
                         </div>
                         <ul id="menuVentanaApps" class="dropdown-menu img-responsive menuVentanaApps">
                             <table id="mueveTablaApps" class="mueveTabla">
@@ -102,7 +102,7 @@
                     <li id="li-R" class="dropdown col-xs-12 col-sm-7 col-md-6">
                         <div class=" divli dropdown-toggle col-xs-5 col-sm-6 col-xs-offset-7" data-toggle="dropdown">
                             @if (Auth::guest())
-                          <button type="button" class="btn btn-default" class="img-circle">Ingresar <span class="glyphicon glyphicon-log-in" aria-hidden="true"></span></button>
+                          <button id="btnIngresa" type="button" class="btn btn-default" class="img-circle">Ingresar <span class="glyphicon glyphicon-log-in" aria-hidden="true"></span></button>
                             <!-- {{ HTML::image('imagenes/ventana/encabezado/usuario.png','Usuario',['class'=>'img-circle iconoApp', 'id'=>'img-usuario'] )}} -->
                             @elseif (File::exists ('uploaded/avatares/'.Auth::user()->id.'.png'))
                             {{ HTML::image('uploaded/avatares/'.Auth::user()->id.'.png', 'Avatar usuario', ['class'=>'img-circle iconoApp', 'id'=>'img-usuario', 'width'=>'35px'] )}}
@@ -202,92 +202,4 @@
     </div>
 </nav>
 
-<script>
-
-    /************ CAMBIAR AVATAR **************/
-    $(document).ready(function (e) {
-        $("#link-cambia-avatar").click(function (e) {
-            e.preventDefault();
-            e.stopPropagation();
-            $("#form-avatar").removeClass('hidden');
-
-        });
-        $("#uploadimage").on('submit', (function (e) {
-            e.preventDefault();
-            $("#message").empty();
-            $('#loading').show();
-            $.ajax({
-                url: "cambiaAvatar", // Url to which the request is send
-                type: "POST", // Type of request to be send, called as method
-                data: new FormData(this), // Data sent to server, a set of key/value pairs (i.e. form fields and values)
-                contentType: false, // The content type used when sending data to the server.
-                cache: false, // To unable request pages to be cached
-                processData: false, // To send DOMDocument or non processed data file it is set to false
-                success: function (data)   // A function to be called if request succeeds
-                {
-                    $('#loading').hide();
-                    $("#form-avatar").addClass('hidden');
-//                    $("#message").html(data);
-                    $('#img-usuario').attr('src', data + '?' + (new Date()));
-                    $('#img-usuario').attr('width', '35px');
-                    $('#img-usuario').attr('height', '35px');
-                },
-                error: function (data)
-                {
-                    console.log(data);
-                }
-            });
-        }));
-
-// Function to preview image after validation
-        $(function () {
-            $("#file").change(function () {
-                $("#message").empty(); // To remove the previous error message
-                var file = this.files[0];
-                var imagefile = file.type;
-                var match = ["image/jpeg", "image/png", "image/jpg"];
-                // Si la imagen no es de tipo válido
-                if (match.indexOf(imagefile) === -1)
-                {
-                    $('#previewing').attr('src', 'imagenes/ventana/encabezado/noimage.png');
-                    $("#message").html("<p id='error'>Por favor seleccione un tipo de imagen correcto" + "<br>  Nota: Solo se pueden usar imágenes en formato jpeg, jpg y png.</p>");
-                    return false;
-                } else
-                {
-                    var reader = new FileReader();
-                    reader.onload = imageIsLoaded;
-                    reader.readAsDataURL(this.files[0]);
-                }
-            });
-        });
-        function imageIsLoaded(e) {
-            $("#file").css("color", "green");
-            $('#image_preview').css("display", "block");
-            $('#previewing').attr('src', e.target.result);
-            $('#previewing').attr('width', '100px');
-            $('#previewing').attr('height', '100px');
-        }
-        ;
-    });
-    /************ CAMBIAR AVATAR **************/
-    /*	-------------------------------------	Hace visible o invisible los iconos de apps adicionales	--------------------------------------	*/
-    imgOculto = true;
-    function muestraMasIconos(event) {
-        if (imgOculto) {
-            event.stopPropagation();
-            $(".ocultaImgApp").css("margin-left", "-40px");
-            $(".ocultaImgApp").css("width", "75px");
-            $(".ocultaImgApp").css("height", "75px");
-            $(".ocultaImgApp").css("visibility", "visible");
-			$("#etiquetaMas").html("Menos");
-            imgOculto = false;
-        } else {
-            event.stopPropagation();
-            $(".ocultaImgApp").css("width", "0px");
-            $(".ocultaImgApp").css("height", "0px");
-            $(".ocultaImgApp").css("visibility", "hidden");
-			$("#etiquetaMas").html("M&aacute;s");
-            imgOculto = true;
-        }
-    }
-</script>
+<script src="{{url('js/ventana/encabezado.js')}}"></script>

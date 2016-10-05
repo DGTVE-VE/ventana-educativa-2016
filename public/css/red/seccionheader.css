@@ -1,0 +1,91 @@
+﻿	#barraSecundaria.affix{
+		top:0;
+		width:100%;
+	}
+	#barraSecundaria.affix + .container-fluid{
+		padding-top:70px;
+	}
+	.tablaMenuApps{
+		box-shadow: 5px 5px 1px rgba(0, 0, 0, .2);
+		background:rgba(0, 0, 0, .7);
+	}
+	.fondoRegistroMedia{
+		background:rgba(0, 0, 0, .7);
+		width:320px;
+		height:230px;
+	}
+	.menuVentanaRedmite{
+		padding:5px;
+	}
+	.parallax-window {
+		min-height: 500px;
+		background: transparent;
+	}
+        .navAlto80{
+            height:80px; z-index:10; margin-bottom:0px;
+        }
+        .altoMenuRed{
+            height:80px;
+        }
+        .altoDivMenu{
+            height:55px;
+        }
+	@media (max-width: 991px) { 
+            .altoMenuRed{
+                height:57px;
+            }
+            .navAlto80{
+                height:100px;
+            }
+        }
+	@media (max-width: 767px) { 
+	    .tablaMenuApps{
+	        position: fixed; right:3%;
+	    }
+           .navAlto80{
+               height:57px;
+            }
+            .logoRed{
+               height:40px;
+            }
+            .altoDivMenu{
+                height:50px;
+            }
+	}
+	@media (min-width: 250px) {
+            .iconoApp{width:10px; height:10px;}
+            .appsLogo{width:15px; height:10px;}
+
+	}
+
+	@media (min-width: 350px) { 
+		.iconoApp{width:10px; height:10px;
+		}
+		.appsLogo{width:15px; height:10px;
+		}
+	}
+	@media (min-width: 768px) { 
+		.iconoApp{width:25px; height:25px;
+		}
+		.appsLogo{width:25px; height:16px;
+		}
+	}
+
+	@media (min-width: 1024px) { 
+		.iconoApp{width:30px; height:30px;
+		}
+		.appsLogo{width:30px; height:20px;
+		}
+	}
+
+	@media (min-width: 1200px) {
+		.appsLogo{margin-top: 15% !important;width:30px; height:20px;
+		}
+		.menuVentanaApps{margin-top: 20% !important;
+		}
+	}
+	@media (min-width: 1800px) {
+            .altoDivMenu{
+                 height:85px;
+            }
+        }

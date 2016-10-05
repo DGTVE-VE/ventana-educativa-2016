@@ -1,6 +1,13 @@
+$('.imgLogo').attr('src','imagenes/biblioteca/imgMenu/ventanaEducativa.png');
+$('.appsLogo').attr('src','imagenes/biblioteca/imgMenu/menu.png');
 $('#buscar').css('display', 'none');
 $('#iconoBuscar').css('display', 'none');
-$('#navegacionVentana').css('height', '55px');
+if($(window).width()>'1599'){
+	$('#navegacionVentana').css('height', '85px');
+	$('#btnIngresa').addClass('btn-lg');
+}else{
+    $('#navegacionVentana').css('height', '55px');	
+}
 
 $('#navegacionVentana').addClass('fondoDegradadoMenuInicial');
 $(window).scroll(function(){
