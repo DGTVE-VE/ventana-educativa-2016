@@ -22,3 +22,6 @@
             width:60px; height:40px;
         }
     }
+#mueveTablaApps{
+    z-index:2;
+}
