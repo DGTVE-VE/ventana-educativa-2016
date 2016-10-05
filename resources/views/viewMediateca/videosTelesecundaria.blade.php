@@ -16,13 +16,12 @@ Educamedia
             <p id="parrafoBreadcrumb"> </p><br>
         </div>
         <div class="col-md-1"></div>
-        <div class="col-md-10 contenedorVideo transparenciaVideos">
-            <div class="row" id='div-containter'>
-                <div class="col-md-8 txtVideosRed">
-                    <div class="col-md-12" style="overflow: auto;">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-10 contenedorVideo transparenciaVideos txtVideosRed quitaMargen" id='div-containter'>
+                <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 txtVideosRed">
+                    <div class="col-md-12 quitaMargen" style="overflow: auto;">
                         <h5 id="materia">{{$videos[0]->materia}}</h5>                
                         <h4 id="titulo_programa">{{$videos[0]->titulo_programa}}</h4>                
-                        <div  class="col-xs-12 col-sm-12 col-md-12 col-lg-10 col-lg-offset-1" id="player" align="center">    </div>
+                        <div class="col-xs-12 col-sm-12 col-md-10 col-md-offset-1 col-lg-10 col-lg-offset-1 quitaMargen .estilosReproductor" id="player">    </div>
                     </div>
                     <div class="row">
                         <div class="col-md-12">
@@ -108,11 +107,11 @@ Educamedia
 						<div id="comentarios"></div>
 						@endif
 					</div>
-				</div>                
-				<div class="col-md-4 pager txtVideosRed" id="custom_controls">
+				</div>
+				<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 pager txtVideosRed" id="custom_controls">
 					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">                    
-						<h5 class="col-md-2">Bloque</h5>
-						<div class="col-md-10">
+						<h5 class="col-xs-2 col-sm-2 col-md-2">Bloque</h5>
+						<div class="col-xs-10 col-sm-10 col-md-10 col-lg-10">
 							@foreach ($paginacion as $item => $bloquePagina)
 							@if($bloquePagina->bloque!='0')
 							<li class="list-inline">                                
@@ -140,7 +139,6 @@ Educamedia
 					</div>
 				</div>
 			</div>
-		</div>
 		<div class="col-md-1"></div>
 	</div>
 </div>
@@ -345,8 +343,13 @@ Educamedia
         });
        
         //console.log("http://ventana.televisioneducativa.gob.mx/{{Request::path()}}");
-        }
-        );
+		
+				
+			if($(window).width()<992){
+				$(".quitaMargen").addClass("quitaPadLados");
+				$(".quitaMargen").removeClass("quitaMargen");
+			}
+        });
                 /** URL del api de ventana educativa*/
                 //var api = "http://localhost/ventana-educativa/api/v1/";
                 /** Tiempo transcurrido del video */
@@ -444,14 +447,14 @@ Educamedia
 
 		function determinaAltoRep(){
 			nuevoAlto = 250;
-			if($(window).width() > 1599){
-				nuevoAlto = 700;
+			if($(window).width() > 1999){
+				nuevoAlto = 600;
 			}
 			else if($(window).width() > 991){
-				nuevoAlto = 500;
+				nuevoAlto = 400;
 			}
 			else if($(window).width() > 767){
-				nuevoAlto = 350;
+				nuevoAlto = 300;
 			}
 			return nuevoAlto;
 		}
@@ -525,6 +528,7 @@ Educamedia
             //        window.location.assign('vod/finish/' + id);    
             //    }
         }
+
     </script>
 
 	<!--metadados para compartir en facebook-->

@@ -46,3 +46,10 @@
     .punteroMano{
         cursor:pointer;
     }
+    .quitaPadLados{
+        padding-left:0px !important;
+        padding-right:0px !important;
+    }
+    .estilosReproductor{
+        overflow: auto; align:center;
+    }

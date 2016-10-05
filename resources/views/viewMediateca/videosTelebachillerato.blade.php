@@ -16,16 +16,16 @@ Educamedia
             <p id="parrafoBreadcrumb"> </p><br>
         </div>
 
-        <div class="col-md-1"></div>
-        <div class="col-md-10 contenedorVideo transparenciaVideos ">
-            <div class="col-md-12 col-xs-12 col-lg-8 col-sm-12 txtVideosRed" id='div-containter'>
-                <div class="col-md-12" style="overflow: auto;">
+        <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-10 contenedorVideo transparenciaVideos">
+            <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 txtVideosRed quitaMargen" id='div-containter'>
+                <div class="col-xs-12 col-sm-12 col-md-12 quitaMargen" style="overflow: auto;">
                     <h5 id="materia">{{$videos[0]->asignatura}}</h5>
                     <h4 id="titulo_programa">{{$videos[0]->programa}}</h4>
-                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-10 col-lg-offset-1" id="player" align="center">    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-10 col-md-offset-1 col-lg-10 col-lg-offset-1 quitaMargen estilosReproductor" id="player">    </div>
                 </div>
                 <div class="row">
-                    <div class="col-md-12">
+                    <div class="col-xs-12 col-sm-12">
                         <br>
                     </div>
                 </div>
@@ -115,7 +115,7 @@ Educamedia
                 </div>
             </div>
             <br>
-            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4 controls txtVideosRed" id="custom_controls">
+            <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 controls txtVideosRed" id="custom_controls">
                 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 listVideos">
                     <table class="table table-responsive">
                         @foreach ($videos as $item => $video)
@@ -328,6 +328,11 @@ Educamedia
                     console.log ( "Data Saved: " + msg );
                 });
     });
+	
+		if($(window).width()<992){
+			$(".quitaMargen").addClass("quitaPadLados");
+			$(".quitaMargen").removeClass("quitaMargen");
+		}
     });     
     /** URL del api de ventana educativa*/
             //var api = "http://localhost/ventana-educativa/api/v1/";
@@ -421,14 +426,14 @@ Educamedia
     
 	function determinaAltoRep(){
 		nuevoAlto = 250;
-		if($(window).width() > 1599){
-			nuevoAlto = 700;
+		if($(window).width() > 1999){
+			nuevoAlto = 600;
 		}
 		else if($(window).width() > 991){
-			nuevoAlto = 500;
+			nuevoAlto = 400;
 		}
 		else if($(window).width() > 767){
-			nuevoAlto = 350;
+			nuevoAlto = 300;
 		}
 		return nuevoAlto;
 	}
