@@ -64,52 +64,25 @@ and open the template in the editor.
 
 <script src="{{url('js/mediateca/index.js')}}"></script>
 <script>
-(function (i, s, o, g, r, a, m) {
-    i['GoogleAnalyticsObject'] = r;
-    i[r] = i[r] || function () {
-        (i[r].q = i[r].q || []).push(arguments)
-    }, i[r].l = 1 * new Date();
-    a = s.createElement(o),
-            m = s.getElementsByTagName(o)[0];
-    a.async = 1;
-    a.src = g;
-    m.parentNode.insertBefore(a, m)
-})(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
-
-ga('create', 'UA-75232922-1', 'auto');
-ga('send', 'pageview');
-
-/*		*****	Cambio de color iconos redes sociales		*****		*/
-if (navigator.userAgent.toLowerCase().indexOf('chrome') > -1) {
-    document.body.style.backgroundAttachment = 'scroll';
-} else {
-    if ($(window).width() < '992') {
-        $('.cambiacolorredesSociales').addClass('iconoBlanco');
-        $('.cambiacolorredesSociales').removeClass('cambiacolorredesSociales');
-    }
-}
-
-/*		*****	Función que llama función que genera breadcrumbs		*****		*/
-function imprimeBreadCrumbs() {
-    var paginaActual = window.location.href;
-    console.log(paginaActual);
-    $.ajax({
-        method: "GET",
-        url: "{{url('educamedia/breadcrumbs')}}",
-        data: {url: paginaActual},
-        error: function (ts) {
-            console.log(ts.responseText);
-        }})
-            .done(function (msg) {
-                //console.log("Correcto breadcrumbs: " + msg);
-                $('#parrafoBreadcrumb').html(msg);
-            });
-}
-imprimeBreadCrumbs();
-
-
+	/*		*****	Función que llama función que genera breadcrumbs		*****		*/
+	function imprimeBreadCrumbs(){
+		var paginaActual = window.location.href;
+		console.log(paginaActual);
+		$.ajax({
+			method: "GET",
+			url: "{{url('educamedia/breadcrumbs')}}",
+			data: {url: paginaActual},
+			error: function (ts) {
+				console.log(ts.responseText);
+			}})
+			.done(function (msg) {
+					//console.log("Correcto breadcrumbs: " + msg);
+					$('#parrafoBreadcrumb').html(msg);
+			});
+	}
+	imprimeBreadCrumbs();
 </script>
 
 <?php
-Log::info('Memory Usage:' . Request::path() . " - " . (memory_get_peak_usage(true) / 1024 / 1024));
+    Log::info('Memory Usage:' . Request::path() . " - " . (memory_get_peak_usage(true) / 1024 / 1024));
 ?>

@@ -120,17 +120,7 @@ Route::group(['middleware' => 'web'], function () {
     Route::get('redmite/admin/integrantes', 'RedmiteController@integrantes');
     Route::post('redmite/admin/guardaIntegrantes', 'RedmiteController@guardaIntegrantes');
     Route::get('redmite/guardarProyecto', 'RedmiteController@guardarProyecto');
-    Route::get('redmite/administra', 'RedmiteController@administracion');
-    Route::get('redmite/administra/proyecto', 'RedmiteController@contenidoProyecto');
-    Route::get('redmite/administra/proyecto/alta', 'RedmiteController@altaProyecto');
-    Route::post('redmite/administra/proyecto/baja', 'RedmiteController@bajaProyecto');
-    Route::post('redmite/administra/proyecto/cambio', 'RedmiteController@cambioProyecto');
-    Route::get('redmite/administra/publicacion', 'RedmiteController@contenidoPublicacion');
-    Route::get('redmite/administra/publicacion/alta', 'RedmiteController@altaPublicacion');
-    Route::post('redmite/administra/publicacion/baja', 'RedmiteController@bajaPublicacion');
-    Route::post('redmite/administra/publicacion/cambio', 'RedmiteController@cambioPublicacion');
-    Route::resource('proyectos', 'ProyectosController');
-    Route::resource('publicaciones', 'PublicacionesController');
+
     Route::get('redmite/administra/listaColabora', 'RedmiteController@listadoColaboradores');
     Route::get('redmite/administra/listaColabora', 'RedmiteController@listadoColaboradores');
     Route::get('redmite/administra/guardaDecision/{usuario}/{resultado}', 'RedmiteController@guardaDecisionColabora');
@@ -196,12 +186,13 @@ Route::group(['middleware' => 'web'], function () {
     /**/
 
     /*     * **************************Fin Conocenos********************** */
+    Route::resource('Admin/biblioteca', 'Admin\\bibliotecaController');
+	Route::resource('admin/proyectos', 'Admin\\ProyectosController');
+    Route::resource('admin/publicaciones', 'Admin\\PublicacionesController');
 });
 
 //Route::get ('api/getImagenes/{tipo}/{id}', '');
 
-
-Route::resource('Admin/biblioteca', 'Admin\\bibliotecaController');
 
 /* * **********************
  * 
@@ -240,4 +231,3 @@ Route::get('mail/test', function () {
     var_dump($result);
 });
 
-/******************************/

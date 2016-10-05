@@ -1,0 +1,16 @@
+﻿.fondoDegradadoMenuInicial{
+	background: rgba(0, 0, 0, .3);
+	border: none;
+}
+.fondoDegradadoMenu{
+	background: rgba(0, 0, 0, .3);
+	border: none;
+}
+.separaMenu{
+	height:55px;
+}
+@media(min-width:1600px){
+    .separaMenu{
+	    height:85px;
+    }
+}

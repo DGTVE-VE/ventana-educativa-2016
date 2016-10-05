@@ -15,13 +15,10 @@
 	ga('send', 'pageview');
 
 	/*		*****	Cambio de color iconos redes sociales		*****		*/
-	if (navigator.userAgent.toLowerCase().indexOf('chrome') > -1 ){
-		document.body.style.backgroundAttachment = 'scroll';
-	}else{
-		if($(window).width()<'992'){
-			$('.cambiacolorredesSociales').addClass('iconoBlanco');
-			$('.cambiacolorredesSociales').removeClass('cambiacolorredesSociales');
-		}
+	if($(window).width()<'992'){
+		$('.cambiacolorredesSociales').addClass('iconoBlanco');
+		$('.cambiacolorredesSociales').removeClass('cambiacolorredesSociales');
 	}
+	/*if (navigator.userAgent.toLowerCase().indexOf('chrome') > -1 ){document.body.style.backgroundAttachment = 'scroll';}else{}*/
 
 	
