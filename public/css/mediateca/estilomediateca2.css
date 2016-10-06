@@ -353,7 +353,7 @@ and open the template in the editor.
         width:15px; height:10px;
     }
     .contenedorVideo{
-        max-height:500px;
+        max-height:390px;
     }
 }
 
@@ -377,7 +377,7 @@ and open the template in the editor.
     }
     .contenedorVideo{
         margin-top: 0px !important;
-        max-height:600px;
+        max-height:390px;
         overflow-x: hidden;
     }
 }
@@ -399,7 +399,7 @@ and open the template in the editor.
         width:25px; height:16px;
     }
     .contenedorVideo{
-        max-height:600px;
+        max-height:390px;
         overflow-x: hidden;
     }    
 }
@@ -429,7 +429,7 @@ and open the template in the editor.
     }
     .contenedorVideo{
         /*margin-top: 10px !important;*/
-        max-height:500px;
+        max-height:450px;
         overflow-x: hidden;
     }
 }
@@ -457,7 +457,7 @@ and open the template in the editor.
     }
     .contenedorVideo{
         /*margin-top: 10px !important;*/
-        max-height:620px;
+        max-height:500px;
         overflow-x: hidden;
     }
 }
