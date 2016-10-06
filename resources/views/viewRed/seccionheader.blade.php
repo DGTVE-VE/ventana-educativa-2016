@@ -11,7 +11,7 @@
 <nav id="barraSecundaria" class="navbar yamm navbar-default navAlto80" data-spy="affix" data-offset-top="70" role="navigation">
     <div class="container-fluid">
         <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".js-navbar-collapse">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#js-navbar-collapse-red">
                 <span class="sr-only">Toggle navigation</span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
@@ -22,7 +22,7 @@
             </a>
         </div>
 
-        <div class="collapse navbar-collapse js-navbar-collapse">
+        <div id="js-navbar-collapse-red" class="collapse navbar-collapse js-navbar-collapse">
             <ul class="nav navbar-nav navbar-right">
                 <li class="text-uppercase fondoMenu"><a href="{{url('redmite')}}">INICIO</a></li>
                 <li class="text-uppercase fondoMenu"><a href="{{url('redmite/quienesSomos')}}">¿QUIÉNES SOMOS?</a></li>

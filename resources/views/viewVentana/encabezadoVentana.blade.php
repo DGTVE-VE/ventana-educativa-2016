@@ -6,7 +6,7 @@
         <div class="row">
             <div class="col-sm-2 col-md-2">
                 <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-ventana">
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
@@ -32,7 +32,7 @@
                 </ul>
             </div>
             <div class="col-xs-12 col-sm-6 col-md-5">
-                <ul class="nav navbar-nav navbar-right collapse navbar-collapse collapseBarra margenNav">
+                <ul id="navbar-collapse-ventana" class="nav navbar-nav navbar-right collapse navbar-collapse collapseBarra margenNav">
                     <li class="dropdown col-xs-12 col-sm-3 col-md-6 paddDropdown">
                         <div class="dropdown-toggle" data-toggle="dropdown">
                             {{ HTML::image('imagenes/ventana/encabezado/iconoApps.png','Diversas aplicaciones de contenido educativo',['class'=>'iconoApp appsLogo','id'=>'iconoManuApps'])}}
