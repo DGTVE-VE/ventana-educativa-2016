@@ -3,12 +3,12 @@
 		width:60px !important;
 		height:47px !important;
 	}
-@media(max-width:991px)
+@media(max-width:991px){
 	.imagenTelesec{
 		width:60px !important;
 		height:47px !important;
 	}
-@media(min-width:992px)
+@media(min-width:992px){
 	.imagenTelesec{
 		max-width:160%;
 		max-height:160%;
