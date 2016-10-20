@@ -1,5 +1,5 @@
-
-    if($(window).width()>'1599'){
+	/*	----------------------	Para resoluciones mayores a 1599px, aumenta el tamaño de botón inicia sesión --------------------------	*/
+    if($(window).width()>'1799'){
 	    $('#btnIngresa').addClass('btn-lg');
     }
 
@@ -69,7 +69,7 @@
         ;
     });
     /************ CAMBIAR AVATAR **************/
-    /*	-------------------------------------	Hace visible o invisible los iconos de apps adicionales	--------------------------------------	*/
+    /*	--------------------------------	Muestra u oculta los iconos de apps adicionales	en el menú de apps --------------------------------	*/
     imgOculto = true;
     function muestraMasIconos(event) {
         if (imgOculto) {

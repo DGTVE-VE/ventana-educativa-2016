@@ -1,5 +1,5 @@
 <!--nuevo encabezado-->
-
+<link rel="stylesheet" type="text/css" href="{{url('css/ventana/encabezado.css')}}"/>
 <link rel="stylesheet" type="text/css" href="{{url('css/ventana/menuVentana.css')}}"/>
 <nav id="navegacionVentana" class="navbar navbar-default navbar-fixed-top  menuVentana" role="navigation">
     <div class="container-fluid">
@@ -16,12 +16,11 @@
                     </a>
                 </div>
             </div>
-            <!--<div class="col-md-1"></div>-->
 
             <div class="col-md-3 col-sm-4" id="frmBuscarMenu">
                 <ul class="nav navbar-nav collapse navbar-collapse collapseBarra margenNav">
                     <li class="liBuscar">
-                        <form action="" class="search-form" style="width: 200px;">
+                        <form action="" class="search-form anchoFormaBuscar">
                             <div class="form-group has-feedback" id="formaBuscar">
                                 <label for="search" class="sr-only">Buscar</label>
                                 <input type="text" class="form-control" name="buscar" id="buscar" placeholder="buscar">
@@ -41,34 +40,34 @@
                             <table id="mueveTablaApps" class="mueveTabla">
                                 <tr>
                                     <td class="divApp centered center-block">
-                                        <a class="" href="{{url('educaplay')}}">
+                                        <a href="{{url('educaplay')}}">
                                             {{ HTML::image('imagenes/ventana/encabezado/appVOD.png','Educaplay: Videos educativos')}}
                                         </a>
                                     </td>
                                     <td class="divApp centered">
-                                        <a class="" href="{{url('educamedia')}}">
+                                        <a href="{{url('educamedia')}}">
                                             {{ HTML::image('imagenes/ventana/encabezado/appMediateca.png','Mediateca: Videos de telesecundaria')}}
                                         </a>
                                     </td>
                                     <td class="divApp centered">
-                                        <a class="" href="{{url('redmite')}}">
-                                            {{ HTML::image('imagenes/ventana/encabezado/appRed.png','Redmite',['width'=>'75%', 'height'=>'75%'])}}
+                                        <a href="{{url('redmite')}}">
+                                            {{ HTML::image('imagenes/ventana/encabezado/appRed.png','Redmite',['class'=>'appRed'])}}
                                         </a>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td class="divApp centered">
-                                        <a class="" href="{{url('cultura')}}">
+                                        <a href="{{url('cultura')}}">
                                             {{ HTML::image('imagenes/ventana/encabezado/appCultura.png','Cultura: Conoce las diversas páginas de cultura a nivel Centro América')}}
                                         </a>
                                     </td>
                                     <td class="divApp centered">
-                                        <a class="" href="{{url('biblioteca')}}">
+                                        <a href="{{url('biblioteca')}}">
                                             {{ HTML::image('imagenes/ventana/encabezado/appBiblioteca.png','Bibliotecas de Centro América')}}
                                         </a>
                                     </td>
                                      <td class="divApp centered">
-                                        <a class="" href="http://www.promocion.salud.gob.mx/dgps/interior1/programas/escuela_salud.html"target="_blank">
+                                        <a href="http://www.promocion.salud.gob.mx/dgps/interior1/programas/escuela_salud.html"target="_blank">
                                             {{ HTML::image('imagenes/ventana/encabezado/appSalud.png','Salud')}}
                                         </a>
                                     </td>
@@ -85,12 +84,12 @@
                                 <tr>
                                     <td></td>
                                     <td class="divApp centered">
-                                        <a class="" href="http://www.ibe.tv/es/canal/iberoamericano/315/En-directo.htm" target="_blank" >
+                                        <a href="http://www.ibe.tv/es/canal/iberoamericano/315/En-directo.htm" target="_blank" >
                                             {{ HTML::image('imagenes/ventana/encabezado/appIbero.png','Canal Iberoamericano',['class'=>'ocultaImgApp'])}}
                                         </a>
                                     </td>
                                     <td class="divApp centered">
-                                        <a class="" href="http://mexicox.gob.mx/" target="_blank">
+                                        <a href="http://mexicox.gob.mx/" target="_blank">
                                             {{ HTML::image('imagenes/ventana/encabezado/appMexico.png','MexicoX',['class'=>'ocultaImgApp'])}}
                                         </a>
                                     </td>
@@ -103,9 +102,8 @@
                         <div class=" divli dropdown-toggle col-xs-5 col-sm-6 col-xs-offset-7" data-toggle="dropdown">
                             @if (Auth::guest())
                           <button id="btnIngresa" type="button" class="btn btn-default" class="img-circle">Ingresar <span class="glyphicon glyphicon-log-in" aria-hidden="true"></span></button>
-                            <!-- {{ HTML::image('imagenes/ventana/encabezado/usuario.png','Usuario',['class'=>'img-circle iconoApp', 'id'=>'img-usuario'] )}} -->
                             @elseif (File::exists ('uploaded/avatares/'.Auth::user()->id.'.png'))
-                            {{ HTML::image('uploaded/avatares/'.Auth::user()->id.'.png', 'Avatar usuario', ['class'=>'img-circle iconoApp', 'id'=>'img-usuario', 'width'=>'35px'] )}}
+                            {{ HTML::image('uploaded/avatares/'.Auth::user()->id.'.png', 'Avatar usuario', ['class'=>'img-circle iconoApp AvatarUsuario', 'id'=>'img-usuario'] )}}
                             @else
                             {{ HTML::image('imagenes/ventana/encabezado/usuario.png','Usuario',['class'=>'img-circle iconoApp', 'id'=>'img-usuario'] )}}
                             @endif
@@ -116,7 +114,7 @@
                                 <div class="row">
                                     <div class="col-lg-12 col-md-12 bajaRegistro">
                                         @if (Auth::guest ())
-                                        <form id="login-form" action="{{url('sessions')}}" method="POST" role="form" style="display: block;">
+                                        <form id="login-form" action="{{url('sessions')}}" method="POST" role="form" class="block">
                                             <input type="hidden" name="_token" value="{{ csrf_token() }}" />
                                             <div class="form-group">
                                                 <input type="email" name="email"  tabindex="1" class="form-control inputLogin" placeholder="Correo Electrónico" value="">
@@ -127,47 +125,46 @@
                                             <div class="form-group">
                                                 <div class="row">
                                                     <div class="col-sm-12 col-md-6 col-md-offset-3">
-                                                        <input type="submit" name="login-submit" style="color: white;" id="login-submit" tabindex="4" class="form-control btn btn-sm" value="Entrar">
+                                                        <input type="submit" name="login-submit" id="login-submit" tabindex="4" class="form-control btn btn-sm colorBlanco" value="Entrar">
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="col-md-12">
                                                 <div class="col-md-6 text-center">
-                                                    <a href="{{url('password/email')}}" tabindex="5" style="color: white;" class="forgot-password">Olvide mi contraseña</a>
+                                                    <a href="{{url('password/email')}}" tabindex="5" class="forgot-password colorBlanco">Olvide mi contraseña</a>
                                                 </div>
 
                                                 <div class=" col-md-6 text-center">
-                                                    <a href="{{url('registro')}}"  tabindex="5" style="color: white;" class="forgot-password">Registrate</a>
+                                                    <a href="{{url('registro')}}"  tabindex="5" class="forgot-password colorBlanco">Registrate</a>
                                                 </div>
                                             </div>
                                         </form>
                                         @else
 
-                                        <h5 style="color: white;" class="text-center">
+                                        <h5 class="text-center colorBlanco">
                                             <!--Iniciaste sesión como:-->
                                         </h5>
-                                        <h4 style="color: white;" class="text-center">{{Auth::user()->email}}</h4>
+                                        <h4 class="text-center colorBlanco">{{Auth::user()->email}}</h4>
 
                                         <div class="col-md-6 text-center">
-                                            <a href="{{url('logout')}}" tabindex="5" style="color: red; font-weight: bold;" class="forgot-password">
+                                            <a href="{{url('logout')}}" tabindex="5" class="forgot-password fuenteRojoBold">
                                                 Cerrar Sesión
                                             </a>
                                         </div>
                                         <div class="col-md-6 text-center">
-                                            <a id="link-cambia-avatar" style="color: white; font-weight: bold;" >Cambiar avatar</a>
+                                            <a id="link-cambia-avatar" class="fuenteBlacoBold" >Cambiar avatar</a>
                                         </div>
                                         <div>
                                             <!--link para abrir formulario de registro de integrante de la RedMITE-->
                                             @if (Auth::user()->is_researcher)
                                             <div class="col-md-12 text-center">
-                                                <a href="{{url('redmite/admin/integrantes')}}" tabindex="5" style="color: #00B6F1; font-weight: bold;" class="forgot-password">
+                                                <a href="{{url('redmite/admin/integrantes')}}" tabindex="5" class="forgot-password fuenteOlvido">
                                                     Registro integrante RedMITE
                                                 </a>
                                             </div>
                                             @endif
                                             <hr id="line">
-                                            <!--<a id="link-cambia-avatar" href="#" tabindex="5" style="color: white;" class="forgot-password">Cambiar imagen</a>-->
-                                            <div id="form-avatar" class="hidden center-block" style="color: white;">
+                                            <div id="form-avatar" class="hidden center-block colorBlanco">
                                                 <form id="uploadimage" action="" method="POST" enctype="multipart/form-data">
                                                     <input type="hidden" name="_token" value="{{ csrf_token() }}" />
 
@@ -189,7 +186,7 @@
                                                 </form>
                                             </div>
                                         </div>
-                                        <div id="message" class="col-md-12" style="color: white; font-size: 9px;"></div>
+                                        <div id="message" class="col-md-12 mensaje"></div>
                                         @endif
                                     </div>
                                 </div>

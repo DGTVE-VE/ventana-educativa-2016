@@ -1,0 +1,72 @@
+﻿    .mapaRombos{
+        position: absolute;
+        top:1%;
+        left:2%;
+        z-index:12;
+    }
+	.mapaRombosCh{
+        position: absolute;
+        top:0.5%;
+        left:8%;
+        z-index:10;
+    }
+	.pad30px{
+		padding:30px;
+	}
+	.msgError{
+		margin-top: 5%; position:absolute;
+	}
+	.pad1Pc{
+		padding:1%;
+	}
+	.padd2pc{
+		padding:2%;
+	}
+	.padd20pc{
+		 padding: 20%;
+	}
+	.margen10px{
+		margin-top:10px;
+	}
+	.bandaSuperior{
+		padding-top: 8.9%; padding-left:0; padding-right:0;
+	}
+	.cubo2{
+		padding:3%; padding-left:0px; padding-right:0px;
+	}
+	.cubo4{
+		padding-top: 8.3%; padding-left:0px; padding-right:0px;
+	}
+	.cubo5{
+		padding-top: 10%; padding-left:0; padding-right:0;
+	}
+	.cubo7{
+		padding-top:6.8%; padding-left:0px; padding-right:0px;
+	}
+	.cubo8{
+		padding-top: 10%; padding-left:0; padding-right:0;
+	}
+	.cubo10{
+		padding-top: 8.2%; padding-left:0px; padding-right:0px;
+	}
+	.cubo12{
+		padding:3%; padding-left:0px; padding-right:0px;
+	}
+	.bandaInferior{
+		 padding-top: 8.9%; padding-left:0; padding-right:0;
+	}
+	.padredesSociales{
+		 padding-top: 8.9%; padding-left:0; padding-right:0;
+	}
+	.margenSup3pc{
+		 margin-top: 3%;
+	}
+	.imgAlertaNav{
+		width:100%; height:100%;
+	}
+	.redesSocialesCh{
+		position:fixed; bottom: 10%; right:5%;
+	}
+	.margenSup15pc{
+		 margin-top: 15%;
+	}

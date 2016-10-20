@@ -1,0 +1,55 @@
+﻿.pad10px{
+     padding:10px;
+}
+.colaboradoresChico{
+     position:fixed; top:90px; left:0px; width:120px; z-index:11;
+}
+#efectobarramenu2{
+     width:80px;
+}
+.alineaArriba{
+     vertical-align:top;
+}
+.imgSEP{
+     margin-left: 10% !important;
+}
+.imgTVE{
+     margin-left: -9% !important;
+}
+.imgcsuca{
+     margin-left: -30% !important;
+}
+.imgceccsica{
+     margin-left: 30% !important;
+}
+.imgunah{
+     margin-left: 45% !important;
+}
+.imgmep{
+     margin-left: 75% !important;
+}
+.imgAmexid{
+     margin-left: 35% !important;
+     width:40% !important;
+}
+.logosepCh{
+     width:60px; height:18px;
+}
+.imgTveCh{
+     width:60px; height:23px;
+}
+.logocsucaCh{
+     width:40px; height:40px;
+}
+.logoceccsicaCh{
+     width:40px; height:40px;
+}
+.logounahCh{
+     width:60px; height:38px;
+}
+.logomepCh{
+     width:60px; height:40px;
+}
+.logoamexcidCh{
+     width:60px; height:15px;
+}

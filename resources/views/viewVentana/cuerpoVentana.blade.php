@@ -1,24 +1,11 @@
-<style>
-    .mapaRombos{
-        position: absolute;
-        top:1%;
-        left:2%;
-        z-index:12;
-    }
-	.mapaRombosCh{
-        position: absolute;
-        top:0.5%;
-        left:8%;
-        z-index:10;
-    }
-</style>
-<link rel="stylesheet" type="text/css" href="css/ventana/estiloventana.css"/>
-<script type="text/javascript" src="js/ventana/ventanaCuerpo.js"></script>
+<link rel="stylesheet" type="text/css" href="{{url('css/ventana/cuerpoVentana.css')}}"/>
+<link rel="stylesheet" type="text/css" href="{{url('css/ventana/estiloventana.css')}}"/>
+<script type="text/javascript" src="{{url('js/ventana/ventanaCuerpo.js')}}"></script>
 <div class="container-fluid">
     <div class="row">        
-        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="padding:30px;">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 pad30px">
 		@if($errors->any())
-			<div id='mensaje-error' class="alert alert-danger" style="margin-top: 5%; position:absolute;">
+			<div id='mensaje-error' class="alert alert-danger msgError">
 				<h4 class="pull-right">{{$errors->first()}} Debe activar su cuenta</h4>
 			</div>
 		@endif
@@ -27,10 +14,10 @@
     <!----------------------------------	Elementos para vistas en dispositivos grandes		--------------------------------->
     <div class="row visible-md-inline visible-lg-inline">
         <div>
-            <div style="padding:1%;">
+            <div class="pad1Pc">
             </div>
         </div>
-		<div class="col-md-9 col-md-offset-1" style="margin-top:10px;">
+		<div class="col-md-9 col-md-offset-1 margen10px">
 			<map name="mapaRombos" id="mapaRombos">
 				<area alt="Cultura" title="" shape="poly" coords="274,308,458,495,644,309,459,124" onmouseover="cambiaImgFoto('02')" onmouseout="cambiaImgCubo('02')"  href="{{url('cultura')}}"/>
 				<area alt="Canal IberoAmericano" title="" shape="poly" coords="442,511,680,750,918,512,681,274" onmouseover="cambiaImgFoto('04')" onmouseout="cambiaImgCubo('04')" href="http://www.ibe.tv/es/canal/iberoamericano/315/En-directo.htm" target="_blank"/>
@@ -46,47 +33,47 @@
 		</div>
 		<div class="col-md-12">
 		</div>
-        <div class="col-md-1 col-lg-1 col-md-offset-1 col-lg-offset-1" style="padding-top: 8.9%; padding-left:0; padding-right:0;">
+        <div class="col-md-1 col-lg-1 col-md-offset-1 col-lg-offset-1 bandaSuperior">
 
         </div>
-        <div class="col-md-1 col-lg-1" style="padding:3%; padding-left:0px; padding-right:0px;">
+        <div class="col-md-1 col-lg-1 cubo2">
             {{HTML::image('imagenes/ventana/homeventana/CUBO-02.png', 'Idiomas',['id'=>'CUBO02','class'=>'imgColor oculta difumina Intervalo3 slideInLeft rombo2'])}}
             {{HTML::image('imagenes/ventana/iconoSeccion/cultura.png','Cultura',['id'=>'iconoRombo02','class'=>'imgColor oculta difumina Intervalo3 slideInLeft iconoIdiomas','onmouseover'=>'cambiaImgFoto("02")','onmouseout'=>'cambiaImgCubo("02")'])}}
         </div>
 
-        <div class="col-md-1 col-lg-1" style="padding-top: 8.3%; padding-left:0px; padding-right:0px;">
+        <div class="col-md-1 col-lg-1 cubo4">
             {{HTML::image('imagenes/ventana/homeventana/CUBO-04.png','Padres',['id'=>'CUBO04','class'=>'imgColor oculta difumina Intervalo2 slideInLeft rombo4'])}}
             {{HTML::image('imagenes/ventana/iconoSeccion/canal_ibero.png','canal IberoAmericano',['id'=>'iconoRombo04','class'=>'imgColor oculta difumina Intervalo2 slideInLeft iconoPadres','onmouseover'=>'cambiaImgFoto("04")','onmouseout'=>'cambiaImgCubo("04")'])}}
         </div>
-        <div class="col-md-1 col-lg-1" style="padding-top: 10%; padding-left:0; padding-right:0;">
+        <div class="col-md-1 col-lg-1 cubo5">
             {{HTML::image('imagenes/ventana/homeventana/CUBO-05.png','Estudiantes',['id'=>'CUBO05','class'=>'imgColor oculta difumina Intervalo1 slideInLeft rombo5'])}}
             {{HTML::image('imagenes/ventana/homeventana/CUBO-06.png','VOD',['id'=>'CUBO06','class'=>'imgColor oculta difumina Intervalo1 slideInLeft rombo6'])}}
             {{HTML::image('imagenes/ventana/iconoSeccion/redmiteBco.png','Red Mesoamericana',['id'=>'iconoRombo05','class'=>'imgColor oculta difumina Intervalo1 slideInLeft iconoEstudiantes','onmouseover'=>'cambiaImgFoto("05")','onmouseout'=>'cambiaImgCubo("05")'])}}
             {{HTML::image('imagenes/ventana/iconoSeccion/vod.png','VOD',['id'=>'iconoRombo06','class'=>'imgColor oculta difumina Intervalo1 slideInLeft iconoVOD','onmouseover'=>'cambiaImgFoto("06")','onmouseout'=>'cambiaImgCubo("06")'])}}
         </div>
 
-        <div class="col-md-1 col-lg-1" style="padding-top:6.8%; padding-left:0px; padding-right:0px;">
+        <div class="col-md-1 col-lg-1 cubo7">
             {{HTML::image('imagenes/ventana/homeventana/CUBO-07.png','Ventana Educativa',['id'=>'CUBO07','class'=>'imgColor rombo7'])}}
             {{HTML::image('imagenes/ventana/iconoSeccion/ventanaBco.png','Ventana Educativa',['id'=>'iconoRombo07','class'=>'imgColor iconoVentana','onmouseover'=>'cambiaImgFoto("07")','onmouseout'=>'cambiaImgCubo("07")'])}}
         </div>
-        <div class="col-md-1 col-lg-1" style="padding-top: 10%; padding-left:0; padding-right:0;">
+        <div class="col-md-1 col-lg-1 cubo8">
             {{HTML::image('imagenes/ventana/homeventana/CUBO-08.png','Docentes',['id'=>'CUBO08','class'=>'imgColor oculta difumina Intervalo1 slideInRight rombo8'])}}
             {{HTML::image('imagenes/ventana/homeventana/CUBO-09.png','Mediateca',['id'=>'CUBO09','class'=>'imgColor oculta difumina Intervalo1 slideInRight rombo9'])}}
             {{HTML::image('imagenes/ventana/iconoSeccion/biblioteca.png','Biblioteca',['id'=>'iconoRombo08','class'=>'imgColor oculta difumina Intervalo1 slideInRight iconoDocentes','onmouseover'=>'cambiaImgFoto("08")','onmouseout'=>'cambiaImgCubo("08")'])}}
             {{HTML::image('imagenes/ventana/iconoSeccion/mediateca.png','Mediateca',['id'=>'iconoRombo09','class'=>'imgColor oculta difumina Intervalo1 slideInRight iconoMediateca','onmouseover'=>'cambiaImgFoto("09")','onmouseout'=>'cambiaImgCubo("09")'])}}
         </div>
-        <div class="col-md-1 col-lg-1" style="padding-top: 8.2%; padding-left:0px; padding-right:0px;">
+        <div class="col-md-1 col-lg-1 cubo10">
             {{HTML::image('imagenes/ventana/homeventana/CUBO-10.png','Red Mesoamerica',['id'=>'CUBO10','class'=>'imgColor oculta difumina Intervalo2 slideInRight rombo10'])}}
             {{HTML::image('imagenes/ventana/iconoSeccion/mexicoxBco.png','Mexico X',['id'=>'iconoRombo10','class'=>'imgColor oculta difumina Intervalo2 slideInRight iconoRedMesoamerica','onmouseover'=>'cambiaImgFoto("10")','onmouseout'=>'cambiaImgCubo("10")'])}}
         </div>
-        <div class="col-md-1 col-lg-1" style="padding:3%; padding-left:0px; padding-right:0px;">
+        <div class="col-md-1 col-lg-1 cubo12">
             {{HTML::image('imagenes/ventana/homeventana/CUBO-12.png',' ',['id'=>'CUBO12','class'=>'imgColor oculta difumina Intervalo3 slideInRight rombo12'])}}
             {{HTML::image('imagenes/ventana/iconoSeccion/salud.png','Salud',['id'=>'iconoRombo12','class'=>'imgColor oculta difumina Intervalo3 slideInRight iconoBiblioteca','onmouseover'=>'cambiaImgFoto("12")','onmouseout'=>'cambiaImgCubo("12")'])}}
         </div>
-        <div class="col-md-1 col-lg-1" style="padding-top: 8.9%; padding-left:0; padding-right:0;">
+        <div class="col-md-1 col-lg-1 bandaInferior">
         </div>
 
-        <div class="col-md-1 col-lg-1 derechaSociales" style="padding-top: 8.9%; padding-left:0; padding-right:0;">
+        <div class="col-md-1 col-lg-1 derechaSociales padredesSociales">
             <ul class="sociales">
                 <li><a href="https://twitter.com/tveducativamx" target="_blank" class="cambiacolorredesSociales"><span><i class="fa fa-twitter fa-2x " id="ct"></i></span></a></li><br/>
                 <li><a href="https://www.facebook.com/TvEducativaMx" target="_blank" class="cambiacolorredesSociales"><span><i class="fa fa-facebook fa-2x" id="cf"></i></span></a></li><br/>
@@ -94,13 +81,13 @@
             </ul>
         </div>
         <div class="visible-md-inline visible-lg-inline">
-            <div style="padding:2%;">
+            <div class="padd2pc">
             </div>
         </div>
 
         <div class="col-md-12">  
-            <div id="browserWarning" class="col-md-3 alert" style="margin-top: 3%;">                
-                {{ HTML::image('imagenes/ventana/homeventana/alertaNav.png','alerta',['width'=>'100%','height'=>'100%'])}}
+            <div id="browserWarning" class="col-md-3 alert margenSup3pc">
+                {{ HTML::image('imagenes/ventana/homeventana/alertaNav.png','alerta',['class'=>'imgAlertaNav'])}}
             </div>
             <div class="col-md-8"></div>
         </div>
@@ -121,7 +108,7 @@
 				<area title="" shape="poly" coords="346,590,460,703,346,820,230,703" alt="Salud" href="http://www.promocion.salud.gob.mx/dgps/interior1/programas/escuela_salud.html" target="_blank"/>
 			</map>
 		</div>
-        <div class="col-xs-10 col-sm-10 col-xs-offset-1 col-sm-offset-1" style="padding: 20%;">
+        <div class="col-xs-10 col-sm-10 col-xs-offset-1 col-sm-offset-1 padd20pc">
             <table>
                 <tr><td></td><td>
                         {{HTML::image('imagenes/ventana/homeventana/FOTO-07.png','Ventana Educativa',['id'=>'CUBOSM07','class'=>'imgColor rombosm7','usemap'=>'#mapacubosm07'])}}
@@ -159,7 +146,7 @@
                     </td>
                 </tr>
             </table>
-            <div class="derechaSociales" style="position:fixed; bottom: 10%; right:5%;">
+            <div class="derechaSociales redesSocialesCh">
                 <ul class="sociales">
                     <li><a href="https://twitter.com/tveducativamx" target="_blank" class="cambiacolorredesSociales"><span><i class="fa fa-twitter fa-2x " id="ct"></i></span></a></li><br/>
                     <li><a href="https://www.facebook.com/TvEducativaMx" target="_blank" class="cambiacolorredesSociales"><span><i class="fa fa-facebook fa-2x" id="cf"></i></span></a></li><br/>
@@ -169,7 +156,7 @@
         </div>
     </div>
     @if(Session::has('message'))
-    <div class="col-md-12" style="margin-top: 15%;">
+    <div class="col-md-12 margenSup15pc">
         <div class="col-md-3"></div>
         <p class="alert col-md-6 text-center message-compatible {{ Session::get('alert-class', 'alert-info') }}">{{ Session::get('message') }}</p>
         <div class="col-md-3"></div>

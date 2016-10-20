@@ -1,0 +1,27 @@
+﻿.anchoFormaBuscar{
+	width: 200px;
+}
+.appRed{
+	width: 75%; height: 75%;
+}
+.AvatarUsuario{
+	width:35px;
+}
+.block{
+	display: block;
+}
+.colorBlanco{
+	color: white;
+}
+.fuenteRojoBold{
+	color: red; font-weight: bold;
+}
+.fuenteBlacoBold{
+	color: white; font-weight: bold;
+}
+.fuenteOlvido{
+	color: #00B6F1; font-weight: bold;
+}
+.mensaje{
+	color: white; font-size: 9px;
+}
