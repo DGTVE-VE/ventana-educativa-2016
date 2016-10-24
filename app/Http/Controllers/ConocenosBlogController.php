@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Input;
 use App\Http\Requests;
 use App\Model\Conocenos\Blog;
-use App\Model\Conocenos\Tag;
+use App\Model\Tag;
 use App\Model\Conocenos\Colaborador;
 use App\Model\Conocenos\Comment;
 use Illuminate\Support\Facades\Auth;
@@ -83,7 +83,7 @@ class ConocenosBlogController extends Controller
     }
     
     public function show ($id_blog){
-   $blog = Blog::find ($id_blog);
+		$blog = Blog::find ($id_blog);
         $blog->visitas ++;
         $blog->save ();
         
@@ -92,7 +92,8 @@ class ConocenosBlogController extends Controller
         $comentados = $this->geBlogstMasComentados (5);
         $colaborador = Colaborador::find ($blog->colaborador_id);
 //        dd($colaborador);
-        return view('viewRed/blog/show', compact('blog', 'colaborador', 'leidos', 'recientes', 'comentados'));    }
+        return view('viewConocenos/blog/show', compact('blog', 'colaborador', 'leidos', 'recientes', 'comentados'));
+	}
     
     public function destroy ($blog){
         

@@ -51,7 +51,7 @@ and open the template in the editor.
             @yield('cuerpoConocenos')
         </div>
         <!-- jQuery -->
-        <script src="js/conocenos/conocenos.js"></script>
+        <script src="{{url('js/conocenos/conocenos.js')}}"></script>
     </body>
 </html>
 <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyCKFRHjU3HCfrtam4fusUFE52wbVvRbCKM"></script> 

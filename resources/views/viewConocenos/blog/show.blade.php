@@ -38,7 +38,7 @@ Ventana Educativa / Conocenos
             @foreach ($blog->comments as $comment)
             @if ($comment->id_comment == 0) 
             <div class="fondo_Claro text-justify">
-                @include('viewRed.blog.comments', ['comment'=>$comment])  
+                @include('viewConocenos.blog.comments', ['comment'=>$comment])  
             </div>
             <hr>
             @endif
