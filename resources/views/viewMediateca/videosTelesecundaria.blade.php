@@ -21,7 +21,7 @@ Educamedia
                     <div class="col-md-12 quitaMargen" style="overflow: auto;">
                         <h5 id="materia">{{$videos[0]->materia}}</h5>                
                         <h4 id="titulo_programa">{{$videos[0]->titulo_programa}}</h4>                
-                        <div class="col-xs-12 col-sm-12 col-md-10 col-md-offset-1 col-lg-10 col-lg-offset-1 quitaMargen .estilosReproductor" id="player">    </div>
+                        <div class="col-xs-12 col-sm-12 col-md-10 col-md-offset-1 col-lg-10 col-lg-offset-1 quitaMargen estilosReproductor" id="player">    </div>
                     </div>
                     <div class="row">
                         <div class="col-md-12">
@@ -450,8 +450,11 @@ Educamedia
 			if($(window).width() > 1999){
 				nuevoAlto = 600;
 			}
-			else if($(window).width() > 991){
+			else if($(window).width() > 1279){
 				nuevoAlto = 400;
+			}
+			else if($(window).width() > 991){
+				nuevoAlto = 350;
 			}
 			else if($(window).width() > 767){
 				nuevoAlto = 300;

@@ -429,8 +429,11 @@ Educamedia
 		if($(window).width() > 1999){
 			nuevoAlto = 600;
 		}
-		else if($(window).width() > 991){
+		else if($(window).width() > 1279){
 			nuevoAlto = 400;
+		}
+		else if($(window).width() > 991){
+			nuevoAlto = 350;
 		}
 		else if($(window).width() > 767){
 			nuevoAlto = 300;
