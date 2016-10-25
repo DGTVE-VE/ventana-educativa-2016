@@ -5,7 +5,6 @@
         <div class="modal-content">
             <div class="modal-header">
                 <h4 class="modal-title textoModalIntegrante text-center">Colaborador de la Red Mesoamericana en México</h4>
-                <!--<img  src="imagenes/red/integrantes/tache.png"/>-->
                 <button type="button" class="close closeInt" data-dismiss="modal" aria-hidden="true">×</button>
             </div>
             <div class="modal-body">
@@ -19,15 +18,12 @@
 
                     <div class="carousel-inner innerInt col-xs-12 col-md-3 col-lg-12">
                         <div class="item active">
-                            <!--<img alt="First slide" src="imagenes/red/integrantes/GIBZKARODRIGUEZ.png">-->   
                             {{ HTML::image('imagenes/red/integrantes/GIBZKARODRIGUEZ.png','First slide')}}
                         </div>
                         <div class="item">
-                            <!--<img alt="Second slide" src="imagenes/red/integrantes/anaguilma.png">-->  
                             {{ HTML::image('imagenes/red/integrantes/anaguilma.png','Second slide')}}
                         </div>
                         <div class="item">
-                            <!--<img alt="Third slide" src="imagenes/red/integrantes/GIBZKARODRIGUEZ.png">-->
                             {{ HTML::image('imagenes/red/integrantes/GIBZKARODRIGUEZ.png','Third slide')}}
                         </div>
                     </div>

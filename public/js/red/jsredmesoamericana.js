@@ -1,15 +1,19 @@
-	/* --------------------------------------------			 Cambio de imagen para resaltar en evento hover	sección usabilidad		--------------------------*/
+/* --------------------------------------------			 Cambio de imagen para resaltar en evento hover	áreas temáticas		--------------------------*/
+				function imgResaltaAreasTema(nombreImg){
+					var idImagen = "img" + nombreImg;
+					var rutaImagen = "imagenes/red/areasTematicas/" + nombreImg + "Over.png";
+					document.getElementById(idImagen).src = rutaImagen;
+				}
+
+				function imgNormalAreasTema(nombreImg){
+					var idImagen = "img" + nombreImg;
+					var rutaImagen = "imagenes/red/areasTematicas/" + nombreImg + ".png";
+					document.getElementById(idImagen).src = rutaImagen;
+				}
+				
+/* --------------------------------------------			 Cambio de imagen para resaltar en evento hover	sección usabilidad		--------------------------*/
 				function imgResalta(seccion){
 					switch(seccion){
-						case 'twetter':
-							document.getElementById("imgIconoTwetter").src ="imagenes/red/footer/icono-twetter-B.png";
-							break;
-						case 'facebook':
-							document.getElementById("imgIconoFacebook").src ="imagenes/red/footer/icono-face-B.png";
-							break;
-						case 'youtube':
-							document.getElementById("imgIconoYoutube").src ="imagenes/red/footer/icono-youtube-B.png";
-							break;
 						case 'funcionalidad':
 							document.getElementById("imgFuncionalidad").src ="imagenes/red/ModeloUsabilidad/funcionalidadEduOver.png";
 							document.getElementById("txtFuncionalidad").style.width ="320px";
@@ -26,52 +30,23 @@
 							document.getElementById("imgSaberesDig").src ="imagenes/red/ModeloUsabilidad/saberesDigitalesOver.png";
 							document.getElementById("txtSaberesDig").style.width ="330px";
 							document.getElementById("txtSaberesDig").style.height ="75px";
-							/*document.getElementById("txtSaberesDig").style.left ="560px";*/
 							break;
 						case 'apropiacion':
 							document.getElementById("imgApropiacion").src ="imagenes/red/ModeloUsabilidad/apropiacionIncorporacionEduOver.png";
 							document.getElementById("txtApropiacion").style.width ="310px";
 							document.getElementById("txtApropiacion").style.height ="85px";
-							/*document.getElementById("txtApropiacion").style.left ="520px";*/
 							break;
 						case 'funcionalidadXS':
 							document.getElementById("imgFuncionalidadXS").src ="imagenes/red/ModeloUsabilidad/funcionalidadEduOver.png";
-							/*document.getElementById("txtFuncionalidad").style.width ="320px";
-							document.getElementById("txtFuncionalidad").style.height ="70px";
-							document.getElementById("txtFuncionalidad").style.left ="100px";*/
 							break;
 						case 'expectativasXS':
 							document.getElementById("imgExpectativasXS").src ="imagenes/red/ModeloUsabilidad/disposicionExpectativasOver.png";
-							/*document.getElementById("txtExpectativas").style.width ="340px";
-							document.getElementById("txtExpectativas").style.height ="91px";
-							document.getElementById("txtExpectativas").style.left ="-10px";*/
 							break;
 						case 'saberesDigXS':
 							document.getElementById("imgSaberesDigXS").src ="imagenes/red/ModeloUsabilidad/saberesDigitalesOver.png";
-							/*document.getElementById("txtSaberesDig").style.width ="330px";
-							document.getElementById("txtSaberesDig").style.height ="75px";
-							document.getElementById("txtSaberesDig").style.left ="-110px";*/
 							break;
 						case 'apropiacionXS':
 							document.getElementById("imgApropiacionXS").src ="imagenes/red/ModeloUsabilidad/apropiacionIncorporacionEduOver.png";
-							/*document.getElementById("txtApropiacion").style.width ="310px";
-							document.getElementById("txtApropiacion").style.height ="85px";
-							document.getElementById("txtApropiacion").style.left ="-170px";*/
-							break;
-						case 'RedesConocimiento':
-							document.getElementById("imgRedesConocimiento").src ="imagenes/red/areasTematicas/RedesConocimientoOver.png";
-							break;
-						case 'AmbientesEducativos':
-							document.getElementById("imgAmbientesEducativos").src ="imagenes/red/areasTematicas/ambientesEducativosOver.png";
-							break;
-						case 'Gestioncalidad':
-							document.getElementById("imgGestioncalidad").src ="imagenes/red/areasTematicas/GestionCalidadOver.png";
-							break;
-						case 'Multimedia':
-							document.getElementById("imgMultimedia").src ="imagenes/red/areasTematicas/MultimediaOver.png";
-							break;
-						case 'PoliticaEducativa':
-							document.getElementById("imgPoliticaEducativa").src ="imagenes/red/areasTematicas/PoliticaEducativaOver.png";
 							break;
 						default:
 							break;
@@ -79,15 +54,6 @@
 				}
 				function imgNormal(seccion){
 					switch(seccion){
-						case 'twetter':
-							document.getElementById("imgIconoTwetter").src ="imagenes/red/footer/icono-twetter-A.png";
-							break;
-						case 'facebook':
-							document.getElementById("imgIconoFacebook").src ="imagenes/red/footer/icono-face-A.png";
-							break;
-						case 'youtube':
-							document.getElementById("imgIconoYoutube").src ="imagenes/red/footer/icono-youtube-A.png";
-							break;
 						case 'funcionalidad':
 							document.getElementById("imgFuncionalidad").src ="imagenes/red/ModeloUsabilidad/funcionalidadEdu.png";
 							document.getElementById("txtFuncionalidad").style.width ="270px";
@@ -114,42 +80,15 @@
 							break;
 						case 'funcionalidadXS':
 							document.getElementById("imgFuncionalidadXS").src ="imagenes/red/ModeloUsabilidad/funcionalidadEdu.png";
-							/*document.getElementById("txtFuncionalidad").style.width ="270px";
-							document.getElementById("txtFuncionalidad").style.height ="52px";
-							document.getElementById("txtFuncionalidad").style.left ="140px";*/
 							break;
 						case 'expectativasXS':
 							document.getElementById("imgExpectativasXS").src ="imagenes/red/ModeloUsabilidad/disposicionExpectativas.png";
-							/*document.getElementById("txtExpectativas").style.width ="300px";
-							document.getElementById("txtExpectativas").style.height ="71px";
-							document.getElementById("txtExpectativas").style.left ="20px";*/
 							break;
 						case 'saberesDigXS':
 							document.getElementById("imgSaberesDigXS").src ="imagenes/red/ModeloUsabilidad/saberesDigitales.png";
-							/*document.getElementById("txtSaberesDig").style.width ="300px";
-							document.getElementById("txtSaberesDig").style.height ="56px";
-							document.getElementById("txtSaberesDig").style.left ="-100px";*/
 							break;
 						case 'apropiacionXS':
 							document.getElementById("imgApropiacionXS").src ="imagenes/red/ModeloUsabilidad/apropiacionIncorporacionEdu.png";
-							/*document.getElementById("txtApropiacion").style.width ="270px";
-							document.getElementById("txtApropiacion").style.height ="58px";
-							document.getElementById("txtApropiacion").style.left ="-170px";*/
-							break;
-						case 'RedesConocimiento':
-							document.getElementById("imgRedesConocimiento").src ="imagenes/red/areasTematicas/RedesConocimiento.png";
-							break;
-						case 'AmbientesEducativos':
-							document.getElementById("imgAmbientesEducativos").src ="imagenes/red/areasTematicas/ambientesEducativos.png";
-							break;
-						case 'Gestioncalidad':
-							document.getElementById("imgGestioncalidad").src ="imagenes/red/areasTematicas/GestionCalidad.png";
-							break;
-						case 'Multimedia':
-							document.getElementById("imgMultimedia").src ="imagenes/red/areasTematicas/Multimedia.png";
-							break;
-						case 'PoliticaEducativa':
-							document.getElementById("imgPoliticaEducativa").src ="imagenes/red/areasTematicas/PoliticaEducativa.png";
 							break;
 						default:
 							break;
@@ -250,37 +189,14 @@
 			}
         })
 
-		/*  -------------------------------------    Activar efecto parallax en scroll   -----------------------------------------------*/
+/*  -------------------------------------    Activar efecto parallax en scroll de imagenes en banner principal   -----------------------------------------------*/
 		function parallaxScroll(){
 			var scrolled = $(window).scrollTop();
 			if(is_chrome || is_safari){
-				$('#parallaxcarouselSliderHome').css('top',(0+(scrolled*0.3))+'px');
-				$('#parallaxcarouselSliderHome1').css('top',(0+(scrolled*0.3))+'px');
-				$('#parallaxcarouselSliderHome2').css('top',(0+(scrolled*0.3))+'px');
-				$('#parallaxcarouselSliderHome3').css('top',(0+(scrolled*0.3))+'px');
-				$('#parallaxcarouselSliderHome4').css('top',(0+(scrolled*0.3))+'px');
-				$('#parallaxcarouselSliderHome5').css('top',(0+(scrolled*0.3))+'px');
-				$('#parallaxcarouselSliderHome6').css('top',(0+(scrolled*0.3))+'px');
-				$('#parallaxcarouselSliderHome7').css('top',(0+(scrolled*0.3))+'px');
-				$('#parallaxcarouselSliderHome8').css('top',(0+(scrolled*0.3))+'px');
-				$('#parallaxcarouselSliderHome9').css('top',(0+(scrolled*0.3))+'px');
-				$('#parallaxcarouselSliderHome10').css('top',(0+(scrolled*0.3))+'px');
-				$('#parallaxcarouselSliderHome11').css('top',(0+(scrolled*0.3))+'px');
-
+				$('.parallaxcarouselSliderHome').css('top',(0+(scrolled*0.3))+'px');
 			}
 			else{
-				$('#parallaxcarouselSliderHome').css('top',(0-(scrolled*0.7))+'px');
-				$('#parallaxcarouselSliderHome1').css('top',(0-(scrolled*0.7))+'px');
-				$('#parallaxcarouselSliderHome2').css('top',(0-(scrolled*0.7))+'px');
-				$('#parallaxcarouselSliderHome3').css('top',(0-(scrolled*0.7))+'px');
-				$('#parallaxcarouselSliderHome4').css('top',(0-(scrolled*0.7))+'px');
-				$('#parallaxcarouselSliderHome5').css('top',(0-(scrolled*0.7))+'px');
-				$('#parallaxcarouselSliderHome6').css('top',(0-(scrolled*0.7))+'px');
-				$('#parallaxcarouselSliderHome7').css('top',(0-(scrolled*0.7))+'px');
-				$('#parallaxcarouselSliderHome8').css('top',(0-(scrolled*0.7))+'px');
-				$('#parallaxcarouselSliderHome9').css('top',(0-(scrolled*0.7))+'px');
-				$('#parallaxcarouselSliderHome10').css('top',(0-(scrolled*0.7))+'px');
-				$('#parallaxcarouselSliderHome11').css('top',(0-(scrolled*0.7))+'px');
+				$('.parallaxcarouselSliderHome').css('top',(0-(scrolled*0.7))+'px');
 			}
 		}
 		/*  -------------------------------------    Detectar si navegador es chrome   -----------------------------------------------*/

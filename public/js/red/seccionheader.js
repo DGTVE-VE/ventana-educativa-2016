@@ -1,3 +1,4 @@
+/*	----------	Ajustes de visualización del menú incluido de ventana educativa y menú de apps	----------	*/
 	$('#buscar').css('visibility','hidden');
 	$('#iconoBuscar').css('visibility','hidden');
 	$('#navegacionVentana').removeClass('menuVentana');
