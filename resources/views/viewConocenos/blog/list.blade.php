@@ -120,15 +120,18 @@ Ventana Educativa / Conocenos
 
     </div>
 </div>
-
+@include('viewConocenos.pie')
+<script>
+	$('#barraNavPie').removeClass('posicionPie');
+	$('#barraNavPie').addClass('navbar-fixed-bottom');
+	$('.textoBlanco').css('color','white');
+</script>
+@endsection
 <script src="{{asset('js/conocenos/jquery-3.1.1.min.js')}}"></script>
 <script type="text/javascript">
-
 $('#myTabs a').click(function (e) {
     e.preventDefault()
     $(this).tab('show')
 });
 
 </script>
-@include('viewConocenos.pie')
-@endsection

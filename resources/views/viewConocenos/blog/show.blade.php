@@ -3,10 +3,14 @@ Ventana Educativa / Conocenos
 @stop
 @extends('indexConocenos')
 @section('menuConocenos')
-@include('viewConocenos.encabezado')
+@include('viewVentana.encabezadoVentana')
+<script>
+	$('#imagenLogoVentana').attr('src','{{url("imagenes/ventana/encabezado/logoNegro/logoventana.png")}}');
+	$('#iconoManuApps').attr('src','{{url("imagenes/ventana/encabezado/logoNegro/iconoApps.png")}}');
+</script>
 @endsection
 @section('cuerpoConocenos')
-<div class="row">
+<div class="row" style="position:relative; top:50px;">
     <div class='col-md-2'></div>
     <div class='col-md-5 txtBlogRed'>
         <br>
@@ -131,15 +135,15 @@ Ventana Educativa / Conocenos
         </div>
     </div>
 </div>
-
-<script src="{{asset ('tinymce/tinymce.min.js')}}"></script>
+@include('viewConocenos.pie')
 <script>
-    tinymce.init({        
-        selector: 'textarea',
-        language: 'es_MX'
-    });
-
+	$('#barraNavPie').removeClass('posicionPie');
+	$('#barraNavPie').css('bottom','-20px');
+	$('.textoBlanco').css('color','white');
 </script>
+@endsection
+<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+<script src="{{asset ('tinymce/tinymce.min.js')}}"></script>
 <!-- /TinyMCE -->
 <script>
     $('.btn-responder').click(function () {
@@ -147,7 +151,8 @@ Ventana Educativa / Conocenos
         console.log($(this).next());
         $(this).next().slideToggle();
     });
+    tinymce.init({        
+        selector: 'textarea',
+        language: 'es_MX'
+    });
 </script>
-
-@include('viewConocenos.pie')
-@endsection
