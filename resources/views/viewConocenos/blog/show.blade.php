@@ -10,6 +10,11 @@ Ventana Educativa / Conocenos
 </script>
 @endsection
 @section('cuerpoConocenos')
+<div class="menuBlog"> 
+    <a href="{{url('conocenos')}}" class="text-center">
+        <h4 class="glyphicon glyphicon-home" style="color: black;"></h4><br/>
+    </a>
+</div>
 <div class="row" style="position:relative; top:50px;">
     <div class='col-md-2'></div>
     <div class='col-md-5 txtBlogRed'>

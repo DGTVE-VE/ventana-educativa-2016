@@ -3,15 +3,19 @@ Ventana Educativa / Conocenos
 @stop
 @extends('indexConocenos')
 @section('menuConocenos')
-@include('viewConocenos.encabezado')
+@include('viewVentana.encabezadoVentana')
+<script>
+	$('#imagenLogoVentana').attr('src','{{url("imagenes/ventana/encabezado/logoNegro/logoventana.png")}}');
+	$('#iconoManuApps').attr('src','{{url("imagenes/ventana/encabezado/logoNegro/iconoApps.png")}}');
+</script>
 @endsection
 @section('cuerpoConocenos')
 <div class="menuBlog"> 
     <a href="{{url('conocenos')}}" class="text-center">
-        <h4 class="glyphicon glyphicon-home" style="color: white;"></h4><br/>
+        <h4 class="glyphicon glyphicon-home" style="color: black;"></h4><br/>
     </a>
 </div>
-<div class="container">
+<div class="container" style="position:relative; top:50px;">
     <div class="row">
         <!--inicia blog list-->
         <div class="col-md-9 txtBlogRed">
