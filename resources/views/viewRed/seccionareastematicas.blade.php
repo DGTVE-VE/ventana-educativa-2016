@@ -16,8 +16,7 @@
             <table>
                 <tr>
                     <td class="imgTabla"><a href="{{url('redmite/areastematicas#redesconocimiento')}}">
-                        <!--<img href="#" id="imgRedesConocimiento" alt="imagen fija" src="imagenes/red/areasTematicas/RedesConocimiento.png" onmouseenter="imgResalta('RedesConocimiento')" onmouseleave="imgNormal('RedesConocimiento')"/></td>-->
-                    {{ HTML::image('imagenes/red/areasTematicas/RedesConocimiento.png','imagen fija', array('id'=>'imgRedesConocimiento', 'onmouseenter'=>'imgResalta("RedesConocimiento")','onmouseleave'=>'imgNormal("RedesConocimiento")'))}}
+                    {{ HTML::image('imagenes/red/areasTematicas/RedesConocimiento.png','imagen fija', array('id'=>'imgRedesConocimiento', 'onmouseenter'=>'imgResaltaAreasTema("RedesConocimiento")','onmouseleave'=>'imgNormalAreasTema("RedesConocimiento")'))}}
                     </td>
                     </a>
                     <td class="txtTabla"><h3><strong>Redes de <br> Conocimiento y <br> Aprendizaje</strong></h3>
@@ -31,8 +30,7 @@
             <table>
                 <tr>
                     <td class="imgTabla"><a href="{{('redmite/areastematicas#modelos')}}">
-                        <!--<img href="#" id="imgAmbientesEducativos" alt="imagen fija" src="imagenes/red/areasTematicas/ambientesEducativos.png" onmouseenter="imgResalta('AmbientesEducativos')" onmouseleave="imgNormal('AmbientesEducativos')"/></td>-->
-                    {{ HTML::image('imagenes/red/areasTematicas/ambientesEducativos.png','imagen fija', array('id'=>'imgAmbientesEducativos', 'onmouseenter'=>'imgResalta("AmbientesEducativos")','onmouseleave'=>'imgNormal("AmbientesEducativos")'))}}
+                    {{ HTML::image('imagenes/red/areasTematicas/ambientesEducativos.png','imagen fija', array('id'=>'imgambientesEducativos', 'onmouseenter'=>'imgResaltaAreasTema("ambientesEducativos")','onmouseleave'=>'imgNormalAreasTema("ambientesEducativos")'))}}
                     </td>
                     </a>
                     <td class="txtTabla"><h3><strong>Modelos y <br> Ambientes <br> Educativos</strong></h3>
@@ -46,8 +44,7 @@
             <table>
                 <tr>
                     <td class="imgTabla"><a href="{{('redmite/areastematicas#gestion')}}">
-                        <!--<img id="imgGestioncalidad" alt="imagen fija" src="imagenes/red/areasTematicas/GestionCalidad.png" onmouseenter="imgResalta('Gestioncalidad')" onmouseleave="imgNormal('Gestioncalidad')"/></td>-->
-                    {{ HTML::image('imagenes/red/areasTematicas/GestionCalidad.png','imagen fija', array('id'=>'imgGestioncalidad', 'onmouseenter'=>'imgResalta("Gestioncalidad")','onmouseleave'=>'imgNormal("Gestioncalidad")'))}}
+                    {{ HTML::image('imagenes/red/areasTematicas/GestionCalidad.png','imagen fija', array('id'=>'imgGestionCalidad', 'onmouseenter'=>'imgResaltaAreasTema("GestionCalidad")','onmouseleave'=>'imgNormalAreasTema("GestionCalidad")'))}}
                     </td>
                     </a>
                     <td class="txtTabla"><h3><strong>Gestión y Calidad <br> de Programas <br> Educativos</strong></h3>
@@ -67,8 +64,7 @@
             <table>
                 <tr>
                     <td class="imgTabla"><a href="{{url('redmite/areastematicas#multimedia')}}">
-                        <!--<img href="#" id="imgMultimedia" alt="imagen fija" src="imagenes/red/areasTematicas/Multimedia.png" onmouseenter="imgResalta('Multimedia')" onmouseleave="imgNormal('Multimedia')"/></td>-->
-                        {{ HTML::image('imagenes/red/areasTematicas/Multimedia.png','imagen fija', array('id'=>'imgMultimedia', 'onmouseenter'=>'imgResalta("Multimedia")','onmouseleave'=>'imgNormal("Multimedia")'))}}
+                        {{ HTML::image('imagenes/red/areasTematicas/Multimedia.png','imagen fija', array('id'=>'imgMultimedia', 'onmouseenter'=>'imgResaltaAreasTema("Multimedia")','onmouseleave'=>'imgNormalAreasTema("Multimedia")'))}}
                     </td>
                     </a>
                     <td class="txtTabla"><h3><strong>Multimedia y <br> Desarrollo Educativo</strong></h3>
@@ -82,8 +78,7 @@
             <table>
                 <tr>
                     <td class="imgTabla"><a href="{{url('redmite/areastematicas#politica')}}">
-                        <!--<img id="imgPoliticaEducativa" alt="imagen fija" src="imagenes/red/areasTematicas/PoliticaEducativa.png" onmouseenter="imgResalta('PoliticaEducativa')" onmouseleave="imgNormal('PoliticaEducativa')"/></td>-->
-                    {{ HTML::image('imagenes/red/areasTematicas/PoliticaEducativa.png','imagen fija', array('id'=>'imgPoliticaEducativa', 'onmouseenter'=>'imgResalta("PoliticaEducativa")','onmouseleave'=>'imgNormal("PoliticaEducativa")'))}}
+                    {{ HTML::image('imagenes/red/areasTematicas/PoliticaEducativa.png','imagen fija', array('id'=>'imgPoliticaEducativa', 'onmouseenter'=>'imgResaltaAreasTema("PoliticaEducativa")','onmouseleave'=>'imgNormalAreasTema("PoliticaEducativa")'))}}
                     </td>
                     </a>
                     <td class="txtTabla"><h3><strong>Política Educativa y <br> Cambio Social</strong></h3>

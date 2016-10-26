@@ -27,24 +27,9 @@
 
     @endforeach
 
-    <!--♠ <div class="col-sm-6 col-md-4">
-        <a href="{{('redmite/proyectos#1')}}">
-            {{ HTML::image('imagenes/red/proyectos/proyectos-03.jpg','sección3 proyectos', array('class'=>'img-responsive img-rounded imgAbajo10'))}}
-        </a>
-    </div>
-    <div class="col-sm-6 col-md-4">
-        <a href="{{url('redmite/proyectos#2')}}">
-            {{ HTML::image('imagenes/red/proyectos/proyectos-02.jpg','sección2 proyectos', array('class'=>'img-responsive img-rounded imgAbajo10'))}}
-        </a>
-    </div> -->
     <!--  Imagenes proyectos -->
     <div class="col-sm-12 col-md-12">
         <div class="division"></div>
     </div>
 </div>
-<script>
-	$('.parallax-window').parallax({
-		naturalWidth:1600,
-		naturalHeight:500
-	});
-</script>
+<script src="{{url('js/red/seccionProyectos.js')}}"></script>

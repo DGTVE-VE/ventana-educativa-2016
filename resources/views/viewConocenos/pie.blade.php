@@ -1,4 +1,12 @@
-﻿<div class="navbar navbar-inverse pieConocenos" style="color: white; height: 200px; position: absolute; bottom:-20px; z-index:1001; width:100%;">
+﻿<style>
+    .posicionPie{
+		position: absolute;  bottom:-20px;
+	}
+	.medidasPie{
+		color: white; height: 200px; z-index:1001; width:100%;
+	}
+</style>
+<div id="barraNavPie" class="navbar navbar-inverse posicionPie medidasPie">
     <!--sdk twitter-->
     <script>window.twttr = (function (d, s, id) {
             var js, fjs = d.getElementsByTagName(s)[0],
@@ -72,7 +80,7 @@
                     {{ HTML::image('imagenes/red/footer/localizacion.png','logo localizacion', array('class'=>'img-responsive','style'=>' width:20px; height:20px;)'))}}
                 </td>
                 <td>
-                    <p>Av. Circunvalación s/n, esquina Tabiqueros,<br>
+                    <p class="textoBlanco">Av. Circunvalación s/n, esquina Tabiqueros,<br>
                         Col. Morelos, Del. Venustiano Carranza.<br>
                         C.P. 15270, Ciudad de México.</p>
                 </td>
@@ -87,7 +95,7 @@
                     {{ HTML::image('imagenes/red/footer/telefono.png','logo telefono', array('class'=>'img-responsive','style'=>'align:flex-start; width:20px; height:20px;)'))}}
                 </td>
                 <td>
-                    <p>(55) 3601 8100 <br>
+                    <p class="textoBlanco">(55) 3601 8100 <br>
                         01 800 2284 883 <br>
                         01 866 5729 837
                     </p>							
@@ -104,7 +112,7 @@
                     {{ HTML::image('imagenes/red/footer/mail.png','logo mail', array('class'=>'img-responsive','style'=>'align:flex-start; width:20px; height:15px;)'))}}
                 </td>
                 <td>
-                    <p> ventana@televisioneducativa.gob.mx</p>
+                    <p class="textoBlanco"> ventana@televisioneducativa.gob.mx</p>
                 </td>
             </tr>
         </table>
