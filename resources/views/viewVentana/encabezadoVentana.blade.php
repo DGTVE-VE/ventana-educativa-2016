@@ -1,7 +1,7 @@
 <!--nuevo encabezado-->
 <link rel="stylesheet" type="text/css" href="{{url('css/ventana/encabezado.css')}}"/>
 <link rel="stylesheet" type="text/css" href="{{url('css/ventana/menuVentana.css')}}"/>
-<nav id="navegacionVentana" class="navbar navbar-default navbar-fixed-top  menuVentana" role="navigation">
+<nav id="navegacionVentana" class="navbar navbar-default navbar-fixed-top menuVentana" role="navigation">
     <div class="container-fluid">
         <div class="row">
             <div class="col-sm-2 col-md-2">

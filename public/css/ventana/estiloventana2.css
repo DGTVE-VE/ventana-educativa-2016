@@ -193,8 +193,8 @@
 
 @media (min-width: 1200px) {
     .imgLogo{
-        width: 70% \9; /*Force IE10 and below to size SVG images correctly*/
-        max-width: 70%;
+        width: 60% \9; /*Force IE10 and below to size SVG images correctly*/
+        max-width: 60%;
     }
     .liBuscar{margin-left: 365% !important}
     .has-feedback{margin-left:-115%;}
@@ -216,7 +216,13 @@
 }
 @media (min-width: 1600px) {
     .imgLogo{
-        width: 90% \9; /*Force IE10 and below to size SVG images correctly*/
-        max-width: 90%;
+        width: 65% \9; /*Force IE10 and below to size SVG images correctly*/
+        max-width: 65%;
+    }
+}
+@media (min-width: 1900px) {
+    .imgLogo{
+        width: 85% \9; /*Force IE10 and below to size SVG images correctly*/
+        max-width: 85%;
     }
 }

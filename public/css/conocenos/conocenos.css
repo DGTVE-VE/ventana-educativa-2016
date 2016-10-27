@@ -493,8 +493,8 @@ a.before:hover:before,a.after:hover:after{
 /*contenedor blog*/
 
 .menuBlog{
-    margin-top: 15px;
+    margin-top: 5px;
     position: fixed;
     margin-left: 18%;
-	z-index:1031;
+    z-index:1031;
 }
