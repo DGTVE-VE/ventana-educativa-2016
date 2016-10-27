@@ -6,7 +6,6 @@
 		color: white; height: 200px; z-index:1001; width:100%;
 	}
 </style>
-<div id="barraNavPie" class="navbar navbar-inverse posicionPie medidasPie">
     <!--sdk twitter-->
     <script>window.twttr = (function (d, s, id) {
             var js, fjs = d.getElementsByTagName(s)[0],
@@ -46,8 +45,7 @@
             fjs.parentNode.insertBefore(js, fjs);
         }(document, 'script', 'facebook-jssdk'));
     </script>
-<!--    <div class="division">
-    </div>-->
+<div id="barraNavPie" class="navbar navbar-inverse posicionPie medidasPie">
     <div class="col-xs-6 col-sm-6 col-md-3 col-lg-2">
         <br>
         {{ HTML::image('imagenes/ventana/encabezado/logoventana.png','logo negativo', array('class'=>'img-responsive', 'width'=>'155', 'height'=>'155'))}}
@@ -62,13 +60,8 @@
                         fjs.parentNode.insertBefore(js, fjs);
                     }
                 }(document, 'script', 'twitter-wjs');</script>  
-            <div 
-                class="fb-share-button pull-right col-md-8" 
-                data-layout="button" 
-                data-mobile-iframe="true">
-            </div>
+            <div class="fb-share-button pull-right col-md-8" data-layout="button" data-mobile-iframe="true"></div>
         </div>
-    <!--<img id="imgIconoYoutube" class="img-responsive img-rounded" style="float:left; width:50px; height:50px;" src="imagenes/red/footer/icono-youtube-A.png" onmouseenter="imgResalta('youtube')" onmouseleave="imgNormal('youtube')"/>-->
         <br>
     </div>
     <div class="col-xs-12 col-sm-6 col-md-3 col-lg-2">
@@ -77,7 +70,7 @@
         <table>
             <tr>
                 <td class="imgTecho" style="padding-right: 15px;">
-                    {{ HTML::image('imagenes/red/footer/localizacion.png','logo localizacion', array('class'=>'img-responsive','style'=>' width:20px; height:20px;)'))}}
+                    {{ HTML::image('imagenes/red/footer/localizacion.png','logo localizacion', array('class'=>'img-responsive','style'=>' width:25px; height:20px;)'))}}
                 </td>
                 <td>
                     <p class="textoBlanco">Av. Circunvalación s/n, esquina Tabiqueros,<br>
