@@ -40,95 +40,101 @@ Ventana Educativa / Conocenos
 </div>
     <div class="row fondoBlog">
         <!--inicia blog list-->
-		<div class="col-md-12" style="padding:20px;"></div>
-        <div class="col-md-6 col-md-offset-1">
-			<div class="col-md-12" style="padding:20px;"></div>
+		<div class="col-xs-12 col-sm-12 col-md-12" style="padding:20px;"></div>
+        <div class="col-xs-11 col-sm-7 col-md-6 col-md-offset-1">
+			<div class="col-xs-12 col-sm-12 col-md-12" style="padding:20px;"></div>
             @foreach ($blogs as $blog)
-            <div class="col-md-12 fondoBlanco">
-				<div class="col-md-10 col-md-offset-1">
-					<a href="{{url('conocenos/blog/$blog->id')}}"> <h2><strong>{{$blog->titulo}} </strong></h2></a>
+            <div class="col-xs-12 col-sm-12 col-md-12 fondoBlanco">
+				<div class="col-xs-12 col-sm-12 col-md-10 col-md-offset-1">
+				{{--*/ $ligaEntrada = 'conocenos/blog/'.$blog->id; /*--}}
+					<a href="{{url($ligaEntrada)}}"> <h2><strong>{{$blog->titulo}} </strong></h2></a>
 				</div>
-				<div class="col-md-10 col-md-offset-1">
+				<div class="col-xs-12 col-sm-12 col-md-12 col-md-offset-1">
 					<?php
 					$dt = new DateTime($blog->created_at);
 					$date = $dt->format('m/d/Y');
 					?>
 					<h4>{{$date}}</h4>
 				</div>
-				<div class="col-md-10 col-md-offset-1">
-					<a href="{{url("conocenos/blog/$blog->id")}}">
+				<div class="col-xs-12 col-sm-12 col-md-10 col-md-offset-1">
+					{{--*/ $ligaEntrada = 'conocenos/blog/'.$blog->id; /*--}}
+					<a href="{{url($ligaEntrada)}}">
                         <img src="{{url ($blog->imagen)}}" style="width:100%">
                     </a>
 				</div>
-				<div class="col-md-10 col-md-offset-1">
+				<div class="col-xs-12 col-sm-12 col-md-10 col-md-offset-1">
 					<h3> {{$colaboradores[$blog->colaborador_id]->nombre}}</h3>
                     {!!substr($blog->cuerpo, 0, 400)!!}...
 				</div>
-				<div class="col-md-10 col-md-offset-1">
-					<a href="{{url('conocenos/blog/$blog->id')}}" class="pull-right"> Leer más...</a>
+				<div class="col-xs-12 col-sm-12 col-md-10 col-md-offset-1">
+					{{--*/ $ligaEntrada = 'conocenos/blog/'.$blog->id; /*--}}
+					<a href="{{url($ligaEntrada)}}" class="pull-right"> Leer más...</a>
 				</div>
-				<div class="col-md-12" style="padding:10px;">
+				<div class="col-xs-12 col-sm-12 col-md-12" style="padding:10px;">
 				</div>
 			</div>
-			<div class="col-md-12" style="padding:20px;">
+			<div class="col-xs-12 col-sm-12 col-md-12" style="padding:20px;">
 			</div>
             @endforeach
             {!! $blogs->render() !!}
         </div>   
-        <div class="col-md-4 col-md-offset-1 fondoPanelIzq">
-			<div class="col-md-12" style="padding:10px;"></div>
-			<div class="col-md-10 col-md-offset-1">
-				<div class="col-md-12">
+        <div class="col-xs-12 col-sm-5 col-md-4 col-md-offset-1 fondoPanelIzq">
+			<div class="col-xs-12 col-sm-12 col-md-12" style="padding:10px;"></div>
+			<div class="col-xs-12 col-sm-12 col-md-10 col-md-offset-1">
+				<div class="col-xs-12 col-sm-12 col-md-12">
 					<h3><em> lo más leído </em></h3>
 				</div>
 				{{--*/ $i=1; /*--}}
 				@foreach ($leidos as $leido)
-				<div class="col-md-2">
+				<div class="col-xs-2 col-sm-2 col-md-2">
 					<h1> <strong>{{ $i++ }} </strong></h1>
 				</div>
-				<div class="col-md-10">
-					<h4> <a href="{{url('conocenos/blog/$leido->id')}}"> {{$leido->titulo}}</a> </h4>
+				<div class="col-xs-10 col-sm-10 col-md-10">
+					{{--*/ $ligaEntrada = 'conocenos/blog/'.$leido->id; /*--}}
+					<h4> <a href="{{url($ligaEntrada)}}"> {{$leido->titulo}}</a> </h4>
 				</div>
-				<div class="col-md-12">
+				<div class="col-xs-12 col-sm-12 col-md-12">
 				</div>
 				@endforeach
-				<div class="col-md-12">
+				<div class="col-xs-12 col-sm-12 col-md-12">
 					<h3> <em>lo más reciente </em></h3>
 				</div>
 				{{--*/ $i=1; /*--}}
 				@foreach ($recientes as $reciente)
-				<div class="col-md-2">
+				<div class="col-xs-2 col-sm-2 col-md-2">
 					<h1> <strong>{{ $i++ }} </strong></h1>
 				</div>
-				<div class="col-md-10">
-					<h4> <a href="{{url('conocenos/blog/$reciente->id')}}"> {{$reciente->titulo}}</a> </h4>
+				<div class="col-xs-10 col-sm-10 col-md-10">
+					{{--*/ $ligaEntrada = 'conocenos/blog/'.$reciente->id; /*--}}
+					<h4> <a href="{{url($ligaEntrada)}}"> {{$reciente->titulo}}</a> </h4>
 				</div>
-				<div class="col-md-12">
+				<div class="col-xs-12 col-sm-12 col-md-12">
 				</div>
 				@endforeach
-				<div class="col-md-12">
+				<div class="col-xs-12 col-sm-12 col-md-12">
 					<h3> <em>lo más comentado </em></h3>
 				</div>
 				{{--*/ $i=1; /*--}}
 				@foreach ($comentados as $comentado)
-				<div class="col-md-2">
+				<div class="col-xs-2 col-sm-2 col-md-2">
 					<h1><strong> {{ $i++ }} </strong></h1>
 				</div>
-				<div class="col-md-10">
-					<h4> <a href="{{url('conocenos/blog/$comentado->id')}}"> {{$comentado->titulo}}</a> </h4>
+				<div class="col-xs-10 col-sm-10 col-md-10">
+					{{--*/ $ligaEntrada = 'conocenos/blog/'.$comentado->id; /*--}}
+					<h4> <a href="{{url($ligaEntrada)}}"> {{$comentado->titulo}}</a> </h4>
 				</div>
-				<div class="col-md-12">
+				<div class="col-xs-12 col-sm-12 col-md-12">
 				</div>
 				@endforeach
 				
             </div>
-			<div class="col-md-12">
+			<div class="col-xs-12 col-sm-12 col-md-12">
 			</div>
             @if (Auth::guest ())
             @else
             @if (Auth::user()->is_researcher)
             <!--Agregar publicación-->
-            <div class="panel-heading blogPanel col-md-10 col-md-offset-1 text-center">
+            <div class="col-xs-10 col-sm-10 panel-heading blogPanel col-md-10 col-md-offset-1 text-center">
                 <h4 class="panel-title">
                     <a href="{{url('conocenos/blog/create')}}">
                         Agregar publicación
