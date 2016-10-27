@@ -6,7 +6,7 @@
 			<div id="fondoTablaColabora" class="fondoTablaColabora">
 				<div class="pad10px">
 				</div>
-				<table class="table tablaCOlaboradores"   >
+				<table class="table tablaCOlaboradores">
 					<tr>
 						<td>
 							<a href="http://www.gob.mx/sep" target="_blank" onMouseOver="document.logosep.src = 'imagenes/ventana/pieventana/sepcolor.png';"
@@ -52,7 +52,7 @@
 						</td>
 					</tr>
 				</table>
-				<div class="pad10px;">
+				<div class="pad10px">
 				</div>
 			</div>
 		</div>
