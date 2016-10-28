@@ -13,7 +13,8 @@
                 <a href="{{url('conocenos')}}">INICIO</a>
             </li>
             <li>
-                <a href="{{url('conocenos/blog')}}">BLOG</a>
+                <!--<a href="{{--url('conocenos/blog')--}}">BLOG</a>-->
+                <a href="#">BLOG</a>
             </li>
             <li>
                 <a href="#">ACERCA DE</a>
