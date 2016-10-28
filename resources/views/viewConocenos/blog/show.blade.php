@@ -13,7 +13,7 @@ Ventana Educativa / Conocenos
 @section('cuerpoConocenos')
 <style>
 	.fondoBlog{
-		background-image: url('/ventana-educativa-2016/public/imagenes/conocenos/blog/backBlog.jpg');
+		background-image: url({{url('imagenes/conocenos/blog/backBlog.jpg')}});
 	}
 	.fondoPanelIzq{
 		background-color: #545454;
