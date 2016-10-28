@@ -158,12 +158,13 @@ Ventana Educativa / Conocenos
 </div>
 @include('viewConocenos.pie')
 <script>
-	$('#barraNavPie').removeClass('posicionPie medidasPie');
+	$('#barraNavPie').removeClass('posicionPie');
+	$('#barraNavPie').removeClass('medidasPie');
 	$('#barraNavPie').css('top','-30px');
 	$('.textoBlanco').css('color','white');
 	$('#barraNavPie').css('color','white');
 	$('#cuerpoHTML').css('margin-bottom','-50px');
-	$(document).ready(function(){
+	$(window).load(function(){
 		if($(window).width() > 767){
 			var alturaPrincipal = $('#filaPrincipal').css('height');
 			$('#panelIzquierdo').css('height',alturaPrincipal);
