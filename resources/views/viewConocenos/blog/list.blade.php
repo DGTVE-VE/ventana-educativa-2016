@@ -33,7 +33,7 @@ Ventana Educativa / Conocenos
 		box-shadow: 9px 9px 0px -5px rgba(0,0,0,1);
 	}
 </style>
-<div class="menuBlog"> 
+<div class="menuBlog">
     <a href="{{url('conocenos')}}" class="text-center">
         <h4 class="glyphicon glyphicon-home" style="color: white;"></h4><br/>
     </a>
@@ -63,7 +63,7 @@ Ventana Educativa / Conocenos
                     </a>
 				</div>
 				<div class="col-xs-12 col-sm-12 col-md-10 col-md-offset-1">
-					<h3> {{$colaboradores[$blog->colaborador_id]->nombre}}</h3>
+					<h3> {{ App\Model\Conocenos\Users::whereid($blog->colaborador_id)->first()->name}}</h3>
                     {!!substr($blog->cuerpo, 0, 400)!!}...
 				</div>
 				<div class="col-xs-12 col-sm-12 col-md-10 col-md-offset-1">
@@ -77,7 +77,7 @@ Ventana Educativa / Conocenos
 			</div>
             @endforeach
             {!! $blogs->render() !!}
-        </div>   
+        </div>
         <div class="col-xs-12 col-sm-5 col-md-4 col-md-offset-1 fondoPanelIzq">
 			<div class="col-xs-12 col-sm-12 col-md-12" style="padding:10px;"></div>
 			<div class="col-xs-12 col-sm-12 col-md-10 col-md-offset-1">
@@ -126,7 +126,7 @@ Ventana Educativa / Conocenos
 				<div class="col-xs-12 col-sm-12 col-md-12">
 				</div>
 				@endforeach
-				
+
             </div>
 			<div class="col-xs-12 col-sm-12 col-md-12">
 			</div>
@@ -142,7 +142,7 @@ Ventana Educativa / Conocenos
                 </h4>
             </div>
             @endif
-            @endif 
+            @endif
         </div>
         <!--fin blog list-->
 
