@@ -145,19 +145,19 @@ Ventana Educativa / Conocenos
             @endif
         </div>
         <!--fin blog list-->
-
+		{{--@include('viewConocenos.pie')--}}
     </div>
-	@include('viewConocenos.pie')
+	<div class="row"style="background-color:black; margin:0;">
+		@include('viewConocenos.pie')
+	</div>
+	
 <script>
-	$('#barraNavPie').removeClass('posicionPie');
-	$('#barraNavPie').removeClass('medidasPie');
-	$('#barraNavPie').css('top','-30px');
+	$('#barraNavPie').removeClass('navbar navbar-inverse posicionPie medidasPie');
 	$('.textoBlanco').css('color','white');
 	$('#barraNavPie').css('color','white');
-	$('#cuerpoHTML').css('margin-bottom','-50px');
 	$(window).load(function(){
 		if($(window).width() > 767){
-			var alturaPrincipal = $('#cuerpoHTML').css('height');
+			var alturaPrincipal = $('#filaPrincipal').css('height');
 			$('#panelIzquierdo').css('height',alturaPrincipal);
 		}
 	});
