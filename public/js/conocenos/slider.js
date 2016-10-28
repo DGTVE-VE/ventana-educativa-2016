@@ -139,7 +139,7 @@ $('#divTriangulo').css({transform:'scale(0.1, 0.1)'});
 			}
 		}
 		
-//		<!--	***********	Activar parallax fondo	*************	-->
+		/*	***********	Activar parallax fondo	*************   */
 		var scene = document.getElementById('scene');
 		var parallax = new Parallax(scene);
 		var scene = document.getElementById('scene2');

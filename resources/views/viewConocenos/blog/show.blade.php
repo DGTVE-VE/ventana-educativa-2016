@@ -17,13 +17,12 @@ Ventana Educativa / Conocenos
 	}
 	.fondoPanelIzq{
 		background-color: #545454;
-		min-height:100%;
 		color: white;
 	}
-	h4 > a{
+	p > a{
 		color: white;
 	}
-	h4 > a:visited{
+	p > a:visited{
 		color: white;
 	}
 	.fondoBlanco{
@@ -38,11 +37,13 @@ Ventana Educativa / Conocenos
         <h4 class="glyphicon glyphicon-home" style="color: white;"></h4><br/>
     </a>
 </div>
-<div class="row fondoBlog">
+<div id="filaPrincipal" class="row fondoBlog">
     <div class='col-xs-11 col-sm-7 col-md-6 col-md-offset-1 txtBlogRed'>
 		<div class="col-xs-12 col-sm-12 col-md-12" style="padding:50px;"></div>
 		<div class="col-xs-12 col-sm-12 col-md-12 fondoBlanco">
-			<div class="col-xs-10 col-sm-10 col-md-12 col-xs-offset-1 col-sm-offset-1"><img src="{{url ($blog->imagen)}}" class="img-responsive center-block"></div>                
+			<div class="col-xs-10 col-sm-10 col-md-12 col-xs-offset-1 col-sm-offset-1">
+				<img src="{{url ($blog->imagen)}}" class="img-responsive center-block">
+			</div>
 			<h3 class="text-center"> {{$blog->titulo}}</h3>
 			<?php
 			$dt = new DateTime($blog->created_at);
@@ -77,8 +78,9 @@ Ventana Educativa / Conocenos
 				@endforeach 
 			</div>
 		</div>
+		<div class="col-xs-12 col-sm-12 col-md-12" style="padding:30px;"></div>
     </div>
-	<div class="col-xs-12 col-sm-5 col-md-4 col-md-offset-1 fondoPanelIzq">
+	<div id="panelIzquierdo" class="col-xs-12 col-sm-5 col-md-4 col-md-offset-1 fondoPanelIzq">
 		<div class='col-md-12' style="padding:50px;"></div>
 		<div class="col-md-10 col-md-offset-1">
 			<div class="col-md-12">
@@ -96,11 +98,11 @@ Ventana Educativa / Conocenos
 			{{--*/ $i=1; /*--}}
 			@foreach ($leidos as $leido)
 			<div class="col-xs-2 col-sm-2 col-md-2">
-				<h1> <strong>{{ $i++ }} </strong></h1>
+				<h2> <strong>{{ $i++ }} </strong></h2>
 			</div>
 			<div class="col-xs-10 col-sm-10 col-md-10">
 				{{--*/ $ligaEntrada = 'conocenos/blog/'.$leido->id; /*--}}
-				<h4> <a href="{{url($ligaEntrada)}}"> {{$leido->titulo}}</a> </h4>
+				<p> <a href="{{url($ligaEntrada)}}"> {{$leido->titulo}}</a> </p>
 			</div>
 			<div class="col-xs-12 col-sm-12 col-md-12">
 			</div>
@@ -111,11 +113,11 @@ Ventana Educativa / Conocenos
 			{{--*/ $i=1; /*--}}
 			@foreach ($recientes as $reciente)
 			<div class="col-xs-2 col-sm-2 col-md-2">
-				<h1> <strong>{{ $i++ }} </strong></h1>
+				<h2> <strong>{{ $i++ }} </strong></h2>
 			</div>
 			<div class="col-xs-10 col-sm-10 col-md-10">
 				{{--*/ $ligaEntrada = 'conocenos/blog/'.$reciente->id; /*--}}
-				<h4> <a href="{{url($ligaEntrada)}}"> {{$reciente->titulo}}</a> </h4>
+				<p> <a href="{{url($ligaEntrada)}}"> {{$reciente->titulo}}</a> </p>
 			</div>
 			<div class="col-xs-12 col-sm-12 col-md-12">
 			</div>
@@ -130,7 +132,7 @@ Ventana Educativa / Conocenos
 			</div>
 			<div class="col-xs-10 col-sm-10 col-md-10">
 				{{--*/ $ligaEntrada = 'conocenos/blog/'.$comentado->id; /*--}}
-				<h4> <a href="{{url($ligaEntrada)}}"> {{$comentado->titulo}}</a> </h4>
+				<p> <a href="{{url($ligaEntrada)}}"> {{$comentado->titulo}}</a> </p>
 			</div>
 			<div class="col-xs-12 col-sm-12 col-md-12">
 			</div>
@@ -156,9 +158,17 @@ Ventana Educativa / Conocenos
 </div>
 @include('viewConocenos.pie')
 <script>
-	$('#barraNavPie').removeClass('posicionPie');
-	$('#barraNavPie').css('bottom','-20px');
+	$('#barraNavPie').removeClass('posicionPie medidasPie');
+	$('#barraNavPie').css('top','-30px');
 	$('.textoBlanco').css('color','white');
+	$('#barraNavPie').css('color','white');
+	$('#cuerpoHTML').css('margin-bottom','-50px');
+	$(document).ready(function(){
+		if($(window).width() > 767){
+			var alturaPrincipal = $('#filaPrincipal').css('height');
+			$('#panelIzquierdo').css('height',alturaPrincipal);
+		}
+	});
 </script>
 @endsection
 <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
