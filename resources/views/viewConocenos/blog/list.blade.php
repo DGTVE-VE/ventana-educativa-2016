@@ -81,7 +81,9 @@ Ventana Educativa / Conocenos
         <div id="panelIzquierdo" class="col-xs-12 col-sm-5 col-md-4 col-md-offset-1 fondoPanelIzq">
 			<div class="col-xs-12 col-sm-12 col-md-12" style="padding:10px;"></div>
 			<div class="col-xs-12 col-sm-12 col-md-10 col-md-offset-1">
+                            <br><br>
 				<div class="col-xs-12 col-sm-12 col-md-12">
+                                    <hr>
 					<h3><em> lo más leído </em></h3>
 				</div>
 				{{--*/ $i=1; /*--}}
@@ -94,6 +96,7 @@ Ventana Educativa / Conocenos
 					<h4> <a href="{{url($ligaEntrada)}}"> {{$leido->titulo}}</a> </h4>
 				</div>
 				<div class="col-xs-12 col-sm-12 col-md-12">
+                                    <hr>
 				</div>
 				@endforeach
 				<div class="col-xs-12 col-sm-12 col-md-12">
@@ -109,6 +112,7 @@ Ventana Educativa / Conocenos
 					<h4> <a href="{{url($ligaEntrada)}}"> {{$reciente->titulo}}</a> </h4>
 				</div>
 				<div class="col-xs-12 col-sm-12 col-md-12">
+                                    <hr>
 				</div>
 				@endforeach
 				<div class="col-xs-12 col-sm-12 col-md-12">
@@ -124,6 +128,7 @@ Ventana Educativa / Conocenos
 					<h4> <a href="{{url($ligaEntrada)}}"> {{$comentado->titulo}}</a> </h4>
 				</div>
 				<div class="col-xs-12 col-sm-12 col-md-12">
+                                    <hr>
 				</div>
 				@endforeach
 
@@ -137,7 +142,7 @@ Ventana Educativa / Conocenos
             <div class="col-xs-10 col-sm-10 panel-heading blogPanel col-md-10 col-md-offset-1 text-center">
                 <h4 class="panel-title">
                     <a href="{{url('conocenos/blog/create')}}">
-                        Agregar publicación
+                        agregar publicación
                     </a>
                 </h4>
             </div>
