@@ -2,7 +2,7 @@ $('.imgLogo').attr('src','imagenes/biblioteca/imgMenu/ventanaEducativa.png');
 $('.appsLogo').attr('src','imagenes/biblioteca/imgMenu/menu.png');
 $('#buscar').css('display', 'none');
 $('#iconoBuscar').css('display', 'none');
-if($(window).width()>'1599'){
+if($(window).width()>'1799'){
 	$('#navegacionVentana').css('height', '85px');
 	$('#btnIngresa').addClass('btn-lg');
 }else{
