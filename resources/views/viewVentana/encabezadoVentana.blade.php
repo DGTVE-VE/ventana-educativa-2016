@@ -110,7 +110,7 @@
 
                         </div>
                         <ul id="menuVentanaRegistro" class="dropdown-menu fondoRegistro col-xs-12">
-                            <li class="panel-body">
+                            <li id="cuerpoPanel" class="panel-body">
                                 <div class="row">
                                     <div class="col-lg-12 col-md-12 bajaRegistro">
                                         @if (Auth::guest ())

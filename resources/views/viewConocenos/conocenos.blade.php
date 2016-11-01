@@ -3,7 +3,7 @@ Conocenos
 @stop
 @extends('indexConocenos')
 @section('menuConocenos')
-@include('viewVentana.encabezadoVentana')
+@include('viewConocenos.encabezado')
 @endsection
 @section('cuerpoConocenos')
 @include('viewConocenos.cuerpo')

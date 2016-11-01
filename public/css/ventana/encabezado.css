@@ -10,8 +10,9 @@
 .block{
 	display: block;
 }
-.colorBlanco{
-	color: white;
+
+.colorBlanco, a.colorBlanco, a.colorBlanco:visited{
+	color: white; font-size:15px;
 }
 .fuenteRojoBold{
 	color: red; font-weight: bold;
