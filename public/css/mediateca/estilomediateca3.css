@@ -209,11 +209,6 @@
 }
 
 /* Estilos para iconos redes sociales */
-.derechaSociales{
-    position: fixed;
-    right: 5%;
-    bottom: 5%;
-}
 .sociales{
 	list-style-type: none;
 }
@@ -224,7 +219,7 @@
    .derechaSociales{
        position: fixed;
        right: 5%;
-       bottom: 35%;
+       top: 40%;
    }
 }
 @media(max-width:991px){

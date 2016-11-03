@@ -22,8 +22,7 @@
 /* Efectos para iconos redes sociales */
 
 .derechaSociales{
-    float: right;
-
+	position: fixed; right: 50px; top:80%;
 }
 .sociales{
     list-style: none;

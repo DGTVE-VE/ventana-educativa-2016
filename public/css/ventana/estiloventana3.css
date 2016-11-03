@@ -3,7 +3,16 @@
 .skin3.bottom.tabs_wrapper{position:relative;overflow:hidden;border:none;border-bottom:none;}
 .skin3.bottom .tabs_header{overflow:hidden;border-bottom:2px solid rgba(0, 0, 0, 0.2);padding-bottom:1px;}
 .skin3.bottom .tab_header_item.tab_selected{background:none;}
-.derechaSociales{float:right;}
+@media(min-width:992px){
+	.derechaSociales{position: fixed; right: 5%; top:40%;}
+}
+@media(max-width:991px){
+	li{float: left;}
+	.derechaSociales{ position: fixed; right: 5%; bottom: 5%;}
+	.padRight{
+      padding-right:15px;
+    }
+}
 .sociales{list-style:none;}
 .cambiacolorredesSociales{color:#fff;}
 #ct:hover{color:#00B6F1;}

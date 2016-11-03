@@ -73,7 +73,7 @@
         <div class="col-md-1 col-lg-1 bandaInferior">
         </div>
 
-        <div class="col-md-1 col-lg-1 derechaSociales padredesSociales">
+        <div class="derechaSociales">
             <ul class="sociales">
                 <li><a href="https://twitter.com/tveducativamx" target="_blank" class="cambiacolorredesSociales"><span><i class="fa fa-twitter fa-2x " id="ct"></i></span></a></li><br/>
                 <li><a href="https://www.facebook.com/TvEducativaMx" target="_blank" class="cambiacolorredesSociales"><span><i class="fa fa-facebook fa-2x" id="cf"></i></span></a></li><br/>
@@ -146,11 +146,11 @@
                     </td>
                 </tr>
             </table>
-            <div class="derechaSociales redesSocialesCh">
+            <div class="derechaSociales">
                 <ul class="sociales">
-                    <li><a href="https://twitter.com/tveducativamx" target="_blank" class="cambiacolorredesSociales"><span><i class="fa fa-twitter fa-2x " id="ct"></i></span></a></li><br/>
-                    <li><a href="https://www.facebook.com/TvEducativaMx" target="_blank" class="cambiacolorredesSociales"><span><i class="fa fa-facebook fa-2x" id="cf"></i></span></a></li><br/>
-                    <li><a href="https://www.youtube.com/user/tveducativamx?feature=sub_widget_1" target="_blank" class="cambiacolorredesSociales"><span><i class="fa fa-youtube-play fa-2x" id="cy"></i></span></a></li>
+                    <li><a href="https://twitter.com/tveducativamx" target="_blank" class="cambiacolorredesSociales"><span class="padRight"><i class="fa fa-twitter fa-2x " id="ct"></i></span></a></li>
+                    <li><a href="https://www.facebook.com/TvEducativaMx" target="_blank" class="cambiacolorredesSociales"><span class="padRight"><i class="fa fa-facebook fa-2x" id="cf"></i></span></a></li>
+                    <li><a href="https://www.youtube.com/user/tveducativamx?feature=sub_widget_1" target="_blank" class="cambiacolorredesSociales"><span class="padRight"><i class="fa fa-youtube-play fa-2x" id="cy"></i></span></a></li>
                 </ul>
             </div>
         </div>
