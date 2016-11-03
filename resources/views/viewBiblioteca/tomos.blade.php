@@ -53,16 +53,21 @@
 					</div>
 			@endforeach
 		@if($i===0)
-			<div class="row posiciona">
-				<div class="textoEstante text-uppercase" style="color:black;"> NO HAY BIBLIOTECAS PARA ESTA CLASIFICACI&#211;N </div>
-			</div>
+			<div class="textoEstante text-uppercase" style="color:black;"> NO HAY BIBLIOTECAS PARA ESTA CLASIFICACI&#211;N </div>
+			<script>
+				$(document.body).addClass('backCover');
+				$(document.body).removeClass('tamBack');
+			</script>
 		@else
 			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 posiciona">
 				<img src="{{ asset('imagenes/biblioteca/tomos/plecaMadera1.jpg') }}" class="imgMadera"/>
 				<div class="textoEstante estanteSuperior text-uppercase"><img src="{{asset($imagenCat)}}" class="letrero"></div>
 			</div>
+			<script>
+				$(document.body).addClass('tamBack');
+				$(document.body).removeClass('backCover');
+			</script>
 		@endif
 		</div>
 	</div>
-</div>
 @endsection

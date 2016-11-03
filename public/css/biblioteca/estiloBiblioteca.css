@@ -153,3 +153,16 @@ body { margin: 0; }
   background: rgba(135,78,161,.6);
 }
 
+@media(max-width: 991px){
+	.tamBack{
+		background-size: contain;
+	}
+}
+@media(min-width: 992px){
+	.tamBack{
+		background-size: cover;
+	}
+}
+.backCover{
+	background-size: cover;
+}

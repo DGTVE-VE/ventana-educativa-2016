@@ -43,22 +43,13 @@ and open the template in the editor.
         <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 
         @yield ('scripts')
-	<style>
-		@media(max-width: 991px){
+		<style>
 			.backBody{
 				background-image:url('{{ asset('imagenes/biblioteca/back_biblioteca1.jpg') }}');
-				background-size: contain;
 			}
-		}
-		@media(min-width: 992px){
-			.backBody{
-				background-image:url('{{ asset('imagenes/biblioteca/back_biblioteca1.jpg') }}');
-				background-size: cover;
-			}
-		}
-	</style>
+		</style>
     </head>
-    <body class="backBody">     
+    <body class="backBody tamBack">     
         <header>
             @yield('menuBiblioteca')
         </header>
