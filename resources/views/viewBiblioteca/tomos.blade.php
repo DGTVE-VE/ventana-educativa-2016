@@ -25,19 +25,19 @@
 				@if(($item % 2 === 0) && $item!=0)
 					<div class="visible-xs-block col-xs-12 posiciona">
 						<img src="{{ asset('imagenes/biblioteca/tomos/plecaMadera1.jpg') }}" class="imgMadera"/>
-						<div class="textoEstante estanteSuperior text-uppercase"> <img src="{{asset($imagenCat)}}"style="width:18%;"></div>
+						<div class="textoEstante estanteSuperior text-uppercase"> <img src="{{asset($imagenCat)}}" class="letrero"></div>
 					</div>
 				@endif
 				@if(($item % 4 === 0) && $item!=0)
 					<div class="visible-sm-block col-sm-12 posiciona">
 						<img src="{{ asset('imagenes/biblioteca/tomos/plecaMadera1.jpg') }}" class="imgMadera"/>
-						<div class="textoEstante estanteSuperior text-uppercase"> <img src="{{asset($imagenCat)}}"style="width:18%;"></div>
+						<div class="textoEstante estanteSuperior text-uppercase"> <img src="{{asset($imagenCat)}}" class="letrero"></div>
 					</div>
 				@endif
 				@if(($item % 9 === 0) && $item!=0)
 					<div class="visible-md-block visible-lg-block col-md-12 posiciona">
 						<img src="{{ asset('imagenes/biblioteca/tomos/plecaMadera1.jpg') }}" class="imgMadera"/>
-						<div class="textoEstante estanteSuperior text-uppercase"> <img src="{{asset($imagenCat)}}"style="width:18%;"></div>
+						<div class="textoEstante estanteSuperior text-uppercase"> <img src="{{asset($imagenCat)}}" class="letrero"></div>
 					</div>
 				@endif
 				@if($item % 9 === 0)
@@ -59,7 +59,7 @@
 		@else
 			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 posiciona">
 				<img src="{{ asset('imagenes/biblioteca/tomos/plecaMadera1.jpg') }}" class="imgMadera"/>
-				<div class="textoEstante estanteInferior text-uppercase"><img src="{{asset($imagenCat)}}"style="width:18%;"></div>
+				<div class="textoEstante estanteSuperior text-uppercase"><img src="{{asset($imagenCat)}}" class="letrero"></div>
 			</div>
 		@endif
 		</div>

@@ -21,10 +21,30 @@
 	.textoEstante{
 		position: absolute;
 		left: 0;
+		top:1%;
 		width: 100%;
 		text-align: center;
 		font-size: 18px;
 		color:white;
+	}
+	@media(max-width:767px){
+		.textoEstante{
+			top:-2px;
+		}
+		.letrero{
+			width:110px;
+		}
+		.imgMadera{
+			height:35px;
+		}
+	}
+	@media(min-width:768px){
+		.textoEstante{
+			top:10%;
+		}
+		.letrero{
+			width:18%;
+		}
 	}
 	.estanteSuperior{
 		bottom: 4%;
