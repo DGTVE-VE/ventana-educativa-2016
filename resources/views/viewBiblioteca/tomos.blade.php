@@ -22,12 +22,6 @@
     <div class="col-xs-10 col-xs-offset-1 col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1 posiciona">
 		<?php $i=0; ?>
 			@foreach ($tomos as $item => $tomo)
-				@if($item % 9 === 0)
-					<?php $i++; ?>
-					<div class="row posiciona">
-						<div class="hidden-xs hidden-sm col-md-2 contenedor" id="columnaMargen{{$i}}">
-						</div>
-				@endif
 				@if(($item % 2 === 0) && $item!=0)
 					<div class="visible-xs-block col-xs-12 posiciona">
 						<img src="{{ asset('imagenes/biblioteca/tomos/plecaMadera1.jpg') }}" class="imgMadera"/>
@@ -40,30 +34,35 @@
 						<div class="textoEstante estanteSuperior text-uppercase"> <img src="{{asset($imagenCat)}}"style="width:18%;"></div>
 					</div>
 				@endif
+				@if(($item % 9 === 0) && $item!=0)
+					<div class="visible-md-block visible-lg-block col-md-12 posiciona">
+						<img src="{{ asset('imagenes/biblioteca/tomos/plecaMadera1.jpg') }}" class="imgMadera"/>
+						<div class="textoEstante estanteSuperior text-uppercase"> <img src="{{asset($imagenCat)}}"style="width:18%;"></div>
+					</div>
+				@endif
+				@if($item % 9 === 0)
+					<?php $i++; ?>
+						<div class="col-md-1 contenedor" id="columnaMargen{{$i}}">
+						</div>
+				@endif
 					<div id="contenedor{{$i}}{{$item}}" class="col-xs-3 col-sm-2 col-md-1 col-lg-1 contenedor" onmouseenter="muestraDescripcion({{$i}},{{$item}})" onmouseleave="ocultaDescripcion({{$i}},{{$item}})">
 						<a id="ligaBiblioteca{{$i}}{{$item}}" href="{{$tomo->link_consulta}}" class="textoLigaBiblio" target="_blank">
                         <img src="{{ asset('imagenes/biblioteca/tomos/ir_biblioteca.png')}}" alt="Ir a la Biblioteca"></a>
 						<img id="imagenLomo{{$i}}" src="{{url($tomo->url_tomo)}}" class="img-responsive imagenLomo" alt="...">
 						<img id="descripcion{{$i}}{{$item}}" src="{{url($tomo->url_descripcion)}}" class="img-responsive imagenDescribe contenedor ocultaImgDescribe" alt="...">
 					</div>
-				@if(($item+1) % 9 === 0)
-						<img src="{{ asset('imagenes/biblioteca/tomos/plecaMadera1.jpg') }}" class="hidden-xs imgMadera"/>
-						<div class="textoEstante estanteSuperior text-uppercase">
-							<img src="{{asset($imagenCat)}}" style="width:18%;"/>
-						</div>
-					</div>
-
-				@endif
 			@endforeach
-		</div>
 		@if($i===0)
 			<div class="row posiciona">
 				<div class="textoEstante text-uppercase" style="color:black;"> NO HAY BIBLIOTECAS PARA ESTA CLASIFICACI&#211;N </div>
 			</div>
 		@else
-			<img src="{{ asset('imagenes/biblioteca/tomos/plecaMadera1.jpg') }}" class="imgMadera"/>
-			<div class="textoEstante estanteInferior text-uppercase"><img src="{{asset($imagenCat)}}"style="width:18%;"></div>
+			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 posiciona">
+				<img src="{{ asset('imagenes/biblioteca/tomos/plecaMadera1.jpg') }}" class="imgMadera"/>
+				<div class="textoEstante estanteInferior text-uppercase"><img src="{{asset($imagenCat)}}"style="width:18%;"></div>
+			</div>
 		@endif
+		</div>
 	</div>
 </div>
 @endsection
