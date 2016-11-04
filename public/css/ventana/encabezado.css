@@ -26,3 +26,66 @@
 .mensaje{
 	color: white; font-size: 9px;
 }
+
+.ocultaImgApp{
+    visibility:hidden;
+    width:0px;
+    height:0px;
+}
+.iconoGde{
+    color:white;
+    font-size:14px;
+    cursor:pointer;
+}
+.margenNav{
+    margin-top:0px; margin-bottom:0px;
+}
+.iconoApp{
+    width:30px; height:20px;
+}
+@media(min-width:1800px){
+    .iconoApp{
+        width:60px; height:40px;
+    }
+}
+#mueveTablaApps{
+    z-index:15;
+}
+
+.menuVentanaApps{background:transparent; border:none;}
+.mueveTabla{
+	background:rgba(0, 0, 0, .3) !important;
+	box-shadow: 5px 5px 1px rgba(0, 0, 0, .2);
+}
+
+@media(max-width:668px){
+    .mueveTabla{
+        top:100px;
+     }
+    .bajaRegistro{
+        top:10px;
+    }
+}
+@media(max-width:767px){
+    .mueveTabla{
+	position: fixed; right:2%;
+    }
+    .paddDropdown{
+        margin-right:30px;
+   }
+}
+@media(min-width:768px){
+    .mueveTabla{
+	position: fixed; right:2%;
+    }
+    .paddDropdown{
+        margin-right:30px; margin-top:6%;
+    }
+}
+.backNegro{
+    background-color:black;
+}
+
+.bordeBoton{
+    border-color:black;
+}

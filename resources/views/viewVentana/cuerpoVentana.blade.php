@@ -3,7 +3,7 @@
 <script type="text/javascript" src="{{url('js/ventana/ventanaCuerpo.js')}}"></script>
 <div class="container-fluid">
     <div class="row">        
-        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 pad30px">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 		@if($errors->any())
 			<div id='mensaje-error' class="alert alert-danger msgError">
 				<h4 class="pull-right">{{$errors->first()}} Debe activar su cuenta</h4>

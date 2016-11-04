@@ -9,22 +9,13 @@ Cultura
     $('#buscar').css('display', 'none');
     $('#iconoBuscar').css('display', 'none');
     $('#navegacionVentana').css('height', '55px');
+	$('#navegacionVentana').css('z-index', '5');
     $('.imgLogo').attr('src', '{{url("imagenes/cultura/imgMenu/ventanaEducativa.png")}}');
     $('.appsLogo').attr('src', '{{url("imagenes/cultura/imgMenu/menu.png")}}');
     $('#img-usuario').attr('src', '{{url("imagenes/cultura/imgMenu/registro.png")}}');
-//		$(window).scroll(function () {
-//			var scroll_v = this.pageYOffset;
-//			if (scroll_v > 10) {
-//				$('#navegacionVentana').css('background', 'rgba(0, 0, 0, .3)');
-//			}
-//			if (scroll_v < 10) {
-//				$('#navegacionVentana').css('background', 'transparent');
-//			}
-//		});
 </script>        
 @endsection
 @section('cuerpoCultura')
-<div class="navbar"></div>
 <div class="container-fluid">
     <div class="row">
         <div class="col-md-4">
