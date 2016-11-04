@@ -1,9 +1,9 @@
 <link rel="stylesheet" type="text/css" href="{{url('css/red/seccionheader.css')}}">
 <!--	Incluir barra de navegación de ventana y ajuste de elementos	-->
 <link rel="stylesheet" type="text/css" href="{{url('css/mediateca/estilomediateca2.css')}}">
-<div class="altoDivMenu">
+<!--div class="altoDivMenu"-->
 	@include('viewVentana.encabezadoVentana')
-</div>
+<!--/div-->
 
 <script src="{{url('js/red/seccionheader.js')}}"></script>
 	<!--	**************************************	-->

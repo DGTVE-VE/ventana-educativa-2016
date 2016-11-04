@@ -14,7 +14,7 @@
         </div>
         <div class="collapse navbar-collapse" id="myNavbar">
             <ul class="nav navbar-nav navbar-right">
-                <li class="dropdown paddDropdown">
+                <li id="dropdownApps" class="dropdown paddDropdown">
 		            <div class="dropdown-toggle" data-toggle="dropdown">
                         {{ HTML::image('imagenes/ventana/encabezado/iconoApps.png','Diversas aplicaciones de contenido educativo',['class'=>'iconoApp appsLogo','id'=>'iconoManuApps'])}}
                     </div>
@@ -80,7 +80,7 @@
                         </table>
                     </ul>
 				</li>
-                <li class="dropdown">
+                <li id="dropdownSesion" class="dropdown">
 					<div class="divli dropdown-toggle" data-toggle="dropdown">
 						@if (Auth::guest())
 					  <button id="btnIngresa" type="button" class="btn btn-default" class="img-circle">Ingresar <span class="glyphicon glyphicon-log-in" aria-hidden="true"></span></button>
