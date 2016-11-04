@@ -40,7 +40,7 @@
 
                         </div>
                         <ul id="menuVentanaRegistro" class="dropdown-menu fondoRegistro">
-                            <li class="panel-body">
+                            <li class="panel-body col-xs-12 col-sm-12">
                                 <div class="row">
                                     <div class="col-lg-12 col-md-12">
                                         @if (Auth::guest ())
