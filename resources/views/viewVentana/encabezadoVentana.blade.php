@@ -3,7 +3,7 @@
 <nav id="navegacionVentana" class="navbar">
     <div class="container-fluid">
         <div class="navbar-header">
-          <button type="button" class="navbar-toggle bordeBoton" data-toggle="collapse" data-target="#myNavbar">
+          <button id="buttonColapse" type="button" class="navbar-toggle bordeBoton" data-toggle="collapse" data-target="#myNavbar">
             <span class="icon-bar backNegro"></span>
             <span class="icon-bar backNegro"></span>
             <span class="icon-bar backNegro"></span>

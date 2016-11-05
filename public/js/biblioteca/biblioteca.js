@@ -10,6 +10,7 @@ if($(window).width()>'1799'){
 }
 
 $('#navegacionVentana').addClass('fondoDegradadoMenuInicial');
+$('#navegacionVentana').css('z-index','3');
 $(window).scroll(function(){
 	var scroll_v = this.pageYOffset;
 	if(scroll_v > 10){

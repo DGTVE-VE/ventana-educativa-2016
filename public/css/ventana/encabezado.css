@@ -45,7 +45,10 @@
 }
 @media(min-width:1800px){
     .iconoApp{
-        width:60px; height:40px;
+        width:50px; height:30px;
+    }
+    #dropdownApps{
+        margin-right:50px;
     }
 }
 #mueveTablaApps{
