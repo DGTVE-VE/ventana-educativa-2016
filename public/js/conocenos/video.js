@@ -64,6 +64,7 @@ $(document).ready(function () {
 			$('#iconoManuApps').attr('src','imagenes/ventana/encabezado/logoNegro/iconoApps.png');
 			$('.hamburgerConocenos.is-closed .hamb-top, .hamburgerConocenos.is-closed .hamb-middle, .hamburgerConocenos.is-closed .hamb-bottom').css('background-color','#1a1a1a');
 			$('#scene').css('top','-50px');
+			$('#navegacionVentana').removeClass('navbar-inverse');
 		}
 		
 		function menuABlanco(){
@@ -71,6 +72,7 @@ $(document).ready(function () {
 			$('#iconoManuApps').attr('src','imagenes/ventana/encabezado/iconoApps.png');
 			$('.hamburgerConocenos.is-closed .hamb-top, .hamburgerConocenos.is-closed .hamb-middle, .hamburgerConocenos.is-closed .hamb-bottom').css('background-color','#f2f2f2');
 			$('#scene').css('top','50px');
+			$('#navegacionVentana').addClass('navbar-inverse');
 		}
 		
 	//	************	Activación de elemento fullPage (desplazamiento vertical) 	***********
