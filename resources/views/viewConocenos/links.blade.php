@@ -43,8 +43,8 @@
 </style>
 
 <!--	********* Incluir libreria flexslider	***************	-->
-<link rel="stylesheet" href="js/FlexSlider/flexslider.css" type="text/css" media="screen"/>
-<script src="js/FlexSlider/jquery.flexslider.js"></script>
+<link rel="stylesheet" href="js/librerias/FlexSlider/flexslider.css" type="text/css" media="screen"/>
+<script src="js/librerias/FlexSlider/jquery.flexslider.js"></script>
 <script>
 
 <!--	***********	Activar slider colaboradores	*************	-->

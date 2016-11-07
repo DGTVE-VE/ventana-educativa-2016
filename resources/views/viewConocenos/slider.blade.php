@@ -37,6 +37,6 @@
 		</div>
 
 	<!--	********* Incluir libreria parallax	***************	-->
-	<script src="js/parallaxCapas/deploy/parallax.js"></script>
+	<script src="js/librerias/parallaxCapas/deploy/parallax.js"></script>
 	<!--	********* Incluir código JS***************	-->
 	<script src="js/conocenos/slider.js"></script>
