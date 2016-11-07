@@ -25,7 +25,7 @@
 				</div>
 				<div class="imgBkgd padTop col-xs-12 col-sm-12 col-md-6 col-lg-6" style="background-image: url({{url('imagenes/ventana/conocenos/secciones/backIbero.jpg')}});">
 					<div id="trigger1" class="spacer s0"></div>
-					<div id="animateTxt1" class="box1 ">
+					<div id="animateTxt1" class="box1" style="position: relative; left:800px; top:100px;">
 						{{ HTML::image('imagenes/ventana/conocenos/secciones/iconoCanalIbero.png','Canal Iberoamericano', ['class'=>'image-responsive imgLogoSeccion', 'id'=>'imgLogoCanalIbero']) }}
 						{{ HTML::image('imagenes/ventana/conocenos/secciones/txtIbero.png','Canal Iberoamericano', ['class'=>'image-responsive imgTxtDescr', 'id'=>'imgLogoCanalIbero']) }}
 					</div>
@@ -42,7 +42,7 @@
 				</div>
 				<div class="imgBkgd padTop col-xs-12 col-sm-12 col-md-6 col-lg-6" style="background-image: url({{url('imagenes/ventana/conocenos/secciones/backRedmite.jpg')}});">
 					<div id="trigger2" class="spacer s0"></div>
-					<div id="animateTxt2" class="box1">
+					<div id="animateTxt2" class="box1" style="position: relative; left:800px; top:100px;">
 						{{ HTML::image('imagenes/ventana/conocenos/secciones/iconoRedmite.png','Canal Iberoamericano', ['class'=>'image-responsive imgLogoSeccion', 'id'=>'imgLogoCultura']) }}
 						{{ HTML::image('imagenes/ventana/conocenos/secciones/txtRedmite.png','Canal Iberoamericano', ['class'=>'image-responsive imgTxtDescr', 'id'=>'imgLogoCultura']) }}
 					</div>
@@ -60,7 +60,7 @@
 				</div>
 				<div class="imgBkgd padTop col-xs-12 col-sm-12 col-md-6 col-lg-6" style="background-image: url({{url('imagenes/ventana/conocenos/secciones/backBiblioteca.jpg')}});">
 					<div id="trigger3" class="spacer s0"></div>
-					<div id="animateTxt3" class="box1">
+					<div id="animateTxt3" class="box1" style="position: relative; left:800px; top:100px;">
 						{{ HTML::image('imagenes/ventana/conocenos/secciones/iconoBilbio.png','Canal Iberoamericano', ['class'=>'image-responsive imgLogoSeccion', 'id'=>'imgLogoCultura']) }}
 						{{ HTML::image('imagenes/ventana/conocenos/secciones/txtBiblioteca.png','Canal Iberoamericano', ['class'=>'image-responsive imgTxtDescr', 'id'=>'imgLogoCultura']) }}
 					</div>
@@ -78,7 +78,7 @@
 				</div>
 				<div class="imgBkgd padTop col-xs-12 col-sm-12 col-md-6 col-lg-6" style="background-image: url({{url('imagenes/ventana/conocenos/secciones/backSalud.jpg')}});">
 					<div id="trigger4" class="spacer s0"></div>
-					<div id="animateTxt4" class="box1">
+					<div id="animateTxt4" class="box1" style="position: relative; left:800px; top:100px;">
 						{{ HTML::image('imagenes/ventana/conocenos/secciones/iconoSalud.png','Canal Iberoamericano', ['class'=>'image-responsive imgLogoSeccion', 'id'=>'imgLogoCultura']) }}
 						{{ HTML::image('imagenes/ventana/conocenos/secciones/txtSalud.png','Canal Iberoamericano', ['class'=>'image-responsive imgTxtDescr', 'id'=>'imgLogoCultura']) }}
 					</div>
