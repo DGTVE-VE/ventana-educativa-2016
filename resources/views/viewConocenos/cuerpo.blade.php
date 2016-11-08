@@ -1,6 +1,7 @@
-<link rel="stylesheet" type="text/css" href="js/fullPage/jquery.fullPage.css"/>
-<script type="text/javascript" src="js/fullPage/vendors/scrolloverflow.min.js"></script>
-<script type="text/javascript" src="js/fullPage/jquery.fullPage.js"></script>
+	<script src="js/librerias/scrollmagic/uncompressed/ScrollMagic.js"></script>
+	<script src="js/librerias/scrollMagic/js/lib/greensock/TweenMax.min.js"></script>
+	<script src="js/librerias/scrollMagic/js/lib/greensock/plugins/animation.gsap.js" ></script>
+	<link rel="stylesheet" href="js/librerias/scrollMagic/css/examples.css" type="text/css">
 <link rel="stylesheet" type="text/css" href="css/red/animate.css"/>
 
 <div id="wrapperConocenos">
@@ -36,7 +37,7 @@
                 <div class="section fondo1">
                     @include('viewConocenos.vistaVideo')
                 </div>
-                <div id="seccionVariable" class="section">
+                <div id="seccionVariable" class="section" style="position: relative; top:0px;">
                     @include('viewConocenos.slider')
                 </div>
                 <div class="section fp-auto-height">

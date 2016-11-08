@@ -1,6 +1,6 @@
 ﻿<style>
     .posicionPie{
-		position: absolute;  bottom:-20px;
+		margin-bottom:0px;
 	}
 	.medidasPie{
 		color: white; height: 200px; z-index:1001; width:100%;

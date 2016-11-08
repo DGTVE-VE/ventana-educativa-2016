@@ -8,7 +8,7 @@
 <script src="{{url('js/biblioteca/tomos.js')}}"></script>
 @endsection
 @section('cuerpoBiblioteca')
-<div class="row padTop55px">
+<div class="row padTop5px">
     <div class="col-md-12">
     </div>
 </div>

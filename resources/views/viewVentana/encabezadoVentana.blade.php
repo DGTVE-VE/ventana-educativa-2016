@@ -80,7 +80,7 @@
                         </table>
                     </ul>
 				</li>
-                <li id="dropdownSesion" class="dropdown">
+                <li id="dropdownSesion" class="dropdown quitaMargenSup">
 					<div class="divli dropdown-toggle" data-toggle="dropdown">
 						@if (Auth::guest())
 					  <button id="btnIngresa" type="button" class="btn btn-default" class="img-circle">Ingresar <span class="glyphicon glyphicon-log-in" aria-hidden="true"></span></button>

@@ -70,7 +70,7 @@ $('#divTriangulo').css({transform:'scale(0.1, 0.1)'});
 						cambiaImgFondo(1);
 						cambiaEtiqueta(1);
 						$('#seccionVariable').removeClass('fp-auto-height');
-						$('#fullpage').fullpage.setFitToSection(true);
+						//$('#fullpage').fullpage.setFitToSection(true);
 					}
 					if(actual==2){
 						$('#divFigura').removeClass('opaco');
@@ -94,7 +94,7 @@ $('#divTriangulo').css({transform:'scale(0.1, 0.1)'});
 						cambiaImgFondo(2);
 						cambiaEtiqueta(2);
 						$('#seccionVariable').removeClass('fp-auto-height');
-						$('#fullpage').fullpage.setFitToSection(true);
+						//$('#fullpage').fullpage.setFitToSection(true);
 					}
 					if(actual==1){
 						$('#divFigura').removeClass('opaco');
@@ -117,7 +117,7 @@ $('#divTriangulo').css({transform:'scale(0.1, 0.1)'});
 					if(actual!=3){
 						cambiaImgFondo(3);
 						cambiaEtiqueta(3);
-						$('#fullpage').fullpage.setFitToSection(false);
+						//$('#fullpage').fullpage.setFitToSection(false);
 					}
 					if(actual==1 || actual==2){
 						$('#divFigura').removeClass('opaco');

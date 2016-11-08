@@ -10,28 +10,6 @@
 .alineaArriba{
      vertical-align:top;
 }
-.imgSEP{
-     margin-left: 10% !important;
-}
-.imgTVE{
-     margin-left: -9% !important;
-}
-.imgcsuca{
-     margin-left: -30% !important;
-}
-.imgceccsica{
-     margin-left: 30% !important;
-}
-.imgunah{
-     margin-left: 45% !important;
-}
-.imgmep{
-     margin-left: 75% !important;
-}
-.imgAmexid{
-     margin-left: 35% !important;
-     width:40% !important;
-}
 .logosepCh{
      width:60px; height:18px;
 }
@@ -52,4 +30,7 @@
 }
 .logoamexcidCh{
      width:60px; height:15px;
+}
+.centrarImg{
+    margin:auto;
 }

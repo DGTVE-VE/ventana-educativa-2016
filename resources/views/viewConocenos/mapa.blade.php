@@ -1,5 +1,5 @@
 <div class="row">
-    <div class="col-md-12 col-lg-12 col-sm-12 col-sx-12 contenedorMapa">
+    <div class="col-md-12 col-lg-12 col-sm-12 col-sx-12 contenedorMapa subirPie">
         <div class="triangulo"></div>
         <div class="text-center"><h4>CONTACTO</h4></div>
         <div class="col-md-12 col-lg-12 col-sm-12 col-sx-12">

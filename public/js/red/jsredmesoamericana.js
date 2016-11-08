@@ -192,7 +192,7 @@
 /*  -------------------------------------    Activar efecto parallax en scroll de imagenes en banner principal   -----------------------------------------------*/
 		function parallaxScroll(){
 			var scrolled = $(window).scrollTop();
-			if(is_chrome || is_safari){
+			if(is_chrome || is_safari || is_firefox){
 				$('.parallaxcarouselSliderHome').css('top',(0+(scrolled*0.3))+'px');
 			}
 			else{
@@ -202,10 +202,9 @@
 		/*  -------------------------------------    Detectar si navegador es chrome   -----------------------------------------------*/
 		var is_chrome = navigator.userAgent.toLowerCase().indexOf('chrome') > -1;
 		var is_safari = navigator.userAgent.toLowerCase().indexOf('safari') > -1;
-		if(is_chrome){
-			$('.imgSliderHome').css('top','-10'+'px');
-		}
-		else if(is_safari){
+		var is_firefox = navigator.userAgent.toLowerCase().indexOf('firefox') > -1;
+
+		if(is_chrome || is_safari || is_firefox){
 			$('.imgSliderHome').css('top','-10'+'px');
 		}
 		else{

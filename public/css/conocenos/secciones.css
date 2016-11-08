@@ -9,6 +9,12 @@
 		.imgBkgd{
 			 background-repeat:no-repeat; background-position:left top; background-size:cover;
 		}
+		.boxIzquierda{
+			position: relative; left:-800px; top:100px;
+		}
+		.boxDerecha{
+			position: relative; left:800px; top:100px;
+		}
 		@media(min-width:220px){
 			.imgLogoSeccion{
 				width:15%;
