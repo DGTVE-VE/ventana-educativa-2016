@@ -34,9 +34,9 @@ class AdminController extends Controller {
                                 ->with('videosTotalTelebachillerato', $videosTotalTelebachillerato)
                                 ->with('consultaAdministrador', $consultaAdministrador);
                 ;
-            } else {               
+            } else {
                return Redirect::to('acceso')->withInput()->withErrors(['¡Alerta!', 'Sin permiso para esta sección']);
-               
+
             }
         } else{
              return Redirect::back();

@@ -9,7 +9,8 @@
 			</div>
 			<div class="col-md-11">
 				<div class="col-md-1">
-					<img src="{{$colaborador->url_foto}}" alt="Fotografia Colaborador" class="img-responsive">
+					<img src="{{$colaborador->url_foto}}" alt=" " class="img-responsive">
+					<img src="{{ '../'.$colaborador->url_foto }}" alt=" " class="img-responsive">
 				</div>
 				<div class="col-md-3">
 					<h4>{{$colaborador->name}} {{$colaborador->a_paterno}} {{$colaborador->a_materno}}</h4>
@@ -51,4 +52,5 @@
 				},3000);
 			});
 		}
+
 	</script>
