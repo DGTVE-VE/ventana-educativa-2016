@@ -54,13 +54,14 @@
 #mueveTablaApps{
     z-index:15;
 }
-
+.imgLogo{
+    margin-top:10px;
+}
 .menuVentanaApps{background:transparent; border:none;}
 .mueveTabla{
 	background:rgba(0, 0, 0, .3) !important;
 	box-shadow: 5px 5px 1px rgba(0, 0, 0, .2);
 }
-
 @media(max-width:668px){
     .mueveTabla{
         top:100px;
@@ -76,13 +77,16 @@
     .paddDropdown{
         margin-right:30px;
    }
+    .quitaMargenSup{
+        margin-top:-10px;
+    }
 }
 @media(min-width:768px){
     .mueveTabla{
 	position: fixed; right:2%;
     }
     .paddDropdown{
-        margin-right:30px; margin-top:6%;
+        margin-right:30px; margin-top:10%;
     }
 }
 .backNegro{
@@ -91,4 +95,7 @@
 
 .bordeBoton{
     border-color:black;
+}
+.divli{
+    margin-top:10px;
 }
