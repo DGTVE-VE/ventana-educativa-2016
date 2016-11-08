@@ -10,7 +10,7 @@
 .alineaArriba{
      vertical-align:top;
 }
-.imgSEP{
+/*.imgSEP{
      margin-left: 10% !important;
 }
 .imgTVE{
@@ -31,7 +31,7 @@
 .imgAmexid{
      margin-left: 35% !important;
      width:40% !important;
-}
+}*/
 .logosepCh{
      width:60px; height:18px;
 }
@@ -52,4 +52,7 @@
 }
 .logoamexcidCh{
      width:60px; height:15px;
+}
+.centrarImg{
+    margin:auto;
 }
