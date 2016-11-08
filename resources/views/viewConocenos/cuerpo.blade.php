@@ -37,7 +37,7 @@
                 <div class="section fondo1">
                     @include('viewConocenos.vistaVideo')
                 </div>
-                <div id="seccionVariable" class="section">
+                <div id="seccionVariable" class="section" style="position: relative; top:0px;">
                     @include('viewConocenos.slider')
                 </div>
                 <div class="section fp-auto-height">

@@ -40,10 +40,10 @@
 				//.add(TweenMax.to($("#animateImg1"), 1, {css:{bezier:rutaIzquierda.salida},ease:Power1.easeInOut}))
 				;
 		// build scene
-	var scene = new ScrollMagic.Scene({triggerElement: "#trigger1", duration: 600, offset: -600})
+	var scene = new ScrollMagic.Scene({triggerElement: "#trigger1", duration: 500, offset: -900})
 					.setTween(tween)
 					.addTo(controller);
-	var scene = new ScrollMagic.Scene({triggerElement: "#trigger1", duration: 600, offset: -600})
+	var scene = new ScrollMagic.Scene({triggerElement: "#trigger1", duration: 500, offset: -900})
 					.setTween(tween2)
 					.addTo(controller);
 
@@ -51,10 +51,10 @@
 	var tween3 = new TimelineMax().add(TweenMax.to($("#animateImg2"), 1, {css:{bezier:rutaIzquierda.entrada},ease: Linear.easeNone}));
 	var tween4 = new TimelineMax().add(TweenMax.to($("#animateTxt2"), 1, {css:{bezier:rutaDerecha.entrada},ease: Linear.easeNone}));
 		// build scene
-	var scene = new ScrollMagic.Scene({triggerElement: "#trigger2", duration: 600, offset: -600})
+	var scene = new ScrollMagic.Scene({triggerElement: "#trigger2", duration: 400, offset: -900})
 					.setTween(tween3)
 					.addTo(controller);
-	var scene = new ScrollMagic.Scene({triggerElement: "#trigger2", duration: 600, offset: -600})
+	var scene = new ScrollMagic.Scene({triggerElement: "#trigger2", duration: 400, offset: -900})
 					.setTween(tween4)
 					.addTo(controller);
 
@@ -62,10 +62,10 @@
 	var tween5 = new TimelineMax().add(TweenMax.to($("#animateImg3"), 1, {css:{bezier:rutaIzquierda.entrada},ease: Linear.easeNone}));
 	var tween6 = new TimelineMax().add(TweenMax.to($("#animateTxt3"), 1, {css:{bezier:rutaDerecha.entrada},ease: Linear.easeNone}));
 		// build scene
-	var scene = new ScrollMagic.Scene({triggerElement: "#trigger3", duration: 600, offset: -600})
+	var scene = new ScrollMagic.Scene({triggerElement: "#trigger3", duration: 400, offset: -900})
 					.setTween(tween5)
 					.addTo(controller);
-	var scene = new ScrollMagic.Scene({triggerElement: "#trigger3", duration: 600, offset: -600})
+	var scene = new ScrollMagic.Scene({triggerElement: "#trigger3", duration: 400, offset: -900})
 					.setTween(tween6)
 					.addTo(controller);
 
@@ -73,9 +73,9 @@
 	var tween7 = new TimelineMax().add(TweenMax.to($("#animateImg4"), 1, {css:{bezier:rutaIzquierda.entrada},ease: Linear.easeNone}));
 	var tween8 = new TimelineMax().add(TweenMax.to($("#animateTxt4"), 1, {css:{bezier:rutaDerecha.entrada},ease: Linear.easeNone}));
 		// build scene
-	var scene = new ScrollMagic.Scene({triggerElement: "#trigger4", duration: 600, offset: -600})
+	var scene = new ScrollMagic.Scene({triggerElement: "#trigger4", duration: 400, offset: -900})
 					.setTween(tween7)
 					.addTo(controller);
-	var scene = new ScrollMagic.Scene({triggerElement: "#trigger4", duration: 600, offset: -600})
+	var scene = new ScrollMagic.Scene({triggerElement: "#trigger4", duration: 400, offset: -900})
 					.setTween(tween8)
 					.addTo(controller);
