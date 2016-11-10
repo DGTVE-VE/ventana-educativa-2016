@@ -41,7 +41,7 @@
     margin-top:0px; margin-bottom:0px;
 }
 .iconoApp{
-    width:30px;
+    width:30px;  margin-top:0px !important;
 }
 @media(min-width:1800px){
     .iconoApp{

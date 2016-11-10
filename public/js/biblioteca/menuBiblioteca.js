@@ -1,4 +1,5 @@
     $(document).ready(function () {
+		$('.iconoApp').css('margin-top','0px');
         var trigger = $('.hamburger-biblioteca'),
 			overlay = $('.overlay'),
 			isClosed = true, abierto = 'is-closed';
