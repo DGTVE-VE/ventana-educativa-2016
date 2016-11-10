@@ -1,15 +1,8 @@
 ﻿<!--nuevo encabezado-->
 <link rel="stylesheet" href="{{asset('css/mediateca/encabezado.css')}}"></style>
 <nav id="navegacionMediateca" class="navbar navbar-default navbar-fixed-top lo menuVentana" role="navigation">
-    <div class="container-fluid">
-        <div class="row">
             <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
                 <div class="navbar-header">
-                    <!--button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button-->
                     <a href="{{url('ventana_educativa')}}">
                         {{ HTML::image('imagenes/mediateca/encabezado/logoventana.png','Logo Ventana Educativa', ['class'=>'image-responsive imgLogo']) }}
                     </a>
@@ -25,9 +18,9 @@
                     {{ HTML::image('imagenes/mediateca/encabezado/tvecolor.png','Icono Apps',['class'=>'logoBarraTVE'])}}
                 </a>
             </div>
-            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-                <ul class="nav navbar-nav navbar-right">
-                    <li id="li-R" class="dropdown col-xs-6 col-sm-6 col-md-6" style="float:left;">
+            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 text-right">
+                <ul id="navRegistro" class="nav navbar-nav navbar-right">
+                    <li id="li-R" class="dropdown col-xs-12 col-sm-6 col-md-6">
                         <div class=" divli dropdown-toggle" data-toggle="dropdown">
                             @if (Auth::guest())
                             <button type="button" class="btn btn-default" class="img-circle">Ingresar <span class="glyphicon glyphicon-log-in" aria-hidden="true"></span></button>
@@ -127,8 +120,6 @@
                     </li>
                 </ul>
             </div>
-        </div>
-    </div>
 </nav>
 <script src="{{url('js/mediateca/encabezado.js')}}"></script>
 <script>

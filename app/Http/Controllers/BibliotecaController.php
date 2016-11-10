@@ -105,4 +105,37 @@ class BibliotecaController extends Controller {
         
         return $bibliotecaMenu;
     }
+	
+	public function cambiaAvatar() {
+
+      if (Input::file('image')->isValid()) {
+        $targetFile = 'uploaded/avatares/'.Auth::user()->id . '.png';
+        $this->resize(200, $targetFile, Input::file('image')->getRealPath());
+        print url($targetFile);
+      } else {
+        print 0;
+      }
+    }
+	
+	private function newImage ($originalFile){
+    $info = getimagesize($originalFile);
+    $mime = $info['mime'];
+    switch ($mime) {
+      case 'image/jpeg':
+      $img = imagecreatefromjpeg($originalFile);
+      break;
+
+      case 'image/png':
+      $img = imagecreatefrompng($originalFile);
+      break;
+
+      case 'image/gif':
+        $img = imagecreatefromgif($originalFile);
+        break;
+
+        default:
+        throw new Exception('Unknown image type.');
+      }
+      return $img;
+    }
 }

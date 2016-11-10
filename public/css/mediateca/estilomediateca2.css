@@ -390,7 +390,7 @@ and open the template in the editor.
     .liBuscar{margin-left: 95% !important}
     .has-feedback{margin-left:-15%;}
     .has-feedback:hover{margin-left:-50%;}
-    .menuVentana{padding: 2%;background-color:transparent;background:transparent;border-color:transparent;}
+    .menuVentana{background-color:transparent;background:transparent;border-color:transparent;}
     .collapseBarra{background-color:transparent;background:transparent !important;border-color:transparent;}
     .iconoApp{
         width:25px; height:25px;
@@ -407,19 +407,20 @@ and open the template in the editor.
     .menuVentanaApps{
         margin-top: -5% !important;
     }
+	.menuVentana{ padding-top:1%; }
     .imgLogo{
-        width: 100% \9;
-        max-width: 100%;
+        width: 60% \9;
+        max-width: 60%;
     }
 }
 @media (min-width: 1024px) { 
     .imgLogo{
-        width: 80% \9; /*Force IE10 and below to size SVG images correctly*/
-        max-width: 80%;
+        width: 75% \9; /*Force IE10 and below to size SVG images correctly*/
+        max-width: 75%;
     }   
     .has-feedback{margin-left:-115%;}
     .has-feedback:hover{margin-left:-150%;}
-    .menuVentana{padding: 2%;background-color:transparent;background:transparent;border-color:transparent;}
+    .menuVentana{background-color:transparent;background:transparent;border-color:transparent;}
     .collapseBarra{background-color:transparent;background:transparent !important;border-color:transparent;}
     .iconoApp{
         width:30px; height:30px;
@@ -442,7 +443,7 @@ and open the template in the editor.
     .liBuscar{margin-left: 365% !important}
     .has-feedback{margin-left:-115%;}
     .has-feedback:hover{margin-left:-150%;}
-    .menuVentana{padding:1% 3% 0 2%;background-color:transparent;background:transparent;border-color:transparent;}
+    .menuVentana{padding:1% 0% 1% 0%;background-color:transparent;background:transparent;border-color:transparent;}
     .collapseBarra{background-color:transparent;background:transparent !important;border-color:transparent;}
     liMenus{margin-top: 5%;}
     .iconoApp{margin-top: 15% !important;
@@ -470,7 +471,7 @@ and open the template in the editor.
     .liBuscar{margin-left: 365% !important}
     .has-feedback{margin-left:-115%;}
     .has-feedback:hover{margin-left:-150%;}
-    .menuVentana{padding:1% 3% 0 2%;background-color:transparent;background:transparent;border-color:transparent;}
+    .menuVentana{padding:1% 1% 0 1%;background-color:transparent;background:transparent;border-color:transparent;}
     .collapseBarra{background-color:transparent;background:transparent !important;border-color:transparent;}
     liMenus{margin-top: 5%;}
     .iconoApp{margin-top: 8% !important;

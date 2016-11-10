@@ -9,7 +9,7 @@
         font-size:14px;
         cursor:pointer;
     }
-
+    #colBotonSesion{padding-right:0px !important;}
     @media (min-width: 250px) {
         .logoBarraTVE{
             width: 33px;
@@ -71,6 +71,9 @@
             position: absolute; top:95px; left:95px; width:100px; height: 100px; z-index:0; visibility: hidden;
         }
     }
+	@media (max-width: 767px) {
+		#navRegistro{margin-right:0px !important; margin-top:5px !important;}
+	}
     @media (min-width: 768px) {
         .logoBarraTVE{
             width: 65px;

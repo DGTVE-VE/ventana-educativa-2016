@@ -30,6 +30,8 @@
         .altoDivMenu{
             height:55px;
         }
+	.paddDropdown{margin-top:7% !important;}
+        ul.navbar-right{margin-right:-45px;}
 	@media (max-width: 991px) { 
             .altoMenuRed{
                 height:57px;
