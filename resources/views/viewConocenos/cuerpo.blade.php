@@ -32,7 +32,7 @@
             <span class="hamb-bottom"></span>
         </button>
         <!--************** Dentro de este div va el contenido de la página *********************-->
-        <div class="container-fluid sinPaddingLateral">
+        <div class="container-fluid sinPaddingLateral quitaMargenInf">
             <div id="fullpage">
                 <div class="section fondo1">
                     @include('viewConocenos.vistaVideo')

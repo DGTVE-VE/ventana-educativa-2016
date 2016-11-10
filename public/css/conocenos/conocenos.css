@@ -500,3 +500,6 @@ a.before:hover:before,a.after:hover:after{
     margin-left: 18%;
     z-index:1031;
 }
+.quitaMargenInf{
+    margin-bottom:-25px;
+}
