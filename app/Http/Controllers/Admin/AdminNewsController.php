@@ -50,14 +50,15 @@ class AdminNewsController extends Controller
         $admin->titulo = $request->titulo;
 
         $admin->save();
+
         $id = $admin->id;
 
         $destinationPath = 'news/'.$id;
 
-        $imagen = $request->url_imagen->move($destinationPath);
+        $imagen = $request->url_imagen->move($destinationPath, $request->url_imagen->getClientOriginalName());
         $admin->url_imagen = $imagen;
 
-        $pdf = $request->url_pdf->move($destinationPath);
+        $pdf = $request->url_pdf->move($destinationPath, $request->url_pdf->getClientOriginalName());
         $admin->url_pdf = $pdf;
 
         $admin->url = $request->url;
