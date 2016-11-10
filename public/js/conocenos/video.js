@@ -1,25 +1,3 @@
-$(document).ready(function () {
-											/*		***************		Apartado reproducción de video. 		***************		 */
-	
-	//	************	Efecto de salto de la flecha 	***********
-		function mueveFlecha(dir){
-			if(dir=='abajo'){
-				tiempoEspera="400";
-				desplaza = "+=20px";
-				dir = 'arriba';
-			}
-			else{
-				tiempoEspera="1200";
-				desplaza = "-=20px";
-				dir = 'abajo';
-			}
-			$('#flechaBrinca').animate({ "top": desplaza }, "slow");
-			
-			setTimeout(function(){ mueveFlecha(dir); }, tiempoEspera);
-		}
-	
-		mueveFlecha('abajo');
-	
 		function cambiaImagenesArriba(imgEntrante, imgSaliente){
 			var imagenEntrante = '#' + imgEntrante;
 			var imagenSaliente = '#' + imgSaliente;
@@ -51,6 +29,38 @@ $(document).ready(function () {
 			}, 500);
 		}
 		
+		function siguienteImagen(){
+			if($('#textoProyectos').css('display') == 'block'){
+				cambiaImagenesArriba('textoObjetivos','textoProyectos');
+				return false;
+			}
+			else if($('#textoObjetivos').css('display') == 'block'){
+				cambiaImagenesArriba('botonPlay','textoObjetivos');
+				return false;
+			}
+		}
+$(document).ready(function () {
+											/*		***************		Apartado reproducción de video. 		***************		 */
+	
+	//	************	Efecto de salto de la flecha 	***********
+		function mueveFlecha(dir){
+			if(dir=='abajo'){
+				tiempoEspera="400";
+				desplaza = "+=20px";
+				dir = 'arriba';
+			}
+			else{
+				tiempoEspera="1200";
+				desplaza = "-=20px";
+				dir = 'abajo';
+			}
+			$('#flechaBrinca').animate({ "top": desplaza }, "slow");
+			
+			setTimeout(function(){ mueveFlecha(dir); }, tiempoEspera);
+		}
+	
+		mueveFlecha('abajo');
+	
 		function bajaImgProyectos(){
 			$('#textoProyectos').css('visibility','visible');
 			$('#textoProyectos').addClass('slideInDown');
@@ -73,9 +83,11 @@ $(document).ready(function () {
 			$('#scene').css('top','50px');
 		}
 		
+
 	//	************	Activación de elemento fullPage (desplazamiento vertical) 	***********
-		/*$('#fullpage').fullpage(
-			{navigation:true, scrollOverflow:false, loopTop:true, scrollBar: true,
+		ajusteActivado = true;
+		$('#fullpage').fullpage(
+			{navigation:false, scrollOverflow:false, loopTop:true, fitToSection: false, scrollBar: true,
 				onLeave: 
 				function(index, nextIndex, direction){
 					var leavingSection = $(this);
@@ -103,36 +115,53 @@ $(document).ready(function () {
 						}
 						else{
 							menuANegro();
-							$('#fullpage').fullpage.setFitToSection(false);
-							$('#fullpage').fullpage.setAutoScrolling(false);
+							//$('#fullpage').fullpage.setFitToSection(false);
+							//$('#fullpage').fullpage.setAutoScrolling(false);
+							//ajusteActivado = false;
 						}
 					}
 					else if(index== 4 && nextIndex == 3){
-						$('#fullpage').fullpage.setFitToSection(false);
+						//$('#fullpage').fullpage.setFitToSection(false);
 					}
 					else if(index== 3 && nextIndex == 2){
-						$('#fullpage').fullpage.setFitToSection(true);
+						if(ajusteActivado == false){
+							$('#fullpage').fullpage.setAutoScrolling(true);
+							ajusteActivado = true;
+							$('#fullPage').fullpage.moveTo(2);
+							//return false;
+						}
 					}
 					else if(index == 2 && nextIndex == 1){
 						menuABlanco();
-						$('#fullpage').fullpage.setAutoScrolling(true);
+						if(ajusteActivado == false){
+							$('#fullpage').fullpage.setAutoScrolling(true);
+							ajusteActivado = true;
+						}
 					}
 					else if(index== 3 && nextIndex == 4){
-						$('#fullpage').fullpage.setFitToSection(true);
+						//$('#fullpage').fullpage.setFitToSection(true);
 					}
 					else if(index== 2 && nextIndex == 3){
-						$('#fullpage').fullpage.setFitToSection(false);
+						if(ajusteActivado == true){
+							ajusteActivado = false;
+							$('#fullpage').fullpage.setAutoScrolling(false);
+							$('#fullPage').fullpage.moveTo(2);
+							return false;
+						}
+						
 					}
 					else if(index== 1 && nextIndex != 2 ){
 						menuANegro();
 						$('#fullpage').fullpage.setAutoScrolling(false);
+						ajusteActivado = false;
 					}
 					else if(index!= 2 && nextIndex == 1 ){
 						menuABlanco();
 						$('#fullpage').fullpage.setAutoScrolling(true);
+						ajusteActivado = true;
 					}
 				}
 			}
-		);*/
+		);
 		bajaImgProyectos();
 });

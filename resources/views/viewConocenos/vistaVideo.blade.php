@@ -1,3 +1,5 @@
+	<script src="js/librerias/fullPagejs/jquery.fullPage.js"></script>
+	<link rel="stylesheet" type="text/css" href="js/librerias/fullPagejs/jquery.fullPage.css"/>
 	<link rel="stylesheet" type="text/css" href="css/conocenos/video.css"/>
 	<script type="text/javascript" src="js/conocenos/video.js"></script>
 	<video data-keepplaying class="videoFondo" id="videoFondo" oncanplay="reproduceVideo()">
@@ -18,10 +20,11 @@
 			</div>
 		</div>
 		<div class="col-sm-12 col-md-12 col-lg-12"></div>
-		<div class="divFlechaBrinca col-sm-12 col-md-12 col-lg-12 text-center">
-			<img id="flechaBrinca" class="flechaBrinca" src="imagenes/educaplay/flechaDetalle.png" onclick="avanzaSeccion('2')"/>
+		<div class="divFlechaBrinca col-sm-12 col-md-12 col-lg-12 text-center" onclick="siguienteImagen()">
+			<img id="flechaBrinca" class="flechaBrinca" src="imagenes/educaplay/flechaDetalle.png"/>
 		</div>
 	</div>
+
 	<div class="modal fade" id="modalVideo" tabindex="-1" role="dialog" aria-labelledby="etiquetaModalVideo" data-backdrop="false">
 		<div class="modal-dialog modal-lg" role="document">
 			<div class="modal-content">
