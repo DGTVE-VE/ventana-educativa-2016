@@ -275,6 +275,8 @@
 		.done(function (msg) {
 			console.log('Colaboradores cargados: ');
 			$("#contenidoPrincipal").html(msg)
+			$(".container").html(msg)
+      console.log(msg);
 		});
 	}
     </script>

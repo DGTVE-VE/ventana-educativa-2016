@@ -195,7 +195,7 @@ Route::group(['middleware' => 'web'], function () {
 
 
 /* * **********************
- * 
+ *
  * TESTS
  */
 
@@ -230,4 +230,3 @@ Route::get('mail/test', function () {
     $result = $mailer->send($message);
     var_dump($result);
 });
-
