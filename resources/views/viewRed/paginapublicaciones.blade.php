@@ -41,9 +41,9 @@ Publicaciones
                             <div class="row">
                           @endif
 
-                            <div class="col-md-4 hvr-pulse-grow animated bounceIn">
+                            <div class="col-xs-12 col-sm-6 col-md-4 col-xl-3 hvr-pulse-grow animated bounceIn">
                                 <a href="{{url($publicaciones[$i]->url_descarga)}}"  target="_blank">
-                                    {{ HTML::image($publicaciones[$i]->imagen, $publicaciones[$i]->titulo, array('class'=>'image-responsive tamaho-thumbnail-publicaciones'))}}
+                                    {{ HTML::image($publicaciones[$i]->imagen, $publicaciones[$i]->titulo, array('width' => '100%'))}}
                                 </a>
                                 <ul class="list-group list-group-flush text-center">
                                     <li class="list-group-item text-justify">Título: {{$publicaciones[$i]->titulo}}</li>
@@ -76,9 +76,10 @@ Publicaciones
                             <div class="row">
                           @endif
 
-                            <div class="col-md-4 hvr-pulse-grow animated bounceIn">
+                            <div class="col-xs-12 col-sm-6 col-md-4 col-xl-3 hvr-pulse-grow animated bounceIn">
                                 <a href="{{url($publicacionesmx[$i]->url_descarga)}}"  target="_blank">
-                                    {{ HTML::image($publicacionesmx[$i]->imagen, $publicacionesmx[$i]->titulo, array('class'=>'image-responsive tamaho-thumbnail-publicaciones'))}}
+                                    <!-- {{ HTML::image($publicacionesmx[$i]->imagen, $publicacionesmx[$i]->titulo, array('class'=>'image-responsive tamaho-thumbnail-publicaciones'))}} -->
+                                    {{ HTML::image($publicaciones[$i]->imagen, $publicaciones[$i]->titulo, array('width' => '100%'))}}
                                 </a>
                                 <ul class="list-group list-group-flush text-center">
                                     <li class="list-group-item text-justify">Título: {{$publicacionesmx[$i]->titulo}}</li>
@@ -111,9 +112,10 @@ Publicaciones
                             <div class="row">
                           @endif
 
-                            <div class="col-md-4 hvr-pulse-grow animated bounceIn">
+                            <div class="col-xs-12 col-sm-6 col-md-4 col-xl-3 hvr-pulse-grow animated bounceIn">
                                 <a href="{{url($publicacionesgu[$i]->url_descarga)}}"  target="_blank">
-                                    {{ HTML::image($publicacionesgu[$i]->imagen, $publicacionesgu[$i]->titulo, array('class'=>'image-responsive tamaho-thumbnail-publicaciones'))}}
+                                    <!-- {{ HTML::image($publicacionesgu[$i]->imagen, $publicacionesgu[$i]->titulo, array('class'=>'image-responsive tamaho-thumbnail-publicaciones'))}} -->
+                                    {{ HTML::image($publicaciones[$i]->imagen, $publicaciones[$i]->titulo, array('width' => '100%'))}}
                                 </a>
                                 <ul class="list-group list-group-flush text-center">
                                     <li class="list-group-item text-justify">Título: {{$publicacionesgu[$i]->titulo}}</li>
@@ -146,9 +148,10 @@ Publicaciones
                             <div class="row">
                           @endif
 
-                            <div class="col-md-4 hvr-pulse-grow animated bounceIn">
+                            <div class="col-xs-12 col-sm-6 col-md-4 col-xl-3 hvr-pulse-grow animated bounceIn">
                                 <a href="{{url($publicacionessv[$i]->url_descarga)}}"  target="_blank">
-                                    {{ HTML::image($publicacionessv[$i]->imagen, $publicacionessv[$i]->titulo, array('class'=>'image-responsive tamaho-thumbnail-publicaciones'))}}
+                                    <!-- {{ HTML::image($publicacionessv[$i]->imagen, $publicacionessv[$i]->titulo, array('class'=>'image-responsive tamaho-thumbnail-publicaciones'))}} -->
+                                    {{ HTML::image($publicaciones[$i]->imagen, $publicaciones[$i]->titulo, array('width' => '100%'))}}
                                 </a>
                                 <ul class="list-group list-group-flush text-center">
                                     <li class="list-group-item text-justify">Título: {{$publicacionessv[$i]->titulo}}</li>
@@ -181,9 +184,10 @@ Publicaciones
                             <div class="row">
                           @endif
 
-                            <div class="col-md-4 hvr-pulse-grow animated bounceIn">
+                            <div class="col-xs-12 col-sm-6 col-md-4 col-xl-3 hvr-pulse-grow animated bounceIn">
                                 <a href="{{url($publicacionesho[$i]->url_descarga)}}"  target="_blank">
-                                    {{ HTML::image($publicacionesho[$i]->imagen, $publicacionesho[$i]->titulo, array('class'=>'image-responsive tamaho-thumbnail-publicaciones'))}}
+                                    <!-- {{ HTML::image($publicacionesho[$i]->imagen, $publicacionesho[$i]->titulo, array('class'=>'image-responsive tamaho-thumbnail-publicaciones'))}} -->
+                                    {{ HTML::image($publicaciones[$i]->imagen, $publicaciones[$i]->titulo, array('width' => '100%'))}}
                                 </a>
                                 <ul class="list-group list-group-flush text-center">
                                     <li class="list-group-item text-justify">Título: {{$publicacionesho[$i]->titulo}}</li>
@@ -216,9 +220,10 @@ Publicaciones
                             <div class="row">
                           @endif
 
-                            <div class="col-md-4 hvr-pulse-grow animated bounceIn">
+                            <div class="col-xs-12 col-sm-6 col-md-4 col-xl-3 hvr-pulse-grow animated bounceIn">
                                 <a href="{{url($publicacionesni[$i]->url_descarga)}}"  target="_blank">
-                                    {{ HTML::image($publicacionesni[$i]->imagen, $publicacionesni[$i]->titulo, array('class'=>'image-responsive tamaho-thumbnail-publicaciones'))}}
+                                    <!-- {{ HTML::image($publicacionesni[$i]->imagen, $publicacionesni[$i]->titulo, array('class'=>'image-responsive tamaho-thumbnail-publicaciones'))}} -->
+                                    {{ HTML::image($publicaciones[$i]->imagen, $publicaciones[$i]->titulo, array('width' => '100%'))}}
                                 </a>
                                 <ul class="list-group list-group-flush text-center">
                                     <li class="list-group-item text-justify">Título: {{$publicacionesni[$i]->titulo}}</li>
@@ -251,9 +256,10 @@ Publicaciones
                             <div class="row">
                           @endif
 
-                            <div class="col-md-4 hvr-pulse-grow animated bounceIn">
+                            <div class="col-xs-12 col-sm-6 col-md-4 col-xl-3 hvr-pulse-grow animated bounceIn">
                                 <a href="{{url($publicacionescr[$i]->url_descarga)}}"  target="_blank">
-                                    {{ HTML::image($publicacionescr[$i]->imagen, $publicacionescr[$i]->titulo, array('class'=>'image-responsive tamaho-thumbnail-publicaciones'))}}
+                                    <!-- {{ HTML::image($publicacionescr[$i]->imagen, $publicacionescr[$i]->titulo, array('class'=>'image-responsive tamaho-thumbnail-publicaciones'))}} -->
+                                    {{ HTML::image($publicaciones[$i]->imagen, $publicaciones[$i]->titulo, array('width' => '100%'))}}
                                 </a>
                                 <ul class="list-group list-group-flush text-center">
                                     <li class="list-group-item text-justify">Título: {{$publicacionescr[$i]->titulo}}</li>
@@ -286,9 +292,10 @@ Publicaciones
                             <div class="row">
                           @endif
 
-                            <div class="col-md-4 hvr-pulse-grow animated bounceIn">
+                            <div class="col-xs-12 col-sm-6 col-md-4 col-xl-3 hvr-pulse-grow animated bounceIn">
                                 <a href="{{url($publicacionespa[$i]->url_descarga)}}"  target="_blank">
-                                    {{ HTML::image($publicacionespa[$i]->imagen, $publicacionespa[$i]->titulo, array('class'=>'image-responsive tamaho-thumbnail-publicaciones'))}}
+                                    <!-- {{ HTML::image($publicacionespa[$i]->imagen, $publicacionespa[$i]->titulo, array('class'=>'image-responsive tamaho-thumbnail-publicaciones'))}} -->
+                                    {{ HTML::image($publicaciones[$i]->imagen, $publicaciones[$i]->titulo, array('width' => '100%'))}}
                                 </a>
                                 <ul class="list-group list-group-flush text-center">
                                     <li class="list-group-item text-justify">Título: {{$publicacionespa[$i]->titulo}}</li>
@@ -322,9 +329,10 @@ Publicaciones
                             <div class="row">
                           @endif
 
-                            <div class="col-md-4 hvr-pulse-grow animated bounceIn">
+                            <div class="col-xs-12 col-sm-6 col-md-4 col-xl-3 hvr-pulse-grow animated bounceIn">
                                 <a href="{{url($publicacionesco[$i]->url_descarga)}}"  target="_blank">
-                                    {{ HTML::image($publicacionesco[$i]->imagen, $publicacionesco[$i]->titulo, array('class'=>'image-responsive tamaho-thumbnail-publicaciones'))}}
+                                    <!-- {{ HTML::image($publicacionesco[$i]->imagen, $publicacionesco[$i]->titulo, array('class'=>'image-responsive tamaho-thumbnail-publicaciones'))}} -->
+                                    {{ HTML::image($publicaciones[$i]->imagen, $publicaciones[$i]->titulo, array('width' => '100%'))}}
                                 </a>
                                 <ul class="list-group list-group-flush text-center">
                                     <li class="list-group-item text-justify">Título: {{$publicacionesco[$i]->titulo}}</li>
@@ -357,9 +365,10 @@ Publicaciones
                             <div class="row">
                           @endif
 
-                            <div class="col-md-4 hvr-pulse-grow animated bounceIn">
+                            <div class="col-xs-12 col-sm-6 col-md-4 col-xl-3 hvr-pulse-grow animated bounceIn">
                                 <a href="{{url($publicacionesdo[$i]->url_descarga)}}"  target="_blank">
-                                    {{ HTML::image($publicacionesdo[$i]->imagen, $publicacionesdo[$i]->titulo, array('class'=>'image-responsive tamaho-thumbnail-publicaciones'))}}
+                                    <!-- {{ HTML::image($publicacionesdo[$i]->imagen, $publicacionesdo[$i]->titulo, array('class'=>'image-responsive tamaho-thumbnail-publicaciones'))}} -->
+                                    {{ HTML::image($publicaciones[$i]->imagen, $publicaciones[$i]->titulo, array('width' => '100%'))}}
                                 </a>
                                 <ul class="list-group list-group-flush text-center">
                                     <li class="list-group-item text-justify">Título: {{$publicacionesdo[$i]->titulo}}</li>
