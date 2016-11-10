@@ -189,6 +189,7 @@ Route::group(['middleware' => 'web'], function () {
     Route::resource('Admin/biblioteca', 'Admin\\bibliotecaController');
 	Route::resource('admin/proyectos', 'Admin\\ProyectosController');
     Route::resource('admin/publicaciones', 'Admin\\PublicacionesController');
+    Route::resource('admin/news', 'Admin\\AdminNewsController');
 });
 
 //Route::get ('api/getImagenes/{tipo}/{id}', '');

@@ -144,7 +144,7 @@
             <li>
                 <a href="#"><span class="fa-stack fa-lg pull-left"><i class="fa fa-binoculars fa-stack-1x "></i></span> Conocenos</a>
                 <ul class="nav-pills nav-stacked" style="list-style-type:none;">
-                    <li><a href="#"><span class="fa-stack fa-lg pull-left"><i class="fa fa-flag fa-stack-1x "></i></span>link1</a></li>
+                    <li><a href="{{url('admin/news')}}"><span class="fa-stack fa-lg pull-left"><i class="fa fa-flag fa-stack-1x "></i></span>Admin noticias</a></li>
                     <li><a href="#"><span class="fa-stack fa-lg pull-left"><i class="fa fa-flag fa-stack-1x "></i></span>link2</a></li>
 
                 </ul>
@@ -279,4 +279,5 @@
       console.log(msg);
 		});
 	}
+
     </script>
