@@ -13,10 +13,12 @@
 		$('.imgLogo').attr('src', '{{url("imagenes/cultura/imgMenu/ventanaEducativa.png")}}');
 		$('.appsLogo').attr('src', '{{url("imagenes/cultura/imgMenu/menu.png")}}');
 	</script>
-    @if (!File::exists ('uploaded/avatares/'.Auth::user()->id.'.png'))
-		<script>
-			$('#img-usuario').attr('src', '{{url("imagenes/cultura/imgMenu/registro.png")}}');
-		</script>
+	@if (Auth::user ())
+		@if (!File::exists ('uploaded/avatares/'.Auth::user()->id.'.png'))
+			<script>
+				$('#img-usuario').attr('src', '{{url("imagenes/cultura/imgMenu/registro.png")}}');
+			</script>
+		@endif
 	@endif
 @endsection
 @section('cuerpoCultura')

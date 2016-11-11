@@ -99,7 +99,7 @@
 						</td>
 					</tr><tr>
 						<td>
-							<a href="https://www.unah.edu.hn/va" target="_blank" onMouseOver="document.logounahsm.src = 'imagenes/ventana/pieventana/unahcolor.png';"
+							<a href="https://www.unah.edu.hn" target="_blank" onMouseOver="document.logounahsm.src = 'imagenes/ventana/pieventana/unahcolor.png';"
 							   onMouseOut="document.logounahsm.src = 'imagenes/ventana/pieventana/logounah.png';">
 								{{ HTML::image('imagenes/ventana/pieventana/logounah.png','Universidad Nacional Autónoma de Honduras',  ['name'=>'logounahsm','class'=>'img-responsive logounahCh'])}}
 							</a> 
