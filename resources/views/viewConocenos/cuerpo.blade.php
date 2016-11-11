@@ -1,8 +1,8 @@
-	<script src="{{url('js/librerias/scrollmagic/uncompressed/ScrollMagic.js')}}"></script>
-	<script src="{{url('js/librerias/scrollMagic/js/lib/greensock/TweenMax.min.js')}}"></script>
-	<script src="{{url('js/librerias/scrollMagic/js/lib/greensock/plugins/animation.gsap.js')}}"></script>
-	<link rel="stylesheet" href="{{url('js/librerias/scrollMagic/css/examples.css')}}" type="text/css">
-	<link rel="stylesheet" type="text/css" href="{{url('css/red/animate.css')}}"/>
+	<script src="{{asset('js/librerias/scrollMagic/uncompressed/ScrollMagic.js')}}"></script>
+	<script src="{{asset('js/librerias/scrollMagic/js/lib/greensock/TweenMax.min.js')}}"></script>
+	<script src="{{asset('js/librerias/scrollMagic/js/lib/greensock/plugins/animation.gsap.js')}}"></script>
+	<link rel="stylesheet" href="{{asset('js/librerias/scrollMagic/css/examples.css')}}" type="text/css">
+	<link rel="stylesheet" type="text/css" href="{{asset('css/red/animate.css')}}"/>
 
 <div id="wrapperConocenos">
     <div class="overlayConocenos"></div>
