@@ -53,8 +53,8 @@
 							<td><a href="http://ceducar.info/ceducar/" target= "_blank"><img class="animated zoomIn img-responsive" src="{{asset('imagenes/cultura/pais/logos/ceccSica-02.png')}}" style="margin: auto; "/></a></td>
 						</tr>
 						<tr>
-							<td><a href="#"><img class="animated zoomIn img-responsive" src="{{asset('imagenes/cultura/pais/logos/secCulturaMexico.png')}}" style="margin: auto"/></a></td>
-							<td><a href="#"><img class="animated zoomIn img-responsive" src="{{asset('imagenes/cultura/pais/logos/culturaJuventud.png')}}" style="margin: auto"/></a></td>
+							<td><img class="animated zoomIn img-responsive" src="{{asset('imagenes/cultura/pais/logos/secCulturaMexico.png')}}" style="margin: auto"/></td>
+							<td><img class="animated zoomIn img-responsive" src="{{asset('imagenes/cultura/pais/logos/culturaJuventud.png')}}" style="margin: auto"/></td>
 						</tr>
 					</tbody>
 				</table>
