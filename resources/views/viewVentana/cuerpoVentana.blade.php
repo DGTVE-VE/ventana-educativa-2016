@@ -97,8 +97,8 @@
 		<div class="col-xs-9 col-xs-offset-1">
 			{{HTML::image('imagenes/ventana/homeventana/mapaRombosCh.png','mapaRombosCh',['name'=>'mapaRombosCh','id'=>'mapaRombosCh', 'class'=>'mapaRombosCh img-responsive', 'usemap'=>'#mapaRombosCh'])}}
 			<map name="mapaRombosCh" id="mapaRombosCh">
-				<area title="" shape="poly" coords="119,139,237,259,354,139,234,22" alt="conocenos" href="{{url('conocenos')}}" />
-				<area title="" shape="poly" coords="5,254,124,133,241,254,121,371" alt="educamedia" href="{{url('educamedia')}}" />
+				<area title="" shape="poly" coords="140,140,265,20,385,150,265,270" alt="conocenos" href="{{url('conocenos')}}" />
+				<area title="" shape="poly" coords="15,275,135,150,250,275,130,390" alt="educamedia" href="{{url('educamedia')}}" />
 				<area title="" shape="poly" coords="241,260,350,150,460,260,350,370" alt="educaplay" href="{{url('educaplay')}}" />
 				<area title="" shape="poly" coords="237,253,350,365,240,480,125,367" alt="canal IberoAmericano" href="http://www.ibe.tv/es/canal/iberoamericano/315/En-directo.htm" target="_blank" />
 				<area title="" shape="poly" coords="0,479,121,361,236,479,121,600" alt="biblioteca" href="{{url('biblioteca')}}" />
