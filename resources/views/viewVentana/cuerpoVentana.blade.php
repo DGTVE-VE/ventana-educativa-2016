@@ -98,8 +98,8 @@
 			{{HTML::image('imagenes/ventana/homeventana/mapaRombosCh.png','mapaRombosCh',['name'=>'mapaRombosCh','id'=>'mapaRombosCh', 'class'=>'mapaRombosCh img-responsive', 'usemap'=>'#mapaRombosCh'])}}
 			<map name="mapaRombosCh" id="mapaRombosCh">
 				<area title="" shape="poly" coords="140,140,265,20,385,150,265,270" alt="conocenos" href="{{url('conocenos')}}" />
-				<area title="" shape="poly" coords="15,275,135,150,250,275,130,390" alt="educamedia" href="{{url('educamedia')}}" />
-				<area title="" shape="poly" coords="241,260,350,150,460,260,350,370" alt="educaplay" href="{{url('educaplay')}}" />
+				<area title="" shape="poly" coords="15,275,135,150,260,275,135,400" alt="educamedia" href="{{url('educamedia')}}" />
+				<area title="" shape="poly" coords="270,260,380,150,490,260,380,370" alt="educaplay" href="{{url('educaplay')}}" />
 				<area title="" shape="poly" coords="237,253,350,365,240,480,125,367" alt="canal IberoAmericano" href="http://www.ibe.tv/es/canal/iberoamericano/315/En-directo.htm" target="_blank" />
 				<area title="" shape="poly" coords="0,479,121,361,236,479,121,600" alt="biblioteca" href="{{url('biblioteca')}}" />
 				<area title="" shape="poly" coords="235,482,350,370,460,482,348,590" alt="RedMITE" href="{{url('redmite')}}" />

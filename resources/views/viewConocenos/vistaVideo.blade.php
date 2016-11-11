@@ -1,7 +1,7 @@
-	<script src="{{asset('js/librerias/fullPagejs/jquery.fullPage.js')}}"></script>
-	<link rel="stylesheet" type="text/css" href="{{asset('js/librerias/fullPagejs/jquery.fullPage.css')}}"/>
-	<link rel="stylesheet" type="text/css" href="{{asset('css/conocenos/video.css')}}"/>
-	<script type="text/javascript" src="{{asset('js/conocenos/video.js')}}"></script>
+	<script src="{{url('js/librerias/fullPagejs/jquery.fullPage.js')}}"></script>
+	<link rel="stylesheet" type="text/css" href="{{url('js/librerias/fullPagejs/jquery.fullPage.css')}}"/>
+	<link rel="stylesheet" type="text/css" href="{{url('css/conocenos/video.css')}}"/>
+	<script type="text/javascript" src="{{url('js/conocenos/video.js')}}"></script>
 	<video data-keepplaying class="videoFondo" id="videoFondo" oncanplay="reproduceVideo()">
 		<source src="imagenes/ventana/conocenos/presentacion/institucional-bn.mp4" type="video/mp4"/>
 	</video>
