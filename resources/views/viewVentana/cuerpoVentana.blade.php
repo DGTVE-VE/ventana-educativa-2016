@@ -99,13 +99,13 @@
 			<map name="mapaRombosCh" id="mapaRombosCh">
 				<area title="" shape="poly" coords="140,140,265,20,385,150,265,270" alt="conocenos" href="{{url('conocenos')}}" />
 				<area title="" shape="poly" coords="15,275,135,150,260,275,135,400" alt="educamedia" href="{{url('educamedia')}}" />
-				<area title="" shape="poly" coords="270,270,380,150,500,270,380,400" alt="educaplay" href="{{url('educaplay')}}" />
-				<area title="" shape="poly" coords="237,253,350,365,240,480,125,367" alt="canal IberoAmericano" href="http://www.ibe.tv/es/canal/iberoamericano/315/En-directo.htm" target="_blank" />
-				<area title="" shape="poly" coords="0,479,121,361,236,479,121,600" alt="biblioteca" href="{{url('biblioteca')}}" />
-				<area title="" shape="poly" coords="235,482,350,370,460,482,348,590" alt="RedMITE" href="{{url('redmite')}}" />
-				<area title="" shape="poly" coords="230,485,340,590,230,700,120,590" alt="México X" href="http://mexicox.gob.mx/" target="_blank"/>
-				<area title="" shape="poly" coords="120,595,5,705,120,810,235,705" alt="Cultura" href="{{url('cultura')}}" />
-				<area title="" shape="poly" coords="346,590,460,703,346,820,230,703" alt="Salud" href="http://www.promocion.salud.gob.mx/dgps/interior1/programas/escuela_salud.html" target="_blank"/>
+				<area title="" shape="poly" coords="270,280,390,150,510,280,390,400" alt="educaplay" href="{{url('educaplay')}}" />
+				<area title="" shape="poly" coords="260,275,390,400,260,520,140,400" alt="canal IberoAmericano" href="http://www.ibe.tv/es/canal/iberoamericano/315/En-directo.htm" target="_blank" />
+				<area title="" shape="poly" coords="15,520,135,400,260,520,135,650" alt="biblioteca" href="{{url('biblioteca')}}" />
+				<area title="" shape="poly" coords="265,520,390,400,510,520,388,640" alt="RedMITE" href="{{url('redmite')}}" />
+				<area title="" shape="poly" coords="260,525,380,650,260,770,140,650" alt="México X" href="http://mexicox.gob.mx/" target="_blank"/>
+				<area title="" shape="poly" coords="140,650,15,770,140,900,260,770" alt="Cultura" href="{{url('cultura')}}" />
+				<area title="" shape="poly" coords="380,650,510,770,380,900,260,770" alt="Salud" href="http://www.promocion.salud.gob.mx/dgps/interior1/programas/escuela_salud.html" target="_blank"/>
 			</map>
 		</div>
         <div class="col-xs-10 col-sm-10 col-xs-offset-1 col-sm-offset-1 padd20pc">
