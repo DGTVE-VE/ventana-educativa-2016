@@ -19,7 +19,7 @@
         </div>
 		<div class="col-md-9 col-md-offset-1 margen10px">
 			<map name="mapaRombos" id="mapaRombos">
-				<area alt="Cultura" title="" shape="poly" coords="274,308,458,495,644,309,459,124" onmouseover="cambiaImgFoto('02')" onmouseout="cambiaImgCubo('02')"  href="{{url('cultura')}}"/>
+				<area alt="Cultura" title="" shape="poly" coords="230,280,459,54,680,280,450,500" onmouseover="cambiaImgFoto('02')" onmouseout="cambiaImgCubo('02')"  href="{{url('cultura')}}"/>
 				<area alt="Canal IberoAmericano" title="" shape="poly" coords="442,511,680,750,918,512,681,274" onmouseover="cambiaImgFoto('04')" onmouseout="cambiaImgCubo('04')" href="http://www.ibe.tv/es/canal/iberoamericano/315/En-directo.htm" target="_blank"/>
 				<area alt="Red MITE" title="" shape="poly" coords="933,1,680,253,933,506,1187,255" onmouseover="cambiaImgFoto('05')" onmouseout="cambiaImgCubo('05')" href="{{url('redmite')}}"/>
 				<area alt="educaplay" title="" shape="poly" coords="932,511,681,764,933,1017,1185,766" onmouseover="cambiaImgFoto('06')" onmouseout="cambiaImgCubo('06')" href="{{url('educaplay')}}"/>
@@ -27,7 +27,7 @@
 				<area alt="Biblioteca" title="" shape="poly" coords="1496,1,1243,253,1497,507,1750,253" onmouseover="cambiaImgFoto('08')" onmouseout="cambiaImgCubo('08')" href="{{url('biblioteca')}}"/>
 				<area alt="educamedia" title="" shape="poly" coords="1498,513,1245,765,1497,1017,1751,765" onmouseover="cambiaImgFoto('09')" onmouseout="cambiaImgCubo('09')" href="{{url('educamedia')}}"/>
 				<area alt="México X" title="" shape="poly" coords="1516,511,1753,274,1989,511,1753,748" onmouseover="cambiaImgFoto('10')" onmouseout="cambiaImgCubo('10')" href="http://mexicox.gob.mx/" target="_blank"/>
-				<area alt="Salud" title="" shape="poly" coords="1969,534,2171,736,1968,938,1766,738" onmouseover="cambiaImgFoto('12')" onmouseout="cambiaImgCubo('12')" href="http://www.promocion.salud.gob.mx/dgps/interior1/programas/escuela_salud.html" target="_blank"/>
+				<area alt="Salud" title="" shape="poly" coords="1766,738,2000,520,2230,745,2000,980" onmouseover="cambiaImgFoto('12')" onmouseout="cambiaImgCubo('12')" href="http://www.promocion.salud.gob.mx/dgps/interior1/programas/escuela_salud.html" target="_blank"/>
 			</map>
 			{{HTML::image('imagenes/ventana/homeventana/mapaRombos.png','mapaRombos',['name'=>'mapaRombos','id'=>'mapaRombos', 'class'=>'mapaRombos img-responsive', 'usemap'=>'#mapaRombos'])}}
 		</div>
