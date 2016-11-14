@@ -6,7 +6,9 @@ Publicaciones
 @include('viewRed.seccionheader')
 @endsection
 @section('cuerpoRedmite')
-
+<style>
+	.paddAviso{padding:30px;}
+</style>
 <div class="row">  <!--row inicial -->
     <div class="col-md-12 fondo_Obscuro text-center text-uppercase">
         <p class="pleca">Publicaciones</p>
@@ -64,6 +66,11 @@ Publicaciones
                             @endif
 
                         @endfor
+						@if($i==0)
+							<div class="col-md-12 paddAviso">
+								<h4> Aún no hay publicaciones </h4>
+							</div>
+						@endif
                     </div>
                     <!--FIN TODOS-->
 
@@ -100,6 +107,11 @@ Publicaciones
                             @endif
 
                         @endfor
+						@if($i==0)
+							<div class="col-md-12 paddAviso">
+								<h4> Aún no hay publicaciones </h4>
+							</div>
+						@endif
                     </div>
                     <!--FIN México-->
 
@@ -136,6 +148,11 @@ Publicaciones
                             @endif
 
                         @endfor
+						@if($i==0)
+							<div class="col-md-12 paddAviso">
+								<h4> Aún no hay publicaciones </h4>
+							</div>
+						@endif
                     </div>
                     <!--FIN Guatemala-->
 
@@ -172,6 +189,11 @@ Publicaciones
                             @endif
 
                         @endfor
+						@if($i==0)
+							<div class="col-md-12 paddAviso">
+								<h4> Aún no hay publicaciones </h4>
+							</div>
+						@endif
                     </div>
                     <!--FIN El Salvador-->
 
@@ -206,8 +228,12 @@ Publicaciones
                             @if($i == sizeof($publicacionesho)-1)
                               </div>
                             @endif
-
                         @endfor
+						@if($i==0)
+							<div class="col-md-12 paddAviso">
+								<h4> Aún no hay publicaciones </h4>
+							</div>
+						@endif
                     </div>
                     <!--FIN Honduras-->
 
@@ -244,6 +270,11 @@ Publicaciones
                             @endif
 
                         @endfor
+						@if($i==0)
+							<div class="col-md-12 paddAviso">
+								<h4> Aún no hay publicaciones </h4>
+							</div>
+						@endif
                     </div>
                     <!--FIN Nicaragua-->
 
@@ -280,6 +311,11 @@ Publicaciones
                             @endif
 
                         @endfor
+						@if($i==0)
+							<div class="col-md-12 paddAviso">
+								<h4> Aún no hay publicaciones </h4>
+							</div>
+						@endif
                     </div>
                     <!--FIN Costa Rica-->
 
@@ -316,6 +352,11 @@ Publicaciones
                             @endif
 
                         @endfor
+						@if($i==0)
+							<div class="col-md-12 paddAviso">
+								<h4> Aún no hay publicaciones </h4>
+							</div>
+						@endif
                     </div>
                     <!--FIN Panama-->
 
@@ -353,6 +394,11 @@ Publicaciones
                             @endif
 
                         @endfor
+						@if($i==0)
+							<div class="col-md-12 paddAviso">
+								<h4> Aún no hay publicaciones </h4>
+							</div>
+						@endif
                     </div>
                     <!--FIN Colombia-->
 
@@ -389,6 +435,11 @@ Publicaciones
                             @endif
 
                         @endfor
+						@if($i==0)
+							<div class="col-md-12 paddAviso">
+								<h4> Aún no hay publicaciones </h4>
+							</div>
+						@endif
                     </div>
                     <!--FIN Republica Dominicana-->
 
