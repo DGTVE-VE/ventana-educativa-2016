@@ -15,9 +15,14 @@ Ventana Educativa
     <br><br>    
 </div>
 @else
+
 <div class = "panel panel-default frmRegistro col-lg-offset-3 col-md-6">
-    <br><br>
-    <br><br>
+	<div class="col-md-12 text-center">
+		<br><br>
+		<h4 style="color:white;"> Recupera el acceso a tu cuenta </h4>
+	    <br><br>
+	</div>
+
     <form method="POST" class="col-md-7 col-md-offset-2" action="{{url ('password/email')}}">
         <input type="hidden" name="_token" value="{{ csrf_token() }}" />
         <div class="form-group col-md-offset-2">
