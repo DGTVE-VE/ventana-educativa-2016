@@ -4,7 +4,7 @@ namespace App\Http\Controllers\Admin;
 
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
-
+use Illuminate\Support\Facades\Input;
 use App\Model\Mediateca\Proyecto;
 use Illuminate\Http\Request;
 use Carbon\Carbon;
@@ -43,7 +43,27 @@ class ProyectosController extends Controller
     {
         $this->validate($request, ['titulo' => 'required', 'banner' => 'required', 'descripcion' => 'required', 'thumbnail' => 'required', 'activo' => 'required', 'liga' => 'required', ]);
 
-        Proyecto::create($request->all());
+        $proyecto = new Proyecto;
+        $proyecto->titulo = $request->titulo;
+        $proyecto->save();
+
+        $destinationPath_0 = 'imagenes/red/proyectos';
+        $destinationPath_1 = 'imagenes/red/proyectos/bannersproyectos';
+
+        $banner_ext = Input::file('banner')->getClientOriginalExtension();
+        $banner_url  = Input::file('banner')->move($destinationPath_0, $proyecto->id.'_banner.'.$banner_ext);
+        $proyecto->banner  = $banner_url;
+
+        $proyecto->descripcion = $request->descripcion;
+
+        $thumbnail_ext = Input::file('thumbnail')->getClientOriginalExtension();
+        $thumbnail_url  = Input::file('thumbnail')->move($destinationPath_1, $proyecto->id.'_thumbnail.'.$thumbnail_ext);
+        $proyecto->thumbnail  = $thumbnail_url;
+
+        $proyecto->activo  = $request->activo;
+        $proyecto->liga  = $request->liga;
+
+        $proyecto->save();
 
         Session::flash('flash_message', 'Proyecto added!');
 
@@ -87,10 +107,40 @@ class ProyectosController extends Controller
      */
     public function update($id, Request $request)
     {
-        $this->validate($request, ['titulo' => 'required', 'banner' => 'required', 'descripcion' => 'required', 'thumbnail' => 'required', 'activo' => 'required', 'liga' => 'required', ]);
+        $this->validate($request, ['titulo' => 'required', 'descripcion' => 'required', 'activo' => 'required', 'liga' => 'required', ]);
 
         $proyecto = Proyecto::findOrFail($id);
-        $proyecto->update($request->all());
+        $proyecto->titulo = $request->titulo;
+        $proyecto->descripcion = $request->descripcion;
+        $proyecto->activo = $request->activo;
+        $proyecto->liga = $request->liga;
+
+
+        if ($request->banner != null) {
+
+          $destinationPath_0 = 'imagenes/red/proyectos';
+
+          unlink(public_path($proyecto->banner));
+
+          $banner_ext = Input::file('banner')->getClientOriginalExtension();
+          $banner_url  = Input::file('banner')->move($destinationPath_0, $proyecto->id.'_banner.'.$banner_ext);
+          $proyecto->banner  = $banner_url;
+
+        }
+
+        if ($request->thumbnail != null) {
+
+          $destinationPath_1 = 'imagenes/red/proyectos/bannersproyectos';
+
+          unlink(public_path($proyecto->thumbnail));
+
+          $thumbnail_ext = Input::file('thumbnail')->getClientOriginalExtension();
+          $thumbnail_url  = Input::file('thumbnail')->move($destinationPath_1, $proyecto->id.'_thumbnail.'.$thumbnail_ext);
+          $proyecto->thumbnail  = $thumbnail_url;
+
+        }
+
+        $proyecto->save();
 
         Session::flash('flash_message', 'Proyecto updated!');
 
@@ -106,6 +156,16 @@ class ProyectosController extends Controller
      */
     public function destroy($id)
     {
+        $proyecto = Proyecto::findOrFail($id);
+
+      if( file_exists($proyecto->thumbnail) && isset($proyecto->thumbnail) ){
+        unlink($proyecto->thumbnail);
+      }
+      if ( file_exists($proyecto->banner) && isset($proyecto->banner) ) {
+          unlink($proyecto->banner);
+      }
+
+
         Proyecto::destroy($id);
 
         Session::flash('flash_message', 'Proyecto deleted!');

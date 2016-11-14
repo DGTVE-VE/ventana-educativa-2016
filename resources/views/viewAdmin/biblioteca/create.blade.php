@@ -9,7 +9,7 @@
     <h1>Agregar nueva biblioteca</h1>
     <hr/>
 
-    {!! Form::open(['url' => '/Admin/biblioteca', 'class' => 'form-horizontal']) !!}
+    {!! Form::open(['url' => '/Admin/biblioteca', 'class' => 'form-horizontal', 'files' => true, 'enctype' => 'multipart/form-data',]) !!}
 
                 <div class="form-group {{ $errors->has('nombre') ? 'has-error' : ''}}">
                 {!! Form::label('nombre', 'Nombre', ['class' => 'col-sm-3 control-label']) !!}
@@ -21,14 +21,14 @@
             <div class="form-group {{ $errors->has('url_tomo') ? 'has-error' : ''}}">
                 {!! Form::label('url_tomo', 'Url Tomo', ['class' => 'col-sm-3 control-label']) !!}
                 <div class="col-sm-6">
-                    {!! Form::text('url_tomo', null, ['class' => 'form-control', 'required' => 'required']) !!}
+                    {!! Form::file('url_tomo', null, ['class' => 'form-control', 'required' => 'required']) !!}
                     {!! $errors->first('url_tomo', '<p class="help-block">:message</p>') !!}
                 </div>
             </div>
             <div class="form-group {{ $errors->has('url_descripcion') ? 'has-error' : ''}}">
                 {!! Form::label('url_descripcion', 'Url Descripcion', ['class' => 'col-sm-3 control-label']) !!}
                 <div class="col-sm-6">
-                    {!! Form::text('url_descripcion', null, ['class' => 'form-control', 'required' => 'required']) !!}
+                    {!! Form::file('url_descripcion', null, ['class' => 'form-control', 'required' => 'required']) !!}
                     {!! $errors->first('url_descripcion', '<p class="help-block">:message</p>') !!}
                 </div>
             </div>
