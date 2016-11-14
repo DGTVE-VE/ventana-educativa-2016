@@ -29,14 +29,14 @@ Educamedia
                         </div>
                     </div>
                         @if(Auth::check ())
-                        <div class="col-md-3">         
+                        <div class="col-xs-12 col-sm-4 col-md-3">         
                             <div id="divRating">
                             <input type="number" data-max="5" data-min="1" name="rating" value="4" id="star-rating" class="rating"  data-icon-lib="fa" data-active-icon="fa-star" data-inactive-icon="fa-star-o"  />
                             </div>
                             <input type="hidden" id="video-id" value="{{ $videos[0]->id }}" />
                             <input type="hidden" id="nivel" value="{{ $nivel }}" />
                         </div>
-                        <div class="col-md-1">
+                        <div class="col-xs-6 col-sm-2 col-md-1">
                             <a href="https://twitter.com/share" class="twitter-share-button">Tweet</a> <script>!function (d, s, id) {
                                     var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https';
                                     if (!d.getElementById(id)) {
@@ -47,7 +47,7 @@ Educamedia
                                     }
                                 }(document, 'script', 'twitter-wjs');</script>
                         </div>
-                        <div class="col-md-2">
+                        <div class="col-xs-6 col-sm-2 col-md-2">
                             <div 
                                 class="fb-share-button" 
                                 data-layout="button" 
@@ -55,11 +55,11 @@ Educamedia
                                 >
                             </div>
                         </div>
-                        <div class="col-md-1"></div>
+                        <div class="col-md-1 visible-md-block visible-lg-block"></div>
                         @endif
                         @if (Auth::check ())
                         @if($esDocente)
-                        <div class="col-md-3">
+                        <div class="col-xs-12 col-sm-4 col-md-3">
                             <a id="ligaDescargaYoutube" href="{{ url('descarga/getvideo.php/yt/getvideo.mp4?videoid='.$videos[0]->url.'&format=best') }}" target="_self"><span title="descarga video" class="glyphicon glyphicon-cloud-download btnDescarga" aria-hidden="true"></span></a>
                             Descarga Video
                         </div>
@@ -80,7 +80,8 @@ Educamedia
                         </div>
                         @endif
                         @endif
-                    <div class="col-md-12">
+					<div class="col-xs-12 col-sm-12 col-md-12"></div>
+                    <div class="col-xs-12 col-sm-12 col-md-12">
 						<li class="list-unstyled"><h5 id="subtitulo_serie">{{ $videos[0]->subtitulo_serie }}<h5></li>
 						<li class="list-unstyled"><h5 id="subtitulo_programa">{{ $videos[0]->subtitulo_programa }}<h5></li>                                                
 						<li class="list-unstyled"><h5 id="grado">Grado: {{ $videos[0]->grado }}</h5></li>
