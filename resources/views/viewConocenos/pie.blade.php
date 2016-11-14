@@ -1,9 +1,6 @@
 ﻿<style>
-    .posicionPie{
-		margin-bottom:0px;
-	}
 	.medidasPie{
-		color: white; height: 200px; z-index:1001; width:100%;
+		color: white; z-index:1001; width:100%;
 	}
 </style>
     <!--sdk twitter-->
@@ -45,7 +42,7 @@
             fjs.parentNode.insertBefore(js, fjs);
         }(document, 'script', 'facebook-jssdk'));
     </script>
-<div id="barraNavPie" class="navbar navbar-inverse posicionPie medidasPie">
+<div id="barraNavPie" class="navbar navbar-inverse medidasPie">
     <div class="col-xs-6 col-sm-6 col-md-3 col-lg-2">
         <br>
         {{ HTML::image('imagenes/ventana/encabezado/logoventana.png','logo negativo', array('class'=>'img-responsive', 'width'=>'155', 'height'=>'155'))}}

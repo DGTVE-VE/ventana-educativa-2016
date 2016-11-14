@@ -1,4 +1,4 @@
-	<link rel="stylesheet" type="text/css" href="css/conocenos/secciones.css"/>
+	<link rel="stylesheet" type="text/css" href="{{url('css/conocenos/secciones.css')}}"/>
 
 	<script>
 		// init controller

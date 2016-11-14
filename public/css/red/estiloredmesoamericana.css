@@ -1,4 +1,4 @@
-.closeInt{color:#fff !important;font-size:20px;opacity:1 !important;}
+﻿.closeInt{color:#fff !important;font-size:20px;opacity:1 !important;}
 .textoModalIntegrante{color:white;}
 .carousel-captionInt{position:relative !important;right:1% !important;;left:1% !important;padding-top:0px !important;;padding-bottom:0px !important;;}
 .modal-titleInt{color:white;}
@@ -38,7 +38,7 @@
 .imgTecho{display:flex;align-content:flex-start;}
 .fondo_footer1{background-color:#2C2C2C;margin:0px;color:white;}
 .fondo_footer2{background-color:#292929;margin:0px;color:white;}
-#top-link-block.affix-top{position:absolute;bottom:-82px;left:10px;}
+#top-link-block.affix-top{position:absolute;bottom:-18px;left:10px;}
 #top-link-block.affix{position:fixed;bottom:18px;}
 .txtCarouselAbajo{position:relative;top:10px;left:0px;color:black;font-family:'Oxygen', sans-serif;font-weight:bold;font-size:14px;}
 .imgIconosRetos{width:400px;height:400px;}

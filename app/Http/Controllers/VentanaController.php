@@ -55,22 +55,22 @@ class VentanaController extends Controller {
     }
 
 
-  }elseif ($request->is_teacher == 'on' && $request->tipo_docente == 'telesecundaria') {
+    }elseif ($request->is_teacher == 'on' && $request->tipo_docente == 'telesecundaria') {
 
-    $validator = Validator::make($request->all(), [
+      $validator = Validator::make($request->all(), [
 
-    'name' => 'required|max:254',
-    'ApPaterno' => 'required|max:254',
-    'ApMaterno' => 'required|max:254',
-    'email' => 'required|email|max:254|unique:users',
-    'password' => 'required|max:60|min:6|confirmed',
-    'genero' => 'required',
-    'nacimiento' => 'required',
-    'ciudad' => 'required|max:100',
-    'pais' => 'required|max:100',
-    'condiciones' => 'required|accepted',
-    'cct' => 'required',
-    'curpDocente' => 'required',
+      'name' => 'required|max:254',
+      'ApPaterno' => 'required|max:254',
+      'ApMaterno' => 'required|max:254',
+      'email' => 'required|email|max:254|unique:users',
+      'password' => 'required|max:60|min:6|confirmed',
+      'genero' => 'required',
+      'nacimiento' => 'required',
+      'ciudad' => 'required|max:100',
+      'pais' => 'required|max:100',
+      'condiciones' => 'required|accepted',
+      'cct' => 'required',
+      'curpDocente' => 'required',
 
       ]);
 
@@ -88,8 +88,8 @@ class VentanaController extends Controller {
 
 
     $users->name = filter_input(INPUT_POST, 'name');
-	  $users->a_paterno = filter_input(INPUT_POST, 'ApPaterno');
-	  $users->a_materno = filter_input(INPUT_POST, 'ApMaterno');
+	$users->a_paterno = filter_input(INPUT_POST, 'ApPaterno');
+	$users->a_materno = filter_input(INPUT_POST, 'ApMaterno');
     $users->email = filter_input(INPUT_POST, 'email');
     $users->password = bcrypt(filter_input(INPUT_POST, 'password'));
     $users->genero = filter_input(INPUT_POST, 'genero');

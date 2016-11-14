@@ -1,11 +1,11 @@
-	<script src="js/librerias/fullPagejs/jquery.fullPage.js"></script>
-	<link rel="stylesheet" type="text/css" href="js/librerias/fullPagejs/jquery.fullPage.css"/>
-	<link rel="stylesheet" type="text/css" href="css/conocenos/video.css"/>
-	<script type="text/javascript" src="js/conocenos/video.js"></script>
+	<script src="{{url('js/librerias/fullPagejs/jquery.fullPage.js')}}"></script>
+	<link rel="stylesheet" type="text/css" href="{{url('js/librerias/fullPagejs/jquery.fullPage.css')}}"/>
+	<link rel="stylesheet" type="text/css" href="{{url('css/conocenos/video.css')}}"/>
+	<script type="text/javascript" src="{{url('js/conocenos/video.js')}}"></script>
 	<video data-keepplaying class="videoFondo" id="videoFondo" oncanplay="reproduceVideo()">
 		<source src="imagenes/ventana/conocenos/presentacion/institucional-bn.mp4" type="video/mp4"/>
 	</video>
-	<div class="row">
+	<div class="row" style="min-height:90%">
 		<div class="col-sm-12 col-md-12 col-lg-12">
 			<img id="textoProyectos" class="muestra animated centra img-responsive" src="imagenes/ventana/conocenos/presentacion/proyecto.png"/>
 			<img id="textoObjetivos" class="oculta animated centra img-responsive" src="imagenes/ventana/conocenos/presentacion/objetivos.png"/>

@@ -87,7 +87,7 @@ $(document).ready(function () {
 	//	************	Activación de elemento fullPage (desplazamiento vertical) 	***********
 		ajusteActivado = true;
 		$('#fullpage').fullpage(
-			{navigation:false, scrollOverflow:false, loopTop:true, fitToSection: false, scrollBar: true,
+			{navigation:true, scrollOverflow:false, loopTop:true, fitToSection: false, scrollBar: true,
 				onLeave: 
 				function(index, nextIndex, direction){
 					var leavingSection = $(this);
@@ -115,9 +115,6 @@ $(document).ready(function () {
 						}
 						else{
 							menuANegro();
-							//$('#fullpage').fullpage.setFitToSection(false);
-							//$('#fullpage').fullpage.setAutoScrolling(false);
-							//ajusteActivado = false;
 						}
 					}
 					else if(index== 4 && nextIndex == 3){

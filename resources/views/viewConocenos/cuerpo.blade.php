@@ -1,8 +1,8 @@
-	<script src="js/librerias/scrollmagic/uncompressed/ScrollMagic.js"></script>
-	<script src="js/librerias/scrollMagic/js/lib/greensock/TweenMax.min.js"></script>
-	<script src="js/librerias/scrollMagic/js/lib/greensock/plugins/animation.gsap.js" ></script>
-	<link rel="stylesheet" href="js/librerias/scrollMagic/css/examples.css" type="text/css">
-<link rel="stylesheet" type="text/css" href="css/red/animate.css"/>
+	<script src="{{asset('js/librerias/scrollmagic/uncompressed/ScrollMagic.js')}}"></script>
+	<script src="{{asset('js/librerias/scrollmagic/js/lib/greensock/TweenMax.min.js')}}"></script>
+	<script src="{{asset('js/librerias/scrollmagic/js/lib/greensock/plugins/animation.gsap.js')}}"></script>
+	<link rel="stylesheet" href="{{asset('js/librerias/scrollmagic/css/examples.css')}}" type="text/css">
+	<link rel="stylesheet" type="text/css" href="{{asset('css/red/animate.css')}}"/>
 
 <div id="wrapperConocenos">
     <div class="overlayConocenos"></div>
@@ -32,7 +32,7 @@
             <span class="hamb-bottom"></span>
         </button>
         <!--************** Dentro de este div va el contenido de la página *********************-->
-        <div class="container-fluid sinPaddingLateral">
+        <div class="container-fluid sinPaddingLateral quitaMargenInf">
             <div id="fullpage">
                 <div class="section fondo1">
                     @include('viewConocenos.vistaVideo')

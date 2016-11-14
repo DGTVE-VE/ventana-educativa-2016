@@ -1,20 +1,17 @@
 ﻿<div class="row fondo_footer1" style="margin-top:-20px;">
     <div class="division">
     </div>
-    <div class="col-xs-6 col-sm-6 col-md-2 col-md-offset-1 col-lg-2 col-lg-offset-1">
+    <div class="col-xs-6 col-sm-5 col-md-3 col-md-offset-1 col-lg-2 col-lg-offset-0">
         {{ HTML::image('imagenes/red/LogoRed/logoNegativo.png','logo negativo', array('class'=>'img-responsive', 'width'=>'155', 'height'=>'155'))}}
         <br>
-        <div class="col-xs-12">
-            <a href="https://twitter.com/share" class="twitter-share-button">Tweet</a>  
-            <div 
-                class="fb-share-button pull-right col-md-8" 
-                data-layout="button" 
-                data-mobile-iframe="true">
-            </div>
-        </div>
+        <div class="col-xs-6 col-sm-3 col-md-3"><a href="https://twitter.com/share" class="twitter-share-button">Tweet</a></div>
+		<div class="fb-share-button pull-right col-xs-6 col-sm-3 col-md-3"
+			data-layout="button" 
+			data-mobile-iframe="true">
+		</div>
         <br>
     </div>
-    <div class="col-xs-6 col-sm-6 col-md-2 col-lg-2">
+    <div class="col-xs-6 col-sm-6 col-sm-offset-1 col-md-3 col-lg-2">
         <h4 class="text-uppercase"> Colaboradores </h4>
         <div class="col-xs-12 col-sm-12 col-md-12">
             {{ HTML::image('imagenes/red/footer/amexid.png','logo amexid', array('class'=>'img-responsive text-center', 'style'=>'width:150px; height:50px;)'))}}
@@ -31,7 +28,7 @@
             {{ HTML::image('imagenes/red/footer/tve.png','logo tve', array('class'=>'img-responsive','style'=>'width:150px; height:50px;)'))}}
         </div>
     </div>
-    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+    <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
         <h4 class="text-uppercase">Contáctanos</h4>
         <table>
             <tr>
@@ -65,21 +62,24 @@
             </tr>
         </table>
     </div>
-    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
-        <h4 class="text-uppercase">Tags</h4><br>
-        <p>Investigación <strong class="lead">Colaboración </strong> Mesoamérica<br>
-            <strong class="lead">Tecnología</strong> Educación Matemáticas <strong class="lead">Español</strong><br>
-            Indicadores educativos <strong class="lead">Metodologías pedagógicas</strong><br>
-            Docentes <strong class="lead">Procesos formativos</strong> Pedagogía digital</p>
-        <br>
-        <h4>Mantente informado. Suscríbete.</h4>
-        <form class="form-inline" action="redmite/guardaCorreoNewsLetter" method="POST">
-            <div class="form-group col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                <input type="email" required name="correo_newsletter" class="form-control" id="correoElectronico" placeholder="direccion@servidor.com"  style="width:80%">
-                {!!csrf_field()!!}
-                <button type="submit" class="btn btn-primary"><span class="glyphicon glyphicon-send"></span></button>
-            </div>
-        </form>
+    <div class="col-xs-12 col-sm-6 col-md-10 col-md-offset-1 col-lg-4 col-lg-offset-0">
+		<div class="col-xs-12 col-sm-12 col-md-6 col-lg-12">
+			<h4 class="text-uppercase">Tags</h4>
+			<p>Investigación <strong class="lead">Colaboración </strong> Mesoamérica<br>
+				<strong class="lead">Tecnología</strong> Educación Matemáticas <strong class="lead">Español</strong><br>
+				Indicadores educativos <strong class="lead">Metodologías pedagógicas</strong><br>
+				Docentes <strong class="lead">Procesos formativos</strong> Pedagogía digital</p>
+		</div>
+		<div class="col-xs-12 col-sm-12 col-md-6 col-lg-12">
+			<h4>Mantente informado. Suscríbete.</h4>
+			<form class="form-inline" action="redmite/guardaCorreoNewsLetter" method="POST">
+				<div class="form-group col-xs-12 col-sm-12 col-md-12 col-lg-12">
+					<input type="email" required name="correo_newsletter" class="form-control" id="correoElectronico" placeholder="direccion@servidor.com"  style="width:70%">
+					{!!csrf_field()!!}
+					<button type="submit" class="btn btn-primary"><span class="glyphicon glyphicon-send"></span></button>
+				</div>
+			</form>
+		</div>
     </div>
 </div>
 <footer>

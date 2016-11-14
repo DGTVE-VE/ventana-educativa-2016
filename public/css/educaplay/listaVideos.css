@@ -1,0 +1,167 @@
+﻿    .estiloTxt{
+        color: white;
+    }
+    .txtSobreImg{
+        position:absolute; top:45px; left:10px; width:90%;
+    }
+    .txtTitulo{
+        color:white; font-size:26px;
+    }
+    .fondoTrans{
+        background-color:transparent; border:none;
+    }
+    .cambiaPadding{
+        padding:0px;
+    }
+    .reduceAnchoFlecha{
+        width:3%;
+    }
+    .thumbnailVertical{
+        width: 260px;
+    }
+    .margenesFila{
+        padding-right:35px; padding-left:35px; margin-top:10px; margin-bottom:30px;
+    }
+    .tamanoIconoMas{
+        width:40%;
+        position:relative;
+        top: 30px;
+    }
+    .marcoVideo{
+        width:650px; height:450px;
+    }
+    .efectoLento{
+        display:none;
+        transition: all 3s ease;
+        -webkit-transition: all 3s ease;
+        -moz-transition: all 3s ease;
+        -o-transition: all 3s ease;
+    }
+    .estiloEnviar{
+        cursor:pointer;
+        color:white;
+    }
+    .estiloEnviar:hover{
+        text-decoration: none;
+        color: white;
+        font-size:1.1em;
+    }
+
+    /*Estilo para el registro de usuario en el cambio de avatar*/
+    .btn-file-avatar {
+        position: relative;
+        overflow: hidden;
+        background: #67b168;
+    }
+    .btn-file-avatar input[type=file] {
+        position: absolute;
+        top: 0;
+        right: 0;
+        min-width: 100%;
+        min-height: 100%;
+        font-size: 100px;
+        text-align: right;
+        filter: alpha(opacity=0);
+        opacity: 0;
+        outline: none;
+        background: white;
+        cursor: inherit;
+        display: block;
+    }
+
+    /*estilo para los comentarios de los videos*/
+    .panel-white{
+        background:rgba(0, 0, 0, .1);
+        border: 1px solid white;
+    }
+
+    .panel-white  .panel-heading {
+        color: #333;
+        background-color: #fff;
+        border-color: #ddd;
+    }
+    .panel-white  .panel-footer {
+        background-color: #fff;
+        border-color: #ddd;
+    }
+
+    .post .post-heading {
+        height: 95px;
+        padding: 20px 15px;
+    }
+    .post .post-heading .avatar {
+        width: 60px;
+        height: 60px;
+        display: block;
+        margin-right: 15px;
+        background: grey;
+    }
+    .post .post-heading .meta .title {
+        margin-bottom: 0;
+    }
+    .post .post-heading .meta .title a {
+        color: black;
+    }
+    .post .post-heading .meta .title a:hover {
+        color: #aaaaaa;
+    }
+    .post .post-heading .meta .time {
+        margin-top: 8px;
+        color: white;
+    }
+    .post .post-image .image {
+        width: 100%;
+        height: auto;
+    }
+    .post .post-description {
+        padding: 15px;
+    }
+    .post .post-description p {
+        font-size: 14px;
+    }
+
+    .post .post-footer {
+        border-top: 1px solid #ddd;
+        padding: 15px;
+    }
+    .post .post-footer .input-group-addon a {
+        color: #454545;
+    }
+    .post .post-footer .comments-list {
+        padding: 0;
+        margin-top: 20px;
+        list-style-type: none;
+    }
+    .post .post-footer .comments-list .comment {
+        display: block;
+        width: 100%;
+        margin: 20px 0;
+    }
+    .post .post-footer .comments-list .comment .avatar {
+        width: 35px;
+        height: 35px;
+    }
+    .post .post-footer .comments-list .comment .comment-heading {
+        display: block;
+        width: 100%;
+    }
+    .post .post-footer .comments-list .comment .comment-heading .user {
+        font-size: 14px;
+        font-weight: bold;
+        display: inline;
+        margin-top: 0;
+        margin-right: 10px;
+    }
+    .post .post-footer .comments-list .comment .comment-heading .time {
+        font-size: 12px;
+        color: #aaa;
+        margin-top: 0;
+        display: inline;
+    }
+    .post .post-footer .comments-list .comment .comment-body {
+        margin-left: 50px;
+    }
+    .post .post-footer .comments-list .comment > .comments-list {
+        margin-left: 50px;
+    }
+    /*fin de estilo para comentarios de videos*/

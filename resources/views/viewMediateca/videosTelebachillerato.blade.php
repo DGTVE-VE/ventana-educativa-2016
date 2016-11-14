@@ -30,21 +30,21 @@ Educamedia
                     </div>
                 </div>
                 @if(Auth::check ())
-                <div class="col-md-3">
+                <div class="col-xs-12 col-sm-4 col-md-3">
                     <div id="divRating">
                     <input type="number" name="rating" id="star-rating" class="rating" data-icon-lib="fa" data-active-icon="fa-star" data-inactive-icon="fa-star-o"  />
                     </div>
                     <input type="hidden" id="video-id" value="{{ $videos[0]->id }}" />
                     <input type="hidden" id="nivel" value="{{ $nivel }}" />
                 </div>
-                <div class="col-md-1">
+                <div class="col-xs-6 col-sm-2 col-md-1">
                     <div
                         class="fb-share-button"
                         data-layout="button"
                         data-mobile-iframe="true">
                     </div>
                 </div>
-                <div class="col-md-2">
+                <div class="col-xs-6 col-sm-2 col-md-2">
                     <div class="col-md-5">
                         <a href="https://twitter.com/share" class="twitter-share-button">Tweet</a> <script>!function (d, s, id) {
                                 var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https';
@@ -58,11 +58,10 @@ Educamedia
                     </div>
                 </div>
                 @endif
-                <div class="col-md-1"></div>
+                <div class="col-xs-12 col-sm-4 col-md-1"></div>
                 @if (Auth::check ())
                 @if($esDocente)
                 <div class="col-md-3">
-                    <!--br-->
                     <a id="ligaDescargaYoutube" href="{{ url('descarga/getvideo.php/yt/getvideo.mp4?videoid='.$videos[0]->url.'&format=best') }}" target="_self"><span title="descarga video" class="glyphicon glyphicon-cloud-download btnDescarga" aria-hidden="true"></span></a>
                     Descarga Video
                 </div>
