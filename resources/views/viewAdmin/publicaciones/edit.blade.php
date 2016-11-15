@@ -11,13 +11,13 @@
     {!! Form::model($Publicacion, [
         'method' => 'PATCH',
         'url' => ['/admin/publicaciones', $Publicacion->id],
-        'class' => 'form-horizontal'
+        'class' => 'form-horizontal', 'files' => true, 'enctype' => 'multipart/form-data',
     ]) !!}
 
                 <div class="form-group {{ $errors->has('imagen') ? 'has-error' : ''}}">
                 {!! Form::label('imagen', 'Imagen', ['class' => 'col-sm-3 control-label']) !!}
                 <div class="col-sm-6">
-                    {!! Form::text('imagen', null, ['class' => 'form-control', 'required' => 'required']) !!}
+                    {!! Form::file('imagen', null, ['class' => 'form-control', 'required' => 'required']) !!}
                     {!! $errors->first('imagen', '<p class="help-block">:message</p>') !!}
                 </div>
             </div>
@@ -45,7 +45,7 @@
             <div class="form-group {{ $errors->has('url_descarga') ? 'has-error' : ''}}">
                 {!! Form::label('url_descarga', 'Url Descarga', ['class' => 'col-sm-3 control-label']) !!}
                 <div class="col-sm-6">
-                    {!! Form::text('url_descarga', null, ['class' => 'form-control', 'required' => 'required']) !!}
+                    {!! Form::file('url_descarga', null, ['class' => 'form-control', 'required' => 'required']) !!}
                     {!! $errors->first('url_descarga', '<p class="help-block">:message</p>') !!}
                 </div>
             </div>

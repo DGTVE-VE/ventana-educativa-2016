@@ -4,7 +4,7 @@ namespace App\Http\Controllers\Admin;
 
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
-
+use Illuminate\Support\Facades\Input;
 use App\Model\Mediateca\Publicacion;
 use Illuminate\Http\Request;
 use Carbon\Carbon;
@@ -43,7 +43,27 @@ class PublicacionesController extends Controller
     {
         $this->validate($request, ['imagen' => 'required', 'titulo' => 'required', 'autor' => 'required', 'categoria' => 'required', 'url_descarga' => 'required', 'pais' => 'required', ]);
 
-        Publicacion::create($request->all());
+        $publicacion = new Publicacion;
+
+        $publicacion->titulo = $request->titulo;
+        $publicacion->autor = $request->autor;
+        $publicacion->categoria = $request->categoria;
+        $publicacion->pais = $request->pais;
+
+        $publicacion->save();
+
+        $destinationPath_0 = 'publicacionesRed/mexico/imagenesthumbnails';
+        $destinationPath_1 = 'publicacionesRed/mexico';
+
+        $imagen_ext = Input::file('imagen')->getClientOriginalExtension();
+        $imagen_url  = Input::file('imagen')->move($destinationPath_0, $publicacion->id.'_imagen.'.$imagen_ext);
+        $publicacion->imagen  = $imagen_url;
+
+        $descarga_ext = Input::file('url_descarga')->getClientOriginalExtension();
+        $descarga_url  = Input::file('url_descarga')->move($destinationPath_1, $publicacion->id.'_descarga.'.$descarga_ext);
+        $publicacion->url_descarga  = $descarga_url;
+
+        $publicacion->save();
 
         Session::flash('flash_message', 'Publicacion added!');
 
@@ -87,10 +107,43 @@ class PublicacionesController extends Controller
      */
     public function update($id, Request $request)
     {
-        $this->validate($request, ['imagen' => 'required', 'titulo' => 'required', 'autor' => 'required', 'categoria' => 'required', 'url_descarga' => 'required', 'pais' => 'required', ]);
+        $this->validate($request, ['titulo' => 'required', 'autor' => 'required', 'categoria' => 'required', 'pais' => 'required', ]);
 
-        $Publicacion = Publicacion::findOrFail($id);
-        $Publicacion->update($request->all());
+        $publicacion = Publicacion::findOrFail($id);
+        $publicacion->titulo = $request->titulo;
+        $publicacion->autor = $request->autor;
+        $publicacion->categoria = $request->categoria;
+        $publicacion->pais = $request->pais;
+
+        if ($request->imagen != null) {
+
+          $destinationPath_0 = 'publicacionesRed/mexico/imagenesthumbnails';
+
+          if( file_exists($publicacion->imagen) && isset($publicacion->imagen) ){
+            unlink($publicacion->imagen);
+          }
+
+          $imagen_ext = Input::file('imagen')->getClientOriginalExtension();
+          $imagen_url  = Input::file('imagen')->move($destinationPath_0, $publicacion->id.'_imagen.'.$imagen_ext);
+          $publicacion->imagen  = $imagen_url;
+
+
+        }
+
+        if ($request->url_descarga != null) {
+
+          $destinationPath_1 = 'publicacionesRed/mexico';
+
+          if( file_exists($publicacion->url_descarga) && isset($publicacion->url_descarga) ){
+            unlink($publicacion->url_descarga);
+          }
+
+          $descarga_ext = Input::file('url_descarga')->getClientOriginalExtension();
+          $descarga_url  = Input::file('url_descarga')->move($destinationPath_1, $publicacion->id.'_descarga.'.$descarga_ext);
+          $publicacion->url_descarga  = $descarga_url;
+        }
+
+        $publicacion->titulo = $request->titulo;
 
         Session::flash('flash_message', 'Publicacion updated!');
 
@@ -106,6 +159,16 @@ class PublicacionesController extends Controller
      */
     public function destroy($id)
     {
+        $publicacion = Publicacion::findOrFail($id);
+
+        if( file_exists($publicacion->imagen) && isset($publicacion->imagen) ){
+          unlink($publicacion->imagen);
+        }
+
+        if( file_exists($publicacion->url_descarga) && isset($publicacion->url_descarga) ){
+          unlink($publicacion->url_descarga);
+        }
+
         Publicacion::destroy($id);
 
         Session::flash('flash_message', 'Publicacion deleted!');

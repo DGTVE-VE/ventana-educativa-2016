@@ -151,11 +151,11 @@ class AdminNewsController extends Controller
         $imagen = $admin->url_imagen;
         $pdf = $admin->url_pdf;
 
-        if( isset($imagen) ){
+        if( file_exists($imagen) && isset($imagen) ){
           unlink(public_path($imagen));
         }
 
-        if (isset($pdf)) {
+        if (file_exists($pdf) && isset($pdf)) {
           unlink(public_path($pdf));
         }
 

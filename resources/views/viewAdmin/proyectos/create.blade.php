@@ -9,7 +9,7 @@
     <h1>Agregar Nuevo Proyecto</h1>
     <hr/>
 
-    {!! Form::open(['url' => '/admin/proyectos', 'class' => 'form-horizontal']) !!}
+    {!! Form::open(['url' => '/admin/proyectos', 'class' => 'form-horizontal', 'files' => true, 'enctype' => 'multipart/form-data',]) !!}
 
                 <div class="form-group {{ $errors->has('titulo') ? 'has-error' : ''}}">
                 {!! Form::label('titulo', 'Titulo', ['class' => 'col-sm-3 control-label']) !!}
@@ -21,7 +21,7 @@
             <div class="form-group {{ $errors->has('banner') ? 'has-error' : ''}}">
                 {!! Form::label('banner', 'Banner', ['class' => 'col-sm-3 control-label']) !!}
                 <div class="col-sm-6">
-                    {!! Form::text('banner', null, ['class' => 'form-control', 'required' => 'required']) !!}
+                    {!! Form::file('banner', null, ['class' => 'form-control', 'required' => 'required']) !!}
                     {!! $errors->first('banner', '<p class="help-block">:message</p>') !!}
                 </div>
             </div>
@@ -35,7 +35,7 @@
             <div class="form-group {{ $errors->has('thumbnail') ? 'has-error' : ''}}">
                 {!! Form::label('thumbnail', 'Thumbnail', ['class' => 'col-sm-3 control-label']) !!}
                 <div class="col-sm-6">
-                    {!! Form::text('thumbnail', null, ['class' => 'form-control', 'required' => 'required']) !!}
+                    {!! Form::file('thumbnail', null, ['class' => 'form-control', 'required' => 'required']) !!}
                     {!! $errors->first('thumbnail', '<p class="help-block">:message</p>') !!}
                 </div>
             </div>
