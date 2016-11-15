@@ -74,9 +74,13 @@
 			<h4>Mantente informado. Suscríbete.</h4>
 			<form class="form-inline" action="redmite/guardaCorreoNewsLetter" method="POST">
 				<div class="form-group col-xs-12 col-sm-12 col-md-12 col-lg-12">
-					<input type="email" required name="correo_newsletter" class="form-control" id="correoElectronico" placeholder="direccion@servidor.com"  style="width:70%">
-					{!!csrf_field()!!}
-					<button type="submit" class="btn btn-primary"><span class="glyphicon glyphicon-send"></span></button>
+					<div class="col-xs-8 col-sm-9 col-md-9 col-lg-9">
+						<input type="email" required name="correo_newsletter" class="form-control" id="correoElectronico" placeholder="direccion@servidor.com"  style="width:100%;">
+						{!!csrf_field()!!}
+					</div>
+					<div class="col-xs-4 col-sm-3 col-md-3 col-lg-3">
+						<button type="submit" class="btn btn-primary"><span class="glyphicon glyphicon-send"></span></button>
+					</div>
 				</div>
 			</form>
 		</div>
