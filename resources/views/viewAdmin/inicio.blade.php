@@ -18,9 +18,51 @@
         <div class="col-xs-12 col-sm-6 col-lg-4 col-md-4">
             <div class="box">							
                 <div class="icon">
-                    <div class="image usuarios"><i class="fa fa-users"></i></div>
+                    <div class="image usuarios"><i class="fa fa-user"></i></div>
                     <div class="info">
-                        <h3 class="title">Docentes</h3>
+                        <h3 class="title">Docentes Telesecundaria</h3>
+                        <p>
+                            {!!$docenteTelesecundaria!!}
+                        </p>
+                    </div>
+                </div>
+                <div class="space"></div>
+            </div> 
+        </div>
+                <div class="col-xs-12 col-sm-6 col-lg-4 col-md-4">
+            <div class="box">							
+                <div class="icon">
+                    <div class="image usuarios"><i class="fa fa-user"></i></div>
+                    <div class="info">
+                        <h3 class="title">Docentes Básica</h3>
+                        <p>
+                            {!!$docenteBasica!!}
+                        </p>
+                    </div>
+                </div>
+                <div class="space"></div>
+            </div> 
+        </div>
+                <div class="col-xs-12 col-sm-6 col-lg-4 col-md-4">
+            <div class="box">							
+                <div class="icon">
+                    <div class="image usuarios"><i class="fa fa-user"></i></div>
+                    <div class="info">
+                        <h3 class="title">Docentes Otro</h3>
+                        <p>
+                            {!!$docenteOtro!!}
+                        </p>
+                    </div>
+                </div>
+                <div class="space"></div>
+            </div> 
+        </div>
+                <div class="col-xs-12 col-sm-6 col-lg-4 col-md-4">
+            <div class="box">							
+                <div class="icon">
+                    <div class="image usuarios"><i class="fa fa-user"></i></div>
+                    <div class="info">
+                        <h3 class="title">Docentes Total</h3>
                         <p>
                             {!!$docenteTotal!!}
                         </p>

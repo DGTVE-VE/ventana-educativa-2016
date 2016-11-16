@@ -22,27 +22,32 @@ class AdminController extends Controller {
             if ($consultaAdministrador != '[]') {
                 /* Usuarios totales */
                 $usuarioTotal = DB::table('users')->count();
-                /*Docentes Totales*/
+                /* Docentes Totales */
                 $docenteTotal = DB::table('med_docente')->count();
+                $docenteTelesecundaria = DB::table('med_docente')->where('tipo_docente', '=', 1)->count();
+                $docenteBasica = DB::table('med_docente')->where('tipo_docente', '=', 2)->count();
+                $docenteOtro = DB::table('med_docente')->where('tipo_docente', '=', 1)->count();
                 /* Series en educamedia */
                 $seriesLista = DB::table('edu_serie')->select('titulo_serie')->get();
-                /*Videos totales en educaplay y educamedia*/
+                /* Videos totales en educaplay y educamedia */
                 $videosTotalTelesecundaria = DB::table('med_telesecundaria')->count();
                 $videosTotalTelebachillerato = DB::table('med_telebachillerato')->count();
                 return view('viewAdmin/admin')
-                                ->with('usuarioTotal', $usuarioTotal)
-                                ->with('docenteTotal', $docenteTotal)
-                                ->with('seriesLista', $seriesLista)
-                                ->with('videosTotalTelesecundaria', $videosTotalTelesecundaria)
-                                ->with('videosTotalTelebachillerato', $videosTotalTelebachillerato)
-                                ->with('consultaAdministrador', $consultaAdministrador);
+                        ->with('usuarioTotal', $usuarioTotal)
+                        ->with('docenteTelesecundaria', $docenteTelesecundaria)
+                        ->with('docenteBasica', $docenteBasica)
+                        ->with('docenteOtro', $docenteOtro)
+                        ->with('docenteTotal', $docenteTotal)
+                        ->with('seriesLista', $seriesLista)
+                        ->with('videosTotalTelesecundaria', $videosTotalTelesecundaria)
+                        ->with('videosTotalTelebachillerato', $videosTotalTelebachillerato)
+                        ->with('consultaAdministrador', $consultaAdministrador);
                 ;
             } else {
-               return Redirect::to('acceso')->withInput()->withErrors(['¡Alerta!', 'Sin permiso para esta sección']);
-
+                return Redirect::to('acceso')->withInput()->withErrors(['¡Alerta!', 'Sin permiso para esta sección']);
             }
-        } else{
-             return Redirect::back();
+        } else {
+            return Redirect::back();
         }
     }
 
