@@ -53,6 +53,7 @@
 	.ocultaImgDescribe{
 		display: none;
 	}
+	.menuNavegacionVentana{height:55px; z-index:2;}
 	@media(max-width:767px){
 		.textoEstante{
 			top:-2px;

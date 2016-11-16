@@ -1,6 +1,7 @@
     $('#buscar').css('display', 'none');
     $('#iconoBuscar').css('display', 'none');
-    $('#navegacionVentana').css('height', '55px');
+    $('#myNavbar').addClass('fondoDegradadoMenuInicial');
+	$('#navegacionVentana').addClass('menuNavegacionVentana');
     $('.imgLogo').attr('src', '../../../imagenes/biblioteca/imgMenu/ventanaEducativa.png');
     $('.appsLogo').attr('src', '../../../imagenes/biblioteca/imgMenu/menu.png');
     $('#img-usuario').attr('src', '../../../imagenes/biblioteca/imgMenu/registro.png');
