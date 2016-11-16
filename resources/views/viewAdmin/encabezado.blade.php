@@ -137,147 +137,145 @@
             <li class="">
                 <a href="#"><span class="fa-stack fa-lg pull-left"><i class="fa  fa-book fa-stack-1x "></i></span> Biblioteca</a>
                 <ul class="nav-pills nav-stacked" style="list-style-type:none;">
-                    <li><a href="{{url('Admin/biblioteca')}}">Bibliotecas</a></li>
+                    <li><a href="{{url('Admin/biblioteca')}}"><i class="fa fa-leanpub" aria-hidden="true"></i>Bibliotecas</a></li>
                     <!--li><a href="#">link2</a></li-->
                 </ul>
             </li>
             <li>
                 <a href="#"><span class="fa-stack fa-lg pull-left"><i class="fa fa-binoculars fa-stack-1x "></i></span> Conocenos</a>
                 <ul class="nav-pills nav-stacked" style="list-style-type:none;">
-                    <li><a href="{{url('admin/news')}}"><span class="fa-stack fa-lg pull-left"><i class="fa fa-flag fa-stack-1x "></i></span>Admin noticias</a></li>
-                    <li><a href="#"><span class="fa-stack fa-lg pull-left"><i class="fa fa-flag fa-stack-1x "></i></span>link2</a></li>
-
+                    <li><a href="{{url('admin/news')}}"><span class="fa-stack fa-lg pull-left"><i class="fa fa-columns" aria-hidden="true"></i></span>Noticias</a></li>
                 </ul>
             </li>
-            <li>
-                <a href="#"><span class="fa-stack fa-lg pull-left"><i class="fa fa-flag fa-stack-1x "></i></span> Cultura</a>
-                <ul class="nav-pills nav-stacked" style="list-style-type:none;">
-                    <li><a href="#"><span class="fa-stack fa-lg pull-left"><i class="fa fa-flag fa-stack-1x "></i></span>link1</a></li>
-                    <li><a href="#"><span class="fa-stack fa-lg pull-left"><i class="fa fa-flag fa-stack-1x "></i></span>link2</a></li>
-
-                </ul>
-            </li>
-            <li>
-                <a href="#"><span class="fa-stack fa-lg pull-left"><i class="fa fa-youtube-play fa-stack-1x "></i></span> Educamedia</a>
-                <ul class="nav-pills nav-stacked" style="list-style-type:none;">
-                    <li><a href="#"><span class="fa-stack fa-lg pull-left"><i class="fa fa-flag fa-stack-1x "></i></span>link1</a></li>
-                    <li><a href="#"><span class="fa-stack fa-lg pull-left"><i class="fa fa-flag fa-stack-1x "></i></span>link2</a></li>
-
-                </ul>
-            </li>
-            <li>
-                <a href="#"><span class="fa-stack fa-lg pull-left"><i class="fa fa-film fa-stack-1x "></i></span> Educaplay</a>
-                <ul class="nav-pills nav-stacked" style="list-style-type:none;">
-                    <li><a href="#"><span class="fa-stack fa-lg pull-left"><i class="fa fa-flag fa-stack-1x "></i></span>link1</a></li>
-                    <li><a href="#"><span class="fa-stack fa-lg pull-left"><i class="fa fa-flag fa-stack-1x "></i></span>link2</a></li>
-
-                </ul>
-            </li>
+            <!--            <li>
+                            <a href="#"><span class="fa-stack fa-lg pull-left"><i class="fa fa-flag fa-stack-1x "></i></span> Cultura</a>
+                            <ul class="nav-pills nav-stacked" style="list-style-type:none;">
+                                <li><a href="#"><span class="fa-stack fa-lg pull-left"><i class="fa fa-flag fa-stack-1x "></i></span>link1</a></li>
+                                <li><a href="#"><span class="fa-stack fa-lg pull-left"><i class="fa fa-flag fa-stack-1x "></i></span>link2</a></li>
+            
+                            </ul>
+                        </li>-->
+            <!--            <li>
+                            <a href="#"><span class="fa-stack fa-lg pull-left"><i class="fa fa-youtube-play fa-stack-1x "></i></span> Educamedia</a>
+                            <ul class="nav-pills nav-stacked" style="list-style-type:none;">
+                                <li><a href="#"><span class="fa-stack fa-lg pull-left"><i class="fa fa-flag fa-stack-1x "></i></span>link1</a></li>
+                                <li><a href="#"><span class="fa-stack fa-lg pull-left"><i class="fa fa-flag fa-stack-1x "></i></span>link2</a></li>
+            
+                            </ul>
+                        </li>-->
+            <!--            <li>
+                            <a href="#"><span class="fa-stack fa-lg pull-left"><i class="fa fa-film fa-stack-1x "></i></span> Educaplay</a>
+                            <ul class="nav-pills nav-stacked" style="list-style-type:none;">
+                                <li><a href="#"><span class="fa-stack fa-lg pull-left"><i class="fa fa-flag fa-stack-1x "></i></span>link1</a></li>
+                                <li><a href="#"><span class="fa-stack fa-lg pull-left"><i class="fa fa-flag fa-stack-1x "></i></span>link2</a></li>
+            
+                            </ul>
+                        </li>-->
             <li>
                 <a href="#"><span class="fa-stack fa-lg pull-left"><i class="fa fa-globe fa-stack-1x "></i></span> Redmite</a>
                 <ul class="nav-pills nav-stacked" style="list-style-type:none;">
-					<li onclick="muestraColaboradores()"><a href="#"><span class="fa-stack fa-lg pull-left"><i class="fa fa-flag fa-stack-1x "></i></span>Colaboradores</a></li>
-                    <li><a href="{{url('admin/publicaciones')}}"><span class="fa-stack fa-lg pull-left"><i class="fa fa-flag fa-stack-1x "></i></span>Publicaciones</a></li>
-                    <li><a href="{{url('admin/proyectos')}}"><span class="fa-stack fa-lg pull-left"><i class="fa fa-flag fa-stack-1x "></i></span>Proyectos</a></li>
+                    <li onclick="muestraColaboradores()"><a href="#"><span class="fa-stack fa-lg pull-left"><i class="fa fa-users" aria-hidden="true"></i></span>Colaboradores</a></li>
+                    <li><a href="{{url('admin/publicaciones')}}"><span class="fa-stack fa-lg pull-left"><i class="fa fa-list-alt" aria-hidden="true"></i></span>Publicaciones</a></li>
+                    <li><a href="{{url('admin/proyectos')}}"><span class="fa-stack fa-lg pull-left"><i class="fa fa-binoculars"></i></span>Proyectos</a></li>
 
                 </ul>
             </li>
-            <li>
+<!--            <li>
                 <a href="#"><span class="fa-stack fa-lg pull-left"><i class="fa fa-user-md fa-stack-1x "></i></span> Salud</a>
                 <ul class="nav-pills nav-stacked" style="list-style-type:none;">
                     <li><a href="#"><span class="fa-stack fa-lg pull-left"><i class="fa fa-flag fa-stack-1x "></i></span>link1</a></li>
                     <li><a href="#"><span class="fa-stack fa-lg pull-left"><i class="fa fa-flag fa-stack-1x "></i></span>link2</a></li>
 
                 </ul>
-            </li>
+            </li>-->
         </ul>
     </div><!-- /#sidebar-wrapper -->
 </div>
 @endif
-    <script>
+<script>
 
-        /************ CAMBIAR AVATAR **************/
-        $(document).ready(function (e) {
-            $("#link-cambia-avatar").click(function (e) {
-                e.preventDefault();
-                e.stopPropagation();
-                $("#form-avatar").removeClass('hidden');
+    /************ CAMBIAR AVATAR **************/
+    $(document).ready(function (e) {
+        $("#link-cambia-avatar").click(function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+            $("#form-avatar").removeClass('hidden');
 
-            });
-            $("#uploadimage").on('submit', (function (e) {
-                e.preventDefault();
-                $("#message").empty();
-                $('#loading').show();
-                $.ajax({
-                    url: "cambiaAvatar", // Url to which the request is send
-                    type: "POST", // Type of request to be send, called as method
-                    data: new FormData(this), // Data sent to server, a set of key/value pairs (i.e. form fields and values)
-                    contentType: false, // The content type used when sending data to the server.
-                    cache: false, // To unable request pages to be cached
-                    processData: false, // To send DOMDocument or non processed data file it is set to false
-                    success: function (data)   // A function to be called if request succeeds
-                    {
-                        $('#loading').hide();
-                        $("#form-avatar").addClass('hidden');
-                        //                    $("#message").html(data);
-                        $('#img-usuario').attr('src', data + '?' + (new Date()));
-                        $('#img-usuario').attr('width', '35px');
-                        $('#img-usuario').attr('height', '35px');
-                    },
-                    error: function (data)
-                    {
-                        console.log(data);
-                    }
-                });
-            }));
-
-            // Function to preview image after validation
-            $(function () {
-                $("#file").change(function () {
-                    $("#message").empty(); // To remove the previous error message
-                    var file = this.files[0];
-                    var imagefile = file.type;
-                    var match = ["image/jpeg", "image/png", "image/jpg"];
-                    // Si la imagen no es de tipo válido
-                    if (match.indexOf(imagefile) === -1)
-                    {
-                        $('#previewing').attr('src', 'imagenes/ventana/encabezado/noimage.png');
-                        $("#message").html("<p id='error'>Por favor seleccione un tipo de imagen correcto" + "<br>  Nota: Solo se pueden usar imágenes en formato jpeg, jpg y png.</p>");
-                        return false;
-                    } else
-                    {
-                        var reader = new FileReader();
-                        reader.onload = imageIsLoaded;
-                        reader.readAsDataURL(this.files[0]);
-                    }
-                });
-            });
-            function imageIsLoaded(e) {
-                $("#file").css("color", "green");
-                $('#image_preview').css("display", "block");
-                $('#previewing').attr('src', e.target.result);
-                $('#previewing').attr('width', '100px');
-                $('#previewing').attr('height', '100px');
-            }
-            ;
         });
-		/************ CAMBIAR AVATAR **************/
+        $("#uploadimage").on('submit', (function (e) {
+            e.preventDefault();
+            $("#message").empty();
+            $('#loading').show();
+            $.ajax({
+                url: "cambiaAvatar", // Url to which the request is send
+                type: "POST", // Type of request to be send, called as method
+                data: new FormData(this), // Data sent to server, a set of key/value pairs (i.e. form fields and values)
+                contentType: false, // The content type used when sending data to the server.
+                cache: false, // To unable request pages to be cached
+                processData: false, // To send DOMDocument or non processed data file it is set to false
+                success: function (data)   // A function to be called if request succeeds
+                {
+                    $('#loading').hide();
+                    $("#form-avatar").addClass('hidden');
+                    //                    $("#message").html(data);
+                    $('#img-usuario').attr('src', data + '?' + (new Date()));
+                    $('#img-usuario').attr('width', '35px');
+                    $('#img-usuario').attr('height', '35px');
+                },
+                error: function (data)
+                {
+                    console.log(data);
+                }
+            });
+        }));
 
-		/************ Carga lista colaboradores **************/
-	function muestraColaboradores(){
-		var urlget = "{{url('redmite/administra/listaColabora')}}";
-		$.ajax({
-			method: "GET",
-			url: urlget,
-			error: function (ts) {
-				console.log(ts.responseText);
-		}})
-		.done(function (msg) {
-			console.log('Colaboradores cargados: ');
-			$("#contenidoPrincipal").html(msg)
-			$(".container").html(msg)
-      console.log(msg);
-		});
-	}
+        // Function to preview image after validation
+        $(function () {
+            $("#file").change(function () {
+                $("#message").empty(); // To remove the previous error message
+                var file = this.files[0];
+                var imagefile = file.type;
+                var match = ["image/jpeg", "image/png", "image/jpg"];
+                // Si la imagen no es de tipo válido
+                if (match.indexOf(imagefile) === -1)
+                {
+                    $('#previewing').attr('src', 'imagenes/ventana/encabezado/noimage.png');
+                    $("#message").html("<p id='error'>Por favor seleccione un tipo de imagen correcto" + "<br>  Nota: Solo se pueden usar imágenes en formato jpeg, jpg y png.</p>");
+                    return false;
+                } else
+                {
+                    var reader = new FileReader();
+                    reader.onload = imageIsLoaded;
+                    reader.readAsDataURL(this.files[0]);
+                }
+            });
+        });
+        function imageIsLoaded(e) {
+            $("#file").css("color", "green");
+            $('#image_preview').css("display", "block");
+            $('#previewing').attr('src', e.target.result);
+            $('#previewing').attr('width', '100px');
+            $('#previewing').attr('height', '100px');
+        }
+        ;
+    });
+    /************ CAMBIAR AVATAR **************/
 
-    </script>
+    /************ Carga lista colaboradores **************/
+    function muestraColaboradores() {
+        var urlget = "{{url('redmite/administra/listaColabora')}}";
+        $.ajax({
+            method: "GET",
+            url: urlget,
+            error: function (ts) {
+                console.log(ts.responseText);
+            }})
+                .done(function (msg) {
+                    console.log('Colaboradores cargados: ');
+                    $("#contenidoPrincipal").html(msg)
+                    $(".container").html(msg)
+                    console.log(msg);
+                });
+    }
+
+</script>
