@@ -26,7 +26,7 @@ class AdminController extends Controller {
                 $docenteTotal = DB::table('med_docente')->count();
                 $docenteTelesecundaria = DB::table('med_docente')->where('tipo_docente', '=', 1)->count();
                 $docenteBasica = DB::table('med_docente')->where('tipo_docente', '=', 2)->count();
-                $docenteOtro = DB::table('med_docente')->where('tipo_docente', '=', 1)->count();
+                $docenteOtro = DB::table('med_docente')->where('tipo_docente', '=', 3)->count();
                 /* Series en educamedia */
                 $seriesLista = DB::table('edu_serie')->select('titulo_serie')->get();
                 /* Videos totales en educaplay y educamedia */
