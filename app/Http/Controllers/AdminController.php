@@ -22,6 +22,8 @@ class AdminController extends Controller {
             if ($consultaAdministrador != '[]') {
                 /* Usuarios totales */
                 $usuarioTotal = DB::table('users')->count();
+                /*Docentes Totales*/
+                $docenteTotal = DB::table('med_docente')->count();
                 /* Series en educamedia */
                 $seriesLista = DB::table('edu_serie')->select('titulo_serie')->get();
                 /*Videos totales en educaplay y educamedia*/
@@ -29,6 +31,7 @@ class AdminController extends Controller {
                 $videosTotalTelebachillerato = DB::table('med_telebachillerato')->count();
                 return view('viewAdmin/admin')
                                 ->with('usuarioTotal', $usuarioTotal)
+                                ->with('docenteTotal', $docenteTotal)
                                 ->with('seriesLista', $seriesLista)
                                 ->with('videosTotalTelesecundaria', $videosTotalTelesecundaria)
                                 ->with('videosTotalTelebachillerato', $videosTotalTelebachillerato)
