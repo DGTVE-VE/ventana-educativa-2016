@@ -9,12 +9,6 @@
 .modal-backdrop.modal-backdrop-fullscreen{background:#ffffff;}
 .modal-backdrop.modal-backdrop-fullscreen.in{opacity:.97;filter:alpha(opacity=97);}
 .modal-fullscreen .modal-dialog{margin:0;margin-right:auto;margin-left:auto;width:100%;}
-@media (min-width:768px){.modal-fullscreen .modal-dialog{width:750px;}
-}
-@media (min-width:992px){.modal-fullscreen .modal-dialog{width:970px;}
-}
-@media (min-width:1200px){.modal-fullscreen .modal-dialog{width:1170px;}
-}
 .controlInt{margin-top:20%;}
 .carousel-indicators l0{border-color:#fff;background-color:#fff;}
 .innerInt{margin-left:5%;margin-top:15%;}
@@ -45,7 +39,11 @@
 .txtAreasTematicas{color:white;font-family:'Oxygen', sans-serif;font-size:14px;}
 .txtBlogRed{font-family:'Oxygen', sans-serif;}
 .txtVideosRed{font-family: Ubuntu, sans-serif;}
-/*------------------------------------		Secci�n Slider  	-------------------------------------------*/
+@media(min-width:768px) and (max-width:991px){.margenPlecaMD{margin-top: 40px;}}
+@media (min-width:768px){.modal-fullscreen .modal-dialog{width:750px;}}
+@media (min-width:992px){.modal-fullscreen .modal-dialog{width:970px;}}
+@media (min-width:1200px){.modal-fullscreen .modal-dialog{width:1170px;}}
+/*------------------------------------		Seccion Slider  	-------------------------------------------*/
 @media(min-width:992px){
 	#parallaxcarouselSliderHome, #parallaxcarouselSliderHome1,
 	#parallaxcarouselSliderHome2, #parallaxcarouselSliderHome3,
