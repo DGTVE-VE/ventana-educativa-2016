@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Http\Requests;
 use DB;
+use Mail;
 use App\Model\Conocenos\Con_contacto;
 use App\Model\Conocenos\Con_news;
 
@@ -47,14 +48,24 @@ class ConocenosController extends Controller {
         $contacto->save();
         return redirect('conocenos');
     }
-    
+
     public function guardaCorreoNewsLetterConocenos() {
+      $existe = Con_news::wherecorreo(filter_input(INPUT_POST, 'correo_newsletter'))->get()->first();
+      if(!$existe){
         $news = new Con_news();
         $news->correo = filter_input(INPUT_POST, 'correo_newsletter');
         $news->hash = md5(date('Y/m/d H:i:s'));
         $news->save();
         $this->enviaCorreoActivacionConocenos($news->correo, $news->hash);
+
+        \Session::flash('flash_message', '¡Enhorabuena!, ahora estas suscrito a las novedades de Ventana Educativa.');
         return redirect('conocenos');
+      }
+      else {
+        \Session::flash('flash_message', 'El correo que ingresaste ya estaba suscrito.');
+        return redirect('conocenos');
+      }
+
     }
 
     public function enviaCorreoActivacionConocenos($correo, $hash) {
@@ -64,7 +75,7 @@ class ConocenosController extends Controller {
         });
         return redirect('viewConocenos/correoValidado');
     }
-    
+
     public function activaCorreoNews(Request $request, $correo, $hash) {
 
         $news = Con_news::where('correo', '=', $correo)->first();

@@ -56,7 +56,7 @@
                         js.src = p + '://platform.twitter.com/widgets.js';
                         fjs.parentNode.insertBefore(js, fjs);
                     }
-                }(document, 'script', 'twitter-wjs');</script>  
+                }(document, 'script', 'twitter-wjs');</script>
             <div class="fb-share-button pull-right col-md-8" data-layout="button" data-mobile-iframe="true"></div>
         </div>
         <br>
@@ -88,7 +88,7 @@
                     <p class="textoBlanco">(55) 3601 8100 <br>
                         01 800 2284 883 <br>
                         01 866 5729 837
-                    </p>							
+                    </p>
                 </td>
             </tr>
         </table>
@@ -113,9 +113,9 @@
             <div class="form-group">
                 <input type="email" required name="correo_newsletter" class="form-control" id="correoElectronico" placeholder="direccion@servidor.com"  style="width:80%">
                 {!!csrf_field()!!}
-                <button type="submit"  disabled="disabled" class="btn btn-primary"><span class="glyphicon glyphicon-send"></span></button>
+                <button type="submit" class="btn btn-primary"><span class="glyphicon glyphicon-send"></span></button>
             </div>
         </form>
     </div>
-    <div class="col-md-12 col-sm-12 col-lg-12 col-xs-12"><p class="text-muted derechos">&copy; Televisión Educativa. Todos los derechos reservados.</p></div> 
+    <div class="col-md-12 col-sm-12 col-lg-12 col-xs-12"><p class="text-muted derechos">&copy; Televisión Educativa. Todos los derechos reservados.</p></div>
 </div>
