@@ -10,7 +10,7 @@ Contacto
 @endsection
 @section('cuerpoRedmite')
 <div class="row">
-    <div class="col-xs-12 col-sm-12 col-md-12">
+    <div class="col-xs-12 col-sm-12 col-md-12 margenPlecaMD">
         <div class="division textoContacto">
             <h4 class="text-uppercase"><br>Dirección General de <br class="visible-xs-inline"> Televisión Educativa</h4>
         </div>

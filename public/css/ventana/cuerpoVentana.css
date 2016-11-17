@@ -70,3 +70,6 @@
 	.margenSup15pc{
 		 margin-top: 15%;
 	}
+	.posicionMsj{
+		position: fixed; top:100px;
+	}

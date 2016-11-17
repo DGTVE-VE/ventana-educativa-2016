@@ -122,7 +122,6 @@ Route::group(['middleware' => 'web'], function () {
     Route::get('redmite/guardarProyecto', 'RedmiteController@guardarProyecto');
 
     Route::get('redmite/administra/listaColabora', 'RedmiteController@listadoColaboradores');
-    Route::get('redmite/administra/listaColabora', 'RedmiteController@listadoColaboradores');
     Route::get('redmite/administra/guardaDecision/{usuario}/{resultado}', 'RedmiteController@guardaDecisionColabora');
     /*     * **************************REDMITE********************** */
 

@@ -44,6 +44,7 @@
 			$("#ocultaDiv").css('visibility', 'hidden');
 			document.getElementById('OcultaNombreCCT').style.visibility = "hidden";
 			document.getElementById('basica').required = false;
+			ocultaAdicional();
 		}
 	}
 	function muestraAdicional() {

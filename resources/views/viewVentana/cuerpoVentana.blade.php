@@ -156,7 +156,7 @@
         </div>
     </div>
     @if(Session::has('message'))
-    <div class="col-md-12 margenSup15pc">
+    <div class="col-xs-11 col-sm-11 col-md-12 posicionMsj">
         <div class="col-md-3"></div>
         <p class="alert col-md-6 text-center message-compatible {{ Session::get('alert-class', 'alert-info') }}">{{ Session::get('message') }}</p>
         <div class="col-md-3"></div>
