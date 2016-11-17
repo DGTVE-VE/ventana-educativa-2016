@@ -1,20 +1,20 @@
 <div class="row">
     <div class="col-md-12 col-lg-12 col-sm-12 col-sx-12 contenedorMapa subirPie">
-        <div class="triangulo"></div>
-        <div class="text-center"><h4>CONTACTO</h4></div>
+      <div class="triangulo"></div>
+      <div class="text-center"><h4>CONTACTO</h4></div>
         <div class="col-md-12 col-lg-12 col-sm-12 col-sx-12">
-            <div class="col-md-7 col-lg-12 col-sm-12 col-sx-12 contactoConocenos">                    
+            <div class="col-md-7 col-lg-12 col-sm-12 col-sx-12 contactoConocenos">
                 <h4><strong>Dudas, comentarios o sugerencias</strong></h4>
                 <form action="guardaContactoConocenos" method="post">
                     {!!csrf_field()!!}
-                    <table class="table table-responsive tableContacto">                                       
+                    <table class="table table-responsive tableContacto">
                         <tr><td><input type="text" size="45" class="form-conocenos" name="nombre_contacto" required placeholder="Nombre (requerido)"></td></tr>
                         <tr><td><input type="email" size="45" class="form-conocenos" required name="correo" placeholder="Correo (requerido)"></td></tr>
                         <tr><td><input type="text" size="45" class="form-conocenos" required name="asunto" placeholder="Asunto"></td></tr>
                         <tr><td><textarea  class="form-conocenos" rows="8" cols="43" required name="mensaje" ></textarea></td></tr>
                         <tr><td><button class="btn btnContacto" type="submit">Enviar</button></td></tr>
                     </table>
-                </form>                        
+                </form>
             </div>
         </div>
         <div class="col-md-12 col-lg-12 col-sm-12 col-sx-12">
@@ -23,4 +23,3 @@
 
     </div>
 </div>
-
