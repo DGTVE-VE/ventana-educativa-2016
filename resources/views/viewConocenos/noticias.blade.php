@@ -69,7 +69,7 @@
                 <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 padDiv10px">
                     {{HTML::image('imagenes/conocenos/noticia1.jpg','Noticia Conocenos',array( 'class'=>'imgNoticia img-responsive'))}}
                     <div class="posicionVerMas"><a data-toggle="modal" data-target="#modalNoticia1" href="#"><div class="text-center vermas">Ver más</div></a></div>
-                </div><br>
+                </div>
                 <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 padDiv10px">
                     {{HTML::image('imagenes/conocenos/noticia2.jpg','Noticia Conocenos',array( 'class'=>'imgNoticia img-responsive'))}}
                     <div class="posicionVerMas"><a data-toggle="modal" data-target="#modalNoticia2" href="#"><div class="text-center vermas">Ver más</div></a></div>
@@ -79,7 +79,7 @@
                 <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 padDiv10px">
                     {{HTML::image('imagenes/conocenos/noticia4.jpg','Noticia Conocenos',array( 'class'=>'imgNoticia img-responsive'))}}
                     <div class="posicionVerMas"><a data-toggle="modal" data-target="#modalNoticia3" href="#"><div class="text-center vermas">Ver más</div></a></div>
-                </div><br>
+                </div>
                 <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 padDiv10px">
                     {{HTML::image('imagenes/conocenos/noticia3.jpg','Noticia Conocenos',array( 'class'=>'imgNoticia img-responsive'))}}
                     <div class="posicionVerMas"><a data-toggle="modal" data-target="#modalNoticia4" href="#"><div class="text-center vermas">Ver más</div></a></div>
