@@ -144,33 +144,37 @@ Educaplay
 			@endif                        
 			<div class="col-md-5 col-md-offset-1 text-right">
 				<div id="player" class="col-xs-12 col-sm-12 col-md-12 col-lg-12" align="center">    </div>
-				@if(Auth::check ())
-				<div id="divRating">
-					<input type="number" name="rating" id="star-rating" class="" data-icon-lib="fa" data-active-icon="fa-star" data-inactive-icon="fa-star-o" onchange="guardaRating(this.value)"/>
-				</div>
-                                <!--twitter-->
-                                <a href="https://twitter.com/share" class="twitter-share-button">Tweet</a> <script>!function (d, s, id) {
-                                    var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https';
-                                    if (!d.getElementById(id)) {
-                                        js = d.createElement(s);
-                                        js.id = id;
-                                        js.src = p + '://platform.twitter.com/widgets.js';
-                                        fjs.parentNode.insertBefore(js, fjs);
-                                    }
-                                }(document, 'script', 'twitter-wjs');</script>
-                                <!--facebook-->
-                                <div 
-                                class="fb-share-button" 
-                                data-layout="button" 
-                                data-mobile-iframe="true"
-                                >
-                            </div>
-				<script>
-					var tmpRating = $('#VideoReproduce').val();
-					refrescaRating(tmpRating);
-				</script>
-                                
-				@endif
+                                @if(Auth::check ())
+                                <div class="col-xs-12 col-sm-4 col-md-3">
+                                    <div id="divRating">
+                                        <input type="number" name="rating" id="star-rating" class="" data-icon-lib="fa" data-active-icon="fa-star" data-inactive-icon="fa-star-o" onchange="guardaRating(this.value)"/>
+                                    </div>
+                                </div>
+                                <div class="col-xs-6 col-sm-2 col-md-1">
+                                    <a href="https://twitter.com/share" class="twitter-share-button">Tweet</a> <script>!function (d, s, id) {
+                                            var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https';
+                                            if (!d.getElementById(id)) {
+                                                js = d.createElement(s);
+                                                js.id = id;
+                                                js.src = p + '://platform.twitter.com/widgets.js';
+                                                fjs.parentNode.insertBefore(js, fjs);
+                                            }
+                                        }(document, 'script', 'twitter-wjs');</script>
+                                </div>
+                                <div class="col-xs-6 col-sm-2 col-md-2">
+                                    <div 
+                                        class="fb-share-button" 
+                                        data-layout="button" 
+                                        data-mobile-iframe="true"
+                                        >
+                                    </div>
+                                </div>
+                                <script>
+                                        var tmpRating = $('#VideoReproduce').val();
+                                        refrescaRating(tmpRating);
+                                </script>
+
+                                @endif
 			</div>
                         
 			<div class="col-md-4 col-md-offset-1">
