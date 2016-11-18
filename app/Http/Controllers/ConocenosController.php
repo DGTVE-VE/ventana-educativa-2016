@@ -88,4 +88,9 @@ class ConocenosController extends Controller {
             print 'error';
         }
     }
+    public function correoValidado() {
+
+      return view('viewConocenos.correoValidado');
+
+    }
 }
