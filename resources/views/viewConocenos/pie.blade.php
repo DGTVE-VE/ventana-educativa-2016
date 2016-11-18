@@ -113,7 +113,7 @@
             <div class="form-group">
                 <input type="email" required name="correo_newsletter" class="form-control" id="correoElectronico" placeholder="direccion@servidor.com"  style="width:80%">
                 {!!csrf_field()!!}
-                <button type="submit" class="btn btn-primary"><span class="glyphicon glyphicon-send"></span></button>
+                <button type="submit"  class="btn btn-primary"><span class="glyphicon glyphicon-send"></span></button>
             </div>
         </form>
     </div>
