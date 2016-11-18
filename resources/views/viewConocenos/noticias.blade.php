@@ -11,11 +11,16 @@
         .triangulo {
             margin-top: 8%;
         }
-        .
+        .padDiv10px{
+          margin-bottom: 10px;
+        }
     }
     @media(min-width:350px){
         .triangulo {
             margin-top: 8%;
+        }
+        .padDiv10px{
+          margin-bottom: 10px;
         }
     }
     @media(min-width:750px){

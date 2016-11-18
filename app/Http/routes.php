@@ -178,6 +178,7 @@ Route::group(['middleware' => 'web'], function () {
     Route::post('guardaContactoConocenos', 'ConocenosController@guardaContactoConocenos');
     Route::post('conocenos/guardaCorreoNewsLetterConocenos', 'ConocenosController@guardaCorreoNewsLetterConocenos');
     Route::get('conocenos/activaCorreo/{correo}/{hash}', 'ConocenosController@activaCorreoNews');
+    Route::get('conocenos/correoValidado', 'ConocenosController@correoValidado');
 
     /*blog conocenos*/
     Route::resource('conocenos/blog', 'ConocenosBlogController');
