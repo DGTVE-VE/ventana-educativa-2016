@@ -2,7 +2,7 @@
     <div class="col-sm-12 col-md-12 col-lg-12 contenedorMapa">
         <div class="text-center"><h4>LINKS</h4></div>
     </div>
-    <div class="col-xs-12 col-sm-12 col-sm-offset-1 col-md-10 col-md-offset-1 col-lg-10 col-lg-offset-1">
+    <div class="col-xs-12 col-sm-12 col-md-10 col-md-offset-1 col-lg-10 col-lg-offset-1">
         <section class="slider">
             <div class="flexslider">
                 <ul class="slides">

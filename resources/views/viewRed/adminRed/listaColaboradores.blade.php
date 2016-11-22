@@ -1,3 +1,10 @@
+@extends('indexAdmin')
+
+@section('menuAdmin')
+	@include('viewAdmin.encabezado')
+@endsection
+@section('cuerpoAdmin')
+<div class="container" style="padding-left:80px;">
 	<div class="row">
 		<div class="col-lg-6 col-lg-offset-3 text-center">
 			<h3 class="text-uppercase">Colaboradores</h3>
@@ -9,7 +16,7 @@
 			</div>
 			<div class="col-md-11">
 				<div class="col-md-1">
-					<img src="{{$colaborador->url_foto}}" alt=" " class="img-responsive">
+					<img src="../../{{$colaborador->url_foto}}" alt=" " class="img-responsive">
 				</div>
 				<div class="col-md-3">
 					<h4>{{$colaborador->name}} {{$colaborador->a_paterno}} {{$colaborador->a_materno}}</h4>
@@ -30,6 +37,7 @@
 
 	<div id="alertaExito" class="alert alert-success" role="alert" style="position: fixed; top:50%; left: 45%; padding: 50px; display:none;">Registro modificado con exito</div>
 	<div id="alertaError" class="alert alert-warning" role="alert" style="position: fixed; top:50%; left: 45%; padding: 50px; display:none;">Error al modificar el registro</div>
+</div>
 	<script>
 		function guardaDecision(id_usuario, decision){
 			var urlget = "{{url('redmite/administra/guardaDecision')}}";
@@ -53,3 +61,4 @@
 		}
 
 	</script>
+	@endsection

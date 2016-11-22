@@ -43,11 +43,11 @@
         }(document, 'script', 'facebook-jssdk'));
     </script>
 <div id="barraNavPie" class="navbar navbar-inverse medidasPie">
-    <div class="col-xs-6 col-sm-6 col-md-3 col-lg-2">
+    <div class="col-xs-6 col-sm-6 col-md-2 col-lg-3">
         <br>
         {{ HTML::image('imagenes/ventana/encabezado/logoventana.png','logo negativo', array('class'=>'img-responsive', 'width'=>'155', 'height'=>'155'))}}
         <br>
-        <div class="col-xs-12">
+        <div class="col-xs-6 col-sm-4 col-md-6 col-lg-6">
             <a href="https://twitter.com/share" class="twitter-share-button">Tweet</a> <script>!function (d, s, id) {
                     var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https';
                     if (!d.getElementById(id)) {
@@ -57,11 +57,10 @@
                         fjs.parentNode.insertBefore(js, fjs);
                     }
                 }(document, 'script', 'twitter-wjs');</script>
-            <div class="fb-share-button pull-right col-md-8" data-layout="button" data-mobile-iframe="true"></div>
         </div>
-        <br>
+		<div class="fb-share-button col-xs-6 col-sm-4 col-md-6 col-lg-6" data-layout="button" data-mobile-iframe="true"></div>
     </div>
-    <div class="col-xs-12 col-sm-6 col-md-3 col-lg-2">
+    <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
         <br>
         <h4 class="text-uppercase">Contáctanos</h4>
         <table>
@@ -77,7 +76,7 @@
             </tr>
         </table>
     </div>
-    <div class="col-xs-12 col-sm-6 col-md-1 col-lg-2">
+    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
         <br><br>
         <table>
             <tr>
@@ -91,12 +90,6 @@
                     </p>
                 </td>
             </tr>
-        </table>
-    </div>
-    <div class="col-xs-12 col-sm-6 col-md-2 col-lg-3">
-        <br>
-        <br>
-        <table>
             <tr>
                 <td class="imgTecho" style="padding:15px;">
                     {{ HTML::image('imagenes/red/footer/mail.png','logo mail', array('class'=>'img-responsive','style'=>'align:flex-start; width:20px; height:15px;)'))}}
@@ -107,13 +100,13 @@
             </tr>
         </table>
     </div>
-    <div class="col-xs-12 col-sm-6 col-md-3 col-lg-2">
+    <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
         <h3>Mantente informado. Suscríbete.</h3>
-        <form class="form-inline" action="conocenos/guardaCorreoNewsLetterConocenos" method="POST">
+        <form class="col-xs-12" action="conocenos/guardaCorreoNewsLetterConocenos" method="POST">
             <div class="form-group">
-                <input type="email" required name="correo_newsletter" class="form-control" id="correoElectronico" placeholder="direccion@servidor.com"  style="width:80%">
+                <input type="email" required name="correo_newsletter" class="form-control col-xs-8" id="correoElectronico" placeholder="direccion@servidor.com" style="width:70%"/>
                 {!!csrf_field()!!}
-                <button type="submit"  class="btn btn-primary"><span class="glyphicon glyphicon-send"></span></button>
+                <button type="submit" class="btn btn-primary col-xs-2"><span class="glyphicon glyphicon-send"></span></button>
             </div>
         </form>
     </div>
