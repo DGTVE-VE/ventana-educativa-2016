@@ -238,31 +238,31 @@ class RedmiteController extends Controller {
         }
         imagepng ($tmp, $targetFile);
     }
-
+    
 	public function administracion() {
         return view('viewRed/adminRed/cambiaContenido');
     }
-
+	
 	public function contenidoProyecto() {
         return view('viewRed/adminRed/formularioProyecto');
     }
-
+	
 	public function altaProyecto() {
         return view('viewRed/adminRed/formularioProyecto');
     }
-
+	
 	public function bajaProyecto() {
         return view('viewRed/adminRed/formularioProyecto');
     }
-
+	
 	public function cambioProyecto() {
         return view('viewRed/adminRed/formularioProyecto');
     }
-
+	
 	public function contenidoPublicacion() {
         return view('viewRed/adminRed/formularioPublicacion');
     }
-
+	
 	public function altaPublicacion() {
 		$publicacion = new Publicaciones();
         $publicacion->titulo = filter_input(INPUT_GET, 'titulo');
@@ -279,24 +279,19 @@ class RedmiteController extends Controller {
 	public function bajaPublicacion() {
         return view('viewRed/adminRed/formularioPublicacion');
     }
-
+	
 	public function cambioPublicacion() {
         return view('viewRed/adminRed/formularioPublicacion');
     }
-
+	
 	public function listadoColaboradores(){
-    if (\Illuminate\Support\Facades\Auth::user()) {
-
 		$colaboradores = DB::table('red_colaboradores')
 		->join('users', 'red_colaboradores.user_id', '=', 'users.id')
 		->where('colabora', '')
 		->get();
 		return view('viewRed/adminRed/listaColaboradores')->with('colaboradores', $colaboradores);
-  }else {
-    return redirect()->guest('login');
-  }
 	}
-
+	
 	public function guardaDecisionColabora($usuario, $resultado){
 		$affectedRows = Colaborador::where('user_id', '=', $usuario)->update(array('colabora' => $resultado));
 		if($resultado==0){

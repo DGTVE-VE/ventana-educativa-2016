@@ -11,7 +11,7 @@ class AdminNews extends Model
      *
      * @var string
      */
-    protected $table = 'con_news_admin';
+    protected $table = 'news_admin';
 
     /**
     * The database primary key value.
