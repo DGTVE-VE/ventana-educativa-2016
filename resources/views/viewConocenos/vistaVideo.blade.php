@@ -6,21 +6,21 @@
 		<source src="imagenes/ventana/conocenos/presentacion/institucional-bn.mp4" type="video/mp4"/>
 	</video>
 	<div class="row" style="min-height:90%">
-		<div class="col-sm-12 col-md-12 col-lg-12">
+		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 bajaImgSM">
 			<img id="textoProyectos" class="muestra animated centra img-responsive" src="imagenes/ventana/conocenos/presentacion/proyecto.png"/>
 			<img id="textoObjetivos" class="oculta animated centra img-responsive" src="imagenes/ventana/conocenos/presentacion/objetivos.png"/>
 			<a href="#" data-toggle="modal" data-target="#modalVideo" onfocus="this.blur()">
 				<img id="botonPlay" class="oculta animated centra img-responsive" src="imagenes/ventana/conocenos/presentacion/botonPlay.png"/>
 			</a>
 		</div>
-		<div class="col-sm-12 col-md-12 col-lg-12"></div>
-		<div class="divFlechaBrinca col-sm-12 col-md-12 col-lg-12">
+		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12"></div>
+		<div class="divFlechaBrinca col-xs-12 col-sm-12 col-md-12 col-lg-12">
 			<div class="txtContinua text-center">
 				CONTINUA NAVEGANDO
 			</div>
 		</div>
-		<div class="col-sm-12 col-md-12 col-lg-12"></div>
-		<div class="divFlechaBrinca col-sm-12 col-md-12 col-lg-12 text-center" onclick="siguienteImagen()">
+		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12"></div>
+		<div class="divFlechaBrinca col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center" onclick="siguienteImagen()">
 			<img id="flechaBrinca" class="flechaBrinca" src="imagenes/educaplay/flechaDetalle.png"/>
 		</div>
 	</div>
