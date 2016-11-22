@@ -58,6 +58,19 @@
 			
 		}
 				/*		*********	Media Queries	*****	*/
+		@media(max-width:767px){
+			.textoSeccionSlider{
+				position: relative;
+				top: -70px;
+				left: -20px;
+			}
+			.imgEdificio{
+				position: absolute; top:30%; left:17%; max-width:101%;
+			}
+			.marcoNegro{
+				position: relative; top:50px; left:17%; max-width:110%;
+			}
+		}
 		@media (min-width:992px ){
 			.acomodaLigas{
 				position: absolute; top:-228%; left:39%;
