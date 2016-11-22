@@ -47,7 +47,7 @@
         <br>
         {{ HTML::image('imagenes/ventana/encabezado/logoventana.png','logo negativo', array('class'=>'img-responsive', 'width'=>'155', 'height'=>'155'))}}
         <br>
-        <div class="col-xs-12 col-sm-4 col-md-6 col-lg-6">
+        <div class="col-xs-6 col-sm-4 col-md-6 col-lg-6">
             <a href="https://twitter.com/share" class="twitter-share-button">Tweet</a> <script>!function (d, s, id) {
                     var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https';
                     if (!d.getElementById(id)) {
@@ -58,9 +58,9 @@
                     }
                 }(document, 'script', 'twitter-wjs');</script>
         </div>
-		<div class="fb-share-button col-xs-12 col-sm-4 col-md-6 col-lg-6" data-layout="button" data-mobile-iframe="true"></div>
+		<div class="fb-share-button col-xs-6 col-sm-4 col-md-6 col-lg-6" data-layout="button" data-mobile-iframe="true"></div>
     </div>
-    <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
+    <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
         <br>
         <h4 class="text-uppercase">Contáctanos</h4>
         <table>
