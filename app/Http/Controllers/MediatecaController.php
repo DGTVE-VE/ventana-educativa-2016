@@ -118,6 +118,11 @@ class MediatecaController extends Controller {
 		$breadcrumbs = 'lengua';
         return view('viewMediateca/sealengua')->with('breadcrumbs', $breadcrumbs);
     }
+	
+    public function SEAnivel() {
+		$breadcrumbs = 'nivel';
+        return view('viewMediateca/seaNivel')->with('breadcrumbs', $breadcrumbs);
+    }
 
     public function videos() {
 //        $thumbnail = "https://i.ytimg.com/vi/".$video1."/default.jpg";

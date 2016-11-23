@@ -19,11 +19,11 @@
 			<area alt="Lengua y comunicación" href="{{url('educamedia/sea/lengua')}}" onmouseover="resaltaImgSecu('sea', 'lengua')" onmouseout="normalImgSecu('sea', 'lengua')" title="" shape="poly" coords="106,275,6,296,1,264,2,212,16,159,36,115,63,78,100,45,141,22,192,5,213,105,172,119,129,153,113,186,101,226"/>
 		</map>
 		<div class="contenedorAro">
-			{{HTML::image('imagenes/mediateca/sea/Inicio/materias.png','sea Materias',['class'=>'posicionInicial img-responsive','id'=>'seaInicio'])}}
-			{{HTML::image('imagenes/mediateca/sea/Inicio/calculoHover.png','calculo y resolucion',['class'=>'resaltaImg img-responsive', 'id'=>'calculoHover'])}}
-			{{HTML::image('imagenes/mediateca/sea/Inicio/saludHover.png','Salud y ambiente',['class'=>'resaltaImg img-responsive', 'id'=>'saludHover'])}}
-			{{HTML::image('imagenes/mediateca/sea/Inicio/familiaHover.png','Familia, comunidad y sociedad',['class'=>'resaltaImg img-responsive', 'id'=>'familiaHover'])}}
-			{{HTML::image('imagenes/mediateca/sea/Inicio/lenguaHover.png','Lengua y comunicación',['class'=>'resaltaImg img-responsive', 'id'=>'lenguaHover'])}}
+			{{HTML::image('imagenes/mediateca/sea/Inicio/materia.png','sea Materias',['class'=>'posicionInicial img-responsive','id'=>'seaInicio'])}}
+			{{HTML::image('imagenes/mediateca/sea/Inicio/calculoHover1.png','calculo y resolucion',['class'=>'resaltaImg img-responsive', 'id'=>'calculoHover'])}}
+			{{HTML::image('imagenes/mediateca/sea/Inicio/saludHover1.png','Salud y ambiente',['class'=>'resaltaImg img-responsive', 'id'=>'saludHover'])}}
+			{{HTML::image('imagenes/mediateca/sea/Inicio/familiaHover1.png','Familia, comunidad y sociedad',['class'=>'resaltaImg img-responsive', 'id'=>'familiaHover'])}}
+			{{HTML::image('imagenes/mediateca/sea/Inicio/lenguaHover1.png','Lengua y comunicación',['class'=>'resaltaImg img-responsive', 'id'=>'lenguaHover'])}}
 			{{HTML::image('imagenes/mediateca/sea/iconoCentral/centralPrimero.png','Telesecundaria central Primero',['class'=>'imgTelesecCentro', 'id'=>'primerGradoCentro'])}}
 			{{HTML::image('imagenes/mediateca/sea/iconoCentral/centralSegundo.png','Telesecundaria central Segundo',['class'=>'imgTelesecCentro', 'id'=>'segundoGradoCentro'])}}
 			{{HTML::image('imagenes/mediateca/sea/iconoCentral/centralTercero.png','Telesecundaria central Tercero',['class'=>'imgTelesecCentro', 'id'=>'tercerGradoCentro'])}}
