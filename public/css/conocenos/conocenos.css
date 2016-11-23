@@ -425,11 +425,15 @@ a.before:hover:before,a.after:hover:after{
 
 /*sección mapa*/
 .contactoConocenos{
-    /*border: 1px solid red;*/
     z-index: 1000;
-    position: absolute;
-    width: 25%;
     margin-top: 5%;
+}
+@media(min-width:767px){
+    .contactoConocenos{
+        /*border: 1px solid red;*/
+         position: absolute;
+         width: 25%;
+    }
 }
 
 .contenedorMapa{

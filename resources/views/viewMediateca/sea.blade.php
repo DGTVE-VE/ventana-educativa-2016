@@ -33,5 +33,5 @@
 	 @include('viewMediateca.barraSociales')
 @endsection
 @section('pieMediateca')
-    @include('viewMediateca.menuMediatecaTelesecundaria')
+
 @endsection

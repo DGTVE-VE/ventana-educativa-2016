@@ -2,8 +2,8 @@
     <div class="col-md-12 col-lg-12 col-sm-12 col-sx-12 contenedorMapa subirPie">
       <div class="triangulo"></div>
       <div class="text-center"><h4>CONTACTO</h4></div>
-        <div class="col-md-12 col-lg-12 col-sm-12 col-sx-12">
-            <div class="col-md-7 col-lg-12 col-sm-12 col-sx-12 contactoConocenos">
+        <div class="col-sx-12 col-sm-12 col-md-12 col-lg-12">
+            <div class="col-sx-12 col-sm-12 col-md-7 col-lg-12 contactoConocenos">
                 <h4><strong>Dudas, comentarios o sugerencias</strong></h4>
                 <form action="guardaContactoConocenos" method="post">
                     {!!csrf_field()!!}
@@ -17,7 +17,7 @@
                 </form>
             </div>
         </div>
-        <div class="col-md-12 col-lg-12 col-sm-12 col-sx-12">
+        <div class="col-sx-10 col-sm-12 col-md-12 col-lg-12">
             <script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script><div style='overflow:hidden;height:640px;width:1800px;'><div id='gmap_canvas' style='height:660px;width:1800px;'></div><div><small><a href="http://www.embedgooglemaps.com">The fastest way to get a Google Map on your website!									Haga clic aquí									Let your customers know where your business is located!</a></small></div><div><small><a href="http://noleggioauto.zone/">noleggio auto lungo termine</a></small></div><style>#gmap_canvas img{max-width:none!important;background:none!important}</style></div><script type='text/javascript'>function init_map(){var myOptions = {zoom:17, center:new google.maps.LatLng(19.4416309, - 99.11499498439714), mapTypeId: google.maps.MapTypeId.ROADMAP}; map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions); marker = new google.maps.Marker({map: map, position: new google.maps.LatLng(19.4416309, - 99.11499498439714)}); infowindow = new google.maps.InfoWindow({content:'<strong>DGTVE</strong><br>Avenida Anillo de Circunvalación, Esquina Tabiqueros s/n, Ciudad de México, Colonia Morelos, Delegación Venustiano Carranza<br>'}); google.maps.event.addListener(marker, 'click', function(){infowindow.open(map, marker); }); infowindow.open(map, marker); }google.maps.event.addDomListener(window, 'load', init_map);</script>
         </div>
 
