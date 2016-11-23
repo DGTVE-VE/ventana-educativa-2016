@@ -34,7 +34,7 @@ class SessionsController extends Controller {
     public function create(Request $request) {
 //        $url = $request->session()->get('url');
 //            print $url;
-        //Autenticar a Facebook        
+        //Autenticar a Facebook
         if (strpos($_SERVER['HTTP_USER_AGENT'], "facebookexternalhit/1.1" ) !== false){
             $user = \App\User::where ('email', 'facebook@facebook.com')->first();
             Auth::login ($user);
@@ -44,7 +44,7 @@ class SessionsController extends Controller {
             var_dump($url);
 //            return Redirect::to ($url);
 //            return redirect()->intended($url);
-        }   else { 
+        }   else {
             return Redirect::to ('acceso');
         }
     }
@@ -52,13 +52,18 @@ class SessionsController extends Controller {
     public function store(Request $request) {
         $email = Input::get('email');
         $password = Input::get('password');
+
         if (Auth::attempt(['email' => $email, 'password' => $password, 'activo' => 1])) {
-//        if (Auth::attempt(Input::only('email', 'password'))) {
-//            return Redirect::back();
             $url = $request->session()->get('url', '/');
             return redirect()->intended($url);
         }
-        return Redirect::back()->withInput()->withErrors(['¡Alerta!', 'Debe activar su cuenta']);
+        else if ( \App\User::whereemail($email)->first()->activo == 0 ) {
+          return Redirect::back()->withInput()->withErrors(['No esta activa tu cuenta']);
+        }
+        else {
+          return Redirect::back()->withInput()->withErrors(['El correo o contraseña son erroneos']);
+        }
+
     }
 
     public function destroy() {
