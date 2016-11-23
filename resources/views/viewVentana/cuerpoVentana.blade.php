@@ -2,11 +2,12 @@
 <link rel="stylesheet" type="text/css" href="{{url('css/ventana/estiloventana.css')}}"/>
 <script type="text/javascript" src="{{url('js/ventana/ventanaCuerpo.js')}}"></script>
 <div class="container-fluid">
-    <div class="row">        
+    <div class="row">
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 		@if($errors->any())
 			<div id='mensaje-error' class="alert alert-danger msgError">
-				<h4 class="pull-right">{{$errors->first()}} Debe activar su cuenta</h4>
+        <h4 class="pull-right">{{$errors->first()}}</h4>
+				<!-- <h4 class="pull-right">{{$errors->first()}} Debe activar su cuenta</h4> -->
 			</div>
 		@endif
         </div>
@@ -85,7 +86,7 @@
             </div>
         </div>
 
-        <div class="col-md-12">  
+        <div class="col-md-12">
             <div id="browserWarning" class="col-md-3 alert margenSup3pc">
                 {{ HTML::image('imagenes/ventana/homeventana/alertaNav.png','alerta',['class'=>'imgAlertaNav'])}}
             </div>
@@ -161,5 +162,5 @@
         <p class="alert col-md-6 text-center message-compatible {{ Session::get('alert-class', 'alert-info') }}">{{ Session::get('message') }}</p>
         <div class="col-md-3"></div>
     </div>
-    @endif    
+    @endif
 </div>
