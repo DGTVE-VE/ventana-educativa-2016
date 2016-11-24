@@ -79,7 +79,6 @@ Route::group(['middleware' => 'web'], function () {
 	Route::get('educamedia/sea/salud', 'MediatecaController@SEAsalud');
 	Route::get('educamedia/sea/familia', 'MediatecaController@SEAfamilia');
 	Route::get('educamedia/sea/lengua', 'MediatecaController@SEAlengua');
-	Route::get('educamedia/sea/nivel', 'MediatecaController@SEAnivel');
 
     Route::get('educamedia/telebachillerato/Propedéutico', 'MediatecaController@componente');
 	Route::get('educamedia/breadcrumbs', 'MediatecaController@generaBreadCrumbs');

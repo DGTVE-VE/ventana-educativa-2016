@@ -64,7 +64,7 @@ and open the template in the editor.
 
 <script src="{{url('js/mediateca/index.js')}}"></script>
 <script>
-	/*		*****	Función que llama función que genera breadcrumbs		*****		*/
+	/*		*****	Llamada a función que genera breadcrumbs		*****		*/
 	function imprimeBreadCrumbs(){
 		var paginaActual = window.location.href;
 		console.log(paginaActual);

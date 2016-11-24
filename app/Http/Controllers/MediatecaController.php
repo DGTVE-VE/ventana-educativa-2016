@@ -120,14 +120,8 @@ class MediatecaController extends Controller {
         return view('viewMediateca/seanivel')->with('breadcrumbs', $breadcrumbs);
     }
 	
-    public function SEAnivel() {
-		$breadcrumbs = 'nivel';
-        return view('viewMediateca/seaNivel')->with('breadcrumbs', $breadcrumbs);
-    }
-
     public function videos() {
 //        $thumbnail = "https://i.ytimg.com/vi/".$video1."/default.jpg";
-
         return view('viewMediateca/videos');
     }
 
@@ -368,8 +362,13 @@ class MediatecaController extends Controller {
 		$j++;
 		for ($i = $j; $i < $elemsURI; $i++) {
 			if (strlen($uriActual[$i]) < 4) {
-				$gradoURI = MediatecaController::seleccionaGrado($uriActual[$i]);
-				$termina = true;
+				if($uriActual[$i]=='sea'){
+					$gradoURI = 'sea';
+				}
+				else{
+					$gradoURI = MediatecaController::seleccionaGrado($uriActual[$i]);
+					$termina = true;
+				}
 			} else {
 				$gradoURI = $uriActual[$i];
 			}
