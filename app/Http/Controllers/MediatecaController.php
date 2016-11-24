@@ -6,6 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Http\Request;
 use App\Http\Requests;
 use App\Model\Mediateca\Telesecundaria;
+use App\Model\Mediateca\Sea;
 use App\Model\Mediateca\Telebachillerato;
 use App\Model\Mediateca\RatingTelesecundaria;
 use App\Model\Mediateca\RatingTelebachillerato;
@@ -220,31 +221,56 @@ class MediatecaController extends Controller {
     }
 
     public function getVideosTelebachillerato($grado, $materia) {
-                    /* Query para filtrar videos por grado, materia */
-            $videos = Telebachillerato::whereNested(function($sQL) use ($grado, $materia) {
-                    $sQL->where('semestre', '=', $grado);
-                    $sQL->where('materia_id', '=', $materia);
-            })->get();
+    /* Query para filtrar videos por grado, materia */
+        $videos = Telebachillerato::whereNested(function($sQL) use ($grado, $materia) {
+            $sQL->where('semestre', '=', $grado);
+            $sQL->where('materia_id', '=', $materia);
+        })->get();
 
-                    /* Query para determinar si el uruario actual tiene rol de docente en ventana educativa */
-                    if(isset(Auth::user ()->id)){
-		$user_id = Auth::user ()->id;
-		$consultaDocente = \App\Model\Mediateca\docente::where('user_id',$user_id)->get();
-		if($consultaDocente!= '[]'){
-			$esDocente = true;
-		}
-		else{
+        /* Query para determinar si el uruario actual tiene rol de docente en ventana educativa */
+        if(isset(Auth::user ()->id)){
+			$user_id = Auth::user ()->id;
+			$consultaDocente = \App\Model\Mediateca\docente::where('user_id',$user_id)->get();
+			if($consultaDocente!= '[]'){
+				$esDocente = true;
+			}
+			else{
+				$esDocente = false;
+			}
+		}else {
 			$esDocente = false;
 		}
-  }else {
-    $esDocente = false;
-
-  }
 
         /* Envío de querys y variables a la vista */
         return view('viewMediateca/videosTelebachillerato')->with('videos', $videos)->with('nivel', 'telebachillerato')->with('esDocente',$esDocente);
     }
 
+    public function getVideosSEA($grado, $materia) {
+    /* Query para filtrar videos por grado, materia */
+        $videos = Sea::whereNested(function($sQL) use ($grado, $materia) {
+			$grado = "INICIAL"; $materia = "LENGUA Y COMUNICACIÓN";
+            $sQL->where('nivel', '=', $grado);
+            $sQL->where('materia', '=', $materia);
+        })->get();
+
+    /* Query para determinar si el uruario actual tiene rol de docente en ventana educativa */
+        if(isset(Auth::user ()->id)){
+			$user_id = Auth::user ()->id;
+			$consultaDocente = \App\Model\Mediateca\docente::where('user_id',$user_id)->get();
+			if($consultaDocente!= '[]'){
+				$esDocente = true;
+			}
+			else{
+				$esDocente = false;
+			}
+		}else {
+			$esDocente = false;
+		}
+
+        /* Envío de querys y variables a la vista */
+        return view('viewMediateca/videosSea')->with('videos', $videos)->with('nivel', 'materia')->with('esDocente',$esDocente);
+    }
+	
     public function storeTelesecundariaComment (){
 
         $comment = new \App\Model\Mediateca\TelesecundariaComments;
