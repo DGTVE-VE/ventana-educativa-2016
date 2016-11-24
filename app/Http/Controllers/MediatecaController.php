@@ -102,22 +102,22 @@ class MediatecaController extends Controller {
 	
     public function SEAcalculo() {
 		$breadcrumbs = 'calculo';
-        return view('viewMediateca/seacalculo')->with('breadcrumbs', $breadcrumbs);
+        return view('viewMediateca/seanivel')->with('breadcrumbs', $breadcrumbs);
     }
 	
     public function SEAsalud() {
 		$breadcrumbs = 'salud';
-        return view('viewMediateca/seasalud')->with('breadcrumbs', $breadcrumbs);
+        return view('viewMediateca/seanivel')->with('breadcrumbs', $breadcrumbs);
     }
 	
     public function SEAfamilia() {
 		$breadcrumbs = 'familia';
-        return view('viewMediateca/seafamilia')->with('breadcrumbs', $breadcrumbs);
+        return view('viewMediateca/seanivel')->with('breadcrumbs', $breadcrumbs);
     }
 	
     public function SEAlengua() {
 		$breadcrumbs = 'lengua';
-        return view('viewMediateca/sealengua')->with('breadcrumbs', $breadcrumbs);
+        return view('viewMediateca/seanivel')->with('breadcrumbs', $breadcrumbs);
     }
 	
     public function SEAnivel() {
@@ -245,11 +245,27 @@ class MediatecaController extends Controller {
         return view('viewMediateca/videosTelebachillerato')->with('videos', $videos)->with('nivel', 'telebachillerato')->with('esDocente',$esDocente);
     }
 
-    public function getVideosSEA($grado, $materia) {
+    public function getVideosSEA($materia, $nivel) {
     /* Query para filtrar videos por grado, materia */
-        $videos = Sea::whereNested(function($sQL) use ($grado, $materia) {
-			$grado = "INICIAL"; $materia = "LENGUA Y COMUNICACIÓN";
-            $sQL->where('nivel', '=', $grado);
+		switch($materia){
+			case "calculo":
+				$materia = "CÁLCULO Y RESOLUCIÓN DE PROBLEMAS";
+				break;
+			case "salud":
+				$materia = "SALUD Y AMBIENTE";
+				break;
+			case "familia":
+				$materia = "FAMILIA, COMUNIDAD Y SOCIEDAD";
+				break;
+			case "lengua":
+				$materia = "LENGUA Y COMUNICACIÓN";
+				break;
+			default:
+				$materia = "CÁLCULO Y RESOLUCIÓN DE PROBLEMAS";
+				break;
+		}
+		$videos = Sea::whereNested(function($sQL) use ($materia, $nivel) {
+            $sQL->where('nivel', '=', $nivel);
             $sQL->where('materia', '=', $materia);
         })->get();
 
@@ -268,7 +284,7 @@ class MediatecaController extends Controller {
 		}
 
         /* Envío de querys y variables a la vista */
-        return view('viewMediateca/videosSea')->with('videos', $videos)->with('nivel', 'materia')->with('esDocente',$esDocente);
+        return view('viewMediateca/videosSea')->with('videos', $videos)->with('nivel', 'sea')->with('esDocente',$esDocente);
     }
 	
     public function storeTelesecundariaComment (){
