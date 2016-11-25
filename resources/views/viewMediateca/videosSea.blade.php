@@ -86,8 +86,7 @@ Educamedia
                 @endif
                 <div class="col-md-12">
                     <li class="list-unstyled"><h5 id="subtitulo_serie">{{ $videos[0]->tipo }}</h5></li>
-                    <li class="list-unstyled"><h5 id="subtitulo_programa">{{ $videos[0]->nombre }}</h5></li>
-                    <li class="list-unstyled"><h5 id="grado">Nivel: {{ $videos[0]->nivel }}</h5></li>
+                    <li class="list-unstyled"><h5 id="grado">Nivel: {{ strtolower($videos[0]->nivel) }}</h5></li>
                 </div>
                 <div class="col-md-12">
                     @if (Auth::check ())
