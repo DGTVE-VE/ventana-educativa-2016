@@ -102,22 +102,22 @@ class MediatecaController extends Controller {
 	
     public function SEAcalculo() {
 		$breadcrumbs = 'calculo';
-        return view('viewMediateca/seanivel')->with('breadcrumbs', $breadcrumbs);
+        return view('viewMediateca/sea_Nivel')->with('breadcrumbs', $breadcrumbs);
     }
 	
     public function SEAsalud() {
 		$breadcrumbs = 'salud';
-        return view('viewMediateca/seanivel')->with('breadcrumbs', $breadcrumbs);
+        return view('viewMediateca/sea_Nivel')->with('breadcrumbs', $breadcrumbs);
     }
 	
     public function SEAfamilia() {
 		$breadcrumbs = 'familia';
-        return view('viewMediateca/seanivel')->with('breadcrumbs', $breadcrumbs);
+        return view('viewMediateca/sea_Nivel')->with('breadcrumbs', $breadcrumbs);
     }
 	
     public function SEAlengua() {
 		$breadcrumbs = 'lengua';
-        return view('viewMediateca/seanivel')->with('breadcrumbs', $breadcrumbs);
+        return view('viewMediateca/sea_Nivel')->with('breadcrumbs', $breadcrumbs);
     }
 	
     public function videos() {
