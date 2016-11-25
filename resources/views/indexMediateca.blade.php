@@ -64,23 +64,7 @@ and open the template in the editor.
 
 <script src="{{url('js/mediateca/index.js')}}"></script>
 <script>
-	/*		*****	Llamada a función que genera breadcrumbs		*****		*/
-	function imprimeBreadCrumbs(){
-		var paginaActual = window.location.href;
-		console.log(paginaActual);
-		$.ajax({
-			method: "GET",
-			url: "{{url('educamedia/breadcrumbs')}}",
-			data: {url: paginaActual},
-			error: function (ts) {
-				console.log(ts.responseText);
-			}})
-			.done(function (msg) {
-					//console.log("Correcto breadcrumbs: " + msg);
-					$('#parrafoBreadcrumb').html(msg);
-			});
-	}
-	imprimeBreadCrumbs();
+	imprimeBreadCrumbs("{{url('educamedia/breadcrumbs')}}");
 </script>
 
 <?php
