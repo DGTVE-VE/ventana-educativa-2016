@@ -10,6 +10,7 @@ use App\Model\Mediateca\Sea;
 use App\Model\Mediateca\Telebachillerato;
 use App\Model\Mediateca\RatingTelesecundaria;
 use App\Model\Mediateca\RatingTelebachillerato;
+use App\Model\Mediateca\RatingSea;
 use \Alaouy\Youtube\Facades\Youtube;
 use Illuminate\Support\Facades\Auth;
 use Laracasts\Flash\Flash;
@@ -193,6 +194,14 @@ class MediatecaController extends Controller {
             $ratingSaved->rating = $rating;
             $ratingSaved->save ();
         }
+        if ($nivel == 'sea') {
+            $user_id = Auth::user ()->id;
+            $ratingSaved = \App\Model\Mediateca\RatingSea::
+                    firstOrCreate(['user_id' => $user_id,
+                                   'sea_id' => $id]);
+            $ratingSaved->rating = $rating;
+            $ratingSaved->save ();
+        }
         return 'rating guardado';
     }
     
@@ -207,6 +216,15 @@ class MediatecaController extends Controller {
     
     public function getRatingTelebachillerato ($id){
         $rating = RatingTelebachillerato::where ('telebachillerato_id', $id)
+            -> where ('user_id',Auth::user()->id)->first();
+        if ($rating == NULL)
+            print 0;
+        else
+            print $rating->rating;
+    }
+	
+    public function getRatingSea ($id){
+        $rating = RatingSea::where ('sea_id', $id)
             -> where ('user_id',Auth::user()->id)->first();
         if ($rating == NULL)
             print 0;
@@ -310,11 +328,29 @@ class MediatecaController extends Controller {
         $comment->save ();
         return view('viewMediateca/comment')->with('comment', $comment);
     }
+	
+     public function storeSeaComment (){
+
+        $comment = new \App\Model\Mediateca\SeaComments;
+        $comment->comment_id = filter_input (INPUT_POST, 'comment_id');
+        $comment->usuario_id = Auth::user ()->id;
+        $comment->sea_id = filter_input (INPUT_POST, 'video_id');
+        $comment->comment = filter_input (INPUT_POST, 'comment');
+        $comment->save ();
+        return view('viewMediateca/comment')->with('comment', $comment);
+    }
 
     public function telebachilleratoComments ($id){
-
         $comments = \App\Model\Mediateca\TelebachilleratoComments::
                 where('telebachillerato_id', $id)
+                ->where ('comment_id', 0)
+                ->orderBy('created_at','DESC')->get();
+        return view('viewMediateca/comments')->with('comments', $comments);
+    }
+
+    public function seaComments ($id){
+        $comments = \App\Model\Mediateca\SeaComments::
+                where('sea_id', $id)
                 ->where ('comment_id', 0)
                 ->orderBy('created_at','DESC')->get();
         return view('viewMediateca/comments')->with('comments', $comments);

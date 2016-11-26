@@ -190,7 +190,7 @@ Educamedia
         $("#star-rating").rating({value: parseInt(valRating)});
     }
     function loadComments(id) {
-        var urlget = "{{url('educamedia/comments/telebachillerato')}}";
+        var urlget = "{{url('educamedia/comments/sea')}}";
         var _url = urlget + '/' + id;
         $.ajax({
         method: "GET",
@@ -203,7 +203,7 @@ Educamedia
                     $("#comentarios").html(msg)
                     //                    console.log ( "Data Saved: " + msg );
                 });
-        var urlget2 = "{{url('educamedia/rating/telebachillerato')}}";
+        var urlget2 = "{{url('educamedia/rating/sea')}}";
             var _url2 = urlget2 + '/' + id;
             $.ajax({
                 method: "GET",
@@ -283,7 +283,7 @@ Educamedia
         var respuesta = $('#responde_' + partes[1]).val();
         $.ajax({
         method: "POST",
-            url: "{{url('educamedia/comment/telebachillerato')}}",
+            url: "{{url('educamedia/comment/sea')}}",
             data: {comment: respuesta,
             video_id: $("#video-id").val(),
                 comment_id: partes[1],
@@ -300,7 +300,7 @@ Educamedia
                 $('#btn-comentar').click(function () {
     $.ajax({
             method: "POST",
-            url: "{{url('educamedia/comment/telebachillerato')}}",
+            url: "{{url('educamedia/comment/sea')}}",
             data: {comment: $("#comment").val(),
             video_id: $("#video-id").val(),
                 comment_id: 0,

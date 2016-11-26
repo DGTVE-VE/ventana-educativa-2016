@@ -95,6 +95,9 @@ Route::group(['middleware' => 'web'], function () {
     Route::get('educamedia/comments/telebachillerato/{id}', 'MediatecaController@telebachilleratoComments');
     Route::get('educamedia/rating/telesecundaria/{id}', 'MediatecaController@getRatingTelesecundaria');
     Route::get('educamedia/rating/telebachillerato/{id}', 'MediatecaController@getRatingTelebachillerato');
+	Route::get('educamedia/rating/sea/{id}', 'MediatecaController@getRatingSea');
+	Route::post('educamedia/comment/sea', 'MediatecaController@storeSeaComment');
+    Route::get('educamedia/comments/sea/{id}', 'MediatecaController@seaComments');
     /*     * **************************MEDIATECA********************** */
 
     /*     * **************************REDMITE********************** */
