@@ -6,15 +6,6 @@
 	@include('viewMediateca.encabezadoMediateca')
 @endsection
 @section('cuerpoMediateca')
-	<style>
-		.imgSeaCentro{
-			visibility: hidden;
-			position: absolute;
-			top:90px;
-			left:100px;
-			z-index:0;
-		}
-	</style>
 	<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center" style="padding:4%">
 	</div>
 	<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center textoTitulo">
@@ -33,10 +24,10 @@
 			{{HTML::image('imagenes/mediateca/sea/Inicio/saludHover1.png','Salud y ambiente',['class'=>'resaltaImg img-responsive', 'id'=>'saludHover'])}}
 			{{HTML::image('imagenes/mediateca/sea/Inicio/familiaHover1.png','Familia, comunidad y sociedad',['class'=>'resaltaImg img-responsive', 'id'=>'familiaHover'])}}
 			{{HTML::image('imagenes/mediateca/sea/Inicio/lenguaHover1.png','Lengua y comunicación',['class'=>'resaltaImg img-responsive', 'id'=>'lenguaHover'])}}
-			{{HTML::image('imagenes/mediateca/sea/imgCentral/calculo.gif','Telesecundaria central Primero',['class'=>'imgSeaCentro', 'id'=>'calculoCentro'])}}
-			{{HTML::image('imagenes/mediateca/sea/imgCentral/familia-sociedad.gif','Telesecundaria central Segundo',['class'=>'imgSeaCentro', 'id'=>'familiaCentro'])}}
-			{{HTML::image('imagenes/mediateca/sea/imgCentral/lenguaje-com.gif','Telesecundaria central Tercero',['class'=>'imgSeaCentro', 'id'=>'lenguaCentro'])}}
-			{{HTML::image('imagenes/mediateca/sea/imgCentral/salud.gif','Telesecundaria central Tercero',['class'=>'imgSeaCentro', 'id'=>'saludCentro'])}}
+			{{HTML::image('imagenes/mediateca/sea/imgCentral/calculo.gif','Telesecundaria central Primero',['class'=>'imgPrimeroCentral', 'id'=>'calculoCentro'])}}
+			{{HTML::image('imagenes/mediateca/sea/imgCentral/familia-sociedad.gif','Telesecundaria central Segundo',['class'=>'imgPrimeroCentral', 'id'=>'familiaCentro'])}}
+			{{HTML::image('imagenes/mediateca/sea/imgCentral/lenguaje-com.gif','Telesecundaria central Tercero',['class'=>'imgPrimeroCentral', 'id'=>'lenguaCentro'])}}
+			{{HTML::image('imagenes/mediateca/sea/imgCentral/salud.gif','Telesecundaria central Tercero',['class'=>'imgPrimeroCentral', 'id'=>'saludCentro'])}}
 			{{HTML::image('imagenes/mediateca/sea/Inicio/imgMapa.png','Materias SEA',['class'=>'posicionMapa img-responsive', 'id'=>'seaAreas', 'usemap'=>'#seaGrados'])}}
 		</div>
 	</div>

@@ -9,6 +9,9 @@
         font-size:14px;
         cursor:pointer;
     }
+    .imgTelesecCentro{
+        position: absolute;  z-index:0; visibility: hidden;
+    }
     #colBotonSesion{padding-right:0px !important;}
     @media (min-width: 250px) {
         .logoBarraTVE{
@@ -29,7 +32,7 @@
         }
         /*	----------	Estilo pagina Inicio telesecundaria	----------	*/
         .imgTelesecCentro{
-            position: absolute; top:75px; left:65px; width: 150px; height: 150px; z-index:0; visibility: hidden;
+            top:75px; left:65px; width: 150px; height: 150px;
         }
         /*	----------	Estilo pagina Inicio Educamedia	----------	*/
         .iniImgCentro{
@@ -60,7 +63,7 @@
         }
         /*	----------	Estilo pagina Inicio telesecundaria	----------	*/
         .imgTelesecCentro{
-            position: absolute; top:75px; left:65px; width: 150px; height: 150px; z-index:0; visibility: hidden;
+            top:75px; left:65px; width: 150px; height: 150px;
         }
         /*	----------	Estilo pagina Inicio Educamedia	----------	*/
         .iniImgCentro{
@@ -93,7 +96,7 @@
         }
         /*	----------	Estilo pagina Inicio telesecundaria	----------	*/
         .imgTelesecCentro{
-            position: absolute; top:150px; left:130px; width: 230px; height: 230px; z-index:0; visibility: hidden;
+            top:150px; left:130px; width: 230px; height: 230px;
         }
         /*	----------	Estilo pagina Inicio Educamedia	----------	*/
         .iniImgCentro{
@@ -124,7 +127,7 @@
         }
         /*	----------	Estilo pagina Inicio telesecundaria	----------	*/
         .imgTelesecCentro{
-            position: absolute; top:150px; left:130px; width: 230px; height: 230px; z-index:0; visibility: hidden;
+            top:150px; left:130px; width: 230px; height: 230px;
         }
         /*	----------	Estilo pagina Inicio Educamedia	----------	*/
         .iniImgCentro{
@@ -150,7 +153,7 @@
         }
         /*	----------	Estilo pagina Inicio telesecundaria	----------	*/
         .imgTelesecCentro{
-            position: absolute; top:150px; left:130px; width: 230px; height: 230px; z-index:0; visibility: hidden;
+            top:150px; left:130px; width: 230px; height: 230px;
         }
         /*	----------	Estilo pagina Inicio Educamedia	----------	*/
         .iniImgCentro{
