@@ -79,8 +79,10 @@
 						{!!csrf_field()!!}
 					</div>
 					<div class="col-xs-4 col-sm-3 col-md-3 col-lg-3">
-						<button type="submit" class="btn btn-primary"><span class="glyphicon glyphicon-send"></span></button>
+						<button type="submit" class="btn btn-primary" id="btnEnviar"><span class="glyphicon glyphicon-send"></span></button>
 					</div>
+				</div>
+				<div id="mensaje-error" class="form-group col-xs-11 col-xs-offset-1 col-sm-12 col-sm-offset-1 col-md-12 col-md-offset-1 col-lg-12 col-lg-offset-1 hidden" style="color:white;">
 				</div>
 			</form>
 		</div>
@@ -104,3 +106,25 @@
     </div>
 </footer>
 <script src="{{url('js/red/pie.js')}}"></script>
+<script>
+    function isValidEmail(mail){
+        return /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,4})+$/.test(mail);
+    }
+
+    $("#correoElectronico").focusout(function () {
+		if($('#correoElectronico').val()==''){
+			muestraError(false, '', 'correoElectronico');
+		}
+		else{
+	    	if(isValidEmail($('#correoElectronico').val())){
+                var _url = "{{url('redmite/emailRegistrado')}}" + '/' + $('#correoElectronico').val();
+                consultaCorreo(_url, 'correo', 'correoElectronico');
+		    }
+            else{
+                muestraError(true, 'Formato de correo incorrecto', 'correoElectronico');
+            }			
+		}
+
+    });
+
+</script>

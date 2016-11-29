@@ -47,6 +47,7 @@ Route::group(['middleware' => 'web'], function () {
     /* REDMITE */
     Route::resource('redmite/blog', 'RedBlogController');
     Route::post('redmite/blog/comment', 'RedBlogController@comment');
+	Route::get('redmite/emailRegistrado/{email}', 'RedmiteController@emailRegistrado');
     /* /REDMITE */
 
 //Route::get ('testSession','SessionsController@test');

@@ -447,20 +447,20 @@ Ventana Educativa
 </div>
 <script type="text/javascript" src="https://ajax.aspnetcdn.com/ajax/jquery.ui/1.10.0/jquery-ui.js"></script>
 <script>
-                            $("#cct").focusout(function () {
-                                var _url = "{{url('existeCCT')}}" + '/' + $('#cct').val();
-                                consultaCCT(_url, 'cct', 'cct');
-                            });
-                            $("#email").focusout(function () {
-                                var _url = "{{url('user/existEmail')}}" + '/' + $('#email').val();
-                                console.log(_url);
-                                loadDoc(_url, 'correo', 'email');
-                            });
-                            $("#nick").focusout(function () {
-                                var _url = "{{url('user/existNick')}}" + '/' + $('#nick').val();
-                                console.log(_url);
-                                loadDoc(_url, 'nombre de usuario', 'nick');
-                            });
+    $("#cct").focusout(function () {
+        var _url = "{{url('existeCCT')}}" + '/' + $('#cct').val();
+        consultaCCT(_url, 'cct', 'cct');
+    });
+    $("#email").focusout(function () {
+        var _url = "{{url('user/existEmail')}}" + '/' + $('#email').val();
+        console.log(_url);
+        loadDoc(_url, 'correo', 'email');
+    });
+    $("#nick").focusout(function () {
+        var _url = "{{url('user/existNick')}}" + '/' + $('#nick').val();
+        console.log(_url);
+        loadDoc(_url, 'nombre de usuario', 'nick');
+    });
 </script>
 <script type="text/javascript" src="{{url('js/ventana/registro.js')}}"></script>
 

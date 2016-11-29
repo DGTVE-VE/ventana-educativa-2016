@@ -15,6 +15,7 @@ use App\User;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Input;
 use App\Model\Red\Publicaciones;
+use App\Model\Red\News;
 
 class RedmiteController extends Controller {
 
@@ -125,7 +126,7 @@ class RedmiteController extends Controller {
 
     public function activaCorreoNews(Request $request, $correo, $hash) {
 
-        $news = \App\Model\Red\News::where('correo', '=', $correo)->first();
+        $news = News::where('correo', '=', $correo)->first();
 
         if ($news->hash == $hash) {
             $news->validado = 1;
@@ -136,6 +137,16 @@ class RedmiteController extends Controller {
         }
     }
 
+    public function emailRegistrado($correo) {
+
+        $news = News::where('correo', '=', $correo)->first();
+
+        if ($news != '') {
+            return '1';
+        } else {
+            return '0';
+        }
+    }
     public function guardaContacto() {
         $contacto = new \App\Model\Red\Contacto();
         $contacto->nombre_contacto = filter_input(INPUT_POST, 'nombre_contacto');
@@ -292,9 +303,9 @@ class RedmiteController extends Controller {
 		->where('colabora', '')
 		->get();
 		return view('viewRed/adminRed/listaColaboradores')->with('colaboradores', $colaboradores);
-  }else {
-    return redirect()->guest('login');
-  }
+        }else{
+            return redirect()->guest('login');
+        }
 	}
 
 	public function guardaDecisionColabora($usuario, $resultado){
