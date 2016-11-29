@@ -48,4 +48,13 @@ class User extends Authenticatable implements CanResetPassword
         }
         return $rating->rating;
     }
+    public function ratingSea ($sea_id){
+        $rating = Model\Mediateca\RatingSea::
+                where ('user_id', $this->id)
+                -> where ('sea_id', $sea_id)->first ();
+        if ($rating == null){
+            return 0;
+        }
+        return $rating->rating;
+    }
 }

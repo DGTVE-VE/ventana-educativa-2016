@@ -23,7 +23,10 @@
                         $stars = $comment->usuario->ratingTelesecundaria($comment->telesecundaria_id);
                     } else if ($comment instanceof \App\Model\Mediateca\TelebachilleratoComments){
                         $stars = $comment->usuario->ratingTelebachillerato($comment->telebachillerato_id);
-                    }    
+                    }
+                    else if ($comment instanceof \App\Model\Mediateca\SeaComments){
+                        $stars = $comment->usuario->ratingSea($comment->sea_id);
+                    }
                     else{
                         $stars = 0;                        
                     }
