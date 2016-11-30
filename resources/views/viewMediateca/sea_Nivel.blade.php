@@ -21,8 +21,8 @@ Educamedia
 			{{HTML::image('imagenes/mediateca/sea/niveles/inicial.png','sea inicial',['class'=>'resaltaImg img-responsive', 'id'=>'inicialHover'])}}
 			{{HTML::image('imagenes/mediateca/sea/niveles/avanzado.png','sea avanzado',['class'=>'resaltaImg img-responsive', 'id'=>'avanzadoHover'])}}
 			
-			{{HTML::image('imagenes/mediateca/imgCentral/GeografiaI.png','sea Central',['class'=>' img-responsive iniImgCentro', 'id'=>'GeografiaCentro'])}}
-			{{HTML::image('imagenes/mediateca/imgCentral/HistoriaUniv.png','sea Central',['class'=>' img-responsive iniImgCentro', 'id'=>'HistoriaUnivCentro'])}}
+			{{HTML::image('imagenes/mediateca/sea/imgCentral/inicial.gif','sea Central',['class'=>' img-responsive iniImgCentro', 'id'=>'inicialCentro'])}}
+			{{HTML::image('imagenes/mediateca/sea/imgCentral/avanzado.gif','sea Central',['class'=>' img-responsive iniImgCentro', 'id'=>'avanzadoCentro'])}}
 			
 			{{HTML::image('imagenes/mediateca/sea/niveles/imgMapa.png','sea',['class'=>'posicionMapa img-responsive', 'id'=>'seaMapa', 'usemap'=>'#mapasea'])}}
 		</div>
