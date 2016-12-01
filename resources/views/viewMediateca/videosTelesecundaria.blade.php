@@ -8,6 +8,11 @@ Educamedia
 @include('viewMediateca.encabezadoMediateca')
 @endsection
 @section('cuerpoMediateca')
+@if($claveVideo == '0')
+    <?php $datosActual = $videos; ?>
+@else
+    <?php $datosActual = $videoActual; ?>
+@endif
 <link rel="stylesheet" href="{{ asset('css/mediateca/videosTelesecundaria.css') }}" >
 <div class="container-fluid">
     <div class="row">
@@ -19,8 +24,8 @@ Educamedia
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-10 contenedorVideo transparenciaVideos txtVideosRed quitaMargen" id='div-containter'>
                 <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 txtVideosRed">
                     <div class="col-md-12 quitaMargen" style="overflow: auto;">
-                        <h5 id="materia">{{$videos[0]->materia}}</h5>                
-                        <h4 id="titulo_programa">{{$videos[0]->titulo_programa}}</h4>                
+                        <h5 id="materia">{{$datosActual[0]->materia}}</h5>                
+                        <h4 id="titulo_programa">{{$datosActual[0]->titulo_programa}}</h4>                
                         <div class="col-xs-12 col-sm-12 col-md-10 col-md-offset-1 col-lg-10 col-lg-offset-1 quitaMargen estilosReproductor" id="player">    </div>
                     </div>
                     <div class="row">
@@ -33,7 +38,7 @@ Educamedia
                             <div id="divRating">
                             <input type="number" data-max="5" data-min="1" name="rating" value="4" id="star-rating" class="rating"  data-icon-lib="fa" data-active-icon="fa-star" data-inactive-icon="fa-star-o"  />
                             </div>
-                            <input type="hidden" id="video-id" value="{{ $videos[0]->id }}" />
+                            <input type="hidden" id="video-id" value="{{ $datosActual[0]->id }}" />
                             <input type="hidden" id="nivel" value="{{ $nivel }}" />
                         </div>
                         <div class="col-xs-6 col-sm-2 col-md-1">
@@ -60,7 +65,7 @@ Educamedia
                         @if (Auth::check ())
                         @if($esDocente)
                         <div class="col-xs-12 col-sm-4 col-md-3">
-                            <a id="ligaDescargaYoutube" href="{{ url('descarga/getvideo.php/yt/getvideo.mp4?videoid='.$videos[0]->url.'&format=best') }}" download="{{$videos[0]->url}}"><span title="descarga video" class="glyphicon glyphicon-cloud-download btnDescarga" aria-hidden="true"></span></a>
+                            <a id="ligaDescargaYoutube" href="{{ url('descarga/getvideo.php/yt/getvideo.mp4?videoid='.$datosActual[0]->url.'&format=best') }}" download="{{$datosActual[0]->url}}"><span title="descarga video" class="glyphicon glyphicon-cloud-download btnDescarga" aria-hidden="true"></span></a>
                             Descarga Video
                         </div>
                         @else
@@ -82,14 +87,14 @@ Educamedia
                         @endif
 					<div class="col-xs-12 col-sm-12 col-md-12"></div>
                     <div class="col-xs-12 col-sm-12 col-md-12">
-						<li class="list-unstyled"><h5 id="subtitulo_serie">{{ $videos[0]->subtitulo_serie }}<h5></li>
-						<li class="list-unstyled"><h5 id="subtitulo_programa">{{ $videos[0]->subtitulo_programa }}<h5></li>                                                
-						<li class="list-unstyled"><h5 id="grado">Grado: {{ $videos[0]->grado }}</h5></li>
-					@if(strlen($videos[0]->sinopsis) < 350)
-						<li class="list-unstyled text-justify" id="sinopsis">{{ $videos[0]->sinopsis }}</li>
+						<li class="list-unstyled"><h5 id="subtitulo_serie">{{ $datosActual[0]->subtitulo_serie }}<h5></li>
+						<li class="list-unstyled"><h5 id="subtitulo_programa">{{ $datosActual[0]->subtitulo_programa }}<h5></li>                                                
+						<li class="list-unstyled"><h5 id="grado">Grado: {{ $datosActual[0]->grado }}</h5></li>
+					@if(strlen($datosActual[0]->sinopsis) < 350)
+						<li class="list-unstyled text-justify" id="sinopsis">{{ $datosActual[0]->sinopsis }}</li>
 					@else
-						<li class="list-unstyled text-justify oculto" id="sinopsis">{{ $videos[0]->sinopsis }}</li>
-						<li class="list-unstyled text-justify" id="sinopsis-250">{{ substr($videos[0]->sinopsis, 0, 350).'...'}}</li>
+						<li class="list-unstyled text-justify oculto" id="sinopsis">{{ $datosActual[0]->sinopsis }}</li>
+						<li class="list-unstyled text-justify" id="sinopsis-250">{{ substr($datosActual[0]->sinopsis, 0, 350).'...'}}</li>
 						<div  id="botonmas" data-toggle="collapse" data-target="#massinopsis" class="col-md-12 text-center">
 							<span class="punteroMano">Mas </span><span class="glyphicon glyphicon-triangle-bottom punteroMano"></span>
 						</div>
@@ -131,7 +136,7 @@ Educamedia
 							@foreach ($videos as $item => $video)
 							<tr>
 								<td data-target="#custom_carousel" data-slide-to="{{$item}}" class="item" data-id='{{ $video->url }}' _id="{{$video->id}}">
-									<img src="http://img.youtube.com/vi/{{ $video->url }}/2.jpg" class='item-a' style="cursor:pointer;">                            
+									<a href="{{url('educamedia/telesecundaria').'/'.$grado.'/'.$materia.'/'.$bloque.'/'.$video->id}}"><img src="http://img.youtube.com/vi/{{ $video->url }}/2.jpg" class='item-a' style="cursor:pointer;"></a>
 								</td>
 								<td class="redesText">{{$video->titulo_programa}}</td>
 							</tr>                
@@ -148,30 +153,30 @@ Educamedia
 	<link rel="stylesheet" href="{{ asset('css/jquery-ui.min.css') }}" >
 @endsection
 @section('scripts')
-	<script src="{{asset ('js/jquery-ui.min.js')}}"></script>
-	<script src="https://www.youtube.com/player_api"></script>
-	<!--https://github.com/javiertoledo/bootstrap-rating-input-->
-	<script src="{{asset ('js/bootstrap-rating-input.min.js')}}"></script>
-	<!--El siguiente fragmento de codigo es para el uso de Facebook en la aplicación-->
-	<script>
-		window.fbAsyncInit = function () {
-		FB.init({
-		appId: '1408909052733113',
-		xfbml: true,
-		version: 'v2.6'
-		});
-		};
+    <script src="{{asset ('js/jquery-ui.min.js')}}"></script>
+    <script src="https://www.youtube.com/player_api"></script>
+    <!--https://github.com/javiertoledo/bootstrap-rating-input-->
+    <script src="{{asset ('js/bootstrap-rating-input.min.js')}}"></script>
+    <!--El siguiente fragmento de codigo es para el uso de Facebook en la aplicación-->
+    <script>
+        window.fbAsyncInit = function () {
+            FB.init({
+                appId: '1408909052733113',
+                xfbml: true,
+                version: 'v2.6'
+            });
+        };
 
-		(function (d, s, id) {
-		var js, fjs = d.getElementsByTagName(s)[0];
-		if (d.getElementById(id)) {
-		return;
-		}
-		js = d.createElement(s);
-		js.id = id;
-		js.src = "//connect.facebook.net/en_US/sdk.js";
-		fjs.parentNode.insertBefore(js, fjs);
-		}(document, 'script', 'facebook-jssdk'));
+        (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) {
+                return;
+            }
+            js = d.createElement(s);
+            js.id = id;
+            js.src = "//connect.facebook.net/en_US/sdk.js";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
     </script>
     <!--fin codigo facebook-->
     <!--sdk twitter-->
@@ -236,15 +241,14 @@ Educamedia
         }
         
         function refrescaRating(valRating){
-
-        $("#divRating").empty();
-        $("#divRating").append('<input type="number" name="rating" id="star-rating" data-icon-lib="fa" data-active-icon="fa-star" data-inactive-icon="fa-star-o" onchange="guardaRating(this.value)" value="' + parseInt(valRating) + '"/>');
-        $("#star-rating").rating({value: parseInt(valRating)});
+            $("#divRating").empty();
+            $("#divRating").append('<input type="number" name="rating" id="star-rating" data-icon-lib="fa" data-active-icon="fa-star" data-inactive-icon="fa-star-o" onchange="guardaRating(this.value)" value="' + parseInt(valRating) + '"/>');
+            $("#star-rating").rating({value: parseInt(valRating)});
         }
         
         $(document).ready(function () {
             @if(Auth::check())
-				refrescaRating({!! Auth::user()->ratingTelesecundaria ($videos[0] -> id) !!});
+				refrescaRating({!! Auth::user()->ratingTelesecundaria ($datosActual[0] -> id) !!});
             @endif
             /* Se guarda la información de los videos para cambiarla cuando dan click*/
             var videos = {!!(string)$videos!!}
@@ -253,7 +257,7 @@ Educamedia
             _videos[videos[i].id] = videos[i];
             }
 			@if(Auth::check())
-				loadComments ({{$videos[0] -> id}});
+				loadComments ({{$datosActual[0] -> id}});
 			@endif
 
 			$("#botonmas").click(function () {
@@ -287,7 +291,7 @@ Educamedia
         
 
 
-        $('.item').click(function () {
+        /*$('.item').click(function () {
             $('#div-containter').fadeOut();
             data = $(this).attr('data-id');
             _id = $(this).attr('_id');
@@ -306,7 +310,7 @@ Educamedia
 			@endif
             var ligaDescargaVideo = '{{ url("descarga/getvideo.php")}}' + "/yt/getvideo.mp4?videoid=" + data + "&format=best";
             $('#ligaDescargaYoutube').attr('href', ligaDescargaVideo);
-        });
+        });*/
 
         $(document).on('click', "a.linkComentar", function () {
             var $element = $(this);
@@ -442,7 +446,7 @@ Educamedia
             //                console.error(textStatus);
             //            }
             //        });
-            initializeYoutube('{{$videos[0]->url}}', 0);
+            initializeYoutube('{{$datosActual[0]->url}}', 0);
             //    });
         }
 
@@ -539,16 +543,16 @@ Educamedia
 	<meta property="og:url" content="http://ventana.televisioneducativa.gob.mx/{{Request::path()}}" /> 
 	<meta property="fb:app_id" content="1408909052733113" /> 
 	<meta property="og:type" content="article" />                                  
-	<meta property="og:title" content="{{$videos[0]->titulo_programa}}" /> 
+	<meta property="og:title" content="{{$datosActual[0]->titulo_programa}}" /> 
 	<meta property="og:image" content="http://img.youtube.com/vi/{{ $video->url }}/2.jpg" />                                             
-	<meta property="og:description" content="{{ $videos[0]->sinopsis }}" />
+	<meta property="og:description" content="{{ $datosActual[0]->sinopsis }}" />
 
 	<!--twitter metas-->
 	<meta name="twitter:card" content="summary_large_image">
 	<meta name="twitter:site" content="@tveducativamx">
 	<meta name="twitter:creator" content="@SarahMaslinNir">
-	<meta name="twitter:title" content="{{$videos[0]->titulo_programa}}">
-	<meta name="twitter:description" content="{{ $videos[0]->sinopsis }}">
+	<meta name="twitter:title" content="{{$datosActual[0]->titulo_programa}}">
+	<meta name="twitter:description" content="{{ $datosActual[0]->sinopsis }}">
 	<meta name="twitter:image" content="http://img.youtube.com/vi/{{ $video->url }}/2.jpg">
 
 @endsection

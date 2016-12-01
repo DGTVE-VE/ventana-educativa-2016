@@ -126,10 +126,10 @@ class MediatecaController extends Controller {
         return view('viewMediateca/videos');
     }
 
-    public function getVideosTelesecundaria(Request $request,$grado, $materia, $bloque) {
-    $url_actual = $request->path();
-            /* Obtener el último fragmento de l path y agregarselo a la cadena de path actual */
-            $url = substr($url_actual, 0, strrpos($url_actual, '/'));
+    public function getVideosTelesecundaria(Request $request,$grado, $materia, $bloque, $claveVideo) {
+        $url_actual = $request->path();
+    /* Obtener el último fragmento de l path y agregarselo a la cadena de path actual */
+        $url = substr($url_actual, 0, strrpos($url_actual, '/'));
         if ($bloque > 0){
             /* Query para filtrar videos por grado, bloque, materia */
             $videos = Telesecundaria::whereNested(function($sQL) use ($grado, $materia, $bloque) {
@@ -149,21 +149,31 @@ class MediatecaController extends Controller {
             $paginacion [] = new Telesecundaria;
             $paginacion[0]->bloque = 0;
         }
+		if($claveVideo != '0'){
+            $videoActual = Telesecundaria::whereNested(function($sQL) use ($grado, $materia, $bloque, $claveVideo) {
+                    $sQL->where('grado', '=', $grado);
+                    $sQL->where('materia_id', '=', $materia);
+					$sQL->where('id', '=', $claveVideo);
+            })->get();
+		}
+        else{
+            $videoActual = '';
+        }
 
-                    /* Query para determinar si el uruario actual tiene rol de docente en ventana educativa */
-                    if (isset(Auth::user()->id)) {
-                      $user_id = Auth::user ()->id;
-                  		$consultaDocente = \App\Model\Mediateca\docente::where('user_id',$user_id)->get();
-                  		if($consultaDocente!= '[]'){
-                  			$esDocente = true;
-                  		}
-                  		else{
-                  			$esDocente = false;
-                  		}
-                    }else {
-                      $esDocente = false;
-                    }
-
+        /* Query para determinar si el uruario actual tiene rol de docente en ventana educativa */
+        if (isset(Auth::user()->id)) {
+            $user_id = Auth::user ()->id;
+            $consultaDocente = \App\Model\Mediateca\docente::where('user_id',$user_id)->get();
+            if($consultaDocente!= '[]'){
+                $esDocente = true;
+            }
+            else{
+                $esDocente = false;
+            }
+        }
+		else {
+            $esDocente = false;
+        }
 
         /* Envío de querys y variables a la vista */
         return view('viewMediateca/videosTelesecundaria')
@@ -171,6 +181,11 @@ class MediatecaController extends Controller {
                         ->with('paginacion', $paginacion)
                         ->with('url', $url)
                         ->with('nivel', 'telesecundaria')
+						->with('claveVideo', $claveVideo)
+                        ->with('videoActual', $videoActual)
+                        ->with('grado', $grado)
+                        ->with('materia', $materia)
+                        ->with('bloque', $bloque)
 						->with('esDocente',$esDocente);
     }
 

@@ -320,7 +320,7 @@ Educamedia
                 comment_id: 0,
                 _token: "{{csrf_token()}}"},
                 error: function (ts) {
-            console.log(ts.responseText);
+                    console.log(ts.responseText);
                 }})
                 .done(function (msg) {
                 $("#comentarios").append(msg)
@@ -471,8 +471,8 @@ Educamedia
                 }
         });
     }
-            function showProgress() {
-    timeElapsed = player.getCurrentTime();
+    function showProgress() {
+        timeElapsed = player.getCurrentTime();
         document.getElementById("progress").innerHTML = timeElapsed;
     }
     /**
