@@ -247,7 +247,7 @@ class MediatecaController extends Controller {
             print $rating->rating;
     }
 
-    public function getVideosTelebachillerato($grado, $materia) {
+    public function getVideosTelebachillerato($grado, $materia, $claveVideo) {
     /* Query para filtrar videos por grado, materia */
         $videos = Telebachillerato::whereNested(function($sQL) use ($grado, $materia) {
             $sQL->where('semestre', '=', $grado);
@@ -267,9 +267,24 @@ class MediatecaController extends Controller {
 		}else {
 			$esDocente = false;
 		}
+        if($claveVideo != '0'){
+            $videoActual = Telebachillerato::whereNested(function($sQL) use ($grado, $materia, $claveVideo) {
+                $sQL->where('semestre', '=', $grado);
+                $sQL->where('materia_id', '=', $materia);
+                $sQL->where('id', '=', $claveVideo);
+            })->get();
+		}
+        else{
+            $videoActual = '';
+        }
 
         /* Envío de querys y variables a la vista */
-        return view('viewMediateca/videosTelebachillerato')->with('videos', $videos)->with('nivel', 'telebachillerato')->with('esDocente',$esDocente);
+        return view('viewMediateca/videosTelebachillerato')->with('videos', $videos)->with('nivel', 'telebachillerato')
+                ->with('esDocente',$esDocente)
+                ->with('videoActual',$videoActual)
+                ->with('grado',$grado)
+                ->with('materia',$materia)
+                ->with('claveVideo',$claveVideo);
     }
 
     public function getVideosSEA($materiaAbrv, $nivel, $claveVideo) {
