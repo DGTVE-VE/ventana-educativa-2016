@@ -272,9 +272,9 @@ class MediatecaController extends Controller {
         return view('viewMediateca/videosTelebachillerato')->with('videos', $videos)->with('nivel', 'telebachillerato')->with('esDocente',$esDocente);
     }
 
-    public function getVideosSEA($materia, $nivel) {
+    public function getVideosSEA($materiaAbrv, $nivel, $claveVideo) {
     /* Query para filtrar videos por grado, materia */
-		switch($materia){
+		switch($materiaAbrv){
 			case "calculo":
 				$materia = "CÁLCULO Y RESOLUCIÓN DE PROBLEMAS";
 				break;
@@ -295,7 +295,16 @@ class MediatecaController extends Controller {
             $sQL->where('nivel', '=', $nivel);
             $sQL->where('materia', '=', $materia);
         })->get();
-
+		if($claveVideo != '0'){
+            $videoActual = Sea::whereNested(function($sQL) use ( $materia, $nivel, $claveVideo) {
+                    $sQL->where('nivel', '=', $nivel);
+                    $sQL->where('materia', '=', $materia);
+					$sQL->where('id', '=', $claveVideo);
+            })->get();
+		}
+        else{
+            $videoActual = '';
+        }
     /* Query para determinar si el uruario actual tiene rol de docente en ventana educativa */
         if(isset(Auth::user ()->id)){
 			$user_id = Auth::user ()->id;
@@ -311,7 +320,11 @@ class MediatecaController extends Controller {
 		}
 
         /* Envío de querys y variables a la vista */
-        return view('viewMediateca/videosSea')->with('videos', $videos)->with('nivel', 'sea')->with('esDocente',$esDocente);
+        return view('viewMediateca/videosSea')->with('videos', $videos)->with('nivel', 'sea')->with('esDocente',$esDocente)
+                ->with('videoActual', $videoActual)
+                ->with('materia', $materiaAbrv)
+                ->with('categoria', $nivel)
+                ->with('claveVideo', $claveVideo);
     }
 	
     public function storeTelesecundariaComment (){
