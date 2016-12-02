@@ -9,10 +9,11 @@ Educamedia
 @endsection
 @section('cuerpoMediateca')
 @if($claveVideo == '0')
-    <?php $datosActual = $videos; ?>
+    {{--*/ $datosActual = $videos; /*--}}
 @else
-    <?php $datosActual = $videoActual; ?>
+    {{--*/ $datosActual = $videoActual; /*--}}
 @endif
+    {{--*/ $url = substr($url, 0, strlen($url)-1); /*--}}
 <link rel="stylesheet" href="{{ asset('css/mediateca/videosTelesecundaria.css') }}" >
 <div class="container-fluid">
     <div class="row">
@@ -120,8 +121,8 @@ Educamedia
 						<div class="col-xs-10 col-sm-10 col-md-10 col-lg-10">
 							@foreach ($paginacion as $item => $bloquePagina)
 							@if($bloquePagina->bloque!='0')
-							<li class="list-inline">                                
-								<a class="bloqueMed" href="{{url($url.'/'.$bloquePagina->bloque)}}">
+							<li class="list-inline">
+								<a class="bloqueMed" href="{{url($url.$bloquePagina->bloque.'/0')}}">
 									{{$bloquePagina->bloque}}   
 								</a>                                    
 							</li>                        

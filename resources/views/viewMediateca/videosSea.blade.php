@@ -10,9 +10,9 @@ Educamedia
 @endsection
 @section('cuerpoMediateca')
 @if($claveVideo == '0')
-    <?php $datosActual = $videos; ?>
+    {{--*/ $datosActual = $videos; /*--}}
 @else
-    <?php $datosActual = $videoActual; ?>
+    {{--*/ $datosActual = $videoActual; /*--}}
 @endif
 <div class="container-fluid">
     <div class="row">
