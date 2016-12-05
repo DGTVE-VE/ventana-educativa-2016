@@ -455,9 +455,10 @@ class MediatecaController extends Controller {
                 $gradoURI = $uriActual[$i];
             }
             $hrefCompleta = url($hrefCompleta . "/" . $gradoURI);
-        if($uriActual[$i]=='INICIAL' || $uriActual[$i]=='AVANZADO' ){
-            $hrefCompleta = $hrefCompleta.'/0';
-        }
+            if($uriActual[$i]=='INICIAL' || $uriActual[$i]=='AVANZADO' ){
+                $hrefCompleta = $hrefCompleta.'/0';
+                $termina = true;
+            }
             $breadcrumb = $breadcrumb . ' / <a href="' . $hrefCompleta;
             if (strpos($uriActual[$i], '%C3%A9') !== false) {
                 $gradoURI = 'Proped&#201;utico';

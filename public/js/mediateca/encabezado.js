@@ -66,19 +66,19 @@
     });
     /************ CAMBIAR AVATAR **************/
 
-	function resaltaImgSecu(prefijo, idImg) {
-		var idImgHover = "#" + idImg + "Hover";
-		$(idImgHover).css("visibility", "visible");
-		var idImgCentro = "#" + idImg + "Centro";
-		if (prefijo === 'Inicio') {
-			var random = Math.floor((Math.random() * 8));
-			$(idImgCentro).attr("src", gifs[random]);
-		}
-		$(idImgCentro).addClass("bounceIn");
-		$(idImgCentro).addClass("animated");
-		$(idImgCentro).css("visibility", "visible");
-		$(idImgCentro).fadeIn();
-	}
+    function resaltaImgSecu(prefijo, idImg) {
+        var idImgHover = "#" + idImg + "Hover";
+        $(idImgHover).css("visibility", "visible");
+        var idImgCentro = "#" + idImg + "Centro";
+        if (prefijo === 'Inicio') {
+            var random = Math.floor((Math.random() * 8));
+            $(idImgCentro).attr("src", gifs[random]);
+        }
+        $(idImgCentro).addClass("bounceIn");
+        $(idImgCentro).addClass("animated");
+        $(idImgCentro).css("visibility", "visible");
+        $(idImgCentro).fadeIn();
+    }
     function normalImgSecu(prefijo, idImg) {
         var idImgHover = "#" + idImg + "Hover";
         $(idImgHover).css("visibility", "hidden");
