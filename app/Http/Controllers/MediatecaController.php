@@ -32,95 +32,95 @@ class MediatecaController extends Controller {
     }
 
     public function mediateca() {
-		$breadcrumbs = 'educamedia';
+        $breadcrumbs = 'educamedia';
         return view('viewMediateca/mediateca')->with('breadcrumbs', $breadcrumbs);
     }
 
     public function telesecundaria() {
-		$breadcrumbs = 'telesecundaria';
+        $breadcrumbs = 'telesecundaria';
         return view('viewMediateca/telesecundaria')->with('breadcrumbs', $breadcrumbs);
     }
 
     public function telebachillerato() {
-		$breadcrumbs = 'telebachillerato';
+        $breadcrumbs = 'telebachillerato';
         return view('viewMediateca/telebachillerato')->with('breadcrumbs', $breadcrumbs);
     }
-	
-	public function sea() {
-		$breadcrumbs = 'sea';
+    
+    public function sea() {
+        $breadcrumbs = 'sea';
         return view('viewMediateca/sea')->with('breadcrumbs', $breadcrumbs);
     }
 
     public function primergrado() {
-		$breadcrumbs = 'primergrado';
+        $breadcrumbs = 'primergrado';
         return view('viewMediateca/primerGrado')->with('breadcrumbs', $breadcrumbs);
     }
 
     public function segundogrado() {
-		$breadcrumbs = 'segundogrado';
+        $breadcrumbs = 'segundogrado';
         return view('viewMediateca/segundoGrado')->with('breadcrumbs', $breadcrumbs);
     }
 
     public function tercergrado() {
-		$breadcrumbs = 'tercergrado';
+        $breadcrumbs = 'tercergrado';
         return view('viewMediateca/tercerGrado')->with('breadcrumbs', $breadcrumbs);
     }
 
     public function semestreI() {
-		$breadcrumbs = 'semestreI';
+        $breadcrumbs = 'semestreI';
         return view('viewMediateca/semestreI')->with('breadcrumbs', $breadcrumbs);
     }
 
     public function semestreII() {
-		$breadcrumbs = 'semestreII';
+        $breadcrumbs = 'semestreII';
         return view('viewMediateca/semestreII')->with('breadcrumbs', $breadcrumbs);
     }
 
     public function semestreIII() {
-		$breadcrumbs = 'semestreIII';
+        $breadcrumbs = 'semestreIII';
         return view('viewMediateca/semestreIII')->with('breadcrumbs', $breadcrumbs);
     }
 
     public function semestreIV() {
-		$breadcrumbs = 'semestreIV';
+        $breadcrumbs = 'semestreIV';
         return view('viewMediateca/semestreIV')->with('breadcrumbs', $breadcrumbs);
     }
 
     public function semestreV() {
-		$breadcrumbs = 'semestreV';
+        $breadcrumbs = 'semestreV';
         return view('viewMediateca/semestreV')->with('breadcrumbs', $breadcrumbs);
     }
 
     public function semestreVI() {
-		$breadcrumbs = 'semestreVI';
+        $breadcrumbs = 'semestreVI';
         return view('viewMediateca/semestreVI')->with('breadcrumbs', $breadcrumbs);
     }
 
     public function componente() {
-		$breadcrumbs = 'Proped&#201;utico';
+        $breadcrumbs = 'Proped&#201;utico';
         return view('viewMediateca/componente')->with('breadcrumbs', $breadcrumbs);
     }
-	
+    
     public function SEAcalculo() {
-		$breadcrumbs = 'calculo';
+        $breadcrumbs = 'calculo';
         return view('viewMediateca/sea_Nivel')->with('breadcrumbs', $breadcrumbs);
     }
-	
+    
     public function SEAsalud() {
-		$breadcrumbs = 'salud';
+        $breadcrumbs = 'salud';
         return view('viewMediateca/sea_Nivel')->with('breadcrumbs', $breadcrumbs);
     }
-	
+    
     public function SEAfamilia() {
-		$breadcrumbs = 'familia';
+        $breadcrumbs = 'familia';
         return view('viewMediateca/sea_Nivel')->with('breadcrumbs', $breadcrumbs);
     }
-	
+    
     public function SEAlengua() {
-		$breadcrumbs = 'lengua';
+        $breadcrumbs = 'lengua';
         return view('viewMediateca/sea_Nivel')->with('breadcrumbs', $breadcrumbs);
     }
-	
+    
     public function videos() {
 //        $thumbnail = "https://i.ytimg.com/vi/".$video1."/default.jpg";
         return view('viewMediateca/videos');
@@ -149,13 +149,13 @@ class MediatecaController extends Controller {
             $paginacion [] = new Telesecundaria;
             $paginacion[0]->bloque = 0;
         }
-		if($claveVideo != '0'){
+        if($claveVideo != '0'){
             $videoActual = Telesecundaria::whereNested(function($sQL) use ($grado, $materia, $bloque, $claveVideo) {
                     $sQL->where('grado', '=', $grado);
                     $sQL->where('materia_id', '=', $materia);
-					$sQL->where('id', '=', $claveVideo);
+                    $sQL->where('id', '=', $claveVideo);
             })->get();
-		}
+        }
         else{
             $videoActual = '';
         }
@@ -171,7 +171,7 @@ class MediatecaController extends Controller {
                 $esDocente = false;
             }
         }
-		else {
+        else {
             $esDocente = false;
         }
 
@@ -181,12 +181,12 @@ class MediatecaController extends Controller {
                         ->with('paginacion', $paginacion)
                         ->with('url', $url)
                         ->with('nivel', 'telesecundaria')
-						->with('claveVideo', $claveVideo)
+                        ->with('claveVideo', $claveVideo)
                         ->with('videoActual', $videoActual)
                         ->with('grado', $grado)
                         ->with('materia', $materia)
                         ->with('bloque', $bloque)
-						->with('esDocente',$esDocente);
+                        ->with('esDocente',$esDocente);
     }
 
     public function guardaRating (){
@@ -237,7 +237,7 @@ class MediatecaController extends Controller {
         else
             print $rating->rating;
     }
-	
+    
     public function getRatingSea ($id){
         $rating = RatingSea::where ('sea_id', $id)
             -> where ('user_id',Auth::user()->id)->first();
@@ -256,24 +256,24 @@ class MediatecaController extends Controller {
 
         /* Query para determinar si el uruario actual tiene rol de docente en ventana educativa */
         if(isset(Auth::user ()->id)){
-			$user_id = Auth::user ()->id;
-			$consultaDocente = \App\Model\Mediateca\docente::where('user_id',$user_id)->get();
-			if($consultaDocente!= '[]'){
-				$esDocente = true;
-			}
-			else{
-				$esDocente = false;
-			}
-		}else {
-			$esDocente = false;
-		}
+            $user_id = Auth::user ()->id;
+            $consultaDocente = \App\Model\Mediateca\docente::where('user_id',$user_id)->get();
+            if($consultaDocente!= '[]'){
+                $esDocente = true;
+            }
+            else{
+                $esDocente = false;
+            }
+        }else {
+            $esDocente = false;
+        }
         if($claveVideo != '0'){
             $videoActual = Telebachillerato::whereNested(function($sQL) use ($grado, $materia, $claveVideo) {
                 $sQL->where('semestre', '=', $grado);
                 $sQL->where('materia_id', '=', $materia);
                 $sQL->where('id', '=', $claveVideo);
             })->get();
-		}
+        }
         else{
             $videoActual = '';
         }
@@ -289,50 +289,50 @@ class MediatecaController extends Controller {
 
     public function getVideosSEA($materiaAbrv, $nivel, $claveVideo) {
     /* Query para filtrar videos por grado, materia */
-		switch($materiaAbrv){
-			case "calculo":
-				$materia = "CÁLCULO Y RESOLUCIÓN DE PROBLEMAS";
-				break;
-			case "salud":
-				$materia = "SALUD Y AMBIENTE";
-				break;
-			case "familia":
-				$materia = "FAMILIA, COMUNIDAD Y SOCIEDAD";
-				break;
-			case "lengua":
-				$materia = "LENGUA Y COMUNICACIÓN";
-				break;
-			default:
-				$materia = "CÁLCULO Y RESOLUCIÓN DE PROBLEMAS";
-				break;
-		}
-		$videos = Sea::whereNested(function($sQL) use ($materia, $nivel) {
+        switch($materiaAbrv){
+            case "calculo":
+                $materia = "CÁLCULO Y RESOLUCIÓN DE PROBLEMAS";
+                break;
+            case "salud":
+                $materia = "SALUD Y AMBIENTE";
+                break;
+            case "familia":
+                $materia = "FAMILIA, COMUNIDAD Y SOCIEDAD";
+                break;
+            case "lengua":
+                $materia = "LENGUA Y COMUNICACIÓN";
+                break;
+            default:
+                $materia = "CÁLCULO Y RESOLUCIÓN DE PROBLEMAS";
+                break;
+        }
+        $videos = Sea::whereNested(function($sQL) use ($materia, $nivel) {
             $sQL->where('nivel', '=', $nivel);
             $sQL->where('materia', '=', $materia);
         })->get();
-		if($claveVideo != '0'){
+        if($claveVideo != '0'){
             $videoActual = Sea::whereNested(function($sQL) use ( $materia, $nivel, $claveVideo) {
                     $sQL->where('nivel', '=', $nivel);
                     $sQL->where('materia', '=', $materia);
-					$sQL->where('id', '=', $claveVideo);
+                    $sQL->where('id', '=', $claveVideo);
             })->get();
-		}
+        }
         else{
             $videoActual = '';
         }
     /* Query para determinar si el uruario actual tiene rol de docente en ventana educativa */
         if(isset(Auth::user ()->id)){
-			$user_id = Auth::user ()->id;
-			$consultaDocente = \App\Model\Mediateca\docente::where('user_id',$user_id)->get();
-			if($consultaDocente!= '[]'){
-				$esDocente = true;
-			}
-			else{
-				$esDocente = false;
-			}
-		}else {
-			$esDocente = false;
-		}
+            $user_id = Auth::user ()->id;
+            $consultaDocente = \App\Model\Mediateca\docente::where('user_id',$user_id)->get();
+            if($consultaDocente!= '[]'){
+                $esDocente = true;
+            }
+            else{
+                $esDocente = false;
+            }
+        }else {
+            $esDocente = false;
+        }
 
         /* Envío de querys y variables a la vista */
         return view('viewMediateca/videosSea')->with('videos', $videos)->with('nivel', 'sea')->with('esDocente',$esDocente)
@@ -341,7 +341,7 @@ class MediatecaController extends Controller {
                 ->with('categoria', $nivel)
                 ->with('claveVideo', $claveVideo);
     }
-	
+    
     public function storeTelesecundariaComment (){
 
         $comment = new \App\Model\Mediateca\TelesecundariaComments;
@@ -371,7 +371,7 @@ class MediatecaController extends Controller {
         $comment->save ();
         return view('viewMediateca/comment')->with('comment', $comment);
     }
-	
+    
      public function storeSeaComment (){
 
         $comment = new \App\Model\Mediateca\SeaComments;
@@ -398,70 +398,76 @@ class MediatecaController extends Controller {
                 ->orderBy('created_at','DESC')->get();
         return view('viewMediateca/comments')->with('comments', $comments);
     }
-	
-	/* 	------------	Función que extrae e imprime breadcrumbs	-----------	 */
+    
+    /* 	------------	Función que extrae e imprime breadcrumbs	-----------	 */
 
-	function seleccionaGrado($grado) {
-		switch ($grado) {
-			case '1': $grado = 'primergrado';
-				break;
-			case '2': $grado = 'segundogrado';
-				break;
-			case '3': $grado = 'tercergrado';
-				break;
-			case 'I': $grado = 'semestreI';
-				break;
-			case 'II': $grado = 'semestreII';
-				break;
-			case 'III': $grado = 'semestreIII';
-				break;
-			case 'IV': $grado = 'semestreIV';
-				break;
-			case 'V': $grado = 'semestreV';
-				break;
-			case 'VI': $grado = 'semestreVI';
-				break;
-		}
-		return $grado;
-	}
+    function seleccionaGrado($grado) {
+        switch ($grado) {
+            case '0': $grado = '';
+                break;
+            case '1': $grado = 'primergrado';
+                break;
+            case '2': $grado = 'segundogrado';
+                break;
+            case '3': $grado = 'tercergrado';
+                break;
+            case 'I': $grado = 'semestreI';
+                break;
+            case 'II': $grado = 'semestreII';
+                break;
+            case 'III': $grado = 'semestreIII';
+                break;
+            case 'IV': $grado = 'semestreIV';
+                break;
+            case 'V': $grado = 'semestreV';
+                break;
+            case 'VI': $grado = 'semestreVI';
+                break;
+        }
+        return $grado;
+    }
 
-	public function generaBreadCrumbs() {
-		$breadcrumb = "";
-		$uri = filter_input(INPUT_GET, 'url');
-		$uriActual = explode('/', $uri);
-		$elemsURI = count($uriActual);
-		$j = $elemsURI - 1;
-		$termina = false;
-		while ($uriActual[$j] != 'educamedia') {
-			$j--;
-		}
-		$breadcrumb = $breadcrumb . '<a href=' . url($uriActual[$j]);
-		$breadcrumb = $breadcrumb . '>' . strtoupper($uriActual[$j]) . '</a>';
-		$hrefCompleta = $uriActual[$j];
-		$j++;
-		for ($i = $j; $i < $elemsURI; $i++) {
-			if (strlen($uriActual[$i]) < 4) {
-				if($uriActual[$i]=='sea'){
-					$gradoURI = 'sea';
-				}
-				else{
-					$gradoURI = MediatecaController::seleccionaGrado($uriActual[$i]);
-					$termina = true;
-				}
-			} else {
-				$gradoURI = $uriActual[$i];
-			}
-			$hrefCompleta = url($hrefCompleta . "/" . $gradoURI);
-			$breadcrumb = $breadcrumb . ' / <a href="' . $hrefCompleta;
-			if (strpos($uriActual[$i], '%C3%A9') !== false) {
-				$gradoURI = 'Proped&#201;utico';
-				$termina = true;
-			}
-			$breadcrumb = $breadcrumb . '">' . strtoupper($gradoURI) . '</a>';
-			if ($termina == true) {
-				break;
-			}
-		}
-		return $breadcrumb;
-	}
+    public function generaBreadCrumbs() {
+        $breadcrumb = "";
+        $uri = filter_input(INPUT_GET, 'url');
+        $uriActual = explode('/', $uri);
+        $elemsURI = count($uriActual);
+        $j = $elemsURI - 1;
+        $termina = false;
+        while ($uriActual[$j] != 'educamedia') {
+            $j--;
+        }
+        $breadcrumb = $breadcrumb . '<a href=' . url($uriActual[$j]);
+        $breadcrumb = $breadcrumb . '>' . strtoupper($uriActual[$j]) . '</a>';
+        $hrefCompleta = $uriActual[$j];
+        $j++;
+        for ($i = $j; $i < $elemsURI; $i++) {
+            
+            if (strlen($uriActual[$i]) < 4) {
+                if($uriActual[$i]=='sea'){
+                    $gradoURI = 'sea';
+                }
+                else{
+                    $gradoURI = MediatecaController::seleccionaGrado($uriActual[$i]);
+                    $termina = true;
+                }
+            } else {
+                $gradoURI = $uriActual[$i];
+            }
+            $hrefCompleta = url($hrefCompleta . "/" . $gradoURI);
+        if($uriActual[$i]=='INICIAL' || $uriActual[$i]=='AVANZADO' ){
+            $hrefCompleta = $hrefCompleta.'/0';
+        }
+            $breadcrumb = $breadcrumb . ' / <a href="' . $hrefCompleta;
+            if (strpos($uriActual[$i], '%C3%A9') !== false) {
+                $gradoURI = 'Proped&#201;utico';
+                $termina = true;
+            }
+            $breadcrumb = $breadcrumb . '">' . strtoupper($gradoURI) . '</a>';
+            if ($termina == true) {
+                break;
+            }
+        }
+        return $breadcrumb;
+    }
 }
