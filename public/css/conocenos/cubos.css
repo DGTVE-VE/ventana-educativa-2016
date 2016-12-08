@@ -1,39 +1,72 @@
-﻿	.padLado{
-		padding-left: 0px; padding-right:0px; padding-top:5%;
-	}
-	.medidaCubo{
-		width: 101%; height: 250px; z-index:1;
-	}
-	@media(max-width:250px){
-		.medidaCubo{
-			height: 100px;
-		}
-	}
-	@media(max-width:768px){
-		.medidaCubo{
-			height: 100px;
-		}
-	}
-	@media(max-width:991px){
-		.medidaCubo{
-			height: 150px;
-		}
-	}
-	@media(min-width:1800px){
-		.medidaCubo{
-			height: 400px;
-		}
-	}
-	.medidaFrente{
-		width: 100%;
-		height:99%;
-		position: absolute;
-		top:0px;
-		z-index:1;
-	}
-	.detectaEvento{
-		position: absolute;
-		top:0px;
-		min-width: 100%;
-		z-index:2;
-	}
+﻿.padLado{
+    padding-left: 0px; padding-right:0px; padding-top:5%;
+}
+.medidaCubo{
+    width: 101%; height: 250px; z-index:1;
+}
+.medidaFrente{
+    position: absolute;
+    z-index:1;
+}
+.detectaEvento{
+    position: absolute;
+    top:0px;
+    min-width: 100%;
+    z-index:2;
+}
+@media(min-width:250px){
+    .medidaFrente{
+        height:115%;
+        top:-25px;
+    }
+}
+@media(min-width:768px){
+    .medidaFrente{
+        height:103%;
+        top:-5px;
+    }
+}
+@media(min-width:992px){
+    .medidaFrente{
+        height:107%;
+        top:-21px;
+    }
+}
+@media(min-width:1200px){
+    .medidaFrente{
+        height:100%;
+        top:-1px;
+    }
+}
+@media(min-width:1599px){
+    .medidaFrente{
+        height:98%;
+        width:100%;
+        top:8px;
+    }
+}
+@media(min-width:1800px){
+    .medidaCubo{
+        height: 400px;
+    }
+    .medidaFrente{
+        height:98%;
+        width:100%;
+        top:2%;
+    }
+}
+@media(max-width:250px){
+    .medidaCubo{
+        height: 100px;
+    }
+}
+@media(max-width:768px){
+    .medidaCubo{
+        height: 100px;
+    }
+}
+@media(max-width:991px){
+    .medidaCubo{
+        height: 150px;
+    }
+}
