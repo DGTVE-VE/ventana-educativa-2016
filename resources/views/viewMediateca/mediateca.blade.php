@@ -19,10 +19,10 @@ Educamedia
 		<!--href="{{url('educamedia/sea')}}"-->
 	</map>
     <div class="contenedorAro">
-        {{HTML::image('imagenes/mediateca/Inicio/home.png','Telesecundaria',['class'=>'posicionInicial img-responsive', 'id'=>'iniEducamedia'])}}
-        {{HTML::image('imagenes/mediateca/Inicio/telesecHover.png','Telesecundaria',['class'=>'resaltaImg img-responsive', 'id'=>'telesecHover'])}}
-        {{HTML::image('imagenes/mediateca/Inicio/telebachHover.png','Telesecundaria',['class'=>'resaltaImg img-responsive', 'id'=>'telebachHover'])}}
-		{{HTML::image('imagenes/mediateca/Inicio/seaHover.png','SEA',['class'=>'resaltaImg img-responsive', 'id'=>'seaHover'])}}
+        {{HTML::image('imagenes/mediateca/Inicio/inicio.png','Telesecundaria',['class'=>'posicionInicial img-responsive', 'id'=>'iniEducamedia'])}}
+        {{HTML::image('imagenes/mediateca/Inicio/telesecundaria.png','Telesecundaria',['class'=>'resaltaImg img-responsive', 'id'=>'telesecHover'])}}
+        {{HTML::image('imagenes/mediateca/Inicio/telebachillerato.png','Telesecundaria',['class'=>'resaltaImg img-responsive', 'id'=>'telebachHover'])}}
+		{{HTML::image('imagenes/mediateca/Inicio/sea.png','SEA',['class'=>'resaltaImg img-responsive', 'id'=>'seaHover'])}}
         {{HTML::image('imagenes/mediateca/Inicio/gifs/1.gif','Telebachillerato Central',['class'=>' img-responsive iniImgCentro img-circle', 'id'=>'telebachCentro'])}}
         {{HTML::image('imagenes/mediateca/Inicio/gifs/8.gif','Telesecundaria Central',['class'=>'img-responsive iniImgCentro img-circle', 'id'=>'telesecCentro'])}}
 		{{HTML::image('imagenes/mediateca/Inicio/gifs/6.gif','SEA Central',['class'=>'img-responsive iniImgCentro img-circle', 'id'=>'seaCentro'])}}

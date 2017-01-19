@@ -1,156 +1,156 @@
-﻿		.marcoNegro{
-			position: relative; top:-10%; left:-2%; max-width:110%;
-		}
-		.imgEdificio{
-			position: absolute; top:-0.6%; left:1.5%; max-width:102.1%;
-		}
-		#divFigura{
-			position:absolute; top:23%; left:30%;
-			width:240px;	height:240px;
-			border-radius:0%;
-			background: #6bebcf; /* For browsers that do not support gradients */
-			transition: visibility 0.3s, border-radius 0.8s, transform 0.8s;
-			-webkit-transform: rotate(45deg);
-			-ms-transform: rotate(45deg);
-			transform: rotate(45deg);
-		}
-		.homologaColor{
-			visibility:hidden;
-		}
-		.oculto{
-			display:none;
-		}
-		.circulo{
-			border-radius: 50% !important;
-			transition: border-radius 0.8s;
-		}
-		.trianguloDerecha{
-			position:absolute; top:10%; left: 8%;
-			width:0 !important;	height:0 !important;
-			border-top:153px solid transparent !important;
-			border-bottom:153px solid transparent !important;
-			border-left:306px solid #6bebcf !important;
-			transition: visibility 0.3s, transform 0.8s;
-		}
-		.opaco{
-			opacity: 0.9;
-			/*transition: opacity:0.3s;*/
-		}
-		.txtNegro{
-			color:black;
-		}
-		.punteroMano{
-			cursor: pointer;
-		}
-		.acomodaLigas{
-			position: absolute; left:40%;
-		}
-		.altura50Celda{
-			height:50px;
-		}
-		.marcoNegro{
-			position: relative; top:-10%; left:-2%; max-width:110%;
-		}
-		.enfasis{
-			font-size: 1.7em;
-			font-style: bold;
-			text-decoration: underline;
-			
-		}
-				/*		*********	Media Queries	*****	*/
-		@media(max-width:767px){
-			.textoSeccionSlider{
-				position: relative;
-				top: -70px;
-				left: -20px;
-			}
-			.imgEdificio{
-				position: absolute; top:30%; left:17%; max-width:101%;
-			}
-			.marcoNegro{
-				position: relative; top:50px; left:17%; max-width:110%;
-			}
-		}
-		@media (min-width:992px ){
-			.acomodaLigas{
-				position: absolute; top:-228%; left:39%;
-			}
-			#divFigura{
-				position:absolute; top:23%; left:30%;
-				width:210px;	height:210px;
-				border-radius:0%;
-				background: #6bebcf; /* For browsers that do not support gradients */
-				transition: visibility 0.3s, border-radius 0.8s, transform 0.8s;
-				-webkit-transform: rotate(45deg);
-				-ms-transform: rotate(45deg);
-				transform: rotate(45deg);
-			}
-			.trianguloDerecha{
-				position:absolute; top:15%; left: 19%;
-				width:0 !important;	height:0 !important;
-				border-top:160px solid transparent !important;
-				border-bottom:160px solid transparent !important;
-				border-left:280px solid #6bebcf !important;
-				transition: visibility 0.3s, transform 0.8s;
-			}
-			.imgEdificio{
-				position: absolute; top:-0.6%; left:1.7%; max-width:101%;
-			}
-		}
-		@media (min-width: 1300px){
-			.acomodaLigas{
-				position: absolute; top:-230%; left:38%;
-			}
-			#divFigura{
-				position:absolute; top:23%; left:28%;
-				width:240px;	height:240px;
-				border-radius:0%;
-				background: #6bebcf; /* For browsers that do not support gradients */
-				transition: visibility 0.3s, border-radius 0.8s, transform 0.8s;
-				-webkit-transform: rotate(45deg);
-				-ms-transform: rotate(45deg);
-				transform: rotate(45deg);
-			}
-			.trianguloDerecha{
-				position:absolute; top:20%; left: 19%;
-				width:0 !important;	height:0 !important;
-				border-top:170px solid transparent !important;
-				border-bottom:170px solid transparent !important;
-				border-left:300px solid #6bebcf !important;
-				transition: visibility 0.3s, transform 0.8s;
-			}
-			.imgEdificio{
-				position: absolute; top:-0.6%; left:1.5%; max-width:102.1%;
-			}
+﻿.marcoNegro{
+    position: relative; top:-10%; left:-2%; max-width:110%;
+}
+.imgEdificio{
+    position: absolute; top:-0.6%; left:1.5%; max-width:102.1%;
+}
+#divFigura{
+    position:absolute; top:23%; left:30%;
+    width:240px;	height:240px;
+    border-radius:0%;
+    background: #6bebcf; /* For browsers that do not support gradients */
+    transition: visibility 0.3s, border-radius 0.8s, transform 0.8s;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+.homologaColor{
+    visibility:hidden;
+}
+.oculto{
+    display:none;
+}
+.circulo{
+    border-radius: 50% !important;
+    transition: border-radius 0.8s;
+}
+.trianguloDerecha{
+    position:absolute; top:10%; left: 8%;
+    width:0 !important;	height:0 !important;
+    border-top:153px solid transparent !important;
+    border-bottom:153px solid transparent !important;
+    border-left:306px solid #6bebcf !important;
+    transition: visibility 0.3s, transform 0.8s;
+}
+.opaco{
+    opacity: 0.9;
+    /*transition: opacity:0.3s;*/
+}
+.txtNegro{
+    color:black;
+}
+.punteroMano{
+    cursor: pointer;
+}
+.acomodaLigas{
+    position: absolute; left:40%;
+}
+.altura50Celda{
+    height:50px;
+}
+.marcoNegro{
+    position: relative; top:-10%; left:-2%; max-width:110%;
+}
+.enfasis{
+    font-size: 1.7em;
+    font-style: bold;
+    text-decoration: underline;
+    
+}
+        /*		*********	Media Queries	*****	*/
+@media(max-width:767px){
+    .textoSeccionSlider{
+        position: relative;
+        top: -70px;
+        left: -20px;
+    }
+    .imgEdificio{
+        position: absolute; top:30%; left:17%; max-width:101%;
+    }
+    .marcoNegro{
+        position: relative; top:50px; left:17%; max-width:110%;
+    }
+}
+@media (min-width:992px ){
+    .acomodaLigas{
+        position: absolute; top:-228%; left:39%;
+    }
+    #divFigura{
+        position:absolute; top:23%; left:30%;
+        width:210px;	height:210px;
+        border-radius:0%;
+        background: #6bebcf; /* For browsers that do not support gradients */
+        transition: visibility 0.3s, border-radius 0.8s, transform 0.8s;
+        -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        transform: rotate(45deg);
+    }
+    .trianguloDerecha{
+        position:absolute; top:15%; left: 19%;
+        width:0 !important;	height:0 !important;
+        border-top:160px solid transparent !important;
+        border-bottom:160px solid transparent !important;
+        border-left:280px solid #6bebcf !important;
+        transition: visibility 0.3s, transform 0.8s;
+    }
+    .imgEdificio{
+        position: absolute; top:-0.6%; left:1.7%; max-width:101%;
+    }
+}
+@media (min-width: 1300px){
+    .acomodaLigas{
+        position: absolute; top:-230%; left:38%;
+    }
+    #divFigura{
+        position:absolute; top:23%; left:28%;
+        width:240px;	height:240px;
+        border-radius:0%;
+        background: #6bebcf; /* For browsers that do not support gradients */
+        transition: visibility 0.3s, border-radius 0.8s, transform 0.8s;
+        -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        transform: rotate(45deg);
+    }
+    .trianguloDerecha{
+        position:absolute; top:20%; left: 19%;
+        width:0 !important;	height:0 !important;
+        border-top:170px solid transparent !important;
+        border-bottom:170px solid transparent !important;
+        border-left:300px solid #6bebcf !important;
+        transition: visibility 0.3s, transform 0.8s;
+    }
+    .imgEdificio{
+        position: absolute; top:-0.6%; left:1.5%; max-width:102.1%;
+    }
 
-		}
-		@media (min-width: 1500px){
-			.acomodaLigas{
-				position: absolute; top:-268%; left:38%;
-			}
-			#divFigura{
-				position:absolute; top:25%; left:27%;
-				width:260px;	height:260px;
-				border-radius:0%;
-				background: #6bebcf; /* For browsers that do not support gradients */
-				transition: visibility 0.3s, border-radius 0.8s, transform 0.8s;
-				-webkit-transform: rotate(45deg);
-				-ms-transform: rotate(45deg);
-				transform: rotate(45deg);
-			}
-			.trianguloDerecha{
-				position:absolute; top:28%; left: 18%;
-				width:0 !important;	height:0 !important;
-				border-top:165px solid transparent !important;
-				border-bottom:165px solid transparent !important;
-				border-left:310px solid #6bebcf !important;
-				transition: visibility 0.3s, transform 0.8s;
-			}
-			.imgEdificio{
-				position: absolute; top:-0.4%; left:1.5%; max-width:102.1%;
-			}
+}
+@media (min-width: 1500px){
+    .acomodaLigas{
+        position: absolute; top:-268%; left:38%;
+    }
+    #divFigura{
+        position:absolute; top:25%; left:27%;
+        width:260px;	height:260px;
+        border-radius:0%;
+        background: #6bebcf; /* For browsers that do not support gradients */
+        transition: visibility 0.3s, border-radius 0.8s, transform 0.8s;
+        -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        transform: rotate(45deg);
+    }
+    .trianguloDerecha{
+        position:absolute; top:28%; left: 18%;
+        width:0 !important;	height:0 !important;
+        border-top:165px solid transparent !important;
+        border-bottom:165px solid transparent !important;
+        border-left:310px solid #6bebcf !important;
+        transition: visibility 0.3s, transform 0.8s;
+    }
+    .imgEdificio{
+        position: absolute; top:-0.4%; left:1.5%; max-width:102.1%;
+    }
 
-		}
-		.slider{
-			padding:50px !important;
-		}
+}
+.slider{
+    padding:50px !important;
+}
