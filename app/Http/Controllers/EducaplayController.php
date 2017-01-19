@@ -92,7 +92,7 @@ class EducaplayController extends Controller {
                 ->join('edu_imagen', 'edu_serie.id', '=', 'edu_imagen.serie_id')
                 ->select('edu_imagen.url', 'edu_serie.titulo_serie', 'edu_serie.descripcion', 'edu_serie.categoria_id', 'edu_serie.id')
                 ->where('edu_imagen.ubicacion_id', '=', '2')
-                ->orderBy('categoria_id', 'DESC')
+                ->orderBy('categoria_id', 'ASC')
                 ->get();
         $menuEducaplay = $this->educaplayMenu();
         return view('viewEducaplay/educaplay')->with('banner', $banner)->with('carretes', $carretes)->with('menuEducaplay', $menuEducaplay);

@@ -75,7 +75,7 @@
                                         </a>
                                     </td>
                                     <td style="padding: 10px;">
-                                        <a href="http://formacionib.ning.com/">
+                                        <a href="http://redesib.formacionib.org/">
                                             {{ HTML::image('imagenes/red/sitiosInteres/5.png','RID', array('class'=>'img-responsive img-rounded centraCont', 'style'=>'width:100px; height:124px;'))}}
                                         </a>
                                     </td>
