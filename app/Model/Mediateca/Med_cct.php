@@ -4,7 +4,7 @@ namespace App\Model\Educaplay;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Edu_cct extends Model
+class Med_cct extends Model
 {
-	protected $table = 'edu_clave_cct';
+	protected $table = 'med_clave_cct';
 }
