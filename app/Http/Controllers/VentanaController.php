@@ -230,7 +230,7 @@ class VentanaController extends Controller {
 
 	public function existeCCT($claveCCT){
 
-		$consultaCCT = \App\Model\Educaplay\Med_cct::where('clave_cct',$claveCCT)->first();
+		$consultaCCT = \App\Model\Mediateca\Med_cct::where('clave_cct',$claveCCT)->first();
 
     if ( isset($consultaCCT) ) {
       return $consultaCCT->nombre_cct;
