@@ -31,6 +31,7 @@ Ventana Educativa / Conocenos
             -moz-box-shadow: 9px 9px 0px -5px rgba(0,0,0,1);
             box-shadow: 9px 9px 0px -5px rgba(0,0,0,1);
         }
+        #navegacionventana{margin-bottom: 0 !important;}
     </style>
     <div class="menuBlog"> 
         <a href="{{url('conocenos')}}" class="text-center">
@@ -81,7 +82,7 @@ Ventana Educativa / Conocenos
             <div class="col-xs-12 col-sm-12 col-md-12" style="padding:30px;"></div>
         </div>
         <div id="panelIzquierdo" class="col-xs-12 col-sm-5 col-md-4 col-md-offset-1 fondoPanelIzq">
-            <div class='col-md-12' style="padding:50px;"></div>
+            <!--<div class='col-md-12' style="padding:50px;"></div>-->
             <div class="col-md-10 col-md-offset-1">
                 <div class="col-md-12">
                     <p><a href="{{url('conocenos/blog')}}"><i class="fa fa-arrow-left" aria-hidden="true"></i>  Regresar</a></p>

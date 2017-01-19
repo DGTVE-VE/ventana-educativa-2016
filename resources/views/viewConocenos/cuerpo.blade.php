@@ -17,9 +17,9 @@
                 <!--<a href="{{--url('conocenos/blog')--}}">BLOG</a>-->
                 <a href="#">BLOG</a>
             </li>
-            <li>
+<!--            <li>
                 <a href="#">ACERCA DE</a>
-            </li>
+            </li>-->
         </ul>
     </nav>
     <!-- /#sidebar-wrapper -->
