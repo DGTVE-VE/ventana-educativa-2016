@@ -1,21 +1,3 @@
-    $(document).ready(function () {
-//        $().mouseover ({
-//            $.ajax (){
-//                url : 
-//            }
-//        });
-        /* Additional Javascript (required) */
-        $('#carouselVod').carousel({
-            pause: 'none'
-        })
-        $('#carreteSerie1').carousel({
-            interval: false
-        })
-        $('#carreteSerie2').carousel({
-            interval: false
-        })
-    });
-	
 	function abreDivDetalle(respuesta, filaDiv){
 		var nombreDivDetalle = '#detalleSerie' + filaDiv;
 		$(nombreDivDetalle).html(respuesta);
@@ -30,7 +12,6 @@
 		var urlget = "educaplay/descripciones";
 		var _url = urlget + '/' + serieId;
 		$.ajax({
-			async: true,
 			method: "GET",
 			url: _url,
 			error: function (ts) {

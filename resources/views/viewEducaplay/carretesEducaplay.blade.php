@@ -6,7 +6,7 @@
 	@if($catAnterior !== $elemento->categoria_id)
 		{{--*/ $tira++; /*--}}
 		@if($tira!==1)
-			@if($cuenta % 6 === 0)
+			@if(($cuenta-1) % 6 !== 0)
 							</div>
 						</div>
 			@endif

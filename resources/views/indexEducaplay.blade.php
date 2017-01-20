@@ -43,7 +43,7 @@ and open the template in the editor.
         <!-- Latest compiled JavaScript -->
         <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
         
-		<script src="{{ asset('js/educaplay/script.js') }}"></script>
+		<script src="{{ asset('js/educaplay/carretes.js') }}"></script>
         @yield ('scripts')
         
     </head>
