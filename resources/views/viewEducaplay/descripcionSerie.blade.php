@@ -8,7 +8,7 @@
 @if($primerDetalleSerie !== null)
 	<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="color:white;">
         <div class="tab-content estiloTab" style=" max-height:430px; overflow-y: scroll;">
-            <div id="descripcion1" class="tab-pane fade in active">
+            <div id="descripcion{{$primerDetalleSerie->id}}" class="tab-pane fade in active">
 				<div class="col-md-10 col-md-offset-1">
 					<img src="{{url($primerDetalleSerie->url)}}" class="img-responsive" onclick="muestraDetalle('1')"/>
 					<div  class="text-justify" style="position: absolute; top: 70%; left:2%; width:30%;">
@@ -16,7 +16,7 @@
 					</div>
 				</div>
             </div>
-            <div id="similares1" class="tab-pane fade">
+            <div id="similares{{$primerDetalleSerie->id}}" class="tab-pane fade">
 				<div class="col-md-10 col-md-offset-1">
 					<h3>{{$primerDetalleSerie->titulo_serie}}</h3>
 				</div>
@@ -38,10 +38,10 @@
 					</div>
 				</div>
 				<div class="col-md-11">
-					<div name="detalleSerie" id="detalleSerie" class="col-md-12"></div>
+					<div name="detalleSerie" id="detalleSerie{{$primerDetalleSerie->id}}" class="col-md-12"></div>
 				</div>
             </div>
-            <div id="detalles1" class="tab-pane fade">
+            <div id="detalles{{$primerDetalleSerie->id}}" class="tab-pane fade">
 				<div class="col-md-10 col-md-offset-1">
 					<h3>{{$primerDetalleSerie->titulo_serie}}</h3>
 					<br>
@@ -66,9 +66,9 @@
         <ul class="nav nav-tabs nav-justified">
             <li></li>
 
-            <li class="active"><a data-toggle="tab" href="#descripcion1">DESCRIPCION GENERAL</a></li>
-            <li><a data-toggle="tab" href="#similares1">CAPÍTULOS</a></li>
-            <li><a data-toggle="tab" href="#detalles1">DETALLES</a></li>
+            <li class="active"><a data-toggle="tab" href="#descripcion{{$primerDetalleSerie->id}}">DESCRIPCION GENERAL</a></li>
+            <li><a data-toggle="tab" href="#similares{{$primerDetalleSerie->id}}">CAPÍTULOS</a></li>
+            <li><a data-toggle="tab" href="#detalles{{$primerDetalleSerie->id}}">DETALLES</a></li>
 						@if( $primerDetalleSerie->categoria_id == 200)
             <li><a type="button" onclick="votacion('{!!$primerDetalleSerie->titulo_serie!!}')" class="btn btn-danger btn-lg">VOTAR POR ESTA SERIE</a></li>
 						@endif

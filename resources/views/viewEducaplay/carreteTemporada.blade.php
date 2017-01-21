@@ -1,5 +1,5 @@
 @if($detallesSerie != null)
-<div id="carreteCapitulos" class="carousel slide" data-ride="carousel" data-interval="false">
+<div id="carreteCapitulos{{$detalle->id}}" class="carousel slide" data-ride="carousel" data-interval="false">
     <div class="carousel-inner" role="listbox">
         {{--*/ $i=0; /*--}}
         @foreach($detallesSerie as $detalle)
@@ -39,11 +39,11 @@
         </div>
         @endif
     </div>
-    <a class="left carousel-control reduceAnchoFlecha" href="#carreteCapitulos" role="button" data-slide="prev">
+    <a class="left carousel-control reduceAnchoFlecha" href="#carreteCapitulos{{$detalle->id}}" role="button" data-slide="prev">
         <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
         <span class="sr-only">Previous</span>
     </a>
-    <a class="right carousel-control reduceAnchoFlecha" href="#carreteCapitulos" role="button" data-slide="next">
+    <a class="right carousel-control reduceAnchoFlecha" href="#carreteCapitulos{{$detalle->id}}" role="button" data-slide="next">
         <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
         <span class="sr-only">Next</span>
     </a>
