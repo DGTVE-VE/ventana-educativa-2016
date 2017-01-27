@@ -12,7 +12,11 @@
 				<div class="col-md-10 col-md-offset-1">
 					<img src="{{url($primerDetalleSerie->url)}}" class="img-responsive" onclick="muestraDetalle('1')"/>
 					<div  class="text-justify" style="position: absolute; top: 70%; left:2%; width:30%;">
-						<p>{{$primerDetalleSerie->descripcion}}</p>
+                        @if(strlen($primerDetalleSerie->descripcion)>250)
+                            <p>{{substr($primerDetalleSerie->descripcion,0,250).'...'}}</p>
+						@else
+                            <p>{{$primerDetalleSerie->descripcion}}</p>
+						@endif
 					</div>
 				</div>
             </div>

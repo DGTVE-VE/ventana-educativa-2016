@@ -38,7 +38,7 @@
 		{{--*/ $catAnterior = $elemento->categoria_id; /*--}}
 		<div class="row margenesFila margenInferior">
 			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-				<div id="carreteSerie{{$tira}}" class="carousel slide" data-ride="carousel">
+				<div id="carreteSerie{{$tira}}" class="carousel slide" data-ride="carousel" data-interval="false">
                     <div class="carousel-inner" role="listbox" id="dir-gral-tve">
     @endif
 					@if($cuenta === 1)
