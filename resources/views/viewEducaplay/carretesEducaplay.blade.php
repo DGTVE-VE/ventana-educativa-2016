@@ -23,7 +23,7 @@
 					</div>
 					<span id="btnCerrarDesc{{$tira - 1}}" class="glyphicon glyphicon-remove iconoCerrar" aria-hidden="true" onclick="cierraDetalle({{$tira - 1}})"></span>
 				</div>
-				<div id="detalleSerie{{$tira - 1}}" class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="color:white; display: none;"></div>
+				<div id="ventanaSerie{{$tira - 1}}" class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="color:white; display: none;"></div>
 			</div>
 		@endif
 		{{--*/ $consecutivo=1; 
@@ -89,5 +89,5 @@
 					</div>
 					<span id="btnCerrarDesc{{$tira}}" class="glyphicon glyphicon-remove iconoCerrar" aria-hidden="true" onclick="cierraDetalle({{$tira}})"></span>
 				</div>
-				<div id="detalleSerie{{$tira}}" class="col-xs-12 col-sm-12 col-md-12 col-md-12" style="color:white; display: none;"></div>
+				<div id="ventanaSerie{{$tira}}" class="col-xs-12 col-sm-12 col-md-12 col-md-12" style="color:white; display: none;"></div>
 			</div>

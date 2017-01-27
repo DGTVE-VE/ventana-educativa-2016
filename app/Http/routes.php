@@ -133,7 +133,7 @@ Route::group(['middleware' => 'web'], function () {
     /*     * **************************Educaplay********************** */
     Route::get('educaplay', 'EducaplayController@educaplay');
     Route::get('educaplay/detalleSeries/{serieId}/{urlVideo}/{videoId}', 'EducaplayController@series');
-    Route::get('educaplay/descripciones/{serieId}', 'EducaplayController@descripciones');
+    Route::get('educaplay/descripcionSerie/{serieId}/{numFila}', 'EducaplayController@descripciones');
     Route::get('educaplay/descripciones/temporada/{serieId}/{temporada}', 'EducaplayController@temporada');
     Route::get('educaplay/videoSerie', 'EducaplayController@videoSerie');
     Route::post('educaplay/rate', 'EducaplayController@guardaRating');

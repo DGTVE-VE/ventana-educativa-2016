@@ -38,10 +38,10 @@
 					</div>
 				</div>
 				<div class="col-md-11">
-					<div name="detalleSerie" id="detalleSerie{{$fila}}" class="col-md-12"></div>
+					<div name="detalleSerie{{$fila}}" id="detalleSerie{{$fila}}" class="col-md-12"></div>
 				</div>
             </div>
-            <div id="detalles{{$fila}}" class="tab-pane fade">
+            <div id="mayoresDetalles{{$fila}}" class="tab-pane fade">
 				<div class="col-md-10 col-md-offset-1">
 					<h3>{{$primerDetalleSerie->titulo_serie}}</h3>
 					<br>
@@ -57,7 +57,7 @@
 						<div class="col-md-6 col-md-offset-1">
 							<p class="text-center lead">Comentarios a videos de esta serie.</p>
 							<script src="{{asset ('js/jquery-ui.min.js')}}"></script>
-							<div id="comentariosDetalle" style="color:white;"></div>
+							<div id="comentariosDetalle{{$fila}}" style="color:white;"></div>
 						</div>
 					</div>
 				</div>
@@ -65,10 +65,10 @@
         </div>
         <ul class="nav nav-tabs nav-justified">
             <li></li>
-
-            <li class="active"><a data-toggle="tab" href="#descripcion{{$fila}}">DESCRIPCION GENERAL</a></li>
+            {{--*/ $etiqDescripcion = "#descripcion".$fila;/*--}}
+            <li class="active"><a data-toggle="tab" href="{{$etiqDescripcion}}">DESCRIPCION GENERAL</a></li>
             <li><a data-toggle="tab" href="#similares{{$fila}}">CAPÍTULOS</a></li>
-            <li><a data-toggle="tab" href="#detalles{{$fila}}">DETALLES</a></li>
+            <li><a data-toggle="tab" href="#mayoresDetalles{{$fila}}">DETALLES</a></li>
 						@if( $primerDetalleSerie->categoria_id == 200)
             <li><a type="button" onclick="votacion('{!!$primerDetalleSerie->titulo_serie!!}')" class="btn btn-danger btn-lg">VOTAR POR ESTA SERIE</a></li>
 						@endif
@@ -151,7 +151,7 @@ if ( r == true){
 			});
 	}
 
-	function loadComments(id) {
+	function loadComments(id, fila) {
 		var urlget = "{{url('educaplay/comentarioSerie')}}";
 		var _url = urlget + '/' + id;
 		$.ajax({
@@ -163,13 +163,14 @@ if ( r == true){
 			}})
 			.done(function (msg) {
 				console.log('Comentarios cargados: ' + id);
-				$("#comentariosDetalle").html(msg);
+                divDestino = "#comentariosDetalle" + fila;
+				$(divDestino).html(msg);
 				//                    console.log ( "Data Saved: " + msg );
 			});
 	}
 	
 	$(document).ready(function(){
 		cargaTemporadaCompl('{{$primerDetalleSerie->id}}', '{{$fila}}');
-		loadComments('{{$primerDetalleSerie->id}}');
+		loadComments('{{$primerDetalleSerie->id}}', '{{$fila}}');
 	});
 </script>

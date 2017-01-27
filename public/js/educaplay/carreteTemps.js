@@ -1,5 +1,5 @@
 	function abreDivDetalle(respuesta, filaDiv){
-		var nombreDivDetalle = '#detalleSerie' + filaDiv;
+		var nombreDivDetalle = '#ventanaSerie' + filaDiv;
 		$(nombreDivDetalle).html(respuesta);
 		$(nombreDivDetalle).css('display', 'block');
 		var btnCerrarDesc = '#btnCerrarDesc' + filaDiv;
@@ -9,8 +9,8 @@
 	}
 	
     function muestraDetalle(numDiv,serieId) {
-		var urlget = "educaplay/descripciones";
-		var _url = urlget + '/' + serieId;
+		var urlget = "educaplay/descripcionSerie";
+		var _url = urlget + '/' + serieId + '/' + numDiv;
 		$.ajax({
 			method: "GET",
 			url: _url,
@@ -28,7 +28,7 @@
     }
 	
     function cierraDetalle(numDiv) {
-        var nombreDivDetalle = '#detalleSerie' + numDiv;
+        var nombreDivDetalle = '#ventanaSerie' + numDiv;
         $(nombreDivDetalle).css('display', 'none');
 		var btnCerrarDesc = '#btnCerrarDesc' + numDiv;
         $(btnCerrarDesc).css('display', 'none');

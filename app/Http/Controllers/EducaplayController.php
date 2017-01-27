@@ -31,7 +31,7 @@ class EducaplayController extends Controller {
         return view('viewEducaplay/educaplay');
     }
 
-    public function descripciones($serieId) {
+    public function descripciones($serieId, $numFila) {
         $fila = filter_input(INPUT_GET, 'divFila');
         $primerDetalleSerie = DB::table('edu_serie')
                 ->join('edu_imagen', 'edu_serie.id', '=', 'edu_imagen.serie_id')
@@ -47,7 +47,7 @@ class EducaplayController extends Controller {
                 ->orderBy('edu_video.temporada', 'ASC')
                 ->orderBy('edu_video.capitulo', 'ASC')
                 ->get();
-        return view('viewEducaplay/descripcionSerie')->with('primerDetalleSerie', $primerDetalleSerie)->with('comentarios', $comentarios)->with('fila', $fila);
+        return view('viewEducaplay/descripcionSerie')->with('primerDetalleSerie', $primerDetalleSerie)->with('comentarios', $comentarios)->with('fila', $numFila);
     }
 
     public function temporada($serieId, $temporada) {
