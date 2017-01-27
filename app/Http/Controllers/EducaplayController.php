@@ -32,6 +32,7 @@ class EducaplayController extends Controller {
     }
 
     public function descripciones($serieId) {
+        $fila = filter_input(INPUT_GET, 'divFila');
         $primerDetalleSerie = DB::table('edu_serie')
                 ->join('edu_imagen', 'edu_serie.id', '=', 'edu_imagen.serie_id')
                 ->join('edu_video', 'edu_serie.id', '=', 'edu_video.serie_id')
@@ -46,20 +47,21 @@ class EducaplayController extends Controller {
                 ->orderBy('edu_video.temporada', 'ASC')
                 ->orderBy('edu_video.capitulo', 'ASC')
                 ->get();
-        return view('viewEducaplay/descripcionSerie')->with('primerDetalleSerie', $primerDetalleSerie)->with('comentarios', $comentarios);
+        return view('viewEducaplay/descripcionSerie')->with('primerDetalleSerie', $primerDetalleSerie)->with('comentarios', $comentarios)->with('fila', $fila);
     }
 
     public function temporada($serieId, $temporada) {
-        $encuentraTemp = DB::table('edu_video')
+        $fila = filter_input(INPUT_GET, 'fila');
+        /*$encuentraTemp = DB::table('edu_video')
                 ->select('temporada')
                 ->where('temporada', $temporada)
                 ->get();
-        if ($encuentraTemp == null) {
-            if ($temporada == 1) {
-                $temporada = 0;
-            } else {
+        if ($encuentraTemp == null) {*/
+            if ($temporada == 0) {
                 $temporada = 1;
-            }
+            /*} else {
+                $temporada = 1;
+            }*/
         }
         $detallesSerie = DB::table('edu_serie')
                 ->join('edu_imagen', 'edu_serie.id', '=', 'edu_imagen.serie_id')
@@ -67,8 +69,10 @@ class EducaplayController extends Controller {
                 ->select('edu_serie.id', 'edu_serie.titulo_serie', 'edu_serie.temporadas_total', 'edu_serie.clasificacion_id', 'edu_serie.descripcion', 'edu_imagen.url', 'edu_imagen.ubicacion_id', 'edu_video.id AS videoId', 'edu_video.sinopsis', 'edu_video.temporada', 'edu_video.capitulo', 'edu_video.url_video')
                 ->where('edu_serie.id', '=', $serieId)
                 ->where('edu_video.temporada', '=', $temporada)
+                ->where('edu_video.url_video', '!=', "")
+                ->groupBy('edu_video.url_video')
                 ->get();
-        return view('viewEducaplay/carreteTemporada')->with('detallesSerie', $detallesSerie);
+        return view('viewEducaplay/carreteTemporada')->with('detallesSerie', $detallesSerie)->with('fila', $fila);
     }
 
     public function educaplayMenu() {   //* Funcion para alimentar el menu de Educaplay

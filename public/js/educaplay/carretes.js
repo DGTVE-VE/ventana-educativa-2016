@@ -14,6 +14,7 @@
 		$.ajax({
 			method: "GET",
 			url: _url,
+            divFila: numDiv,
 			error: function (ts) {
 				var msjSinDatos = '<div class="col-md-4 col-md-offset-4" style="padding:80px;"><p style="color:white; font-size:2em;"> P R Ó X I M A M E N T E </p></div>';
 				abreDivDetalle(msjSinDatos, numDiv);

@@ -8,7 +8,7 @@
 @if($primerDetalleSerie !== null)
 	<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="color:white;">
         <div class="tab-content estiloTab" style=" max-height:430px; overflow-y: scroll;">
-            <div id="descripcion{{$primerDetalleSerie->id}}" class="tab-pane fade in active">
+            <div id="descripcion{{$fila}}" class="tab-pane fade in active">
 				<div class="col-md-10 col-md-offset-1">
 					<img src="{{url($primerDetalleSerie->url)}}" class="img-responsive" onclick="muestraDetalle('1')"/>
 					<div  class="text-justify" style="position: absolute; top: 70%; left:2%; width:30%;">
@@ -16,7 +16,7 @@
 					</div>
 				</div>
             </div>
-            <div id="similares{{$primerDetalleSerie->id}}" class="tab-pane fade">
+            <div id="similares{{$fila}}" class="tab-pane fade">
 				<div class="col-md-10 col-md-offset-1">
 					<h3>{{$primerDetalleSerie->titulo_serie}}</h3>
 				</div>
@@ -30,7 +30,7 @@
 						<ul class="dropdown-menu" aria-labelledby="btntemporada">
 				{{--*/
 					for($temp=1; $temp<= $primerDetalleSerie->temporadas_total; $temp++){
-						$urlTemporada = "cargaTemporada('".$primerDetalleSerie->id."','".$temp."')";
+						$urlTemporada = "cargaTemporada('".$primerDetalleSerie->id."','".$temp."','".$fila."')";
 						echo '<li><span onclick="'.$urlTemporada.'" class="text-center" style="color:black; cursor:pointer;">'.$temp.'</span></li>';
 					}
 				/*--}}
@@ -38,10 +38,10 @@
 					</div>
 				</div>
 				<div class="col-md-11">
-					<div name="detalleSerie" id="detalleSerie{{$primerDetalleSerie->id}}" class="col-md-12"></div>
+					<div name="detalleSerie" id="detalleSerie{{$fila}}" class="col-md-12"></div>
 				</div>
             </div>
-            <div id="detalles{{$primerDetalleSerie->id}}" class="tab-pane fade">
+            <div id="detalles{{$fila}}" class="tab-pane fade">
 				<div class="col-md-10 col-md-offset-1">
 					<h3>{{$primerDetalleSerie->titulo_serie}}</h3>
 					<br>
@@ -66,9 +66,9 @@
         <ul class="nav nav-tabs nav-justified">
             <li></li>
 
-            <li class="active"><a data-toggle="tab" href="#descripcion{{$primerDetalleSerie->id}}">DESCRIPCION GENERAL</a></li>
-            <li><a data-toggle="tab" href="#similares{{$primerDetalleSerie->id}}">CAPÍTULOS</a></li>
-            <li><a data-toggle="tab" href="#detalles{{$primerDetalleSerie->id}}">DETALLES</a></li>
+            <li class="active"><a data-toggle="tab" href="#descripcion{{$fila}}">DESCRIPCION GENERAL</a></li>
+            <li><a data-toggle="tab" href="#similares{{$fila}}">CAPÍTULOS</a></li>
+            <li><a data-toggle="tab" href="#detalles{{$fila}}">DETALLES</a></li>
 						@if( $primerDetalleSerie->categoria_id == 200)
             <li><a type="button" onclick="votacion('{!!$primerDetalleSerie->titulo_serie!!}')" class="btn btn-danger btn-lg">VOTAR POR ESTA SERIE</a></li>
 						@endif
@@ -111,23 +111,25 @@ if ( r == true){
 }
 
 }
-	function cargaTemporadaCompl(serieId){
+	function cargaTemporadaCompl(serieId, fila){
 		var urlget = "{{url('educaplay/descripciones/temporada')}}";
 		var _url = urlget + '/' + serieId + '/0';
 		$.ajax({
 			method: "GET",
 			url: _url,
+            fila: fila,
 			error: function (ts) {
 				console.log(ts.responseText);
 			}})
 			.done(function (msg) {
 				console.log('Videos temporada cargados: ' + serieId);
-				$("#detalleSerie").html(msg);
+                divDestino = "#detalleSerie" + fila;
+				$(divDestino).html(msg);
 				//                    console.log ( "Data Saved: " + msg );
 			});
 	}
 	
-	function cargaTemporada(serieId, idTemp){
+	function cargaTemporada(serieId, idTemp, fila){
 		/*if(idTemp==1){
 			idTemp=0;
 		}*/
@@ -137,12 +139,14 @@ if ( r == true){
 			async:false,
 			method: "GET",
 			url: _url,
+            fila: fila,
 			error: function (ts) {
 				console.log(ts.responseText);
 			}})
 			.done(function (msg) {
 				console.log('Videos temporada cargados: ' + idTemp);
-				$("#detalleSerie").html(msg);
+                divDestino = "#detalleSerie" + fila;
+				$(divDestino).html(msg);
 				//                    console.log ( "Data Saved: " + msg );
 			});
 	}
@@ -165,7 +169,7 @@ if ( r == true){
 	}
 	
 	$(document).ready(function(){
-		cargaTemporadaCompl('{{$primerDetalleSerie->id}}');
+		cargaTemporadaCompl('{{$primerDetalleSerie->id}}', '{{$fila}}');
 		loadComments('{{$primerDetalleSerie->id}}');
 	});
 </script>
