@@ -192,12 +192,7 @@ Educaplay
             {{--*/ $imprimeTitulo++; /*--}}
         @endforeach
     </div>
-@else
-    <div class="col-xs-5 col-sm-5 col-md-3 col-xs-offset-3 col-sm-offset-3 col-md-offset-5" style="position: relative; top: 150px;">
-        <p style="color:white; font-size:2em;"> P R Ó X I M A M E N T E </p>
-    </div>
-@endif
-
+    
     <!--metadatos para compartir en facebook-->
         <meta property="og:url" content="http://ventana.televisioneducativa.gob.mx/{{Request::path()}}" /> 
         <meta property="fb:app_id" content="1408909052733113" /> 
@@ -213,5 +208,11 @@ Educaplay
         <meta name="twitter:title" content="">
         <meta name="twitter:description" content="">
         <meta name="twitter:image" content="">
+@else
+    <div class="col-xs-5 col-sm-5 col-md-3 col-xs-offset-3 col-sm-offset-3 col-md-offset-5" style="position: relative; top: 150px;">
+        <p style="color:white; font-size:2em;"> P R Ó X I M A M E N T E </p>
+    </div>
+@endif
+
 
 @endsection
