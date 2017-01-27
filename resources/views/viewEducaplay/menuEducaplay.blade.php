@@ -17,7 +17,7 @@
                         <ul>
                             <li><a href="{{url('educaplay')}}">Inicio</a></li>
                             @foreach($menuEducaplay as $menuEducaplays)
-                            <li><a href="#carreteSerie{{$opcionMenu}}">{{$menuEducaplays->categoria}}</a></li>
+                            <li><a href="{{url('educaplay')}}#carreteSerie{{$opcionMenu}}">{{$menuEducaplays->categoria}}</a></li>
                             {{--*/ $opcionMenu++; /*--}}
                             @endforeach 
                         </ul>
