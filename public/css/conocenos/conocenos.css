@@ -503,6 +503,7 @@ a.before:hover:before,a.after:hover:after{
     position: fixed;
     margin-left: 18%;
     z-index:1031;
+    color: black;
 }
 .quitaMargenInf{
     margin-bottom:-25px;
