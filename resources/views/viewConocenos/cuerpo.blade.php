@@ -15,7 +15,7 @@
             </li>
             <li>
                 <!--<a href="{{--url('conocenos/blog')--}}">BLOG</a>-->
-                <a href="#">BLOG</a>
+                <a href="conocenos/blog">BLOG</a>
             </li>
 <!--            <li>
                 <a href="#">ACERCA DE</a>
