@@ -69,15 +69,7 @@ Educamedia
                 <div class="col-md-3">
                     <a id="ligaDescargaYoutube" href="{{ url('descarga/getvideo.php/yt/getvideo.mp4?videoid='.$datosActual[0]->url.'&format=best') }}" download="{{$datosActual[0]->url}}"><span title="descarga video" class="glyphicon glyphicon-cloud-download btnDescarga" aria-hidden="true"></span></a>
                     Descargar Video
-                    <div class="help-tip text-justify">
-                        <p class="text-justify">Si presentas problemas para realizar la descarga intenta:<br>
-                        - Si usas navegador Chrome da dos clics al botón de descarga.<br>
-                        -Si usas Mozilla o Internet Explorer sobre el botón de descarga <br>
-                        da clic derecho y selecciona la opción "Guardar enlace como..."<br>
-                        Para cualquier duda también nos puedes escribir al correo<br>
-                        dgtve.ventana@gmail.com<br>                        
-                    </p>
-                    </div>                    
+                   
                 </div>
                 @else
                 <div class="col-md-3">
