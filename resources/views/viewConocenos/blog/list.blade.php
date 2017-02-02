@@ -19,7 +19,7 @@ Ventana Educativa / Conocenos
             background-color: #545454;
             min-height:100%;
             color: white;
-            position: relative;
+            
         }
         h4 > a{
             color: white;
@@ -40,48 +40,8 @@ Ventana Educativa / Conocenos
             <h4 class="glyphicon glyphicon-home" style="color: white;"></h4><br/>
         </a>
     </div>
-    <div id="filaPrincipal" class="row fondoBlog">
-        <!--inicia blog list-->
-        <!--<div class="col-xs-12 col-sm-12 col-md-12" style="padding:20px;"></div>-->
-        <div class="col-xs-11 col-sm-7 col-md-6 col-md-offset-1">
-            <div class="col-xs-12 col-sm-12 col-md-12" style="padding:20px;"></div>
-            @foreach ($blogs as $blog)
-            <div class="col-xs-12 col-sm-12 col-md-12 fondoBlanco">
-                <div class="col-xs-12 col-sm-12 col-md-10 col-md-offset-1">
-                    {{--*/ $ligaEntrada = 'conocenos/blog/'.$blog->id; /*--}}
-                    <a href="{{url($ligaEntrada)}}"> <h2><strong>{{$blog->titulo}} </strong></h2></a>
-                </div>
-                <div class="col-xs-12 col-sm-12 col-md-12 col-md-offset-1">
-                    <?php
-                    $dt = new DateTime($blog->created_at);
-                    $date = $dt->format('m/d/Y');
-                    ?>
-                    <h4>{{$date}}</h4>
-                </div>
-                <div class="col-xs-12 col-sm-12 col-md-10 col-md-offset-1">
-                    {{--*/ $ligaEntrada = 'conocenos/blog/'.$blog->id; /*--}}
-                    <a href="{{url($ligaEntrada)}}">
-                        <img src="{{url ($blog->imagen)}}" style="width:100%">
-                    </a>
-                </div>
-                <div class="col-xs-12 col-sm-12 col-md-10 col-md-offset-1">
-                    <h3> {{ App\Model\Conocenos\Users::whereid($blog->colaborador_id)->first()->name}}</h3>
-                    {!!substr($blog->cuerpo, 0, 400)!!}...
-                </div>
-                <div class="col-xs-12 col-sm-12 col-md-10 col-md-offset-1">
-                    {{--*/ $ligaEntrada = 'conocenos/blog/'.$blog->id; /*--}}
-                    <a href="{{url($ligaEntrada)}}" class="pull-right"> Leer más...</a>
-                </div>
-                <div class="col-xs-12 col-sm-12 col-md-12" style="padding:10px;">
-                </div>
-            </div>
-            <div class="col-xs-12 col-sm-12 col-md-12" style="padding:20px;">
-            </div>
-            @endforeach
-            {!! $blogs->render() !!}
-        </div>
-        <div id="panelIzquierdo" class="col-xs-12 col-sm-5 col-md-4 col-md-offset-1 fondoPanelIzq">
-            <div class="col-xs-12 col-sm-12 col-md-12"></div>
+    <div id="filaPrincipal" class="row fondoBlog">  
+        <div id="panelIzquierdo" class="col-md-4 fondoPanelIzq">
             <div class="col-xs-12 col-sm-12 col-md-10 col-md-offset-1">
                 <br><br>
                 <div class="col-xs-12 col-sm-12 col-md-12">
@@ -151,12 +111,50 @@ Ventana Educativa / Conocenos
             @endif
             @endif
         </div>
+        <div class="col-xs-11 col-sm-7 col-md-7">
+            <div class="col-xs-12 col-sm-12 col-md-12" style="padding:20px;"></div>
+            @foreach ($blogs as $blog)
+            <div class="col-xs-12 col-sm-12 col-md-12 fondoBlanco">
+                <div class="col-xs-12 col-sm-12 col-md-10 col-md-offset-1">
+                    {{--*/ $ligaEntrada = 'conocenos/blog/'.$blog->id; /*--}}
+                    <a href="{{url($ligaEntrada)}}"> <h2><strong>{{$blog->titulo}} </strong></h2></a>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-12 col-md-offset-1">
+                    <?php
+                    $dt = new DateTime($blog->created_at);
+                    $date = $dt->format('m/d/Y');
+                    ?>
+                    <h4>{{$date}}</h4>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-10 col-md-offset-1">
+                    {{--*/ $ligaEntrada = 'conocenos/blog/'.$blog->id; /*--}}
+                    <a href="{{url($ligaEntrada)}}">
+                        <img src="{{url ($blog->imagen)}}" style="width:100%">
+                    </a>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-10 col-md-offset-1">
+                    <h3> {{ App\Model\Conocenos\Users::whereid($blog->colaborador_id)->first()->name}}</h3>
+                    {!!substr($blog->cuerpo, 0, 400)!!}...
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-10 col-md-offset-1">
+                    {{--*/ $ligaEntrada = 'conocenos/blog/'.$blog->id; /*--}}
+                    <a href="{{url($ligaEntrada)}}" class="pull-right"> Leer más...</a>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-12" style="padding:10px;">
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12" style="padding:20px;">
+            </div>
+            @endforeach
+            {!! $blogs->render() !!}
+        </div>
         <!--fin blog list-->
-    </div>
-    <div class="row"style="background-color:black; margin:0;">
-        @include('viewConocenos.pie')
+
     </div>
 
+        <div class="col-md-12"style="background-color:black; margin:0;">
+            @include('viewConocenos.pie')
+        </div>
     <script>
         $('#barraNavPie').removeClass('navbar navbar-inverse posicionPie medidasPie');
         $('.textoBlanco').css('color', 'white');

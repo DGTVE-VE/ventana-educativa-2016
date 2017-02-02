@@ -66,8 +66,9 @@ Educamedia
                         @if (Auth::check ())
                         @if($esDocente)
                         <div class="col-xs-12 col-sm-4 col-md-3">
-                            <a id="ligaDescargaYoutube" href="{{ url('descarga/getvideo.php/yt/getvideo.mp4?videoid='.$datosActual[0]->url.'&format=best') }}" download="{{$datosActual[0]->url}}"><span title="descarga video" class="glyphicon glyphicon-cloud-download btnDescarga" aria-hidden="true"></span></a>
-                            Descarga Video
+                            <a id="ligaDescargaYoutube" href="{{ url('descarga/getvideo.php/yt/getvideo.mp4?videoid='.$datosActual[0]->url.'&format=best') }}" download="{{$datosActual[0]->url}}"><span title="descarga video" class="glyphicon glyphicon-cloud-download btnDescarga" aria-hidden="true"></span></a>                            
+                            Descargar Video
+                           
                         </div>
                         @else
                         <div class="col-md-3">
