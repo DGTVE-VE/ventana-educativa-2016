@@ -30,11 +30,11 @@
 			{{HTML::image('imagenes/mediateca/tbachillerato/SemestreIV/LenguaAdicionalIVHover.png','Telebachillerato LenguaAdicionalIV ',['class'=>'resaltaImg img-responsive', 'id'=>'LenguaAdicionalIVHover'])}}
 			
 			{{HTML::image('imagenes/mediateca/tbachillerato/imgCentral/LiteraturaII.png','Telebachillerato Central',['class'=>' img-responsive iniImgCentro', 'id'=>'LiteraturaIICentro'])}}
-			{{HTML::image('imagenes/mediateca/tbachillerato/imgCentral/Estructura.png','Telebachillerato Central',['class'=>' img-responsive iniImgCentro', 'id'=>'EstructuraCentro'])}}
+			{{HTML::image('imagenes/mediateca/tbachillerato/imgCentral/economiaI.gif','Telebachillerato Central',['class'=>' img-responsive iniImgCentro', 'id'=>'EstructuraCentro'])}}
 			{{HTML::image('imagenes/mediateca/tbachillerato/imgCentral/MatematicasIV.png','Telebachillerato Central',['class'=>' img-responsive iniImgCentro', 'id'=>'MatematicasIVCentro'])}}
 			{{HTML::image('imagenes/mediateca/tbachillerato/imgCentral/LenguaAdicionalIV.gif','Telebachillerato Central',['class'=>' img-responsive iniImgCentro', 'id'=>'LenguaAdicionalIVCentro'])}}
 			{{HTML::image('imagenes/mediateca/tbachillerato/imgCentral/BiologiaII.png','Telebachillerato Central',['class'=>' img-responsive iniImgCentro', 'id'=>'BiologiaIICentro'])}}
-			{{HTML::image('imagenes/mediateca/tbachillerato/imgCentral/FisicaII.png','Telebachillerato Central',['class'=>' img-responsive iniImgCentro', 'id'=>'FisicaIICentro'])}}
+			{{HTML::image('imagenes/mediateca/tbachillerato/imgCentral/fisicaII.gif','Telebachillerato Central',['class'=>' img-responsive iniImgCentro', 'id'=>'FisicaIICentro'])}}
 			
 			{{HTML::image('imagenes/mediateca/tbachillerato/SemestreIV/imgMapa.png','Telebachillerato',['class'=>'posicionMapa img-responsive', 'id'=>'telebachilleratoSEMV', 'usemap'=>'#mapaSemIV'])}}
 		</div>

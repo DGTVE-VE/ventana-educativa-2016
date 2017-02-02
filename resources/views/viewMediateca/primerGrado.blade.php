@@ -40,7 +40,7 @@
 			{{HTML::image('imagenes/mediateca/tsecundaria/iconoCentral/geografiaCentro.gif','Telesecundaria central geografia',['class'=>'imgPrimeroCentral', 'id'=>'geografiaCentro'])}}
 			{{HTML::image('imagenes/mediateca/tsecundaria/iconoCentral/EspanolICentro.gif','Telesecundaria central espanol',['class'=>'imgPrimeroCentral', 'id'=>'espanolICentro'])}}
 			{{HTML::image('imagenes/mediateca/tsecundaria/iconoCentral/matematicasICentro.gif','Telesecundaria central matematicas',['class'=>'imgPrimeroCentral', 'id'=>'matematicasICentro'])}}
-			{{HTML::image('imagenes/mediateca/tsecundaria/iconoCentral/biologiaCentro.gif','Telesecundaria central ciencias',['class'=>'imgPrimeroCentral', 'id'=>'biologiaCentro'])}}
+			{{HTML::image('imagenes/mediateca/tsecundaria/iconoCentral/biologiaCentral.gif','Telesecundaria central ciencias',['class'=>'imgPrimeroCentral', 'id'=>'biologiaCentro'])}}
 			{{HTML::image('imagenes/mediateca/tsecundaria/iconoCentral/lenguaICentro.gif','Telesecundaria central lengua',['class'=>'imgPrimeroCentral', 'id'=>'lenguaICentro'])}}
 			{{HTML::image('imagenes/mediateca/tsecundaria/iconoCentral/educacionFisicaICentro.gif','Telesecundaria central educacionFisica',['class'=>'imgPrimeroCentral', 'id'=>'educacionFisicaICentro'])}}
 			{{HTML::image('imagenes/mediateca/tsecundaria/iconoCentral/tecnologiaCentro.gif','Telesecundaria central tecnologia',['class'=>'imgPrimeroCentral', 'id'=>'tecnologiaCentro'])}}

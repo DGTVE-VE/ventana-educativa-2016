@@ -33,14 +33,14 @@ Educamedia
 			{{HTML::image('imagenes/mediateca/tbachillerato/componente/PsicologiaIHover.png','Telesecundaria PsicologiaI',['class'=>'resaltaImg img-responsive', 'id'=>'PsicologiaIHover'])}}
 			{{HTML::image('imagenes/mediateca/tbachillerato/componente/PsicologiaIIHover.png','Telesecundaria PsicologiaII',['class'=>'resaltaImg img-responsive', 'id'=>'PsicologiaIIHover'])}}
 
-			{{HTML::image('imagenes/mediateca/tbachillerato/imgCentral/CienciasSaludI.png','Telebachillerato Central',['class'=>' img-responsive iniImgCentro', 'id'=>'CienciasSaludICentro'])}}
-			{{HTML::image('imagenes/mediateca/tbachillerato/imgCentral/CienciasSaludII.png','Telebachillerato Central',['class'=>' img-responsive iniImgCentro', 'id'=>'CienciasSaludIICentro'])}}
-			{{HTML::image('imagenes/mediateca/tbachillerato/imgCentral/CienciasComunicacionI.png','Telebachillerato Central',['class'=>' img-responsive iniImgCentro', 'id'=>'CienciasComunicacionICentro'])}}
-			{{HTML::image('imagenes/mediateca/tbachillerato/imgCentral/CienciasComunicacionII.png','Telebachillerato Central',['class'=>' img-responsive iniImgCentro', 'id'=>'CienciasComunicacionIICentro'])}}
+			{{HTML::image('imagenes/mediateca/tbachillerato/imgCentral/cienciasSaludI.gif','Telebachillerato Central',['class'=>' img-responsive iniImgCentro', 'id'=>'CienciasSaludICentro'])}}
+			{{HTML::image('imagenes/mediateca/tbachillerato/imgCentral/cienciasSaludII.gif','Telebachillerato Central',['class'=>' img-responsive iniImgCentro', 'id'=>'CienciasSaludIICentro'])}}
+			{{HTML::image('imagenes/mediateca/tbachillerato/imgCentral/cienciasComunicaI.gif','Telebachillerato Central',['class'=>' img-responsive iniImgCentro', 'id'=>'CienciasComunicacionICentro'])}}
+			{{HTML::image('imagenes/mediateca/tbachillerato/imgCentral/cienciasComunicaII.gif','Telebachillerato Central',['class'=>' img-responsive iniImgCentro', 'id'=>'CienciasComunicacionIICentro'])}}
 			{{HTML::image('imagenes/mediateca/tbachillerato/imgCentral/ProbabilidadI.png','Telebachillerato Central',['class'=>' img-responsive iniImgCentro', 'id'=>'ProbabilidadICentro'])}}
-			{{HTML::image('imagenes/mediateca/tbachillerato/imgCentral/ProbabilidadII.png','Telebachillerato Central',['class'=>' img-responsive iniImgCentro', 'id'=>'ProbabilidadIICentro'])}}
+			{{HTML::image('imagenes/mediateca/tbachillerato/imgCentral/probabilidadII.gif','Telebachillerato Central',['class'=>' img-responsive iniImgCentro', 'id'=>'ProbabilidadIICentro'])}}
 			{{HTML::image('imagenes/mediateca/tbachillerato/imgCentral/PsicologiaI.gif','Telebachillerato Central',['class'=>' img-responsive iniImgCentro', 'id'=>'PsicologiaICentro'])}}
-			{{HTML::image('imagenes/mediateca/tbachillerato/imgCentral/PsicologiaII.png','Telebachillerato Central',['class'=>' img-responsive iniImgCentro', 'id'=>'PsicologiaIICentro'])}}
+			{{HTML::image('imagenes/mediateca/tbachillerato/imgCentral/psicologiaII.gif','Telebachillerato Central',['class'=>' img-responsive iniImgCentro', 'id'=>'PsicologiaIICentro'])}}
 			
 			{{HTML::image('imagenes/mediateca/tbachillerato/componente/imgMapa.png','Telebachillerato',['class'=>'posicionMapa img-responsive', 'id'=>'telebachilleratoSEMII', 'usemap'=>'#mapaSemPedagogico'])}}
 		</div>

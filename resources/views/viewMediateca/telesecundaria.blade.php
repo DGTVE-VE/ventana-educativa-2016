@@ -22,9 +22,9 @@
 			{{HTML::image('imagenes/mediateca/tsecundaria/Inicio/primerGradoHover.png','Telesecundaria Primero',['class'=>'resaltaImg img-responsive', 'id'=>'primerGradoHover'])}}
 			{{HTML::image('imagenes/mediateca/tsecundaria/Inicio/segundoGradoHover.png','Telesecundaria Segundo',['class'=>'resaltaImg img-responsive', 'id'=>'segundoGradoHover'])}}
 			{{HTML::image('imagenes/mediateca/tsecundaria/Inicio/tercerGradoHover.png','Telesecundaria Tercero',['class'=>'resaltaImg img-responsive', 'id'=>'tercerGradoHover'])}}
-			{{HTML::image('imagenes/mediateca/tsecundaria/iconoCentral/centralPrimero.gif','Telesecundaria central Primero',['class'=>'imgTelesecCentro', 'id'=>'primerGradoCentro'])}}
-			{{HTML::image('imagenes/mediateca/tsecundaria/iconoCentral/centralSegundo.gif','Telesecundaria central Segundo',['class'=>'imgTelesecCentro', 'id'=>'segundoGradoCentro'])}}
-			{{HTML::image('imagenes/mediateca/tsecundaria/iconoCentral/centralTercero.gif','Telesecundaria central Tercero',['class'=>'imgTelesecCentro', 'id'=>'tercerGradoCentro'])}}
+			{{HTML::image('imagenes/mediateca/tsecundaria/iconoCentral/centralPrimer.gif','Telesecundaria central Primero',['class'=>'imgTelesecCentro', 'id'=>'primerGradoCentro'])}}
+			{{HTML::image('imagenes/mediateca/tsecundaria/iconoCentral/centralSegund.gif','Telesecundaria central Segundo',['class'=>'imgTelesecCentro', 'id'=>'segundoGradoCentro'])}}
+			{{HTML::image('imagenes/mediateca/tsecundaria/iconoCentral/centralTercer.gif','Telesecundaria central Tercero',['class'=>'imgTelesecCentro', 'id'=>'tercerGradoCentro'])}}
 			{{HTML::image('imagenes/mediateca/tsecundaria/Inicio/imgMapa.png','telesecundaria',['class'=>'posicionMapa img-responsive', 'id'=>'telebachilleratoSEMII', 'usemap'=>'#telesecGrados'])}}
 		</div>
 	</div>
