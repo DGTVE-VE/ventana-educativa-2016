@@ -85,7 +85,7 @@ Educamedia
                     Descargar Video
                     <a class="tooltip-inner test" href="#" data-toggle="tooltip" data-placement="bottom" title="
                        Si presentas problemas para realizar la descarga intenta:
-                       - Si usas navegador Chrome da dos clics al botón de descarga.
+                       - Si usas navegador Google Chrome da dos clics al botón de descarga.
                        -Si usas Mozilla o Internet Explorer sobre el botón de descarga
                        da clic derecho y selecciona la opción Guardar enlace como...
                        Para cualquier duda también nos puedes escribir al correo
