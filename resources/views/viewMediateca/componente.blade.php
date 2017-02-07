@@ -34,7 +34,7 @@ Educamedia
 			{{HTML::image('imagenes/mediateca/tbachillerato/componente/PsicologiaIIHover.png','Telesecundaria PsicologiaII',['class'=>'resaltaImg img-responsive', 'id'=>'PsicologiaIIHover'])}}
 
 			{{HTML::image('imagenes/mediateca/tbachillerato/imgCentral/cienciasSaludI.gif','Telebachillerato Central',['class'=>' img-responsive iniImgCentro', 'id'=>'CienciasSaludICentro'])}}
-			{{HTML::image('imagenes/mediateca/tbachillerato/imgCentral/cienciasSaludII.gif','Telebachillerato Central',['class'=>' img-responsive iniImgCentro', 'id'=>'CienciasSaludIICentro'])}}
+			{{HTML::image('imagenes/mediateca/tbachillerato/imgCentral/educacionFisicaIICentro.gif','Telebachillerato Central',['class'=>' img-responsive iniImgCentro', 'id'=>'CienciasSaludIICentro'])}}
 			{{HTML::image('imagenes/mediateca/tbachillerato/imgCentral/cienciasComunicaI.gif','Telebachillerato Central',['class'=>' img-responsive iniImgCentro', 'id'=>'CienciasComunicacionICentro'])}}
 			{{HTML::image('imagenes/mediateca/tbachillerato/imgCentral/cienciasComunicaII.gif','Telebachillerato Central',['class'=>' img-responsive iniImgCentro', 'id'=>'CienciasComunicacionIICentro'])}}
 			{{HTML::image('imagenes/mediateca/tbachillerato/imgCentral/ProbabilidadI.png','Telebachillerato Central',['class'=>' img-responsive iniImgCentro', 'id'=>'ProbabilidadICentro'])}}
