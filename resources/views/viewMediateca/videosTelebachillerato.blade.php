@@ -1,9 +1,23 @@
+
 @extends('indexMediateca')
 
 @section('titleMediateca')
 Educamedia
 @stop
-
+<style>
+        
+.test + .tooltip > .tooltip-inner {
+      background-color: #73AD21; 
+      color: #FFFFFF; 
+      border: 1px solid green; 
+      padding: 15px;
+      font-size: 20px;
+  }
+  /* Tooltip on top */
+  .test + .tooltip.top > .tooltip-arrow {
+      border-top: 5px solid green;
+  }
+</style>
 <link rel="stylesheet" href="{{ asset('css/mediateca/videosTelebachillerato.css') }}" >
 @section('menuMediateca')
 @include('viewMediateca.encabezadoMediateca')
@@ -69,7 +83,16 @@ Educamedia
                 <div class="col-md-3">
                     <a id="ligaDescargaYoutube" href="{{ url('descarga/getvideo.php/yt/getvideo.mp4?videoid='.$datosActual[0]->url.'&format=best') }}" download="{{$datosActual[0]->url}}"><span title="descarga video" class="glyphicon glyphicon-cloud-download btnDescarga" aria-hidden="true"></span></a>                    
                     Descargar Video
-
+                    <a class="tooltip-inner test" href="#" data-toggle="tooltip" data-placement="bottom" title="
+                       Si presentas problemas para realizar la descarga intenta:
+                       - Si usas navegador Google Chrome da dos clics al botón de descarga.
+                       -Si usas Mozilla o Internet Explorer sobre el botón de descarga
+                       da clic derecho y selecciona la opción Guardar enlace como...
+                       Para cualquier duda también nos puedes escribir al correo
+                       dgtve.ventana@gmail.com
+                    ">
+                        <span class="glyphicon glyphicon-question-sign" style="color: white;"></span>
+                    </a>
                 </div>
                 @else
                 <div class="col-md-3">
@@ -507,3 +530,8 @@ Educamedia
 <meta name="twitter:description" content="{{ $datosActual[0]->sinopsis }}">
 <meta name="twitter:image" content="http://img.youtube.com/vi/{{ $video->url }}/2.jpg">
 @endsection
+<script>
+$(document).ready(function(){
+    $('[data-toggle="tooltip"]').tooltip();   
+});
+</script>
