@@ -33,8 +33,8 @@
 					<h4 class="modal-title" id="etiquetaModalVideo">Conocenos</h4>
 				</div>
 				<div class="modal-body">
-                    <iframe width="600" height="400" frameborder="0"
-                       src="https://www.youtube.com/embed/m3vfSehOElU?playlist=m3vfSehOElU&loop=1&autoplay=1&rel=0">
+                    <iframe width="573" height="400" frameborder="0"
+                       src="https://www.youtube.com/embed/m3vfSehOElU?playlist=m3vfSehOElU&loop=1&rel=0">
                     </iframe>
 					<!--video style="width:100%;" controls>
 						<source src="imagenes/ventana/conocenos/presentacion/institucional.mp4" type="video/mp4"/>
