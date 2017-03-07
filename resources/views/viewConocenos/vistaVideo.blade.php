@@ -26,13 +26,13 @@
 	</div>
 
 	<div class="modal fade" id="modalVideo" tabindex="-1" role="dialog" aria-labelledby="etiquetaModalVideo" data-backdrop="false">
-		<div class="modal-dialog modal-lg" role="document">
+		<div class="modal-dialog modal-xs" role="document">
 			<div class="modal-content">
 				<div class="modal-header">
 					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
 					<h4 class="modal-title" id="etiquetaModalVideo">Conocenos</h4>
 				</div>
-				<div clas="modal-body">
+				<div class="modal-body">
                     <iframe width="600" height="400" frameborder="0"
                        src="https://www.youtube.com/embed/m3vfSehOElU?playlist=m3vfSehOElU&loop=1&autoplay=1&rel=0">
                     </iframe>
