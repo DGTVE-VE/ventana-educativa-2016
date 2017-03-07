@@ -13,7 +13,7 @@
     }else{
         $('#navegacionVentana').css('height', '55px');	
     }
-
+/*  -----   reemplazo de clases para cambiar el color de fondo del menú de ventana     -----   */
     $(window).scroll(function(){
         var scroll_v = this.pageYOffset;
         if(scroll_v > 10){
