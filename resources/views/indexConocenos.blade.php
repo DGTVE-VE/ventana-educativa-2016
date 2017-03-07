@@ -14,6 +14,23 @@ and open the template in the editor.
         <meta name="keywords" content="Ventana Educativa, plataforma digital, contenidos educativos, multimedia, Canal Iberoamericano, Idiomas, Salud, Padres, Estudiantes, Educaplay, Docentes, Educamedia, Telesecundaria, Telebachillerato, Red Mesoamericana, Cultura, Biblioteca, MéxicoX">
         <meta http-equiv="X-UA-Compatible" content="IE=Edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
+        
+                <!--facebook metas-->
+
+        <meta property="og:url"                content="http://ventana.televisioneducativa.gob.mx/conocenos" />
+        <meta property="og:type"               content="article" />
+        <meta property="og:title"              content="Ventana Educativa" />
+        <meta property="og:description"        content="" />
+        <meta property="og:image"              content="http://ventana.televisioneducativa.gob.mx/imagenes/conocenos/compartir.jpg" />
+
+        <!--twitter metas-->
+
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:site" content="">
+        <meta name="twitter:creator" content="@SarahMaslinNir">
+        <meta name="twitter:title" content="">
+        <meta name="twitter:description" content="">
+        <meta name="twitter:image" content="http://ventana.televisioneducativa.gob.mx/imagenes/conocenos/compartir.jpg">
 
         <link rel="shortcut icon" href="{{ asset('redmite1.ico') }}" >
 

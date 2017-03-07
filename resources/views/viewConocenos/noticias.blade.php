@@ -82,7 +82,7 @@
             </div>
             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                 <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 padDiv10px">
-                    {{HTML::image('imagenes/conocenos/noticia4.jpg','Noticia Conocenos',array( 'class'=>'imgNoticia img-responsive'))}}
+                    {{HTML::image('imagenes/conocenos/noticiainclusiva.jpg','Noticia Conocenos',array( 'class'=>'imgNoticia img-responsive'))}}
                     <div class="posicionVerMas"><a data-toggle="modal" data-target="#modalNoticia3" href="#"><div class="text-center vermas">Ver más</div></a></div>
                 </div>
                 <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 padDiv10px">
@@ -144,11 +144,12 @@
 			<div class="modal-content">
 				<div class="panel panel-default">
 					<div class="panel-heading">
-						eLAC Plan de Accion
+						Lenguaje Incluyente
 						<button type="button" class="close" data-dismiss="modal">&times;</button>
 					</div>
 					<div class="panel-body">
-						<embed width="100%" height="500px" src="{{url('pdf/conocenos/eLAC_Plan_de_Accion.pdf')}}" type="application/pdf"></embed>
+                                            <img class="img-responsive" src="{{url('imagenes/conocenos/InfografíaLenguajeIncluyente261016.jpg')}}">
+						<!--<embed width="100%" height="500px" src="{{--url('pdf/conocenos/eLAC_Plan_de_Accion.pdf')--}}" type="application/pdf"></embed>-->
 					</div>
 				</div>
 			</div>
