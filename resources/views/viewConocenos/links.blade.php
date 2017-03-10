@@ -28,6 +28,17 @@
                             <a href="http://www.uv.mx/" target="_blank"><img src="imagenes/ventana/conocenos/links/UVeracruzana.png" alt="..." class="img-responsive"></a>
                         </div>
                     </li>
+                    <li>
+                         <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                            <!--<a href="http://upes.edu.mx/sitio/" target="_blank"><img src="imagenes/ventana/conocenos/links/UPES.png" alt="..." class="img-responsive"></a>-->
+                        </div>
+                        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                            <a href="http://upes.edu.mx/sitio/" target="_blank"><img src="imagenes/ventana/conocenos/links/UPES.png" alt="..." class="img-responsive"></a>
+                        </div>
+                        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                            <!--<a href="http://upes.edu.mx/sitio/" target="_blank"><img src="imagenes/ventana/conocenos/links/UPES.png" alt="..." class="img-responsive"></a>-->
+                        </div>
+                    </li>                    
                 </ul>
             </div>
         </section>
