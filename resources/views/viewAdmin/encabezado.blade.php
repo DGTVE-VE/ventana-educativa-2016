@@ -61,7 +61,7 @@
                                                 </div>
 
                                                 <div class=" col-md-6 text-center">
-                                                    <a href="{{url('registro')}}"  tabindex="5" style="color: white;" class="forgot-password">Registrate</a>
+                                                    <a href="{{url('registro')}}"  tabindex="5" style="color: white;" class="forgot-password">Regístrate</a>
                                                 </div>
                                             </div>
                                         </form>
@@ -135,6 +135,13 @@
                 <a href="{{url('admin')}}"><span class="fa-stack fa-lg pull-left"><i class="fa  fa-home fa-stack-1x "></i></span> Inicio</a>
             </li>
             <li class="">
+                <a href="#"><span class="fa-stack fa-lg pull-left"><i class="fa fa-bar-chart fa-stack-1x "></i></span> Estadísticas</a>
+                <ul class="nav-pills nav-stacked" style="list-style-type:none;">
+                    <li><a href="{{url('admin/estadisticas')}}"><i class="fa fa-bar-chart" aria-hidden="true"></i>Reporte</a></li>
+                    <!--li><a href="#">link2</a></li-->
+                </ul>
+            </li>
+            <li class="">
                 <a href="#"><span class="fa-stack fa-lg pull-left"><i class="fa  fa-book fa-stack-1x "></i></span> Biblioteca</a>
                 <ul class="nav-pills nav-stacked" style="list-style-type:none;">
                     <li><a href="{{url('Admin/biblioteca')}}"><i class="fa fa-leanpub" aria-hidden="true"></i>Bibliotecas</a></li>
@@ -142,7 +149,7 @@
                 </ul>
             </li>
             <li>
-                <a href="#"><span class="fa-stack fa-lg pull-left"><i class="fa fa-binoculars fa-stack-1x "></i></span> Conocenos</a>
+                <a href="#"><span class="fa-stack fa-lg pull-left"><i class="fa fa-binoculars fa-stack-1x "></i></span> Conócenos</a>
                 <ul class="nav-pills nav-stacked" style="list-style-type:none;">
                     <li><a href="{{url('admin/news')}}"><span class="fa-stack fa-lg pull-left"><i class="fa fa-columns" aria-hidden="true"></i></span>Noticias</a></li>
                 </ul>

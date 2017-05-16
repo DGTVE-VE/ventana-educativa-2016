@@ -6,7 +6,7 @@ and open the template in the editor.
 -->
 <html lang='en'>
     <head>
-        <title>@yield('titleAdmin','Conocenos')</title>
+        <title>@yield('titleAdmin','Conócenos')</title>
         <!--  App Descripción  -->
         <meta charset="utf-8">
         <meta name="author" content="Ecosistema Digital de Aprendizaje (DGTVE)">
