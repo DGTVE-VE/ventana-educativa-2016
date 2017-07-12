@@ -196,6 +196,11 @@ Route::group(['middleware' => 'web'], function () {
     Route::resource('admin/publicaciones', 'Admin\\PublicacionesController');
     Route::resource('admin/news', 'Admin\\AdminNewsController');
     Route::get('admin/estadisticas', 'Admin\\EstadisticasController@estadisticas');
+    
+    Route::get('descargaYT', function () {
+        return redirect('descarga/getvideo.php?videoid=rww9JlVmvYM&format=ipad');
+    });
+    //Route::get('descargaYT', 'descarga\getvideo.php');
 });
 
 //Route::get ('api/getImagenes/{tipo}/{id}', '');

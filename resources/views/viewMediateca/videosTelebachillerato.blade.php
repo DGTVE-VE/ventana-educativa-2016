@@ -177,21 +177,21 @@ Educamedia
 <script>
     window.fbAsyncInit = function () {
         FB.init({
-    appId: '1408909052733113',
+            appId: '1408909052733113',
             xfbml: true,
-            version: 'v2.6'
-            });
+            version: 'v2.8'
+        });
     };
-            (function (d, s, id) {
-    var js, fjs = d.getElementsByTagName(s)[0];
+    (function (d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
         if (d.getElementById(id)) {
             return;
         }
-            js = d.createElement(s);
+        js = d.createElement(s);
         js.id = id;
-        js.src = "//connect.facebook.net/en_US/sdk.js";
+        js.src = "//connect.facebook.net/es_LA/sdk.js";
         fjs.parentNode.insertBefore(js, fjs);
-        }(document, 'script', 'facebook-jssdk'));
+    }(document, 'script', 'facebook-jssdk'));
 </script>
 <!--sdk twitter-->
 <script>window.twttr = (function (d, s, id) {
