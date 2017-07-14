@@ -81,15 +81,15 @@ Educamedia
                 @if (Auth::check ())
                 @if($esDocente)
                 <div class="col-md-3">
-                    <a id="ligaDescargaYoutube" href={{ App\Http\Controllers\descargaController::ligaDescarga($datosActual[0]->url) }} download={{$datosActual[0]->url}}"><span title="descarga video" class="glyphicon glyphicon-cloud-download btnDescarga" aria-hidden="true"></span></a>                    
+                    <a id="ligaDescargaYoutube" href={{ App\Http\Controllers\descargaController::ligaDescarga($datosActual[0]->url) }} download={{$datosActual[0]->url.".mp4"}}"><span title="descarga video" class="glyphicon glyphicon-cloud-download btnDescarga" aria-hidden="true"></span></a>                    
                     Descargar Video
                     <a class="tooltip-inner test" href="#" data-toggle="tooltip" data-placement="bottom" title="
-                       Si presentas problemas para realizar la descarga intenta:
-                       - Si usas navegador Google Chrome da dos clics al botón de descarga.
-                       -Si usas Mozilla o Internet Explorer sobre el botón de descarga
-                       da clic derecho y selecciona la opción Guardar enlace como...
-                       Para cualquier duda también nos puedes escribir al correo
-                       dgtve.ventana@gmail.com
+                           * Si al descargar un archivo no tiene extensión, puedes agregarla manualmente.
+                           * Si se abre una nueva pestaña donde se visualiza el video
+                             da clic derecho sobre el video y selecciona la opción Guardar video como...
+                             Y selecciona la ruta donde deseas guardarlo.
+                             Para cualquier duda también nos puedes escribir al correo
+                             dgtve.ventana@gmail.com
                     ">
                         <span class="glyphicon glyphicon-question-sign" style="color: white;"></span>
                     </a>
