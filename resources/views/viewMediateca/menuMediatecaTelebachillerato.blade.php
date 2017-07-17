@@ -8,7 +8,7 @@
                     <li><a href="{{url('http://www.dgb.sep.gob.mx/servicios-educativos/telebachillerato/normatividad/DOCUMENTO_BASE_TBC_2015.pdf')}}" target="_blank">Normatividad</a></li>
                     <li><a data-toggle="modal" href="#myModal-mapaCurricular-tb">Mapa Curricular</a></li>
                     <!--<li><a data-toggle="modal" href="#myModal-calendario-tb">Calendario</a></li>-->
-                    <li><a href="{{url('http://www.dgb.sep.gob.mx/bachillerato.php')}}" target="_blank">Calendario</a></li>
+                    <li><a href="{{url('http://www.dgb.sep.gob.mx/pdf/escolar.pdf')}}" target="_blank">Calendario</a></li>
                     <li><a href="{{url('http://www.tuprepaenvideos.sep.gob.mx/')}}" target="_blank">Materiales Audiovisuales</a></li>
                     <li id="sinBorde"><a href="{{url('http://www.dgb.sep.gob.mx/servicios-educativos/telebachillerato/materiales_impresos.php')}}" target="_blank">Material Impreso</a></li>
                 </ul>
