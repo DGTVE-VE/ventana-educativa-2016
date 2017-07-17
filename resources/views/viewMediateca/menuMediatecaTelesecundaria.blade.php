@@ -149,18 +149,18 @@
                             <!-- Tabs -->
                             <ul class="nav panel-tabs">
                                 <li class="active"><a href="#tab1" data-toggle="tab"><i class="fa fa-calendar" aria-hidden="true"></i>&ensp;Calendario escolar de 185 días</a></li>
-                                <li><a href="#tab2" data-toggle="tab"><i class="fa fa-calendar" aria-hidden="true"></i>&ensp;Calendario escolar de 200 días</a></li>
+                                <li><a href="#tab2" data-toggle="tab"><i class="fa fa-calendar" aria-hidden="true"></i>&ensp;Calendario escolar de 195 días</a></li>
                             </ul>
                         </div>
                     </div>
                     <div class="panel-body">
                         <div class="tab-content">
                             <div class="tab-pane active" id="tab1">
-                                <embed width="100%" height="500px" src="{{url('http://telesecundaria.sep.gob.mx/assets/pdf/pdf_calendario/calendario_185.pdf')}}" type="application/pdf"></embed>
+                                <embed width="100%" height="500px" src="{{url('http://www.telesecundaria.sep.gob.mx/assets/pdf/calendario/185D.pdf')}}" type="application/pdf"></embed>
                                  <!--<iframe src="http://docs.google.com/gview?url=http://telesecundaria.sep.gob.mx/assets/pdf/pdf_calendario/calendario_200.pdf&embedded=true" style="width:100%; height:500%;" frameborder="0"></iframe>-->
                             </div>
                             <div class="tab-pane" id="tab2">
-                                <embed width="100%" height="500px" src="{{url('http://telesecundaria.sep.gob.mx/assets/pdf/pdf_calendario/calendario_200.pdf')}}" type="application/pdf"></embed>
+                                <embed width="100%" height="500px" src="{{url('http://www.telesecundaria.sep.gob.mx/assets/pdf/calendario/195D.pdf')}}" type="application/pdf"></embed>
                                  <!--<iframe src="pdf/mediateca/calendario_185.pdf" style="width:100%; height:500px;" frameborder="0"></iframe>-->
                             </div>
 
