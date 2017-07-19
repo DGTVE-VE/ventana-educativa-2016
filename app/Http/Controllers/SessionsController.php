@@ -53,7 +53,9 @@ class SessionsController extends Controller {
         $email = Input::get('email');
         $password = Input::get('password');
 
-        if (Auth::attempt(['email' => $email, 'password' => $password, 'activo' => 1])) {
+        if(!\App\User::whereemail($email)->first()){
+            return Redirect::back()->withInput()->withErrors(['El correo o contraseña son erroneos']);
+        }else if (Auth::attempt(['email' => $email, 'password' => $password, 'activo' => 1])) {
             $url = $request->session()->get('url', '/');
             return redirect()->intended($url);
         }
