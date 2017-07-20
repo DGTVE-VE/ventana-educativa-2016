@@ -33,7 +33,7 @@ Contacto
     <div class="panel-body col-md-12">
         <div class="row col-sm-5 col-md-offset-4">
             <div><h4>Envíanos tus dudas, comentarios o sugerencias.</h4></div>
-            <form action="guardaContactoConocenos" method="post">
+            <form action="guardaContacto" method="post">
                 {!!csrf_field()!!}
                 <div class="input-group">
                     <span class="input-group-addon" id="basic-addon1"><span class="glyphicon glyphicon-user"></span></span>
