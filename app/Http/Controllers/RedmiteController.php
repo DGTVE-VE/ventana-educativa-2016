@@ -121,7 +121,7 @@ class RedmiteController extends Controller {
         $news->hash = md5(date('Y/m/d H:i:s'));
         $news->save();
         $this->enviaCorreoActivacion($news->correo, $news->hash);
-        return redirect('redmite');
+        return Redirect::back();
     }
 
     public function activaCorreoNews(Request $request, $correo, $hash) {

@@ -72,7 +72,7 @@
 		</div>
 		<div class="col-xs-12 col-sm-12 col-md-6 col-lg-12">
 			<h4>Mantente informado. Suscríbete.</h4>
-			<form class="form-inline" action="redmite/guardaCorreoNewsLetter" method="POST">
+			<form class="form-inline" action="{{url('redmite/guardaCorreoNewsLetter')}}" method="POST">
 				<div class="form-group col-xs-12 col-sm-12 col-md-12 col-lg-12">
 					<div class="col-xs-8 col-sm-9 col-md-9 col-lg-9">
 						<input type="email" required name="correo_newsletter" class="form-control" id="correoElectronico" placeholder="direccion@servidor.com"  style="width:100%;">
