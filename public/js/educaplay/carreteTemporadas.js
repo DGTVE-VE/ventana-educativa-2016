@@ -37,14 +37,11 @@
         var divTitulo = '#titulo' + idTitulo;
         $(divTitulo).removeClass('escondeTitulo');
 		var nombreImg = "#imagen"+ idTitulo;
-		console.log(nombreImg);
-		var nombreImgHover = $(nombreImg).attr('src').replace('.jpg','_hover.jpg');
-		$(nombreImg).attr('src', nombreImgHover);
+        $(nombreImg).addClass('opacaImg');
     }
     function ocultaTitulo(idTitulo) {
         var divTitulo = '#titulo' + idTitulo;
         $(divTitulo).addClass('escondeTitulo');
 		var nombreImg = "#imagen"+ idTitulo;
-		var nombreImgHover = $(nombreImg).attr('src').replace('_hover.jpg','.jpg');
-		$(nombreImg).attr('src', nombreImgHover);
+        $(nombreImg).removeClass('opacaImg');
     }

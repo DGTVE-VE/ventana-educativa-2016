@@ -107,6 +107,10 @@ html,body {
     .escondeTitulo{
         visibility:hidden;
     }
+    .opacaImg{
+	filter:brightness(0.5);
+	-webkit-filter:brightness(0.5);
+    }
     @media(min-width:300px){
         .posicionDescripcion{
             visibility:hidden;
