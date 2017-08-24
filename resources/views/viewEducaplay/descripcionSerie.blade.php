@@ -27,19 +27,22 @@
 				<div class="col-md-12">
 				</div>
 				<div class="col-md-1">
+                    @if($primerDetalleSerie->temporadas_total > 1)
+                    Temporada
 					<div class="dropdown">
 						<button class="btn btn-default dropdown-toggle" type="button" id="btntemporada" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-							Temporada	<span class="caret"></span>
+							Cambiar <span class="caret"></span>
 						</button>
-						<ul class="dropdown-menu" aria-labelledby="btntemporada">
+						<ul class="dropdown-menu" aria-labelledby="btntemporada" style="min-width:10px !important; padding-left: 10px; padding-right: 10px;">
 				{{--*/
 					for($temp=1; $temp<= $primerDetalleSerie->temporadas_total; $temp++){
 						$urlTemporada = "cargaTemporada('".$primerDetalleSerie->id."','".$temp."','".$fila."')";
-						echo '<li><span onclick="'.$urlTemporada.'" class="text-center" style="color:black; cursor:pointer;">'.$temp.'</span></li>';
+						echo '<li><span onclick="'.$urlTemporada.'" class="text-center" style="color:black; cursor:pointer;"> - '.$temp.' - </span></li>';
 					}
 				/*--}}
 						</ul>
 					</div>
+                    @endif
 				</div>
 				<div class="col-md-11">
 					<div name="detalleSerie{{$fila}}" id="detalleSerie{{$fila}}" class="col-md-12"></div>

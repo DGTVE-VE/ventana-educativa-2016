@@ -89,9 +89,29 @@ Educaplay
 
         @foreach ($episodiosSerie as $serie)
             @if($imprimeTitulo===1)
+                {{--*/ $infoTempsTotal = $serie->temporadas_total; /*--}}
                 <div class="row margenesFila">
-                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <div class="col-xs-6 col-sm-6 col-md-9 col-lg-9">
                         <p class="txtTitulo">{{$serie->titulo_serie}}</p>
+                    </div>
+                    <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
+                        @if($infoTempsTotal > 1)
+                        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                            <h4 class="estiloTxt">Temporada: {{$temporada}}</h4>
+                        </div>
+                        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                            <div class="dropdown">
+                                <button class="btn btn-default dropdown-toggle" type="button" id="btntemporada" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                    Cambiar <span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="btntemporada" style="min-width:10px !important; padding-left: 10px; padding-right: 10px;">
+                                @for($temp=1; $temp<= $infoTempsTotal; $temp++)
+                                    <li><a href="{{url('educaplay/detalleSeries').'/'.$idSerie.'/'.$temp.'/0/0'}}"><span style="color:black; cursor:pointer;"> - {{$temp}} - </span></a></li>
+                                @endfor
+                                </ul>
+                            </div>
+                        </div>
+                        @endif
                     </div>
                 </div>
                 @if($urlVideo=='0')
@@ -146,7 +166,7 @@ Educaplay
                     @else
                         {{--*/ $infoTemporada = $infoVideo->temporada; $infoCapitulo = $infoVideo->capitulo; $infoSinopsis = $infoVideo->sinopsis; /*--}}
                     @endif
-                    <p style="font-size:1.2em;"> Temporada: <span id="temporadaActual">{{$infoTemporada}}</span></p> <span style="font-size:1.2em;"> Programa: </span><span id="capituloActual" style="font-size:1.2em;">{{$infoCapitulo}}</span></p>
+                    <span style="font-size:1.2em;"> Programa: </span><span id="capituloActual" style="font-size:1.2em;">{{$infoCapitulo}}</span></p>
                     <p class="text-justify"> Sinopsis: <span id="sinopsisActual">{{$infoSinopsis}}</span></p>
                     @if (Auth::check ())
                         <br>
@@ -162,7 +182,7 @@ Educaplay
             @endif
             <div class="col-xs-6 col-sm-4 col-md-2 col-lg-2 cambiaPadding">
                 <div class="thumbnail fondoTrans">
-                    <a href="{{url('educaplay/detalleSeries').'/'.$idSerie.'/'.$serie->url_video.'/'.$serie->id}}"><img src="http://img.youtube.com/vi/{{ $serie->url_video}}/2.jpg" class='item-a' style="height:150px; cursor:pointer;" onclick="muestraVideo()"/></a>
+                    <a href="{{url('educaplay/detalleSeries').'/'.$idSerie.'/'.$serie->temporada.'/'.$serie->url_video.'/'.$serie->id}}"><img src="http://img.youtube.com/vi/{{ $serie->url_video}}/2.jpg" class='item-a' style="height:150px; cursor:pointer;" onclick="muestraVideo()"/></a>
                     <div class="caption estiloTxt text-justify">
                         <h4 class="estiloTxt"> Programa: {{$serie->capitulo}}</h4>
                         @if($longCadena = strlen($serie->sinopsis) < 100)

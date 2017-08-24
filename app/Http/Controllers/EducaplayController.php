@@ -198,16 +198,17 @@ class EducaplayController extends Controller {
         return view('viewEducaplay/comments')->with('comments', $comments);
     }
 
-    function series($idSerie, $urlVideo, $idVideo) {
+    function series($idSerie, $temporada, $urlVideo, $idVideo) {
         $episodiosSerie = DB::table('edu_serie')
                 ->join('edu_imagen', 'edu_serie.id', '=', 'edu_imagen.serie_id')
                 ->join('edu_video', 'edu_serie.id', '=', 'edu_video.serie_id')
                 ->select('edu_serie.titulo_serie', 'edu_serie.temporadas_total', 'edu_serie.clasificacion_id', 'edu_serie.descripcion', 'edu_imagen.url', 'edu_imagen.ubicacion_id', 'edu_video.id', 'edu_video.sinopsis', 'edu_video.temporada', 'edu_video.capitulo', 'edu_video.url_video')
                 ->where('edu_serie.id', '=', $idSerie)
                 ->where('edu_imagen.ubicacion_id', '=', 1)
+                ->where('edu_video.temporada','=', $temporada)
                 ->get();
         $menuEducaplay = $this->educaplayMenu();
-        return view('viewEducaplay/listaVideosEducaplay')->with('menuEducaplay', $menuEducaplay)->with('episodiosSerie', $episodiosSerie)->with('idSerie', $idSerie)->with('urlVideo', $urlVideo)->with('idVideo', $idVideo);
+        return view('viewEducaplay/listaVideosEducaplay')->with('menuEducaplay', $menuEducaplay)->with('episodiosSerie', $episodiosSerie)->with('idSerie', $idSerie)->with('urlVideo', $urlVideo)->with('idVideo', $idVideo)->with('temporada', $temporada);
     }
 
     function videoSerie() {

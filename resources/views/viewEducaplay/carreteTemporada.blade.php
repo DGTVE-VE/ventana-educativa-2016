@@ -16,7 +16,7 @@
         @endif
                         <div class="col-xs-12 col-sm-4 col-md-2 cambiaPadding">
                             <div class="thumbnail fondoTrans">
-                                {{--*/ $ligaDetalle = 'educaplay/detalleSeries/'.$detalle->id.'/'.$detalle->url_video.'/'.$detalle->videoId /*--}}
+                                {{--*/ $ligaDetalle = 'educaplay/detalleSeries/'.$detalle->id.'/'.$detalle->temporada.'/'.$detalle->url_video.'/'.$detalle->videoId /*--}}
                                 <a href="{{url($ligaDetalle)}}" target="_top"><img src="http://img.youtube.com/vi/{{ $detalle->url_video }}/2.jpg" class='item-a'/></a>
                                 <div id="divSinopsis" class="caption text-justify">
                                     @if($longCadena = strlen($detalle->sinopsis) < 100)

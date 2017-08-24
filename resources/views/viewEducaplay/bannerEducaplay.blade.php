@@ -34,7 +34,7 @@ namespace App\Http\Controllers; ?>
                 </div>
                 <div class="carousel-caption posicionBotones">
                     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-						{{--*/ $url_video = EducaplayController::consultaUrlId($bannerImagen->id); $ligaDetalle = 'educaplay/detalleSeries/'.$bannerImagen->id.'/'.$url_video->url_video.'/'.$url_video->id /*--}}
+						{{--*/ $url_video = EducaplayController::consultaUrlId($bannerImagen->id); $ligaDetalle = 'educaplay/detalleSeries/'.$bannerImagen->id.'/1/'.$url_video->url_video.'/'.$url_video->id /*--}}
                         <a href="{{url($ligaDetalle)}}"><div class="btn btn-danger text-uppercase anchoBtnRep textoPeque"><span class="fa fa-play hidden-xs" aria-hidden="true"></span><span class="hidden-xs">&nbsp;&nbsp;</span>Reproducir</div></a>
                         <div class="btn btn-info text-uppercase anchoBtnLista textoPeque" id = "addSerie" onclick="addmilista({{$bannerImagen->id}});"><span class="fa fa fa-plus hidden-xs" aria-hidden="true"></span><span class="hidden-xs">&nbsp;&nbsp;</span>Mi lista</div>
                     </div>
@@ -54,7 +54,7 @@ namespace App\Http\Controllers; ?>
                 </div>
                 <div class="carousel-caption posicionBotones">
                     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-						{{--*/ $url_video = EducaplayController::consultaUrlId($bannerImagen->id); $ligaDetalle = 'educaplay/detalleSeries/'.$bannerImagen->id.'/'.$url_video->url_video.'/'.$url_video->id /*--}}
+						{{--*/ $url_video = EducaplayController::consultaUrlId($bannerImagen->id); $ligaDetalle = 'educaplay/detalleSeries/'.$bannerImagen->id.'/1/'.$url_video->url_video.'/'.$url_video->id /*--}}
                         <a href="{{url($ligaDetalle)}}"><div class="btn btn-danger text-uppercase anchoBtnRep textoPeque"><span class="fa fa-play hidden-xs" aria-hidden="true"></span><span class="hidden-xs">&nbsp;&nbsp;</span>Reproducir</div></a>
                         <div class="btn btn-info text-uppercase anchoBtnLista textoPeque" id = "addSerie" onclick="addmilista({{$bannerImagen->id}});"><span class="fa fa fa-plus hidden-xs" aria-hidden="true"></span>
                           <span class="hidden-xs">&nbsp;&nbsp;</span>Mi lista</div>
