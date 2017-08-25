@@ -95,10 +95,10 @@ Educaplay
                         <p class="txtTitulo">{{$serie->titulo_serie}}</p>
                     </div>
                     <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
-                        @if($infoTempsTotal > 1)
                         <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
                             <h4 class="estiloTxt">Temporada: {{$temporada}}</h4>
                         </div>
+                        @if($infoTempsTotal > 1)
                         <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
                             <div class="dropdown">
                                 <button class="btn btn-default dropdown-toggle" type="button" id="btntemporada" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
