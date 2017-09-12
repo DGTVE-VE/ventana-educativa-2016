@@ -158,7 +158,7 @@
                 controls: 1, // Los controles SI se muestran
                 playsinline: 0, // Reproducción a pantalla completa
                 iv_load_policy: 3, // Las anotaciones del video NO se muestran 
-                modestbranding: 1, // Evita que el logo de youtube se muestre en la barra de control
+                modestbranding: 0, // Hace que el logo de youtube se muestre en un tamaño más chico en la barra de control
                 showinfo: 0, // Evita que se muestre información del video antes de su reproducción
                 enablejsapi: 1, // Permite que el reproductor sea controlado por el API de Javascript
                 autoplay: 1, // Autoinicio habilitado
