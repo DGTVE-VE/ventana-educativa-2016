@@ -43,15 +43,7 @@ Educamedia
                             <input type="hidden" id="nivel" value="{{ $nivel }}" />
                         </div>
                         <div class="col-xs-6 col-sm-2 col-md-1">
-                            <a href="https://twitter.com/share" class="twitter-share-button">Tweet</a> <script>!function (d, s, id) {
-                                    var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https';
-                                    if (!d.getElementById(id)) {
-                                        js = d.createElement(s);
-                                        js.id = id;
-                                        js.src = p + '://platform.twitter.com/widgets.js';
-                                        fjs.parentNode.insertBefore(js, fjs);
-                                    }
-                                }(document, 'script', 'twitter-wjs');</script>
+                            <a href="https://twitter.com/share" class="twitter-share-button">Tweet</a>
                         </div>
                         <div class="col-xs-6 col-sm-2 col-md-2">
                             <div 
@@ -168,46 +160,11 @@ dgtve.ventana@gmail.com
     <script src="https://www.youtube.com/player_api"></script>
     <!--https://github.com/javiertoledo/bootstrap-rating-input-->
     <script src="{{asset ('js/bootstrap-rating-input.min.js')}}"></script>
-    <!--El siguiente fragmento de codigo es para el uso de Facebook en la aplicación-->
-    <script>
-        window.fbAsyncInit = function () {
-            FB.init({
-                appId: '1408909052733113',
-                xfbml: true,
-                version: 'v2.6'
-            });
-        };
-
-        (function (d, s, id) {
-            var js, fjs = d.getElementsByTagName(s)[0];
-            if (d.getElementById(id)) {
-                return;
-            }
-            js = d.createElement(s);
-            js.id = id;
-            js.src = "//connect.facebook.net/en_US/sdk.js";
-            fjs.parentNode.insertBefore(js, fjs);
-        }(document, 'script', 'facebook-jssdk'));
-    </script>
-    <!--fin codigo facebook-->
     <!--sdk twitter-->
-    <script>window.twttr = (function (d, s, id) {
-            var js, fjs = d.getElementsByTagName(s)[0],
-                    t = window.twttr || {};
-            if (d.getElementById(id))
-                return t;
-            js = d.createElement(s);
-            js.id = id;
-            js.src = "https://platform.twitter.com/widgets.js";
-            fjs.parentNode.insertBefore(js, fjs);
+    <script src="{{asset ('js/mediateca/twitterSDK.js')}}"></script>
+    <!--sdk facebook-->
+    <script src="{{asset ('js/mediateca/facebookSDK.js')}}"></script>
 
-            t._e = [];
-            t.ready = function (f) {
-                t._e.push(f);
-            };
-
-            return t;
-        }(document, "script", "twitter-wjs"));</script>
     <script>
         function guardaRating(val){
             $.ajax({
