@@ -12,12 +12,12 @@
 			@endif
 			{{--*/ $cuenta=1; /*--}}
 						</div>
-						<a class="left carousel-control reduceAnchoFlecha" href="#carreteSerie{{$tira - 1}}" role="button" data-slide="prev">
-							<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+						<a class="left carousel-control reduceFlechaIzq" href="#carreteSerie{{$tira - 1}}" role="button" data-slide="prev">
+							<span class="glyphicon glyphicon-chevron-left agrandaIconoFlecha" aria-hidden="true"></span>
 							<span class="sr-only">Previous</span>
 						</a>
-						<a class="right carousel-control reduceAnchoFlecha" href="#carreteSerie{{$tira - 1}}" role="button" data-slide="next">
-							<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+						<a class="right carousel-control reduceFlechaDer" href="#carreteSerie{{$tira - 1}}" role="button" data-slide="next">
+							<span class="glyphicon glyphicon-chevron-right agrandaIconoFlecha" aria-hidden="true"></span>
 							<span class="sr-only">Next</span>
 						</a>
 					</div>
@@ -78,12 +78,12 @@
 						</div>
 					@endif
 						</div>
-						<a class="left carousel-control reduceAnchoFlecha" href="#carreteSerie{{$tira}}" role="button" data-slide="prev">
-							<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+						<a class="left carousel-control reduceFlechaIzq" href="#carreteSerie{{$tira}}" role="button" data-slide="prev">
+							<span class="glyphicon glyphicon-chevron-left agrandaIconoFlecha" aria-hidden="true"></span>
 							<span class="sr-only">Previous</span>
 						</a>
-						<a class="right carousel-control reduceAnchoFlecha" href="#carreteSerie{{$tira}}" role="button" data-slide="next">
-							<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+						<a class="right carousel-control reduceFlechaDer" href="#carreteSerie{{$tira}}" role="button" data-slide="next">
+							<span class="glyphicon glyphicon-chevron-right agrandaIconoFlecha" aria-hidden="true"></span>
 							<span class="sr-only">Next</span>
 						</a>
 					</div>

@@ -33,7 +33,7 @@ and open the template in the editor.
 
         @yield ('estilos')
         
-        <link rel="stylesheet" href="{{ asset('css/educaplay/estilovod1.css') }}" >
+        <link rel="stylesheet" href="{{ asset('css/educaplay/clasesEstiloVOD.css') }}" >
         <link rel="stylesheet" href="{{ asset('css/educaplay/estilovod3.css') }}" >
 
         <!-- jQuery library -->

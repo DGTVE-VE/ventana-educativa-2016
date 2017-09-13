@@ -65,11 +65,11 @@ namespace App\Http\Controllers; ?>
             @endforeach
         </div>
         <!-- Controls -->
-        <a class="left carousel-control reduceAnchoFlecha" href="#carouselEducaplay" role="button" data-slide="prev">
-            <span class="glyphicon glyphicon-chevron-left"></span>
+        <a class="left carousel-control anchoFlechaBanner" href="#carouselEducaplay" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left agrandaIconoFlecha"></span>
         </a>
-        <a class="right carousel-control reduceAnchoFlecha" href="#carouselEducaplay" role="button" data-slide="next">
-            <span class="glyphicon glyphicon-chevron-right"></span>
+        <a class="right carousel-control anchoFlechaBanner" href="#carouselEducaplay" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right agrandaIconoFlecha"></span>
         </a>
     </div>
 </div>

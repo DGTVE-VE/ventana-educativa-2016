@@ -83,8 +83,19 @@ html,body {
     .cambiaPadding{
         padding:0px;
     }
-    .reduceAnchoFlecha{
-        width:3%;
+    .anchoFlechaBanner{
+        width:5%;
+    }
+    .reduceFlechaDer{
+        width:5%;
+        right:-3% !important;
+    }
+    .reduceFlechaIzq{
+        width:5%;
+        left:-4% !important;
+    }
+    .agrandaIconoFlecha{
+        font-size:50px !important;
     }
     .thumbnailVertical{
         width: 260px;
