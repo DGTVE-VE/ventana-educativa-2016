@@ -63,6 +63,7 @@ and open the template in the editor.
 </html>
 
 <script src="{{url('js/mediateca/index.js')}}"></script>
+<script src="{{url('js/mediateca/GoogleAnalytics.js')}}"></script>
 <script>
 	imprimeBreadCrumbs("{{url('educamedia/breadcrumbs')}}");
 </script>
