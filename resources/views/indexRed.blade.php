@@ -85,10 +85,11 @@ and open the template in the editor.
         <div class="container-fluid">
             @yield('cuerpoRedmite')
         </div>
-        <script src="{{asset('js/red/jsredmesoamericana.js')}}"></script>
+        <script src="{{asset('js/red/efectosMovimiento.js')}}"></script>
+        <script src="{{asset('js/red/llamadaAPI-FB.js')}}"></script>
+        <script src="{{url('js/red/GoogleAnalytics.js')}}"></script>
     </body>
 </html>
-<script src="{{url('js/red/index.js')}}"></script>
 <?php
     Log::info('Memory Usage:' . Request::path() . " - " . (memory_get_peak_usage(true) / 1024 / 1024));
 ?>

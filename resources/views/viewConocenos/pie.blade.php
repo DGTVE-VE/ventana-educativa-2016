@@ -3,60 +3,16 @@
 		color: white; z-index:1001; width:100%;
 	}
 </style>
-    <!--sdk twitter-->
-    <script>window.twttr = (function (d, s, id) {
-            var js, fjs = d.getElementsByTagName(s)[0],
-                    t = window.twttr || {};
-            if (d.getElementById(id))
-                return t;
-            js = d.createElement(s);
-            js.id = id;
-            js.src = "https://platform.twitter.com/widgets.js";
-            fjs.parentNode.insertBefore(js, fjs);
 
-            t._e = [];
-            t.ready = function (f) {
-                t._e.push(f);
-            };
-
-            return t;
-        }(document, "script", "twitter-wjs"));</script>
-    <!--sdk facebook-->
-    <script>
-        window.fbAsyncInit = function () {
-            FB.init({
-                appId: '1408909052733113',
-                xfbml: true,
-                version: 'v2.6'
-            });
-        };
-
-        (function (d, s, id) {
-            var js, fjs = d.getElementsByTagName(s)[0];
-            if (d.getElementById(id)) {
-                return;
-            }
-            js = d.createElement(s);
-            js.id = id;
-            js.src = "//connect.facebook.net/en_US/sdk.js";
-            fjs.parentNode.insertBefore(js, fjs);
-        }(document, 'script', 'facebook-jssdk'));
-    </script>
+<script src="{{url('js/conocenos/twitterSDK.js')}}"></script>
+<script src="{{url('js/conocenos/facebookSDK.js')}}"></script>
 <div id="barraNavPie" class="navbar navbar-inverse medidasPie">
     <div class="col-xs-6 col-sm-6 col-md-2 col-lg-3">
         <br>
         {{ HTML::image('imagenes/ventana/encabezado/logoventana.png','logo negativo', array('class'=>'img-responsive', 'width'=>'155', 'height'=>'155'))}}
         <br>
         <div class="col-xs-6 col-sm-4 col-md-6 col-lg-6">
-            <a href="https://twitter.com/share" class="twitter-share-button">Tweet</a> <script>!function (d, s, id) {
-                    var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https';
-                    if (!d.getElementById(id)) {
-                        js = d.createElement(s);
-                        js.id = id;
-                        js.src = p + '://platform.twitter.com/widgets.js';
-                        fjs.parentNode.insertBefore(js, fjs);
-                    }
-                }(document, 'script', 'twitter-wjs');</script>
+            <a href="https://twitter.com/share" class="twitter-share-button">Tweet</a>
         </div>
 		<div class="fb-share-button col-xs-6 col-sm-4 col-md-6 col-lg-6" data-layout="button" data-mobile-iframe="true"></div>
     </div>
@@ -66,7 +22,7 @@
         <table>
             <tr>
                 <td class="imgTecho" style="padding-right: 15px;">
-                    {{ HTML::image('imagenes/red/footer/localizacion.png','logo localizacion', array('class'=>'img-responsive','style'=>' width:25px; height:20px;)'))}}
+                    {{ HTML::image('imagenes/red/footer/localizacion.png','logo localizacion', array('class'=>'img-responsive','style'=>' width:19px; height:23px;)'))}}
                 </td>
                 <td>
                     <p class="textoBlanco">Av. Circunvalación s/n, esquina Tabiqueros,<br>
