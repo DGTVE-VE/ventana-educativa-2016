@@ -86,8 +86,9 @@ and open the template in the editor.
             @yield('cuerpoRedmite')
         </div>
         <script src="{{asset('js/red/efectosMovimiento.js')}}"></script>
-        <script src="{{asset('js/red/llamadaAPI-FB.js')}}"></script>
         <script src="{{url('js/red/GoogleAnalytics.js')}}"></script>
+        <script src="{{asset('js/facebook/facebookSDK.js')}}"></script>
+        <script src="{{asset('js/twitter/twitterSDK.js')}}"></script>
     </body>
 </html>
 <?php

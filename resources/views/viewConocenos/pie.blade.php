@@ -4,8 +4,6 @@
 	}
 </style>
 
-<script src="{{url('js/conocenos/twitterSDK.js')}}"></script>
-<script src="{{url('js/conocenos/facebookSDK.js')}}"></script>
 <div id="barraNavPie" class="navbar navbar-inverse medidasPie">
     <div class="col-xs-6 col-sm-6 col-md-2 col-lg-3">
         <br>

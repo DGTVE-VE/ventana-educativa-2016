@@ -106,8 +106,6 @@
     </div>
 </footer>
 <script src="{{url('js/red/validacionPie.js')}}"></script>
-<script src="{{url('js/red/PieSDK-FB.js')}}"></script>
-<script src="{{url('js/red/SDKTwitter.js')}}"></script>
 <script>
     function isValidEmail(mail){
         return /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,4})+$/.test(mail);

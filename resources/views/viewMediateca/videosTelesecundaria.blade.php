@@ -161,9 +161,9 @@ dgtve.ventana@gmail.com
     <!--https://github.com/javiertoledo/bootstrap-rating-input-->
     <script src="{{asset ('js/bootstrap-rating-input.min.js')}}"></script>
     <!--sdk twitter-->
-    <script src="{{asset ('js/mediateca/twitterSDK.js')}}"></script>
+    <script src="{{asset('js/twitter/twitterSDK.js')}}"></script>
     <!--sdk facebook-->
-    <script src="{{asset ('js/mediateca/facebookSDK.js')}}"></script>
+    <script src="{{asset('js/facebook/facebookSDK.js')}}"></script>
 
     <script>
         function guardaRating(val){

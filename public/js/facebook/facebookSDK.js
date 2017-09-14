@@ -1,4 +1,4 @@
-    /*  -----   El siguiente fragmento de codigo es para el uso de Facebook en la aplicación    -----   */
+    /*  -----   SDK API de Facebook     -----   */
     window.fbAsyncInit = function () {
         FB.init({
             appId: '1408909052733113',
@@ -6,6 +6,7 @@
             version: 'v2.8'
         });
     };
+
     (function (d, s, id) {
         var js, fjs = d.getElementsByTagName(s)[0];
         if (d.getElementById(id)) {

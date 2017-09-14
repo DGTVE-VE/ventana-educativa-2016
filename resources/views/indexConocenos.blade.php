@@ -73,6 +73,8 @@ and open the template in the editor.
 </html>
 <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyCKFRHjU3HCfrtam4fusUFE52wbVvRbCKM"></script> 
 <script src="{{url('js/conocenos/GoogleAnalytics.js')}}"></script>
+<script src="{{url('js/facebook/facebookSDK.js')}}"></script>
+<script src="{{url('js/twitter/twitterSDK.js')}}"></script>
 <?php
 Log::info('Memory Usage:' . Request::path() . " - " . (memory_get_peak_usage(true) / 1024 / 1024));
 ?>
