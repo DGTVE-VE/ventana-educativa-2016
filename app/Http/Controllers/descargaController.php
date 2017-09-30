@@ -38,7 +38,7 @@ fclose($fp);
 parse_str(file_get_contents($localfile), $video_data);
 // Get the data into memory and delete the temp file
 //parse_str(file_get_contents($localfile), $video_data);
-unlink($localfile);
+//unlink($localfile);
         /*if(file_get_contents('http://www.youtube.com/get_video_info?video_id='.$idVideo, false, $contexto)){
             parse_str(file_get_contents('http://www.youtube.com/get_video_info?video_id='.$idVideo, false, $contexto), $video_data);
 
