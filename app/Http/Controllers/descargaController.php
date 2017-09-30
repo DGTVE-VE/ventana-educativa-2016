@@ -23,7 +23,7 @@ class descargaController extends Controller {
         $contexto = stream_context_create($opciones);
 // Remote file we want, and the local file name to use as a temp file
 
-function curl_get_contents($url)
+/*function curl_get_contents($url)
 {
     $ch = curl_init();
 
@@ -33,17 +33,17 @@ $data = curl_exec($ch);
     curl_close($ch);
 
     return $data;
-}
+}*/
 
 $url = 'http://www.youtube.com/get_video_info?video_id='.$idVideo;
-parse_str(curl_get_contents($url), $video_data);
-        /*if(file_get_contents('http://www.youtube.com/get_video_info?video_id='.$idVideo, false, $contexto)){
+//parse_str(curl_get_contents($url), $video_data);
+        if(file_get_contents('http://www.youtube.com/get_video_info?video_id='.$idVideo, false, $contexto)){
             parse_str(file_get_contents('http://www.youtube.com/get_video_info?video_id='.$idVideo, false, $contexto), $video_data);
 
         }
         else{
             return $value=null;
-        }*/
+        }
 
         // start server and go to http://url/?id=video-id
             $streams = $video_data['url_encoded_fmt_stream_map'];
