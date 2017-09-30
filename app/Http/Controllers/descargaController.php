@@ -22,29 +22,23 @@ class descargaController extends Controller {
         );
         $contexto = stream_context_create($opciones);
 // Remote file we want, and the local file name to use as a temp file
+
+function curl_get_contents($url)
+{
+    $ch = curl_init();
+
+    curl_setopt($ch, CURLOPT_HEADER, 0);
+    curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+    curl_setopt($ch, CURLOPT_URL, $url);
+
+    $data = curl_exec($ch);
+    curl_close($ch);
+
+    return $data;
+}
+
 $url = 'http://www.youtube.com/get_video_info?video_id='.$idVideo;
-$localfile = 'mytempfilename.ext';
-
-// Let's go cURLing...
-$ch = curl_init($url);
-$fp = fopen($localfile,'w');
-
-curl_setopt($ch, CURLOPT_FILE, $fp);
-curl_setopt($ch, CURLOPT_BINARYTRANSFER, 0);
-
-curl_exec($ch);
-curl_close($ch);
-fclose($fp);
-
-// Get the data into memory and delete the temp file
-if(file_get_contents($localfile)){
-    parse_str(file_get_contents($localfile), $video_data);
-}
-else{
-    return null;
-}
-
-unlink($localfile);
+parse_str(curl_get_contents($url), $video_data);
         /*if(file_get_contents('http://www.youtube.com/get_video_info?video_id='.$idVideo, false, $contexto)){
             parse_str(file_get_contents('http://www.youtube.com/get_video_info?video_id='.$idVideo, false, $contexto), $video_data);
 
