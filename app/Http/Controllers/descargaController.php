@@ -22,11 +22,11 @@ class descargaController extends Controller {
         );
         $contexto = stream_context_create($opciones);
 // Remote file we want, and the local file name to use as a temp file
-/*$url = 'http://www.youtube.com/get_video_info?video_id='.$idVideo;
+$url = 'http://www.youtube.com/get_video_info?video_id='.$idVideo;
 $localfile = 'mytempfilename.ext';
 
 // Let's go cURLing...
-$ch = curl_init($url);
+/*$ch = curl_init($url);
 $fp = fopen($localfile,'w');
 
 curl_setopt($ch, CURLOPT_FILE, $fp);
