@@ -26,8 +26,10 @@ $url = 'http://www.youtube.com/get_video_info?video_id='.$idVideo;
 $localfile = 'mytempfilename.ext';
 
 // Let's go cURLing...
-$ch = curl_init($url);
-/*$fp = fopen($localfile,'w');
+$ch = curl_init();
+curl_setopt($ch, CURLOPT_URL, $url);
+/*$ch = curl_init($url);
+$fp = fopen($localfile,'w');
 
 curl_setopt($ch, CURLOPT_FILE, $fp);
 curl_setopt($ch, CURLOPT_HEADER, 0);
