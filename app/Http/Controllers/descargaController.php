@@ -27,10 +27,11 @@ $localfile = '/tmp/mytempfilename.ext';
 
 // Let's go cURLing...
 $ch = curl_init($url);
+echo $ch;
 $fp = fopen($localfile,'w');
 
 curl_setopt($ch, CURLOPT_FILE, $fp);
-//curl_setopt($ch, CURLOPT_HEADER, 0);
+curl_setopt($ch, CURLOPT_HEADER, 0);
 
 curl_exec($ch);
 curl_close($ch);
