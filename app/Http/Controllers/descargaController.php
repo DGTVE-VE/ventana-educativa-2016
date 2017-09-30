@@ -70,3 +70,5 @@ $url = 'http://www.youtube.com/get_video_info?video_id='.$idVideo;
             }
     }
 }
+                  BAch  <a id="ligaDescargaYoutube" href={{ App\Http\Controllers\descargaController::ligaDescarga($datosActual[0]->url) }} download={{$datosActual[0]->url.".mp4"}}"><span title="descarga video" class="glyphicon glyphicon-cloud-download btnDescarga" aria-hidden="true"></span></a>                    
+                  Sec  <a id="ligaDescargaYoutube" href={{ App\Http\Controllers\descargaController::ligaDescarga($datosActual[0]->url) }} download={{$datosActual[0]->url.".mp4"}}><span title="descarga video" class="glyphicon glyphicon-cloud-download btnDescarga" aria-hidden="true"></span></a>                            
