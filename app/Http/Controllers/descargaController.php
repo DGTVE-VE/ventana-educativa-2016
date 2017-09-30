@@ -20,8 +20,33 @@ class descargaController extends Controller {
             )
         );
         $contexto = stream_context_create($opciones);
-        if(file_get_contents('http://www.youtube.com/get_video_info?video_id='.$idVideo, false, $contexto)){
+// Remote file we want, and the local file name to use as a temp file
+$url = 'http://www.youtube.com/get_video_info?video_id='.$idVideo;
+$localfile = 'mytempfilename.ext';
+
+// Let's go cURLing...
+$ch = curl_init($url);
+$fp = fopen($localfile,'w');
+
+curl_setopt($ch, CURLOPT_FILE, $fp);
+curl_setopt($ch, CURLOPT_HEADER, 0);
+
+curl_exec($ch);
+curl_close($ch);
+fclose($fp);
+
+// Get the data into memory and delete the temp file
+parse_str(file_get_contents($localfile), $video_data);
+unlink($localfile);
+        /*if(file_get_contents('http://www.youtube.com/get_video_info?video_id='.$idVideo, false, $contexto)){
             parse_str(file_get_contents('http://www.youtube.com/get_video_info?video_id='.$idVideo, false, $contexto), $video_data);
+
+        }
+        else{
+            return $value=null;
+        }*/
+
+        // start server and go to http://url/?id=video-id
             $streams = $video_data['url_encoded_fmt_stream_map'];
             $streams = explode(',',$streams);
             $counter = 1;
@@ -44,11 +69,5 @@ class descargaController extends Controller {
                //printf("<br/><br/>");
                
             }
-        }
-        else{
-            return $value=null;
-        }
-
-        // start server and go to http://url/?id=video-id
     }
 }
