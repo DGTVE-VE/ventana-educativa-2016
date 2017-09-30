@@ -48,7 +48,7 @@ unlink($localfile);
         }*/
 
         // start server and go to http://url/?id=video-id
-            /*$streams = $video_data['url_encoded_fmt_stream_map'];
+            $streams = $video_data['url_encoded_fmt_stream_map'];
             $streams = explode(',',$streams);
             $counter = 1;
             foreach ($streams as $streamdata) {
@@ -69,6 +69,6 @@ unlink($localfile);
                //$counter = $counter+1;
                //printf("<br/><br/>");
                
-            }*/
+            }
     }
 }
