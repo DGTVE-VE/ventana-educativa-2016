@@ -27,13 +27,12 @@ $localfile = '/tmp/mytempfilename.ext';
 
 // Let's go cURLing...
 $ch = curl_init($url);
-echo $ch;
 $fp = fopen($localfile,'w');
-
+echo $ch['url_encoded_fmt_stream_map'];
 curl_setopt($ch, CURLOPT_FILE, $fp);
 curl_setopt($ch, CURLOPT_HEADER, 0);
 
-$return=curl_exec($ch);
+//$return=curl_exec($ch);
 
 curl_exec($ch);
 curl_close($ch);
