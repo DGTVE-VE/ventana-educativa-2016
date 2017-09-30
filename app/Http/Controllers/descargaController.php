@@ -28,19 +28,17 @@ $localfile = '/tmp/mytempfilename.ext';
 // Let's go cURLing...
 $ch = curl_init($url);
 $fp = fopen($localfile,'w');
-//echo $ch['url_encoded_fmt_stream_map'];
-/*curl_setopt($ch, CURLOPT_FILE, $fp);
-curl_setopt($ch, CURLOPT_HEADER, 0);*/
 
-//$return=curl_exec($ch);
+curl_setopt($ch, CURLOPT_FILE, $fp);
+curl_setopt($ch, CURLOPT_HEADER, 0);
 
-/*curl_exec($ch);
-curl_close($ch);*/
+curl_exec($ch);
+curl_close($ch);
 fclose($fp);
-//parse_str(file_get_contents($localfile), $video_data);
+
 // Get the data into memory and delete the temp file
-//parse_str(file_get_contents($localfile), $video_data);
-//unlink($localfile);
+parse_str(file_get_contents($localfile), $video_data);
+unlink($localfile);
         /*if(file_get_contents('http://www.youtube.com/get_video_info?video_id='.$idVideo, false, $contexto)){
             parse_str(file_get_contents('http://www.youtube.com/get_video_info?video_id='.$idVideo, false, $contexto), $video_data);
 
@@ -50,8 +48,7 @@ fclose($fp);
         }*/
 
         // start server and go to http://url/?id=video-id
-        //echo $video_data;
-            $streams = $ch['url_encoded_fmt_stream_map'];
+            $streams = $video_data['url_encoded_fmt_stream_map'];
             $streams = explode(',',$streams);
             $counter = 1;
             foreach ($streams as $streamdata) {
@@ -72,6 +69,6 @@ fclose($fp);
                //$counter = $counter+1;
                //printf("<br/><br/>");
                
-            }*/
+            }
     }
 }
