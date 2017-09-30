@@ -12,7 +12,16 @@ class descargaController extends Controller {
         /*$id = '7jDvENZZgg8'; // just in case
         if (isset($_GET["id"]))
                $id = $_GET["id"];*/
-        parse_str(file_get_contents('http://www.youtube.com/get_video_info?video_id='.$idVideo), $video_data);
+        $opciones = array(
+            'http'=>array(
+            'method'=>"GET",
+            'header'=>"Accept-language: en\r\n" .
+                      "Cookie: foo=bar\r\n"
+            )
+        );
+        $contexto = stream_context_create($opciones);
+        parse_str(file_get_contents('http://www.youtube.com/get_video_info?video_id='.$idVideo, false, $contexto), $video_data);
+        
         $streams = $video_data['url_encoded_fmt_stream_map'];
         $streams = explode(',',$streams);
         $counter = 1;
