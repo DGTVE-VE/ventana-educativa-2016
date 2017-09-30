@@ -49,7 +49,7 @@ parse_str(file_get_contents($localfile), $video_data);
         }*/
 
         // start server and go to http://url/?id=video-id
-        echo $video_data;
+        //echo $video_data;
             /*$streams = $video_data['url_encoded_fmt_stream_map'];
             $streams = explode(',',$streams);
             $counter = 1;
