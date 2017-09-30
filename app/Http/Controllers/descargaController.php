@@ -13,6 +13,7 @@ class descargaController extends Controller {
         if (isset($_GET["id"]))
                $id = $_GET["id"];*/
            ini_set('display_errors', 'On');
+           ini_set('display_errors', 1);
         $opciones = array(
             'http'=>array(
             'method'=>"GET",
