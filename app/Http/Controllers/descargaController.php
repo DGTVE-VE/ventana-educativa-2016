@@ -12,7 +12,7 @@ class descargaController extends Controller {
         /*$id = '7jDvENZZgg8'; // just in case
         if (isset($_GET["id"]))
                $id = $_GET["id"];*/
-           ini_set('display_errors', 'On');
+           /*ini_set('display_errors', 'On');
            ini_set('display_errors', 1);
         $opciones = array(
             'http'=>array(
@@ -21,9 +21,9 @@ class descargaController extends Controller {
                       "Cookie: foo=bar\r\n"
             )
         );
-        $contexto = stream_context_create($opciones);
+        $contexto = stream_context_create($opciones);*/
 // Remote file we want, and the local file name to use as a temp file
-$url = 'http://www.youtube.com/get_video_info?video_id='.$idVideo;
+/*$url = 'http://www.youtube.com/get_video_info?video_id='.$idVideo;
 $localfile = 'mytempfilename.ext';
 
 // Let's go cURLing...
@@ -49,7 +49,7 @@ unlink($localfile);
         }*/
 
         // start server and go to http://url/?id=video-id
-            $streams = $video_data['url_encoded_fmt_stream_map'];
+            /*$streams = $video_data['url_encoded_fmt_stream_map'];
             $streams = explode(',',$streams);
             $counter = 1;
             foreach ($streams as $streamdata) {
@@ -70,6 +70,6 @@ unlink($localfile);
                //$counter = $counter+1;
                //printf("<br/><br/>");
                
-            }
+            }*/
     }
 }
