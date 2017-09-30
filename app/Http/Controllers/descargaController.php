@@ -37,7 +37,7 @@ curl_setopt($ch, CURLOPT_HEADER, 0);*/
 /*curl_exec($ch);
 curl_close($ch);*/
 fclose($fp);
-parse_str(file_get_contents($localfile), $video_data);
+//parse_str(file_get_contents($localfile), $video_data);
 // Get the data into memory and delete the temp file
 //parse_str(file_get_contents($localfile), $video_data);
 //unlink($localfile);
