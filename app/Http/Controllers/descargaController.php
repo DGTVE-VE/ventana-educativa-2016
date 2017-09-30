@@ -38,7 +38,7 @@ fclose($fp);
 parse_str(file_get_contents($localfile), $video_data);
 // Get the data into memory and delete the temp file
 //parse_str(file_get_contents($localfile), $video_data);
-//unlink($localfile);
+unlink($localfile);
         /*if(file_get_contents('http://www.youtube.com/get_video_info?video_id='.$idVideo, false, $contexto)){
             parse_str(file_get_contents('http://www.youtube.com/get_video_info?video_id='.$idVideo, false, $contexto), $video_data);
 
@@ -48,7 +48,7 @@ parse_str(file_get_contents($localfile), $video_data);
         }*/
 
         // start server and go to http://url/?id=video-id
-            /*$streams = $video_data['url_encoded_fmt_stream_map'];
+            $streams = $video_data['url_encoded_fmt_stream_map'];
             $streams = explode(',',$streams);
             $counter = 1;
             foreach ($streams as $streamdata) {
@@ -69,6 +69,6 @@ parse_str(file_get_contents($localfile), $video_data);
                //$counter = $counter+1;
                //printf("<br/><br/>");
                
-            }*/
+            }
     }
 }
