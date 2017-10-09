@@ -46,6 +46,14 @@ class ConocenosController extends Controller {
         $contacto->asunto = filter_input(INPUT_POST, 'asunto');
         $contacto->mensaje = filter_input(INPUT_POST, 'mensaje');
         $contacto->save();
+        
+        $correo = 'dgtve.ventana@gmail.com';
+        Mail::send('viewConocenos.mailContacto', ['contacto' => $contacto], function ($m) use ($correo) {
+            $m->from('ventana@televisioneducativa.gob.mx', 'Ventana Educativa');
+            $m->to($correo)->subject('Ventana Educativa. Recepción de comentarios - Contacto');
+            $m->cc('rene.aguina@mexicox.gob.mx');
+        });
+        
         return redirect('conocenos');
     }
 
