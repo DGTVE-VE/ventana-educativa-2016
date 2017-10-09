@@ -158,7 +158,8 @@ class RedmiteController extends Controller {
         $correo = 'dgtve.ventana@gmail.com';
         Mail::send('viewRed.mailContacto', ['contacto' => $contacto], function ($m) use ($correo) {
             $m->from('redmite@televisioneducativa.gob.mx', 'Red Mesoamericana');
-            $m->to('rene.aguina@mexicox.gob.mx')->subject('REDMITE. Recepción de comentarios - Contacto');
+            $m->to($correo)->subject('REDMITE. Recepción de comentarios - Contacto');
+            $m->cc('rene.aguina@mexicox.gob.mx');
         });
         
         return redirect('redmite/contacto');
