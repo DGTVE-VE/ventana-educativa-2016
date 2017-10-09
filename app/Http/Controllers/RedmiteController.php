@@ -154,6 +154,13 @@ class RedmiteController extends Controller {
         $contacto->asunto = filter_input(INPUT_POST, 'asunto');
         $contacto->mensaje = filter_input(INPUT_POST, 'mensaje');
         $contacto->save();
+        
+        $correo = 'dgtve.ventana@gmail.com';
+        Mail::send('viewRed.mailContacto', ['contacto' => $contacto], function ($m) use ($correo) {
+            $m->from('redmite@televisioneducativa.gob.mx', 'Red Mesoamericana');
+            $m->to($correo, 'rene.aguina@mexicox.gob.mx')->subject('REDMITE. Recepción de comentarios - Contacto');
+        });
+        
         return redirect('redmite/contacto');
     }
 
