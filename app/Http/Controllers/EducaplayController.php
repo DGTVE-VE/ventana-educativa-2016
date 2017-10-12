@@ -182,7 +182,7 @@ class EducaplayController extends Controller {
         $comment->save();
         
         $correo = 'dgtve.ventana@gmail.com';
-        Mail::send('viewEducaplay.mailComentarios', ['comentario' => $comment, 'usuario' => Auth::user()->username], function ($m) use ($correo) {
+        Mail::send('viewEducaplay.mailComentarios', ['comentario' => $comment], function ($m) use ($correo) {
             $m->from('ventana@televisioneducativa.gob.mx', 'Ventana Educativa');
             $m->to($correo)->subject('Ventana Educativa. Recepción de comentarios - Videos Educaplay');
             $m->cc('rene.aguina@mexicox.gob.mx');
