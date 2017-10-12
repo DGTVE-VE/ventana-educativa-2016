@@ -361,7 +361,7 @@ class MediatecaController extends Controller {
         $comment->comment = filter_input (INPUT_POST, 'comment');
         $comment->save ();
         
-        enviaCorreo($comment, $comment->telesecundaria_id, 'Telesecundaria');
+        $this->enviaCorreo($comment, $comment->telesecundaria_id, 'Telesecundaria');
         
         return view('viewMediateca/comment')->with('comment', $comment);
     }
@@ -383,7 +383,7 @@ class MediatecaController extends Controller {
         $comment->comment = filter_input (INPUT_POST, 'comment');
         $comment->save ();
         
-        enviaCorreo($comment, $comment->telebachillerato_id, 'Telebachillerato');
+        $this->enviaCorreo($comment, $comment->telebachillerato_id, 'Telebachillerato');
         
         return view('viewMediateca/comment')->with('comment', $comment);
     }
@@ -397,7 +397,7 @@ class MediatecaController extends Controller {
         $comment->comment = filter_input (INPUT_POST, 'comment');
         $comment->save ();
         
-        enviaCorreo($comment, $comment->sea_id, 'SEA');
+        $this->enviaCorreo($comment, $comment->sea_id, 'SEA');
         
         return view('viewMediateca/comment')->with('comment', $comment);
     }
