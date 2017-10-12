@@ -344,9 +344,10 @@ class MediatecaController extends Controller {
     }
     
     public function enviaCorreo($comment, $videoId, $seccion){
-        Mail::send('viewMediateca.mailComentarios', ['comentario' => $comment, '$videoId' => $videoId, '$seccion' => $seccion], function ($m){
+        $correo = 'dgtve.ventana@gmail.com';
+        Mail::send('viewMediateca.mailComentarios', ['comentario' => $comment, '$videoId' => $videoId, '$seccion' => $seccion], function ($m) use ($correo) {
             $m->from('ventana@televisioneducativa.gob.mx', 'Ventana Educativa');
-            $m->to('dgtve.ventana@gmail.com')->subject('Ventana Educativa. Videos Educamedia - Recepción de comentarios');
+            $m->to($correo)->subject('Ventana Educativa. Videos Educamedia - Recepción de comentarios');
             $m->cc('rene.aguina@mexicox.gob.mx');
         });        
     }
