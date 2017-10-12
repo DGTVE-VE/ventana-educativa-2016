@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use DB;
 use Mail;
+
 use App\User;
 use Validator;
 use Illuminate\Support\Facades\Input;
@@ -179,6 +180,14 @@ class EducaplayController extends Controller {
         $comment->comment = filter_input(INPUT_POST, 'comment');
         $comment->serie_id = filter_input(INPUT_POST, 'serie_id');
         $comment->save();
+        
+        $correo = 'dgtve.ventana@gmail.com';
+        Mail::send('viewEducaplay.mailComentarios', ['comentario' => $comment, 'usuario' => Auth::user()->username], function ($m) use ($correo) {
+            $m->from('ventana@televisioneducativa.gob.mx', 'Ventana Educativa');
+            $m->to($correo)->subject('Ventana Educativa. Recepción de comentarios - Videos Educaplay');
+            $m->cc('rene.aguina@mexicox.gob.mx');
+        });
+        
         return view('viewEducaplay/comment')->with('comment', $comment);
     }
 
