@@ -343,9 +343,9 @@ class MediatecaController extends Controller {
                 ->with('claveVideo', $claveVideo);
     }
     
-    public function enviaCorreo($comment, $videoId, $seccion){
+    protected function enviaCorreo($comment, $videoId, $seccion){
         $correo = 'dgtve.ventana@gmail.com';
-        Mail::send('viewMediateca.mailComentarios', ['comentario' => $comment, '$videoId' => $videoId, '$seccion' => $seccion], function ($m) use ($correo) {
+        Mail::send('viewMediateca.mailComentarios', ['comentario' => $comment, 'videoId' => $videoId, 'seccion' => $seccion], function ($m) use ($correo) {
             $m->from('ventana@televisioneducativa.gob.mx', 'Ventana Educativa');
             $m->to($correo)->subject('Ventana Educativa. Videos Educamedia - Recepción de comentarios');
             $m->cc('rene.aguina@mexicox.gob.mx');
@@ -354,15 +354,17 @@ class MediatecaController extends Controller {
     
     public function storeTelesecundariaComment (){
 
-        $comment = new \App\Model\Mediateca\TelesecundariaComments;
-        $comment->comment_id = filter_input (INPUT_POST, 'comment_id');
-        $comment->usuario_id = Auth::user ()->id;
-        $comment->telesecundaria_id = filter_input (INPUT_POST, 'video_id');
-        $comment->comment = filter_input (INPUT_POST, 'comment');
-        $comment->save ();
-        
-        $this->enviaCorreo($comment, $comment->telesecundaria_id, 'Telesecundaria');
-        
+        if(filter_input (INPUT_POST, 'comment') != NULL){
+            $comment = new \App\Model\Mediateca\TelesecundariaComments;
+            $comment->comment_id = filter_input (INPUT_POST, 'comment_id');
+            $comment->usuario_id = Auth::user ()->id;
+            $comment->telesecundaria_id = filter_input (INPUT_POST, 'video_id');
+            $comment->comment = filter_input (INPUT_POST, 'comment');
+            $comment->save ();
+            
+            $this->enviaCorreo($comment, $comment->telesecundaria_id, 'Telesecundaria');
+        }
+
         return view('viewMediateca/comment')->with('comment', $comment);
     }
 
@@ -375,29 +377,33 @@ class MediatecaController extends Controller {
     }
 
      public function storeTelebachilleratoComment (){
-
-        $comment = new \App\Model\Mediateca\TelebachilleratoComments;
-        $comment->comment_id = filter_input (INPUT_POST, 'comment_id');
-        $comment->usuario_id = Auth::user ()->id;
-        $comment->telebachillerato_id = filter_input (INPUT_POST, 'video_id');
-        $comment->comment = filter_input (INPUT_POST, 'comment');
-        $comment->save ();
         
-        $this->enviaCorreo($comment, $comment->telebachillerato_id, 'Telebachillerato');
+        if(filter_input (INPUT_POST, 'comment') != NULL){
+            $comment = new \App\Model\Mediateca\TelebachilleratoComments;
+            $comment->comment_id = filter_input (INPUT_POST, 'comment_id');
+            $comment->usuario_id = Auth::user ()->id;
+            $comment->telebachillerato_id = filter_input (INPUT_POST, 'video_id');
+            $comment->comment = filter_input (INPUT_POST, 'comment');
+            $comment->save ();
+            
+            $this->enviaCorreo($comment, $comment->telebachillerato_id, 'Telebachillerato');
+        }
         
         return view('viewMediateca/comment')->with('comment', $comment);
     }
     
      public function storeSeaComment (){
 
-        $comment = new \App\Model\Mediateca\SeaComments;
-        $comment->comment_id = filter_input (INPUT_POST, 'comment_id');
-        $comment->usuario_id = Auth::user ()->id;
-        $comment->sea_id = filter_input (INPUT_POST, 'video_id');
-        $comment->comment = filter_input (INPUT_POST, 'comment');
-        $comment->save ();
-        
-        $this->enviaCorreo($comment, $comment->sea_id, 'SEA');
+        if(filter_input (INPUT_POST, 'comment') != NULL){
+            $comment = new \App\Model\Mediateca\SeaComments;
+            $comment->comment_id = filter_input (INPUT_POST, 'comment_id');
+            $comment->usuario_id = Auth::user ()->id;
+            $comment->sea_id = filter_input (INPUT_POST, 'video_id');
+            $comment->comment = filter_input (INPUT_POST, 'comment');
+            $comment->save ();
+            
+            $this->enviaCorreo($comment, $comment->sea_id, 'SEA');
+        }
         
         return view('viewMediateca/comment')->with('comment', $comment);
     }
