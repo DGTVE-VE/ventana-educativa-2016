@@ -15,6 +15,7 @@ use \Alaouy\Youtube\Facades\Youtube;
 use Illuminate\Support\Facades\Auth;
 use Laracasts\Flash\Flash;
 use DB;
+use Mail;
 
 class MediatecaController extends Controller {
 
@@ -342,6 +343,14 @@ class MediatecaController extends Controller {
                 ->with('claveVideo', $claveVideo);
     }
     
+    public function enviaCorreo($comment, $videoId, $seccion){
+        Mail::send('viewMediateca.mailComentarios', ['comentario' => $comment, '$videoId' => $videoId, '$seccion' => $seccion], function ($m){
+            $m->from('ventana@televisioneducativa.gob.mx', 'Ventana Educativa');
+            $m->to($correo)->subject('Ventana Educativa. Videos Educamedia - Recepción de comentarios');
+            $m->cc('rene.aguina@mexicox.gob.mx');
+        });        
+    }
+    
     public function storeTelesecundariaComment (){
 
         $comment = new \App\Model\Mediateca\TelesecundariaComments;
@@ -350,6 +359,9 @@ class MediatecaController extends Controller {
         $comment->telesecundaria_id = filter_input (INPUT_POST, 'video_id');
         $comment->comment = filter_input (INPUT_POST, 'comment');
         $comment->save ();
+        
+        enviaCorreo($comment, $comment->telesecundaria_id, 'Telesecundaria');
+        
         return view('viewMediateca/comment')->with('comment', $comment);
     }
 
@@ -369,6 +381,9 @@ class MediatecaController extends Controller {
         $comment->telebachillerato_id = filter_input (INPUT_POST, 'video_id');
         $comment->comment = filter_input (INPUT_POST, 'comment');
         $comment->save ();
+        
+        enviaCorreo($comment, $comment->telebachillerato_id, 'Telebachillerato');
+        
         return view('viewMediateca/comment')->with('comment', $comment);
     }
     
@@ -380,6 +395,9 @@ class MediatecaController extends Controller {
         $comment->sea_id = filter_input (INPUT_POST, 'video_id');
         $comment->comment = filter_input (INPUT_POST, 'comment');
         $comment->save ();
+        
+        enviaCorreo($comment, $comment->sea_id, 'SEA');
+        
         return view('viewMediateca/comment')->with('comment', $comment);
     }
 
