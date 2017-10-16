@@ -69,6 +69,38 @@ $url = 'http://www.youtube.com/get_video_info?video_id='.$idVideo;
                
             }
     }
+
+    function url_exists($url){
+        if(file_get_contents($url, FALSE, NULL, 0, 0) === false) return false;
+        return true;
+    }
+        
+    public static function ligaDescargaSeg($id){
+        //if(empty($_GET['id'])){
+        if(empty($id)){
+            echo "No id found!";
+        }
+        else{
+            //$id = $_GET['id'];
+            $page = @file_get_contents('http://www.youtube.com/get_video_info?&video_id='.$id);
+            preg_match('/token=(.*?)&thumbnail_url=/', $page, $token);
+            $token = urldecode($token[1]);
+
+            $get = $title->video_details;
+            $url_array = array ("http://youtube.com/get_video?video_id=".$id."&t=".$token,
+            "http://youtube.com/get_video?video_id=".$id."&t=".$token."&fmt=18");
+
+            if(url_exists($url_array[1]) === true){
+                $file = get_headers($url_array[1]);
+            }
+            elseif(url_exists($url_array[0]) === true){
+                $file = get_headers($url_array[0]);
+            }
+
+            $url = trim($file[19],"Location: ");
+
+            //echo '<a href="'.$url.'">Download video</a>';
+            return $url;
+        }
+    }
 }
-                  BAch  <a id="ligaDescargaYoutube" href={{ App\Http\Controllers\descargaController::ligaDescarga($datosActual[0]->url) }} download={{$datosActual[0]->url.".mp4"}}"><span title="descarga video" class="glyphicon glyphicon-cloud-download btnDescarga" aria-hidden="true"></span></a>                    
-                  Sec  <a id="ligaDescargaYoutube" href={{ App\Http\Controllers\descargaController::ligaDescarga($datosActual[0]->url) }} download={{$datosActual[0]->url.".mp4"}}><span title="descarga video" class="glyphicon glyphicon-cloud-download btnDescarga" aria-hidden="true"></span></a>                            
