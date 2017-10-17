@@ -35,10 +35,10 @@ class descargaController extends Controller {
             return $data;
         }*/
 
-        $url = 'http://www.youtube.com/get_video_info?video_id='.$idVideo;
+        $url = 'https://www.youtube.com/get_video_info?video_id='.$idVideo;
         //parse_str(curl_get_contents($url), $video_data);
-        if(file_get_contents('http://www.youtube.com/get_video_info?video_id='.$idVideo, false, $contexto)){
-            parse_str(file_get_contents('http://www.youtube.com/get_video_info?video_id='.$idVideo, false, $contexto), $video_data);
+        if(file_get_contents('https://www.youtube.com/get_video_info?video_id='.$idVideo, false, $contexto)){
+            parse_str(file_get_contents('https://www.youtube.com/get_video_info?video_id='.$idVideo, false, $contexto), $video_data);
 
         }
         else{
