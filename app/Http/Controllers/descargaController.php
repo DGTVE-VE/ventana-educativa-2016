@@ -21,22 +21,22 @@ class descargaController extends Controller {
             )
         );
         $contexto = stream_context_create($opciones);
-// Remote file we want, and the local file name to use as a temp file
+        // Remote file we want, and the local file name to use as a temp file
 
-/*function curl_get_contents($url)
-{
-    $ch = curl_init();
+        /*function curl_get_contents($url)
+        {
+            $ch = curl_init();
 
-curl_setopt($ch, CURLOPT_URL, $url);
-curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
-$data = curl_exec($ch);
-    curl_close($ch);
+        curl_setopt($ch, CURLOPT_URL, $url);
+        curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+        $data = curl_exec($ch);
+            curl_close($ch);
 
-    return $data;
-}*/
+            return $data;
+        }*/
 
-$url = 'http://www.youtube.com/get_video_info?video_id='.$idVideo;
-//parse_str(curl_get_contents($url), $video_data);
+        $url = 'http://www.youtube.com/get_video_info?video_id='.$idVideo;
+        //parse_str(curl_get_contents($url), $video_data);
         if(file_get_contents('http://www.youtube.com/get_video_info?video_id='.$idVideo, false, $contexto)){
             parse_str(file_get_contents('http://www.youtube.com/get_video_info?video_id='.$idVideo, false, $contexto), $video_data);
 
@@ -70,7 +70,7 @@ $url = 'http://www.youtube.com/get_video_info?video_id='.$idVideo;
             }
     }
 
-    function url_exists($url){
+    static function url_exists($url){
         if(file_get_contents($url, FALSE, NULL, 0, 0) === false) return false;
         return true;
     }
@@ -84,16 +84,16 @@ $url = 'http://www.youtube.com/get_video_info?video_id='.$idVideo;
             //$id = $_GET['id'];
             $page = @file_get_contents('http://www.youtube.com/get_video_info?&video_id='.$id);
             preg_match('/token=(.*?)&thumbnail_url=/', $page, $token);
-            $token = urldecode($token[1]);
-
+            //$token = urldecode($token[1]);
+            $token ="";
             //$get = $title->video_details;
             $url_array = array ("http://youtube.com/get_video?video_id=".$id."&t=".$token,
             "http://youtube.com/get_video?video_id=".$id."&t=".$token."&fmt=18");
 
-            if($this->url_exists($url_array[1]) === true){
+            if(descargaController::url_exists($url_array[1]) === true){
                 $file = get_headers($url_array[1]);
             }
-            elseif($this->url_exists($url_array[0]) === true){
+            elseif(descargaController::url_exists($url_array[0]) === true){
                 $file = get_headers($url_array[0]);
             }
 

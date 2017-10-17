@@ -103,7 +103,6 @@ Route::group(['middleware' => 'web'], function () {
 
     /*     * **************************REDMITE********************** */
     /* Vistas principales REDMITE */
-//Route::get('/','RedmiteController@redmite');
     Route::get('redmite', 'RedmiteController@redmite');
 
     /* Vistas de páginas secundarias REDMITE */
