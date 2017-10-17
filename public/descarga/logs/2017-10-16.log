@@ -1,0 +1,22 @@
+[2017-10-16T21:52:41+00:00] debug: App started
+[2017-10-16T21:52:41+00:00] debug: YoutubeDownloader\Application\MainController created
+[2017-10-16T21:52:41+00:00] debug: Controller executed. App closed.
+[2017-10-16T21:52:44+00:00] debug: App started
+[2017-10-16T21:52:44+00:00] debug: YoutubeDownloader\Application\ResultController created
+[2017-10-16T21:58:24+00:00] debug: App started
+[2017-10-16T21:58:24+00:00] debug: YoutubeDownloader\Application\ResultController created
+[2017-10-16T21:58:46+00:00] debug: App started
+[2017-10-16T21:58:46+00:00] debug: YoutubeDownloader\Application\MainController created
+[2017-10-16T21:58:46+00:00] debug: Controller executed. App closed.
+[2017-10-16T21:58:53+00:00] debug: App started
+[2017-10-16T21:58:53+00:00] debug: YoutubeDownloader\Application\ResultController created
+[2017-10-16T22:20:20+00:00] debug: App started
+[2017-10-16T22:20:20+00:00] debug: YoutubeDownloader\Application\MainController created
+[2017-10-16T22:20:20+00:00] debug: Controller executed. App closed.
+[2017-10-16T22:20:29+00:00] debug: App started
+[2017-10-16T22:20:29+00:00] debug: YoutubeDownloader\Application\MainController created
+[2017-10-16T22:20:29+00:00] debug: Controller executed. App closed.
+[2017-10-16T22:20:34+00:00] debug: App started
+[2017-10-16T22:20:34+00:00] debug: YoutubeDownloader\Application\ResultController created
+[2017-10-16T22:28:23+00:00] debug: App started
+[2017-10-16T22:28:23+00:00] debug: YoutubeDownloader\Application\ResultController created
