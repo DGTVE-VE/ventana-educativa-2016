@@ -1,3 +1,4 @@
+process.env.NODE_TLS_REJECT_UNAUTHORIZED = "0";
 var http = require('http');
     const fs = require('fs');
     const ytdl = require('ytdl-core');
