@@ -7,7 +7,15 @@ Educaplay
 @include('viewVentana.encabezadoVentana')
 @include('viewEducaplay.menuEducaplay')
 
-@if($episodiosSerie!=null)
+@if($episodiosSerie==null)
+    <div class="col-xs-5 col-sm-5 col-md-3 col-xs-offset-3 col-sm-offset-3 col-md-offset-5" style="position: relative; top: 150px;">
+        <p style="color:white; font-size:2em;"> P R Ó X I M A M E N T E </p>
+    </div>
+@elseif($restringido===1 && !Auth::check ())
+    <div class="col-xs-5 col-sm-5 col-md-3 col-xs-offset-3 col-sm-offset-3 col-md-offset-5" style="position: relative; top: 150px;">
+        <p style="color:white; font-size:2em;"> DEBE INICIAR SESIÓN PARA ACCEDER A ESTE CONTENIDO </p>
+    </div>
+@else
     <script src="{{asset ('js/bootstrap-rating-input.min.js')}}"></script>
     <script src="https://www.youtube.com/player_api"></script>
     <script>
@@ -228,10 +236,6 @@ Educaplay
         <meta name="twitter:title" content="">
         <meta name="twitter:description" content="">
         <meta name="twitter:image" content="">
-@else
-    <div class="col-xs-5 col-sm-5 col-md-3 col-xs-offset-3 col-sm-offset-3 col-md-offset-5" style="position: relative; top: 150px;">
-        <p style="color:white; font-size:2em;"> P R Ó X I M A M E N T E </p>
-    </div>
 @endif
 
 
