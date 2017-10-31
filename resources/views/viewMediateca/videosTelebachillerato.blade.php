@@ -73,7 +73,7 @@ Educamedia
                 @if (Auth::check ())
                 @if($esDocente)
                 <div class="col-md-3">
-                    <a id="ligaDescargaYoutube" href="{{ url('descarga/getvideo.mp4?videoid='.$datosActual[0]->url.'&format=best') }}" download="{{$datosActual[0]->url}}"><span title="descarga video" class="glyphicon glyphicon-cloud-download btnDescarga" aria-hidden="true"></span></a>
+                    <a id="ligaDescargaYoutube" href="{{ App\Http\Controllers\descargaController::ligaDescarga($datosActual[0]->url) }}" download="{{$datosActual[0]->url.'.mp4'}}"><span title="descarga video" class="glyphicon glyphicon-cloud-download btnDescarga" aria-hidden="true"></span></a>
                     Descargar Video
                     <a class="tooltip-inner test" href="#" data-toggle="tooltip" data-placement="bottom" title="
                            * Si al descargar un archivo no tiene extensión, puedes agregarla manualmente.
