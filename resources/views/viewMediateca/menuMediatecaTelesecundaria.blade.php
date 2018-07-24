@@ -156,10 +156,10 @@
                     <div class="panel-body">
                         <div class="tab-content">
                             <div class="tab-pane active" id="tab1">
-                                <embed width="100%" height="500px" src="{{url('http://www.telesecundaria.sep.gob.mx/Content/Repositorio/calendario/calen_esc_185d2.pdf')}}" type="application/pdf"></embed>
+                                <embed width="100%" height="500px" src="{{url('https://www.gob.mx/cms/uploads/attachment/file/329036/185_-_2018-2019.pdf')}}" type="application/pdf"></embed>
                             </div>
                             <div class="tab-pane" id="tab2">
-                                <embed width="100%" height="500px" src="{{url('http://www.telesecundaria.sep.gob.mx/Content/Repositorio/calendario/calend_esco_195d.pdf')}}" type="application/pdf"></embed>
+                                <embed width="100%" height="500px" src="{{url('https://www.gob.mx/cms/uploads/attachment/file/329035/195_-_2018-2019.pdf')}}" type="application/pdf"></embed>
                             </div>
 
                         </div>
