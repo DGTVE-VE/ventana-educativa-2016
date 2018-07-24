@@ -26,7 +26,7 @@
                     <li><a data-toggle="modal" href="#myModal-calendario">Calendario</a></li>
                     <li><a data-toggle="modal" href="#myModal-materialEducativo">Materiales Impresos</a></li>
                     <li id="sinBorde"><a href="{{url('http://www.televisioneducativa.gob.mx/canales/telesecundaria#subenlaces')}}" target="_blank">Programación Televisiva</a></li>
-                    <li></li>                                        
+                    <li></li>
                     <li><a data-toggle="modal" href="#modalDidactica">Mediateca Didáctica</a></li>
                 </ul>|
             </nav>
@@ -48,7 +48,7 @@
                     <div class="row">
                         <div class="col-sm-3 col-md-2 col-lg-2">
                             {{ HTML::image('imagenes/mediateca/tsecundaria/logoTS.png','logo telesecundaria',['class'=>'imagenTelesec'])}}
-                        </div>                
+                        </div>
                         <div class="col-sm-7 col-md-8 col-lg-8">
                             <h3><strong>Mediateca Didáctica</strong></h3>
                         </div>
@@ -72,7 +72,7 @@
                     <div class="row">
                         <div class="col-sm-3 col-md-2 col-lg-2">
                             {{ HTML::image('imagenes/mediateca/tsecundaria/logoTS.png','logo telesecundaria',['class'=>'imagenTelesec'])}}
-                        </div>                
+                        </div>
                         <div class="col-sm-7 col-md-8 col-lg-8">
                             <h3><strong>Telesecundaria</strong></h3>
                         </div>
@@ -96,7 +96,7 @@
                     <div class="row">
                         <div class="col-sm-3 col-md-2 col-lg-2">
                             {{ HTML::image('imagenes/mediateca/tsecundaria/logoTS.png','logo telesecundaria',['class'=>'imagenTelesec'])}}
-                        </div>                
+                        </div>
                        <div class="col-sm-8 col-md-8 col-lg-8">
                             <h3><strong>Telesecundaria</strong></h3>
                         </div>
@@ -121,7 +121,7 @@
                     <div class="row">
 						<div class="col-sm-3 col-md-2 col-lg-2">
                             {{ HTML::image('imagenes/mediateca/tsecundaria/logoTS.png','logo telesecundaria',['class'=>'imagenTelesec'])}}
-                        </div>                
+                        </div>
                         <div class="col-sm-8 col-md-8 col-lg-8">
                             <h3><strong>Telesecundaria</strong></h3>
                         </div>
@@ -131,7 +131,7 @@
                 <div class="modal-body text-justify">
                     <h2>Materiales Impresos</h2><br/>
                     <p>Este espacio le ofrece una amplia gama de materiales educativos desarrollados para la Telesecundaria: Libros digitalizados para alumnos y maestros, Apuntes, Cursos de Regularización y reforzamiento, así como el Curso Propedéutico. Todo ello se encuentra a su disposición para consultarlos o descargarlos.
-                        <a href="{{url('http://telesecundaria.sep.gob.mx/control.php?pagina=Materiales%20Educativos%20Impresos')}}" target="_blank" > Para materiales impresos...</a></p>
+                        <a href="{{url('http://www.telesecundaria.sep.gob.mx/Content/Alumno/docente.php#')}}" target="_blank" > Para materiales impresos...</a></p>
                 </div>
             </div>
         </div>
@@ -156,12 +156,10 @@
                     <div class="panel-body">
                         <div class="tab-content">
                             <div class="tab-pane active" id="tab1">
-                                <embed width="100%" height="500px" src="{{url('http://www.telesecundaria.sep.gob.mx/assets/pdf/calendario/185D.pdf')}}" type="application/pdf"></embed>
-                                 <!--<iframe src="http://docs.google.com/gview?url=http://telesecundaria.sep.gob.mx/assets/pdf/pdf_calendario/calendario_200.pdf&embedded=true" style="width:100%; height:500%;" frameborder="0"></iframe>-->
+                                <embed width="100%" height="500px" src="{{url('http://www.telesecundaria.sep.gob.mx/Content/Repositorio/calendario/calen_esc_185d2.pdf')}}" type="application/pdf"></embed>
                             </div>
                             <div class="tab-pane" id="tab2">
-                                <embed width="100%" height="500px" src="{{url('http://www.telesecundaria.sep.gob.mx/assets/pdf/calendario/195D.pdf')}}" type="application/pdf"></embed>
-                                 <!--<iframe src="pdf/mediateca/calendario_185.pdf" style="width:100%; height:500px;" frameborder="0"></iframe>-->
+                                <embed width="100%" height="500px" src="{{url('http://www.telesecundaria.sep.gob.mx/Content/Repositorio/calendario/calend_esco_195d.pdf')}}" type="application/pdf"></embed>
                             </div>
 
                         </div>
@@ -172,12 +170,12 @@
                                     <div class="row">
                                         <div class="col-lg-1">
                                             {{ HTML::image('imagenes/mediateca/tsecundaria/logoTS.png','logo telesecundaria',['width'=>'160%','height'=>'160%'])}}
-                                        </div>                
+                                        </div>
                                         <div class="col-lg-1 ">
                                             <h3><strong>Telesecundaria</strong></h3>
                                         </div>
                                         <div class="col-lg-10"></div>
-                                    </div>    
+                                    </div>
                                 </div>
                                 <div class="modal-body">
                                     <a href="{{url('http://telesecundaria.sep.gob.mx/assets/pdf/CALENDARIO%20TS%202015-16.pdf')}}" target="_blank" >
