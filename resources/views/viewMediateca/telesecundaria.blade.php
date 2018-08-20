@@ -13,7 +13,7 @@
 	</div>
 	<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 		<map name="telesecGrados" id="telesecGrados">
-			<area alt="primerGrado" href="{{url('educamedia/telesecundaria/primergrado')}}" onmouseover="resaltaImgSecu('telesecundaria', 'primerGrado')" onmouseout="normalImgSecu('Inicio', 'primerGrado')" title="" shape="poly" coords="0,268,1,207,8,173,28,125,58,84,101,44,160,14,208,2,272,1,316,12,346,23,300,111,251,95,204,97,166,114,129,154,112,183,102,209,100,257"/>
+			<area alt="primerGrado" href="{{url('http://telesecundaria.sep.gob.mx/Content/Docente/docente.php?bnnr=2')}}" onmouseover="resaltaImgSecu('telesecundaria', 'primerGrado')" onmouseout="normalImgSecu('Inicio', 'primerGrado')" title="" shape="poly" coords="0,268,1,207,8,173,28,125,58,84,101,44,160,14,208,2,272,1,316,12,346,23,300,111,251,95,204,97,166,114,129,154,112,183,102,209,100,257" target="_blank"/>
 			<area alt="segundoGrado" href="{{url('educamedia/telesecundaria/segundogrado')}}" onmouseover="resaltaImgSecu('telesecundaria', 'segundoGrado')" onmouseout="normalImgSecu('telesecundaria', 'segundoGrado')" title="" shape="poly" coords="328,358,383,437,440,381,461,345,479,282,482,263,481,215,475,170,460,136,437,95,410,65,370,35,347,22,302,111,333,133,360,162,379,200,385,260,372,302,353,331"/>
 			<area alt="tercerGrado" href="{{url('educamedia/telesecundaria/tercergrado')}}" onmouseover="resaltaImgSecu('telesecundaria', 'tercerGrado')" onmouseout="normalImgSecu('telesecundaria', 'tercerGrado')" title="" shape="poly" coords="0,269,98,258,122,316,166,365,216,383,252,384,295,374,327,359,382,438,333,467,286,480,264,481,214,481,162,471,109,449,60,405,22,356"/>
 		</map>
